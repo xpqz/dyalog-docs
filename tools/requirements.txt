@@ -1,9 +1,0 @@
-mkdocs==1.5.3
-mkdocs-material
-mkdocs-macros-plugin
-mkdocs-monorepo-plugin
-mkdocs-site-urls
-mike
-lxml
-python-slugify
-beautifulsoup4
