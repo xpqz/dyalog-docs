@@ -1,0 +1,40 @@
+site_name: Documentation
+
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.instant
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - monorepo
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+  version:
+    provider: mike
+
+markdown_extensions:
+  - admonition
+  - abbr
+  
+nav:
+  - Windows Installation: "!include ./windows-installation-and-configuration/mkdocs.yml"
+  - Configuring the IDE: "!include ./configuring-the-ide/mkdocs.yml"
+  - UNIX Installation: "!include ./unix-installation-and-configuration/mkdocs.yml"
+  - Programmer's Guide: "!include ./programmers-guide/mkdocs.yml"
+  - Language Reference: "!include ./language-reference/mkdocs.yml"
+  - Object Reference: "!include ./object-reference-guide/mkdocs.yml"
+  - .NET Interface: "!include ./dotnet-interface/mkdocs.yml"
+
+
+
+
