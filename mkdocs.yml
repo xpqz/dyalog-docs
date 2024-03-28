@@ -27,13 +27,17 @@ markdown_extensions:
   - abbr
   
 nav:
+  - Release Notes V19.0: "!include ./release-notes-v19-0/mkdocs.yml"
   - Windows Installation: "!include ./windows-installation-and-configuration/mkdocs.yml"
-  - Configuring the IDE: "!include ./configuring-the-ide/mkdocs.yml"
   - UNIX Installation: "!include ./unix-installation-and-configuration/mkdocs.yml"
   - Programmer's Guide: "!include ./programmers-guide/mkdocs.yml"
   - Language Reference: "!include ./language-reference/mkdocs.yml"
   - Object Reference: "!include ./object-reference-guide/mkdocs.yml"
+  - Windows UI Guide: "!include ./windows-ui-guide/mkdocs.yml"
+  - Interface Guide: "!include ./interface-guide/mkdocs.yml"
   - .NET Interface: "!include ./dotnet-interface/mkdocs.yml"
+  - UNIX User Guide: "!include ./unix-user-guide/mkdocs.yml"
+  
 
 
 
