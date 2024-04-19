@@ -1,0 +1,89 @@
+
+site_name: Windows UI Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/extra.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - attr_list
+  - abbr
+  - footnotes
+  - md_in_html
+  - toc:
+      title: On this page
+
+nav:
+  
+  -  Introduction: introduction.md
+  -  APL Keyboards: apl-keyboards.md
+  -  Session Manager: session-manager.md
+  -  Session Gutter: session-gutter.md
+  -  Multi-line Session Input: multiline-session-input.md
+  -  Unicode Edition Keyboard: unicode-edition-keyboard.md
+  -  Configuring the Dyalog APL IME: ime-configuration.md
+  -  Classic Edition Keyboard: classic-edition-keyboard.md
+  -  Keyboard Shortcuts: keyboard-shortcuts.md
+  -  The Session Colour Scheme: session-colour-scheme.md
+  -  The Session Window: the-session-window.md
+  -  Language Bar: language-bar.md
+  -  Entering and Executing Expressions: entering-and-executing-expressions.md
+  -  Value Tips: value-tips.md
+  -  Value Tips for External Functions: value-tips-external.md
+  -  Configuring Value Tips: value-tips-configuring.md
+  -  Array Editor: array-editor.md
+  -  The Session GUI Hierarchy: session-gui.md
+  -  The Session MenuBar: session-menubar.md
+  -  Session Pop-Up Menu: session-popup-menu.md
+  -  The Session Toolbars: session-toolbars.md
+  -  The Session Status Bar: session-statusbar.md
+  -  Status Window: status-window.md
+  -  The Workspace Explorer Tool: workspace-explorer.md
+  -  Browsing Classes: browsing-classes.md
+  -  Browsing Type Libraries: browsing-type-libraries.md
+  -  Browsing .NET Classes: browsing-net-classes.md
+  -  Find Objects Tool: find-objects-tool.md
+  -  Object Properties Dialog Box: object-properties-dialog.md
+  -  The Editor: editor.md
+  -  Find and Replace Dialogs: find-and-replace-dialogs.md
+  -  Editing Scripts and Text Files: editing-scripts-and-text-files.md
+  -  Source as Typed: source-as-typed.md
+  -  The Tracer: tracer.md
+  -  The Threads Tool: threads-tool.md
+  -  Debugging Threads: debugging-threads.md
+  -  The Event Viewer: event-viewer.md
+  - The Session Object:
+    -  The Session Object: the-session-object/session-object.md
+    - AfterFix: the-session-object/afterfix.md
+    - Fix: the-session-object/fix.md
+    - Format: the-session-object/format.md
+    - SessionPrint: the-session-object/sessionprint.md
+    - SessionTrace: the-session-object/sessiontrace.md
+    - WorkspaceLoaded: the-session-object/workspaceloaded.md
+    -  Configuring the Session: the-session-object/configuring-the-session.md
+    - Session Initialisation: the-session-object/session-initialisation.md
+  -  User Commands: user-commands.md
+  -  File Explorer Integration: file-explorer-integration.md

@@ -1,0 +1,58 @@
+
+site_name: UNIX Installation and Configuration Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/extra.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - attr_list
+  - abbr
+  - footnotes
+  - md_in_html
+  - toc:
+      title: On this page
+
+nav:
+  
+  -  Introduction: introduction.md
+  -  Installation: installation.md
+  -  Dyalog Serial Number: dyalog-serial-number.md
+  -  Configuring a Console/terminal Window to support Dyalog APL for UNIX: linux-console-config.md
+  -  Dyalog APL, RDP and VNC: apl-vnc-rdp.md
+  -  Using PuTTY under Windows: putty.md
+  - Configuration Parameters:
+    -  Configuration Parameters: configuration-parameters/configuration-parameters.md
+    -  Configuration Files: configuration-parameters/configuration-files.md
+    -  Environment Variables: configuration-parameters/environment-variables.md
+  -  Configuring the Editor: configuring-the-editor.md
+  -  Miscellaneous: starting-apl-from-scripts.md
+  -  The file command and magic: magic.md
+  -  ⎕SE, User Commands and SALT: se-and-user-commands.md
+  -  The Directory ~/.dyalog: home-dyalog-directory.md
+  - " `⎕NA` under UNIX": quadna.md
+  -  Session logfile: miscellaneous.md
+  -  BuildID: buildid.md

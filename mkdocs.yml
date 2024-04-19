@@ -5,10 +5,14 @@ theme:
   logo: 'img/dyalog-white.svg'
   features:
     - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
   name: material
 
 extra_css:
   - style/main.css
+  - style/extra.css
   - style/admonition-ucmdhelp.css
 
 plugins:
@@ -24,15 +28,23 @@ extra:
 
 markdown_extensions:
   - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - attr_list
   - abbr
-  
+  - footnotes
+  - md_in_html
+  - toc:
+      title: On this page
+
 nav:
   - Release Notes V19.0: "!include ./release-notes-v19-0/mkdocs.yml"
-  - Windows Installation: "!include ./windows-installation-and-configuration/mkdocs.yml"
-  - UNIX Installation: "!include ./unix-installation-and-configuration/mkdocs.yml"
-  - Programmer's Guide: "!include ./programmers-guide/mkdocs.yml"
-  - Language Reference: "!include ./language-reference/mkdocs.yml"
-  - Object Reference: "!include ./object-reference-guide/mkdocs.yml"
+  - Windows Installation: "!include ./windows-installation-and-configuration-guide/mkdocs.yml"
+  - UNIX Installation: "!include ./unix-installation-and-configuration-guide/mkdocs.yml"
+  - Programmer's Guide: "!include ./programming-reference-guide/mkdocs.yml"
+  - Language Reference: "!include ./language-reference-guide/mkdocs.yml"
+  - Object Reference: "!include ./object-reference/mkdocs.yml"
   - Windows UI Guide: "!include ./windows-ui-guide/mkdocs.yml"
   - Interface Guide: "!include ./interface-guide/mkdocs.yml"
   - .NET Interface: "!include ./dotnet-interface/mkdocs.yml"
