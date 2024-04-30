@@ -29,7 +29,7 @@ In most cases this I-Beam functionality will be used in conjunction with `220⌶
 `X` is specified as follows:
 
 
-| X[1] | X[2] | Compression Library |
+| `X[1]` | `X[2]` | Compression Library |
 | --- | --- | ---  |
 | 1 | n/a | LZ4 |
 | 2 | 0 .. 9 | zlib |
@@ -56,11 +56,11 @@ Otherwise, `X` is a scalar or one or two element vector and `Y` must be a *sint_
 The first element of `X` must be one of the following values.
 
 
-| X[1] | Compression Library |
+| `X[1]` | Compression Library |
 | --- | ---  |
-| ¯1 | LZ4 |
-| ¯2 | zlib |
-| ¯3 | gzip |
+| `¯1` | LZ4 |
+| `¯2` | zlib |
+| `¯3` | gzip |
 
 
 

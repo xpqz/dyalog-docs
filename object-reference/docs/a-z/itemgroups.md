@@ -24,12 +24,12 @@ This property specifies item groupings for a [ListView](../objects/listview.md) 
 ItemGroups is a nested scalar or nested vector each of whose elements specifies a grouping. Each grouping is a 5-element vector as follows:
 
 
-| [1] | Group caption | character vector |
+| `[1]` | Group caption | character vector |
 | --- | --- | ---  |
-| [2] | Item index | Vector of indices to the Items property that specifies which Items are in this grouping. |
-| [3] | Caption alignment | an integer: 1 = left aligned caption (the default) 2 = centre        aligned caption 4 = right-aligned caption |
-| [4] | State | Integer (not yet implemented) |
-| [5] | Footer text | character vector (not yet implemented) |
+| `[2]` | Item index | Vector of indices to the Items property that specifies which Items are in this grouping. |
+| `[3]` | Caption alignment | an integer: 1 = left aligned caption (the default) 2 = centre        aligned caption 4 = right-aligned caption |
+| `[4]` | State | Integer (not yet implemented) |
+| `[5]` | Footer text | character vector (not yet implemented) |
 
 
 Note that State and Footer text are not yet implemented by Windows.

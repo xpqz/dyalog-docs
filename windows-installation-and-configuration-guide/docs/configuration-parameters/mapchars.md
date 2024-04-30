@@ -9,9 +9,9 @@ In previous versions of Dyalog APL, certain pairs of characters in `⎕AV` were 
 | From | From | From | To | To | To |
 | --- | --- | --- | --- | --- | ---  |
 | Hex | Decimal | Symbol | Hex | Decimal | Symbol |
-| DB | 219 | ‘ | 0D | 13 | ' |
-| EB | 235 | ^ | A7 | 167 | ^ |
-| EE | 238 | ⌷ | C0 | 192 | &#124; |
-| 0B | 11 | . | E0 | 224 | . |
+| DB | 219 | `‘` | 0D | 13 | `'` |
+| EB | 235 | `^` | A7 | 167 | `^` |
+| EE | 238 | `⌷` | C0 | 192 | `|` |
+| 0B | 11 | `.` | E0 | 224 | `.` |
 
 To clear all mappings, set `MAPCHARS=0000` .

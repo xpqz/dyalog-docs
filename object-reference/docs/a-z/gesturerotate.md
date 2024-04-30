@@ -21,12 +21,12 @@ This event is reported when the user touches  two fingers on an object and twist
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'GestureRotate'` or 495 |
-| [3] | Flags | integer which reports the state of the gesture |
-| [4] | Location | 2-element integer vector containing the y and x-position respectively of the  point midway between the two fingers. These are reported in pixel coordinates relative to the origin of the screen. |
-| [5] | Angle | a scalar number which represents the angle of rotation of the twist measured in radians `(0 → ○2` ) from the x-axis in a counter-clockwise direction. |
+| `[2]` | Event | `'GestureRotate'` or 495 |
+| `[3]` | Flags | integer which reports the state of the gesture |
+| `[4]` | Location | 2-element integer vector containing the y and x-position respectively of the  point midway between the two fingers. These are reported in pixel coordinates relative to the origin of the screen. |
+| `[5]` | Angle | a scalar number which represents the angle of rotation of the twist measured in radians `(0 → ○2` ) from the x-axis in a counter-clockwise direction. |
 
 
 
@@ -36,9 +36,9 @@ The Flags parameter [3] which reports the state of the Gesture, is an integer wi
 
 | Name | Value | Description |
 | --- | --- | ---  |
-|  | 0 | A gesture is in progress |
-| GF_BEGIN | 1 | A gesture is starting. |
-| GF_END | 4 | A gesture has finished. |
+| `` | 0 | A gesture is in progress |
+| `GF_BEGIN` | 1 | A gesture is starting. |
+| `GF_END` | 4 | A gesture has finished. |
 
 
 

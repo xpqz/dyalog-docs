@@ -18,13 +18,13 @@ See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application%20
 
 | Use | Description |
 | --- | ---  |
-| {state}←⎕PROFILE 'start' {timer} | Turn profiling on using the specified timer or resume if profiling was stopped |
-| {state}←⎕PROFILE 'stop' | Suspend the collection of profiling data |
-| {state}←⎕PROFILE 'clear' | Turn profiling off, if active, and discard any collected profiling data |
-| {state}←⎕PROFILE 'calibrate' | Calibrate the profiling timer |
-| state←⎕PROFILE 'state' | Query profiling state |
-| data←⎕PROFILE 'data' | Retrieve profiling data in flat form |
-| data←⎕PROFILE 'tree' | Retrieve profiling data in tree form |
+| `{state}←⎕PROFILE 'start' {timer}` | Turn profiling on using the specified timer or resume if profiling was stopped |
+| `{state}←⎕PROFILE 'stop'` | Suspend the collection of profiling data |
+| `{state}←⎕PROFILE 'clear'` | Turn profiling off, if active, and discard any collected profiling data |
+| `{state}←⎕PROFILE 'calibrate'` | Calibrate the profiling timer |
+| `state←⎕PROFILE 'state'` | Query profiling state |
+| `data←⎕PROFILE 'data'` | Retrieve profiling data in flat form |
+| `data←⎕PROFILE 'tree'` | Retrieve profiling data in tree form |
 
 
 

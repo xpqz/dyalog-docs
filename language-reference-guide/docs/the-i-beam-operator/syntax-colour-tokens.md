@@ -16,11 +16,11 @@ This function provides a description of the syntax colour tokens reported by `20
 `R` is a 4-column matrix that describes the syntax colouring tokens as follows:
 
 
-| R[;1] | Token type |
+| `R[;1]` | Token type |
 | --- | ---  |
-| R[;2] | Token Value |
-| R[;3] | Internal description |
-| R[;4] | Colour index |
+| `R[;2]` | Token Value |
+| `R[;3]` | Internal description |
+| `R[;4]` | Colour index |
 
 
 

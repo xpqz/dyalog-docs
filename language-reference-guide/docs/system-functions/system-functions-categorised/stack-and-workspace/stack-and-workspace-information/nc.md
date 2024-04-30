@@ -15,14 +15,14 @@ If `Y` is **simple**, a name class may be:
 
 | Name Class | Description |
 | --- | ---  |
-| ¯1 | invalid name |
-| 0 | undefined name |
-| 1 | Label |
-| 2 | Variable |
-| 3 | Function |
-| 4 | Operator |
-| 8 | Event |
-| 9 | Object (GUI, namespace, COM, .NET) |
+| `¯1` | invalid name |
+| `0` | undefined name |
+| `1` | Label |
+| `2` | Variable |
+| `3` | Function |
+| `4` | Operator |
+| `8` | Event |
+| `9` | Object (GUI, namespace, COM, .NET) |
 
 
 

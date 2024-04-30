@@ -10,11 +10,11 @@ The :Access statement is used to specify characteristics for Classes, Properties
 
 | Element | Description |
 | --- | ---  |
-| Private&#124;Public | Specifies whether or not the (nested) Class, Property or Method is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
-| Instance&#124;Shared | For a Field, specifies if there is a separate value of the Field in each Instance of the Class, or if there is only a single value that is shared between all Instances. For a Property or Method, specifies whether the code associated with the Property or Method runs in the Class or Instance. |
-| WebMethod | Applies only to a Method and specifies that the method is exported as a web method. This applies only to a Class that implements a Web Service. |
-| Overridable | Applies only to an Instance Method and specifies that the Method may be overridden by a Method in a higher Class. See below. |
-| Override | Applies only to an Instance Method and specifies that the Method overrides the corresponding Overridable Method defined in the Base Class. See below. |
+| `Private|Public` | Specifies whether or not the (nested) Class, Property or Method is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
+| `Instance|Shared` | For a Field, specifies if there is a separate value of the Field in each Instance of the Class, or if there is only a single value that is shared between all Instances. For a Property or Method, specifies whether the code associated with the Property or Method runs in the Class or Instance. |
+| `WebMethod` | Applies only to a Method and specifies that the method is exported as a web method. This applies only to a Class that implements a Web Service. |
+| `Overridable` | Applies only to an Instance Method and specifies that the Method may be overridden by a Method in a higher Class. See below. |
+| `Override` | Applies only to an Instance Method and specifies that the Method overrides the corresponding Overridable Method defined in the Base Class. See below. |
 
 ### Overridable/Override
 

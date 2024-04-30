@@ -141,30 +141,30 @@ DOMAIN ERROR: There were errors processing the script
 
 | 0 | If the script contains errors, these are displayed in the Status Window. |
 | --- | ---  |
-| 1 | If the script contains errors, the errors are not shown  in the Status Window. |
+| `1` | If the script contains errors, the errors are not shown  in the Status Window. |
 
 #### FixWithErrors Option
 
 
 | 0 | If the script contains errors, `⎕FIX` fails with `DOMAIN ERROR` . |
 | --- | ---  |
-| 1 | `⎕FIX` fixes all the namespaces and classes in the script regardless of any errors they may contain. |
-| 2 | If the script contains errors, `⎕FIX` displays a message box prompting the user to choose whether or not to fix all the offending namespaces and classes in the script. |
+| `1` | `⎕FIX` fixes all the namespaces and classes in the script regardless of any errors they may contain. |
+| `2` | If the script contains errors, `⎕FIX` displays a message box prompting the user to choose whether or not to fix all the offending namespaces and classes in the script. |
 
 #### AllowLateBinding Option
 
 
 | 0 | `⎕FIX` will only fix a Class whose Base class (if specified) is defined in the script or is present in the workspace. |
 | --- | ---  |
-| 1 | `⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace. |
+| `1` | `⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace. |
 
 #### InjectReferences Option
 
 
-| 'All' | In order to implement lexical scope, `⎕FIX` will insert internal references into all objects in the script. |
+| `'All'` | In order to implement lexical scope, `⎕FIX` will insert internal references into all objects in the script. |
 | --- | ---  |
 | 'InClasses' | In order to implement lexical scope, `⎕FIX` will insert internal references ONLY into Classes and sub-classes in the script, but not into namespaces. |
-| 'None' | No internal references are inserted and lexical scope does not apply. |
+| `'None'` | No internal references are inserted and lexical scope does not apply. |
 
 
 See [Lexical Scope in Scripts](../introduction/lexical-scope-in-scripts.md).

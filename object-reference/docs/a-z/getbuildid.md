@@ -22,7 +22,7 @@ The argument to GetBuildID is `⍬` or a
 single item as follows:
 
 
-[1] File name character vector
+`[1]` File name character vector
 
 
 

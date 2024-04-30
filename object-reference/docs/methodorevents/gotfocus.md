@@ -21,10 +21,10 @@ If enabled, this event is generated when the user has moved the keyboard focus t
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'GotFocus'` or 40 |
-| [3] | Object name | character vector (name of object which previously had the focus) |
+| `[2]` | Event | `'GotFocus'` or 40 |
+| `[3]` | Object name | character vector (name of object which previously had the focus) |
 
 
 

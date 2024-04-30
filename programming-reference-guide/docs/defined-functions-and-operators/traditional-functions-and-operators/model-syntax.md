@@ -10,9 +10,9 @@ The tables below show all possible models for defined functions and operators re
 
 | Result | Niladic | Monadic | Dyadic | Ambivalent |
 | --- | --- | --- | --- | ---  |
-| None | f | f Y | X f Y | {X} f Y |
-| Explicit | R←f | R←f Y | R←X f Y | R←{X} f Y |
-| Suppressed | {R}←f | {R}←f Y | {R}←X f Y | {R}←{X} f Y |
+| None | `f` | `f Y` | `X f Y` | `{X} f Y` |
+| Explicit | `R←f` | `R←f Y` | `R←X f Y` | `R←{X} f Y` |
+| Suppressed | `{R}←f` | `{R}←f Y` | `{R}←X f Y` | `{R}←{X} f Y` |
 
 Note: the right argument `Y` and/or the result `R` may be represented by a single name, or as a blank-delimited list of names surrounded by parentheses. For further details, see [Namelists](namelists.md).
 
@@ -20,14 +20,14 @@ Note: the right argument `Y` and/or the result `R` may be represented by a singl
 
 | Result | Monadic | Dyadic | Ambivalent |
 | --- | --- | --- | ---  |
-| None | (A op)Y | X(A op)Y | {X}(A op)Y |
-| Explicit | R←(A op)Y | R←X(A op)Y | R←{X}(A op)Y |
-| Suppressed | {R}←(A op)Y | {R}←X(A op)Y | {R}←{X}(A op)Y |
+| None | `(A op)Y` | `X(A op)Y` | `{X}(A op)Y` |
+| Explicit | `R←(A op)Y` | `R←X(A op)Y` | `R←{X}(A op)Y` |
+| Suppressed | `{R}←(A op)Y` | `{R}←X(A op)Y` | `{R}←{X}(A op)Y` |
 
 ## Derived Functions produced by Dyadic Operator
 
 | Result | Monadic | Dyadic | Ambivalent |
 | --- | --- | --- | ---  |
-| None | (A op B)Y | X(A op B)Y | {X}(A op B)Y |
-| Explicit | R←(A op B)Y | R←X(A op B)Y | R←{X}(A op B)Y |
-| Suppressed | {R}←(A op B)Y | {R}←X(A op B)Y | {R}←{X}(A op B)Y |
+| None | `(A op B)Y` | `X(A op B)Y` | `{X}(A op B)Y` |
+| Explicit | `R←(A op B)Y` | `R←X(A op B)Y` | `R←{X}(A op B)Y` |
+| Suppressed | `{R}←(A op B)Y` | `{R}←X(A op B)Y` | `{R}←{X}(A op B)Y` |

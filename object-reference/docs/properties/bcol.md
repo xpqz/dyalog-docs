@@ -40,17 +40,17 @@ below. Positive values are reserved for a possible future extension.
 
 | BCol | Colour Element | BCol | Colour Element |
 | --- | --- | --- | ---  |
-| 0 | Default | ¯11 | Active Border |
-| ¯1 | Scroll Bars | ¯12 | Inactive Border |
-| ¯2 | Desktop | ¯13 | Application Workspace |
-| ¯3 | Active Title Bar | ¯14 | Highlight |
-| ¯4 | Inactive Title Bar | ¯15 | Highlighted Text |
-| ¯5 | Menu Bar | ¯16 | Button Face |
-| ¯6 | Window Background | ¯17 | Button Shadow |
-| ¯7 | Window Frame | ¯18 | Disabled Text |
-| ¯8 | Menu Text | ¯19 | Button Text |
-| ¯9 | Window Text | ¯20 | Inactive Title Bar Text |
-| ¯10 | Active Title Bar Text | ¯21 | Button Highlight |
+| `0` | Default | `¯11` | Active Border |
+| `¯1` | Scroll Bars | `¯12` | Inactive Border |
+| `¯2` | Desktop | `¯13` | Application Workspace |
+| `¯3` | Active Title Bar | `¯14` | Highlight |
+| `¯4` | Inactive Title Bar | `¯15` | Highlighted Text |
+| `¯5` | Menu Bar | `¯16` | Button Face |
+| `¯6` | Window Background | `¯17` | Button Shadow |
+| `¯7` | Window Frame | `¯18` | Disabled Text |
+| `¯8` | Menu Text | `¯19` | Button Text |
+| `¯9` | Window Text | `¯20` | Inactive Title Bar Text |
+| `¯10` | Active Title Bar Text | `¯21` | Button Highlight |
 
 
 

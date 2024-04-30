@@ -12,8 +12,8 @@ The `:Implements` statement identifies the function to be one of the following t
 
 | Element | Description |
 | --- | ---  |
-| Constructor | Specifies that the function is a [Class Constructor](../constructors/constructors.md) . |
-| :Base expr | Specifies that the [Base Constructor](../constructors/base-constructors.md) be called with the result of the expression expr as its argument. |
-| Destructor | Specifies that the function is a [Class Destructor](../constructors/destructors.md) . |
-| Method | Specifies that the function implements the Method MethodName whose syntax is specified by [Interface InterfaceName](../interfaces/interfaces.md) . |
-| Trigger | Identifies the function as a [Trigger Function](../../triggers/triggers.md) which is activated by changes to variable name1, name2, and so forth. Trigger * specifies a [Global Trigger](../../triggers/global-triggers.md) that is activated by the assignment of any global variable in the same namespace. |
+| `Constructor` | Specifies that the function is a [Class Constructor](../constructors/constructors.md) . |
+| `:Base expr` | Specifies that the [Base Constructor](../constructors/base-constructors.md) be called with the result of the expression expr as its argument. |
+| `Destructor` | Specifies that the function is a [Class Destructor](../constructors/destructors.md) . |
+| `Method` | Specifies that the function implements the Method MethodName whose syntax is specified by [Interface InterfaceName](../interfaces/interfaces.md) . |
+| `Trigger` | Identifies the function as a [Trigger Function](../../triggers/triggers.md) which is activated by changes to variable name1, name2, and so forth. Trigger * specifies a [Global Trigger](../../triggers/global-triggers.md) that is activated by the assignment of any global variable in the same namespace. |

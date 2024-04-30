@@ -19,14 +19,14 @@ If enabled, this event is reported by a client object just before it is docked i
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DockRequest'` or 482 |
-| [3] | Host Object | ref or character vector |
-| [4] | Edge | character vector |
-| [5] | y-position | number |
-| [6] | x-position | number |
-| [7] | Outline rectangle | 4-element nested |
+| `[2]` | Event | `'DockRequest'` or 482 |
+| `[3]` | Host Object | ref or character vector |
+| `[4]` | Edge | character vector |
+| `[5]` | y-position | number |
+| `[6]` | x-position | number |
+| `[7]` | Outline rectangle | 4-element nested |
 
 
 Elements 4-7 of this event message are the same as those reported by [DockMove](../methodorevents/dockmove.md), and the effect of a callback function is identical. See [DockMove](../methodorevents/dockmove.md) for further information.

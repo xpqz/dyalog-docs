@@ -21,9 +21,9 @@ This method is used to transmit a picture represented by a [Bitmap](../objects/b
 The argument to TCPSendPicture is a 1 or 2-element array as follows:
 
 
-| [1] | Bitmap name | character vector |
+| `[1]` | Bitmap name | character vector |
 | --- | --- | ---  |
-| [2] | Picture format | character vector, `'GIF'` or `'PNG'` |
+| `[2]` | Picture format | character vector, `'GIF'` or `'PNG'` |
 
 
 If *Picture format* is omitted, the default is GIF format.

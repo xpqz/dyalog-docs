@@ -36,12 +36,12 @@ or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'ContextMenu'` or 410 |
-| [3] | (reserved) | Empty character vector |
-| [4] | Y | y-position of the mouse (number) |
-| [5] | X | x-position of the mouse (number) |
+| `[2]` | Event | `'ContextMenu'` or 410 |
+| `[3]` | (reserved) | Empty character vector |
+| `[4]` | Y | y-position of the mouse (number) |
+| `[5]` | X | x-position of the mouse (number) |
 
 
 

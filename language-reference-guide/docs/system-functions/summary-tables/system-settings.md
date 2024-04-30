@@ -4,14 +4,14 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕CT](../../primitive-functions/subtract.md) | Comparison Tolerance |
-| [⎕DCT](../dct.md) | Decimal Comp Tolerance |
-| [⎕DIV](../div.md) | Division Method |
-| [⎕FR](../fr.md) | Floating-Point Representation |
-| [⎕IO](../io.md) | Index Origin |
-| [⎕ML](../ml.md) | Migration Level |
-| [⎕PP](../pp.md) | Print Precision |
-| [⎕RL](../rl.md) | Random Link |
+| `⎕CT` | Comparison Tolerance |
+| `⎕DCT` | Decimal Comp Tolerance |
+| `⎕DIV` | Division Method |
+| `⎕FR` | Floating-Point Representation |
+| `⎕IO` | Index Origin |
+| `⎕ML` | Migration Level |
+| `⎕PP` | Print Precision |
+| `⎕RL` | Random Link |
 
 The following table describes the dependencies that exist between functions, operators and these system variables.
 
@@ -19,15 +19,15 @@ Implicit Arguments
 
 | System Variable | Monadic Functions | Dyadic Functions | Operators |
 | --- | --- | --- | ---  |
-| ⎕CT, ⎕DCT | ⌈ ⌊ ∪ | ~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ &#124; ∨ ∧ | ⌸ |
-| ⎕DIV | ÷ | ÷ |  |
-| ⎕FR   ⍝ 1 | ÷ * ⍟ ! ○ ⌹ | + - × ÷ * ⍟ &#124; ! ○ ∨ ∧ ⊥ ⊤ ⌹ |  |
-| ⎕FR   ⍝ 2 | ⌈ ⌊ ∪ | ~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ⌸ |
-| ⎕FR   ⍝ 3 | ⍒ ⍋ | ⌈ ⌊ ⍒ ⍋ ⍸ |  |
-| ⎕IO | ⍳ ? ⍒ ⍋ ⍸ | ⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸ | ⌸ @ [] |
-| ⎕ML | ∊ ↑ ⊃ ≡ |  |  |
-| ⎕PP | ⍕ |  |  |
-| ⎕RL | ? | ? |  |
+| `⎕CT, ⎕DCT` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ∨ ∧` | `⌸` |
+| `⎕DIV` | `÷` | `÷` | `` |
+| `⎕FR   ⍝ 1` | `÷ * ⍟ ! ○ ⌹` | `+ - × ÷ * ⍟ | ! ○ ∨ ∧ ⊥ ⊤ ⌹` | `` |
+| `⎕FR   ⍝ 2` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷` | `⌸` |
+| `⎕FR   ⍝ 3` | `⍒ ⍋` | `⌈ ⌊ ⍒ ⍋ ⍸` | `` |
+| `⎕IO` | `⍳ ? ⍒ ⍋ ⍸` | `⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸` | `⌸ @ []` |
+| `⎕ML` | `∊ ↑ ⊃ ≡` | `` | `` |
+| `⎕PP` | `⍕` | `` | `` |
+| `⎕RL` | `?` | `?` | `` |
 
 where, for `⎕FR`, `1` indicates functions that compute real numbers and whose precision depends on `⎕FR`, `2` indicates functions that perform tolerant comparisons and `3` indicates functions that perform tolerant comparisons.
 

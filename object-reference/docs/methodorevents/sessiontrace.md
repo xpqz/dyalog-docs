@@ -26,11 +26,11 @@ If enabled, this event is reported when an expression is executed with trace con
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'SessionTrace'` or 527 |
-| [3] | Function | Character vector ( `''` if none) |
-| [4] | Line number | Numeric scalar ( `0` if none) |
+| `[2]` | Event | `'SessionTrace'` or 527 |
+| `[3]` | Function | Character vector ( `''` if none) |
+| `[4]` | Line number | Numeric scalar ( `0` if none) |
 
 
 

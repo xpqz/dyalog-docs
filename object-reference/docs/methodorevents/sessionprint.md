@@ -21,9 +21,9 @@ If enabled, this event is reported when a value is about to be displayed in the 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'SessionPrint'` or 526 |
+| `[2]` | Event | `'SessionPrint'` or 526 |
 
 
 

@@ -23,9 +23,9 @@ If `X` is 1, the result `R` returns an indication of whether `Y` has been marked
 
 | `R` | State of `Y` |
 | --- | ---  |
-| 0 | `Y` has not been marked for hashing |
-| 1 | `Y` has been marked for hashing, but the hash tables has not yet been created |
-| 2 | `Y` has a hash table |
+| `0` | `Y` has not been marked for hashing |
+| `1` | `Y` has been marked for hashing, but the hash tables has not yet been created |
+| `2` | `Y` has a hash table |
 
 
 If `X` is 2, the result `R` is the unhashed form of `Y`.

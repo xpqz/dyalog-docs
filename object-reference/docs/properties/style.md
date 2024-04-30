@@ -102,12 +102,12 @@ the type of icon which is displayed in it. This is a character vector with one
 of the following values:
 
 
-| 'Msg' | no icon (the default) |
+| `'Msg'` | no icon (the default) |
 | --- | ---  |
-| 'Info' | information message icon |
-| 'Query' | query (question) icon |
-| 'Warn' | warning icon |
-| 'Error' | critical error icon |
+| `'Info'` | information message icon |
+| `'Query'` | query (question) icon |
+| `'Warn'` | warning icon |
+| `'Error'` | critical error icon |
 
 
 
@@ -116,10 +116,10 @@ For a [Static](../objects/static.md) object, Style defines its
 appearance, and may be one of:
 
 
-| 'BlackFrame' | 'BlackBox' |
+| `'BlackFrame'` | `'BlackBox'` |
 | --- | ---  |
-| 'GreyFrame' or 'GrayFrame' | 'GreyBox' or 'GrayBox' |
-| 'WhiteFrame' | 'WhiteBox' |
+| `'GreyFrame' or 'GrayFrame'` | `'GreyBox' or 'GrayBox'` |
+| `'WhiteFrame'` | `'WhiteBox'` |
 
 
 

@@ -19,11 +19,11 @@ If enabled, this event is generated when the user clicks one of the spin buttons
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'SetSpinnerText'` or 421 |
-| [3] | Thumb value | Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons. |
-| [4] | Text | The text that is about to be put into the edit field. |
+| `[2]` | Event | `'SetSpinnerText'` or 421 |
+| `[3]` | Thumb value | Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons. |
+| `[4]` | Text | The text that is about to be put into the edit field. |
 
 
 The SetSpinnerText event is designed to allow you to dynamically set the text in the Spinner in response to a spin button. It might be used in circumstances where the set of items you wish to present to your user is not predictable in advance.

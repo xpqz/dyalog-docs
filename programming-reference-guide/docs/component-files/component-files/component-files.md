@@ -103,37 +103,37 @@ See *Language Reference* for full details of the syntax of these system function
 
 | General | General |
 | --- | ---  |
-| ⎕FAVAIL | Report file system availability |
+| `⎕FAVAIL` | Report file system availability |
 | File Operations | File Operations |
-| ⎕FCREATE | Create a file |
-| ⎕FTIE | Tie an existing file (exclusive) |
-| ⎕FSTIE | Tie an existing file (shared) |
-| ⎕FUNTIE | Untie file(s) |
-| ⎕FCOPY | Copy a file |
-| ⎕FERASE | Erase a file |
-| ⎕FRENAME | Rename a file |
+| `⎕FCREATE` | Create a file |
+| `⎕FTIE` | Tie an existing file (exclusive) |
+| `⎕FSTIE` | Tie an existing file (shared) |
+| `⎕FUNTIE` | Untie file(s) |
+| `⎕FCOPY` | Copy a file |
+| `⎕FERASE` | Erase a file |
+| `⎕FRENAME` | Rename a file |
 | File information | File information |
-| ⎕FHIST | Report file events |
-| ⎕FNUMS | Report tie numbers of tied files |
-| ⎕FNAMES | Report names of tied files |
-| ⎕FLIB | Report names of component files |
-| ⎕FPROPS | Report file properties |
-| ⎕FSIZE | Report size of file |
+| `⎕FHIST` | Report file events |
+| `⎕FNUMS` | Report tie numbers of tied files |
+| `⎕FNAMES` | Report names of tied files |
+| `⎕FLIB` | Report names of component files |
+| `⎕FPROPS` | Report file properties |
+| `⎕FSIZE` | Report size of file |
 | Writing to the file | Writing to the file |
-| ⎕FAPPEND | Append a component to the file |
-| ⎕FREPLACE | Replace an existing component |
+| `⎕FAPPEND` | Append a component to the file |
+| `⎕FREPLACE` | Replace an existing component |
 | Reading from a file | Reading from a file |
-| ⎕FREAD | Read one or more components |
-| ⎕FRDCI | Read component information |
+| `⎕FREAD` | Read one or more components |
+| `⎕FRDCI` | Read component information |
 | Manipulating a file | Manipulating a file |
-| ⎕FDROP | Drop a block of components |
-| ⎕FRESIZE | Change file size (forces a compaction) |
-| ⎕FCHK | Check and repair a file |
+| `⎕FDROP` | Drop a block of components |
+| `⎕FRESIZE` | Change file size (forces a compaction) |
+| `⎕FCHK` | Check and repair a file |
 | Access manipulation | Access manipulation |
-| ⎕FSTAC | Set file access matrix |
-| ⎕FRDAC | Read file access matrix |
+| `⎕FSTAC` | Set file access matrix |
+| `⎕FRDAC` | Read file access matrix |
 | Control multi-user access | Control multi-user access |
-| ⎕FHOLD | Hold file(s) - see later section for details |
+| `⎕FHOLD` | Hold file(s) - see later section for details |
 
 ### Using the Component File System
 

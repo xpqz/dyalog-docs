@@ -31,13 +31,13 @@ The value of the EdgeStyle property is a character vector chosen from the
 following :
 
 
-| 'None' | Object is drawn with no 3-dimensional effects and the EdgeStyle       properties of its children are ignored (treated as `None` ). |
+| `'None'` | Object is drawn with no 3-dimensional effects and the EdgeStyle       properties of its children are ignored (treated as `None` ). |
 | --- | ---  |
-| 'Plinth' | Object is drawn with a light shadow along its top and left edges and a       dark shadow along its bottom and right edges. This gives the illusion of a       raised effect. |
-| 'Recess' | Object is drawn with a dark shadow along its top and left edges and a       light shadow along its bottom and right edges. This gives the illusion of       a sunken effect. |
-| 'Groove' | Object is drawn with a border that has the appearance of a groove. |
-| 'Ridge' | Object is drawn with a border that has the appearance of a ridge. |
-| 'Shadow' | Object is drawn with a dark border line along its top and left edges. |
+| `'Plinth'` | Object is drawn with a light shadow along its top and left edges and a       dark shadow along its bottom and right edges. This gives the illusion of a       raised effect. |
+| `'Recess'` | Object is drawn with a dark shadow along its top and left edges and a       light shadow along its bottom and right edges. This gives the illusion of       a sunken effect. |
+| `'Groove'` | Object is drawn with a border that has the appearance of a groove. |
+| `'Ridge'` | Object is drawn with a border that has the appearance of a ridge. |
+| `'Shadow'` | Object is drawn with a dark border line along its top and left edges. |
 | `'Default'` | Object itself is drawn with no 3-dimensional border, but the values of       the EdgeStyle properties of its children are observed. |
 | `'Dialog'` | Used in conjunction with ( `'Border' 2` ),       this gives a Form the appearance of a standard 3-dimensional dialog box.       This setting applies **only** to a [Form](../objects/form.md) or a [SubForm](../objects/subform.md) |
 

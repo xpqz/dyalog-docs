@@ -10,8 +10,8 @@ Attributes are descriptive tags that provide additional information about progra
 
 | Element | Description |
 | --- | ---  |
-| Name | The name of a .NET attribute |
-| ConstructorArgs | Optional arguments for the Attribute constructor |
+| `Name` | The name of a .NET attribute |
+| `ConstructorArgs` | Optional arguments for the Attribute constructor |
 
 **Example**
 

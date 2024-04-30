@@ -30,13 +30,13 @@ A workspace may not be saved if any threads (other than the root thread 0) are r
 `)SAVE` may fail with one of the following error messages:
 
 
-| unacceptable char | The given workspace name was ill-formed |
+| `unacceptable char` | The given workspace name was ill-formed |
 | --- | ---  |
-| not saved this ws is WSID | An attempt was made to change the name of the workspace for the save, and the renamed workspace already existed. This error can be overridden by specifying **-force** . |
-| not saved this ws is CLEAR WS | The active workspace was `CLEAR WS` and no attempt was made to change the name. |
-| Can't save - file could not be created. | The workspace name supplied did not represent a valid file name for the current Operating System. |
-| cannot create | The user does not have access to create the file OR the workspace name conflicts with an existing non-workspace file. |
-| cannot save with windows open | A workspace may not be saved if trace or edit windows are open. |
+| `not saved this ws is WSID` | An attempt was made to change the name of the workspace for the save, and the renamed workspace already existed. This error can be overridden by specifying **-force** . |
+| `not saved this ws is CLEAR WS` | The active workspace was `CLEAR WS` and no attempt was made to change the name. |
+| `Can't save - file could not be created.` | The workspace name supplied did not represent a valid file name for the current Operating System. |
+| `cannot create` | The user does not have access to create the file OR the workspace name conflicts with an existing non-workspace file. |
+| `cannot save with windows open` | A workspace may not be saved if trace or edit windows are open. |
 
 
 

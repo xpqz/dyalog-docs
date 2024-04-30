@@ -21,12 +21,12 @@ This method is used to add items to a [TreeView](../objects/treeview.md) object
 The argument to AddItems is a 3, 4 or 5-element array as follows:
 
 
-| [1] | Item number | Integer. |
+| `[1]` | Item number | Integer. |
 | --- | --- | ---  |
-| [2] | New items | Vector of character vectors. |
-| [3] | Depth vector | Integer vector. |
-| [4] | Picture vector | Integer vector. |
-| [5] | Selected picture vector | Integer vector. |
+| `[2]` | New items | Vector of character vectors. |
+| `[3]` | Depth vector | Integer vector. |
+| `[4]` | Picture vector | Integer vector. |
+| `[5]` | Selected picture vector | Integer vector. |
 
 
 

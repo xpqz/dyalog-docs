@@ -19,9 +19,9 @@ If enabled, this event is reported by a dockable object (one whose [Dockable](..
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DockStart'` or 480 |
+| `[2]` | Event | `'DockStart'` or 480 |
 
 
 A callback function may prevent the docking operation from starting by returning 0.

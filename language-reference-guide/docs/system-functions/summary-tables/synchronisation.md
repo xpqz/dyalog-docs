@@ -2,9 +2,9 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕TALLOC](../talloc.md) | Allocate Token Range |
-| [⎕TGET](../tget.md) | Get Tokens |
-| [⎕TKILL](../tkill.md) | Kill Threads |
-| [⎕TPOOL](../tpool.md) | Token Pool |
-| [⎕TPUT](./input-and-output.md) | Put Tokens |
-| [⎕TREQ](../treq.md) | Token Requests |
+| `⎕TALLOC` | Allocate Token Range |
+| `⎕TGET` | Get Tokens |
+| `⎕TKILL` | Kill Threads |
+| `⎕TPOOL` | Token Pool |
+| `⎕TPUT` | Put Tokens |
+| `⎕TREQ` | Token Requests |

@@ -40,73 +40,73 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 
 | A | Derived Function | O/S |
 | --- | --- | ---  |
-| 8 | [Inverted Table Index-of](./inverted-table-index-of.md) |  |
-| 85 | [Execute Expression](./execute-expression.md) |  |
-| 127 | [Overwrite Free Pockets](./overwrite-free-pockets.md) |  |
-| 180 | [Canonical Representation](./canonical-representation.md) |  |
-| 181 | [Unsqueezed Type](./unsqueezed-type.md) |  |
-| 200 | [Syntax Colouring](./syntax-colouring.md) |  |
-| 201 | [Syntax Colour Tokens](./syntax-colour-tokens.md) |  |
-| 219 | [Compress/Decompress Vector of Short Integers](./compress-vector-of-short-integers.md) |  |
-| 220 | [Serialise/Deserialise Array](./serialise-array.md) |  |
-| 400 | [Compiler Control](./compiler-control.md) |  |
-| 600 | [Trap Control](./trap-control.md) |  |
-| 739 | [Temporary Directory](./temporary-directory.md) |  |
-| 819 | [Case Convert](./case-convert.md) |  |
-| 900 | [Called Monadically](./called-monadically.md) |  |
-| 950 | [Loaded Libraries](./loaded-libraries.md) |  |
-| 1010 | [Set Shell Script Debug Options](./set-shell-script-debug-options.md) |  |
-| 1111 | [Number of Threads](./number-of-threads.md) |  |
-| 1112 | [Parallel Execution Threshold](./parallel-execution-threshold.md) |  |
-| 1159 | [Update Function Time and User Stamp](./update-function-timestamp.md) |  |
-| 1200 | [Format Date-time](./format-datetime.md) |  |
-| 1302 | [Set aplcore Parameters](./set-aplcore-parameters.md) |  |
-| 1500 | [Hash Array](./hash-array.md) |  |
-| 2000 | [Memory Manager Statistics](./memory-manager-statistics.md) |  |
-| 2002 | [Specify Workspace Available](./specify-workspace-available.md) |  |
-| 2007 | [Disable Global Triggers](./disable-global-triggers.md) |  |
-| 2010 | [Update DataTable](./update-datatable.md) | WF |
-| 2011 | [Read DataTable](./read-datatable.md) | WF |
-| 2014 | [Remove Data Binding](./remove-data-binding.md) | WF |
-| 2015 | [Create Data Binding Source](./create-data-binding-source.md) | WF |
-| 2016 | [Create .NET Delegate](./create-net-delegate.md) | WF |
-| 2017 | [Identify .NET Type](./identify-net-type.md) | WF |
-| 2022 | [Flush Session Caption](./flush-session-caption.md) | W |
-| 2023 | [Close all Windows](./close-all-windows.md) |  |
-| 2035 | [Set Dyalog Pixel Type](./set-dyalog-pixel-type.md) | W |
-| 2041 | [Override COM Default Value](./override-com-default-value.md) | W |
-| 2100 | [Export to Memory](./export-to-memory.md) | W |
-| 2101 | [Close .NET AppDomain](./close-net-appdomain.md) | WF |
-| 2250 | [Verify .NET Interface](./verify-net-interface.md) |  |
-| 2400 | [Set Workspace Save Options](./set-workspace-save-options.md) |  |
-| 2401 | [Expose Root Properties](./expose-root-properties.md) |  |
-| 2501 | [Discard thread on exit](./discard-thread-on-exit.md) | W |
-| 2502 | [Discard parked threads](./discard-parked-threads.md) | W |
-| 2503 | [Mark Thread as Uninterruptible](./mark-thread-as-uninterruptible.md) |  |
-| 2520 | [Use Separate Thread For .NET](./use-separate-thread-for-net.md) | WF |
-| 2704 | [Continue Autosave](./continue-autosave.md) |  |
-| 3002 | [Disable Component Checksum Validation](./disable-component-checksum-validation.md) |  |
-| 3012 | [Enable Compression of Large Components](./enable-compression-of-large-components.md) |  |
-| 3500 | [Send Text to RIDE-embedded Browser](./send-text-to-ride-embedded-browser.md) |  |
-| 3501 | [Connected to the RIDE](./connected-to-the-ride.md) |  |
-| 3502 | [Manage RIDE Connections](./manage-ride-connections.md) |  |
-| 4000 | [Fork New Task](./fork-new-task.md) | AIX |
-| 4001 | [Change User](./change-user.md) | X |
-| 4002 | [Reap Forked Tasks](./reap-forked-tasks.md) | AIX |
-| 4007 | [Signal Counts](./signal-counts.md) | X |
-| 5171 | [Discard Source Information](./discard-source-information.md) |  |
-| 5172 | [Discard Source Code](./discard-source-code.md) |  |
-| 5176 | [List Loaded Files](./list-loaded-files.md) |  |
-| 5177 | [List Loaded File Objects](./list-loaded-file-objects.md) |  |
-| 5178 | [Remove Loaded File Object Info](./remove-loaded-file-object-info.md) |  |
-| 5179 | [Loaded File Object Info](./loaded-file-object-info.md) |  |
-| 7162 | [JSON Translate Name](./json-translate-name.md) |  |
-| 8415 | [Singular Value Decomposition](./singular-value-decomposition.md) |  |
-| 8674 | [Externalise Array](./externalise-array.md) |  |
-| 9468 | [Hash Table Size](./hash-table-size.md) |  |
-| 9469 | [Lookup Table Size](./lookup-table-size.md) |  |
-| 16808 | [Sample Probability Distribution](./sample-probability-distribution.md) |  |
-| 50100 | [Line Count](./line-count.md) |  |
+| `8` | [Inverted Table Index-of](./inverted-table-index-of.md) |  |
+| `85` | [Execute Expression](./execute-expression.md) |  |
+| `127` | [Overwrite Free Pockets](./overwrite-free-pockets.md) |  |
+| `180` | [Canonical Representation](./canonical-representation.md) |  |
+| `181` | [Unsqueezed Type](./unsqueezed-type.md) |  |
+| `200` | [Syntax Colouring](./syntax-colouring.md) |  |
+| `201` | [Syntax Colour Tokens](./syntax-colour-tokens.md) |  |
+| `219` | [Compress/Decompress Vector of Short Integers](./compress-vector-of-short-integers.md) |  |
+| `220` | [Serialise/Deserialise Array](./serialise-array.md) |  |
+| `400` | [Compiler Control](./compiler-control.md) |  |
+| `600` | [Trap Control](./trap-control.md) |  |
+| `739` | [Temporary Directory](./temporary-directory.md) |  |
+| `819` | [Case Convert](./case-convert.md) |  |
+| `900` | [Called Monadically](./called-monadically.md) |  |
+| `950` | [Loaded Libraries](./loaded-libraries.md) |  |
+| `1010` | [Set Shell Script Debug Options](./set-shell-script-debug-options.md) |  |
+| `1111` | [Number of Threads](./number-of-threads.md) |  |
+| `1112` | [Parallel Execution Threshold](./parallel-execution-threshold.md) |  |
+| `1159` | [Update Function Time and User Stamp](./update-function-timestamp.md) |  |
+| `1200` | [Format Date-time](./format-datetime.md) |  |
+| `1302` | [Set aplcore Parameters](./set-aplcore-parameters.md) |  |
+| `1500` | [Hash Array](./hash-array.md) |  |
+| `2000` | [Memory Manager Statistics](./memory-manager-statistics.md) |  |
+| `2002` | [Specify Workspace Available](./specify-workspace-available.md) |  |
+| `2007` | [Disable Global Triggers](./disable-global-triggers.md) |  |
+| `2010` | [Update DataTable](./update-datatable.md) | WF |
+| `2011` | [Read DataTable](./read-datatable.md) | WF |
+| `2014` | [Remove Data Binding](./remove-data-binding.md) | WF |
+| `2015` | [Create Data Binding Source](./create-data-binding-source.md) | WF |
+| `2016` | [Create .NET Delegate](./create-net-delegate.md) | WF |
+| `2017` | [Identify .NET Type](./identify-net-type.md) | WF |
+| `2022` | [Flush Session Caption](./flush-session-caption.md) | W |
+| `2023` | [Close all Windows](./close-all-windows.md) |  |
+| `2035` | [Set Dyalog Pixel Type](./set-dyalog-pixel-type.md) | W |
+| `2041` | [Override COM Default Value](./override-com-default-value.md) | W |
+| `2100` | [Export to Memory](./export-to-memory.md) | W |
+| `2101` | [Close .NET AppDomain](./close-net-appdomain.md) | WF |
+| `2250` | [Verify .NET Interface](./verify-net-interface.md) |  |
+| `2400` | [Set Workspace Save Options](./set-workspace-save-options.md) |  |
+| `2401` | [Expose Root Properties](./expose-root-properties.md) |  |
+| `2501` | [Discard thread on exit](./discard-thread-on-exit.md) | W |
+| `2502` | [Discard parked threads](./discard-parked-threads.md) | W |
+| `2503` | [Mark Thread as Uninterruptible](./mark-thread-as-uninterruptible.md) |  |
+| `2520` | [Use Separate Thread For .NET](./use-separate-thread-for-net.md) | WF |
+| `2704` | [Continue Autosave](./continue-autosave.md) |  |
+| `3002` | [Disable Component Checksum Validation](./disable-component-checksum-validation.md) |  |
+| `3012` | [Enable Compression of Large Components](./enable-compression-of-large-components.md) |  |
+| `3500` | [Send Text to RIDE-embedded Browser](./send-text-to-ride-embedded-browser.md) |  |
+| `3501` | [Connected to the RIDE](./connected-to-the-ride.md) |  |
+| `3502` | [Manage RIDE Connections](./manage-ride-connections.md) |  |
+| `4000` | [Fork New Task](./fork-new-task.md) | AIX |
+| `4001` | [Change User](./change-user.md) | X |
+| `4002` | [Reap Forked Tasks](./reap-forked-tasks.md) | AIX |
+| `4007` | [Signal Counts](./signal-counts.md) | X |
+| `5171` | [Discard Source Information](./discard-source-information.md) |  |
+| `5172` | [Discard Source Code](./discard-source-code.md) |  |
+| `5176` | [List Loaded Files](./list-loaded-files.md) |  |
+| `5177` | [List Loaded File Objects](./list-loaded-file-objects.md) |  |
+| `5178` | [Remove Loaded File Object Info](./remove-loaded-file-object-info.md) |  |
+| `5179` | [Loaded File Object Info](./loaded-file-object-info.md) |  |
+| `7162` | [JSON Translate Name](./json-translate-name.md) |  |
+| `8415` | [Singular Value Decomposition](./singular-value-decomposition.md) |  |
+| `8674` | [Externalise Array](./externalise-array.md) |  |
+| `9468` | [Hash Table Size](./hash-table-size.md) |  |
+| `9469` | [Lookup Table Size](./lookup-table-size.md) |  |
+| `16808` | [Sample Probability Distribution](./sample-probability-distribution.md) |  |
+| `50100` | [Line Count](./line-count.md) |  |
 
 
 

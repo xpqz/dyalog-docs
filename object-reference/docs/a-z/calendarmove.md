@@ -26,13 +26,13 @@ or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'CalendarMove'` or 274 |
-| [3] | Item Number | integer |
-| [4] | Mouse Button | integer |
-| [5] | Shift State | integer. Sum of 1=shift key, 2=ctrl key, 4=Alt key |
-| [6] | Element Type | integer |
+| `[2]` | Event | `'CalendarMove'` or 274 |
+| `[3]` | Item Number | integer |
+| `[4]` | Mouse Button | integer |
+| `[5]` | Shift State | integer. Sum of 1=shift key, 2=ctrl key, 4=Alt key |
+| `[6]` | Element Type | integer |
 
 
 For the meaning of elements 3 and 6, see [CalendarDown](../methodorevents/calendardown.md).

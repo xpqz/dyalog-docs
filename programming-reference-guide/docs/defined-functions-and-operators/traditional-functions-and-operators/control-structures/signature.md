@@ -15,10 +15,10 @@ This statement identifies the name and signature by which a function is exported
 
 | Element | Description |
 | --- | ---  |
-| rslttype | Specifies the data type for the result of the method |
-| name | Specifies the name of the exported method. |
-| argntype | Specifies the data type of the nth parameter |
-| argnname | Specifies the name of the nth parameter |
+| `rslttype` | Specifies the data type for the result of the method |
+| `name` | Specifies the name of the exported method. |
+| `argntype` | Specifies the data type of the nth parameter |
+| `argnname` | Specifies the name of the nth parameter |
 
 
 

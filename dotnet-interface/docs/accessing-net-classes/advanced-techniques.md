@@ -55,16 +55,16 @@ Note that calculations and comparisons performed by .NET methods are performed i
 
 | .NET Method | APL Primitive Function |
 | --- | ---  |
-| op_Addition | + |
-| op_Subtraction | - |
-| op_Multiply | × |
-| op_Division | ÷ |
-| op_Equality | = |
-| op_Inequality | ≠ |
-| op_LessThan | < |
-| op_LessThanOrEqual | ≤ |
-| op_GreaterThan | > |
-| op_GreaterThanOrEqual | ≥ |
+| op_Addition | `+` |
+| op_Subtraction | `-` |
+| op_Multiply | `×` |
+| op_Division | `÷` |
+| op_Equality | `=` |
+| op_Inequality | `≠` |
+| op_LessThan | `<` |
+| op_LessThanOrEqual | `≤` |
+| op_GreaterThan | `>` |
+| op_GreaterThanOrEqual | `≥` |
 
 So instead of calling the appropriate .NET method to compare two objects, you can use the familiar APL primitive instead. For example:
 ```apl

@@ -19,9 +19,9 @@ This method is used to delete a comment from a [Grid](../objects/grid.md).
 The argument to DelComment is a 2 array as follows or `⍬`:
 
 
-| [1] | Row | integer |
+| `[1]` | Row | integer |
 | --- | --- | ---  |
-| [2] | Column | integer |
+| `[2]` | Column | integer |
 
 
 For example, the following expression removes the comment associated with the cell at row 2, column 1.

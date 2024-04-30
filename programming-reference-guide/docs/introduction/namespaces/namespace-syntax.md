@@ -68,7 +68,7 @@ Apart from its use as a decimal separator (`3.14`), '`.`' is interpreted by look
 
 | Template | Interpretation | Example |
 | --- | --- | ---  |
-| ∘. | Outer product | 2 3 ∘.× 4 5 |
-| function. | Inner product | 2 3 +.× 4 5 |
-| ref. | Namespace reference | 2 3 x.foo 4 5 |
-| array. | Reference array expansion | (x y).⎕nc⊂'foo' |
+| `∘.` | Outer product | `2 3 ∘.× 4 5` |
+| `function.` | Inner product | `2 3 +.× 4 5` |
+| `ref.` | Namespace reference | `2 3 x.foo 4 5` |
+| `array.` | Reference array expansion | `(x y).⎕nc⊂'foo'` |

@@ -31,76 +31,76 @@ The ACTION code identifies the nature of the action to be taken when an associat
 Trappable Event Codes
 
 
-| C | Cutback | The state indicator is 'cut back' to the environment in which the `⎕TRAP` is locally defined (or to immediate execution level).  The APL expression in element 3 of the same `⎕TRAP` item is then executed. |
+| `C` | Cutback | The state indicator is 'cut back' to the environment in which the `⎕TRAP` is locally defined (or to immediate execution level).  The APL expression in element 3 of the same `⎕TRAP` item is then executed. |
 | --- | --- | ---  |
-| E | Execute | The APL expression in element 3 of the same `⎕TRAP` item is executed in the environment in which the event occurred. |
-| N | Next | The event is excluded from the current `⎕TRAP` definition.  The search will continue through further localised definitions of `⎕TRAP` . |
-| S | Stop | Stops the search and causes the normal APL action to be taken in the environment in which the event occurred. |
+| `E` | Execute | The APL expression in element 3 of the same `⎕TRAP` item is executed in the environment in which the event occurred. |
+| `N` | Next | The event is excluded from the current `⎕TRAP` definition.  The search will continue through further localised definitions of `⎕TRAP` . |
+| `S` | Stop | Stops the search and causes the normal APL action to be taken in the environment in which the event occurred. |
 
 
 
 | Code | Event |
 | --- | ---  |
-| 0 | **Any event** in range 1-999 |
-| 1 | WS FULL |
-| 2 | SYNTAX ERROR |
-| 3 | INDEX ERROR |
-| 4 | RANK ERROR |
-| 5 | LENGTH ERROR |
-| 6 | VALUE ERROR |
-| 7 | FORMAT ERROR |
-| 10 | LIMIT ERROR |
-| 11 | DOMAIN ERROR |
-| 12 | HOLD ERROR |
-| 16 | NONCE ERROR |
-| 18 | FILE TIE ERROR |
-| 19 | FILE ACCESS ERROR |
-| 20 | FILE INDEX ERROR |
-| 21 | FILE FULL |
-| 22 | FILE NAME ERROR |
-| 23 | FILE DAMAGED |
-| 24 | FILE TIED |
-| 25 | FILE TIED REMOTELY |
-| 26 | FILE SYSTEM ERROR |
-| 28 | FILE SYSTEM NOT AVAILABLE |
-| 30 | FILE SYSTEM TIES USED UP |
-| 31 | FILE TIE QUOTA USED UP |
-| 32 | FILE NAME QUOTA USED UP |
-| 34 | FILE SYSTEM NO SPACE |
-| 35 | FILE ACCESS ERROR - CONVERTING FILE |
-| 38 | FILE COMPONENT DAMAGED |
-| 52 | FIELD CONTENTS RANK ERROR |
-| 53 | FIELD CONTENTS TOO MANY COLUMNS |
-| 54 | FIELD POSITION ERROR |
-| 55 | FIELD SIZE ERROR |
-| 56 | FIELD CONTENTS/TYPE MISMATCH |
-| 57 | FIELD TYPE/BEHAVIOUR UNRECOGNISED |
-| 58 | FIELD ATTRIBUTES RANK ERROR |
-| 59 | FIELD ATTRIBUTES LENGTH ERROR |
-| 60 | FULL-SCREEN ERROR |
-| 61 | KEY CODE UNRECOGNISED |
-| 62 | KEY CODE RANK ERROR |
-| 63 | KEY CODE TYPE ERROR |
-| 70 | FORMAT FILE ACCESS ERROR |
-| 71 | FORMAT FILE ERROR |
-| 72 | NO PIPES |
-| 76 | PROCESSOR TABLE FULL |
-| 84 | TRAP ERROR |
-| 90 | EXCEPTION |
-| 92 | TRANSLATION ERROR |
-|  |  |
-| 200-499 | Reserved for distributed auxiliary processors |
-|  |  |
-| 500-999 | User-defined events |
-|  |  |
-| 1000 | **Any event** in range 1001-1008 |
-| 1001 | Stop vector |
-| 1002 | Weak interrupt |
-| 1003 | INTERRUPT |
-| 1005 | EOF INTERRUPT |
-| 1006 | TIMEOUT |
-| 1007 | RESIZE (Dyalog APL/X, Dyalog APL/W) |
-| 1008 | DEADLOCK |
+| `0` | `Any event in range 1-999` |
+| `1` | `WS FULL` |
+| `2` | `SYNTAX ERROR` |
+| `3` | `INDEX ERROR` |
+| `4` | `RANK ERROR` |
+| `5` | `LENGTH ERROR` |
+| `6` | `VALUE ERROR` |
+| `7` | `FORMAT ERROR` |
+| `10` | `LIMIT ERROR` |
+| `11` | `DOMAIN ERROR` |
+| `12` | `HOLD ERROR` |
+| `16` | `NONCE ERROR` |
+| `18` | `FILE TIE ERROR` |
+| `19` | `FILE ACCESS ERROR` |
+| `20` | `FILE INDEX ERROR` |
+| `21` | `FILE FULL` |
+| `22` | `FILE NAME ERROR` |
+| `23` | `FILE DAMAGED` |
+| `24` | `FILE TIED` |
+| `25` | `FILE TIED REMOTELY` |
+| `26` | `FILE SYSTEM ERROR` |
+| `28` | `FILE SYSTEM NOT AVAILABLE` |
+| `30` | `FILE SYSTEM TIES USED UP` |
+| `31` | `FILE TIE QUOTA USED UP` |
+| `32` | `FILE NAME QUOTA USED UP` |
+| `34` | `FILE SYSTEM NO SPACE` |
+| `35` | `FILE ACCESS ERROR - CONVERTING FILE` |
+| `38` | `FILE COMPONENT DAMAGED` |
+| `52` | `FIELD CONTENTS RANK ERROR` |
+| `53` | `FIELD CONTENTS TOO MANY COLUMNS` |
+| `54` | `FIELD POSITION ERROR` |
+| `55` | `FIELD SIZE ERROR` |
+| `56` | `FIELD CONTENTS/TYPE MISMATCH` |
+| `57` | `FIELD TYPE/BEHAVIOUR UNRECOGNISED` |
+| `58` | `FIELD ATTRIBUTES RANK ERROR` |
+| `59` | `FIELD ATTRIBUTES LENGTH ERROR` |
+| `60` | `FULL-SCREEN ERROR` |
+| `61` | `KEY CODE UNRECOGNISED` |
+| `62` | `KEY CODE RANK ERROR` |
+| `63` | `KEY CODE TYPE ERROR` |
+| `70` | `FORMAT FILE ACCESS ERROR` |
+| `71` | `FORMAT FILE ERROR` |
+| `72` | `NO PIPES` |
+| `76` | `PROCESSOR TABLE FULL` |
+| `84` | `TRAP ERROR` |
+| `90` | `EXCEPTION` |
+| `92` | `TRANSLATION ERROR` |
+| `` | `` |
+| `200-499` | `Reserved for distributed auxiliary processors` |
+| `` | `` |
+| `500-999` | `User-defined events` |
+| `` | `` |
+| `1000` | `Any event in range 1001-1008` |
+| `1001` | `Stop vector` |
+| `1002` | `Weak interrupt` |
+| `1003` | `INTERRUPT` |
+| `1005` | `EOF INTERRUPT` |
+| `1006` | `TIMEOUT` |
+| `1007` | `RESIZE (Dyalog APL/X, Dyalog APL/W)` |
+| `1008` | `DEADLOCK` |
 
 
 See [Programmer's Guide: "Trap Statement](../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/trap) for an alternative 'control structured' error trapping mechanism.

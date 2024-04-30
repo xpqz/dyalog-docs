@@ -21,9 +21,9 @@ The argument to GreetBitmap is `⍬` or a
 2 element vector as follows:
 
 
-| [1] | Display | 0 = off, 1 = on. |
+| `[1]` | Display | 0 = off, 1 = on. |
 | --- | --- | ---  |
-| [2] | Bitmap file name | Character vector. |
+| `[2]` | Bitmap file name | Character vector. |
 
 
 If the argument is `⍬`, the bitmap is

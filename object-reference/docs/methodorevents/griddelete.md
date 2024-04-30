@@ -19,11 +19,11 @@ If enabled, this event is reported when the user presses Delete and there are se
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 4-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'GridDelete'` or 193 |
-| [3] | Start | 2-element integer vector or matrix containing the row, column address(es) of the top left cell(s) in the selected block(s) |
-| [4] | End | 2-element integer vector or matrix containing the row, column address(es) of the bottom right cell(s) in the selected block(s) |
+| `[2]` | Event | `'GridDelete'` or 193 |
+| `[3]` | Start | 2-element integer vector or matrix containing the row, column address(es) of the top left cell(s) in the selected block(s) |
+| `[4]` | End | 2-element integer vector or matrix containing the row, column address(es) of the bottom right cell(s) in the selected block(s) |
 
 
 Note that the values of Start and End are sensitive to the index origin, `⎕IO`.

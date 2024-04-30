@@ -16,10 +16,10 @@
 `Y` is a 2- or 3-element integer vector whose elements are as follows:
 
 
-| [1] | negative tie number, |
+| `[1]` | negative tie number, |
 | --- | ---  |
-| [2] | start byte, counting from 0, at which the data is to be written; the value `¯1` causes the data to be written from the current position in the file (initially, 0). |
-| [3] | conversion code (optional). |
+| `[2]` | start byte, counting from 0, at which the data is to be written; the value `¯1` causes the data to be written from the current position in the file (initially, 0). |
+| `[3]` | conversion code (optional). |
 
 
 

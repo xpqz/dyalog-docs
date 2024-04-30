@@ -28,11 +28,11 @@ Unicode Edition
 
 | Style | Encoding | Description |
 | --- | ---  |
-| 'Raw' | 'None' | Not applicable. Only integer data may be transmitted/received. |
-| 'Char' | 'None' | Transmission is limited to characters with Unicode code points in the         range 0-255. Attempting to transmit (or receive) a character outside         this range will cause `DOMAIN ERROR` . |
-| 'UTF-8' | Characters are transmitted/received using the UTF-8 encoding scheme. |
-| 'APL' | 'Classic' | Characters are transmitted/received as indices of `⎕AV` ,         and translated according to the current value of `⎕AVU` .         An attempt to transmit or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` |
-| 'Unicode' | Characters are transmitted/received *as is* (as Unicode code         points). |
+| `'Raw'` | 'None' | Not applicable. Only integer data may be transmitted/received. |
+| `'Char'` | 'None' | Transmission is limited to characters with Unicode code points in the         range 0-255. Attempting to transmit (or receive) a character outside         this range will cause `DOMAIN ERROR` . |
+| `'UTF-8'` | Characters are transmitted/received using the UTF-8 encoding scheme. |
+| `'APL'` | 'Classic' | Characters are transmitted/received as indices of `⎕AV` ,         and translated according to the current value of `⎕AVU` .         An attempt to transmit or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` |
+| `'Unicode'` | Characters are transmitted/received *as is* (as Unicode code         points). |
 
 
 
@@ -42,11 +42,11 @@ Classic Edition
 
 | Style | Encoding | Description |
 | --- | ---  |
-| 'Raw' | 'None' | Not applicable. Only integer data may be transmitted/received. |
-| 'Char' | 'None' | Characters (which are represented internally as indices of `⎕AV` ) are         translated to and from ASCII using the Output Translate Table win.dot. |
-| 'UTF-8' | Characters are converted to/from Unicode using `⎕AVU` and transmitted/received using the UTF-8 encoding scheme. An attempt to         transmit or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` . |
-| 'Raw' | 'Classic' | Characters are transmitted/received as indices of `⎕AV` . |
-| 'Unicode' | Characters are converted to/from Unicode using `⎕AVU` and transmitted/received as Unicode code points. An attempt to transmit         or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` . |
+| `'Raw'` | 'None' | Not applicable. Only integer data may be transmitted/received. |
+| `'Char'` | 'None' | Characters (which are represented internally as indices of `⎕AV` ) are         translated to and from ASCII using the Output Translate Table win.dot. |
+| `'UTF-8'` | Characters are converted to/from Unicode using `⎕AVU` and transmitted/received using the UTF-8 encoding scheme. An attempt to         transmit or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` . |
+| `'Raw'` | 'Classic' | Characters are transmitted/received as indices of `⎕AV` . |
+| `'Unicode'` | Characters are converted to/from Unicode using `⎕AVU` and transmitted/received as Unicode code points. An attempt to transmit         or receive a characters not present in `⎕AVU` will cause `TRANSLATION ERROR` . |
 
 
 

@@ -21,12 +21,12 @@ This event is reported when the user touches one or two fingers on an object and
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'GesturePan'` or 494 |
-| [3] | Flags | integer which reports the state of the gesture |
-| [4] | Location | 2-element integer vector containing the y and x-position respectively of the point at which the gesture applies. These are reported in pixel coordinates relative to the origin (top-left corner) of the object reporting the event. |
-| [5] | Distance | 2-element integer vector containing the high and low parts (words) of a 64-bit integer that indicates the distance between the two fingers. This will be (0 0) if only one finger is used. |
+| `[2]` | Event | `'GesturePan'` or 494 |
+| `[3]` | Flags | integer which reports the state of the gesture |
+| `[4]` | Location | 2-element integer vector containing the y and x-position respectively of the point at which the gesture applies. These are reported in pixel coordinates relative to the origin (top-left corner) of the object reporting the event. |
+| `[5]` | Distance | 2-element integer vector containing the high and low parts (words) of a 64-bit integer that indicates the distance between the two fingers. This will be (0 0) if only one finger is used. |
 
 
 
@@ -36,10 +36,10 @@ The Flags parameter [3] which reports the state of the Gesture, is an integer wi
 
 | Name | Value | Description |
 | --- | --- | ---  |
-|  | 0 | A gesture is in progress |
-| GF_BEGIN | 1 | A gesture is starting. |
-| GF_INERTIA | 2 | A gesture has triggered inertia. |
-| GF_END | 4 | A gesture has finished. |
+| `` | 0 | A gesture is in progress |
+| `GF_BEGIN` | 1 | A gesture is starting. |
+| `GF_INERTIA` | 2 | A gesture has triggered inertia. |
+| `GF_END` | 4 | A gesture has finished. |
 
 
 

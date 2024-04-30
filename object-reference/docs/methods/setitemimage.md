@@ -19,9 +19,9 @@ This method is used to allocate a picture icon to a particular item in a [TreeVi
 The argument to SetItemImage is a 2-element array as follows:
 
 
-| [1] | Item number | Integer. |
+| `[1]` | Item number | Integer. |
 | --- | --- | ---  |
-| [2] | Picture index | Integer. |
+| `[2]` | Picture index | Integer. |
 
 
 *Item number* is the index of the item concerned.

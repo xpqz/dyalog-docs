@@ -19,12 +19,12 @@ If enabled, this event is reported when the user changes the screen resolution o
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DisplayChange'` or 137 |
-| [3] | Height | Integer. Number of pixels in the y-direction |
-| [4] | Width | Integer. Number of pixels in the x-direction |
-| [5] | Number of colours | Integer. |
+| `[2]` | Event | `'DisplayChange'` or 137 |
+| `[3]` | Height | Integer. Number of pixels in the y-direction |
+| `[4]` | Width | Integer. Number of pixels in the x-direction |
+| `[5]` | Number of colours | Integer. |
 
 
 

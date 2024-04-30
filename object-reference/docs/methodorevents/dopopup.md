@@ -24,25 +24,25 @@ By default the HTMLRenderer ignores a request for a new window, but if  the DoPo
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 4-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DoPopup'` or 846 |
-| [3] | URL | the requested url |
-| [4] | Attributes | requested window attributes (see below) |
+| `[2]` | Event | `'DoPopup'` or 846 |
+| `[3]` | URL | the requested url |
+| `[4]` | Attributes | requested window attributes (see below) |
 
 
 
 **Attributes** is a 7-element nested vector that specifies the requested attributes for the new window. The HTMLRenderer  currently provides no mechanism to use this information.
 
 
-| [1] | 2-element vector of top, left positions – positions not specified are ⍬ |
+| `[1]` | 2-element vector of top, left positions – positions not specified are ⍬ |
 | --- | ---  |
-| [2] | 2-element vector of height, width – sizes not specified are ⍬ |
-| [3] | Integer "WindowDisposition". See https://magpcss.org/ceforum/apidocs3/projects/(default)/cef_window_open_disposition_t.html. |
-| [4] | Boolean menubar (default=1) |
-| [5] | Boolean scrollbar (default=1 |
-| [6] | Boolean statusbar (default=1) |
-| [7] | Boolean location/toolbar (default=1) |
+| `[2]` | 2-element vector of height, width – sizes not specified are ⍬ |
+| `[3]` | Integer "WindowDisposition". See https://magpcss.org/ceforum/apidocs3/projects/(default)/cef_window_open_disposition_t.html. |
+| `[4]` | Boolean menubar (default=1) |
+| `[5]` | Boolean scrollbar (default=1 |
+| `[6]` | Boolean statusbar (default=1) |
+| `[7]` | Boolean location/toolbar (default=1) |
 
 
 To respond to the request for a new window, the callback function should open the requested URL as appropriate, for example, in a newly created [HTMLRenderer](../objects/htmlrenderer.md) object.

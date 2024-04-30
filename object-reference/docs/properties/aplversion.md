@@ -19,14 +19,14 @@ a 4-element vector of character vectors as described in the table below. In futu
 
 | Index | Description | Possible Values |
 | --- | --- | ---  |
-| [1] | Target Environment | Windows Windows-64 Windows Mobile Linux Linux-64 AIX AIX-64 Mac-64 Solaris Solaris-64 |
-| [2] | Version Number |  |
-| [3] | Version Type | W Windows S Server (terminal) version M Motif P PocketAPL | W | Windows | S | Server (terminal) version | M | Motif | P | PocketAPL |
+| `[1]` | Target Environment | `WindowsWindows-64Windows MobileLinuxLinux-64AIXAIX-64Mac-64SolarisSolaris-64` |
+| `[2]` | Version Number |  |
+| `[3]` | Version Type | W Windows S Server (terminal) version M Motif P PocketAPL | W | Windows | S | Server (terminal) version | M | Motif | P | PocketAPL |
 | W | Windows |
 | S | Server (terminal) version |
 | M | Motif |
 | P | PocketAPL |
-| [4] | Program Type | Development Runtime DLL DLLRT |
+| `[4]` | Program Type | `DevelopmentRuntimeDLLDLLRT` |
 
 
 

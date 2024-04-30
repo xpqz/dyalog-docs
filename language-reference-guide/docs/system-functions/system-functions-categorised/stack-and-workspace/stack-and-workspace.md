@@ -2,17 +2,17 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕LC](../../lc.md) | Line Count |
-| [⎕LX](../../lx.md) | Latent Expression |
-| [⎕NC](../../nc.md) | Name Classification |
-| [⎕NL](../../nl.md) | Name List |
-| [⎕NSI](../../nsi.md) | Namespace Indicator |
-| [⎕RSI](../../rsi.md) | Space Indicator |
-| [⎕SI](../../si.md) | State Indicator |
-| [⎕SHADOW](../../shadow.md) | Shadow names |
-| [⎕SIZE](../../size.md) | Size of objects |
-| [⎕STACK](../../stack.md) | Report Stack |
-| [⎕STATE](../../state.md) | Return State of an object |
-| [⎕WA](../../wa.md) | Workspace Available |
-| [⎕WSID](../../wsid.md) | Workspace Identification |
-| [⎕XSI](../../xsi.md) | Extended State Indicator |
+| `⎕LC` | Line Count |
+| `⎕LX` | Latent Expression |
+| `⎕NC` | Name Classification |
+| `⎕NL` | Name List |
+| `⎕NSI` | Namespace Indicator |
+| `⎕RSI` | Space Indicator |
+| `⎕SI` | State Indicator |
+| `⎕SHADOW` | Shadow names |
+| `⎕SIZE` | Size of objects |
+| `⎕STACK` | Report Stack |
+| `⎕STATE` | Return State of an object |
+| `⎕WA` | Workspace Available |
+| `⎕WSID` | Workspace Identification |
+| `⎕XSI` | Extended State Indicator |

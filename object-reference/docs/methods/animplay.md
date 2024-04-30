@@ -18,10 +18,10 @@ The AnimPlay method plays an AVI clip in an Animation object.
 The argument to AnimPlay is a 3-element array as follows:
 
 
-| [1] | Repeat | integer |
+| `[1]` | Repeat | integer |
 | --- | --- | ---  |
-| [2] | From | integer |
-| [3] | To | integer |
+| `[2]` | From | integer |
+| `[3]` | To | integer |
 
 
 *Repeat* specifies the number of times the clip is repeated. A value of -1 causes the clip to be repeated indefinitely.

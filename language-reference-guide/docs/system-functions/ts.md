@@ -10,14 +10,14 @@
 This is a seven element vector which identifies the clock time set on the particular installation as follows:
 
 
-| ⎕TS[1] | Year |
+| `⎕TS[1]` | Year |
 | --- | ---  |
-| ⎕TS[2] | Month |
-| ⎕TS[3] | Day |
-| ⎕TS[4] | Hour |
-| ⎕TS[5] | Minute |
-| ⎕TS[6] | Second |
-| ⎕TS[7] | Millisecond |
+| `⎕TS[2]` | Month |
+| `⎕TS[3]` | Day |
+| `⎕TS[4]` | Hour |
+| `⎕TS[5]` | Minute |
+| `⎕TS[6]` | Second |
+| `⎕TS[7]` | Millisecond |
 
 
 

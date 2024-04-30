@@ -9,12 +9,12 @@ A `:Field` statement is a single statement whose elements are as follows:
 
 | Element | Description |
 | --- | ---  |
-| Private&#124;Public | Specifies whether or not the Field is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
-| Instance&#124;Shared | Specifies if there is a separate value of the Field in each Instance of the Class, or if there is only a single value that is shared between all Instances. |
-| ReadOnly | If specified, this keyword prevents the value in the Field from being changed after initialisation. |
-| Type | If specified, this identifies a .Net type for the Field. This type applies only when the Class is exported as a .NET Assembly. |
-| FieldName | Specifies the name of the Field (mandatory). |
-| ← expr | Specifies an initial value for the Field. |
+| `Private|Public` | Specifies whether or not the Field is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
+| `Instance|Shared` | Specifies if there is a separate value of the Field in each Instance of the Class, or if there is only a single value that is shared between all Instances. |
+| `ReadOnly` | If specified, this keyword prevents the value in the Field from being changed after initialisation. |
+| `Type` | If specified, this identifies a .Net type for the Field. This type applies only when the Class is exported as a .NET Assembly. |
+| `FieldName` | Specifies the name of the Field (mandatory). |
+| `← expr` | Specifies an initial value for the Field. |
 
 **Examples**
 

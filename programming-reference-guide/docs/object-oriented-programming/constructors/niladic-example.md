@@ -55,7 +55,7 @@ When the line:
 
 is encountered, `⎕NEW` cannot call the niladic constructor in the Base Class (there is none) so the chain of Constructors ends. Then, as the state indicator unwinds ...
 
-| Bird.egg0 | executes | Desc←'Bird'' |
+| Bird.egg0 | executes | `Desc←'Bird''` |
 | --- | --- | ---  |
-| Parrot.egg0 | executes | Desc,←'→Parrot'' |
-| DomesticParrot.egg0 | execute | Desc,←'→DomesticParrot'' |
+| Parrot.egg0 | executes | `Desc,←'→Parrot''` |
+| DomesticParrot.egg0 | execute | `Desc,←'→DomesticParrot''` |

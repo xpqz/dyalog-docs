@@ -13,10 +13,10 @@ This is a system object that identifies the most recent *Exception* thrown by a 
 `⎕EXCEPTION` derives from the Microsoft .NET class System.Exception. Among its properties are the following, all of which are strings:
 
 
-| Source | The name of the .NET namespace in which the exception was generated |
+| `Source` | The name of the .NET namespace in which the exception was generated |
 | --- | ---  |
-| StackTrace | The calling stack |
-| Message | The error message |
+| `StackTrace` | The calling stack |
+| `Message` | The error message |
 
 ```apl
       ⎕USING←'System'

@@ -2,15 +2,15 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕Á](../underscored-alphabetic-characters.md) | Underscored Alphabetic Characters |
-| [⎕AV](../av.md) | Atomic Vector |
-| [⎕AVU](../avu.md) | Atomic Vector - Unicode |
-| [⎕KL](../kl.md) | Key Labels |
-| [⎕PFKEY](../pfkey.md) | Programmable Function Keys |
-| [⎕SD](../sd.md) | Screen Dimensions |
-| [⎕SM](../sm.md) | Screen Map |
-| [⎕SR](../sr.md) | Screen Read |
-| [⎕OPT](../opt.md) | Variant Operator |
-| [⎕TC](../tc.md) | Terminal Control |
-| [⎕XT](../set-external-variable.md) | Associate External variable |
-| [⎕XT](../query-external-variable.md) | Query External variable |
+| `⎕Á` | Underscored Alphabetic Characters |
+| `⎕AV` | Atomic Vector |
+| `⎕AVU` | Atomic Vector - Unicode |
+| `⎕KL` | Key Labels |
+| `⎕PFKEY` | Programmable Function Keys |
+| `⎕SD` | Screen Dimensions |
+| `⎕SM` | Screen Map |
+| `⎕SR` | Screen Read |
+| `⎕OPT` | Variant Operator |
+| `⎕TC` | Terminal Control |
+| `⎕XT` | Associate External variable |
+| `⎕XT` | Query External variable |

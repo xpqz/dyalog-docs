@@ -16,9 +16,9 @@
 The shy result `R` is a vector of numeric items, one per each specified function containing the following values:
 
 
-| 0 | No change was made; the name is not that of a function, or the function was locked |
+| `0` | No change was made; the name is not that of a function, or the function was locked |
 | --- | ---  |
-| 1 | The time and user stamp were updated |
+| `1` | The time and user stamp were updated |
 
 
 

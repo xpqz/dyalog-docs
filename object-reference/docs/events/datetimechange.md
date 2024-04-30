@@ -19,13 +19,13 @@ If enabled, this event is reported by a [DateTimePicker](../objects/datetimepick
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DateTimeChange'` or 267 |
-| [3] | IDN | integer |
-| [4] | Hour | integer |
-| [5] | Minute | integer |
-| [6] | Second | integer |
+| `[2]` | Event | `'DateTimeChange'` or 267 |
+| `[3]` | IDN | integer |
+| `[4]` | Hour | integer |
+| `[5]` | Minute | integer |
+| `[6]` | Second | integer |
 
 
 This event is reported for information only and cannot be disabled or modified in any way. It is not possible to enqueue this event; set the DateTime value instead.

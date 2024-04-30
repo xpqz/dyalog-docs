@@ -19,10 +19,10 @@ This method is used to redefine the arguments or data types associated with a me
 The argument to SetMethodInfo is a 2 or 3-element array as follows:
 
 
-| [1] | Method name | character vector |
+| `[1]` | Method name | character vector |
 | --- | --- | ---  |
-| [2] | Method info | nested vector (see below) |
-| [3] | Method index | integer |
+| `[2]` | Method info | nested vector (see below) |
+| `[3]` | Method index | integer |
 
 
 

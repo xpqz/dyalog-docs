@@ -24,7 +24,7 @@ For each event supported by a COM object, the author will have registered the da
 The argument to GetEventInfo is a single item as follows:
 
 
-[1] Event name(s) see below
+`[1]` Event name(s) see below
 
 
 

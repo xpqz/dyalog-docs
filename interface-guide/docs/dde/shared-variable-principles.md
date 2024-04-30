@@ -51,11 +51,11 @@ Each shared variable has a **state vector** which indicates which partner has se
 
 The state vector will have one of the following values:
 
-| 0 0 0 0 | The variable is not shared |
+| `0 0 0 0` | The variable is not shared |
 | --- | ---  |
-| 0 0 1 1 | Both partners know the current value |
-| 1 0 1 0 | You have set the value, but your partner has yet to use it. |
-| 0 1 0 1 | Your partner has set the variable but you have not yet used it. |
+| `0 0 1 1` | Both partners know the current value |
+| `1 0 1 0` | You have set the value, but your partner has yet to use it. |
+| `0 1 0 1` | Your partner has set the variable but you have not yet used it. |
 
 It may not be immediately apparent as to how the information provided by `⎕SVS` can be used. The answer, as we will see later, is that communications generates **events**. That is to say, when your partner sets a shared variable to a new value or references a value that you have set, an event is generated telling you that something has happened. `⎕SVS` is then used to determine what has happened (set or use) and, if you have several variables shared, which one of the variables has in some way changed state. A shared variable state change is thus the trigger that forces some kind of action out of the other process.
 
@@ -73,11 +73,11 @@ In simple terms, `⎕SVC` allows an application to inhibit its partner from sett
 
 The access control vector is a 4-element Boolean vector whose elements specify access control as follows:
 
-| [1] | 1 means that you cannot set the variable until your partner has used it. |
+| `[1]` | 1 means that you cannot set the variable until your partner has used it. |
 | --- | ---  |
-| [2] | 1 means that your partner cannot set the variable until you have used it. |
-| [3] | 1 means that you cannot use the variable until your partner has set it. |
-| [4] | 1 means that your partner cannot use the variable until you have set it. |
+| `[2]` | 1 means that your partner cannot set the variable until you have used it. |
+| `[3]` | 1 means that you cannot use the variable until your partner has set it. |
+| `[4]` | 1 means that your partner cannot use the variable until you have set it. |
 
 In principle, each of the two partners maintains its own copy of the access control vector using `⎕SVC`. Control is actually imposed by the **effective access control vector** which is the result of "ORing" the two individual ones. From your own point of view, the effective access control vector is:
 

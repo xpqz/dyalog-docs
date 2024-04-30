@@ -19,11 +19,11 @@ The ShowBalloonTip method displays a BalloonTip in a [SysTrayItem](../objects/sy
 The argument to ShowBalloonTip is a  1, 2, 3 or 4-element array as follows:
 
 
-| [1] | Title | character vector |
+| `[1]` | Title | character vector |
 | --- | --- | ---  |
-| [2] | Text | character vector or matrix |
-| [3] | Icon | Integer scalar,  a character vector or a ref |
-| [4] | Flags | Integer |
+| `[2]` | Text | character vector or matrix |
+| `[3]` | Icon | Integer scalar,  a character vector or a ref |
+| `[4]` | Flags | Integer |
 
 
 The *Title* parameter is the text to be displayed in the BalloonTip title (maximum length 64).

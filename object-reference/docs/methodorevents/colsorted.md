@@ -21,9 +21,9 @@ This method is used to specify that an image is to be displayed in a [Grid](../o
 The argument to ColSorted is a 2-element array as follows:
 
 
-| [1] | Column number | Integer. |
+| `[1]` | Column number | Integer. |
 | --- | --- | ---  |
-| [2] | Sorted state | Integer. -1 = Sorted Down 0 = Unsorted 1 = Sorted Up |
+| `[2]` | Sorted state | Integer. -1 = Sorted Down 0 = Unsorted 1 = Sorted Up |
 
 
 

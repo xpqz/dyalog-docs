@@ -8,8 +8,8 @@ The *token* is `simple indexing`, there are no *lfn* or *rfn*, the left argument
 
 | APL  expression | token | lfn | rfn | ltype | rtype | lrank | rrank | lbound | rbound |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---  |
-| 'abcd'[3 3⍴3] | simple indexing |  |  | unicode8 | int8 | 1 | 1 | 2<4 | 5<9 |
-| (2 2⍴4)[1;] | simple indexing |  |  | int8 | int8 | 2 | 1 | 2<4 | 1<1 |
+| `'abcd'[3 3⍴3]` | `simple indexing` |  |  | unicode8 | int8 | 1 | 1 | 2<4 | 5<9 |
+| `(2 2⍴4)[1;]` | `simple indexing` |  |  | int8 | int8 | 2 | 1 | 2<4 | 1<1 |
 
 ### Reach and Choose Indexing (where the indexer is a nested array)
 

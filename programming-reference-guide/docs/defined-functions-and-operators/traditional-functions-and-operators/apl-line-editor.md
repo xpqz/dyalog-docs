@@ -87,15 +87,15 @@ Editing directives, summarised in Figure 2(iv) are permitted as the first non-bl
 
 | Syntax | Description |
 | --- | ---  |
-| ∇ | Closes definition mode |
-| [⎕] | Displays the entire operation |
-| [⎕n] | Displays the operation starting at line n |
-| [n⎕] | Displays only line n |
-| [∆n] | Deletes line n |
-| [n∆m] | Deletes m lines starting at line n |
-| [n] | Prompts for input at line n |
-| [n]s | Replaces or inserts a statement at line n |
-| [n⎕m] | Edits line n placing the cursor at character position m where an Edit Control Symbol performs a specific action. |
+| `∇` | Closes definition mode |
+| `[⎕]` | Displays the entire operation |
+| `[⎕n]` | Displays the operation starting at line n |
+| `[n⎕]` | Displays only line n |
+| `[∆n]` | Deletes line n |
+| `[n∆m]` | Deletes m lines starting at line n |
+| `[n]` | Prompts for input at line n |
+| `[n]s` | Replaces or inserts a statement at line n |
+| `[n⎕m]` | Edits line n placing the cursor at character position m where an Edit Control Symbol performs a specific action. |
 
 ## Line Numbers
 

@@ -24,14 +24,14 @@ If a name specifies a new symbol it is taken to be a function or operator.  How
 The type of a new object may be specified explicitly by preceding its name with an appropriate symbol as follows:
 
 
-| ∇ | function or operator |
+| `∇` | function or operator |
 | --- | ---  |
-| → | simple character vector |
-| ∊ | vector of character vectors |
-| - | character matrix |
-| ⍟ | Namespace script |
-| ○ | Class script |
-| ∘ | Interface |
+| `→` | simple character vector |
+| `∊` | vector of character vectors |
+| `-` | character matrix |
+| `⍟` | Namespace script |
+| `○` | Class script |
+| `∘` | Interface |
 
 
 

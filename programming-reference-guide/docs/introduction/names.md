@@ -17,7 +17,7 @@ Note that using a standard Unicode font (rather than APL385 Unicode used in the 
 
 | Legal | Illegal |
 | --- | ---  |
-| THIS∆IS∆A∆NAME | BAD NAME |
-| X1233 | 3+21 |
-| SALES | S!H&#124;PRICE |
-| pjb_1 | 1_pjb |
+| `THIS∆IS∆A∆NAME` | `BAD NAME` |
+| `X1233` | `3+21` |
+| `SALES` | `S!H|PRICE` |
+| `pjb_1` | `1_pjb` |

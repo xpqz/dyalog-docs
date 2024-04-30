@@ -21,14 +21,14 @@ This event is triggered when [HTMLRenderer](../objects/htmlrenderer.md) requests
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'SelectCertificate'` or 848 |
-| [3] | Index | Integer (see below) |
-| [4] | Addr | Host address |
-| [5] | Port | Host port |
-| [6] |  | `'is proxy'` |
-| [7] | Certificates | See below |
+| `[2]` | Event | `'SelectCertificate'` or 848 |
+| `[3]` | Index | Integer (see below) |
+| `[4]` | Addr | Host address |
+| `[5]` | Port | Host port |
+| `[6]` |  | `'is proxy'` |
+| `[7]` | Certificates | See below |
 
 
 
@@ -38,10 +38,10 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 
 | Name | Description |
 | --- | ---  |
-| DER | Distinguished Encoding Rules. Character Vector. |
-| Subject | Namespace (see below) |
-| Issuer | Namespace (see below) |
-| SerialNumber | Integer |
+| `DER` | Distinguished Encoding Rules. Character Vector. |
+| `Subject` | Namespace (see below) |
+| `Issuer` | Namespace (see below) |
+| `SerialNumber` | Integer |
 
 
 
@@ -51,9 +51,9 @@ The **Subject** and **Issuer** namespaces contain the following variables:
 
 | Name | Description |
 | --- | ---  |
-| CommonName | Character vector |
-| CountryName | Character vector |
-| DisplayName | Character vector |
+| `CommonName` | Character vector |
+| `CountryName` | Character vector |
+| `DisplayName` | Character vector |
 
 
 

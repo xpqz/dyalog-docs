@@ -19,12 +19,12 @@ RowTreeStyle specifies the visible attributes of the tree displayed in the Row t
 The value of the RowTreeStyle property is a character vector chosen from the following :
 
 
-| 'LinesOnly' | Only the lines of the tree structure are drawn. |
+| `'LinesOnly'` | Only the lines of the tree structure are drawn. |
 | --- | ---  |
-| 'ImagesOnly' | Only the images of nodes with children are drawn. |
-| 'ImagesAndLines' | Both lines and images for nodes with children are drawn. |
-| 'AllImagesOnly' | Images for all nodes are drawn. |
-| 'AllImagesAndLines' | Both lines and images for all nodes are drawn. |
+| `'ImagesOnly'` | Only the images of nodes with children are drawn. |
+| `'ImagesAndLines'` | Both lines and images for nodes with children are drawn. |
+| `'AllImagesOnly'` | Images for all nodes are drawn. |
+| `'AllImagesAndLines'` | Both lines and images for all nodes are drawn. |
 
 
 

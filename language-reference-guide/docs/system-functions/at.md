@@ -50,11 +50,11 @@ The following values correspond to the syntax shown alongside:
 `R[3]` or `R[;3]`: Each item is an integer reporting the current `⎕LOCK` state of the function:
 
 
-| 0 | Not locked |
+| `0` | Not locked |
 | --- | ---  |
-| 1 | Cannot display function |
-| 2 | Cannot suspend function |
-| 3 | Cannot display or suspend |
+| `1` | Cannot display function |
+| `2` | Cannot suspend function |
+| `3` | Cannot display or suspend |
 
 
 

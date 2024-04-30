@@ -24,7 +24,7 @@ For each method supported by a COM object the author will have registered a help
 The argument to GetMethodInfo is a single item as follows:
 
 
-[1] Method name(s) see below
+`[1]` Method name(s) see below
 
 
 *Method name(s)* is a simple character vector or a vector of character vectors specifying one or more names of methods supported by the object.

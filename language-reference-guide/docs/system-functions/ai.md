@@ -10,11 +10,11 @@
 This is a simple integer vector, whose four elements are:
 
 
-| ⎕AI[1] | user identification. [^1] |
+| `⎕AI[1]` | user identification. [^1] |
 | --- | ---  |
-| ⎕AI[2] | compute time for the APL session in milliseconds. |
-| ⎕AI[3] | connect time for the APL session in milliseconds. |
-| ⎕AI[4] | keying time for the APL session in milliseconds. |
+| `⎕AI[2]` | compute time for the APL session in milliseconds. |
+| `⎕AI[3]` | connect time for the APL session in milliseconds. |
+| `⎕AI[4]` | keying time for the APL session in milliseconds. |
 
 
 Elements beyond 4 are not defined but reserved.

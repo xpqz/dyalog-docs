@@ -8,42 +8,42 @@ A system variable can never be undefined. Default values are assigned to all sys
 
 | Name | Description | Scope |
 | --- | --- | ---  |
-| [⎕AVU](../avu.md) | Atomic Vector – Unicode | Namespace |
-| [⎕CT](../../primitive-functions/subtract.md) | Comparison Tolerance | Namespace |
-| [⎕DCT](../dct.md) | Decimal Comp Tolerance | Namespace |
-| [⎕DIV](../div.md) | Division Method | Namespace |
-| [⎕FR](../fr.md) | Floating-Point Representation | Namespace |
-| [⎕IO](../io.md) | Index Origin | Namespace |
-| [⎕LX](../lx.md) | Latent Expression | Workspace |
-| [⎕ML](../ml.md) | Migration Level | Namespace |
-| [⎕PATH](../path.md) | Search Path | Session |
-| [⎕PP](../pp.md) | Print Precision | Namespace |
-| [⎕PW](../pw.md) | Print Width | Session |
-| [⎕RL](../rl.md) | Random Link | Namespace |
-| [⎕RTL](../rtl.md) | Response Time Limit | Namespace |
-| [⎕SM](../sm.md) | Screen Map | Workspace |
-| [⎕TNAME](../tname.md) | Thread Name | Workspace |
-| [⎕TRAP](../trap.md) | Event Trap | Workspace |
-| [⎕USING](../using.md) | Microsoft .NET Search Path | Namespace |
-| [⎕WSID](../wsid.md) | Workspace ID | Workspace |
-| [⎕WX](../wx.md) | Window Expose | Namespace |
+| `⎕AVU` | Atomic Vector – Unicode | Namespace |
+| `⎕CT` | Comparison Tolerance | Namespace |
+| `⎕DCT` | Decimal Comp Tolerance | Namespace |
+| `⎕DIV` | Division Method | Namespace |
+| `⎕FR` | Floating-Point Representation | Namespace |
+| `⎕IO` | Index Origin | Namespace |
+| `⎕LX` | Latent Expression | Workspace |
+| `⎕ML` | Migration Level | Namespace |
+| `⎕PATH` | Search Path | Session |
+| `⎕PP` | Print Precision | Namespace |
+| `⎕PW` | Print Width | Session |
+| `⎕RL` | Random Link | Namespace |
+| `⎕RTL` | Response Time Limit | Namespace |
+| `⎕SM` | Screen Map | Workspace |
+| `⎕TNAME` | Thread Name | Workspace |
+| `⎕TRAP` | Event Trap | Workspace |
+| `⎕USING` | Microsoft .NET Search Path | Namespace |
+| `⎕WSID` | Workspace ID | Workspace |
+| `⎕WX` | Window Expose | Namespace |
 
 In other words,  `⎕PATH` and `⎕PW` relate to the session.  `⎕LX`, `⎕SM`, `⎕TRAP` and `⎕WSID` relate to the active workspace.  All the other system variables relate to the current namespace.
 
 | Session | Workspace | Namespace |
 | --- | --- | ---  |
-| [⎕PATH](../path.md) | [⎕LX](../lx.md) | [⎕AVU](../avu.md) |
-| [⎕PW](../pw.md) | [⎕SM](../sm.md) | [⎕CT](../../primitive-functions/subtract.md) |
-|  | [⎕TRAP](../trap.md) | [⎕DCT](../dct.md) |
-|  | [⎕WSID](../wsid.md) | [⎕DIV](../div.md) |
-|  |  | [⎕FR](../fr.md) |
-|  |  | [⎕IO](../io.md) |
-|  |  | [⎕ML](../ml.md) |
-|  |  | [⎕PP](../pp.md) |
-|  |  | [⎕RL](../rl.md) |
-|  |  | [⎕RTL](../rtl.md) |
-|  |  | [⎕USING](../using.md) |
-|  |  | [⎕WX](../wx.md) |
+| `⎕PATH` | `⎕LX` | `⎕AVU` |
+| `⎕PW` | `⎕SM` | `⎕CT` |
+| `` | `⎕TRAP` | `⎕DCT` |
+| `` | `⎕WSID` | `⎕DIV` |
+| `` | `` | `⎕FR` |
+| `` | `` | `⎕IO` |
+| `` | `` | `⎕ML` |
+| `` | `` | `⎕PP` |
+| `` | `` | `⎕RL` |
+| `` | `` | `⎕RTL` |
+| `` | `` | `⎕USING` |
+| `` | `` | `⎕WX` |
 
 Note that the value assigned to a system variable must be appropriate; otherwise an error will be reported immediately.
 

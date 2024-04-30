@@ -16,11 +16,11 @@ The `:Access` statement is used to specify characteristics for functions  that r
 
 | Element | Description |
 | --- | ---  |
-| Private&#124;Public | Specifies whether or not the method is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
-| Instance&#124;Shared | Specifies whether the method runs in the Class or Instance. The default is `Instance` . |
-| WebMethod | Specifies that the method is exported as a web method. This applies only to a Class that implements a Web Service. |
-| Overridable | Applies only to an Instance Method and specifies that the Method may be overridden by a Method in a higher Class. See below. |
-| Override | Applies only to an Instance Method and specifies that the Method overrides the corresponding Overridable Method defined in the Base Class. See below |
+| `Private|Public` | Specifies whether or not the method is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
+| `Instance|Shared` | Specifies whether the method runs in the Class or Instance. The default is `Instance` . |
+| `WebMethod` | Specifies that the method is exported as a web method. This applies only to a Class that implements a Web Service. |
+| `Overridable` | Applies only to an Instance Method and specifies that the Method may be overridden by a Method in a higher Class. See below. |
+| `Override` | Applies only to an Instance Method and specifies that the Method overrides the corresponding Overridable Method defined in the Base Class. See below |
 
 
 #### Overridable/Override

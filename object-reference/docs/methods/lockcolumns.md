@@ -22,9 +22,9 @@ column titles as specified by the [ColTitleDepth](../properties/coltitledepth.md
 The argument to LockColumns is a 1 or 2-element vector as follows.
 
 
-| [1] | Column(s) | integer scalar, vector or matrix |
+| `[1]` | Column(s) | integer scalar, vector or matrix |
 | --- | --- | ---  |
-| [2] | Lock flag | 0 or 1 |
+| `[2]` | Lock flag | 0 or 1 |
 
 
 

@@ -19,9 +19,9 @@ This method is used to delete items from a [TreeView](../objects/treeview.md) ob
 The argument to DeleteItems is a 2-element array as follows:
 
 
-| [1] | Item number | Integer. |
+| `[1]` | Item number | Integer. |
 | --- | --- | ---  |
-| [2] | Number of Items | Integer. |
+| `[2]` | Number of Items | Integer. |
 
 
 *Item number* specifies the index of the first item to be removed.

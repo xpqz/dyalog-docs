@@ -19,9 +19,9 @@ This method causes the object to be recreated from the file named in its [File](
 The FileRead method is niladic.
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'FileRead'` or 90 |
+| `[2]` | Event | `'FileRead'` or 90 |
 
 
 If you attach a callback function to this event and have it return a value of 0, the object will not be recreated from file.

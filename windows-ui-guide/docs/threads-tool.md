@@ -28,14 +28,14 @@ The columns of the Threads Tool display the following information.
 | Session | Indicates that Session window is connected to this thread. |
 | (no stack) | Indicates that the thread has no SI stack and the Session is connected to another thread. This state can only occur for Thread 0. |
 | Exiting | About to be terminated |
-| :Hold | Waiting for a `:Hold` token |
-| :EndHold | Waiting for a `:Hold` token |
-| ⎕DL | Executing `⎕DL` |
-| ⎕DQ | Executing `⎕DQ` |
-| ⎕NA | Waiting for a DLL `(⎕NA` ) call to return. |
-| ⎕TGET | Executing `⎕TGET` , waiting for a token |
+| `:Hold` | Waiting for a `:Hold` token |
+| `:EndHold` | Waiting for a `:Hold` token |
+| `⎕DL` | Executing `⎕DL` |
+| `⎕DQ` | Executing `⎕DQ` |
+| `⎕NA` | Waiting for a DLL `(⎕NA` ) call to return. |
+| `⎕TGET` | Executing `⎕TGET` , waiting for a token |
 | `⎕TGET` (Ready to continue) | Executing `⎕TGET` , having got a token |
-| ⎕TSYNC | Waiting for another thread to terminate |
+| `⎕TSYNC` | Waiting for another thread to terminate |
 | Awaiting request | Indicates a thread that is associated with a .NET system thread, but is currently unused |
 | Called .NET | Waiting for a call to .NET to return. |
 

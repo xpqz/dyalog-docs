@@ -2,8 +2,8 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕](../evaluated-input-output.md) | Evaluated Input/Output |
-| [⍞](../character-input-output.md) | Character Input/Output |
-| [⎕ARBIN](../arbin.md) | Arbitrary Input |
-| [⎕ARBOUT](../arbout.md) | Arbitrary Output |
-| [⎕RTL](../rtl.md) | Response Time Limit |
+| `⎕` | Evaluated Input/Output |
+| `⍞` | Character Input/Output |
+| `⎕ARBIN` | Arbitrary Input |
+| `⎕ARBOUT` | Arbitrary Output |
+| `⎕RTL` | Response Time Limit |

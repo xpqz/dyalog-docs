@@ -21,14 +21,14 @@ If enabled, this event is reported by a host object when a dockable object (the 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DockMove'` or 481 |
-| [3] | Client Object | ref or character vector |
-| [4] | Edge | character vector |
-| [5] | y-position | number |
-| [6] | x-position | number |
-| [7] | Outline rectangle | (see below) |
+| `[2]` | Event | `'DockMove'` or 481 |
+| `[3]` | Client Object | ref or character vector |
+| `[4]` | Edge | character vector |
+| `[5]` | y-position | number |
+| `[6]` | x-position | number |
+| `[7]` | Outline rectangle | (see below) |
 
 
 

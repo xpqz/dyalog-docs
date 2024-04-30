@@ -24,10 +24,10 @@ This method is used to display a print set-up dialog box. The dialog box allows 
 The argument to RTFPrintSetup is `⍬`, or a 1 to 3-element array as follows:
 
 
-| [1] | Print range | Optional - (see below) |
+| `[1]` | Print range | Optional - (see below) |
 | --- | --- | ---  |
-| [2] | Number of copies | Optional - Integer. |
-| [3] | Collate | Optional - 0 or 1 |
+| `[2]` | Number of copies | Optional - Integer. |
+| `[3]` | Collate | Optional - 0 or 1 |
 
 
 *Print range* may be a simple character vector containing `'All'`, `'Pages'`, or `'Selection'`.
@@ -38,11 +38,11 @@ The argument to RTFPrintSetup is `⍬`, or a 1 to 3-element array as follows:
 Alternatively, it may be a 3 or 4-element nested vector containing:
 
 
-| [1] | `'All'` , `'Pages'` , or `'Selection'` |
+| `[1]` | `'All'` , `'Pages'` , or `'Selection'` |
 | --- | ---  |
-| [2] | Start page (integer) |
-| [3] | End page (integer) |
-| [4] | Maximum pages |
+| `[2]` | Start page (integer) |
+| `[3]` | End page (integer) |
+| `[4]` | Maximum pages |
 
 
 
@@ -53,11 +53,11 @@ Maximum pages (4th element of Print range) may be an integer number, or the name
 If the user presses OK, the result is a 4-element vector containing the user's choices as follows:
 
 
-| [1] | Printer name | character vector |
+| `[1]` | Printer name | character vector |
 | --- | --- | ---  |
-| [2] | Print range | (see above) |
-| [3] | Number of copies | Integer |
-| [4] | Collate | 0 or 1 |
+| `[2]` | Print range | (see above) |
+| `[3]` | Number of copies | Integer |
+| `[4]` | Collate | 0 or 1 |
 
 
 

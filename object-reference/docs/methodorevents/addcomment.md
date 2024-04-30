@@ -21,12 +21,12 @@ This method is used to add a new comment to a [Grid](../objects/grid.md).
 The argument to AddComment is a 3, 4 or 5 element array as follows:
 
 
-| [1] | Row | integer |
+| `[1]` | Row | integer |
 | --- | --- | ---  |
-| [2] | Column | integer |
-| [3] | Comment text | character array |
-| [4] | Height in pixels | integer |
-| [5] | Width in pixels | integer |
+| `[2]` | Column | integer |
+| `[3]` | Comment text | character array |
+| `[4]` | Height in pixels | integer |
+| `[5]` | Width in pixels | integer |
 
 
 

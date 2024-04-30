@@ -19,13 +19,13 @@ If enabled, this event is reported when the user depresses a mouse button when t
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'ItemDown'` or 340 |
-| [3] | Item number | Integer. The index of the item. |
-| [4] | Mouse button | Integer. |
-| [5] | Shift state | Integer. Sum of 1=shift key, 2=Ctrl key, 4=Alt key |
-| [6] | Position | Integer. Indicates the position of the mouse-pointer within the item. It is either 2 (over the icon), 4 (over the label), 8 (over the line), 16 (over the symbol) or 32 (to the right of the label). |
+| `[2]` | Event | `'ItemDown'` or 340 |
+| `[3]` | Item number | Integer. The index of the item. |
+| `[4]` | Mouse button | Integer. |
+| `[5]` | Shift state | Integer. Sum of 1=shift key, 2=Ctrl key, 4=Alt key |
+| `[6]` | Position | Integer. Indicates the position of the mouse-pointer within the item. It is either 2 (over the icon), 4 (over the label), 8 (over the line), 16 (over the symbol) or 32 (to the right of the label). |
 
 
 

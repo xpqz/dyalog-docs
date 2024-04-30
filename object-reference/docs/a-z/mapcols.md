@@ -24,11 +24,11 @@ If MapCols is 1, the following colour mappings are performed:
 
 | Colour | Description | Mapped to |
 | --- | --- | ---  |
-| 0   0   0 | Black | Button Text |
-| 128 128 128 | Dark grey | Button Shadow |
-| 191 191 191 | Light grey | Button Face |
-| 192 192 192 | Light grey | Button Face |
-| 255 255 255 | White | Button Highlight |
+| `0   0   0` | Black | Button Text |
+| `128 128 128` | Dark grey | Button Shadow |
+| `191 191 191` | Light grey | Button Face |
+| `192 192 192` | Light grey | Button Face |
+| `255 255 255` | White | Button Highlight |
 
 
 

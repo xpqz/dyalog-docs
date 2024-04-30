@@ -25,12 +25,12 @@ The [Style](../properties/style.md) property determines the symbol that is drawn
 
 | 0 | . |
 | --- | ---  |
-| 1 | + |
-| 2 | * |
-| 3 | ⎕ |
-| 4 | × |
-| 5 | ⋄ |
-| 6 | ∘ |
+| 1 | `+` |
+| 2 | `*` |
+| 3 | `⎕` |
+| 4 | `×` |
+| 5 | `⋄` |
+| 6 | `∘` |
 
 
 or by character vectors containing the names of [Bitmap](bitmap.md) or [Icon](icon.md) objects.

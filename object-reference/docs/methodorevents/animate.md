@@ -21,9 +21,9 @@ The Animate method enables you to produce special effects when showing or hiding
 The argument to Animate is a 1 or 2-element array as follows:
 
 
-| [1] | Effects | integer |
+| `[1]` | Effects | integer |
 | --- | --- | ---  |
-| [2] | Play time | integer |
+| `[2]` | Play time | integer |
 
 
 

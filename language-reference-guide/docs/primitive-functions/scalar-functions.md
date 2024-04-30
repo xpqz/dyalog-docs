@@ -6,30 +6,30 @@ Scalar Primitive Functions
 
 | Symbol | Monadic | Dyadic |
 | --- | --- | ---  |
-| + | [Conjugate](conjugate.md) | [Plus (Add)](add.md) |
-| - | [Negative](negative.md) | [Minus (Subtract)](subtract.md) |
-| × | [Direction (Signum)](direction.md) | [Times (Multiply)](multiply.md) |
-| ÷ | [Reciproca](reciprocal.md) l | [Divide](divide.md) |
-| &#124; | [Magnitude](magnitude.md) | [Residue](residue.md) |
-| ⌊ | [Floor](floor.md) | [Minimum](minimum.md) |
-| ⌈ | [Ceiling](ceiling.md) | [Maximum](maximum.md) |
-| * | [Exponential](exponential.md) | [Power](power.md) |
-| ⍟ | [Natural Logarithm](natural-logarithm.md) | [Logarithm](logarithm.md) |
-| ○ | [Pi Times](pi-times.md) | [Circular](circular.md) |
-| ! | [Factorial](factorial.md) | [Binomial](binomial.md) |
-| ~ | [Not](not.md) | $ |
-| ? | [Roll](roll.md) | $ |
-| ∊ | [Type](type.md) (See [Enlist](enlist.md) ) | $ |
-| ^ |  | [And](and-lowest-common-multiple.md) |
-| ∨ |  | [Or](or-greatest-common-divisor.md) |
-| ⍲ |  | [Nand](nand.md) |
-| ⍱ |  | [Nor](nor.md) |
-| < |  | [Less](less.md) |
-| ≤ |  | [Less Or Equal](less-or-equal.md) |
-| = |  | [Equal](equal.md) |
-| ≥ |  | [Greater Or Equal](greater-or-equal.md) |
-| > |  | [Greater](greater.md) |
-| ≠ |  | [Not Equal](not-equal.md) |
+| `+` | [Conjugate](conjugate.md) | [Plus (Add)](add.md) |
+| `-` | [Negative](negative.md) | [Minus (Subtract)](subtract.md) |
+| `×` | [Direction (Signum)](direction.md) | [Times (Multiply)](multiply.md) |
+| `÷` | [Reciproca](reciprocal.md) l | [Divide](divide.md) |
+| `|` | [Magnitude](magnitude.md) | [Residue](residue.md) |
+| `⌊` | [Floor](floor.md) | [Minimum](minimum.md) |
+| `⌈` | [Ceiling](ceiling.md) | [Maximum](maximum.md) |
+| `*` | [Exponential](exponential.md) | [Power](power.md) |
+| `⍟` | [Natural Logarithm](natural-logarithm.md) | [Logarithm](logarithm.md) |
+| `○` | [Pi Times](pi-times.md) | [Circular](circular.md) |
+| `!` | [Factorial](factorial.md) | [Binomial](binomial.md) |
+| `~` | [Not](not.md) | $ |
+| `?` | [Roll](roll.md) | $ |
+| `∊` | [Type](type.md) (See [Enlist](enlist.md) ) | $ |
+| `^` |  | [And](and-lowest-common-multiple.md) |
+| `∨` |  | [Or](or-greatest-common-divisor.md) |
+| `⍲` |  | [Nand](nand.md) |
+| `⍱` |  | [Nor](nor.md) |
+| `<` |  | [Less](less.md) |
+| `≤` |  | [Less Or Equal](less-or-equal.md) |
+| `=` |  | [Equal](equal.md) |
+| `≥` |  | [Greater Or Equal](greater-or-equal.md) |
+| `>` |  | [Greater](greater.md) |
+| `≠` |  | [Not Equal](not-equal.md) |
 | $ Dyadic form is not scalar | $ Dyadic form is not scalar | $ Dyadic form is not scalar |
 
 ### Monadic Scalar Functions

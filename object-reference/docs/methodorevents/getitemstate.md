@@ -19,7 +19,7 @@ This method is used to obtain the status of a particular item in a [ListView](..
 The argument for GetItemState is a single item as follows:
 
 
-[1] Item number Integer
+`[1]` Item number Integer
 
 
 *Item number* is the index of the item concerned. Be aware that this is index origin dependent.

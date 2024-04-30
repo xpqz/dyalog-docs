@@ -12,11 +12,11 @@ In the [Clover Class](constructor-overload-example-class.md) example Class, the 
 
 | Constructor | Implied argument |
 | --- | ---  |
-| Make1 | 1-item vector |
-| Make2 | 2-item vector |
-| Make3 | 3-item vector |
-| Make0 | No argument |
-| MakeAny | Any array accepted |
+| `Make1` | 1-item vector |
+| `Make2` | 2-item vector |
+| `Make3` | 3-item vector |
+| `Make0` | No argument |
+| `MakeAny` | Any array accepted |
 
 In the following examples, the `Make` function (see [Clover Class](constructor-overload-example-class.md)  for details) displays:
 ```apl

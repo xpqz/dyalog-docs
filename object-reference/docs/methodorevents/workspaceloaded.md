@@ -19,9 +19,9 @@ If enabled, this event is reported when a workspace is loaded or on a `clear ws`
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'WorkspaceLoaded'` or 525 |
+| `[2]` | Event | `'WorkspaceLoaded'` or 525 |
 
 
 This event is fired immediately after a workspace has been loaded and before the execution of `⎕LX`.

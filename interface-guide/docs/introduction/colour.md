@@ -6,17 +6,17 @@ A single colour may be specified in one of two ways, either as a negative intege
 
 | Colour Element | Colour Element | Colour Element | Colour Element |
 | --- | --- | --- | ---  |
-| 0 | Default | ¯11 | Active Border |
-| ¯1 | Scroll Bars | ¯12 | Inactive Border |
-| ¯2 | Desktop | ¯13 | Application Workspace |
-| ¯3 | Active Title Bar | ¯14 | Highlight |
-| ¯4 | Inactive Title Bar | ¯15 | Highlighted Text |
-| ¯5 | Menu Bar | ¯16 | Button Face |
-| ¯6 | Window Background | ¯17 | Button Shadow |
-| ¯7 | Window Frame | ¯18 | Disabled Text |
-| ¯8 | Menu Text | ¯19 | Button Text |
-| ¯9 | Window Text | ¯20 | Inactive Title Bar Text |
-| ¯10 | Active Title Bar Text | ¯21 | Button Highlight |
+| `0` | Default | `¯11` | Active Border |
+| `¯1` | Scroll Bars | `¯12` | Inactive Border |
+| `¯2` | Desktop | `¯13` | Application Workspace |
+| `¯3` | Active Title Bar | `¯14` | Highlight |
+| `¯4` | Inactive Title Bar | `¯15` | Highlighted Text |
+| `¯5` | Menu Bar | `¯16` | Button Face |
+| `¯6` | Window Background | `¯17` | Button Shadow |
+| `¯7` | Window Frame | `¯18` | Disabled Text |
+| `¯8` | Menu Text | `¯19` | Button Text |
+| `¯9` | Window Text | `¯20` | Inactive Title Bar Text |
+| `¯10` | Active Title Bar Text | `¯21` | Button Highlight |
 
 A colour specification of 0 (which is the default) selects the appropriate background or foreground colour defined by your current colour scheme for the object in question. For example, if you select yellow as your MS-Windows Menu Bar colour, you will get a yellow background in Menu and MenuItem objects as the default if BCol is not specified.
 

@@ -2,6 +2,6 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕A](../a.md) | Alphabetic upper case characters |
-| [⎕D](../../primitive-functions/add.md) | Digits |
-| [⎕NULL](../null.md) | Null Item |
+| `⎕A` | Alphabetic upper case characters |
+| `⎕D` | Digits |
+| `⎕NULL` | Null Item |

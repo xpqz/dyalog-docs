@@ -65,13 +65,13 @@ The famous Euler's Identityeiπ+1=0 may be expressed as follows:
 
 The basic set of circular functions `X○Y` cater for complex values in `Y`, while the following extended functions provide specific features for complex arguments. Note that `a` and `b` are the real and imaginary parts of `Y` respectively and θ is the phase of `Y`..
 
-| (-X) ○ Y | X | X ○ Y |
+| `(-X) ○ Y` | `X` | `X ○ Y` |
 | --- | --- | ---  |
-| -8○Y | 8 | (-1+Y*2)*0.5 |
-| Y | 9 | a |
-| +Y | 10 | &#124;Y |
-| Y×0J1 | 11 | b |
-| *Y×0J1 | 12 | θ |
+| `-8○Y` | `8` | `(-1+Y*2)*0.5` |
+| `Y` | `9` | `a` |
+| `+Y` | `10` | `|Y` |
+| `Y×0J1` | `11` | `b` |
+| `*Y×0J1` | `12` | `θ` |
 
 Note that `9○Y` and `11○Y` return the real and imaginary parts of `Y` respectively:
 ```apl

@@ -24,10 +24,10 @@ The purpose of the Change event is to allow the application to validate data whi
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'Change'` or 36 |
-| [3] | Object name | character vector (name of object that is to receive the focus or generate an event) |
+| `[2]` | Event | `'Change'` or 36 |
+| `[3]` | Object name | character vector (name of object that is to receive the focus or generate an event) |
 
 
 If the focus is transferred to an external application, the third element is an empty vector.

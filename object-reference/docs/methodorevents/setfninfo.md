@@ -30,13 +30,13 @@ A function exported by SetFnInfo will be called by a host application with the n
 The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 
 
-| [1] | Function name | character vector |
+| `[1]` | Function name | character vector |
 | --- | --- | ---  |
-| [2] | Function info | nested array (see below) |
-| [3] | Help ID | integer |
-| [4] | Function type | integer |
-| [5] | Property name | character vector |
-| [6] | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
+| `[2]` | Function info | nested array (see below) |
+| `[3]` | Help ID | integer |
+| `[4]` | Function type | integer |
+| `[5]` | Property name | character vector |
+| `[6]` | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
 
 
 #### Function info

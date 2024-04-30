@@ -39,7 +39,7 @@ markdown_extensions:
 nav:
   
   - Symbols:
-    -  Language Elements: symbols/language-elements.md
+    - Language Elements: symbols/language-elements.md
     - Brackets: symbols/brackets.md
     -  Special Symbols: symbols/special-symbols.md
   - Primitive Functions:

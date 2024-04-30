@@ -4,6 +4,6 @@ The following system facilities are for convenience implemented as operators rat
 
 | Name | Description |
 | --- | ---  |
-| [⎕R](../../primitive-functions/floor.md) | Replace |
-| [⎕S](../../symbols/language-elements.md) | Search |
-| [⎕OPT](../opt.md) | Variant (Classic Edition only) |
+| `⎕R` | Replace |
+| `⎕S` | Search |
+| `⎕OPT` | Variant (Classic Edition only) |

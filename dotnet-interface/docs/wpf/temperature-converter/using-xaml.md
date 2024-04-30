@@ -341,9 +341,9 @@ The `c2f` function converts from Centigrade to Fahrenheit when the user presses 
 
 The callbacks `F2C` and `C2F`, one of which at a time is attached to the Scroll event of the ScrollBar object are shown below. The argument `Msg` contains two items, namely:
 
-| [1] | Object | a ref to the ScrollBar object |
+| `[1]` | Object | a ref to the ScrollBar object |
 | --- | --- | ---  |
-| [2] | Object | a ref to an object of type System.Windows.Controls.Primitives.ScrollEventArgs |
+| `[2]` | Object | a ref to an object of type System.Windows.Controls.Primitives.ScrollEventArgs |
 
 In this case the code uses the NewValue property of the ScrollEventArgs object. An alternative would be to refer to the Value property of the ScrollBar object
 ```apl

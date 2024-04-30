@@ -42,9 +42,9 @@ If `X` is 4, `⎕NQ` signals an event from an ActiveXControl object to its host 
 `Y` is a nested vector containing an event message.  The first two elements of `Y` are:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | numeric scalar or character vector which specifies an event or method |
+| `[2]` | Event | numeric scalar or character vector which specifies an event or method |
 
 
 

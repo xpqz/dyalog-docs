@@ -22,12 +22,12 @@ Note that this event is reported **after** the change has taken place, and after
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is an 5-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'CellChanged'` or 164 |
-| [3] | Cell row | integer |
-| [4] | Cell column | integer |
-| [5] | New data | number or character array |
+| `[2]` | Event | `'CellChanged'` or 164 |
+| `[3]` | Cell row | integer |
+| `[4]` | Cell column | integer |
+| `[5]` | New data | number or character array |
 
 
 The 5th element of the event message contains the data value that has been used to update the [Values](../properties/values.md) property. This will be numeric if the [FieldType](../properties/fieldtype.md) of the associated Edit object is Numeric, LongNumeric, Date, LongDate or Time. Otherwise, it will be a character array.

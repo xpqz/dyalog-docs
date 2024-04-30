@@ -38,10 +38,10 @@ The following are examples of legal and illegal names:
 
 | Legal | Illegal |
 | --- | ---  |
-| FORM1 | FORM 1 |
-| form_23 | form#1 |
-| Form1.Gp | 11_Form |
-| F1.g2.b34 | Form+1 |
+| `FORM1` | `FORM 1` |
+| `form_23` | `form#1` |
+| `Form1.Gp` | `11_Form` |
+| `F1.g2.b34` | `Form+1` |
 
 
 

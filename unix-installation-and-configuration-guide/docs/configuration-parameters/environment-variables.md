@@ -74,7 +74,7 @@ Table E3: Variables used to configure the Session.
 | DYALOG_GUTTER_ENABLE | Enable or disable Session Gutter |
 | HISTORY_SIZE | The size of the prior line buffer |
 | INPUT_SIZE | The size of the buffer used to store lines marked for execution |
-| LOG_FILE LOG_FILE_INUSE LOG_SIZE | These three variables determine the name of the session log file (default ~/.dyalog/session_log_<DyalogMajor><DyalogMinor><U&#124;C><bits>_*.dlf, for example, ~/.dyalog/session_log_190U64_*.dlf), whether a log file is created or not, and the size of the log file in KB. Be aware: the session log file is not interchangeable between the different editions and widths of APL; in a mixed environment it is strongly recommended to use a different log file for each version. |
+| LOG_FILE LOG_FILE_INUSE LOG_SIZE | These three variables determine the name of the session log file (default ~/.dyalog/session_log_<DyalogMajor><DyalogMinor><U|C><bits>_*.dlf, for example, ~/.dyalog/session_log_190U64_*.dlf), whether a log file is created or not, and the size of the log file in KB. Be aware: the session log file is not interchangeable between the different editions and widths of APL; in a mixed environment it is strongly recommended to use a different log file for each version. |
 | PFKEY_SIZE | The size of the buffer used to hold `⎕pfkey` definitions: if this is too small, an attempt to add a new definition will result in a LIMIT ERROR. |
 | SESSION_FILE | Defines the location of your session file; session file support was added in Dyalog 13.1. The default value is $DYALOG/default.dse |
 
@@ -121,6 +121,6 @@ Table E8: SALT and user commands related environment variables
 | Variable | Notes |
 | --- | ---  |
 | SESSION_FILE | Specifies the location of the file containing ⎕SE . The default value is $DYALOG/default.dse |
-| UCMDCACHEFILE | Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U&#124;C}{bits}.cache"` e.g. `UserCommand25.182U64.cache` in the `dyalog` directory. |
+| UCMDCACHEFILE | Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache"` e.g. `UserCommand25.182U64.cache` in the `dyalog` directory. |
 
 Further information about SALT and user commands appear in the *User Commands User Guide* and the *SALT User Guide*.

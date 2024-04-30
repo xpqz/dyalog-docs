@@ -35,12 +35,12 @@ For a [Menu](../objects/menu.md), [MenuItem](../objects/menuitem.md), or [Status
 For objects of type [CoolBar](../objects/coolbar.md), [Splitter](../objects/splitter.md), [Scroll](../objects/scroll.md), [StatusBar](../objects/statusbar.md), [TabBar](../objects/tabbar.md), [ToolBar](../objects/toolbar.md) and [ToolControl](../objects/toolcontrol.md), Align may be `'None'`, `'Top'`, `'Bottom'`, `'Left'` or `'Right'`. It specifies to which (if any) of the four sides of the parent the object is anchored and also the default position and size of the object. Specifying Align typically causes the [Attach](attach.md) property to be set to appropriate values as follows :
 
 
-| Align | Attach |
+| `Align` | `Attach` |
 | --- | ---  |
-| 'Top' | 'Top' 'Left' 'Top' 'Right' |
-| 'Bottom' | 'Bottom' 'Left' 'Bottom' 'Right' |
-| 'Left' | 'Top' 'Left' 'Bottom' 'Left' |
-| 'Right' | 'Top' 'Right' 'Bottom' 'Right' |
+| `'Top'` | `'Top' 'Left' 'Top' 'Right'` |
+| `'Bottom'` | `'Bottom' 'Left' 'Bottom' 'Right'` |
+| `'Left'` | `'Top' 'Left' 'Bottom' 'Left'` |
+| `'Right'` | `'Top' 'Right' 'Bottom' 'Right'` |
 
 
 These settings cause the object to remain at a fixed distance (in pixels) from the corresponding edge of the parent. Furthermore, the object will have a fixed height or width, but its length will stretch and shrink as the [Form](../objects/form.md) is resized.

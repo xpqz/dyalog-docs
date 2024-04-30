@@ -47,9 +47,9 @@ If the Btns property is not specified, it assumes a default according to [Style]
 
 | Style | Btns |
 | --- | ---  |
-| `'Msg'` or `'Info'` | 'OK' |
-| `'Warn'` or `'Error'` | 'OK' 'CANCEL' |
-| 'Query' | 'YES' 'NO' |
+| `'Msg'` or `'Info'` | `'OK'` |
+| `'Warn'` or `'Error'` | `'OK' 'CANCEL'` |
+| `'Query'` | `'YES' 'NO'` |
 
 
 If [Style](style.md) is not specified, Btns defaults to `'OK'`.

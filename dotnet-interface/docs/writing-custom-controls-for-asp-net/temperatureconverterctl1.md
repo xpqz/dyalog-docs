@@ -47,11 +47,11 @@ Whenever ASP.NET initialises a `Control`, it calls its `CreateChildControls` met
 
 ```
 
-Line[4] creates an instance of a `LiteralControl` (a label) containing the text "Fahrenheit" with an HTML tag "<h3>". `Controls` is a property of the `Control` class (from which `TemperatureConverterCtl1` inherits) that returns a `ControlCollection` object This has an `Add` method whose job is to add the specified control to the list of child controls managed by the object.
+Line[4] creates an instance of a `LiteralControl` (a label) containing the text "Fahrenheit" with an HTML tag "&lt;h3&gt;". `Controls` is a property of the `Control` class (from which `TemperatureConverterCtl1` inherits) that returns a `ControlCollection` object This has an `Add` method whose job is to add the specified control to the list of child controls managed by the object.
 
 Lines[5-6] create a `TextBox` child control containing the text "0", and Line[7] adds it to the child control list.
 
-Line[8] adds a second `LiteralControl` to terminate the "<H3>" tag.
+Line[8] adds a second `LiteralControl` to terminate the "&lt;h3&gt;" tag.
 
 Lines [10-14] do the same for Centigrade.
 

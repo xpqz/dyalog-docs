@@ -24,7 +24,7 @@ The result `R` depends upon the value of the  Variant option Invert. This the p
 
 | 0 | The result `R` is a matrix with the same shape as the DataTable referenced by `⊃Y` . |
 | --- | ---  |
-| 1 | The result `R` is vector whose length is the same as the number of columns in the DataTable referenced by `⊃Y` . |
+| `1` | The result `R` is vector whose length is the same as the number of columns in the DataTable referenced by `⊃Y` . |
 
 
 The optional left argument `X` is a numeric vector with the same length as the number of columns in the result in the DataTable referenced by `⊃Y`:

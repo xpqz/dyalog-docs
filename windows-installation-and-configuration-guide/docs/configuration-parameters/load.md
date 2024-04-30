@@ -30,9 +30,9 @@ Otherwise, if the file extension is `.aplf` `.aplc` or `.apln` the expression is
 
 | File Extension | Type | Expression |
 | --- | --- | ---  |
-| .aplf | Function source code | filename 0⍴⊂'' |
-| .aplc | Class source code | filename.Run 0⍴⊂'' |
-| .apln | Namespace source code | filename.Run 0⍴⊂'' |
+| `.aplf` | Function source code | `filename 0⍴⊂''` |
+| `.aplc` | Class source code | `filename.Run 0⍴⊂''` |
+| `.apln` | Namespace source code | `filename.Run 0⍴⊂''` |
 
 ## Notes
 

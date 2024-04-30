@@ -4,10 +4,10 @@ The following table describes the dependencies that exist between functions, ope
 
 | System Variable | Monadic Functions | Dyadic Functions | Operators |
 | --- | --- | --- | ---  |
-| ⎕ML | ∊ ↑ ↓ ≡ | ⊂[K] |  |
-| ⎕IO | ⍒ ⍋ ⍳ ? | ? ⍋ ⍒ ⌷ ⍳ ⊃ ⍉ | ⌸ [] |
-| ⎕RL | ? | ? |  |
-| ⎕CT | ⌈ ⌊ ∪ | ⍷ ≡ ≢ ∩ ∪ ~ ⍳ ∊ &#124; < ≤ = ≥ > ≠ ∧ ∨ (non-Boolean) | ⍤ |
-| ⎕DCT | ⌈ ⌊ ∪ | ⍷ ≡ ≢ ∩ ∪ ~ ⍳ ∊ &#124; < ≤ = ≥ > ≠ ∧ ∨ (non-Boolean) | ⍤ |
-| ⎕DIV | ÷ | ÷ |  |
-| ⎕PP | ⍕ |  |  |
+| `⎕ML` | `∊ ↑ ↓ ≡` | `⊂[K]` | `` |
+| `⎕IO` | `⍒ ⍋ ⍳ ?` | `? ⍋ ⍒ ⌷ ⍳ ⊃ ⍉` | `⌸ []` |
+| `⎕RL` | `?` | `?` | `` |
+| `⎕CT` | `⌈ ⌊ ∪` | `⍷ ≡ ≢ ∩ ∪ ~ ⍳ ∊ | < ≤ = ≥ > ≠ ∧ ∨ (non-Boolean)` | `⍤` |
+| `⎕DCT` | `⌈ ⌊ ∪` | `⍷ ≡ ≢ ∩ ∪ ~ ⍳ ∊ | < ≤ = ≥ > ≠ ∧ ∨ (non-Boolean)` | `⍤` |
+| `⎕DIV` | `÷` | `÷` | `` |
+| `⎕PP` | `⍕` | `` | `` |

@@ -18,9 +18,9 @@ This method is used to retrieve the comment associated with a cell in a [Grid](.
 The argument to GetComment is a 2-element array as follows:
 
 
-| [1] | Row | integer |
+| `[1]` | Row | integer |
 | --- | --- | ---  |
-| [2] | Column | integer |
+| `[2]` | Column | integer |
 
 
 For example, the following expression retrieves the comment associated with the cell at row 3, column 1.

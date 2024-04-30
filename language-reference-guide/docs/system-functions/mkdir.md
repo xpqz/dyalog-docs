@@ -21,11 +21,11 @@ By default, for each file in `Y` the path must exist and the base name must not 
 The optional left argument `X` is the numeric scalar 0, 1, 2 or 3 which amends this behaviour as shown in the following table. If omitted, it is assumed to be 0.
 
 
-| 0 | Default behaviour. |
+| `0` | Default behaviour. |
 | --- | ---  |
-| 1 | No action is taken if a directory specified by `Y` already exists. The return value may be used to determine whether a new directory was created or not. |
-| 2 | Any part of the *paths* specified in `Y` which does not already exist will be created in preparation of creating the corresponding directory. |
-| 3 | Combination of 1 and 2. |
+| `1` | No action is taken if a directory specified by `Y` already exists. The return value may be used to determine whether a new directory was created or not. |
+| `2` | Any part of the *paths* specified in `Y` which does not already exist will be created in preparation of creating the corresponding directory. |
+| `3` | Combination of 1 and 2. |
 
 
 

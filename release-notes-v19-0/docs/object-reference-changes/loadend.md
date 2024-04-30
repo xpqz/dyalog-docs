@@ -25,12 +25,12 @@ You may use the [IsLoading](./isloading.md) property to check if the HTMLRendere
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'LoadEnd'` or 836 |
-| [3] | url | The URL of the loaded frame |
-| [4] | Flag | 1 if the loaded frame is the "main" frame, 0 otherwise |
-| [5] | Code | The HTTP status code as a result of loading the frame |
+| `[2]` | Event | `'LoadEnd'` or 836 |
+| `[3]` | url | The URL of the loaded frame |
+| `[4]` | Flag | 1 if the loaded frame is the "main" frame, 0 otherwise |
+| `[5]` | Code | The HTTP status code as a result of loading the frame |
 
 
 

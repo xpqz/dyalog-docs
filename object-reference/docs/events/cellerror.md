@@ -22,15 +22,15 @@ The default action for the CellError event is to sound the bell (beep). This act
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq) or supplied as the right argument to your callback function, is an 8-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'CellError'` or 157 |
-| [3] | Cell row | integer |
-| [4] | Cell column | integer |
-| [5] | Invalid data | character vector |
-| [6] | Object name | character vector (name of object to which the user has transferred focus) |
-| [7] | New cell (row) | integer |
-| [8] | New cell (column) | integer |
+| `[2]` | Event | `'CellError'` or 157 |
+| `[3]` | Cell row | integer |
+| `[4]` | Cell column | integer |
+| `[5]` | Invalid data | character vector |
+| `[6]` | Object name | character vector (name of object to which the user has transferred focus) |
+| `[7]` | New cell (row) | integer |
+| `[8]` | New cell (column) | integer |
 
 
 

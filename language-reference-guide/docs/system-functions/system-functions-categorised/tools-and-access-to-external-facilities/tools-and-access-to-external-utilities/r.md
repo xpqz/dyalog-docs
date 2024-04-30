@@ -266,17 +266,17 @@ The transformation codes are a numeric scalar or vector. Transformation codes ma
 The transformation function is called for each match within the input document.  The function is monadic and is passed a namespace, containing the following variables:
 
 
-| Block | The entire line (line mode) or document (document mode or mixed mode) in which the match was found. |
+| `Block` | The entire line (line mode) or document (document mode or mixed mode) in which the match was found. |
 | --- | ---  |
-| BlockNum | With line mode, the block (line) number in the source document of the start of the match. The value is origin zero. With document mode or mixed mode the entire document is contained within one block and this value is always zero. |
-| Pattern | The search pattern which matched. |
-| PatternNum | The index-zero pattern number which matched. |
-| Match | The text within Block which matched Pattern. |
-| Offsets | A vector of one or more offsets relative to the start of Block. The first value is the offset of the entire match; any and all additional values are the offsets of the portions of the text which matched the subpatterns, in the order of the subpatterns within Pattern. `¯1` indicates no match, see below. |
-| Lengths | A vector of one or more lengths, corresponding to each value in Offset. `¯1` indicates no match, see below. |
-| Names | A vector of one or more character vectors corresponding to each of the values in Offsets, specifying the names given to the subpatterns within Pattern. The first entry (corresponding to the match) and all subpatterns with no name are included as length zero character vectors. |
-| ReplaceMode | A Boolean indicating whether the function was called by `⎕R` (value 1) or `⎕S` (value 0). |
-| TextOnly | A Boolean indicating whether the return value from the function must be a character vector (value 1) or any value (value 0). |
+| `BlockNum` | With line mode, the block (line) number in the source document of the start of the match. The value is origin zero. With document mode or mixed mode the entire document is contained within one block and this value is always zero. |
+| `Pattern` | The search pattern which matched. |
+| `PatternNum` | The index-zero pattern number which matched. |
+| `Match` | The text within Block which matched Pattern. |
+| `Offsets` | A vector of one or more offsets relative to the start of Block. The first value is the offset of the entire match; any and all additional values are the offsets of the portions of the text which matched the subpatterns, in the order of the subpatterns within Pattern. `¯1` indicates no match, see below. |
+| `Lengths` | A vector of one or more lengths, corresponding to each value in Offset. `¯1` indicates no match, see below. |
+| `Names` | A vector of one or more character vectors corresponding to each of the values in Offsets, specifying the names given to the subpatterns within Pattern. The first entry (corresponding to the match) and all subpatterns with no name are included as length zero character vectors. |
+| `ReplaceMode` | A Boolean indicating whether the function was called by `⎕R` (value 1) or `⎕S` (value 0). |
+| `TextOnly` | A Boolean indicating whether the return value from the function must be a character vector (value 1) or any value (value 0). |
 
 
 
@@ -346,7 +346,7 @@ Default values are highlighted thus.
 When set, case is ignored in searches.
 
 
-| 1 | Matches are not case sensitive. |
+| `1` | Matches are not case sensitive. |
 | --- | ---  |
 | 0 | Matches are case sensitive. |
 
@@ -371,8 +371,8 @@ Specifies whether the input document is interpreted in **line** mode, **document
 
 | L | When line mode is set, the input document is split into separate lines (discarding the line ending characters themselves), and each line is processed separately. This means that the ML option applies per line, and the '^' and '$' anchors match the start and end respectively of each line. Because the document is split, searches can never match across multiple lines, nor can searches for line ending characters ever succeed. Setting line mode can result in significantly reduced memory requirements compared with the other modes. |
 | --- | ---  |
-| D | When document mode is set, the entire input document is processed as a single block. The ML option applies to this entire block, and the '^' and '$' anchors match the start and end respectively of the block - not the lines within it. Searches can match across lines, and can match line ending characters. |
-| M | When mixed mode is set, the '^' and '$' anchors match the start and end respectively of each line, as if line mode is set, but in all other respects behaviour is as if document mode is set - the entire input document is processed in a single block. |
+| `D` | When document mode is set, the entire input document is processed as a single block. The ML option applies to this entire block, and the '^' and '$' anchors match the start and end respectively of the block - not the lines within it. Searches can match across lines, and can match line ending characters. |
+| `M` | When mixed mode is set, the '^' and '$' anchors match the start and end respectively of each line, as if line mode is set, but in all other respects behaviour is as if document mode is set - the entire input document is processed in a single block. |
 
 
 
@@ -399,7 +399,7 @@ Specifies whether the dot ('.') character in search patterns matches line ending
 
 | 0 | The '.' character in search patterns matches most characters, but not line endings. |
 | --- | ---  |
-| 1 | The '.' character in search patterns matches all characters. |
+| `1` | The '.' character in search patterns matches all characters. |
 
 
 This option is invalid in line mode, because line endings are stripped from the input document.

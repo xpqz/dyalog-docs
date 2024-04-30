@@ -21,15 +21,15 @@
 The **format specification** consists of a series of control phrases, with adjacent phrases separated by a single comma, selected from the following:
 
 
-| rAw | Alphanumeric format |
+| `rAw` | Alphanumeric format |
 | --- | ---  |
-| rEw.s | Scaled format |
-| rqFw.d | Decimal format |
-| rqG⍞pattern⍞ | Pattern |
-| rqIw | Integer format |
-| Tn | Absolute tabulation |
-| Xn | Relative tabulation |
-| ⍞t⍞ | Text insertion |
+| `rEw.s` | Scaled format |
+| `rqFw.d` | Decimal format |
+| `rqG⍞pattern⍞` | Pattern |
+| `rqIw` | Integer format |
+| `Tn` | Absolute tabulation |
+| `Xn` | Relative tabulation |
+| `⍞t⍞` | Text insertion |
 
 
 (Alternative surrounding pairs for Pattern or Text insertion are   `< >, ⊂ ⊃, ⎕ ⎕`  or `¨ ¨`.)

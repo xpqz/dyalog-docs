@@ -12,12 +12,12 @@ The token pool may contain up to 2*31 tokens; they do not have to be unique neit
 
 The following system functions are used to manage the token pool:
 
-| ⎕TALLOC | Allocates ranges of tokens. |
+| `⎕TALLOC` | Allocates ranges of tokens. |
 | --- | ---  |
-| ⎕TPUT | Puts tokens into the pool. |
-| ⎕TGET | If necessary waits for, and then retrieves some tokens from the pool. |
-| ⎕TPOOL | Reports the types of tokens in the pool |
-| ⎕TREQ | Reports the token requests from specific threads |
+| `⎕TPUT` | Puts tokens into the pool. |
+| `⎕TGET` | If necessary waits for, and then retrieves some tokens from the pool. |
+| `⎕TPOOL` | Reports the types of tokens in the pool |
+| `⎕TREQ` | Reports the token requests from specific threads |
 
 A simple example of a thread synchronisation requirement occurs when you want one thread to reach a certain point in processing before a second thread can continue. Perhaps the first thread performs a calculation, and the second thread must wait until the result is available before it can be used.
 

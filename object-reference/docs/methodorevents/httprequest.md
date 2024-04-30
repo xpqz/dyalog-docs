@@ -24,18 +24,18 @@ The callback function must  "fill in the blanks" in the event message and return
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is an 11-element vector as follows:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'HTTPRequest'` or 840 |
-| [3] |  | `'ProcessRequest'` (unused) |
-| [4] | Handle | Initially 0, must be set to 1. |
-| [5] | Status | Integer HTTP status code (initially 0). |
-| [6] | Message | Character vector containing the HTTP status message (initially empty). |
-| [7] | MIME | Character vector containing the MIME type (initially empty). See below. |
-| [8] | URL | Character vector containing the requested URL. |
-| [9] | Headers | Character vector containing the HTTP Request headers (initially empty). |
-| [10] | Body | Character vector containing the HTTP Request body (initially empty). |
-| [11] | Method | Character vector containing the HTTP method e.g. `'GET'` or `'POST'` . |
+| `[2]` | Event | `'HTTPRequest'` or 840 |
+| `[3]` |  | `'ProcessRequest'` (unused) |
+| `[4]` | Handle | Initially 0, must be set to 1. |
+| `[5]` | Status | Integer HTTP status code (initially 0). |
+| `[6]` | Message | Character vector containing the HTTP status message (initially empty). |
+| `[7]` | MIME | Character vector containing the MIME type (initially empty). See below. |
+| `[8]` | URL | Character vector containing the requested URL. |
+| `[9]` | Headers | Character vector containing the HTTP Request headers (initially empty). |
+| `[10]` | Body | Character vector containing the HTTP Request body (initially empty). |
+| `[11]` | Method | Character vector containing the HTTP method e.g. `'GET'` or `'POST'` . |
 
 
 
@@ -43,13 +43,13 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 To process the request, the callback function should return the message with only the following items changed. Note that only elements `[4 5 6 10]` are always required, and it is important to set element `[4]` to 1.
 
 
-| [4] | Handle | 1 |
+| `[4]` | Handle | 1 |
 | --- | --- | ---  |
-| [5] | Status | Success is indicated by 200. |
-| [6] | Message | Success is indicated by `'OK'` . |
-| [7] | MIME | Defaults to `'text/html'` and need be specified only if the  response (Body) is not a character vecttor containing HTML. |
-| [9] | Headers | Not normally required. |
-| [10] | Body | This may be a character vector  or an integer numeric vector with values in the ranges ¯128-127 or 0-255. Note that a character vector will be prepended with a UTF-8 byte order mark (BOM). A numeric vector requires that `[7]` is an appropriate MIME type (e.g. `'image/png'` ) |
+| `[5]` | Status | Success is indicated by 200. |
+| `[6]` | Message | Success is indicated by `'OK'` . |
+| `[7]` | MIME | Defaults to `'text/html'` and need be specified only if the  response (Body) is not a character vecttor containing HTML. |
+| `[9]` | Headers | Not normally required. |
+| `[10]` | Body | This may be a character vector  or an integer numeric vector with values in the ranges ¯128-127 or 0-255. Note that a character vector will be prepended with a UTF-8 byte order mark (BOM). A numeric vector requires that `[7]` is an appropriate MIME type (e.g. `'image/png'` ) |
 
 
 

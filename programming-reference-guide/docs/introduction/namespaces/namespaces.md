@@ -26,13 +26,13 @@ filesystems. The analogy, based on DOS, might prove helpful:
 
 | Operation | Windows | Namespace |
 | --- | --- | ---  |
-| Create | mkdir | )NS or ⎕NS |
-| Change | cd | )CS or ⎕CS |
-| Relative name | dir1\dir\file | NS1.NS2.OBJ |
-| Absolute name | \file\file | #.NS.OBJ |
-| Name separator | \ | . |
-| Top (root) object | \ | # |
-| Parent object | .. | ## |
+| Create | mkdir | `)NS or ⎕NS` |
+| Change | cd | `)CS or ⎕CS` |
+| Relative name | dir1\dir\file | `NS1.NS2.OBJ` |
+| Absolute name | \file\file | `#.NS.OBJ` |
+| Name separator | \ | `.` |
+| Top (root) object | \ | `#` |
+| Parent object | .. | `##` |
 
 #### Namespaces bring a number of major benefits
 

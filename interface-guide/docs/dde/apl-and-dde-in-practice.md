@@ -17,11 +17,11 @@ To initiate a DDE conversation with a server, you use `⎕SVO` as follows:
 
 where:
 
-| appln | is the name of the server application. |
+| `appln` | is the name of the server application. |
 | --- | ---  |
-| topic | is the server topic (usually the name of a document). |
-| var | is the name of the APL variable. |
-| item | is the name of the item with which the variable is to be associated (shared). |
+| `topic` | is the server topic (usually the name of a document). |
+| `var` | is the name of the APL variable. |
+| `item` | is the name of the item with which the variable is to be associated (shared). |
 
 For example, the following statement would associate the variable `SALES` with the block of cells R1C1 to R10C10 in an Excel spreadsheet called "Budget".
 ```apl
@@ -79,9 +79,9 @@ A DDE conversation is initiated by a client, and not by a server. If you wish to
 
 where:
 
-| var | is the name of the APL variable. |
+| `var` | is the name of the APL variable. |
 | --- | ---  |
-| item | is the name of the item with which the variable is to be associated (shared). |
+| `item` | is the name of the item with which the variable is to be associated (shared). |
 
 Notice that in this case, the left argument to `⎕SVO` specifies only the protocol, `'DDE'`. APL automatically defines the application name and topic to be `'DYALOG'` and `⎕WSID` respectively. The DDE *item* is specified in the right argument as either the name of the variable, or, optionally, as its external name or surrogate.
 

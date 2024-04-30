@@ -75,7 +75,7 @@ This is a vector of between 3 and 6 elements with the following meanings and def
 | 1 | Initial Field | N/A |
 | 2 | Initial Cursor Position - Row | N/A |
 | 3 | Initial Cursor Position - Col | N/A |
-| 4 | Initial Keystroke | '' |
+| 4 | Initial Keystroke | `''` |
 | 5 | (ignored) | N/A |
 | 6 | Changed Field Flags | 0 |
 

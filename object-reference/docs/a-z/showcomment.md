@@ -21,15 +21,15 @@ If enabled, a [Grid](../objects/grid.md) will generate a ShowComment event when 
 The event message reported as the result of `⎕DQ` or supplied as the right argument to your callback function is an 8-element vector containing the following:
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'ShowComment'` or 223 |
-| [3] | Cell row | integer |
-| [4] | Cell column | integer |
-| [5] | Comment text | character vector |
-| [6] | Window height | integer, pixels |
-| [7] | Window width | integer, pixels |
-| [8] | Tip behaviour flag | (1 = yes; 0 = no) |
+| `[2]` | Event | `'ShowComment'` or 223 |
+| `[3]` | Cell row | integer |
+| `[4]` | Cell column | integer |
+| `[5]` | Comment text | character vector |
+| `[6]` | Window height | integer, pixels |
+| `[7]` | Window width | integer, pixels |
+| `[8]` | Tip behaviour flag | (1 = yes; 0 = no) |
 
 
 

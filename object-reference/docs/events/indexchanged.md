@@ -19,11 +19,11 @@ If enabled, this event is reported when the value of the Index property of a Gri
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'IndexChanged` or 210 |
-| [3] | Row | Integer. |
-| [4] | Column | Integer. |
+| `[2]` | Event | `'IndexChanged` or 210 |
+| `[3]` | Row | Integer. |
+| `[4]` | Column | Integer. |
 
 
 

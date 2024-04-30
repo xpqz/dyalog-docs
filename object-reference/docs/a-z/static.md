@@ -19,10 +19,10 @@ Purpose: This object is primarily used to display graphics in a sub-window.
 The overall appearance of an empty Static object is controlled by the value of its [Style](../properties/style.md) property which may be one of the following character vectors:
 
 
-| 'BlackFrame' | 'BlackBox' |
+| `'BlackFrame'` | `'BlackBox'` |
 | --- | ---  |
-| 'GreyFrame' or 'GrayFrame' | 'GreyBox' or 'GrayBox' |
-| 'WhiteFrame' | 'WhiteBox' |
+| `'GreyFrame' or 'GrayFrame'` | `'GreyBox' or 'GrayBox'` |
+| `'WhiteFrame'` | `'WhiteBox'` |
 
 
 

@@ -42,13 +42,13 @@ or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'Configure'` or 31 |
-| [3] | Y | y-position of top left corner |
-| [4] | X | x-position of top left corner |
-| [5] | H | height of object |
-| [6] | W | width of object |
+| `[2]` | Event | `'Configure'` or 31 |
+| `[3]` | Y | y-position of top left corner |
+| `[4]` | X | x-position of top left corner |
+| `[5]` | H | height of object |
+| `[6]` | W | width of object |
 
 
 

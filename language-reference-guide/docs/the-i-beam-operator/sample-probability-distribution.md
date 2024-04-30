@@ -33,23 +33,23 @@ The domain rules for the distributions currently  implemented are as follows:
 
 | Distribution | X[1] | X[2] | Domain Rules |
 | --- | --- | --- | ---  |
-| 'Uniform' | a | b | a < b ; A numeric interval. Example: 1.0 7.6 |
-| 'Beta' | a | b | a > 0  AND b > 0 |
-| 'Bernoulli' | probability |  | probability ≥ 0 AND probability ≤ 1 |
-| 'Binomial' | trials | probability | trials is an integer ≥ 0;  probability ≥ 0 AND probability ≤ 1 |
-| 'Cauchy' | location | scale | location unrestricted; scale > 0 |
-| 'Chi Squared' | degree of freedom |  | degree of freedom ≥ 0 |
-| 'Exponential' | rate |  | rate  ≥ 0 |
-| 'F' | a | b | a ≥  eps AND b ≥ eps; where eps is smallest non-zero positive float number |
-| 'Gamma' | a | b | a ≥ 0 AND b ≥eps; where eps is smallest non-zero positive float number |
-| 'Inverse Gamma' | a | b | a ≥ 0 AND b ≥ 0 |
-| 'Laplace' | location | scale | location unrestricted; scale ≥ 0 |
-| 'Logistic' | location | scale | location unrestricted; scale ≥ 0 |
-| 'Log Normal' | location | scale | location unrestricted; scale ≥ 0 |
-| 'Normal' | location | scale | location unrestricted; scale ≥ 0 |
-| 'Poisson' | rate |  | rate ≥ 0 |
-| 'Student T' | degree of freedom |  | degree of freedom ≥eps where eps is smallest non-zero positive float number |
-| 'Weibull' | a | b | a ≥  eps AND b ≥ eps ; eps is smallest non-zero positive float number |
+| `'Uniform'` | a | b | a < b ; A numeric interval. Example: 1.0 7.6 |
+| `'Beta'` | a | b | a > 0  AND b > 0 |
+| `'Bernoulli'` | probability |  | probability ≥ 0 AND probability ≤ 1 |
+| `'Binomial'` | trials | probability | trials is an integer ≥ 0;  probability ≥ 0 AND probability ≤ 1 |
+| `'Cauchy'` | location | scale | location unrestricted; scale > 0 |
+| `'Chi Squared'` | degree of freedom |  | degree of freedom ≥ 0 |
+| `'Exponential'` | rate |  | rate  ≥ 0 |
+| `'F'` | a | b | a ≥  eps AND b ≥ eps; where eps is smallest non-zero positive float number |
+| `'Gamma'` | a | b | a ≥ 0 AND b ≥eps; where eps is smallest non-zero positive float number |
+| `'Inverse Gamma'` | a | b | a ≥ 0 AND b ≥ 0 |
+| `'Laplace'` | location | scale | location unrestricted; scale ≥ 0 |
+| `'Logistic'` | location | scale | location unrestricted; scale ≥ 0 |
+| `'Log Normal'` | location | scale | location unrestricted; scale ≥ 0 |
+| `'Normal'` | location | scale | location unrestricted; scale ≥ 0 |
+| `'Poisson'` | rate |  | rate ≥ 0 |
+| `'Student T'` | degree of freedom |  | degree of freedom ≥eps where eps is smallest non-zero positive float number |
+| `'Weibull'` | a | b | a ≥  eps AND b ≥ eps ; eps is smallest non-zero positive float number |
 
 
 

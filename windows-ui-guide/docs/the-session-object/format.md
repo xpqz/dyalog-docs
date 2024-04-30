@@ -25,13 +25,13 @@ You may not generate the event using `⎕NQ`, or call it as a method.
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| [1] | Object | ref to the Editor object |
+| `[1]` | Object | ref to the Editor object |
 | --- | --- | ---  |
-| [2] | Event | `'Format'` or 821 |
-| [3] | Contents | the contents of the Edit window, as a vector of character vectors |
-| [4] | Space | ref to the namespace in which the object will be fixed |
-| [5] | Old Name | a character vector containing the original name of the object when it was opened by the Editor |
-| [6] | New Name | a character vector containing the new name of the object. This is empty if the object is a variable. |
+| `[2]` | Event | `'Format'` or 821 |
+| `[3]` | Contents | the contents of the Edit window, as a vector of character vectors |
+| `[4]` | Space | ref to the namespace in which the object will be fixed |
+| `[5]` | Old Name | a character vector containing the original name of the object when it was opened by the Editor |
+| `[6]` | New Name | a character vector containing the new name of the object. This is empty if the object is a variable. |
 
 
 

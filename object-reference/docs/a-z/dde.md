@@ -31,9 +31,9 @@ The first statement would cause [`⎕DQ`](../../../language-reference-guide/syst
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function is a 2-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DDE'` or 50 |
+| `[2]` | Event | `'DDE'` or 50 |
 
 
 **Note:** Due to the nature of DDE "conversations" messages may be received when in fact no change in the value of any shared variables has occurred. Your application code must therefore be prepared to cater for this situation.

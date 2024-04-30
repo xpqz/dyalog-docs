@@ -21,16 +21,16 @@ It is a 10-element vector containing the following:
 
 | Index | Description |
 | --- | --- | ---  |
-| [1] | Formatted CEF release number. This is the primary identifier for a version of CEF. |
-| [2] | CEF major version. |
-| [3] | Commit number. |
-| [4] | Chromium version number. |
-| [5] | Chromium version number. |  |
-| [6] | Chromium version number. |  |
-| [7] | Chromium version number. |  |
-| [8] | GIT Hashes |  |
-| [9] | GIT Hashes |  |
-| [10] | GIT Hashes |  |
+| `[1]` | Formatted CEF release number. This is the primary identifier for a version of CEF. |
+| `[2]` | CEF major version. |
+| `[3]` | Commit number. |
+| `[4]` | Chromium version number. |
+| `[5]` | Chromium version number. |  |
+| `[6]` | Chromium version number. |  |
+| `[7]` | Chromium version number. |  |
+| `[8]` | GIT Hashes |  |
+| `[9]` | GIT Hashes |  |
+| `[10]` | GIT Hashes |  |
 
 
 

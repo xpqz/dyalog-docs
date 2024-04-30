@@ -33,11 +33,11 @@ A further consideration is that if you specify that the data type of a parameter
 The argument to SetEventInfo is a 1, 2, 3 or 4-element array as follows:
 
 
-| [1] | Event name | character vector |
+| `[1]` | Event name | character vector |
 | --- | --- | ---  |
-| [2] | Event info | nested array (see below) |
-| [3] | Help ID | integer |
-| [4] | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
+| `[2]` | Event info | nested array (see below) |
+| `[3]` | Help ID | integer |
+| `[4]` | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
 
 
 

@@ -10,14 +10,14 @@ Otherwise (in the nested case, when the first item is other than a simple scalar
 
 | Array | Prototype |
 | --- | ---  |
-| 1 2 3.4 | 0 |
-| 2 3 5⍴'hello' | `' '` |
-| 99 'b' 66 | 0 |
-| (1 2)(3 4 5) | 0 0 |
-| ((1 2)3)(4 5 6) | (0 0)0 |
-| 'hello' 'world' | '     ' |
-| ⎕NEW MyClass | MyClass |
-| (88(⎕NEW MyClass)'X')7 | 0 MyClass ' ' |
+| `1 2 3.4` | `0` |
+| `2 3 5⍴'hello'` | `' '` |
+| `99 'b' 66` | `0` |
+| `(1 2)(3 4 5)` | `0 0` |
+| `((1 2)3)(4 5 6)` | `(0 0)0` |
+| `'hello' 'world'` | `'     '` |
+| `⎕NEW MyClass` | `MyClass` |
+| `(88(⎕NEW MyClass)'X')7` | `0 MyClass ' '` |
 
 ## Fill Items
 

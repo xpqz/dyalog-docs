@@ -22,9 +22,9 @@ The default processing for this event is to set the Changed property of the [Pro
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'PageApply'` or 350 |
+| `[2]` | Event | `'PageApply'` or 350 |
 
 
 

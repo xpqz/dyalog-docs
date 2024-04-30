@@ -22,11 +22,11 @@ The default processing for this event is to display a message box containing det
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'TCPError'` or 370 |
-| [3] | Error code | a number |
-| [4] | Error text | a character vector |
+| `[2]` | Event | `'TCPError'` or 370 |
+| `[3]` | Error code | a number |
+| `[4]` | Error text | a character vector |
 
 
 

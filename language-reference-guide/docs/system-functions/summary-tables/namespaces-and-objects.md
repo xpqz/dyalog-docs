@@ -2,13 +2,13 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕BASE](../base.md) | Base Class |
-| [⎕CLASS](../class.md) | Class |
-| [⎕CS](../../the-i-beam-operator/memory-manager-statistics.md) | Change Space |
-| [⎕DF](../df.md) | Display Format |
-| [⎕FIX](../fix.md) | Fix |
-| [⎕INSTANCES](../instances.md) | Instances |
-| [⎕NEW](../new.md) | New Instance |
-| [⎕NS](../../primitive-functions/scalar-functions.md) | Namespace |
-| [⎕SRC](../src.md) | Source |
-| [⎕THIS](../this.md) | This |
+| `⎕BASE` | Base Class |
+| `⎕CLASS` | Class |
+| `⎕CS` | Change Space |
+| `⎕DF` | Display Format |
+| `⎕FIX` | Fix |
+| `⎕INSTANCES` | Instances |
+| `⎕NEW` | New Instance |
+| `⎕NS` | Namespace |
+| `⎕SRC` | Source |
+| `⎕THIS` | This |

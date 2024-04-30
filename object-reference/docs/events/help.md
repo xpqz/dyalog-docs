@@ -19,11 +19,11 @@ If enabled, this event is reported when the user clicks on an object which has a
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'Help` or 400 |
-| [3] | Y-coordinate | Number |
-| [4] | X-coordinate | Number |
+| `[2]` | Event | `'Help` or 400 |
+| `[3]` | Y-coordinate | Number |
+| `[4]` | X-coordinate | Number |
 
 
 The y and x-coordinates refer to the position of the mouse pointer in the object which was clicked on, and are reported in the coordinate system of that object.

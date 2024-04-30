@@ -131,10 +131,10 @@ Before execution, the argument is prefixed and postfixed with strings defined by
 `⎕CMD` treats certain characters as having special meaning as follows:
 
 
-| # | marks the start of a trailing comment, |
+| `#` | marks the start of a trailing comment, |
 | --- | ---  |
-| ; | divides the command into sub-commands, |
-| > | if found within the last sub-command, causes `⎕CMD` to use a visible window. |
+| `;` | divides the command into sub-commands, |
+| `>` | if found within the last sub-command, causes `⎕CMD` to use a visible window. |
 
 
 
@@ -167,12 +167,12 @@ Note that `Y[1]` may contain the complete command line, including any suitable p
 `Y[2]` specifies the window parameter and may be one of the following.  If not, a `DOMAIN ERROR` is reported.
 
 
-| 'Normal' '' | Application is started in a normal window, which is given the input focus |
+| `'Normal'''` | Application is started in a normal window, which is given the input focus |
 | --- | ---  |
-| 'Unfocused' | Application is started in a normal window, which is NOT given the input focus |
-| 'Hidden' | Application is run in an invisible window |
-| 'Minimized' 'Minimised' | Application is started as an icon which is NOT given the input focus |
-| 'Maximized' 'Maximised' | Application is started maximized (full screen) and is given the input focus |
+| `'Unfocused'` | Application is started in a normal window, which is NOT given the input focus |
+| `'Hidden'` | Application is run in an invisible window |
+| `'Minimized''Minimised'` | Application is started as an icon which is NOT given the input focus |
+| `'Maximized''Maximised'` | Application is started maximized (full screen) and is given the input focus |
 
 
 

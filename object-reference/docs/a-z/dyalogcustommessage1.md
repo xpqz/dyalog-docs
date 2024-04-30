@@ -54,10 +54,10 @@ or supplied as the right argument to your callback function, is a 4-element
 vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'DyalogCustomMessage1'` or 95 |
-| [3] | wparam | integer |
-| [4] | lparam | integer |
+| `[2]` | Event | `'DyalogCustomMessage1'` or 95 |
+| `[3]` | wparam | integer |
+| `[4]` | lparam | integer |
 
 

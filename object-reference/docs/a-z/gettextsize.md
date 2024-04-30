@@ -24,9 +24,9 @@ GetTextSize duplicates the functionality of the TextSize property. It is recomme
 The argument to GetTextSize is a 1 or 2-element array as follows:
 
 
-| [1] | Text item | character array |
+| `[1]` | Text item | character array |
 | --- | --- | ---  |
-| [2] | Font name | character vector |
+| `[2]` | Font name | character vector |
 
 
 

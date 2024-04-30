@@ -27,18 +27,18 @@ Each string value should contain a mixture of your own text and keywords which a
 
 | Keyword | Value |
 | --- | ---  |
-| {TITLE} | The window name shown in the first column of the previous table |
-| {WSID} | Workspace ID ( `⎕WSID` ) |
-| {NSID} | Current Namespace |
-| {SNSID} | Current Namespace (short version) |
-| {PRODUCT} | The name of the Dyalog product, e.g. "Dyalog APL/W - 64" |
-| {VER_A} | The main version number, e.g. "14" |
-| {VER_B} | The secondary version number, e.g. "0" |
-| {VER_C} | The tertiary  version number (currently the internal revision number) |
-| {PID} | The process ID |
-| {CHARS} | "Classic" or "Unicode" |
-| {BITS} | "32" or "64" |
-| {XLOC} | The namespace currently being explored (Explorer only) |
+| `{TITLE}` | The window name shown in the first column of the previous table |
+| `{WSID}` | Workspace ID ( `⎕WSID` ) |
+| `{NSID}` | Current Namespace |
+| `{SNSID}` | Current Namespace (short version) |
+| `{PRODUCT}` | The name of the Dyalog product, e.g. "Dyalog APL/W - 64" |
+| `{VER_A}` | The main version number, e.g. "14" |
+| `{VER_B}` | The secondary version number, e.g. "0" |
+| `{VER_C}` | The tertiary  version number (currently the internal revision number) |
+| `{PID}` | The process ID |
+| `{CHARS}` | "Classic" or "Unicode" |
+| `{BITS}` | "32" or "64" |
+| `{XLOC}` | The namespace currently being explored (Explorer only) |
 
 For example, if the Registry contains *.\Captions\Session* whose value is:
 ```apl

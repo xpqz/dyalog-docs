@@ -25,7 +25,7 @@ Let's see what this means if two APL workspaces are involved.
 | 0 0 0 0 ⍝ No access ctl |  |
 |  |  |
 |  | Make specific offer |
-|  | 'DDE:DYALOG&#124;SERVER'⎕SVO'X' |
+|  | 'DDE:DYALOG|SERVER'⎕SVO'X' |
 |  | <--- initiate --- |
 | ack ---> |  |
 |  | <--- please advise on change |

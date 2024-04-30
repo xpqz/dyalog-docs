@@ -2,10 +2,10 @@
 
 | Name | Description |
 | --- | ---  |
-| [⎕DM](../dm.md) | Diagnostic Message |
-| [⎕DMX](../dmx.md) | Extended Diagnostic Message |
-| [⎕EM](../em.md) | Event Messages |
-| [⎕EN](../en.md) | Event Number |
-| [⎕EXCEPTION](../exception.md) | Reports the most recent Microsoft .NET Exception |
-| [⎕SIGNAL](../signal.md) | Signal event |
-| [⎕TRAP](../trap.md) | Event Trap |
+| `⎕DM` | Diagnostic Message |
+| `⎕DMX` | Extended Diagnostic Message |
+| `⎕EM` | Event Messages |
+| `⎕EN` | Event Number |
+| `⎕EXCEPTION` | Reports the most recent Microsoft .NET Exception |
+| `⎕SIGNAL` | Signal event |
+| `⎕TRAP` | Event Trap |

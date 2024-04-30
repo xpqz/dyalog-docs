@@ -36,12 +36,12 @@ You may not disable or nullify the operation that caused GetDayStates to fire by
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'GetDayStates'` or 266 |
-| [3] | First Date | an integer (IDN) |
-| [4] | Last Date | an integer (IDN) |
-| [5] | Bold Dates | an integer vector of IDNs. |
+| `[2]` | Event | `'GetDayStates'` or 266 |
+| `[3]` | First Date | an integer (IDN) |
+| `[4]` | Last Date | an integer (IDN) |
+| `[5]` | Bold Dates | an integer vector of IDNs. |
 
 
 

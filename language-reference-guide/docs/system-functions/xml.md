@@ -259,12 +259,12 @@ When converting from XML `Whitespace` specifies the default handling of white sp
 | Converting from XML | Converting from XML |
 | --- | ---  |
 | Strip (strip) | All leading and trailing whitespace sequences are removed; remaining whitespace sequences are replaced by a single space character |
-| Trim (trim) | All leading and trailing whitespace sequences are removed; all remaining white space sequences are handled as preserve |
-| Preserve (preserve) | Whitespace is preserved as given except that line endings are represented by Linefeed 				( `⎕UCS 10` ) |
+| `Trim(trim)` | All leading and trailing whitespace sequences are removed; all remaining white space sequences are handled as preserve |
+| `Preserve(preserve)` | Whitespace is preserved as given except that line endings are represented by Linefeed 				( `⎕UCS 10` ) |
 | Converting to XML | Converting to XML |
 | Strip (strip) | All leading and trailing whitespace sequences are removed; remaining whitespace sequences within the data are replaced by a single space character. XML is generated with formatting and indentation to show the data structure |
-| Trim (trim) | Synonymous with `strip` |
-| Preserve (preserve) | White space in the data is preserved as given, except that line endings are represented by Linefeed 				( `⎕UCS 10` ). XML is generated with no formatting and indentation other than that which is contained within the data |
+| `Trim(trim)` | Synonymous with `strip` |
+| `Preserve(preserve)` | White space in the data is preserved as given, except that line endings are represented by Linefeed 				( `⎕UCS 10` ). XML is generated with no formatting and indentation other than that which is contained within the data |
 ```apl
 
       ]display eg
@@ -384,7 +384,7 @@ When converting from XML, `Markup` determines whether markup (other than entity 
 | Converting from XML | Converting from XML |
 | --- | ---  |
 | Strip (strip) | Markup data is not included in the output array |
-| Preserve (preserve) | Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 <sup>nd</sup> ) column |
+| `Preserve(preserve)` | Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 <sup>nd</sup> ) column |
 ```apl
   
       ]display eg
@@ -496,10 +496,10 @@ When converting from XML, this option determines what happens when an unknown en
 | Converting from XML | Converting from XML |
 | --- | ---  |
 | Replace (replace) | The reference is replaced by a single '?' character |
-| Preserve (preserve) | The reference is included in the output data as given, but with the leading '&' replaced by Esc ( `⎕UCS 27` ) |
+| `Preserve(preserve)` | The reference is included in the output data as given, but with the leading '&' replaced by Esc ( `⎕UCS 27` ) |
 | Converting to XML | Converting to XML |
 | Replace (replace) | Esc ( `⎕UCS 27` ) is preserved |
-| Preserve (preserve) | Esc ( `⎕UCS 27` ) is replaced by '&' |
+| `Preserve(preserve)` | Esc ( `⎕UCS 27` ) is replaced by '&' |
 
 
 

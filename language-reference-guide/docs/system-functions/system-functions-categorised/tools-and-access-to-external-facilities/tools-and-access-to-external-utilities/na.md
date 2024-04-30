@@ -95,30 +95,30 @@ The options are summarised in the following table and their functions detailed b
 
 | Description | Symbol | Meaning |
 | --- | --- | ---  |
-| Direction | < | Pointer to array *input* to DLL function. |
-| > | Pointer to array *output* from DLL function |
-| = | Pointer to input/output array. |
-| Special | 0 | Null-terminated string. |
-| # | Byte-counted string |
-| Type | I | int |
-| U | unsigned int |
-| C | char |
-| T | char [^1] |
-| F | float |
-| D | decimal |
-| J | complex |
-| P | uintptr-t [^2] |
-| A | APL array |
-| Z | APL array with header (as passed to a TCP/IP socket) |
-| Width | 1 | 1-byte |
-| 2 | 2-byte |
-| 4 | 4-byte |
-| 8 | 8-byte |
-| 16 | 16-byte (128-bit) |
-| Array | [n] | Array of length *n* elements |
-| [] | Array, length determined at call-time |
-| Structure | {...} | Structure. |
-| Count | [int] | Rather than explicitly declaring multiple adjacent occurrences of the same the count option may be used |
+| Direction | `<` | Pointer to array *input* to DLL function. |
+| `>` | Pointer to array *output* from DLL function |
+| `=` | Pointer to input/output array. |
+| Special | `0` | Null-terminated string. |
+| `#` | Byte-counted string |
+| Type | `I` | int |
+| `U` | unsigned int |
+| `C` | char |
+| `T` | char [^1] |
+| `F` | float |
+| `D` | decimal |
+| `J` | complex |
+| `P` | uintptr-t [^2] |
+| `A` | APL array |
+| `Z` | APL array with header (as passed to a TCP/IP socket) |
+| Width | `1` | 1-byte |
+| `2` | 2-byte |
+| `4` | 4-byte |
+| `8` | 8-byte |
+| `16` | 16-byte (128-bit) |
+| Array | `[n]` | Array of length *n* elements |
+| `[]` | Array, length determined at call-time |
+| Structure | `{...}` | Structure. |
+| Count | `[int]` | Rather than explicitly declaring multiple adjacent occurrences of the same the count option may be used |
 
 In the Classic Edition, `C` specifies untranslated character, whereas `T` specifies that the character data will be translated to/from `⎕AV`.
 
@@ -168,18 +168,18 @@ The data type of the argument may be one of the following characters and  may be
 
 | Code | Type | Description |
 | --- | --- | ---  |
-| I | Integer | The value is interpreted as a 2s complement signed integer |
-| U | Unsigned integer | The value is interpreted as an unsigned integer |
-| C | Character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is interpreted as an index into `⎕AV` . This means that `⎕AV` *positions* map onto corresponding ANSI *positions* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` , maps to `ANSI[35] = '` |
-| T | Translated character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is *translated* using standard Dyalog `⎕AV` to ANSI translation. This means that `⎕AV` *characters* map onto corresponding ANSI *characters* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` maps to `ANSI[115] = 's'` |
-| UTF | Unicode encoded | `>0UTF8[]` will translate to a UTF-8 encoded string `<0UTF16[]` will translate from a UTF-16LE encoded string |
-| F | Float | The value is interpreted as an IEEE 754-2008 binary64 floating point number |
-| D | Decimal | The value is interpreted as an IEEE 754-2008 decimal128 floating point number (DPD format on AIX, BID format on other platforms) |
-| J | Complex |  |
-| P | uintptr-t | This is equivalent to U4 on 32-bit versions and U8 on 64-bit versions |
-| ∇ | Function pointer | This allows the passing of an APL function for the function to call |
-| A | APL array | This is the same format as is used to transmit APL arrays to an Auxiliary Processor (AP) |
-| Z | APL array with header | This is the same format as is used to transmit APL arrays over TCP/IP Sockets |
+| `I` | Integer | The value is interpreted as a 2s complement signed integer |
+| `U` | Unsigned integer | The value is interpreted as an unsigned integer |
+| `C` | Character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is interpreted as an index into `⎕AV` . This means that `⎕AV` *positions* map onto corresponding ANSI *positions* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` , maps to `ANSI[35] = '` |
+| `T` | Translated character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is *translated* using standard Dyalog `⎕AV` to ANSI translation. This means that `⎕AV` *characters* map onto corresponding ANSI *characters* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` maps to `ANSI[115] = 's'` |
+| `UTF` | Unicode encoded | `>0UTF8[]` will translate to a UTF-8 encoded string `<0UTF16[]` will translate from a UTF-16LE encoded string |
+| `F` | Float | The value is interpreted as an IEEE 754-2008 binary64 floating point number |
+| `D` | Decimal | The value is interpreted as an IEEE 754-2008 decimal128 floating point number (DPD format on AIX, BID format on other platforms) |
+| `J` | Complex |  |
+| `P` | uintptr-t | This is equivalent to U4 on 32-bit versions and U8 on 64-bit versions |
+| `∇` | Function pointer | This allows the passing of an APL function for the function to call |
+| `A` | APL array | This is the same format as is used to transmit APL arrays to an Auxiliary Processor (AP) |
+| `Z` | APL array with header | This is the same format as is used to transmit APL arrays over TCP/IP Sockets |
 
 # Width
 
@@ -194,18 +194,18 @@ The type specifier may be followed by the width of the value in bytes. For examp
 
 | Type | Possible values for Width | Default value for Width |
 | --- | --- | ---  |
-| I | 1, 2, 4, 8 | 4 |
-| U | 1, 2, 4, 8 | 4 |
-| C | 1,2,4 | 1 |
-| T | 1,2,4 | wide character(see below) |
-| UTF | 8,16 | none |
-| F | 4, 8 | 8 |
-| D | 16 | 16 |
-| J | 16 | 16 |
-| P | Not applicable |  |
-| ∇ | Not applicable |  |
-| A | Not applicable |  |
-| Z | Not applicable |  |
+| `I` | 1, 2, 4, 8 | 4 |
+| `U` | 1, 2, 4, 8 | 4 |
+| `C` | 1,2,4 | 1 |
+| `T` | 1,2,4 | wide character(see below) |
+| `UTF` | 8,16 | none |
+| `F` | 4, 8 | 8 |
+| `D` | 16 | 16 |
+| `J` | 16 | 16 |
+| `P` | Not applicable |  |
+| `∇` | Not applicable |  |
+| `A` | Not applicable |  |
+| `Z` | Not applicable |  |
 
 In the Unicode Edition, the default width is the width of a *wide character* according to the convention of the host operating system. This translates to T2 under Windows and T4 under UNIX, Linux or macOS.
 
@@ -423,12 +423,12 @@ The length of the result vector is therefore: 1 (if the function was declared to
 
 | `⎕NA` Declaration | Result | Output Arguments | Result Length |
 | --- | --- | --- | ---  |
-| mydll&#124;fn1 | 0 |  | 0 |
-| mydll&#124;fn2 <0T | 0 | 0 | 0 |
-| mydll&#124;fn3 =0T <0T | 0 | 1 0 | 1 |
-| I4 mydll&#124;fn4 | 1 |  | 1 |
-| I4 mydll&#124;fn5 F8 | 1 | 0 | 1 |
-| I4 mydll&#124;fn6 >I4[] <0T | 1 | 1 0 | 2 |
+| `mydll|fn1` | `0` | `` | `0` |
+| `mydll|fn2 <0T` | `0` | `0` | `0` |
+| `mydll|fn3 =0T <0T` | `0` | `1 0` | `1` |
+| `I4 mydll|fn4` | `1` | `` | `1` |
+| `I4 mydll|fn5 F8` | `1` | `0` | `1` |
+| `I4 mydll|fn6 >I4[] <0T` | `1` | `1 0` | `2` |
 
 Note that the result vector from a function that is declared `void()` and has no output parameters is `⍬` (zilde).
 
@@ -483,37 +483,37 @@ The following table of some commonly encountered Windows typedefs and their `⎕
 
 | Windows typedef | `⎕NA` equivalent |
 | --- | ---  |
-| HWND | P |
-| HANDLE | P |
-| GLOBALHANDLE | P |
-| LOCALHANDLE | P |
-| DWORD | U4 |
-| WORD | U2 |
-| BYTE | U1 |
-| LPSTR | `=0T[]` (note 1) |
-| LPCSTR | `<0T[]` (note 2) |
-| WPARAM | U (note 3) |
-| LPARAM | U4 (note 3) |
-| LRESULT | I4 |
-| BOOL | I |
-| UINT | U |
-| ULONG | U4 |
-| ATOM | U2 |
-| HDC | P |
-| HBITMAP | P |
-| HBRUSH | P |
-| HFONT | P |
-| HICON | P |
-| HMENU | P |
-| HPALETTE | P |
-| HMETAFILE | P |
-| HMODULE | P |
-| HINSTANCE | P |
-| COLORREF | {U1[4]} |
-| POINT | {I I} |
-| POINTS | {I2 I2} |
-| RECT | {I I I I} |
-| CHAR | `T` or `C` |
+| HWND | `P` |
+| HANDLE | `P` |
+| GLOBALHANDLE | `P` |
+| LOCALHANDLE | `P` |
+| DWORD | `U4` |
+| WORD | `U2` |
+| BYTE | `U1` |
+| LPSTR | `=0T[] (note 1)` |
+| LPCSTR | `<0T[] (note 2)` |
+| WPARAM | `U (note 3)` |
+| LPARAM | `U4 (note 3)` |
+| LRESULT | `I4` |
+| BOOL | `I` |
+| UINT | `U` |
+| ULONG | `U4` |
+| ATOM | `U2` |
+| HDC | `P` |
+| HBITMAP | `P` |
+| HBRUSH | `P` |
+| HFONT | `P` |
+| HICON | `P` |
+| HMENU | `P` |
+| HPALETTE | `P` |
+| HMETAFILE | `P` |
+| HMODULE | `P` |
+| HINSTANCE | `P` |
+| COLORREF | `{U1[4]}` |
+| POINT | `{I I}` |
+| POINTS | `{I2 I2}` |
+| RECT | `{I I I I}` |
+| CHAR | `T or C` |
 
 # Notes
 

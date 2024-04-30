@@ -21,7 +21,7 @@ Note that methods and properties exported using the standard IDispatch interface
 The argument to OLEQueryInterface is a single item as follows:
 
 
-[1] Interface name character vector
+`[1]` Interface name character vector
 
 
 The result is a namespace.

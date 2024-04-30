@@ -18,7 +18,7 @@ This method is used to set the maximum visible depth of data in rows of a [Grid]
 The argument to RowSetVisibleDepth is a numeric scalar as follows
 
 
-[1] Depth integer
+`[1]` Depth integer
 
 
 All rows in the grid that have a value of [RowTreeDepth](../properties/rowtreedepth.md) less than or equal to *Depth* are expanded. Rows with a value of [RowTreeDepth](../properties/rowtreedepth.md) greater than *Depth* are collapsed.

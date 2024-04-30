@@ -16,11 +16,11 @@ This function deletes files and directories.
 The optional left argument `X` is a numeric scalar; valid values are  shown in the following table. If omitted, its default value is 0.
 
 
-| 0 | Each file or directory with the given name must exist. |
+| `0` | Each file or directory with the given name must exist. |
 | --- | ---  |
-| 1 | If the file or directory with the given name does not exist then no action is taken. The result `R` may be used to determine whether the file or directory was deleted or not. |
-| 2 | If a name identifies a non-empty directory it, and all its contents, are to be deleted. |
-| 3 | Combination of 1 and 2. |
+| `1` | If the file or directory with the given name does not exist then no action is taken. The result `R` may be used to determine whether the file or directory was deleted or not. |
+| `2` | If a name identifies a non-empty directory it, and all its contents, are to be deleted. |
+| `3` | Combination of 1 and 2. |
 
 
 `R` is a numeric count of top-level entities deleted when processing the corresponding name in `Y`. If `Y` specifies a single name,  `R` is a scalar. If `Y` is a vector of character vectors   `R` is a vector  with the same length as `Y`.
@@ -36,7 +36,7 @@ The optional left argument `X` is a numeric scalar; valid values are  shown in t
 
 | 0 | The name or names in `Y` identifies a specific file name. |
 | --- | ---  |
-| 1 | The name or names in `Y` that specify the *base name* and *extension* (see [NParts](./nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
+| `1` | The name or names in `Y` that specify the *base name* and *extension* (see [NParts](./nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
 
 
 Note that when Wildcard is 1, element(s) of `R` can  be 0 or `>1`. If Wildcard is 0, elements of `R` are always 1.

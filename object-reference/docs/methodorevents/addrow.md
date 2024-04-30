@@ -24,23 +24,23 @@ or supplied as the right argument to your callback function, is a 3 element
 vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'AddRow'` or 152 |
-| [3] | Row number | number of the new row (integer) |
+| `[2]` | Event | `'AddRow'` or 152 |
+| `[3]` | Row number | number of the new row (integer) |
 
 
 An application may insert a new row into a [Grid](../objects/grid.md) by calling AddRow as a method. The argument is a 1 to 7-element array as follows:
 
 
-| [1] | Row number | integer |
+| `[1]` | Row number | integer |
 | --- | --- | ---  |
-| [2] | Row title | character vector or matrix |
-| [3] | Row height | integer |
-| [4] | Undo flag | 0 or 1 |
-| [5] | Resize flag | 0 or 1 |
-| [6] | Title colour | negative integer or 3-element RGB vector |
-| [7] | Line type | integer |
+| `[2]` | Row title | character vector or matrix |
+| `[3]` | Row height | integer |
+| `[4]` | Undo flag | 0 or 1 |
+| `[5]` | Resize flag | 0 or 1 |
+| `[6]` | Title colour | negative integer or 3-element RGB vector |
+| `[7]` | Line type | integer |
 
 
 

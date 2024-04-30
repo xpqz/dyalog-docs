@@ -22,13 +22,13 @@ This event is reported for information alone. You may not disable or nullify the
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'Splitting'` or 281 |
-| [3] | Y | y-position of top left corner |
-| [4] | X | x-position of top left corner |
-| [5] | H | height of the Splitter |
-| [6] | W | width of the Splitter |
+| `[2]` | Event | `'Splitting'` or 281 |
+| `[3]` | Y | y-position of top left corner |
+| `[4]` | X | x-position of top left corner |
+| `[5]` | H | height of the Splitter |
+| `[6]` | W | width of the Splitter |
 
 
 See also [StartSplit](../methodorevents/startsplit.md), [EndSplit](../methodorevents/endsplit.md).

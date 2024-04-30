@@ -22,10 +22,10 @@ You may disable the operation by setting the action code for the event to `¯1`.
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'BeginEditLabel'` or 300 |
-| [3] | Item number | Integer. The index of the item. |
+| `[2]` | Event | `'BeginEditLabel'` or 300 |
+| `[3]` | Item number | Integer. The index of the item. |
 
 
 

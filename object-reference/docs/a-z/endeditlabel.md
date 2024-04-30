@@ -22,11 +22,11 @@ You may disable the update operation by setting the action code for the event to
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| [1] | Object | ref or character vector |
+| `[1]` | Object | ref or character vector |
 | --- | --- | ---  |
-| [2] | Event | `'EndEditLabel'` or 301 |
-| [3] | Item number | Integer. The index of the item. |
-| [4] | Text | character vector containing the text that will be used to update the item's label. |
+| `[2]` | Event | `'EndEditLabel'` or 301 |
+| `[3]` | Item number | Integer. The index of the item. |
+| `[4]` | Text | character vector containing the text that will be used to update the item's label. |
 
 
 

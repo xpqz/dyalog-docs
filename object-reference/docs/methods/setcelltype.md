@@ -19,10 +19,10 @@ This method is used to change the type of a particular cell in a [Grid](../objec
 The argument to SetCellType is a  3-element vector as follows :
 
 
-| [1] | Cell row | integer |
+| `[1]` | Cell row | integer |
 | --- | --- | ---  |
-| [2] | Cell column | integer |
-| [3] | Cell type | integer |
+| `[2]` | Cell column | integer |
+| `[3]` | Cell type | integer |
 
 
 

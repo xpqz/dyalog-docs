@@ -6,14 +6,14 @@ The following tables list the system functions divided into appropriate categori
 
 | Name | Description |
 | --- | ---  |
-| [⎕CT](../../primitive-functions/subtract.md) | Comparison Tolerance |
-| [⎕DCT](../dct.md) | Decimal Comp Tolerance |
-| [⎕DIV](../div.md) | Division Method |
-| [⎕FR](../fr.md) | Floating-Point Representation |
-| [⎕IO](../io.md) | Index Origin |
-| [⎕ML](../ml.md) | Migration Level |
-| [⎕PP](../pp.md) | Print Precision |
-| [⎕RL](../rl.md) | Random Link |
+| `⎕CT` | Comparison Tolerance |
+| `⎕DCT` | Decimal Comp Tolerance |
+| `⎕DIV` | Division Method |
+| `⎕FR` | Floating-Point Representation |
+| `⎕IO` | Index Origin |
+| `⎕ML` | Migration Level |
+| `⎕PP` | Print Precision |
+| `⎕RL` | Random Link |
 
 The following table describes the dependencies that exist between functions, operators and these system variables.
 
@@ -21,15 +21,15 @@ Implicit Arguments
 
 | System Variable | Monadic Functions | Dyadic Functions | Operators |
 | --- | --- | --- | ---  |
-| ⎕CT, ⎕DCT | ⌈ ⌊ ∪ | ~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ &#124; ∨ ∧ | ⌸ |
-| ⎕DIV | ÷ | ÷ |  |
-| ⎕FR   ⍝ 1 | ÷ * ⍟ ! ○ ⌹ | + - × ÷ * ⍟ &#124; ! ○ ∨ ∧ ⊥ ⊤ ⌹ |  |
-| ⎕FR   ⍝ 2 | ⌈ ⌊ ∪ | ~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ⌸ |
-| ⎕FR   ⍝ 3 | ⍒ ⍋ | ⌈ ⌊ ⍒ ⍋ ⍸ |  |
-| ⎕IO | ⍳ ? ⍒ ⍋ ⍸ | ⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸ | ⌸ @ [] |
-| ⎕ML | ∊ ↑ ⊃ ≡ |  |  |
-| ⎕PP | ⍕ |  |  |
-| ⎕RL | ? | ? |  |
+| `⎕CT, ⎕DCT` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ∨ ∧` | `⌸` |
+| `⎕DIV` | `÷` | `÷` | `` |
+| `⎕FR   ⍝ 1` | `÷ * ⍟ ! ○ ⌹` | `+ - × ÷ * ⍟ | ! ○ ∨ ∧ ⊥ ⊤ ⌹` | `` |
+| `⎕FR   ⍝ 2` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷` | `⌸` |
+| `⎕FR   ⍝ 3` | `⍒ ⍋` | `⌈ ⌊ ⍒ ⍋ ⍸` | `` |
+| `⎕IO` | `⍳ ? ⍒ ⍋ ⍸` | `⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸` | `⌸ @ []` |
+| `⎕ML` | `∊ ↑ ⊃ ≡` | `` | `` |
+| `⎕PP` | `⍕` | `` | `` |
+| `⎕RL` | `?` | `?` | `` |
 
 where, for `⎕FR`, `1` indicates functions that compute real numbers and whose precision depends on `⎕FR`, `2` indicates functions that perform tolerant comparisons and `3` indicates functions that perform tolerant comparisons.
 
@@ -39,246 +39,246 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 
 | Name | Description |
 | --- | ---  |
-| [⎕AI](../ai.md) | Account Information |
-| [⎕AN](../../primitive-operators/scan.md) | Account Name |
-| [⎕CLEAR](../clear.md) | Clear workspace (WS) |
-| [⎕CY](../cy.md) | Copy objects into active WS |
-| [⎕DL](../dl.md) | Delay execution |
-| [⎕LOAD](../load.md) | Load a saved WS |
-| [⎕OFF](../off.md) | End the session |
-| [⎕PATH](../path.md) | Search Path |
-| [⎕SAVE](../../the-i-beam-operator/continue-autosave.md) | Save the active WS |
-| [⎕TS](../../symbols/language-elements.md) | Timestamp |
+| `⎕AI` | Account Information |
+| `⎕AN` | Account Name |
+| `⎕CLEAR` | Clear workspace (WS) |
+| `⎕CY` | Copy objects into active WS |
+| `⎕DL` | Delay execution |
+| `⎕LOAD` | Load a saved WS |
+| `⎕OFF` | End the session |
+| `⎕PATH` | Search Path |
+| `⎕SAVE` | Save the active WS |
+| `⎕TS` | Timestamp |
 
 ### Constants
 
 | Name | Description |
 | --- | ---  |
-| [⎕A](../a.md) | Alphabetic upper case characters |
-| [⎕D](../../primitive-functions/add.md) | Digits |
-| [⎕NULL](../null.md) | Null Item |
+| `⎕A` | Alphabetic upper case characters |
+| `⎕D` | Digits |
+| `⎕NULL` | Null Item |
 
 ### Tools and Access to External Utilities
 
 | Name | Description |
 | --- | ---  |
-| [⎕C](../../primitive-functions/transpose-monadic.md) | Case Convert |
-| [⎕CMD](../execute-windows-command.md) | Execute the Windows Command Processor or another program |
-| [⎕CMD](../start-windows-auxiliary-processor.md) | Start a Windows AP |
-| [⎕CSV](../csv.md) | Comma Separated Values |
-| [⎕DR](../data-representation-monadic.md) | Data Representation (Monadic) |
-| [⎕DR](../data-representation-dyadic.md) | Data Representation (Dyadic) |
-| [⎕DT](../dt.md) | Datetime |
-| [⎕FMT](../../primitive-functions/format-monadic.md) | Resolve display |
-| [⎕FMT](../../primitive-functions/format-dyadic.md) | Format array |
-| [⎕JSON](../json.md) | JSON Convert |
-| [⎕MAP](../map.md) | Map a file |
-| [⎕NA](../na.md) | Declare a DLL function |
-| [⎕R](../../primitive-functions/floor.md) | Replace |
-| [⎕S](../../symbols/language-elements.md) | Search |
-| [⎕SH](../execute-unix-command.md) | Execute a UNIX command or another program |
-| [⎕SH](../start-unix-auxiliary-processor.md) | Start a UNIX AP |
-| [⎕UCS](../ucs.md) | Unicode Convert |
-| [⎕USING](../using.md) | Microsoft .NET Search Path |
-| [⎕VFI](../vfi.md) | Verify and Fix numeric |
-| [⎕XML](../xml.md) | XML Convert |
+| `⎕C` | Case Convert |
+| `⎕CMD` | Execute the Windows Command Processor or another program |
+| `⎕CMD` | Start a Windows AP |
+| `⎕CSV` | Comma Separated Values |
+| `⎕DR` | Data Representation (Monadic) |
+| `⎕DR` | Data Representation (Dyadic) |
+| `⎕DT` | Datetime |
+| `⎕FMT` | Resolve display |
+| `⎕FMT` | Format array |
+| `⎕JSON` | JSON Convert |
+| `⎕MAP` | Map a file |
+| `⎕NA` | Declare a DLL function |
+| `⎕R` | Replace |
+| `⎕S` | Search |
+| `⎕SH` | Execute a UNIX command or another program |
+| `⎕SH` | Start a UNIX AP |
+| `⎕UCS` | Unicode Convert |
+| `⎕USING` | Microsoft .NET Search Path |
+| `⎕VFI` | Verify and Fix numeric |
+| `⎕XML` | XML Convert |
 
 ### Manipulating Functions and Operators
 
 | Name | Description |
 | --- | ---  |
-| [⎕AT](../../primitive-operators/at.md) | Object Attributes |
-| [⎕CR](../cr.md) | Canonical Representation |
-| [⎕ED](../../primitive-functions/assignment-indexed.md) | Edit one or more objects |
-| [⎕EX](../../primitive-functions/index.md) | Expunge objects |
-| [⎕FX](../fx.md) | Fix definition |
-| [⎕LOCK](../lock.md) | Lock a function |
-| [⎕MONITOR](../set-monitor.md) | Monitor set |
-| [⎕MONITOR](../query-monitor.md) | Monitor query |
-| [⎕OR](../../primitive-functions/floor.md) | Object Representation |
-| [⎕NR](../nr.md) | Nested Representation |
-| [⎕PROFILE](../profile.md) | Profile Application |
-| [⎕REFS](../refs.md) | Local References |
-| [⎕STOP](../set-stop.md) | Set Stop vector |
-| [⎕STOP](../query-stop.md) | Query Stop vector |
-| [⎕TRACE](../set-trace.md) | Set Trace vector |
-| [⎕TRACE](../query-trace.md) | Query Trace vector |
-| [⎕VR](../vr.md) | Vector Representation |
+| `⎕AT` | Object Attributes |
+| `⎕CR` | Canonical Representation |
+| `⎕ED` | Edit one or more objects |
+| `⎕EX` | Expunge objects |
+| `⎕FX` | Fix definition |
+| `⎕LOCK` | Lock a function |
+| `⎕MONITOR` | Monitor set |
+| `⎕MONITOR` | Monitor query |
+| `⎕OR` | Object Representation |
+| `⎕NR` | Nested Representation |
+| `⎕PROFILE` | Profile Application |
+| `⎕REFS` | Local References |
+| `⎕STOP` | Set Stop vector |
+| `⎕STOP` | Query Stop vector |
+| `⎕TRACE` | Set Trace vector |
+| `⎕TRACE` | Query Trace vector |
+| `⎕VR` | Vector Representation |
 
 ### Namespaces and Objects
 
 | Name | Description |
 | --- | ---  |
-| [⎕BASE](../base.md) | Base Class |
-| [⎕CLASS](../class.md) | Class |
-| [⎕CS](../../the-i-beam-operator/memory-manager-statistics.md) | Change Space |
-| [⎕DF](../df.md) | Display Format |
-| [⎕FIX](../fix.md) | Fix |
-| [⎕INSTANCES](../instances.md) | Instances |
-| [⎕NEW](../new.md) | New Instance |
-| [⎕NS](../../primitive-functions/scalar-functions.md) | Namespace |
-| [⎕SRC](../src.md) | Source |
-| [⎕THIS](../this.md) | This |
+| `⎕BASE` | Base Class |
+| `⎕CLASS` | Class |
+| `⎕CS` | Change Space |
+| `⎕DF` | Display Format |
+| `⎕FIX` | Fix |
+| `⎕INSTANCES` | Instances |
+| `⎕NEW` | New Instance |
+| `⎕NS` | Namespace |
+| `⎕SRC` | Source |
+| `⎕THIS` | This |
 
 ### Input/Output
 
 | Name | Description |
 | --- | ---  |
-| [⎕](../evaluated-input-output.md) | Evaluated Input/Output |
-| [⍞](../character-input-output.md) | Character Input/Output |
-| [⎕ARBIN](../arbin.md) | Arbitrary Input |
-| [⎕ARBOUT](../arbout.md) | Arbitrary Output |
-| [⎕RTL](../rtl.md) | Response Time Limit |
+| `⎕` | Evaluated Input/Output |
+| `⍞` | Character Input/Output |
+| `⎕ARBIN` | Arbitrary Input |
+| `⎕ARBOUT` | Arbitrary Output |
+| `⎕RTL` | Response Time Limit |
 
 ### Component Files
 
 | Name | Description |
 | --- | ---  |
-| [⎕FAPPEND](../fappend.md) | Append a component to File |
-| [⎕FAVAIL](../favail.md) | File system Availability |
-| [⎕FCHK](../fchk.md) | File Check and Repair |
-| [⎕FCOPY](../fcopy.md) | Copy a File |
-| [⎕FCREATE](../fcreate.md) | Create a File |
-| [⎕FDROP](../fdrop.md) | Drop a block of components |
-| [⎕FERASE](../ferase.md) | Erase a File |
-| [⎕FHIST](../fhist.md) | File History |
-| [⎕FHOLD](../fhold.md) | File Hold |
-| [⎕FLIB](../flib.md) | List File Library |
-| [⎕FNAMES](../fnames.md) | Names of tied Files |
-| [⎕FNUMS](../fnums.md) | Tie Numbers of tied Files |
-| [⎕FPROPS](../fprops.md) | File Properties |
-| [⎕FRDAC](../frdac.md) | Read File Access matrix |
-| [⎕FRDCI](../frdci.md) | Read Component Information |
-| [⎕FREAD](../fread.md) | Read a component from File |
-| [⎕FRENAME](../frename.md) | Rename a File |
-| [⎕FREPLACE](../freplace.md) | Replace a component on File |
-| [⎕FRESIZE](../fresize.md) | File Resize |
-| [⎕FSIZE](../fsize.md) | File Size |
-| [⎕FSTAC](../fstac.md) | Set File Access matrix |
-| [⎕FSTIE](../fstie.md) | Share-Tie a File |
-| [⎕FTIE](../ftie.md) | Tie a File exclusively |
-| [⎕FUNTIE](../funtie.md) | Untie Files |
+| `⎕FAPPEND` | Append a component to File |
+| `⎕FAVAIL` | File system Availability |
+| `⎕FCHK` | File Check and Repair |
+| `⎕FCOPY` | Copy a File |
+| `⎕FCREATE` | Create a File |
+| `⎕FDROP` | Drop a block of components |
+| `⎕FERASE` | Erase a File |
+| `⎕FHIST` | File History |
+| `⎕FHOLD` | File Hold |
+| `⎕FLIB` | List File Library |
+| `⎕FNAMES` | Names of tied Files |
+| `⎕FNUMS` | Tie Numbers of tied Files |
+| `⎕FPROPS` | File Properties |
+| `⎕FRDAC` | Read File Access matrix |
+| `⎕FRDCI` | Read Component Information |
+| `⎕FREAD` | Read a component from File |
+| `⎕FRENAME` | Rename a File |
+| `⎕FREPLACE` | Replace a component on File |
+| `⎕FRESIZE` | File Resize |
+| `⎕FSIZE` | File Size |
+| `⎕FSTAC` | Set File Access matrix |
+| `⎕FSTIE` | Share-Tie a File |
+| `⎕FTIE` | Tie a File exclusively |
+| `⎕FUNTIE` | Untie Files |
 
 ### Native Files
 
 | Name | Description |
 | --- | ---  |
-| [⎕MKDIR](../mkdir.md) | Create a directory |
-| [⎕NAPPEND](../nappend.md) | Append to File |
-| [⎕NCOPY](../ncopy.md) | Copy files and directories |
-| [⎕NCREATE](../ncreate.md) | Create a File |
-| [⎕NDELETE](../ndelete.md) | Delete a File or Directory |
-| [⎕NERASE](../nerase.md) | Erase a File |
-| [⎕NEXISTS](../nexists.md) | Discover whether or not a file or directory exists |
-| [⎕NGET](../nget.md) | Read Text File |
-| [⎕NINFO](../ninfo.md) | Obtain information about one or more files and/or directories |
-| [⎕NLOCK](../nlock.md) | Lock a region of a file |
-| [⎕NMOVE](../nmove.md) | Move files and directories |
-| [⎕NNAMES](../nnames.md) | Names of tied Files |
-| [⎕NNUMS](../nnums.md) | Tie Numbers of tied Files |
-| [⎕NPARTS](../nparts.md) | Split a file name into its constituent parts. |
-| [⎕NPUT](../nput.md) | Write Text File |
-| [⎕NREAD](../nread.md) | Read from File |
-| [⎕NRENAME](../nrename.md) | Rename a File |
-| [⎕NREPLACE](../nreplace.md) | Replace data on File |
-| [⎕NRESIZE](../nresize.md) | File Resize |
-| [⎕NSIZE](../nsize.md) | File Size |
-| [⎕NTIE](../funtie.md) | Tie a File exclusively |
-| [⎕NUNTIE](../nuntie.md) | Untie Files |
-| [⎕NXLATE](../nxlate.md) | Specify Translation Table |
+| `⎕MKDIR` | Create a directory |
+| `⎕NAPPEND` | Append to File |
+| `⎕NCOPY` | Copy files and directories |
+| `⎕NCREATE` | Create a File |
+| `⎕NDELETE` | Delete a File or Directory |
+| `⎕NERASE` | Erase a File |
+| `⎕NEXISTS` | Discover whether or not a file or directory exists |
+| `⎕NGET` | Read Text File |
+| `⎕NINFO` | Obtain information about one or more files and/or directories |
+| `⎕NLOCK` | Lock a region of a file |
+| `⎕NMOVE` | Move files and directories |
+| `⎕NNAMES` | Names of tied Files |
+| `⎕NNUMS` | Tie Numbers of tied Files |
+| `⎕NPARTS` | Split a file name into its constituent parts. |
+| `⎕NPUT` | Write Text File |
+| `⎕NREAD` | Read from File |
+| `⎕NRENAME` | Rename a File |
+| `⎕NREPLACE` | Replace data on File |
+| `⎕NRESIZE` | File Resize |
+| `⎕NSIZE` | File Size |
+| `⎕NTIE` | Tie a File exclusively |
+| `⎕NUNTIE` | Untie Files |
+| `⎕NXLATE` | Specify Translation Table |
 
 ### Threads
 
 | Name | Description |
 | --- | ---  |
-| [⎕TALLOC](../talloc.md) | Allocate Token Range |
-| [⎕TCNUMS](../tcnums.md) | Thread Child Numbers |
-| [⎕TID](../tid.md) | Current Thread Identity |
-| [⎕TKILL](../tkill.md) | Kill Threads |
-| [⎕TNAME](../tname.md) | Current Thread Name |
-| [⎕TNUMS](../tnums.md) | Thread Numbers |
-| [⎕TSYNC](../tsync.md) | Wait for Threads to Terminate |
+| `⎕TALLOC` | Allocate Token Range |
+| `⎕TCNUMS` | Thread Child Numbers |
+| `⎕TID` | Current Thread Identity |
+| `⎕TKILL` | Kill Threads |
+| `⎕TNAME` | Current Thread Name |
+| `⎕TNUMS` | Thread Numbers |
+| `⎕TSYNC` | Wait for Threads to Terminate |
 
 ### Synchronisation
 
 | Name | Description |
 | --- | ---  |
-| [⎕TALLOC](../talloc.md) | Allocate Token Range |
-| [⎕TGET](../tget.md) | Get Tokens |
-| [⎕TKILL](../tkill.md) | Kill Threads |
-| [⎕TPOOL](../tpool.md) | Token Pool |
-| [⎕TPUT](../summary-tables/input-and-output.md) | Put Tokens |
-| [⎕TREQ](../treq.md) | Token Requests |
+| `⎕TALLOC` | Allocate Token Range |
+| `⎕TGET` | Get Tokens |
+| `⎕TKILL` | Kill Threads |
+| `⎕TPOOL` | Token Pool |
+| `⎕TPUT` | Put Tokens |
+| `⎕TREQ` | Token Requests |
 
 ### Error Handling
 
 | Name | Description |
 | --- | ---  |
-| [⎕DM](../dm.md) | Diagnostic Message |
-| [⎕DMX](../dmx.md) | Extended Diagnostic Message |
-| [⎕EM](../em.md) | Event Messages |
-| [⎕EN](../en.md) | Event Number |
-| [⎕EXCEPTION](../exception.md) | Reports the most recent Microsoft .NET Exception |
-| [⎕SIGNAL](../signal.md) | Signal event |
-| [⎕TRAP](../trap.md) | Event Trap |
+| `⎕DM` | Diagnostic Message |
+| `⎕DMX` | Extended Diagnostic Message |
+| `⎕EM` | Event Messages |
+| `⎕EN` | Event Number |
+| `⎕EXCEPTION` | Reports the most recent Microsoft .NET Exception |
+| `⎕SIGNAL` | Signal event |
+| `⎕TRAP` | Event Trap |
 
 ### Stack and Workspace Information
 
 | Name | Description |
 | --- | ---  |
-| [⎕LC](../lc.md) | Line Count |
-| [⎕LX](../lx.md) | Latent Expression |
-| [⎕NC](../nc.md) | Name Classification |
-| [⎕NL](../nl.md) | Name List |
-| [⎕NSI](../nsi.md) | Namespace Indicator |
-| [⎕RSI](../rsi.md) | Space Indicator |
-| [⎕SI](../si.md) | State Indicator |
-| [⎕SHADOW](../shadow.md) | Shadow names |
-| [⎕SIZE](../size.md) | Size of objects |
-| [⎕STACK](../stack.md) | Report Stack |
-| [⎕STATE](../state.md) | Return State of an object |
-| [⎕WA](../wa.md) | Workspace Available |
-| [⎕WSID](../wsid.md) | Workspace Identification |
-| [⎕XSI](../xsi.md) | Extended State Indicator |
+| `⎕LC` | Line Count |
+| `⎕LX` | Latent Expression |
+| `⎕NC` | Name Classification |
+| `⎕NL` | Name List |
+| `⎕NSI` | Namespace Indicator |
+| `⎕RSI` | Space Indicator |
+| `⎕SI` | State Indicator |
+| `⎕SHADOW` | Shadow names |
+| `⎕SIZE` | Size of objects |
+| `⎕STACK` | Report Stack |
+| `⎕STATE` | Return State of an object |
+| `⎕WA` | Workspace Available |
+| `⎕WSID` | Workspace Identification |
+| `⎕XSI` | Extended State Indicator |
 
 ### Shared Variables
 
 | Name | Description |
 | --- | ---  |
-| [⎕SVC](../set-access-control.md) | Set access Control |
-| [⎕SVC](../query-access-control.md) | Query access Control |
-| [⎕SVO](../shared-variable-offer.md) | Shared Variable Offer |
-| [⎕SVO](../query-degree-of-coupling.md) | Query degree of coupling |
-| [⎕SVQ](../svq.md) | Shared Variable Query |
-| [⎕SVR](../svr.md) | Retract offer |
-| [⎕SVS](../svs.md) | Query Shared Variable State |
+| `⎕SVC` | Set access Control |
+| `⎕SVC` | Query access Control |
+| `⎕SVO` | Shared Variable Offer |
+| `⎕SVO` | Query degree of coupling |
+| `⎕SVQ` | Shared Variable Query |
+| `⎕SVR` | Retract offer |
+| `⎕SVS` | Query Shared Variable State |
 
 ### GUI and COM Support
 
 | Name | Description |
 | --- | ---  |
-| [⎕DQ](../dq.md) | Await and process events |
-| [⎕EXPORT](../export.md) | Export objects |
-| [⎕NQ](../nq.md) | Place an event on the Queue |
-| [⎕WC](../wc.md) | Create GUI object |
-| [⎕WG](../wg.md) | Get GUI object properties |
-| [⎕WN](../../primitive-operators/spawn.md) | Query GUI object Names |
-| [⎕WS](../../the-i-beam-operator/close-all-windows.md) | Set GUI object properties |
-| [⎕WX](../wx.md) | Expose GUI property names |
+| `⎕DQ` | Await and process events |
+| `⎕EXPORT` | Export objects |
+| `⎕NQ` | Place an event on the Queue |
+| `⎕WC` | Create GUI object |
+| `⎕WG` | Get GUI object properties |
+| `⎕WN` | Query GUI object Names |
+| `⎕WS` | Set GUI object properties |
+| `⎕WX` | Expose GUI property names |
 
 ### Miscellaneous
 
 | Name | Description |
 | --- | ---  |
-| [⎕Á](../underscored-alphabetic-characters.md) | Underscored Alphabetic Characters |
-| [⎕AV](../av.md) | Atomic Vector |
-| [⎕AVU](../avu.md) | Atomic Vector - Unicode |
-| [⎕KL](../kl.md) | Key Labels |
-| [⎕PFKEY](../pfkey.md) | Programmable Function Keys |
-| [⎕SD](../sd.md) | Screen Dimensions |
-| [⎕SM](../sm.md) | Screen Map |
-| [⎕SR](../sr.md) | Screen Read |
-| [⎕OPT](../opt.md) | Variant Operator |
-| [⎕TC](../tc.md) | Terminal Control |
-| [⎕XT](../set-external-variable.md) | Associate External variable |
-| [⎕XT](../query-external-variable.md) | Query External variable |
+| `⎕Á` | Underscored Alphabetic Characters |
+| `⎕AV` | Atomic Vector |
+| `⎕AVU` | Atomic Vector - Unicode |
+| `⎕KL` | Key Labels |
+| `⎕PFKEY` | Programmable Function Keys |
+| `⎕SD` | Screen Dimensions |
+| `⎕SM` | Screen Map |
+| `⎕SR` | Screen Read |
+| `⎕OPT` | Variant Operator |
+| `⎕TC` | Terminal Control |
+| `⎕XT` | Associate External variable |
+| `⎕XT` | Query External variable |

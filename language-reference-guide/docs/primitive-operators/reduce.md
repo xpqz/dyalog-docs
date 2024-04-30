@@ -53,28 +53,28 @@ Identity Elements
 
 | Function |  | Identity |
 | --- | --- | ---  |
-| Add | + | 0 |
-| Subtract | - | 0 |
-| Multiply | × | 1 |
-| Divide | ÷ | 1 |
-| Residue | &#124; | 0 |
-| Minimum | ⌊ | M [^1] |
-| Maximum | ⌈ | -M |
-| Power | * | 1 |
-| Binomial | ! | 1 |
-| And | ∧ | 1 |
-| Or | ∨ | 0 |
-| Less | < | 0 |
-| Less or Equal | ≤ | 1 |
-| Equal | = | 1 |
-| Greater | > | 0 |
-| Greater or Equal | ≥ | 1 |
-| Not Equal | ≠ | 0 |
-| Encode | ⊤ | 0 |
-| Union | ∪ | ⍬ |
-| Replicate | /⌿ | 1 |
-| Expand | \⍀ | 1 |
-| Rotate | ⌽⊖ | 0 |
+| Add | `+` | `0` |
+| Subtract | `-` | `0` |
+| Multiply | `×` | `1` |
+| Divide | `÷` | `1` |
+| Residue | `|` | `0` |
+| Minimum | `⌊` | `M[^1]` |
+| Maximum | `⌈` | `-M` |
+| Power | `*` | `1` |
+| Binomial | `!` | `1` |
+| And | `∧` | `1` |
+| Or | `∨` | `0` |
+| Less | `<` | `0` |
+| Less or Equal | `≤` | `1` |
+| Equal | `=` | `1` |
+| Greater | `>` | `0` |
+| Greater or Equal | `≥` | `1` |
+| Not Equal | `≠` | `0` |
+| Encode | `⊤` | `0` |
+| Union | `∪` | `⍬` |
+| Replicate | `/⌿` | `1` |
+| Expand | `\⍀` | `1` |
+| Rotate | `⌽⊖` | `0` |
 
 
 

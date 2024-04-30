@@ -18,8 +18,8 @@ This function is used to temporarily disable and re-enable [Global Triggers](../
 
 | `Y` | Effect |
 | --- | ---  |
-| 0 | Enable Global Triggers. |
-| 1 | Disable Global Triggers. |
+| `0` | Enable Global Triggers. |
+| `1` | Disable Global Triggers. |
 
 
 This function has effect only in the current thread and its effect is immediate. If there are pending triggers when triggers are disabled, those pending will be queued and fired when triggers are re-enabled.

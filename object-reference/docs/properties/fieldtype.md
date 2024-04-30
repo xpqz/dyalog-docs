@@ -27,12 +27,12 @@ FieldType is a character vector. If it is empty (the default), the [Text](../obj
 For a [DateTimePicker](../objects/datetimepicker.md), FieldType may be one of the following:
 
 
-| 'Date' | Uses Windows "short date" format |
+| `'Date'` | Uses Windows "short date" format |
 | --- | ---  |
-| 'DateCentury' | Uses Windows "short date" format but with a 4-digit year regardless of user preference |
-| 'LongDate' | Uses Windows "long date" format |
-| 'Time' | Uses Windows time format |
-| 'Custom' | Uses a special format defined by the CustomFormat property |
+| `'DateCentury'` | Uses Windows "short date" format but with a 4-digit year regardless of user preference |
+| `'LongDate'` | Uses Windows "long date" format |
+| `'Time'` | Uses Windows time format |
+| `'Custom'` | Uses a special format defined by the CustomFormat property |
 
 
 
@@ -43,14 +43,14 @@ The value of the date or time is represented by the [DateTime](datetime.md) prop
 For an [Edit](../objects/edit.md), [Label](../objects/label.md) and [Spinner](../objects/spinner.md), if FieldType is defined, the contents of the object are defined by its [Value](value.md) property, which is a number, rather than by its [Text](text.md) property, and special formatting and validation rules are applied. FieldType may be one of the following :
 
 
-| 'Numeric' | Simple numeric formatting and validation |
+| `'Numeric'` | Simple numeric formatting and validation |
 | --- | ---  |
-| 'LongNumeric' | Uses Windows number format |
-| 'Date' | Uses Windows "short date" format |
-| 'LongDate' | Uses Windows "long date" format |
-| 'Currency' | Uses Windows currency format |
-| 'Time' | Uses Windows time format |
-| 'Char' | No validation, forces [Value](value.md) to be a character vector |
+| `'LongNumeric'` | Uses Windows number format |
+| `'Date'` | Uses Windows "short date" format |
+| `'LongDate'` | Uses Windows "long date" format |
+| `'Currency'` | Uses Windows currency format |
+| `'Time'` | Uses Windows time format |
+| `'Char'` | No validation, forces [Value](value.md) to be a character vector |
 
 
 

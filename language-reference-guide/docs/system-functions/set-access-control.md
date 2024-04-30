@@ -20,11 +20,11 @@ This system function sets access control on one or more shared variables.
 Each shared variable has a current access control vector which is a 4-element Boolean vector.  A 1 in each of the four positions has the following impact :
 
 
-| [1] | You cannot **set** a new value for the shared variable until after an intervening use or set by your partner. |
+| `[1]` | You cannot **set** a new value for the shared variable until after an intervening use or set by your partner. |
 | --- | ---  |
-| [2] | Your partner cannot **set** a new value for the shared variable until after an intervening use or set by you. |
-| [3] | You cannot **use** the value of the shared variable until after an intervening set by your partner. |
-| [4] | Your partner cannot **use** the value of the shared variable until after an intervening set by you. |
+| `[2]` | Your partner cannot **set** a new value for the shared variable until after an intervening use or set by you. |
+| `[3]` | You cannot **use** the value of the shared variable until after an intervening set by your partner. |
+| `[4]` | Your partner cannot **use** the value of the shared variable until after an intervening set by you. |
 
 
 The effect of `⎕SVC` is to reset the access control vectors for each of the shared variables named in `Y` by OR-ing the values most recently specified by your partner with the values in `X`.  This means that you cannot reset elements of the control vector which your partner has set to 1.

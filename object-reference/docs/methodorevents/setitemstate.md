@@ -19,9 +19,9 @@ This method is used to set the status of a particular item in a [ListView](../ob
 The argument to SetItemState is a 2-element array as follows:
 
 
-| [1] | Item number | Integer. The index of the item concerned. |
+| `[1]` | Item number | Integer. The index of the item concerned. |
 | --- | --- | ---  |
-| [2] | Status | Integer |
+| `[2]` | Status | Integer |
 
 
 The status of an item is calculated as the sum of one or more of the following state codes:
