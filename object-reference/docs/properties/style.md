@@ -43,11 +43,15 @@ selected a cross appears in the box. This style of button is known as a
 
 
 `'CommandLink'` means that the button has an icon displayed to the left of its [Caption](caption.md), the appearance of which is controlled by the  [Elevated](elevated.md) property. 
-**Note that this feature only applies if  is enabled.**
+**Note that this feature only applies if Native Look and Feel 
+
+ is enabled.**
 
 
 `'Split'` specifies a `'Push'` button with an additional drop-down button, similar to that provided by a [Combo](../objects/combo.md) object. 
-**Note that this feature only applies if  is enabled.**
+**Note that this feature only applies if Native Look and Feel 
+
+ is enabled.**
 
 
 For a [Calendar](../objects/calendar.md) object, The Style property
@@ -102,12 +106,12 @@ the type of icon which is displayed in it. This is a character vector with one
 of the following values:
 
 
-| `'Msg'` | no icon (the default) |
-| --- | ---  |
-| `'Info'` | information message icon |
-| `'Query'` | query (question) icon |
-| `'Warn'` | warning icon |
-| `'Error'` | critical error icon |
+|---------|------------------------|
+|`'Msg'`  |no icon (the default)   |
+|`'Info'` |information message icon|
+|`'Query'`|query (question) icon   |
+|`'Warn'` |warning icon            |
+|`'Error'`|critical error icon     |
 
 
 
@@ -116,10 +120,10 @@ For a [Static](../objects/static.md) object, Style defines its
 appearance, and may be one of:
 
 
-| `'BlackFrame'` | `'BlackBox'` |
-| --- | ---  |
-| `'GreyFrame' or 'GrayFrame'` | `'GreyBox' or 'GrayBox'` |
-| `'WhiteFrame'` | `'WhiteBox'` |
+|----------------------------|------------------------|
+|`'BlackFrame'`              |`'BlackBox'`            |
+|`'GreyFrame' or 'GrayFrame'`|`'GreyBox' or 'GrayBox'`|
+|`'WhiteFrame'`              |`'WhiteBox'`            |
 
 
 
@@ -129,12 +133,12 @@ the state of a key on the keyboard. If so, its Style property determines the key
 it monitors and may be one of the following:
 
 
-| CapsLock | Monitors state of Caps Lock key |
-| --- | ---  |
-| ScrollLock | Monitors state of Scroll Lock key |
-| NumLock | Monitors state of Num Lock key |
-| KeyMode | Monitors the keyboard mode (APL/ASCII) |
-| InsRep | Monitors the state of the Insert key |
+|----------|--------------------------------------|
+|CapsLock  |Monitors state of Caps Lock key       |
+|ScrollLock|Monitors state of Scroll Lock key     |
+|NumLock   |Monitors state of Num Lock key        |
+|KeyMode   |Monitors the keyboard mode (APL/ASCII)|
+|InsRep    |Monitors the state of the Insert key  |
 
 
 

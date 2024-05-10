@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/menubar.md) [Children](../childlists/menubar.md) [Properties](../proplists/menubar.md) [Methods](../methodlists/menubar.md) [Events](../eventlists/menubar.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/menubar.md)|[Children](../childlists/menubar.md)|[Properties](../proplists/menubar.md)|[Methods](../methodlists/menubar.md)|[Events](../eventlists/menubar.md)|
 
 
-Purpose: Specifies a horizontal menu bar displayed at the top of a [Form](form.md) .
+|--------|---------------------------------------------------------------------------|
+|Purpose:|Specifies a horizontal menu bar displayed at the top of a [Form](form.md) .|
 
 
 **Description**

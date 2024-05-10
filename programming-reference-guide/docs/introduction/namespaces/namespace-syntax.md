@@ -66,9 +66,9 @@ Notice that the expression to the right of a dot may be arbitrarily complex and 
 
 Apart from its use as a decimal separator (`3.14`), '`.`' is interpreted by looking at the type or *class* of the expression to its left:
 
-| Template | Interpretation | Example |
-| --- | --- | ---  |
-| `∘.` | Outer product | `2 3 ∘.× 4 5` |
-| `function.` | Inner product | `2 3 +.× 4 5` |
-| `ref.` | Namespace reference | `2 3 x.foo 4 5` |
-| `array.` | Reference array expansion | `(x y).⎕nc⊂'foo'` |
+|Template   |Interpretation           |Example          |
+|-----------|-------------------------|-----------------|
+|`∘.`       |Outer product            |`2 3 ∘.× 4 5`    |
+|`function.`|Inner product            |`2 3 +.× 4 5`    |
+|`ref.`     |Namespace reference      |`2 3 x.foo 4 5`  |
+|`array.`   |Reference array expansion|`(x y).⎕nc⊂'foo'`|

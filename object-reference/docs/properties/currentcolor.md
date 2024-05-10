@@ -6,7 +6,8 @@
 
 
 
-Applies To: [ColorButton](../objects/colorbutton.md)
+|-----------|----------------------------------------|
+|Applies To:|[ColorButton](../objects/colorbutton.md)|
 
 
 **Description**

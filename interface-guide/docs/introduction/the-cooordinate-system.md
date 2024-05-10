@@ -4,14 +4,14 @@ Each object has a Coord property that determines the units in which its Posn and
 
 Coord may be set to one of the following values :
 
-| `'Inherit'` | this means that the object assumes the same co-ordinate system as its parent. This is the default for all objects except the Root object. |
-| --- | ---  |
-| `'Prop'` | the position and size of the object are expressed as a percentage of the dimensions of its parent. |
-| `'Pixel'` | The position and size of the object are expressed in pixels, which are interpreted as either `'ScaledPixel'` or `'RealPixel'` according to the value of the DYALOG_PIXEL_TYPE parameter. |
-| `'ScaledPixel'` | The position and size of the object are expressed in pixels but these metrics are scaled according to the user's chosen scaling factor. |
-| `'RealPixel'` | The position and size of the object are expressed in pixels. |
-| `'User'` | the position and size of the object are expressed in units defined by the YRange and XRange properties of the object's parent. |
-| `'Cell'` | the position and size of the object are expressed in cell coordinates (applies only to Grid and its graphical children). |
+|---|---|
+|`'Inherit'`|this means that the object assumes the same co-ordinate system as its parent. This is the default for all objects except the Root object.|
+|`'Prop'`|the position and size of the object are expressed as a percentage of the dimensions of its parent.|
+|`'Pixel'`|The position and size of the object are expressed in pixels, which are interpreted as either `'ScaledPixel'` or `'RealPixel'` according to the value of the DYALOG_PIXEL_TYPE parameter.|
+|`'ScaledPixel'`|The position and size of the object are expressed in pixels but these metrics are scaled according to the user's chosen scaling factor.|
+|`'RealPixel'`|The position and size of the object are expressed in pixels.|
+|`'User'`|the position and size of the object are expressed in units defined by the YRange and XRange properties of the object's parent.|
+|`'Cell'`|the position and size of the object are expressed in cell coordinates (applies only to Grid and its graphical children).|
 
 By default, the value of Coord for the Root object is `'Prop'`. For all other objects, the default is `'Inherit'`. This means that the default co-ordinate system is a proportional one.
 

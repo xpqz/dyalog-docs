@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ActiveXControl](../objects/activexcontrol.md) [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------------------|----------------------------------|------------------------------------|
+|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**

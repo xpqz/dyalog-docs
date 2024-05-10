@@ -7,7 +7,7 @@
 
 
 
-Migration level must be such that `⎕ML≥1` (otherwise see [Type](type.md)).
+Migration level must be such that `⎕ML≥1` (otherwise see ["Type"](type.md)).
 
 
 `Y` may be any array, `R` is a simple vector created from all the elements of `Y` in ravel order.

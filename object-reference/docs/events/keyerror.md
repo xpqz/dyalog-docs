@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ButtonEdit](../objects/buttonedit.md) [Edit](../objects/edit.md) [Spinner](../objects/spinner.md)
+|-----------|--------------------------------------|--------------------------|--------------------------------|
+|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|[Spinner](../objects/spinner.md)|
 
 
 **Description**
@@ -26,13 +27,13 @@ or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'KeyError'` or 23 |
-| `[3]` | Character | character scalar |
-| `[4]` | Character code | integer scalar |
-| `[5]` | Key Number | integer scalar |
-| `[6]` | Shift state | integer scalar |
+|-----|--------------|-----------------------|
+|`[1]`|Object        |ref or character vector|
+|`[2]`|Event         |`'KeyError'` or 23     |
+|`[3]`|Character     |character scalar       |
+|`[4]`|Character code|integer scalar         |
+|`[5]`|Key Number    |integer scalar         |
+|`[6]`|Shift state   |integer scalar         |
 
 
 

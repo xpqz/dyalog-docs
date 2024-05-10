@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/sm.md) [Children](../childlists/sm.md) [Properties](../proplists/sm.md) [Methods](../methodlists/sm.md) [Events](../eventlists/sm.md)
+|-------------------------------|-------------------------------|--------------------------------|-------------------------------|-----------------------------|
+|[Parents](../parentlists/sm.md)|[Children](../childlists/sm.md)|[Properties](../proplists/sm.md)|[Methods](../methodlists/sm.md)|[Events](../eventlists/sm.md)|
 
 
-Purpose: Defines a window for `⎕SM` / `⎕SR` .
+|--------|------------------------------------|
+|Purpose:|Defines a window for `⎕SM` / `⎕SR` .|
 
 
 **Description**

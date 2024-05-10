@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OLEClient](../objects/oleclient.md)
+|-----------|------------------------------------|
+|Applies To:|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -29,20 +30,20 @@ Locale may **only** be specified by the `⎕WC` statement that is used to create
 Note that Dyalog cannot guarantee that you will actually be given the Locale you specify. This is a function of your specific installation and the OLE server in question. However, Dyalog believes that for Microsoft products, it is a fairly safe bet that the US/English interface will be available in most countries.
 
 
-| Language | Locale |
-| --- | ---  |
-| Neutral | 0 |
-| Danish | 6 |
-| Dutch | 19 |
-| English | 9 |
-| Finnish | 11 |
-| French | 12 |
-| German | 7 |
-| Italian | 16 |
-| Norwegian | 20 |
-| Portuguese | 22 |
-| Russian | 25 |
-| Spanish | 10 |
-| Swedish | 29 |
+|Language  |Locale|
+|----------|------|
+|Neutral   |0     |
+|Danish    |6     |
+|Dutch     |19    |
+|English   |9     |
+|Finnish   |11    |
+|French    |12    |
+|German    |7     |
+|Italian   |16    |
+|Norwegian |20    |
+|Portuguese|22    |
+|Russian   |25    |
+|Spanish   |10    |
+|Swedish   |29    |
 
 

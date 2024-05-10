@@ -21,13 +21,13 @@ If enabled, this event is reported when part or all of the object's window is ex
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'Expose'` or 32 |
-| `[3]` | Y | y-position of top-left corner of exposed region |
-| `[4]` | X | x-position of top-left corner of exposed region |
-| `[5]` | H | height of exposed region |
-| `[6]` | W | width of exposed region |
+|-----|------|-----------------------------------------------|
+|`[1]`|Object|ref or character vector                        |
+|`[2]`|Event |`'Expose'` or 32                               |
+|`[3]`|Y     |y-position of top-left corner of exposed region|
+|`[4]`|X     |x-position of top-left corner of exposed region|
+|`[5]`|H     |height of exposed region                       |
+|`[6]`|W     |width of exposed region                        |
 
 
 This event **cannot** be disabled by setting its action code to `¯1`. Similarly, setting the result of a callback function to 0 has no effect on it.

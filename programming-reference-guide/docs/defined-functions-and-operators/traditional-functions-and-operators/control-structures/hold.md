@@ -67,9 +67,9 @@ In the following example, a thread updates a critical structure in a child names
 However, with the nesting of holds comes the possibility of a "deadlock". For example, consider the two threads:
 
 
-| Thread 1 | Thread 2 |
-| --- | ---  |
-| ```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ``` | ```apl :Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold ``` |
+|Thread 1                                                                           |Thread 2                                                                           |
+|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+|```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ```|```apl :Hold 'green'     ...     :Hold 'red'          ...     :EndHold :EndHold ```|
 
 
 In this case if both threads succeed in acquiring their first hold, they will both block waiting for the other to release its token.
@@ -87,9 +87,9 @@ You can avoid deadlock by ensuring that threads always attempt to acquire tokens
 Note that token acquisition for any particular `:Hold` is atomic, that is, either *all* of the tokens or *none* of them are acquired. The following example *cannot* deadlock:
 
 
-| Thread 1 | Thread 2 |
-| --- | ---  |
-| ```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ``` | ```apl  :Hold 'green' 'red'     ...     :EndHold   ``` |
+|Thread 1                                                                           |Thread 2                                              |
+|-----------------------------------------------------------------------------------|------------------------------------------------------|
+|```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ```|```apl  :Hold 'green' 'red'     ...     :EndHold   ```|
 
 
 

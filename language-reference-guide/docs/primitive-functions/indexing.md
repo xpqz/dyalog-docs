@@ -10,7 +10,7 @@
 `X` may be  any array. `Y` must be a valid index specification. `R` is an array composed of elements indexed from `X` and the shape of `X` is determined by the index specification.
 
 
-This form of Indexing, using brackets, does not follow the normal syntax of a dyadic function. For an alternative method of indexing, see [Index](index.md).
+This form of Indexing, using brackets, does not follow the normal syntax of a dyadic function. For an alternative method of indexing, see ["Index"](index.md).
 
 
 `⎕IO` is an implicit argument of Indexing.

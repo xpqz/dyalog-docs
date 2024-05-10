@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/poly.md) [Children](../childlists/poly.md) [Properties](../proplists/poly.md) [Methods](../methodlists/poly.md) [Events](../eventlists/poly.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/poly.md)|[Children](../childlists/poly.md)|[Properties](../proplists/poly.md)|[Methods](../methodlists/poly.md)|[Events](../eventlists/poly.md)|
 
 
-Purpose: A graphical object used to draw lines, polygons, and filled areas.
+|--------|------------------------------------------------------------------|
+|Purpose:|A graphical object used to draw lines, polygons, and filled areas.|
 
 
 **Description**

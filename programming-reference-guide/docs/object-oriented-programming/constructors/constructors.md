@@ -10,9 +10,9 @@ A Constructor function may be niladic or monadic and must not return a result.
 
 A Class may specify any number of different Constructors of which one (and only one) may be niladic. This is also referred to as the *default* Constructor.
 
-There may be any number of monadic Constructors, but each must have a differently defined argument list which specifies the number of items expected in the Constructor argument. See [Constructor Overloading](constructor-overloading.md) for details.
+There may be any number of monadic Constructors, but each must have a differently defined argument list which specifies the number of items expected in the Constructor argument. See ["Constructor Overloading"](constructor-overloading.md) for details.
 
-The only way a Constructor function should be invoked is by `⎕NEW`. See [Base Constructors](./base-constructors.md) for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a `SYNTAX ERROR`. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.
+The only way a Constructor function should be invoked is by `⎕NEW`. See ["Base Constructors"](./base-constructors.md) for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a `SYNTAX ERROR`. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.
 
 When `⎕NEW` is executed *with a 2-item argument,* the appropriate monadic Constructor is called with the second item of the `⎕NEW` argument.
 

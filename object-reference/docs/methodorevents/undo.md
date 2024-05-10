@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -27,7 +28,8 @@ It is therefore not possible to "undo an undo".
 The argument to Undo is `⍬`, or a single item as follows :
 
 
-`[1]` Number of changes integer
+|-----|-----------------|-------|
+|`[1]`|Number of changes|integer|
 
 
 If called with an argument of `⍬`, the default value for the *Number of changes* is 1. This restores the most recent change.

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TreeView](../objects/treeview.md)
+|-----------|----------------------------------|
+|Applies To:|[TreeView](../objects/treeview.md)|
 
 
 **Description**
@@ -19,7 +20,8 @@ This method is used to obtain the window handle of a particular item in a [TreeV
 The argument for GetItemHandle is a single item as follows:
 
 
-`[1]` Item number Integer.
+|-----|-----------|--------|
+|`[1]`|Item number|Integer.|
 
 
 *Item number* is the index of the item concerned.

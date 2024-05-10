@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Form](../objects/form.md) [SubForm](../objects/subform.md)
+|-----------|--------------------------|--------------------------------|
+|Applies To:|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
 
 
 **Description**
@@ -23,11 +24,11 @@ If enabled, this event is generated when the user attempts to move the thumb in 
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 4-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'HScroll'` or 39 |
-| `[3]` | Scroll Type | numeric |
-| `[4]` | Position | numeric |
+|-----|-----------|-----------------------|
+|`[1]`|Object     |ref or character vector|
+|`[2]`|Event      |`'HScroll'` or 39      |
+|`[3]`|Scroll Type|numeric                |
+|`[4]`|Position   |numeric                |
 
 
 The value of Scroll Type is 0 (drag), 1 or `¯1` (small change) or 2 or `¯2` (large change). The sign indicates the direction.

@@ -67,10 +67,10 @@ Porridge
 
 
 
-| Unicode Edition | Classic Edition |
-| --- | ---  |
-| ```apl       ⍋M 4 1 3 2 ``` | ```apl       ⍋M 2 4 1 3 ``` |
-| ```apl       M[⍋M;] 3 bears Goldilocks Porridge porridge    ``` | ```apl       M[⍋M;] porridge 3 bears Goldilocks Porridge ``` |
+|Unicode Edition                                                |Classic Edition                                             |
+|---------------------------------------------------------------|------------------------------------------------------------|
+|```apl       ⍋M 4 1 3 2 ```                                    |```apl       ⍋M 2 4 1 3 ```                                 |
+|```apl       M[⍋M;] 3 bears Goldilocks Porridge porridge    ```|```apl       M[⍋M;] porridge 3 bears Goldilocks Porridge ```|
 ```apl
       ⍴pb
 6 3

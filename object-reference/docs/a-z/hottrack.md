@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TabControl](../objects/tabcontrol.md)
+|-----------|--------------------------------------|
+|Applies To:|[TabControl](../objects/tabcontrol.md)|
 
 
 **Description**

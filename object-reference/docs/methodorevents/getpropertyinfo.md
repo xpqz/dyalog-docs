@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -24,7 +25,8 @@ For each property supported by a COM object, the author will have registered the
 The argument to GetPropertyInfo is a single item as follows:
 
 
-`[1]` Property name(s) see below
+|-----|----------------|---------|
+|`[1]`|Property name(s)|see below|
 
 
 *Property name(s)* is a simple character vector or a vector of character vectors specifying one or more names of properties supported by the object.

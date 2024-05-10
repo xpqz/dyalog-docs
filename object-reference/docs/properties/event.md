@@ -50,17 +50,17 @@ However, certain special considerations apply which are discussed later.
 When you specify the Event property using `⎕WC` or `⎕WS`, the action to be taken for an event type or types is specified by a 2 or 3-element vector containing:
 
 
-| Element | Item | Description |
-| --- | --- | ---  |
-| `[1]` | Type(s) | see below |
-| `[2]` | Action | numeric scalar or character vector ¯1 inhibit (ignore) event 0 handle event, do not report to APL 1 handle event, then report to APL fn name of callback function fn& name of callback function to be executed *asynchronously* ⍎expr expression to be executed | ¯1 | inhibit (ignore) event | 0 | handle event, do not report to APL | 1 | handle event, then report to APL | fn | name of callback function | fn& | name of callback function to be executed *asynchronously* | ⍎expr | expression to be executed |
-| ¯1 | inhibit (ignore) event |
-| 0 | handle event, do not report to APL |
-| 1 | handle event, then report to APL |
-| fn | name of callback function |
-| fn& | name of callback function to be executed *asynchronously* |
-| ⍎expr | expression to be executed |
-| `[3]` | Arg | any array (optional) |
+|Element|Item|Description|||||||||||||
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|`[1]`|Type(s)|see below|||||||||||||
+|`[2]`|Action|numeric scalar or character vector ¯1 inhibit (ignore) event 0 handle event, do not report to APL 1 handle event, then report to APL fn name of callback function fn& name of callback function to be executed *asynchronously* ⍎expr expression to be executed|¯1|inhibit (ignore) event|0|handle event, do not report to APL|1|handle event, then report to APL|fn|name of callback function|fn&|name of callback function to be executed *asynchronously*|⍎expr|expression to be executed|
+|¯1|inhibit (ignore) event||||||||||||||
+|0|handle event, do not report to APL||||||||||||||
+|1|handle event, then report to APL||||||||||||||
+|fn|name of callback function||||||||||||||
+|fn&|name of callback function to be executed *asynchronously*||||||||||||||
+|⍎expr|expression to be executed||||||||||||||
+|`[3]`|Arg|any array (optional)|||||||||||||
 
 
 

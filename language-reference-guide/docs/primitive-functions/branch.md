@@ -13,10 +13,10 @@
 The following distinct usages of the branch function occur:
 
 
-|  | Entered in a Statement in a Defined Function | Entered in Immediate Execution Mode |
-| --- | --- | ---  |
-| `→LINE` | Continue with the specific line | Restart execution at the specific line of the most recently suspended function |
-| `→⍳0` | Continue with the next expression | No effect |
+|&nbsp; |Entered in a Statement in a Defined Function|Entered in Immediate Execution Mode                                           |
+|-------|--------------------------------------------|------------------------------------------------------------------------------|
+|`→LINE`|Continue with the specific line             |Restart execution at the specific line of the most recently suspended function|
+|`→⍳0`  |Continue with the next expression           |No effect                                                                     |
 
 
 
@@ -67,17 +67,17 @@ In general it is better to branch to a LABEL than to a line number.  A label occ
 The previous examples illustrate unconditional branching. There are numerous APL idioms which result in conditional branching. Some popular idioms are identified in the following table:
 
 
-| Branch Expression | Comment |
-| --- | ---  |
-| `→TEST/L1` | Branches to label `L1` if `TEST` results in 1 but not if `TEST` results in 0. |
-| `→TEST⍴L1` | Similar to above. |
-| `→TEST↑L1` | Similar to above. |
-| `→L1⍴⍨TEST` | Similar to above. |
-| `→L1⌈⍳TEST` | Similar to above but only if `⎕IO←→1` . |
-| `→L1×⍳TEST` | Similar to above but only if `⎕IO←→1` . |
-| `→(L1,L2,L3)[N]` | Unconditional branch to a selected label. |
-| `→(T1,T2,T3)/L1,L2,L3` | Branches to the first selected label dependent on tests `T1` , `T2` , `T3` . If all tests result in 0, there is no branch. |
-| `→N⌽L1,L2,L3` | Unconditional branch to the first label after rotation. |
+|Branch Expression     |Comment                                                                                                                   |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------|
+|`→TEST/L1`            |Branches to label `L1` if `TEST` results in 1 but not if `TEST` results in 0.                                             |
+|`→TEST⍴L1`            |Similar to above.                                                                                                         |
+|`→TEST↑L1`            |Similar to above.                                                                                                         |
+|`→L1⍴⍨TEST`           |Similar to above.                                                                                                         |
+|`→L1⌈⍳TEST`           |Similar to above but only if `⎕IO←→1` .                                                                                   |
+|`→L1×⍳TEST`           |Similar to above but only if `⎕IO←→1` .                                                                                   |
+|`→(L1,L2,L3)[N]`      |Unconditional branch to a selected label.                                                                                 |
+|`→(T1,T2,T3)/L1,L2,L3`|Branches to the first selected label dependent on tests `T1` , `T2` , `T3` . If all tests result in 0, there is no branch.|
+|`→N⌽L1,L2,L3`         |Unconditional branch to the first label after rotation.                                                                   |
 
 
 

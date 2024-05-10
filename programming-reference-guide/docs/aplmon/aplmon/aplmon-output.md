@@ -4,18 +4,18 @@ The output file is a CSV matrix with values  separated by commas. Fields can be 
 
 The eleven columns of the APLMON output file are :
 
-| token | Name of  the primitive's   token (symbol, if  you   prefer) |
-| --- | ---  |
-| lfn | Name of  the left  operand's token, if the  primitive was   an  operator |
-| rfn | Name of  the right operand's token, if the  primitive was   an  operator |
-| ltype | Data type of the  left    argument   of the  function |
-| rtype | Data type of the right   argument   of the  function |
-| lrank | Rank of  the left     argument of the  function. Arrays of  rank  greater   or equal to 3 will be  logged  as  «  3+  » |
-| rrank | Rank of  the  right  argument of the  function. Arrays of  rank  greater   or equal to 3 will be  logged  as  «  3+  » |
-| lbound | Range of the  left  argument sizes. A range is  made  of two numbers separated     by  a  « <  »  sign. The  real size  is between   these  two numbers. So arguments with similar  sizes are  grouped   together. |
-| rbound | Range of the   right argument sizes. A range is  made  of two numbers separated     by  a  « <  »  sign. The  real size  is between   these  two numbers. So arguments with similar  sizes are  grouped   together. |
-| hitcount | Number of times the primitive was called |
-| time | Time spent     by  the primitive (in seconds) |
+|---|---|
+|token|Name of  the primitive's   token (symbol, if  you   prefer)|
+|lfn|Name of  the left  operand's token, if the  primitive was   an  operator|
+|rfn|Name of  the right operand's token, if the  primitive was   an  operator|
+|ltype|Data type of the  left    argument   of the  function|
+|rtype|Data type of the right   argument   of the  function|
+|lrank|Rank of  the left     argument of the  function. Arrays of  rank  greater   or equal to 3 will be  logged  as  «  3+  »|
+|rrank|Rank of  the  right  argument of the  function. Arrays of  rank  greater   or equal to 3 will be  logged  as  «  3+  »|
+|lbound|Range of the  left  argument sizes. A range is  made  of two numbers separated     by  a  « <  »  sign. The  real size  is between   these  two numbers. So arguments with similar  sizes are  grouped   together.|
+|rbound|Range of the   right argument sizes. A range is  made  of two numbers separated     by  a  « <  »  sign. The  real size  is between   these  two numbers. So arguments with similar  sizes are  grouped   together.|
+|hitcount|Number of times the primitive was called|
+|time|Time spent     by  the primitive (in seconds)|
 
 These fields are empty if not applicable (which will appear in the CSV file as two consecutive commas).
 

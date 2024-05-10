@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Calendar](../objects/calendar.md)
+|-----------|----------------------------------|
+|Applies To:|[Calendar](../objects/calendar.md)|
 
 
 **Description**
@@ -22,11 +23,11 @@ This event is reported for information alone. You may not disable or nullify the
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'SelDateChange'` or 265 |
-| `[3]` | First Date | an integer (IDN) |
-| `[4]` | Last Date | an integer (IDN) |
+|-----|----------|------------------------|
+|`[1]`|Object    |ref or character vector |
+|`[2]`|Event     |`'SelDateChange'` or 265|
+|`[3]`|First Date|an integer (IDN)        |
+|`[4]`|Last Date |an integer (IDN)        |
 
 
 

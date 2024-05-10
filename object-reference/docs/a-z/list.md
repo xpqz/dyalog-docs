@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/list.md) [Children](../childlists/list.md) [Properties](../proplists/list.md) [Methods](../methodlists/list.md) [Events](../eventlists/list.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/list.md)|[Children](../childlists/list.md)|[Properties](../proplists/list.md)|[Methods](../methodlists/list.md)|[Events](../eventlists/list.md)|
 
 
-Purpose: Allows the user to select one or more items from a list.
+|--------|--------------------------------------------------------|
+|Purpose:|Allows the user to select one or more items from a list.|
 
 
 **Description**
@@ -38,10 +40,10 @@ The [SelItems](../properties/selitems.md) property is a Boolean vector with one 
 The [VScroll](../properties/vscroll.md) property determines whether or not the list has a scrollbar. Its possible values are :
 
 
-| `¯2` | scrollbar if required |
-| --- | ---  |
-| `¯1` | scrollbar if required |
-| `0` | no scrollbar |
+|----|---------------------|
+|`¯2`|scrollbar if required|
+|`¯1`|scrollbar if required|
+|`0` |no scrollbar         |
 
 
 Note that data in a List is always scrollable if there are more items than will fit in the box. [VScroll](../properties/vscroll.md) determines ONLY whether or not a scrollbar is provided.

@@ -20,21 +20,21 @@ In general `⎕SM` is a nested matrix containing between 3 and 13 columns.  Each
 The columns have the following meanings:
 
 
-| Column | Description | Default |
-| --- | --- | ---  |
-| 1 | Field Contents | N/A |
-| 2 | Field Position - Top Row | N/A |
-| 3 | Field Position - Left Column | N/A |
-| 4 | Window Size - Rows | 0 |
-| 5 | Window Size - Columns | 0 |
-| 6 | Field Type | 0 |
-| 7 | Behaviour | 0 |
-| 8 | Video Attributes | 0 |
-| 9 | Active Video Attributes | `¯` 1 |
-| 10 | Home Element - Row | 1 |
-| 11 | Home Element - Column | 1 |
-| 12 | Scrolling Group - Vertical | 0 |
-| 13 | Scrolling Group - Horizontal | 0 |
+|Column|Description                 |Default|
+|------|----------------------------|-------|
+|1     |Field Contents              |N/A    |
+|2     |Field Position - Top Row    |N/A    |
+|3     |Field Position - Left Column|N/A    |
+|4     |Window Size - Rows          |0      |
+|5     |Window Size - Columns       |0      |
+|6     |Field Type                  |0      |
+|7     |Behaviour                   |0      |
+|8     |Video Attributes            |0      |
+|9     |Active Video Attributes     |`¯` 1  |
+|10    |Home Element - Row          |1      |
+|11    |Home Element - Column       |1      |
+|12    |Scrolling Group - Vertical  |0      |
+|13    |Scrolling Group - Horizontal|0      |
 
 
 With the exception of columns 1 and 8, all elements in `⎕SM` are integer scalar values.
@@ -114,10 +114,10 @@ Like all system variables (with the exception of `⎕TRAP`) `⎕SM` is subject t
 The user may edit the form defined by `⎕SM` using the system function `⎕SR`.  Under the control of `⎕SR` the user may change the following elements in `⎕SM` which may afterwards be referenced to obtain the new values.
 
 
-| Column 1 | Field Contents |
-| --- | ---  |
-| Column 10 | Home Element - Row (by scrolling vertically) |
-| Column 11 | Home Element - Column (by scrolling horizontally) |
+|---------|-------------------------------------------------|
+|Column 1 |Field Contents                                   |
+|Column 10|Home Element - Row (by scrolling vertically)     |
+|Column 11|Home Element - Column (by scrolling horizontally)|
 
 
 

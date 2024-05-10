@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/toolcontrol.md) [Children](../childlists/toolcontrol.md) [Properties](../proplists/toolcontrol.md) [Methods](../methodlists/toolcontrol.md) [Events](../eventlists/toolcontrol.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/toolcontrol.md)|[Children](../childlists/toolcontrol.md)|[Properties](../proplists/toolcontrol.md)|[Methods](../methodlists/toolcontrol.md)|[Events](../eventlists/toolcontrol.md)|
 
 
-Purpose: The ToolControl object provides a standard Windows ToolBar.
+|--------|-----------------------------------------------------------|
+|Purpose:|The ToolControl object provides a standard Windows ToolBar.|
 
 
 **Description**

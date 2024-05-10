@@ -4,11 +4,11 @@
 
 Certain signals sent to a Dyalog APL process can be trapped and an event issued. These signals are:
 
-| 1 | SIGHUP |
-| --- | ---  |
-| 2 | SIGINT |
-| 3 | SIGQUIT |
-| 15 | SIGTERM |
+|---|-------|
+|1  |SIGHUP |
+|2  |SIGINT |
+|3  |SIGQUIT|
+|15 |SIGTERM|
 
 No other signal is trapped by the interpreter; their default action will occur. For example when a Dyalog APL process receives a SIGSEGV (11) then it will terminate with a segmentation fault. Note that SIG_USR1 is used by the interface between Dyalog APL and Auxiliary Processors: sending this signal to the interpreter may have "interesting" consequences.
 

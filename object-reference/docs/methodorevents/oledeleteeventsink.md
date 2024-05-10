@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -22,7 +23,8 @@ This method may be used to remove an event sink that was established automatical
 The argument to OLEDeleteEventSink is a single item as follows:
 
 
-`[1]` Event sink name character vector
+|-----|---------------|----------------|
+|`[1]`|Event sink name|character vector|
 
 
 

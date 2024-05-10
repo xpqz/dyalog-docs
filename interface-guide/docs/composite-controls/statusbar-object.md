@@ -54,13 +54,13 @@ There are basically three ways of using StatusFields. Firstly, you can display i
 
 The second major use of a StatusField is to display **hints** which you do by setting the HintObj property of an object to the name of the StatusField. Used in this way, a StatusField automatically displays context sensitive help when the user places the mouse pointer over an object. This topic is described in Chapter 5.The third use of a Status Field is to monitor the status of the keyboard. This is achieved by setting its Style property to one of the following keywords:
 
-| Keyword | Meaning |
-| --- | ---  |
-| CapsLock | Monitors state of Caps Lock key |
-| ScrollLock | Monitors state of Scroll Lock key |
-| NumLock | Monitors state of Num Lock key |
-| KeyMode | Monitors the keyboard mode (APL/ASCII) (Classic Edition only) |
-| InsRep | Monitors the state of the Insert/Replace toggle key |
+|Keyword   |Meaning                                                      |
+|----------|-------------------------------------------------------------|
+|CapsLock  |Monitors state of Caps Lock key                              |
+|ScrollLock|Monitors state of Scroll Lock key                            |
+|NumLock   |Monitors state of Num Lock key                               |
+|KeyMode   |Monitors the keyboard mode (APL/ASCII) (Classic Edition only)|
+|InsRep    |Monitors the state of the Insert/Replace toggle key          |
 
 The following example illustrates different uses of the StatusField object. The first StatusField `F.SB.S1` is used for context-sensitive help by making it the HintObj for the Form `F`. The second StatusField `F.SB.S2` is simply used to display application status; in this case "Ready ...". The third and fourth StatusField objects monitor the status of the Insert and Caps Lock keys respectively. Note that whilst the Caps Lock, Num Lock and Scroll Lock keys have a recognised *state*, the Insert key does not. Initially, APL sets the key to "Ins" and then toggles to and from "Rep" whenever the key is pressed. To discover which mode the keyboard is in, you should use `⎕WG` to read the value of the Text property of the StatusField.
 ```apl

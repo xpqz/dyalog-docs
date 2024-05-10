@@ -60,4 +60,4 @@ However, the connection (between `A` and `TRIG`) remains and the Trigger Functio
  A  was      #.A
 ```
 
-See [Trigger Fields](../object-oriented-programming/class-members/fields/trigger-fields.md) for information on how a Field (in a Class) may be used as a Trigger.
+See ["Trigger Fields"](../object-oriented-programming/class-members/fields/trigger-fields.md) for information on how a Field (in a Class) may be used as a Trigger.

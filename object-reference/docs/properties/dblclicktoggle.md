@@ -7,7 +7,8 @@
 
 
 
-Applies To: [CoolBar](../objects/coolbar.md)
+|-----------|--------------------------------|
+|Applies To:|[CoolBar](../objects/coolbar.md)|
 
 
 **Description**

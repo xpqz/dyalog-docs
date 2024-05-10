@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/statusbar.md) [Children](../childlists/statusbar.md) [Properties](../proplists/statusbar.md) [Methods](../methodlists/statusbar.md) [Events](../eventlists/statusbar.md)
+|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
+|[Parents](../parentlists/statusbar.md)|[Children](../childlists/statusbar.md)|[Properties](../proplists/statusbar.md)|[Methods](../methodlists/statusbar.md)|[Events](../eventlists/statusbar.md)|
 
 
-Purpose: This object is used to manage [StatusField](statusfield.md) objects which display  information for the user.
+|--------|------------------------------------------------------------------------------------------------------------|
+|Purpose:|This object is used to manage [StatusField](statusfield.md) objects which display  information for the user.|
 
 
 **Description**

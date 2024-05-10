@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ActiveXControl](../objects/activexcontrol.md) [OLEServer](../objects/oleserver.md)
+|-----------|----------------------------------------------|------------------------------------|
+|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|
 
 
 **Description**

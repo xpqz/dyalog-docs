@@ -17,26 +17,26 @@ Options for `⎕XML` are specified using the Variant operator `⍠` or by the op
 For conversion *from* XML, `Y` is a character vector containing an XML string. The result `R` is a 5 column matrix whose columns are made up as follows:
 
 
-| Column | Description |
-| --- | ---  |
-| 1 | Numeric value which indicates the level of nesting |
-| 2 | Element name, other markup text, or empty character vector when empty |
-| 3 | Character data or empty character vector when empty |
-| 4 | Attribute name and value pairs, ( `0 2⍴⊂''` ) when empty |
-| 5 | A numeric value which indicates what the row contains |
+|Column|Description                                                          |
+|------|---------------------------------------------------------------------|
+|1     |Numeric value which indicates the level of nesting                   |
+|2     |Element name, other markup text, or empty character vector when empty|
+|3     |Character data or empty character vector when empty                  |
+|4     |Attribute name and value pairs, ( `0 2⍴⊂''` ) when empty             |
+|5     |A numeric value which indicates what the row contains                |
 
 
 The values in column 5  have the following meanings:
 
 
-| Value | Description |
-| --- | ---  |
-| 1 | Element |
-| 2 | Child element |
-| 4 | Character data |
-| 8 | Markup not otherwise defined |
-| 16 | Comment markup |
-| 32 | Processing instruction markup |
+|Value|Description                  |
+|-----|-----------------------------|
+|1    |Element                      |
+|2    |Child element                |
+|4    |Character data               |
+|8    |Markup not otherwise defined |
+|16   |Comment markup               |
+|32   |Processing instruction markup|
 
 
 These values are additive. For example, a value of 5 in column 5 means that the row contains both an element (value 1) and character data (value 4).
@@ -227,11 +227,11 @@ Then, character references and entity references are emitted in place of charact
 There are 3 options which may be specified using the Variant operator `⍠` (recommended) or by the optional left argument `X` (retained for backwards compatibility). The names are different and are case-sensitive; they must be spelled exactly as shown below.
 
 
-| Option names for Variant | Option names for left argument |
-| --- | ---  |
-| Whitespace | whitespace |
-| Markup | markup |
-| UnknownEntity | unknown-entity |
+|Option names for Variant|Option names for left argument|
+|------------------------|------------------------------|
+|Whitespace              |whitespace                    |
+|Markup                  |markup                        |
+|UnknownEntity           |unknown-entity                |
 
 
 The values of each option are tabulated below. In each case the value of the option for Variant is given first, followed by its equivalent for the optional left argument in brackets; e.g. **UnknownEntity (unknown-entity)**.
@@ -256,15 +256,15 @@ Errors detected in the input arrays or options will all cause `DOMAIN ERROR`.
 When converting from XML `Whitespace` specifies the default handling of white space surrounding and within character data. When converting to XML `Whitespace` specifies the default formatting of the XML. Note that attribute values are not comprised of character data so white space in attribute values is always preserved.
 
 
-| Converting from XML | Converting from XML |
-| --- | ---  |
-| Strip (strip) | All leading and trailing whitespace sequences are removed; remaining whitespace sequences are replaced by a single space character |
-| `Trim(trim)` | All leading and trailing whitespace sequences are removed; all remaining white space sequences are handled as preserve |
-| `Preserve(preserve)` | Whitespace is preserved as given except that line endings are represented by Linefeed 				( `⎕UCS 10` ) |
-| Converting to XML | Converting to XML |
-| Strip (strip) | All leading and trailing whitespace sequences are removed; remaining whitespace sequences within the data are replaced by a single space character. XML is generated with formatting and indentation to show the data structure |
-| `Trim(trim)` | Synonymous with `strip` |
-| `Preserve(preserve)` | White space in the data is preserved as given, except that line endings are represented by Linefeed 				( `⎕UCS 10` ). XML is generated with no formatting and indentation other than that which is contained within the data |
+|Converting from XML||
+|---|---|
+|Strip (strip)|All leading and trailing whitespace sequences are removed; remaining whitespace sequences are replaced by a single space character|
+|`Trim(trim)`|All leading and trailing whitespace sequences are removed; all remaining white space sequences are handled as preserve|
+|`Preserve(preserve)`|Whitespace is preserved as given except that line endings are represented by Linefeed 				( `⎕UCS 10` )|
+|Converting to XML||
+|Strip (strip)|All leading and trailing whitespace sequences are removed; remaining whitespace sequences within the data are replaced by a single space character. XML is generated with formatting and indentation to show the data structure|
+|`Trim(trim)`|Synonymous with `strip`|
+|`Preserve(preserve)`|White space in the data is preserved as given, except that line endings are represented by Linefeed 				( `⎕UCS 10` ). XML is generated with no formatting and indentation other than that which is contained within the data|
 ```apl
 
       ]display eg
@@ -381,10 +381,10 @@ When converting from XML `Whitespace` specifies the default handling of white sp
 When converting from XML, `Markup` determines whether markup (other than entity tags) appears in the output array or not. When converting to XML `Markup` has no effect.
 
 
-| Converting from XML | Converting from XML |
-| --- | ---  |
-| Strip (strip) | Markup data is not included in the output array |
-| `Preserve(preserve)` | Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 <sup>nd</sup> ) column |
+|Converting from XML                                                                                                                       ||
+|--------------------|----------------------------------------------------------------------------------------------------------------------|
+|Strip (strip)       |Markup data is not included in the output array                                                                       |
+|`Preserve(preserve)`|Markup text appears in the output array, without the leading '<' and trailing '>' in the tag (2 <sup>nd</sup> ) column|
 ```apl
   
       ]display eg
@@ -493,13 +493,13 @@ When converting from XML, `Markup` determines whether markup (other than entity 
 When converting from XML, this option determines what happens when an unknown entity reference, or a character reference for a Unicode character which cannot be represented as an APL character, is encountered. In Classic versions of Dyalog APL that is any Unicode character which does not appear in `⎕AVU`. When converting to XML, this option determines what happens to Esc characters (`⎕UCS 27`) in data.
 
 
-| Converting from XML | Converting from XML |
-| --- | ---  |
-| Replace (replace) | The reference is replaced by a single '?' character |
-| `Preserve(preserve)` | The reference is included in the output data as given, but with the leading '&' replaced by Esc ( `⎕UCS 27` ) |
-| Converting to XML | Converting to XML |
-| Replace (replace) | Esc ( `⎕UCS 27` ) is preserved |
-| `Preserve(preserve)` | Esc ( `⎕UCS 27` ) is replaced by '&' |
+|Converting from XML                                                                                                              ||
+|--------------------|-------------------------------------------------------------------------------------------------------------|
+|Replace (replace)   |The reference is replaced by a single '?' character                                                          |
+|`Preserve(preserve)`|The reference is included in the output data as given, but with the leading '&' replaced by Esc ( `⎕UCS 27` )|
+|Converting to XML                                                                                                                ||
+|Replace (replace)   |Esc ( `⎕UCS 27` ) is preserved                                                                               |
+|`Preserve(preserve)`|Esc ( `⎕UCS 27` ) is replaced by '&'                                                                         |
 
 
 

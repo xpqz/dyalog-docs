@@ -7,7 +7,8 @@
 
 
 
-Applies To: [MenuItem](../objects/menuitem.md)
+|-----------|----------------------------------|
+|Applies To:|[MenuItem](../objects/menuitem.md)|
 
 
 **Description**

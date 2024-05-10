@@ -30,11 +30,11 @@ If the seed is set to `⍬`, Dyalog is able to take advantage of certain optimis
 The 3 random number generators are listed in the table below. The 4th column of the table contains the values of seeds that may be assigned to them.
 
 
-| Id | Name | Algorithm | Valid Seed Values |
-| --- | --- | --- | ---  |
-| 0 | RNG0 | Lehmer linear congruential generator. | `0` , `⍬` , or an integer in the range 1 to `¯2+2*31` |
-| 1 | RNG1 | Mersenne Twister. | `0` , `⍬` , an integer in the range 1 to `¯1+2*63` or a 625-element integer vector |
-| 2 | RNG2 | Operating System random number generator. | `⍬` |
+|Id |Name|Algorithm                                |Valid Seed Values                                                                 |
+|---|----|-----------------------------------------|----------------------------------------------------------------------------------|
+|0  |RNG0|Lehmer linear congruential generator.    |`0` , `⍬` , or an integer in the range 1 to `¯2+2*31`                             |
+|1  |RNG1|Mersenne Twister.                        |`0` , `⍬` , an integer in the range 1 to `¯1+2*63` or a 625-element integer vector|
+|2  |RNG2|Operating System random number generator.|`⍬`                                                                               |
 
 
 Note that assigning an invalid value to the seed will cause `DOMAIN ERROR`.

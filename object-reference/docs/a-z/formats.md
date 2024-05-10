@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Clipboard](../objects/clipboard.md)
+|-----------|------------------------------------|
+|Applies To:|[Clipboard](../objects/clipboard.md)|
 
 
 **Description**

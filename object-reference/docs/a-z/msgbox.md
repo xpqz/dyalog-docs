@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/msgbox.md) [Children](../childlists/msgbox.md) [Properties](../proplists/msgbox.md) [Methods](../methodlists/msgbox.md) [Events](../eventlists/msgbox.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/msgbox.md)|[Children](../childlists/msgbox.md)|[Properties](../proplists/msgbox.md)|[Methods](../methodlists/msgbox.md)|[Events](../eventlists/msgbox.md)|
 
 
-Purpose: Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Purpose:|Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.|
 
 
 **Description**
@@ -26,12 +28,12 @@ The [Text](../properties/text.md) property determines the text to be displayed a
 The [Style](../properties/style.md) property determines the type of icon which is displayed. This is a character vector with one of the following values:
 
 
-| `'Msg'` | no icon (the default) |
-| --- | ---  |
-| `'Info'` | information message icon |
-| `'Query'` | query (question) icon |
-| `'Warn'` | warning icon |
-| `'Error'` | critical error icon |
+|---------|------------------------|
+|`'Msg'`  |no icon (the default)   |
+|`'Info'` |information message icon|
+|`'Query'`|query (question) icon   |
+|`'Warn'` |warning icon            |
+|`'Error'`|critical error icon     |
 
 
 The [Btns](../properties/btns.md) property determines the set of buttons to be displayed. It is a simple vector (one button) or a matrix with up to 3 rows, or a vector of up to 3 character vectors specifying the captions for up to 3 buttons. MS-Windows restricts you to a fixed set of button captions which are described below. However, the property has been designed more generally to be useful under different GUIs and perhaps later revisions of Windows. The buttons are arranged along the bottom of the dialog box in the order specified.
@@ -56,11 +58,11 @@ The [Btns](../properties/btns.md) property may specify one of six sets of button
 If any other combination is specified, [`⎕WC`](../../../language-reference-guide/system-functions/wc) and [`⎕WS`](../../../language-reference-guide/system-functions/ws) will report a `DOMAIN ERROR`. The names of the buttons are however case-insensitive, so the system will accept `'ok'`, `'Ok'`, `'oK'` or `'OK'`. If [Btns](../properties/btns.md) is not specified, it assumes a default according to [Style](../properties/style.md) as follows:
 
 
-| Style | Btns |
-| --- | ---  |
-| `'Msg'` **or** `'Info'` | `'OK'` |
-| `'Warn'` **or** `'Error'` | `'OK' 'CANCEL'` |
-| `'Query'` | `'YES' 'NO'` |
+|Style                    |Btns           |
+|-------------------------|---------------|
+|`'Msg'` **or** `'Info'`  |`'OK'`         |
+|`'Warn'` **or** `'Error'`|`'OK' 'CANCEL'`|
+|`'Query'`                |`'YES' 'NO'`   |
 
 
 The [Default](../properties/default.md) property may be used to determine which of the buttons is the "default" button, i.e. the one which initially has the focus and is "selected" when the user presses the Enter key. It has the value 1, 2 or 3. If [Default](../properties/default.md) is not specified, the first button is the "default" button. Note that if the user switches focus to another button and presses Enter, this action selects the button with the focus.

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ToolControl](../objects/toolcontrol.md)
+|-----------|----------------------------------------|
+|Applies To:|[ToolControl](../objects/toolcontrol.md)|
 
 
 **Description**

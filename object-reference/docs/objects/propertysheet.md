@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/propertysheet.md) [Children](../childlists/propertysheet.md) [Properties](../proplists/propertysheet.md) [Methods](../methodlists/propertysheet.md) [Events](../eventlists/propertysheet.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/propertysheet.md)|[Children](../childlists/propertysheet.md)|[Properties](../proplists/propertysheet.md)|[Methods](../methodlists/propertysheet.md)|[Events](../eventlists/propertysheet.md)|
 
 
-Purpose: The PropertySheet object represents a standard multi-page dialog box.
+|--------|---------------------------------------------------------------------|
+|Purpose:|The PropertySheet object represents a standard multi-page dialog box.|
 
 
 **Description**

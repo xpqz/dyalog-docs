@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/marker.md) [Children](../childlists/marker.md) [Properties](../proplists/marker.md) [Methods](../methodlists/marker.md) [Events](../eventlists/marker.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/marker.md)|[Children](../childlists/marker.md)|[Properties](../proplists/marker.md)|[Methods](../methodlists/marker.md)|[Events](../eventlists/marker.md)|
 
 
-Purpose: A graphical object used to draw polymarkers.
+|--------|--------------------------------------------|
+|Purpose:|A graphical object used to draw polymarkers.|
 
 
 **Description**
@@ -23,14 +25,14 @@ The [Points](../properties/points.md) property specifies one or more sets of poi
 The [Style](../properties/style.md) property determines the symbol that is drawn at each of a set of points. Marker styles are specified either by numbers which represent the following symbol shapes .
 
 
-| 0 | . |
-| --- | ---  |
-| 1 | `+` |
-| 2 | `*` |
-| 3 | `⎕` |
-| 4 | `×` |
-| 5 | `⋄` |
-| 6 | `∘` |
+|---|---|
+|0  |.  |
+|1  |`+`|
+|2  |`*`|
+|3  |`⎕`|
+|4  |`×`|
+|5  |`⋄`|
+|6  |`∘`|
 
 
 or by character vectors containing the names of [Bitmap](bitmap.md) or [Icon](icon.md) objects.

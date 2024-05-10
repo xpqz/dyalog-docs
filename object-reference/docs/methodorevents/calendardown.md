@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Calendar](../objects/calendar.md)
+|-----------|----------------------------------|
+|Applies To:|[Calendar](../objects/calendar.md)|
 
 
 **Description**
@@ -26,13 +27,13 @@ or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'CalendarDown'` or 271 |
-| `[3]` | Item Number | integer (see below) |
-| `[4]` | Mouse Button | integer |
-| `[5]` | Shift State | integer. Sum of 1=shift key, 2=ctrl key, 4=Alt key |
-| `[6]` | Element Type | integer (see below) |
+|-----|------------|--------------------------------------------------|
+|`[1]`|Object      |ref or character vector                           |
+|`[2]`|Event       |`'CalendarDown'` or 271                           |
+|`[3]`|Item Number |integer (see below)                               |
+|`[4]`|Mouse Button|integer                                           |
+|`[5]`|Shift State |integer. Sum of 1=shift key, 2=ctrl key, 4=Alt key|
+|`[6]`|Element Type|integer (see below)                               |
 
 
 

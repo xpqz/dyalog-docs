@@ -7,7 +7,7 @@
 
 
 
-See [Multiply](multiply.md).
+See ["Multiply"](multiply.md).
 
 
 

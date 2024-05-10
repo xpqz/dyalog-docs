@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Printer](../objects/printer.md) [Root](../objects/root.md)
+|-----------|--------------------------------|--------------------------|
+|Applies To:|[Printer](../objects/printer.md)|[Root](../objects/root.md)|
 
 
 **Description**
@@ -21,15 +22,15 @@ Its value is a vector (1 per font) of 8-element character vectors, each of
 which is as follows :
 
 
-| `[1]` | Face name (character vector) |
-| --- | ---  |
-| `[2]` | Character height in "points" (integer) |
-| `[3]` | Fixed width or not (Boolean) |
-| `[4]` | Italic or not (Boolean) |
-| `[5]` | Underline or not (Boolean) |
-| `[6]` | Weight (integer) |
-| `[7]` | Angle of rotation (integer) |
-| `[8]` | Character set (see [CharSet](charset.md) ) |
+|-----|------------------------------------------|
+|`[1]`|Face name (character vector)              |
+|`[2]`|Character height in "points" (integer)    |
+|`[3]`|Fixed width or not (Boolean)              |
+|`[4]`|Italic or not (Boolean)                   |
+|`[5]`|Underline or not (Boolean)                |
+|`[6]`|Weight (integer)                          |
+|`[7]`|Angle of rotation (integer)               |
+|`[8]`|Character set (see [CharSet](charset.md) )|
 
 
 

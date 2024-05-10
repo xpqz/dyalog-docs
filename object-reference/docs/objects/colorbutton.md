@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/colorbutton.md) [Properties](../proplists/colorbutton.md) [Methods](../methodlists/colorbutton.md) [Events](../eventlists/colorbutton.md)
+|----------------------------------------|-----------------------------------------|----------------------------------------|--------------------------------------|
+|[Parents](../parentlists/colorbutton.md)|[Properties](../proplists/colorbutton.md)|[Methods](../methodlists/colorbutton.md)|[Events](../eventlists/colorbutton.md)|
 
 
-Purpose: The ColorButton object allows the user to select a colour.
+|--------|----------------------------------------------------------|
+|Purpose:|The ColorButton object allows the user to select a colour.|
 
 
 **Description**

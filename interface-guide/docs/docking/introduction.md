@@ -8,13 +8,13 @@ For example, a SubForm can be dragged from one Form and docked into another. Or 
 
 With the exception of ToolControls, when a dockable object is docked or undocked, the full Name and Type of the object change according to the following table.
 
-|  | Parent Object | Parent Object | Parent Object | Parent Object |
-| --- | --- | --- | --- | ---  |
-| Dockable Object | Form `F1` | SubForm `F1.S1` | CoolBar `F1.CB1` | Root `(.)` |
-| Form `F2` | SubForm `F1.F2` | SubForm `F1.S1.F2` | CoolBand `F1.CB1.F2` | Form `F2` |
-| Form `F1.F2` | SubForm `F1.F2` | SubForm `F1.S1.F2` | CoolBand `F1.CB1.F2` | Form `F1.F2` |
-| SubForm `F2.S2` | SubForm `F1.F2` | SubForm `F1.S1.F2` | CoolBand `F1.CB1.F2` | Form `S2` |
-| CoolBand `F2.CB2.C2` | SubForm `F1.C2` | SubForm `F1.S1.C2` | CoolBand `F1.CB1.C2` | Form `C2` |
+|&nbsp;              |Parent Object                                                    ||||
+|--------------------|---------------|------------------|--------------------|------------|
+|Dockable Object     |Form `F1`      |SubForm `F1.S1`   |CoolBar `F1.CB1`    |Root `(.)`  |
+|Form `F2`           |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `F2`   |
+|Form `F1.F2`        |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `F1.F2`|
+|SubForm `F2.S2`     |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `S2`   |
+|CoolBand `F2.CB2.C2`|SubForm `F1.C2`|SubForm `F1.S1.C2`|CoolBand `F1.CB1.C2`|Form `C2`   |
 
 For example, a top-level Form `F2` when docked in another top-level Form `F1`, becomes a SubForm named `F2.F1`.
 

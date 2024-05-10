@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/filebox.md) [Children](../childlists/filebox.md) [Properties](../proplists/filebox.md) [Methods](../methodlists/filebox.md) [Events](../eventlists/filebox.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/filebox.md)|[Children](../childlists/filebox.md)|[Properties](../proplists/filebox.md)|[Methods](../methodlists/filebox.md)|[Events](../eventlists/filebox.md)|
 
 
-Purpose: Prompts user to select a file.
+|--------|------------------------------|
+|Purpose:|Prompts user to select a file.|
 
 
 **Description**

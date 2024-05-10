@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ActiveXControl](../objects/activexcontrol.md)
+|-----------|----------------------------------------------|
+|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|
 
 
 **Description**
@@ -28,9 +29,9 @@ This event is reported for information alone. You may not disable or nullify the
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'PreCreate'` or 534 |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'PreCreate'` or 534   |
 
 
 

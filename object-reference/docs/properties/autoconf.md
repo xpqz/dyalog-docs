@@ -17,11 +17,11 @@ This property determines what happens to an object when its **parent** is resize
 
 
 
-| 0 | Ignore resize by parent. Do not propagate resize to children. |
-| --- | ---  |
-| 1 | Accept resize by parent. Do not propagate resize to children. |
-| 2 | Ignore resize by parent. Propagate resize to children. |
-| 3 | Accept resize by parent. Propagate resize to children. |
+|---|-------------------------------------------------------------|
+|0  |Ignore resize by parent. Do not propagate resize to children.|
+|1  |Accept resize by parent. Do not propagate resize to children.|
+|2  |Ignore resize by parent. Propagate resize to children.       |
+|3  |Accept resize by parent. Propagate resize to children.       |
 
 
 If AutoConf is 0 or 2, the object's **physical** size (in pixels) and position (in pixels) relative to the top left corner of its parent remains unchanged when its parent is resized. If the object has `'Prop'` or `'User'` co-ordinates, the values of its [Posn](posn.md) and [Size](size.md) properties will change as a result.

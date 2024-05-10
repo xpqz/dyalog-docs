@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Circle](../objects/circle.md) [Ellipse](../objects/ellipse.md)
+|-----------|------------------------------|--------------------------------|
+|Applies To:|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Printer](../objects/printer.md)
+|-----------|--------------------------------|
+|Applies To:|[Printer](../objects/printer.md)|
 
 
 **Description**

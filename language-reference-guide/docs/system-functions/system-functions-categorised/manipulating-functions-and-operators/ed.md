@@ -10,14 +10,14 @@
 `⎕ED` invokes the Editor.  `Y` is a simple character vector, a simple character matrix, or a vector of character vectors, containing the name(s) of objects to be edited.  The optional left argument `X` is  a character scalar or character vector which specifies the type(s) of the corresponding (new) object(s) named in `Y`, where:
 
 
-| `∇` | function/operator |
-| --- | ---  |
-| `→` | simple character vector |
-| `∊` | vector of character vectors |
-| `-` | character matrix |
-| `⍟` | Namespace script |
-| `○` | Class script |
-| `∘` | Interface |
+|---|---------------------------|
+|`∇`|function/operator          |
+|`→`|simple character vector    |
+|`∊`|vector of character vectors|
+|`-`|character matrix           |
+|`⍟`|Namespace script           |
+|`○`|Class script               |
+|`∘`|Interface                  |
 
 
 
@@ -53,11 +53,11 @@ If `ReadOnly` is set to 1, the edit window and all edit windows opened from it w
 The `'EditName'` option determines whether or not the user may open another edit window by clicking a name, and its values are interpreted as follows:
 
 
-| EditName | `⎕ED` called from session | `⎕ED` called from function |
-| --- | --- | ---  |
-| `'Default'` | Allow | Disallow |
-| `'Allow'` | Allow | Allow |
-| `'Disallow'` | Disallow | Disallow |
+|EditName    |`⎕ED` called from session|`⎕ED` called from function|
+|------------|-------------------------|--------------------------|
+|`'Default'` |Allow                    |Disallow                  |
+|`'Allow'`   |Allow                    |Allow                     |
+|`'Disallow'`|Disallow                 |Disallow                  |
 
 
 

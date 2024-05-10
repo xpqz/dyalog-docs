@@ -26,13 +26,13 @@
 If `Y[2]` is omitted, the system tries to open the file with the default value of 66 (read and write access for this process and for any subsequent processes that attempt to access the file). If this fails, the system attempts to open the file with the value 64 (read access for this process, read and write for subsequent processes).
 
 
-| Needed from existing users | Needed from existing users | Granted to subsequent users | Granted to subsequent users |
-| --- | --- | --- | ---  |
-| 0 | read access | 0 | see note [^1] |
-| 1 | write access | 16 | no access (exclusive) |
-| 2 | read and write access | 32 | read access |
-|  |  | 48 | write access |
-|  |  | 64 | read and write access |
+|Needed from existing users                     ||Granted to subsequent users                     ||
+|--------------------------|---------------------|---------------------------|---------------------|
+|0                         |read access          |0                          |see note [^1]        |
+|1                         |write access         |16                         |no access (exclusive)|
+|2                         |read and write access|32                         |read access          |
+|&nbsp;                    |&nbsp;               |48                         |write access         |
+|&nbsp;                    |&nbsp;               |64                         |read and write access|
 
 
 On UNIX systems, the second column has no meaning and only the first code (`16|mode`) is passed to the `open(2)` call as the access parameter. See include file `fcntl.h` for details. See also [Native File Lock](nlock.md) which is not platform dependent.

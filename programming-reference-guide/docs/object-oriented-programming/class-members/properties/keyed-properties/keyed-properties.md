@@ -15,4 +15,4 @@ Note too that indices **may be elided**. If `KProp` is a Keyed Property of Insta
       I1.KProp[;'One' 'Two']←10
 ```
 
-When APL calls a monadic `get` or a `set` function, it supplies an argument of type PropertyArguments,  which identifies which dimensions and indices were specified. See [PropertyArguments Class](../../../property-section/propertyarguments-class.md).
+When APL calls a monadic `get` or a `set` function, it supplies an argument of type PropertyArguments,  which identifies which dimensions and indices were specified. See ["PropertyArguments Class"](../../../property-section/propertyarguments-class.md).

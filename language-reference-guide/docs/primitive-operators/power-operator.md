@@ -24,14 +24,14 @@ If a left argument `X` is present, it is bound as left argument to left operand 
 A *negative* right operand `g` applies the *inverse* of the operand function `f`, `(|g)`times. In this case, `f` may be a primitive function or an expression of primitive functions combined with primitive operators:
 
 
-| `∘` | compose |
-| --- | ---  |
-| `¨` | each |
-| `∘.` | outer product |
-| `⍨` | commute |
-| `\` | scan |
-| `[]` | axis |
-| `⍣` | power |
+|----|-------------|
+|`∘` |compose      |
+|`¨` |each         |
+|`∘.`|outer product|
+|`⍨` |commute      |
+|`\` |scan         |
+|`[]`|axis         |
+|`⍣` |power        |
 
 
 

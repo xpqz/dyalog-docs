@@ -14,17 +14,17 @@
 Primitive dyadic mixed functions with optional axis.
 
 
-| Function | Name | Range of B |
-| --- | --- | ---  |
-| `/ or ⌿` | Replicate | `B∊⍳⍴⍴Y` |
-| `\ or ⍀` | Expand | `B∊⍳⍴⍴Y` |
-| `⊂` | Partitioned Enclose | `B∊⍳⍴⍴Y` |
-| `⌽ or ⊖` | Rotate | `B∊⍳⍴⍴Y` |
-| `, or ⍪` | Catenate | `B∊⍳⍴⍴Y` |
-| `, or ⍪` | Laminate | `(0≠1|B)^(B>⎕IO-1)^(B<⎕IO+(⍴⍴X)⌈⍴⍴Y)` |
-| `↑` | Take | one or more axes of `Y` |
-| `↓` | Drop | one or more axes of `Y` |
-| `⌷` | Index | one or more axes of `Y` |
+|Function|Name|Range of B|
+|---|---|---|
+|`/ or ⌿`|Replicate|`B∊⍳⍴⍴Y`|
+|`\ or ⍀`|Expand|`B∊⍳⍴⍴Y`|
+|`⊂`|Partitioned Enclose|`B∊⍳⍴⍴Y`|
+|`⌽ or ⊖`|Rotate|`B∊⍳⍴⍴Y`|
+|`, or ⍪`|Catenate|`B∊⍳⍴⍴Y`|
+|`, or ⍪`|Laminate|`(0≠1|B)^(B>⎕IO-1)^(B<⎕IO+(⍴⍴X)⌈⍴⍴Y)`|
+|`↑`|Take|one or more axes of `Y`|
+|`↓`|Drop|one or more axes of `Y`|
+|`⌷`|Index|one or more axes of `Y`|
 
 
 In most cases, `B` must be an integer value identifying the axis of `X` and `Y` along which function `f` is to be applied.

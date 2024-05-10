@@ -7,7 +7,8 @@
 
 
 
-Applies To: [MsgBox](../objects/msgbox.md)
+|-----------|------------------------------|
+|Applies To:|[MsgBox](../objects/msgbox.md)|
 
 
 **Description**
@@ -45,11 +46,11 @@ If any other combination is specified, [`⎕WC`](../../../language-reference-gui
 If the Btns property is not specified, it assumes a default according to [Style](style.md) as follows :
 
 
-| Style | Btns |
-| --- | ---  |
-| `'Msg'` or `'Info'` | `'OK'` |
-| `'Warn'` or `'Error'` | `'OK' 'CANCEL'` |
-| `'Query'` | `'YES' 'NO'` |
+|Style                |Btns           |
+|---------------------|---------------|
+|`'Msg'` or `'Info'`  |`'OK'`         |
+|`'Warn'` or `'Error'`|`'OK' 'CANCEL'`|
+|`'Query'`            |`'YES' 'NO'`   |
 
 
 If [Style](style.md) is not specified, Btns defaults to `'OK'`.

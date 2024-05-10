@@ -214,20 +214,20 @@ Transformation patterns may not be mixed with transformation codes or functions.
 The following characters have special meaning:
 
 
-| Character | Meaning |
-| --- | ---  |
-| % | acts as a placeholder for the entire line (line mode) or document (document mode or mixed mode) which contained the match |
-| & | acts as a placeholder for the entire portion of text which matched |
-| \n | represents a line feed character |
-| \r | represents a carriage return |
-| \0 | equivalent to & |
-| \ *n* | acts as a placeholder for the text which matched the first to ninth subpattern; *n* may be any single digit value from 1 to 9 |
-| \( *n* ) | acts as a placeholder for the text which matched the numbered subpattern; *n* may have an integer value from 0 to 63. |
-| \< *name* > | acts as a placeholder for the text which matched the named subpattern |
-| \\ | represents the backslash character |
-| \% | represents the percent character |
-| \& | represents the ampersand character |
-| \x{ *nnnn* } | represents a Unicode code point; *nnnn* is a hexadecimal sequence of characters yielding a value between 0x1 and 0x10FFFF. |
+|Character   |Meaning                                                                                                                      |
+|------------|-----------------------------------------------------------------------------------------------------------------------------|
+|%           |acts as a placeholder for the entire line (line mode) or document (document mode or mixed mode) which contained the match    |
+|&           |acts as a placeholder for the entire portion of text which matched                                                           |
+|\n          |represents a line feed character                                                                                             |
+|\r          |represents a carriage return                                                                                                 |
+|\0          |equivalent to &                                                                                                              |
+|\ *n*       |acts as a placeholder for the text which matched the first to ninth subpattern; *n* may be any single digit value from 1 to 9|
+|\( *n* )    |acts as a placeholder for the text which matched the numbered subpattern; *n* may have an integer value from 0 to 63.        |
+|\< *name* > |acts as a placeholder for the text which matched the named subpattern                                                        |
+|\\          |represents the backslash character                                                                                           |
+|\%          |represents the percent character                                                                                             |
+|\&          |represents the ampersand character                                                                                           |
+|\x{ *nnnn* }|represents a Unicode code point; *nnnn* is a hexadecimal sequence of characters yielding a value between 0x1 and 0x10FFFF.   |
 
 
 
@@ -237,9 +237,9 @@ The above may be qualified so that matching text is folded, or mapped to upper- 
 Character sequences beginning with the backslash place the modifier after the backslash; character sequences with no leading backslash add both a backslash and the modifier to the start of the sequence, for example:
 
 
-| \u& | acts as a placeholder for the entire portion of text which matched, folded to upper case |
-| --- | ---  |
-| \l0 | equivalent to \l& |
+|---|----------------------------------------------------------------------------------------|
+|\u&|acts as a placeholder for the entire portion of text which matched, folded to upper case|
+|\l0|equivalent to \l&                                                                       |
 
 
 
@@ -252,11 +252,11 @@ Character sequences beginning with the backslash other that those shown are inva
 The transformation codes are a numeric scalar or vector. Transformation codes may only be used with `⎕S`. For each match in the input document, a numeric scalar or vector of the same shape as the transformation codes is created, with the codes replaced with values as follows:
 
 
-| 0 | The offset from the start of the line (line mode) or document (document mode or mixed mode) of the start of the match. |
-| --- | ---  |
-| 1 | The length of the match. |
-| 2 | In line mode, the block number in the source document of the start of the match. The value is origin zero. In document mode or mixed mode this value is always zero. |
-| 3 | The pattern number which matched the input document, origin zero. |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0  |The offset from the start of the line (line mode) or document (document mode or mixed mode) of the start of the match.                                              |
+|1  |The length of the match.                                                                                                                                            |
+|2  |In line mode, the block number in the source document of the start of the match. The value is origin zero. In document mode or mixed mode this value is always zero.|
+|3  |The pattern number which matched the input document, origin zero.                                                                                                   |
 
 
 
@@ -266,17 +266,17 @@ The transformation codes are a numeric scalar or vector. Transformation codes ma
 The transformation function is called for each match within the input document.  The function is monadic and is passed a namespace, containing the following variables:
 
 
-| `Block` | The entire line (line mode) or document (document mode or mixed mode) in which the match was found. |
-| --- | ---  |
-| `BlockNum` | With line mode, the block (line) number in the source document of the start of the match. The value is origin zero. With document mode or mixed mode the entire document is contained within one block and this value is always zero. |
-| `Pattern` | The search pattern which matched. |
-| `PatternNum` | The index-zero pattern number which matched. |
-| `Match` | The text within Block which matched Pattern. |
-| `Offsets` | A vector of one or more offsets relative to the start of Block. The first value is the offset of the entire match; any and all additional values are the offsets of the portions of the text which matched the subpatterns, in the order of the subpatterns within Pattern. `¯1` indicates no match, see below. |
-| `Lengths` | A vector of one or more lengths, corresponding to each value in Offset. `¯1` indicates no match, see below. |
-| `Names` | A vector of one or more character vectors corresponding to each of the values in Offsets, specifying the names given to the subpatterns within Pattern. The first entry (corresponding to the match) and all subpatterns with no name are included as length zero character vectors. |
-| `ReplaceMode` | A Boolean indicating whether the function was called by `⎕R` (value 1) or `⎕S` (value 0). |
-| `TextOnly` | A Boolean indicating whether the return value from the function must be a character vector (value 1) or any value (value 0). |
+|---|---|
+|`Block`|The entire line (line mode) or document (document mode or mixed mode) in which the match was found.|
+|`BlockNum`|With line mode, the block (line) number in the source document of the start of the match. The value is origin zero. With document mode or mixed mode the entire document is contained within one block and this value is always zero.|
+|`Pattern`|The search pattern which matched.|
+|`PatternNum`|The index-zero pattern number which matched.|
+|`Match`|The text within Block which matched Pattern.|
+|`Offsets`|A vector of one or more offsets relative to the start of Block. The first value is the offset of the entire match; any and all additional values are the offsets of the portions of the text which matched the subpatterns, in the order of the subpatterns within Pattern. `¯1` indicates no match, see below.|
+|`Lengths`|A vector of one or more lengths, corresponding to each value in Offset. `¯1` indicates no match, see below.|
+|`Names`|A vector of one or more character vectors corresponding to each of the values in Offsets, specifying the names given to the subpatterns within Pattern. The first entry (corresponding to the match) and all subpatterns with no name are included as length zero character vectors.|
+|`ReplaceMode`|A Boolean indicating whether the function was called by `⎕R` (value 1) or `⎕S` (value 0).|
+|`TextOnly`|A Boolean indicating whether the return value from the function must be a character vector (value 1) or any value (value 0).|
 
 
 
@@ -346,9 +346,9 @@ Default values are highlighted thus.
 When set, case is ignored in searches.
 
 
-| `1` | Matches are not case sensitive. |
-| --- | ---  |
-| 0 | Matches are case sensitive. |
+|---|-------------------------------|
+|`1`|Matches are not case sensitive.|
+|0  |Matches are case sensitive.    |
 
 
 
@@ -369,10 +369,10 @@ XBCDX XbcdX
 Specifies whether the input document is interpreted in **line** mode, **document** mode or **mixed** mode.
 
 
-| L | When line mode is set, the input document is split into separate lines (discarding the line ending characters themselves), and each line is processed separately. This means that the ML option applies per line, and the '^' and '$' anchors match the start and end respectively of each line. Because the document is split, searches can never match across multiple lines, nor can searches for line ending characters ever succeed. Setting line mode can result in significantly reduced memory requirements compared with the other modes. |
-| --- | ---  |
-| `D` | When document mode is set, the entire input document is processed as a single block. The ML option applies to this entire block, and the '^' and '$' anchors match the start and end respectively of the block - not the lines within it. Searches can match across lines, and can match line ending characters. |
-| `M` | When mixed mode is set, the '^' and '$' anchors match the start and end respectively of each line, as if line mode is set, but in all other respects behaviour is as if document mode is set - the entire input document is processed in a single block. |
+|---|---|
+|L|When line mode is set, the input document is split into separate lines (discarding the line ending characters themselves), and each line is processed separately. This means that the ML option applies per line, and the '^' and '$' anchors match the start and end respectively of each line. Because the document is split, searches can never match across multiple lines, nor can searches for line ending characters ever succeed. Setting line mode can result in significantly reduced memory requirements compared with the other modes.|
+|`D`|When document mode is set, the entire input document is processed as a single block. The ML option applies to this entire block, and the '^' and '$' anchors match the start and end respectively of the block - not the lines within it. Searches can match across lines, and can match line ending characters.|
+|`M`|When mixed mode is set, the '^' and '$' anchors match the start and end respectively of each line, as if line mode is set, but in all other respects behaviour is as if document mode is set - the entire input document is processed in a single block.|
 
 
 
@@ -397,9 +397,9 @@ Specifies whether the input document is interpreted in **line** mode, **document
 Specifies whether the dot ('.') character in search patterns matches line ending characters.
 
 
-| 0 | The '.' character in search patterns matches most characters, but not line endings. |
-| --- | ---  |
-| `1` | The '.' character in search patterns matches all characters. |
+|---|-----------------------------------------------------------------------------------|
+|0  |The '.' character in search patterns matches most characters, but not line endings.|
+|`1`|The '.' character in search patterns matches all characters.                       |
 
 
 This option is invalid in line mode, because line endings are stripped from the input document.
@@ -423,15 +423,15 @@ This option is invalid in line mode, because line endings are stripped from the 
 Sets the line ending character which is implicitly present between character vectors, when the input document is a vector of character vectors.
 
 
-| CR | Carriage Return (U+000D) |
-| --- | ---  |
-| LF | Line Feed (U+000A) |
-| CRLF | Carriage Return followed by Line Feed |
-| VT | Vertical Tab (U+000B) |
-| NEL | New Line (U+0085) |
-| FF | Form Feed (U+000C) |
-| LS | Line Separator (U+2028) |
-| PS | Paragraph Separator (U+2029) |
+|----|-------------------------------------|
+|CR  |Carriage Return (U+000D)             |
+|LF  |Line Feed (U+000A)                   |
+|CRLF|Carriage Return followed by Line Feed|
+|VT  |Vertical Tab (U+000B)                |
+|NEL |New Line (U+0085)                    |
+|FF  |Form Feed (U+000C)                   |
+|LS  |Line Separator (U+2028)              |
+|PS  |Paragraph Separator (U+2029)         |
 
 
 In the Classic Edition, setting a value which is not in `⎕AVU` may result in a `TRANSLATION ERROR`.
@@ -456,9 +456,9 @@ Here, the implied line ending between 'ABC' and 'DEF' is '\n', not the default '
 Specifies whether explicit line ending sequences in the input document are normalised by replacing them with the character specified using the EOL option.
 
 
-| 0 | Line endings are not normalised. |
-| --- | ---  |
-| 1 | Line endings are normalised. |
+|---|--------------------------------|
+|0  |Line endings are not normalised.|
+|1  |Line endings are normalised.    |
 
 
 
@@ -482,10 +482,10 @@ Specifies whether explicit line ending sequences in the input document are norma
 Sets a limit to the number of processed pattern matches per line (line mode) or document (document mode and mixed mode).
 
 
-| Positive value n | Sets the limit to the first n matches. |
-| --- | ---  |
-| 0 | Sets no limit. |
-| Negative value `¯` n | Sets the limit to exactly the nth match. |
+|--------------------|----------------------------------------|
+|Positive value n    |Sets the limit to the first n matches.  |
+|0                   |Sets no limit.                          |
+|Negative value `¯` n|Sets the limit to exactly the nth match.|
 
 
 
@@ -509,9 +509,9 @@ Sets a limit to the number of processed pattern matches per line (line mode) or 
 Controls whether patterns are "greedy" (and match the maximum input possible) or are not (and match the minimum). Within the pattern itself it is possible to specify greediness for individual elements of the pattern; this option sets the default.
 
 
-| 1 | Greedy by default. |
-| --- | ---  |
-| 0 | Not greedy by default. |
+|---|----------------------|
+|1  |Greedy by default.    |
+|0  |Not greedy by default.|
 
 
 
@@ -533,9 +533,9 @@ X23 X56
 Specifies whether matches may overlap.
 
 
-| 1 | Searching continues for all patterns and then from the character following the *start* of the match, thus permitting overlapping matches. |
-| --- | ---  |
-| 0 | Searching continues from the character following the *end* of the match. |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------|
+|1  |Searching continues for all patterns and then from the character following the *start* of the match, thus permitting overlapping matches.|
+|0  |Searching continues from the character following the *end* of the match.                                                                 |
 
 
 This option may only be used with `⎕S`. With `⎕R` searching always continues from the character following the end of the match (the characters following the start of the match will have been changed).
@@ -567,17 +567,17 @@ This option specifies the encoding of the input stream when it cannot be determi
 When the stream is read from its start, and the start of the stream contains a recognised Byte Order Mark (BOM), the encoding is taken as that specified by the BOM and this option is ignored. Otherwise, the encoding is assumed to be as specified by this option.
 
 
-| UTF-8 | The stream is processed as UTF-8 data. Note that ASCII is a subset of UTF-8, so this default is also suitable for ASCII data. |
-| --- | ---  |
-| UTF-16 | The stream is processed as UTF16 little-endian data on little-ended systems, or as UTF16 big-endian data on big-endian systems. |
-| UTF-16LE | The stream is processed as UTF16 little-endian data. |
-| UTF-16BE | The stream is processed as UTF16 big-endian data. |
-| UTF-32 | The stream is processed as UTF32 little-endian data on little-ended systems, or as UTF32 big-endian data on big-endian systems. |
-| UTF-32LE | The stream is processed as UTF32 little-endian data. |
-| UTF-32BE | The stream is processed as UTF32 big-endian data. |
-| ASCII | The stream is processed as ASCII data. If the stream contains any characters outside of the ASCII range then an error is produced. |
-| Windows-1252 | The stream is processed as Windows-1252 (ANSI) data. |
-| ANSI | Same as Windows-1252 |
+|------------|----------------------------------------------------------------------------------------------------------------------------------|
+|UTF-8       |The stream is processed as UTF-8 data. Note that ASCII is a subset of UTF-8, so this default is also suitable for ASCII data.     |
+|UTF-16      |The stream is processed as UTF16 little-endian data on little-ended systems, or as UTF16 big-endian data on big-endian systems.   |
+|UTF-16LE    |The stream is processed as UTF16 little-endian data.                                                                              |
+|UTF-16BE    |The stream is processed as UTF16 big-endian data.                                                                                 |
+|UTF-32      |The stream is processed as UTF32 little-endian data on little-ended systems, or as UTF32 big-endian data on big-endian systems.   |
+|UTF-32LE    |The stream is processed as UTF32 little-endian data.                                                                              |
+|UTF-32BE    |The stream is processed as UTF32 big-endian data.                                                                                 |
+|ASCII       |The stream is processed as ASCII data. If the stream contains any characters outside of the ASCII range then an error is produced.|
+|Windows-1252|The stream is processed as Windows-1252 (ANSI) data.                                                                              |
+|ANSI        |Same as Windows-1252                                                                                                              |
 
 
 For compatibility with the OutEnc option, the above UTF formats may be qualified with -BOM (e.g. UTF-8-BOM) or -NOBOM. For input streams, the qualified and unqualified options are equivalent.
@@ -594,18 +594,18 @@ When the output is written to a stream, this option specifies how the data is to
 
 
 
-| Implied | If input came from a stream then the encoding format is the same as the input stream, otherwise UTF-8 |
-| --- | ---  |
-| UTF-8 | The data is written in UTF-8 format. |
-| UTF-16 | The data is written in UTF16 little-endian format on little-ended systems, or in UTF16 big-endian format on big-endian systems. |
-| UTF-16LE | The data is written in UTF-16 little-endian format. |
-| UTF-16BE | The data is written in UTF-16 big-endian format. |
-| UTF-32 | The data is written in UTF32 little-endian format on little-ended systems, or in UTF32 big-endian format on big-endian systems. |
-| UTF-32LE | The data is written in UTF-32 little-endian format. |
-| UTF-32BE | The data is written in UTF-32 big-endian format. |
-| ASCII | The data is written in ASCII format. |
-| Windows-1252 | The data is written in Windows-1252 (ANSI) format. |
-| ANSI | Same as Windows-1252 |
+|------------|-------------------------------------------------------------------------------------------------------------------------------|
+|Implied     |If input came from a stream then the encoding format is the same as the input stream, otherwise UTF-8                          |
+|UTF-8       |The data is written in UTF-8 format.                                                                                           |
+|UTF-16      |The data is written in UTF16 little-endian format on little-ended systems, or in UTF16 big-endian format on big-endian systems.|
+|UTF-16LE    |The data is written in UTF-16 little-endian format.                                                                            |
+|UTF-16BE    |The data is written in UTF-16 big-endian format.                                                                               |
+|UTF-32      |The data is written in UTF32 little-endian format on little-ended systems, or in UTF32 big-endian format on big-endian systems.|
+|UTF-32LE    |The data is written in UTF-32 little-endian format.                                                                            |
+|UTF-32BE    |The data is written in UTF-32 big-endian format.                                                                               |
+|ASCII       |The data is written in ASCII format.                                                                                           |
+|Windows-1252|The data is written in Windows-1252 (ANSI) format.                                                                             |
+|ANSI        |Same as Windows-1252                                                                                                           |
 
 
 The above UTF formats may be qualified with -BOM (e.g. UTF-8-BOM) to specify that a Byte Order Mark should be written at the start of the stream or, -NOBOM that it should not. For files, this is ignored if the file already contains any data.  If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.
@@ -625,10 +625,10 @@ This option sets both InEnc and OutEnc simultaneously, with the same given value
 For `⎕R`, this option determines the format of the result.
 
 
-| Implied | The output will either be a **character vector** or **a vector of character vectors** , dependent on the input document type |
-| --- | ---  |
-| Simple | The output will be a **character vector** . Any and all line endings in the output will be represented by line ending characters within the character vector. |
-| Nested | The output will be a **vector of character vectors** . Any and all line endings in the output document will be implied at the end of each character vector. |
+|-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Implied|The output will either be a **character vector** or **a vector of character vectors** , dependent on the input document type                                 |
+|Simple |The output will be a **character vector** . Any and all line endings in the output will be represented by line ending characters within the character vector.|
+|Nested |The output will be a **vector of character vectors** . Any and all line endings in the output document will be implied at the end of each character vector.  |
 
 
 This option may only be used with `⎕R`.
@@ -654,9 +654,9 @@ This affects the way PCRE that processes \B, \b, \D, \d, \S, \s,  \W,
 \w,  and  some  of  the POSIX character classes.
 
 
-| 1 | Unicode  properties are  used to classify characters. |
-| --- | ---  |
-| 0 | Only ASCII characters are recognized. |
+|---|-----------------------------------------------------|
+|1  |Unicode  properties are  used to classify characters.|
+|0  |Only ASCII characters are recognized.                |
 
 
 **Implementation Note**: this option is implemented by setting or not setting the PCRE_UCP option when calling pcre_compile(). More information can be found in the PCRE documentation.
@@ -692,9 +692,9 @@ When UCP is set to 1, Unicode characters are matched as "word" characters (\w) t
 This option may be used to disable regular expression matching which is enabled by default. It is a singleton Boolean value that applies to both search and transformation patterns, or a 2-element vector of Boolean values that applies to them separately.
 
 
-| 1 | Regular expression matching is applied. |
-| --- | ---  |
-| 0 | regular expression matching is disabled. |
+|---|----------------------------------------|
+|1  |Regular expression matching is applied. |
+|0  |regular expression matching is disabled.|
 
 
 
@@ -883,13 +883,15 @@ The currency conversion requires the use of a function. Note the nested use of `
 Input file:
 
 
-`01/03/1980,Widgets,DEM 10.20` `02/04/1980,Bolts,DEM 61.75` `17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00` `18/07/1980,Hammer,DEM 1.25`
+|--------------------------------------------------------------------------------------------------------------------------------------------|
+|`01/03/1980,Widgets,DEM 10.20` `02/04/1980,Bolts,DEM 61.75` `17/06/1980,Nuts; special rate DEM 17.00,DEM 17.00` `18/07/1980,Hammer,DEM 1.25`|
 
 
 Output file:
 
 
-`1980-03-01,Widgets,€ 5.21` `1980-04-02,Bolts,€ 31.57` `1980-06-17,Nuts; special rate DEM 17.00,€ 8.69` `1980-07-18,Hammer,€ 0.63`
+|----------------------------------------------------------------------------------------------------------------------------------|
+|`1980-03-01,Widgets,€ 5.21` `1980-04-02,Bolts,€ 31.57` `1980-06-17,Nuts; special rate DEM 17.00,€ 8.69` `1980-07-18,Hammer,€ 0.63`|
 ```apl
      ∇ ret←f a;d;m;y;v
 [1]    ⎕IO←0

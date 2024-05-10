@@ -7,7 +7,8 @@
 
 
 
-Applies To: [PropertyPage](../objects/propertypage.md)
+|-----------|------------------------------------------|
+|Applies To:|[PropertyPage](../objects/propertypage.md)|
 
 
 **Description**
@@ -19,9 +20,9 @@ If enabled, this event is reported when the user clicks the Help button in a Wiz
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'PageHelp'` or 352 |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'PageHelp'` or 352    |
 
 
 

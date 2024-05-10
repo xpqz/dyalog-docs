@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TreeView](../objects/treeview.md)
+|-----------|----------------------------------|
+|Applies To:|[TreeView](../objects/treeview.md)|
 
 
 **Description**
@@ -16,10 +17,10 @@ Applies To: [TreeView](../objects/treeview.md)
 The HasLines property specifies whether or not tree lines are drawn in a [TreeView](../objects/treeview.md) object. It is a single integer with the value 0, 1 or 2:
 
 
-| 0 | No tree lines |
-| --- | ---  |
-| 1 | Tree lines are drawn at all levels except the top level |
-| 2 | Tree lines are drawn at all levels |
+|---|-------------------------------------------------------|
+|0  |No tree lines                                          |
+|1  |Tree lines are drawn at all levels except the top level|
+|2  |Tree lines are drawn at all levels                     |
 
 
 The user can cause a parent item to expand or collapse 

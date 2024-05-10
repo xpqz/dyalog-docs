@@ -36,13 +36,13 @@ This function obtains syntax colouring information for a function.
 In this example:
 
 
-| 21 | is the syntax identifier for "character constant" |
-| --- | ---  |
-| 19 | is the syntax identifier for "primitive" |
-| 3 | is the syntax identifier for "white space" |
-| 34 | is the syntax identifier for "local name" |
-| 7 | is the syntax identifier for "global name" |
-| 23 | is the syntax identifier for "idiom" |
+|---|-------------------------------------------------|
+|21 |is the syntax identifier for "character constant"|
+|19 |is the syntax identifier for "primitive"         |
+|3  |is the syntax identifier for "white space"       |
+|34 |is the syntax identifier for "local name"        |
+|7  |is the syntax identifier for "global name"       |
+|23 |is the syntax identifier for "idiom"             |
 
 
 

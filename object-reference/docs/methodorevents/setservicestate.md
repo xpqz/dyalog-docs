@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Root](../objects/root.md)
+|-----------|--------------------------|
+|Applies To:|[Root](../objects/root.md)|
 
 
 **Description**
@@ -19,10 +20,10 @@ This method is used to set the state of a Dyalog APL service running under Windo
 The argument to the SetServiceState method is the desired state of the service. This should be one of the following numeric values:
 
 
-| SERVICE_STOPPED | 1 |
-| --- | ---  |
-| SERVICE_RUNNING | 4 |
-| SERVICE_PAUSED | 7 |
+|---------------|---|
+|SERVICE_STOPPED|1  |
+|SERVICE_RUNNING|4  |
+|SERVICE_PAUSED |7  |
 
 
 The state of a Windows service is determined by the user and the Windows Service Control Manager (SCM).

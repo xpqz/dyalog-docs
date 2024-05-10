@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Bitmap](../objects/bitmap.md)
+|-----------|------------------------------|
+|Applies To:|[Bitmap](../objects/bitmap.md)|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Cursor](../objects/cursor.md) [Icon](../objects/icon.md)
+|-----------|------------------------------|--------------------------|
+|Applies To:|[Cursor](../objects/cursor.md)|[Icon](../objects/icon.md)|
 
 
 **Description**

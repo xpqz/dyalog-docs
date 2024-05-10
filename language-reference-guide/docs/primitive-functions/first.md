@@ -7,7 +7,7 @@
 
 
 
-See function [Disclose](disclose.md).
+See function ["Disclose"](disclose.md).
 
 
 

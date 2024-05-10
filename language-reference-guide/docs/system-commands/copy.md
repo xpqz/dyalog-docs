@@ -10,7 +10,7 @@
 This command brings all or selected global objects `nms` from a stored workspace (or session file) with the given name.  A stored workspace is one which has previously been saved with the system command `)SAVE` or the system function `⎕SAVE`.
 
 
-See Workspaces[Programmer's Guide: "Workspaces](../../../programming-reference-guide/introduction/workspaces) for the rules for specifying a workspace name.
+See [Programmer's Guide: "Workspaces"](../../../programming-reference-guide/introduction/workspaces) for the rules for specifying a workspace name.
 
 
 If the list of names is excluded, all defined objects (including namespaces) are copied.
@@ -45,7 +45,7 @@ If the workspace name identifies a file that is not a workspace, the system repo
 If the source workspace is too large to be loaded, the system reports `ws too large`.
 
 
-When copying data between Classic and Unicode Editions, `)COPY` will fail with `TRANSLATION ERROR` if *any* object in the source workspace fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `nms`. See [Atomic Vector - Unicode:](../system-functions/avu.md) for further details.
+When copying data between Classic and Unicode Editions, `)COPY` will fail with `TRANSLATION ERROR` if *any* object in the source workspace fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `nms`. See ["Atomic Vector - Unicode: "](../system-functions/avu.md) for further details.
 
 
 If "`ws`" is omitted, the file open dialog box is displayed and all objects copied from the selected workspace.

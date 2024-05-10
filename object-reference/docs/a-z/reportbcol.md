@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ListView](../objects/listview.md)
+|-----------|----------------------------------|
+|Applies To:|[ListView](../objects/listview.md)|
 
 
 **Description**
@@ -25,7 +26,7 @@ i.e. if non-scalar, `(⍴ReportBCol)←→(0 1+⍴ReportInfo)`
 Each  element of ReportBCol is either an integer colour value or a 3-element of RGB colour indices.
 
 
-For further information, see [BCol](bcol.md).
+For further information, see ["BCol"](bcol.md).
 
 
 

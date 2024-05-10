@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../../../object-reference/objects/htmlrenderer)
+|-----------|--------------------------------------------------------------|
+|Applies To:|[HTMLRenderer](../../../object-reference/objects/htmlrenderer)|
 
 
 **Description**
@@ -19,7 +20,8 @@ This method is used to execute JavaScript in an [HTMLRenderer](../../../object-r
 The argument to ExecuteJavaScript is a single item as follows:
 
 
-`[1]` Code character vector containing JavaScript code
+|-----|----|-------------------------------------------|
+|`[1]`|Code|character vector containing JavaScript code|
 
 
 The shy result of ExecuteJavaScript is currently 1; this may change.

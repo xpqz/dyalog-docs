@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Combo](../objects/combo.md) [ComboEx](../objects/comboex.md)
+|-----------|----------------------------|--------------------------------|
+|Applies To:|[Combo](../objects/combo.md)|[ComboEx](../objects/comboex.md)|
 
 
 **Description**

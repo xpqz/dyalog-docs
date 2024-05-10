@@ -23,7 +23,7 @@ The shy result `R` is `0⍴⊂''`.
 You may copy an object from a namespace by specifying its full pathname.  The object will be copied to the current namespace in the active workspace, losing its original parent and gaining a new one in the process.  You may only copy a GUI object into a namespace that is a suitable parent for that object.  For example, you could only copy a Group object from a saved workspace if the current namespace in the active workspace is itself a Form, SubForm or Group.
 
 
-See [Copy Workspace:](../system-commands/copy.md) for further information and, in particular, the manner in which dependent and referenced objects are copied, and copying objects from Session (.dse) files.
+See ["Copy Workspace: "](../system-commands/copy.md) for further information and, in particular, the manner in which dependent and referenced objects are copied, and copying objects from Session (.dse) files.
 
 
 A `DOMAIN ERROR` is reported in any of the following cases:
@@ -36,7 +36,7 @@ A `DOMAIN ERROR` is reported in any of the following cases:
 An object being copied has the same name as an active label.
 
 
-When copying data between Classic and Unicode Editions, `⎕`CY will fail and a `TRANSLATION ERROR` will be reported if *any* object in workspace `Y` fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `X`. See [Note](avu.md) for further details.
+When copying data between Classic and Unicode Editions, `⎕`CY will fail and a `TRANSLATION ERROR` will be reported if *any* object in workspace `Y` fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `X`. See ["Note"](avu.md) for further details.
 
 
 A `WS FULL` is reported if the active workspace becomes full during the copying process.

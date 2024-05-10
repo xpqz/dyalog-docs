@@ -33,6 +33,13 @@ markdown_extensions:
   - abbr
   - footnotes
   - md_in_html
+  - markdown_tables_extended
+  - image_captions:
+      numbering: true
+  - table_captions:
+      numbering: true
+      caption_top: false
+  - caption
   - toc:
       title: On this page
 
@@ -49,7 +56,7 @@ nav:
   - Configuration Parameters:
     -  Configuration Parameters: configuration-parameters/configuration-parameters.md
     -  AddClassHeaders: configuration-parameters/addclassheaders.md
-    -  AplCoreName: configuration-parameters/aplcorename.md
+    - AplCoreName: configuration-parameters/aplcorename.md
     -  APLK: configuration-parameters/aplk.md
     -  APLKeys: configuration-parameters/aplkeys.md
     -  aplnid: configuration-parameters/aplnid.md

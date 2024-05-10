@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ActiveXControl](../objects/activexcontrol.md) [OLEServer](../objects/oleserver.md)
+|-----------|----------------------------------------------|------------------------------------|
+|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|
 
 
 **Description**
@@ -30,13 +31,13 @@ A function exported by SetFnInfo will be called by a host application with the n
 The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 
 
-| `[1]` | Function name | character vector |
-| --- | --- | ---  |
-| `[2]` | Function info | nested array (see below) |
-| `[3]` | Help ID | integer |
-| `[4]` | Function type | integer |
-| `[5]` | Property name | character vector |
-| `[6]` | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
+|-----|-------------|---------------------------------------------------------------|
+|`[1]`|Function name|character vector                                               |
+|`[2]`|Function info|nested array (see below)                                       |
+|`[3]`|Help ID      |integer                                                        |
+|`[4]`|Function type|integer                                                        |
+|`[5]`|Property name|character vector                                               |
+|`[6]`|DISPID       |integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md)|
 
 
 #### Function info
@@ -87,10 +88,10 @@ This is an integer value that identifies the help context id within the help fil
 This specifies the type of function being exported. This is an integer with one of the following values:
 
 
-| 1 | Function is a method |
-| --- | ---  |
-| 2 | Function is a property get function |
-| 4 | Function is a property put function |
+|---|-----------------------------------|
+|1  |Function is a method               |
+|2  |Function is a property get function|
+|4  |Function is a property put function|
 
 
 

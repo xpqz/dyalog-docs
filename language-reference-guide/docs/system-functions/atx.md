@@ -20,31 +20,31 @@ Note: To retrieve this information for an unnamed value, wrap `⎕ATX` in a dfn 
 
 
 
-| Group | `X` | Meaning | Default |  |
-| --- | --- | --- | ---  |
-| Identity | 0 | Name | `''` |  |
-| Syntax | 10 | Function result ( `0` : none or not a function, `1` : explicit, `¯1` : shy) | `0` |  |
-| 11 | Function valence ( `0` : niladic, `1` : monadic, `2` : dyadic, `¯2` : ambivalent) | `0` |  |
-| 12 | Operator valence: ( `0` : not an operator, `1` : monadic, `2` : dyadic) | `0` |  |
-| Last edit | 20 | Author of last edit | `''` |  |
-| 21 | Number of days passed between 1899-12-31 at 00:00 UTC and last edit (includes fractional days) | `0` |  |
-| 22 | Local timestamp at last edit (format is the 7-item vector described by `⎕TS` . See [Timestamp](ts.md) ) | `⍬` |  |
-| 23 | Number of bytes required for storage without sharing | `0` |  |
-| Restrictions | 30 | Source can be displayed | `¯1` |  |
-| 31 | Execution can be suspended mid-execution | `¯1` |  |
-| 32 | Responds to weak interrupt | `¯1` |  |
-| Class* | 40 | Syntactic supra-class ( `¯1` : invalid name, `0` : undefined, `1` : label, `2` : variable, `3` : function, `4` : operator, `8` : event, `9` : object) | `¯1` |  |
-| 41 | Syntactic sub-class ( `0` : none, `1` : traditional/plain, `2` : field/dynamic/instance, `3` : property/derived/primitive, `4` : class, `5` : interface, `6` : external, `7` : external interface) | `0` |  |
-| 42 | Full syntactic class (sum of supra- and sub-class) | `¯1` |  |
-| Source | 50 | File name | `''` |  |
-| 51 | File encoding | `''` |  |
-| 52 | File checksum | `''` |  |
-| 53 | File line separators ( `13` : Carriage Return, `10` : Line Feed, `13 10` : Carriage Return followed by Line Feed, `133` : New Line, `11` : Vertical Tab, `12` : Form Feed, `8232` : Line Separator, `8233` : Paragraph Separator) | `⍬` |  |
-| 54 | Definition's offset from top | `0` |  |
-| 55 | Number of lines in definition | `0` |  |
-| Definition | 60 | Verbatim source (as typed) | `0⍴⊂''` |  |
-| 61 | Normalised source (with AUTOFORMAT=1 and TABSTOPS=4) | `0⍴⊂''` |  |
-| 62 | Most precise available source (verbatim with fallback to normalised) | `0⍴⊂''` |  |
+|Group|`X`|Meaning|Default|&nbsp;|
+|---|---|---|---|---|
+|Identity|0|Name|`''`|&nbsp;|
+|Syntax|10|Function result ( `0` : none or not a function, `1` : explicit, `¯1` : shy)|`0`|&nbsp;|
+|11|Function valence ( `0` : niladic, `1` : monadic, `2` : dyadic, `¯2` : ambivalent)|`0`|&nbsp;||
+|12|Operator valence: ( `0` : not an operator, `1` : monadic, `2` : dyadic)|`0`|&nbsp;||
+|Last edit|20|Author of last edit|`''`|&nbsp;|
+|21|Number of days passed between 1899-12-31 at 00:00 UTC and last edit (includes fractional days)|`0`|&nbsp;||
+|22|Local timestamp at last edit (format is the 7-item vector described by `⎕TS` . See [Timestamp](ts.md) )|`⍬`|&nbsp;||
+|23|Number of bytes required for storage without sharing|`0`|&nbsp;||
+|Restrictions|30|Source can be displayed|`¯1`|&nbsp;|
+|31|Execution can be suspended mid-execution|`¯1`|&nbsp;||
+|32|Responds to weak interrupt|`¯1`|&nbsp;||
+|Class*|40|Syntactic supra-class ( `¯1` : invalid name, `0` : undefined, `1` : label, `2` : variable, `3` : function, `4` : operator, `8` : event, `9` : object)|`¯1`|&nbsp;|
+|41|Syntactic sub-class ( `0` : none, `1` : traditional/plain, `2` : field/dynamic/instance, `3` : property/derived/primitive, `4` : class, `5` : interface, `6` : external, `7` : external interface)|`0`|&nbsp;||
+|42|Full syntactic class (sum of supra- and sub-class)|`¯1`|&nbsp;||
+|Source|50|File name|`''`|&nbsp;|
+|51|File encoding|`''`|&nbsp;||
+|52|File checksum|`''`|&nbsp;||
+|53|File line separators ( `13` : Carriage Return, `10` : Line Feed, `13 10` : Carriage Return followed by Line Feed, `133` : New Line, `11` : Vertical Tab, `12` : Form Feed, `8232` : Line Separator, `8233` : Paragraph Separator)|`⍬`|&nbsp;||
+|54|Definition's offset from top|`0`|&nbsp;||
+|55|Number of lines in definition|`0`|&nbsp;||
+|Definition|60|Verbatim source (as typed)|`0⍴⊂''`|&nbsp;|
+|61|Normalised source (with AUTOFORMAT=1 and TABSTOPS=4)|`0⍴⊂''`|&nbsp;||
+|62|Most precise available source (verbatim with fallback to normalised)|`0⍴⊂''`|&nbsp;||
 
 
 * Names in the Class group that can return `¯1` (meaning "invalid name") might return a different value in future versions of Dyalog, including values that are not currently possible and ones that deviate from the current `⎕NC` values.
@@ -54,12 +54,12 @@ Note: To retrieve this information for an unnamed value, wrap `⎕ATX` in a dfn 
 `R` depends on the combination of `X` and `Y`:
 
 
-|  |  | `X` | `X` |
-| --- | --- | ---  |
-| Scalar | Vector |
-| `Y` | Simple character scalar/vector | Requested value (not enclosed) | Vector of requested values |
-| Enclosed character vector | Requested value (enclosed) | Scalar containing vector of requested values |
-| Vector of character scalars/vectors | Vector of requested values | Outer shape from `⍴⍺` , inner shape from `⍴⍵` |
+|||`X`                                                                    ||
+|-----------------------------------|------------------------------|---------------------------------------------|--------------------------|
+|Scalar                             |Vector                                                                                               |||
+|`Y`                                |Simple character scalar/vector|Requested value (not enclosed)               |Vector of requested values|
+|Enclosed character vector          |Requested value (enclosed)    |Scalar containing vector of requested values                           ||
+|Vector of character scalars/vectors|Vector of requested values    |Outer shape from `⍴⍺` , inner shape from `⍴⍵`                          ||
 
 
 

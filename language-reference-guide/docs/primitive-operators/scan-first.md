@@ -7,7 +7,7 @@
 
 
 
-The form `R←f⍀Y` implies scan along the first axis of `Y`.  See [Scan" above](scan.md).
+The form `R←f⍀Y` implies scan along the first axis of `Y`.  See ["Scan" above](scan.md).
 
 
 

@@ -16,13 +16,13 @@
 If enabled, this event is reported when the user presses one of the mouse buttons. The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'MouseDown'` or 1 |
-| `[3]` | Y | y-position of mouse (number) |
-| `[4]` | X | x-position of mouse (number) |
-| `[5]` | Button | button pressed (number) 1 = left button 2 = right button 4 = middle button |
-| `[6]` | Shift State | sum of shift key codes (number) 1 = Shift key is down 2 = Ctrl key is down |
+|-----|-----------|--------------------------------------------------------------------------|
+|`[1]`|Object     |ref or character vector                                                   |
+|`[2]`|Event      |`'MouseDown'` or 1                                                        |
+|`[3]`|Y          |y-position of mouse (number)                                              |
+|`[4]`|X          |x-position of mouse (number)                                              |
+|`[5]`|Button     |button pressed (number) 1 = left button 2 = right button 4 = middle button|
+|`[6]`|Shift State|sum of shift key codes (number) 1 = Shift key is down 2 = Ctrl key is down|
 
 
 If you enable this event it is advisable that you ALSO enable [MouseUp](../methodorevents/mouseup.md) events. Otherwise, the slight delay in running your callback function will cause the down and up sequence to be **reversed**.

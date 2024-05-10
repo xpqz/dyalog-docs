@@ -16,15 +16,15 @@ See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application%20
 `Y` specifies the action to perform and any options for that action, if applicable. `Y` is case-insensitive. Note that the result `R` is in some cases shy.
 
 
-| Use | Description |
-| --- | ---  |
-| `{state}←⎕PROFILE 'start' {timer}` | Turn profiling on using the specified timer or resume if profiling was stopped |
-| `{state}←⎕PROFILE 'stop'` | Suspend the collection of profiling data |
-| `{state}←⎕PROFILE 'clear'` | Turn profiling off, if active, and discard any collected profiling data |
-| `{state}←⎕PROFILE 'calibrate'` | Calibrate the profiling timer |
-| `state←⎕PROFILE 'state'` | Query profiling state |
-| `data←⎕PROFILE 'data'` | Retrieve profiling data in flat form |
-| `data←⎕PROFILE 'tree'` | Retrieve profiling data in tree form |
+|Use                               |Description                                                                   |
+|----------------------------------|------------------------------------------------------------------------------|
+|`{state}←⎕PROFILE 'start' {timer}`|Turn profiling on using the specified timer or resume if profiling was stopped|
+|`{state}←⎕PROFILE 'stop'`         |Suspend the collection of profiling data                                      |
+|`{state}←⎕PROFILE 'clear'`        |Turn profiling off, if active, and discard any collected profiling data       |
+|`{state}←⎕PROFILE 'calibrate'`    |Calibrate the profiling timer                                                 |
+|`state←⎕PROFILE 'state'`          |Query profiling state                                                         |
+|`data←⎕PROFILE 'data'`            |Retrieve profiling data in flat form                                          |
+|`data←⎕PROFILE 'tree'`            |Retrieve profiling data in tree form                                          |
 
 
 
@@ -40,11 +40,11 @@ See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application%20
 For most actions, the result of `⎕PROFILE` is its current state and contains:
 
 
-| [1] | character vector indicating the `⎕PROFILE` state having one of the values `'active'` or `'inactive'` |
-| --- | ---  |
-| [2] | character vector indicating the timer being used having one of the values `'CPU'` or `'elapsed'` |
-| [3] | call time bias in milliseconds. This is the amount of time, in milliseconds, that is consumed for the system to take a time measurement |
-| [4] | timer granularity in milliseconds. This is the resolution of the timer being used |
+|---|---------------------------------------------------------------------------------------------------------------------------------------|
+|[1]|character vector indicating the `⎕PROFILE` state having one of the values `'active'` or `'inactive'`                                   |
+|[2]|character vector indicating the timer being used having one of the values `'CPU'` or `'elapsed'`                                       |
+|[3]|call time bias in milliseconds. This is the amount of time, in milliseconds, that is consumed for the system to take a time measurement|
+|[4]|timer granularity in milliseconds. This is the resolution of the timer being used                                                      |
 
 
 #### {state}←⎕PROFILE 'start' {timer}
@@ -111,14 +111,14 @@ clear ws
 Retrieves the collected profiling data. If the optional left argument `X` is omitted, the result is a matrix with the following columns:
 
 
-| [;1] | function name |
-| --- | ---  |
-| [;2] | function line number or `⍬` for a whole function entry |
-| [;3] | number of times the line or function was executed |
-| [;4] | accumulated time (ms) for this entry exclusive of items called by this entry |
-| [;5] | accumulated time (ms) for this entry inclusive of items called by this entry |
-| [;6] | number of times the timer function was called for the exclusive time |
-| [;7] | number of times the timer function was called for the inclusive time |
+|----|----------------------------------------------------------------------------|
+|[;1]|function name                                                               |
+|[;2]|function line number or `⍬` for a whole function entry                      |
+|[;3]|number of times the line or function was executed                           |
+|[;4]|accumulated time (ms) for this entry exclusive of items called by this entry|
+|[;5]|accumulated time (ms) for this entry inclusive of items called by this entry|
+|[;6]|number of times the timer function was called for the exclusive time        |
+|[;7]|number of times the timer function was called for the inclusive time        |
 
 #### Example: (numbers have been truncated for formatting)
 ```apl
@@ -142,15 +142,15 @@ If column 2 is included in the result, the value `¯1` is used instead of `⍬` 
 Retrieve the collected profiling data in tree format:
 
 
-| [;1] | depth level |
-| --- | ---  |
-| [;2] | function name |
-| [;3] | function line number or `⍬` for a whole function entry |
-| [;4] | number of times the line or function was executed |
-| [;5] | accumulated time (ms) for this entry exclusive of items called by this entry |
-| [;6] | accumulated time (ms) for this entry inclusive of items called by this entry |
-| [;7] | number of times the timer function was called for the exclusive time |
-| [;8] | number of times the timer function was called for the inclusive time |
+|----|----------------------------------------------------------------------------|
+|[;1]|depth level                                                                 |
+|[;2]|function name                                                               |
+|[;3]|function line number or `⍬` for a whole function entry                      |
+|[;4]|number of times the line or function was executed                           |
+|[;5]|accumulated time (ms) for this entry exclusive of items called by this entry|
+|[;6]|accumulated time (ms) for this entry inclusive of items called by this entry|
+|[;7]|number of times the timer function was called for the exclusive time        |
+|[;8]|number of times the timer function was called for the inclusive time        |
 
 
 The optional left argument is treated in exactly the same way as for `X ⎕PROFILE 'data'`.

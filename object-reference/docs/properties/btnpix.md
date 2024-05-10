@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Button](../objects/button.md) [Menu](../objects/menu.md) [MenuItem](../objects/menuitem.md)
+|-----------|------------------------------|--------------------------|----------------------------------|
+|Applies To:|[Button](../objects/button.md)|[Menu](../objects/menu.md)|[MenuItem](../objects/menuitem.md)|
 
 
 **Description**

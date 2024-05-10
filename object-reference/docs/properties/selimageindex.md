@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ComboEx](../objects/comboex.md) [TreeView](../objects/treeview.md)
+|-----------|--------------------------------|----------------------------------|
+|Applies To:|[ComboEx](../objects/comboex.md)|[TreeView](../objects/treeview.md)|
 
 
 **Description**

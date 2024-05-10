@@ -60,6 +60,6 @@ To check if the function `∆N` is pendent:
 ```
 
 
-See also [Extended State Indicator:](xsi.md).
+See also ["Extended State Indicator: "](xsi.md).
 
 

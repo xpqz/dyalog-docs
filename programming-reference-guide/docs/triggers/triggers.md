@@ -17,11 +17,11 @@ where `Name1`, `Name2` etc. are the Triggers.
 
 When a Trigger function is invoked, it is passed an Instance of the internal Class `TriggerArguments`. This Class has 3 Fields:
 
-| Member | Description |
-| --- | ---  |
-| `Name` | Name of the Trigger whose change in value has caused the Trigger Function to be invoked. |
-| `NewValue` | The newly assigned value of the Trigger |
-| `OldValue` | The previous value of the Trigger. If the Trigger was not previously defined, a reference to this Field causes a `VALUE ERROR` . |
+|Member    |Description                                                                                                                     |
+|----------|--------------------------------------------------------------------------------------------------------------------------------|
+|`Name`    |Name of the Trigger whose change in value has caused the Trigger Function to be invoked.                                        |
+|`NewValue`|The newly assigned value of the Trigger                                                                                         |
+|`OldValue`|The previous value of the Trigger. If the Trigger was not previously defined, a reference to this Field causes a `VALUE ERROR` .|
 
 A Trigger Function is called *as soon as possible* after the value of a Trigger was assigned; typically by the end of the currently executing line of APL code. The precise timing is not guaranteed and may not be consistent because internal workspace management operations can occur at any time.
 

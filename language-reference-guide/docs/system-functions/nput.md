@@ -15,11 +15,11 @@ This function writes character data to a text file. See also [Read Text File](ng
 If `flags` is 0 (the default value if omitted) the file will not be overwritten if it already exists and `⎕NPUT` will signal an error. If `flags` is 1 the file will be overwritten. If flags is 2 the file will be appended to; i.e.
 
 
-| flags | file does not exist | file exists |
-| --- | --- | ---  |
-| `0` | data is written to new file | error signalled, file is unchanged |
-| `1` | data is written to new file | file is overwritten |
-| `2` | data is written to new file | data is appended to file |
+|flags|file does not exist        |file exists                       |
+|-----|---------------------------|----------------------------------|
+|`0`  |data is written to new file|error signalled, file is unchanged|
+|`1`  |data is written to new file|file is overwritten               |
+|`2`  |data is written to new file|data is appended to file          |
 
 
 The left-argument `X` is comprised of 1, 2 or 3 items which identify `(content) (encoding) (newline)` respectively.
@@ -90,11 +90,11 @@ The shy result `R` is the number of bytes written to the file.
 The NEOL variant option specifies how embedded line separators are treated.
 
 
-| `0` | embedded line separator characters are preserved as is,and a `newline` is added to the last line if required. |
-| --- | ---  |
-| 1 | every embedded LF is replaced by `newline` |
-| `2` | every embedded line separator character is replaced by `newline` |
-| `¯1` | same as 0 except that a `newline` is not added to the last line |
+|----|-------------------------------------------------------------------------------------------------------------|
+|`0` |embedded line separator characters are preserved as is,and a `newline` is added to the last line if required.|
+|1   |every embedded LF is replaced by `newline`                                                                   |
+|`2` |every embedded line separator character is replaced by `newline`                                             |
+|`¯1`|same as 0 except that a `newline` is not added to the last line                                              |
 
 
 #### Embedded line-separator examples

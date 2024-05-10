@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/clipboard.md) [Children](../childlists/clipboard.md) [Properties](../proplists/clipboard.md) [Methods](../methodlists/clipboard.md) [Events](../eventlists/clipboard.md)
+|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
+|[Parents](../parentlists/clipboard.md)|[Children](../childlists/clipboard.md)|[Properties](../proplists/clipboard.md)|[Methods](../methodlists/clipboard.md)|[Events](../eventlists/clipboard.md)|
 
 
-Purpose: This object provides access to the Windows clipboard.
+|--------|-----------------------------------------------------|
+|Purpose:|This object provides access to the Windows clipboard.|
 
 
 **Description**

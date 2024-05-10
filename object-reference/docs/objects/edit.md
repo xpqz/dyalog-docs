@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/edit.md) [Children](../childlists/edit.md) [Properties](../proplists/edit.md) [Methods](../methodlists/edit.md) [Events](../eventlists/edit.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/edit.md)|[Children](../childlists/edit.md)|[Properties](../proplists/edit.md)|[Methods](../methodlists/edit.md)|[Events](../eventlists/edit.md)|
 
 
-Purpose: Allows user to enter or edit data.
+|--------|----------------------------------|
+|Purpose:|Allows user to enter or edit data.|
 
 
 **Description**

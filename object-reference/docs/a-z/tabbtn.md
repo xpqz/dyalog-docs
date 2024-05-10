@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/tabbtn.md) [Children](../childlists/tabbtn.md) [Properties](../proplists/tabbtn.md) [Methods](../methodlists/tabbtn.md) [Events](../eventlists/tabbtn.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/tabbtn.md)|[Children](../childlists/tabbtn.md)|[Properties](../proplists/tabbtn.md)|[Methods](../methodlists/tabbtn.md)|[Events](../eventlists/tabbtn.md)|
 
 
-Purpose: To tab a [SubForm](subform.md) .
+|--------|--------------------------------|
+|Purpose:|To tab a [SubForm](subform.md) .|
 
 
 **Description**

@@ -132,11 +132,11 @@ If an expression evaluates to a namespace reference, or *ref*, you may assign it
 A name that already exists may be assigned a new value if the assignment will not alter its name class, or will change it from 2 to 9 or vice versa. The table of permitted re-assignments is as follows:
 
 
-|  | Ref | Variable | Function | Operator |
-| --- | --- | --- | --- | ---  |
-| Ref | Yes | Yes |  |  |
-| Variable | Yes | Yes |  |  |
-| Function |  |  | Yes | Yes |
-| Operator |  |  | Yes | Yes |
+|&nbsp;  |Ref   |Variable|Function|Operator|
+|--------|------|--------|--------|--------|
+|Ref     |Yes   |Yes     |&nbsp;  |&nbsp;  |
+|Variable|Yes   |Yes     |&nbsp;  |&nbsp;  |
+|Function|&nbsp;|&nbsp;  |Yes     |Yes     |
+|Operator|&nbsp;|&nbsp;  |Yes     |Yes     |
 
 

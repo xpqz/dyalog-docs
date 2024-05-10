@@ -20,14 +20,6 @@ In the next major version of Dyalog the performance of the set functions will be
 
 For more information, see [Search Functions and Hash Tables](../../../programming-reference-guide/introduction/search-functions-and-hash) and [Hash Array](../../../language-reference-guide/the-i-beam-operator/hash-array).
 
-For more information, see 
-Programming Reference Guide: 
-
-Search Functions and Hash Tables and 
-Language Reference Guide: 
-
-Hash Array.
-
 The proposed size increase may potentially cause `WS FULL` errors or may change the frequency of workspace compactions.
 
 To allow the user to evaluate the effect of this future change on their applications, two new I-beam functions have been provided. These functions increase the space allocated to the internal tables for the sole purpose of testing these potential effects. The new I-beams may affect performance either directly or by triggering a change of algorithm, but should not be used for that sole purpose since performance degradation in some cases cannot be excluded. See [Hash Table Size](../language-reference-changes/hash-table-size.md) and [Lookup Table Size](../language-reference-changes/lookup-table-size.md).

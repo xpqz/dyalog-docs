@@ -85,17 +85,17 @@ On successful completion of editing, the defined operation becomes the active de
 
 Editing directives, summarised in Figure 2(iv) are permitted as the first non-blank characters either after the operation name on opening definition mode for an active defined function, or after a line-number prompt.
 
-| Syntax | Description |
-| --- | ---  |
-| `∇` | Closes definition mode |
-| `[⎕]` | Displays the entire operation |
-| `[⎕n]` | Displays the operation starting at line n |
-| `[n⎕]` | Displays only line n |
-| `[∆n]` | Deletes line n |
-| `[n∆m]` | Deletes m lines starting at line n |
-| `[n]` | Prompts for input at line n |
-| `[n]s` | Replaces or inserts a statement at line n |
-| `[n⎕m]` | Edits line n placing the cursor at character position m where an Edit Control Symbol performs a specific action. |
+|Syntax |Description                                                                                                     |
+|-------|----------------------------------------------------------------------------------------------------------------|
+|`∇`    |Closes definition mode                                                                                          |
+|`[⎕]`  |Displays the entire operation                                                                                   |
+|`[⎕n]` |Displays the operation starting at line n                                                                       |
+|`[n⎕]` |Displays only line n                                                                                            |
+|`[∆n]` |Deletes line n                                                                                                  |
+|`[n∆m]`|Deletes m lines starting at line n                                                                              |
+|`[n]`  |Prompts for input at line n                                                                                     |
+|`[n]s` |Replaces or inserts a statement at line n                                                                       |
+|`[n⎕m]`|Edits line n placing the cursor at character position m where an Edit Control Symbol performs a specific action.|
 
 ## Line Numbers
 
@@ -132,12 +132,12 @@ The editing directive `[∆n]`, where `n` is a line number, causes the statement
 
 The editing directive `[n⎕m]`, where `n` is a line number and `m` is an integer number, causes line number `n` to be displayed and the cursor placed beneath the `m`{th} character on a new line for editing.  The response is taken to be edit control symbols selected from:
 
-| `/` | to delete the character immediately above the symbol. |
-| --- | ---  |
-| 1 to 9 | to insert from 1 to 9 spaces immediately prior to the character above the digit. |
-| A to Z | to insert multiples of 5 spaces immediately prior to the character above the letter, where A = 5, B = 10, C = 15 and so forth. |
-| `,` | to insert the text after the comma, including explicitly entered trailing spaces, prior to the character above the comma, and then re-display the line for further editing with the text inserted and any preceding deletions or space insertions also effected. |
-| `.` | to insert the text after the comma, including explicitly entered trailing spaces, prior to the character above the comma, and then complete the edit of the line with the text inserted and any preceding deletions or space insertions also effected. |
+|---|---|
+|`/`|to delete the character immediately above the symbol.|
+|1 to 9|to insert from 1 to 9 spaces immediately prior to the character above the digit.|
+|A to Z|to insert multiples of 5 spaces immediately prior to the character above the letter, where A = 5, B = 10, C = 15 and so forth.|
+|`,`|to insert the text after the comma, including explicitly entered trailing spaces, prior to the character above the comma, and then re-display the line for further editing with the text inserted and any preceding deletions or space insertions also effected.|
+|`.`|to insert the text after the comma, including explicitly entered trailing spaces, prior to the character above the comma, and then complete the edit of the line with the text inserted and any preceding deletions or space insertions also effected.|
 
 Invalid edit symbols are ignored.  If there are no valid edit symbols entered, or if there are only deletion or space insertion symbols, the statement line is re-displayed with characters deleted and spaces inserted as specified.  The cursor is placed at the first inserted space position or at the end of the line if none.  Characters may be added to the line which is then interpreted as seen.
 

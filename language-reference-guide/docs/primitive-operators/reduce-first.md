@@ -7,7 +7,7 @@
 
 
 
-The form `R←f⌿Y` implies reduction along the first axis of `Y`. See [Reduce" above](reduce.md).
+The form `R←f⌿Y` implies reduction along the first axis of `Y`. See ["Reduce" above](reduce.md).
 
 
 

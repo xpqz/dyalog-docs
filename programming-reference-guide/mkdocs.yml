@@ -33,6 +33,13 @@ markdown_extensions:
   - abbr
   - footnotes
   - md_in_html
+  - markdown_tables_extended
+  - image_captions:
+      numbering: true
+  - table_captions:
+      numbering: true
+      caption_top: false
+  - caption
   - toc:
       title: On this page
 

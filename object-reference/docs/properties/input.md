@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -37,18 +38,18 @@ value of a *corresponding property* of the associated object The
 property that corresponds to the value in the cell, depends upon the [Type](type.md) of the associated object as shown in the following table:
 
 
-| Associate Object Type | Corresponding Property |
-| --- | ---  |
-| [Label](../objects/label.md) | [Text](text.md) |
-| [Edit](../objects/edit.md) | [Value](value.md) |
-| [Combo](../objects/combo.md) | [Text](text.md) |
-| [Button](../objects/button.md) ( [Style](style.md) Push) | [Caption](caption.md) |
-| [Button](../objects/button.md) ( [Style](style.md) Radio or Check) | [State](state.md) |
-| [ColorButton](../objects/colorbutton.md) | [CurrentColor](currentcolor.md) |
-| [Spinner](../objects/spinner.md) | [Value](value.md) |
-| [TrackBar](../objects/trackbar.md) | [Thumb](thumb.md) |
-| [OCXClass](../objects/ocxclass.md) | Specified by [InputProperties](inputproperties.md) |
-| [NetType](../objects/nettype.md) | Specified by [InputProperties](inputproperties.md) |
+|Associate Object Type                                             |Corresponding Property                            |
+|------------------------------------------------------------------|--------------------------------------------------|
+|[Label](../objects/label.md)                                      |[Text](text.md)                                   |
+|[Edit](../objects/edit.md)                                        |[Value](value.md)                                 |
+|[Combo](../objects/combo.md)                                      |[Text](text.md)                                   |
+|[Button](../objects/button.md) ( [Style](style.md) Push)          |[Caption](caption.md)                             |
+|[Button](../objects/button.md) ( [Style](style.md) Radio or Check)|[State](state.md)                                 |
+|[ColorButton](../objects/colorbutton.md)                          |[CurrentColor](currentcolor.md)                   |
+|[Spinner](../objects/spinner.md)                                  |[Value](value.md)                                 |
+|[TrackBar](../objects/trackbar.md)                                |[Thumb](thumb.md)                                 |
+|[OCXClass](../objects/ocxclass.md)                                |Specified by [InputProperties](inputproperties.md)|
+|[NetType](../objects/nettype.md)                                  |Specified by [InputProperties](inputproperties.md)|
 
 
 In effect, the user inputs a new value into the current cell by changing the

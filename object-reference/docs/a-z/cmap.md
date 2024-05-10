@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Bitmap](../objects/bitmap.md) [Clipboard](../objects/clipboard.md) [Cursor](../objects/cursor.md) [Icon](../objects/icon.md)
+|-----------|------------------------------|------------------------------------|------------------------------|--------------------------|
+|Applies To:|[Bitmap](../objects/bitmap.md)|[Clipboard](../objects/clipboard.md)|[Cursor](../objects/cursor.md)|[Icon](../objects/icon.md)|
 
 
 **Description**
@@ -29,24 +30,24 @@ Secondly, Windows reserves a certain number of colours in the colour map for its
 Note that if you are running 16 colours, MS-Windows reserves all 16 entries in the colour map for its own use. This means that on a 16-colour system, you **cannot** use any colours other than the default ones reserved by MS-Windows. In practice, the "standard" 16-colour CMap is shown in the following table.
 
 
-| Bits[] | CMap | CMap | CMap | Colour |
-| --- | --- | --- | --- | ---  |
-| 1 | 0 | 0 | 0 | Black |
-| 2 | 128 | 0 | 0 | Dark red |
-| 3 | 0 | 128 | 0 | Dark Green |
-| 4 | 128 | 128 | 0 | Olive Green |
-| 5 | 0 | 0 | 128 | Dark Blue |
-| 6 | 128 | 0 | 128 | Dark Magenta |
-| 7 | 0 | 128 | 128 | Dark Cyan |
-| 8 | 128 | 128 | 128 | Dark Grey |
-| 9 | 192 | 192 | 192 | Light Grey |
-| 10 | 255 | 0 | 0 | Red |
-| 11 | 0 | 255 | 0 | Green |
-| 12 | 255 | 255 | 0 | Yellow |
-| 13 | 0 | 0 | 255 | Blue |
-| 14 | 255 | 0 | 255 | Magenta |
-| 15 | 0 | 255 | 255 | Cyan |
-| 16 | 255 | 255 | 255 | White |
+|Bits[]|CMap      |||Colour      |
+|------|----|---|---|------------|
+|1     |0   |0  |0  |Black       |
+|2     |128 |0  |0  |Dark red    |
+|3     |0   |128|0  |Dark Green  |
+|4     |128 |128|0  |Olive Green |
+|5     |0   |0  |128|Dark Blue   |
+|6     |128 |0  |128|Dark Magenta|
+|7     |0   |128|128|Dark Cyan   |
+|8     |128 |128|128|Dark Grey   |
+|9     |192 |192|192|Light Grey  |
+|10    |255 |0  |0  |Red         |
+|11    |0   |255|0  |Green       |
+|12    |255 |255|0  |Yellow      |
+|13    |0   |0  |255|Blue        |
+|14    |255 |0  |255|Magenta     |
+|15    |0   |255|255|Cyan        |
+|16    |255 |255|255|White       |
 
 
 The default 16-colour CMap

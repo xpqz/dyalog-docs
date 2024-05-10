@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ListView](../objects/listview.md)
+|-----------|----------------------------------|
+|Applies To:|[ListView](../objects/listview.md)|
 
 
 **Description**

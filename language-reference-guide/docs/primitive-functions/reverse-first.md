@@ -7,7 +7,7 @@
 
 
 
-The form `R←⊖Y` implies reversal along the first axis.  See [Reverse" above](reverse.md).
+The form `R←⊖Y` implies reversal along the first axis.  See ["Reverse" above](reverse.md).
 
 
 

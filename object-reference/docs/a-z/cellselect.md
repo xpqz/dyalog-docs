@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -21,17 +22,17 @@ The [Grid](../objects/grid.md) supports the selection of a contiguous block of c
 CellSelect may be a character vector or a vector of character vectors comprising the following:
 
 
-| `'Rows'` | User may select an entire row by clicking on a row title and may select multiple rows by dragging the mouse over contiguous row titles. |
-| --- | ---  |
-| `'MultiRows'` | Same as `'Rows'` , but user may additionally select several non-contiguous rows and blocks of rows using the Ctrl key. |
-| `'Columns'` | User may select an entire column by clicking on a column title and may select multiple columns by dragging the mouse over contiguous column titles. |
-| `'MultiColumns'` | Same as `'Columns'` , but user may additionally select several non-contiguous columns and blocks of columns using the Ctrl key. |
-| `'Partial'` | User may select any rectangular block of cells by either dragging the mouse or using Shift+cursor keys. |
-| `'MultiPartial'` | Same as `'Partial'` , but user may additionally select multiple rectangular blocks of cells using the Ctrl key. |
-| `'Whole'` | User may select the entire [Grid](../objects/grid.md) by clicking in the space to the left of the column titles and above the row titles. |
-| `'Any'` | Same as ( `'Rows'` `'Columns'` `'Partial'` `'Whole'` ). This is the default. |
-| `'Multi'` | Same as ( `'MultiRows'` `'MultiColumns'` `'MultiPartial'` `'Whole'` ). |
-| `'None'` | User may not select any cells in the [Grid](../objects/grid.md) . |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|`'Rows'`        |User may select an entire row by clicking on a row title and may select multiple rows by dragging the mouse over contiguous row titles.            |
+|`'MultiRows'`   |Same as `'Rows'` , but user may additionally select several non-contiguous rows and blocks of rows using the Ctrl key.                             |
+|`'Columns'`     |User may select an entire column by clicking on a column title and may select multiple columns by dragging the mouse over contiguous column titles.|
+|`'MultiColumns'`|Same as `'Columns'` , but user may additionally select several non-contiguous columns and blocks of columns using the Ctrl key.                    |
+|`'Partial'`     |User may select any rectangular block of cells by either dragging the mouse or using Shift+cursor keys.                                            |
+|`'MultiPartial'`|Same as `'Partial'` , but user may additionally select multiple rectangular blocks of cells using the Ctrl key.                                    |
+|`'Whole'`       |User may select the entire [Grid](../objects/grid.md) by clicking in the space to the left of the column titles and above the row titles.          |
+|`'Any'`         |Same as ( `'Rows'` `'Columns'` `'Partial'` `'Whole'` ). This is the default.                                                                       |
+|`'Multi'`       |Same as ( `'MultiRows'` `'MultiColumns'` `'MultiPartial'` `'Whole'` ).                                                                             |
+|`'None'`        |User may not select any cells in the [Grid](../objects/grid.md) .                                                                                  |
 
 
 

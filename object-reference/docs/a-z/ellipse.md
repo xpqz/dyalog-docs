@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/ellipse.md) [Children](../childlists/ellipse.md) [Properties](../proplists/ellipse.md) [Methods](../methodlists/ellipse.md) [Events](../eventlists/ellipse.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/ellipse.md)|[Children](../childlists/ellipse.md)|[Properties](../proplists/ellipse.md)|[Methods](../methodlists/ellipse.md)|[Events](../eventlists/ellipse.md)|
 
 
-Purpose: A Graphical object to draw ellipses, arcs, and pie-slices.
+|--------|----------------------------------------------------------|
+|Purpose:|A Graphical object to draw ellipses, arcs, and pie-slices.|
 
 
 **Description**
@@ -42,11 +44,11 @@ type of arc is controlled by [ArcMode](../properties/arcmode.md) as
 follows:
 
 
-| ArcMode | Effect |
-| --- | ---  |
-| 0 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . |
-| 1 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .       In addition, a single straight line is drawn from one end of the arc to       the other, resulting in a segment. |
-| 2 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .       In addition, two lines are drawn from each end of the arc to the centre,       resulting in a pie-slice. |
+|ArcMode|Effect|
+|---|---|
+|0|An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .|
+|1|An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .       In addition, a single straight line is drawn from one end of the arc to       the other, resulting in a segment.|
+|2|An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .       In addition, two lines are drawn from each end of the arc to the centre,       resulting in a pie-slice.|
 
 
 [LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) define the style and width of the lines used to draw the boundaries of the

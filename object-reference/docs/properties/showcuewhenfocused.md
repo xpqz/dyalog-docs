@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ButtonEdit](../objects/buttonedit.md) [Edit](../objects/edit.md)
+|-----------|--------------------------------------|--------------------------|
+|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -21,11 +22,11 @@ This method is used to redefine a property that is exported by a COM object. Set
 The argument to SetPropertyInfo is a  2 or 3-element array as follows:
 
 
-| `[1]` | Property name | character vector |
-| --- | --- | ---  |
-| `[2]` | Property info | nested vector |
-| `[3]` | Property function | integer |
-| `[4]` | DISPID | integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md) |
+|-----|-----------------|---------------------------------------------------------------|
+|`[1]`|Property name    |character vector                                               |
+|`[2]`|Property info    |nested vector                                                  |
+|`[3]`|Property function|integer                                                        |
+|`[4]`|DISPID           |integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md)|
 
 
 

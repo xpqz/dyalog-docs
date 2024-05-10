@@ -28,10 +28,7 @@ An element of `X` is considered identical to an element in `Y` if `X≡Y` return
 ```
 
 
-For performance information, see  
-Programming Reference Guide: 
-
-Search Functions and Hash Tables[Programmer's Guide: "Search Functions and Hash Tables](../../../programming-reference-guide/introduction/search-functions-and-hash).
+For performance information, see [Programmer's Guide: "Search Functions and Hash Tables"](../../../programming-reference-guide/introduction/search-functions-and-hash).
 
 
 

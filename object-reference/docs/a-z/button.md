@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/button.md) [Children](../childlists/button.md) [Properties](../proplists/button.md) [Methods](../methodlists/button.md) [Events](../eventlists/button.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/button.md)|[Children](../childlists/button.md)|[Properties](../proplists/button.md)|[Methods](../methodlists/button.md)|[Events](../eventlists/button.md)|
 
 
-Purpose: Allows the user to initiate an action or to select an option using a button.
+|--------|----------------------------------------------------------------------------|
+|Purpose:|Allows the user to initiate an action or to select an option using a button.|
 
 
 **Description**

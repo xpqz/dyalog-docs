@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ImageList](../objects/imagelist.md)
+|-----------|------------------------------------|
+|Applies To:|[ImageList](../objects/imagelist.md)|
 
 
 **Description**
@@ -22,13 +23,13 @@ MapCols is a single number with the value 0 (no colour mapping) or 1 (colours ar
 If MapCols is 1, the following colour mappings are performed:
 
 
-| Colour | Description | Mapped to |
-| --- | --- | ---  |
-| `0   0   0` | Black | Button Text |
-| `128 128 128` | Dark grey | Button Shadow |
-| `191 191 191` | Light grey | Button Face |
-| `192 192 192` | Light grey | Button Face |
-| `255 255 255` | White | Button Highlight |
+|Colour       |Description|Mapped to       |
+|-------------|-----------|----------------|
+|`0   0   0`  |Black      |Button Text     |
+|`128 128 128`|Dark grey  |Button Shadow   |
+|`191 191 191`|Light grey |Button Face     |
+|`192 192 192`|Light grey |Button Face     |
+|`255 255 255`|White      |Button Highlight|
 
 
 

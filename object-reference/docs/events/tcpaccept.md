@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TCPSocket](../objects/tcpsocket.md)
+|-----------|------------------------------------|
+|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
 
 
 **Description**
@@ -24,10 +25,10 @@ You may not disable or nullify the operation by setting the action code for the 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'TCPAccept'` or 371 |
-| `[3]` | Socket handle | an integer |
+|-----|-------------|-----------------------|
+|`[1]`|Object       |ref or character vector|
+|`[2]`|Event        |`'TCPAccept'` or 371   |
+|`[3]`|Socket handle|an integer             |
 
 
 

@@ -15,10 +15,10 @@ The following example illustrates how to draw a box around the cells in rows 2 t
 
 The OnTop property of the graphical object controls how it is drawn relative to the grid lines and cell text. For graphical objects created as a child of a Grid, OnTop may be 0, 1 or 2.
 
-| 0 | Graphical object is drawn behind grid lines and cell text |
-| --- | ---  |
-| 1 | Graphical object is drawn on top of grid lines but behind cell text |
-| 2 | Graphical object is drawn on top of grid lines and cell text |
+|---|-------------------------------------------------------------------|
+|0  |Graphical object is drawn behind grid lines and cell text          |
+|1  |Graphical object is drawn on top of grid lines but behind cell text|
+|2  |Graphical object is drawn on top of grid lines and cell text       |
 
 The following example shows the effect of the OnTop property on how an Image is drawn on a Grid.
 ```apl

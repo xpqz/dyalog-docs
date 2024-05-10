@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/netcontrol.md) [Children](../childlists/netcontrol.md) [Properties](../proplists/netcontrol.md)
+|---------------------------------------|---------------------------------------|----------------------------------------|
+|[Parents](../parentlists/netcontrol.md)|[Children](../childlists/netcontrol.md)|[Properties](../proplists/netcontrol.md)|
 
 
-Purpose: The NetControl object provides the means to instantiate a .NET control         in the Dyalog GUI.
+|--------|-------------------------------------------------------------------------------------------------|
+|Purpose:|The NetControl object provides the means to instantiate a .NET control         in the Dyalog GUI.|
 
 
 **Description**
@@ -66,9 +68,9 @@ DoubleClick MouseDoubleClick AutoSizeChanged ImeModeChanged BackColorChanged...
 ```
 
 
-| Normal appearance (Flat) | Appearance when mouse over |
-| --- | ---  |
-| ![netcontrol1](../img/netcontrol1.jpg) | ![netcontrol2](../img/netcontrol2.jpg) |
+|Normal appearance (Flat)              |Appearance when mouse over            |
+|--------------------------------------|--------------------------------------|
+|![netcontrol1](../img/netcontrol1.jpg)|![netcontrol2](../img/netcontrol2.jpg)|
 
 
 In most cases, you may use a NetControl in the cells of a [ Grid](grid.md) object. Unless you specify otherwise, using the

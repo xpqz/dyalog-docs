@@ -7,7 +7,8 @@
 
 
 
-Applies To: [MDIClient](../objects/mdiclient.md)
+|-----------|------------------------------------|
+|Applies To:|[MDIClient](../objects/mdiclient.md)|
 
 
 **Description**
@@ -31,7 +32,8 @@ The argument to MDITile is `⍬`, or
 a single item as follows:
 
 
-`[1]` Tile Mode 0 (vertical) 1 (horizontal)
+|-----|---------|---------------------------|
+|`[1]`|Tile Mode|0 (vertical) 1 (horizontal)|
 
 
 If the argument is `⍬`, the *Tile Mode* defaults to 0.

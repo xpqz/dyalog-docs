@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**

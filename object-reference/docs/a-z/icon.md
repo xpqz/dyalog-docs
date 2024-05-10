@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/icon.md) [Children](../childlists/icon.md) [Properties](../proplists/icon.md) [Methods](../methodlists/icon.md) [Events](../eventlists/icon.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/icon.md)|[Children](../childlists/icon.md)|[Properties](../proplists/icon.md)|[Methods](../methodlists/icon.md)|[Events](../eventlists/icon.md)|
 
 
-Purpose: This object defines an icon.
+|--------|----------------------------|
+|Purpose:|This object defines an icon.|
 
 
 **Description**
@@ -38,10 +40,10 @@ If the value of the [File](../properties/file.md) property is set by [`⎕WS`](.
 [Bits](../properties/bits.md) is an integer matrix whose elements define the colours of each pixel in the icon in terms of their (0-origin) indices into [CMap](../properties/cmap.md). When the icon is displayed on the screen, the way in which these colours combine with those currently displayed on the screen (the background) is specified by [Mask](../properties/mask.md). This is a Boolean matrix of the same size as [Bits](../properties/bits.md). The following table shows how the colour of each resulting pixel is determined.
 
 
-| Bits | Colour | 0 | Colour |
-| --- | --- | --- | ---  |
-| Mask | 0 | 1 | 1 |
-| Pixel | Colour | Background | New Colour |
+|-----|------|----------|----------|
+|Bits |Colour|0         |Colour    |
+|Mask |0     |1         |1         |
+|Pixel|Colour|Background|New Colour|
 
 
 If an element of [Mask](../properties/mask.md) is 0, the corresponding element of [Bits](../properties/bits.md) defines the colour of the resulting pixel that is displayed on the screen. If an element of [Mask](../properties/mask.md) is 1, the resulting pixel that is displayed on the screen is either the current background colour or is a new colour chosen by MS-Windows to be visible against the background. A non rectangular icon is obtained by setting those elements of [Bits](../properties/bits.md) and [Mask](../properties/mask.md) that you want to exclude from the shape to be 0 and 1 respectively.

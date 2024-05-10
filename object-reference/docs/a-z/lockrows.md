@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -20,9 +21,9 @@ as specified by the [RowTitleDepth](../properties/rowtitledepth.md) property.
 The argument to LockRows is a 1 or 2-element vector as follows.
 
 
-| `[1]` | Row(s) | integer scalar, vector or matrix |
-| --- | --- | ---  |
-| `[2]` | Lock flag | 0 or 1 |
+|-----|---------|--------------------------------|
+|`[1]`|Row(s)   |integer scalar, vector or matrix|
+|`[2]`|Lock flag|0 or 1                          |
 
 
 *Row(s)* may be a scalar or a vector specifying the row or rows to be

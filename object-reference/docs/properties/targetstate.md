@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TCPSocket](../objects/tcpsocket.md)
+|-----------|------------------------------------|
+|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
 
 
 **Description**
@@ -16,11 +17,11 @@ Applies To: [TCPSocket](../objects/tcpsocket.md)
 The TargetState property reflects the intended final state of a [TCPSocket](../objects/tcpsocket.md) object. Its possible values are as follows:
 
 
-| Stream | UDP |
-| --- | ---  |
-| Client | Open |
-| Server | Bound |
-| Closed | Closed |
+|------|------|
+|Stream|UDP   |
+|Client|Open  |
+|Server|Bound |
+|Closed|Closed|
 
 
 Setting TargetState to Closed is the recommended way to close a socket. It

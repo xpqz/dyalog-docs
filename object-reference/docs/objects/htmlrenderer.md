@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/htmlrenderer.md) [Children](../childlists/htmlrenderer.md) [Properties](../proplists/htmlrenderer.md) [Methods](../methodlists/htmlrenderer.md) [Events](../eventlists/htmlrenderer.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/htmlrenderer.md)|[Children](../childlists/htmlrenderer.md)|[Properties](../proplists/htmlrenderer.md)|[Methods](../methodlists/htmlrenderer.md)|[Events](../eventlists/htmlrenderer.md)|
 
 
-Purpose: The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML).
+|--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|Purpose:|The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML).|
 
 
 **Description**

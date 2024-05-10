@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -18,12 +19,12 @@ If enabled, this event is reported when the user presses Ctrl+Insert and there a
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'GridCopy'` or 191 |
-| `[3]` | Start | 2-element integer vector or matrix containing the row, column address(es) of the top left cell(s) in the selected block(s) |
-| `[4]` | End | 2-element integer vector or matrix containing the row, column address(es) of the bottom right cell(s) in the selected block |
-| `[5]` | Values | 2-element nested vector. The first element is a matrix containing the values of the selected block(s) of cells. This is the data that will be copied to the clipboard. The second element is a Boolean matrix containing the values of the [CellSet](../properties/cellset.md) property for the selected block(s) of cells. |
+|---|---|---|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event|`'GridCopy'` or 191|
+|`[3]`|Start|2-element integer vector or matrix containing the row, column address(es) of the top left cell(s) in the selected block(s)|
+|`[4]`|End|2-element integer vector or matrix containing the row, column address(es) of the bottom right cell(s) in the selected block|
+|`[5]`|Values|2-element nested vector. The first element is a matrix containing the values of the selected block(s) of cells. This is the data that will be copied to the clipboard. The second element is a Boolean matrix containing the values of the [CellSet](../properties/cellset.md) property for the selected block(s) of cells.|
 
 
 Note that the values of Start and End are sensitive to the index origin, `⎕IO`.

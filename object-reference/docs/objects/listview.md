@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/listview.md) [Children](../childlists/listview.md) [Properties](../proplists/listview.md) [Methods](../methodlists/listview.md) [Events](../eventlists/listview.md)
+|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
+|[Parents](../parentlists/listview.md)|[Children](../childlists/listview.md)|[Properties](../proplists/listview.md)|[Methods](../methodlists/listview.md)|[Events](../eventlists/listview.md)|
 
 
-Purpose: The ListView object displays a collection of items.
+|--------|---------------------------------------------------|
+|Purpose:|The ListView object displays a collection of items.|
 
 
 **Description**

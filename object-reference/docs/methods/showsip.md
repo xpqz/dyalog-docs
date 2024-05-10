@@ -21,7 +21,8 @@ This method displays and hides the Input Panel. It applies only to PocketAPL. In
 The argument to ShowSIP is 0 or 1 as follows:
 
 
-`[1]` Mode Boolean 0 = hide the Input Panel. 1 =        display the Input Panel
+|-----|----|--------------------------------------------------------------------|
+|`[1]`|Mode|Boolean 0 = hide the Input Panel. 1 =        display the Input Panel|
 
 
 The result of ShowSIP is 1 if the Input Panel was previously displayed, or 0 if it was previously hidden.

@@ -13,31 +13,31 @@
 If `Y` is **simple**, a name class may be:
 
 
-| Name Class | Description |
-| --- | ---  |
-| `¯1` | invalid name |
-| `0` | undefined name |
-| `1` | Label |
-| `2` | Variable |
-| `3` | Function |
-| `4` | Operator |
-| `8` | Event |
-| `9` | Object (GUI, namespace, COM, .NET) |
+|Name Class|Description                       |
+|----------|----------------------------------|
+|`¯1`      |invalid name                      |
+|`0`       |undefined name                    |
+|`1`       |Label                             |
+|`2`       |Variable                          |
+|`3`       |Function                          |
+|`4`       |Operator                          |
+|`8`       |Event                             |
+|`9`       |Object (GUI, namespace, COM, .NET)|
 
 
 
 If `Y` is **nested** a more precise analysis of name class is obtained whereby different types  are identified by a decimal extension. For example, defined functions have name class 3.1, dfns have name class 3.2, and so forth. The complete set of name classification is as follows:
 
 
-|  | Array (2) | Function (3) | Operator (4) | Namespace (9) |
-| --- | --- | --- | --- | ---  |
-| n.1 | Variable | Traditional | Traditional | Created by `⎕NS` , `)NS` or `:Namespace` |
-| n.2 | Field | dfn | dop | Instance |
-| n.3 | Property | Derived or Primitive | Derived or Primitive |  |
-| n.4 |  |  |  | Class |
-| n.5 |  |  |  | Interface |
-| n.6 | External Shared | External |  | External Class |
-| n.7 |  |  |  | External Interface |
+|&nbsp;|Array (2)      |Function (3)        |Operator (4)        |Namespace (9)                           |
+|------|---------------|--------------------|--------------------|----------------------------------------|
+|n.1   |Variable       |Traditional         |Traditional         |Created by `⎕NS` , `)NS` or `:Namespace`|
+|n.2   |Field          |dfn                 |dop                 |Instance                                |
+|n.3   |Property       |Derived or Primitive|Derived or Primitive|&nbsp;                                  |
+|n.4   |&nbsp;         |&nbsp;              |&nbsp;              |Class                                   |
+|n.5   |&nbsp;         |&nbsp;              |&nbsp;              |Interface                               |
+|n.6   |External Shared|External            |&nbsp;              |External Class                          |
+|n.7   |&nbsp;         |&nbsp;              |&nbsp;              |External Interface                      |
 
 
 In addition, values in `R` are negative to identify names of methods, properties and events that are inherited through the *class hierarchy* of the current class or instance.

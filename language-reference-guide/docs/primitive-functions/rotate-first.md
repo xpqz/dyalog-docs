@@ -7,7 +7,7 @@
 
 
 
-The form `R←X⊖Y` implies rotation along the first axis.  See [Rotate" above](rotate.md).
+The form `R←X⊖Y` implies rotation along the first axis.  See ["Rotate" above](rotate.md).
 
 
 

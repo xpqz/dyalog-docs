@@ -7,7 +7,7 @@
 
 
 
-This function returns information about the state of the workspace and provides a means to reset certain statistics and to control workspace allocation. This I-Beam is provided for performance tuning and is VERY LIKELY to change in the next release. See also [Workspace Management](../../../windows-installation-and-configuration-guide/workspace-management)Workspace Management.
+This function returns information about the state of the workspace and provides a means to reset certain statistics and to control workspace allocation. This I-Beam is provided for performance tuning and is VERY LIKELY to change in the next release. See also [Workspace Management](../../../windows-installation-and-configuration-guide/workspace-management).
 
 
 `Y` is a simple integer scalar or vector containing values listed in the table below.
@@ -17,26 +17,26 @@ This function returns information about the state of the workspace and provides 
 If `X` is omitted, the result `R` is an array with the same structure as `Y`, but with values in `Y` replaced by the following statistics.  For any value in `Y` outside those listed below, the result is undefined.
 
 
-| Value | Description |
-| --- | ---  |
-| 0 | Workspace available (a "quick" `⎕WA` ). |
-| 1 | Workspace used. |
-| 2 | Number of compactions since the workspace was loaded. |
-| 3 | Number of garbage collections that found garbage. |
-| 4 | Current number of garbage pockets in the workspace. |
-| 9 | Current number of free pockets in the workspace. |
-| 10 | Current number of used pockets in the workspace. |
-| 12 | Sediment size. |
-| 13 | Current workspace allocation, i.e. the amount of memory that is actually being used. |
-| 14 | Workspace allocation high-water mark, i.e. the maximum amount of memory that has been allocated since the workspace was loaded or since this count was reset. |
-| 15 | Limit on minimum workspace allocation. |
-| 16 | Limit on maximum workspace allocation. |
-| 19 | The number of calls to `⎕WA` or `2002⌶` since the last time `2000⌶` was called, or when the process started. |
-| 20 | The requested size of the `WS Full Buffer` , i.e. the amount of workspace requested for handling `WS FULL` errors. |
-| 21 | The actual size of the `WS Full Buffer` . |
-| 22 | The number of `WS FULL` handlers that are currently running. |
-| 23 | The total number of `WS FULL` errors that have occurred. |
-| 24 | The total number of `WS FULL` errors that have been trapped. |
+|Value|Description                                                                                                                                                  |
+|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0    |Workspace available (a "quick" `⎕WA` ).                                                                                                                      |
+|1    |Workspace used.                                                                                                                                              |
+|2    |Number of compactions since the workspace was loaded.                                                                                                        |
+|3    |Number of garbage collections that found garbage.                                                                                                            |
+|4    |Current number of garbage pockets in the workspace.                                                                                                          |
+|9    |Current number of free pockets in the workspace.                                                                                                             |
+|10   |Current number of used pockets in the workspace.                                                                                                             |
+|12   |Sediment size.                                                                                                                                               |
+|13   |Current workspace allocation, i.e. the amount of memory that is actually being used.                                                                         |
+|14   |Workspace allocation high-water mark, i.e. the maximum amount of memory that has been allocated since the workspace was loaded or since this count was reset.|
+|15   |Limit on minimum workspace allocation.                                                                                                                       |
+|16   |Limit on maximum workspace allocation.                                                                                                                       |
+|19   |The number of calls to `⎕WA` or `2002⌶` since the last time `2000⌶` was called, or when the process started.                                                 |
+|20   |The requested size of the `WS Full Buffer` , i.e. the amount of workspace requested for handling `WS FULL` errors.                                           |
+|21   |The actual size of the `WS Full Buffer` .                                                                                                                    |
+|22   |The number of `WS FULL` handlers that are currently running.                                                                                                 |
+|23   |The total number of `WS FULL` errors that have occurred.                                                                                                     |
+|24   |The total number of `WS FULL` errors that have been trapped.                                                                                                 |
 
 
 Note: While all other operations are relatively fast, the operation to count the number of garbage pockets (4) may take a noticeable amount of time, depending upon the size and state of the workspace.
@@ -60,15 +60,15 @@ See also [Specify Workspace Available](specify-workspace-available.md).
 If `X` is specified, it must be either a simple integer scalar, or a vector of the same length as `Y`, and the result `R` is `⍬`. In this case, the value in `Y` specifies the item to be set and `X` specifies its new value according to the table below.
 
 
-| Value | Description |
-| --- | ---  |
-| 2 | 0 resets the compaction count; no other values allowed. |
-| 3 | 0 resets the count of garbage collections that found garbage; no other values allowed. |
-| 14 | 0 resets the workspace allocation high-water mark; no other values allowed. This should be called following a call to `⎕WA` (which compacts the workspace and returns unused memory to the operating system). |
-| 15 | Sets the minimum workspace allocation to the corresponding value in `X` ; must be between 0 and the current workspace allocation. |
-| 16 | Sets the maximum workspace allocation to the corresponding value in `X` ; 0 implies **MAXWS** otherwise must be between the current workspace allocation and **MAXWS** . |
-| 19 | 0 resets the compaction count; no other values allowed. |
-| 20 | Sets the requested size of the `WS Full Buffer` to the value specified by `X` . The actual space allocated may be less than that requested. |
+|Value|Description|
+|---|---|
+|2|0 resets the compaction count; no other values allowed.|
+|3|0 resets the count of garbage collections that found garbage; no other values allowed.|
+|14|0 resets the workspace allocation high-water mark; no other values allowed. This should be called following a call to `⎕WA` (which compacts the workspace and returns unused memory to the operating system).|
+|15|Sets the minimum workspace allocation to the corresponding value in `X` ; must be between 0 and the current workspace allocation.|
+|16|Sets the maximum workspace allocation to the corresponding value in `X` ; 0 implies **MAXWS** otherwise must be between the current workspace allocation and **MAXWS** .|
+|19|0 resets the compaction count; no other values allowed.|
+|20|Sets the requested size of the `WS Full Buffer` to the value specified by `X` . The actual space allocated may be less than that requested.|
 
 
 

@@ -10,10 +10,10 @@ This is implemented by the function declaration statement:
 
 The argument to the trigger function is an instance of the internal class `TriggerArguments` which contains the following members:
 
-| Member | Description |
-| --- | ---  |
-| `Name` | The name of the global variable that is about to be changed. |
-| `Indexers` | If the assignment is some form of indexed assignment, `Indexers` is an array with the same shape as the sub-array that was assigned and contains the ravel-order, `⎕IO` -sensitive, indices of the changed elements. Otherwise, `Indexers` is undefined. |
+|Member|Description|
+|---|---|
+|`Name`|The name of the global variable that is about to be changed.|
+|`Indexers`|If the assignment is some form of indexed assignment, `Indexers` is an array with the same shape as the sub-array that was assigned and contains the ravel-order, `⎕IO` -sensitive, indices of the changed elements. Otherwise, `Indexers` is undefined.|
 
 **Example**
 

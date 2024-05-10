@@ -23,14 +23,14 @@
 If the left argument is a simple character array, the result `R` contains the current values for the properties identified by `X`. If the left argument is nested, the result `R` contains the previous values for the properties identified by `X`.
 
 
-| Identifier | Property | Description / Legal Values |
-| --- | --- | ---  |
-| `S` | File Size (read only) | 32 = Small-span Component Files (<4GB) 64 = Large-span Component Files |
-| `E` | Endian-ness (read only) | 0 = Little-endian 1 = Big-endian |
-| `U` | Unicode | 0 = Characters will be written as type 82 arrays 1 = Characters will be written as Unicode arrays |
-| `J` | Journaling | 0 = Disable Journaling 1 = Enable *APL crash proof* Journaling 2 = Enable *System crash proof* Journaling; repair needed on recovery 3 = Enable full *System crash proof* Journaling |
-| `C` | Checksum | 0 = Disable checksum 1 = Enable checksum |
-| `Z` | Compression | 0 = Disable compression 1 = Enable compression |
+|Identifier|Property|Description / Legal Values|
+|---|---|---|
+|`S`|File Size (read only)|32 = Small-span Component Files (<4GB) 64 = Large-span Component Files|
+|`E`|Endian-ness (read only)|0 = Little-endian 1 = Big-endian|
+|`U`|Unicode|0 = Characters will be written as type 82 arrays 1 = Characters will be written as Unicode arrays|
+|`J`|Journaling|0 = Disable Journaling 1 = Enable *APL crash proof* Journaling 2 = Enable *System crash proof* Journaling; repair needed on recovery 3 = Enable full *System crash proof* Journaling|
+|`C`|Checksum|0 = Disable checksum 1 = Enable checksum|
+|`Z`|Compression|0 = Disable compression 1 = Enable compression|
 
 
 

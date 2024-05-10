@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -21,12 +22,12 @@ This property determines editing behaviour and the action of the cursor movement
 InputMode is a character vector with one of the following values:
 
 
-| `'Scroll'` | The cursor keys move around the Grid; the user may switch to *InCell* mode |
-| --- | ---  |
-| `'InCell'` | The cursor keys move within the Input object; the mode reverts to *Scroll* when the user selects a new cell |
-| `'AlwaysScroll'` | The cursor keys move around the Grid; the user may not switch to *InCell* mode |
-| `'AlwaysInCell'` | The cursor keys move within the Input object, even when the user moves to a new cell |
-| `'AutoEdit'` | See below |
+|----------------|-----------------------------------------------------------------------------------------------------------|
+|`'Scroll'`      |The cursor keys move around the Grid; the user may switch to *InCell* mode                                 |
+|`'InCell'`      |The cursor keys move within the Input object; the mode reverts to *Scroll* when the user selects a new cell|
+|`'AlwaysScroll'`|The cursor keys move around the Grid; the user may not switch to *InCell* mode                             |
+|`'AlwaysInCell'`|The cursor keys move within the Input object, even when the user moves to a new cell                       |
+|`'AutoEdit'`    |See below                                                                                                  |
 
 
 

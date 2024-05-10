@@ -7,7 +7,8 @@
 
 
 
-Applies To: [PropertyPage](../objects/propertypage.md)
+|-----------|------------------------------------------|
+|Applies To:|[PropertyPage](../objects/propertypage.md)|
 
 
 **Description**
@@ -19,9 +20,9 @@ If enabled, this event is reported when the user clicks the Finish button in a W
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'PageFinish'` or 355 |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'PageFinish'` or 355  |
 
 
 

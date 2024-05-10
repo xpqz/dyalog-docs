@@ -28,9 +28,6 @@ The *COM Properties* tab applies only to a function in an OLEServer or ActiveXCo
 
 ### Net Properties Tab
 
-The *Net Properties* tab applies only to a function in a NetType namespace. The tab is used to define arguments and data types for an exported Method or Property. For further information, see 
-.NET Interface Guide: 
-
-.
+The *Net Properties* tab applies only to a function in a NetType namespace. The tab is used to define arguments and data types for an exported Method or Property. For further information, see  .
 
 ![object properties net properties tab](img/object-properties-net-properties-tab.png)

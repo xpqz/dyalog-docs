@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -22,13 +23,13 @@ You may disable the paste facility entirely by setting the action code of the ev
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'GridPaste'` or 192 |
-| `[3]` | Values | New values (taken from the clipboard) which are to replace the existing values of the block of cells defined by Start and End. |
-| `[4]` | CellSet flags | Boolean Matrix containing the new values of the [CellSet](../properties/cellset.md) property for the block of cells defined by Start and End. |
-| `[5]` | Start | 2-element integer vector containing the row, column address of the top left cell the selected block. If there is no selection, this is the address of the current cell(CurCell). |
-| `[6]` | End | 2-element integer vector containing  the row, column address of the bottom right cell in the selected block. If there is no selection, this is the address of the bottom right cell of the block starting at the current cell that will be overwritten |
+|---|---|---|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event|`'GridPaste'` or 192|
+|`[3]`|Values|New values (taken from the clipboard) which are to replace the existing values of the block of cells defined by Start and End.|
+|`[4]`|CellSet flags|Boolean Matrix containing the new values of the [CellSet](../properties/cellset.md) property for the block of cells defined by Start and End.|
+|`[5]`|Start|2-element integer vector containing the row, column address of the top left cell the selected block. If there is no selection, this is the address of the current cell(CurCell).|
+|`[6]`|End|2-element integer vector containing  the row, column address of the bottom right cell in the selected block. If there is no selection, this is the address of the bottom right cell of the block starting at the current cell that will be overwritten|
 
 
 

@@ -21,11 +21,11 @@ Note that the `i`<sup>th</sup> interval starts at  `X[i]`, then includes all sub
 For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as follows.
 
 
-| 0 | less than 1 | `<1` |
-| --- | --- | ---  |
-| 1 | between 1 and 3 | `(≥1)∧(<3)` |
-| 2 | between 3 and 5 | `(≥3)∧(<5)` |
-| 3 | greater than or equal to 5 | `≥5` |
+|---|--------------------------|-----------|
+|0  |less than 1               |`<1`       |
+|1  |between 1 and 3           |`(≥1)∧(<3)`|
+|2  |between 3 and 5           |`(≥3)∧(<5)`|
+|3  |greater than or equal to 5|`≥5`       |
 
 
 
@@ -33,13 +33,13 @@ For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as foll
 If `X` is `'AEIOU'` it defines 6 intervals numbered 0 to 5 as follows:
 
 
-| 0 | before A | `⎕UCS 0,⍳64` |
-| --- | --- | ---  |
-| 1 | between A and E | `ABCD` |
-| 2 | between E and I | `EFGH` |
-| 3 | between I and O | `IJKLMN` |
-| 4 | between O and U | `OPQREST` |
-| 5 | U and after | `UVWXYZ...` |
+|---|---------------|------------|
+|0  |before A       |`⎕UCS 0,⍳64`|
+|1  |between A and E|`ABCD`      |
+|2  |between E and I|`EFGH`      |
+|3  |between I and O|`IJKLMN`    |
+|4  |between O and U|`OPQREST`   |
+|5  |U and after    |`UVWXYZ...` |
 
 
 

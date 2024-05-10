@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Font](../objects/font.md)
+|-----------|--------------------------|
+|Applies To:|[Font](../objects/font.md)|
 
 
 **Description**
@@ -26,17 +27,17 @@ by Windows. Note that this set may vary according to the edition of Windows that
 is installed.
 
 
-| Language | CharSet |
-| --- | ---  |
-| Western (ANSI) | 0 |
-| Hebrew | 177 |
-| Arabic | 178 |
-| Greek | 161 |
-| Turkish | 162 |
-| Baltic | 186 |
-| Central European | 238 |
-| Cyrillic | 204 |
-| Vietnamese | 163 |
+|Language        |CharSet|
+|----------------|-------|
+|Western (ANSI)  |0      |
+|Hebrew          |177    |
+|Arabic          |178    |
+|Greek           |161    |
+|Turkish         |162    |
+|Baltic          |186    |
+|Central European|238    |
+|Cyrillic        |204    |
+|Vietnamese      |163    |
 
 
 Windows fonts typically contain glyphs for the ASCII character set in their

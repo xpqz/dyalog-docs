@@ -12,11 +12,11 @@ This specifies the full path to the Dyalog binaries (DLLs and script compiler).
 
 This section defines an ASP.NET language named `dyalog` so that the expression  `Language = "dyalog"` in a script file associates that script with the Dyalog APLScript compiler dyalogc.exe. Subsidiary parameters and keys for the dyalog compiler are:
 
-| debug | "true" (default) or "false" to bind the script to the Development DLL or the Run-time DLL |
-| --- | ---  |
-| DyalogCompilerEncoding | "classic" or "unicode".. |
-| DyalogCompilerOptions | This is used to define options for the script compiler. For example, to set `[]WX` to 1 use "/wx:1". |
-| DyalogCompilerEmitPragmas | Must be "true" if you are using workspace behind. |
+|-------------------------|----------------------------------------------------------------------------------------------------|
+|debug                    |"true" (default) or "false" to bind the script to the Development DLL or the Run-time DLL           |
+|DyalogCompilerEncoding   |"classic" or "unicode"..                                                                            |
+|DyalogCompilerOptions    |This is used to define options for the script compiler. For example, to set `[]WX` to 1 use "/wx:1".|
+|DyalogCompilerEmitPragmas|Must be "true" if you are using workspace behind.                                                   |
 
 ### DyalogIsolationMode
 

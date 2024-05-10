@@ -132,10 +132,10 @@ The second way of trapping errors is to use the system variable: `⎕TRAP`.
 
 `⎕TRAP`, can be assigned a nested vector of **trap specifications**. Each trap specification is itself a nested vector, of length 3, with each element defined as:
 
-| list of error numbers | The error numbers we are interested in. |
-| --- | ---  |
-| action code | Either `'E'` (Execute) or `'C'` (Cut Back). There are others, but they are seldom used. |
-| action to be taken | APL expression, usually a branch statement or a call to an APL function. |
+|---------------------|---------------------------------------------------------------------------------------|
+|list of error numbers|The error numbers we are interested in.                                                |
+|action code          |Either `'E'` (Execute) or `'C'` (Cut Back). There are others, but they are seldom used.|
+|action to be taken   |APL expression, usually a branch statement or a call to an APL function.               |
 
 So a single trap specification may be set up as:
 ```apl

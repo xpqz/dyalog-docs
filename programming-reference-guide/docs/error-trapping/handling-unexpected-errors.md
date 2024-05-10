@@ -16,19 +16,19 @@ It is also possible to log such events to the Windows Event Log. Setting the con
 
 The key *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Dyalog APL* with values
 
-| Value Name | Value |
-| --- | ---  |
-| Sources | Dyalog APL |
-| MaxSize | 150000000 |
+|----------|----------|
+|Value Name|Value     |
+|Sources   |Dyalog APL|
+|MaxSize   |150000000 |
 
 The key *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Dyalog APL\Dyalog APL* with values
 
-| Value Name | Value |
-| --- | ---  |
-| EventMessageFile | DYALOG\dyalog.exe |
-| CategoryMessageFile | DYALOG\dyalog.exe |
-| Category Count | 5 |
-| TypesSupported | 7 |
+|-------------------|-----------------|
+|Value Name         |Value            |
+|EventMessageFile   |DYALOG\dyalog.exe|
+|CategoryMessageFile|DYALOG\dyalog.exe|
+|Category Count     |5                |
+|TypesSupported     |7                |
 
 where DYALOG is the directory where Dyalog APL is installed.
 

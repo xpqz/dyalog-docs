@@ -16,11 +16,11 @@ This function is used to temporarily disable the error trapping mechanism used b
 `R` is the previous value (0, 1, or 2) of the trap state.
 
 
-| `Y` | Effect |
-| --- | ---  |
-| `0` | Enable all traps. |
-| `1` | Disable all traps. |
-| `2` | Disable traps in suspended functions from triggering when an error is generated in the Session. |
+|`Y`|Effect                                                                                         |
+|---|-----------------------------------------------------------------------------------------------|
+|`0`|Enable all traps.                                                                              |
+|`1`|Disable all traps.                                                                             |
+|`2`|Disable traps in suspended functions from triggering when an error is generated in the Session.|
 
 
 Note that the *Disable traps in session* option of the Session *Options* menu performs the same tasks as `(600⌶0)` and `(600⌶2)`.

@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/datetimepicker.md) [Children](../childlists/datetimepicker.md) [Properties](../proplists/datetimepicker.md) [Methods](../methodlists/datetimepicker.md) [Events](../eventlists/datetimepicker.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/datetimepicker.md)|[Children](../childlists/datetimepicker.md)|[Properties](../proplists/datetimepicker.md)|[Methods](../methodlists/datetimepicker.md)|[Events](../eventlists/datetimepicker.md)|
 
 
-Purpose: The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.
+|--------|-----------------------------------------------------------------------------------------------------|
+|Purpose:|The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.|
 
 
 **Description**

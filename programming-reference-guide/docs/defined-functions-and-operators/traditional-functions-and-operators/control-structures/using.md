@@ -6,10 +6,10 @@
 
 This statement specifies a .NET namespace that is to be searched to resolve unqualified names of .NET types referenced by expressions in the Class.
 
-| Element | Description |
-| --- | ---  |
-| `NameSpace` | Specifies a .NET namespace. |
-| `Assembly` | Specifies the Assembly in which NameSpace is located. If the Assembly is located in the Microsoft.NET installation directory, you need only specify its name. If not, you must specify a full or relative pathname. |
+|Element|Description|
+|---|---|
+|`NameSpace`|Specifies a .NET namespace.|
+|`Assembly`|Specifies the Assembly in which NameSpace is located. If the Assembly is located in the Microsoft.NET installation directory, you need only specify its name. If not, you must specify a full or relative pathname.|
 
 If the Microsoft .NET Framework is installed, the System namespace in`mscorlib.dll` is automatically loaded when Dyalog APL starts. To access this namespace, it is not necessary to specify the name of the Assembly.
 

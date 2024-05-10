@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -27,15 +28,15 @@ The default action for the CellChange event is to update the appropriate element
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is an 8-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'CellChange'` or 150 |
-| `[3]` | Cell row | integer |
-| `[4]` | Cell column | integer |
-| `[5]` | New data | number or character array |
-| `[6]` | Object name | character vector (name of object to which the user has transferred focus) |
-| `[7]` | New cell (row) | integer |
-| `[8]` | New cell (column) | integer |
+|-----|-----------------|-------------------------------------------------------------------------|
+|`[1]`|Object           |ref or character vector                                                  |
+|`[2]`|Event            |`'CellChange'` or 150                                                    |
+|`[3]`|Cell row         |integer                                                                  |
+|`[4]`|Cell column      |integer                                                                  |
+|`[5]`|New data         |number or character array                                                |
+|`[6]`|Object name      |character vector (name of object to which the user has transferred focus)|
+|`[7]`|New cell (row)   |integer                                                                  |
+|`[8]`|New cell (column)|integer                                                                  |
 
 
 

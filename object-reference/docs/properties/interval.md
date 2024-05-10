@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ProgressBar](../objects/progressbar.md) [Timer](../objects/timer.md)
+|-----------|----------------------------------------|----------------------------|
+|Applies To:|[ProgressBar](../objects/progressbar.md)|[Timer](../objects/timer.md)|
 
 
 **Description**

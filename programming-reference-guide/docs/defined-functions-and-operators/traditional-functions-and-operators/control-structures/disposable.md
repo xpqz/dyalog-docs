@@ -26,10 +26,7 @@ When the block is exited, any .NET objects in `array` that implement IDisposable
 Note that exit includes normal exit as the code drops through `:EndDisposable`, or if an error occurs and is trapped, or if branch (`→`) is used to exit the block, or anything else.
 
 
-See also: 
-.NET Interface Guide: 
-
-.Disposing of .NET Objects.
+See also:  .Disposing of .NET Objects.
 
 #### Example (Normal Exit)
 ```apl

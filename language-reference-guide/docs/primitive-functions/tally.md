@@ -10,7 +10,7 @@
 `Y` may be any array.  `R` is a simple numeric scalar.
 
 
-Tally returns the number of major cells of `Y`. See [Cells and Sub-arrays](../../../programming-reference-guide/introduction/arrays/cells-and-subarrays).
+Tally returns the number of major cells of `Y`. See ["Cells and Sub-arrays"](../../../programming-reference-guide/introduction/arrays/cells-and-subarrays).
 
 
 This can also be expressed as the length of the leading axis or 1 if `Y` is a scalar. Tally is equivalent to the function `{⍬⍴(⍴⍵),1}`.

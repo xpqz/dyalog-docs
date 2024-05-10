@@ -22,19 +22,19 @@ The result `R` depends upon the value of the  Variant option Invert. This the p
 #### Invert Option (Boolean)
 
 
-| 0 | The result `R` is a matrix with the same shape as the DataTable referenced by `⊃Y` . |
-| --- | ---  |
-| `1` | The result `R` is vector whose length is the same as the number of columns in the DataTable referenced by `⊃Y` . |
+|---|----------------------------------------------------------------------------------------------------------------|
+|0  |The result `R` is a matrix with the same shape as the DataTable referenced by `⊃Y` .                            |
+|`1`|The result `R` is vector whose length is the same as the number of columns in the DataTable referenced by `⊃Y` .|
 
 
 The optional left argument `X` is a numeric vector with the same length as the number of columns in the result in the DataTable referenced by `⊃Y`:
 
 
-| 1 | Specifies that the corresponding column of the result  should be converted to a string using the `ToString` method of the data type of column in question. |
-| --- | ---  |
-| 2 | Specifies that numbers of type System.Int64 in the corresponding column of the result  should be converted to DECFs (NOT into .NET objects, which is the default) |
-| 4 | Specifies that if the type of the corresponding column is System.String the entire column should be returned as a character matrix rather than a vector of character vectors. Any nulls will be replaced with a row of spaces. This applies only when **Invert** is 1. |
-| 5 | Combines 1 and 4. |
+|---|---|
+|1|Specifies that the corresponding column of the result  should be converted to a string using the `ToString` method of the data type of column in question.|
+|2|Specifies that numbers of type System.Int64 in the corresponding column of the result  should be converted to DECFs (NOT into .NET objects, which is the default)|
+|4|Specifies that if the type of the corresponding column is System.String the entire column should be returned as a character matrix rather than a vector of character vectors. Any nulls will be replaced with a row of spaces. This applies only when **Invert** is 1.|
+|5|Combines 1 and 4.|
 
 
 

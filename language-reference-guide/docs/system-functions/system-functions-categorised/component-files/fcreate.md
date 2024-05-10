@@ -17,7 +17,7 @@ The *file tie number* must not be the tie number associated with another tied fi
 
 `X` must be either:
 
-1. a simple character scalar or vector which specifies the name of the file to be created. If no file extension is supplied, the first extension specified by the   **CFEXT** parameter will be added. See CFEXT Parameter[ CFEXT](../../../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters).
+1. a simple character scalar or vector which specifies the name of the file to be created. If no file extension is supplied, the first extension specified by the   **CFEXT** parameter will be added. See [ CFEXT](../../../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters).
 2. a vector of length 1 or 2 whose items are:- a simple character scalar or vector as above.
 - an integer scalar specifying the file size limit in bytes.
 

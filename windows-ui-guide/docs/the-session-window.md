@@ -50,10 +50,10 @@ Docking the Status window along the left edge of the Session causes the Session 
 
 If you click the right mouse button over any window, its context menu is displayed. If the window is dockable, the context menu contains the following options:
 
-| Undock | Undocks the docked window. The window is displayed at whatever position and size it occupied prior to being docked |
-| --- | ---  |
-| Hide Caption | Hides the title bar of the docked window |
-| Dockable | Specifies whether the window is currently dockable or is locked in its current state. You can use this to prevent the window from being docked or undocked accidentally |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Undock      |Undocks the docked window. The window is displayed at whatever position and size it occupied prior to being docked                                                     |
+|Hide Caption|Hides the title bar of the docked window                                                                                                                               |
+|Dockable    |Specifies whether the window is currently dockable or is locked in its current state. You can use this to prevent the window from being docked or undocked accidentally|
 
 The last picture shows the effect of using Hide Caption to remove the title bar. In this state, you can resize the pane with the mouse, but the Minimise, Maximise and Close buttons are not available. However, you can restore the object's title bar using its context menu.
 

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Edit](../objects/edit.md) [RichEdit](../objects/richedit.md)
+|-----------|--------------------------|----------------------------------|
+|Applies To:|[Edit](../objects/edit.md)|[RichEdit](../objects/richedit.md)|
 
 
 **Description**

@@ -13,11 +13,11 @@
 The result `R` is a 4 element vector whose elements are as follows.
 
 
-| `[1]` | `U` | a unitary matrix |
-| --- | --- | ---  |
-| `[2]` | `S` | a diagonal matrix |
-| `[3]` | `V` | a unitary matrix |
-| `[4]` | `f` | a Boolean flag indicating whether the algorithm converged (1)or not (0) |
+|-----|---|-----------------------------------------------------------------------|
+|`[1]`|`U`|a unitary matrix                                                       |
+|`[2]`|`S`|a diagonal matrix                                                      |
+|`[3]`|`V`|a unitary matrix                                                       |
+|`[4]`|`f`|a Boolean flag indicating whether the algorithm converged (1)or not (0)|
 
 
 This function computes a factorisation of the matrix `Y` such that:

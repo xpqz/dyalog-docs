@@ -16,13 +16,13 @@ The first step is to copy the `samples\aplclasses` sub-directory into a director
 
 Each of the sub-directories contained in `aplclasses`, namely `aplclasses1` - `aplclasses7`, represents a separate example application. Within each one the file structure is as follows:
 
-| `aplclasses[n].dws` | APL workspace |
-| --- | ---  |
-| `Framework` | Files for the .NET Framework |
-| `Framework\program.cs` | C# program |
-| `Framework\project.sln` | VS solution file |
-| `Framework\project.csproj.` | C# project file |
-| `Framework\bin` | Directory containing the C# program and DLLs |
+|---------------------------|--------------------------------------------|
+|`aplclasses[n].dws`        |APL workspace                               |
+|`Framework`                |Files for the .NET Framework                |
+|`Framework\program.cs`     |C# program                                  |
+|`Framework\project.sln`    |VS solution file                            |
+|`Framework\project.csproj.`|C# project file                             |
+|`Framework\bin`            |Directory containing the C# program and DLLs|
 
 When the application is executed by VS it will be run  in the `bin` sub-diredctory.
 

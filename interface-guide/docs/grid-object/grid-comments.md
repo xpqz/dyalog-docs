@@ -12,14 +12,14 @@ It is also possible to display and hide comments under program control. A commen
 
 Because comments are typically sparse, this facility is implemented by a small set of *methods* rather than as a property, and comments are stored internally in data structures that minimise storage space. The following methods and events are provided.
 
-| Event/Method | Number | Description |
-| --- | --- | ---  |
-| AddComment | 220 | Associates a comment with a cell |
-| DelComment | 221 | Deletes the comment associated with a particular cell |
-| GetComment | 222 | Retrieves the comment associated with a given cell |
-| ShowComment | 223 | Displays a comment either as a pop-up or on-top window |
-| HideComment | 224 | Hides a comment |
-| ClickComment | 225 | Reported when user clicks the mouse on a comment window |
+|Event/Method|Number|Description                                            |
+|------------|------|-------------------------------------------------------|
+|AddComment  |220   |Associates a comment with a cell                       |
+|DelComment  |221   |Deletes the comment associated with a particular cell  |
+|GetComment  |222   |Retrieves the comment associated with a given cell     |
+|ShowComment |223   |Displays a comment either as a pop-up or on-top window |
+|HideComment |224   |Hides a comment                                        |
+|ClickComment|225   |Reported when user clicks the mouse on a comment window|
 
 A comment is described by its text content and the size of the window in which it appears. The text may optionally be *Rich Text* (RTF) such as that produced by the value of the RTFText property of a RichEdit object. The size of the window is specified in pixels.
 

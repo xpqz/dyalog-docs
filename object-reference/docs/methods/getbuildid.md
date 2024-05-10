@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Root](../objects/root.md)
+|-----------|--------------------------|
+|Applies To:|[Root](../objects/root.md)|
 
 
 **Description**
@@ -22,7 +23,8 @@ The argument to GetBuildID is `⍬` or a
 single item as follows:
 
 
-`[1]` File name character vector
+|-----|---------|----------------|
+|`[1]`|File name|character vector|
 
 
 

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Circle](../objects/circle.md) [Ellipse](../objects/ellipse.md) [Poly](../objects/poly.md) [Rect](../objects/rect.md)
+|-----------|------------------------------|--------------------------------|--------------------------|--------------------------|
+|Applies To:|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Rect](../objects/rect.md)|
 
 
 **Description**
@@ -23,19 +24,19 @@ If [FStyle](fstyle.md) is 0 (solid fill) FillCol defines the colour with which t
 A single colour is represented by a single number which refers to a standard colour, or by a 3-element vector which defines a colour explicitly in terms of its red, green and blue intensities. A negative value of FillCol refers to a standard MS-Windows colour as described below. Positive values are reserved for a possible future extension.
 
 
-| FillCol | Colour Element | FillCol | Colour Element |
-| --- | --- | --- | ---  |
-| `0` | Default | `¯11` | Active Border |
-| `¯1` | Scroll Bars | `¯12` | Inactive Border |
-| `¯2` | Desktop | `¯13` | Application Workspace |
-| `¯3` | Active Title Bar | `¯14` | Highlight |
-| `¯4` | Inactive Title Bar | `¯15` | Highlighted Text |
-| `¯5` | Menu Bar | `¯16` | Button Face |
-| `¯6` | Window Background | `¯17` | Button Shadow |
-| `¯7` | Window Frame | `¯18` | Disabled Text |
-| `¯8` | Menu Text | `¯19` | Button Text |
-| `¯9` | Window Text | `¯20` | Inactive Title Bar Text |
-| `¯10` | Active Title Bar Text | `¯21` | Button Highlight |
+|FillCol|Colour Element       |FillCol|Colour Element         |
+|-------|---------------------|-------|-----------------------|
+|`0`    |Default              |`¯11`  |Active Border          |
+|`¯1`   |Scroll Bars          |`¯12`  |Inactive Border        |
+|`¯2`   |Desktop              |`¯13`  |Application Workspace  |
+|`¯3`   |Active Title Bar     |`¯14`  |Highlight              |
+|`¯4`   |Inactive Title Bar   |`¯15`  |Highlighted Text       |
+|`¯5`   |Menu Bar             |`¯16`  |Button Face            |
+|`¯6`   |Window Background    |`¯17`  |Button Shadow          |
+|`¯7`   |Window Frame         |`¯18`  |Disabled Text          |
+|`¯8`   |Menu Text            |`¯19`  |Button Text            |
+|`¯9`   |Window Text          |`¯20`  |Inactive Title Bar Text|
+|`¯10`  |Active Title Bar Text|`¯21`  |Button Highlight       |
 
 
 If instead, FillCol contains a 3-element vector, it 

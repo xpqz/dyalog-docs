@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ButtonEdit](../objects/buttonedit.md) [Combo](../objects/combo.md) [ComboEx](../objects/comboex.md) [Edit](../objects/edit.md) [RichEdit](../objects/richedit.md)
+|-----------|--------------------------------------|----------------------------|--------------------------------|--------------------------|----------------------------------|
+|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Combo](../objects/combo.md)|[ComboEx](../objects/comboex.md)|[Edit](../objects/edit.md)|[RichEdit](../objects/richedit.md)|
 
 
 **Description**

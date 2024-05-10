@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Calendar](../objects/calendar.md)
+|-----------|----------------------------------|
+|Applies To:|[Calendar](../objects/calendar.md)|
 
 
 **Description**

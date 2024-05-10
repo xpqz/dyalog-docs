@@ -4,11 +4,11 @@ The [GolfService Example Class](golfservice-example-class.md) illustrates the us
 
 [GolfService](golfservice-example-class.md) contains the following nested classes, all of which are `Private`.
 
-| [GolfCourse](golfcourse-class.md) | A Class that represents a Golf Course, having Fields `Code` and `Name` . |
-| --- | ---  |
-| [Slot](slot-class.md) | A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match. |
-| [Booking](booking-class.md) | A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class. |
-| [StartingSheet](startingsheet-class.md) | A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class. |
+|---|---|
+|[GolfCourse](golfcourse-class.md)|A Class that represents a Golf Course, having Fields `Code` and `Name` .|
+|[Slot](slot-class.md)|A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match.|
+|[Booking](booking-class.md)|A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class.|
+|[StartingSheet](startingsheet-class.md)|A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class.|
 
 The [GolfService](golfservice-example-class.md) constructor takes the name of a file in which all the data is stored. This file is initialised by method `InitFile` if it doesn't already exist.
 ```apl

@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/propertypage.md) [Children](../childlists/propertypage.md) [Properties](../proplists/propertypage.md) [Methods](../methodlists/propertypage.md) [Events](../eventlists/propertypage.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/propertypage.md)|[Children](../childlists/propertypage.md)|[Properties](../proplists/propertypage.md)|[Methods](../methodlists/propertypage.md)|[Events](../eventlists/propertypage.md)|
 
 
-Purpose: The PropertyPage object represents a single page in a PropertySheet.
+|--------|--------------------------------------------------------------------|
+|Purpose:|The PropertyPage object represents a single page in a PropertySheet.|
 
 
 **Description**

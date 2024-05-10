@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TCPSocket](../objects/tcpsocket.md)
+|-----------|------------------------------------|
+|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
 
 
 **Description**
@@ -22,9 +23,9 @@ You may not disable or nullify the operation by setting the action code for the 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'TCPClose'` or 374 |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'TCPClose'` or 374    |
 
 
 

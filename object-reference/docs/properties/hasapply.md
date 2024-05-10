@@ -7,7 +7,8 @@
 
 
 
-Applies To: [PropertySheet](../objects/propertysheet.md)
+|-----------|--------------------------------------------|
+|Applies To:|[PropertySheet](../objects/propertysheet.md)|
 
 
 **Description**

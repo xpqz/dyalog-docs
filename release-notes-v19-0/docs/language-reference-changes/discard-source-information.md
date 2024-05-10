@@ -23,10 +23,4 @@ This function discards source code and file information for scripted objects, na
 For further information, see [Source as Typed](../introduction/source-as-typed.md).
 
 
-For further information, see 
-UI Guide: 
-
-Source As Typed.
-
-
 

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md) [ListView](../objects/listview.md)
+|-----------|--------------------------|----------------------------------|
+|Applies To:|[Grid](../objects/grid.md)|[ListView](../objects/listview.md)|
 
 
 **Description**

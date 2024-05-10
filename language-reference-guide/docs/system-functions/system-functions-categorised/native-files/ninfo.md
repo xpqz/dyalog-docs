@@ -21,25 +21,25 @@ This function returns information about one or more files or directories. `Y` ma
 #### Wildcard Option (Boolean)
 
 
-| 0 | The name or names in `Y` identifies a specific file name. |
-| --- | ---  |
-| `1` | The name or names in `Y` that specify the *base name* and *extension* (see [NParts](../../nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character. |
+|---|---|
+|0|The name or names in `Y` identifies a specific file name.|
+|`1`|The name or names in `Y` that specify the *base name* and *extension* (see [NParts](../../nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character.|
 
 #### Recurse Option
 
 
-| 0 | the name(s) in `Y` are searched for only in the corresponding specified directory. |
-| --- | ---  |
-| `1` | the name(s) in `Y` are searched for in the corresponding specified directory as well as all sub-directories. If Wildcard is also 1, the wild card search is performed recursively. |
-| `1 n` | the name(s) in `Y` are searched for in the corresponding specified directory as well as its sub-directories to the n <sup>th</sup> -level sub-directory. If n is 0, no sub-directories are searched. If n is `¯1` all sub-directories are searched. |
-| `2 (n)` | same as 1 but if any unreadable directories are encountered they are skipped (whereas if Recurse is `1 (n)` , `⎕NINFO` stops and generates an error). |
+|---|---|
+|0|the name(s) in `Y` are searched for only in the corresponding specified directory.|
+|`1`|the name(s) in `Y` are searched for in the corresponding specified directory as well as all sub-directories. If Wildcard is also 1, the wild card search is performed recursively.|
+|`1 n`|the name(s) in `Y` are searched for in the corresponding specified directory as well as its sub-directories to the n <sup>th</sup> -level sub-directory. If n is 0, no sub-directories are searched. If n is `¯1` all sub-directories are searched.|
+|`2 (n)`|same as 1 but if any unreadable directories are encountered they are skipped (whereas if Recurse is `1 (n)` , `⎕NINFO` stops and generates an error).|
 
 #### Follow Option (Boolean)
 
 
-| `0` | the properties reported are those of the symbolic link itself |
-| --- | ---  |
-| 1 | the properties reported for a symbolic link are those of the target of the symbolic link |
+|---|----------------------------------------------------------------------------------------|
+|`0`|the properties reported are those of the symbolic link itself                           |
+|1  |the properties reported for a symbolic link are those of the target of the symbolic link|
 
 
 
@@ -47,24 +47,24 @@ This function returns information about one or more files or directories. `Y` ma
 The optional left argument `X` is a simple numeric array containing values shown in the following table.
 
 
-| `X` | Property | Default |
-| --- | --- | ---  |
-| `0` | Name of the file or directory, as a character vector. If `Y` is a tie number then this is the name which the file was tied. | `` |
-| `1` | Type, as a numeric scalar: 0=Not known 1=Directory 2=Regular file 3=Character device 4=Symbolic link (only when Follow is 0) 5=Block device 6=FIFO (not Windows) 7=Socket (not Windows) | `0` |
-| `2` | Size in bytes, as a numeric scalar | `0` |
-| `3` | Last modification time, as a timestamp in `⎕TS` format | `7⍴0` |
-| `4` | Owner user id, as a character vector – on Windows a SID, on other platforms a numeric userid converted to character format | `''` |
-| `5` | Owner name, as a character vector | `''` |
-| `6` | Whether the file or directory is hidden (1) or not (0), as a numeric scalar. On Windows, file properties include a "hidden" attribute; on non-Windows platforms a file or directory is implicitly considered to be hidden if its name begins with a "." | `¯1` |
-| `7` | Target of symbolic link (when Type is 4) | `''` |
-| `8` | Current position in the file. Always 0 if `Y` is a file name. | `0` |
-| `9` | Last access time  in `⎕TS` format, when available | `7⍴0` |
-| `10` | Creation time if available, otherwise the time of the last file status change in `⎕TS` format | `7⍴0` |
-| `11` | Whether the file or directory can (1) or cannot (0) be read ( `¯1` if unknown) | `¯1` |
-| `12` | Whether the file or directory can (1) or cannot (0) be written  ( `¯1` if unknown or for a directory under Windows) | `¯1` |
-| `13` | Last modification time, as a UTC  Dyalog Date  Number. | `0` |
-| `14` | Last access time  as a UTC Dyalog Date  Number, when available. | `0` |
-| `15` | Creation time if available, otherwise the time of the last file status change  as a UTC Dyalog Date  Number. | `0` |
+|`X`|Property|Default|
+|---|---|---|
+|`0`|Name of the file or directory, as a character vector. If `Y` is a tie number then this is the name which the file was tied.|&nbsp;|
+|`1`|Type, as a numeric scalar: 0=Not known 1=Directory 2=Regular file 3=Character device 4=Symbolic link (only when Follow is 0) 5=Block device 6=FIFO (not Windows) 7=Socket (not Windows)|`0`|
+|`2`|Size in bytes, as a numeric scalar|`0`|
+|`3`|Last modification time, as a timestamp in `⎕TS` format|`7⍴0`|
+|`4`|Owner user id, as a character vector – on Windows a SID, on other platforms a numeric userid converted to character format|`''`|
+|`5`|Owner name, as a character vector|`''`|
+|`6`|Whether the file or directory is hidden (1) or not (0), as a numeric scalar. On Windows, file properties include a "hidden" attribute; on non-Windows platforms a file or directory is implicitly considered to be hidden if its name begins with a "."|`¯1`|
+|`7`|Target of symbolic link (when Type is 4)|`''`|
+|`8`|Current position in the file. Always 0 if `Y` is a file name.|`0`|
+|`9`|Last access time  in `⎕TS` format, when available|`7⍴0`|
+|`10`|Creation time if available, otherwise the time of the last file status change in `⎕TS` format|`7⍴0`|
+|`11`|Whether the file or directory can (1) or cannot (0) be read ( `¯1` if unknown)|`¯1`|
+|`12`|Whether the file or directory can (1) or cannot (0) be written  ( `¯1` if unknown or for a directory under Windows)|`¯1`|
+|`13`|Last modification time, as a UTC  Dyalog Date  Number.|`0`|
+|`14`|Last access time  as a UTC Dyalog Date  Number, when available.|`0`|
+|`15`|Creation time if available, otherwise the time of the last file status change  as a UTC Dyalog Date  Number.|`0`|
 
 
 

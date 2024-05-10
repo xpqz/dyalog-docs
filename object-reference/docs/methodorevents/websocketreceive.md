@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../objects/htmlrenderer.md)
+|-----------|------------------------------------------|
+|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
 
 
 **Description**
@@ -22,13 +23,13 @@ Note that the WebSocket protocol provides for the possibility for the data to be
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'WebSocketReceive'` or 842 |
-| `[3]` | ID | Character vector containing the ID of the WebSocket |
-| `[4]` | Data | Character or integer vector. |
-| `[5]` | FIN | Boolean. 1 indicates that this is the last chunk; 0 that there is more to come. |
-| `[6]` | Datatype | 1 = character, 2 - numeric values in the range ¯128 to 127. |
+|-----|--------|-------------------------------------------------------------------------------|
+|`[1]`|Object  |ref or character vector                                                        |
+|`[2]`|Event   |`'WebSocketReceive'` or 842                                                    |
+|`[3]`|ID      |Character vector containing the ID of the WebSocket                            |
+|`[4]`|Data    |Character or integer vector.                                                   |
+|`[5]`|FIN     |Boolean. 1 indicates that this is the last chunk; 0 that there is more to come.|
+|`[6]`|Datatype|1 = character, 2 - numeric values in the range ¯128 to 127.                    |
 
 
 

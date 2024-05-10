@@ -33,126 +33,126 @@ With the exception of the following all these files may be distributed as part o
 - Development DLL
 - Array Editor
 
-| Name | File |
-| --- | ---  |
-| 32-bit Unicode | Dyalog APL {{ version_majmin }} Unicode\ |
-| Development EXE | `dyalog.exe` |
-| Development DLL | `dyalog{{ version_maj }}_32_unicode.dll` |
-| Shell Script Engine | `dyascript.exe` |
-| Array Editor | `dlaedit32.dll` |
-| Run-Time EXE | `dyalogrt.exe` |
-| Run-Time DLL | `dyalog{{ version_maj }}rt_unicode.dll` |
-| Bridge DLL | `bridge{{ version_maj }}_unicode.dll` |
-| Dyalog DLL | `dyalog32.dll` |
-| DyaRes DLL | `dyares{{ version_maj }}_32.dll` |
-| DyalogProvider DLL | `dyalogprovider.dll` |
-| DyalogNet DLL | `dyalognet.dll` |
-| APLScript Compiler | `dyalogc_unicode.exe` |
-| For Conga and RIDE | `conga34ssl32.dll` |
-| For Conga and RIDE | `conga34_32.dll` |
-|  | `exestub.dll` |
-|  | `dllstub.dll` |
-| SQAPL INI | `sqapl.ini` |
-| SQAPL ERR | `sqapl.err` |
-| SQAPL DLL | `cwdya64u32w.dll` |
-| APLUNICD INI | `aplunicd.ini` |
-|  | `sharpplot.dll` |
-|  | `sharpplot.xml` |
+|Name               |File                                    |
+|-------------------|----------------------------------------|
+|32-bit Unicode     |Dyalog APL {{ version_majmin }} Unicode\|
+|Development EXE    |`dyalog.exe`                            |
+|Development DLL    |`dyalog{{ version_maj }}_32_unicode.dll`|
+|Shell Script Engine|`dyascript.exe`                         |
+|Array Editor       |`dlaedit32.dll`                         |
+|Run-Time EXE       |`dyalogrt.exe`                          |
+|Run-Time DLL       |`dyalog{{ version_maj }}rt_unicode.dll` |
+|Bridge DLL         |`bridge{{ version_maj }}_unicode.dll`   |
+|Dyalog DLL         |`dyalog32.dll`                          |
+|DyaRes DLL         |`dyares{{ version_maj }}_32.dll`        |
+|DyalogProvider DLL |`dyalogprovider.dll`                    |
+|DyalogNet DLL      |`dyalognet.dll`                         |
+|APLScript Compiler |`dyalogc_unicode.exe`                   |
+|For Conga and RIDE |`conga34ssl32.dll`                      |
+|For Conga and RIDE |`conga34_32.dll`                        |
+|&nbsp;             |`exestub.dll`                           |
+|&nbsp;             |`dllstub.dll`                           |
+|SQAPL INI          |`sqapl.ini`                             |
+|SQAPL ERR          |`sqapl.err`                             |
+|SQAPL DLL          |`cwdya64u32w.dll`                       |
+|APLUNICD INI       |`aplunicd.ini`                          |
+|&nbsp;             |`sharpplot.dll`                         |
+|&nbsp;             |`sharpplot.xml`                         |
 
-| Name | File |
-| --- | ---  |
-| 32-bit Classic | Dyalog APL {{ version_majmin }} Classic\ |
-| Development EXE | `dyalog.exe` |
-| Development DLL | `dyalog{{ version_maj }}_32.dll` |
-| Shell Script Engine | `dyascript.exe` |
-| Array Editor | `dlaedit32.dll` |
-| Run-Time EXE | `dyalogrt.exe` |
-| Run-Time DLL | `dyalog{{ version_maj }}rt.dll` |
-| Bridge DLL | `bridge{{ version_maj }}.dll` |
-| Dyalog DLL | `dyalog32.dll` |
-| DyaRes DLL | `dyares{{ version_maj }}_32.dll` |
-| DyalogProvider DLL | `dyalogprovider.dll` |
-| DyalogNet DLL | `dyalognet.dll` |
-| APLScript Compiler | `dyalogc.exe` |
-| For Conga and RIDE | `conga34ssl32.dll` |
-| For Conga and RIDE | `conga34_32.dll` |
-|  | `exestub.dll` |
-|  | `dllstub.dll` |
-| SQAPL INI | `sqapl.ini` |
-| SQAPL ERR | `sqapl.err` |
-| SQAPL DLL | `cwdya64c32w.dll` |
-| APLUNICD INI | `aplunicd.ini` |
-|  | `sharpplot.dll` |
-|  | `sharpplot.xml` |
+|Name               |File                                    |
+|-------------------|----------------------------------------|
+|32-bit Classic     |Dyalog APL {{ version_majmin }} Classic\|
+|Development EXE    |`dyalog.exe`                            |
+|Development DLL    |`dyalog{{ version_maj }}_32.dll`        |
+|Shell Script Engine|`dyascript.exe`                         |
+|Array Editor       |`dlaedit32.dll`                         |
+|Run-Time EXE       |`dyalogrt.exe`                          |
+|Run-Time DLL       |`dyalog{{ version_maj }}rt.dll`         |
+|Bridge DLL         |`bridge{{ version_maj }}.dll`           |
+|Dyalog DLL         |`dyalog32.dll`                          |
+|DyaRes DLL         |`dyares{{ version_maj }}_32.dll`        |
+|DyalogProvider DLL |`dyalogprovider.dll`                    |
+|DyalogNet DLL      |`dyalognet.dll`                         |
+|APLScript Compiler |`dyalogc.exe`                           |
+|For Conga and RIDE |`conga34ssl32.dll`                      |
+|For Conga and RIDE |`conga34_32.dll`                        |
+|&nbsp;             |`exestub.dll`                           |
+|&nbsp;             |`dllstub.dll`                           |
+|SQAPL INI          |`sqapl.ini`                             |
+|SQAPL ERR          |`sqapl.err`                             |
+|SQAPL DLL          |`cwdya64c32w.dll`                       |
+|APLUNICD INI       |`aplunicd.ini`                          |
+|&nbsp;             |`sharpplot.dll`                         |
+|&nbsp;             |`sharpplot.xml`                         |
 
-| Name | File |
-| --- | ---  |
-| 64-bit Unicode | Dyalog APL-64 {{ version_majmin }} Unicode\ |
-| Development EXE | `dyalog.exe` |
-| Development DLL | `dyalog{{ version_maj }}_64_unicode.dll` |
-| Shell Script Engine | `dyascript.exe` |
-| Array Editor | `dlaedit64.dll` |
-| Run-Time EXE | `dyalogrt.exe` |
-| Run-Time DLL | `dyalog{{ version_maj }}_64rt_unicode.dll` |
-| Bridge DLL | `bridge{{ version_maj }}-64_unicode.dll` |
-| Dyalog DLL | `dyalog64.dll` |
-| DyaRes DLL | `dyares{{ version_maj }}_64.dll` |
-| DyalogProvider DLL | `dyalogprovider.dll` |
-| DyalogNet DLL | `dyalognet.dll` |
-| APLScript Compiler | `dyalogc64_unicode.exe` |
-| For Conga and RIDE | `conga34ssl64.dll` |
-| For Conga and RIDE | `conga34_64.dll` |
-|  | `exestub.dll` |
-|  | `dllstub.dll` |
-| SQAPL INI | `sqapl.ini` |
-| SQAPL ERR | `sqapl.err` |
-| SQAPL DLL | `cwdya64u64w.dll` |
-| APLUNICD INI | `aplunicd.ini` |
-|  | `sharpplot.dll` |
-|  | `sharpplot.xml` |
+|Name               |File                                       |
+|-------------------|-------------------------------------------|
+|64-bit Unicode     |Dyalog APL-64 {{ version_majmin }} Unicode\|
+|Development EXE    |`dyalog.exe`                               |
+|Development DLL    |`dyalog{{ version_maj }}_64_unicode.dll`   |
+|Shell Script Engine|`dyascript.exe`                            |
+|Array Editor       |`dlaedit64.dll`                            |
+|Run-Time EXE       |`dyalogrt.exe`                             |
+|Run-Time DLL       |`dyalog{{ version_maj }}_64rt_unicode.dll` |
+|Bridge DLL         |`bridge{{ version_maj }}-64_unicode.dll`   |
+|Dyalog DLL         |`dyalog64.dll`                             |
+|DyaRes DLL         |`dyares{{ version_maj }}_64.dll`           |
+|DyalogProvider DLL |`dyalogprovider.dll`                       |
+|DyalogNet DLL      |`dyalognet.dll`                            |
+|APLScript Compiler |`dyalogc64_unicode.exe`                    |
+|For Conga and RIDE |`conga34ssl64.dll`                         |
+|For Conga and RIDE |`conga34_64.dll`                           |
+|&nbsp;             |`exestub.dll`                              |
+|&nbsp;             |`dllstub.dll`                              |
+|SQAPL INI          |`sqapl.ini`                                |
+|SQAPL ERR          |`sqapl.err`                                |
+|SQAPL DLL          |`cwdya64u64w.dll`                          |
+|APLUNICD INI       |`aplunicd.ini`                             |
+|&nbsp;             |`sharpplot.dll`                            |
+|&nbsp;             |`sharpplot.xml`                            |
 
-| Name | File |
-| --- | ---  |
-| 64-bit Classic | Dyalog APL-64 {{ version_majmin }} Classic\ |
-| Development EXE | `dyalog.exe` |
-| Development DLL | `dyalog{{ version_maj }}_64.dll` |
-| Shell Script Engine | `dyascript.exe` |
-| Array Editor | `dlaedit64.dll` |
-| Run-Time EXE | `dyalogrt.exe` |
-| Run-Time DLL | `dyalog{{ version_maj }}_64rt.dll` |
-| Bridge DLL | `bridge{{ version_maj }}-64.dll` |
-| Dyalog DLL | `dyalog64.dll` |
-| DyaRes DLL | `dyares{{ version_maj }}_64.dll` |
-| DyalogProvider DLL | `dyalogprovider.dll` |
-| DyalogNet DLL | `dyalognet.dll` |
-| APLScript Compiler | `dyalogc64.exe` |
-| For Conga and RIDE | `conga34ssl64.dll` |
-| For Conga and RIDE | `conga34_64.dll` |
-|  | `exestub.dll` |
-|  | `dllstub.dll` |
-| SQAPL INI | `sqapl.ini` |
-| SQAPL ERR | `sqapl.err` |
-| SQAPL DLL | `cwdya64c64w.dll` |
-| APLUNICD INI | `aplunicd.ini` |
-|  | `sharpplot.dll` |
-|  | `sharpplot.xml` |
+|Name               |File                                       |
+|-------------------|-------------------------------------------|
+|64-bit Classic     |Dyalog APL-64 {{ version_majmin }} Classic\|
+|Development EXE    |`dyalog.exe`                               |
+|Development DLL    |`dyalog{{ version_maj }}_64.dll`           |
+|Shell Script Engine|`dyascript.exe`                            |
+|Array Editor       |`dlaedit64.dll`                            |
+|Run-Time EXE       |`dyalogrt.exe`                             |
+|Run-Time DLL       |`dyalog{{ version_maj }}_64rt.dll`         |
+|Bridge DLL         |`bridge{{ version_maj }}-64.dll`           |
+|Dyalog DLL         |`dyalog64.dll`                             |
+|DyaRes DLL         |`dyares{{ version_maj }}_64.dll`           |
+|DyalogProvider DLL |`dyalogprovider.dll`                       |
+|DyalogNet DLL      |`dyalognet.dll`                            |
+|APLScript Compiler |`dyalogc64.exe`                            |
+|For Conga and RIDE |`conga34ssl64.dll`                         |
+|For Conga and RIDE |`conga34_64.dll`                           |
+|&nbsp;             |`exestub.dll`                              |
+|&nbsp;             |`dllstub.dll`                              |
+|SQAPL INI          |`sqapl.ini`                                |
+|SQAPL ERR          |`sqapl.err`                                |
+|SQAPL DLL          |`cwdya64c64w.dll`                          |
+|APLUNICD INI       |`aplunicd.ini`                             |
+|&nbsp;             |`sharpplot.dll`                            |
+|&nbsp;             |`sharpplot.xml`                            |
 
 ### File Naming Conventions
 
 The following file naming conventions have been adopted for the various files distributed with and used by Dyalog APL.
 
-| Extension | Description |
-| --- | ---  |
-| .dws | Dyalog APL Workspace |
-| .dse | Dyalog APL Session |
-| .dcf | Dyalog APL Component File |
-| .DXV | Dyalog APL External Variable |
-| .din | Dyalog APL Input Table |
-| .dot | Dyalog APL Output Table |
-| .dft | Dyalog APL Format File |
-| .DXF | Dyalog APL Transfer File |
-| .dlf | Dyalog APL Session Log File |
-| .dyalog | Dyalog APL SALT file |
-| .dyapp | Dyalog APL SALT application file |
+|Extension|Description                     |
+|---------|--------------------------------|
+|.dws     |Dyalog APL Workspace            |
+|.dse     |Dyalog APL Session              |
+|.dcf     |Dyalog APL Component File       |
+|.DXV     |Dyalog APL External Variable    |
+|.din     |Dyalog APL Input Table          |
+|.dot     |Dyalog APL Output Table         |
+|.dft     |Dyalog APL Format File          |
+|.DXF     |Dyalog APL Transfer File        |
+|.dlf     |Dyalog APL Session Log File     |
+|.dyalog  |Dyalog APL SALT file            |
+|.dyapp   |Dyalog APL SALT application file|
 
 Note that some of these extensions, notably .dcf, .dlf, .dot and .DXF, are not unique to Dyalog and conflict with the same extensions used by other software applications. Although all the above file extensions are associated with Dyalog during its installation, these associations may subsequently be changed by the installation of other software or by a Windows System restore.

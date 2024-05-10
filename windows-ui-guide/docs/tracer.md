@@ -44,26 +44,26 @@ In the default layout, the *SIstack* window is displayed alongside the main Trac
 
 The Tracer may be controlled from the keyboard, or by using the *Trace Tools* which are arranged along the title bar of the Debugger window. Note that the button names are solely for reference purposes in the description that follows.
 
-| Button | Button | Name | Key Code | Keystroke | Description |
-| --- | --- | --- | --- | --- | ---  |
-| ![trace_theme-04-00](img/trace-theme-04-00.png) | ![trace tools exec icon](img/trace-tools-exec-icon.png) | Exec | ER | Enter | Execute expression |
-| ![trace_theme-05-00](img/trace-theme-05-00.png) | ![trace tools trace icon](img/trace-tools-trace-icon.png) | Trace | TC | Ctrl+Enter | Trace expression |
-| ![trace_theme-00-00](img/trace-theme-00-00.png) | ![trace tools back icon](img/trace-tools-back-icon.png) | Back | BK | Ctrl+Shift+Bksp | Go back one line |
-| ![trace_theme-01-00](img/trace-theme-01-00.png) | ![trace tools fwd icon](img/trace-tools-fwd-icon.png) | Fwd | FD | Ctrl+Shift+Enter | Skip current line |
-| ![trace_theme-06-00](img/trace-theme-06-00.png) | ![trace tools continue icon](img/trace-tools-continue-icon.png) | Continue | BH |  | Stop on next line of calling function |
-| ![trace_theme-07-00](img/trace-theme-07-00.png) | ![trace tools restart icon](img/trace-tools-restart-icon.png) | Restart | RM | `→⎕LC` | Continue execution of this thread |
-| ![trace_theme-10-00](img/trace-theme-10-00.png) | ![trace tools resart all threads icon](img/trace-tools-resart-all-threads-icon.png) | Restart all |  |  | Continue execution of all threads |
-| ![trace_theme-03-00](img/trace-theme-03-00.png) | ![trace tools edit icon](img/trace-tools-edit-icon.png) | Edit | ED | Shift+Enter | Edit name |
-| ![trace_theme-02-00](img/trace-theme-02-00.png) | ![trace tools exit icon](img/trace-tools-exit-icon.png) | Exit | EP | Esc | Quit this function |
-| ![trace_theme-08-00](img/trace-theme-08-00.png) | ![trace tools intr icon](img/trace-tools-intr-icon.png) | Intr |  | Ctrl+Pause | Interrupt |
-| ![trace_theme-09-00](img/trace-theme-09-00.png) | ![trace tools reset icon](img/trace-tools-reset-icon.png) | Reset | CB |  | Clear trace/stop/monitor for this object |
-| ![trace_theme-14-00](img/trace-theme-14-00.png) | ![editor line numbers icon](img/editor-line-numbers-icon.png) |  | LN |  | Toggle line numbers |
-| ![trace_theme-16-00](img/trace-theme-16-00.png) | ![editor next match icon](img/editor-next-match-icon.png) |  |  |  | Search for next match |
-| ![trace_theme-15-00](img/trace-theme-15-00.png) | ![editor previous match icon](img/editor-previous-match-icon.png) |  |  |  | Search for previous match |
-| ![trace_theme-17-00](img/trace-theme-17-00.png) | ![editor search hidden text icon](img/editor-search-hidden-text-icon.png) |  |  |  | Search hidden text |
-| ![trace_theme-21-00](img/trace-theme-21-00.png) | ![editor match case icon](img/editor-match-case-icon.png) |  |  |  | Match case |
-| ![trace_theme-22-00](img/trace-theme-22-00.png) | ![editor match whole word icon](img/editor-match-whole-word-icon.png) |  |  |  | Match whole word |
-| ![trace_theme-23-00](img/trace-theme-23-00.png) | ![editor use regular expressions icon](img/editor-use-regular-expressions-icon.png) |  |  |  | Use Regular Expressions |
+|Button||Name|Key Code|Keystroke|Description|
+|---|---|---|---|---|---|
+|![trace_theme-04-00](img/trace-theme-04-00.png)|![trace tools exec icon](img/trace-tools-exec-icon.png)|Exec|ER|Enter|Execute expression|
+|![trace_theme-05-00](img/trace-theme-05-00.png)|![trace tools trace icon](img/trace-tools-trace-icon.png)|Trace|TC|Ctrl+Enter|Trace expression|
+|![trace_theme-00-00](img/trace-theme-00-00.png)|![trace tools back icon](img/trace-tools-back-icon.png)|Back|BK|Ctrl+Shift+Bksp|Go back one line|
+|![trace_theme-01-00](img/trace-theme-01-00.png)|![trace tools fwd icon](img/trace-tools-fwd-icon.png)|Fwd|FD|Ctrl+Shift+Enter|Skip current line|
+|![trace_theme-06-00](img/trace-theme-06-00.png)|![trace tools continue icon](img/trace-tools-continue-icon.png)|Continue|BH|&nbsp;|Stop on next line of calling function|
+|![trace_theme-07-00](img/trace-theme-07-00.png)|![trace tools restart icon](img/trace-tools-restart-icon.png)|Restart|RM|`→⎕LC`|Continue execution of this thread|
+|![trace_theme-10-00](img/trace-theme-10-00.png)|![trace tools resart all threads icon](img/trace-tools-resart-all-threads-icon.png)|Restart all|&nbsp;|&nbsp;|Continue execution of all threads|
+|![trace_theme-03-00](img/trace-theme-03-00.png)|![trace tools edit icon](img/trace-tools-edit-icon.png)|Edit|ED|Shift+Enter|Edit name|
+|![trace_theme-02-00](img/trace-theme-02-00.png)|![trace tools exit icon](img/trace-tools-exit-icon.png)|Exit|EP|Esc|Quit this function|
+|![trace_theme-08-00](img/trace-theme-08-00.png)|![trace tools intr icon](img/trace-tools-intr-icon.png)|Intr|&nbsp;|Ctrl+Pause|Interrupt|
+|![trace_theme-09-00](img/trace-theme-09-00.png)|![trace tools reset icon](img/trace-tools-reset-icon.png)|Reset|CB|&nbsp;|Clear trace/stop/monitor for this object|
+|![trace_theme-14-00](img/trace-theme-14-00.png)|![editor line numbers icon](img/editor-line-numbers-icon.png)|&nbsp;|LN|&nbsp;|Toggle line numbers|
+|![trace_theme-16-00](img/trace-theme-16-00.png)|![editor next match icon](img/editor-next-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for next match|
+|![trace_theme-15-00](img/trace-theme-15-00.png)|![editor previous match icon](img/editor-previous-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for previous match|
+|![trace_theme-17-00](img/trace-theme-17-00.png)|![editor search hidden text icon](img/editor-search-hidden-text-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search hidden text|
+|![trace_theme-21-00](img/trace-theme-21-00.png)|![editor match case icon](img/editor-match-case-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match case|
+|![trace_theme-22-00](img/trace-theme-22-00.png)|![editor match whole word icon](img/editor-match-whole-word-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match whole word|
+|![trace_theme-23-00](img/trace-theme-23-00.png)|![editor use regular expressions icon](img/editor-use-regular-expressions-icon.png)|&nbsp;|&nbsp;|&nbsp;|Use Regular Expressions|
 
 Using the Trace Tools, you can **single-step** through the function or operator by clicking the *Exec* and/or *Trace* buttons. If you click *Exec* the current line of the function or operator is executed and the system halts at the next line. If you click *Trace*, the current line is executed but any defined functions or operators referenced on that line are themselves traced. After execution of the line the system again halts at the next one. Using the keyboard, the same effect can be achieved by pressing Enter or Ctrl+Enter.
 

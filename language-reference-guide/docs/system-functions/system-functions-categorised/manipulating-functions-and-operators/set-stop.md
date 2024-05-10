@@ -48,7 +48,7 @@ Attempts to set stop controls in a locked function or operator are ignored.
 ```
 
 
-The effect of `⎕STOP` when a function or operator is invoked is to suspend execution at the beginning of any line in the function or operator on which a stop control is placed immediately before that line is executed, and immediately before exiting from the function or operator if a stop control of 0 is set.  Execution may be resumed by a branch expression.  A stop control interrupt (1001) may also be trapped - see [Trap Event:](trap.md).
+The effect of `⎕STOP` when a function or operator is invoked is to suspend execution at the beginning of any line in the function or operator on which a stop control is placed immediately before that line is executed, and immediately before exiting from the function or operator if a stop control of 0 is set.  Execution may be resumed by a branch expression.  A stop control interrupt (1001) may also be trapped - see ["Trap Event: "](trap.md).
 
 
 

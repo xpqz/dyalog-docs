@@ -25,10 +25,10 @@ Note that whether you use late binding or SetMethodInfo/SetPropertyInfo, any sub
 
 When type library information is available, Dyalog APL automatically connects the appropriate event sinks and establishes the EventList property for the object when it is created. However, if the COM object does not declare its event sinks in a type library, or if the LateBind property were set to 1, it is necessary to connect to them manually. To support these cases, the following methods are used. These apply to top-level COM objects and to the namespaces associated with any other COM objects exposed by them.
 
-| Method | Description |
-| --- | ---  |
-| `OLEListEventSinks` | Returns the names of any event sinks currently attached to an object. An event sink is a set of events grouped (for convenience) by a COM object. |
-| `OLEAddEventSink` | Attaches the namespace associated with an object to a specific event sink that it supports. If successful, new event names will appear in the EventList property of the namespace. This is the only way to access events from an event sink that is not described in the object's Type Information. |
-| `OLEDeleteEventSink` | Removes the events associated with a particular event sink from the EventList property of the namespace associated with an object. |
+|Method|Description|
+|---|---|
+|`OLEListEventSinks`|Returns the names of any event sinks currently attached to an object. An event sink is a set of events grouped (for convenience) by a COM object.|
+|`OLEAddEventSink`|Attaches the namespace associated with an object to a specific event sink that it supports. If successful, new event names will appear in the EventList property of the namespace. This is the only way to access events from an event sink that is not described in the object's Type Information.|
+|`OLEDeleteEventSink`|Removes the events associated with a particular event sink from the EventList property of the namespace associated with an object.|
 
 [^1]: Prior to Version 14.0, this was the only form of late binding provided by Dyalog APL.

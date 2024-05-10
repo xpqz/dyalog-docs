@@ -7,7 +7,8 @@
 
 
 
-Applies To: [PropertySheet](../objects/propertysheet.md)
+|-----------|--------------------------------------------|
+|Applies To:|[PropertySheet](../objects/propertysheet.md)|
 
 
 **Description**
@@ -19,13 +20,13 @@ If enabled, this event is reported when the user has clicked the Next or Back bu
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 5-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'SetWizard'` or 365 |
-| `[3]` | Active state Back | 0 or 1 |
-| `[4]` | Active state Next | 0 or 1 |
-| `[5]` | Active state Finish | 0 or 1 |
-| `[6]` | Finish caption | character vector |
+|-----|-------------------|-----------------------|
+|`[1]`|Object             |ref or character vector|
+|`[2]`|Event              |`'SetWizard'` or 365   |
+|`[3]`|Active state Back  |0 or 1                 |
+|`[4]`|Active state Next  |0 or 1                 |
+|`[5]`|Active state Finish|0 or 1                 |
+|`[6]`|Finish caption     |character vector       |
 
 
 You may alter the state of the buttons by changing elements [3-5] of the event message and returning it as a result of your callback. You may also set the state of the buttons at any time by calling SetWizard as a method.

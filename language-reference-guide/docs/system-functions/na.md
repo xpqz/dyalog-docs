@@ -93,32 +93,32 @@ The type coding scheme introduced above is of the form:
 
 The options are summarised in the following table and their functions detailed below.
 
-| Description | Symbol | Meaning |
-| --- | --- | ---  |
-| Direction | `<` | Pointer to array *input* to DLL function. |
-| `>` | Pointer to array *output* from DLL function |
-| `=` | Pointer to input/output array. |
-| Special | `0` | Null-terminated string. |
-| `#` | Byte-counted string |
-| Type | `I` | int |
-| `U` | unsigned int |
-| `C` | char |
-| `T` | char [^1] |
-| `F` | float |
-| `D` | decimal |
-| `J` | complex |
-| `P` | uintptr-t [^2] |
-| `A` | APL array |
-| `Z` | APL array with header (as passed to a TCP/IP socket) |
-| Width | `1` | 1-byte |
-| `2` | 2-byte |
-| `4` | 4-byte |
-| `8` | 8-byte |
-| `16` | 16-byte (128-bit) |
-| Array | `[n]` | Array of length *n* elements |
-| `[]` | Array, length determined at call-time |
-| Structure | `{...}` | Structure. |
-| Count | `[int]` | Rather than explicitly declaring multiple adjacent occurrences of the same the count option may be used |
+|Description|Symbol                                              |Meaning                                                                                                |
+|-----------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+|Direction  |`<`                                                 |Pointer to array *input* to DLL function.                                                              |
+|`>`        |Pointer to array *output* from DLL function                                                                                                                ||
+|`=`        |Pointer to input/output array.                                                                                                                             ||
+|Special    |`0`                                                 |Null-terminated string.                                                                                |
+|`#`        |Byte-counted string                                                                                                                                        ||
+|Type       |`I`                                                 |int                                                                                                    |
+|`U`        |unsigned int                                                                                                                                               ||
+|`C`        |char                                                                                                                                                       ||
+|`T`        |char [^1]                                                                                                                                                  ||
+|`F`        |float                                                                                                                                                      ||
+|`D`        |decimal                                                                                                                                                    ||
+|`J`        |complex                                                                                                                                                    ||
+|`P`        |uintptr-t [^2]                                                                                                                                             ||
+|`A`        |APL array                                                                                                                                                  ||
+|`Z`        |APL array with header (as passed to a TCP/IP socket)                                                                                                       ||
+|Width      |`1`                                                 |1-byte                                                                                                 |
+|`2`        |2-byte                                                                                                                                                     ||
+|`4`        |4-byte                                                                                                                                                     ||
+|`8`        |8-byte                                                                                                                                                     ||
+|`16`       |16-byte (128-bit)                                                                                                                                          ||
+|Array      |`[n]`                                               |Array of length *n* elements                                                                           |
+|`[]`       |Array, length determined at call-time                                                                                                                      ||
+|Structure  |`{...}`                                             |Structure.                                                                                             |
+|Count      |`[int]`                                             |Rather than explicitly declaring multiple adjacent occurrences of the same the count option may be used|
 
 In the Classic Edition, `C` specifies untranslated character, whereas `T` specifies that the character data will be translated to/from `⎕AV`.
 
@@ -141,18 +141,18 @@ In C, when an address is passed, the corresponding value can be used as either a
 
 This means that where the C function indicates a *pointer type*, we must code this as starting with one of the characters: `<`, `>` or `=`.
 
-| < | indicates that the address of the argument will be used by C as an input variable and values at the address will *not* be over-written. |
-| --- | ---  |
-| > | indicates that C will use the address as an output variable. In this case, APL must allocate an output array over which C can write values. After the call, this array will be included in the nested result of the call to the external function. |
-| = | indicates that C will use the address for both input and output. In this case, APL duplicates the argument array into an output buffer whose address is passed to the external function. As in the case of an output only array, the newly modified copy will be included in the nested result of the call to the external function. |
+|---|---|
+|<|indicates that the address of the argument will be used by C as an input variable and values at the address will *not* be over-written.|
+|>|indicates that C will use the address as an output variable. In this case, APL must allocate an output array over which C can write values. After the call, this array will be included in the nested result of the call to the external function.|
+|=|indicates that C will use the address for both input and output. In this case, APL duplicates the argument array into an output buffer whose address is passed to the external function. As in the case of an output only array, the newly modified copy will be included in the nested result of the call to the external function.|
 
 **Examples**
 
-| <I2 | Pointer to 2-byte integer - *input* to external function |
-| --- | ---  |
-| >C | Pointer to character *output* from external function. |
-| =T | Pointer to character *input* to and *output* from function. |
-| =A | Pointer to APL array *modified* by function. |
+|---|-----------------------------------------------------------|
+|<I2|Pointer to 2-byte integer - *input* to external function   |
+|>C |Pointer to character *output* from external function.      |
+|=T |Pointer to character *input* to and *output* from function.|
+|=A |Pointer to APL array *modified* by function.               |
 
 # Special
 
@@ -166,46 +166,46 @@ Note also that the 0 and # specifiers may be used with data of all types (exclud
 
 The data type of the argument may be one of the following characters and  may be specified in lower or upper case:
 
-| Code | Type | Description |
-| --- | --- | ---  |
-| `I` | Integer | The value is interpreted as a 2s complement signed integer |
-| `U` | Unsigned integer | The value is interpreted as an unsigned integer |
-| `C` | Character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is interpreted as an index into `⎕AV` . This means that `⎕AV` *positions* map onto corresponding ANSI *positions* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` , maps to `ANSI[35] = '` |
-| `T` | Translated character | The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is *translated* using standard Dyalog `⎕AV` to ANSI translation. This means that `⎕AV` *characters* map onto corresponding ANSI *characters* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` maps to `ANSI[115] = 's'` |
-| `UTF` | Unicode encoded | `>0UTF8[]` will translate to a UTF-8 encoded string `<0UTF16[]` will translate from a UTF-16LE encoded string |
-| `F` | Float | The value is interpreted as an IEEE 754-2008 binary64 floating point number |
-| `D` | Decimal | The value is interpreted as an IEEE 754-2008 decimal128 floating point number (DPD format on AIX, BID format on other platforms) |
-| `J` | Complex |  |
-| `P` | uintptr-t | This is equivalent to U4 on 32-bit versions and U8 on 64-bit versions |
-| `∇` | Function pointer | This allows the passing of an APL function for the function to call |
-| `A` | APL array | This is the same format as is used to transmit APL arrays to an Auxiliary Processor (AP) |
-| `Z` | APL array with header | This is the same format as is used to transmit APL arrays over TCP/IP Sockets |
+|Code|Type|Description|
+|---|---|---|
+|`I`|Integer|The value is interpreted as a 2s complement signed integer|
+|`U`|Unsigned integer|The value is interpreted as an unsigned integer|
+|`C`|Character|The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is interpreted as an index into `⎕AV` . This means that `⎕AV` *positions* map onto corresponding ANSI *positions* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` , maps to `ANSI[35] = '`|
+|`T`|Translated character|The value is interpreted as a character. In the Unicode Edition, the value maps directly onto a Unicode code point. In the Classic Edition, the value is *translated* using standard Dyalog `⎕AV` to ANSI translation. This means that `⎕AV` *characters* map onto corresponding ANSI *characters* . For example, with `⎕IO=0` : `⎕AV[35] = 's'` maps to `ANSI[115] = 's'`|
+|`UTF`|Unicode encoded|`>0UTF8[]` will translate to a UTF-8 encoded string `<0UTF16[]` will translate from a UTF-16LE encoded string|
+|`F`|Float|The value is interpreted as an IEEE 754-2008 binary64 floating point number|
+|`D`|Decimal|The value is interpreted as an IEEE 754-2008 decimal128 floating point number (DPD format on AIX, BID format on other platforms)|
+|`J`|Complex|&nbsp;|
+|`P`|uintptr-t|This is equivalent to U4 on 32-bit versions and U8 on 64-bit versions|
+|`∇`|Function pointer|This allows the passing of an APL function for the function to call|
+|`A`|APL array|This is the same format as is used to transmit APL arrays to an Auxiliary Processor (AP)|
+|`Z`|APL array with header|This is the same format as is used to transmit APL arrays over TCP/IP Sockets|
 
 # Width
 
 The type specifier may be followed by the width of the value in bytes. For example:
 
-| I4 | 4-byte signed integer. |
-| --- | ---  |
-| U2 | 2-byte unsigned integer. |
-| F8 | 8-byte floating point number. |
-| F4 | 4-byte floating point number. |
-| D16 | 16-byte decimal floating-point number |
+|---|-------------------------------------|
+|I4 |4-byte signed integer.               |
+|U2 |2-byte unsigned integer.             |
+|F8 |8-byte floating point number.        |
+|F4 |4-byte floating point number.        |
+|D16|16-byte decimal floating-point number|
 
-| Type | Possible values for Width | Default value for Width |
-| --- | --- | ---  |
-| `I` | 1, 2, 4, 8 | 4 |
-| `U` | 1, 2, 4, 8 | 4 |
-| `C` | 1,2,4 | 1 |
-| `T` | 1,2,4 | wide character(see below) |
-| `UTF` | 8,16 | none |
-| `F` | 4, 8 | 8 |
-| `D` | 16 | 16 |
-| `J` | 16 | 16 |
-| `P` | Not applicable |  |
-| `∇` | Not applicable |  |
-| `A` | Not applicable |  |
-| `Z` | Not applicable |  |
+|Type |Possible values for Width|Default value for Width  |
+|-----|-------------------------|-------------------------|
+|`I`  |1, 2, 4, 8               |4                        |
+|`U`  |1, 2, 4, 8               |4                        |
+|`C`  |1,2,4                    |1                        |
+|`T`  |1,2,4                    |wide character(see below)|
+|`UTF`|8,16                     |none                     |
+|`F`  |4, 8                     |8                        |
+|`D`  |16                       |16                       |
+|`J`  |16                       |16                       |
+|`P`  |Not applicable           |&nbsp;                   |
+|`∇`  |Not applicable           |&nbsp;                   |
+|`A`  |Not applicable           |&nbsp;                   |
+|`Z`  |Not applicable           |&nbsp;                   |
 
 In the Unicode Edition, the default width is the width of a *wide character* according to the convention of the host operating system. This translates to T2 under Windows and T4 under UNIX, Linux or macOS.
 
@@ -213,11 +213,11 @@ Note that 32-bit versions can support 64-bit integer *arguments*, but not 64-bit
 
 **Examples**
 
-| I2 | 16-bit integer |
-| --- | ---  |
-| <I4 | Pointer to input 4-byte integer |
-| U | Default width unsigned integer |
-| =F4 | Pointer to input/output 4-byte floating point number. |
+|---|-----------------------------------------------------|
+|I2 |16-bit integer                                       |
+|<I4|Pointer to input 4-byte integer                      |
+|U  |Default width unsigned integer                       |
+|=F4|Pointer to input/output 4-byte floating point number.|
 
 # Arrays
 
@@ -229,9 +229,9 @@ unsigned size, list[];     // undetermined length.
 
 could be coded as:
 
-| I[10] | vector of 10 ints. |
-| --- | ---  |
-| U U[] | unsigned integer followed by an array of unsigned integers. |
+|-----|-----------------------------------------------------------|
+|I[10]|vector of 10 ints.                                         |
+|U U[]|unsigned integer followed by an array of unsigned integers.|
 
 Confusion sometimes arises over a difference in the declaration syntax between C and `⎕NA`. In C, an argument declaration may be given to receive a pointer to either a single scalar item, or to the first element of an array. This is because in C, the address of an array is deemed to be the address of its first element.
 ```apl
@@ -421,14 +421,14 @@ The general form of the result from calling a DLL function is a nested vector. T
 
 The length of the result vector is therefore: 1 (if the function was declared to return an explicit result) + the number of output or input/output arguments.
 
-| `⎕NA` Declaration | Result | Output Arguments | Result Length |
-| --- | --- | --- | ---  |
-| `mydll|fn1` | `0` | `` | `0` |
-| `mydll|fn2 <0T` | `0` | `0` | `0` |
-| `mydll|fn3 =0T <0T` | `0` | `1 0` | `1` |
-| `I4 mydll|fn4` | `1` | `` | `1` |
-| `I4 mydll|fn5 F8` | `1` | `0` | `1` |
-| `I4 mydll|fn6 >I4[] <0T` | `1` | `1 0` | `2` |
+|`⎕NA` Declaration|Result|Output Arguments|Result Length|
+|---|---|---|---|
+|`mydll|fn1`|`0`|&nbsp;|`0`|
+|`mydll|fn2 <0T`|`0`|`0`|`0`|
+|`mydll|fn3 =0T <0T`|`0`|`1 0`|`1`|
+|`I4 mydll|fn4`|`1`|&nbsp;|`1`|
+|`I4 mydll|fn5 F8`|`1`|`0`|`1`|
+|`I4 mydll|fn6 >I4[] <0T`|`1`|`1 0`|`2`|
 
 Note that the result vector from a function that is declared `void()` and has no output parameters is `⍬` (zilde).
 
@@ -481,39 +481,39 @@ In general, you should consult the documentation that accompanies the DLL in ord
 
 The following table of some commonly encountered Windows typedefs and their `⎕NA` equivalents might prove useful.
 
-| Windows typedef | `⎕NA` equivalent |
-| --- | ---  |
-| HWND | `P` |
-| HANDLE | `P` |
-| GLOBALHANDLE | `P` |
-| LOCALHANDLE | `P` |
-| DWORD | `U4` |
-| WORD | `U2` |
-| BYTE | `U1` |
-| LPSTR | `=0T[] (note 1)` |
-| LPCSTR | `<0T[] (note 2)` |
-| WPARAM | `U (note 3)` |
-| LPARAM | `U4 (note 3)` |
-| LRESULT | `I4` |
-| BOOL | `I` |
-| UINT | `U` |
-| ULONG | `U4` |
-| ATOM | `U2` |
-| HDC | `P` |
-| HBITMAP | `P` |
-| HBRUSH | `P` |
-| HFONT | `P` |
-| HICON | `P` |
-| HMENU | `P` |
-| HPALETTE | `P` |
-| HMETAFILE | `P` |
-| HMODULE | `P` |
-| HINSTANCE | `P` |
-| COLORREF | `{U1[4]}` |
-| POINT | `{I I}` |
-| POINTS | `{I2 I2}` |
-| RECT | `{I I I I}` |
-| CHAR | `T or C` |
+|Windows typedef|`⎕NA` equivalent|
+|---------------|----------------|
+|HWND           |`P`             |
+|HANDLE         |`P`             |
+|GLOBALHANDLE   |`P`             |
+|LOCALHANDLE    |`P`             |
+|DWORD          |`U4`            |
+|WORD           |`U2`            |
+|BYTE           |`U1`            |
+|LPSTR          |`=0T[] (note 1)`|
+|LPCSTR         |`<0T[] (note 2)`|
+|WPARAM         |`U (note 3)`    |
+|LPARAM         |`U4 (note 3)`   |
+|LRESULT        |`I4`            |
+|BOOL           |`I`             |
+|UINT           |`U`             |
+|ULONG          |`U4`            |
+|ATOM           |`U2`            |
+|HDC            |`P`             |
+|HBITMAP        |`P`             |
+|HBRUSH         |`P`             |
+|HFONT          |`P`             |
+|HICON          |`P`             |
+|HMENU          |`P`             |
+|HPALETTE       |`P`             |
+|HMETAFILE      |`P`             |
+|HMODULE        |`P`             |
+|HINSTANCE      |`P`             |
+|COLORREF       |`{U1[4]}`       |
+|POINT          |`{I I}`         |
+|POINTS         |`{I2 I2}`       |
+|RECT           |`{I I I I}`     |
+|CHAR           |`T or C`        |
 
 # Notes
 

@@ -25,13 +25,13 @@ or supplied as the right argument to your callback function, is a 6-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'KeyPress'` or 22 |
-| `[3]` | Input Code | character scalar or vector |
-| `[4]` | Character code | integer scalar |
-| `[5]` | Key Number | integer scalar |
-| `[6]` | Shift state | integer scalar |
+|-----|--------------|--------------------------|
+|`[1]`|Object        |ref or character vector   |
+|`[2]`|Event         |`'KeyPress'` or 22        |
+|`[3]`|Input Code    |character scalar or vector|
+|`[4]`|Character code|integer scalar            |
+|`[5]`|Key Number    |integer scalar            |
+|`[6]`|Shift state   |integer scalar            |
 
 
 
@@ -72,10 +72,10 @@ down at the same time as the key is pressed. It is the sum of the following
 numbers :
 
 
-| 1 | Shift key down |
-| --- | ---  |
-| 2 | Control key down |
-| 4 | Alt key down |
+|---|----------------|
+|1  |Shift key down  |
+|2  |Control key down|
+|4  |Alt key down    |
 
 
 

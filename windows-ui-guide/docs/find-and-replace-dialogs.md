@@ -4,15 +4,15 @@ The *Find* and *Find/Replace* dialog boxes are used to locate and modify text in
 
 ![find replace dialog](img/find-replace-dialog.png)
 
-| Search For | Enter the text string that you want to find. Note that the text from the last 10 searches is available from the drop-down list. If appropriate, the search text is copied from the Find Objects tool. This makes it easy to first search for functions containing a particular string, and then to locate the same string in the functions. |
-| --- | ---  |
-| Replace With | Enter the text string that you want to use as a replacement. Note that the text from the last 10 replacements is available from the drop-down list. |
-| Match Case | Check this box if you want the search to be case-sensitive. |
-| Match Whole Word | Check this box if you want the search to only match only whole words. |
-| Use Regular Expressions | Check this box if you want to use Regular Expressions. |
-| Move Dialog if Hiding Match | If checked, the *Find* or *Find/Replace* dialog box will automatically position itself so as not to obscure a matched search string in the edit window. |
-| Find Next After Replace | If checked, following a replace operation, the selection will move to the next occurrence of the target string in the edit window. |
-| Direction | Select *Up* or *Down* to control the direction of search. |
+|---|---|
+|Search For|Enter the text string that you want to find. Note that the text from the last 10 searches is available from the drop-down list. If appropriate, the search text is copied from the Find Objects tool. This makes it easy to first search for functions containing a particular string, and then to locate the same string in the functions.|
+|Replace With|Enter the text string that you want to use as a replacement. Note that the text from the last 10 replacements is available from the drop-down list.|
+|Match Case|Check this box if you want the search to be case-sensitive.|
+|Match Whole Word|Check this box if you want the search to only match only whole words.|
+|Use Regular Expressions|Check this box if you want to use Regular Expressions.|
+|Move Dialog if Hiding Match|If checked, the *Find* or *Find/Replace* dialog box will automatically position itself so as not to obscure a matched search string in the edit window.|
+|Find Next After Replace|If checked, following a replace operation, the selection will move to the next occurrence of the target string in the edit window.|
+|Direction|Select *Up* or *Down* to control the direction of search.|
 
 ### Using Find and Replace
 
@@ -22,10 +22,7 @@ Suppose that you want to search through a function for references to the string 
 
 Now let us suppose that you wish to replace all occurrences of "Adam" with "Amanda". First select *Replace* from the *Edit* menu. This will cause the *Find Dialog* box to be replaced by the *Find/Replace* Dialog box. Enter the string "Amanda" into the box labelled *Replace* With, then click *Replace All*. All occurrences of "Adam" in the current Edit window are changed to "Amanda". To repeat the same global change in another function, simply open an edit window and click *Replace All* again. If instead you only want to change particular instances of "Adam" to "Amanda" you may use *Find Next* to locate the ones you want, and then *Replace* to make each individual alteration.
 
-Text searches are performed using PCRE. If the *Use Regular Expressions* box is checked, the full range of regular expressions provided by PCRE are available for use. See [PCRE Regular Expression Syntax Summary](../../language-reference-guide/pcre-specifications/pcre-regular-expression-syntax-summary)
-Language Reference Guide: 
-
-Appendix A.
+Text searches are performed using PCRE. If the *Use Regular Expressions* box is checked, the full range of regular expressions provided by PCRE are available for use. See [PCRE Regular Expression Syntax Summary](../../language-reference-guide/pcre-specifications/pcre-regular-expression-syntax-summary).
 
 ### Saving and Quitting
 

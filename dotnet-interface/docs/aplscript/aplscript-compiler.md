@@ -2,10 +2,10 @@
 
 APLScript files are *compiled* into executable code by the APLScript compiler whose name is given in the table below.
 
-|  | Unicode Edition | Classic Edition |
-| --- | --- | ---  |
-| 32-Bit | `dyalogc_unicode.exe` | `dyalogc.exe` |
-| 64-Bit | `dyalogc64_unicode.exe` | `dyalogc64.exe` |
+|&nbsp;|Unicode Edition        |Classic Edition|
+|------|-----------------------|---------------|
+|32-Bit|`dyalogc_unicode.exe`  |`dyalogc.exe`  |
+|64-Bit|`dyalogc64_unicode.exe`|`dyalogc64.exe`|
 
 This program is called automatically by `ASP.NET` when a client application requests a Web Page (.aspx) or Web Service (.asmx) and in these circumstances always generates the corresponding .NET class. However, the Script Compiler may also be used to:
 

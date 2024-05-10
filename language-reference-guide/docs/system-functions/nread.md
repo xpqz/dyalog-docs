@@ -10,11 +10,11 @@
 This monadic function reads data from a native file. `Y` is a 3- or 4-element integer vector whose elements are as follows:
 
 
-| `[1]` | negative tie number, |
-| --- | ---  |
-| `[2]` | conversion code (see below), |
-| `[3]` | count. If this value is `¯1` , all of the elements defined by `Y[2]` are read from the position specified by `Y[4]` to the end of the file. This may result in the last few bytes in the file being ignored if they do not form a complete element. |
-| `[4]` | start byte, counting from 0. If this value omitted or is `¯1` , data is read starting from the current position in the file (initially `0` ). |
+|---|---|
+|`[1]`|negative tie number,|
+|`[2]`|conversion code (see below),|
+|`[3]`|count. If this value is `¯1` , all of the elements defined by `Y[2]` are read from the position specified by `Y[4]` to the end of the file. This may result in the last few bytes in the file being ignored if they do not form a complete element.|
+|`[4]`|start byte, counting from 0. If this value omitted or is `¯1` , data is read starting from the current position in the file (initially `0` ).|
 
 
 #### Notes
@@ -36,17 +36,17 @@ If both `Y[3]` and `Y[4]` have the value `¯1`, then `⎕NREAD` reads data from 
 Unicode Edition: Conversion Codes
 
 
-| Value | Number of bytes read | Result Type | Result shape |
-| --- | --- | --- | ---  |
-| 11 | count | 1 bit Boolean | 8 `×` count |
-| 80 | count | 8 bits character | count |
-| 82 [^1] | count | 8 bits character | count |
-| 83 | count | 8 bits integer | count |
-| 160 | 2 `×` count | 16-bits character | count |
-| 163 | 2 `×` count | 16 bits integer | count |
-| 320 | 4 `×` count | 32-bits character | count |
-| 323 | 4 `×` count | 32 bits integer | count |
-| 645 | 8 `×` count | 64 bits floating | count |
+|Value  |Number of bytes read|Result Type      |Result shape|
+|-------|--------------------|-----------------|------------|
+|11     |count               |1 bit Boolean    |8 `×` count |
+|80     |count               |8 bits character |count       |
+|82 [^1]|count               |8 bits character |count       |
+|83     |count               |8 bits integer   |count       |
+|160    |2 `×` count         |16-bits character|count       |
+|163    |2 `×` count         |16 bits integer  |count       |
+|320    |4 `×` count         |32-bits character|count       |
+|323    |4 `×` count         |32 bits integer  |count       |
+|645    |8 `×` count         |64 bits floating |count       |
 
 
 
@@ -54,14 +54,14 @@ Unicode Edition: Conversion Codes
 Classic Edition: Conversion Codes
 
 
-| Value | Number of bytes read | Result Type | Result shape |
-| --- | --- | --- | ---  |
-| 11 | count | 1 bit Boolean | 8 `×` count |
-| 82 | count | 8 bits character | count |
-| 83 | count | 8 bits integer | count |
-| 163 | 2 `×` count | 16 bits integer | count |
-| 323 | 4 `×` count | 32 bits integer | count |
-| 645 | 8 `×` count | 64 bits floating | count |
+|Value|Number of bytes read|Result Type     |Result shape|
+|-----|--------------------|----------------|------------|
+|11   |count               |1 bit Boolean   |8 `×` count |
+|82   |count               |8 bits character|count       |
+|83   |count               |8 bits integer  |count       |
+|163  |2 `×` count         |16 bits integer |count       |
+|323  |4 `×` count         |32 bits integer |count       |
+|645  |8 `×` count         |64 bits floating|count       |
 
 
 

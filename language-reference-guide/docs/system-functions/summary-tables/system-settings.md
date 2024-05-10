@@ -2,32 +2,32 @@
 
 ### Settings Affecting Behaviour of Primitive Functions
 
-| Name | Description |
-| --- | ---  |
-| `⎕CT` | Comparison Tolerance |
-| `⎕DCT` | Decimal Comp Tolerance |
-| `⎕DIV` | Division Method |
-| `⎕FR` | Floating-Point Representation |
-| `⎕IO` | Index Origin |
-| `⎕ML` | Migration Level |
-| `⎕PP` | Print Precision |
-| `⎕RL` | Random Link |
+|Name  |Description                  |
+|------|-----------------------------|
+|`⎕CT` |Comparison Tolerance         |
+|`⎕DCT`|Decimal Comp Tolerance       |
+|`⎕DIV`|Division Method              |
+|`⎕FR` |Floating-Point Representation|
+|`⎕IO` |Index Origin                 |
+|`⎕ML` |Migration Level              |
+|`⎕PP` |Print Precision              |
+|`⎕RL` |Random Link                  |
 
 The following table describes the dependencies that exist between functions, operators and these system variables.
 
 Implicit Arguments
 
-| System Variable | Monadic Functions | Dyadic Functions | Operators |
-| --- | --- | --- | ---  |
-| `⎕CT, ⎕DCT` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ∨ ∧` | `⌸` |
-| `⎕DIV` | `÷` | `÷` | `` |
-| `⎕FR   ⍝ 1` | `÷ * ⍟ ! ○ ⌹` | `+ - × ÷ * ⍟ | ! ○ ∨ ∧ ⊥ ⊤ ⌹` | `` |
-| `⎕FR   ⍝ 2` | `⌈ ⌊ ∪` | `~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷` | `⌸` |
-| `⎕FR   ⍝ 3` | `⍒ ⍋` | `⌈ ⌊ ⍒ ⍋ ⍸` | `` |
-| `⎕IO` | `⍳ ? ⍒ ⍋ ⍸` | `⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸` | `⌸ @ []` |
-| `⎕ML` | `∊ ↑ ⊃ ≡` | `` | `` |
-| `⎕PP` | `⍕` | `` | `` |
-| `⎕RL` | `?` | `?` | `` |
+|System Variable|Monadic Functions|Dyadic Functions|Operators|
+|---|---|---|---|
+|`⎕CT, ⎕DCT`|`⌈ ⌊ ∪`|`~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷ | ∨ ∧`|`⌸`|
+|`⎕DIV`|`÷`|`÷`|&nbsp;|
+|`⎕FR   ⍝ 1`|`÷ * ⍟ ! ○ ⌹`|`+ - × ÷ * ⍟ | ! ○ ∨ ∧ ⊥ ⊤ ⌹`|&nbsp;|
+|`⎕FR   ⍝ 2`|`⌈ ⌊ ∪`|`~ < ≤ = ≥ > ≠ ≡ ≢ ⍳ ∊ ∪ ∩ ⍷`|`⌸`|
+|`⎕FR   ⍝ 3`|`⍒ ⍋`|`⌈ ⌊ ⍒ ⍋ ⍸`|&nbsp;|
+|`⎕IO`|`⍳ ? ⍒ ⍋ ⍸`|`⍳ ? ⍒ ⍋ ⍉ ⊃ ⌷ ⍸`|`⌸ @ []`|
+|`⎕ML`|`∊ ↑ ⊃ ≡`|&nbsp;|&nbsp;|
+|`⎕PP`|`⍕`|&nbsp;|&nbsp;|
+|`⎕RL`|`?`|`?`|&nbsp;|
 
 where, for `⎕FR`, `1` indicates functions that compute real numbers and whose precision depends on `⎕FR`, `2` indicates functions that perform tolerant comparisons and `3` indicates functions that perform tolerant comparisons.
 

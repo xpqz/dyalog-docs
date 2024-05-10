@@ -16,16 +16,16 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 `R` is an 8-element vector containing the following information pertaining to the object and
 
 
-| Element | Contains |
-| --- | ---  |
-| 1 | Object name or ref ( `Y` ) |
-| 2 | Parent namespace |
-| 3 | Name class (see `⎕NC` ) |
-| 4 | File name |
-| 5 | Start line (first line in file, 0 origin, of the object) |
-| 6 | Line count (number of lines in file occupied by the object) |
-| 7 | File Checksum |
-| 8 | File modification time ( `⎕TS` format) |
+|Element|Contains                                                   |
+|-------|-----------------------------------------------------------|
+|1      |Object name or ref ( `Y` )                                 |
+|2      |Parent namespace                                           |
+|3      |Name class (see `⎕NC` )                                    |
+|4      |File name                                                  |
+|5      |Start line (first line in file, 0 origin, of the object)   |
+|6      |Line count (number of lines in file occupied by the object)|
+|7      |File Checksum                                              |
+|8      |File modification time ( `⎕TS` format)                     |
 
 
 If an object occupies a file in its entirety, both *Start line* and *Line count* are 0.

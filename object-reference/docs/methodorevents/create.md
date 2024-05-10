@@ -24,10 +24,10 @@ or supplied as the right argument to your callback function, is a 3-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'Create'` or 34 |
-| `[3]` | Flag | 1 = object was created by `⎕WC` 0 = object was created by `)LOAD` , `)COPY` or `⎕OR` |
+|-----|------|------------------------------------------------------------------------------------|
+|`[1]`|Object|ref or character vector                                                             |
+|`[2]`|Event |`'Create'` or 34                                                                    |
+|`[3]`|Flag  |1 = object was created by `⎕WC` 0 = object was created by `)LOAD` , `)COPY` or `⎕OR`|
 
 
 This event also applies to the Session object `⎕SE` and may be used to fire a start-up function (in the `⎕SE` namespace) when APL initialises.

@@ -30,13 +30,4 @@ It is recommended that users test their code using the maximum value.
 For more information, see [Search Functions and Hash Tables](../../../programming-reference-guide/introduction/search-functions-and-hash) and [Hash Array](./hash-array.md).
 
 
-For more information, see 
-Programming Reference Guide: 
-
-Search Functions and Hash Tables and 
-Language Reference Guide: 
-
-Hash Array.
-
-
 

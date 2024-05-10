@@ -14,13 +14,13 @@
 Primitive monadic mixed functions with optional axis.
 
 
-| Function | Name | Range of B |
-| --- | --- | ---  |
-| `⌽ or ⊖` | Reverse | `B∊⍳⍴⍴Y` |
-| `↑` | Mix | `(0≠1|B)^(B>⎕IO-1)^(B<⎕IO+⍴⍴Y)` |
-| `↓` | Split | `B∊⍳⍴⍴Y` |
-| `,` | Ravel | fraction, or zero or more axes of `Y` |
-| `⊂` | Enclose | `(B≡⍳0)∨(^/B∊⍳⍴⍴Y)` |
+|Function|Name|Range of B|
+|---|---|---|
+|`⌽ or ⊖`|Reverse|`B∊⍳⍴⍴Y`|
+|`↑`|Mix|`(0≠1|B)^(B>⎕IO-1)^(B<⎕IO+⍴⍴Y)`|
+|`↓`|Split|`B∊⍳⍴⍴Y`|
+|`,`|Ravel|fraction, or zero or more axes of `Y`|
+|`⊂`|Enclose|`(B≡⍳0)∨(^/B∊⍳⍴⍴Y)`|
 
 
 In most cases, `B` must be an integer which identifies a specific axis of `Y`. However, when  `f` is the Mix function (`↑`),   `B` is a fractional value whose lower and upper integer bounds select an adjacent pair of axes of `Y` or an extreme axis of `Y`.

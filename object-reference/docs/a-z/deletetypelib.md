@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Root](../objects/root.md)
+|-----------|--------------------------|
+|Applies To:|[Root](../objects/root.md)|
 
 
 **Description**
@@ -18,7 +19,8 @@ The DeleteTypeLib method removes a loaded Type Library from the workspace.
 The argument to DeleteTypeLib is as follows:
 
 
-`[1]` TypeLib character vector
+|-----|-------|----------------|
+|`[1]`|TypeLib|character vector|
 
 
 The Type Library may be identified by its name or by its class id.

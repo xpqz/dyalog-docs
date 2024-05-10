@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/form.md) [Children](../childlists/form.md) [Properties](../proplists/form.md) [Methods](../methodlists/form.md) [Events](../eventlists/form.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/form.md)|[Children](../childlists/form.md)|[Properties](../proplists/form.md)|[Methods](../methodlists/form.md)|[Events](../eventlists/form.md)|
 
 
-Purpose: This is a top-level window used to contain other objects (controls).
+|--------|--------------------------------------------------------------------|
+|Purpose:|This is a top-level window used to contain other objects (controls).|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-In this section, the term *sint_vector* is used to refer to a simple integer vector whose items are all in the range `¯128` to `127` i.e. they are type 83.
+In this section, the term *sint_vector* is used to refer to a simple integer vector whose items are all in the range `¯128` to `127` i.e. they are type 83. 
+ For further information see [Data Representation (Monadic)](../system-functions/data-representation-monadic.md).
 
 
 In most cases this I-Beam functionality will be used in conjunction with `220⌶` (Serialise/Deserialise Array). However, it may be possible to pass the raw compressed data to and from other applications.
@@ -29,12 +30,12 @@ In most cases this I-Beam functionality will be used in conjunction with `220⌶
 `X` is specified as follows:
 
 
-| `X[1]` | `X[2]` | Compression Library |
-| --- | --- | ---  |
-| 1 | n/a | LZ4 |
-| 2 | 0 .. 9 | zlib |
-| 3 | 0 .. 9 | gzip |
-| 4 | n/a | LZ4 with frames (compresses arrays >2GB) |
+|------|------|----------------------------------------|
+|`X[1]`|`X[2]`|Compression Library                     |
+|1     |n/a   |LZ4                                     |
+|2     |0 .. 9|zlib                                    |
+|3     |0 .. 9|gzip                                    |
+|4     |n/a   |LZ4 with frames (compresses arrays >2GB)|
 
 
 
@@ -56,11 +57,11 @@ Otherwise, `X` is a scalar or one or two element vector and `Y` must be a *sint_
 The first element of `X` must be one of the following values.
 
 
-| `X[1]` | Compression Library |
-| --- | ---  |
-| `¯1` | LZ4 |
-| `¯2` | zlib |
-| `¯3` | gzip |
+|------|-------------------|
+|`X[1]`|Compression Library|
+|`¯1`  |LZ4                |
+|`¯2`  |zlib               |
+|`¯3`  |gzip               |
 
 
 

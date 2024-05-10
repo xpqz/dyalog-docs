@@ -6,7 +6,8 @@
 
 
 
-Applies To: [TCPSocket](../objects/tcpsocket.md)
+|-----------|------------------------------------|
+|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
 
 
 **Description**
@@ -26,12 +27,12 @@ or supplied as the right argument to your callback function, is a 5-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'TCPRecv'` or 373 |
-| `[3]` | Data | the data received |
-| `[4]` | IP address | character vector |
-| `[5]` | Port number | integer |
+|-----|-----------|-----------------------|
+|`[1]`|Object     |ref or character vector|
+|`[2]`|Event      |`'TCPRecv'` or 373     |
+|`[3]`|Data       |the data received      |
+|`[4]`|IP address |character vector       |
+|`[5]`|Port number|integer                |
 
 
 Elements [4-5] refer to the IP address and port number of the remote process

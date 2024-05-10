@@ -7,16 +7,18 @@
 
 
 
-[Parents](../parentlists/comboex.md) [Children](../childlists/comboex.md) [Properties](../proplists/comboex.md) [Methods](../methodlists/comboex.md) [Events](../eventlists/comboex.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/comboex.md)|[Children](../childlists/comboex.md)|[Properties](../proplists/comboex.md)|[Methods](../methodlists/comboex.md)|[Events](../eventlists/comboex.md)|
 
 
-Purpose: The ComboEx object is an extended version of the Combo object that provides additional features including item images
+|--------|---------------------------------------------------------------------------------------------------------------------|
+|Purpose:|The ComboEx object is an extended version of the Combo object that provides additional features including item images|
 
 
 **Description**
 
 
-The ComboEx object is a ComboBox that supports item images and indenting. It is a superset of the [Combo](combo.md) object and supports all its functionality. For further details, see [Combo](combo.md).
+The ComboEx object is a ComboBox that supports item images and indenting. It is a superset of the [Combo](combo.md) object and supports all its functionality. For further details, see ["Combo"](combo.md).
 
 
 
@@ -42,11 +44,11 @@ There are certain restrictions that apply to a ComboEx object with Style `'Simpl
 - [PathWordBreak](../properties/pathwordbreak.md) does not work.
 
 
-|  | EditImageIndent | EditImageIndent |
-| --- | --- | ---  |
-| EditImage | 0 | 1 |
-| 0 | No images displayed, item text is indented as specified by [Indents](../properties/indents.md) | No images displayed, item text is indented as specified by [Indents](../properties/indents.md) plus the width of the images in ImageList |
-| 1 | No images displayed, item text is indented as specified by [Indents](../properties/indents.md) | Images are displayed, items are indented as specified by [Indents](../properties/indents.md) |
+|&nbsp;|EditImageIndent||
+|---|---|---|
+|EditImage|0|1|
+|0|No images displayed, item text is indented as specified by [Indents](../properties/indents.md)|No images displayed, item text is indented as specified by [Indents](../properties/indents.md) plus the width of the images in ImageList|
+|1|No images displayed, item text is indented as specified by [Indents](../properties/indents.md)|Images are displayed, items are indented as specified by [Indents](../properties/indents.md)|
 
 
 

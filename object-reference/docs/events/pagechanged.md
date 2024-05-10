@@ -7,7 +7,8 @@
 
 
 
-Applies To: [PropertyPage](../objects/propertypage.md)
+|-----------|------------------------------------------|
+|Applies To:|[PropertyPage](../objects/propertypage.md)|
 
 
 **Description**
@@ -25,10 +26,10 @@ The PageChanged event is reported for information only and may not itself be dis
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'PageChanged'` or 356 |
-| `[3]` | Changed value | New value for the [Changed](../properties/changed.md) property (0 or 1). |
+|-----|-------------|------------------------------------------------------------------------|
+|`[1]`|Object       |ref or character vector                                                 |
+|`[2]`|Event        |`'PageChanged'` or 356                                                  |
+|`[3]`|Changed value|New value for the [Changed](../properties/changed.md) property (0 or 1).|
 
 
 

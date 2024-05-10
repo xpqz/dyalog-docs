@@ -4,13 +4,13 @@
 
 During installation, Dyalog establishes the following file associations:
 
-| Type | File Extension | Application |
-| --- | --- | ---  |
-| Shell Scripts | `.apls` | Dyalog script execution engine via Windows Power Shell |
-| Sources | `.aplc, .aplf, .apli, .apln, .aplo, .dyalog` | Dyalog Editor |
-| Configuration | `.dcfg` | Dyalog Editor |
-| SALT apps | `.dyapp` | Dyalog |
-| Workspaces | `.dws` | Dyalog |
+|Type         |File Extension                              |Application                                           |
+|-------------|--------------------------------------------|------------------------------------------------------|
+|Shell Scripts|`.apls`                                     |Dyalog script execution engine via Windows Power Shell|
+|Sources      |`.aplc, .aplf, .apli, .apln, .aplo, .dyalog`|Dyalog Editor                                         |
+|Configuration|`.dcfg`                                     |Dyalog Editor                                         |
+|SALT apps    |`.dyapp`                                    |Dyalog                                                |
+|Workspaces   |`.dws`                                      |Dyalog                                                |
 
 When you double-click on a file with one of the above extensions, the file is opened with the corresponding application.
 

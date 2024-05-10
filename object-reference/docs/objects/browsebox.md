@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/browsebox.md) [Children](../childlists/browsebox.md) [Properties](../proplists/browsebox.md) [Methods](../methodlists/browsebox.md) [Events](../eventlists/browsebox.md)
+|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
+|[Parents](../parentlists/browsebox.md)|[Children](../childlists/browsebox.md)|[Properties](../proplists/browsebox.md)|[Methods](../methodlists/browsebox.md)|[Events](../eventlists/browsebox.md)|
 
 
-Purpose: The BrowseBox object allows the user to browse for and select a folder         or other resource.
+|--------|-------------------------------------------------------------------------------------------------|
+|Purpose:|The BrowseBox object allows the user to browse for and select a folder         or other resource.|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Animation](../objects/animation.md) [ButtonEdit](../objects/buttonedit.md) [ToolControl](../objects/toolcontrol.md)
+|-----------|------------------------------------|--------------------------------------|----------------------------------------|
+|Applies To:|[Animation](../objects/animation.md)|[ButtonEdit](../objects/buttonedit.md)|[ToolControl](../objects/toolcontrol.md)|
 
 
 **Description**

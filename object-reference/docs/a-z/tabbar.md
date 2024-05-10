@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/tabbar.md) [Children](../childlists/tabbar.md) [Properties](../proplists/tabbar.md) [Methods](../methodlists/tabbar.md) [Events](../eventlists/tabbar.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/tabbar.md)|[Children](../childlists/tabbar.md)|[Properties](../proplists/tabbar.md)|[Methods](../methodlists/tabbar.md)|[Events](../eventlists/tabbar.md)|
 
 
-Purpose: To manage a set of [TabBtn](tabbtn.md) objects.
+|--------|-----------------------------------------------|
+|Purpose:|To manage a set of [TabBtn](tabbtn.md) objects.|
 
 
 **Description**

@@ -33,6 +33,13 @@ markdown_extensions:
   - abbr
   - footnotes
   - md_in_html
+  - markdown_tables_extended
+  - image_captions:
+      numbering: true
+  - table_captions:
+      numbering: true
+      caption_top: false
+  - caption
   - toc:
       title: On this page
 
@@ -41,7 +48,7 @@ nav:
   - Symbols:
     - Language Elements: symbols/language-elements.md
     - Brackets: symbols/brackets.md
-    -  Special Symbols: symbols/special-symbols.md
+    - Special Symbols: symbols/special-symbols.md
   - Primitive Functions:
     -  Primitive Functions: primitive-functions/primitive-functions-table.md
     -  Scalar Functions: primitive-functions/scalar-functions.md
@@ -811,4 +818,4 @@ nav:
   - PCRE Specifications:
     -  PCRE Overview: pcre-specifications/pcre-overview.md
     -  PCRE Regular Expression Syntax Summary: pcre-specifications/pcre-regular-expression-syntax-summary.md
-    -  Appendix A - PCRE Regular Expression Details: pcre-specifications/pcre-regular-expression-details.md
+    -  PCRE Regular Expression Details: pcre-specifications/pcre-regular-expression-details.md

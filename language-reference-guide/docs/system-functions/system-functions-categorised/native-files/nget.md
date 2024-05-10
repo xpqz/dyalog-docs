@@ -28,18 +28,18 @@ The optional left-argument `X` is either
 File Encodings
 
 
-| Encoding | Description |
-| --- | ---  |
-| `UTF-8` | The data is encoded as UTF-8 format. |
-| `UTF-16LE` | The data is encoded as UTF-16 little-endian format. |
-| `UTF-16BE` | The data is encoded as UTF-16 big-endian format. |
-| `UTF-16` | The data is encoded as UTF-16 with the endianness of the host system (currently BE on AIX platforms, LE on all others). |
-| `UTF-32LE` | The data is encoded as UTF-32 little-endian format. |
-| `UTF-32BE` | The data is encoded as UTF-32 big-endian format. |
-| `UTF-32` | The data is encoded as UTF-32 with the endianness of the host system (currently BE on AIX platforms, LE on all others). |
-| `ASCII` | The data is encoded as 7-bit ASCII format. |
-| `Windows-1252` | The data is encoded as 8-bit Windows-1252 format. |
-| `ANSI` | ANSI is a synonym of Windows-1252. |
+|Encoding      |Description                                                                                                            |
+|--------------|-----------------------------------------------------------------------------------------------------------------------|
+|`UTF-8`       |The data is encoded as UTF-8 format.                                                                                   |
+|`UTF-16LE`    |The data is encoded as UTF-16 little-endian format.                                                                    |
+|`UTF-16BE`    |The data is encoded as UTF-16 big-endian format.                                                                       |
+|`UTF-16`      |The data is encoded as UTF-16 with the endianness of the host system (currently BE on AIX platforms, LE on all others).|
+|`UTF-32LE`    |The data is encoded as UTF-32 little-endian format.                                                                    |
+|`UTF-32BE`    |The data is encoded as UTF-32 big-endian format.                                                                       |
+|`UTF-32`      |The data is encoded as UTF-32 with the endianness of the host system (currently BE on AIX platforms, LE on all others).|
+|`ASCII`       |The data is encoded as 7-bit ASCII format.                                                                             |
+|`Windows-1252`|The data is encoded as 8-bit Windows-1252 format.                                                                      |
+|`ANSI`        |ANSI is a synonym of Windows-1252.                                                                                     |
 
 
 
@@ -53,10 +53,10 @@ Whether or not `X` is specified, if the start of the file contains a recognised
 The result `R` is a 3-element vector comprising `(content) (encoding) (newline)`  where:
 
 
-| `content` | A simple character vector, or a vector of character vectors, according to the value of `flags` . |
-| --- | ---  |
-| `encoding` | The encoding that was actually used to read the file. If this is a UTF format, it will always include the appropriate endianness (except for UTF-8 to which endianness doesn't apply) and a -BOM or -NOBOM suffix to indicate whether or not a BOM is actually present in the file. For example, UTF-16LE-BOM. If `X` specified a user-defined encoding as a 256-element numeric vector, `encoding` will be that same vector. |
-| `newline` | Determined by the first occurrence in the file of one of the newline characters identified in the line separator table, or `⍬` if no such line separator is found. |
+|---|---|
+|`content`|A simple character vector, or a vector of character vectors, according to the value of `flags` .|
+|`encoding`|The encoding that was actually used to read the file. If this is a UTF format, it will always include the appropriate endianness (except for UTF-8 to which endianness doesn't apply) and a -BOM or -NOBOM suffix to indicate whether or not a BOM is actually present in the file. For example, UTF-16LE-BOM. If `X` specified a user-defined encoding as a 256-element numeric vector, `encoding` will be that same vector.|
+|`newline`|Determined by the first occurrence in the file of one of the newline characters identified in the line separator table, or `⍬` if no such line separator is found.|
 
 
 
@@ -73,18 +73,18 @@ The 3rd element of the result `newline` is a numeric vector from the *Value* col
 Line separators:
 
 
-| Value | Code | Description |
-| --- | --- | ---  |
-| newline characters | newline characters | newline characters |
-| 13 | `CR` | Carriage Return (U+000D) |
-| 10 | `LF` | Line Feed (U+000A) |
-| 13 10 | `CRLF` | Carriage Return followed by Line Feed |
-| 133 | `NEL` | New Line (U+0085) |
-| other line separator characters | other line separator characters | other line separator characters |
-| 11 | `VT` | Vertical Tab (U+000B) |
-| 12 | `FF` | Form Feed (U+000C) |
-| 8232 | `LS` | Line Separator (U+2028) |
-| 8233 | `PS` | Paragraph Separator (U+2029) |
+|Value                          |Code  |Description                          |
+|-------------------------------|------|-------------------------------------|
+|newline characters                                                        |||
+|13                             |`CR`  |Carriage Return (U+000D)             |
+|10                             |`LF`  |Line Feed (U+000A)                   |
+|13 10                          |`CRLF`|Carriage Return followed by Line Feed|
+|133                            |`NEL` |New Line (U+0085)                    |
+|other line separator characters                                           |||
+|11                             |`VT`  |Vertical Tab (U+000B)                |
+|12                             |`FF`  |Form Feed (U+000C)                   |
+|8232                           |`LS`  |Line Separator (U+2028)              |
+|8233                           |`PS`  |Paragraph Separator (U+2029)         |
 
 
 

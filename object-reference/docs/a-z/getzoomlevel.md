@@ -6,7 +6,8 @@
 
 
 
-Applies To: [HTMLRenderer](../objects/htmlrenderer.md)
+|-----------|------------------------------------------|
+|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
 
 
 **Description**

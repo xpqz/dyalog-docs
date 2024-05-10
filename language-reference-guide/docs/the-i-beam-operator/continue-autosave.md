@@ -13,10 +13,10 @@ This function enables or disables the automatic saving of a `CONTINUE` workspace
 `Y` is an integer defined as follows:
 
 
-| Value | Description |
-| --- | ---  |
-| 0 | Disable the automatic saving of a `CONTINUE` workspace. |
-| 1 | Enable the automatic saving of a `CONTINUE` workspace. This setting applies only to the current session or until disabled by `2704⌶0` . |
+|Value|Description                                                                                                                            |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------|
+|0    |Disable the automatic saving of a `CONTINUE` workspace.                                                                                |
+|1    |Enable the automatic saving of a `CONTINUE` workspace. This setting applies only to the current session or until disabled by `2704⌶0` .|
 
 
 

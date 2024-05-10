@@ -21,16 +21,16 @@ or supplied as the right argument to your callback function, is a 9-element
 vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'MouseWheel'` or 8 |
-| `[3]` | Y | y-position of mouse (number) |
-| `[4]` | X | x-position of mouse (number) |
-| `[5]` | Button | button pressed 1 = left button 2 = right button 4 = middle button |
-| `[6]` | Shift State | sum of shift key codes (number) 1 = Shift key is down 2 = Ctrl key is down |
-| `[7]` | Delta | integer |
-| `[8]` | Lines | integer |
-| `[9]` | Wheel Delta | integer |
+|-----|-----------|--------------------------------------------------------------------------|
+|`[1]`|Object     |ref or character vector                                                   |
+|`[2]`|Event      |`'MouseWheel'` or 8                                                       |
+|`[3]`|Y          |y-position of mouse (number)                                              |
+|`[4]`|X          |x-position of mouse (number)                                              |
+|`[5]`|Button     |button pressed 1 = left button 2 = right button 4 = middle button         |
+|`[6]`|Shift State|sum of shift key codes (number) 1 = Shift key is down 2 = Ctrl key is down|
+|`[7]`|Delta      |integer                                                                   |
+|`[8]`|Lines      |integer                                                                   |
+|`[9]`|Wheel Delta|integer                                                                   |
 
 
 The value of *Delta* indicates the distance that the wheel is rotated,

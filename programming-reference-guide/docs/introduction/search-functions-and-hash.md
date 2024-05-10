@@ -4,14 +4,14 @@ Primitive dyadic *search* functions, such as `⍳` (index of) and `∊` (members
 
 In the case of `⍳`, the principal argument is the one on the left and in the case of `∊`, it is the one on the right. The following table shows the principal (P) and subject (s) arguments for each of the functions.
 
-| `P ⍳ s` | Index of |
-| --- | ---  |
-| `s ∊ P` | Membership |
-| `s ∩ P` | Intersection |
-| `P ∪ s` | Union |
-| `s ~ P` | Without |
-| `P {(↓⍺)⍳↓⍵} s` | Matrix Iota (idiom) |
-| `P∘⍋ and P∘⍒` | Grade |
+|---------------|-------------------|
+|`P ⍳ s`        |Index of           |
+|`s ∊ P`        |Membership         |
+|`s ∩ P`        |Intersection       |
+|`P ∪ s`        |Union              |
+|`s ~ P`        |Without            |
+|`P {(↓⍺)⍳↓⍵} s`|Matrix Iota (idiom)|
+|`P∘⍋ and P∘⍒`  |Grade              |
 
 The Dyalog APL implementation of these functions already uses a technique known as *hashing* to improve performance over a simple linear search. (Note that `⍷` (find) does not employ the same hashing technique, and is excluded from this discussion.)
 

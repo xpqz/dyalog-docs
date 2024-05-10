@@ -10,7 +10,7 @@
 `⎕FCHK` validates and repairs component files, and validates files associated with external variables, following an abnormal termination of the APL process or operating system.
 
 
-`Y` must be a simple character scalar or vector which specifies the name of the file to be exclusively checked or repaired. For component files, the file must be named in accordance with the operating system's conventions, and may be a relative or absolute pathname. The file must exist and must not be tied. If no file extension is supplied, the set of extensions specified by the  **CFEXT** parameter are tried one after another until the file is found or the set of extensions is exhausted. See CFEXT Parameter[ CFEXT](../../../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters).
+`Y` must be a simple character scalar or vector which specifies the name of the file to be exclusively checked or repaired. For component files, the file must be named in accordance with the operating system's conventions, and may be a relative or absolute pathname. The file must exist and must not be tied. If no file extension is supplied, the set of extensions specified by the  **CFEXT** parameter are tried one after another until the file is found or the set of extensions is exhausted. See [ CFEXT](../../../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters).
 
 
 
@@ -32,10 +32,10 @@ In either case, the default behaviour is as follows:
 The result `R` is a vector of the numbers of missing or damaged components. `R` may include non-positive numbers of "pseudo components" that indicate damage to parts of the file other than in specific components:
 
 
-| `0` | ACCESS MATRIX. |
-| --- | ---  |
-| `¯1` | Free-block tree. |
-| `¯2` | Component index tree. |
+|----|---------------------|
+|`0` |ACCESS MATRIX.       |
+|`¯1`|Free-block tree.     |
+|`¯2`|Component index tree.|
 
 
 Other negative numbers represent damage to the file metadata; this set may be extended in the future.
@@ -59,27 +59,27 @@ Using Variant, the options are as follows:
 ##### Task
 
 
-| Scan | causes the file to be checked and optionally repaired (see `'Repair'` below) |
-| --- | ---  |
-| `Rebuild` | causes the file to be unconditionally rebuilt |
+|---------|----------------------------------------------------------------------------|
+|Scan     |causes the file to be checked and optionally repaired (see `'Repair'` below)|
+|`Rebuild`|causes the file to be unconditionally rebuilt                               |
 
 
 
 ##### Repair (principle option)
 
 
-| 0 | do not repair |
-| --- | ---  |
-| `1` | causes the file to be repaired if damage is found |
+|---|-------------------------------------------------|
+|0  |do not repair                                    |
+|`1`|causes the file to be repaired if damage is found|
 
 
 
 ##### Force
 
 
-| 0 | do not validate the file if it appears to have been properly closed |
-| --- | ---  |
-| `1` | validate the file even if it appears to have been properly closed |
+|---|-------------------------------------------------------------------|
+|0  |do not validate the file if it appears to have been properly closed|
+|`1`|validate the file even if it appears to have been properly closed  |
 
 
 Default values are highlighted thus in the above tables.
@@ -125,7 +125,7 @@ Following a *repair* of the file, the result indicates those components that cou
 
 
 
-Repair can recover only check-summed components from the file, i.e. only those components that were written with the checksum option enabled (see [File Properties:](fprops.md)).
+Repair can recover only check-summed components from the file, i.e. only those components that were written with the checksum option enabled (see ["File Properties: "](fprops.md)).
 
 
 Following an operating system crash, repair may result in one or more individual components being rolled back to a previous version or not recovered at all, unless Journaling levels 2 or 3 were also set when these components were written.

@@ -23,10 +23,10 @@ If `X` is omitted, `R` is a 4-element vector or a 4 column matrix with the same 
 `R[1]` or `R[;1]`: Each item is a 3-element integer vector representing the function header syntax:
 
 
-| 1 | Function result | 0 if the function has no result 1 if the function has an explicit result `¯1` if the function has a shy result |
-| --- | --- | ---  |
-| 2 | Function valence | 0 if the object is a niladic function or not a function 1 if the object is a monadic function 2 if the object is a dyadic function `¯2` if the object is an ambivalent 				function |
-| 3 | Operator valence | 0 if the object is not an operator 1 if the object is a monadic operator 2 if the object is a dyadic operator |
+|---|---|---|
+|1|Function result|0 if the function has no result 1 if the function has an explicit result `¯1` if the function has a shy result|
+|2|Function valence|0 if the object is a niladic function or not a function 1 if the object is a monadic function 2 if the object is a dyadic function `¯2` if the object is an ambivalent 				function|
+|3|Operator valence|0 if the object is not an operator 1 if the object is a monadic operator 2 if the object is a dyadic operator|
 
 
 
@@ -50,11 +50,11 @@ The following values correspond to the syntax shown alongside:
 `R[3]` or `R[;3]`: Each item is an integer reporting the current `⎕LOCK` state of the function:
 
 
-| `0` | Not locked |
-| --- | ---  |
-| `1` | Cannot display function |
-| `2` | Cannot suspend function |
-| `3` | Cannot display or suspend |
+|---|-------------------------|
+|`0`|Not locked               |
+|`1`|Cannot display function  |
+|`2`|Cannot suspend function  |
+|`3`|Cannot display or suspend|
 
 
 
@@ -114,10 +114,10 @@ The number of elements or columns in `R` and their meaning depends upon the valu
 If `X` is 1, `R` specifies *valences* and contains 3 elements (or columns) whose meaning is as follows:
 
 
-| 1 | Explicit result | 1 if the object has an explicit result or is a variable 0 otherwise |
-| --- | --- | ---  |
-| 2 | Function valence | 0 if the object is a niladic function or not a function 1 if the object is a monadic function 2 if the object is an ambivalent function |
-| 3 | Operator valence | 0 if the object is not an operator 1 if the object is a monadic operator 2 if the object is a dyadic operator |
+|---|----------------|---------------------------------------------------------------------------------------------------------------------------------------|
+|1  |Explicit result |1 if the object has an explicit result or is a variable 0 otherwise                                                                    |
+|2  |Function valence|0 if the object is a niladic function or not a function 1 if the object is a monadic function 2 if the object is an ambivalent function|
+|3  |Operator valence|0 if the object is not an operator 1 if the object is a monadic operator 2 if the object is a dyadic operator                          |
 
 
 
@@ -125,14 +125,14 @@ If `X` is 1, `R` specifies *valences* and contains 3 elements (or columns) whose
 If `X` is 2, `R` specifies *fix times* (the time the object was last updated) for functions and operators named in `Y`. The time is reported as 7 integer elements (or columns) whose meaning is as follows. The fix time reported for names in `Y` which are not defined functions or operators is 0.
 
 
-| 1 | Year |
-| --- | ---  |
-| 2 | Month |
-| 3 | Day |
-| 4 | Hour |
-| 5 | Minute |
-| 6 | Second |
-| 7 | Milliseconds (this is always reported as 0) |
+|---|-------------------------------------------|
+|1  |Year                                       |
+|2  |Month                                      |
+|3  |Day                                        |
+|4  |Hour                                       |
+|5  |Minute                                     |
+|6  |Second                                     |
+|7  |Milliseconds (this is always reported as 0)|
 
 
 
@@ -140,11 +140,11 @@ If `X` is 2, `R` specifies *fix times* (the time the object was last updated) fo
 If `X` is 3, `R` specifies *execution properties* and contains 4 elements (or columns) whose meaning is as follows:
 
 
-| 1 | Displayable | 0 if the object is displayable 1 if the object is not displayable |
-| --- | --- | ---  |
-| 2 | Suspendable | 0 if execution will suspend in the object 1 if execution will not suspend in the object |
-| 3 | Weak Interrupt behaviour | 0 if the object responds to interrupt 1 if the object ignores interrupt |
-| 4 |  | (always 0) |
+|---|------------------------|---------------------------------------------------------------------------------------|
+|1  |Displayable             |0 if the object is displayable 1 if the object is not displayable                      |
+|2  |Suspendable             |0 if execution will suspend in the object 1 if execution will not suspend in the object|
+|3  |Weak Interrupt behaviour|0 if the object responds to interrupt 1 if the object ignores interrupt                |
+|4  |&nbsp;                  |(always 0)                                                                             |
 
 
 

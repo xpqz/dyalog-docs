@@ -23,11 +23,11 @@ For [Button](../objects/button.md), [Form](../objects/form.md), [Group](../objec
 When it refers to a [Metafile](../objects/metafile.md), the Picture property specifies the name of, or ref to, the [Metafile](../objects/metafile.md) to be drawn in the object. When it refers to a [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md), the value of the Picture property is a 2-element vector whose elements specify the name of, or ref to, the [Bitmap](../objects/bitmap.md), or [Icon](../objects/icon.md), and the manner in which it is displayed. This is specified as an integer as follows:
 
 
-| 0 | The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is drawn in        the top left corner of the object. |
-| --- | ---  |
-| 1 | The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is tiled (replicated) to fill the object. |
-| 2 | The [Bitmap](../objects/bitmap.md) is scaled (up or down) to fit exactly in the object. This setting does not apply to an [Icon](../objects/icon.md) whose size is fixed. |
-| 3 | The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is drawn in the centre of the object. This is the default. Note that the centre of the [Bitmap](../objects/bitmap.md) is positioned over the centre of the object, so that you see the middle portion of a [Bitmap](../objects/bitmap.md) that is larger than the object in which it is displayed. |
+|---|---|
+|0|The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is drawn in        the top left corner of the object.|
+|1|The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is tiled (replicated) to fill the object.|
+|2|The [Bitmap](../objects/bitmap.md) is scaled (up or down) to fit exactly in the object. This setting does not apply to an [Icon](../objects/icon.md) whose size is fixed.|
+|3|The [Bitmap](../objects/bitmap.md) or [Icon](../objects/icon.md) is drawn in the centre of the object. This is the default. Note that the centre of the [Bitmap](../objects/bitmap.md) is positioned over the centre of the object, so that you see the middle portion of a [Bitmap](../objects/bitmap.md) that is larger than the object in which it is displayed.|
 
 
 

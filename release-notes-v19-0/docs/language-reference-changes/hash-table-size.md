@@ -30,13 +30,4 @@ It is recommended that users test their code using the maximum value 3.
 For more information, see [Search Functions and Hash Tables](../../../programming-reference-guide/introduction/search-functions-and-hash) and [Hash Array](../../../language-reference-guide/the-i-beam-operator/hash-array).
 
 
-For more information, see 
-Programming Reference Guide: 
-
-Search Functions and Hash Tables and 
-Language Reference Guide: 
-
-Hash Array.
-
-
 

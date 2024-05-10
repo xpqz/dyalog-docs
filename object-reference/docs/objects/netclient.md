@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/netclient.md) [Children](../childlists/netclient.md)
+|--------------------------------------|--------------------------------------|
+|[Parents](../parentlists/netclient.md)|[Children](../childlists/netclient.md)|
 
 
-Purpose: The NetClient object represents an instance of a Microsoft .NET class.
+|--------|----------------------------------------------------------------------|
+|Purpose:|The NetClient object represents an instance of a Microsoft .NET class.|
 
 
 **Description**

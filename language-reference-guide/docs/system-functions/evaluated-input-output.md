@@ -10,7 +10,7 @@
 `⎕` is a variable which communicates between the user's terminal and APL.  Its behaviour depends on whether it is being assigned or referenced.
 
 
-When `⎕` is assigned an array, the array is displayed at the terminal in exactly the same form as is direct output (see [Programmer's Guide: "Display of Arrays](../../../programming-reference-guide/introduction/arrays/display-of-arrays)).
+When `⎕` is assigned an array, the array is displayed at the terminal in exactly the same form as is direct output (see [Programmer's Guide: "Display of Arrays"](../../../programming-reference-guide/introduction/arrays/display-of-arrays)).
 
 
 

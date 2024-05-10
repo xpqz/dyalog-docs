@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/timer.md) [Properties](../proplists/timer.md) [Methods](../methodlists/timer.md) [Events](../eventlists/timer.md)
+|----------------------------------|-----------------------------------|----------------------------------|--------------------------------|
+|[Parents](../parentlists/timer.md)|[Properties](../proplists/timer.md)|[Methods](../methodlists/timer.md)|[Events](../eventlists/timer.md)|
 
 
-Purpose: To generate an action at regular intervals.
+|--------|-------------------------------------------|
+|Purpose:|To generate an action at regular intervals.|
 
 
 **Description**

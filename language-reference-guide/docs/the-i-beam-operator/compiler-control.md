@@ -16,14 +16,14 @@ Compiler User Guide
 The optional left-argument `X` must be one of the following:
 
 
-| `X` | Description |
-| --- | ---  |
-| `0` | Set automatic compilation options (default) |
-| `1` | Determine whether the function/operator `Y` has been successfully compiled |
-| `2` | Compile the function/operator `Y` |
-| `3` | Discard compiled form of the function/operator `Y` |
-| `4` | Show bytecode for the compiled function/operator `Y` |
-| `nsref` | Compile the function/operator `Y` using user-defined callbacks in this namespace to provide information about global names |
+|`X`    |Description                                                                                                               |
+|-------|--------------------------------------------------------------------------------------------------------------------------|
+|`0`    |Set automatic compilation options (default)                                                                               |
+|`1`    |Determine whether the function/operator `Y` has been successfully compiled                                                |
+|`2`    |Compile the function/operator `Y`                                                                                         |
+|`3`    |Discard compiled form of the function/operator `Y`                                                                        |
+|`4`    |Show bytecode for the compiled function/operator `Y`                                                                      |
+|`nsref`|Compile the function/operator `Y` using user-defined callbacks in this namespace to provide information about global names|
 
 
 
@@ -36,12 +36,12 @@ The nature of `Y` and `R` depend on the value of `X` as follows:
 `Y` must be an integer 0, 1, 2, or 3.
 
 
-| `Y` | Description |
-| --- | ---  |
-| `0` | disable automatic compilation (initial setting) |
-| `1` | compile functions when they are fixed (with `⎕FX` or from the function editor) |
-| `2` | compile operators the first time they are executed |
-| `3` | compile functions when they are fixed (with `⎕FX` or from the function editor) and compile operators the first time they are executed |
+|`Y`|Description                                                                                                                          |
+|---|-------------------------------------------------------------------------------------------------------------------------------------|
+|`0`|disable automatic compilation (initial setting)                                                                                      |
+|`1`|compile functions when they are fixed (with `⎕FX` or from the function editor)                                                       |
+|`2`|compile operators the first time they are executed                                                                                   |
+|`3`|compile functions when they are fixed (with `⎕FX` or from the function editor) and compile operators the first time they are executed|
 
 
 
@@ -103,11 +103,11 @@ The result `R` is a multi-line string (that is, a character vector with embedded
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names. The specified functions or operators are compiled in the same way as when `X` = 2  except that the compiler uses the user-defined callback functions in the namespace `X` to obtain information about global names. The namespace `X` can contain any or all of following callback functions:
 
 
-| Callback | Description |
-| --- | ---  |
-| `quadNC` | analogous to the system function `⎕NC` . When applied monadically to an enclosed character vector it should return the detailed name class of that name. For example, given the name of a global dfn it should return the value 3.2. |
-| `quadAT` | analogous to the system function `⎕AT` . When applied monadically to an enclosed character vector it should return a 1 by 4 matrix whose first item is a vector of 3 integers describing (respectively) the result, function valence and operator valence of the name. |
-| `getValue` | used to obtain the value of global constants. When applied monadically to a character vector that is a global constant it should return the enclose of the constant value, otherwise it returns `⍬` . |
+|Callback|Description|
+|---|---|
+|`quadNC`|analogous to the system function `⎕NC` . When applied monadically to an enclosed character vector it should return the detailed name class of that name. For example, given the name of a global dfn it should return the value 3.2.|
+|`quadAT`|analogous to the system function `⎕AT` . When applied monadically to an enclosed character vector it should return a 1 by 4 matrix whose first item is a vector of 3 integers describing (respectively) the result, function valence and operator valence of the name.|
+|`getValue`|used to obtain the value of global constants. When applied monadically to a character vector that is a global constant it should return the enclose of the constant value, otherwise it returns `⍬` .|
 
 
 Each of these callback functions returns information about names that should be guaranteed to exist when the compiled functions are executed. The compiler assumes that the information returned by the callbacks is correct, and generates bytecode accordingly. In the case of `quadNC` and `quadAT`, if the information returned by the callbacks turns out not to be correct when the compiled function is executed, then a runtime error is generated.

@@ -17,7 +17,7 @@ The value of `⎕DCT` determines the precision with which two numbers are judged
 `⎕CT` and `⎕DCT` are implicit arguments of the monadic primitive functions Ceiling (`⌈`), Floor (`⌊`) and Unique (`∪`), and of the dyadic functions Equal (`=`), Excluding (`~`), Find (`⍷`), Greater (`>`), Greater or Equal (`≥`), Greatest Common Divisor (`∨`), Index of (`⍳`), Intersection (`∩`), Less (`<`), Less or Equal (`≤`), Lowest Common Multiple (`∧`), Match (`≡`), Membership (`∊`), Not Match (`≢`), Not Equal (`≠`), Residue (`|`) and Union (`∪`), as well as `⎕FMT` O-format.
 
 
-For further information, see [Comparison Tolerance:](ct.md).
+For further information, see ["Comparison Tolerance: "](ct.md).
 
 
 

@@ -139,32 +139,32 @@ DOMAIN ERROR: There were errors processing the script
 #### Quiet Option
 
 
-| 0 | If the script contains errors, these are displayed in the Status Window. |
-| --- | ---  |
-| `1` | If the script contains errors, the errors are not shown  in the Status Window. |
+|---|------------------------------------------------------------------------------|
+|0  |If the script contains errors, these are displayed in the Status Window.      |
+|`1`|If the script contains errors, the errors are not shown  in the Status Window.|
 
 #### FixWithErrors Option
 
 
-| 0 | If the script contains errors, `⎕FIX` fails with `DOMAIN ERROR` . |
-| --- | ---  |
-| `1` | `⎕FIX` fixes all the namespaces and classes in the script regardless of any errors they may contain. |
-| `2` | If the script contains errors, `⎕FIX` displays a message box prompting the user to choose whether or not to fix all the offending namespaces and classes in the script. |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0  |If the script contains errors, `⎕FIX` fails with `DOMAIN ERROR` .                                                                                                      |
+|`1`|`⎕FIX` fixes all the namespaces and classes in the script regardless of any errors they may contain.                                                                   |
+|`2`|If the script contains errors, `⎕FIX` displays a message box prompting the user to choose whether or not to fix all the offending namespaces and classes in the script.|
 
 #### AllowLateBinding Option
 
 
-| 0 | `⎕FIX` will only fix a Class whose Base class (if specified) is defined in the script or is present in the workspace. |
-| --- | ---  |
-| `1` | `⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace. |
+|---|---------------------------------------------------------------------------------------------------------------------|
+|0  |`⎕FIX` will only fix a Class whose Base class (if specified) is defined in the script or is present in the workspace.|
+|`1`|`⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace.            |
 
 #### InjectReferences Option
 
 
-| `'All'` | In order to implement lexical scope, `⎕FIX` will insert internal references into all objects in the script. |
-| --- | ---  |
-| 'InClasses' | In order to implement lexical scope, `⎕FIX` will insert internal references ONLY into Classes and sub-classes in the script, but not into namespaces. |
-| `'None'` | No internal references are inserted and lexical scope does not apply. |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|`'All'`    |In order to implement lexical scope, `⎕FIX` will insert internal references into all objects in the script.                                          |
+|'InClasses'|In order to implement lexical scope, `⎕FIX` will insert internal references ONLY into Classes and sub-classes in the script, but not into namespaces.|
+|`'None'`   |No internal references are inserted and lexical scope does not apply.                                                                                |
 
 
 See [Lexical Scope in Scripts](../../../release-notes-v19-0/introduction/lexical-scope-in-scripts).
@@ -246,69 +246,69 @@ The following tables show which objects in Namespace `Pete` can *see* (i.e. refe
 
 
 
-| 'All' | Pete | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Pete |  | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Andy |  |  | ✔ | ✔ |  |  |
-| Aisha | ✔ | ✔ | ✔ |  |  |  |
-| Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
-| Woody |  |  |  |  |  | ✔ |
-| George |  |  |  |  | ✔ |  |
+|'All'    |Pete  |Andy  |Aisha |Katherine|Woody |George|
+|---------|------|------|------|---------|------|------|
+|Pete     |&nbsp;|✔     |✔     |✔        |✔     |✔     |
+|Andy     |&nbsp;|&nbsp;|✔     |✔        |&nbsp;|&nbsp;|
+|Aisha    |✔     |✔     |✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Katherine|✔     |✔     |&nbsp;|✔        |✔     |✔     |
+|Woody    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|✔     |
+|George   |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |✔     |&nbsp;|
 
 
-| 'InClasses' | Pete | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Pete |  | ✔ |  | ✔ |  |  |
-| Andy |  |  | ✔ |  |  |  |
-| Aisha | ✔ | ✔ | ✔ |  |  |  |
-| Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
-| Woody |  |  |  |  |  |  |
-| George |  |  |  |  |  |  |
+|'InClasses'|Pete  |Andy  |Aisha |Katherine|Woody |George|
+|-----------|------|------|------|---------|------|------|
+|Pete       |&nbsp;|✔     |&nbsp;|✔        |&nbsp;|&nbsp;|
+|Andy       |&nbsp;|&nbsp;|✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Aisha      |✔     |✔     |✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Katherine  |✔     |✔     |&nbsp;|✔        |✔     |✔     |
+|Woody      |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|George     |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
 
 
 
-| 'None' | Pete | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Pete |  | ✔ |  | ✔ |  |  |
-| Andy |  |  | ✔ |  |  |  |
-| Aisha |  |  |  |  |  |  |
-| Katherine |  |  |  |  |  |  |
-| Woody |  |  |  |  |  |  |
-| George |  |  |  |  |  |  |
+|'None'   |Pete  |Andy  |Aisha |Katherine|Woody |George|
+|---------|------|------|------|---------|------|------|
+|Pete     |&nbsp;|✔     |&nbsp;|✔        |&nbsp;|&nbsp;|
+|Andy     |&nbsp;|&nbsp;|✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Aisha    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|Katherine|&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|Woody    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|George   |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
 
 
 
 Whilst the next set of tables show the same for Class `Jill`.
 
 
-| 'All' | Jill | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Jill | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Andy |  |  | ✔ | ✔ |  |  |
-| Aisha | ✔ | ✔ | ✔ |  |  |  |
-| Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
-| Woody |  |  |  |  |  | ✔ |
-| George |  |  |  |  | ✔ |  |
+|'All'    |Jill  |Andy  |Aisha |Katherine|Woody |George|
+|---------|------|------|------|---------|------|------|
+|Jill     |✔     |✔     |✔     |✔        |✔     |✔     |
+|Andy     |&nbsp;|&nbsp;|✔     |✔        |&nbsp;|&nbsp;|
+|Aisha    |✔     |✔     |✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Katherine|✔     |✔     |&nbsp;|✔        |✔     |✔     |
+|Woody    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|✔     |
+|George   |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |✔     |&nbsp;|
 
 
 
-| 'InClasses' | Jill | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Jill | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Andy |  |  | ✔ |  |  |  |
-| Aisha | ✔ | ✔ | ✔ |  |  |  |
-| Katherine | ✔ | ✔ |  | ✔ | ✔ | ✔ |
-| Woody |  |  |  |  |  |  |
-| George |  |  |  |  |  |  |
+|'InClasses'|Jill  |Andy  |Aisha |Katherine|Woody |George|
+|-----------|------|------|------|---------|------|------|
+|Jill       |✔     |✔     |✔     |✔        |✔     |✔     |
+|Andy       |&nbsp;|&nbsp;|✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Aisha      |✔     |✔     |✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Katherine  |✔     |✔     |&nbsp;|✔        |✔     |✔     |
+|Woody      |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|George     |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
 
 
-| 'None' | Jill | Andy | Aisha | Katherine | Woody | George |
-| --- | --- | --- | --- | --- | --- | ---  |
-| Jill |  |  |  |  |  |  |
-| Andy |  |  | ✔ |  |  |  |
-| Aisha |  |  |  |  |  |  |
-| Katherine |  |  |  |  |  |  |
-| Woody |  |  |  |  |  |  |
-| George |  |  |  |  |  |  |
+|'None'   |Jill  |Andy  |Aisha |Katherine|Woody |George|
+|---------|------|------|------|---------|------|------|
+|Jill     |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|Andy     |&nbsp;|&nbsp;|✔     |&nbsp;   |&nbsp;|&nbsp;|
+|Aisha    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|Katherine|&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|Woody    |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
+|George   |&nbsp;|&nbsp;|&nbsp;|&nbsp;   |&nbsp;|&nbsp;|
 
 

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Root](../objects/root.md)
+|-----------|--------------------------|
+|Applies To:|[Root](../objects/root.md)|
 
 
 **Description**
@@ -19,11 +20,11 @@ This event is generated in an APL service whenever the Windows Service Control M
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'ServiceNotification'` or 94 |
-| `[3]` | Action | Integer. |
-| `[4]` | State | 7-element integer vector |
+|-----|------|-----------------------------|
+|`[1]`|Object|ref or character vector      |
+|`[2]`|Event |`'ServiceNotification'` or 94|
+|`[3]`|Action|Integer.                     |
+|`[4]`|State |7-element integer vector     |
 
 
 For further details, see the on-line documentation for `SERVICE_STATE` and the function `HashDefine` in the sample workspace `aplservice`.

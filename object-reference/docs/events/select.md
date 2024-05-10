@@ -33,9 +33,9 @@ For all other objects, this event is generated when the user presses the keys as
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | Event code |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |Event code             |
 
 
 

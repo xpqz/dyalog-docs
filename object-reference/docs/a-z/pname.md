@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Font](../objects/font.md) [Printer](../objects/printer.md)
+|-----------|--------------------------|--------------------------------|
+|Applies To:|[Font](../objects/font.md)|[Printer](../objects/printer.md)|
 
 
 **Description**

@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -21,16 +22,16 @@ You may disable the drag/drop facility entirely by setting the action code of th
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'GridDropSel'` or 195 |
-| `[3]` | Start | 2-element integer vector containing the row, column address of the top left cell in the selected block |
-| `[4]` | Size | 2-element integer vector containing  the number of rows and columns in the selected block |
-| `[5]` | Target | 2-element integer vector containing the row/column address of the top left cell onto which the selected block is being dropped |
-| `[6]` | Shift State | sum of shift key codes (number) 1 = Shift key        is down 2 = Ctrl key is down |
-| `[7]` | Undo flag | 0 or 1 |
-| `[8]` | Values | Matrix containing the values of the selected block of cells. This is the data that will replace the values in the target cells. |
-| `[9]` | CellSet flags | Boolean Matrix containing the values of the [CellSet](../properties/cellset.md) property for the selected block of cells. This will replace the values of the [CellSet](../properties/cellset.md) property of the target cells. |
+|---|---|---|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event|`'GridDropSel'` or 195|
+|`[3]`|Start|2-element integer vector containing the row, column address of the top left cell in the selected block|
+|`[4]`|Size|2-element integer vector containing  the number of rows and columns in the selected block|
+|`[5]`|Target|2-element integer vector containing the row/column address of the top left cell onto which the selected block is being dropped|
+|`[6]`|Shift State|sum of shift key codes (number) 1 = Shift key        is down 2 = Ctrl key is down|
+|`[7]`|Undo flag|0 or 1|
+|`[8]`|Values|Matrix containing the values of the selected block of cells. This is the data that will replace the values in the target cells.|
+|`[9]`|CellSet flags|Boolean Matrix containing the values of the [CellSet](../properties/cellset.md) property for the selected block of cells. This will replace the values of the [CellSet](../properties/cellset.md) property of the target cells.|
 
 
 The shift state in element 6 is intended to allow the APL programmer to implement an  *insert* operation instead of a *copy*  or *move* operation if required.

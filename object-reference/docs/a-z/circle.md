@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/circle.md) [Children](../childlists/circle.md) [Properties](../proplists/circle.md) [Methods](../methodlists/circle.md) [Events](../eventlists/circle.md)
+|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
+|[Parents](../parentlists/circle.md)|[Children](../childlists/circle.md)|[Properties](../proplists/circle.md)|[Methods](../methodlists/circle.md)|[Events](../eventlists/circle.md)|
 
 
-Purpose: A Graphical object to draw circles, arcs, and pie-slices.
+|--------|---------------------------------------------------------|
+|Purpose:|A Graphical object to draw circles, arcs, and pie-slices.|
 
 
 **Description**
@@ -29,10 +31,10 @@ The [Start](../properties/start.md) and/or [End](../properties/end.md) propertie
 #### ArcMode Effect
 
 
-| 0 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . |
-| --- | ---  |
-| 1 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . In addition, a single straight line is drawn from one end of the arc to the other, resulting in a segment. |
-| 2 | An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . In addition, two lines are drawn from each end of the arc to the centre, resulting in a pie-slice |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0  |An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .                                                                                                           |
+|1  |An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . In addition, a single straight line is drawn from one end of the arc to the other, resulting in a segment.|
+|2  |An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) . In addition, two lines are drawn from each end of the arc to the centre, resulting in a pie-slice         |
 
 
 .

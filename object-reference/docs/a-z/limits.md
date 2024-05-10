@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ProgressBar](../objects/progressbar.md) [Scroll](../objects/scroll.md) [Spinner](../objects/spinner.md) [TrackBar](../objects/trackbar.md) [UpDown](../objects/updown.md)
+|-----------|----------------------------------------|------------------------------|--------------------------------|----------------------------------|------------------------------|
+|Applies To:|[ProgressBar](../objects/progressbar.md)|[Scroll](../objects/scroll.md)|[Spinner](../objects/spinner.md)|[TrackBar](../objects/trackbar.md)|[UpDown](../objects/updown.md)|
 
 
 **Description**

@@ -6,10 +6,10 @@ For example, cases of Simple Indexing (where the indexer is a set of semicolon-s
 
 The *token* is `simple indexing`, there are no *lfn* or *rfn*, the left argument is the indexed array, and the right argument is as representative of the indices as possible. Dyalog has chosen to make it appear as an array, the rank of which is the number of specified subscripts, and the shape of which is the number of items in these subscripts.
 
-| APL  expression | token | lfn | rfn | ltype | rtype | lrank | rrank | lbound | rbound |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | ---  |
-| `'abcd'[3 3⍴3]` | `simple indexing` |  |  | unicode8 | int8 | 1 | 1 | 2<4 | 5<9 |
-| `(2 2⍴4)[1;]` | `simple indexing` |  |  | int8 | int8 | 2 | 1 | 2<4 | 1<1 |
+|APL  expression|token            |lfn   |rfn   |ltype   |rtype|lrank|rrank|lbound|rbound|
+|---------------|-----------------|------|------|--------|-----|-----|-----|------|------|
+|`'abcd'[3 3⍴3]`|`simple indexing`|&nbsp;|&nbsp;|unicode8|int8 |1    |1    |2<4   |5<9   |
+|`(2 2⍴4)[1;]`  |`simple indexing`|&nbsp;|&nbsp;|int8    |int8 |2    |1    |2<4   |1<1   |
 
 ### Reach and Choose Indexing (where the indexer is a nested array)
 

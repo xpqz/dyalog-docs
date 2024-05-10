@@ -12,92 +12,92 @@ When an assignment is made to a shared variable, APL sends a DATA message to the
 
 Let's see what this means if two APL workspaces are involved.
 
-| Server Workspace | Client Workspace |
-| --- | ---  |
-|  |  |
-| Make general offer |  |
-| X←42 |  |
-| 'DDE:' ⎕SVO 'X' |  |
-| 1 |  |
-| ⎕SVS 'X' |  |
-| 0 0 0 0 ⍝ No partner |  |
-| ⎕SVC 'X' |  |
-| 0 0 0 0 ⍝ No access ctl |  |
-|  |  |
-|  | Make specific offer |
-|  | 'DDE:DYALOG|SERVER'⎕SVO'X' |
-|  | <--- initiate --- |
-| ack ---> |  |
-|  | <--- please advise on change |
-| ack ---> |  |
-|  | 2  ⍝ Offer accepted |
-| ⎕SVS 'X' | ⎕SVS 'X' |
-| 1 0 1 0⍝ I know, not he | 0 1 0 1⍝ He knows, I don't |
-|  | Client requests data |
-|  | Y ← X |
-|  | <--- req --- |
-| --- data (42) ---> |  |
-|  | <--- ack --- |
-| ⎕SVS 'X' | ⎕SVS 'X' |
-| 0 0 1 1⍝ We both know | 0 0 1 1⍝ We both know |
-| Server changes data |  |
-| X ← 20 |  |
-| --- data has changed --> |  |
-|  | <--- ack --- |
-| ⎕SVS 'X' | ⎕SVS 'X' |
-| 1 0 1 0⍝ I know, not he | 0 1 0 1⍝ He knows, I don't |
-|  | Client requests data |
-|  | Y ← X |
-|  | <--- req --- |
-| --- data (20) ---> |  |
-|  | <--- ack --- |
-| ⎕SVS 'X' | ⎕SVS 'X' |
-| 0 0 1 1⍝ We both know | 0 0 1 1⍝ We both know |
+|Server Workspace|Client Workspace|
+|---|---|
+|&nbsp;|&nbsp;|
+|Make general offer|&nbsp;|
+|X←42|&nbsp;|
+|'DDE:' ⎕SVO 'X'|&nbsp;|
+|1|&nbsp;|
+|⎕SVS 'X'|&nbsp;|
+|0 0 0 0 ⍝ No partner|&nbsp;|
+|⎕SVC 'X'|&nbsp;|
+|0 0 0 0 ⍝ No access ctl|&nbsp;|
+|&nbsp;|&nbsp;|
+|&nbsp;|Make specific offer|
+|&nbsp;|'DDE:DYALOG|SERVER'⎕SVO'X'|
+|&nbsp;|<--- initiate ---|
+|ack --->|&nbsp;|
+|&nbsp;|<--- please advise on change|
+|ack --->|&nbsp;|
+|&nbsp;|2  ⍝ Offer accepted|
+|⎕SVS 'X'|⎕SVS 'X'|
+|1 0 1 0⍝ I know, not he|0 1 0 1⍝ He knows, I don't|
+|&nbsp;|Client requests data|
+|&nbsp;|Y ← X|
+|&nbsp;|<--- req ---|
+|--- data (42) --->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|⎕SVS 'X'|⎕SVS 'X'|
+|0 0 1 1⍝ We both know|0 0 1 1⍝ We both know|
+|Server changes data|&nbsp;|
+|X ← 20|&nbsp;|
+|--- data has changed -->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|⎕SVS 'X'|⎕SVS 'X'|
+|1 0 1 0⍝ I know, not he|0 1 0 1⍝ He knows, I don't|
+|&nbsp;|Client requests data|
+|&nbsp;|Y ← X|
+|&nbsp;|<--- req ---|
+|--- data (20) --->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|⎕SVS 'X'|⎕SVS 'X'|
+|0 0 1 1⍝ We both know|0 0 1 1⍝ We both know|
 
 As you can see, this has the desired effect, namely that an APL workspace sets the value of a shared variable by assignment to it and **uses** it by reference to it. The mechanism of using the DATA and ACK messages to imply **set** and **use** also works with non-APL applications which do not (in general) support these concepts.
 
 Access control between two APL workspaces is imposed by each workspace acting independently. Whenever either workspace changes its `⎕SVC`, the information is transmitted to the other. Thus both workspaces maintain their own copy of the **effective** access control vector upon which to base decisions.
 
-| Server Workspace | Client Workspace |
-| --- | ---  |
-| No access control | No access control |
-| ⎕SVC 'X' | ⎕SVC 'X' |
-| 0 0 0 0 ⍝ No access ctl | 0 0 0 0 ⍝ No access ctl |
-|  | Client makes multiple requests for data |
-|  | Y←X |
-|  | Y←X |
-| Server can set several times |  |
-| X←30 |  |
-| X←40 |  |
-| Set access control |  |
-| 1 0 0 1 ⎕SVC 'X' |  |
-| --- change in ⎕SVC --> |  |
-| ⎕SVC 'X' | ⎕SVC 'X' |
-| ```apl 1 0 0 1⍝ I cannot set          until he has          used; he cannot          use untilI          have set ``` | ```apl 0 1 1 0⍝ He cannot set          until I have          used. I cannot          use until he          has set ``` |
-|  | Client requests data |
-|  | Y ← X |
-|  | <--- req --- |
-|  | (hangs waiting for data) |
-| Server changes data |  |
-| X ← 30 |  |
-| --- data (30) ---> |  |
-|  | <--- ack --- |
-|  | Y⍝ data received |
-|  | 30 |
-| Server changes data |  |
-| X ← 40 |  |
-| --- data has changed ---> |  |
-|  | <--- ack --- |
-| Server tries to change data again |  |
-| X ← 50 |  |
-| --- data has changed ---> |  |
-| (assignment hangs waiting for ack) |  |
-|  | Y ← X⍝ use data |
-|  | <--- req --- |
-| --- data (40) ---> |  |
-|  | <--- ack --- |
-| X⍝ assignment done | Y⍝ data received |
-| 50 | 40 |
+|Server Workspace|Client Workspace|
+|---|---|
+|No access control|No access control|
+|⎕SVC 'X'|⎕SVC 'X'|
+|0 0 0 0 ⍝ No access ctl|0 0 0 0 ⍝ No access ctl|
+|&nbsp;|Client makes multiple requests for data|
+|&nbsp;|Y←X|
+|&nbsp;|Y←X|
+|Server can set several times|&nbsp;|
+|X←30|&nbsp;|
+|X←40|&nbsp;|
+|Set access control|&nbsp;|
+|1 0 0 1 ⎕SVC 'X'|&nbsp;|
+|--- change in ⎕SVC -->|&nbsp;|
+|⎕SVC 'X'|⎕SVC 'X'|
+|```apl 1 0 0 1⍝ I cannot set          until he has          used; he cannot          use untilI          have set ```|```apl 0 1 1 0⍝ He cannot set          until I have          used. I cannot          use until he          has set ```|
+|&nbsp;|Client requests data|
+|&nbsp;|Y ← X|
+|&nbsp;|<--- req ---|
+|&nbsp;|(hangs waiting for data)|
+|Server changes data|&nbsp;|
+|X ← 30|&nbsp;|
+|--- data (30) --->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|&nbsp;|Y⍝ data received|
+|&nbsp;|30|
+|Server changes data|&nbsp;|
+|X ← 40|&nbsp;|
+|--- data has changed --->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|Server tries to change data again|&nbsp;|
+|X ← 50|&nbsp;|
+|--- data has changed --->|&nbsp;|
+|(assignment hangs waiting for ack)|&nbsp;|
+|&nbsp;|Y ← X⍝ use data|
+|&nbsp;|<--- req ---|
+|--- data (40) --->|&nbsp;|
+|&nbsp;|<--- ack ---|
+|X⍝ assignment done|Y⍝ data received|
+|50|40|
 
 Where the second process is a non-APL application, the effective access control vector is maintained only by the APL task and access control can only be imposed by APL. At first sight, it may seem impossible for APL to affect another application in this way, and indeed there are severe limitations in what APL can achieve. Nevertheless, effective access control is possible in the case when it is desirable to inhibit the partner from **setting** the value twice without an intervening **use** by the APL task.
 

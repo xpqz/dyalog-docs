@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../objects/htmlrenderer.md)
+|-----------|------------------------------------------|
+|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
 
 
 **Description**
@@ -20,11 +21,11 @@ The InterceptedURLs property is a 2-column matrix that specifies whether the [HT
 The first column is a wild-carded character scalar or vector containing a pattern to match. The second column is numeric indicating whether or not the [HTMLRenderer](../objects/htmlrenderer.md) should trigger an event as shown in the table below. InterceptedURLs may contain any number of rows.
 
 
-| Value | Meaning |
-| --- | ---  |
-| 0 | Ignore request; pass to  CEF for fulfilment |
-| 1 | Trigger an [HTTPRequest](../methodorevents/httprequest.md) or [WebSocketUpgrade](../methodorevents/websocketupgrade.md) (automatic) in the workspace |
-| 2 | Trigger an [HTTPRequest](../methodorevents/httprequest.md) or [WebSocketUpgrade](../methodorevents/websocketupgrade.md) (manual) in the workspace |
+|Value|Meaning                                                                                                                                             |
+|-----|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|0    |Ignore request; pass to  CEF for fulfilment                                                                                                         |
+|1    |Trigger an [HTTPRequest](../methodorevents/httprequest.md) or [WebSocketUpgrade](../methodorevents/websocketupgrade.md) (automatic) in the workspace|
+|2    |Trigger an [HTTPRequest](../methodorevents/httprequest.md) or [WebSocketUpgrade](../methodorevents/websocketupgrade.md) (manual) in the workspace   |
 
 
 

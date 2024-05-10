@@ -7,7 +7,8 @@
 
 
 
-Applies To: [CoolBar](../objects/coolbar.md) [Form](../objects/form.md) [SubForm](../objects/subform.md)
+|-----------|--------------------------------|--------------------------|--------------------------------|
+|Applies To:|[CoolBar](../objects/coolbar.md)|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
 
 
 **Description**

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Printer](../objects/printer.md)
+|-----------|--------------------------------|
+|Applies To:|[Printer](../objects/printer.md)|
 
 
 **Description**
@@ -22,11 +23,11 @@ PrintRange may be an empty character vector (the default), or `'All'`, either of
 Alternatively, PrintRange may be a 3 or 4-element nested array whose items are:
 
 
-| `[1]` | `'Pages'` |
-| --- | ---  |
-| `[2]` | Start page (integer) |
-| `[3]` | End page (integer) |
-| `[4]` | Maximum number of pages (integer) |
+|-----|---------------------------------|
+|`[1]`|`'Pages'`                        |
+|`[2]`|Start page (integer)             |
+|`[3]`|End page (integer)               |
+|`[4]`|Maximum number of pages (integer)|
 
 
 In this case, printing starts at the page specified to be 

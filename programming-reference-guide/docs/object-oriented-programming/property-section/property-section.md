@@ -9,13 +9,13 @@ A Property is defined by a `:Property ... :EndProperty` section in a Class Scrip
  
 ```
 
-| Element | Description |
-| --- | ---  |
-| `Name` | Specifies the name of the Property by which it is accessed. Additional Properties, sharing the same PropertyGet and/or PropertySet functions, and the same access behaviour may be specified by a comma-separated list of names. |
-| `Simple|Numbered|Keyed` | Specifies the type of Property (see below). The default is `Simple` . |
-| `Default` | Specifies that this Property acts as the default property for the Class when indexing is applied directly to an Instance of the Class. |
-| `Private|Public` | Specifies whether or not the Property is accessible from outside the Class or an Instance of the Class. The default is `Private` . |
-| `Instance|Shared` | Specifies if there is a separate value of the Property in each Instance of the Class, or if there is only a single value that is shared between all Instances. |
+|Element|Description|
+|---|---|
+|`Name`|Specifies the name of the Property by which it is accessed. Additional Properties, sharing the same PropertyGet and/or PropertySet functions, and the same access behaviour may be specified by a comma-separated list of names.|
+|`Simple|Numbered|Keyed`|Specifies the type of Property (see below). The default is `Simple` .|
+|`Default`|Specifies that this Property acts as the default property for the Class when indexing is applied directly to an Instance of the Class.|
+|`Private|Public`|Specifies whether or not the Property is accessible from outside the Class or an Instance of the Class. The default is `Private` .|
+|`Instance|Shared`|Specifies if there is a separate value of the Property in each Instance of the Class, or if there is only a single value that is shared between all Instances.|
 
 A [Simple Property](../class-members/properties/simple-instance-properties.md) is one whose value is accessed (by APL) in its entirety and re-assigned (by APL) in its entirety.
 

@@ -48,13 +48,13 @@ This is formed of 5 separate columns:
 └────┴───┴───┴──┴────────────────────────────┘
 ```
 
-| Functional Column | Value (see below) | Purpose |
-| --- | --- | ---  |
-| C1 | 4 | Line numbers for entire object |
-| C2 | 64 | Line numbers for functions etc. within scripted namespaces |
-| C3 | 2 | Trace/Stop points |
-| C4 | 8 | Control Structure Outlining |
-| C5 | 16 | Text (or content)This value is ignored; this column is always present |
+|Functional Column|Value (see below)|Purpose                                                              |
+|-----------------|-----------------|---------------------------------------------------------------------|
+|C1               |4                |Line numbers for entire object                                       |
+|C2               |64               |Line numbers for functions etc. within scripted namespaces           |
+|C3               |2                |Trace/Stop points                                                    |
+|C4               |8                |Control Structure Outlining                                          |
+|C5               |16               |Text (or content)This value is ignored; this column is always present|
 
 It is possible to control at startup time which of these columns are visible. By default, for all types of object, only the text column is visible; this can be overridden on a per-object basis by setting one or more of the EDITOR_COLUMNS_ variables listed in Table E5. The value of these variables is the sum of the values for each of the columns which are desired.
 
@@ -64,9 +64,9 @@ EDITOR_COLUMNS_NAMESPACE=94 shows all columns (the first example in this section
 
 Various values for EDITOR_COLUMNS_FUNCTION
 
-| Value | Editor window appearance |
-| --- | ---  |
-| 0 | ```apl  fn1 a  :If a=1      b←2  :EndIf ``` |
-| 22 | ```apl  [0]   fn1 a [1]   :If a=1 [2] ○     b←2 [3]   :EndIf 		 ``` |
-| 26 | ```apl     fn1 a  ├ :If a=1 ○│     b←2  ├ :EndIf ``` |
-| 40 | ```apl  [0]    fn1 a [1]  ├ :If a=1 [2] ○│     b←2 [3]  ├ :EndIf ``` |
+|-----|--------------------------------------------------------------------|
+|Value|Editor window appearance                                            |
+|0    |```apl  fn1 a  :If a=1      b←2  :EndIf ```                         |
+|22   |```apl  [0]   fn1 a [1]   :If a=1 [2] ○     b←2 [3]   :EndIf 		 ``` |
+|26   |```apl     fn1 a  ├ :If a=1 ○│     b←2  ├ :EndIf ```                |
+|40   |```apl  [0]    fn1 a [1]  ├ :If a=1 [2] ○│     b←2 [3]  ├ :EndIf ```|

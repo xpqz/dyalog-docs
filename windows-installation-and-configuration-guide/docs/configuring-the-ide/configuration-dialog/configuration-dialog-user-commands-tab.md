@@ -6,6 +6,6 @@ This page is used to specify and organise a list of folders that contain User-Co
 
 Configuration dialog: User Commands
 
-| Label | Parameter | Description |
-| --- | --- | ---  |
-| Source Folders | SALT\CommandFolder | Use this field to add folders to the list of folders that will be searched for User Commands. |
+|Label         |Parameter         |Description                                                                                  |
+|--------------|------------------|---------------------------------------------------------------------------------------------|
+|Source Folders|SALT\CommandFolder|Use this field to add folders to the list of folders that will be searched for User Commands.|

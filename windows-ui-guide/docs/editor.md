@@ -81,24 +81,24 @@ You may select text in an Editor window by clicking the left or right mouse butt
 
 In the table below, the first image shows the appearance of the toolbutton with Native Look and Feel enabled; the second with it disabled.
 
-| Button | Description |
-| --- | ---  |
-| ![trace_theme-14-00](img/trace-theme-14-00.png) ![editor line numbers icon](img/editor-line-numbers-icon.png) Toggle line numbers | Toggles Line numbers on/off |
-| ![editor toggle treeview icon](img/editor-toggle-treeview-icon.png) ![editor toggle treeview icon](img/nlf-disabled/editor-toggle-treeview-icon.png) Toggle tree view | Toggles the treeview on/off. See **Editing Classes** . |
-| ![editor previous location icon](img/editor-previous-location-icon.png) ![editor previous location icon](img/nlf-disabled/editor-previous-location-icon.png) Previous Location | Certain operations (such as selecting an item in the treeview)  reposition the caret in the Editor window. This button moves the caret back to its previous location. |
-| ![trace_theme-12-00](img/trace-theme-12-00.png) ![editor comment icon](img/editor-comment-icon.png) Comment selected text | Inserts a comment symbol to the left of the selection in each of the selected lines. |
-| ![trace_theme-13-00](img/trace-theme-13-00.png) ![editor uncomment icon](img/editor-uncomment-icon.png) Uncomment selected text | Removes the comment symbol (if present) from the left-most column of the selection in each of the selected lines. |
-| ![trace_theme-02-00](img/trace-theme-02-00.png) ![editor save icon](img/editor-save-icon.png) Save changes and return | Saves changes and closes the current edit window |
-| ![editor search icon](img/editor-search-icon.png) ![editor search icon](img/nlf-disabled/editor-search-icon.png) Search Box | Enter search text and click one of the following two buttons |
-| ![trace_theme-16-00](img/trace-theme-16-00.png) ![editor next match icon](img/editor-next-match-icon.png) Search for Next Match | Locates the next occurrence of the search text |
-| ![trace_theme-15-00](img/trace-theme-15-00.png) ![editor previous match icon](img/editor-previous-match-icon.png) Search for Previous Match | Locates the previous occurrence of the search |
-| ![trace_theme-17-00](img/trace-theme-17-00.png) ![editor search hidden text icon](img/editor-search-hidden-text-icon.png) Search hidden text | Determines whether or not the search examines collapsed blocks |
-| ![trace_theme-21-00](img/trace-theme-21-00.png) ![editor match case icon](img/editor-match-case-icon.png) Match case | Specifies whether or not the search is case-sensitive |
-| ![trace_theme-22-00](img/trace-theme-22-00.png) ![editor match whole word icon](img/editor-match-whole-word-icon.png) Match whole word | Specifies whether or not the search matches a whole word |
-| ![trace_theme-23-00](img/trace-theme-23-00.png) ![editor use regular expressions icon](img/editor-use-regular-expressions-icon.png) Use Regular Expressions | Specifies whether or not the search uses PCRE regular expressions |
-| ![trace_theme-18-00](img/trace-theme-18-00.png) ![editor refactor method icon](img/editor-refactor-method-icon.png) Refactor text as method | Inserts a Method template for the selected name |
-| ![trace_theme-19-00](img/trace-theme-19-00.png) ![editor refactor field icon](img/editor-refactor-field-icon.png) Refactor text as field | Inserts a Field template for the selected name |
-| ![trace_theme-20-00](img/trace-theme-20-00.png) ![editor refactor property icon](img/editor-refactor-property-icon.png) Refactor text as property | Inserts a Property template for the selected name |
+|Button|Description|
+|---|---|
+|![trace_theme-14-00](img/trace-theme-14-00.png) ![editor line numbers icon](img/editor-line-numbers-icon.png) Toggle line numbers|Toggles Line numbers on/off|
+|![editor toggle treeview icon](img/editor-toggle-treeview-icon.png) ![editor toggle treeview icon](img/nlf-disabled/editor-toggle-treeview-icon.png) Toggle tree view|Toggles the treeview on/off. See **Editing Classes** .|
+|![editor previous location icon](img/editor-previous-location-icon.png) ![editor previous location icon](img/nlf-disabled/editor-previous-location-icon.png) Previous Location|Certain operations (such as selecting an item in the treeview)  reposition the caret in the Editor window. This button moves the caret back to its previous location.|
+|![trace_theme-12-00](img/trace-theme-12-00.png) ![editor comment icon](img/editor-comment-icon.png) Comment selected text|Inserts a comment symbol to the left of the selection in each of the selected lines.|
+|![trace_theme-13-00](img/trace-theme-13-00.png) ![editor uncomment icon](img/editor-uncomment-icon.png) Uncomment selected text|Removes the comment symbol (if present) from the left-most column of the selection in each of the selected lines.|
+|![trace_theme-02-00](img/trace-theme-02-00.png) ![editor save icon](img/editor-save-icon.png) Save changes and return|Saves changes and closes the current edit window|
+|![editor search icon](img/editor-search-icon.png) ![editor search icon](img/nlf-disabled/editor-search-icon.png) Search Box|Enter search text and click one of the following two buttons|
+|![trace_theme-16-00](img/trace-theme-16-00.png) ![editor next match icon](img/editor-next-match-icon.png) Search for Next Match|Locates the next occurrence of the search text|
+|![trace_theme-15-00](img/trace-theme-15-00.png) ![editor previous match icon](img/editor-previous-match-icon.png) Search for Previous Match|Locates the previous occurrence of the search|
+|![trace_theme-17-00](img/trace-theme-17-00.png) ![editor search hidden text icon](img/editor-search-hidden-text-icon.png) Search hidden text|Determines whether or not the search examines collapsed blocks|
+|![trace_theme-21-00](img/trace-theme-21-00.png) ![editor match case icon](img/editor-match-case-icon.png) Match case|Specifies whether or not the search is case-sensitive|
+|![trace_theme-22-00](img/trace-theme-22-00.png) ![editor match whole word icon](img/editor-match-whole-word-icon.png) Match whole word|Specifies whether or not the search matches a whole word|
+|![trace_theme-23-00](img/trace-theme-23-00.png) ![editor use regular expressions icon](img/editor-use-regular-expressions-icon.png) Use Regular Expressions|Specifies whether or not the search uses PCRE regular expressions|
+|![trace_theme-18-00](img/trace-theme-18-00.png) ![editor refactor method icon](img/editor-refactor-method-icon.png) Refactor text as method|Inserts a Method template for the selected name|
+|![trace_theme-19-00](img/trace-theme-19-00.png) ![editor refactor field icon](img/editor-refactor-field-icon.png) Refactor text as field|Inserts a Field template for the selected name|
+|![trace_theme-20-00](img/trace-theme-20-00.png) ![editor refactor property icon](img/editor-refactor-property-icon.png) Refactor text as property|Inserts a Property template for the selected name|
 
 ### The File Menu
 
@@ -106,31 +106,31 @@ In the table below, the first image shows the appearance of the toolbutton with 
 
 The *File* menu illustrated above is displayed when editing a simple object and provides the following options.
 
-| Item | Description |
-| --- | ---  |
-| Fix | Fixes the object in the workspace, but leaves the edit window open. Edit history is also preserved. If the data has changed and the **confirm_fix** parameter is set, you will be prompted to confirm. |
-| Fix whole script | (Disabled unless editing a script) |
-| Open File | Allows you to edit a Dyalog script file or an arbitrary text file. |
-| Save | Saves the file being edited. |
-| Save As | Renames and saves the file being edited. |
-| Always ask on close | Toggles the value of the **confirm_fix** parameter. |
-| Edit | Opens an Edit window on the name under the cursor (Disabled when there is no such name). |
-| Print | Prints the current contents of the edit window |
-| Print Setup | Displays the *Print Configuration* dialog box |
-| Properties | Displays the *Object Properties* dialog box for the current object |
-| Exit (and Fix) | Fixes the object in the workspace and closes the edit window. If the data has changed and the confirm_exit parameter is set, you will be prompted to confirm |
-| Exit (and fix script) | (Disabled unless editing a script) |
-| Exit and discard changes | Closes the edit window, but does not fix the object in the workspace. If the data has changed and the **confirm_abort** parameter is set, you will be prompted to confirm. |
+|Item|Description|
+|---|---|
+|Fix|Fixes the object in the workspace, but leaves the edit window open. Edit history is also preserved. If the data has changed and the **confirm_fix** parameter is set, you will be prompted to confirm.|
+|Fix whole script|(Disabled unless editing a script)|
+|Open File|Allows you to edit a Dyalog script file or an arbitrary text file.|
+|Save|Saves the file being edited.|
+|Save As|Renames and saves the file being edited.|
+|Always ask on close|Toggles the value of the **confirm_fix** parameter.|
+|Edit|Opens an Edit window on the name under the cursor (Disabled when there is no such name).|
+|Print|Prints the current contents of the edit window|
+|Print Setup|Displays the *Print Configuration* dialog box|
+|Properties|Displays the *Object Properties* dialog box for the current object|
+|Exit (and Fix)|Fixes the object in the workspace and closes the edit window. If the data has changed and the confirm_exit parameter is set, you will be prompted to confirm|
+|Exit (and fix script)|(Disabled unless editing a script)|
+|Exit and discard changes|Closes the edit window, but does not fix the object in the workspace. If the data has changed and the **confirm_abort** parameter is set, you will be prompted to confirm.|
 
 ### The File Menu (editing a script)
 
 ![editor file menu class](img/editor-file-menu-class.png)
 
-| Fix whole script | Fixes the entire script |
-| --- | ---  |
-| Fix only functions | Fixes only the functions in the script. |
-| Exit and fix whole script | Fixes the entire script, and exits the Editor. |
-| Exit and fix only functions | Fixes only the functions in the script and exits the Editor. |
+|---------------------------|------------------------------------------------------------|
+|Fix whole script           |Fixes the entire script                                     |
+|Fix only functions         |Fixes only the functions in the script.                     |
+|Exit and fix whole script  |Fixes the entire script, and exits the Editor.              |
+|Exit and fix only functions|Fixes only the functions in the script and exits the Editor.|
 
 #### Editing Scripts
 
@@ -153,28 +153,28 @@ The *Edit* menu provides a means to execute those commands that are concerned wi
 
 ![editor edit menu](img/editor-edit-menu.png)
 
-| Item | Description |
-| --- | ---  |
-| Reformat | Reformats the function body in the edit window, indenting control structures as appropriate. |
-| Reformat Scripts Automatically | If checked, the Editor will automatically reformat a Dyalog script when it loads it. |
-| Undo | Undoes the last change made to the object. Repeated use of this command sequentially undoes each change made since the edit window was opened. |
-| Redo | Re-applies the previous undone change. Repeated use of this command sequentially restores every undone change. |
-| Select All | Selects and highlights the entire contents of the Edit window. |
-| Cut | Copies the selected text to the clipboard and removes it from the object. |
-| Copy | Copies the selected text to the clipboard. |
-| Paste | Copies the text in the clipboard into the object at the current location of the input cursor. |
-| Paste Unicode | Same as *Paste* , but gets the Unicode text from the clipboard and converts to `⎕AV` |
-| Paste Non-Unicode | Same as *Paste* , but gets the ANSI text from the clipboard and converts to `⎕AV` . |
-| Clear | Deletes the selection or the character under the cursor. Has no effect on the clipboard |
-| Open Line | Inserts a blank line immediately below the current one. |
-| Delete Line | Deletes the current line. |
-| Goto Line | Prompts for a line number, then positions the cursor on that line. |
-| Find | Displays the *Find* dialog box. |
-| Replace | Displays the *Replace* dialog box. |
-| Highlight All Matches | If checked, all strings in the object being edited that match the search string are highlighted. The highlightedted items change dynamically as the search string is entered or changed. |
-| Comment selected lines | Adds a comment symbol to the beginning of all selected lines. |
-| Uncomment selected lines | Removes a comment symbol from the beginning of all selected lines. |
-| Toggle Local name | Adds or removes the name under the cursor to/from the function header line. |
+|Item|Description|
+|---|---|
+|Reformat|Reformats the function body in the edit window, indenting control structures as appropriate.|
+|Reformat Scripts Automatically|If checked, the Editor will automatically reformat a Dyalog script when it loads it.|
+|Undo|Undoes the last change made to the object. Repeated use of this command sequentially undoes each change made since the edit window was opened.|
+|Redo|Re-applies the previous undone change. Repeated use of this command sequentially restores every undone change.|
+|Select All|Selects and highlights the entire contents of the Edit window.|
+|Cut|Copies the selected text to the clipboard and removes it from the object.|
+|Copy|Copies the selected text to the clipboard.|
+|Paste|Copies the text in the clipboard into the object at the current location of the input cursor.|
+|Paste Unicode|Same as *Paste* , but gets the Unicode text from the clipboard and converts to `⎕AV`|
+|Paste Non-Unicode|Same as *Paste* , but gets the ANSI text from the clipboard and converts to `⎕AV` .|
+|Clear|Deletes the selection or the character under the cursor. Has no effect on the clipboard|
+|Open Line|Inserts a blank line immediately below the current one.|
+|Delete Line|Deletes the current line.|
+|Goto Line|Prompts for a line number, then positions the cursor on that line.|
+|Find|Displays the *Find* dialog box.|
+|Replace|Displays the *Replace* dialog box.|
+|Highlight All Matches|If checked, all strings in the object being edited that match the search string are highlighted. The highlightedted items change dynamically as the search string is entered or changed.|
+|Comment selected lines|Adds a comment symbol to the beginning of all selected lines.|
+|Uncomment selected lines|Removes a comment symbol from the beginning of all selected lines.|
+|Toggle Local name|Adds or removes the name under the cursor to/from the function header line.|
 
 The *Find* and *Replace* items are used to display the *Find* dialog box and the *Find/Replace* dialog box respectively. These boxes are used to perform search and replace operations and are described later in this Chapter.
 
@@ -186,12 +186,12 @@ Once displayed, each of the two dialog boxes remains on the screen until it is e
 
 The *Syntax* menu illustrated above provides options to specify  how the data displayed in the Editor window is to be syntax coloured. For workspace objects, the default is *APL* for functions and operators, and *Nothing* for variables.
 
-| Item | Syntax Colour as |
-| --- | ---  |
-| Nothing | Variable |
-| APL | Function |
-| JSON | JSON array |
-| XML | XML array |
+|Item   |Syntax Colour as|
+|-------|----------------|
+|Nothing|Variable        |
+|APL    |Function        |
+|JSON   |JSON array      |
+|XML    |XML array       |
 
 ### The Window Menu
 
@@ -199,14 +199,14 @@ The *Window* menu provides a means to control the display of the various edit wi
 
 ![editor window menu](img/editor-window-menu.png)
 
-| Item | Description |
-| --- | ---  |
-| Close All Windows | Closes all the edit windows. If *Confirm on Edit Window Closed* is checked, you will be prompted to confirm for any objects that you have changed. |
-| Cascade | Arranges the edit windows in overlapping fashion. |
-| Tile Vertically | Arranges the edit windows tiled one above the other. |
-| Tile Horizontally | Arranges the edit windows tiled alongside one another. |
-| Arrange Icons | Arranges any minimised edit windows. |
-| Editor | Allows you to Select the edit window corresponding to the named object. |
+|Item             |Description                                                                                                                                       |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|Close All Windows|Closes all the edit windows. If *Confirm on Edit Window Closed* is checked, you will be prompted to confirm for any objects that you have changed.|
+|Cascade          |Arranges the edit windows in overlapping fashion.                                                                                                 |
+|Tile Vertically  |Arranges the edit windows tiled one above the other.                                                                                              |
+|Tile Horizontally|Arranges the edit windows tiled alongside one another.                                                                                            |
+|Arrange Icons    |Arranges any minimised edit windows.                                                                                                              |
+|Editor           |Allows you to Select the edit window corresponding to the named object.                                                                           |
 
 ### The Refactor Menu
 
@@ -214,11 +214,11 @@ The *Window* menu provides a means to control the display of the various edit wi
 
 The *Refactor* menu illustrated above applies only when editing a Class and provides the following options. In each case, the user must highlight a name in the Edit window, and then select one of these options to insert the appropriate template for that name into the body of the Class.
 
-| Item | Description |
-| --- | ---  |
-| Add text as Field | Inserts a Field template for the selected name. |
-| Add text as Property | Inserts a Property template for the selected name. |
-| Add text as Method | Inserts a Method template for the selected text name. |
+|Item                |Description                                          |
+|--------------------|-----------------------------------------------------|
+|Add text as Field   |Inserts a Field template for the selected name.      |
+|Add text as Property|Inserts a Property template for the selected name.   |
+|Add text as Method  |Inserts a Method template for the selected text name.|
 
 ### The View Menu
 
@@ -226,19 +226,19 @@ The *Refactor* menu illustrated above applies only when editing a Class and prov
 
 The *View* menu, illustrated above, provides the following actions.
 
-| Item | Description |
-| --- | ---  |
-| Trace | Displays a column to the left of the function that displays `⎕TRACE` settings |
-| Stop | Displays a column to the left of the function that displays `⎕STOP` settings |
-| Monitor | Displays a column to the left of the function that displays `⎕MONITOR` settings |
-| Line Numbers | Toggles the display of line numbers on/off. |
-| Function Line Numbers | Toggles the display of line numbers on *individual functions* on/off. This option is only enabled when editing a Class, Namespace script or Interface. |
-| Tree View | Toggles the display of the treeview in the left-hand pane. |
-| Compiler Errors | If enabled, the Editor identifies which lines of code would not compile. These are identified by a red vertical line to the left. Hovering over the red bar gives you a pop-up telling you what the compiler didn't like about that line of the function. |
-| Outlining | Turns outlining on and off. |
-| Expand All Outlines | Expands all outlines. |
-| Collapse All Outlines | Collapses all outlines |
-| Expand all Outlines below here | Expands all outlines below the level of the current line. |
+|Item|Description|
+|---|---|
+|Trace|Displays a column to the left of the function that displays `⎕TRACE` settings|
+|Stop|Displays a column to the left of the function that displays `⎕STOP` settings|
+|Monitor|Displays a column to the left of the function that displays `⎕MONITOR` settings|
+|Line Numbers|Toggles the display of line numbers on/off.|
+|Function Line Numbers|Toggles the display of line numbers on *individual functions* on/off. This option is only enabled when editing a Class, Namespace script or Interface.|
+|Tree View|Toggles the display of the treeview in the left-hand pane.|
+|Compiler Errors|If enabled, the Editor identifies which lines of code would not compile. These are identified by a red vertical line to the left. Hovering over the red bar gives you a pop-up telling you what the compiler didn't like about that line of the function.|
+|Outlining|Turns outlining on and off.|
+|Expand All Outlines|Expands all outlines.|
+|Collapse All Outlines|Collapses all outlines|
+|Expand all Outlines below here|Expands all outlines below the level of the current line.|
 
 #### Function Line Numbers
 

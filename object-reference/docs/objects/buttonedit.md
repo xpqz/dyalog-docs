@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/buttonedit.md) [Children](../childlists/buttonedit.md) [Properties](../proplists/buttonedit.md) [Methods](../methodlists/buttonedit.md) [Events](../eventlists/buttonedit.md)
+|---------------------------------------|---------------------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
+|[Parents](../parentlists/buttonedit.md)|[Children](../childlists/buttonedit.md)|[Properties](../proplists/buttonedit.md)|[Methods](../methodlists/buttonedit.md)|[Events](../eventlists/buttonedit.md)|
 
 
-Purpose: Allows user to enter or edit data.
+|--------|----------------------------------|
+|Purpose:|Allows user to enter or edit data.|
 
 
 **Description**

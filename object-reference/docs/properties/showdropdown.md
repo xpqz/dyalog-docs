@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ColorButton](../objects/colorbutton.md) [ToolControl](../objects/toolcontrol.md)
+|-----------|----------------------------------------|----------------------------------------|
+|Applies To:|[ColorButton](../objects/colorbutton.md)|[ToolControl](../objects/toolcontrol.md)|
 
 
 **Description**

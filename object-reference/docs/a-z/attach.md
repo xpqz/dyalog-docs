@@ -21,20 +21,20 @@ This property specifies how an object responds to its parent being resized. It i
 The 4 elements of Attach refer to the Top, Left, Bottom and Right edges of the object respectively. Their values may be defined as follows :
 
 
-| Element | Value | Meaning |
-| --- | --- | ---  |
-| `[1]` | `'Top'` | top edge of object attached to *top* edge of parent. |
-| `` | `'Bottom'` | top edge of object attached to *bottom* edge of parent. |
-| `` | `'None'` | top edge of object is not attached to its parent |
-| `[2]` | `'Left'` | left edge of object is attached to *left* edge of parent |
-| `` | `'Right'` | left edge of object is attached to *right* edge of parent |
-| `` | `'None'` | left edge of object is not attached to its parent |
-| `[3]` | `'Top'` | bottom edge of object is attached to *top* edge of parent. |
-| `` | `'Bottom'` | bottom edge of object is attached to *bottom* edge of parent. |
-|  | `'None'` | bottom edge of object is not attached to its parent |
-| `[4]` | `'Left'` | right edge of object is attached to *left* edge of parent |
-|  | `'Right'` | right edge of object is attached to *right* edge of its parent |
-|  | `'None'` | right edge of object is not attached to its parent |
+|Element|Value     |Meaning                                                       |
+|-------|----------|--------------------------------------------------------------|
+|`[1]`  |`'Top'`   |top edge of object attached to *top* edge of parent.          |
+|&nbsp; |`'Bottom'`|top edge of object attached to *bottom* edge of parent.       |
+|&nbsp; |`'None'`  |top edge of object is not attached to its parent              |
+|`[2]`  |`'Left'`  |left edge of object is attached to *left* edge of parent      |
+|&nbsp; |`'Right'` |left edge of object is attached to *right* edge of parent     |
+|&nbsp; |`'None'`  |left edge of object is not attached to its parent             |
+|`[3]`  |`'Top'`   |bottom edge of object is attached to *top* edge of parent.    |
+|&nbsp; |`'Bottom'`|bottom edge of object is attached to *bottom* edge of parent. |
+|&nbsp; |`'None'`  |bottom edge of object is not attached to its parent           |
+|`[4]`  |`'Left'`  |right edge of object is attached to *left* edge of parent     |
+|&nbsp; |`'Right'` |right edge of object is attached to *right* edge of its parent|
+|&nbsp; |`'None'`  |right edge of object is not attached to its parent            |
 
 
 

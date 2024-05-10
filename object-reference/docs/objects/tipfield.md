@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/tipfield.md) [Children](../childlists/tipfield.md) [Properties](../proplists/tipfield.md) [Methods](../methodlists/tipfield.md) [Events](../eventlists/tipfield.md)
+|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
+|[Parents](../parentlists/tipfield.md)|[Children](../childlists/tipfield.md)|[Properties](../proplists/tipfield.md)|[Methods](../methodlists/tipfield.md)|[Events](../eventlists/tipfield.md)|
 
 
-Purpose: To display pop-up help.
+|--------|-----------------------|
+|Purpose:|To display pop-up help.|
 
 
 **Description**

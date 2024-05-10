@@ -43,17 +43,17 @@ To allocate a colour to a syntax element, you must first select the syntax eleme
 
 Colour Selection
 
-| Label | Description |
-| --- | ---  |
-| Schemes | Choose the scheme you want to edit using this dropdown box. |
-| HotKey | To associate a hot key with the currently selected colour scheme, click here, and then make the desired keystroke. To disassociate a hot key, use <backspace>. |
-| Save As | Click to overwrite the current colour scheme or save as a new one. |
-| Delete | Click to delete the currently selected colour scheme. |
-| Foreground | Choose the foreground colour from the colour picker |
-| Italic | Enable/disable italic foreground |
-| Bold | Enable/disable bold foreground |
-| Single Background | Allows you to choose whether to impose a single background colour, or to allow the use of different background colours for different syntax elements. |
-| Function Editor | Check this box if you want to enable syntax colouring in Edit windows. |
-| Function Tracer | Check this box if you want to enable syntax colouring in Trace windows. |
-| Session Input | Check this box if you want to enable syntax colouring in the Session window. Note that the colour scheme used for the Session may differ from the colour scheme selected for Edit windows and is specified by the *Session Colour Scheme* box on the *Session/Trace* tab. |
-| Only current input line | This option only applies if Session syntax colouring is enabled. Check this box if you want syntax colouring to apply only to the current input line. Clear this box, if you want to apply syntax colouring to all the input lines in the current Session window. Note that syntax colouring of input lines is not remembered in the Session log, so input lines from previous sessions do not have syntax colouring. |
+|Label|Description|
+|---|---|
+|Schemes|Choose the scheme you want to edit using this dropdown box.|
+|HotKey|To associate a hot key with the currently selected colour scheme, click here, and then make the desired keystroke. To disassociate a hot key, use <backspace>.|
+|Save As|Click to overwrite the current colour scheme or save as a new one.|
+|Delete|Click to delete the currently selected colour scheme.|
+|Foreground|Choose the foreground colour from the colour picker|
+|Italic|Enable/disable italic foreground|
+|Bold|Enable/disable bold foreground|
+|Single Background|Allows you to choose whether to impose a single background colour, or to allow the use of different background colours for different syntax elements.|
+|Function Editor|Check this box if you want to enable syntax colouring in Edit windows.|
+|Function Tracer|Check this box if you want to enable syntax colouring in Trace windows.|
+|Session Input|Check this box if you want to enable syntax colouring in the Session window. Note that the colour scheme used for the Session may differ from the colour scheme selected for Edit windows and is specified by the *Session Colour Scheme* box on the *Session/Trace* tab.|
+|Only current input line|This option only applies if Session syntax colouring is enabled. Check this box if you want syntax colouring to apply only to the current input line. Clear this box, if you want to apply syntax colouring to all the input lines in the current Session window. Note that syntax colouring of input lines is not remembered in the Session log, so input lines from previous sessions do not have syntax colouring.|

@@ -59,19 +59,19 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 
 The Caption property of the Session may be set dynamically to a character vector comprising free text and field names. Field names must be enclosed in braces and are replaced in-situ by corresponding values.
 
-| Field Name | Description |
-| --- | ---  |
-| {TITLE} | the window specific text |
-| {WSID} | `⎕WSID` |
-| {NSID} | current namespace |
-| {SNSID} | short version of namespace (no `#` .) |
-| {PRODUCT} | e.g. Dyalog APL/W |
-| {VER_A} | e.g. 19 |
-| {VER_B} | e.g. 0 |
-| {VER_C} | e.g. 47586 (SVN revision) |
-| {PID} | process ID (decimal) |
-| {CHARS} | "Classic" or "Unicode" |
-| {BITS} | "32" or "64" |
+|Field Name|Description                          |
+|----------|-------------------------------------|
+|{TITLE}   |the window specific text             |
+|{WSID}    |`⎕WSID`                              |
+|{NSID}    |current namespace                    |
+|{SNSID}   |short version of namespace (no `#` .)|
+|{PRODUCT} |e.g. Dyalog APL/W                    |
+|{VER_A}   |e.g. 19                              |
+|{VER_B}   |e.g. 0                               |
+|{VER_C}   |e.g. 47586 (SVN revision)            |
+|{PID}     |process ID (decimal)                 |
+|{CHARS}   |"Classic" or "Unicode"               |
+|{BITS}    |"32" or "64"                         |
 
 Session Caption Fields
 

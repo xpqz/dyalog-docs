@@ -28,11 +28,11 @@ If the file is a workspace the expression to be executed is specified by its `�
 
 Otherwise, if the file extension is `.aplf` `.aplc` or `.apln` the expression is shown in the table below, where `filename` is the file name specified by the **Load** parameter without its extension.
 
-| File Extension | Type | Expression |
-| --- | --- | ---  |
-| `.aplf` | Function source code | `filename 0⍴⊂''` |
-| `.aplc` | Class source code | `filename.Run 0⍴⊂''` |
-| `.apln` | Namespace source code | `filename.Run 0⍴⊂''` |
+|File Extension|Type                 |Expression          |
+|--------------|---------------------|--------------------|
+|`.aplf`       |Function source code |`filename 0⍴⊂''`    |
+|`.aplc`       |Class source code    |`filename.Run 0⍴⊂''`|
+|`.apln`       |Namespace source code|`filename.Run 0⍴⊂''`|
 
 ## Notes
 

@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -19,7 +20,8 @@ This method connects a named event sink to a COM object and adds the events defi
 The argument to OLEAddEventSink is a single item as follows:
 
 
-`[1]` Event sink name character vector
+|-----|---------------|----------------|
+|`[1]`|Event sink name|character vector|
 
 
 The result is a number that represents the handle of the event sink. This may be subsequently required.

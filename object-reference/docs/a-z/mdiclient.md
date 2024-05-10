@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/mdiclient.md) [Children](../childlists/mdiclient.md) [Properties](../proplists/mdiclient.md) [Methods](../methodlists/mdiclient.md) [Events](../eventlists/mdiclient.md)
+|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
+|[Parents](../parentlists/mdiclient.md)|[Children](../childlists/mdiclient.md)|[Properties](../proplists/mdiclient.md)|[Methods](../methodlists/mdiclient.md)|[Events](../eventlists/mdiclient.md)|
 
 
-Purpose: Implements Multiple Document Interface (MDI) behaviour.
+|--------|-------------------------------------------------------|
+|Purpose:|Implements Multiple Document Interface (MDI) behaviour.|
 
 
 **Description**
@@ -38,9 +40,9 @@ The [MDIActive](../properties/mdiactive.md) and [MDIActiveObject](../properties/
 You can call methods which cause the MDIClient to organise its child [SubForm](subform.md)s in some way. These methods are as follows:
 
 
-| [MDICascade](../methodorevents/mdicascade.md) | Causes the MDIClient to organise its child Forms in an overlapping manner. |
-| --- | ---  |
-| [MDITile](../methodorevents/mditile.md) | Causes the MDIClient to arrange its child Forms as a row or column. |
-| [MDIArrange](../methodorevents/mdiarrange.md) | Causes the MDIClient to arrange the icons associated with any minimised child Forms in an orderly fashion. |
+|---------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|[MDICascade](../methodorevents/mdicascade.md)|Causes the MDIClient to organise its child Forms in an overlapping manner.                                |
+|[MDITile](../methodorevents/mditile.md)      |Causes the MDIClient to arrange its child Forms as a row or column.                                       |
+|[MDIArrange](../methodorevents/mdiarrange.md)|Causes the MDIClient to arrange the icons associated with any minimised child Forms in an orderly fashion.|
 
 

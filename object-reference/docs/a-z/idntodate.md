@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Calendar](../objects/calendar.md) [DateTimePicker](../objects/datetimepicker.md) [Root](../objects/root.md)
+|-----------|----------------------------------|----------------------------------------------|--------------------------|
+|Applies To:|[Calendar](../objects/calendar.md)|[DateTimePicker](../objects/datetimepicker.md)|[Root](../objects/root.md)|
 
 
 **Description**
@@ -19,7 +20,8 @@ This method is used to convert a date from an [IDN](../miscellaneous/internation
 The argument to IDNToDate is a single item as follows:
 
 
-`[1]` IDN Integer
+|-----|---|-------|
+|`[1]`|IDN|Integer|
 
 
 The result is a 4-element integer vector containing the year, month, day, and weekday corresponding to the IDN that was specified.

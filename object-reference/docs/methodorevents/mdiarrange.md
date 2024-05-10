@@ -7,7 +7,8 @@
 
 
 
-Applies To: [MDIClient](../objects/mdiclient.md)
+|-----------|------------------------------------|
+|Applies To:|[MDIClient](../objects/mdiclient.md)|
 
 
 **Description**

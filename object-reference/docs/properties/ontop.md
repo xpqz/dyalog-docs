@@ -25,10 +25,10 @@ More than one [Form](../objects/form.md) may have OnTop set to 1. If so, these [
 For a graphical object, the OnTop property controls how it is drawn in a [Grid](../objects/grid.md) relative to the grid lines and cell text. OnTop is applicable only if the graphic is the child of a [Grid](../objects/grid.md) and is otherwise ignored.
 
 
-| 0 | Graphical object is drawn behind grid lines and cell text |
-| --- | ---  |
-| 1 | Graphical object is drawn on top of grid lines but behind cell text |
-| 2 | Graphical object is drawn on top of grid lines and cell text |
+|---|-------------------------------------------------------------------|
+|0  |Graphical object is drawn behind grid lines and cell text          |
+|1  |Graphical object is drawn on top of grid lines but behind cell text|
+|2  |Graphical object is drawn on top of grid lines and cell text       |
 
 
 

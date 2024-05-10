@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OLEServer](../objects/oleserver.md)
+|-----------|------------------------------------|
+|Applies To:|[OLEServer](../objects/oleserver.md)|
 
 
 **Description**

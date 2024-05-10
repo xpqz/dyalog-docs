@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Font](../objects/font.md)
+|-----------|--------------------------|
+|Applies To:|[Font](../objects/font.md)|
 
 
 **Description**

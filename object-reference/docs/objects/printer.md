@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/printer.md) [Children](../childlists/printer.md) [Properties](../proplists/printer.md) [Methods](../methodlists/printer.md) [Events](../eventlists/printer.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/printer.md)|[Children](../childlists/printer.md)|[Properties](../proplists/printer.md)|[Methods](../methodlists/printer.md)|[Events](../eventlists/printer.md)|
 
 
-Purpose: To provide printer output.
+|--------|--------------------------|
+|Purpose:|To provide printer output.|
 
 
 **Description**
@@ -50,13 +52,13 @@ In general it is recommended that you use unnamed objects for printing.
 The Printer object five methods :
 
 
-| Name | Event | Description |
-| --- | --- | ---  |
-| [Print](../methodorevents/print.md) | 100 | Sends output to print spooler |
-| [Setup](../methodorevents/setup.md) | 101 | Displays Printer Set-up dialog box |
-| [NewPage](../methodorevents/newpage.md) | 102 | Throws a new page |
-| [Abort](../methodorevents/abort.md) | 103 | Aborts the print job |
-| [RTFPrintSetup](../methodorevents/rtfprintsetup.md) | 460 | Displays Printer Set-up dialog box |
+|---------------------------------------------------|-----|----------------------------------|
+|Name                                               |Event|Description                       |
+|[Print](../methodorevents/print.md)                |100  |Sends output to print spooler     |
+|[Setup](../methodorevents/setup.md)                |101  |Displays Printer Set-up dialog box|
+|[NewPage](../methodorevents/newpage.md)            |102  |Throws a new page                 |
+|[Abort](../methodorevents/abort.md)                |103  |Aborts the print job              |
+|[RTFPrintSetup](../methodorevents/rtfprintsetup.md)|460  |Displays Printer Set-up dialog box|
 
 
 

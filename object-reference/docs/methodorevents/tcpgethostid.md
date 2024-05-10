@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Root](../objects/root.md) [TCPSocket](../objects/tcpsocket.md)
+|-----------|--------------------------|------------------------------------|
+|Applies To:|[Root](../objects/root.md)|[TCPSocket](../objects/tcpsocket.md)|
 
 
 **Description**

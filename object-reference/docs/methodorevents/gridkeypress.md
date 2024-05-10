@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -21,14 +22,14 @@ The GridKeyPress is reported on the [Grid](../objects/grid.md), *after* the [Key
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'GridKeyPress'` or 24 |
-| `[3]` | Input Code | character scalar or vector |
-| `[4]` | ASCII code | integer scalar |
-| `[5]` | Key Number | integer scalar |
-| `[6]` | Shift State | integer scalar |
-| `[7]` | Input Object | ref or character vector |
+|-----|------------|--------------------------|
+|`[1]`|Object      |ref or character vector   |
+|`[2]`|Event       |`'GridKeyPress'` or 24    |
+|`[3]`|Input Code  |character scalar or vector|
+|`[4]`|ASCII code  |integer scalar            |
+|`[5]`|Key Number  |integer scalar            |
+|`[6]`|Shift State |integer scalar            |
+|`[7]`|Input Object|ref or character vector   |
 
 
 For a full description of elements [3-6], see [KeyPress](./keypress.md) event.

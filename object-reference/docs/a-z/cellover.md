@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -24,16 +25,16 @@ There is no default action for this event.
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is an 9 element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'CellOver'` or 160 |
-| `[3]` | Y | y-position of mouse (number) |
-| `[4]` | X | x-position of mouse (number) |
-| `[5]` | Button | button pressed (number) 1 = left button 2 =        right button 4 = middle button |
-| `[6]` | Shift State | sum of shift key codes (number) 1 = Shift key        is down 2 = Ctrl key is down 4 = Alt key is down |
-| `[7]` | Cell row | integer |
-| `[8]` | Cell column | integer |
-| `[9]` | Title index | integer |
+|-----|-----------|-----------------------------------------------------------------------------------------------------|
+|`[1]`|Object     |ref or character vector                                                                              |
+|`[2]`|Event      |`'CellOver'` or 160                                                                                  |
+|`[3]`|Y          |y-position of mouse (number)                                                                         |
+|`[4]`|X          |x-position of mouse (number)                                                                         |
+|`[5]`|Button     |button pressed (number) 1 = left button 2 =        right button 4 = middle button                    |
+|`[6]`|Shift State|sum of shift key codes (number) 1 = Shift key        is down 2 = Ctrl key is down 4 = Alt key is down|
+|`[7]`|Cell row   |integer                                                                                              |
+|`[8]`|Cell column|integer                                                                                              |
+|`[9]`|Title index|integer                                                                                              |
 
 
 

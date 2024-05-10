@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/menu.md) [Children](../childlists/menu.md) [Properties](../proplists/menu.md) [Methods](../methodlists/menu.md) [Events](../eventlists/menu.md)
+|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Parents](../parentlists/menu.md)|[Children](../childlists/menu.md)|[Properties](../proplists/menu.md)|[Methods](../methodlists/menu.md)|[Events](../eventlists/menu.md)|
 
 
-Purpose: This is a pop-up object which allows the user to initiate an action or         to select an option using a "menu".
+|--------|------------------------------------------------------------------------------------------------------------------|
+|Purpose:|This is a pop-up object which allows the user to initiate an action or         to select an option using a "menu".|
 
 
 **Description**

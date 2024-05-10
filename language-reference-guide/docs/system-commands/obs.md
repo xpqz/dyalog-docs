@@ -7,7 +7,7 @@
 
 
 
-This command is the same as the `)OBJECTS` command. See [List Global Namespaces:](objects.md)
+This command is the same as the `)OBJECTS` command. See ["List Global Namespaces: "](objects.md)
 
 
 

@@ -11,9 +11,6 @@ The components used to support the .NET interface are summarised below. Differen
 - The Dyalog DLL. This is the engine that executes all APL code that is hosted by and called from another .NET application.
 
 For a list of the files associated with each of these components, see 
-
-Files and Directories
-
 [
 Files](../../../windows-installation-and-configuration-guide/files-and-directories)
 .

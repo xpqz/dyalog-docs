@@ -7,7 +7,7 @@
 
 
 
-`X` is the *name* of a variable in the workspace, possibly modified by the indexing function `(EXP X[I])←Y`, see [Assignment (Indexed)](assignment-indexed.md).  `EXP` is an expression that **selects** elements of `X`.  `Y` is an array expression. The result of the expression `Y` is allocated to the elements of `X` selected by `EXP`. Note that `X` may refer to a single name only.
+`X` is the *name* of a variable in the workspace, possibly modified by the indexing function `(EXP X[I])←Y`, see ["Assignment (Indexed)"](assignment-indexed.md).  `EXP` is an expression that **selects** elements of `X`.  `Y` is an array expression. The result of the expression `Y` is allocated to the elements of `X` selected by `EXP`. Note that `X` may refer to a single name only.
 
 
 
@@ -17,19 +17,19 @@ The following functions may appear in the selection expression. Where appropriat
 Functions for Selective Assignment
 
 
-| ↑ | Take |
-| --- | ---  |
-| ↓ | Drop |
-| , | Ravel |
-| ⍪ | Table |
-| ⌽⊖ | Reverse, Rotate |
-| ⍴ | Reshape |
-| ⊃ | Disclose, Pick |
-| ⍉ | Transpose (Monadic and Dyadic) |
-| /⌿ | Replicate |
-| \⍀ | Expand |
-| ⌷ | Index |
-| ∊ | Enlist ( `⎕ML≥1` ) |
+|---|------------------------------|
+|↑  |Take                          |
+|↓  |Drop                          |
+|,  |Ravel                         |
+|⍪  |Table                         |
+|⌽⊖ |Reverse, Rotate               |
+|⍴  |Reshape                       |
+|⊃  |Disclose, Pick                |
+|⍉  |Transpose (Monadic and Dyadic)|
+|/⌿ |Replicate                     |
+|\⍀ |Expand                        |
+|⌷  |Index                         |
+|∊  |Enlist ( `⎕ML≥1` )            |
 
 
 Note: Mix and Split (monadic `↑` and `↓`), Type (monadic `∊` when `⎕ML<1`) and Membership (dyadic `∊`) may not be used in the selection expression.

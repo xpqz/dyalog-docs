@@ -22,10 +22,7 @@ During development, both the Dyalog Session and the Dyalog APL GUI  displays nat
 There are two ways to disable *Native Look and Feel* in end-user applications.
 
 
-If you use the *File/Export…* menu item on the Session MenuBar  to create a bound executable, an OLE Server (in-process or out-of-process), an ActiveX Control or a .NET Assembly, clear the option box labelled *Enable Native Look and Feel* in the *create bound file* dialog box. See 
-UI Guide: 
-
-.
+If you use the *File/Export…* menu item on the Session MenuBar  to create a bound executable, an OLE Server (in-process or out-of-process), an ActiveX Control or a .NET Assembly, clear the option box labelled *Enable Native Look and Feel* in the *create bound file* dialog box. See  .
 
 
 If not, set the **XPLookandFeel** parameter to 0, when you run the program. For example:

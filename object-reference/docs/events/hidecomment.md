@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -18,11 +19,11 @@ If enabled, a HideComment event is generated just before a comment window is hid
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'HideComment'` or 224 |
-| `[3]` | Row | integer |
-| `[4]` | Column | integer |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'HideComment'` or 224 |
+|`[3]`|Row   |integer                |
+|`[4]`|Column|integer                |
 
 
 You may prevent the comment from being hidden by returning 0 as the result of a callback function.

@@ -13,21 +13,21 @@
 `X` determines which of a family of trigonometric, hyperbolic, Pythagorean  and complex functions to apply to `Y`, from the following table. Note that when `Y` is complex, `a` and  `b` are used to represent its real and imaginary parts, while `θ` represents its phase.
 
 
-| (-X) ○ Y | X | X ○ Y |
-| --- | --- | ---  |
-| `(1-Y*2)*.5` | `0` | `(1-Y*2)*.5` |
-| `Arcsin Y` | `1` | `Sine Y` |
-| `Arccos Y` | `2` | `Cosine Y` |
-| `Arctan Y` | `3` | `Tangent Y` |
-| `Y=¯1:0Y≠¯1:(Y+1)×((Y-1)÷Y+1)*0.5` | `4` | `(1+Y*2)*.5` |
-| `Arcsinh Y` | `5` | `Sinh Y` |
-| `Arccosh Y` | `6` | `Cosh Y` |
-| `Arctanh Y` | `7` | `Tanh Y` |
-| `-8○Y` | `8` | `(-1+Y*2)*0.5` |
-| `Y` | `9` | `a` |
-| `+Y` | `10` | `|Y` |
-| `Y×0J1` | `11` | `b` |
-| `*Y×0J1` | `12` | `θ` |
+|(-X) ○ Y|X|X ○ Y|
+|---|---|---|
+|`(1-Y*2)*.5`|`0`|`(1-Y*2)*.5`|
+|`Arcsin Y`|`1`|`Sine Y`|
+|`Arccos Y`|`2`|`Cosine Y`|
+|`Arctan Y`|`3`|`Tangent Y`|
+|`Y=¯1:0Y≠¯1:(Y+1)×((Y-1)÷Y+1)*0.5`|`4`|`(1+Y*2)*.5`|
+|`Arcsinh Y`|`5`|`Sinh Y`|
+|`Arccosh Y`|`6`|`Cosh Y`|
+|`Arctanh Y`|`7`|`Tanh Y`|
+|`-8○Y`|`8`|`(-1+Y*2)*0.5`|
+|`Y`|`9`|`a`|
+|`+Y`|`10`|`|Y`|
+|`Y×0J1`|`11`|`b`|
+|`*Y×0J1`|`12`|`θ`|
 
 
 

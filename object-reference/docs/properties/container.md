@@ -7,7 +7,8 @@
 
 
 
-Applies To: [ActiveXControl](../objects/activexcontrol.md)
+|-----------|----------------------------------------------|
+|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|
 
 
 **Description**

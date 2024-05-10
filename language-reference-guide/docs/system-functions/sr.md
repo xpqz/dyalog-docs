@@ -16,7 +16,7 @@ In versions of Dyalog APL that support asynchronous terminals, if the current sc
 In Dyalog APL/X, `⎕SR` causes the input cursor to be positioned in the USER window.  During execution of `⎕SR`, only the USER Window defined by `⎕SM` will accept input and respond to the keyboard or mouse.  The SESSION and any EDIT and TRACE Windows that may appear on the display are dormant.
 
 
-In versions of Dyalog APL with GUI support, a single SM object may be defined.  This object defines the size and position of the `⎕SM` window, and allows `⎕SM` to be used in conjunctions with other GUI components.  In these versions, `⎕SR` acts as a superset of `⎕DQ` (see [Dequeue Events:](dq.md)) but additionally controls the character-based user interface defined by `⎕SM`.
+In versions of Dyalog APL with GUI support, a single SM object may be defined.  This object defines the size and position of the `⎕SM` window, and allows `⎕SM` to be used in conjunctions with other GUI components.  In these versions, `⎕SR` acts as a superset of `⎕DQ` (see ["Dequeue Events: "](dq.md)) but additionally controls the character-based user interface defined by `⎕SM`.
 
 
 
@@ -70,14 +70,14 @@ which (normally) specifies <Enter>, <Esc> and <Shift+Esc>.
 This is a vector of between 3 and 6 elements with the following meanings and defaults:
 
 
-| Element | Description | Default |
-| --- | --- | ---  |
-| 1 | Initial Field | N/A |
-| 2 | Initial Cursor Position - Row | N/A |
-| 3 | Initial Cursor Position - Col | N/A |
-| 4 | Initial Keystroke | `''` |
-| 5 | (ignored) | N/A |
-| 6 | Changed Field Flags | 0 |
+|Element|Description                  |Default|
+|-------|-----------------------------|-------|
+|1      |Initial Field                |N/A    |
+|2      |Initial Cursor Position - Row|N/A    |
+|3      |Initial Cursor Position - Col|N/A    |
+|4      |Initial Keystroke            |`''`   |
+|5      |(ignored)                    |N/A    |
+|6      |Changed Field Flags          |0      |
 
 
 
@@ -105,17 +105,17 @@ Structure of  INITIAL_CONTEXT
 The result `EXIT_CONTEXT` is a 6 or 9-element vector whose first 6 elements have the same structure as the `INITIAL_CONTEXT`.  Elements 7-9 **only** apply to those versions of Dyalog APL that provide mouse support.
 
 
-| Element | Description |
-| --- | ---  |
-| 1 | Final Field |
-| 2 | Final Cursor Position - Row |
-| 3 | Final Cursor Position - Col |
-| 4 | Terminating Keystroke |
-| 5 | Event Code |
-| 6 | Changed Field Flags |
-| 7 | Pointer Field |
-| 8 | Pointer Position - Row |
-| 9 | Pointer Position - Col |
+|Element|Description                |
+|-------|---------------------------|
+|1      |Final Field                |
+|2      |Final Cursor Position - Row|
+|3      |Final Cursor Position - Col|
+|4      |Terminating Keystroke      |
+|5      |Event Code                 |
+|6      |Changed Field Flags        |
+|7      |Pointer Field              |
+|8      |Pointer Position - Row     |
+|9      |Pointer Position - Col     |
 
 
 

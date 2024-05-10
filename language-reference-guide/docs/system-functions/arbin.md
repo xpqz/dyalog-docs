@@ -17,9 +17,9 @@ This transmits a stream of 8-bit codes in `Y` to an output device specified by `
 `X` may take several forms:
 
 
-| terminate (input output) | ⎕ARBIN | codes |
-| --- | --- | ---  |
-| terminate input | ⎕ARBIN | codes |
+|------------------------|------|-----|
+|terminate (input output)|⎕ARBIN|codes|
+|terminate input         |⎕ARBIN|codes|
 
 
 #### terminate

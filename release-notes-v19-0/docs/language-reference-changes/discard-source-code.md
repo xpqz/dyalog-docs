@@ -26,9 +26,3 @@ In all case the result `R` is the previous setting (0 or 1).
 For further information, see [Source as Typed](../introduction/source-as-typed.md).
 
 
-For further information, see 
-UI Guide: 
-
-Source As Typed.
-
-

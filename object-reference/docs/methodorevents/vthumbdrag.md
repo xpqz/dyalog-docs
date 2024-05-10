@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Form](../objects/form.md) [SubForm](../objects/subform.md)
+|-----------|--------------------------|--------------------------------|
+|Applies To:|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
 
 
 **Description**
@@ -19,10 +20,10 @@ If enabled, this event is generated when the user attempts to drag the thumb in 
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 3-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'VThumbDrag'` or 441 |
-| `[3]` | Position | numeric |
+|-----|--------|-----------------------|
+|`[1]`|Object  |ref or character vector|
+|`[2]`|Event   |`'VThumbDrag'` or 441  |
+|`[3]`|Position|numeric                |
 
 
 The value of Position is the new (requested) position of the Thumb. Setting the action code of this event to `¯1`, or returning a 0 from a callback function attached to it, has no effect.

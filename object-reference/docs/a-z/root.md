@@ -7,10 +7,12 @@
 
 
 
-[Children](../childlists/root.md) [Properties](../proplists/root.md) [Methods](../methodlists/root.md) [Events](../eventlists/root.md)
+|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
+|[Children](../childlists/root.md)|[Properties](../proplists/root.md)|[Methods](../methodlists/root.md)|[Events](../eventlists/root.md)|
 
 
-Purpose: This is an invisible "system" object that acts as the parent of all other objects.
+|--------|----------------------------------------------------------------------------------|
+|Purpose:|This is an invisible "system" object that acts as the parent of all other objects.|
 
 
 **Description**

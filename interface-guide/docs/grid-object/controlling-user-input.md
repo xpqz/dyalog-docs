@@ -47,14 +47,14 @@ You can delete a row or column by using `⎕NQ` to send a DelRow or DelCol messa
 
 You can insert or add a row or column using the AddRow or AddCol method. You must specify the following information.
 
-| row or column number |
-| ---  |
-| title (optional) |
-| height or width (optional) |
-| undo flag (optional) |
-| resize flag (optional) |
-| title colour (optional) |
-| gridline type (optional) |
+|--------------------------|
+|row or column number      |
+|title (optional)          |
+|height or width (optional)|
+|undo flag (optional)      |
+|resize flag (optional)    |
+|title colour (optional)   |
+|gridline type (optional)  |
 
 The event message must specify the number of the row or column you wish to insert. This is index-origin dependent and indicates the number that the row or column will have after it has been inserted. For example, if `⎕IO` is 1 and you wish to insert a row between the 10th and 11th rows, you specify the number of the row to be inserted as 11. If you wish to insert a new column before the first one, you specify a column number of 1. To append a row or column to the end of the Grid, you should specify 1 + the current number of rows or columns.
 

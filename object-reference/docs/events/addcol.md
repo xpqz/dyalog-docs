@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -21,10 +22,10 @@ If enabled, this event is reported by the [Grid](../objects/grid.md) object if t
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 3-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'AddCol'` or 153 |
-| `[3]` | Column number | number of the new column (integer) |
+|-----|-------------|----------------------------------|
+|`[1]`|Object       |ref or character vector           |
+|`[2]`|Event        |`'AddCol'` or 153                 |
+|`[3]`|Column number|number of the new column (integer)|
 
 
 
@@ -34,14 +35,14 @@ An application may insert a new column into a [Grid](../objects/grid.md) by call
       follows:
 
 
-| `[1]` | Column number | number of the new column (integer) |
-| --- | --- | ---  |
-| `[2]` | Column title | character vector or matrix |
-| `[3]` | Column width | integer |
-| `[4]` | Undo flag | 0 or 1 |
-| `[5]` | Resize flag | 0 or 1 |
-| `[6]` | Title colour | negative integer or 3-element RGB vector |
-| `[7]` | Line type | integer |
+|-----|-------------|----------------------------------------|
+|`[1]`|Column number|number of the new column (integer)      |
+|`[2]`|Column title |character vector or matrix              |
+|`[3]`|Column width |integer                                 |
+|`[4]`|Undo flag    |0 or 1                                  |
+|`[5]`|Resize flag  |0 or 1                                  |
+|`[6]`|Title colour |negative integer or 3-element RGB vector|
+|`[7]`|Line type    |integer                                 |
 
 
 

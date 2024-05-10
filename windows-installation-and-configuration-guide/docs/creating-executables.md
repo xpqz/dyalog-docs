@@ -25,15 +25,15 @@ All registration information is written to HKEY_LOCAL_MACHINE in the registry wh
 
 The *Create bound file* dialog box contains the following fields. These will only be present if applicable to the type of bound file you are making.
 
-| Item | Description |
-| --- | ---  |
-| File name | Allows you to choose the name for your bound file. The name defaults to the name of your workspace with the appropriate extension. |
-| Save as type | Allows you to choose the type of file you wish to create |
-| Runtime application | If this is checked, your application file will be bound with the Run-Time DLL. If not, it will be bound with the Development DLL. The latter should normally only be used to permit debugging. |
-| Console application | Check this box if you want your executable to run as a console application. This is appropriate only if the application has no graphical user interface. |
-| Enable Native Look and Feel | If checked, *Native Look and Feel* will be enabled for your bound file; otherwise it will be disabled. |
-| Icon file | Allows you to associate an icon with your executable. Type in the pathname, or use the *Browse* button to navigate to an icon file. |
-| Command line | For an out-of-process COM Server, this allows you to specify the command line for the process. For a bound executable, this allows you to specify command-line parameters for the corresponding Dyalog APL DLL. |
+|Item|Description|
+|---|---|
+|File name|Allows you to choose the name for your bound file. The name defaults to the name of your workspace with the appropriate extension.|
+|Save as type|Allows you to choose the type of file you wish to create|
+|Runtime application|If this is checked, your application file will be bound with the Run-Time DLL. If not, it will be bound with the Development DLL. The latter should normally only be used to permit debugging.|
+|Console application|Check this box if you want your executable to run as a console application. This is appropriate only if the application has no graphical user interface.|
+|Enable Native Look and Feel|If checked, *Native Look and Feel* will be enabled for your bound file; otherwise it will be disabled.|
+|Icon file|Allows you to associate an icon with your executable. Type in the pathname, or use the *Browse* button to navigate to an icon file.|
+|Command line|For an out-of-process COM Server, this allows you to specify the command line for the process. For a bound executable, this allows you to specify command-line parameters for the corresponding Dyalog APL DLL.|
 
 The following example illustrates how you can package the supplied workspace `calc.dws` as an executable. Before making the executable, it is essential to set up the latent expression to run the program using `⎕LX` as shown. Notice that in this case it is not necessary to execute `⎕OFF`; the `calc.exe` program will terminate normally when the user closes the calculator window and the system returns to Session input.
 

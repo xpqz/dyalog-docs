@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../../../object-reference/objects/htmlrenderer)
+|-----------|--------------------------------------------------------------|
+|Applies To:|[HTMLRenderer](../../../object-reference/objects/htmlrenderer)|
 
 
 **Description**
@@ -19,7 +20,8 @@ Sets the CEF ZoomLevel. The default (unzoomed) level is 0. Setting a positive va
 The argument to SetZoomLevel is a single numeric value:
 
 
-`[1]` ZoomLevel Numeric
+|-----|---------|-------|
+|`[1]`|ZoomLevel|Numeric|
 
 
 

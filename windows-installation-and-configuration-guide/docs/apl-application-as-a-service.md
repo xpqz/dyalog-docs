@@ -22,10 +22,10 @@ The same command must be used to uninstall the service, but with:
 
 The following table summarises the parameters that can be specified by the user. Other parameters will appear on the command line in the SCM, but should not be specified by the user.
 
-| Parameter | Description |
-| --- | ---  |
-| **APL_ServiceInstall** | Causes Dyalog to register the named service, using the current command line, but with **APL_ServiceRun** replacing **APL_ServiceInstall** in the SCM. |
-| **APL_ServiceUninstall** | Causes Dyalog to uninstall the named service. |
+|Parameter               |Description                                                                                                                                          |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|**APL_ServiceInstall**  |Causes Dyalog to register the named service, using the current command line, but with **APL_ServiceRun** replacing **APL_ServiceInstall** in the SCM.|
+|**APL_ServiceUninstall**|Causes Dyalog to uninstall the named service.                                                                                                        |
 
 ## The Application Workspace
 

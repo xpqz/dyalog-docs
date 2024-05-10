@@ -6,12 +6,12 @@ In previous versions of Dyalog APL, certain pairs of characters in `⎕AV` were 
 
 **mapchars** is a string containing pairs of hexadecimal values which refer to 0-origin indices in `⎕AV` . The first character in each pair is mapped to the second on output. The default value of **mapchars** is `DB0DEBA7EEC00BE0` which defines the following mappings.
 
-| From | From | From | To | To | To |
-| --- | --- | --- | --- | --- | ---  |
-| Hex | Decimal | Symbol | Hex | Decimal | Symbol |
-| DB | 219 | `‘` | 0D | 13 | `'` |
-| EB | 235 | `^` | A7 | 167 | `^` |
-| EE | 238 | `⌷` | C0 | 192 | `|` |
-| 0B | 11 | `.` | E0 | 224 | `.` |
+|From|||To|||
+|---|---|---|---|---|---|
+|Hex|Decimal|Symbol|Hex|Decimal|Symbol|
+|DB|219|`‘`|0D|13|`'`|
+|EB|235|`^`|A7|167|`^`|
+|EE|238|`⌷`|C0|192|`|`|
+|0B|11|`.`|E0|224|`.`|
 
 To clear all mappings, set `MAPCHARS=0000` .

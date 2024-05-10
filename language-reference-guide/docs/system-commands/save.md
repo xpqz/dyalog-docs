@@ -7,7 +7,7 @@
 
 
 
-This command compacts (see [Workspace Available:](../system-functions/wa.md) for details) and saves the active workspace.
+This command compacts (see ["Workspace Available: "](../system-functions/wa.md) for details) and saves the active workspace.
 
 
 If specified, `ws` is a full or relative path name to the file in which the workspace will be written. If `ws` is omitted, it defaults to `⎕WSID`. Unless the path specified by `ws` or `⎕WSID` is a full pathname, it is taken to be relative to the current working directory which may be obtained by the expression: `⊃1 ⎕NPARTS ''`.
@@ -16,7 +16,7 @@ If specified, `ws` is a full or relative path name to the file in which the work
 If  `ws` specifies a file name other than that implied by  `⎕WSID`, the specified file must not already exist unless the **force** parameter is specified.. If `ws` is omitted or resolves to the same file as  `⎕WSID`, an existing stored workspace with the same name will be replaced.
 
 
-See Workspaces[Programmer's Guide: "Workspaces](../../../programming-reference-guide/introduction/workspaces) for the rules for specifying a workspace name.
+See [Programmer's Guide: "Workspaces"](../../../programming-reference-guide/introduction/workspaces) for the rules for specifying a workspace name.
 
 
 If an extension is not specified, an extension is added according to the [**WSEXT** parameter](../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters)..
@@ -30,13 +30,13 @@ A workspace may not be saved if any threads (other than the root thread 0) are r
 `)SAVE` may fail with one of the following error messages:
 
 
-| `unacceptable char` | The given workspace name was ill-formed |
-| --- | ---  |
-| `not saved this ws is WSID` | An attempt was made to change the name of the workspace for the save, and the renamed workspace already existed. This error can be overridden by specifying **-force** . |
-| `not saved this ws is CLEAR WS` | The active workspace was `CLEAR WS` and no attempt was made to change the name. |
-| `Can't save - file could not be created.` | The workspace name supplied did not represent a valid file name for the current Operating System. |
-| `cannot create` | The user does not have access to create the file OR the workspace name conflicts with an existing non-workspace file. |
-| `cannot save with windows open` | A workspace may not be saved if trace or edit windows are open. |
+|---|---|
+|`unacceptable char`|The given workspace name was ill-formed|
+|`not saved this ws is WSID`|An attempt was made to change the name of the workspace for the save, and the renamed workspace already existed. This error can be overridden by specifying **-force** .|
+|`not saved this ws is CLEAR WS`|The active workspace was `CLEAR WS` and no attempt was made to change the name.|
+|`Can't save - file could not be created.`|The workspace name supplied did not represent a valid file name for the current Operating System.|
+|`cannot create`|The user does not have access to create the file OR the workspace name conflicts with an existing non-workspace file.|
+|`cannot save with windows open`|A workspace may not be saved if trace or edit windows are open.|
 
 
 

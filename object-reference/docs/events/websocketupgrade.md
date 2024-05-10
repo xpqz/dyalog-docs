@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../objects/htmlrenderer.md)
+|-----------|------------------------------------------|
+|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
 
 
 **Description**
@@ -21,13 +22,13 @@ This event is reported when the client component of an [HTMLRenderer](../objects
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 6-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'WebSocketUpgrade'` or 841 |
-| `[3]` | ID | Character vector containing the ID of the WebSocket |
-| `[4]` | URL | The requested URL of the WebSocket |
-| `[5]` | Headers | ASCII including CRLF |
-| `[6]` | Type | Character vector `'auto'` or `'manual'` |
+|-----|-------|---------------------------------------------------|
+|`[1]`|Object |ref or character vector                            |
+|`[2]`|Event  |`'WebSocketUpgrade'` or 841                        |
+|`[3]`|ID     |Character vector containing the ID of the WebSocket|
+|`[4]`|URL    |The requested URL of the WebSocket                 |
+|`[5]`|Headers|ASCII including CRLF                               |
+|`[6]`|Type   |Character vector `'auto'` or `'manual'`            |
 
 
 

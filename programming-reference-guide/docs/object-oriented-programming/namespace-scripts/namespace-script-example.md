@@ -6,7 +6,7 @@ The [DiaryStuff](diarystuff-example-namespace.md) example illustrates the manner
 
 `Diary` contains a (private) Field named `entries`, which is simply a vector of instances of `DiaryEntry`. These are 2-element vectors containing a .NET DateTime object and a description.
 
-The `entries` Field is initialised to an empty vector of `DiaryEntry` instances which causes the invocation of the default constructor `DiaryEntry.Make0` when `Diary` is fixed. See [Empty Arrays of Instances: Why ?](../constructors/empty-arrays-of-instances-why.md) for further explanation.
+The `entries` Field is initialised to an empty vector of `DiaryEntry` instances which causes the invocation of the default constructor `DiaryEntry.Make0` when `Diary` is fixed. See ["Empty Arrays of Instances: Why ?"](../constructors/empty-arrays-of-instances-why.md) for further explanation.
 
 The `entries` Field is referenced through the `Entry` Property, which is defined as the [Default Property](../class-members/properties/default-property.md). This allows individual entries to be referenced and changed using indexing on a `Diary` Instance.
 

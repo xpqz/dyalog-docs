@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/statusfield.md) [Children](../childlists/statusfield.md) [Properties](../proplists/statusfield.md) [Methods](../methodlists/statusfield.md) [Events](../eventlists/statusfield.md)
+|---|---|---|---|---|
+|[Parents](../parentlists/statusfield.md)|[Children](../childlists/statusfield.md)|[Properties](../proplists/statusfield.md)|[Methods](../methodlists/statusfield.md)|[Events](../eventlists/statusfield.md)|
 
 
-Purpose: This object is used to display information for the user.
+|--------|--------------------------------------------------------|
+|Purpose:|This object is used to display information for the user.|
 
 
 **Description**
@@ -29,12 +31,12 @@ Note that when the StatusField is used to display hints it is its [Text](../prop
 A StatusField may be used to monitor the status of the keyboard and this is controlled by its [Style](../properties/style.md) property. The default value for [Style](../properties/style.md) is an empty vector. However, you can set it to monitor various keyboard states as follows :
 
 
-| CapsLock | Monitors state of Caps Lock key |
-| --- | ---  |
-| ScrollLock | Monitors state of Scroll Lock key |
-| NumLock | Monitors state of Num Lock key |
-| KeyMode | Monitors the keyboard mode (APL/ASCII) |
-| InsRep | Monitors the state of the Insert key |
+|----------|--------------------------------------|
+|CapsLock  |Monitors state of Caps Lock key       |
+|ScrollLock|Monitors state of Scroll Lock key     |
+|NumLock   |Monitors state of Num Lock key        |
+|KeyMode   |Monitors the keyboard mode (APL/ASCII)|
+|InsRep    |Monitors the state of the Insert key  |
 
 
 In each case, the [Text](../properties/text.md) property of the StatusField is used to display the keyboard status. If [Style](../properties/style.md) is CapsLock, ScrollLock or NumLock, the field displays "Caps", "Num" or "Scroll" if the corresponding mode is selected and is blank if not.

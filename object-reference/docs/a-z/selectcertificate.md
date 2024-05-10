@@ -7,7 +7,8 @@
 
 
 
-Applies To: [HTMLRenderer](../objects/htmlrenderer.md)
+|-----------|------------------------------------------|
+|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
 
 
 **Description**
@@ -21,14 +22,14 @@ This event is triggered when [HTMLRenderer](../objects/htmlrenderer.md) requests
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 7-element vector as follows:
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'SelectCertificate'` or 848 |
-| `[3]` | Index | Integer (see below) |
-| `[4]` | Addr | Host address |
-| `[5]` | Port | Host port |
-| `[6]` |  | `'is proxy'` |
-| `[7]` | Certificates | See below |
+|-----|------------|----------------------------|
+|`[1]`|Object      |ref or character vector     |
+|`[2]`|Event       |`'SelectCertificate'` or 848|
+|`[3]`|Index       |Integer (see below)         |
+|`[4]`|Addr        |Host address                |
+|`[5]`|Port        |Host port                   |
+|`[6]`|&nbsp;      |`'is proxy'`                |
+|`[7]`|Certificates|See below                   |
 
 
 
@@ -36,12 +37,12 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 **Certificates** is a vector of namespaces, each of which represents an available certificate and contains the following variables:
 
 
-| Name | Description |
-| --- | ---  |
-| `DER` | Distinguished Encoding Rules. Character Vector. |
-| `Subject` | Namespace (see below) |
-| `Issuer` | Namespace (see below) |
-| `SerialNumber` | Integer |
+|Name          |Description                                    |
+|--------------|-----------------------------------------------|
+|`DER`         |Distinguished Encoding Rules. Character Vector.|
+|`Subject`     |Namespace (see below)                          |
+|`Issuer`      |Namespace (see below)                          |
+|`SerialNumber`|Integer                                        |
 
 
 
@@ -49,11 +50,11 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 The **Subject** and **Issuer** namespaces contain the following variables:
 
 
-| Name | Description |
-| --- | ---  |
-| `CommonName` | Character vector |
-| `CountryName` | Character vector |
-| `DisplayName` | Character vector |
+|Name         |Description     |
+|-------------|----------------|
+|`CommonName` |Character vector|
+|`CountryName`|Character vector|
+|`DisplayName`|Character vector|
 
 
 

@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/ocxclass.md) [Properties](../proplists/ocxclass.md) [Methods](../methodlists/ocxclass.md) [Events](../eventlists/ocxclass.md)
+|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
+|[Parents](../parentlists/ocxclass.md)|[Properties](../proplists/ocxclass.md)|[Methods](../methodlists/ocxclass.md)|[Events](../eventlists/ocxclass.md)|
 
 
-Purpose: This object provides access to OLE (ActiveX) Controls.
+|--------|------------------------------------------------------|
+|Purpose:|This object provides access to OLE (ActiveX) Controls.|
 
 
 **Description**

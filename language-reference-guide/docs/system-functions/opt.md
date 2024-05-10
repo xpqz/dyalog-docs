@@ -10,7 +10,7 @@
 `⎕OPT` is synonymous with the Variant Operator `⍠` and can be used in both Classic and Unicode Editions - unlike `⍠` which is valid in Unicode Editions only, and `⎕U2360` which is valid in Classic Editions only.
 
 
-See [Variant](../primitive-operators/variant.md).
+See ["Variant"](../primitive-operators/variant.md).
 
 
 

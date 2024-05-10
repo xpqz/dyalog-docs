@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Root](../objects/root.md)
+|-----------|--------------------------|
+|Applies To:|[Root](../objects/root.md)|
 
 
 **Description**
@@ -21,7 +22,8 @@ This method is used to obtain information about one or more parameters that were
 The argument to GetEnvironment is a single item as follows:
 
 
-`[1]` Parameter name(s) see below
+|-----|-----------------|---------|
+|`[1]`|Parameter name(s)|see below|
 
 
 

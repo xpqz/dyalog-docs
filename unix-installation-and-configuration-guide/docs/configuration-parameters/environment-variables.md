@@ -24,20 +24,20 @@ The environment variables are broken down into several tables:
 
 Table E1: Commonly used Variables
 
-| Variable | Notes |
-| --- | ---  |
-| TERM APLK APLK0 APLT APLTn | Define the input and output translate tables used by Dyalog APL. The values of APLK0 and APLTn override the values of APLK and APLT if set, and they in turn override the value of (Unicode) *default*, or (Classic) TERM if set. APLK is for input translation, APLT for output translation. These are used in conjunction with .. |
-| APLKEYS APLTTRANS | Define the search path for the input and output translate tables respectively. If unset, the interpreter will default to $DYALOG; if $DYALOG too is not set, will default to /usr/dyalog. |
-| APLNID | This variable is ignored by the UNIX versions of Dyalog APL: `⎕ai` and `⎕an` pick up their values from the user's uid and /etc/passwd. |
-| APLSTATUSFD | If set, this defines the stream number on which all messages for the Status Window appear. It is then possible to redirect this output when APL is started. If unset, the output will appear in the same terminal window as the APL session, although it is not part of the session; such output can be removed by hitting SR (Screen Redraw - often defined to be Ctrl-L). |
-| DYALOG_NETCORE | This parameter is a Boolean value with a default value of 1. If set to 0, it disables the .NET interface. |
-| DYALOG_SERIAL | This parameter contains your Dyalog serial number. This must be set to the serial number issued to you. If not set, then the software is unregistered. For the full licence terms and conditions, see [https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf) . |
-| DYALOG_SERIALFILE | This parameter specifies the full path to the text file containing your Dyalog serial number. |
-| ENABLE_CEF | This parameter is a Boolean value with a default value of 1. If set to 0, it disables the [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) and at attempt to create an [HTMLRenderer](../../../object-reference/objects/htmlrenderer) object will fail with an error meessage. See Note (below). |
-| ERRORONEXTERNALEXCEPTION | By default, any error when calling `⎕NA` will result in APL terminating; if `ERRORONEXTERNALEXCEPTION` is set to 1, then APL will instead generate an event 91: `EXTERNAL DLL EXCEPTION` . Be aware however that the workspace may become corrupted. This is best used when developing `⎕NA` code rather than in production. |
-| LIBPATH | A suitable entry for the Conga libraries needs to be added to the LIBPATH variable if Conga is to be used. For more information see the Conga Guide. |
-| MAXWS | Defines the size of the workspace that will be presented to the user when Dyalog APL is started. A simple integer value will be treated as being in KB. K, M and G can be appended to the value to indicate KiB, MiB and GiB (binary) respectively. If unset, the default value is 256M. |
-| WSPATH | Defines the search path for both workspaces and Auxiliary processors. If unset, there is no default value. Workspaces and APs that are not on the WSPATH can be accessed using absolute or relative pathnames. |
+|Variable|Notes|
+|---|---|
+|TERM APLK APLK0 APLT APLTn|Define the input and output translate tables used by Dyalog APL. The values of APLK0 and APLTn override the values of APLK and APLT if set, and they in turn override the value of (Unicode) *default*, or (Classic) TERM if set. APLK is for input translation, APLT for output translation. These are used in conjunction with ..|
+|APLKEYS APLTTRANS|Define the search path for the input and output translate tables respectively. If unset, the interpreter will default to $DYALOG; if $DYALOG too is not set, will default to /usr/dyalog.|
+|APLNID|This variable is ignored by the UNIX versions of Dyalog APL: `⎕ai` and `⎕an` pick up their values from the user's uid and /etc/passwd.|
+|APLSTATUSFD|If set, this defines the stream number on which all messages for the Status Window appear. It is then possible to redirect this output when APL is started. If unset, the output will appear in the same terminal window as the APL session, although it is not part of the session; such output can be removed by hitting SR (Screen Redraw - often defined to be Ctrl-L).|
+|DYALOG_NETCORE|This parameter is a Boolean value with a default value of 1. If set to 0, it disables the .NET interface.|
+|DYALOG_SERIAL|This parameter contains your Dyalog serial number. This must be set to the serial number issued to you. If not set, then the software is unregistered. For the full licence terms and conditions, see [https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf) .|
+|DYALOG_SERIALFILE|This parameter specifies the full path to the text file containing your Dyalog serial number.|
+|ENABLE_CEF|This parameter is a Boolean value with a default value of 1. If set to 0, it disables the [Chromium Embedded Framework (CEF).](https://en.wikipedia.org/wiki/Chromium_Embedded_Framework) and at attempt to create an [HTMLRenderer](../../../object-reference/objects/htmlrenderer) object will fail with an error meessage. See Note (below).|
+|ERRORONEXTERNALEXCEPTION|By default, any error when calling `⎕NA` will result in APL terminating; if `ERRORONEXTERNALEXCEPTION` is set to 1, then APL will instead generate an event 91: `EXTERNAL DLL EXCEPTION` . Be aware however that the workspace may become corrupted. This is best used when developing `⎕NA` code rather than in production.|
+|LIBPATH|A suitable entry for the Conga libraries needs to be added to the LIBPATH variable if Conga is to be used. For more information see the Conga Guide.|
+|MAXWS|Defines the size of the workspace that will be presented to the user when Dyalog APL is started. A simple integer value will be treated as being in KB. K, M and G can be appended to the value to indicate KiB, MiB and GiB (binary) respectively. If unset, the default value is 256M.|
+|WSPATH|Defines the search path for both workspaces and Auxiliary processors. If unset, there is no default value. Workspaces and APs that are not on the WSPATH can be accessed using absolute or relative pathnames.|
 
 ## Note
 
@@ -50,15 +50,15 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 
 Table E2: Default workspace values
 
-| Variable | Notes |
-| --- | ---  |
-| DEFAULT_DIV | Default value for `⎕div` in a clear workspace. |
-| DEFAULT_IO | Default value for `⎕io` in a clear workspace. |
-| DEFAULT_ML | Default value for `⎕ml` in a clear workspace. |
-| DEFAULT_PP | Default value for `⎕pp` in a clear workspace. |
-| AUTO_PW DEFAULT_PW | `⎕pw` is set by the interpreter when it starts, or when the session window is resized. Under UNIX if the terminal window is resized, the session will be resized when the interpreter next checks for input. |
-| DEFAULT_RTL | Default value for `⎕rtl` in a clear workspace. |
-| DEFAULT_WX | Default value for `⎕wx` in a clear workspace. Note that although the UNIX versions of Dyalog APL do not have GUI objects, `⎕se` is present, and the value of `⎕wx` will affect the programmer's ability to run expressions such as `⎕se.PropList`. |
+|Variable|Notes|
+|---|---|
+|DEFAULT_DIV|Default value for `⎕div` in a clear workspace.|
+|DEFAULT_IO|Default value for `⎕io` in a clear workspace.|
+|DEFAULT_ML|Default value for `⎕ml` in a clear workspace.|
+|DEFAULT_PP|Default value for `⎕pp` in a clear workspace.|
+|AUTO_PW DEFAULT_PW|`⎕pw` is set by the interpreter when it starts, or when the session window is resized. Under UNIX if the terminal window is resized, the session will be resized when the interpreter next checks for input.|
+|DEFAULT_RTL|Default value for `⎕rtl` in a clear workspace.|
+|DEFAULT_WX|Default value for `⎕wx` in a clear workspace. Note that although the UNIX versions of Dyalog APL do not have GUI objects, `⎕se` is present, and the value of `⎕wx` will affect the programmer's ability to run expressions such as `⎕se.PropList`.|
 
 For numeric values, the interpreter takes the value of the environment variable, and prepends a "0" to that string. It then parses the string, accepting characters until the first non-digit character is reached.
 
@@ -66,17 +66,17 @@ This string, now of digits only, is converted into an integer. If the resulting 
 
 Table E3: Variables used to configure the Session.
 
-| Variable | Notes |
-| --- | ---  |
-| DYALOGLINK | Specifies the directory for Link |
-| DYALOGSTARTUPSE | Specifies one or more *Session initialisation* directories that contain APL code to be installed in `⎕SE` |
-| DYALOGSTART_X | Specifies whether the `Run` function is executed during 					Session startup |
-| DYALOG_GUTTER_ENABLE | Enable or disable Session Gutter |
-| HISTORY_SIZE | The size of the prior line buffer |
-| INPUT_SIZE | The size of the buffer used to store lines marked for execution |
-| LOG_FILE LOG_FILE_INUSE LOG_SIZE | These three variables determine the name of the session log file (default ~/.dyalog/session_log_<DyalogMajor><DyalogMinor><U|C><bits>_*.dlf, for example, ~/.dyalog/session_log_190U64_*.dlf), whether a log file is created or not, and the size of the log file in KB. Be aware: the session log file is not interchangeable between the different editions and widths of APL; in a mixed environment it is strongly recommended to use a different log file for each version. |
-| PFKEY_SIZE | The size of the buffer used to hold `⎕pfkey` definitions: if this is too small, an attempt to add a new definition will result in a LIMIT ERROR. |
-| SESSION_FILE | Defines the location of your session file; session file support was added in Dyalog 13.1. The default value is $DYALOG/default.dse |
+|Variable|Notes|
+|---|---|
+|DYALOGLINK|Specifies the directory for Link|
+|DYALOGSTARTUPSE|Specifies one or more *Session initialisation* directories that contain APL code to be installed in `⎕SE`|
+|DYALOGSTART_X|Specifies whether the `Run` function is executed during 					Session startup|
+|DYALOG_GUTTER_ENABLE|Enable or disable Session Gutter|
+|HISTORY_SIZE|The size of the prior line buffer|
+|INPUT_SIZE|The size of the buffer used to store lines marked for execution|
+|LOG_FILE LOG_FILE_INUSE LOG_SIZE|These three variables determine the name of the session log file (default ~/.dyalog/session_log_<DyalogMajor><DyalogMinor><U|C><bits>_*.dlf, for example, ~/.dyalog/session_log_190U64_*.dlf), whether a log file is created or not, and the size of the log file in KB. Be aware: the session log file is not interchangeable between the different editions and widths of APL; in a mixed environment it is strongly recommended to use a different log file for each version.|
+|PFKEY_SIZE|The size of the buffer used to hold `⎕pfkey` definitions: if this is too small, an attempt to add a new definition will result in a LIMIT ERROR.|
+|SESSION_FILE|Defines the location of your session file; session file support was added in Dyalog 13.1. The default value is $DYALOG/default.dse|
 
 To set values, use K to indicate KB. Note that the buffers will contain other information, so the buffer size will not be exact. Note also that multibyte Unicode characters will take up more space than single byte characters, and that 32 and 64 bit versions of Dyalog APL can require different amounts of space for holding the same information.
 
@@ -87,40 +87,40 @@ $ HISTORY_SIZE=4K my_apl_startup_script
 
 Table E4: Miscellaneous Variables used by non-GUI Dyalog APL
 
-| Variable | Notes |
-| --- | ---  |
-| APL_TEXTINAPLCORE | If set with the value 1 the "Interesting Information" section is included in an aplcore file. Otherwise this section is omitted. By default the interpreter has this set to 0; it is the default APL script which sets it to 1. |
-| AUTOFORMAT TABSTOPS | If AUTOFORMAT is 1, then control structures will be shown with indents, set at TABSTOPS spaces; the changes are reflected in the editor window when the RD (ReDraw) command key is hit. |
-| AUTOINDENT | If AUTOINDENT is set to 1, then if a line is added it is indented the same as the previous line. |
-| AUTO_PW | Introduced in 13.0. With `AUTO_PW=0, ⎕pw` remains fixed at the size of the terminal window when APL was started. When set to 1, or unset, `⎕pw` alters each time the terminal window is resized. |
-| DYALOG | This variable is defined in the supplied mapl startup script, and is used to form the default values for APLKEYS, APLTRANS, WSPATH etc. If it is necessary to identify the location of the Dyalog executable, then a more reliable method is to determine the full path name from the appropriate file in the /proc/<process_id_of_APL_session>/ subdirectory or from the output of ps. |
+|---|---|
+|Variable|Notes|
+|APL_TEXTINAPLCORE|If set with the value 1 the "Interesting Information" section is included in an aplcore file. Otherwise this section is omitted. By default the interpreter has this set to 0; it is the default APL script which sets it to 1.|
+|AUTOFORMAT TABSTOPS|If AUTOFORMAT is 1, then control structures will be shown with indents, set at TABSTOPS spaces; the changes are reflected in the editor window when the RD (ReDraw) command key is hit.|
+|AUTOINDENT|If AUTOINDENT is set to 1, then if a line is added it is indented the same as the previous line.|
+|AUTO_PW|Introduced in 13.0. With `AUTO_PW=0, ⎕pw` remains fixed at the size of the terminal window when APL was started. When set to 1, or unset, `⎕pw` alters each time the terminal window is resized.|
+|DYALOG|This variable is defined in the supplied mapl startup script, and is used to form the default values for APLKEYS, APLTRANS, WSPATH etc. If it is necessary to identify the location of the Dyalog executable, then a more reliable method is to determine the full path name from the appropriate file in the /proc/<process_id_of_APL_session>/ subdirectory or from the output of ps.|
 
 These are the remaining variables listed in the *Dyalog for Microsoft Windows Installation and Configuration Guide* which are effective in the non-GUI UNIX versions of Dyalog APL
 
 Table E5: Editor-related environment variables
 
-| Variable | Notes |
-| --- | ---  |
-| EDITOR_COLUMNS_* | See [Configuring the Editor](configuring-the-editor.md). Can be one of EDITOR_COLUMNS_CHARACTER_ARRAY EDITOR_COLUMNS_CLASS EDITOR_COLUMNS_FUNCTION EDITOR_COLUMNS_NAMESPACE EDITOR_COLUMNS_NUMERIC_ARRAY |
-| DYALOG_DISCARD_FN_SOURCE | Specifies whether source code is retained in the workspace |
+|---|---|
+|Variable|Notes|
+|EDITOR_COLUMNS_*|See [Configuring the Editor](configuring-the-editor.md). Can be one of EDITOR_COLUMNS_CHARACTER_ARRAY EDITOR_COLUMNS_CLASS EDITOR_COLUMNS_FUNCTION EDITOR_COLUMNS_NAMESPACE EDITOR_COLUMNS_NUMERIC_ARRAY|
+|DYALOG_DISCARD_FN_SOURCE|Specifies whether source code is retained in the workspace|
 
 Table E6:Tracer-related environment variables
 
-| Variable | Notes |
-| --- | ---  |
-| TRACE_ON_ERROR | With this is set to 1 (the default) the tracer is opened if an untrapped error occurs. |
+|--------------|--------------------------------------------------------------------------------------|
+|Variable      |Notes                                                                                 |
+|TRACE_ON_ERROR|With this is set to 1 (the default) the tracer is opened if an untrapped error occurs.|
 
 Table E7:RIDE-related environment variables
 
-| Variable | Notes |
-| --- | ---  |
-| RIDE_INIT | Enables and configures RIDE; see the *RIDE User Guide* for more information. |
+|---------|----------------------------------------------------------------------------|
+|Variable |Notes                                                                       |
+|RIDE_INIT|Enables and configures RIDE; see the *RIDE User Guide* for more information.|
 
 Table E8: SALT and user commands related environment variables
 
-| Variable | Notes |
-| --- | ---  |
-| SESSION_FILE | Specifies the location of the file containing ⎕SE . The default value is $DYALOG/default.dse |
-| UCMDCACHEFILE | Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache"` e.g. `UserCommand25.182U64.cache` in the `dyalog` directory. |
+|---|---|
+|Variable|Notes|
+|SESSION_FILE|Specifies the location of the file containing ⎕SE . The default value is $DYALOG/default.dse|
+|UCMDCACHEFILE|Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache"` e.g. `UserCommand25.182U64.cache` in the `dyalog` directory.|
 
 Further information about SALT and user commands appear in the *User Commands User Guide* and the *SALT User Guide*.

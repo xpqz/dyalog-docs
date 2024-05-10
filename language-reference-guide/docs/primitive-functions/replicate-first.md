@@ -7,7 +7,7 @@
 
 
 
-The form `R←X⌿Y` implies replication along the first axis of `Y`.  See [Replicate](replicate.md).
+The form `R←X⌿Y` implies replication along the first axis of `Y`.  See ["Replicate"](replicate.md).
 
 
 

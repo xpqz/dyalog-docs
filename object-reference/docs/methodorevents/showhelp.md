@@ -7,7 +7,8 @@
 
 
 
-Applies To: [OCXClass](../objects/ocxclass.md) [OLEClient](../objects/oleclient.md)
+|-----------|----------------------------------|------------------------------------|
+|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
 
 
 **Description**
@@ -19,7 +20,8 @@ This method is used to display the Windows help file for a COM object or the hel
 The argument to ShowHelp is `⍬`, or a single item as follows :
 
 
-`[1]` Topic character vector.
+|-----|-----|-----------------|
+|`[1]`|Topic|character vector.|
 
 
 *Topic* specifies the name of a property, event or method.

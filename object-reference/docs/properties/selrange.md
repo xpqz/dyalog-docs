@@ -7,7 +7,8 @@
 
 
 
-Applies To: [TrackBar](../objects/trackbar.md)
+|-----------|----------------------------------|
+|Applies To:|[TrackBar](../objects/trackbar.md)|
 
 
 **Description**

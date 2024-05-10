@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/coolbar.md) [Children](../childlists/coolbar.md) [Properties](../proplists/coolbar.md) [Methods](../methodlists/coolbar.md) [Events](../eventlists/coolbar.md)
+|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
+|[Parents](../parentlists/coolbar.md)|[Children](../childlists/coolbar.md)|[Properties](../proplists/coolbar.md)|[Methods](../methodlists/coolbar.md)|[Events](../eventlists/coolbar.md)|
 
 
-Purpose: The CoolBar object acts as a container for CoolBand objects.
+|--------|------------------------------------------------------------|
+|Purpose:|The CoolBar object acts as a container for CoolBand objects.|
 
 
 **Description**

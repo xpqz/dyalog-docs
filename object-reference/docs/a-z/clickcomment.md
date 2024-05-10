@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -19,11 +20,11 @@ If enabled, a ClickComment event is generated when the user clicks the mouse in 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 4-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'ClickComment'` or 225 |
-| `[3]` | Row | integer |
-| `[4]` | Column | integer |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'ClickComment'` or 225|
+|`[3]`|Row   |integer                |
+|`[4]`|Column|integer                |
 
 
 The event message reports the co-ordinates of the cell. The default action is to raise the comment window so that it appears above all other, potentially overlapping, comment windows.

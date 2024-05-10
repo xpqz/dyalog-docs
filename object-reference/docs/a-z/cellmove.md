@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Grid](../objects/grid.md)
+|-----------|--------------------------|
+|Applies To:|[Grid](../objects/grid.md)|
 
 
 **Description**
@@ -24,16 +25,16 @@ The default action is to position the user on the new cell. This action can be p
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is an 8 element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'CellMove'` or 151 |
-| `[3]` | New cell row | integer |
-| `[4]` | New cell column | integer |
-| `[5]` | Scroll flag | 0 or 1 |
-| `[6]` | Selection flag | 0, 1 or 2 |
-| `[7]` | Mouse flag | 0 or 1 |
-| `[8]` | Changed flag | 0 or 1 (relates to **current** cell) |
-| `[9]` | New value | new value of **current** cell or `⍬` |
+|-----|---------------|------------------------------------|
+|`[1]`|Object         |ref or character vector             |
+|`[2]`|Event          |`'CellMove'` or 151                 |
+|`[3]`|New cell row   |integer                             |
+|`[4]`|New cell column|integer                             |
+|`[5]`|Scroll flag    |0 or 1                              |
+|`[6]`|Selection flag |0, 1 or 2                           |
+|`[7]`|Mouse flag     |0 or 1                              |
+|`[8]`|Changed flag   |0 or 1 (relates to **current** cell)|
+|`[9]`|New value      |new value of **current** cell or `⍬`|
 
 
 

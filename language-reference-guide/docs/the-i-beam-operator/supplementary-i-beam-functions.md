@@ -6,8 +6,8 @@ The following table lists those I-Beams, together with the document which contai
 
 Experimental and other I-Beams
 
-| A | Purpose | Where documented |  |  |
-| --- | --- | ---  |
-| `8659` | Shared Code Files. These are supported only in 64-bit Unicode interpreters, and were previously known as External Workspaces | Shared Code Files User Guide |  |  |
-| `8666` |  |  |
-| `8667` |  |  |
+|A     |Purpose                                                                                                                     |Where documented            |&nbsp;|&nbsp;|
+|------|----------------------------------------------------------------------------------------------------------------------------|----------------------------|------|------|
+|`8659`|Shared Code Files. These are supported only in 64-bit Unicode interpreters, and were previously known as External Workspaces|Shared Code Files User Guide|&nbsp;|&nbsp;|
+|`8666`|&nbsp;                                                                                                                      |&nbsp;                                  |||
+|`8667`|&nbsp;                                                                                                                      |&nbsp;                                  |||

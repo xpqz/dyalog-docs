@@ -28,4 +28,4 @@ Shared methods are typically used to manipulate Shared Properties and Fields or 
 
 Instance Methods may be declared with `:Access Overridable`.
 
-A Method declared as being Overridable is replaced in situ (i.e. within its own Class) by a Method of the same name that is defined in a higher Class which itself is declared with the Override keyword. See [Superseding Base Class Methods](superceding-base-class-methods.md).
+A Method declared as being Overridable is replaced in situ (i.e. within its own Class) by a Method of the same name that is defined in a higher Class which itself is declared with the Override keyword. See ["Superseding Base Class Methods"](superceding-base-class-methods.md).

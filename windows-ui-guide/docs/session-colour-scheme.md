@@ -12,26 +12,26 @@ The first table below shows the colours used for different session components. T
 
 Default Colour Scheme - Session
 
-| Colour | Used for | Default |
-| --- | --- | ---  |
-| 249 | Input and marked lines | Red on White |
-| 250 | Session log | Black on White |
-| 252 | Tracer : Suspended Function | Yellow on Black |
-| 253 | Tracer : Pendent Function | Yellow on Dark Grey |
-| 245 | Tracer : Current Line | White on Red |
+|Colour|Used for                   |Default            |
+|------|---------------------------|-------------------|
+|249   |Input and marked lines     |Red on White       |
+|250   |Session log                |Black on White     |
+|252   |Tracer : Suspended Function|Yellow on Black    |
+|253   |Tracer : Pendent Function  |Yellow on Dark Grey|
+|245   |Tracer : Current Line      |White on Red       |
 
 Default Colour Scheme Edit windows
 
-| Colour | Array Type | Editable | Default |
-| --- | --- | --- | ---  |
-| 236 | Simple character matrix | Yes | Green on Black |
-| 239 | Simple numeric | No | White on Dk Grey |
-| 241 | Simple mixed | No | Cyan on Dk Grey |
-| 242 | Character vector of vectors | Yes | Cyan on Black |
-| 243 | Nested array | No | Cyan on Dk Grey |
-| 245 | `⎕OR` object | No | White on Red |
-| 248 | Function or Operator | No | White on Dk Cyan |
-| 254 | Function or Operator | Yes | White on Blue |
+|Colour|Array Type                 |Editable|Default         |
+|------|---------------------------|--------|----------------|
+|236   |Simple character matrix    |Yes     |Green on Black  |
+|239   |Simple numeric             |No      |White on Dk Grey|
+|241   |Simple mixed               |No      |Cyan on Dk Grey |
+|242   |Character vector of vectors|Yes     |Cyan on Black   |
+|243   |Nested array               |No      |Cyan on Dk Grey |
+|245   |`⎕OR` object               |No      |White on Red    |
+|248   |Function or Operator       |No      |White on Dk Cyan|
+|254   |Function or Operator       |Yes     |White on Blue   |
 
 ### Syntax Colouring in the Session
 

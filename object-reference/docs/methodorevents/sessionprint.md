@@ -7,7 +7,8 @@
 
 
 
-Applies To: [Session](../../../windows-ui-guide/the-session-object/session-object)
+|-----------|----------------------------------------------------------------------|
+|Applies To:|[Session](../../../windows-ui-guide/the-session-object/session-object)|
 
 
 **Description**
@@ -21,9 +22,9 @@ If enabled, this event is reported when a value is about to be displayed in the 
 The event message reported as the result of `⎕DQ`, or supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref or character vector |
-| --- | --- | ---  |
-| `[2]` | Event | `'SessionPrint'` or 526 |
+|-----|------|-----------------------|
+|`[1]`|Object|ref or character vector|
+|`[2]`|Event |`'SessionPrint'` or 526|
 
 
 

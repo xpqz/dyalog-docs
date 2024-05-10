@@ -377,9 +377,9 @@ There are two types of event; ElementChanged and CellsChanged. The CellsChanged 
 The event message  supplied as the right argument to your callback function, is a 2-element vector as follows :
 
 
-| `[1]` | Object | ref |
-| --- | --- | ---  |
-| `[2]` | EventArgs | ref |
+|-----|---------|---|
+|`[1]`|Object   |ref|
+|`[2]`|EventArgs|ref|
 
 
 EventArgs is an instance of the internal class `Dyalog.Data.ElementChangedEventArgs` or `Dyalog.Data.CellsChangedEventArgs` whose fields are described below:
@@ -389,10 +389,10 @@ EventArgs is an instance of the internal class `Dyalog.Data.ElementChangedEventA
 `Dyalog.Data.ElementChangedEventArgs` fields
 
 
-| `Indices` | An indication of which member has changed. Typically this will either be `¯1` to indicate that the indices are unavailable or a scalar value indicating (origin 0), which element of an array has been modified or added. |
-| --- | ---  |
-| `Name` | The name of the variable that has been modified. This is especially useful when the datasource corresponds to a namespace. |
-| `Path` | A path used to locate the variable that has been modified. This is especially useful when the datasource corresponds to a deeply nested namespace, where the value changed is an element of an array inside a namespace which is itself an element of an array within the datasource. |
+|---|---|
+|`Indices`|An indication of which member has changed. Typically this will either be `¯1` to indicate that the indices are unavailable or a scalar value indicating (origin 0), which element of an array has been modified or added.|
+|`Name`|The name of the variable that has been modified. This is especially useful when the datasource corresponds to a namespace.|
+|`Path`|A path used to locate the variable that has been modified. This is especially useful when the datasource corresponds to a deeply nested namespace, where the value changed is an element of an array inside a namespace which is itself an element of an array within the datasource.|
 
 
 
@@ -400,11 +400,11 @@ EventArgs is an instance of the internal class `Dyalog.Data.ElementChangedEventA
 `Dyalog.Data.CellsChangedEventArgs` fields
 
 
-| `Path` | Identifies the cell or row that was changed. See below. |
-| --- | ---  |
-| `SourceName` | The name of the matrix that was specified as the right argument to `2015⌶` . |
-| `Reason` | A character vector that describes what in the matrix has changed is `'RowDeleted'` , `'CellChanged'` or `'RowInserted'` |
-| `Value` | The new value in the cell or `⎕NULL` |
+|------------|-----------------------------------------------------------------------------------------------------------------------|
+|`Path`      |Identifies the cell or row that was changed. See below.                                                                |
+|`SourceName`|The name of the matrix that was specified as the right argument to `2015⌶` .                                           |
+|`Reason`    |A character vector that describes what in the matrix has changed is `'RowDeleted'` , `'CellChanged'` or `'RowInserted'`|
+|`Value`     |The new value in the cell or `⎕NULL`                                                                                   |
 
 
 

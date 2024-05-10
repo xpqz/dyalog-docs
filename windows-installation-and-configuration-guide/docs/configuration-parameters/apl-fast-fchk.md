@@ -8,8 +8,8 @@ Note: this only affects component files with journaling enabled.
 
 The values of the parameter are:
 
-| 0 | Do not optimise `⎕FCHK` (optimise `⎕FUNTIE` instead) |
-| --- | ---  |
-| 1 | Optimise `⎕FCHK` |
+|---|----------------------------------------------------|
+|0  |Do not optimise `⎕FCHK` (optimise `⎕FUNTIE` instead)|
+|1  |Optimise `⎕FCHK`                                    |
 
 The default value of the parameter is 0 on all platforms. On Windows, setting the value 1 has no effect.

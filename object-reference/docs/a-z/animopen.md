@@ -6,7 +6,8 @@
 
 
 
-Applies To: [Animation](../objects/animation.md)
+|-----------|------------------------------------|
+|Applies To:|[Animation](../objects/animation.md)|
 
 
 **Description**
@@ -18,9 +19,9 @@ The AnimOpen method opens an AVI file in an Animation object.
 The argument to AnimOpen is a 1 or 2-element array as follows:
 
 
-| `[1]` | File | character vector |
-| --- | --- | ---  |
-| `[2]` | Resource id | integer |
+|-----|-----------|----------------|
+|`[1]`|File       |character vector|
+|`[2]`|Resource id|integer         |
 
 
 If a single element is specified, it represents the name of a .AVI file.

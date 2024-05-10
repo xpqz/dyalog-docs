@@ -7,10 +7,12 @@
 
 
 
-[Parents](../parentlists/calendar.md) [Children](../childlists/calendar.md) [Properties](../proplists/calendar.md) [Methods](../methodlists/calendar.md) [Events](../eventlists/calendar.md)
+|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
+|[Parents](../parentlists/calendar.md)|[Children](../childlists/calendar.md)|[Properties](../proplists/calendar.md)|[Methods](../methodlists/calendar.md)|[Events](../eventlists/calendar.md)|
 
 
-Purpose: The Calendar object provides an interface to the Month Calendar Control
+|--------|-----------------------------------------------------------------------|
+|Purpose:|The Calendar object provides an interface to the Month Calendar Control|
 
 
 **Description**

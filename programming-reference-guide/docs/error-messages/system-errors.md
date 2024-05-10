@@ -43,14 +43,14 @@ If APL is started in debug mode with the **-Dc**, **-Dw** or **-DW** flags, the 
 
 Non-specific System Errors are the result of Operating System exceptions that can occur due to a fault in Dyalog APL itself, an error in a Windows or other DLL, or even as a result of a hardware fault. The following system exceptions are separately identified.
 
-| Code | Description | Suggested Action |
-| --- | --- | ---  |
-| 900 | A Paging Fault has occurred | As the most likely cause is a temporary network fault, recommended course of action is to restart your program. |
-| 990 & 991 | An exception has occurred in the Development or Run-Time DLL. |  |
-| 995 | An exception has occurred in a DLL function called via `⎕NA` | Carefully check your `⎕NA` statement and the arguments that you have passed to the DLL function |
-| 996 | An exception has occurred in a DLL function called via a threaded `⎕NA` call | As above |
-| 997 | An exception has occurred while processing an incoming OLE call |  |
-| 999 | An exception has been caused by Dyalog APL or by the Operating System |  |
+|Code     |Description                                                                 |Suggested Action                                                                                               |
+|---------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|900      |A Paging Fault has occurred                                                 |As the most likely cause is a temporary network fault, recommended course of action is to restart your program.|
+|990 & 991|An exception has occurred in the Development or Run-Time DLL.               |&nbsp;                                                                                                         |
+|995      |An exception has occurred in a DLL function called via `⎕NA`                |Carefully check your `⎕NA` statement and the arguments that you have passed to the DLL function                |
+|996      |An exception has occurred in a DLL function called via a threaded `⎕NA` call|As above                                                                                                       |
+|997      |An exception has occurred while processing an incoming OLE call             |&nbsp;                                                                                                         |
+|999      |An exception has been caused by Dyalog APL or by the Operating System       |&nbsp;                                                                                                         |
 
 ### Recovering Data from aplcore files
 
@@ -96,13 +96,13 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 
 ### Options
 
-| Item | Description |
-| --- | ---  |
-| Create a process dump file | Dumps a complete core image, see below. |
-| Create Trappable Error | If you check this box (only enabled on System Error codes 995 and 996), APL will not terminate but will instead generate an error 91 ( `EXTERNAL DLL EXCEPTION` ) when you press *Dismiss* . |
-| Create an aplcore file | If this box is checked, an *aplcore* file will be created. |
-| Pass exception on to operating system | If this box is checked, the exception will be passed on to your current debugging tool (e.g. *Visual Studio* ). See **PassExceptionsToOpSys** . |
-| Copy to clipboard | Copies the contents of the APL stack trace window to the Clipboard. |
+|Item|Description|
+|---|---|
+|Create a process dump file|Dumps a complete core image, see below.|
+|Create Trappable Error|If you check this box (only enabled on System Error codes 995 and 996), APL will not terminate but will instead generate an error 91 ( `EXTERNAL DLL EXCEPTION` ) when you press *Dismiss* .|
+|Create an aplcore file|If this box is checked, an *aplcore* file will be created.|
+|Pass exception on to operating system|If this box is checked, the exception will be passed on to your current debugging tool (e.g. *Visual Studio* ). See **PassExceptionsToOpSys** .|
+|Copy to clipboard|Copies the contents of the APL stack trace window to the Clipboard.|
 
 ### Create a process dump file
 
