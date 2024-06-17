@@ -1,12 +1,36 @@
-version: '3'
 services:
-  mkdocs:
-    build: .
+  mkdocs-server:
+    build:
+      context: .
+      dockerfile: mkdocs/Dockerfile  # Dockerfile for serving MkDocs site
     volumes:
       - ${DOCS_DIR}:/docs
     ports:
       - "8000:8000"
-    command:
-      - serve
-      - --dev-addr=0.0.0.0:8000
+    environment:
+      - DOCS_DIR=${DOCS_DIR}
+    working_dir: /docs
 
+  mkdocs2chm:
+    build:
+      context: .
+      dockerfile: mkdocs2chm/Dockerfile
+    volumes:
+      - ${DOCS_DIR}:/app/documentation
+      - ${CHM_OUTPUT_DIR}:/app/mkdocs2chm/project
+    environment:
+      - DOCS_DIR=${DOCS_DIR}
+      - CHM_OUTPUT_DIR=${CHM_OUTPUT_DIR}
+    entrypoint: [ "/usr/local/bin/mkdocs2chm.py" ]
+
+  mkdocs2pdf:
+    build:
+      context: .
+      dockerfile: mkdocs2pdf/Dockerfile
+    volumes:
+      - ${DOCS_DIR}:/app/documentation
+      - ${PDF_OUTPUT_DIR}:/app/mkdocs2pdf/project
+    environment:
+      - DOCS_DIR=${DOCS_DIR}
+      - PDF_OUTPUT_DIR=${PDF_OUTPUT_DIR}
+    entrypoint: [ "/usr/local/bin/mkdocs2pdf.py" ]

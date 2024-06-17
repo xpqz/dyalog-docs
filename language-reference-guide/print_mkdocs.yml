@@ -1,0 +1,499 @@
+
+site_name: Language Reference Guide
+theme:
+  favicon: 'img/favicon-32.png'
+  logo: 'img/dyalog-white.svg'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+  name: material
+
+extra_css:
+  - style/main.css
+  - style/extra.css
+  - style/admonition-ucmdhelp.css
+
+plugins:
+  - search
+  - macros
+  - site-urls
+
+extra:
+  version_maj: 20
+  version_majmin: 20.0
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - attr_list
+  - abbr
+  - footnotes
+  - md_in_html
+  - markdown_tables_extended
+  - image_captions:
+      numbering: true
+  - table_captions:
+      numbering: true
+      caption_top: false
+  - caption
+  - toc:
+      title: On this page
+
+nav:
+
+  - primitive-functions/key-to-notation.md
+  - Primitive Functions:
+    - primitive-functions/scalar-functions.md
+    - primitive-functions/mixed-functions.md
+    - primitive-functions/notes.md
+    - Functions (A-Z):
+      - primitive-functions/functions-a-z.md
+      - Abort: primitive-functions/abort.md
+      - Add: primitive-functions/add.md
+      - And, Lowest Common Multiple: primitive-functions/and-lowest-common-multiple.md
+      - Assignment: primitive-functions/assignment.md
+      - Assignment (Indexed): primitive-functions/assignment-indexed.md
+      - Assignment (Selective): primitive-functions/assignment-selective.md
+      - Binomial: primitive-functions/binomial.md
+      - Branch: primitive-functions/branch.md
+      - Catenate/Laminate: primitive-functions/catenate-laminate.md
+      - Catenate First: primitive-functions/catenate-first.md
+      - Ceiling: primitive-functions/ceiling.md
+      - Circular: primitive-functions/circular.md
+      - Conjugate: primitive-functions/conjugate.md
+      - Deal: primitive-functions/deal.md
+      - Decode: primitive-functions/decode.md
+      - Depth: primitive-functions/depth.md
+      - Direction (Signum): primitive-functions/direction.md
+      - Disclose: primitive-functions/disclose.md
+      - Divide: primitive-functions/divide.md
+      - Drop: primitive-functions/drop.md
+      - Drop with Axes: primitive-functions/drop-with-axes.md
+      - Enclose: primitive-functions/enclose.md
+      - Enclose with Axes: primitive-functions/enclose-with-axes.md
+      - Encode: primitive-functions/encode.md
+      - Enlist: primitive-functions/enlist.md
+      - Equal: primitive-functions/equal.md
+      - Excluding: primitive-functions/excluding.md
+      - Execute: primitive-functions/execute.md
+      - Expand: primitive-functions/expand.md
+      - Expand First: primitive-functions/expand-first.md
+      - Exponential: primitive-functions/exponential.md
+      - Factorial: primitive-functions/factorial.md
+      - Find: primitive-functions/find.md
+      - First: primitive-functions/first.md
+      - Floor: primitive-functions/floor.md
+      - Format (Monadic): primitive-functions/format-monadic.md
+      - Format (Dyadic): primitive-functions/format-dyadic.md
+      - Grade Down (Monadic): primitive-functions/grade-down-monadic.md
+      - Grade Down (Dyadic): primitive-functions/grade-down-dyadic.md
+      - Grade Up (Monadic): primitive-functions/grade-up-monadic.md
+      - Grade Up (Dyadic): primitive-functions/grade-up-dyadic.md
+      - Greater: primitive-functions/greater.md
+      - Greater Or Equal: primitive-functions/greater-or-equal.md
+      - Index: primitive-functions/index.md
+      - Index with Axes: primitive-functions/index-with-axes.md
+      - Index Generator: primitive-functions/index-generator.md
+      - Index Of: primitive-functions/index-of.md
+      - Indexing: primitive-functions/indexing.md
+      - Intersection: primitive-functions/intersection.md
+      - Interval Index: primitive-functions/interval-index.md
+      - Left: primitive-functions/left.md
+      - Less: primitive-functions/less.md
+      - Less Or Equal: primitive-functions/less-or-equal.md
+      - Logarithm: primitive-functions/logarithm.md
+      - Magnitude: primitive-functions/magnitude.md
+      - Match: primitive-functions/match.md
+      - Materialise: primitive-functions/materialise.md
+      - Matrix Divide: primitive-functions/matrix-divide.md
+      - Matrix Inverse: primitive-functions/matrix-inverse.md
+      - Maximum: primitive-functions/maximum.md
+      - Membership: primitive-functions/membership.md
+      - Minimum: primitive-functions/minimum.md
+      - Minus: primitive-functions/minus.md
+      - Mix: primitive-functions/mix.md
+      - Multiply: primitive-functions/multiply.md
+      - Nand: primitive-functions/nand.md
+      - Natural Logarithm: primitive-functions/natural-logarithm.md
+      - Negative: primitive-functions/negative.md
+      - Nest: primitive-functions/nest.md
+      - Nor: primitive-functions/nor.md
+      - Not: primitive-functions/not.md
+      - Not Equal: primitive-functions/not-equal.md
+      - Not Match: primitive-functions/not-match.md
+      - Or, Greatest Common Divisor: primitive-functions/or-greatest-common-divisor.md
+      - Partition: primitive-functions/partition.md
+      - Partitioned Enclose: primitive-functions/partitioned-enclose.md
+      - Pi Times: primitive-functions/pi-times.md
+      - Pick: primitive-functions/pick.md
+      - Plus: primitive-functions/plus.md
+      - Power: primitive-functions/power.md
+      - Ravel: primitive-functions/ravel.md
+      - Ravel with Axes: primitive-functions/ravel-with-axes.md
+      - Reciprocal: primitive-functions/reciprocal.md
+      - Replicate: primitive-functions/replicate.md
+      - Reshape: primitive-functions/reshape.md
+      - Residue: primitive-functions/residue.md
+      - Reverse: primitive-functions/reverse.md
+      - Reverse First: primitive-functions/reverse-first.md
+      - Right: primitive-functions/right.md
+      - Roll: primitive-functions/roll.md
+      - Rotate: primitive-functions/rotate.md
+      - Rotate First: primitive-functions/rotate-first.md
+      - Same: primitive-functions/same.md
+      - Shape: primitive-functions/shape.md
+      - Split: primitive-functions/split.md
+      - Subtract: primitive-functions/subtract.md
+      - Table: primitive-functions/table.md
+      - Take: primitive-functions/take.md
+      - Take with Axes: primitive-functions/take-with-axes.md
+      - Tally: primitive-functions/tally.md
+      - Times: primitive-functions/times.md
+      - Transpose (Monadic): primitive-functions/transpose-monadic.md
+      - Transpose (Dyadic): primitive-functions/transpose-dyadic.md
+      - Type: primitive-functions/type.md
+      - Union: primitive-functions/union.md
+      - Unique: primitive-functions/unique.md
+      - Unique Mask: primitive-functions/unique-mask.md
+      - Where: primitive-functions/where.md
+      - Without: primitive-functions/without.md
+      - Zilde: primitive-functions/zilde.md
+  - Primitive Operators:
+    - primitive-operators/operator-syntax.md
+    - Operators Summarised: primitive-operators/operators-summarised.md
+    - primitive-operators/operators-a-z.md
+    - Priimitive Operators (A-Z):
+      - Assignment (Modified): primitive-operators/assignment-modified.md
+      - Assignment (Indexed Modified): primitive-operators/assignment-indexed-modified.md
+      - Assignment (Selective Modified): primitive-operators/assignment-selective-modified.md
+      - At: primitive-operators/at.md
+      - Atop: primitive-operators/atop.md
+      - Axis (with Monadic Operand): primitive-operators/axis-with-monadic-operand.md
+      - Axis (with Dyadic Operand): primitive-operators/axis-with-dyadic-operand.md
+      - Beside: primitive-operators/beside.md
+      - Bind: primitive-operators/bind.md
+      - Commute: primitive-operators/commute.md
+      - Constant: primitive-operators/constant.md
+      - Each (with Monadic Operand): primitive-operators/each-with-monadic-operand.md
+      - Each (with Dyadic Operand): primitive-operators/each-with-dyadic-operand.md
+      - I-Beam: primitive-operators/i-beam-short.md
+      - Inner Product: primitive-operators/inner-product.md
+      - Key: primitive-operators/key.md
+      - Outer Product: primitive-operators/outer-product.md
+      - Over: primitive-operators/over.md
+      - Power Operator: primitive-operators/power-operator.md
+      - Rank: primitive-operators/rank.md
+      - Reduce: primitive-operators/reduce.md
+      - Reduce First: primitive-operators/reduce-first.md
+      - Reduce N-Wise: primitive-operators/reduce-n-wise.md
+      - Reduce First N-Wise: primitive-operators/reduce-first-n-wise.md
+      - Scan: primitive-operators/scan.md
+      - Scan First: primitive-operators/scan-first.md
+      - Spawn: primitive-operators/spawn.md
+      - Stencil: primitive-operators/stencil.md
+      - Variant: primitive-operators/variant.md
+  - I-Beam Operator:
+    - I-Beam: primitive-operators/i-beam.md
+    - The I-Beam Operator:
+      - Inverted Table Index Of: the-i-beam-operator/inverted-table-index-of.md
+      - Execute Expression: the-i-beam-operator/execute-expression.md
+      - Overwrite Free Pockets: the-i-beam-operator/overwrite-free-pockets.md
+      - Canonical Representation: the-i-beam-operator/canonical-representation.md
+      - Unsqueezed Type: the-i-beam-operator/unsqueezed-type.md
+      - Syntax Colouring: the-i-beam-operator/syntax-colouring.md
+      - Syntax Colour Tokens: the-i-beam-operator/syntax-colour-tokens.md
+      - Compress Vector of Short Integers: the-i-beam-operator/compress-vector-of-short-integers.md
+      - Serialise/Deserialise Array: the-i-beam-operator/serialise-array.md
+      - Compiler Control: the-i-beam-operator/compiler-control.md
+      - Trap Control: the-i-beam-operator/trap-control.md
+      - Case Convert: the-i-beam-operator/case-convert.md
+      - Called Monadically: the-i-beam-operator/called-monadically.md
+      - Temporary Directory: the-i-beam-operator/temporary-directory.md
+      - Loaded Libraries: the-i-beam-operator/loaded-libraries.md
+      - Set Shell Script Debug Options: the-i-beam-operator/set-shell-script-debug-options.md
+      - Number of Threads: the-i-beam-operator/number-of-threads.md
+      - Parallel Execution Threshold: the-i-beam-operator/parallel-execution-threshold.md
+      - Update Function Timestamp: the-i-beam-operator/update-function-timestamp.md
+      - Format Date-time: the-i-beam-operator/format-datetime.md
+      - Set aplcore Parameters: the-i-beam-operator/set-aplcore-parameters.md
+      - Hash Array: the-i-beam-operator/hash-array.md
+      - Memory Manager Statistics: the-i-beam-operator/memory-manager-statistics.md
+      - Specify Workspace Available: the-i-beam-operator/specify-workspace-available.md
+      - Disable Global Triggers: the-i-beam-operator/disable-global-triggers.md
+      - Update DataTable: the-i-beam-operator/update-datatable.md
+      - Read DataTable: the-i-beam-operator/read-datatable.md
+      - Remove Data Binding: the-i-beam-operator/remove-data-binding.md
+      - Create Data Binding Source: the-i-beam-operator/create-data-binding-source.md
+      - Create .NET Delegate: the-i-beam-operator/create-net-delegate.md
+      - Identify .NET Type: the-i-beam-operator/identify-net-type.md
+      - Flush Session Caption: the-i-beam-operator/flush-session-caption.md
+      - Close All Windows: the-i-beam-operator/close-all-windows.md
+      - Set Dyalog Pixel Type: the-i-beam-operator/set-dyalog-pixel-type.md
+      - Override COM Default Value: the-i-beam-operator/override-com-default-value.md
+      - Export To Memory: the-i-beam-operator/export-to-memory.md
+      - Close .NET AppDomain: the-i-beam-operator/close-net-appdomain.md
+      - Verify .NET Interface: the-i-beam-operator/verify-net-interface.md
+      - Set Workspace Save Options: the-i-beam-operator/set-workspace-save-options.md
+      - Expose Root Properties: the-i-beam-operator/expose-root-properties.md
+      - Discard Thread on Exit: the-i-beam-operator/discard-thread-on-exit.md
+      - Discard Parked Threads: the-i-beam-operator/discard-parked-threads.md
+      - Mark Thread as Uninterruptible: the-i-beam-operator/mark-thread-as-uninterruptible.md
+      - Use Separate Thread For .NET: the-i-beam-operator/use-separate-thread-for-net.md
+      - Continue Autosave: the-i-beam-operator/continue-autosave.md
+      - Disable Component Checksum Validation: the-i-beam-operator/disable-component-checksum-validation.md
+      - Enable Compression of Large Components: the-i-beam-operator/enable-compression-of-large-components.md
+      - Send Text to RIDE-embedded Browser: the-i-beam-operator/send-text-to-ride-embedded-browser.md
+      - Connected to the RIDE: the-i-beam-operator/connected-to-the-ride.md
+      - Manage RIDE Connections: the-i-beam-operator/manage-ride-connections.md
+      - Fork New Task: the-i-beam-operator/fork-new-task.md
+      - Change User: the-i-beam-operator/change-user.md
+      - Reap Forked Tasks: the-i-beam-operator/reap-forked-tasks.md
+      - Signal Counts: the-i-beam-operator/signal-counts.md
+      - Discard Source Information: the-i-beam-operator/discard-source-information.md
+      - Discard Source Code: the-i-beam-operator/discard-source-code.md
+      - List Loaded Files: the-i-beam-operator/list-loaded-files.md
+      - List Loaded File Objects: the-i-beam-operator/list-loaded-file-objects.md
+      - Remove Loaded File Object Info: the-i-beam-operator/remove-loaded-file-object-info.md
+      - Loaded File Object Info: the-i-beam-operator/loaded-file-object-info.md
+      - JSON Translate Name: the-i-beam-operator/json-translate-name.md
+      - Singular Value Decomposition: the-i-beam-operator/singular-value-decomposition.md
+      - Externalise Array: the-i-beam-operator/externalise-array.md
+      - Hash Table Size: the-i-beam-operator/hash-table-size.md
+      - Lookup Table Size: the-i-beam-operator/lookup-table-size.md
+      - Sample Probability Distribution: the-i-beam-operator/sample-probability-distribution.md
+      - Line Count: the-i-beam-operator/line-count.md
+      - the-i-beam-operator/supplementary-i-beam-functions.md
+  - System Functions and Variables:
+    - system-functions/summary-tables/introduction.md
+    - system-functions/summary-tables/system-functions-and-variables-print.md
+    - system-functions/summary-tables/system-functions-categorised.md
+    - system-functions/summary-tables/system-variables.md
+    - system-functions/summary-tables/functions-a-z.md
+    - System Functions (A-Z):
+      - Character Input/Output: system-functions/character-input-output.md
+      - Evaluated Input/Output: system-functions/evaluated-input-output.md
+      - Underscored Alphabetic Characters: system-functions/underscored-alphabetic-characters.md
+      - Alphabetic Characters: system-functions/a.md
+      - Account Information: system-functions/ai.md
+      - Account Name: system-functions/an.md
+      - Arbitrary Input: system-functions/arbin.md
+      - Arbitrary Output: system-functions/arbout.md
+      - Attributes: system-functions/at.md
+      - Extended Attributes: system-functions/atx.md
+      - Atomic Vector: system-functions/av.md
+      - Atomic Vector - Unicode: system-functions/avu.md
+      - Base Class: system-functions/base.md
+      - Case Convert: system-functions/c.md
+      - Class: system-functions/class.md
+      - Clear Workspace: system-functions/clear.md
+      - Execute Windows Command: system-functions/execute-windows-command.md
+      - Start Windows Auxiliary Processor: system-functions/start-windows-auxiliary-processor.md
+      - Canonical Representation: system-functions/cr.md
+      - Change Space: system-functions/cs.md
+      - Comma Separated Values: system-functions/csv.md
+      - Comparison Tolerance: system-functions/ct.md
+      - Copy Workspace: system-functions/cy.md
+      - Digits: system-functions/d.md
+      - Decimal Comparison Tolerance: system-functions/dct.md
+      - Display Form: system-functions/df.md
+      - Division Method: system-functions/div.md
+      - Delay: system-functions/dl.md
+      - Diagnostic Message: system-functions/dm.md
+      - Extended Diagnostic Message: system-functions/dmx.md
+      - Dequeue Events: system-functions/dq.md
+      - Data Representation (Monadic): system-functions/data-representation-monadic.md
+      - Data Representation (Dyadic): system-functions/data-representation-dyadic.md
+      - system-functions/dt.md
+      - Edit Object: system-functions/ed.md
+      - Event Message: system-functions/em.md
+      - Event Number: system-functions/en.md
+      - Exception: system-functions/exception.md
+      - Expunge Object: system-functions/ex.md
+      - Export Object: system-functions/export.md
+      - File Append Component: system-functions/fappend.md
+      - File System Available: system-functions/favail.md
+      - File Check and Repair: system-functions/fchk.md
+      - File Copy: system-functions/fcopy.md
+      - File Create: system-functions/fcreate.md
+      - File Drop Component: system-functions/fdrop.md
+      - File Erase: system-functions/ferase.md
+      - File History: system-functions/fhist.md
+      - File Hold: system-functions/fhold.md
+      - Fix Script: system-functions/fix.md
+      - Component File Library: system-functions/flib.md
+      - Format (Monadic): system-functions/format-monadic.md
+      - Format (Dyadic): system-functions/format-dyadic.md
+      - File Names: system-functions/fnames.md
+      - File Numbers: system-functions/fnums.md
+      - File Properties: system-functions/fprops.md
+      - Floating-Point Representation: system-functions/fr.md
+      - File Read Access: system-functions/frdac.md
+      - File Read Component Information: system-functions/frdci.md
+      - File Read Components: system-functions/fread.md
+      - File Rename: system-functions/frename.md
+      - File Replace Component: system-functions/freplace.md
+      - File Resize: system-functions/fresize.md
+      - File Size: system-functions/fsize.md
+      - File Set Access: system-functions/fstac.md
+      - File Share Tie: system-functions/fstie.md
+      - Exclusive File Tie: system-functions/ftie.md
+      - File Untie: system-functions/funtie.md
+      - Fix Definition: system-functions/fx.md
+      - Instances: system-functions/instances.md
+      - Index Origin: system-functions/io.md
+      - JSON Convert:
+        - JSON Convert: system-functions/json.md
+        - system-functions/json-name-manglling.md
+      - Key Label: system-functions/kl.md
+      - Line Count: system-functions/lc.md
+      - Load Workspace: system-functions/load.md
+      - Lock Definition: system-functions/lock.md
+      - Latent Expression: system-functions/lx.md
+      - Map File: system-functions/map.md
+      - Make Directory: system-functions/mkdir.md
+      - Migration Level: system-functions/ml.md
+      - Set Monitor: system-functions/set-monitor.md
+      - Query Monitor: system-functions/query-monitor.md
+      - system-functions/na.md
+      - Native File Append: system-functions/nappend.md
+      - Name Classification: system-functions/nc.md
+      - Native File Copy: system-functions/ncopy.md
+      - Native File Create: system-functions/ncreate.md
+      - Native File Delete: system-functions/ndelete.md
+      - Native File Erase: system-functions/nerase.md
+      - New Instance: system-functions/new.md
+      - Native File Exists: system-functions/nexists.md
+      - Read Text File: system-functions/nget.md
+      - Native File Information: system-functions/ninfo.md
+      - Name List: system-functions/nl.md
+      - Native File Lock: system-functions/nlock.md
+      - Native File Move: system-functions/nmove.md
+      - Native File Names: system-functions/nnames.md
+      - Native File Numbers: system-functions/nnums.md
+      - File Name Parts: system-functions/nparts.md
+      - Write Text File: system-functions/nput.md
+      - Enqueue Event: system-functions/nq.md
+      - Nested Representation: system-functions/nr.md
+      - Native File Read: system-functions/nread.md
+      - Native File Rename: system-functions/nrename.md
+      - Native File Replace: system-functions/nreplace.md
+      - Native File Resize: system-functions/nresize.md
+      - Namespace: system-functions/ns.md
+      - Namespace Indicator: system-functions/nsi.md
+      - Native File Size: system-functions/nsize.md
+      - Native File Tie: system-functions/ntie.md
+      - Null Item: system-functions/null.md
+      - Native File Untie: system-functions/nuntie.md
+      - Native File Translate: system-functions/nxlate.md
+      - Sign Off APL: system-functions/off.md
+      - Variant: system-functions/opt.md
+      - Object Representation: system-functions/or.md
+      - Search Path: system-functions/path.md
+      - Program Function Key: system-functions/pfkey.md
+      - Print Precision: system-functions/pp.md
+      - Profile Application: system-functions/profile.md
+      - Print Width: system-functions/pw.md
+      - Replace: system-functions/r.md
+      - Cross References: system-functions/refs.md
+      - Random Link: system-functions/rl.md
+      - Space Indicator: system-functions/rsi.md
+      - Response Time Limit: system-functions/rtl.md
+      - Search: system-functions/s.md
+      - Save Workspace: system-functions/save.md
+      - Screen Dimensions: system-functions/sd.md
+      - Session Namespace: system-functions/se.md
+      - Execute (UNIX) Command: system-functions/execute-unix-command.md
+      - Start UNIX Auxiliary Processor: system-functions/start-unix-auxiliary-processor.md
+      - Shadow Name: system-functions/shadow.md
+      - State Indicator: system-functions/si.md
+      - Signal Event: system-functions/signal.md
+      - Size of Object: system-functions/size.md
+      - Screen Map: system-functions/sm.md
+      - Screen Read: system-functions/sr.md
+      - Source: system-functions/src.md
+      - State Indicator Stack: system-functions/stack.md
+      - State of Object: system-functions/state.md
+      - Set Stop: system-functions/set-stop.md
+      - Query Stop: system-functions/query-stop.md
+      - Set Access Control: system-functions/set-access-control.md
+      - Query Access Control: system-functions/query-access-control.md
+      - Shared Variable Offer: system-functions/shared-variable-offer.md
+      - Query Degree of Coupling: system-functions/query-degree-of-coupling.md
+      - Shared Variable Query: system-functions/svq.md
+      - Shared Variable Retract Offer: system-functions/svr.md
+      - Shared Variable State: system-functions/svs.md
+      - Allocate Token Range: system-functions/talloc.md
+      - Terminal Control: system-functions/tc.md
+      - Thread Child Numbers: system-functions/tcnums.md
+      - Get Tokens: system-functions/tget.md
+      - This Space: system-functions/this.md
+      - Current Thread Identity: system-functions/tid.md
+      - Kill Thread: system-functions/tkill.md
+      - Current Thread Name: system-functions/tname.md
+      - Thread Numbers: system-functions/tnums.md
+      - Token Pool: system-functions/tpool.md
+      - Put Tokens: system-functions/tput.md
+      - Set Trace: system-functions/set-trace.md
+      - Query Trace: system-functions/query-trace.md
+      - Trap Event: system-functions/trap.md
+      - Token Requests: system-functions/treq.md
+      - Timestamp: system-functions/ts.md
+      - Wait for Threads to Terminate: system-functions/tsync.md
+      - Unicode Convert: system-functions/ucs.md
+      - Using (Microsoft .NET Search Path): system-functions/using.md
+      - Vector Representation: system-functions/vr.md
+      - Verify & Fix Input: system-functions/vfi.md
+      - Workspace Available: system-functions/wa.md
+      - Window Create Object: system-functions/wc.md
+      - Window Get Property: system-functions/wg.md
+      - Window Child Names: system-functions/wn.md
+      - Window Set Property: system-functions/ws.md
+      - Workspace Identification: system-functions/wsid.md
+      - Window Expose: system-functions/wx.md
+      - XML Convert: system-functions/xml.md
+      - Extended State Indicator: system-functions/xsi.md
+      - Set External Variable: system-functions/set-external-variable.md
+      - Query External Variable: system-functions/query-external-variable.md
+  - System Commands:
+    - system-commands/introduction.md
+    - System Commands (A-Z):
+      - List Classes: system-commands/classes.md
+      - Clear Workspace: system-commands/clear.md
+      - Windows Command Processor: system-commands/cmd.md
+      - Save Continuation: system-commands/continue.md
+      - Copy Workspace: system-commands/copy.md
+      - Change Space: system-commands/cs.md
+      - Drop Workspace: system-commands/drop.md
+      - Edit Object: system-commands/ed.md
+      - Erase Object: system-commands/erase.md
+      - List Events: system-commands/events.md
+      - List Global Defined Functions: system-commands/fns.md
+      - Display Held Tokens: system-commands/holds.md
+      - List Workspace Library: system-commands/lib.md
+      - Load Workspace: system-commands/load.md
+      - List Methods: system-commands/methods.md
+      - Create Namespace: system-commands/ns.md
+      - List Global Namespaces: system-commands/objects.md
+      - List Global Namespaces: system-commands/obs.md
+      - Sign Off APL: system-commands/off.md
+      - List Global Defined Operators: system-commands/ops.md
+      - Protected Copy: system-commands/pcopy.md
+      - List Properties: system-commands/props.md
+      - Reset State Indicator: system-commands/reset.md
+      - Save Workspace: system-commands/save.md
+      - Execute (UNIX) Command: system-commands/sh.md
+      - State Indicator: system-commands/si.md
+      - Clear State Indicator: system-commands/sic.md
+      - State Indicator & Name List: system-commands/sinl.md
+      - Thread Identity: system-commands/tid.md
+      - List Global Defined Variables: system-commands/vars.md
+      - Workspace Identification: system-commands/wsid.md
+      - Load without Latent Expression: system-commands/xload.md
+  - Appendices:
+    - pcre-specifications/pcre-overview.md
+    - pcre-specifications/pcre-regular-expression-syntax-summary.md
+    - pcre-specifications/pcre-regular-expression-details.md
