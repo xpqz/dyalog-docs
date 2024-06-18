@@ -1,3 +1,8 @@
 # Windows line endings: diaf
-*	-crlf
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.jpg binary
+*.png binary
+*.gif binary
 *.apl? linguist-language=APL
