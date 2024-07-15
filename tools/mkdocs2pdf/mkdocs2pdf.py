@@ -325,8 +325,16 @@ def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: d
         if front_matter == '':
             update_seq_stack(seq_stack, len(section_stack))
 
-        # This represents the start of a new article
+        # This represents the start of a new article. Note: some sections include
+        # files already included elsewhere (sadly). We need to ensure that our article ids
+        # are unique.
         article_id = file.replace('/', '-').replace('.md', '')
+        tie_breaker = 0
+        test_id = article_id
+        while test_id in section_map:
+            tie_breaker += 1;
+            test_id = article_id + f'-{tie_breaker}'
+        article_id = test_id
         section_map[article_id] = '.'.join(str(c) for c in seq_stack if c > 0)
 
         toc += f'<li{front_matter}><a href="#{article_id}-header" class="toc"></a></li>\n'
@@ -516,6 +524,10 @@ def normalise_links(soup: BeautifulSoup, documents: Dict[str, str], table_refs: 
     # Process all <a> tags
     for a_tag in soup.find_all('a', href=True):
         href = a_tag['href']
+        if 'noprint' in a_tag.get('class', []):
+            a_tag.decompose()
+            continue
+
         a_text = a_tag.get_text()
         if a_text == 'TABLE-REFERENCE':
             if table_id := table_refs.get(href[1:]):
