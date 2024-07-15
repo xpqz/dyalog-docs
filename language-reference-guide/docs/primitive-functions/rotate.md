@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Rotate</span><span class="command">R←X⌽[K]Y</span></h1>
+<h1 class="heading"><span class="name">Rotate</span> <span class="command">R←X⌽[K]Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The value of `K` must be an axis of `Y`.  If absent, the last axis of `Y` is imp
 `R` is an array with the same shape as `Y`, with the elements of each of the vectors along the `K`th axis of `Y` rotated by the value of the corresponding element of `X`.  If the value is positive, the rotation is in the sense of right to left.  If the value is negative, the rotation is in the sense of left to right.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       3 ⌽ 1 2 3 4 5 6 7
 4 5 6 7 1 2 3

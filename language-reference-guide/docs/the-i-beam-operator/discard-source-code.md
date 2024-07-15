@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Discard Source Code</span><span class="command">R←5172⌶Y</span></h1>
+<h1 class="heading"><span class="name">Discard Source Code</span> <span class="command">R←5172⌶Y</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> AutoComplete/PrefixSize</span></h1>
+<h1> AutoComplete/PrefixSize</h1>
 
 This parameter specifies the threshold (number of characters) before Auto Completeion displays suggestions.
 

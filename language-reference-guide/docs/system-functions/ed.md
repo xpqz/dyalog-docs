@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Edit Object</span><span class="command">{R}←{X}⎕ED Y</span></h1>
+<h1 class="heading"><span class="name">Edit Object</span> <span class="command">{R}←{X}⎕ED Y</span></h1>
 
 
 
@@ -36,7 +36,7 @@ If `⎕ED` is called from a defined function or operator, its behaviour is diffe
 Objects named in `Y` that cannot be edited are silently ignored. Objects qualified with a namespace path are (e.g. `a.b.c.foo`) are silently ignored if the namespace does not exist.
 
 
-#### Variants of Edit Object
+## Variants of Edit Object
 
 
 The behaviour of `⎕ED` may be modified using the variant operator `⍠` with the following options:
@@ -63,10 +63,7 @@ The `'EditName'` option determines whether or not the user may open another edit
 
 There is no Principal Option.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 

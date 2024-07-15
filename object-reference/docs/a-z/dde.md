@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">DDE</span><span class="command">Event 50</span></h1>
+<h1 class="heading"><span class="name">DDE</span> <span class="command">Event 50</span></h1>
 
 
 

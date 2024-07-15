@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Index Origin</span><span class="command">⎕IO</span></h1>
+<h1 class="heading"><span class="name">Index Origin</span> <span class="command">⎕IO</span></h1>
 
 
 
@@ -15,10 +15,7 @@
 
 `⎕IO` is an implicit argument of any function derived from the Axis operator (`[K]`), of the monadic functions Fix (`⎕FX`), Grade Down (`⍒`), Grade Up (`⍋`), Index Generator (`⍳`), Roll (`?`), and of the dyadic functions Deal (`?`), Grade Down (`⍒`), Grade Up (`⍋`), Index (`⌷`), Index Of (`⍳`), Indexed Assignment, Indexing, Pick (`⊃`) and Transpose (`⍉`).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
         ⎕IO←1
         ⍳5

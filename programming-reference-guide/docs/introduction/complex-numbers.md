@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Complex Numbers</span></h1>
+<h1> Complex Numbers</h1>
 
 A complex number is a number consisting of a real and an imaginary part which is usually written in the form a+ bi, where a and b are real numbers, and i is the standard imaginary unit with the property i<sup>2</sup>= −1.
 
 Dyalog APL adopts the J notation introduced in IBM APL2 to represent the value of a complex number which is written as `aJb` or `ajb` (without spaces). The former representation (with a capital `J`) is always used to display a value.
 
-### Notation
+## Notation
 ```apl
       2+¯1*.5
 2J1
@@ -16,7 +16,7 @@ Dyalog APL adopts the J notation introduced in IBM APL2 to represent the value o
 120000J¯0.0004
 ```
 
-### Arithmetic
+## Arithmetic
 
 The arithmetic primitive functions handle complex numbers in the appropriate way.
 ```apl
@@ -61,7 +61,7 @@ The famous Euler's Identityeiπ+1=0 may be expressed as follows:
 0
 ```
 
-### Circular functions
+## Circular functions
 
 The basic set of circular functions `X○Y` cater for complex values in `Y`, while the following extended functions provide specific features for complex arguments. Note that `a` and `b` are the real and imaginary parts of `Y` respectively and θ is the phase of `Y`..
 
@@ -83,7 +83,7 @@ Note that `9○Y` and `11○Y` return the real and imaginary parts of `Y` respec
 ¯1.2 3 4
 ```
 
-### Comparison
+## Comparison
 
 In comparing two complex numbers `X` and `Y,` `X=Y` is 1 if the magnitude of `X-Y` does not exceed `⎕CT` times the larger of the magnitudes of `X` and `Y`; geometrically, `X=Y` if the number smaller in magnitude lies on or within a circle centred on the one with larger magnitude, having radius `⎕CT` times the larger magnitude.
 

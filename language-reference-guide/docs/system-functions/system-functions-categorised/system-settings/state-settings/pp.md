@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Print Precision</span><span class="command">⎕PP</span></h1>
+<h1 class="heading"><span class="name">Print Precision</span> <span class="command">⎕PP</span></h1>
 
 
 
@@ -13,10 +13,7 @@
 `⎕PP` is used to format numbers displayed directly. It is an implicit argument of monadic function Format (`⍕`), monadic `⎕FMT` and for display of numbers via `⎕` and `⍞` output. `⎕PP` is ignored for the display of integers.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕PP←10

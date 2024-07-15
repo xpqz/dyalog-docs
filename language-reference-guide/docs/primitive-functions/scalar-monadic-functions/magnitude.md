@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Magnitude</span><span class="command">R←|Y</span></h1>
+<h1 class="heading"><span class="name">Magnitude</span> <span class="command">R←|Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 Note that the magnitude of a complex number (a+ib) is defined to be a2+b2
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       |2 ¯3.4 0 ¯2.7
 2 3.4 0 2.7

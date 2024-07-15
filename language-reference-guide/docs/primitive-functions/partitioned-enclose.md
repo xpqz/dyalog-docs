@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Partitioned Enclose</span><span class="command">(⎕ML<3)</span></h1>
+<h1 class="heading"><span class="name">Partitioned Enclose</span> <span class="command">(⎕ML<3)</span></h1>
 
 
 
@@ -22,10 +22,7 @@ Each element of `X` specifies the number of dividers to insert before the corres
 The length of `R` is `+/X` (after possible extension).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       0 0 1 0 0 1 0⊂'abcdefg'
@@ -50,7 +47,7 @@ The above examples may be explained pictorially by the diagram below.
 ![partitioned enclose](../img/partitioned-enclose.png)
 
 
-#### Further Examples
+## Further Examples
 ```apl
       1 0 1⊂[1]3 4⍴⍳12
 ┌───────┬──────────┐

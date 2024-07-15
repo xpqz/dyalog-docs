@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">Case Convert</span><span class="command">R←{X}(819⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Case Convert</span> <span class="command">R←{X}(819⌶)Y</span></h1>
 
 
-#### Note
+## Note
 
 
 This i-beam function has been replaced by a system function and is deprecated. See [Case Convert](../system-functions/c.md).
@@ -42,10 +42,7 @@ If conversion is being used to do case-insensitive character comparisons then co
 
 This I-beam is supported in Classic Edition  using the same code as the Unicode Edition. This means that any case-folding defined in the input translate tables is ignored, and that `TRANSLATION ERROR`s will be generated if the folded characters do not appear in `⎕AV`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       (819⌶) 'How many Roads must a man walk down'

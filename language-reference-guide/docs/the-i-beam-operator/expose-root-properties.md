@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Expose Root Properties</span><span class="command">R←2401⌶Y</span></h1>
+<h1 class="heading"><span class="name">Expose Root Properties</span> <span class="command">R←2401⌶Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ This functionality is available in Windows versions by selecting or unselecting 
 This function is the only mechanism available under non-Windows versions of Dyalog APL; the state of this setting is saved in the workspace, and therefore cannot be controlled by an environment variable.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       #.GetEnvironment'MAXWS'

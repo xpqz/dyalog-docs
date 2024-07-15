@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Marker Events</span></h1>
+<h1> Marker Events</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

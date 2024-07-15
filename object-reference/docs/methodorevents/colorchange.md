@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ColorChange</span><span class="command">Event 430</span></h1>
+<h1 class="heading"><span class="name">ColorChange</span> <span class="command">Event 430</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> PCRE Overview</span></h1>
+<h1> PCRE Overview</h1>
 
 PCRE (Perl Compatible Regular Expressions) is an *open source* library used by the
 `⎕R` and `⎕S` system operators. The regular expression syntax which the library

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Image</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Image</span> <span class="command">Object</span></h1>
 
 
 
@@ -42,10 +42,7 @@ Setting the [Size](../properties/size.md) property causes the picture to be scal
 
 The [Dragable](../properties/dragable.md) property specifies whether or not the Image can be dragged and dropped using the mouse.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md)

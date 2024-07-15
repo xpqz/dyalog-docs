@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Check and Repair</span><span class="command">R←{X} ⎕FCHK Y</span></h1>
+<h1 class="heading"><span class="name">File Check and Repair</span> <span class="command">R←{X} ⎕FCHK Y</span></h1>
 
 
 
@@ -42,7 +42,7 @@ Other negative numbers represent damage to the file metadata; this set may be ex
 
 
 
-#### Specifying options using Variant
+## Specifying options using Variant
 
 
 Using Variant, the options are as follows:
@@ -56,7 +56,7 @@ Using Variant, the options are as follows:
 *Rebuild* causes the *file indices* to be discarded and rebuilt. *Repair* only takes place on files which have been checked and found to be damaged. It involves a rebuild, but that only takes place if it is needed. Note that Repair and Force only apply if Task is `'Scan'`.
 
 
-##### Task
+### Task
 
 
 |---------|----------------------------------------------------------------------------|
@@ -65,7 +65,7 @@ Using Variant, the options are as follows:
 
 
 
-##### Repair (principle option)
+### Repair (principle option)
 
 
 |---|-------------------------------------------------|
@@ -74,7 +74,7 @@ Using Variant, the options are as follows:
 
 
 
-##### Force
+### Force
 
 
 |---|-------------------------------------------------------------------|
@@ -85,10 +85,7 @@ Using Variant, the options are as follows:
 Default values are highlighted thus in the above tables.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 To check a file and attempt to fix it if damage is found:
@@ -103,7 +100,7 @@ To forcibly check a file and attempt to fix it if damage is found:
 ```
 
 
-#### Specifying options using a left argument
+### Specifying options using a left argument
 
 
 Using the optional left-argument, `X` must be a vector of zero or more character vectors from among `'force'`, `'repair'` and `'rebuild'`, which determine the detailed operation of the function. Note that these options are case-insensitive.

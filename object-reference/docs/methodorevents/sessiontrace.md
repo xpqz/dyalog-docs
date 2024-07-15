@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SessionTrace</span><span class="command">Event 527</span></h1>
+<h1 class="heading"><span class="name">SessionTrace</span> <span class="command">Event 527</span></h1>
 
 
 
@@ -46,10 +46,7 @@ When the event is generated, the left argument of the callback function contains
 
 If the expression has no value, then the callback function will be called monadically. It is therefore required that the callback function is ambivalent (can be called both monadically and dyadically).
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       )cs ⎕SE
 ⎕SE

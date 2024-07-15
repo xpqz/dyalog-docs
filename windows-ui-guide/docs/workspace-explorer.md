@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Workspace Explorer Tool</span></h1>
+<h1> The Workspace Explorer Tool</h1>
 
 The Explorer tool is a modeless dialog box that may be toggled on and off by the system action `[Explorer]`. In a default Session, this is attached to a MenuItem in the *Tools* menu and a Button on the session toolbar.
 
@@ -8,7 +8,7 @@ The Explorer contains two sub-windows. The one on the left displays the namespac
 
 The Explorer is closely modelled on the *Windows Explorer* in Windows and the facilities it provides are very similar. For Windows users, the operation of this tool is probably self-explanatory. However, other users may find the following discussion useful.
 
-### Exploring the Workspace
+## Exploring the Workspace
 
 The TreeView displays the structure of your workspace. Initially it shows the root and Session namespaces `#` and `⎕SE`. The icon for `#` is open indicating that its contents are those that appear in the ListView. You can expand or collapse the TreeView of the workspace structure by clicking on the mini-buttons (labelled + and -) or by double-clicking the icons. A single click on a namespace icon opens it and causes its contents to be displayed in the ListView. Another way to open a namespace is to double-click its icon in the ListView. Only one namespace can be open at a time. The icons used in the display are described below.
 
@@ -23,7 +23,7 @@ The TreeView displays the structure of your workspace. Initially it shows the ro
 |![ws explorer typelib icon](img/ws-explorer-typelib-icon.png)                  |Type Library                            |
 |![ws explorer net icon](img/ws-explorer-net-icon.png)                          |.NET object                             |
 
-### Viewing and Arranging Objects
+## Viewing and Arranging Objects
 
 The ListView displays the contents of a namespace in one of four different ways namely *Large Icons* view, *Small Icons* view, *List Icons* view or *Details* view. You can switch between views using the *View* menu or the tool buttons that are provided. In the first three views, the system displays the name of the object together with an icon that identifies its type. In *Details* view, the system displays several columns of additional information. You may resize the column widths by dragging or double-clicking the lines in the header. To hide a column, drag its width to the far left. The additional columns are:
 
@@ -37,7 +37,7 @@ The ListView displays the contents of a namespace in one of four different ways 
 
 In any view, you may arrange the objects in ascending order of name, size, timestamp or class by clicking the appropriate tool button. In *Details* view, you may sort in ascending or descending order by clicking on the appropriate column heading. The first click sorts in ascending order; the second in descending order.
 
-### Moving and Copying Objects
+## Moving and Copying Objects
 
 You can move and copy objects from one namespace to another using drag-drop or from the Edit menu.
 
@@ -51,11 +51,11 @@ To *copy* one or more objects using drag-and-drop editing, the procedure is the 
 
 You may also move and copy objects using the *Edit* menu. To do so, select the object(s) and then choose *Move* or *Copy* from the *Edit* menu. You will be prompted for the name of the namespace into which the objects are to be moved or copied. Enter the namespace and click OK.
 
-### Editing and Renaming Objects
+## Editing and Renaming Objects
 
 You can open up an edit window for a function or variable by double-clicking its icon, or by selecting it and choosing *Edit* from the *Edit* menu or from the popup menu. You may rename an object by clicking its name (as opposed to its icon) and then editing this text. You may also select the object and choose *Rename* from the *Edit* menu or from the popup menu. Note that when you rename an object, the original name is discarded. Unlike changing a function name in the editor, this is not a copy operation.
 
-### Using the Explorer as an Editor
+## Using the Explorer as an Editor
 
 If you open the *Fns/Ops* item, the names of the functions and operators in the namespace are displayed below it alphabetically in the left (tree view) pane. When you select one of these names, the function itself is opened in the right (list view) pane.
 
@@ -65,7 +65,7 @@ You may use this feature to quickly cycle through the functions (or variables) i
 
 You may also edit the function directly in the right (list view) pane before moving on to another.
 
-### The File Menu
+## The File Menu
 
 ![ws explorer file menu](img/ws-explorer-file-menu.png)
 
@@ -79,7 +79,7 @@ The *File* menu, illustrated above, provides the following actions. All but *Pri
 |Properties |Displays a property sheet; one for each object that is selected.                                                    |
 |Close      |Closes the Explorer                                                                                                 |
 
-### The Edit Menu
+## The Edit Menu
 
 |-------------------------------------------------------|---------------------------------------------------------------------|
 |![ws explorer edit menu](img/ws-explorer-edit-menu.png)|&nbsp;                                                               |
@@ -97,7 +97,7 @@ The *Edit* menu, illustrated above, provides the following actions. The *Edit*, 
 |Select All      |Selects all of the objects in the ListView.                                 |
 |Invert Selection|Deselects the selected objects and selects all those that were not selected.|
 
-### The Options Menu
+## The Options Menu
 
 ![ws explorer options menu](img/ws-explorer-options-menu.png)
 
@@ -114,7 +114,7 @@ The Options menu, illustrated above, provides the following actions.
 
 If *Auto Refresh* is checked the Explorer is updated every time APL returns to desk-calculator mode. This means that it is always in step with the active workspace. If you have a large number of objects displayed in the Explorer, the update may take a few seconds and you may wish to prevent this by un-checking this menu item  If you do so, the Explorer must be explicitly updated by selecting the *Refresh Now* action.
 
-### The View Menu
+## The View Menu
 
 ![ws explorer view menu](img/ws-explorer-view-menu.png)
 ![ws explorer view columns menu](img/ws-explorer-view-columns-menu.png)
@@ -134,7 +134,7 @@ The View menu, illustrated above, provides the following actions.
 
 .
 
-### The Tools Menu
+## The Tools Menu
 
 ![ws explorer tools menu](img/ws-explorer-tools-menu.png)
 

@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> System Settings</span></h1>
+<h1> System Settings</h1>
 
-### Settings Affecting Behaviour of Primitive Functions
+## Settings Affecting Behaviour of Primitive Functions
 
 |Name  |Description                  |
 |------|-----------------------------|
@@ -15,7 +15,7 @@
 
 The following table describes the dependencies that exist between functions, operators and these system variables.
 
-Implicit Arguments
+Table: Implicit Arguments {: #Implicit_Arguments }
 
 |System Variable|Monadic Functions|Dyadic Functions|Operators|
 |---|---|---|---|

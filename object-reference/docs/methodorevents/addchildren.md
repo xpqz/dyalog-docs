@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">AddChildren</span><span class="command">Method 310</span></h1>
+<h1 class="heading"><span class="name">AddChildren</span> <span class="command">Method 310</span></h1>
 
 
 

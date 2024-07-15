@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">XML Convert</span><span class="command">R←{X} ⎕XML Y</span></h1>
+<h1 class="heading"><span class="name">XML Convert</span> <span class="command">R←{X} ⎕XML Y</span></h1>
 
 
 
@@ -41,10 +41,7 @@ The values in column 5  have the following meanings:
 
 These values are additive. For example, a value of 5 in column 5 means that the row contains both an element (value 1) and character data (value 4).
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       x←'<xml><document id="001">An introduction to XML'
       x,←'</document></xml>'
@@ -68,10 +65,7 @@ These values are additive. For example, a value of 5 in column 5 means that the 
 
 For conversion *to* XML, `Y` is a 3, 4 or 5 column matrix and the result `R` is a character vector. The columns of `Y` have the same meaning as those described above for the result of converting *from* XML.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕XML v
 <xml> 
@@ -79,7 +73,7 @@ For conversion *to* XML, `Y` is a 3, 4 or 5 column matrix and the result `R` is 
 </xml>
 ```
 
-#### Introduction to XML and Glossary of Terms
+## Introduction to XML and Glossary of Terms
 
 
 XML is an open standard, designed to allow exchange of data between applications. The full specification [^1] describes functionality, including processing directives and other directives, which can transform XML data as it is read, and which a full XML processor would be expected to handle.
@@ -93,12 +87,12 @@ XML grammar such as processing instructions, document type declarations etc. may
 
 The XML definition uses specific terminology to describe its component parts. The following is a summary of the terms used in this section:
 
-##### Character Data
+### Character Data
 
 
 Character data consists of free-form text. The free-form text should not include the characters '>', '<' or '&', so these must be represented by their entity references ('&gt;', '&lt;' and '&amp;' respectively), or numeric character references.
 
-##### Entity References and Character References
+### Entity References and Character References
 
 
 Entity references are named representations of single characters which cannot normally be used in character data because they are used to delimit markup, such as &gt; for '>'. Character references are numeric representations of any character, such as &#20; for space. Note that character references always take values in the Unicode code space, regardless of the encoding of the XML text itself.
@@ -109,12 +103,12 @@ Entity references are named representations of single characters which cannot no
 
 There is a predefined set of entity references, and the XML specification allows others to be defined within the XML using the `<!ENTITY >` markup. `⎕XML` does not process these additional declarations and therefore will only convert the predefined types.
 
-##### Whitespace
+### Whitespace
 
 
 Whitespace sequences consist of one or more spaces, tabs or line-endings. Within character data, sequences of one or more whitespace characters are replaced with a single space when this is enabled by the whitespace option. Line endings are represented differently on different systems (0x0D 0x0A, 0x0A and 0x0D are all used) but are normalized by converting them all to 0x0A before the XML is parsed, regardless of the setting of the whitespace option.
 
-##### Elements
+### Elements
 
 
 An element consists of a balanced pair of tags or a single empty element tag. Tags are given names, and start and end tag names must match.
@@ -156,22 +150,22 @@ Attributes with names beginning **xml:** are reserved. Only **xml:space** is tre
 
 Regardless of whether the attribute name and value have a recognised meaning, the attribute will be included in the APL array / generated XML. Note that when the names and values of attributes are examined, the comparisons are case-sensitive and take place after entity references and character references have been expanded.
 
-##### Comments
+### Comments
 
 
 Comments are fully supported markup. They are delimited by '<!--' and '-->' and all text between these delimiters is ignored. This text is included in the APL array if markup is being preserved, or discarded otherwise.
 
-##### CDATA Sections
+### CDATA Sections
 
 
 CDATA Sections are fully supported markup. They are used to delimit text within character data which has, or may have, markup text in it which is not to be processed as such. They and are delimited by '<![CDATA[' and ']]>'. CDATA sections are never recorded in the APL array as markup when XML is processed – instead, that data appears as character data. Note that this means that if you convert XML to an APL array and then convert this back to XML, CDATA sections will not be regenerated. It is, however, *possible* to generate CDATA sections in XML by presenting them as markup.
 
-##### Processing Instructions
+### Processing Instructions
 
 
 Processing Instructions are delimited by '<&' and '&>' but are otherwise treated as other markup, below.
 
-##### Other markup
+### Other markup
 
 
 The remainder of XML markup, including document type declarations,  XML declarations and text declarations are all delimited by '<!' and '>', and may contain nested markup. If markup is being preserved the text, including nested markup, will appear as a single row in the APL array.  `⎕XML` does not process the contents of such markup. This has varying effects, including but not limited to the following:
@@ -183,7 +177,7 @@ The remainder of XML markup, including document type declarations,  XML declarat
 - Only standard, predefined, entity references will be recognized; entity declarations which define others entity references will have no effect.
 - External entities are not processed.
 
-#### Conversion from XML
+## Conversion from XML
 
 - The level number in the first column of the result `R` is 0 for the outermost level and subsequent levels are represented by an increase of 1 for each level. Thus, for
 - <xml><document id="001">An introduction to XML </document></xml>
@@ -199,7 +193,7 @@ The remainder of XML markup, including document type declarations,  XML declarat
 - The computed value is derived from what is actually preserved in the array. For example, if the source XML contains an element which contains a comment, but comments are being discarded, there will be no entry for the comment in the array and the fifth column for the element will not indicate that it has a child comment.
 
 
-#### Conversion to XML
+### Conversion to XML
 
 
 Conversion to XML takes an array with the format described above and generates XML text from it. There are some simplifications to the array which are accepted:
@@ -221,7 +215,7 @@ The following validations are performed on the data in the array:
 
 Then, character references and entity references are emitted in place of characters where necessary, to ensure that valid XML is generated. However, markup, if present, is *not* validated and it is possible to generate invalid XML if care in not taken with markup constructs.
 
-#### Options
+### Options
 
 
 There are 3 options which may be specified using the Variant operator `⍠` (recommended) or by the optional left argument `X` (retained for backwards compatibility). The names are different and are case-sensitive; they must be spelled exactly as shown below.
@@ -250,7 +244,7 @@ If options are specified using the optional left argument,  `X` specifies a set 
 
 Errors detected in the input arrays or options will all cause `DOMAIN ERROR`.
 
-#### Whitespace (whitespace)
+### Whitespace (whitespace)
 
 
 When converting from XML `Whitespace` specifies the default handling of white space surrounding and within character data. When converting to XML `Whitespace` specifies the default formatting of the XML. Note that attribute values are not comprised of character data so white space in attribute values is always preserved.
@@ -375,7 +369,7 @@ When converting from XML `Whitespace` specifies the default handling of white sp
 └∊──────────────────────────────────────┘
 ```
 
-#### Markup (markup)
+### Markup (markup)
 
 
 When converting from XML, `Markup` determines whether markup (other than entity tags) appears in the output array or not. When converting to XML `Markup` has no effect.
@@ -487,7 +481,7 @@ When converting from XML, `Markup` determines whether markup (other than entity 
 └∊──────────────────────────────────────────────┘
 ```
 
-#### UnknownEntity (unknown-entity)
+### UnknownEntity (unknown-entity)
 
 
 When converting from XML, this option determines what happens when an unknown entity reference, or a character reference for a Unicode character which cannot be represented as an APL character, is encountered. In Classic versions of Dyalog APL that is any Unicode character which does not appear in `⎕AVU`. When converting to XML, this option determines what happens to Esc characters (`⎕UCS 27`) in data.

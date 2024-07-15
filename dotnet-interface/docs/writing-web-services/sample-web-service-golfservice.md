@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Sample Web Service: GolfService</span></h1>
+<h1> Sample Web Service: GolfService</h1>
 
 `GolfService` is an example Web Service that resides in the directory `samples\asp.net\Golf` and is associated with the IIS Virtual Directory `dyalog.net/Golf`. This example makes extensive use of internal classes to define data structures that are appropriate for a client application, such as C# or VB.
 
@@ -27,7 +27,7 @@ MakeBooking(CourseCode,TeeTime,GimmeNearest, Name1,Name2,Name3,Name4))
 
 Requests a tee reservation at the course specified by `CourseCode`. `TeeTime` is a `DateTime` object that specifies the requested date and time. `GimmeNearest` is `Boolean`. If 1, requests the nearest tee-time to that specified; if 0, requests only the specified tee-time. Name1-4 are strings specifying up to 4 players. Note that all parameters are required. The result of this method is a `Booking` object.
 
-### GolfService: Global.asax
+## GolfService: Global.asax
 ```apl
 <script language="Dyalog" runat=server>
  
@@ -55,7 +55,7 @@ This example may be considered slightly weak in that the location of the data fi
 
 Note that the `GolfData` file may be initialised using the function `Golf.INITFILE` in the `samples\asp.net\webservices\webservices.dws` workspace. The function will prompt you for the path of the file, initialize it and update the `Global.asax` file accordingly.
 
-### GolfService: GolfCourse class
+## GolfService: GolfCourse class
 
 The `GolfCourse` class is effectively a structure with two fields named `Code` and `Name`. `Code` is an integer code that provides a shorthand way to refer to a specific golf course; `Name` is a `String` containing its full name.
 ```apl
@@ -95,7 +95,7 @@ Or, more simply
 
 Note that the names of the constructor functions are not visible outside the class. Constructors are identified by their signatures (basically, the `:Implements Constructor` statement) and not by their names.
 
-### GolfService: Slot class
+## GolfService: Slot class
 
 The `Slot` class is effectively a structure with two fields named `Time` and `Players`. `Time` is a `DateTime` object that represents a time that can be reserved on the first tee. `Players` is an array of (up to 4) strings that contains the names of the golfers who have reserved to start their round of golf at that time.
 ```apl
@@ -130,7 +130,7 @@ The constructor `ctor1` accepts a single `DateTime` parameter, which it assigns 
 
 The constructor `ctor2` accepts two arguments, a specified tee time, and an array of strings that contains golfers' names. It assigns these parameters to `Time` and `Players` respectively.
 
-### GolfService: Booking class
+## GolfService: Booking class
 
 The `Booking` class represents the result of the `MakeBooking` method. It contains 4 fields named `OK`, `Course`, `TeeTime` and `Message`.
 
@@ -160,7 +160,7 @@ If `OK` is true (1) the `Course` field contains an instance of a `GolfCourse` ob
 
 This class provides a single constructor method, which must be called with values for all four fields.
 
-### GolfService: StartingSheet class
+## GolfService: StartingSheet class
 
 The `StartingSheet` class represents the result of the `GetStartingSheet` method. It contains 5 fields named `OK`, `Course`, `Date`, `Slots` and `Message`. `OK` is `Boolean` and indicates whether or not a starting sheet is available for the specified course and date.
 
@@ -192,7 +192,7 @@ If `OK` is true (1) the `Course` field contains an instance of a `GolfCourse` ob
 
 Like the `Booking` class, the `StartingSheet` class provides a single constructor method. In this case, the constructor is called with values for just 3 of the fields; the values of the other fields are expected to be assigned later.
 
-### GolfService: GetCourses function
+## GolfService: GetCourses function
 ```apl
      ∇ R←GetCourses;COURSECODES;COURSES;INDEX;GOLFID
 [1]   ⍝
@@ -209,7 +209,7 @@ The `GetCourses` function retrieves the tie number of the `GolfData` component f
 
 The function then creates a `GolfCourse` object for each of the courses recorded on the file, and returns the array of `GolfCourse` objects as its result.
 
-### GolfService: GetStartingSheet function
+## GolfService: GetStartingSheet function
 
 The `GetStartingSheet` function retrieves the tie number of the `GolfData` component file from the `Application` object and reads its first component. Line [10] creates an instance of a `StartingSheet` object and uses it to initialise the result `R`. The value of the `OK` field is set to zero to indicate failure.
 
@@ -257,7 +257,7 @@ Line[24] converts the stored tee times (in minutes) to `DateTime` objects.
 
 Line[25] combines the tee times and golfers into a vector of 2-element arrays, and creates a `Slot` object for each of them. The result is assigned to the `Slots` field of the result `R`.
 
-### GolfService: MakeBooking function
+## GolfService: MakeBooking function
 
 The `MakeBooking` function checks that the requested tee-time is available, for the specified number of players and updates the starting sheet accordingly. The result of the function is a `Booking` object.
 
@@ -380,7 +380,7 @@ If an appropriate slot is found, Lines[72 73] update the `Slot` object with the 
   ∇
 ```
 
-### Testing GolfService from a Browser
+## Testing GolfService from a Browser
 
 If you point your browser at the URL:
 ```apl
@@ -429,7 +429,7 @@ The output clearly shows that the result, a `StartingSheet` object, contains an 
 
 ![golfservice6](../img/golfservice6.png)
 
-#### Using GolfService from C#
+### Using GolfService from C#
 
 The `csharp` sub-directory in `samples\asp.net\golf` contains sample files for accessing the `GolfService` Web Service from C#. The C# source code in `Golf.cs` is shown below.
 ```apl

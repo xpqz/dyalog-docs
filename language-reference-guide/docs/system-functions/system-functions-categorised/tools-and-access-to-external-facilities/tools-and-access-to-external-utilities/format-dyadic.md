@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Format (Dyadic)</span><span class="command">R←X ⎕FMT Y</span></h1>
+<h1 class="heading"><span class="name">Format (Dyadic)</span> <span class="command">R←X ⎕FMT Y</span></h1>
 
 
 
@@ -36,52 +36,49 @@ The **format specification** consists of a series of control phrases, with adjac
 
 
 
-##### where
+## where
 
 
 |---|---|
-|r|is an optional repetition factor indicating that the format phrase is to be applied to r columns of `Y`|
-|q|is an optional usage of qualifiers or affixtures from those described below.|
-|w|is an integer value specifying the total field width per column of `Y` , including any affixtures.|
-|s|is an integer value specifying the number of significant digits in Scaled format; `s` must be less than `w-1`|
-|d|is an integer value specifying the number of places of decimal in Decimal format; `d` must be less than `w` .|
-|n|is an integer value specifying a tab position relative to the notional left margin (for `T` -format) or relative to the last formatted position (for `X` -format) at which to begin the next format.|
-|t|is any arbitrary text excluding the surrounding character pair.  Double quotes imply a single quote in the result.|
-|pattern|see following section **G format**|
+|`r`|is an optional repetition factor indicating that the format phrase is to be applied to r columns of `Y`|
+|`q`|is an optional usage of qualifiers or affixtures from those described below.|
+|`w`|is an integer value specifying the total field width per column of `Y` , including any affixtures.|
+|`s`|is an integer value specifying the number of significant digits in Scaled format; `s` must be less than `w-1`|
+|`d`|is an integer value specifying the number of places of decimal in Decimal format; `d` must be less than `w` .|
+|`n`|is an integer value specifying a tab position relative to the notional left margin (for `T` -format) or relative to the last formatted position (for `X` -format) at which to begin the next format.|
+|`t`|is any arbitrary text excluding the surrounding character pair.  Double quotes imply a single quote in the result.|
+|`pattern`|see following section **G format**|
 
 
 
-##### Qualifiers q are as follows
-
-
-|---|---|
-|B|leaves the field blank if the result would otherwise be zero.|
-|C|inserts commas between triads of digits starting from the rightmost digit of the integer part of the result.|
-|Km|scales numeric values by `1Em` where m is an integer; negation may be indicated by `¯` or - preceding the number.|
-|L|left justifies the result in the field width.|
-|Ov⍞t⍞|replaces specific numeric value `v` with the text `t` .|
-|S⍞p⍞|substitutes standard characters.  p is a string of pairs of symbols enclosed between any of the Text Insertion delimiters.  The first of each pair is the standard symbol and the second is the symbol to be substituted.  Standard symbols are: `*` overflow fill character `.` decimal point `,` triad separator for `C` qualifier `0` fill character for `Z` qualifier `_` loss of precision character `¯` high minus symbol|
-|Z|fills unused leading positions in the result with zeros (and commas if `C` is also specified).|
-|9|digit selector|
-
-
-##### Affixtures are as follows
+## Qualifiers q are as follows
 
 
 |---|---|
-|M⍞t⍞|prefixes negative results with the text t instead of the negative sign.|
-|N⍞t⍞|post-fixes negative results with the text `t`|
-|P⍞t⍞|prefixes positive or zero results with the text `t` .|
-|Q⍞t⍞|post-fixes positive or zero results with the text `t` .|
-|R⍞t⍞|presets the field with the text `t` which is repeated as necessary to fill the field.  The text will be replaced in parts of the field filled by the result, including the effects of other qualifiers and affixtures except the `B` qualifier|
+|`B`|leaves the field blank if the result would otherwise be zero.|
+|`C`|inserts commas between triads of digits starting from the rightmost digit of the integer part of the result.|
+|`Km`|scales numeric values by `1Em` where m is an integer; negation may be indicated by `¯` or - preceding the number.|
+|`L`|left justifies the result in the field width.|
+|`Ov⍞t⍞`|replaces specific numeric value `v` with the text `t` .|
+|`S⍞p⍞`|substitutes standard characters.  p is a string of pairs of symbols enclosed between any of the Text Insertion delimiters.  The first of each pair is the standard symbol and the second is the symbol to be substituted.  Standard symbols are: `*` overflow fill character `.` decimal point `,` triad separator for `C` qualifier `0` fill character for `Z` qualifier `_` loss of precision character `¯` high minus symbol|
+|`Z`|fills unused leading positions in the result with zeros (and commas if `C` is also specified).|
+|`9`|digit selector|
+
+
+## Affixtures are as follows
+
+
+|---|---|
+|`M⍞t⍞`|prefixes negative results with the text t instead of the negative sign.|
+|`N⍞t⍞`|post-fixes negative results with the text `t`|
+|`P⍞t⍞`|prefixes positive or zero results with the text `t` .|
+|`Q⍞t⍞`|post-fixes positive or zero results with the text `t` .|
+|`R⍞t⍞`|presets the field with the text `t` which is repeated as necessary to fill the field.  The text will be replaced in parts of the field filled by the result, including the effects of other qualifiers and affixtures except the `B` qualifier|
 
 
 The surrounding affixture delimiters may be replaced by the alternative pairs described for Text Insertion.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 
 
 
@@ -218,7 +215,7 @@ One or more format phrases may be surrounded by parentheses and preceded by an o
 ```
 
 
-#### G  Format
+## G  Format
 
 
 Only the `B`, `K`, `S` and `O` qualifiers are valid with the `G` option
@@ -238,10 +235,7 @@ A '9' digit selector causes a data digit to be copied to the result.
 
 A 'Z' digit selector causes a non-zero data digit to be copied to the result.  A zero data digit is copied if and only if digits appear on each side of it.  Otherwise a blank appears.  Similarly text between digit selectors appears only if digits appear on each side of the text.  Text appearing before the first digit selector or after the last will always appear in the result.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'G⊂99/99/99⊃'⎕FMT 0 100 100 ⊥8 7 89
 08/07/89
@@ -272,7 +266,7 @@ An error will be reported if:
 
 
 
-#### O  Format Qualifier
+## O  Format Qualifier
 
 
 The O format qualifier replaces a specific numeric value with a text string and may be used in conjunction with the E, F, I and G format phrases.
@@ -281,11 +275,11 @@ The O format qualifier replaces a specific numeric value with a text string and 
 An O-qualifier consists of the letter "O" followed by the optional numeric value which is to be substituted (if omitted, the default is 0) and then the text string within pairs of symbols such as "`<>`". For example:
 
 
-|--------------|-----------------------------------------------|
-|O - qualifier |Description                                    |
-|O<nil>        |Replaces the value 0 with the text "nil"       |
-|O42<N/A>      |Replaces the value 42 with the text "N/A"      |
-|O0.001<1/1000>|Replaces the value 0.001 with the text "1/1000"|
+|----------------|-----------------------------------------------|
+|`O - qualifier` |Description                                    |
+|`O<nil>`        |Replaces the value 0 with the text "nil"       |
+|`O42<N/A>`      |Replaces the value 42 with the text "N/A"      |
+|`O0.001<1/1000>`|Replaces the value 0.001 with the text "1/1000"|
 
 
 
@@ -297,10 +291,7 @@ It is permitted to specify more than one O-qualifier within a single phrase.
 
 The O-qualifier is `⎕CT` sensitive.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       'O<NIL>F7.2'⎕FMT 12.3 0 42.5

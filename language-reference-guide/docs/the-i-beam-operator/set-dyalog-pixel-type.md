@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set Dyalog Pixel Type</span><span class="command">R←2035⌶Y</span></h1>
+<h1 class="heading"><span class="name">Set Dyalog Pixel Type</span> <span class="command">R←2035⌶Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ Determines how Coord `'Pixel'` is interpreted. This is determined initially by t
 The result `R` is the previous value.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       2035⌶'ScaledPixel'
 RealPixel

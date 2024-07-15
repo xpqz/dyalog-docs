@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File System Available</span><span class="command">R←⎕FAVAIL</span></h1>
+<h1 class="heading"><span class="name">File System Available</span> <span class="command">R←⎕FAVAIL</span></h1>
 
 
 

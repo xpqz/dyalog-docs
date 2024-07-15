@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Assignment (Modified)</span><span class="command">{R}←Xf←Y</span></h1>
+<h1 class="heading"><span class="name">Assignment (Modified)</span> <span class="command">{R}←Xf←Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 The effect of the derived function is to reset the value of the array named by `X` to the result of `XfY`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A
 1 2 3 4 5

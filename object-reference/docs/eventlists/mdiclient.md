@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> MDIClient Events</span></h1>
+<h1> MDIClient Events</h1>
 
 |-----------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[MDICascade](../methodorevents/mdicascade.md) ,  |[MDITile](../methodorevents/mditile.md) ,      |

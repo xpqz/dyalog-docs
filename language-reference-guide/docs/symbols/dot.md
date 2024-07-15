@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Dot</span><span class="command">.</span></h1>
+<h1 class="heading"><span class="name">Dot</span> <span class="command">.</span></h1>
 
 
-##### Dot can be used as a Dyadic operator with Dyadic
+## Dot can be used as a Dyadic operator with Dyadic
       operands
 
-##### Operator Dot means
+## Operator Dot means
 
 
 [Inner Product](../primitive-operators/inner-product.md)
@@ -25,7 +25,7 @@
 15 22
 ```
 
-##### Used with Jot in place of the left operand Jot
+## Used with Jot in place of the left operand Jot
       Dot means
 
 

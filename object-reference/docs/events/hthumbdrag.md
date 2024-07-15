@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">HThumbDrag</span><span class="command">Event 442</span></h1>
+<h1 class="heading"><span class="name">HThumbDrag</span> <span class="command">Event 442</span></h1>
 
 
 

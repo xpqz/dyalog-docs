@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 1</span></h1>
+<h1> Example 1</h1>
 
 This example illustrates data binding using XAML to specify the user-interface coupled with an APL function to drive it and handle the data binding.
 

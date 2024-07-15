@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Format</span><span class="command">⎕FMT</span></h1>
+<h1 class="heading"><span class="name">Format</span> <span class="command">⎕FMT</span></h1>
 
 
-##### Monadic `⎕FMT` means
+## Monadic `⎕FMT` means
 
 
 [Display Form](format-monadic.md)
@@ -16,7 +16,7 @@
 
 ```
 
-##### Dyadic `⎕FMT` means
+## Dyadic `⎕FMT` means
 
 
 [Format](format-dyadic.md)

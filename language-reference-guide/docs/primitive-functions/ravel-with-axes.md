@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Ravel with Axes</span><span class="command">R←,[K]Y</span></h1>
+<h1 class="heading"><span class="name">Ravel with Axes</span> <span class="command">R←,[K]Y</span></h1>
 
 
 
@@ -30,10 +30,7 @@ If `K` is a fraction, the result `R` is an array of the same shape as `Y`, but w
       ⍴R  ←→ (1,⍴Y)[⍋K,⍳⍴⍴Y]
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       ,[0.5]'ABC'
@@ -69,10 +66,7 @@ Note that if `K` is a scalar or single element vector, `R ←→ Y`.
       ⍴⍴R ←→ 1+(⍴⍴Y)-⍴,K
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       M
@@ -114,10 +108,7 @@ If `K` is an empty vector a new last axis of length 1 is created.
       ⍴R ←→ (⍴Y),1
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       Q1←'January' 'February' 'March'

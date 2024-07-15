@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Animation Properties</span></h1>
+<h1> Animation Properties</h1>
 
 |-------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |

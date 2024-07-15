@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Prototypes and Fill Items</span></h1>
+<h1> Prototypes and Fill Items</h1>
 
 Every array has an associated *prototype* which is derived from the array's first item.
 
@@ -6,7 +6,7 @@ If the first item is a number, the prototype is 0. Otherwise, if the first item 
 
 Otherwise (in the nested case, when the first item is other than a simple scalar), the prototype is defined recursively as the prototype of each of the array's first item.
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 |Array                   |Prototype      |
 |------------------------|---------------|
@@ -19,12 +19,11 @@ Otherwise (in the nested case, when the first item is other than a simple scalar
 |`⎕NEW MyClass`          |`MyClass`      |
 |`(88(⎕NEW MyClass)'X')7`|`0 MyClass ' '`|
 
-## Fill Items
+# Fill Items
 
 Fill items for an overtake operation, are derived from the argument's prototype. For each `0` or `' '` in the prototype, there is a corresponding `0` or `' '` in the fill item and for each class reference in the prototype, there is a ref to a (newly constructed and distinct) instance of that class that is initialised by the niladic (default) constructor for that class, if defined.
 
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
       4↑1 2
 1 2 0 0

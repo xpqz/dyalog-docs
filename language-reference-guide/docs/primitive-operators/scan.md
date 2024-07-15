@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Scan</span><span class="command">R←f\[K]Y</span></h1>
+<h1 class="heading"><span class="name">Scan</span> <span class="command">R←f\[K]Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The axis specification is optional.  If present, `K` must identify an axis of `Y
 The shape of `R` is the same as the shape of `Y`.  If `Y` is an empty array, then `R` is the same empty array.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ∨\0 0 1 0 0 1 0
 0 0 1 1 1 1 1

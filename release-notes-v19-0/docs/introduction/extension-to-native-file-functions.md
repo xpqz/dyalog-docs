@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Extension to Native File Functions</span></h1>
+<h1> Extension to Native File Functions</h1>
 
 `⎕NMOVE` and `⎕NCOPY` now provide a feature to run an APL function as a callback during processing. This is implemented by the ProgressCallback Variant option.
 
-### ProgressCallback Option
+## ProgressCallback Option
 
-### Overview
+## Overview
 
 If this option is enabled, the system function invokes an APL callback function as the file operation (move or copy) proceeds. A system object is used to communicate between the system function and the callback. The file operation has 4 distinct stages:
 
@@ -34,7 +34,7 @@ The right argument given to the callback function is a 3-element vector:
 |`[2]`|Event   |Character vector describing the event that lead to the callback being executed. See below.                              |
 |`[3]`|Info    |Reference to a namespace containing information about the event. See below.                                             |
 
-### Event
+## Event
 
 Event is a character vector which indicates the stage of the copy or move operation..
 
@@ -46,7 +46,7 @@ Event is a character vector which indicates the stage of the copy or move operat
 
 Note that there will always be at least 2 invocations of the callback, to indicate the start and end of the operation.
 
-### Info
+## Info
 
 Info is a ref to a namespace that contains information about the event. This namespace persists for the duration of the execution of the system function and contains the following fields:
 
@@ -57,7 +57,7 @@ Info is a ref to a namespace that contains information about the event. This nam
 |`Data`|A field that is reserved for the user to store data which persists between invocations of the callback. It could for example be used to keep a sequence number, to count the number of times the callback had been run.|
 |`Options`|This is a namespace which contains the information that controls the future execution of the callback. The options persist between the calls to the callback, so there is no need to set them again unless they should be changed. The fields and their default values are described below.|
 
-### Options
+## Options
 
 This is a namespace which contains options that control future invocations of the callback. The options persist between these invocations, so there is no need to set them again unless they should be changed. The fields and their default values are:
 

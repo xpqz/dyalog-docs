@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">TCPSendPicture</span><span class="command">Method 380</span></h1>
+<h1 class="heading"><span class="name">TCPSendPicture</span> <span class="command">Method 380</span></h1>
 
 
 
@@ -36,10 +36,7 @@ Note that the [Style](../properties/style.md) of the [TCPSocket](../objects/tcps
 
 The (shy) result of the method is an integer that reports the number of bytes that were transmitted.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       S1.TCPSendPicture 'BM' 'PNG'        
 4930

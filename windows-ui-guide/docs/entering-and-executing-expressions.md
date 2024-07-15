@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Entering and Executing Expressions</span></h1>
+<h1> Entering and Executing Expressions</h1>
 
-### Introduction
+## Introduction
 
 The session contains the *input line* and the *session log*. The input line is the last line in the session, and is (normally) the line into which you type an expression to be evaluated.
 
@@ -12,13 +12,13 @@ In general you type an expression into the input line, then press Enter (ER) to 
 
 You can move around in the session using the scrollbar, the cursor keys, and the PgUp and PgDn keys. In addition, Ctrl+Home (UL) moves the cursor to the beginning of the top-line in the Log and Ctrl+End (DL) moves the cursor to the end of the last (i.e. the *current*) line in the session log. Home (LL) and End (RL) move the cursor to the beginning and end respectively of the line containing the cursor.
 
-### Deleting Lines
+## Deleting Lines
 
 You may delete one or more lines from the Session using the DK command (Ctrl+Delete). This action removes the current line or the selected block of lines  from the Session window and from the Session log. The removal is permanent and you will be prompted to confirm:
 
 ![modify session log](img/modify-session-log.png)
 
-### Auto Complete
+## Auto Complete
 
 As you start to enter characters in an APL expression, the *Auto Complete* suggestions pop-up window (AC for short) offers you a choice based upon the characters you have already entered and the current context.
 
@@ -34,7 +34,7 @@ For example, suppose that you enter the two characters `)c`. AC offers you `)cle
 
 You can disable or customise Auto Completion from the *Auto Complete* page in the Configuration dialog box which is described later in this chapter.
 
-### Executing an Expression
+## Executing an Expression
 
 To execute an expression, you type it into the input line, then press Enter (ER). Alternatively, you can select *Execute* from the *Action* menu. Following execution, the expression and any displayed results become part of the session log.
 
@@ -42,7 +42,7 @@ Instead of entering a new expression in the input line, you can move back throug
 
 An alternative way to retrieve a previously entered expression is to use Ctrl+Shift+Bksp (BK) and Ctrl+Shift+Enter (FD). These commands cycle backwards and forwards through the *input history*, successively copying previously entered expressions over the current line. When you reach the expression you want, simply press Enter to re-run it. These operations may also be performed from the *Edit* menu in the session window.
 
-### Executing Several Expressions
+## Executing Several Expressions
 
 You can execute several expressions, by changing more than one line in the session log before pressing Enter. Each line that you change will be displayed using colour 249 (Red on White). When you press Enter, these *marked* lines are copied down and executed in the order they appear in the log.
 
@@ -50,13 +50,13 @@ Note that you don't actually have to *change* a line to mark it for re-execution
 
 It is also possible to execute a contiguous block of lines. To do this, you must first select the lines (by dragging the mouse or using the keyboard) and then copy them into the clipboard using Shift+Delete (CT) or Ctrl+Insert (CP). You then paste them back into the session using Shift+Insert (PT). Lines pasted into the session are always marked (Red on White) and will therefore be executed when you press Enter. To execute lines from an edit window, you use a similar procedure. First select the lines you want to execute, then cut or copy the selection to the clipboard. Then move to the session window and paste them in, then press Enter to execute them.
 
-### Session Print Width (PW)
+## Session Print Width (PW)
 
 Throughout its history, APL has used a system variable `⎕PW` to specify the width of the user's terminal or screen. Session output that is longer than `⎕PW` is automatically wrapped and split into multiple lines on the display. This feature of APL was designed in the days of hard-copy terminals and has become less relevant in modern Windows environments.
 
 Dyalog APL continues to support the traditional use of `⎕PW`, but also provides an alternative option to have the system wrap Session output according to the width of the Session Window. This behaviour may be selected by checking the Auto PW checkbox in the Session tab of the Configuration dialog box.
 
-### Using Find/Replace in the Session
+## Using Find/Replace in the Session
 
 The search and replace facilities work not just in the Editor as you would expect, but also in the Session. For example, if you have just entered a series of expressions involving a variable called `SALES` and you want to perform the same calculations using `NEWSALES`, the following commands will achieve it:
 

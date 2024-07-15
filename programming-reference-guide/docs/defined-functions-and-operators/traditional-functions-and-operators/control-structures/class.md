@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Class Statement</span></h1>
+<h1> :Class Statement</h1>
 
 `:Class <class name><:base class name> <,interface name...>`
 ```apl
@@ -17,7 +17,7 @@ A class script begins with a `:Class` statement and ends with a `:EndClass` stat
 
 A Class may import methods defined in separate plain Namespaces with one or more `:Include` statements. For further details, see ["Including Namespaces in Classes"](../../../object-oriented-programming/including-namespaces-in-classes/including-namespaces-in-classes.md).
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 The following statements define a Class named `Penguin` that derives from (is based upon) a Class named `Animal` and which supports two Interfaces named `BirdBehaviour` and `FishBehaviour`.
 ```apl

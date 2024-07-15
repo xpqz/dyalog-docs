@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Copy</span><span class="command">{R}←X ⎕NCOPY Y</span></h1>
+<h1 class="heading"><span class="name">Native File Copy</span> <span class="command">{R}←X ⎕NCOPY Y</span></h1>
 
 
 
@@ -25,12 +25,12 @@ If `X` specifies an existent directory then each source in `Y` is copied into th
 
 The shy result `R` contains count(s) of top-level items copied. If `Y` is a single source name, `R` is a scalar otherwise it is a vector of the same length as `Y`.
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NCOPY` may be applied using the   Variant operator with the options Wildcard (the Principal option), IfExists, PreserveAttributes and ProcessCallback.
 
-#### Wildcard Option (Boolean)
+## Wildcard Option (Boolean)
 
 
 |---|---|
@@ -41,7 +41,7 @@ The shy result `R` contains count(s) of top-level items copied. If `Y` is a sing
 Note that when Wildcard is 1, element(s) of `R` can  be 0, 1 or `>1`. If Wildcard is 0, elements of `R` are always 1.
 
 
-#### IfExists Option
+## IfExists Option
 
 
 The IfExists variant option determines what happens when a source file is to be copied to a target file that already exists. It does not apply to directories, only to the files within them.
@@ -61,7 +61,7 @@ The following cases cause an error to be signalled  regardless of the value of t
 - If the source specifies a directory and the destination specifies an existing file.
 - If the source specifies a file and the same base name exists as a sub-directory in the destination.
 
-#### PreserveAttributes Option (Boolean)
+## PreserveAttributes Option (Boolean)
 
 
 The PreserveAttributes variant option determines whether or not file attributes are preserved. It does not apply to directories, only to files.
@@ -75,15 +75,12 @@ The PreserveAttributes variant option determines whether or not file attributes 
 Note also that when files are copied across file systems, the different file systems may have different timestamp granularity and the timestamps may not be exactly the same.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 There are a number of possibilities which are illustrated below. In all cases,  if the source is a file, a copy of the file is created. If the source is a directory, a copy of the directory and all its contents is created.
 
-##### Examples (single source, Wildcard is 0)
+### Examples (single source, Wildcard is 0)
 
 
 - The source name must be an existent file or directory.
@@ -109,7 +106,7 @@ backups/default.dlf
 ```
 
 
-##### Examples (single source, Wildcard is 1)
+### Examples (single source, Wildcard is 1)
 
 - The source name may include wildcard characters which matches a number of existing files and/or directories. The destination name must be an existing directory.
 - The files and/or directories that match the pattern specified by the source name are copied into the destination directory. If there are no matches, zero copies are made.
@@ -135,7 +132,7 @@ backups/UserCommand20.cache
 
 
 
-##### Examples (multiple sources, Wildcard is 0)
+### Examples (multiple sources, Wildcard is 0)
 
 - Each source name must specify a single file or directory which must exist. The destination name must be an existing directory.
 - Copies of each of the files and/or directories specified by the source base names are made in the destination directory.
@@ -156,7 +153,7 @@ backups/def_uk.dse
 
 
 
-##### Examples (multiple sources, Wildcard is 1)
+### Examples (multiple sources, Wildcard is 1)
 
 - The destination name must be an existing directory.
 - Copies of each of the files and/or directories that match the patterns specified by the source names (if any) are made in the destination directory.
@@ -177,16 +174,16 @@ backups/UserCommand20.cache
 
 
 
-#### Notes
+## Notes
 
 - The special directories `.` and `..` can never be copied into an existing directory.
 - If any source name is a symbolic link it is dereferenced; that is, the source or directory it references is copied rather than the link itself.
 - In the result `R`, a directory together with all its contents is counted once. A directory may be partially copied if the IfExists option is set to `'Replace'` or `'ReplaceIfNewer'`).
 - If an error occurs during the copy process then processing will immediately stop and an error will be signalled. The operation is not atomic; some items may be copied before this happens. In the event of an error there will be no result and therefore no indication of how many names were copied before the error occurred.
 
-#### ProgressCallback Option
+### ProgressCallback Option
 
-#### Overview
+### Overview
 
 
 If this option is enabled, the system function invokes an APL callback function as the file operation (move or copy) proceeds. A system object is used to communicate between the system function and the callback. The file operation has 4 distinct stages:
@@ -227,7 +224,7 @@ The right argument given to the callback function is a 3-element vector:
 |`[3]`|Info    |Reference to a namespace containing information about the event. See below.                                             |
 
 
-#### Event
+### Event
 
 
 
@@ -245,7 +242,7 @@ Event is a character vector which indicates the stage of the copy or move operat
 Note that there will always be at least 2 invocations of the callback, to indicate the start and end of the operation.
 
 
-#### Info
+### Info
 
 
 Info is a ref to a namespace that contains information about the event. This namespace persists for the duration of the execution of the system function and contains the following fields:
@@ -260,7 +257,7 @@ Info is a ref to a namespace that contains information about the event. This nam
 
 
 
-#### Options
+### Options
 
 
 This is a namespace which contains options that control future invocations of the callback. The options persist between these invocations, so there is no need to set them again unless they should be changed. The fields and their default values are:

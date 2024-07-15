@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">GridDropSel</span><span class="command">Event 195</span></h1>
+<h1 class="heading"><span class="name">GridDropSel</span> <span class="command">Event 195</span></h1>
 
 
 

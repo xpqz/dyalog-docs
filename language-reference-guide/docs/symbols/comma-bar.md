@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Comma Bar</span><span class="command">⍪</span></h1>
+<h1 class="heading"><span class="name">Comma Bar</span> <span class="command">⍪</span></h1>
 
 
-##### Monadic Comma Bar means
+## Monadic Comma Bar means
 
 
 [Table](../primitive-functions/table.md)
@@ -26,7 +26,7 @@
 5 6 7 8
 ```
 
-##### Dyadic Comma Bar means
+## Dyadic Comma Bar means
 
 
 [Catenate First](../primitive-functions/catenate-first.md)

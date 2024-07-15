@@ -2,15 +2,15 @@
 
 
 
-<h1 class="heading"><span class="name">Slash Bar</span><span class="command">⌿</span></h1>
+<h1 class="heading"><span class="name">Slash Bar</span> <span class="command">⌿</span></h1>
 
 
-#### Used as a Function
+## Used as a Function
 
 
 Monadic Slash Bar is not defined
 
-##### Dyadic Slash Bar means
+### Dyadic Slash Bar means
 
 
 [Replicate First (Compress First)](../primitive-functions/replicate.md)
@@ -27,12 +27,12 @@ Monadic Slash Bar is not defined
 9 10 11 12
 ```
 
-#### Used as an Operator
+## Used as an Operator
 
 
 Slash Bar is a Monadic operator with a Dyadic operand
 
-##### Operator Slash Bar means
+#### Operator Slash Bar means
 
 
 [Reduce First,  Reduce First N-Wise ](../primitive-operators/reduce-first.md)

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ExecuteJavaScript</span><span class="command">Method 839</span></h1>
+<h1 class="heading"><span class="name">ExecuteJavaScript</span> <span class="command">Method 839</span></h1>
 
 
 
@@ -26,10 +26,7 @@ The argument to ExecuteJavaScript is a single item as follows:
 
 The shy result of ExecuteJavaScript is currently 1; this may change.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       hr.ExecuteJavaScript 'alert("Hello")'
 ```

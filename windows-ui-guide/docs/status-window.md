@@ -1,11 +1,10 @@
-<h1 class="heading"><span class="name"> Status Window</span></h1>
+<h1> Status Window</h1>
 
 The Status window is used to display system messages and supplementary information. These include the operations that take place when you register an OLEServer or ActiveXControl.
 
 The Status window is also used to display supplementary information about errors. For example if you attempt to use a .NET method with incorrect argument(s) you will get a suitable error message in the Status window, in addition to the `DOMAIN ERROR` message in the Session.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ⎕USING←'System'

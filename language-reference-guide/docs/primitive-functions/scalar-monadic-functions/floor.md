@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Floor</span><span class="command">R←⌊Y</span></h1>
+<h1 class="heading"><span class="name">Floor</span> <span class="command">R←⌊Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 For real numbers, `R` is the largest integer value less than or equal to `Y` within the comparison tolerance `⎕CT`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⌊¯2.3 0.1 100 3.3
 ¯3 0 100 3
@@ -33,7 +30,7 @@ For complex numbers, `R` depends on the relationship between the real and imagin
 
 
 
-#### Complex Floor
+## Complex Floor
 
 
 The following (deliberately) simple function illustrates one way to express the rules for evaluating complex Floor.

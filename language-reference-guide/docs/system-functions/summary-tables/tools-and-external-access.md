@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Tools and Access to External Utilities</span></h1>
+<h1> Tools and Access to External Utilities</h1>
 
 |Name    |Description                                             |
 |--------|--------------------------------------------------------|

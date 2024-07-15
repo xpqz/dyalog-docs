@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Read Text File</span><span class="command">R←{X} ⎕NGET Y</span></h1>
+<h1 class="heading"><span class="name">Read Text File</span> <span class="command">R←{X} ⎕NGET Y</span></h1>
 
 
 
@@ -25,7 +25,7 @@ The optional left-argument `X` is either
 
 
 
-File Encodings
+Table: File Encodings {: #Encodings }
 
 
 |Encoding      |Description                                                                                                            |
@@ -70,7 +70,7 @@ The 3rd element of the result `newline` is a numeric vector from the *Value* col
 
 
 
-Line separators:
+Table: Line separators: {: #Line_Separators }
 
 
 |Value                          |Code  |Description                          |

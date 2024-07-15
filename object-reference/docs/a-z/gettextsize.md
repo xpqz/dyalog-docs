@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetTextSize</span><span class="command">Method 146</span></h1>
+<h1 class="heading"><span class="name">GetTextSize</span> <span class="command">Method 146</span></h1>
 
 
 
@@ -32,10 +32,7 @@ The argument to GetTextSize is a 1 or 2-element array as follows:
 
 When you invoke GetTextSize you give the text item in whose size you are interested and, optionally, the name of a Font object. The text item may be a simple scalar, a vector or a matrix. If the Font is omitted, the result is given using the current font for the object in question.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'F'⎕WC'Form'
       F.GetTextSize'Hello World'

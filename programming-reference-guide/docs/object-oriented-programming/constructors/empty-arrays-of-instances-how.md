@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Empty Arrays of Instances: How?</span></h1>
+<h1> Empty Arrays of Instances: How?</h1>
 
 To cater for the need to handle empty arrays of Instances as easily as non-empty arrays, a reference to an empty array of Class Instances is handled in a special way.
 
@@ -15,8 +15,7 @@ Whenever a reference or an assignment is made to the content of an *empty array 
 5. the Class Destructor (if any) is run in the new Instance
 6. the New Instance is deleted
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 :Class Bird
     :Field Public Species

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Profile Application</span><span class="command">{R}←{X}⎕PROFILE Y</span></h1>
+<h1 class="heading"><span class="name">Profile Application</span> <span class="command">{R}←{X}⎕PROFILE Y</span></h1>
 
 
 
@@ -40,14 +40,14 @@ See also: [Application Tuning Guide](https://docs.dyalog.com/18.0/Application%20
 For most actions, the result of `⎕PROFILE` is its current state and contains:
 
 
-|---|---------------------------------------------------------------------------------------------------------------------------------------|
-|[1]|character vector indicating the `⎕PROFILE` state having one of the values `'active'` or `'inactive'`                                   |
-|[2]|character vector indicating the timer being used having one of the values `'CPU'` or `'elapsed'`                                       |
-|[3]|call time bias in milliseconds. This is the amount of time, in milliseconds, that is consumed for the system to take a time measurement|
-|[4]|timer granularity in milliseconds. This is the resolution of the timer being used                                                      |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------|
+|`[1]`|character vector indicating the `⎕PROFILE` state having one of the values `'active'` or `'inactive'`                                   |
+|`[2]`|character vector indicating the timer being used having one of the values `'CPU'` or `'elapsed'`                                       |
+|`[3]`|call time bias in milliseconds. This is the amount of time, in milliseconds, that is consumed for the system to take a time measurement|
+|`[4]`|timer granularity in milliseconds. This is the resolution of the timer being used                                                      |
 
 
-#### {state}←⎕PROFILE 'start' {timer}
+## {state}←⎕PROFILE 'start' {timer}
 
 
 Turn profiling on; `timer` is an optional case-independent character vector containing  `'CPU'` or `'elapsed'` or `'none'` or `'coverage'`. If omitted, it defaults to `'CPU'`. If `timer` is `'none'`, `⎕PROFILE`  records  just the number of times each line of code is executed without incurring the timing overhead. If `timer` is `'coverage'`, `⎕PROFILE`   only identifies which  lines of code are executed without incurring the timing or counting overhead.
@@ -59,7 +59,7 @@ The first time a particular timer is chosen, `⎕PROFILE` will spend 1000 millis
  active  CPU  0.0001037499999 0.0001037499999
 ```
 
-#### {state}←⎕PROFILE 'stop'
+## {state}←⎕PROFILE 'stop'
 
 
 Suspends the collection of profiling data.
@@ -68,7 +68,7 @@ Suspends the collection of profiling data.
  inactive  CPU  0.0001037499999 0.0001037499999
 ```
 
-#### {state}←⎕PROFILE 'clear'
+## {state}←⎕PROFILE 'clear'
 
 
 Clears any collected profiling data and, if profiling is active, places profiling in an inactive state.
@@ -77,7 +77,7 @@ Clears any collected profiling data and, if profiling is active, places profilin
  inactive    0 0
 ```
 
-#### {state}←⎕PROFILE 'calibrate'
+## {state}←⎕PROFILE 'calibrate'
 
 
 Causes `⎕PROFILE` to perform a 1000 millisecond calibration to approximate the call time bias and granularity for the current timer. Note, a timer must have been previously selected by using `⎕PROFILE 'start'`.
@@ -89,7 +89,7 @@ Causes `⎕PROFILE` to perform a 1000 millisecond calibration to approximate the
  active  CPU  0.0001037499997 0.0001037499997
 ```
 
-#### state←⎕PROFILE 'state'
+## state←⎕PROFILE 'state'
 
 
 Returns the current profiling state.
@@ -105,22 +105,22 @@ clear ws
  active  CPU  0.0001037499997 0.0001037499997
 ```
 
-#### data←{X} ⎕PROFILE 'data'
+## data←{X} ⎕PROFILE 'data'
 
 
 Retrieves the collected profiling data. If the optional left argument `X` is omitted, the result is a matrix with the following columns:
 
 
-|----|----------------------------------------------------------------------------|
-|[;1]|function name                                                               |
-|[;2]|function line number or `⍬` for a whole function entry                      |
-|[;3]|number of times the line or function was executed                           |
-|[;4]|accumulated time (ms) for this entry exclusive of items called by this entry|
-|[;5]|accumulated time (ms) for this entry inclusive of items called by this entry|
-|[;6]|number of times the timer function was called for the exclusive time        |
-|[;7]|number of times the timer function was called for the inclusive time        |
+|------|----------------------------------------------------------------------------|
+|`[;1]`|function name                                                               |
+|`[;2]`|function line number or `⍬` for a whole function entry                      |
+|`[;3]`|number of times the line or function was executed                           |
+|`[;4]`|accumulated time (ms) for this entry exclusive of items called by this entry|
+|`[;5]`|accumulated time (ms) for this entry inclusive of items called by this entry|
+|`[;6]`|number of times the timer function was called for the exclusive time        |
+|`[;7]`|number of times the timer function was called for the inclusive time        |
 
-#### Example: (numbers have been truncated for formatting)
+## Example: (numbers have been truncated for formatting)
 ```apl
       ⎕PROFILE 'data'
 #.foo             1  1.04406  39347.64945   503 4080803 #.foo      1      1  0.12488     0.124887     1       1 #.foo      2    100  0.58851 39347.193900   200 4080500 #.foo      3    100  0.21340     0.213406   100     100 #.NS1.goo       100 99.44404   39346.6053 50300 4080300 #.NS1.goo  1    100  0.61679     0.616793   100     100 #.NS1.goo  2  10000 67.80292   39314.9642 20000 4050000 #.NS1.goo  3  10000 19.60274      19.6027 10000   10000
@@ -136,29 +136,26 @@ X ⎕PROFILE 'data' ←→ ↓[⎕IO](⎕PROFILE 'data')[;X]
 
 If column 2 is included in the result, the value `¯1` is used instead of `⍬` to indicate a whole-function entry.
 
-#### data←{X} ⎕PROFILE 'tree'
+## data←{X} ⎕PROFILE 'tree'
 
 
 Retrieve the collected profiling data in tree format:
 
 
-|----|----------------------------------------------------------------------------|
-|[;1]|depth level                                                                 |
-|[;2]|function name                                                               |
-|[;3]|function line number or `⍬` for a whole function entry                      |
-|[;4]|number of times the line or function was executed                           |
-|[;5]|accumulated time (ms) for this entry exclusive of items called by this entry|
-|[;6]|accumulated time (ms) for this entry inclusive of items called by this entry|
-|[;7]|number of times the timer function was called for the exclusive time        |
-|[;8]|number of times the timer function was called for the inclusive time        |
+|------|----------------------------------------------------------------------------|
+|`[;1]`|depth level                                                                 |
+|`[;2]`|function name                                                               |
+|`[;3]`|function line number or `⍬` for a whole function entry                      |
+|`[;4]`|number of times the line or function was executed                           |
+|`[;5]`|accumulated time (ms) for this entry exclusive of items called by this entry|
+|`[;6]`|accumulated time (ms) for this entry inclusive of items called by this entry|
+|`[;7]`|number of times the timer function was called for the exclusive time        |
+|`[;8]`|number of times the timer function was called for the inclusive time        |
 
 
 The optional left argument is treated in exactly the same way as for `X ⎕PROFILE 'data'`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕PROFILE 'tree'
 0  #.foo               1     1.04406 39347.64945     503 4080803
@@ -178,17 +175,14 @@ The optional left argument is treated in exactly the same way as for `X ⎕PROFI
 
 Note that rows with an even depth level in column `[;1]` represent function summary entries and odd depth level rows are function line entries. Recursive functions will generate separate rows for each level of recursion.
 
-#### Notes
+## Notes
 
-##### Profile Data Entry Types
+### Profile Data Entry Types
 
 
 The results of `⎕PROFILE 'data'` and `⎕PROFILE 'tree'` have two types of entries; function summary entries and function line entries. Function summary entries contain `⍬` in the line number column, whereas function line entries contain the line number. Dfns line entries begin with 0 as they do not have a header line like traditional functions. The timer data and timer call counts in function summary entries represent the aggregate of the function line entries plus any time spent that cannot be directly attributed to a function line entry. This could include time spent during function initialisation, etc.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
  #.foo         1  1.04406 39347.649450   503 4080803
  #.foo    1    1  0.12488     0.124887     1       1
@@ -196,12 +190,12 @@ The results of `⎕PROFILE 'data'` and `⎕PROFILE 'tree'` have two types of ent
  #.foo    3  100  0.21340     0.213406   100     100
 ```
 
-##### Timer Data Persistence
+#### Timer Data Persistence
 
 
 The profiling data collected is stored outside the workspace and will not impact workspace availability. The data is cleared upon workspace load, clear workspace, `⎕PROFILE 'clear'`, or interpreter sign off.
 
-#### The PROFILE User Command
+## The PROFILE User Command
 
 
 `]PROFILE` is a utility which implements a high-level interface to `⎕PROFILE` and provides reporting and analysis tools that act upon the profiling data. For further information, see Tuning Applications using the Profile User Command.
@@ -248,15 +242,12 @@ Turn off as much hardware as possible. This would include peripherals, network c
 
 Doing this should help identify items that take more than 1% of the run time.
 
-#### Advanced Profiling
+##### Advanced Profiling
 
 
 The timing data collected by `⎕PROFILE` is not adjusted for the timer's call time bias; in other words, the times reported by `⎕PROFILE` include the time spent calling the timer function. One effect of this can be to make "cheap" lines that are called many times seem to consume more resource. If you desire more accurate profiling measurements, or if your application takes a short amount of time to run, you will probably want to adjust for the timer call time bias. To do so, subtract from the timing data the timer's' 'call time bias multiplied by the number of times the timer was called.
 
-
-
-**Example**
-
+<h5 class="example">Example</h5>
 ```apl
       CallTimeBias←3⊃⎕PROFILE 'state'
       RawTimes←⎕PROFILE 'data'

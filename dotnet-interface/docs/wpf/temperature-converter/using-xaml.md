@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Using XAML</span></h1>
+<h1> Using XAML</h1>
 
 The functions and data for this example are provided in the workspace `WPFIntro.dws` in the namespace `WPF.UsingXAML`. To run the example:
 ```apl

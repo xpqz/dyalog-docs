@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set Stop</span><span class="command">{R}←X ⎕STOP Y</span></h1>
+<h1 class="heading"><span class="name">Set Stop</span> <span class="command">{R}←X ⎕STOP Y</span></h1>
 
 
 
@@ -13,10 +13,7 @@
 
 `R` is a vector of the line numbers on which a stop control has been placed in ascending order.  The result is suppressed unless it is explicitly used or assigned.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊢(0,⍳10) ⎕STOP 'FOO'
 0 1
@@ -50,10 +47,7 @@ Attempts to set stop controls in a locked function or operator are ignored.
 
 The effect of `⎕STOP` when a function or operator is invoked is to suspend execution at the beginning of any line in the function or operator on which a stop control is placed immediately before that line is executed, and immediately before exiting from the function or operator if a stop control of 0 is set.  Execution may be resumed by a branch expression.  A stop control interrupt (1001) may also be trapped - see ["Trap Event: "](trap.md).
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕FX'R←FOO' 'R←10'
  

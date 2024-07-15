@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> PCRE Regular Expression Syntax Summary</span></h1>
+<h1> PCRE Regular Expression Syntax Summary</h1>
 
 The following is a summary of search pattern syntax.
 ```apl

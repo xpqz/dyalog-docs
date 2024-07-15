@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Run-Time Applications and Components</span></h1>
+<h1> Run-Time Applications and Components</h1>
 
 Using Dyalog APL you may create different types of run-time applications and components. Note that the distribution of run-time applications and components requires a Dyalog APL Run-Time Agreement. Please contact Dyalog or your distributor, or see the Dyalog web page for more information.
 
@@ -16,13 +16,13 @@ The various types of run-time applications and components are as follows:
 
 All but the first of these are made using the *Export* dialog box accessed from the *File/Export* menu item of the Session window.
 
-### Configuration Parameters
+## Configuration Parameters
 
 Configuration parameters for these run-time applications, both for the Dyalog engine and for your own application settings, may be specified in a number of ways. See [Configuration Parameters](configuration-parameters.md).
 
 Nevertheless, it is strongly recommended that you use Configuration files. In this section we will discuss only Application Configuration files, although User Configuration files may be used as well.
 
-### Workspace or source code based run-time
+## Workspace or source code based run-time
 
 A workspace or source code based run-time application consists of the Dyalog APL Run-Time Program (Run-Time EXE), a separate workspace or text file containing APL source code, and an optional configuration file. To distribute your application, you need to supply and install:
 
@@ -42,14 +42,14 @@ The action to start the application when a workspace or source code file is load
 
 In the command-line examples that follow, the name of the Run-Time EXE has been shortened to `dyalogrt.exe` for brevity.
 
-### Using a workspace
+## Using a workspace
 ```apl
      dyalogrt.exe myapp.dws
 ```
 
 The application starts by running `⎕LX` in `myapp.dws`. If a configuration file named `myapp.dcfg` in the same directory, it is loaded and applied.
 
-### Using a source code file
+## Using a source code file
 ```apl
      dyalogrt.exe Load=myfn.aplf
 ```
@@ -58,7 +58,7 @@ The application loads the file named `myfn.aplf` which contains the source code 
 
 If your application uses any component of the Microsoft .NET Framework, you must distribute the Bridge DLL and DyalogNet DLLs. These DLLs must be placed in the same directory as your EXE.
 
-### Stand-alone and Bound run-times
+## Stand-alone and Bound run-times
 
 A  stand-alone run-time is a single .EXE that contains a workspace and a copy of the Run-Time version of the Dyalog APL interpreter. It is the simplest type of run-time to install because it has the fewest number of dependencies.
 
@@ -80,7 +80,7 @@ An alternative is to specify these parameters in the command-line that you use t
 
 If your application uses any component of the Microsoft .NET Framework, you must distribute the Bridge DLL and DyalogNet DLLs. These DLLs must be placed in the same directory as your EXE.
 
-### Out-of-process COM Server
+## Out-of-process COM Server
 
 To make an out-of-process COM Server, you must:
 
@@ -91,8 +91,7 @@ The command-line for your COM Server must be specified in the field labelled *Co
 
 You may change the contents of the *Command Line* field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See [The LOAN Workspace](../../interface-guide/ole-server/the-loan-workspace).
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       dyalog.exe C:\Dyalog18.0\myloan.dws
 ```
@@ -109,7 +108,7 @@ To distribute an out-of-process COM Server, you need to supply and install the f
 
 To install an out-of-process COM Server you must set up the appropriate Windows registry entries. See Interface Guide for details.
 
-### In-process COM Server
+## In-process COM Server
 
 To make an in-process COM Server, you must:
 

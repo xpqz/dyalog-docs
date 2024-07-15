@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Rect</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Rect</span> <span class="command">Object</span></h1>
 
 
 
@@ -40,7 +40,7 @@ The value of [Dragable](../properties/dragable.md) determines whether or not the
 The structure of the property values is best considered separately for single and multiple rectangles :
 
 
-#### Single Rectangle
+## Single Rectangle
 
 
 For a single rectangle, [Points](../properties/points.md) is either a 2-column matrix of (y,x) co-ordinates, or a 2-element vector of y and x co-ordinates respectively.
@@ -61,10 +61,7 @@ For a single rectangle, [Points](../properties/points.md) is either a 2-column m
 [FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) are each either single numbers representing standard colours, or 3-element vectors which specify colours explicitly in terms of their RGB values.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md) :
@@ -97,7 +94,7 @@ Ditto, but fill in green
 ```
 
 
-#### Multiple Rectangles
+## Multiple Rectangles
 
 
 To draw a set of rectangles with a single name, [Points](../properties/points.md) may be a simple 2-element vector (specifying the location of all the rectangles), **or** a 2-column matrix whose first column specifies their y-coordinates and whose second column specifies their x-coordinates, **or** a 2-element nested vector whose first element specifies their y-coordinate(s) and whose second element specifies their x-coordinate(s).
@@ -118,10 +115,7 @@ Likewise, [Size](../properties/size.md) may be a simple 2-element vector (applyi
 Similarly, [FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) may each be single numbers or a single (enclosed) 3-element vector applying to all the rectangles. Alternatively, these properties may contain vectors whose elements refer to each of the rectangles in turn. If so, their elements may be single numbers or nested RGB triplets, or a combination of the two.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md) :

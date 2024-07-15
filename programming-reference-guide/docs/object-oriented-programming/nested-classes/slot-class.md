@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Slot Class</span></h1>
+<h1> Slot Class</h1>
 
 ```apl
 

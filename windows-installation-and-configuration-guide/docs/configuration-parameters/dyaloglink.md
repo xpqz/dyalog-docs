@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> DyalogLink</span></h1>
+<h1> DyalogLink</h1>
 
 This parameter specifies the name of the directory containing the code for Link. The default is `[DYALOG]/StartupSession/Link`.
 

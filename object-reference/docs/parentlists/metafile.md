@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Metafile Parents</span></h1>
+<h1> Metafile Parents</h1>
 
 |---------------------------------------|-------------------------------------------|-------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,|[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md)|

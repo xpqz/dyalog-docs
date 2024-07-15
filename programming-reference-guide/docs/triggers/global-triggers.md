@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Global Triggers</span></h1>
+<h1> Global Triggers</h1>
 
 A global Trigger is a function that triggers on any assignment to a global variable in the same namespace. Global Triggers may be disabled and re-enabled using `2007⌶`. See [Disable Global Triggers](../../../language-reference-guide/the-i-beam-operator/disable-global-triggers).
 
@@ -15,8 +15,7 @@ The argument to the trigger function is an instance of the internal class `Trigg
 |`Name`|The name of the global variable that is about to be changed.|
 |`Indexers`|If the assignment is some form of indexed assignment, `Indexers` is an array with the same shape as the sub-array that was assigned and contains the ravel-order, `⎕IO` -sensitive, indices of the changed elements. Otherwise, `Indexers` is undefined.|
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ foo args
 [1]    :Implements Trigger *
@@ -56,7 +55,7 @@ The argument to the trigger function is an instance of the internal class `Trigg
 
 ```
 
-## Notes
+# Notes
 
 - like other Triggers,  only the most recently fixed global trigger function will apply and be called on assignment to a global variable. 
 - global triggers do not apply to local names nor to semi-globals (names which are localised further up the stack).

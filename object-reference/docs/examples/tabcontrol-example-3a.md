@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">TabControl</span><span class="command">Example 3a</span></h1>
+<h1 class="heading"><span class="name">TabControl</span> <span class="command">Example 3a</span></h1>
 
 
 

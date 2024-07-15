@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">CBits</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">CBits</span> <span class="command">Property</span></h1>
 
 
 

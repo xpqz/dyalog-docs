@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Partition</span><span class="command"></span></h1>
+<h1 class="heading"><span class="name">Partition</span> <span class="command"></span></h1>
 
 
 
@@ -28,10 +28,7 @@ A new partition is started in the result whenever the corresponding element in `
 Note that if `⎕ML≥3`, the symbol `⊂` means the same as `⊆`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕ML←3
  

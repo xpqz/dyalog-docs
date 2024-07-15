@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Run-Time Applications Additonal Considerations</span></h1>
+<h1> Run-Time Applications Additonal Considerations</h1>
 
-### Accessing your Application using RIDE
+## Accessing your Application using RIDE
 
 If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace. This is different from previous versions of Dyalog which had separate RIDE DLLs.
 
-### Additional Files for Syncfusion
+## Additional Files for Syncfusion
 
 Under a licensing agreement with Syncfusion, Dyalog includes the Syncfusion library of WPF controls. These may be used by Dyalog APL users to develop applications, and may be distributed with Dyalog APL run-time applications.
 
@@ -12,7 +12,7 @@ The Syncfusion libraries comprise a set of .NET assemblies which are supplied in
 
 If you use any of the Syncfusion controls in your runtime application, you must include the Syncfusion library.
 
-### Additional Files for SQAPL
+## Additional Files for SQAPL
 
 If your application uses the *SQAPL/EL ODBC* interface, you must distribute and install four additional components.
 
@@ -25,21 +25,21 @@ For the names of the files corresponding to these components, see [Files](files-
 
 The SQAPL DLL must be installed in the user's Windows directory or be on the user's path.
 
-### Miscellaneous Other Files
+## Miscellaneous Other Files
 
-#### DyaRes DLL
+### DyaRes DLL
 
 If your run-time application uses any of the bitmaps or other GUI resources that are built into the Dyalog Session, you must include the DyaRes DLL with your application.
 
-#### AUXILIARY PROCESSORS
+### AUXILIARY PROCESSORS
 
 If you use any of the Auxiliary Processors (APs) included in the sub-directory `xutils`, you must include these with your application. Note that, like workspaces, Dyalog APL searches for APs using the **WSPATH** parameter. If your application uses APs, you must ensure that you specify **WSPATH** or that the default **WSPATH** is adequate for your application..
 
-#### DYALOG32 and/or DYALOG64
+### DYALOG32 and/or DYALOG64
 
 This DLL is used by some of the functions provided in the `QUADNA.DWS` workspace. If you include any of these in your application this DLL must be installed in the user's Windows directory or be on the user's path.
 
-### Universal C Runtime DLLs
+## Universal C Runtime DLLs
 
 Under Windows, many of the Dyalog APL run-time components (.EXE and .DLL) are linked dynamically with the Microsoft Universal C Runtime library (the UCRT) which is supplied and installed as part of the normal Dyalog development installation.
 
@@ -72,7 +72,7 @@ Install the Dyalog development package (ideally onto a separate system just for 
 
 - `vcruntime140.dll`
 
-### Or
+#### Or
 
 Download and install the Windows 10 SDK from:[https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk), and follow the instructions in the link below.[https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt](https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt)
 

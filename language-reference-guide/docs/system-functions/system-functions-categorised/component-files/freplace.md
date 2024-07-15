@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Replace Component</span><span class="command">{R}←X ⎕FREPLACE Y</span></h1>
+<h1 class="heading"><span class="name">File Replace Component</span> <span class="command">{R}←X ⎕FREPLACE Y</span></h1>
 
 
-##### Access code 16
+## Access code 16
 
 
 `Y` must be a simple 2 or 3 element integer vector containing the file tie number, the component number, and an optional passnumber.  If the passnumber is omitted it is assumed to be zero.  The component number specified must lie within the file's component number limits.
@@ -18,10 +18,7 @@
 The shy result of `⎕FREPLACE` is the file index (component number of replaced record).
 
 
-
-
-**Example**
-
+<h1 class="example">Example</h1>
 ```apl
       SALES←⎕FREAD 1 241
  

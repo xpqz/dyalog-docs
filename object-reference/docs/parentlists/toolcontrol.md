@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ToolControl Parents</span></h1>
+<h1> ToolControl Parents</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

@@ -1,9 +1,8 @@
-<h1 class="heading"><span class="name"> Starting APL</span></h1>
+<h1> Starting APL</h1>
 
 By default, to start the non-GUI versions of Dyalog APL, run the mapl script which is in the installation directory of Dyalog APL.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 $ /opt/mdyalog/{{ version_majmin }}/64/unicode/mapl
 ```
@@ -16,7 +15,7 @@ Note that under Microsoft Windows parameters appear *after* the name of the exec
 
 The parameters are listed in the table below; the more frequently used environment variables are included in the following section.
 
-Parameters for the mapl or dyalog script:
+Table: Parameters for the mapl or dyalog script:
 
 |Parameter|Purpose|
 |---|---|
@@ -25,11 +24,11 @@ Parameters for the mapl or dyalog script:
 |-*|Any other parameter that starts with a "-" will be passed to the interpreter; all parameters that start with a "-" will be passed before any parameters that do not start with a "-".|
 |*|This is usually the name of the workspace that is to be loaded when the interpreter is started. Unless the "-x" flag is passed to the interpreter, the latent expression in the workspace will be executed once the workspace has been loaded.|
 
-### Note
+# Note
 
 - the -c parameter has different uses depending on whether it is passed to the mapl script, or to the dyalog executable.
 
-Parameters for the Dyalog interpreter:
+Table: Parameters for the Dyalog interpreter:
 
 |Parameter|Purpose|
 |---|---|
@@ -47,8 +46,7 @@ Parameters for the Dyalog interpreter:
 |ws|This is assumed to be a workspace which will be loaded once the interpreter has started. Unless the -x parameter is included on the command line, the latent expression will be run.|
 |-cef / -apl|See the Dyalog Version 17.0 Release Notes for more information|
 
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
 
 mapl dfns

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ShowSIP</span><span class="command">Method 25</span></h1>
+<h1 class="heading"><span class="name">ShowSIP</span> <span class="command">Method 25</span></h1>
 
 
 

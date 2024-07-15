@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Singular Value Decomposition</span><span class="command">R←(8415⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Singular Value Decomposition</span> <span class="command">R←(8415⌶)Y</span></h1>
 
 
 
@@ -31,7 +31,7 @@ This can be useful for analysing matrices for which `⌹` cannot compute an inve
 
 For further information, see [https://en.wikipedia.org/wiki/Singular_value_decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition).
 
-#### Note
+## Note
 
 
 This function signals `DOMAIN ERROR` if `⎕FR` is 1287. See [Floating-Point Representation ](../system-functions/fr.md).

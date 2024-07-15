@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 6</span></h1>
+<h1> Example 6</h1>
 
 This example illustrates data binding using a vector of .NET objects, in this case DateTime objects.
 

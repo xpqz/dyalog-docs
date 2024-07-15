@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">AnimStarted</span><span class="command">Event 294</span></h1>
+<h1 class="heading"><span class="name">AnimStarted</span> <span class="command">Event 294</span></h1>
 
 
 

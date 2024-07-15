@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Down Shoe</span><span class="command">∪</span></h1>
+<h1 class="heading"><span class="name">Down Shoe</span> <span class="command">∪</span></h1>
 
 
-##### Monadic Set Union means
+## Monadic Set Union means
 
 
 [Unique](../primitive-functions/unique.md)
@@ -26,7 +26,7 @@ flywheel
 shyster 
 ```
 
-##### Dyadic Set Union means
+## Dyadic Set Union means
 
 
 [Union](../primitive-functions/union.md)

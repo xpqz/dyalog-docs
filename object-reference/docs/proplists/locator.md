@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Locator Properties</span></h1>
+<h1> Locator Properties</h1>
 
 |---------------------------------------|---------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|

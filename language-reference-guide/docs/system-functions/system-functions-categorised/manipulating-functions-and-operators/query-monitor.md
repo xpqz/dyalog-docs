@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Query Monitor</span><span class="command">R←⎕MONITOR Y</span></h1>
+<h1 class="heading"><span class="name">Query Monitor</span> <span class="command">R←⎕MONITOR Y</span></h1>
 
 
 
@@ -27,10 +27,7 @@ Note that `⎕MONITOR` does not apply to  dfns or dops.
 The value of `0` in column one indicates that the monitor is set on the function or operator as a whole. `R` will be empty for dfns and dops.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ∇ FOO
 [1]   A←?25 25⍴100

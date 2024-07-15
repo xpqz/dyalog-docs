@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :While Statement</span></h1>
+<h1> :While Statement</h1>
 
 ```
  

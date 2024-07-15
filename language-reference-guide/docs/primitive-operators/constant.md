@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Constant</span><span class="command">R←{X}(A⍨)Y</span></h1>
+<h1 class="heading"><span class="name">Constant</span> <span class="command">R←{X}(A⍨)Y</span></h1>
 
 
 
 `A`,  `X` and `Y` are arrays. The Constant operator returns array `A`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       'mu'⍨ 'any' ⎕NULL   ⍝ Always returns its operand

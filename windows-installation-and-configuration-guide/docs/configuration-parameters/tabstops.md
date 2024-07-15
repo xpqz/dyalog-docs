@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TabStops</span></h1>
+<h1> TabStops</h1>
 
 This parameter specifies the number of spaces inserted by pressing the Tab key in the editor. Its default value is 4.
 

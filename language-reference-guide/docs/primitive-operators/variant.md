@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Variant</span><span class="command">{R}←{X}(f⍠B)Y</span></h1>
+<h1 class="heading"><span class="name">Variant</span> <span class="command">{R}←{X}(f⍠B)Y</span></h1>
 
 
 
@@ -29,10 +29,7 @@ For the operand function with right argument `Y` and optional left argument `X`,
 
 Option names and their values must be appropriate for the left operand function, otherwise `DOMAIN ERROR` (error code 11) will be reported.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
        tn←'Dick'(⎕FCREATE⍠'Z' 1)0
@@ -41,7 +38,7 @@ Option names and their values must be appropriate for the left operand function,
 
 The following illustrations and examples apply to functions derived from the Search and Replace operators.
 
-#### Examples of operand `B`
+## Examples of operand `B`
 
 
 The following expression sets the IC option to `1`, the Mode option to `'D'` and the EOL option to `'LF'`.
@@ -82,7 +79,7 @@ When the same option is specified more than once in this way, the outermost (rig
       ⍠'IC' 0⍠'IC' 1
 ```
 
-#### Further Examples
+## Further Examples
 
 
 The following derived function returns the location of the word `'variant'` within its right argument using default values for all the options.
@@ -122,7 +119,7 @@ This is equivalent to:
 4
 ```
 
-#### Redundancy
+## Redundancy
 
 
 A function that has been modified by Variant may be used in a context where the option or options that have been modified are not relevant. This is illustarted by the follwoing example.
@@ -208,7 +205,7 @@ A modified version of `⎕JSON` ...
 }                      
 ```
 
-#### Variant and .NET
+## Variant and .NET
 
 
 The Variant operator may also be used in conjunction with .NET classes; it can used to cast an array into a specific .NET data type, and to specify which constructor should be used when creating a new instance of a .NET class which has overloaded constructors. For further information, see [Advanced Techniques](../../../dotnet-interface/accessing-net-classes/advanced-techniques).

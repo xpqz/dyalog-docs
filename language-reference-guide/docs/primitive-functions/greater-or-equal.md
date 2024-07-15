@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Greater Or Equal</span><span class="command">R←X≥Y</span></h1>
+<h1 class="heading"><span class="name">Greater Or Equal</span> <span class="command">R←X≥Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Greater Or Equal.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       1 2 3 4 5 ≥ 3
 0 0 1 1 1

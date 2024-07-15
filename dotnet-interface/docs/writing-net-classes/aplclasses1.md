@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 1</span></h1>
+<h1> Example 1</h1>
 
 Load the workspace `aplclasses1.dws`, then view the `Primitives` class:
 ```apl
@@ -49,7 +49,7 @@ Finally, click *Save*. APL now makes the assembly and, as it does so, displays i
 
 ![aplclasses1_2](../img/aplclasses1-2.png)
 
-### program.cs
+## program.cs
 
 The following C# source, called `aplclasses1Framework\program.cs`, will be used to call our Dyalog.NET Class.
 

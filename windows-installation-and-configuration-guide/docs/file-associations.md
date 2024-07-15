@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> File Associations</span></h1>
+<h1> File Associations</h1>
 
 During installation, `setup.exe` associates a number of file extensions with Dyalog applications.
 

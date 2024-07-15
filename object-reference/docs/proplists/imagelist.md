@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ImageList Properties</span></h1>
+<h1> ImageList Properties</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

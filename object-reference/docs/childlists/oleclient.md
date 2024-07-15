@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> OLEClient Children</span></h1>
+<h1> OLEClient Children</h1>
 
 |-------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
 |[Browse](../methodorevents/browse.md) ,                      |[Detach](../methodorevents/detach.md) ,                        |[GetEventInfo](../methodorevents/geteventinfo.md) ,          |

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Thread Identity</span><span class="command">)TID {tid}</span></h1>
+<h1 class="heading"><span class="name">Thread Identity</span> <span class="command">)TID {tid}</span></h1>
 
 
 
@@ -19,10 +19,7 @@ If you attempt to `)TID` to a thread that is paused or running, that thread will
 If no thread number is given, `)TID` reports the number of the current thread.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍝ State indicator
       )si

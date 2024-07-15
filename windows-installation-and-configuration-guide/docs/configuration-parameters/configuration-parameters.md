@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Configuration Parameters</span></h1>
+<h1> Configuration Parameters</h1>
 
-### Introduction
+## Introduction
 
 Dyalog APL is customised using a set of **configuration parameters**. These may be defined  in a number of ways, which take precedence as follows:
 
@@ -21,7 +21,7 @@ Note that the value of a parameter obtained by the GetEnvironment method (see [G
 
 The following section details those parameters that are implemented by Registry Values in the top-level folder identified by **IniFile**. Values that are implemented in sub-folders are *mainly* internal and are not described in detail here. However, any Value that is maintained via a configuration dialog box will be named and described in the documentation for that dialog box in The APL Environment.
 
-### Specifying Size-related Parameters
+## Specifying Size-related Parameters
 
 Several of the configuration parameters define sizes.
 
@@ -33,14 +33,14 @@ K(KiB), M(MiB), G(GiB), T(TiB), P(PiB) and E(EiB).
 
 Specifying an invalid value will prevent Dyalog APL from starting.
 
-### Changing parameter values in the Registry
+## Changing parameter values in the Registry
 
 You can change parameters in the Registry in one of two ways:
 
 - Using the Configuration dialog box that is obtained by selecting *Configure* from the *Options* menu on the Dyalog APL/W session. See ["The Configuration Dialog Box"](../the-apl-environment/configuration-dialog.md) for details.
 - By directly editing the Windows Registry using `REGEDIT.EXE` or `REGEDIT32.EXE`. This is necessary for parameters that are not editable via the Configuration dialog box.
 
-### Configuration Parameters
+## Configuration Parameters
 
 |---|---|---|---|---|
 |[AddClassHeaders](./addclassheaders.md)|[AplCoreName](./aplcorename.md)|[APLK](./aplk.md)|[APLKeys](./aplkeys.md)|[APLNID](./aplnid.md)|

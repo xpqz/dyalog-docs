@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Externalise Array</span><span class="command">R←8674⌶Y</span></h1>
+<h1 class="heading"><span class="name">Externalise Array</span> <span class="command">R←8674⌶Y</span></h1>
 
 
 
@@ -26,7 +26,7 @@ Externalising an array isolates it from the dynamic workspace management process
 There is no link between `Y` and the externalised copy of `Y`. If `Y` is erased, the copy of `Y` referenced via `R` still exists, but outside the workspace. Indeed, there is no benefit to be gained by using this function unless the original array `Y` is expunged from in the workspace.
 
 
-#### Notes
+## Notes
 
 - This function is experimental and its effect is likely to be application dependent. There is no guarantee that it will  improve performance in every application.
 - Little or no benefit is obtained by externalising small or simple arrays as they will typically become part of the sediment, a collection of objects in the workspace that  remains relatively stable.

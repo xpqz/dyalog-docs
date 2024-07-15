@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Set Access</span><span class="command">{R}←X ⎕FSTAC Y</span></h1>
+<h1 class="heading"><span class="name">File Set Access</span> <span class="command">{R}←X ⎕FSTAC Y</span></h1>
 
 
-##### Access code 8192
+## Access code 8192
 
 
 `Y` must be a simple integer scalar or 1 or 2 element vector containing the file tie number followed by an optional passnumber. If the passnumber is omitted it is assumed to be zero.
@@ -17,10 +17,7 @@
 
 The shy result of `⎕FSTAC` is the tie number of the file.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
 
       'SALES' ⎕FCREATE 1

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> FishBehaviour Interface</span></h1>
+<h1> FishBehaviour Interface</h1>
 
 ```apl
 :Interface FishBehaviour

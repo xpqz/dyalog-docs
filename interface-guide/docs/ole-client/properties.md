@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Properties</span></h1>
+<h1> Properties</h1>
 
 By default, Properties exposed by a COM object behave in the same way as Properties exposed by Dyalog APL Classes.
 
@@ -16,7 +16,7 @@ If you set the value to something of the correct data type, APL will pass it thr
 
 Note that if `⎕WX` is 0 or 1, `)PROPS` and PropList  report the names of all of the properties of an object, regardless of whether the property is implemented as a variable or as a function. You can tell whether or not the property takes an argument (and therefore behaves as a function) from its property sheet, using GetPropertyInfo, or from the documentation for the object in question.
 
-### Properties as Objects
+## Properties as Objects
 
 Dyalog APL permits an object hierarchy to be represented by a namespace hierarchy. In other words, the relationship between one object and another is a parent-child relationship whereby one object owns and contains another.
 

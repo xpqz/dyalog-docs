@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Configuring the Editor</span></h1>
+<h1> Configuring the Editor</h1>
 
 The editor in non-GUI versions of Dyalog APL can be considered to have 5 separate functional columns.  Below is the contents of the editor window, which shows the namespace ns, which has two traditional-style functions and one dfn.  The statement `5 ⎕STOP 'ns.fn1'` has been run too:
 ```apl
@@ -58,7 +58,7 @@ This is formed of 5 separate columns:
 
 It is possible to control at startup time which of these columns are visible. By default, for all types of object, only the text column is visible; this can be overridden on a per-object basis by setting one or more of the EDITOR_COLUMNS_ variables listed in Table E5. The value of these variables is the sum of the values for each of the columns which are desired.
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 EDITOR_COLUMNS_NAMESPACE=94 shows all columns (the first example in this section)
 

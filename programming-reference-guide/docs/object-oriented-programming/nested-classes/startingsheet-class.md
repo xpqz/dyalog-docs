@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> StartingSheet Class</span></h1>
+<h1> StartingSheet Class</h1>
 
 ```apl
 

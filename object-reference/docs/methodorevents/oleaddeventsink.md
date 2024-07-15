@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">OLEAddEventSink</span><span class="command">Method 540</span></h1>
+<h1 class="heading"><span class="name">OLEAddEventSink</span> <span class="command">Method 540</span></h1>
 
 
 

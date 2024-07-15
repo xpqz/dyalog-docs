@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Exists</span><span class="command">R←⎕NEXISTS Y</span></h1>
+<h1 class="heading"><span class="name">Native File Exists</span> <span class="command">R←⎕NEXISTS Y</span></h1>
 
 
 
@@ -17,12 +17,12 @@ If `Y` specifies a single name, the result `R` is a scalar 1 if a file or direct
 
 
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NEXISTS` may be applied using the  Variant operator with the Wildcard option.
 
-#### Wildcard Option (Boolean)
+## Wildcard Option (Boolean)
 
 
 |---|---|
@@ -33,10 +33,7 @@ If `Y` specifies a single name, the result `R` is a scalar 1 if a file or direct
 If the Wildcard option is 1, `R` indicates whether or not one or more matches to the corresponding pattern in `Y` exist.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ⎕←⎕MKDIR'/Users/Pete/Documents/temp/t1/t2'
@@ -55,7 +52,7 @@ If the Wildcard option is 1, `R` indicates whether or not one or more matches to
 
 ```
 
-#### Note
+## Note
 
 
 If `Y` is a symbolic link, `⎕NEXISTS` will return 1 whether or not the target of the symbolic link exists.

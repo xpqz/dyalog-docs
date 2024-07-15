@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Window Create Object</span><span class="command">{R}←{X}⎕WC Y</span></h1>
+<h1 class="heading"><span class="name">Window Create Object</span> <span class="command">{R}←{X}⎕WC Y</span></h1>
 
 
 
@@ -75,10 +75,7 @@ is equivalent to :
       'B1' F1.⎕WC 'Button'
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 ⍝ Create a default Form called F1
  

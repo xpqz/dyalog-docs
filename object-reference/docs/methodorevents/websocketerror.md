@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">WebSocketError</span><span class="command">Event 844</span></h1>
+<h1 class="heading"><span class="name">WebSocketError</span> <span class="command">Event 844</span></h1>
 
 
 

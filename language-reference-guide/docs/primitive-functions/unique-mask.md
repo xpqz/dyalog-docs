@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Unique Mask</span><span class="command">R←≠Y</span></h1>
+<h1 class="heading"><span class="name">Unique Mask</span> <span class="command">R←≠Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ in `Y`. For each major cell of `Y`, the corresponding element of  `R` is 1 if it
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Unique.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ≠22 10 22 22 21 10 5 10
 1 1 0 0 1 0 1 0

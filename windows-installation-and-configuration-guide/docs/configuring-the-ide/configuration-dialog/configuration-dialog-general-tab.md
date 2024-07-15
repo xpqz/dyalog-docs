@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> General Tab</span></h1>
+<h1> General Tab</h1>
 
 ![configuration dialog general tab](../../img/configuration-dialog-general-tab.png)
 
-Configuration dialog: General
+Table: Configuration dialog: General
 
 |Label|Parameter|Description|
 |---|---|---|

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> List Parents</span></h1>
+<h1> List Parents</h1>
 
 |---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |

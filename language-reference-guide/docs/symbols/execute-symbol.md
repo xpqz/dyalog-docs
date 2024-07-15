@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Hydrant</span><span class="command">⍎</span></h1>
+<h1 class="heading"><span class="name">Hydrant</span> <span class="command">⍎</span></h1>
 
 
-##### Monadic Hydrant means
+## Monadic Hydrant means
 
 
 [Execute expression](../primitive-functions/execute.md)
@@ -19,7 +19,7 @@
 
 ```
 
-##### Dyadic Hydrant means
+## Dyadic Hydrant means
 
 
 [Execute expression in given namespace](../primitive-functions/execute.md)

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">This Space</span><span class="command">R←⎕THIS</span></h1>
+<h1 class="heading"><span class="name">This Space</span> <span class="command">R←⎕THIS</span></h1>
 
 
 
@@ -17,10 +17,7 @@ If `NC9` is a reference to any object whose name-class is `9`, then:
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕THIS
 #

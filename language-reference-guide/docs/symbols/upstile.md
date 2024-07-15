@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Upstile</span><span class="command">⌈</span></h1>
+<h1 class="heading"><span class="name">Upstile</span> <span class="command">⌈</span></h1>
 
 
-##### Monadic Upstile means
+## Monadic Upstile means
 
 
 [Ceiling](../primitive-functions/ceiling.md)
@@ -15,7 +15,7 @@
 4 ¯3 3 0
 ```
 
-##### Dyadic Upstile means
+## Dyadic Upstile means
 
 
 [Maximum

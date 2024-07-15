@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">AnimClose</span><span class="command">Method 291</span></h1>
+<h1 class="heading"><span class="name">AnimClose</span> <span class="command">Method 291</span></h1>
 
 
 

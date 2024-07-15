@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Find and Replace Dialogs</span></h1>
+<h1> Find and Replace Dialogs</h1>
 
 The *Find* and *Find/Replace* dialog boxes are used to locate and modify text in an Edit window.
 
@@ -14,7 +14,7 @@ The *Find* and *Find/Replace* dialog boxes are used to locate and modify text in
 |Find Next After Replace|If checked, following a replace operation, the selection will move to the next occurrence of the target string in the edit window.|
 |Direction|Select *Up* or *Down* to control the direction of search.|
 
-### Using Find and Replace
+## Using Find and Replace
 
 Find and Replace work on the concept of a *current search string* and a *current replace string* which are entered using the *Find* and *Find/Replace* Dialog boxes. These boxes also contain buttons for performing search/replace operations.
 
@@ -24,7 +24,7 @@ Now let us suppose that you wish to replace all occurrences of "Adam" with "Aman
 
 Text searches are performed using PCRE. If the *Use Regular Expressions* box is checked, the full range of regular expressions provided by PCRE are available for use. See [PCRE Regular Expression Syntax Summary](../../language-reference-guide/pcre-specifications/pcre-regular-expression-syntax-summary).
 
-### Saving and Quitting
+## Saving and Quitting
 
 To save the function and terminate the edit, press Esc (EP) or select Exit from the *File* menu. The new version of the function replaces the previous one (if any) and the edit window is destroyed.
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Name Parts</span><span class="command">R←{X} ⎕NPARTS Y</span></h1>
+<h1 class="heading"><span class="name">File Name Parts</span> <span class="command">R←{X} ⎕NPARTS Y</span></h1>
 
 
 
@@ -44,10 +44,7 @@ The *extension* is the file extension including the leading ".".
 
 If `Y` is a vector of character vectors, `R` is a vector of 3-element character vectors and is the same length as `Y`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕CMD 'CD'⍝ Current working directory
 c:\Users\Pete

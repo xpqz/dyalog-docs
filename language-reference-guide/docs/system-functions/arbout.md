@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Arbitrary Output</span><span class="command">{R}←X ⎕ARBOUT Y</span></h1>
+<h1 class="heading"><span class="name">Arbitrary Output</span> <span class="command">{R}←X ⎕ARBOUT Y</span></h1>
 
 
 
@@ -26,10 +26,7 @@ The operation will fail with a `DOMAIN ERROR` if  `Y` contains anything other th
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 Write ASCII digits `'123'` to  stream 9:

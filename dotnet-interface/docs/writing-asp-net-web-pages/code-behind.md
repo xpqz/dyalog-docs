@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Code Behind</span></h1>
+<h1> Code Behind</h1>
 
 It is often desirable to separate the code content of a page completely from the HTML and other text, layout or graphical information by placing it in a separate file. In ASP.NET parlance, this technique is known as *code behind*.
 

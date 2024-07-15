@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SelDateChange</span><span class="command">Event 265</span></h1>
+<h1 class="heading"><span class="name">SelDateChange</span> <span class="command">Event 265</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Threads Tool</span></h1>
+<h1> The Threads Tool</h1>
 
 The Threads Tool is used to monitor and debug multi-threaded applications. To display the Threads Tool, select *Show Threads Tool* from the *Session Threads* menu, or *Threads* from the Session pop-up menu.
 
@@ -16,7 +16,7 @@ The columns of the Threads Tool display the following information.
 |Flags   |Normal or Paused.                                    |
 |Treq    |The Thread Requirements ( `⎕TREQ` )                  |
 
-### Thread States
+## Thread States
 
 |State                      |Description                                                                                                                      |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -39,11 +39,11 @@ The columns of the Threads Tool display the following information.
 |Awaiting request           |Indicates a thread that is associated with a .NET system thread, but is currently unused                                         |
 |Called .NET                |Waiting for a call to .NET to return.                                                                                            |
 
-### Paused/Normal
+## Paused/Normal
 
 In addition to the thread state as described above, a thread may be *Paused* or *Normal* as shown in the *Flags* column. A *Paused* thread is one that has temporarily been removed from the list of threads that are being scheduled by the thread scheduler. A *Paused* thread is effectively frozen.
 
-### Threads Tool Pop-Up Menu
+## Threads Tool Pop-Up Menu
 
 ![threads tool menu](img/threads-tool-menu.png)
 

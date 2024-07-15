@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> OLEServer Children</span></h1>
+<h1> OLEServer Children</h1>
 
 |---------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[OLERegister](../methodorevents/oleregister.md) ,|[OLEUnregister](../methodorevents/oleunregister.md) ,|

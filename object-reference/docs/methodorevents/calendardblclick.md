@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">CalendarDblClick</span><span class="command">Event 273</span></h1>
+<h1 class="heading"><span class="name">CalendarDblClick</span> <span class="command">Event 273</span></h1>
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Less</span><span class="command">R←X<Y</span></h1>
+<h1 class="heading"><span class="name">Less</span> <span class="command">R←X<Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Less.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       (2 4) (6 8 10) < 6
  1 1  0 0 0

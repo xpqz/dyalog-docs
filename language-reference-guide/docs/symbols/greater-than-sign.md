@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Greater Than Sign</span><span class="command">></span></h1>
+<h1 class="heading"><span class="name">Greater Than Sign</span> <span class="command">></span></h1>
 
 
 
 Monadic Greater Than Sign is not defined
 
-##### Dyadic Greater Than Sign means
+## Dyadic Greater Than Sign means
 
 
 [Greater Than](../primitive-functions/greater.md)

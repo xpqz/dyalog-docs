@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Index Generator</span><span class="command">R←⍳Y</span></h1>
+<h1 class="heading"><span class="name">Index Generator</span> <span class="command">R←⍳Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 `⎕IO` is an implicit argument of Index Generator. This function is also known as Interval.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕IO
 1

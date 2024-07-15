@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Configuring a Console/terminal Window to support Dyalog APL for UNIX</span></h1>
+<h1> Configuring a Console/terminal Window to support Dyalog APL for UNIX</h1>
 
 In order to support Dyalog APL for UNIX in a console/terminal window under a Linux window manager, it is necessary to install and configure the Dyalog APL keyboard support. Additionally it is possible to install the APL385 Unicode font, to be used instead of the built in fonts which include APL characters.
 
-### Keyboard support
+## Keyboard support
 
 Dyalog submitted APL Language keyboard support to Xorg at the end of 2011; most Linux distributions released after mid-2012 have the Dyalog APL keyboard support included with the distribution. Such distributions include openSUSE 12.2, Ubuntu 12.10 and Fedora 17.
 
@@ -14,7 +14,7 @@ https://www.dyalog.com/forum/viewtopic.php?f=20&t=210
 
 or by contacting Dyalog support. The same resources can be used to obtain information and guidance on installing keyboard support for earlier Linux distributions.
 
-### Configuring the APL keyboard under KDE4
+## Configuring the APL keyboard under KDE4
 
 (These instructions were drawn up using openSUSE 12.2; other KDE4 environments may vary slightly)
 
@@ -29,7 +29,7 @@ or by contacting Dyalog support. The same resources can be used to obtain inform
 - The list of layouts should now include APL Keyboard Symbols, with one of the dyalog variants.
 - Click on "Main shortcuts" in the "Shortcuts for Switching Layout" group; where possible, Dyalog recommends selecting "Any Win key (while pressed)" so that either Windows key causes APL characters to be generated.
 
-### APL font support
+## APL font support
 
 APL characters are available under Linux window managers. However some of the characters may appear inelegant; most noticeable are very small "`⋄`" and overly large "`⌶`". To resolve this, it is possible to use the Freemono fonts (these are installed by default on some distributions (such as openSUSE)), or to download and install the APL385 Unicode font. This font is freely downloadable from:
 

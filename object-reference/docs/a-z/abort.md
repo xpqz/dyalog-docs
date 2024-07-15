@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Abort</span><span class="command">Method 103</span></h1>
+<h1 class="heading"><span class="name">Abort</span> <span class="command">Method 103</span></h1>
 
 
 

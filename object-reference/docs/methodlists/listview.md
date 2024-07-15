@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ListView Methods</span></h1>
+<h1> ListView Methods</h1>
 
 |-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,                |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,  |

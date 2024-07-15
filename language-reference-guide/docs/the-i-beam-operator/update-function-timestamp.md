@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Update Function Timestamp</span><span class="command">{R}←X(1159⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Update Function Timestamp</span> <span class="command">{R}←X(1159⌶)Y</span></h1>
 
 
 
@@ -24,10 +24,7 @@ The shy result `R` is a vector of numeric items, one per each specified function
 
 Note that the last item of the function timestamp must be set to 0 otherwise `1159 ⌶` will generate a `DOMAIN ERROR`. Additionally, the timestamp must be greater than `1970 1 1 0 0 0 0`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ]disp ⎕AT'Christmas'

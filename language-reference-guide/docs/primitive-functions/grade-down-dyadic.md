@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Grade Down (Dyadic)</span><span class="command">R←X⍒Y</span></h1>
+<h1 class="heading"><span class="name">Grade Down (Dyadic)</span> <span class="command">R←X⍒Y</span></h1>
 
 
 
@@ -83,10 +83,7 @@ That is, the order of rows is 4 2 1 3 which corresponds to a descending row sort
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍴S1
 2 27

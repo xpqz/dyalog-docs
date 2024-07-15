@@ -1,3 +1,3 @@
-<h1 class="heading"><span class="name"> NetClient Events</span></h1>
+<h1> NetClient Events</h1>
 
 |

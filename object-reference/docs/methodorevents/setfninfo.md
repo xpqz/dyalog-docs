@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetFnInfo</span><span class="command">Method 545</span></h1>
+<h1 class="heading"><span class="name">SetFnInfo</span> <span class="command">Method 545</span></h1>
 
 
 
@@ -40,7 +40,7 @@ The argument to SetFnInfo is a 2, 3, 4, 5 or 6-element array as follows:
 |`[6]`|DISPID       |integer. See [DISPID (Dispatch ID)](../miscellaneous/dispid.md)|
 
 
-#### Function info
+## Function info
 
 
 This specifies an optional help string which describes what the function does, the data type of the result (if any) and the names and data types of its arguments.
@@ -75,14 +75,14 @@ Alternatively, but much less helpfully, the function could be declared to take a
 ```
 
 
-#### Help ID
+## Help ID
 
 
 This is an integer value that identifies the help context id within the help file associated with the HelpFile property of the [ActiveXControl](../objects/activexcontrol.md) object. The value `¯1` means that no help is provided. APL stores this information in the registry from where it may be retrieved by the host application.
 
 
 
-#### Function type
+## Function type
 
 
 This specifies the type of function being exported. This is an integer with one of the following values:

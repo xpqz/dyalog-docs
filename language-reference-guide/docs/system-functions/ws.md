@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Window Set Property</span><span class="command">{R}←{X}⎕WS Y</span></h1>
+<h1 class="heading"><span class="name">Window Set Property</span> <span class="command">{R}←{X}⎕WS Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ GUI objects are named **relative** to the current namespace.  A null value of `
       F1.B1.⎕WS 'Caption' '&Ok'
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'F1' ⎕WC 'Form'  ⍝ A default Form
  

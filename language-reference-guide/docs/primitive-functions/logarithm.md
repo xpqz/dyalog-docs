@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Logarithm</span><span class="command">R←X⍟Y</span></h1>
+<h1 class="heading"><span class="name">Logarithm</span> <span class="command">R←X⍟Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ Note that Logarithm (dyadic `⍟`) is defined in terms of Natural Logarithm (mon
       X⍟Y←→(⍟Y)÷⍟X
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       10⍟100 2
 2 0.3010299957

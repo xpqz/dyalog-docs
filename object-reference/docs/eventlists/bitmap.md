@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Bitmap Events</span></h1>
+<h1> Bitmap Events</h1>
 
 |-----------------------------------------|-------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,  |[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md) ,  |

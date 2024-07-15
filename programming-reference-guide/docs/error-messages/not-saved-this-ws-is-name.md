@@ -16,10 +16,7 @@ This report is given in the following situations:
 
 In neither case is the workspace renamed.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 ```apl
       )CLEAR

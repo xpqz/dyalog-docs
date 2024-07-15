@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">DyalogCustomMessage1</span><span class="command">Event 95</span></h1>
+<h1 class="heading"><span class="name">DyalogCustomMessage1</span> <span class="command">Event 95</span></h1>
 
 
 

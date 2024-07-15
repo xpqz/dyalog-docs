@@ -1,3 +1,3 @@
-<h1 class="heading"><span class="name"> System Functions</span></h1>
+<h1> System Functions</h1>
 
 

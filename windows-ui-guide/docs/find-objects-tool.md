@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Find Objects Tool</span></h1>
+<h1> Find Objects Tool</h1>
 
 The *Find Objects* tool is a modeless dialog box that may be toggled on and off by the system action `[WSSearch]`. In a default Session, this action is attached to a MenuItem in the Tools menu and a Button on the session toolbar.
 
@@ -6,11 +6,11 @@ The Find Objects tool allows you to search the active workspace for objects that
 
 ![find objects dialog](img/find-objects-dialog.png)
 
-### Name
+## Name
 
 The *Named* field is used to search for objects with a particular name and is case-insensitive.
 
-### Containing Text
+## Containing Text
 
 The  *Containing Text*  field is used to search for objects that contain a particular text string. The string search is controlled by the fields *Match Case*, *Use Regular Expressions*, *Match Whole Word* and *As Symbol Reference*.
 
@@ -26,7 +26,7 @@ Text searches are performed using PCRE. If the *Use Regular Expressions* box is 
 
 *As Symbol Reference* specifies whether or not the search is restricted to APL symbols. If so, matching text in comments and other strings is ignored.
 
-### Object Criteria
+## Object Criteria
 
 Four check boxes are provided for you to specify the types of objects you wish to locate. For example, if you clear *Variables*, *Operators* and *Namespaces*, the system will only search for functions.
 
@@ -38,7 +38,7 @@ To find objects which have been modified at a certain time or within a specified
 
 If you wish to restrict the search to find only objects whose size is within a given range, check the box labelled *Size* is between and enter values into the fields provided.
 
-### Location Criteria
+## Location Criteria
 
 You can restrict the search to a particular namespace by typing its name into the field labelled *Look in*. You can further restrict the search by clearing the *Include sub-namespaces* and *Include Session namespace* check boxes. Clearing the former restricts the search to the root namespace or to the namespace that you have specified in *Look in*, and does not search within any sub-namespaces contained therein. Clearing the latter causes the system to ignore `⎕SE` in its search.
 

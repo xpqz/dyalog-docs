@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Beside</span><span class="command">{R}←{X}f∘gY</span></h1>
+<h1 class="heading"><span class="name">Beside</span> <span class="command">{R}←{X}f∘gY</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The derived function is equivalent to `fgY` or `XfgY` and need not return a resu
 The Beside operator allows functions to be glued together to build up more complex functions. For further information, see [Function Composition](./operator-syntax.md).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       RANK ← ⍴∘⍴
       RANK ¨ 'JOANNE' (2 3⍴⍳6)

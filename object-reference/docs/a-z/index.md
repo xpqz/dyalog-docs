@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Index</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">Index</span> <span class="command">Property</span></h1>
 
 
 

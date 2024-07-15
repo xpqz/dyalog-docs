@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Configure</span><span class="command">Event 31</span></h1>
+<h1 class="heading"><span class="name">Configure</span> <span class="command">Event 31</span></h1>
 
 
 
@@ -55,7 +55,7 @@ vector as follows :
 For any object, the operation can be prevented by returning a scalar 0 from
 the callback function associated with the Configure event.
 
-#### Full-Drag Considerations
+## Full-Drag Considerations
 
 
 The user may choose a system option, described here as *full-drag*,

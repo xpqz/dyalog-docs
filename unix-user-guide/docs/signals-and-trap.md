@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Signals and `⎕TRAP`, `4007⌶`</span></h1>
+<h1> Signals and `⎕TRAP`, `4007⌶`</h1>
 
 ## Signals and `⎕TRAP`
 
@@ -29,8 +29,7 @@ WARNING: Although documentation is provided for I-Beam functions, any service pr
 
 `4007⌶⍬` returns a vector of integers; the length is dependent on the APL interpreter and the operating system, but is typically 63 or 255 elements long. Each element is a count number of each signal received and processed by the interpreter. Note that when a SIGQUIT is received by APL the count for both SIGINT and SIGQUIT will be incremented by one.
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       8↑4007⌶⍬
 1 5 3 0 0 0 0 0

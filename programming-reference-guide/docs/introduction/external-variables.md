@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> External Variables</span></h1>
+<h1> External Variables</h1>
 
 An external variable is a variable whose contents (value) reside not in the workspace, but in a file.  An external variable is associated with a file by the system function `⎕XT`.  If at the time of association the file exists, the external variable assumes its value from the contents of the file.  If the file does not exist, the external variable is defined but a `VALUE ERROR` occurs if it is referenced before assignment.  Assignment of an array to the external variable or to an indexed element of the external variable has the effect of updating the file.  The value of the external variable or the value of indexed elements of the external variable is made available in the workspace when the external variable occurs in an expression.  No special restrictions are placed on the usage of external variables.
 
@@ -6,8 +6,7 @@ Normally, the files associated with external variables remain permanent in that 
 
 Refer to the sections describing the system functions `⎕XT` and `⎕FHOLD` in *Chapter 6* for further details.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'ARRAY' ⎕XT 'V'
  

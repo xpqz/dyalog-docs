@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">WebSocketSend</span><span class="command">Method 847</span></h1>
+<h1 class="heading"><span class="name">WebSocketSend</span> <span class="command">Method 847</span></h1>
 
 
 
@@ -26,10 +26,7 @@ This method is used to send data to a WebSocket. The argument to WebSocketSend i
 
 The result is 0.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       hr.WebSocketSend  '5d61d8330065608'  'Hello World'
 0

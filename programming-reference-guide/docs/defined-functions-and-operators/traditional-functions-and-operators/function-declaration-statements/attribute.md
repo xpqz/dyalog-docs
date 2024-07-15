@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Attribute Statement</span><span class="command">:Attribute</span></h1>
+<h1 class="heading"><span class="name">Attribute Statement</span> <span class="command">:Attribute</span></h1>
 
 ```apl
 :Attribute <Name> [ConstructorArgs]
@@ -21,10 +21,7 @@ Attributes are descriptive tags that provide additional information about progra
 |`Name`           |The name of a .NET attribute                    |
 |`ConstructorArgs`|Optional arguments for the Attribute constructor|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       :Attribute ObsoleteAttribute
       :Attribute ObsoleteAttribute 'Don''t use' 1

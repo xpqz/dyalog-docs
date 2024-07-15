@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">HScroll</span><span class="command">Event 39</span></h1>
+<h1 class="heading"><span class="name">HScroll</span> <span class="command">Event 39</span></h1>
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">List Loaded File Objects</span><span class="command">R←5177⌶Y</span></h1>
+<h1 class="heading"><span class="name">List Loaded File Objects</span> <span class="command">R←5177⌶Y</span></h1>
 
 
 
@@ -33,10 +33,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 
 If an object occupies a file in its entirety, both *Start line* and *Line count* will be 0.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       )CLEAR

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Send Text to RIDE-embedded Browser</span><span class="command">R←{X}(3500⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Send Text to RIDE-embedded Browser</span> <span class="command">R←{X}(3500⌶)Y</span></h1>
 
 
 

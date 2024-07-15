@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Close All Windows</span><span class="command">R←2023⌶Y</span></h1>
+<h1 class="heading"><span class="name">Close All Windows</span> <span class="command">R←2023⌶Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ This I-beam mimics this behaviour, thus allowing the user to write code which ca
 
 Under non-Windows operating systems this is the only mechanism for closing all such windows. This I-beam is effective in RIDE too.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       2023⌶0    

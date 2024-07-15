@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Namespaces and Objects</span></h1>
+<h1> Namespaces and Objects</h1>
 
 |Name        |Description   |
 |------------|--------------|

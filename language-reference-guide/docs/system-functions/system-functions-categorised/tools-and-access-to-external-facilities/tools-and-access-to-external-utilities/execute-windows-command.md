@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Execute Windows Command</span><span class="command">{R}←⎕CMD Y</span></h1>
+<h1 class="heading"><span class="name">Execute Windows Command</span> <span class="command">{R}←⎕CMD Y</span></h1>
 
 
 
@@ -13,15 +13,12 @@
 The system commands [`)SH`](../../../../system-commands/sh.md) and [`)CMD`](../../../../system-commands/cmd.md) provide similar facilities. For further information, see [Execute (UNIX) Command: ](../../../../system-commands/sh.md) and [Example](../../../../system-commands/cmd.md).
 
 
-#### Executing the Windows Command Processor
+## Executing the Windows Command Processor
 
 
 If `Y` is a simple character vector, `⎕CMD` invokes the Windows Command Processor (normally `cmd.exe`) and passes the command specified by character vector `Y` to it for execution. The term command means here an instruction recognised by the Command Processor, or the pathname of a program (with optional parameters) to be executed by it. In either case, APL waits for the command to finish and then returns the result `R`,  a vector of character vectors containing its result. Each element in `R` corresponds to a line of output produced by the command.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       Z←⎕CMD'dir'
       ⍴Z
@@ -49,10 +46,7 @@ If the command specified in `Y` already contains the redirection symbol (`>`) th
 If this is done, APL detects the presence of a "`>`" in the command line, runs the command processor in a **visible** window, and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕CMD 'DATE <CON >CON'
 ```
@@ -71,7 +65,7 @@ If this is done, APL detects the presence of a "`>`" in the command line, runs t
 
 
 
-##### Spaces in pathnames
+### Spaces in pathnames
 
 
 If `Y` specifies a program (with or without parameters) and the pathname to the program  contains spaces, you must enclose the string in double-quotes.
@@ -90,7 +84,7 @@ the argument to `⎕CMD` should be:
 ```
 
 
-##### Double-Quote Restriction
+### Double-Quote Restriction
 
 
 The Windows Command Processor does not permit more than one set of double-quotes in a command string.
@@ -115,7 +109,7 @@ Such a statement can however be executed using the second form of `⎕CMD`(where
 ⎕CMD'"c:\windows\system32\notepad.exe" "c:\myfile.txt"' ''
 ```
 
-##### Implementation Notes
+### Implementation Notes
 
 
 The right argument of `⎕CMD` is simply passed to the appropriate command processor for execution and its output is received using an *unnamed pipe*.
@@ -143,7 +137,7 @@ If you simply wish to open a Command Prompt window, you may execute the command 
       ⎕CMD 'cmd.exe' ''
 ```
 
-#### Starting a Windows Program
+## Starting a Windows Program
 
 
 If `Y` is a 2-element vector of character vectors, `⎕CMD` starts the executable program named by `Y[1]` with the initial window parameter specified by `Y[2]`.  The shy result is an integer scalar containing the window handle allocated by the window manager. Note that in this case APL does not wait for the program specified by `Y` to finish, but returns immediately. The shy result `R` is the process identifier (PID).
@@ -178,10 +172,7 @@ Note that `Y[1]` may contain the complete command line, including any suitable p
 
 There is no way to terminate an application started by `⎕CMD` from APL; it will run until it completes or is terminated by an external mechanism. Furthermore, if the window parameter is HIDDEN, the user is unaware of the application (unless it makes itself visible) and has no means to close it.
 
-
-
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
       Path←'c:\Program Files\Microsoft Office\Office\'
       ⎕←⎕CMD (Path,'excel.exe') ''
@@ -189,12 +180,12 @@ There is no way to terminate an application started by `⎕CMD` from APL; it wil
       ⎕CMD (Path,'winword /mMyMacro') 'Minimized'
 ```
 
-#### Executing Programs
+### Executing Programs
 
 
 Either form of `⎕CMD` may be used to execute a program. The difference is that when the program is executed via the Command Processor, APL waits for it to complete and returns any result that the program would have displayed in the Command Window had it been executed from a Command Window. In the second case, APL starts the program (in parallel).
 
-#### Note
+### Note
 
 
 This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.

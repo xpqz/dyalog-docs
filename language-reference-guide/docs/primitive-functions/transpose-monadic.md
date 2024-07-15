@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Transpose (Monadic)</span><span class="command">R←⍉Y</span></h1>
+<h1 class="heading"><span class="name">Transpose (Monadic)</span> <span class="command">R←⍉Y</span></h1>
 
 
 
 `Y` may be any array.  `R` is an array of shape `⌽⍴Y`, similar to `Y` with the order of the axes reversed.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       M
 1 2 3

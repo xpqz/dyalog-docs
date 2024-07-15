@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Workspaces</span></h1>
+<h1> Workspaces</h1>
 
 APL expressions are evaluated within a workspace. The workspace may contain objects, namely classes, namespaces, operators, functions and variables defined by the user. APL expressions may include references to primitive operators, functions and variables provided by APL. These objects do not reside in the workspace, but space is required for the actual process of evaluation to accommodate temporary data. During execution, APL records the state of execution through the STATE INDICATOR which is dynamically maintained until the process is complete. Space is also required to identify objects in the workspace in the SYMBOL TABLE. Maintenance of the symbol table is entirely dynamic. It grows and contracts according to the current workspace contents.
 
@@ -8,8 +8,7 @@ Workspaces are stored in files whose names must conform to operating system conv
 
 If the name of the file in which the workspace is saved contains spaces, the ws argument for the system functions `)SAVE`, `)COPY`, `)PCOPY`, `)LOAD`, `)XLOAD` and `)DROP` should be surrounded by two double-quote (") characters. To include a " character in the file name, you must specify two adjoining double-quotes (i.e. """"). Note however that Windows does not allow double-quotes in file names, so this effectively applies only to non-Windows systems.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )SAVE Pete's work
 unacceptable char

@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Exponential</span><span class="command">R←*Y</span></h1>
+<h1 class="heading"><span class="name">Exponential</span> <span class="command">R←*Y</span></h1>
 
 
 
 `Y` must be numeric. `R` is numeric and is the `Y`th power of *e*, the base of natural logarithms.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       *1 0
 2.718281828 1

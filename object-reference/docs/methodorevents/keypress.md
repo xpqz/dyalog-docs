@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">KeyPress</span><span class="command">Event 22</span></h1>
+<h1 class="heading"><span class="name">KeyPress</span> <span class="command">Event 22</span></h1>
 
 
 
@@ -83,10 +83,7 @@ Thus a Shift State of 3 indicates that the user has pressed the key in
 conjunction with both the Shift and Ctrl keys. A Shift State of 0 indicates that
 the user pressed the key on its own.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ Key;Form1
 [1]    'Form1'⎕WC'Form'('Event' 'KeyPress' 'Keycb')
@@ -111,7 +108,7 @@ of the user pressing the following 5 keys in succession:
     keyboard)
 
 
-#### Unicode Edition
+## Unicode Edition
 ```apl
 
 ┌→─────────────────────────────┐
@@ -146,7 +143,7 @@ of the user pressing the following 5 keys in succession:
 
 ```
 
-#### Classic Edition
+## Classic Edition
 ```apl
 
 ┌→─────────────────────────────┐

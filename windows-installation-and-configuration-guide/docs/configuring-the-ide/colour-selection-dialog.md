@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Colour Selection Dialog</span></h1>
+<h1> Colour Selection Dialog</h1>
 
 ![colour selection dialog](../img/colour-selection-dialog.png)
 
@@ -13,7 +13,7 @@ To choose for which of which of these items you want to define colours by select
 
 The colour selection dialog box is selected by the `[ChooseColor]` system action which by default is attached to the *Options/Colours* menu item on the Session menubar and to the *Colours* menu item in the Session pop-up menu.
 
-### Syntax Colouring
+## Syntax Colouring
 
 Syntax colouring allows you to visually identify various components in the function edit and session windows by assigning different colours to them, such as:
 
@@ -29,19 +29,19 @@ Syntax colouring allows you to visually identify various components in the funct
 - Control Structures
 - Unmatched parentheses, quotes, and braces
 
-### Colour Schemes
+## Colour Schemes
 
 You may define a number of different syntax colouring schemes which are suitable for different purposes and a selection of schemes is provided. Choose the scheme you wish to use from the Combo box provided. If you change a colour allocation, you may overwrite an existing Colour Scheme or define a new one by clicking *Save As* and then entering the name of the Scheme. You may delete a Colour Scheme using the *Delete* button.
 
-### HotKeys
+## HotKeys
 
 You may associate a different *hot key* with any or all of your colour schemes.When you depress a hot key over a function in an Edit window, the function is displayed using the scheme associated with the hot key. Releasing the hot key causes it to be displayed in the normal scheme. This feature is intended to allow you to quickly check for certain syntax elements. For example, you may define a special scheme that only highlights global names and associate a hot key with it. Pressing the hot key will temporarily highlight the globals for you.
 
-### Changing Colours
+## Changing Colours
 
 To allocate a colour to a syntax element, you must first select the syntax element. You may select a syntax element from the Combo box provided, or by clicking on an example in the sample function provided. Having selected a syntax element, choose a colour using the *Foreground* or *Background* selectors as appropriate.
 
-Colour Selection
+Table: Colour Selection
 
 |Label|Description|
 |---|---|

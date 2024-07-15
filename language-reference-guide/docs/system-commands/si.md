@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">State Indicator</span><span class="command">)SI {n} {-tid=tn}</span></h1>
+<h1 class="heading"><span class="name">State Indicator</span> <span class="command">)SI {n} {-tid=tn}</span></h1>
 
 
 
@@ -28,10 +28,7 @@ The list consists of a line for each suspended or pendent operation beginning wi
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )SI
 #.PLUS[2]*
@@ -56,7 +53,7 @@ x.foo[1]
 
 
 
-#### Threads
+## Threads
 
 
 In a multi-threading application, where parent threads spawn child threads, the state indicator assumes the structure of a branching tree. Branches of the tree are represented by indenting lines belonging to child threads. For example:

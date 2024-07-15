@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Start Windows Auxiliary Processor</span><span class="command">{R}←X ⎕CMD Y</span></h1>
+<h1 class="heading"><span class="name">Start Windows Auxiliary Processor</span> <span class="command">{R}←X ⎕CMD Y</span></h1>
 
 
 

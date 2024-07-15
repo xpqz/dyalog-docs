@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Cue</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">Cue</span> <span class="command">Property</span></h1>
 
 
 
@@ -24,10 +24,7 @@ This  property specifies optional text to be displayed when a [ButtonEdit](../ob
 
 The  Boolean property [ShowCueWhenFocused](showcuewhenfocused.md)  determines whether or not the cue should also be displayed once the user has tabbed into or clicked on the input field (and thus given it the focus).
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       'F' ⎕WC 'Form' 'Cue Property'

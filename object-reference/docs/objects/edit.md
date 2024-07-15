@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Edit</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Edit</span> <span class="command">Object</span></h1>
 
 
 
@@ -20,7 +20,7 @@
 
 The value of the [Style](../properties/style.md) property, which may be `'Single'` or `'Multi'`, determines whether the object presents a single-line data entry field or an area for viewing and editing a large block of text.
 
-#### Single-Line Edit
+## Single-Line Edit
 
 
 
@@ -50,7 +50,7 @@ The [Password](../properties/password.md) property specifies the character that 
 
 The [HScroll](../properties/hscroll.md) property determines whether or not the data may be scrolled. If [HScroll](../properties/hscroll.md) is 0, the data is not scrollable, and the user cannot enter more characters once the field is full. If [HScroll](../properties/hscroll.md) is `¯1` or `¯2` the field is scrollable, and there is no limit on the number of characters that can be entered. In neither case however is a horizontal scrollbar provided. [HScroll](../properties/hscroll.md) may only be set when the object is created and may not subsequently be changed.
 
-#### Multi-Line Edit
+## Multi-Line Edit
 
 
 If the [Style](../properties/style.md) is `'Multi'`, [Text](../properties/text.md) may set using a simple character vector, a simple matrix, or a vector of vectors. If  [Text](../properties/text.md) is specified by a matrix or by a vector of vectors, "new-line" characters are automatically added at the end of each line in the Edit control.
@@ -76,7 +76,7 @@ The [SelText](../properties/seltext.md) property identifies the portion of the t
 
 If the user changes any data in the field **and** attempts to change focus to another object, the Edit object will generate a [Change](../methodorevents/change.md) event. You can use this to validate the new data in the field.
 
-#### Note
+## Note
 
 
 For full functionality (in particular, for the [Cue](../properties/cue.md) property to apply), the Edit object requires that  [Native Look and Feel ](../miscellaneous/windows-xp-look-and-feel.md)

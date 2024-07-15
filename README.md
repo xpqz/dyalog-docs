@@ -49,3 +49,10 @@ running. `Docker Desktop` includes both `Docker` and `Docker Compose`.
    if they don't exist, and starts the containers as specified in the file.
 4. If you've made changes to your Dockerfile or Docker Compose configuration and want to rebuild the images, you can
    use `docker-compose up --build`.
+   
+## Publish
+
+```
+mike set-default --push --remote github 20.0  # only needed once
+mike deploy --push --remote github 20.0
+```

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> PCRE Regular Expression Details</span></h1>
+<h1> PCRE Regular Expression Details</h1>
 
 ```apl
 PCREPATTERN(3)             Library Functions Manual             PCREPATTERN(3)

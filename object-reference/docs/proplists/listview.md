@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ListView Properties</span></h1>
+<h1> ListView Properties</h1>
 
 |-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,                |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,  |

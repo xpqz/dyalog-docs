@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FontCancel</span><span class="command">Event 242</span></h1>
+<h1 class="heading"><span class="name">FontCancel</span> <span class="command">Event 242</span></h1>
 
 
 

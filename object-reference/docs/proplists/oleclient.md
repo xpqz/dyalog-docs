@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> OLEClient Properties</span></h1>
+<h1> OLEClient Properties</h1>
 
 |-------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
 |[Browse](../methodorevents/browse.md) ,                      |[Detach](../methodorevents/detach.md) ,                        |[GetEventInfo](../methodorevents/geteventinfo.md) ,          |

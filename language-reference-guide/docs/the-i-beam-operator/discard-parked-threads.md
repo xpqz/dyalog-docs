@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Discard Parked Threads</span><span class="command">R←2502⌶Y</span></h1>
+<h1 class="heading"><span class="name">Discard Parked Threads</span> <span class="command">R←2502⌶Y</span></h1>
 
 
 

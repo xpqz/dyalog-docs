@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Enqueue Event</span><span class="command">{R}←{X}⎕NQ Y</span></h1>
+<h1 class="heading"><span class="name">Enqueue Event</span> <span class="command">{R}←{X}⎕NQ Y</span></h1>
 
 
 
@@ -62,10 +62,7 @@ If `⎕NQ` is used monadically, or with a left argument of 0, its (shy) result i
 
 If the left argument is 2, `⎕NQ` returns either the value 1 or a value that is appropriate.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍝ Send a keystroke ("A") to an Edit Field
       ⎕NQ TEST.ED 'KeyPress' 'A'

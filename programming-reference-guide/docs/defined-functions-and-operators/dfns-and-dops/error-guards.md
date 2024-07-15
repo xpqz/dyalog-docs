@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Error-Guards</span></h1>
+<h1> Error-Guards</h1>
 
 An **error-guard** is (an expression that evaluates to) a vector of error numbers (see [APL Error Messages](../../error-messages/apl-errors.md)), followed by the digraph: `::`, followed by an expression, the *body* of the guard, to be evaluated as the result of the function. For example:
 ```apl
@@ -21,7 +21,7 @@ In this case, if `expr` generates an error, its immediately preceding: `0::` cat
 
 See also [Guards](guards.md).
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 `Open` returns a handle for a component file. If the exclusive tie fails, it attempts a share-tie and if this fails, it creates a new file. Finally, if all else fails, a handle of 0 is returned.
 ```apl
@@ -69,7 +69,7 @@ domain
 length
 ```
 
-## Note
+# Note
 
 Following the setting of an error-guard, subsequent function calls will disable tail call optimisation:
 ```apl

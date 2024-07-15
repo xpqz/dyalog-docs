@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">OLEDeleteEventSink</span><span class="command">Method 541</span></h1>
+<h1 class="heading"><span class="name">OLEDeleteEventSink</span> <span class="command">Method 541</span></h1>
 
 
 

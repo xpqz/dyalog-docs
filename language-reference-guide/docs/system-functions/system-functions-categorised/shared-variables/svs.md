@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Shared Variable State</span><span class="command">R←⎕SVS Y</span></h1>
+<h1 class="heading"><span class="name">Shared Variable State</span> <span class="command">R←⎕SVS Y</span></h1>
 
 
 
@@ -26,10 +26,7 @@ There are four possible shared variable states:
 |`0 1 0 1`|means that your partner has reset the shared variable but that you have not yet used it.                                                                                             |
 |`0 0 0 0`|the name is not that of a shared variable                                                                                                                                            |
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕SVS 'X'
 0 1 0 1

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Load Workspace</span><span class="command">⎕LOAD Y</span></h1>
+<h1 class="heading"><span class="name">Load Workspace</span> <span class="command">⎕LOAD Y</span></h1>
 
 
 

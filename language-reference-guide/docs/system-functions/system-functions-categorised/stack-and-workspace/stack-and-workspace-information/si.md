@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">State Indicator</span><span class="command">R←⎕SI</span></h1>
+<h1 class="heading"><span class="name">State Indicator</span> <span class="command">R←⎕SI</span></h1>
 
 
 
 `R` is a nested vector of vectors giving the names of the functions or operators in the execution stack.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       )SI

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> OLEServer Methods</span></h1>
+<h1> OLEServer Methods</h1>
 
 |---------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[OLERegister](../methodorevents/oleregister.md) ,|[OLEUnregister](../methodorevents/oleunregister.md) ,|

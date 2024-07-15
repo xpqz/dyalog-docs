@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TabControl Events</span></h1>
+<h1> TabControl Events</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

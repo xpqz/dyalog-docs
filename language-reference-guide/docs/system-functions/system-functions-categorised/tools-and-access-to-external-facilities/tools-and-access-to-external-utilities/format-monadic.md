@@ -3,17 +3,14 @@
 
 
 
-<h1 class="heading"><span class="name">Format (Monadic)</span><span class="command">R←⎕FMT Y</span></h1>
+<h1 class="heading"><span class="name">Format (Monadic)</span> <span class="command">R←⎕FMT Y</span></h1>
 
 
 
 `Y` may be any array.  `R` is a simple character matrix which appears the same as the default display of `Y`.  If `Y` contains control characters from `⎕TC`, they will be resolved.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A←⎕FMT '∩' ,⎕TC[1],'∘'
  

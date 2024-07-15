@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Exporting Methods</span></h1>
+<h1> Exporting Methods</h1>
 
 Your Web Service will be of no use unless it exports at least one method. To export a function as a method, you must include declaration statements. Such declarations may be supplied anywhere within the function body, but it is recommended that they appear together as the first block of statements in your code. All declaration statements begin with the colon (:) character and the following declaration statements are supported:
 ```apl
@@ -14,7 +14,7 @@ This statement declares the data type of the result and the arguments of the met
 
 The declaration of each parameter of the method is separated from the next by a comma. Each `name` may be any ASCII character string. Note that names are optional.
 
-### Add1
+## Add1
 ```apl
 ∇ R←Add1 args
  :Access WebMethod
@@ -25,7 +25,7 @@ The declaration of each parameter of the method is separated from the next by a 
 
 The `Add1` function defined above is exported as a method named `Add`, that takes exactly (and only) two parameters of type `Int32` and returns a result of type `Int32`. Armed with this definition, which is recorded in the metadata associated with the class, the .NET Framework guarantees that the method will only be called in this way.
 
-### Add2
+## Add2
 ```apl
 ∇ R←Add2 arg
  :Access WebMethod

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The ToolControl and ToolButton Objects</span></h1>
+<h1> The ToolControl and ToolButton Objects</h1>
 
 The ToolControl object is normally used in conjunction with ToolButtons, although it may also act as a parent for other objects, including a MenuBar.
 
@@ -6,7 +6,7 @@ A ToolButton may display a Caption and an Image, although both are optional. Ima
 
 The ImageListObj property of the ToolControl specifies the name of one or more ImageList objects to be used. The ImageIndex properties of each of the ToolButtons specifies which of the images in each ImageList object apply to which of the ToolButtons.
 
-### Standard Bitmap Resources
+## Standard Bitmap Resources
 
 Typically, you will want your ToolControls to provide standard Windows buttons and the easiest way to achieve this is to utilise the standard Windows bitmaps that are contained in COMCTL32.DLL. There are three main sets of bitmaps, each of which is provided in two sizes, small (16x16) and large (24 x 24).
 
@@ -24,7 +24,7 @@ Resource number 130 (IDB_HIST_SMALL_COLOR) and 131 (IDB_HIST_LARGE_COLOR) contai
 
 COMCTL32.DLL also contains individual bitmaps in resources 132-134.
 
-### Dyalog Bitmap Resources
+## Dyalog Bitmap Resources
 
 Another three sets of useful bitmaps are to be found in the DyaRes DLL file. These bitmaps are used in the Dyalog APL/W Session tool buttons. Note that if you include these bitmaps in a run-time application, you will have to ship DyaRes DLL with it.
 
@@ -52,7 +52,7 @@ The bitmaps used when the buttons are *inactive* may be created using the statem
 
 Note that in the Dyalog Session, if Native Look and Feel is enabled, these bitmaps are overridden by a single set of images designed to operate with the user's chosen theme and Visual Styles. For further information, see [Native Look and Feel](../introduction/native-look-and-feel.md).
 
-### Creating ImageLists for ToolButtons
+## Creating ImageLists for ToolButtons
 
 You may use up to three ImageList objects to represent ToolButton images. These will be used to specify the pictures of the ToolButton objects in their normal, highlighted (sometimes termed hot) and inactive states respectively.
 
@@ -78,7 +78,7 @@ The following example illustrates how a simple ToolControl can be constructed us
 
 ![toolcontrol style flatbuttons](../img/toolcontrol-style-flatbuttons.png)
 
-### The Style Property
+## The Style Property
 
 The overall appearance of the ToolButton objects displayed by the ToolControl is defined by the Style property of the ToolControl itself, rather than by properties of individual ToolButtons.
 
@@ -92,13 +92,13 @@ Style may be `'FlatButtons'`, `'Buttons'`, `'List'` or `'FlatList'`. The default
 
 ![toolcontrol style flatlist](../img/toolcontrol-style-flatlist.png)
 
-### The Divider Property
+## The Divider Property
 
 You will notice that, in the above examples, there is a thin groove drawn above the ToolControl. The presence or absence of this groove is controlled by the Divider property whose default is 1. The following picture illustrates the effect of setting Divider to 0.
 
 ![toolcontrol no divider](../img/toolcontrol-no-divider.png)
 
-### The MultiLine Property
+## The MultiLine Property
 
 The MultiLine property specifies whether or not ToolButtons (and other child controls) are arranged in several rows (or columns) when there are more than would otherwise fit.
 
@@ -127,7 +127,7 @@ If we set MultiLine to 1, the ToolButtons are instead displayed in several rows:
 
 ![toolcontrol multiline 1](../img/toolcontrol-multiline-1.png)
 
-### The Transparent Property
+## The Transparent Property
 
 The Transparent property (default 0) specifies whether or not the ToolControl is transparent. Note that Transparent must be set when the object is created using `⎕WC` and may not subsequently be changed using `⎕WS`.
 
@@ -150,7 +150,7 @@ ROOT←'C:\Program Files\Dyalog\Dyalog APL 13.1 Unicode\'
 
 ![toolcontrol transparent](../img/toolcontrol-transparent.png)
 
-### Radio buttons, Check buttons and Separators
+## Radio buttons, Check buttons and Separators
 
 The Style property of a ToolButton may be `'Push'`, `'Check'`, `'Radio'`, `'Separator'` or `'DropDown'`.
 
@@ -189,7 +189,7 @@ Notice that the appearance of the Separator ToolButton is less obvious when the 
 
 ![toolcontrol list radio buttons](../img/toolcontrol-list-radio-buttons.png)
 
-### Drop-Down buttons
+## Drop-Down buttons
 
 It is possible to define ToolButtons that display a drop-down menu from which the user may choose an option. This is done by creating a ToolButton with Style `'DropDown'`.
 
@@ -221,7 +221,7 @@ If the ShowDropDown property of the parent ToolControl is 1, clicking the dropdo
 
 ![toolcontrol dropdown buttons](../img/toolcontrol-dropdown-buttons.png)
 
-### A MenuBar as the child of a ToolControl
+## A MenuBar as the child of a ToolControl
 
 As a special case, the ToolControl may contain a MenuBar as its **only** child. In this case, Dyalog APL/W causes the menu items to be drawn as buttons, even under Windows 95.
 
@@ -248,7 +248,7 @@ Although nothing is done to prevent it, the use of other objects in a ToolContro
 
 ![toolcontrol menubar](../img/toolcontrol-menubar.png)
 
-### Providing User Customisation
+## Providing User Customisation
 
 It is common to allow the user to switch the appearance of a ToolControl dynamically. This may be done using a pop-up menu. In addition to providing a choice of styles, the user may switch the text captions on and off.
 

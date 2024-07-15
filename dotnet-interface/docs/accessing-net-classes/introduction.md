@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 .NET classes are implemented as part of the Common Type System. The Type System provides the rules by which different languages can interact with one another. *Types* include interfaces, value types and classes. The .NET Framework provides built-in primitive types plus higher-level types that are useful in building applications.
 

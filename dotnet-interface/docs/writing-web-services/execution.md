@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Execution</span></h1>
+<h1> Execution</h1>
 
 When your Web Service (or Page) is invoked, ASP.NET requests an instance of the corresponding Class from the Assembly (DLL) that was created when it was compiled. The first time this happens for any Dyalog APL Web Service or Web Page, the Dyalog APL dynamic link library  is loaded into the ASP.NET host process and the namespace corresponding to your Web Service class is `)COPYed` from the Assembly. The Dyalog APL dynamic link library then delivers an instance of this namespace to the client (calling) process. See [Introduction](../implementation-details/introduction.md) for further details.
 

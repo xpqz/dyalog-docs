@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Circle Bar</span><span class="command">⊖</span></h1>
+<h1 class="heading"><span class="name">Circle Bar</span> <span class="command">⊖</span></h1>
 
 
-##### Monadic Circle Bar means
+## Monadic Circle Bar means
 
 
 [Reverse First](../primitive-functions/reverse-first.md)
@@ -23,7 +23,7 @@
 
 ```
 
-##### Dyadic Circle Bar means
+## Dyadic Circle Bar means
 
 
 [Rotate First](../primitive-functions/rotate-first.md)

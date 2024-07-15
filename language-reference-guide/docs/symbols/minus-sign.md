@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Minus Sign;Bar</span><span class="command">-</span></h1>
+<h1 class="heading"><span class="name">Minus Sign;Bar</span> <span class="command">-</span></h1>
 
 
-##### Monadic Minus Sign means
+## Monadic Minus Sign means
 
 
 [Negate
@@ -17,7 +17,7 @@
 ¯3.2 7 0
 ```
 
-##### Dyadic Minus Sign means
+## Dyadic Minus Sign means
 
 
 [Minus;Subtract](../primitive-functions/subtract.md)

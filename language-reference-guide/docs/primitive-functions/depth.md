@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Depth</span><span class="command">(⎕ML)</span></h1>
+<h1 class="heading"><span class="name">Depth</span> <span class="command">(⎕ML)</span></h1>
 
 
 
@@ -19,10 +19,7 @@ A higher rank array, all of whose items are simple scalars, is termed a *simple 
 If `⎕ML<2` and `Y` is not of uniform depth then `R` is negated (therefore, when `⎕ML<2`, a negative value of `R` indicates non-uniform depth).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ≡1
 0

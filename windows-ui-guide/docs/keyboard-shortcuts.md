@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Keyboard Shortcuts</span></h1>
+<h1> Keyboard Shortcuts</h1>
 
 The terms keyboard shortcut (Unicode Edition) and command (Classic Edition) are used herein to describe a keystroke that generates an action, rather than one that produces a symbol.
 
-### Unicode Edition
+## Unicode Edition
 
 Unicode Edition provides a number of shortcut keys that may be used to perform actions. For compatibility with Classic Edition and with previous Versions of Dyalog APL, these are identified by 2-character codes; for example the action to start the Tracer is identified by the code <TC>, and mapped to user-configurable keystrokes.
 
@@ -12,11 +12,11 @@ To the right of the last symbol in the Language Bar is the Keyboard Shortcut ico
 
 ![keyboard_shortcut_popup](img/keyboard-shortcut-popup.png)
 
-### Classic Edition
+## Classic Edition
 
 Commands fall into four categories, namely cursor movement, selection, editing directives and special operations, and are summarised in the following tables. The input codes in the first column of the tables are the codes by which the commands are identified in the Input Translate Table.
 
-Cursor Movement Commands
+Table: Cursor Movement Commands
 
 |Input Code|Keystroke       |Description                                                                          |
 |----------|----------------|-------------------------------------------------------------------------------------|
@@ -37,7 +37,7 @@ Cursor Movement Commands
 |TB        |Ctrl+Tab        |Switches to the next session/edit/trace window                                       |
 |BT        |Ctrl+Shift+Tab  |Switches to the previous session/edit/trace window                                   |
 
-Selection Commands
+Table: Selection Commands
 
 |Input Code|Keystroke             |Description                                                                               |
 |----------|----------------------|------------------------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ Selection Commands
 |Us        |Shift+PgUp            |Extends the selection up by a page                                                        |
 |Ds        |Shift+PgDn            |Extends the selection down by a page                                                      |
 
-Editing Directives
+Table: Editing Directives
 
 |Input Code|Keystroke        |Description                                                                          |
 |----------|-----------------|-------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Editing Directives
 |DO        |Ctrl+Alt+.       |Delete Comments                                                                      |
 |AC        |&nbsp;           |Align Comments                                                                       |
 
-Special Operations
+Table: Special Operations
 
 |Input Code|Keystroke   |Description        |
 |----------|------------|-------------------|

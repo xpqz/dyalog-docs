@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Unicode Input Tab (Unicode Edition Only)</span></h1>
+<h1> Unicode Input Tab (Unicode Edition Only)</h1>
 
 Unicode Edition can optionally select your APL keyboard each time you start APL. To choose this option, select one of your installed APL keyboards, enable the *Activate selected keyboard* checkbox, then click *OK*
 
 ![configuration dialog unicode input tab](../../img/configuration-dialog-unicode-input-tab.png)
 
-Configuration dialog: Unicode Input
+Table: Configuration dialog: Unicode Input
 
 |Label|Parameter|Description|
 |---|---|---|
@@ -17,7 +17,7 @@ Configuration dialog: Unicode Input
 
 ![ime properties](../../img/ime-properties.png)
 
-Dyalog APL Input Method Editor Properties
+Table: Dyalog APL Input Method Editor Properties
 
 |Label|Parameter|Description|
 |---|---|---|

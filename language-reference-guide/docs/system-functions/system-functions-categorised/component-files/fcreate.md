@@ -4,7 +4,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Create</span><span class="command">{R}←X ⎕FCREATE Y</span></h1>
+<h1 class="heading"><span class="name">File Create</span> <span class="command">{R}←X ⎕FCREATE Y</span></h1>
 
 
 
@@ -29,7 +29,7 @@ The newly created file is tied for exclusive use.
 
 The shy result of `⎕FCREATE` is the tie number of the new file.
 
-#### Automatic Tie Number Allocation
+## Automatic Tie Number Allocation
 
 
 A tie number of 0 as argument to a create or tie operation, allocates, and returns as an explicit result, the first (closest to zero) available tie number. This allows you to simplify code. For example:
@@ -52,10 +52,7 @@ to:
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       '..\BUDGET\SALES'    ⎕FCREATE 2    ⍝ Windows
@@ -66,7 +63,7 @@ to:
 ```
 
 
-#### File Properties
+## File Properties
 
 
 `⎕FCREATE` allows you to specify properties for the newly created file via the variant operator `⍠` used with the following options:
@@ -92,10 +89,7 @@ See also: [File Properties ](fprops.md).
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'newfile' (⎕FCREATE⍠3) 0
 1

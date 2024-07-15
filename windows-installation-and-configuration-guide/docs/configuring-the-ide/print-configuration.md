@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Print Configuration Dialog Box</span></h1>
+<h1> Print Configuration Dialog Box</h1>
 
 The Print Configuration dialog box is displayed by the system operation `[PrintSetup]` that is associated with the *File/Print Setup* menu item. It is also available from Edit windows and from the *Workspace Explorer* and *Find Objects* tools.
 
@@ -6,11 +6,11 @@ There are four separate tabs namely *Setup*, *Margins*, *Header/Footer* and *Pri
 
 Note that the printing parameters are stored in the Registry in the Printing sub-folder
 
-### Setup Tab
+## Setup Tab
 
 ![print configuration dialog setup tab](../img/print-configuration-dialog-setup-tab.png)
 
-Print Configuration dialog: Setup
+Table: Print Configuration dialog: Setup
 
 |Label                    |Parameter     |Description                                                                                                                                   |
 |-------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,11 +24,11 @@ Print Configuration dialog: Setup
 |Line numbers on variables|LineNumsVars  |Check this box if you want line numbers to be printed in variables. If you choose this option, line numbering starts at `⎕IO` .               |
 |Font                     |Font          |Click to select the font to be used for printing. Note that only fixed-pitch fonts are supported.                                             |
 
-### Margins Tab
+## Margins Tab
 
 ![print configuration margins tab](../img/print-configuration-margins-tab.png)
 
-Print Configuration dialog: Margins
+Table: Print Configuration dialog: Margins
 
 |Label        |Parameter   |Description                                    |
 |-------------|------------|-----------------------------------------------|
@@ -40,11 +40,11 @@ Print Configuration dialog: Margins
 |Inches       |MarginInch  |Specifies that the margin units are inches     |
 |Centimetres  |MarginCM    |Specifies that the margin units are centimetres|
 
-### Header/Footer Tab
+## Header/Footer Tab
 
 ![print configuration header footer tab](../img/print-configuration-header-footer-tab.png)
 
-Print Configuration dialog: Header/Footer
+Table: Print Configuration dialog: Header/Footer
 
 |Label|Parameter|Description|
 |---|---|---|
@@ -86,11 +86,11 @@ would cause the following header, footer or separator to be printed at the appro
 
 Workspace: U:\WS\WDESIGN WIZ_change_toolbar   Printed 14:40:11 02 March 1998
 
-### Printer Tab
+## Printer Tab
 
 ![print configuration print tab](../img/print-configuration-print-tab.png)
 
-Print Configuration dialog: Print
+Table: Print Configuration dialog: Print
 
 |Label|Parameter|Description|
 |---|---|---|

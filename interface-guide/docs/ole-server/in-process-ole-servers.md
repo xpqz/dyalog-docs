@@ -1,12 +1,12 @@
-<h1 class="heading"><span class="name"> In-process OLE Servers</span></h1>
+<h1> In-process OLE Servers</h1>
 
-### Exporting
+## Exporting
 
 When you use File/Export to create an *in-process* OLE Server, the following steps are performed.
 
 APL first saves your workspace to a *temporary* file. Then it creates a *temporary* Type Library File that describes each of the OLEServer objects in the workspace. Next, it creates a Dynamic Link Library (DLL) file (whose name defaults to the name of your workspace but with a .DLL extension) by merging  the workspace saved in the temporary file with the file dllstub.dll. Finally, it registers your OLE Server by updating the Windows Registry. Your OLE Server DLL is self-contained and is independent of your workspace. The temporary files are then deleted.
 
-### Execution
+## Execution
 
 In-process OLEServers are hosted (executed) by the Dyalog APL DLL. If you export your OLE Server with *Runtime application* checked, it will be bound with the run-time version, If this checkbox is cleared, your OLE Server will be bound by the development version.
 
@@ -16,7 +16,7 @@ If an in-process OLE Server, that is bound with the development Dyalog APL DLL g
 
 For further details, see Dyalog for Microsoft Windows Installation and Configuration Guide.
 
-### Registering and Unregistering In-Process OLE Servers
+## Registering and Unregistering In-Process OLE Servers
 
 During development, an in-process OLE Server is automatically registered when you create it using *File/Export*.
 

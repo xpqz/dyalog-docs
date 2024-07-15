@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Fork New Task</span><span class="command">R←4000⌶Y</span></h1>
+<h1 class="heading"><span class="name">Fork New Task</span> <span class="command">R←4000⌶Y</span></h1>
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetItemPosition</span><span class="command">Event 322</span></h1>
+<h1 class="heading"><span class="name">SetItemPosition</span> <span class="command">Event 322</span></h1>
 
 
 

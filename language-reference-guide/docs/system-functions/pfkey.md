@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Program Function Key</span><span class="command">R←{X}⎕PFKEY Y</span></h1>
+<h1 class="heading"><span class="name">Program Function Key</span> <span class="command">R←{X}⎕PFKEY Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ Note that key definitions can reference other function keys, such as "F1" or "F1
 
 The size of the buffer associated with `⎕PFKEY` is specified by the *pfkey_size* parameter.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
        (')FNS',⊂'ER')⎕PFKEY 1
 ┌─┬─┬─┬─┬──┐

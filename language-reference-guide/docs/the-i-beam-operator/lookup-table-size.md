@@ -3,13 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Lookup Table Size</span><span class="command">R←8469⌶Y</span></h1>
+<h1 class="heading"><span class="name">Lookup Table Size</span> <span class="command">R←8469⌶Y</span></h1>
 
 
 
 Increases the maximum amount of workspace allocated to internal lookup tables. These tables are created when a set primitive is executed. Lookup tables are faster than hash tables, and are used when hashing is not required.
 
-#### Note
+## Note
 
 
 **The purpose of this function is to allow the user to evaluate potential side-effects of the proposed increase in table size in the next major version of Dyalog.**

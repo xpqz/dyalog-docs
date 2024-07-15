@@ -1,50 +1,50 @@
-<h1 class="heading"><span class="name"> Component Files</span></h1>
+<h1> Component Files</h1>
 
-### Overview
+## Overview
 
 A **component file** is a data file maintained by Dyalog APL. It contains a series of APL arrays known as **components** which are accessed by reference to their relative position or **component number** within the file. Component files are just like other data files and there are no special restrictions imposed on names or sizes.
 
 A set of system functions is supplied to perform a range of file operations. These provide facilities to create or delete files, and to read and write components. Facilities are also provided for multi-user access, including the capability to determine who may do what, and file locking for concurrent updates.
 
-### Tying and Untying Files
+## Tying and Untying Files
 
 To access an existing component file it must be **tied**, i.e. opened for use. The tie may be **exclusive** (single-user access) or **shared** (multi-user access). A file is **untied**, i.e. closed, using `⎕FUNTIE` or on terminating Dyalog APL. File ties survive `)LOAD`, `⎕LOAD` and `)CLEAR` operations.
 
-### Tie Numbers
+## Tie Numbers
 
 A file is tied by associating a **file name** with a **tie number**. Tie numbers are integers in the range 1 - 2147483647 and, you can supply one explicitly, or have the interpreter allocate the next available one by specifying 0. The system functions which tie files return the tie number as a "shy" result.
 
-### Creating and Removing Files
+## Creating and Removing Files
 
 A component file is created using `⎕FCREATE` which automatically ties the file for exclusive use. A newly created file is empty, i.e. contains 0 components. A file is removed with `⎕FERASE`, although it must be exclusively tied to do so.
 
-### Adding and Removing Components
+## Adding and Removing Components
 
 Components are added to a file using `⎕FAPPEND` and removed using `⎕FDROP`. Component numbers are allocated consecutively starting at 1. Thus a new component added by `⎕FAPPEND` is given a component number which is one greater than that of the last component in the file. Components may be removed from the beginning or end of the file, but not from the middle. Component numbers are therefore contiguous.
 
-### Reading and Writing Components
+## Reading and Writing Components
 
 Components are read using `⎕FREAD` and overwritten using `⎕FREPLACE`. There are no restrictions on the size or type of array which may replace an existing component. Components are accessed by component number.
 
-### Component Information
+## Component Information
 
 In addition to the data held in a component, the user ID that wrote it and the time at which it was written is also recorded.
 
-### Multi-User Access
+## Multi-User Access
 
 `⎕FSTIE` ties a file for **shared** (i.e. multi-user) access. This kind of access would be appropriate for a multi-user UNIX system, a network of single user PCs, or multiple APL tasks under Microsoft Windows.
 
 `⎕FHOLD` provides the means for the user to temporarily prevent other co-operating users from accessing one or more files. This is necessary to allow a single logical update involving more than one component, and perhaps more than one file, to be completed without interference from another user. `⎕FHOLD` is applicable to External Variables as well as Component Files
 
-### File Access Control
+## File Access Control
 
 There are two levels of file access control. As a regular file, the operating system read/write controls for owner and other users apply. In addition, Dyalog manages its own access controls using the **access matrix**. This is an integer matrix with 3 columns and any number of rows. Column 1 contains user numbers, column 2 an encoding of permitted file operations, and column 3 passnumbers. Each row specifies which file operations may be performed by which user(s) with which passnumber. A value of 0 in column 1 specifies all users. A value of `¯1` in column 2 specifies all file operations. A value of 0 in column 3 specifies no passnumber. If any row of the access matrix contains `(0 ¯1 0)` it specifies that all users may perform all file operations with no passnumber.
 
-#### User Number
+### User Number
 
 Under Windows, this is a number which is defined by the **aplnid** parameter.   If you intend to use Dyalog's **access matrix** to control file access in a multi-user environment, it is desirable to allocate to each user, a distinct **user number**. However, if you intend to rely on underlying operating system controls, allocating a user number of 0 (the default installation value) to everyone is more appropriate.  Under non-Windows platforms the User Number is set to be the effective user-id of the APL process and cannot be altered. In both cases, a user number of 0 causes APL to circumvent the access matrix mechanism described below.
 
-### Permission Code
+## Permission Code
 
 This is an integer representation of a Boolean mask. Each bit in the mask indicates whether or not a particular file operation is permitted as follows:
 ```apl

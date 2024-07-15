@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Data Representation</span><span class="command">⎕DR</span></h1>
+<h1 class="heading"><span class="name">Data Representation</span> <span class="command">⎕DR</span></h1>
 
 
-##### Monadic `⎕DR` means
+## Monadic `⎕DR` means
 
 
 [Query Data Type](data-representation-monadic.md)
@@ -16,7 +16,7 @@
 
 ```
 
-##### Dyadic `⎕DR` means
+## Dyadic `⎕DR` means
 
 
 [Change Data Type](data-representation-dyadic.md)

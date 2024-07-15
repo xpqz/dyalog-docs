@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Shared Variable Query</span><span class="command">R←⎕SVQ Y</span></h1>
+<h1 class="heading"><span class="name">Shared Variable Query</span> <span class="command">R←⎕SVQ Y</span></h1>
 
 
 

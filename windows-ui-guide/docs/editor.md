@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> The Editor</span></h1>
+<h1> The Editor</h1>
 
-### Invoking the Editor
+## Invoking the Editor
 
 The editor may be invoked in several ways. From the session, you can use the system command `)ED` or the system function `⎕ED`, specifying the names(s) of the object(s) to be edited. You can also type the name of the object and then press Shift+Enter (ED), click the *Edit* tool on the tool bar, or select *Edit* from the *Action* menu. If you invoke the editor when the cursor is positioned on the empty input line, with a suspended function in the state indicator, the editor is invoked on the suspended function and the cursor is positioned on the line at which it is suspended. This is termed *naked edit*. These ways of invoking the editor apply only in the session window
 
@@ -14,7 +14,7 @@ If the name is not already being edited, it is assigned a new edit window. If yo
 
 If the name is followed by a line-number in square brackets, e.g. `MyFn[1000]`, the Editor will position the cursor on the specified line. This applies to alll methods of invoking the Editor, except `⎕ED`. There must not be a space between the last character of the name and the "[".
 
-### Window Management (Standard)
+## Window Management (Standard)
 
 Unless *Classic Dyalog mode* is selected (*Options/Configure/Trace/Edit*), the Editor is a Multiple Document Interface (MDI) window that may be a stand-alone window, or be docked in the Session window. Each of the objects being edited is displayed in a separate sub-window. Individual edit windows are managed using standard MDI facilities.
 
@@ -42,7 +42,7 @@ The picture below shows the effect of maximising the Editor. The `BUILD_SESSION`
 
 Note that when the Editor has the focus, the Editor menubar is displayed in place of the Session menubar.
 
-### Window Management (Classic Dyalog mode)
+## Window Management (Classic Dyalog mode)
 
 If *Classic Dyalog mode* is selected (*Options/Configure/Trace/Edit*) each Edit window is a top-level window created as a child of the Session window. This means that normally Edit windows appear on top of the Session. However, if the **SessionOnTop** parameter is set, the Session window, when given the focus, will appear on top of Edit windows.
 
@@ -59,19 +59,19 @@ Subsequent ones are staggered according to the values of the **edit_offset_y** a
 
 ![editor 7](img/editor-7.png)
 
-#### Moving around an edit window
+### Moving around an edit window
 
 You can move around in the edit window using the scrollbar, the cursor keys, and the PgUp and PgDn keys. In addition, Ctrl+Home (UL) moves the cursor to the beginning of the top-line in the object and Ctrl+End moves the cursor to the end of the last line in the object. Home (LL) and End (RL) move the cursor to the beginning and end respectively of the line containing the cursor.
 
-#### Closing an edit window
+### Closing an edit window
 
 Closing an edit window from its System Menu has the same effect as choosing Exit from the *File* Menu; namely that it fixes the object in the workspace and then closes the edit window.
 
-#### Minimising an edit window
+### Minimising an edit window
 
 Minimising an edit window causes it to be displayed as a Dyalog APL *Edit* icon, with the name of the object underneath. The edit window can be restored in the normal way, or by an attempt to re-edit the same name.
 
-### Selecting Text
+## Selecting Text
 
 You may select text in an Editor window by clicking the left or right mouse button over any character, dragging out a highlighed area, and then releasing the mouse button. When using the left button, moving up or down one line extends the selection from the beginning of that line, so the selection may be ragged. The right button selects a rectangularr box.
 
@@ -180,7 +180,7 @@ The *Find* and *Replace* items are used to display the *Find* dialog box and the
 
 Once displayed, each of the two dialog boxes remains on the screen until it is either closed or replaced by the other. This is convenient if the same operations are to be performed over and over again, and/or in several windows. *Find* and *Find/Replace* operations are effective in the window that previously had the focus.
 
-### The Syntax Menu
+#### The Syntax Menu
 
 ![editor syntax menu](img/editor-syntax-menu.png)
 
@@ -193,7 +193,7 @@ The *Syntax* menu illustrated above provides options to specify  how the data di
 |JSON   |JSON array      |
 |XML    |XML array       |
 
-### The Window Menu
+#### The Window Menu
 
 The *Window* menu provides a means to control the display of the various edit windows. The *Window* menu and the actions it provides are described below.
 
@@ -208,7 +208,7 @@ The *Window* menu provides a means to control the display of the various edit wi
 |Arrange Icons    |Arranges any minimised edit windows.                                                                                                              |
 |Editor           |Allows you to Select the edit window corresponding to the named object.                                                                           |
 
-### The Refactor Menu
+#### The Refactor Menu
 
 ![editor refactor menu](img/editor-refactor-menu.png)
 
@@ -220,7 +220,7 @@ The *Refactor* menu illustrated above applies only when editing a Class and prov
 |Add text as Property|Inserts a Property template for the selected name.   |
 |Add text as Method  |Inserts a Method template for the selected text name.|
 
-### The View Menu
+#### The View Menu
 
 ![editor view menu](img/editor-view-menu.png)
 
@@ -240,41 +240,41 @@ The *View* menu, illustrated above, provides the following actions.
 |Collapse All Outlines|Collapses all outlines|
 |Expand all Outlines below here|Expands all outlines below the level of the current line.|
 
-#### Function Line Numbers
+##### Function Line Numbers
 
 The *Function Line Numbers* option in the Editor menu provides an additional level of line-numbering. If selected, line numbers are displayed *independently* on each individual function (or operator) in the Class. This option is only enabled when you are editing a Class, Namespace script or Interface, and is disabled for all other types of object.
 
 Note that function line-numbering and general line-numbering are independent options and it is possible to have the entire Class numbered (from [0] to the number of lines in the Class) in addition to having line-numbering on each individual function.
 
-### Using the Editor
+#### Using the Editor
 
-#### Creating a New Function
+###### Creating a New Function
 
 Type the name of your function and invoke the editor. To do this you may press Shift+Enter, or select *Edit* from the *Action* menu, or double-click the left button on your mouse, or click the *Edit* tool in the tool bar. A new window will appear on the screen with the name you have chosen displayed in the top border. The name is also inserted in the function header and the cursor positioned to the right. The new window is automatically given the input focus.
 
-#### Line-Numbers on/off
+###### Line-Numbers on/off
 
 Try changing the line numbers setting by clicking on the *Line Numbers* option in the *Options* menu. Note that line-numbering on/off is effective for **all** edit windows.
 
-#### Adding Lines
+###### Adding Lines
 
 If the keyboard is in *Insert* mode, pressing Enter at the end of a line opens you a new blank line under the current one and positions the cursor there ready for input. You can also open a new blank line by pressing Ctrl+Shift+Insert (OP).
 
 If the cursor is at the end of the last line in the function, pressing Enter adds another line even if the keyboard is in Replace mode.
 
-#### Indenting Text
+###### Indenting Text
 
 Dyalog APL allows you to insert leading spaces in lines of a function and (unless the **AutoFormat** parameter is set) preserves these spaces between editing sessions. Embedded spaces are however discarded. You can enter spaces using the space bar or the Tab key. Pressing Tab inserts spaces up to the next tab stop corresponding to the value of the **TabStops** parameter. If the **AutoIndent** parameter is set, new lines are automatically indented the same amount as the preceding line.
 
-#### Reformatting
+###### Reformatting
 
 The RD command (which by default is mapped to Keypad-Slash) reformats a function according to your **AutoFormat** and **TabStops** settings. See [ Trace/Edit Tab](configuration-dialog.md).
 
-#### Deleting Lines
+###### Deleting Lines
 
 To delete a block of lines, select them by dragging the mouse or using the keyboard and then press Delete or select *Clear* from the *Edit* menu. A quick way to delete the current line without selecting it first is to press Ctrl+Delete (DK) or select *Delete Line* from the *Edit* menu.
 
-#### Copying Lines
+###### Copying Lines
 
 Select the lines you wish to copy by dragging the mouse or using the keyboard. Then press Ctrl+Insert or select *Copy* from the *Edit* menu. This action copies the selection to the clipboard. Now position the input cursor where you wish to make the copy and press Shift+Insert, or select *Paste* from the *Edit* menu. You can also use this method to duplicate a ragged block of text.
 
@@ -284,7 +284,7 @@ To copy text using drag-and-drop editing:
 2. Hold down the Ctrl key, point to the selected text and then press and hold down the left mouse button. When the drag-and-drop pointer appears, drag the cursor to a new location.
 3. Release the mouse button to drop the text into place.
 
-#### Moving Lines
+###### Moving Lines
 
 Select the lines you wish to copy by dragging the mouse or using the keyboard. Then press Shift+Delete or select *Cut* from the Edit menu. This action copies the selection to the clipboard and removes it. Now position the input cursor at the new location and press Shift+Insert, or select *Past*e from the Edit menu. You can also use this method to move a *ragged* block of text.
 
@@ -294,17 +294,17 @@ To move text using drag-and-drop editing:
 2. Point to the selected text and then press and hold down the left mouse button. When the drag-and-drop pointer appears, drag the cursor to a new location.
 3. Release the mouse button to drop the text into place.
 
-#### Joining and Splitting Lines
+###### Joining and Splitting Lines
 
 To join a line to the previous one: select Insert mode; position the cursor on the first character in the line; press Bksp.
 
 To split a line: select Insert mode; position the cursor at the place you want it split; press Return.
 
-#### Toggling Localisation
+###### Toggling Localisation
 
 The TL command (which by default is mapped to Ctrl+Up) toggles the localisation of the name under the cursor. If the name is currently global, pressing Ctrl+Up causes the name to be added to the list of locals in the function header. If the name is already localised, pressing Ctrl+Alt+l removes it from the header.
 
-#### Matching Occurences
+###### Matching Occurences
 
 When you position the caret over a name, control word, or simple text or to the right of a parenthesis, bracket, or brace, matching occurrences are identified (by a thin box). In particular :
 
@@ -312,7 +312,7 @@ When you position the caret over a name, control word, or simple text or to the 
 - matching parentheses, brackets and braces
 - all control words associated with the one under the caret. For example, if the caret is on `:If`, then nested `:AndIf`, `:OrIf`, `:Else` and the final `:Endif` are identified.
 
-#### Aligning Comments
+###### Aligning Comments
 
 When you press the <AC> key, or select Align Comments in the Editor's context menu, the alignment of the comments in every line in the function will be changed so that the left-most comment (Lamp) symbol is in the same column as the cursor, except that:
 
@@ -331,7 +331,7 @@ Installation & Configuration Guide:
 
 Configuration Dialog (Keyboard Shortcuts Tab).
 
-#### Stop, Trace and Monitor Controls
+###### Stop, Trace and Monitor Controls
 
 If any of the *Stop*, *Trace*, and *Monitor* options of the *View* menu are set, the Editor displays  an area to the left of the function body containing up to 3 columns. If a function line is enabled by `⎕TRACE`,`⎕STOP` or `⎕MONITOR` the corresponding column displays a yellow circle (trace), red circle (stop) or clock symbol (monitor).
 
@@ -339,7 +339,7 @@ If any of the *Stop*, *Trace*, and *Monitor* options of the *View* menu are set,
 
 When you move the mouse-pointer over this area, the pointer displays the appropriate symbol and you can toggle the corresponding setting on and off by clicking the mouse.
 
-### White Space in Source Code
+#### White Space in Source Code
 
 Settings that impact the automatic reformatting of code can cause changes to whitespace – this can be interpreted as changes to the source code. This means that:
 
@@ -347,7 +347,7 @@ Settings that impact the automatic reformatting of code can cause changes to whi
 - viewing an object can change its file timestamp; source code management systems can subsequently report changes due to the changed file timestamp.
 - source code changes resulting from reformatting will be evident in the results of system functions such as `⎕AT`, `⎕SRC`, `⎕CR`, `⎕VR` and `⎕NR`.
 
-### Outlining
+###### Outlining
 
 When you are editing a function, outlining identifies the blocks of code within control structures, and allows you to collapse and expand these blocks so that you can focus your attention on particular parts of the code
 
@@ -366,7 +366,7 @@ Notice that the various control structure blocks are delineated by a treeview di
 
 ![editor outlining 2](img/editor-outlining-2.png)
 
-### Sections
+###### Sections
 
 Functions and scripted objects (classes, namespaces etc.) can be subdivided into Sections with `:Section` and `:EndSection` statements. Both statements may be followed by an optional and arbitrary name or description. The purpose is to split the function up into sections that you can open and close in the Editor, thereby aiding readability and code management. Sections have no effect on the execution of the code, but must follow the nesting rules of other control structures.
 
@@ -393,7 +393,7 @@ Finally, with all the sections opened:
 
 ![editor sections 4](img/editor-sections-4.png)
 
-### Editing Classes
+###### Editing Classes
 
 The picture below shows the result of opening the `ComponentFile` class. Notice how each function is delineated separately and that each function is individually line-numbered.
 ```apl
@@ -410,7 +410,7 @@ When you edit a class, a separate treeview is optionally displayed in the left p
 
 ![editor classes 3](img/editor-classes-3.png)
 
-### Sections within Scripts
+###### Sections within Scripts
 
 Scripts can also be subdivided into Sections using `:Section` and `:EndSection` statements. As with single functions, the purpose is only to split the script up into sections that you can open and close in the Editor. Sections have no effect on the execution of the code.
 

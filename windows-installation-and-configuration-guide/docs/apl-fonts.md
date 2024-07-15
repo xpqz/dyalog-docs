@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> APL Fonts</span></h1>
+<h1> APL Fonts</h1>
 
-### Unicode Edition
+## Unicode Edition
 
 The default font for the Unicode Edition is APL385 Unicode[^1] which is a TrueType font and is installed as part of Dyalog APL. APL385 Unicode is the font used to print APL characters in this manual. In principle, you may use any other Unicode font that includes the APL symbols.
 
-### Classic Edition
+## Classic Edition
 
 In the Classic Edition, there are two types of APL font provided; bitmap (screen) and TrueType. There are also two different layouts, which are referred to as *Std* and *Alt*.
 

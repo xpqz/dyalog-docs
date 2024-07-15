@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Each (with Monadic Operand)</span><span class="command">{R}←f¨Y</span></h1>
+<h1 class="heading"><span class="name">Each (with Monadic Operand)</span> <span class="command">{R}←f¨Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The derived function applies function `f` separately to each item of `Y`.  The d
 If `Y` is empty, the prototype of `R` is determined by applying the operand function *once* to the prototype of `Y`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       G←('TOM' (⍳3))('DICK' (⍳4))('HARRY' (⍳5))
       ⍴G

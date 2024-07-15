@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Format (Dyadic)</span><span class="command">R←X⍕Y</span></h1>
+<h1 class="heading"><span class="name">Format (Dyadic)</span> <span class="command">R←X⍕Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ Conformability requires that if `X` has more than two elements, then `⍴X` must
 If `P` is 0, the column is to be formatted as integers.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       5 0 ⍕ 2 3⍴⍳6
     1    2    3
@@ -32,10 +29,7 @@ If `P` is 0, the column is to be formatted as integers.
    1   2  ¯4   3
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 If `P` is positive, the format is floating point with `P` significant digits to be displayed after the decimal point.
@@ -44,10 +38,7 @@ If `P` is positive, the format is floating point with `P` significant digits to 
  1.1 2.0¯4.0 2.5
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 If `P` is negative, scaled format is used with `|P` digits in the mantissa.
@@ -56,10 +47,7 @@ If `P` is negative, scaled format is used with `|P` digits in the mantissa.
 5.00E0 1.50E1 1.55E2 1.56E3
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 If `W` is 0 or absent, then the width of the corresponding columns of `R` are determined by the maximum width required by any element in the corresponding columns of `Y`, plus one separating space.
@@ -69,10 +57,7 @@ If `W` is 0 or absent, then the width of the corresponding columns of `R` are de
   2.000  3.000   4.000
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 If a formatted element exceeds its specified field width when `W>`0, the field width for that element is filled with asterisks.
@@ -83,10 +68,7 @@ If a formatted element exceeds its specified field width when `W>`0, the field w
 101******
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 If the format precision exceeds the internal precision, low order digits are replaced by the symbol '`_`'.

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Event Viewer</span></h1>
+<h1> The Event Viewer</h1>
 
 The *Event Viewer* can be used to monitor events on Dyalog APL GUI objects. To display the *Event Viewer*, select *Event Viewer* from the *Session Tools* menu.
 
@@ -13,7 +13,7 @@ In the example illustrated above, the user has chosen to monitor events on a For
 
 Entries in the *Action* column report the action  that was associated with the event at the time it was placed in the queue. This may or may not be the same as the action that is associated with the event when it reaches the top of the event queue and is processed.
 
-### The Spy Menu
+## The Spy Menu
 
 ![event viewer spy menu](img/event-viewer-spy-menu.png)
 
@@ -29,7 +29,7 @@ The Spy menu, illustrated above, provides the following options and actions.
 |Enable Logging|This item switches event logging on and off.|
 |Close|Closes the *Event Viewer*|
 
-### The Columns Menu
+## The Columns Menu
 
 ![event viewer columns menu](img/event-viewer-columns-menu.png)
 
@@ -48,7 +48,7 @@ The Columns menu allows you to choose which information is displayed for the eve
 |Event ID|If checked, this item displays the *event id* of the event that occurred. This id is used internally.|
 |TimeStamp|If checked, this item displays the *timestamp* of the event that occurred.|
 
-### The Select Menu
+## The Select Menu
 
 ![event viewer select menu](img/event-viewer-select-menu.png)
 
@@ -63,7 +63,7 @@ The *Select* menu allows you to highlight certain events in the *Event Viewer*. 
 
 These items are also available from the pop-up menu that appears when you press the right mouse button over an event displayed in the *Event Viewer* window.
 
-### The Options Menu
+## The Options Menu
 
 ![event viewer options menu](img/event-viewer-options-menu.png)
 
@@ -75,17 +75,17 @@ The *Options* menu allows you to choose which information is displayed for the e
 |Use APL font|If checked, this item causes the information displayed in the *Event Viewer* window to be displayed using the APL font (the same font as is used in the Session window). If not, the system uses the appropriate Windows font.|
 |Settings...|Displays the *Event Viewer Options* Dialog Box.|
 
-### Options Dialog Box
+## Options Dialog Box
 
 The *Event Viewer Options* dialog box allows you to select the objects and events that you wish to monitor.
 
 ![event viewer options dialog](img/event-viewer-options-dialog.png)
 
-### Events to view
+## Events to view
 
 The list box shows all the events that are support by the Dyalog APL GUI and allows you to select which events are to be monitored. User defined events may be selected by checking the *User defined events* box. Only those events that are selected will be reported. You can sort the events by name or by event number by clicking the appropriate column header.
 
-### Objects to view
+## Objects to view
 
 |Item|Description|
 |---|---|

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 `System.Windows.Forms` is a .NET namespace that provides a set of classes for creating the Graphical User Interface for Windows applications.
 

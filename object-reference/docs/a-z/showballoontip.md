@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ShowBalloonTip</span><span class="command">Method 860</span></h1>
+<h1 class="heading"><span class="name">ShowBalloonTip</span> <span class="command">Method 860</span></h1>
 
 
 

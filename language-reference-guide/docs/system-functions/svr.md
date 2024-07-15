@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Shared Variable Retract Offer</span><span class="command">R←⎕SVR Y</span></h1>
+<h1 class="heading"><span class="name">Shared Variable Retract Offer</span> <span class="command">R←⎕SVR Y</span></h1>
 
 
 

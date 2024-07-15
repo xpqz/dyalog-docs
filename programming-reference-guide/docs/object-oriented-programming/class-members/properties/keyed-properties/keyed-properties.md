@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Keyed Properties</span></h1>
+<h1> Keyed Properties</h1>
 
 A Keyed Property is similar to a Numbered Property except that it may **only** be accessed by indexing (so-called square-bracket indexing) and indices are not restricted to integers but may be arbitrary arrays.
 

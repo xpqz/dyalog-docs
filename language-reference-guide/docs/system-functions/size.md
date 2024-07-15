@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Size of Object</span><span class="command">R←⎕SIZE Y</span></h1>
+<h1 class="heading"><span class="name">Size of Object</span> <span class="command">R←⎕SIZE Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The result returned for an external variable is the space required to store the 
 
 Note: Wherever possible, Dyalog APL *shares* the whole or part of a workspace object rather than generates a separate copy; however `⎕SIZE` reports the size as though nothing is shared. `⎕SIZE` also includes the space required for the interpreter's internal information about the object in question.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕VR 'FOO'
      ∇ R←FOO

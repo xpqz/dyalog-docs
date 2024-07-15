@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Circular</span><span class="command">R←X○Y</span></h1>
+<h1 class="heading"><span class="name">Circular</span> <span class="command">R←X○Y</span></h1>
 
 
 
@@ -30,10 +30,7 @@
 |`*Y×0J1`|`12`|`θ`|
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       0 ¯1 ○ 1
 0 1.570796327

@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Shared Variable Access Control</span><span class="command">⎕SVC</span></h1>
+<h1 class="heading"><span class="name">Shared Variable Access Control</span> <span class="command">⎕SVC</span></h1>
 
 
-##### Dyadic `⎕SVC` means
+## Dyadic `⎕SVC` means
 
 
 [Set Access Control](set-access-control.md)
@@ -15,7 +15,7 @@
 1 1 1 1
 ```
 
-##### Monadic `⎕SVC` means
+## Monadic `⎕SVC` means
 
 
 [Query Access Control](query-access-control.md)

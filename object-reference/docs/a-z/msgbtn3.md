@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">MsgBtn3</span><span class="command">Event 63</span></h1>
+<h1 class="heading"><span class="name">MsgBtn3</span> <span class="command">Event 63</span></h1>
 
 
 

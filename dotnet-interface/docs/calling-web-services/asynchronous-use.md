@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Asynchronous Use</span></h1>
+<h1> Asynchronous Use</h1>
 
 Web Services provide both synchronous (client calls the function and waits for a result) and asynchronous operation.
 
@@ -37,7 +37,7 @@ LoanResult
 LoanResult
 ```
 
-### Using a callback
+## Using a callback
 
 The simple approach described above is not always practical. If it can take a significant amount of time for the web service to respond, you may prefer to have the system notify you, via a callback function, when the result from the method is available.
 

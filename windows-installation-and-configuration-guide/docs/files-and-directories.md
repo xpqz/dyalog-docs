@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Files and Directories</span></h1>
+<h1> Files and Directories</h1>
 
-### Unicode and Classic Editions
+## Unicode and Classic Editions
 
 Dyalog APL continues to be available in two separate editions; *Unicode* and *Classic*.
 
@@ -17,17 +17,17 @@ every effort will be made to ensure that they are identical except for the
 handling of character arrays, and the transfer of data into and out of the
 workspace.
 
-### 32-Bit and 64-Bit Versions
+## 32-Bit and 64-Bit Versions
 
 Two separate versions of Dyalog for Microsoft Windows are available. The 32-bit version will run on both 32-bit and 64-bit Operating Systems; the 64-bit version will only run on a 64-bit Operating System.
 
-### Files
+## Files
 
 The following tables show files that are included in the different versions and editions under Microsoft Windows.  These are referred to in the remainder of this document and in other documents by the name shown in the first column of the tables.
 
 With the exception of the following all these files may be distributed as part of end-user applications, under the terms and conditions of a Dyalog APL Run-Time Agreement. Please contact Dyalog or your distributor, or see the Dyalog web page for more information.
 
-### Non-Distributable Development Components
+## Non-Distributable Development Components
 
 - Development EXE
 - Development DLL
@@ -137,7 +137,7 @@ With the exception of the following all these files may be distributed as part o
 |&nbsp;             |`sharpplot.dll`                            |
 |&nbsp;             |`sharpplot.xml`                            |
 
-### File Naming Conventions
+## File Naming Conventions
 
 The following file naming conventions have been adopted for the various files distributed with and used by Dyalog APL.
 

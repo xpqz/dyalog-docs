@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Reverse</span><span class="command">R←⌽[K]Y</span></h1>
+<h1 class="heading"><span class="name">Reverse</span> <span class="command">R←⌽[K]Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 `R` is the array `Y` reversed on the `K`th or implied axis.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⌽1 2 3 4 5
 5 4 3 2 1

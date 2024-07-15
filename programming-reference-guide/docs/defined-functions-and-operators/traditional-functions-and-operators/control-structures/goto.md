@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GoTo Statement</span><span class="command">:GoTo aexp</span></h1>
+<h1 class="heading"><span class="name">GoTo Statement</span> <span class="command">:GoTo aexp</span></h1>
 
 
 

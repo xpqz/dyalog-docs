@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Timer Events</span></h1>
+<h1> Timer Events</h1>
 
 |---------------------------------------|---------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|

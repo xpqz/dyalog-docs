@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">AnimPlay</span><span class="command">Method 292</span></h1>
+<h1 class="heading"><span class="name">AnimPlay</span> <span class="command">Method 292</span></h1>
 
 
 

@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">GridCopy</span><span class="command">Event 191</span></h1>
+<h1 class="heading"><span class="name">GridCopy</span> <span class="command">Event 191</span></h1>
 
 
 

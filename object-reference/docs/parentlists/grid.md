@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Grid Parents</span></h1>
+<h1> Grid Parents</h1>
 
 |-----------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,              |

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Trap Statement</span><span class="command">:Trap ecode</span></h1>
+<h1 class="heading"><span class="name">Trap Statement</span> <span class="command">:Trap ecode</span></h1>
 
 
 
@@ -16,7 +16,7 @@
 
 `ecode` is an integer scalar or vector containing the list of event codes which are to be *handled* during execution of the segment of code between the `:Trap` and `:End[Trap]` statements. Note that event codes 0 and 1000 are wild cards that means *any* event code in a given range. See [APL Error Messages](../../../error-messages/apl-errors.md).
 
-##### Operation
+## Operation
 
 
 The segment of code immediately following the `:Trap` keyword is executed. On completion of this segment, if no error occurs, control passes to the code following `:End[Trap]`.
@@ -38,10 +38,7 @@ Note that the error trapping is in effect **only** during execution of the initi
 
 Note that the statement  `:Trap ⍬` results in no errors being trapped.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
      ∇ lx
 [1]    :Trap 1000        ⍝ Cutback and exit on interrupt

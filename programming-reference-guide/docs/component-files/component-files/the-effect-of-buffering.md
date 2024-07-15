@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Effect of Buffering</span></h1>
+<h1> The Effect of Buffering</h1>
 
 Disk drives are fairly slow devices, so most operating systems take advantage of a facility called buffering. This is shown in simple terms below:
 ```apl

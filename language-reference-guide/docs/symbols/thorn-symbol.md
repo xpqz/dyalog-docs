@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Thorn</span><span class="command">⍕</span></h1>
+<h1 class="heading"><span class="name">Thorn</span> <span class="command">⍕</span></h1>
 
 
-##### Monadic Format means
+## Monadic Format means
 
 
 [Format](../primitive-functions/format-monadic.md)
@@ -31,7 +31,7 @@ NB: In the following examples space characters
 
 N.B. depends on `⎕PP`
 
-##### Dyadic Format means
+## Dyadic Format means
 
 
 [Format By Specification

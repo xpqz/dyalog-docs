@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> System Operators</span></h1>
+<h1> System Operators</h1>
 
 The following system facilities are for convenience implemented as operators rather than as functions:
 

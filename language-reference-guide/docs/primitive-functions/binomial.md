@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Binomial</span><span class="command">R←X!Y</span></h1>
+<h1 class="heading"><span class="name">Binomial</span> <span class="command">R←X!Y</span></h1>
 
 
 
@@ -24,10 +24,7 @@ Results are derived smoothly from the Beta function:
 
 For positive integer arguments, `R` is the number of selections of `X` things from `Y` things.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       1 1.2 1.4 1.6 1.8 2!5
 5 6.105689248 7.219424686 8.281104786 9.227916704 10

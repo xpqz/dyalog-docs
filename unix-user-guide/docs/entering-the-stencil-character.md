@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Entering the Stencil and Nest Characters</span></h1>
+<h1> Entering the Stencil and Nest Characters</h1>
 
 As of April 2017 it is not possible by default to enter the Stencil or Nest character as a single key-chord under windows managers under Linux; the updated keyboard mapping file is not yet included in Linux distributions.
 

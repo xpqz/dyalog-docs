@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Creating Executables and COM Servers</span></h1>
+<h1> Creating Executables and COM Servers</h1>
 
 Dyalog APL provides the facility to package an APL workspace as a Windows executable (EXE),  an OLE Server (in-process or out-of-process), an ActiveX Control or a .NET Assembly. This may be done by selecting *Export …* from the *File* menu of the APL Session window which brings up the *Create bound file* dialog box as illustrated later in this section.
 
@@ -55,7 +55,7 @@ Note that if you enter the name of a file containing an icon (use the *Browse* b
 
 The *Command Line* box allows you to enter parameters and values that are to be passed to your executable when it is invoked.
 
-### Version Information
+## Version Information
 
 You may embed version information into your .exe by clicking the *Version* button and then completing the *Version Information* dialog box that is illustrated below.
 

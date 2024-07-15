@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Circle Backslash</span><span class="command">⍉</span></h1>
+<h1 class="heading"><span class="name">Circle Backslash</span> <span class="command">⍉</span></h1>
 
 
-##### Monadic Transpose means
+## Monadic Transpose means
 
 
 [Transpose](../primitive-functions/transpose-monadic.md)
@@ -22,7 +22,7 @@
 
 ```
 
-##### Dyadic Transpose means
+## Dyadic Transpose means
 
 
 [Dyadic Transpose](../primitive-functions/transpose-dyadic.md)

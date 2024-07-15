@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Subtract</span><span class="command">R←X-Y</span></h1>
+<h1 class="heading"><span class="name">Subtract</span> <span class="command">R←X-Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 This function is also known as Minus.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       3 ¯2 4 0 - 2 1 ¯2 4
 1 ¯3 6 ¯4

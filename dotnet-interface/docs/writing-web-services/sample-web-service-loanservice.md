@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Sample Web Service: LoanService</span></h1>
+<h1> Sample Web Service: LoanService</h1>
 
 The `LoanService` sample is supplied in `Dyalog\Samples\asp.net\Loan\Loan.asmx`, which is mapped via an IIS Virtual Directory to the URL:
 ```apl
@@ -69,7 +69,7 @@ Notice however that `Payments` is also defined to be 1-dimensional when in fact 
 
 `CalcPayments[13]` gets a new instance of the `LoanResult` class by doing `⎕New LoanResult`. It then assigns values to each of the three fields in lines `[14]`, `[15]` and `[18]`.
 
-### Testing LoanService from a Browser
+## Testing LoanService from a Browser
 
 Like the methods exported by the `APLEXample` Web Services described above, the `CalcPayments` method exported by `LoanService` is callable from a browser and the page that is displayed when you point a browser at it is shown below.
 

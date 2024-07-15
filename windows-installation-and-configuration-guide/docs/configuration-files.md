@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Configuration Files</span></h1>
+<h1> Configuration Files</h1>
 
-### Introduction
+## Introduction
 
 A configuration file is an optional text file containing configuration parameters and their values. It may cascade, i.e. it can extend (inherit) configuration values from other configuration files, and supplement and/or override them.
 
@@ -15,7 +15,7 @@ Dyalog processes up to two kinds of configuration file (each of which may cascad
 1. An application configuration file which contains configuration values associated with a specific application
 2. A user configuration file which defines configuration values for the current, and possibly only, user of the system.
 
-### Application Configuration File
+## Application Configuration File
 
 When Dyalog starts, it derives the name of the application configuration file as follows:
 
@@ -23,11 +23,11 @@ When Dyalog starts, it derives the name of the application configuration file as
 - The name of the workspace or script loaded at start-up using the **Load** parameter, with the extension replaced by `.dcfg`, if that file exists, otherwise
 - Nothing.
 
-### User Configuration File
+## User Configuration File
 
 The name of the user configuration file is specified by the **UserConfigFile**  parameter. Under Windows, this parameter is not set by default but may be defined by the user.
 
-### Precedence
+## Precedence
 
 Configuration files supplement existing methods of defining  parameters. The following precedence table shows the order of precedence when a setting is defined in multiple places:
 
@@ -38,11 +38,11 @@ Configuration files supplement existing methods of defining  parameters. The fol
 - Settings in the registry (Windows only), which override
 - Built-in defaults
 
-### Configuration Files and The Configuration Dialog
+## Configuration Files and The Configuration Dialog
 
 The Configuration Dialog reflects the values of parameters stored in the Windows Registry and ignores overriding values defined on the command-line, in configuration files or in environment variables. If the user changes parameters using the Configuration Dialog, the new values are recorded in the Registry, but remain overridden by those that take precedence.
 
-### Configuration File Structure
+## Configuration File Structure
 
 Configuration files define configuration parameters using JSON5. A JSON object contains data in the form of key/value pairs and other JSON objects. The keys are strings and the values are the JSON types. Keys and values are separated by colon. Each entry (key/value pair) is separated by comma.
 
@@ -58,8 +58,7 @@ The top-level object defines an optional key named **Extend** and an optional ob
 
 The names and values correspond to configuration parameters, but names are not case sensitive. Any named values may be defined; an APL application may query the values using `+2⎕NQ'.' 'GetEnvironment' name`, or using the `]config` user command. Note that `GetEnvironment` returns the value in use as defined by the precedence rules (see **Precedence above**).
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       +2 ⎕NQ '.' 'GetEnvironment' ('MaxWS' 'Captions\Session')
 ┌────┬───────────────────────┐
@@ -76,7 +75,7 @@ The names and values correspond to configuration parameters, but names are not c
 
 A warning will be given if names  are redefined in the same configuration file; the second and subsequent definitions will be discarded.
 
-### File Names
+## File Names
 
 Pathnames specified in configuration files should be specified using portable forward slashes "/" rather than back-slashes "\" as the latter are used as escape characters by JSON.
 
@@ -86,8 +85,7 @@ whereas,
 
 `WSPATH: ["c:\Dyalog18.0"]` means  `c:Dyalog18.0`.
 
-**Example**
-
+<h4 class="example">Example</h4>
 ```apl
 {
   Extend: "my_default_configuration.dcfg",
@@ -104,7 +102,7 @@ whereas,
 }
 ```
 
-### Arrays
+## Arrays
 
 An array may be used to define file paths etc. For example,
 ```apl
@@ -113,7 +111,7 @@ WSPATH: ["/dir1", "/dir2"]
 
 The only parameters which may be defined as arrays are **WSPATH**, **WSEXT** and **CFEXT**.
 
-### References to other Configuration Parameters
+#### References to other Configuration Parameters
 
 Configuration parameters which are string values may include references to other configuration parameters (regardless of where they are defined) using square bracket delimiters. For example:
 ```apl
@@ -134,7 +132,7 @@ Note that:
 - If the referenced configuration parameter is not defined then no substitution will take place; the reference, including square bracket delimiters, will remain in place.
 - To include square brackets in a string, prefix the '[' with a '\' character.
 
-### Nested Structures
+#### Nested Structures
 
 Some parameters are stored in sub-folders in the Windows Registry. Currently, all such parameters used by Dyalog APL itself relate to the Windows IDE, but you can create your own application-specific structures..
 

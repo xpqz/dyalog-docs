@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetCellType</span><span class="command">Method 156</span></h1>
+<h1 class="heading"><span class="name">SetCellType</span> <span class="command">Method 156</span></h1>
 
 
 

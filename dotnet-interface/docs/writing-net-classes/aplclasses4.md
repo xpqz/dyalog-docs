@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 4</span></h1>
+<h1> Example 4</h1>
 
 This example builds on Example 3 and illustrates how you can implement *constructor overloading*, by establishing several different constructor functions.
 
@@ -59,7 +59,7 @@ Load `aplclasses4.dws` and export a new version of `aplclasses.dll` as before.
 
 ![aplclasses4_2](../img/aplclasses4-2.png)
 
-### program.cs
+## program.cs
 
 `aplclasses4\Framework\program.cs` contains code to invoke the two different constructor functions `CTOR1` and `CTOR2` :
 ```apl

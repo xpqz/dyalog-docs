@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Size</span><span class="command">R←⎕FSIZE Y</span></h1>
+<h1 class="heading"><span class="name">File Size</span> <span class="command">R←⎕FSIZE Y</span></h1>
 
 
 
@@ -17,10 +17,7 @@
 |3      |the current size of the file in bytes                                          |
 |4      |the file size limit in bytes                                                   |
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕FSIZE 1
 1 21 65271 4294967295

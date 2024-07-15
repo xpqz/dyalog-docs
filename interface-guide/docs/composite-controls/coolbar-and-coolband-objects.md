@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The CoolBar and CoolBand Objects</span></h1>
+<h1> The CoolBar and CoolBand Objects</h1>
 
 A CoolBar contains one or more bands (CoolBands). Each band can have any combination of a gripper bar, a bitmap, a text label, and a single child object.
 
@@ -37,11 +37,11 @@ The user may move band 2 into row 1 by dragging the gripper bar:
 
 ![coolbar_toolcontrols1](../img/coolbar-toolcontrols1.png)
 
-### CoolBar: FixedOrder Property
+## CoolBar: FixedOrder Property
 
 FixedOrder is a property of the CoolBar and specifies whether or not the CoolBar displays CoolBands in the same order. If FixedOrder is 1, the user may move bands which have gripper bars to different rows, but the band order is static. The default is 0.
 
-### CoolBand: GripperMode Property
+## CoolBand: GripperMode Property
 
 GripperMode is a property of a CoolBand and specifies whether or not the CoolBand has a gripper bar which is used to reposition and resize the CoolBand within its parent CoolBar. GripperMode is a character vector with the value `'Always'` (the default), `'Never'` or `'Auto'`. If GripperMode is `'Always'`, the CoolBand displays a gripper bar even if it is the only CoolBand in the CoolBar. If GripperMode is `'Never'`, the CoolBand does not have a gripper bar and may not be directly repositioned or resized by the user. If GripperMode is `'Auto'`, the CoolBand displays a gripper bar only if there are other CoolBands in the same CoolBar.
 
@@ -51,7 +51,7 @@ The next picture shows the second CoolBand maximised.
 
 ![coolbar_toolcontrols3](../img/coolbar-toolcontrols3.png)
 
-### CoolBar: DblClickToggle Property
+## CoolBar: DblClickToggle Property
 
 If it has a gripper bar, the user may maximise one of the bands in a row, causing the other bands to be minimised. The action required to do this is defined by the DblClickToggle property which is a property of the CoolBar.
 
@@ -59,7 +59,7 @@ If DblClickToggle is 0 (the default), the user must single-click the gripper bar
 
 ![coolbar_toolcontrols2](../img/coolbar-toolcontrols2.png)
 
-### CoolBar: VariableHeight/BandBorders Properties
+## CoolBar: VariableHeight/BandBorders Properties
 
 These two properties affect the appearance of the CoolBar.
 
@@ -99,7 +99,7 @@ The picture below shows the effect on appearance of setting BandBorders to 1.
 
 ![coolbar_simplecontrols3](../img/coolbar-simplecontrols3.png)
 
-### CoolBand: ChildEdge Property
+## CoolBand: ChildEdge Property
 
 ChildEdge is a property of a CoolBand and specifies whether or not the CoolBand leaves space above and below the object that it contains.
 
@@ -107,7 +107,7 @@ If the ChildEdge property of each CoolBand had been set to 1 in the above exampl
 
 ![coolband_childedge](../img/coolband-childedge.png)
 
-### CoolBand: Caption and ImageIndex Properties
+## CoolBand: Caption and ImageIndex Properties
 
 The Caption and ImageIndex properties of a CoolBand are used to display an optional text string and picture in the CoolBand.
 
@@ -146,7 +146,7 @@ Note that the Caption and image are displayed when the CoolBand is minimised as 
 
 ![coolband_caption_imageindex1](../img/coolband-caption-imageindex1.png)
 
-### CoolBand: Size, Posn, NewLine, Index Properties
+## CoolBand: Size, Posn, NewLine, Index Properties
 
 The Size property of a CoolBand is partially read-only and may only be used to specify its width; because the height of a CoolBand is determined by its contents. Furthermore, the Size property may only be specified when the CoolBand is created using `⎕WC`.
 
@@ -160,7 +160,7 @@ The value of NewLine in the first CoolBand in a CoolBar is always `⎕IO`, even 
 
 If you wish to remember the user's chosen layout when your application terminates, you must store the values of Index, Size and NewLine for each of the CoolBands. When your application is next started, you must re-create the CoolBands with the same values of these properties.
 
-### CoolBands with SubForms
+## CoolBands with SubForms
 
 The CoolBand object itself may contain only a single child object. However, if that child is a SubForm containing other objects, the CoolBand can appear to manage a group of objects. A similar effect can be obtained using a ToolBar or ToolControl.
 

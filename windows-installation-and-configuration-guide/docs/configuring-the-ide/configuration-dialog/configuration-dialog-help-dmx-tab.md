@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Help/DMX Tab</span></h1>
+<h1> Help/DMX Tab</h1>
 
 ![configuration dialog help dmx tab](../../img/configuration-dialog-help-dmx-tab.png)
 
-Configuration dialog: Help/DMX
+Table: Configuration dialog: Help/DMX
 
 |Label|Parameter|Description|
 |---|---|---|

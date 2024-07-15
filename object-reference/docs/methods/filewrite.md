@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FileWrite</span><span class="command">Method 91</span></h1>
+<h1 class="heading"><span class="name">FileWrite</span> <span class="command">Method 91</span></h1>
 
 
 

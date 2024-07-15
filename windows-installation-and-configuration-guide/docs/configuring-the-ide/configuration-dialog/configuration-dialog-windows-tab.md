@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Windows Tab</span></h1>
+<h1> Windows Tab</h1>
 
 ![configuration dialog windows tab](../../img/configuration-dialog-windows-tab.png)
 
-Configuration dialog: Windows (Edit Windows)
+Table: Configuration dialog: Windows (Edit Windows)
 
 |Label   |Parameter                                                       |Description                                                                                                          |
 |--------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -13,7 +13,7 @@ Configuration dialog: Windows (Edit Windows)
 |X Offset|[Edit_Offset_X](../../configuration-parameters/edit-offset-x.md)|The initial horizontal position in characters of the second and subsequent edit windows relative to the previous one.|
 |Y Offset|[Edit_Offset_Y](../../configuration-parameters/edit-offset-y.md)|The initial vertical position in characters of the second and subsequent edit windows relative to the previous one.  |
 
-Configuration dialog: Windows (Trace Windows)
+Table: Configuration dialog: Windows (Trace Windows)
 
 |Label   |Parameter                                                         |Description                                                                                                           |
 |--------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -22,7 +22,7 @@ Configuration dialog: Windows (Trace Windows)
 |X Offset|[Trace_Offset_X](../../configuration-parameters/trace-offset-x.md)|The initial horizontal position in characters of the second and subsequent trace windows relative to the previous one.|
 |Y Offset|[Trace_Offset_Y](../../configuration-parameters/trace-offset-y.md)|The initial vertical position in characters of the second and subsequent trace windows relative to the previous one.  |
 
-Configuration dialog: Windows (QuadSM Window)
+Table: Configuration dialog: Windows (QuadSM Window)
 
 |Label |Parameter                                           |Description                                 |
 |------|----------------------------------------------------|--------------------------------------------|

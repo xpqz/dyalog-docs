@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Static Parents</span></h1>
+<h1> Static Parents</h1>
 
 |---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |

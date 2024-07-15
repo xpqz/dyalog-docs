@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> APLMON output</span></h1>
+<h1> APLMON output</h1>
 
 The output file is a CSV matrix with values  separated by commas. Fields can be empty. The file may be read by `⎕CSV` and applications such as Microsoft Excel.
 
@@ -19,7 +19,7 @@ The eleven columns of the APLMON output file are :
 
 These fields are empty if not applicable (which will appear in the CSV file as two consecutive commas).
 
-**Example**
+<h2 class="example">Example</h2>
 
 In the following example, APLMON is used to analyse the execution of the expression `10 foo 20 30`. Note that expressions executed in the Session when APLMON is enabled also contribute to the analysis.
 ```apl

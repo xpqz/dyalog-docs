@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> AutoComplete/HistorySize</span></h1>
+<h1> AutoComplete/HistorySize</h1>
 
 Specifies the number of previous Auto Completions that are maintained when History is 1. See [History](history.md).
 

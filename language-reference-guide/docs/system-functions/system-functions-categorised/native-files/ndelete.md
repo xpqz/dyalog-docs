@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Delete</span><span class="command">{R}←{X}⎕NDELETE Y</span></h1>
+<h1 class="heading"><span class="name">Native File Delete</span> <span class="command">{R}←{X}⎕NDELETE Y</span></h1>
 
 
 
@@ -26,12 +26,12 @@ The optional left argument `X` is a numeric scalar; valid values are  shown in t
 `R` is a numeric count of top-level entities deleted when processing the corresponding name in `Y`. If `Y` specifies a single name,  `R` is a scalar. If `Y` is a vector of character vectors   `R` is a vector  with the same length as `Y`.
 
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NDELETE` may be applied using the  Variant operator with the Wildcard option.
 
-#### Wildcard Option (Boolean)
+## Wildcard Option (Boolean)
 
 
 |---|---|
@@ -44,10 +44,7 @@ Note that when Wildcard is 1, element(s) of `R` can  be 0 or `>1`. If Wildcard i
 
 If `Y` specifies the name of a  symbolic link, `⎕NDELETE` deletes that symbolic link;   the target of the symbolic link is unaffected.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕NEXISTS'/Users/Pete/Documents/temp/t1/t2'
@@ -88,7 +85,7 @@ FILE ACCESS ERROR: temp1: Unable to delete directory ("The directory is not empt
 
 If the file is in use or the current user is not authorised to delete it, `⎕NDELETE` will not succeed but will instead generate a `FILE ACCESS ERROR`.
 
-#### Note
+## Note
 
 
 When multiple names are specified they are processed in the order given. If an error occurs at any point whilst deleting files or directories, processing will immediately stop and an error will be signalled. The operation is not atomic; the directory contents may be partially deleted before this happens. In the event of an error there will be no result and therefore no indication of how many files were deleted before the error occurred.

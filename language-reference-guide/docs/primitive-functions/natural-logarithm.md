@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Natural Logarithm</span><span class="command">R←⍟Y</span></h1>
+<h1 class="heading"><span class="name">Natural Logarithm</span> <span class="command">R←⍟Y</span></h1>
 
 
 
 `Y` must be a numeric array. `R` is numeric.  `R` is the natural (or Napierian) logarithm of `Y` whose base is the mathematical constant *e=2.71828...*.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⍟1 2
 0 0.6931471806

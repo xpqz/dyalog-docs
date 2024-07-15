@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Migration Level</span><span class="command">⎕ML</span></h1>
+<h1 class="heading"><span class="name">Migration Level</span> <span class="command">⎕ML</span></h1>
 
 
 
@@ -23,10 +23,7 @@
 Subsequent versions of Dyalog APL may provide further migration levels.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       X←2(3 4)
 

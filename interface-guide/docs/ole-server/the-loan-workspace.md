@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The LOAN Workspace</span></h1>
+<h1> The LOAN Workspace</h1>
 
 `LOAN.DWS` contains a single namespace called `Loan` which is used to calculate monthly repayments on a loan. As supplied, LOAN is a pure APL workspace. You will have to turn it into an OLE Server, and declare a method and a property, before you can use it.
 
@@ -16,7 +16,7 @@ The `CalcPayments` function takes a 5-element numeric vector as an argument whos
 
 `CalcPayments` returns a matrix.  The first row contains the period numbers (from min to max).  The first column contains the interest rates (from min to max in steps of 0.5%). Other elements contain the monthly repayments for the corresponding number of periods and interest rates.
 
-### Using CalcPayments
+## Using CalcPayments
 
 The following session transcript illustrates how the `CalcPayments` function is used.
 ```apl
@@ -45,7 +45,7 @@ PeriodType
 6   304.2193745 234.8502905 193.3280153
 ```
 
-### The CalcPayments Function
+## The CalcPayments Function
 ```apl
      ∇ PAYMENTS←CalcPayments X;LoanAmt;LenMax;LenMin;IntrMax;
                 IntrMin;PERIODS;INTEREST;NI;NM;PER;INT
@@ -76,7 +76,7 @@ PeriodType
 
 ```
 
-### Registering Loan as an OLE Server
+## Registering Loan as an OLE Server
 
 To use this example, you **must** first
 
@@ -141,7 +141,7 @@ Finally, to create your OLE Server, choose *Export* from the Session *File* menu
 
 ![loan create bound file ok](../img/loan-create-bound-file-ok.png)
 
-### Using Loan from Excel
+## Using Loan from Excel
 
 Start Excel and load the spreadsheet Loan.xlsm from the Dyalog APL sub-directory `samples\ole`.
 
@@ -151,7 +151,7 @@ The Calc macro actually calculates the repayments matrix by calling the CalcPaym
 
 ![loan excel example](../img/loan-excel-example.png)
 
-### How it Works
+## How it Works
 ```apl
 Sub Calc()
     Dim APLLoan As Object
@@ -210,7 +210,7 @@ In Excel terms, this statement invokes the CalcPayments method of the APLLoan ob
 
 Notice that the APLLoan variable is local to the Calc macro. This means that the dyalog.Loan object is loaded every time that Calc is run and is unloaded when it terminates.
 
-### Using Loan from Dyalog APL
+## Using Loan from Dyalog APL
 
 It is of course possible to use Dyalog APL as both an OLE Automation client and an OLE Automation Server.
 

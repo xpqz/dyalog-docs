@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Internal Structure</span></h1>
+<h1> Internal Structure</h1>
 
 If you are going to make a lot of use of APL files in your systems, it is useful for you to have a rough idea of how Dyalog APL organises and manages the disk area used by such files.
 
@@ -83,7 +83,7 @@ You can see that if you are continually updating your file with larger data obje
 
 Whenever you issue a monadic `⎕FRESIZE` command on a component file, Dyalog APL COMPACTS the file; that is, it restructures it by reordering the components and by amalgamating the free areas at the end of the file. It then truncates the file and releases the disk space back to the operating system (note that some versions of UNIX do not allow the space to be released). For a large file with many components, this process may take a significant time.
 
-### Error Conditions
+## Error Conditions
 ```apl
 FILE SYSTEM NOT AVAILABLE
 ```
@@ -100,12 +100,12 @@ FILE TIED
 
 A `FILE TIED` error is reported if you attempt to tie a file which another user has exclusively tied.
 
-### Limitations
+## Limitations
 
-#### File Tie Quota
+### File Tie Quota
 
 The File Tie Quota is the maximum number of files that a user may tie concurrently. Dyalog APL itself allows a maximum of 1024 under UNIX and 512 under Windows, although in either case your installation may impose a lower limit. When an attempt is made to exceed this limit, the report `FILE TIE QUOTA` (Error code 31) is given. This error will also be generated if an attempt is made to exceed the maximum number of open files that is imposed by the operating system.
 
-#### File Name Quota
+### File Name Quota
 
 Dyalog APL records the names of each user's tied files in a buffer of 40960 bytes. When this buffer is full, the report `FILE NAME QUOTA USED UP` (Error code 32) will be given. This is only likely to occur if long pathnames are used to identify files.

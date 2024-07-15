@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Line Count</span><span class="command">R←⎕LC</span></h1>
+<h1 class="heading"><span class="name">Line Count</span> <span class="command">R←⎕LC</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The value of `⎕LC` changes immediately upon completion of the most recently ac
 The value of `⎕LC` in a clear workspace is the null vector.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )SI
 #.TASK1[5]*

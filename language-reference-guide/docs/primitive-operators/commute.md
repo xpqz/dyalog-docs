@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Commute</span><span class="command">{R}←{X}f⍨Y</span></h1>
+<h1 class="heading"><span class="name">Commute</span> <span class="command">{R}←{X}f⍨Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ If left argument `X` is omitted, the right argument `Y` is duplicated in its pla
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       N
 3 2 5 4 6 1 3

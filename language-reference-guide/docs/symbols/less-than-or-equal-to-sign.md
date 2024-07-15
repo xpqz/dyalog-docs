@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Less Than Or Equal To Sign</span><span class="command">≤</span></h1>
+<h1 class="heading"><span class="name">Less Than Or Equal To Sign</span> <span class="command">≤</span></h1>
 
 
 
 Monadic Less Than Or Equal To Sign is not defined
 
-##### Dyadic Less Than or Equal To Sign means
+## Dyadic Less Than or Equal To Sign means
 
 
 [Is Less Or Equal To](../primitive-functions/less-or-equal.md)

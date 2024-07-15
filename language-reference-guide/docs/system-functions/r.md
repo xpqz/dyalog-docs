@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Replace</span><span class="command">R←{X}(A ⎕R B) Y</span></h1>
+<h1 class="heading"><span class="name">Replace</span> <span class="command">R←{X}(A ⎕R B) Y</span></h1>
 
 
 
@@ -35,7 +35,7 @@ The two system operators, `⎕R` for replace and `⎕S` for search, are syntacti
 `R` is the result value; see output below.
 
 
-#### Examples of replace operations
+## Examples of replace operations
 ```apl
       ('.at' ⎕R '\u0') 'The cat sat on the mat'     
 The CAT SAT on the MAT
@@ -55,7 +55,7 @@ The search pattern matches each word. The transformation is given as a function,
 
 
 
-#### Examples of search operations
+## Examples of search operations
 ```apl
       STR←'The cat sat on the mat'
       ('.at' ⎕S '\u0') STR
@@ -86,7 +86,7 @@ Here the transformation is given as a vector of numeric codes which are a short-
 These examples all operate on a simple character vector containing text, but the text may be given in several forms - character vectors, vectors of character vectors, and external data streams. These various forms constitute a 'document'. When the result also takes the form of a document it may be directed to a stream.
 
 
-#### Input Document
+## Input Document
 
 
 The input document may be an array or a data stream.
@@ -138,7 +138,7 @@ The implicit line ending character may be set using the EOL option. Explicit lin
 The input document may be processed in **line** mode, **document** mode or **mixed** mode. In document mode and mixed mode, the entire input document, line ending characters included, is passed to the search engine; in line mode the document is split on line endings and passed to the search engine in sections without the line ending characters. The choice of mode affects both memory usage and behaviour, as documented in the section 'Line, document and mixed modes'.
 
 
-#### Output
+## Output
 
 
 The format of the output is dependent on whether `⎕S` or `⎕R` are in use, whether an output stream is specified and, for `⎕R`, the form of the input and whether the ResultText option is specified.
@@ -147,7 +147,7 @@ The format of the output is dependent on whether `⎕S` or `⎕R` are in use, wh
 
 An output data stream may optionally be specified. Currently, the only supported data stream is a native file, specified as tie number, and all output will be appended to it. Data in the stream is encoded as specified by the OutEnc option. If this encoding specifies a Byte Order Mark and the file is initially empty then the Byte Order Mark will be written at the start. Appending to existing data using a different encoding is permitted but unlikely to produce desirable results. If an input stream is also used, care must be taken to ensure the input and output streams are not the same.
 
-#### `⎕R`
+## `⎕R`
 
 
 With no output stream specified and unless overridden by the ResultText option, the derived function result will be a document which closely matches the format of the input document, as follows:
@@ -170,7 +170,7 @@ If the ResultText option is specified, the output type may be forced to be a **c
 
 With an output stream specified the text is appended to the stream. If the appended text does not end with a line ending character then the line ending character specified by the EOL option is also appended. The resulting length of the file  is returned as a shy result.
 
-#### `⎕S`
+## `⎕S`
 
 
 With no output stream specified, the result will be a vector containing one item for each match in the input document, of types determined by the transformation performed on each match.
@@ -184,7 +184,7 @@ With an output stream specified each match is appended to the stream. If any mat
 
 
 
-#### Search pattern
+## Search pattern
 
 
 A summary of the syntax of the search pattern is reproduced from the PCRE documentation. See [PCRE Regular Expression Syntax Summary](../pcre-specifications/pcre-regular-expression-syntax-summary.md).
@@ -199,7 +199,7 @@ There may be multiple search patterns. If more than one search pattern is specif
 
 Note that when anchoring a search to the beginning of a line, it is essential to use `^` (`⎕UCS 94`), not `∧` (`⎕UCS 8743`).
 
-#### Transformation pattern
+## Transformation pattern
 
 
 For each match in the input document, the transformation pattern causes the creation of text which, for `⎕R`, replaces the matching text and, for `⎕S`, generates one item in the result.
@@ -245,7 +245,7 @@ Character sequences beginning with the backslash place the modifier after the ba
 
 Character sequences beginning with the backslash other that those shown are invalid. All characters other than those shown are literal values and are included in the text without modification.
 
-#### Transformation codes
+## Transformation codes
 
 
 
@@ -260,7 +260,7 @@ The transformation codes are a numeric scalar or vector. Transformation codes ma
 
 
 
-#### Transformation Function
+## Transformation Function
 
 
 The transformation function is called for each match within the input document.  The function is monadic and is passed a namespace, containing the following variables:
@@ -308,10 +308,7 @@ The locations of the match within Block and subpatterns within Match are given a
 
 The value of `¯1` may appear in both the Offsets and Fields items (in corresponding positions). They indicate that the subpattern to which they refer did not appear in the match at all.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       {}('(A)|(B)'⎕R{⎕←⍵.(Offsets Lengths)⋄'x'})'ABC'
  0 0  1 1 
@@ -332,7 +329,7 @@ Note that `¯1` is only used as a "filler" when there are higher-numbered subpat
 The second match is the B in the second subpattern. Offsets is `1 ¯1 1` and Lengths is `1 ¯1 1`: the entire pattern matched from offset 1 length 1 and the second subpattern also matched from offset 1 length 1. The first subpattern did not feature in the match and this is indicated by the `¯1`s. There has to be something between the offset/length for the entire pattern and the second subpattern.
 
 
-#### Options
+## Options
 
 
 Options are specified using the Variant operator. The Principal option is IC.
@@ -340,7 +337,7 @@ Options are specified using the Variant operator. The Principal option is IC.
 
 Default values are highlighted thus.
 
-#### IC Option
+## IC Option
 
 
 When set, case is ignored in searches.
@@ -350,10 +347,7 @@ When set, case is ignored in searches.
 |`1`|Matches are not case sensitive.|
 |0  |Matches are case sensitive.    |
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ('[AEIOU]' ⎕R 'X' ⍠ 'IC' 1) 'ABCDE abcde'
 XBCDX XbcdX
@@ -363,7 +357,7 @@ XBCDX XbcdX
 
 
 
-#### Mode Option
+## Mode Option
 
 
 Specifies whether the input document is interpreted in **line** mode, **document** mode or **mixed** mode.
@@ -375,10 +369,7 @@ Specifies whether the input document is interpreted in **line** mode, **document
 |`M`|When mixed mode is set, the '^' and '$' anchors match the start and end respectively of each line, as if line mode is set, but in all other respects behaviour is as if document mode is set - the entire input document is processed in a single block.|
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ('$' ⎕R '[Endline]' ⍠ 'Mode' 'L') 'ABC' 'DEF'
  ABC[Endline]  DEF[Endline] 
@@ -391,7 +382,7 @@ Specifies whether the input document is interpreted in **line** mode, **document
 ```
 
 
-#### DotAll Option
+## DotAll Option
 
 
 Specifies whether the dot ('.') character in search patterns matches line ending characters.
@@ -404,10 +395,7 @@ Specifies whether the dot ('.') character in search patterns matches line ending
 
 This option is invalid in line mode, because line endings are stripped from the input document.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ('.' ⎕R 'X' ⍠'Mode' 'D') 'ABC' 'DEF'
  XXX  XXX 
@@ -417,7 +405,7 @@ This option is invalid in line mode, because line endings are stripped from the 
 ```
 
 
-#### EOL Option
+## EOL Option
 
 
 Sets the line ending character which is implicitly present between character vectors, when the input document is a vector of character vectors.
@@ -436,10 +424,7 @@ Sets the line ending character which is implicitly present between character vec
 
 In the Classic Edition, setting a value which is not in `⎕AVU` may result in a `TRANSLATION ERROR`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ('\n' ⎕R'X' ⍠('Mode' 'D')('EOL' 'LF')) 'ABC' 'DEF'
  ABCXDEF
@@ -450,7 +435,7 @@ In the Classic Edition, setting a value which is not in `⎕AVU` may result in a
 Here, the implied line ending between 'ABC' and 'DEF' is '\n', not the default '\r\n'.
 
 
-#### NEOL Option
+## NEOL Option
 
 
 Specifies whether explicit line ending sequences in the input document are normalised by replacing them with the character specified using the EOL option.
@@ -460,10 +445,7 @@ Specifies whether explicit line ending sequences in the input document are norma
 |0  |Line endings are not normalised.|
 |1  |Line endings are normalised.    |
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       a←'ABC',(1↑2↓⎕AV),'DEF',(1↑3↓⎕AV),'GHI'
       ('\n'⎕S 0 ⍠ 'Mode' 'D' ⍠ 'NEOL' 1 ⍠ 'EOL' 'LF') a
@@ -476,7 +458,7 @@ Specifies whether explicit line ending sequences in the input document are norma
 
 
 
-#### ML Option
+## ML Option
 
 
 Sets a limit to the number of processed pattern matches per line (line mode) or document (document mode and mixed mode).
@@ -487,10 +469,7 @@ Sets a limit to the number of processed pattern matches per line (line mode) or 
 |0                   |Sets no limit.                          |
 |Negative value `¯` n|Sets the limit to exactly the nth match.|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ('.' ⎕R 'x' ⍠ 'ML' 2) 'ABC' 'DEF'
  xxC  xxF 
@@ -503,7 +482,7 @@ Sets a limit to the number of processed pattern matches per line (line mode) or 
 
 
 
-#### Greedy Option
+## Greedy Option
 
 
 Controls whether patterns are "greedy" (and match the maximum input possible) or are not (and match the minimum). Within the pattern itself it is possible to specify greediness for individual elements of the pattern; this option sets the default.
@@ -513,10 +492,7 @@ Controls whether patterns are "greedy" (and match the maximum input possible) or
 |1  |Greedy by default.    |
 |0  |Not greedy by default.|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ('[A-Z].*[0-9]' ⎕R 'X' ⍠ 'Greedy' 1)'ABC123 DEF456'
 X
@@ -527,7 +503,7 @@ X23 X56
 
 
 
-#### OM Option
+## OM Option
 
 
 Specifies whether matches may overlap.
@@ -540,10 +516,7 @@ Specifies whether matches may overlap.
 
 This option may only be used with `⎕S`. With `⎕R` searching always continues from the character following the end of the match (the characters following the start of the match will have been changed).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ('[0-9]+' ⎕S '\0' ⍠ 'OM' 0) 'A 1234 5678 B'
  1234  5678 
@@ -554,7 +527,7 @@ This option may only be used with `⎕S`. With `⎕R` searching always continues
 
 
 
-#### InEnc Option
+## InEnc Option
 
 
 This option specifies the encoding of the input stream when it cannot be determined automatically. It is either:
@@ -584,7 +557,7 @@ For compatibility with the OutEnc option, the above UTF formats may be qualified
 
 
 
-#### OutEnc Option
+## OutEnc Option
 
 
 When the output is written to a stream, this option specifies how the data is to be encoded.  It is either:
@@ -612,14 +585,14 @@ The above UTF formats may be qualified with -BOM (e.g. UTF-8-BOM) to specify tha
 
 
 
-#### Enc Option
+## Enc Option
 
 
 This option sets both InEnc and OutEnc simultaneously, with the same given value. Any option value accepted by those options except Implied may be given.
 
 
 
-#### ResultText Option
+## ResultText Option
 
 
 For `⎕R`, this option determines the format of the result.
@@ -633,10 +606,7 @@ For `⎕R`, this option determines the format of the result.
 
 This option may only be used with `⎕R`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕UCS ¨ ('A' ⎕R 'x') 'AB' 'CD'                
   120 66  67 68                    
@@ -647,7 +617,7 @@ This option may only be used with `⎕R`.
 
 
 
-#### UCP Option
+## UCP Option
 
 
 This affects the way PCRE that processes \B, \b, \D, \d, \S, \s,  \W,
@@ -661,10 +631,7 @@ This affects the way PCRE that processes \B, \b, \D, \d, \S, \s,  \W,
 
 **Implementation Note**: this option is implemented by setting or not setting the PCRE_UCP option when calling pcre_compile(). More information can be found in the PCRE documentation.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 By default, the character ø (which is not an ASCII character) is considered to be a "non-word" character, so:
@@ -686,7 +653,7 @@ When UCP is set to 1, Unicode characters are matched as "word" characters (\w) t
 
 
 
-#### Regex Option
+## Regex Option
 
 
 This option may be used to disable regular expression matching which is enabled by default. It is a singleton Boolean value that applies to both search and transformation patterns, or a 2-element vector of Boolean values that applies to them separately.
@@ -697,10 +664,7 @@ This option may be used to disable regular expression matching which is enabled 
 |0  |regular expression matching is disabled.|
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       STR
 The cat sat on the mat
@@ -717,26 +681,26 @@ The \u0 \u0 on the \u0
 ```
 
 
-#### Line, document and mixed modes
+## Line, document and mixed modes
 
 
 The Mode setting determines how the input document is packaged as a block and passed to the search engine. In line mode each line is processed separately; in document mode and mixed mode the entire document is presented to the search engine. This affects both the semantics of the search expression, and memory usage.
 
 
 
-#### Semantic differences
+## Semantic differences
 
 - The ML option applies per block of data.
 - In line mode, search patterns cannot be constructed to span multiple lines. Specifically, patterns that include line ending characters (such as '\r') will never match because the line endings are never presented to the search engine.
 - By default the search pattern metacharacters '^' and '$' match the start and end of the block of data. In line mode this is always the start and end of each line. In document mode this is the start and end of the document. In mixed mode the behaviour of '^' and '$' are amended by setting the PCRE option 'MULTILINE' so that they match the start and end of each line within the document.
 
 
-#### Memory usage differences
+## Memory usage differences
 
 
 Blocks of data passed to the search engine are processed and stored in the workspace. Processing the input document in line mode limits the total memory requirements; in particular this means that large streams can be processed without holding all the data in the workspace at the same time.
 
-#### Technical Considerations
+## Technical Considerations
 
 
 `⎕R` and `⎕S` utilise the open-source regular-expression search engine PCRE, which is built into the Dyalog software and distributed according to the PCRE licence which is published separately.
@@ -750,7 +714,7 @@ It is possible to save a workspace with an active `⎕R` or `⎕S` on the stack 
 
 PCRE has a buffer length limit of 2<sup>31</sup> bytes (2GB). UTF-8 encodes each character using between 1 and 6 bytes (typically 1 or 3). In the very worst case, where every character is encoded in 6 bytes, the maximum block length which can be searched would be 357,913,940 characters.
 
-#### Further Examples
+## Further Examples
 
 
 
@@ -764,7 +728,7 @@ Or to take arms against a sea of troubles
 ```
 
 
-#### Replace all upper and lower-case vowels by `'X'`
+## Replace all upper and lower-case vowels by `'X'`
 ```apl
        ('[aeiou]' ⎕R 'X' ⍠ 'IC' 1) text
 TX bX Xr nXt tX bX- thXt Xs thX qXXstXXn:   
@@ -773,7 +737,7 @@ ThX slXngs Xnd XrrXws Xf XXtrXgXXXs fXrtXnX,
 Xr tX tXkX Xrms XgXXnst X sXX Xf trXXblXs   
 ```
 
-#### Replace only the second vowel on each line by `'\VOWEL\'`
+## Replace only the second vowel on each line by `'\VOWEL\'`
 ```apl
        ('[aeiou]' ⎕R '\\VOWEL\\'⍠('IC' 1)('ML' ¯2)) text
 To b\VOWEL\ or not to be- that is the question:   
@@ -782,7 +746,7 @@ The sl\VOWEL\ngs and arrows of outrageous fortune,
 Or t\VOWEL\ take arms against a sea of troubles
 ```
 
-#### Case fold each word
+## Case fold each word
 ```apl
       ('(?<first>\w)(?<remainder>\w*)' ⎕R '\u<first>\l<remainder>') text
 To Be Or Not To Be- That Is The Question:   
@@ -791,7 +755,7 @@ The Slings And Arrows Of Outrageous Fortune,
 Or To Take Arms Against A Sea Of Troubles   
 ```
 
-#### Extract only the lines with characters 'or' (in upper or lower case) on them
+## Extract only the lines with characters 'or' (in upper or lower case) on them
 ```apl
       ↑('or' ⎕S '%' ⍠ ('IC' 1)('ML' 1)) text
 To be or not to be– that is the question:   
@@ -799,7 +763,7 @@ The slings and arrows of outrageous fortune,
 Or to take arms against a sea of troubles 
 ```
 
-#### Identify which lines contain the word 'or' (in upper or lower case) on them
+## Identify which lines contain the word 'or' (in upper or lower case) on them
 ```apl
       ('\bor\b'⎕S 2⍠('IC' 1)('ML' 1))text
 0 3
@@ -809,13 +773,13 @@ Or to take arms against a sea of troubles
 
 Note the difference between the characters *'or'* (which appear in 'fortune') and the word *'or'*.
 
-#### Place every non-space sequence of characters in brackets
+## Place every non-space sequence of characters in brackets
 ```apl
       ('[^\s]+' ⎕R '(&)' ) 'To be or not to be, that is the question'
 (To) (be) (or) (not) (to) (be,) (that) (is) (the) (question)
 ```
 
-#### Replace all sequences of one or more spaces by newline. Note that the effect of this is dependent on the input format
+## Replace all sequences of one or more spaces by newline. Note that the effect of this is dependent on the input format
 
 
 Character vector input results in a single character vector output with embedded newlines:
@@ -852,7 +816,7 @@ A vector of two character vectors as input results in a vector of 10 character v
 ```
 
 
-#### Change numerals to their expanded names, using a function
+## Change numerals to their expanded names, using a function
 ```apl
 
      ∇r←f a;n
@@ -865,13 +829,13 @@ A vector of two character vectors as input results in a vector of 10 character v
  one three one five four four
 ```
 
-#### Swap 'red' and 'blue'
+## Swap 'red' and 'blue'
 ```apl
       ('red' 'blue' ⎕R 'blue' 'red') 'red hat blue coat'
 blue hat red coat
 ```
 
-##### Convert a comma separated values (CSV) file so that
+### Convert a comma separated values (CSV) file so that
 
 - dates in the first field are converted from European format to ISO, and
 - currency values are converted from Deutsche Marks (DEM) to Euros (DEM 1.95583 to €1).
@@ -915,7 +879,7 @@ Output file:
       ⎕nuntie¨in out
 ```
 
-#### Create a simple profanity filter. For the list of objectionable words
+## Create a simple profanity filter. For the list of objectionable words
 ```apl
        profanity←'bleeding' 'heck'
 ```
@@ -937,7 +901,7 @@ then a function that uses this pattern:
 "****", I said
 ```
 
-#### Replace the characters 'or' with '\u0' without having to escape the backslash
+### Replace the characters 'or' with '\u0' without having to escape the backslash
 
 
 Escaping transformation strings can be a daunting task. To avoid doing so, one can simply enclose the string in braces. This is not a special feature, but just a consequence of how transformation functions are used.

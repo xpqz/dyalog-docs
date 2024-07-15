@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 5</span></h1>
+<h1> Example 5</h1>
 
 WPF data binding provides the means to bind controls that display lists of items, such as the ListBox, ListView, and TreeView controls, to collections of data. These controls are all based upon the ItemsControl class. To bind an ItemsControl to a collection object, you use its ItemsSource property.
 

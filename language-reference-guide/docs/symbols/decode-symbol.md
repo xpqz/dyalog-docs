@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Up Tack</span><span class="command">⊥</span></h1>
+<h1 class="heading"><span class="name">Up Tack</span> <span class="command">⊥</span></h1>
 
 
 
 Monadic Up Tack is not defined
 
-##### Dyadic Up Tack means
+## Dyadic Up Tack means
 
 
 [Decode](../primitive-functions/decode.md)

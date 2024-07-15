@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Modal Dialog Boxes</span></h1>
+<h1> Modal Dialog Boxes</h1>
 
 Dialog Boxes are displayed modally to prevent the user from performing tasks outside of the dialog box.
 
@@ -6,7 +6,7 @@ To create a modal dialog box, you create a `Form`, set its `BorderStyle` propert
 
 A modal dialog box has a `DialogResult` property that is set when the `Form` is closed, or when the user presses OK or Cancel. The value of this property is returned by the `ShowDialog` method, so the simplest way to handle user actions is to check the result of `ShowDialog` and proceed accordingly. Example 1 illustrates a simple modal dialog box.
 
-### Example 1
+## Example 1
 
 Function `EG1` illustrates how to create and use a simple modal dialog box. Much of the function is self-explanatory, but the following points are noteworthy.
 
@@ -116,7 +116,7 @@ Similarly, `EG1[32]` defines the `BorderStyle` property of the form using the `F
 [53]   :While form1.Visible ⋄ :endwhile
 ```
 
-### Example 2
+## Example 2
 
 Functions `EG2` and `EG2A` illustrate how the Each operator (`¨`) and the extended namespace reference syntax in Dyalog APL may be used to produce more succinct, and no less readable, code.
 ```apl

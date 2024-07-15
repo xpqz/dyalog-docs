@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Intersection</span><span class="command">R←X∩Y</span></h1>
+<h1 class="heading"><span class="name">Intersection</span> <span class="command">R←X∩Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ Items in `X` and `Y` are considered the same if `X≡Y` returns 1 for those item
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Intersection.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'ABRA'∩'CAR'
 ARA

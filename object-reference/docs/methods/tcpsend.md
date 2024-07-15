@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">TCPSend</span><span class="command">Method 375</span></h1>
+<h1 class="heading"><span class="name">TCPSend</span> <span class="command">Method 375</span></h1>
 
 
 

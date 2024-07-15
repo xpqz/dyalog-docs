@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Grid Methods</span></h1>
+<h1> Grid Methods</h1>
 
 |-----------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,              |

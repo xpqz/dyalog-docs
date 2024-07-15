@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Mixed Functions</span></h1>
+<h1> Mixed Functions</h1>
 
-Mixed rank functions and special symbols are summarised in **Table 1**. For convenience, they are sub-divided into five classes:
+Mixed rank functions and special symbols are summarised in [](#MixedRankFunctions). For convenience, they are sub-divided into five classes:
 
-Mixed rank functions and special symbols
+Table: Mixed rank functions and special symbols {: #MixedRankFunctions }
 
 |-----------------|--------------------------------------------------------------------------------------------|
 |**Structural**   |These functions change the structure of the arguments in some way.                          |
@@ -17,8 +17,7 @@ Scalar extension may apply to some, but not all, dyadic mixed functions.
 
 Mixed primitive functions are not pervasive. The function is applied to elements of the arguments, not necessarily independently.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'CAT' 'DOG' 'MOUSE'⍳⊂'DOG'
 2 
@@ -31,7 +30,7 @@ In the following tables, note that:
 - `[]` Implies axis specification is optional
 - $  This function is in another class
 
-Structural Primitive Functions
+Table: Structural Primitive Functions {: #Structural }
 
 |Symbol|Monadic                                      |Dyadic                                              |
 |------|---------------------------------------------|----------------------------------------------------|
@@ -47,7 +46,7 @@ Structural Primitive Functions
 |`⊆`   |[Nest](nest.md)                              |[Partition ](partition.md) `[]`                     |
 |`∊`   |[Enlist](enlist.md) (See [Type](type.md) )   |$                                                   |
 
-Selection Primitive Functions
+Table: Selection Primitive Functions {: #Selection }
 
 |Symbol|Monadic                                 |Dyadic                                     |
 |------|----------------------------------------|-------------------------------------------|
@@ -66,7 +65,7 @@ Selection Primitive Functions
 |`⌷`   |[Materialise](materialise.md)           |[Index](index.md)                          |
 |`≠`   |[Unique Mask](unique-mask.md)           |&nbsp;                                     |
 
-Selector Primitive Functions
+Table: Selector Primitive Functions {: #Selector }
 
 |Symbol|Monadic                              |Dyadic                             |
 |------|-------------------------------------|-----------------------------------|
@@ -78,7 +77,7 @@ Selector Primitive Functions
 |`?`   |$                                    |[Deal](deal.md)                    |
 |`⍷`   |&nbsp;                               |[Find](find.md)                    |
 
-Miscellaneous Primitive Functions
+Table: Miscellaneous Primitive Functions {: #Miscellaneous }
 
 |Symbol|Monadic                            |Dyadic                              |
 |------|-----------------------------------|------------------------------------|
@@ -91,7 +90,7 @@ Miscellaneous Primitive Functions
 |`⊤`   |&nbsp;                             |[Encode (Representation)](encode.md)|
 |`⌹`   |[Matrix Inverse](matrix-inverse.md)|[Matrix Divide](matrix-divide.md)   |
 
-Special Syntax
+Table: Special Syntax {: #Special }
 
 |Symbol|Monadic            |Dyadic                                          |
 |------|-------------------|------------------------------------------------|

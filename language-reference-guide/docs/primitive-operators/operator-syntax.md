@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Operator Syntax</span></h1>
+<h1> Operator Syntax</h1>
 
 Operators take one or two operands.  An operator with one operand is monadic.  The operand of a monadic operator is to the left of the operator.  An operator with two operands is dyadic.  Both operands are required for a dyadic operator.
 
@@ -8,8 +8,7 @@ An operand may be an array, a primitive function, a system function, a defined f
 
 An operator with its operand(s) forms a derived function.  The derived function may be monadic or dyadic and it may or may not return an explicit result.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +/⍳5
 15
@@ -27,7 +26,7 @@ X
       ⎕NL 2
 ```
 
-### Monadic Operators
+# Monadic Operators
 
 Like primitive functions, monadic operators can be:
 
@@ -35,8 +34,7 @@ Like primitive functions, monadic operators can be:
 - enclosed within parentheses
 - displayed in the session
 
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
       ⎕ ← each ← (¨)      ⍝ name and display
 ¨
@@ -52,12 +50,11 @@ Like primitive functions, monadic operators can be:
 1
 ```
 
-### Right Operand Currying
+# Right Operand Currying
 
 A dyadic operator may be bound or *curried* with its right operand to form a monadic operator:
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       ⎕ ← inv ← ⍣¯1  ⍝ produces monadic inverse operator
 ⍣ ¯1
@@ -69,7 +66,7 @@ A dyadic operator may be bound or *curried* with its right operand to form a mon
 1.61803
 ```
 
-### Function Composition
+# Function Composition
 
 Function composition refers to the "gluing" together of two functions using a dyadic operator such that the functions are applied to the argument(s) as normal, but in a particular pattern specific to the operator that is being used. The term function composition comes from traditional mathematics where it is used for a function `h(x)=f(g(x))` when written as  `h(x)=(f∘g)(x)` APL generalises this idea to dyadic functions, allowing various patterns of application in addition to the simple application of one monadic function to the result of another monadic function. The three main patterns, represented by Atop, Beside, and Over can be visualised as follows:
 

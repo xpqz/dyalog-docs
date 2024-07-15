@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Same</span><span class="command">R←⊣YR←⊢Y</span></h1>
+<h1 class="heading"><span class="name">Same</span> <span class="command">R←⊣YR←⊢Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 The result `R` is the argument `Y`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊣'abc' 1 2 3
  abc  1 2 3

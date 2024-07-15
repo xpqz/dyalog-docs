@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Shared Variable Offer</span><span class="command">R←X ⎕SVO Y</span></h1>
+<h1 class="heading"><span class="name">Shared Variable Offer</span> <span class="command">R←X ⎕SVO Y</span></h1>
 
 
 
@@ -28,10 +28,7 @@ If the shared variable offer is a general one (server), `X`, or the correspondin
 
 The result `R` is a numeric scalar or vector with one element for each name in `Y` and indicates the "degree of coupling".  A value of 2 indicates that the variable is fully coupled (via a warm or hot DDE link) with a shared variable in another APL workspace, or with a DDE item in another application.  A value of 1 indicates that there is no connection, or that the second application rejected a warm link.  In this case, a transfer of data may have taken place (via a cold link) but the connection is no longer open.  Effectively, APL treats an application that insists on a cold link as if it immediately retracts the sharing after setting or using the value, whichever is appropriate.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'DDE:' ⎕SVO 'X'
 1
@@ -52,10 +49,7 @@ The result `R` is a numeric scalar or vector with one element for each name in `
 
 A special syntax is used to provide a mechanism for sending `DDE_EXECUTE` messages to another application.  This case is identified by specifying the `'⍎'` symbol in place of the external name.  The subsequent assignment of a character vector to a variable shared with the external name of `'⍎'` causes the value of the variable to be transmitted in the form of a `DDE_EXECUTE` message.  The value of the variable is then reset to 1 or 0 corresponding to a positive or negative acknowledgement from the partner.  In most (if not all) applications, commands transmitted in `DDE_EXECUTE` messages must be enclosed in square brackets `[]`.  For details, see the relevant documentation for the external application.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'DDE:EXCEL|SYSTEM' ⎕SVO 'X ⍎'
 2

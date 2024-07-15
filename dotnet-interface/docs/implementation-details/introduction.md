@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 The Dyalog DLL is the Dyalog APL *engine* that hosts the execution of all .NET classes that have been written in Dyalog APL, including APL Web Pages and APL Web Services. The Dyalog DLL provides the interface between client applications (such as ASP.NET) and your APL code. It receives calls from client applications, and executes the appropriate APL code. It also works the other way, providing the interface between your APL code and any .NET classes that you may call.
 

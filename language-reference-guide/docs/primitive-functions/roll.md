@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Roll</span><span class="command">R←?Y</span></h1>
+<h1 class="heading"><span class="name">Roll</span> <span class="command">R←?Y</span></h1>
 
 
 
@@ -21,10 +21,7 @@ For each zero element of `Y`, the corresponding element of `R` is a pseudo-rando
 
 Note that different random number generators are available; see `⎕RL` for more information.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ?9 9 9

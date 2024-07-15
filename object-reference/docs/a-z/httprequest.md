@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">HTTPRequest</span><span class="command">Event 840</span></h1>
+<h1 class="heading"><span class="name">HTTPRequest</span> <span class="command">Event 840</span></h1>
 
 
 
@@ -72,10 +72,7 @@ For a complete list of media/MIME types, see:
 [https://www.iana.org/assignments/media-types/media-types.xhtml](https://www.iana.org/assignments/media-types/media-types.xhtml):
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 <!DOCTYPE html>
 <html>
@@ -84,7 +81,7 @@ For a complete list of media/MIME types, see:
 </head>
 <body>
 
-<h2>Simple Form</h2>
+<h1>Simple Form</h1>
 
 <form action="Hello">
   First name:<br>

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ColorButton Parents</span></h1>
+<h1> ColorButton Parents</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

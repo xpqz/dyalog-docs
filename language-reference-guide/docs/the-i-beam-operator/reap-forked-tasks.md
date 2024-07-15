@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Reap Forked Tasks</span><span class="command">R←4002⌶Y</span></h1>
+<h1 class="heading"><span class="name">Reap Forked Tasks</span> <span class="command">R←4002⌶Y</span></h1>
 
 
 
@@ -57,10 +57,7 @@ struct rusage {
 
 `4002⌶` may return the PID of an abnormally terminated Auxiliary Processor; APL code should check that the list of processes that have been reaped is a superset of the list of processes that have been started.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ tryforks;pid;fpid;rpid
 [1]    rpids←fpids←⍬

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">PageNext</span><span class="command">Event 354</span></h1>
+<h1 class="heading"><span class="name">PageNext</span> <span class="command">Event 354</span></h1>
 
 
 

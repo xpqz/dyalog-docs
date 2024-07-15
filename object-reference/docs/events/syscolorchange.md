@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SysColorChange</span><span class="command">Event 134</span></h1>
+<h1 class="heading"><span class="name">SysColorChange</span> <span class="command">Event 134</span></h1>
 
 
 

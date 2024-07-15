@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ColorButton Events</span></h1>
+<h1> ColorButton Events</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

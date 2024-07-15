@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Multiply</span><span class="command">R←X×Y</span></h1>
+<h1 class="heading"><span class="name">Multiply</span> <span class="command">R←X×Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 This function is also known as Times.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       3 2 1 0 × 2 4 9 6
 6 8 9 0

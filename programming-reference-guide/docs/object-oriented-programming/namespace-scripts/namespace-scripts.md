@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Namespace Scripts</span></h1>
+<h1> Namespace Scripts</h1>
 
 A Namespace Script is a script that begins with a `:Namespace` statement and ends with a `:EndNamespace` statement. When a Namespace Script is fixed, it establishes an entire namespace that may contain other namespaces, functions, variables and classes.
 
@@ -58,7 +58,7 @@ Notice that Classes in a Namespace Script are fixed before other objects (hence 
 
 A practical example using `:Namespace` is given in the [next topic](namespace-script-example.md).
 
-### Changing Scripted Objects Dynamically
+## Changing Scripted Objects Dynamically
 
 The source of a scripted object can only be altered using the Editor, or by refixing it in its entirety using `⎕FIX`. Dynamic changes to variables, fields and properties, and calling `⎕FX` to generate functions do not alter the source of a scripted object.
 
@@ -74,8 +74,7 @@ If you were to edit both the script and the function, the Editor would show the 
 
 When you fix the script, the version of the function in the script will replace the one created using `⎕FX`.
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
 :Namespace ns
     ∇ foo

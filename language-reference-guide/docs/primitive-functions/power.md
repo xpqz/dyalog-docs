@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Power</span><span class="command">R←X*Y</span></h1>
+<h1 class="heading"><span class="name">Power</span> <span class="command">R←X*Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ If `X` is zero, `Y` must be non-negative.
 
 In general, `X*Y` is defined as `*Y×⍟X`. If `X` is negative, the result `R` is likely to be complex.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2*2 ¯2
 4 0.25

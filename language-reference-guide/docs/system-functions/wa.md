@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Workspace Available</span><span class="command">R←⎕WA</span></h1>
+<h1 class="heading"><span class="name">Workspace Available</span> <span class="command">R←⎕WA</span></h1>
 
 
 
@@ -18,10 +18,7 @@ A side effect of using `⎕WA` is an internal reorganisation of the workspace an
 4. All memory allocated is returned to the Operating System except the space required for the compacted workspace, plus a working overhead based on the configured maximum workspace size (**MAXWS**). If the compacted workspace occupies more than 1/16 of **MAXWS** then the overhead is 1/16 of MAXWS, otherwise it is 1/64 of **MAXWS**. On a Windows system, you can see the process size changing by using Task Manager.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕WA
 261412

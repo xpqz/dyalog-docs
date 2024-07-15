@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Input Tab (Classic Edition Only)</span></h1>
+<h1> Input Tab (Classic Edition Only)</h1>
 
 ![configuration dialog input tab](../../img/configuration-dialog-input-tab.png)
 
-Configuration dialog: Keyboard
+Table: Configuration dialog: Keyboard
 
 |Label                  |Parameter                                           |Description                                                       |
 |-----------------------|----------------------------------------------------|------------------------------------------------------------------|

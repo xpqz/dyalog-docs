@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Your first APL Web Page</span></h1>
+<h1> Your first APL Web Page</h1>
 
 The first web page example is `tutorial/intro1.aspx`, which is listed below. This page displays a button whose text is reversed each time you press it.
 

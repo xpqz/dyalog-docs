@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The StatusBar Object</span></h1>
+<h1> The StatusBar Object</h1>
 
 Like the Toolbar, the StatusBar object is also a container that manages its children. However, the StatusBar may contain only one type of object, namely StatusFields. By default, the StatusBar is a flat grey object, positioned along the bottom edge of a Form, upon which the StatusFields are drawn as sunken rectangles. StatusFields display textual information and are typically used for help messages and for monitoring the status of an application. They can also be used to automatically report the status of the Caps Lock, Num Lock, Scroll Lock, and Insert keys
 
@@ -48,7 +48,7 @@ As an alternative to single-row scrolling StatusBar, you can have a multi-line o
 
 A Multi-line StatusBar
 
-### Using StatusFields
+## Using StatusFields
 
 There are basically three ways of using StatusFields. Firstly, you can display information in them directly from your program by setting their Caption and/or Text properties. For example, if you are executing a lengthy calculation, you may wish to display the word "Calculating ..." as the Caption of a StatusField and, as the calculations proceed, display (say) "Phase 1" followed in due course by "Phase 2", and so forth. You can also use StatusFields to display application messages, including warning and error messages, where the use of a MsgBox is inappropriate.
 

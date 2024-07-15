@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Information</span><span class="command">R←{X}⎕NINFO Y</span></h1>
+<h1 class="heading"><span class="name">Native File Information</span> <span class="command">R←{X}⎕NINFO Y</span></h1>
 
 
 
@@ -13,19 +13,19 @@ This function returns information about one or more files or directories. `Y` ma
 - a character vector or scalar containing a file or directory name that conforms to the naming rules of the host Operating System.
 - a vector of character vectors and/or tie numbers
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NINFO` may be applied using the  Variant operator with the options  Wildcard (the Principal option), Recurse and Follow.
 
-#### Wildcard Option (Boolean)
+## Wildcard Option (Boolean)
 
 
 |---|---|
 |0|The name or names in `Y` identifies a specific file name.|
 |`1`|The name or names in `Y` that specify the *base name* and *extension* (see [NParts](../../nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character.|
 
-#### Recurse Option
+## Recurse Option
 
 
 |---|---|
@@ -34,7 +34,7 @@ This function returns information about one or more files or directories. `Y` ma
 |`1 n`|the name(s) in `Y` are searched for in the corresponding specified directory as well as its sub-directories to the n <sup>th</sup> -level sub-directory. If n is 0, no sub-directories are searched. If n is `¯1` all sub-directories are searched.|
 |`2 (n)`|same as 1 but if any unreadable directories are encountered they are skipped (whereas if Recurse is `1 (n)` , `⎕NINFO` stops and generates an error).|
 
-#### Follow Option (Boolean)
+## Follow Option (Boolean)
 
 
 |---|----------------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ If the Wildcard option is enabled,  zero or more files and/or directories may ma
 When using the Wildcard option, matching of names is done case insensitively on Windows and macOS, and case sensitively on other platforms. The names '.' and '..' are excluded from any matches. The order in which the names match is not defined.
 
 
-#### Note
+## Note
 
 
 On non-Windows platforms, file names are exposed by the Operating System using UTF-8 encoding which Dyalog translates internally to characters.
@@ -98,10 +98,7 @@ In the Unicode Edition, if the UTF-8 encoding is invalid, Dyalog replaces each o
 In the Classic Edition, offending bytes are replaced by the `?` symbol, which means that the names reported do not accurately identify the files.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       (0 1 2) ⎕NINFO 'c:/Users/Pete/Documents'
@@ -198,7 +195,7 @@ The following expression will return all Word document (`.docx` and `.doc`) in t
 ```
 
 
-#### Note
+## Note
 
 
 Of the file timestamps which are reported by the operating system, only the last modification time should be considered reliable and portable. Neither the access time or creation time are well supported across all platforms. Furthermore, they may not accurately reflect the actual time that the operation occurred.

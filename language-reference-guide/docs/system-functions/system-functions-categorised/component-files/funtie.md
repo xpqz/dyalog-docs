@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Untie</span><span class="command">{R}←⎕FUNTIE Y</span></h1>
+<h1 class="heading"><span class="name">File Untie</span> <span class="command">{R}←⎕FUNTIE Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ If `Y` is empty, no files are untied, but all the interpreter's internal file bu
 
 The shy result of `⎕FUNTIE` is a vector of tie numbers of the files **actually untied**.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕FUNTIE ⎕FNUMS ⍝ Unties all tied files
  

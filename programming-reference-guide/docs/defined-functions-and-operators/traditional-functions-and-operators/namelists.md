@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Namelists</span></h1>
+<h1> Namelists</h1>
 
 The right argument and the result of a function may be specified in the function header by a single name or by a *Namelist*. In this context, a Namelist is a blank-delimited list of names surrounded by a single set of parentheses.
 
@@ -6,8 +6,7 @@ Names specified in a Namelist are automatically local to the function; there is 
 
 If the *right argument* of a function is declared as a Namelist, the function will only accept a right argument that is a vector whose length is the same as the number of names in the Namelist. Calling the function with any other argument will result in a `LENGTH ERROR` in the calling statement. Otherwise, the elements of the argument are assigned to the names in the Namelist in the specified order.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ IDN←Date2IDN(Year Month Day)
 [1]    'Year is ',⍕Year
@@ -29,8 +28,7 @@ LENGTH ERROR
 
 Note that if you specify a *single* name in the Namelist, the function may be called only with a 1-element vector right argument. If the *result* of a function is declared as a Namelist, the values of the names will automatically be stranded together in the specified order and returned as the result of the function when the function terminates.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ (Year Month Day)←Birthday age
 [1]    Year←1949+age

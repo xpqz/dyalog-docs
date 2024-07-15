@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetItemImage</span><span class="command">Method 315</span></h1>
+<h1 class="heading"><span class="name">SetItemImage</span> <span class="command">Method 315</span></h1>
 
 
 

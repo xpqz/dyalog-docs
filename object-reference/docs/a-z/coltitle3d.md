@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ColTitle3D</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">ColTitle3D</span> <span class="command">Property</span></h1>
 
 
 

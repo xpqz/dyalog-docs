@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Mix</span><span class="command">(⎕ML)</span></h1>
+<h1 class="heading"><span class="name">Mix</span> <span class="command">(⎕ML)</span></h1>
 
 
 
@@ -40,7 +40,7 @@ For the purposes of the following narrative,  `y` represents the virtual item in
 If `K` is absent, the axes of `y` appear as the last axes of the result.
 
 
-##### Simple Vector Examples
+## Simple Vector Examples
 
 
 In this example, the shape of `Y` is 3, and the shape of  `y` is 2. So the shape of the result will be a permutation of 2 and 3, i.e. in this simple example, either `(2 3)` or `(3 2`).
@@ -93,7 +93,7 @@ An integer `K` may be used instead. If `⎕ML≥2`,  `⊃` is used instead of `�
 5 6
 ```
 
-##### Shape Extension
+## Shape Extension
 
 
 If the items of `Y` are unequal in shape, the shorter ones are extended:
@@ -108,7 +108,7 @@ If the items of `Y` are unequal in shape, the shorter ones are extended:
 0 4 0
 ```
 
-#### More Simple Vector Examples
+# More Simple Vector Examples
 ```apl
       ]box on
 Was OFF
@@ -151,7 +151,7 @@ Pauline
 Notice that in the last statement, the shape of the third item was extended by catenating it with its prototype.
 
 
-##### Example (Matrix of Matrices)
+### Example (Matrix of Matrices)
 
 
 In the following examples, `Y` is a matrix of shape `(5 4)` and each item of `Y` (`y`) is a matrix of shape `(3 2)`. The shape of the result will be some permutation of `(5 4 3 2)`.
@@ -204,7 +204,7 @@ INDEX ERROR
 Note that `⊃[4]Y` generates an `INDEX ERROR` because 4 is greater than the length of the result.
 
 
-##### Example (Vector K)
+### Example (Vector K)
 
 
 The axes of `y` do not have to be contiguous in the shape of the result. By specifying a vector `K`, they can be distributed. Notice where the `3` and the `2` appear in the following results:
@@ -221,7 +221,7 @@ The axes of `y` do not have to be contiguous in the shape of the result. By spec
 
 ```
 
-##### Rank Extension
+### Rank Extension
 
 
 If the items of `Y` are unequal in rank, the lower rank items are extended in rank by prefixing their shapes with 1s. Each additional 1 may then be increased to match the maximum shape of the other items along that axis.

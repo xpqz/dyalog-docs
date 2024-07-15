@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">OLEQueryInterface</span><span class="command">Method 543</span></h1>
+<h1 class="heading"><span class="name">OLEQueryInterface</span> <span class="command">Method 543</span></h1>
 
 
 

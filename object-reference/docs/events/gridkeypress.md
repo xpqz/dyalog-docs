@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">GridKeyPress</span><span class="command">Event 24</span></h1>
+<h1 class="heading"><span class="name">GridKeyPress</span> <span class="command">Event 24</span></h1>
 
 
 

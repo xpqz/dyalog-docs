@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> HTMLRenderer Properties</span></h1>
+<h1> HTMLRenderer Properties</h1>
 
 |-------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,                      |[SetZoomLevel](../methodorevents/setzoomlevel.md) ,    |[GetZoomLevel](../methodorevents/getzoomlevel.md) ,|

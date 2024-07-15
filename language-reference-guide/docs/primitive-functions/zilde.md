@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Zilde</span><span class="command">R←⍬</span></h1>
+<h1 class="heading"><span class="name">Zilde</span> <span class="command">R←⍬</span></h1>
 
 
 

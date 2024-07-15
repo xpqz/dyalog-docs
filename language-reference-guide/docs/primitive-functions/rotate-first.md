@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Rotate First</span><span class="command">R←X⊖[K]Y</span></h1>
+<h1 class="heading"><span class="name">Rotate First</span> <span class="command">R←X⊖[K]Y</span></h1>
 
 
 

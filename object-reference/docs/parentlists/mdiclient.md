@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> MDIClient Parents</span></h1>
+<h1> MDIClient Parents</h1>
 
 |-----------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[MDICascade](../methodorevents/mdicascade.md) ,  |[MDITile](../methodorevents/mditile.md) ,      |

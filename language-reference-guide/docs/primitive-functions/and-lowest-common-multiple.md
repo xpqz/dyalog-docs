@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">And, Lowest Common Multiple</span><span class="command">R←X^Y</span></h1>
+<h1 class="heading"><span class="name">And, Lowest Common Multiple</span> <span class="command">R←X^Y</span></h1>
 
 
-#### Case 1: `X` and `Y` are Boolean
+## Case 1: `X` and `Y` are Boolean
 
 
 `R` is Boolean is determined as follows:
@@ -23,24 +23,18 @@
 Note that the ASCII caret (`^`) will also be interpreted as an APL **And** (`^`).
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       0 1 0 1 ^ 0 0 1 1
 0 0 0 1
 ```
 
-#### Case 2: Either or both X and Y are numeric (non-Boolean)
+## Case 2: Either or both X and Y are numeric (non-Boolean)
 
 
 `R` is the lowest common multiple of `X` and `Y`. Note that in this case, `⎕CT` and `⎕DCT` are implicit arguments.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       15 1 2 7 ^ 35 1 4 0
 105 1 4 0

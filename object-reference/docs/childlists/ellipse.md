@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Ellipse Children</span></h1>
+<h1> Ellipse Children</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

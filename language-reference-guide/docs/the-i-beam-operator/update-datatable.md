@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Update DataTable</span><span class="command">R←{X}2010⌶Y</span></h1>
+<h1 class="heading"><span class="name">Update DataTable</span> <span class="command">R←{X}2010⌶Y</span></h1>
 
 
 
@@ -27,10 +27,7 @@ This function performs a *block update* of an instance of the ADO.NET object Sys
 The optional argument `X` is  Boolean vector, where a 1 indicates that the corresponding column of  `Y[2]` is a string from which the new values  should be converted according to that column's data type.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 Shown firstly for comparison is the type of code that is required to update a DataTable by looping:
@@ -70,7 +67,7 @@ This result shows that this code can only insert roughly 800 rows per second (`3
 So in this case, using `2010⌶` achieves over 90,000 rows per second.
 
 
-#### DateTime columns
+## DateTime columns
 
 
 Creating large arrays of DateTime objects in the workspace takes additional resources, and unless the data is already stored that way, it is not necessary to convert it to .NET objects. Data in `⎕TS` format (7-element integer vector) or in a suitable character format may be used directly. The former is a specific Dyalog optimisation; the latter a feature of .NET Version 4.0. The following examples use numeric and character data for the dates:
@@ -89,7 +86,7 @@ Creating large arrays of DateTime objects in the workspace takes additional reso
 
 ```
 
-#### Using Strings
+## Using Strings
 
 
 In circumstances where .NET fails to accept character data automatically, it is possible to force conversion from character format to the corresponding .NET type.
@@ -107,7 +104,7 @@ In the following example, the left argument is not strictly necessary using .NET
 
 ```
 
-#### Handling Nulls
+## Handling Nulls
 
 
 If applicable, `Y[3]`  is a vector with as many elements as the DataTable has columns, indicating the value that should be converted to `System.DBNull` as data is written. For example, using the same DataTable as above:
@@ -124,7 +121,7 @@ If applicable, `Y[3]`  is a vector with as many elements as the DataTable has co
 
 Above, we have declared that the string `'<null>'` should be considered to be a null value in the first column, `'even'` in the second column, and the integer `99` in the third.
 
-#### Updating Selected Rows
+## Updating Selected Rows
 
 
 Sometimes, you may have read a very large number of rows from a DataTable, but only want to update a single row, or a very small number of rows. Row indices can be provided as the fourth element of the argument to `2010⌶`. If you are not using `Y[3]` explicitly, you can just use an empty vector as a placeholder. Continuing from the example above, we could replace the first row in our DataTable using:
@@ -134,7 +131,7 @@ Sometimes, you may have read a very large number of rows from a DataTable, but o
 ```
 
 
-#### Note
+## Note
 
 - `Y[2]` must be provided as a matrix, even if you only want to update a single row, 
 - `Y[4]` specifies row indices using zero origin (the first row has number 0).
@@ -144,7 +141,7 @@ Sometimes, you may have read a very large number of rows from a DataTable, but o
 
 
 
-##### Warning
+### Warning
 
 
 If you are experimenting with writing to a DataTable, note that you should call `dt.Rows.Clear` each time to clear the current contents of the table. Otherwise you will end up with a very large number of rows after a while.

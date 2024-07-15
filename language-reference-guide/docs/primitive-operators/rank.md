@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Rank</span><span class="command">R←{X}(f⍤B)Y</span></h1>
+<h1 class="heading"><span class="name">Rank</span> <span class="command">R←{X}(f⍤B)Y</span></h1>
 
 
 
@@ -38,7 +38,7 @@ The sub-arrays of `R` are the results of the individual applications of `f`. If 
 
 Notice that it is necessary to prevent the right operand `k` binding to the right argument. This can be done using parentheses e.g. `(f⍤1)Y`. The same can be achieved using  `⊢` e.g. `f⍤1⊢Y` because `⍤` binds tighter to its right operand than `⊢` does to its left argument, and `⊢` therefore resolves to Identity.
 
-#### Monadic Examples
+## Monadic Examples
 
 
 Using enclose (`⊂`) as the left operand elucidates the workings of the rank operator.
@@ -101,7 +101,7 @@ The rank operator can be used to apply the function to sub-arrays; in this case 
  9 22 48 81
 ```
 
-#### Dyadic Examples
+## Dyadic Examples
 ```apl
 
       10 20 30 (+⍤0 1)3 4⍴⍳12

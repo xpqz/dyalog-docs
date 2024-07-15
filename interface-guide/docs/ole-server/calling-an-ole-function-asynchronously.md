@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Calling an OLE Function Asynchronously</span></h1>
+<h1> Calling an OLE Function Asynchronously</h1>
 
-### Introduction
+## Introduction
 
 Functions exported by an OLEServer are executed (by the underlying OLE technology) in a *synchronous* manner. This means that the OLE client must wait for the function to complete before it can continue processing.
 
@@ -10,7 +10,7 @@ For an *out-of-process* OLE Server, this can be achieved by having the function 
 
 Note however that while the OLEServer is processing, further OLE requests will be queued. For example, if the client were to call the same function again immediately, the function would not be invoked until the original processing has finished and the client would therefore wait (note that OLE itself will actually time-out after a certain period). Nevertheless, this technique is an effective way to offload batch processing tasks to a second (background) APL process or to one running on a different computer.
 
-### The OLEASYNC Workspace
+## The OLEASYNC Workspace
 
 The OLEASYNC workspace illustrates this technique. It contains a single namespace called `Async` which exports 2 functions (methods), `PRINT` and `ASYNC` and two variables (properties) `ERRCODE` and `COPIES`.
 
@@ -100,7 +100,7 @@ The namespace contains a fourth function called `LPR` which is designed to be ca
 
 Note that the number of copies to be printed is defined by the (global) variable `COPIES` whose default value is 1. This is done only to illustrate that `LPR` called via `DO` runs in the correct instance of the OLEServer (using *your* value of `COPIES`) as opposed to in the master OLEServer namespace itself.
 
-### Testing dyalog.Async
+## Testing dyalog.Async
 
 Load OLEASYNC and then register dyalog.Async as an OLE object by doing the following:
 ```apl

@@ -1,4 +1,4 @@
-**Example**
+<h1 class="example">Example</h1>
 
 The [ComponentFile Class](component-file-class-example.md)  specifies a Numbered Property named `Component` which represents the contents of a specified component on the file.
 ```apl

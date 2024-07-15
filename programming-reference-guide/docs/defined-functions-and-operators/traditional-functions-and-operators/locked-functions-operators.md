@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Locked Functions & Operators</span></h1>
+<h1> Locked Functions & Operators</h1>
 
 A defined operation may be locked by the system function `⎕LOCK`.
 

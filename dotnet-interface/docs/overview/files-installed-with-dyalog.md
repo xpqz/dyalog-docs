@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Files Installed with Dyalog</span></h1>
+<h1> Files Installed with Dyalog</h1>
 
-### NET Interface Components
+## NET Interface Components
 
 The components used to support the .NET interface are summarised below. Different versions of each component are supplied  according to the target platform.
 
@@ -15,7 +15,7 @@ For a list of the files associated with each of these components, see
 Files](../../../windows-installation-and-configuration-guide/files-and-directories)
 .
 
-### Code Samples
+## Code Samples
 
 The `samples` subdirectory contains several sub-directories relating to the .NET interface:
 

@@ -1,9 +1,8 @@
-<h1 class="heading"><span class="name"> Namespaces and Operators</span></h1>
+<h1> Namespaces and Operators</h1>
 
 A function passed as operand to a primitive or defined operator, carries its namespace context with it. This means that if subsequently, the function operand is applied to an argument, it executes in its home namespace, irrespective of the namespace from which the operator was invoked or defined.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       VAR←99                     ⍝ #.VAR
  

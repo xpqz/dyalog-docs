@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Miscellaneous</span></h1>
+<h1> Miscellaneous</h1>
 
 |Name    |Description                      |
 |--------|---------------------------------|

@@ -1,3 +1,3 @@
-<h1 class="heading"><span class="name"> Error Messages</span></h1>
+<h1> Error Messages</h1>
 
 

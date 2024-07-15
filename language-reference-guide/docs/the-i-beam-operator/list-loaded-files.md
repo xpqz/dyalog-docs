@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">List Loaded Files</span><span class="command">R←5176⌶Y</span></h1>
+<h1 class="heading"><span class="name">List Loaded Files</span> <span class="command">R←5176⌶Y</span></h1>
 
 
 
@@ -28,10 +28,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 Encoding, newline and flags are defined the same as for `⎕NGET`. See [File Encodings](../system-functions/nget.md). Checksum is an 8-character hexadecimal value, see [GetBuildID](../../../object-reference/methodorevents/getbuildid)  for more information.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       )CLEAR

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Start UNIX Auxiliary Processor</span><span class="command">{R}←X ⎕SH Y</span></h1>
+<h1 class="heading"><span class="name">Start UNIX Auxiliary Processor</span> <span class="command">{R}←X ⎕SH Y</span></h1>
 
 
 
@@ -36,10 +36,7 @@ The syntax of dyadic `⎕SH` is similar to the UNIX execl(2) system call, where 
 
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       'xutils' ⎕SH 'xutils' 'ss' 'dbr'

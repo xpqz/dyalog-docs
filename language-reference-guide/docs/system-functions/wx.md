@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Window Expose</span><span class="command">⎕WX</span></h1>
+<h1 class="heading"><span class="name">Window Expose</span> <span class="command">⎕WX</span></h1>
 
 
 
@@ -44,7 +44,7 @@ The value of `⎕WX` in a clear workspace is defined by the default_wx parameter
 `⎕WX` has namespace scope and may be localised in a function header. This allows you to create a utility namespace or utility function in which the exposure of objects is known and determined, regardless of its global value in the workspace.
 
 
-#### Notes
+## Notes
 
 - The visibility of the properties and methods of the Root object are not controlled by `⎕WX` but by the **PropertyExposeRoot** parameter. For further information, see [ PropertyExposeRoot](../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters).
 - `⎕WX` is retained for backwards compatibility and should be considered as deprecated. Dyalog recommends  `⎕WX` be set to 3 and never changed.

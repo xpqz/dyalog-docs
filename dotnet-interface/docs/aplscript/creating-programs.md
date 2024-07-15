@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Creating Programs (.exe) with APLScript</span></h1>
+<h1> Creating Programs (.exe) with APLScript</h1>
 
 The following examples, which illustrate how you can create an executable program (`.exe`) direct from an APLScript file, may be found in the directory `samples\aplscript`.
 
-### A simple GUI example
+## A simple GUI example
 
 The following APLScript illustrates the simplest possible GUI application that displays a message box containing the string "Hello World".
 ```apl
@@ -23,7 +23,7 @@ This example, which is saved in the file `eg1.apl`, is compiled to a Windows exe
 
 You can associate the `.exe` with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.
 
-### A simple console example
+## A simple console example
 
 The following APLScript illustrates the simplest possible application that displays the text "Hello World".
 
@@ -41,7 +41,7 @@ Once more, it is essential to surround the code with `:Namespace/:EndNamespace` 
 
 ![aplscript3](../img/aplscript3.png)
 
-### Defining Namespaces
+## Defining Namespaces
 
 Namespaces are specified in an APLScript using the `:Namespace` and :`EndNamespace` statements. Although you may use `⎕NS` and `⎕CS` within functions inside an APLScript, you should not use these system functions outside function bodies. Note that such use is not *prevented*, but that the results will be unpredictable.
 ```apl

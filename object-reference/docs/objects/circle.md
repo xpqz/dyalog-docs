@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Circle</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Circle</span> <span class="command">Object</span></h1>
 
 
 
@@ -28,7 +28,7 @@ round and perfectly centred. The default value is 0 (no adjustment is made).
 
 The [Start](../properties/start.md) and/or [End](../properties/end.md) properties are used to draw partial circles. They specify start and end angles respectively, measuring from the x-axis in a counter-clockwise direction and are expressed in radians. The type of arc is controlled by [ArcMode](../properties/arcmode.md) as follows :
 
-#### ArcMode Effect
+## ArcMode Effect
 
 
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,10 +48,7 @@ If [Start](../properties/start.md) is specified, but not [End](../properties/end
 
 This means that you can draw a pie-chart using either [Start](../properties/start.md) or [End](../properties/end.md) angles; you do not have to specify both.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 A circle whose centre is (50,50) and radius 20

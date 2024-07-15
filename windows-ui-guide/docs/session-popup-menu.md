@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Session Pop-Up Menu</span></h1>
+<h1> Session Pop-Up Menu</h1>
 
 The Session popup menu (`⎕SE.popup`) is displayed by clicking the right mouse button anywhere in the Session or Editor window.
 
@@ -6,7 +6,7 @@ The Session popup menu (`⎕SE.popup`) is displayed by clicking the right mouse 
 
 If the mouse pointer is over a visible object name, the popup menu allows you to edit, print, delete it or view its properties. Note that the name of the pop-up menu is specified by the Popup property of `⎕SE`.
 
-Session popup menu operations
+Table: Session popup menu operations
 
 |Item|Action|Description|
 |---|---|---|

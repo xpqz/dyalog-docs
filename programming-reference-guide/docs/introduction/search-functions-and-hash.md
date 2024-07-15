@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Search Functions and Hash Tables</span></h1>
+<h1> Search Functions and Hash Tables</h1>
 
 Primitive dyadic *search* functions, such as `⍳` (index of) and `∊` (membership) have a *principal* argument in which items of the other *subject* argument are located.
 
@@ -21,7 +21,7 @@ For optimal performance of *repeated* search operations, the hash table may be r
 
 Notice that retaining the hash table pays off only on a second or subsequent application of the derived function. This usually occurs in one of two ways: either the derived function is named for later (and repeated) use, as in the first example below or it is applied repeatedly as the operand of a primitive or defined operator, as in the second example.
 
-### Example: naming a derived function.
+## Example: naming a derived function.
 ```apl
       words←'red' 'ylo' 'grn' 'brn' 'blu' 'pnk' 'blk'
  
@@ -32,7 +32,7 @@ Notice that retaining the hash table pays off only on a second or subsequent app
 3 4 2 1
 ```
 
-### Example: repeated application by (`¨`) each operator.
+## Example: repeated application by (`¨`) each operator.
 ```apl
       ∊∘⎕A¨'This' 'And' 'That'
  1 0 0 0  1 0 0  1 0 0 0

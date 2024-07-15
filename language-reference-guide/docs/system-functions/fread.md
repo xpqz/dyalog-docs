@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Read Components</span><span class="command">R←⎕FREAD Y</span></h1>
+<h1 class="heading"><span class="name">File Read Components</span> <span class="command">R←⎕FREAD Y</span></h1>
 
 
-##### Access code 1
+## Access code 1
 
 
 `Y` is a  2 or 3 item  vector containing the file tie number, the component number(s), and an optional passnumber.  If the passnumber is omitted it is assumed to be zero. All elements of `Y` must be integers.
@@ -32,10 +32,7 @@ will return the same result as:
 
 However, the first statement will, in the case of a share-tied file,  prevent any potential intervening file access from another user (without the need for a  `⎕FHOLD`). It will also perform slightly faster, especially when reading from a share-tied file.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
       ⍴SALES←⎕FREAD 1 241
 3 2 12

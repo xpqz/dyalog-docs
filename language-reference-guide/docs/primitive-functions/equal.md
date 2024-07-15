@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Equal</span><span class="command">R←X=Y</span></h1>
+<h1 class="heading"><span class="name">Equal</span> <span class="command">R←X=Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ For complex numbers `X=Y` is 1 if the magnitude of `X-Y` does not exceed `⎕CT`
 
 ![comparison](../img/comparison.png)
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       3=3.1 3 ¯2 ¯3
 0 1 0 0

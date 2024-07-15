@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Assignment (Selective Modified)</span><span class="command">{R}←(EXP X)f←Y</span></h1>
+<h1 class="heading"><span class="name">Assignment (Selective Modified)</span> <span class="command">{R}←(EXP X)f←Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The operator loops through the selected elements of `X` in ravel order. For each
 
 `R` is the "pass-through" value, that is, the value of `Y`.  If the result of the derived function is not assigned or used, there is no explicit result.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       A
 12 36 23 78 30

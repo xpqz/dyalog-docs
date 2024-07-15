@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Execute (UNIX) Command</span><span class="command">)SH {cmd}</span></h1>
+<h1 class="heading"><span class="name">Execute (UNIX) Command</span> <span class="command">)SH {cmd}</span></h1>
 
 
 
@@ -25,10 +25,7 @@ When the shell is closed, control returns to APL. See *Dyalog for UNIX UI Guide*
 
 The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different shell under the shell associated with `system()`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       )sh ps -u andys | grep -v ps
@@ -40,7 +37,7 @@ The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different she
   6179 11665660      -  0:00 sshd
 ```
 
-#### Note
+## Note
 
 
 This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.

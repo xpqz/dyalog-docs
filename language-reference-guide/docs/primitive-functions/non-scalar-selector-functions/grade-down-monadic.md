@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Grade Down (Monadic)</span><span class="command">R←⍒Y</span></h1>
+<h1 class="heading"><span class="name">Grade Down (Monadic)</span> <span class="command">R←⍒Y</span></h1>
 
 
 
@@ -13,10 +13,7 @@
 `⎕IO` is an implicit argument of Grade Down.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍒22.5 1 15 3 ¯4
 1 3 4 2 5

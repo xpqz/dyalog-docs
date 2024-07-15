@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">State of Object</span><span class="command">R←⎕STATE Y</span></h1>
+<h1 class="heading"><span class="name">State of Object</span> <span class="command">R←⎕STATE Y</span></h1>
 
 
 
@@ -17,10 +17,7 @@
 |`4⊃R`|Vector giving the contents of `Y` before it was shadowed at this level. Note: `(⍴4⊃R)=+/0≠3⊃R`|
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ⎕FMT∘⎕OR¨'FN1' 'FN2' 'FN3'

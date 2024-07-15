@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">RowTreeImages</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">RowTreeImages</span> <span class="command">Property</span></h1>
 
 
 
@@ -32,10 +32,7 @@ The Bitmap specified by the 2<sup>nd</sup> element of RowTreeImages is used to d
 
 The Bitmap specified by the 3<sup>rd</sup> element of RowTreeImages is used to display nodes *without children*.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       'Closed'⎕WC'Bitmap' 'Folder.bmp'
       'Open'⎕WC'Bitmap' 'FolderOpen.bmp'

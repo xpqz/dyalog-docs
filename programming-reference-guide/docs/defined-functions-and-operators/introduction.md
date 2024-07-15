@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 A defined function is a program that takes 0, 1, or 2 arrays as **arguments** and may produce an array as a result.
 

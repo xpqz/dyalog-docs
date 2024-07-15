@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Key</span><span class="command">R←{X}f⌸Y</span></h1>
+<h1 class="heading"><span class="name">Key</span> <span class="command">R←{X}f⌸Y</span></h1>
 
 
 
@@ -29,10 +29,7 @@ Key is similar to the GROUP BY clause in SQL.
 
 `⎕CT` and `⎕DCT` are  implicit arguments of the Key operator.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 In this example, both arrays are vectors so their major cells are their elements. The function `{⍺':'⍵}` is applied between the unique elements in `suits` (`'Spades' 'Hearts' 'Clubs'`) and the elements in `cards` grouped according to their corresponding elements in `suits`, i.e. (`'2' 'Ace'`), (`'Queen' 'Jack'`) and (`,'4'`).
@@ -53,7 +50,7 @@ In this example, both arrays are vectors so their major cells are their elements
   Clubs   : 4
 ```
 
-#### Monadic Examples
+## Monadic Examples
 ```apl
 
       {⍺ ⍵} ⌸ suits ⍝ indices of unique major cells
@@ -76,7 +73,7 @@ b 1
 y 1
 ```
 
-#### Further Examples
+## Further Examples
 
 
 `x` is a vector of stock codes, `y` is a corresponding matrix of values.
@@ -136,7 +133,7 @@ There is no need for the function to use its left argument. So to obtain just th
  51  83
 ```
 
-#### Defined Function Example
+## Defined Function Example
 
 
 This example appends the data for a stock into a component file named by the symbol.
@@ -157,10 +154,7 @@ This example appends the data for a stock into a component file named by the sym
 1 1 1 1
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       {⍺ ⍵} ⌸ suits ⍝ indices of unique major cells
@@ -175,7 +169,7 @@ This example appends the data for a stock into a component file named by the sym
 
 ```
 
-#### Another Example
+## Another Example
 
 
 Given a list of names and scores., the problem is to sum the scores for each unique name. A solution is presented first without using the Key operator, and then with the Key operator.

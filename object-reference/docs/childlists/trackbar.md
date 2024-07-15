@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TrackBar Children</span></h1>
+<h1> TrackBar Children</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

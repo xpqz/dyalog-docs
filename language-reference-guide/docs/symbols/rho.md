@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Rho</span><span class="command">⍴</span></h1>
+<h1 class="heading"><span class="name">Rho</span> <span class="command">⍴</span></h1>
 
 
-##### Monadic Rho means
+## Monadic Rho means
 
 
 [Shape Of
@@ -29,7 +29,7 @@
 0
 ```
 
-##### Dyadic Rho means
+## Dyadic Rho means
 
 
 [Reshape

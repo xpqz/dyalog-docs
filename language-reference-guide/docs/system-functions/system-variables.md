@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> System Variables</span></h1>
+<h1> System Variables</h1>
 
 System variables retain information used by the system in some way. Many system variables affect the behaviour of primitive functions and operators to which they act as *implicit arguments* For further information, see [System Settings](system-settings.md).
 
@@ -47,8 +47,7 @@ In other words,  `⎕PATH` and `⎕PW` relate to the session.  `⎕LX`, `⎕SM`,
 
 Note that the value assigned to a system variable must be appropriate; otherwise an error will be reported immediately.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕IO←3
 DOMAIN ERROR

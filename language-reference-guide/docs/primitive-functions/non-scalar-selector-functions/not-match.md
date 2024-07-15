@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Not Match</span><span class="command">R←X≢Y</span></h1>
+<h1 class="heading"><span class="name">Not Match</span> <span class="command">R←X≢Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ Non-empty arrays are identical if they have the same structure and the same valu
 `⎕CT` and `⎕DCT` are  implicit arguments of Not Match.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍬≢⍳0
 0

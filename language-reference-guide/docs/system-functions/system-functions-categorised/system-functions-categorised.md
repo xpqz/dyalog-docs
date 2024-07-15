@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> System Functions Categorised</span></h1>
+<h1> System Functions Categorised</h1>
 
 The following tables list the system functions divided into appropriate categories.
 
-### Settings Affecting Behaviour of Primitive Functions
+## Settings Affecting Behaviour of Primitive Functions
 
 |Name  |Description                  |
 |------|-----------------------------|
@@ -17,7 +17,7 @@ The following tables list the system functions divided into appropriate categori
 
 The following table describes the dependencies that exist between functions, operators and these system variables.
 
-Implicit Arguments
+Table: Implicit Arguments {: #Implicit_Arguments }
 
 |System Variable|Monadic Functions|Dyadic Functions|Operators|
 |---|---|---|---|
@@ -35,7 +35,7 @@ where, for `⎕FR`, `1` indicates functions that compute real numbers and whose 
 
 NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕DCT` is used; `⎕FR` also determines the precision of the comparison computation that can affect results. However, even primitives involving intolerant comparison (including the tolerant ones with all comparison tolerances set to 0) can depend on `⎕FR` if the argument contains DECFs. This is because DECFs must be converted to doubles for comparison. If two DECFs are different but correspond to the same double, then they will be treated as intolerantly unequal when `⎕FR` is `1287` but equal when it is `645`.
 
-### Session Information/Management
+## Session Information/Management
 
 |Name    |Description                |
 |--------|---------------------------|
@@ -50,7 +50,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕SAVE` |Save the active WS         |
 |`⎕TS`   |Timestamp                  |
 
-### Constants
+## Constants
 
 |Name   |Description                     |
 |-------|--------------------------------|
@@ -58,7 +58,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕D`   |Digits                          |
 |`⎕NULL`|Null Item                       |
 
-### Tools and Access to External Utilities
+## Tools and Access to External Utilities
 
 |Name    |Description                                             |
 |--------|--------------------------------------------------------|
@@ -83,7 +83,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕VFI`  |Verify and Fix numeric                                  |
 |`⎕XML`  |XML Convert                                             |
 
-### Manipulating Functions and Operators
+## Manipulating Functions and Operators
 
 |Name      |Description             |
 |----------|------------------------|
@@ -105,7 +105,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕TRACE`  |Query Trace vector      |
 |`⎕VR`     |Vector Representation   |
 
-### Namespaces and Objects
+## Namespaces and Objects
 
 |Name        |Description   |
 |------------|--------------|
@@ -120,7 +120,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕SRC`      |Source        |
 |`⎕THIS`     |This          |
 
-### Input/Output
+## Input/Output
 
 |Name     |Description           |
 |---------|----------------------|
@@ -130,7 +130,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕ARBOUT`|Arbitrary Output      |
 |`⎕RTL`   |Response Time Limit   |
 
-### Component Files
+## Component Files
 
 |Name       |Description                |
 |-----------|---------------------------|
@@ -159,7 +159,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕FTIE`    |Tie a File exclusively     |
 |`⎕FUNTIE`  |Untie Files                |
 
-### Native Files
+## Native Files
 
 |Name       |Description                                                  |
 |-----------|-------------------------------------------------------------|
@@ -187,7 +187,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕NUNTIE`  |Untie Files                                                  |
 |`⎕NXLATE`  |Specify Translation Table                                    |
 
-### Threads
+## Threads
 
 |Name     |Description                  |
 |---------|-----------------------------|
@@ -199,7 +199,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕TNUMS` |Thread Numbers               |
 |`⎕TSYNC` |Wait for Threads to Terminate|
 
-### Synchronisation
+## Synchronisation
 
 |Name     |Description         |
 |---------|--------------------|
@@ -210,7 +210,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕TPUT`  |Put Tokens          |
 |`⎕TREQ`  |Token Requests      |
 
-### Error Handling
+## Error Handling
 
 |Name        |Description                                     |
 |------------|------------------------------------------------|
@@ -222,7 +222,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕SIGNAL`   |Signal event                                    |
 |`⎕TRAP`     |Event Trap                                      |
 
-### Stack and Workspace Information
+## Stack and Workspace Information
 
 |Name     |Description              |
 |---------|-------------------------|
@@ -241,7 +241,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕WSID`  |Workspace Identification |
 |`⎕XSI`   |Extended State Indicator |
 
-### Shared Variables
+## Shared Variables
 
 |Name  |Description                |
 |------|---------------------------|
@@ -253,7 +253,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕SVR`|Retract offer              |
 |`⎕SVS`|Query Shared Variable State|
 
-### GUI and COM Support
+## GUI and COM Support
 
 |Name     |Description                |
 |---------|---------------------------|
@@ -266,7 +266,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |`⎕WS`    |Set GUI object properties  |
 |`⎕WX`    |Expose GUI property names  |
 
-### Miscellaneous
+## Miscellaneous
 
 |Name    |Description                      |
 |--------|---------------------------------|

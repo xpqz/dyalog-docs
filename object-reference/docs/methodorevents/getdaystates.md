@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetDayStates</span><span class="command">Event 266</span></h1>
+<h1 class="heading"><span class="name">GetDayStates</span> <span class="command">Event 266</span></h1>
 
 
 
@@ -52,10 +52,7 @@ When the callback function is invoked, the 3<sup>rd</sup> and 4<sup>th</sup> ele
 The result of your callback function should be the same event message with only the 5<sup>th</sup> element modified in any way. This should contain the IDNs of the dates (within the range specified by the 3<sup>rd</sup> and 4<sup>th</sup> elements) that are to be displayed using the bold font attribute.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 Suppose that you keep a variable `BOLD_DATES` in the [Calendar](../objects/calendar.md) object. This variable is a vector of IDN values that defines those dates that the user has somehow identified as special and that you wish to display in bold, The following callback function could be applied:

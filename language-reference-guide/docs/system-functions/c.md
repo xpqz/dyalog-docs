@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Case Convert</span><span class="command">R←{X}⎕C Y</span></h1>
+<h1 class="heading"><span class="name">Case Convert</span> <span class="command">R←{X}⎕C Y</span></h1>
 
 
 
@@ -28,10 +28,7 @@ If `X` is specified, the following cases are supported:
 |`¯3`|`R` is a copy of `Y` with character arrays folded, for case-less comparison (this is equivalent to monadic use).|
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕C 42 'Pete' 'Πέτρος'
@@ -46,10 +43,7 @@ If `X` is specified, the following cases are supported:
 
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 Greek has two forms of lower-case Sigma, namely "σ" and "ς" but a single upper-case Sigma "Σ". Each lower-case form remains unchanged when mapped to lower-case, but both fold to "σ", while "Σ" is mapped to lower-case "σ" .
@@ -63,7 +57,7 @@ Greek has two forms of lower-case Sigma, namely "σ" and "ς" but a single upper
 
 ```
 
-#### Note
+## Note
 
 
 Refs in `Y` are not followed but just returned unchanged.

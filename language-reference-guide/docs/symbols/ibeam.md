@@ -2,15 +2,12 @@
 
 
 
-<h1 class="heading"><span class="name">I-Beam</span><span class="command">⌶</span></h1>
+<h1 class="heading"><span class="name">I-Beam</span> <span class="command">⌶</span></h1>
 
 
-#### I-Beam is a monadic operator that provides a range of system related services.
+## I-Beam is a monadic operator that provides a range of system related services.
 
-
-
-**Examples**
-
+<h3 class="example">Examples</h3>
 
 
 Monadic operator:  I-Beam

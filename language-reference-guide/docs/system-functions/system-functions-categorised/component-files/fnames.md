@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Names</span><span class="command">R←⎕FNAMES</span></h1>
+<h1 class="heading"><span class="name">File Names</span> <span class="command">R←⎕FNAMES</span></h1>
 
 
 
@@ -13,10 +13,7 @@ The result is a character matrix containing the names of all tied files, with on
 A file name is returned precisely as it was specified when the file was tied, except that the directory delimiter `\` is replaced by `/`.  If no files are tied, the result is a character matrix with 0 rows and 0 columns.  The rows of the result are in the order in which the files were tied.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       '/usr/pete/SALESFILE' ⎕FSTIE 16
  

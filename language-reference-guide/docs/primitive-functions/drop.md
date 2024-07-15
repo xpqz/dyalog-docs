@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Drop</span><span class="command">R←X↓Y</span></h1>
+<h1 class="heading"><span class="name">Drop</span> <span class="command">R←X↓Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@
 If the magnitude of `X[I]` exceeds the length of the `I`th axis, the result is an empty array with zero length along that axis.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       4↓'OVERBOARD'
 BOARD

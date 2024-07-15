@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Account Information</span><span class="command">R←⎕AI</span></h1>
+<h1 class="heading"><span class="name">Account Information</span> <span class="command">R←⎕AI</span></h1>
 
 
 
@@ -19,10 +19,7 @@ This is a simple integer vector, whose four elements are:
 
 Elements beyond 4 are not defined but reserved.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
      ⎕AI

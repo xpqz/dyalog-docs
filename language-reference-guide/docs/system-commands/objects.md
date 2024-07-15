@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">List Global Namespaces</span><span class="command">)OBJECTS {nm}</span></h1>
+<h1 class="heading"><span class="name">List Global Namespaces</span> <span class="command">)OBJECTS {nm}</span></h1>
 
 
 
@@ -12,10 +12,7 @@ This command displays the names of global **namespaces** in the active workspace
 
 Note:  `)OBS` can be used as an **alternative** to `)OBJECTS`
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )OBJECTS
 FORM1   UTIL    WSDOC   XREF

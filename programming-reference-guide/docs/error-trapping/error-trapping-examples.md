@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Example Traps</span></h1>
+<h1> Example Traps</h1>
 
-### Dividing by Zero
+## Dividing by Zero
 
 Let's try setting a `⎕TRAP` on `DOMAIN ERROR`:
 ```apl
@@ -74,7 +74,7 @@ Running the function with good and bad arguments has the desired effect:
 
 still gives an error, since there is no trap set in the global environment.
 
-### Other Errors
+## Other Errors
 
 What happens to our function if we run it with other duff arguments:
 ```apl
@@ -118,7 +118,7 @@ But here's yet another problem that we didn't think of:
             ^
 ```
 
-### Global Traps
+## Global Traps
 
 Often when we are writing a system, we can't think of everything that may go wrong ahead of time; so we need a way of catching "everything else that I may not have thought of". The error number used for "everything else" is zero:
 ```apl
@@ -150,7 +150,7 @@ In this case, when APL executed line 4 of our function `DIV`, it encountered an 
 
 So although our action has been taken, execution has stopped where it normally would after a `RANK ERRO`R.
 
-### Dangers
+## Dangers
 
 We must be careful when we set global traps; let's call the non-existent function BUG whenever we get an unexpected error:
 ```apl
@@ -192,7 +192,7 @@ Now, whenever we run our system and an unexpected error occurs, our `BUG` functi
 
 The system administrator can then load BUG.DIV, look at the SI stack, discover the problem, and fix it.
 
-### Looking out for Specific Problems
+## Looking out for Specific Problems
 
 In many cases, you can of course achieve the same effect of a trap by using APL code to detect the problem before it happens. Consider the function `TIE∆FILE`, which checks to see if a file already exists before it tries to access it:
 ```apl
@@ -229,7 +229,7 @@ This function executes the same code whether the file name is right or wrong, an
    [10]  ERR:R←'File does not exist'
 ```
 
-### Cut-Back versus Execute
+## Cut-Back versus Execute
 
 Let us consider the effect of using Cut-Back instead of Execute. Consider the system illustrated below, in which the function `REPORT` gives the user the option of 4 reports to be generated:
 ```apl

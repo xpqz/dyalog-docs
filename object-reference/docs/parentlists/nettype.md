@@ -1,3 +1,3 @@
-<h1 class="heading"><span class="name"> NetType Parents</span></h1>
+<h1> NetType Parents</h1>
 
 |

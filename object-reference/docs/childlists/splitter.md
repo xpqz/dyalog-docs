@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Splitter Children</span></h1>
+<h1> Splitter Children</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

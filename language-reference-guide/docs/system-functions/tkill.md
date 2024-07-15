@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Kill Thread</span><span class="command">{R}←{X}⎕TKILL Y</span></h1>
+<h1 class="heading"><span class="name">Kill Thread</span> <span class="command">{R}←{X}⎕TKILL Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The shy result `R` is a vector of the numbers of all threads that have been term
 The **base thread** 0 is always excluded from the cull.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕TKILL 0            ⍝ Kill background threads.
  

@@ -1,3 +1,3 @@
-<h1 class="heading"><span class="name"> System Commands</span></h1>
+<h1> System Commands</h1>
 
 

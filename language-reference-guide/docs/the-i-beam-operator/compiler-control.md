@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Compiler Control</span><span class="command">R←{X}(400⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Compiler Control</span> <span class="command">R←{X}(400⌶)Y</span></h1>
 
 
 
@@ -30,7 +30,7 @@ The optional left-argument `X` must be one of the following:
 The nature of `Y` and `R` depend on the value of `X` as follows:
 
 
-#### `X=0` : Control Automatic Compilation (default)
+## `X=0` : Control Automatic Compilation (default)
 
 
 `Y` must be an integer 0, 1, 2, or 3.
@@ -51,7 +51,7 @@ The result `R` is the previous value of `Y`.
 The automatic compilation setting is maintained within the workspace, and is saved and loaded with the workspace.
 
 
-#### `X=1`: Query Compilation State
+## `X=1`: Query Compilation State
 
 
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names.
@@ -61,7 +61,7 @@ The result `R` is a Boolean scalar or vector, with the value 1 if the correspond
 
 
 
-#### `X=2`: Compile
+## `X=2`: Compile
 
 
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names that should be compiled.
@@ -81,12 +81,12 @@ If the matrix `R` has zero rows then the compilation was successful.
 
 If this mechanism is used to compile operators, then the compiled bytecode will assume that the operator's operands are functions rather than arrays. At run time, the operands will be checked – if they are functions then the compiled bytecode will be used, otherwise the operator will be interpreted.
 
-#### `X=3`: Discard Compiled Form
+## `X=3`: Discard Compiled Form
 
 
 If `Y` is empty, discard any compiled bytecode for all functions and operators in the workspace. If `Y` is a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names, discard any compiled bytecode for the name(s) specified by `Y`. `R` is always 0
 
-#### `X=4`: Show Bytecode
+## `X=4`: Show Bytecode
 
 
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names.
@@ -97,7 +97,7 @@ The result `R` is a multi-line string (that is, a character vector with embedded
 
 **This functionality is provided for information and diagnostic purposes only. The human-readable form of the bytecode is subject to change at any time.**
 
-#### `X` is a namespace reference: Compile With Callbacks
+## `X` is a namespace reference: Compile With Callbacks
 
 
 `Y` must be a character vector, matrix or vector of vectors specifying the name of a function or operator or a list of such names. The specified functions or operators are compiled in the same way as when `X` = 2  except that the compiler uses the user-defined callback functions in the namespace `X` to obtain information about global names. The namespace `X` can contain any or all of following callback functions:

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Dequeue Events</span><span class="command">{R}←⎕DQ Y</span></h1>
+<h1 class="heading"><span class="name">Dequeue Events</span> <span class="command">{R}←⎕DQ Y</span></h1>
 
 
 
@@ -39,22 +39,22 @@ Associated with every object is a set of events.  For every event there is defi
 
 These are treated as follows:
 
-##### Action = 0 (the default)
+## Action = 0 (the default)
 
 
 `⎕DQ` performs "standard" processing appropriate to the object and type of event.  For example, the standard processing for a KeyPress event in an Edit object is to action the key press, i.e. to echo the character on the screen.
 
-##### Action = `¯`1
+## Action = `¯`1
 
 
 This disables the event.  The "standard" processing appropriate to the object and type of event is **not** performed, or in some cases is reversed.  For example, if the "action code" for a KeyPress event (22) is set to `¯1`,  `⎕DQ` simply ignores all keystrokes for the object in question.
 
-##### Action = 1
+## Action = 1
 
 
 `⎕DQ` terminates and returns information pertaining to the event (the **event message**) in `R` as a nested vector whose first two elements are the name of the object (that generated the event) and the event code.  `R` may contain additional elements depending upon the type of event that occurred.
 
-##### Action = fn {larg}
+## Action = fn {larg}
 
 
 `fn` is a character vector containing the name of a *callback* function.  This function is automatically invoked by `⎕DQ` whenever the event occurs, and **prior** to the standard processing for the event.  The callback is supplied the **event message** (see above) as its right argument, and, if specified, the array `larg` as its left argument.  If the callback function fails to return a result, or returns the scalar value 1,  `⎕DQ` then performs the standard processing appropriate to the object and type of event.  If the callback function returns a scalar 0, the standard processing is not performed or in some cases is reversed.
@@ -62,18 +62,18 @@ This disables the event.  The "standard" processing appropriate to the object a
 
 If the callback function returns its event message with some of the parameters changed, these changes are incorporated into the standard processing.  An example would be the processing of a keystroke message where the callback function substitutes upper case for lower case characters. The exact nature of this processing is described in the reference section on each event type.
 
-##### Action = `⍎`expr
+## Action = `⍎`expr
 
 
 If `Action` is set to a character vector whose first element is the execute symbol (`⍎`) the remaining string will be executed automatically whenever the event occurs.  The default processing for the event is performed first and may not be changed or inhibited in any way.
 
-##### Action = fn& {larg}
+## Action = fn& {larg}
 
 
 `fn` is a character vector containing the name of a *callback* function.  The function is executed in a new thread. The default processing for the event is performed first and may not be changed or inhibited in any way.
 
 
-#### The Result of `⎕DQ`
+# The Result of `⎕DQ`
 
 
 `⎕DQ` terminates, returning the shy result `R`, in one of four instances.

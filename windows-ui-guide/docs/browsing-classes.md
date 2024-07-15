@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Browsing Classes</span></h1>
+<h1> Browsing Classes</h1>
 
 Classes are represented by![ws explorer class icon](img/ws-explorer-class-icon.png)  icons. The picture below shows 3 classes: `Bird`, `Parrot` and `DomesticParrot`.
 
@@ -8,7 +8,7 @@ If you open the `#` node in the left-hand pane, you see the contents of `#` as a
 
 ![browsing classes 2](img/browsing-classes-2.png)
 
-### Browsing Class Scripts
+## Browsing Class Scripts
 
 Selecting `DomesticParrot` in the left-hand pane brings up its Class Script in the right-hand pane.
 

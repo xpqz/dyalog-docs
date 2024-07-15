@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Function Trains</span></h1>
+<h1> Function Trains</h1>
 
-### Introduction
+## Introduction
 
 A *Train* is a derived function constructed from a sequence of 2 or 3 functions, or from an array followed by two functions, which bind together to form a function.
 
@@ -29,7 +29,7 @@ Whereas, without the parentheses to identify the function train, the expression 
 ¯0.5
 ```
 
-### Forks and Atops
+## Forks and Atops
 
 The following trains are currently supported where `f`, `g` and `h` are functions and `A` is an array:
 ```apl
@@ -40,7 +40,7 @@ The following trains are currently supported where `f`, `g` and `h` are function
 
 The 3-item trains `(f g h)` and `(A g h)` are termed *forks* while the 2-item train `(g h)` is termed an *atop*. To distinguish the two styles of *fork*, we can use the terms *fgh-fork* or *Agh-fork*.
 
-### Trains as Functions
+## Trains as Functions
 
 A train is syntactically equivalent to a function and so, in common with any other function, may be:
 
@@ -60,17 +60,17 @@ In particular, trains may be applied to a single array (monadic use) or between 
      (  g h)⍵ ←→         g (  h ⍵)   ⍝ monadic       atop
 ```
 
-### Identifying a Train
+## Identifying a Train
 
 For a sequence to be interpreted as a train it must be separated from the argument to which it is applied. This can be done using parentheses or by naming the derived function.
 
-### Example - fork: negation of catenated with reciprocal
+## Example - fork: negation of catenated with reciprocal
 ```apl
       (-,÷)5         
 ¯5 0.2
 ```
 
-### Example - named fork
+## Example - named fork
 ```apl
       negrec←-,÷ 
       negrec 5
@@ -85,11 +85,11 @@ Whereas, without these means to identify the sequence as a train, the expression
 
 means the negation of the ravel of the reciprocal of 5.
 
-### Idiom Recognition
+## Idiom Recognition
 
 Function trains lend themselves to idiom recognition, a technique used to optimise the performance of certain expressions.
 
-**Example**
+<h3 class="example">Example</h3>
 
 An expression to find the first position in a random integer vector `X` of a number greater than 999000 is:
 ```apl
@@ -105,7 +105,7 @@ A function train is not only more concise, it is faster too.
 1704
 ```
 
-### Trains of Trains
+## Trains of Trains
 
 As a train resolves to a function, a sequences of more than 3 functions represents a train of trains. Function sequences longer than 3 are bound in threes, starting from the right:
 ```apl
@@ -119,8 +119,7 @@ e f g h i j k → e f(g h(i j k))     ⍝ fork(fork(fork))
 f g h i j k →   f(g h(i j k))       ⍝ atop(fork(fork))
 ```
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       6( +,-,×,÷)2     ⍝ fork:(6+2),((6-2),((6×2),(6÷2)))
 8 4 12 3
@@ -163,12 +162,11 @@ Was -trains=box
 
 ```
 
-### Binding Strengths
+## Binding Strengths
 
 The binding strength between the items of a train is less than that of operand-operator binding. In other words, operators bind first with their function (or array) operands to form derived functions, which may then participate as items in a train.
 
-**Example**
-
+<h5 class="example">Example</h5>
 ```apl
       +⌿ ÷ ≢            ⍝ fork for mean value
 ┌─────┬─┬─┐

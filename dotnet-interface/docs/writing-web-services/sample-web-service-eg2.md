@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Sample Web Service: EG2</span></h1>
+<h1> Sample Web Service: EG2</h1>
 
 In all the previous examples, we have relied upon ASP.NET to compile the `APLScript` into a .NET class prior to running it. This sample illustrates how you can make a .NET class yourself.
 
@@ -55,7 +55,7 @@ When you click *Save*, the Status Window displays the following information to c
 
 ![eg2_3](../img/eg2-3.png)
 
-### Testing EG2 from a Browser
+## Testing EG2 from a Browser
 
 If you point your browser at the URL:
 ```apl

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Locator Methods</span></h1>
+<h1> Locator Methods</h1>
 
 |---------------------------------------|---------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|

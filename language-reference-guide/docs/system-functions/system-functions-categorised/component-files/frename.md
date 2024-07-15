@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Rename</span><span class="command">{R}←X ⎕FRENAME Y</span></h1>
+<h1 class="heading"><span class="name">File Rename</span> <span class="command">{R}←X ⎕FRENAME Y</span></h1>
 
 
-##### Access code 128
+## Access code 128
 
 
 `Y` must be a simple 1 or 2 element integer vector containing a file tie number and an optional passnumber.  If the passnumber is omitted it is assumed to be zero.
@@ -21,10 +21,7 @@ The file being renamed must be tied exclusively.
 
 The shy result of `⎕FRENAME` is the tie number of the file.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
       'SALES' ⎕FTIE 1
       'PROFIT' ⎕FTIE 2

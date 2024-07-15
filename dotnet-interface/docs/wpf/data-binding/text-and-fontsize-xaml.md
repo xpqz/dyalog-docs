@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 4</span></h1>
+<h1> Example 4</h1>
 
 This example uses XAML to specify the user-interface and the main components of the data binding.
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Find</span><span class="command">R←X⍷Y</span></h1>
+<h1 class="heading"><span class="name">Find</span> <span class="command">R←X⍷Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ If the rank of `X` is larger than the rank of `Y`, no occurrences of `X` are fou
 `⎕CT` and `⎕DCT` are implicit arguments of Find.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'AN'⍷'BANANA'
 0 1 0 1 0 0

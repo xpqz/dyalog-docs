@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Enlist</span><span class="command">(⎕ML≥1)</span></h1>
+<h1 class="heading"><span class="name">Enlist</span> <span class="command">(⎕ML≥1)</span></h1>
 
 
 
@@ -12,10 +12,7 @@ Migration level must be such that `⎕ML≥1` (otherwise see ["Type"](type.md)).
 
 `Y` may be any array, `R` is a simple vector created from all the elements of `Y` in ravel order.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕ML←1         ⍝  Migration level 1

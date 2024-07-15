@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Methods</span></h1>
+<h1> Methods</h1>
 
 Methods are implemented as regular defined functions, but with some special attributes that control how they are called and where they are executed.
 
@@ -6,7 +6,7 @@ A Method is defined by a contiguous block of statements in a Class Script. A Met
 
 The behaviour of a Method is defined by an `:Access` control statement.
 
-#### Public or Private
+## Public or Private
 
 Methods may be defined to be Private (the default) or Public.
 
@@ -14,7 +14,7 @@ A Private method may only be invoked by another function that is running inside 
 
 A Public method may be called from outside the Class or an Instance of the Class.
 
-#### Instance or Shared
+## Instance or Shared
 
 Methods may be defined to be Instance (the default) or Shared.
 
@@ -24,7 +24,7 @@ A Shared method runs in the Class namespace and may be called via an Instance or
 
 Shared methods are typically used to manipulate Shared Properties and Fields or to provide general services for all Instances that are not Instance specific.
 
-#### Overridable Methods
+## Overridable Methods
 
 Instance Methods may be declared with `:Access Overridable`.
 

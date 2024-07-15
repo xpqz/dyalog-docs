@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> System Errors</span></h1>
+<h1> System Errors</h1>
 
-### Introduction
+## Introduction
 
 Dyalog APL will generate a system error and (normally) terminate in one of two circumstances:
 
@@ -9,7 +9,7 @@ Dyalog APL will generate a system error and (normally) terminate in one of two c
 
 On Windows, if the **DYALOG_NOPOPUPS** parameter is 0 (the default), it will display the System Error dialog box (see **System Error Dialog Box**). This is suppressed if **DYALOG_NOPOPUPS** is 1.
 
-### aplcore file
+## aplcore file
 
 When a system error occurs, APL normally saves an *aplcore* file which may be sent to Dyalog for diagnosis. The name and location of the *aplcore* file may be specified by the [**AplCoreName**](../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters) parameter. If this parameter is not specified, the *aplcore* file is named `aplcore` and is saved in the current working directory.
 
@@ -29,7 +29,7 @@ Under UNIX, this interesting information section can be extracted from the *aplc
 
 To prevent this information from being written to the *aplcore* file, the [**APL_TextInAplCore**](../../../windows-installation-and-configuration-guide/configuration-parameters/apl-textinaplcore) parameter should be set to 0.
 
-### Workspace Integrity
+## Workspace Integrity
 
 When you `)SAVE` your workspace, Dyalog APL first performs a workspace integrity check. If it detects any discrepancy or violation in the internal structure of your workspace, APL does not overwrite your existing workspace on disk. Instead, it displays the System Error dialog box and saves the workspace, together with diagnostic information, in an *aplcore* file before terminating.
 
@@ -39,7 +39,7 @@ Note that the internal error that caused the discrepancy could have occurred at 
 
 If APL is started in debug mode with the **-Dc**, **-Dw** or **-DW** flags, the Workspace Integrity check is performed more frequently, and it is more likely that the resulting *aplcore* file will contain information that will allow the problem to be identified and corrected. It is also possible to enable or alter the debugging level from within APL using the SetDFlags method; Dyalog support will direct the use of this feature when necessary.
 
-### System Exceptions
+## System Exceptions
 
 Non-specific System Errors are the result of Operating System exceptions that can occur due to a fault in Dyalog APL itself, an error in a Windows or other DLL, or even as a result of a hardware fault. The following system exceptions are separately identified.
 
@@ -52,7 +52,7 @@ Non-specific System Errors are the result of Operating System exceptions that ca
 |997      |An exception has occurred while processing an incoming OLE call             |&nbsp;                                                                                                         |
 |999      |An exception has been caused by Dyalog APL or by the Operating System       |&nbsp;                                                                                                         |
 
-### Recovering Data from aplcore files
+## Recovering Data from aplcore files
 
 Objects may often (but not always) be recovered from *aplcore* using `)COPY` or `⎕CY`. Note that  if the *aplcore* contains a workspace with more than one instance of the same name on the stack, `⎕CY` copies the most local object whereas `)COPY` copies the global one.
 
@@ -60,7 +60,7 @@ Be aware that in many cases an attempt to `)COPY` from or `)LOAD` an *aplcore* i
 
 Note that in previous versions under Windows because (by default) the *aplcore* file has no extension, it was necessary to explicitly add a dot, or APL would attempt to find the non-existent file `aplcore.dws`. This is no longer true in version 14.1 onwards.
 
-### Reporting Errors to Dyalog
+## Reporting Errors to Dyalog
 
 If APL crashes and saves an *aplcore* file, please email the following information to support@dyalog.com:
 
@@ -70,7 +70,7 @@ If APL crashes and saves an *aplcore* file, please email the following informati
 
 If the problem is reproducible, i.e. can be easily repeated, please also send the appropriate description, workspace, and other files required to do so.
 
-### System Error Dialog Box
+## System Error Dialog Box
 
 The System Error Dialog illustrated below was produced by deliberately inducing a system exception in the DLL function `memcpy()`. The functions used were:
 ```apl
@@ -94,7 +94,7 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 
 ![syserror](../img/syserror.png)
 
-### Options
+## Options
 
 |Item|Description|
 |---|---|
@@ -104,11 +104,11 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 |Pass exception on to operating system|If this box is checked, the exception will be passed on to your current debugging tool (e.g. *Visual Studio* ). See **PassExceptionsToOpSys** .|
 |Copy to clipboard|Copies the contents of the APL stack trace window to the Clipboard.|
 
-### Create a process dump file
+## Create a process dump file
 
 Under Windows the *Create a process dump file* option creates a user-mode process dump file , also known as a minidump file, called `dyalog.dmp` in the current directory. This file allows post-mortem debugging of a crash in the interpreter or a loaded DLL. It contains much more debug information than a normal *aplcore* (and is much larger than an *aplcore*) and can be sent to Dyalog Limited (zip it first please). Alternatively the file can be loaded into *Visual Studio .NET* to do your own debugging.
 
-### Debugging your own DLLs
+## Debugging your own DLLs
 
 If you are using Visual Studio, the following procedure should be used to debug your own DLLs when an appropriate Dyalog APL System Error occurs.
 
@@ -118,7 +118,7 @@ The system exception dialog box appears. Click on *Debug* to start the process i
 
 After debugging, the System Exception dialog box appears again. Click on *Don't send* to terminate Windows' exception handling.
 
-### ErrorOnExternalException Parameter
+## ErrorOnExternalException Parameter
 
 This parameter allows you to prevent APL from taking the actions described above when an exception caused by an external DLL occurs. The following example illustrates what happens when the functions above are run, but with the [**ErrorOnExternalException**](../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters) parameter set to 1.
 ```apl
@@ -139,7 +139,7 @@ foo[1]
 
 Note: Dyalog recommends that enabling [**ErrorOnExternalException**](../../../windows-installation-and-configuration-guide/configuration-parameters/configuration-parameters) should only be done while developing or debugging an application; ignoring such errors may result in corruption in the workspace which could result to unexpected errors later in the application.
 
-### What should I do if Dyalog hangs?
+## What should I do if Dyalog hangs?
 
 If Dyalog for Windows hangs, you should generate a process dump file and send it to Dyalog Support, along with your Build ID.
 

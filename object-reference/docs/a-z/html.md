@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">HTML</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">HTML</span> <span class="command">Property</span></h1>
 
 
 
@@ -19,7 +19,7 @@ The HTML property is a character vector that specifies the content to be rendere
 
 See also: [URL](url.md).
 
-#### Note
+## Note
 
 
 Typically, you will need to UTF-8 encode any text outside the Unicode range 0-127.

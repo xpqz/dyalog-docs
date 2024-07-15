@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Enclosed Elements</span></h1>
+<h1> Enclosed Elements</h1>
 
 An array may be enclosed to form a scalar element through any of the following means:
 
@@ -6,8 +6,7 @@ An array may be enclosed to form a scalar element through any of the following m
 - by inclusion in vector notation
 - as the result of certain functions when applied to arrays
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       (⊂1 2 3),⊂'ABC'
 1 2 3  ABC

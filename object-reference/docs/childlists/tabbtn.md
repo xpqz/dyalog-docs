@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TabBtn Children</span></h1>
+<h1> TabBtn Children</h1>
 
 |---------------------------------------|---------------------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|

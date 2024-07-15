@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set aplcore Parameters</span><span class="command">R←1302⌶Y</span></h1>
+<h1 class="heading"><span class="name">Set aplcore Parameters</span> <span class="command">R←1302⌶Y</span></h1>
 
 
 

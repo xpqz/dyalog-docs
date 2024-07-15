@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">OLEUnregister</span><span class="command">Method 531</span></h1>
+<h1 class="heading"><span class="name">OLEUnregister</span> <span class="command">Method 531</span></h1>
 
 
 

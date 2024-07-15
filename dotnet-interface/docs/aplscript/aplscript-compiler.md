@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The APLScript Compiler</span></h1>
+<h1> The APLScript Compiler</h1>
 
 APLScript files are *compiled* into executable code by the APLScript compiler whose name is given in the table below.
 

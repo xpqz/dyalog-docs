@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Add</span><span class="command">R←X+Y</span></h1>
+<h1 class="heading"><span class="name">Add</span> <span class="command">R←X+Y</span></h1>
 
 
 
 `Y` must be numeric.  `X` must be numeric.  `R` is the arithmetic sum of `X` and `Y`.  `R` is numeric. This function is also known as Plus.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       1 2 + 3 4
 4 6

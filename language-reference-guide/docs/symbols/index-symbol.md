@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Squad</span><span class="command">⌷</span></h1>
+<h1 class="heading"><span class="name">Squad</span> <span class="command">⌷</span></h1>
 
 
-##### Squad means
+## Squad means
 
 
 [Materialise](../primitive-functions/materialise.md)
@@ -20,7 +20,7 @@ If ⍵ is a COM or .NET collection, returns all elements
 in the collection as an array.
 ```
 
-##### Index with Axes means
+## Index with Axes means
 
 
 [Index](../primitive-functions/index-with-axes.md)

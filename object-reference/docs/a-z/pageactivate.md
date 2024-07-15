@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">PageActivate</span><span class="command">Event 360</span></h1>
+<h1 class="heading"><span class="name">PageActivate</span> <span class="command">Event 360</span></h1>
 
 
 

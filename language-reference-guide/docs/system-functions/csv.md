@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Comma Separated Values</span><span class="command">{R}←{X} ⎕CSV Y</span></h1>
+<h1 class="heading"><span class="name">Comma Separated Values</span> <span class="command">{R}←{X} ⎕CSV Y</span></h1>
 
 
 
@@ -14,7 +14,7 @@ Monadic `⎕CSV` imports data from a CSV file or converts data from CSV format t
 
 
 
-##### Internal Format
+## Internal Format
 
 
 Arrays that result from importing CSV data or arrays that are suitable for exporting as CSV data are represented by 3 possible structures:
@@ -28,7 +28,7 @@ Note that when importing CSV data, all fields are assumed to be character fields
 
 
 
-##### MetaCharacters
+## MetaCharacters
 
 
 Some characters in a CSV file are metacharacters which define the structure of the data; for example, the field separator character between fields. Characters which are not metacharacters are literal characters. The  variant options QuoteChar, EscapeChar and DoubleQuote make it possible to interpret metacharacters as literal characters and thus permit fields to contain field separator characters, leading and trailing spaces, and line-endings.
@@ -38,7 +38,7 @@ Some characters in a CSV file are metacharacters which define the structure of t
 Fixed-width fields do not require these options and they are ignored if fixed-width fields are being processed.
 
 
-#### Monadic `⎕CSV`
+# Monadic `⎕CSV`
 
 
 `R←⎕CSV Y`
@@ -111,7 +111,7 @@ This is a Boolean value (default 0) to specify whether or not the first record i
 
 
 
-#### Variant options
+## Variant options
 
 
 Monadic `⎕CSV` may be applied using the  Variant operator with the following options. The Principal option is Invert.
@@ -140,7 +140,7 @@ The Separator, QuoteChar and EscapeChar characters, when defined, must be differ
 Other options defined for export are also accepted but ignored.
 
 
-#### Invert Option
+## Invert Option
 
 
 This option specifies how the CSV data should be returned as follows:
@@ -153,7 +153,7 @@ This option specifies how the CSV data should be returned as follows:
 
 
 
-#### QuoteChar, EscapeChar and DoubleQuote Options
+## QuoteChar, EscapeChar and DoubleQuote Options
 
 
 If EscapeChar is set then any character may be prefixed by the escape character. The escape character is typically defined as `'\'`. The escape character immediately followed by the character `c` is the literal character `c` even if `c` alone would have been a metacharacter.
@@ -166,7 +166,7 @@ If DoubleQuote is set to 1 then two consecutive quote characters within a quoted
 
 
 
-#### Result
+## Result
 
 
 The result `R` contains the imported data.
@@ -181,10 +181,7 @@ If `Y[4]` does specify that the data contains a header then `R` is a 2-element v
 - `R[2]` is a vector of character vectors containing the header record.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 ![csv_excel](../img/csv-excel.png)
@@ -275,7 +272,7 @@ If `Y[4]` does specify that the data contains a header then `R` is a 2-element v
 
 ```
 
-#### Notes
+## Notes
 
 - When `Y` specifies just the source of the CSV data, it does not need to be enclosed or ravelled to create a 1-element vector.
 - `Y[2]`, the description of the source, distinguishes an otherwise ambiguous character vector source (which could contain either CSV data or a file name). The other source forms are unambiguous but the description, when given, must still match the given source type.
@@ -287,7 +284,7 @@ If `Y[4]` does specify that the data contains a header then `R` is a 2-element v
 - In character delimited format, all processed records are implicitly extended or truncated as required so that they contain the expected number of fields; implicitly added fields will be empty.
 - In fixed width format, all processed records are implicitly extended with spaces or truncated as required so that they contain as many characters as are specified in the Widths option declaration.
 
-##### File handling
+### File handling
 
 
 Data may be read from a named file or a tied native file. A tied native file may be read in sections by repeatedly invoking `⎕CSV` for a specified maximum number of records (specified by the Records variant) until no more data is read.
@@ -301,13 +298,13 @@ In all cases the files must contain text using one of the supported encodings. S
 - Native files will be decoded as if `'UTF-8'` had been specified.
 - Files specified by name will be examined and the likely file encoding will be deduced using the same heuristics performed by `⎕NGET`.
 
-#### Note also
+## Note also
 
 - Native files are read from the current file position. On successful completion, the file position will be at the first unprocessed character (end of file if the Records variant option is not specified). If an error is signalled the file position is undefined.
 - The result does not report the file encoding or line ending type as it does with `⎕NGET`. If this information is required then it must be obtained by other means.
 
 
-#### Dyadic `⎕CSV`
+### Dyadic `⎕CSV`
 
 
 `{R}←X ⎕CSV Y`
@@ -352,7 +349,7 @@ If `Y[1]` is empty, *Description* may be a character scalar `'S'` (simple) or `'
 
 
 
-#### Variant options
+### Variant options
 
 
 Dyadic `⎕CSV` may be applied using the  Variant operator with the following options.
@@ -379,7 +376,7 @@ The Separator, QuoteChar and EscapeChar characters, when defined, must be differ
 The Overwrite variant option (Boolean) from Version 16.0 remains supported but is deprecated in favour of IfExists.
 
 
-#### QuoteChar, EscapeChar and DoubleQuote options
+### QuoteChar, EscapeChar and DoubleQuote options
 
 - The CSV text will be generated such that it can be read back according to the corresponding rules for import.
 - If these options do not permit this (for example, a field contains the quote character and neither DoubleQuote or EscapeChar are set) an error is signalled.
@@ -393,10 +390,7 @@ If `Y` specifies that the CSV data is written to a file then `R` is the number o
 
 Otherwise, `R` is the CSV data in the format specified in Y, and is not shy.
 
-
-
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
        CSVFile←'c:\Dyalog16.0\sales.csv'
        ⎕←DATA HDR←⎕CSV CSVFile''(1 2)1
@@ -452,7 +446,7 @@ FILE NAME ERROR: Unable to create file ("The file exists.")
 
 ![csv_excel1](../img/csv-excel1.png)
 
-#### Notes
+### Notes
 
 - When `Y` contains only the destination of the CSV data (i.e. omits the description in its second element) it does not have to be enclosed to form a single element vector.
 - Native files are written from the current file position. On successful completion, the file position will be at the end of the written data. If an error is signalled the amount of data written is undefined.

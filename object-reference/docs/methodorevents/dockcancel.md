@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">DockCancel</span><span class="command">Event 485</span></h1>
+<h1 class="heading"><span class="name">DockCancel</span> <span class="command">Event 485</span></h1>
 
 
 

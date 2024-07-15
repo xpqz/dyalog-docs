@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetFinishText</span><span class="command">Method 366</span></h1>
+<h1 class="heading"><span class="name">SetFinishText</span> <span class="command">Method 366</span></h1>
 
 
 

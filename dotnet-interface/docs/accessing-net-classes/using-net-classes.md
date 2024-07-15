@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Using .NET Classes</span></h1>
+<h1> Using .NET Classes</h1>
 
 To create a Dyalog APL object as an instance of a .NET class, you use the `⎕NEW` system function. The `⎕NEW` system function is monadic. It takes a 1 or 2-element argument, the first element being a *class*.
 
@@ -42,7 +42,7 @@ The above statement assumes that you have defined `⎕USING` correctly; there mu
 
 The mechanism by which APL associates the class name with a class in a .NET namespace is described below.
 
-### Constructors and Overloading
+## Constructors and Overloading
 
 Each .NET Class has one or more *constructor* methods. A constructor is a method which is called to initialise an instance of the Class. Typically, a Class will support several constructor methods - each with a different set of parameters. For example, `System.DateTime` supports a constructor that takes three `Int32` parameters (year, month, day), another that takes six `Int32` parameters (year, month, day, hour, minute, second), and so forth. These different constructor methods are not distinguished by having different names but by the different sets of parameters they accept.
 
@@ -50,7 +50,7 @@ This concept, which is known as *overloading*, may seem somewhat alien to the AP
 
 When you create an instance of a class in C#, you do so using the `new` operator. This is automatically mapped to the appropriate constructor method by matching the parameters you supply to the various forms of the constructor. A similar mechanism is implemented in Dyalog APL using the `⎕NEW` system function.
 
-### How the `⎕NEW` System Function is implemented
+## How the `⎕NEW` System Function is implemented
 
 When APL executes an expression such as:
 ```apl
@@ -67,13 +67,13 @@ If you use `⎕NEW` with only a class as argument, APL will attempt to call the 
 
 Otherwise, if you use `⎕NEW` with a class as argument and a second element, APL will call the version of the constructor whose parameters match the second element you have supplied to `⎕NEW`. If no such version of the constructor exists, the call will fail with a `LENGTH ERROR`.
 
-### Notes
+## Notes
 
 - The value of `⎕USING` is only used when an object is instantiated. Changing the value of `⎕USING` has no effect on objects that have already been instantiated in the active workspace.
 - When a workspace containing .Net objects is saved, the names of the Net objects are saved with it but they are not automatically re-instantiated when the workspace is loaded or copied. A reference to such an orphaned object will report `(NULL)`. 
 - Some functionality might work with .NET Framework or .NET but not both, for example, SharpPlot requires the .NET Framework and does not work with .NET itself.
 
-### Displaying a .NET Object
+## Displaying a .NET Object
 
 When you display a reference to a .NET object, APL calls the object's `ToString` method and displays the result. All objects provide a `ToString` method because all objects ultimately inherit from the .NET class `System.Object`. Many .NET classes will provide their own `ToString` that overrides the one inherited from `System.Object`, and return a useful description or identifier for the object in question. `ToString` usually supports a range of calling parameters, but APL always calls the version of `ToString` that is defined to take no calling parameters. Monadic format (`⍕`) and monadic `⎕FMT` have been extended to provide the same result, and provides a quick shorthand method to call `ToString` in this way. The default `ToString` supplied by `System.Object` returns the name of the object's Type. This can be changed using the system function `⎕DF`. For example,
 ```apl
@@ -86,7 +86,7 @@ Saturday 09:17
 
 Note that if you want to check the type of an object, this can be obtained using the `GetType` method, which is supported by all .NET objects.
 
-### Disposing of .NET Objects
+## Disposing of .NET Objects
 
 .NET objects are managed by the .NET Common Language Runtime (CLR). The CLR allocates memory for an object when it is created, and de-allocates this memory when it is no longer required.
 

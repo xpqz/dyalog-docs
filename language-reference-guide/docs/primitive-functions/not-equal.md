@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Not Equal</span><span class="command">R←X≠Y</span></h1>
+<h1 class="heading"><span class="name">Not Equal</span> <span class="command">R←X≠Y</span></h1>
 
 
 
@@ -24,10 +24,7 @@ For Boolean `X` and `Y`, the value of `R` is the exclusive or (XOR)  result, det
 `⎕CT` and `⎕DCT` are  implicit arguments of Not Equal.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       1 2 3 ≠ 1.1 2 3
 1 0 0

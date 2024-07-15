@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Screen Map</span><span class="command">⎕SM</span></h1>
+<h1 class="heading"><span class="name">Screen Map</span> <span class="command">⎕SM</span></h1>
 
 
 
@@ -60,7 +60,7 @@ Elements in column 8 (Video Attributes) may be:
 - An integer array of the same shape as the field contents.  Each element specifies the appearance of the corresponding element in the field contents.
 
 
-#### Screen Management (Async Terminals)
+## Screen Management (Async Terminals)
 
 
 Dyalog APL for UNIX systems on tty devices (async terminals or on terminal emulators) manages two screens; the SESSION screen and the USER screen.  If the SESSION screen is current, an assignment to `⎕SM` causes the display to switch to the USER screen and show the form defined by `⎕SM`.
@@ -91,7 +91,7 @@ or
 ```
 
 
-#### Screen Management (Window Versions)
+## Screen Management (Window Versions)
 
 
 In Dyalog APL/X, and optionally in Dyalog APL/W, `⎕SM` is displayed in a separate **USER WINDOW** on the screen.  In an end-user application this may be the only Dyalog APL window.  However, during development, there will be a SESSION window, and perhaps EDIT and TRACE windows too.
@@ -99,12 +99,12 @@ In Dyalog APL/X, and optionally in Dyalog APL/W, `⎕SM` is displayed in a separ
 
 The USER Window will only accept input during execution of `⎕SR`.  It is otherwise "output-only".  Furthermore, during the execution of `⎕SR` it is the only active window, and the SESSION, EDIT and TRACE Windows will not respond to user input.
 
-#### Screen Management (GUI Versions)
+## Screen Management (GUI Versions)
 
 
 In versions of Dyalog APL that provide GUI support, there is a special SM object that defines the position and size of the window to be associated with `⎕SM`.  This allows character-mode applications developed for previous versions of Dyalog APL to be migrated to and integrated with GUI environments without the need for a total re-write.
 
-#### Effect of Localisation
+## Effect of Localisation
 
 
 Like all system variables (with the exception of `⎕TRAP`) `⎕SM` is subject to "pass-through localisation".  This means that a localised `⎕SM` assumes its value from the calling environment.  The localisation of `⎕SM` does not, of itself therefore, affect the appearance of the display.  However, reassignment of a localised `⎕SM` causes the new form to overlay rather than replace whatever forms are defined further down the stack.  The localisation of `⎕SM` thus provides a simple method of defining pop-up forms, help messages, etc.

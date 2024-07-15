@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ButtonEdit Events</span></h1>
+<h1> ButtonEdit Events</h1>
 
 |-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|

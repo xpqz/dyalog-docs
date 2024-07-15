@@ -1,27 +1,27 @@
-<h1 class="heading"><span class="name"> Notes</span></h1>
+<h1> Notes</h1>
 
-### Indexing
+## Indexing
 
 Simple indexing is the case when the indexer is a list of semicolon-separated   simple arrays,  as opposed to choose and reach indexing, where indexer is a nested array:
 
-### Simple Indexing Example
+## Simple Indexing Example
 ```apl
       A[;;2;(2 3⍴1)]
 ```
 
-### Choose Indexing Example
+## Choose Indexing Example
 ```apl
       A[(2 1)(2 2)]
 ```
 
-### Reach Indexing Example
+## Reach Indexing Example
 ```apl
       A[⊂((2 1) 1 5)]
 ```
 
 For choose and reach indexing, the indexer will be represented by itself, in the monitor log, because it is a true array. A simple indexer, though, is not a true array but a collection of arrays, so it is treated specially : it is represented in the monitor log by a character array, the rank of which is the number of subscript, and the shape of which is the number of items in each subscript.
 
-#### Indexer Examples
+### Indexer Examples
 
 `[2 3⍴1]` will be represented as a rank-1 character array of shape 6
 
@@ -37,12 +37,11 @@ In the monitor, for indexing, `A[I]`, the left argument will be `A` and the righ
 
 For indexed assignment, `A[I]←B`, the right argument will be `B`, and the left argument will be the representation of `I` as described above.
 
-### Operators
+## Operators
 
 In an expression in which an operator  takes primitive operands, APLMON will report the time for the operator itself.   If one of the operands is non-primitive, APLMON will report the time used by the operands.
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       ∇ APLMON expr
 [1]    2 ⎕NQ'.' 'APLMON' 'c:\dyalog17.0\aplmon'

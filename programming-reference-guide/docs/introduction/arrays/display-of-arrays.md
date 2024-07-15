@@ -1,9 +1,8 @@
-<h1 class="heading"><span class="name"> Display of Arrays</span></h1>
+<h1> Display of Arrays</h1>
 
 Simple scalars and vectors are displayed in a single line beginning at the left margin.  A number is separated from the next adjacent element by a single space.  The number of significant digits to be printed is determined by the system variable `⎕PP` whose default value is 10.  The fractional part of the number will be rounded in the last digit if it cannot be represented within the print precision.  Trailing zeros after a decimal point and leading zeros will not be printed.  An integer number will display without a decimal point.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       0.1 1.0 1.12
 0.1 1 1.12
@@ -17,8 +16,7 @@ A 2 BC
 
 If a number cannot be fully represented in `⎕PP` significant digits, or if the number requires more than five leading zeros after the decimal point, the number is represented in scaled form.  The mantissa will display up to `⎕PP` significant digits, but trailing zeros will not be displayed.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕PP←3
  
@@ -28,8 +26,7 @@ If a number cannot be fully represented in `⎕PP` significant digits, or if the
 
 Simple matrices are displayed in rectangular form, with one line per matrix row.  All elements in a given column are displayed in the same format, but the format and width for each column is determined independently of other columns.  A column is treated as numeric if it contains any numeric elements.  The width of a numeric column is determined such that the decimal points (if any) are aligned; that the `E` characters for scaled formats are aligned, with trailing zeros added to the mantissae if necessary, and that integer forms are right-adjusted one place to the left of the decimal point column (if any).  Numeric columns are right-justified; a column which contains no numeric elements is left-justified.  Numeric columns are separated from their neighbours by a single column of blanks.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2 4⍴'HANDFIST'
 HAND
@@ -51,8 +48,7 @@ FIST
 
 In the display of non-simple arrays, each element is displayed within a rectangle such that the rows and columns of the array are aligned.  Simple items within the array are displayed as above.  For non-simple items, this rule is applied recursively, with one space added on each side of the enclosed element for each level of nesting.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍳3
 1 2 3
@@ -73,8 +69,7 @@ In the display of non-simple arrays, each element is displayed within a rectangl
 
 Multi-dimensional arrays are displayed in rectangular planes.  Planes are separated by one blank line, and hyper-planes of higher dimensions are separated by increasing numbers of blank lines.  In all other respects, multi-dimensional arrays are displayed in the same manner as matrices.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2 3 4⍴⍳24
  1  2  3  4
@@ -97,8 +92,7 @@ FOX
 
 The power of this form of display is made apparent when formatting informal reports.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +AREAS←'West' 'Central' 'East'
  West  Central  East
@@ -124,8 +118,7 @@ The power of this form of display is made apparent when formatting informal repo
 
 If the display of an array is wider than the page width, as set by the system variable `⎕PW`, it will be folded at or before `⎕PW` and the folded portions indented six spaces.  The display of a simple numeric or mixed array may be folded at a width less than `⎕PW` so that individual numbers are not split across a page boundary.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕PW←40
  
@@ -138,12 +131,11 @@ If the display of an array is wider than the page width, as set by the system va
       90  91  7 91 51 52 32
 ```
 
-## The ]display User Command
+# The ]display User Command
 
 The user command `]display`   illustrates the structure of an array.
 
-**Examples**
-
+<h3 class="example">Examples</h3>
 ```apl
       ]display 'ABC' (1 4⍴1 2 3 4)
 ┌→────────────────┐
@@ -179,7 +171,7 @@ The user command `]display`   illustrates the structure of an array.
 
 An explanation of the symbols that appear in the borders can be seen by running `]display -?`
 
-## The ]boxing User Command
+# The ]boxing User Command
 
 The user command `]boxing` changes the way in which nested arrays are the displayed in the Session. The following examples show different settings.
 
@@ -223,14 +215,13 @@ Was ON
 
 ```
 
-## Shy Results
+### Shy Results
 
 Functions may return shy results.
 
 A shy  or suppressed result is a result that is not automatically displayed in the Session, but is suppressed. A shy result of an expression may be displayed by using it as an argument to a function that returns its argument unchanged, by enclosing the expression in parentheses or by assigning it to `⎕`.
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       A←10 ⍝ Result of assignment is shy
       (A←10)

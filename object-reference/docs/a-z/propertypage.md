@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">PropertyPage</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">PropertyPage</span> <span class="command">Object</span></h1>
 
 
 
@@ -36,7 +36,7 @@ If the user presses the Cancel button, the current PropertyPage generates a [Pag
 
 Other properties and behaviour depend upon the Style of the parent PropertySheet which may be `'Standard'` or `'Wizard'`
 
-#### Standard Behaviour
+## Standard Behaviour
 
 
 ![ps1](../img/ps1.gif)
@@ -62,7 +62,7 @@ When the user clicks the Apply button, each of the PropertyPages whose Changed f
 
 You may control the value of the Changed property using `⎕WS` or by calling [PageChanged](../methodorevents/pagechanged.md) as a method. In all cases, the Apply button is active if the value of Changed on any PropertyPage is 1, and inactive otherwise.
 
-#### Wizard Behaviour
+## Wizard Behaviour
 
 
 ![ps2](../img/ps2.gif)

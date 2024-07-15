@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Direction (Signum)</span><span class="command">R←×Y</span></h1>
+<h1 class="heading"><span class="name">Direction (Signum)</span> <span class="command">R←×Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ Where an element of `Y` is real, the corresponding element of `R` is an integer 
 
 Where an element of `Y` is complex, the corresponding element of `R` is a number with the same phase but with magnitude (absolute value) 1. It is equivalent to `Y÷|Y`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ×¯15.3 0 101
 ¯1 0 1

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">OverflowChar</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">OverflowChar</span> <span class="command">Property</span></h1>
 
 
 
@@ -21,7 +21,7 @@ The OverflowChar property specifies the character to be displayed in place of th
 If the value of OverflowChar is an empty vector (the default) the data in a numeric cell is simply clipped if it is too wide to fit in the cell.
 
 
-#### For example
+## For example
 ```apl
    'F'⎕WC'Form'('Coord' 'Pixel')('Size' 101 296)         
    'F'⎕WS'Caption' 'OverflowChar Property'               

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FileBoxOK</span><span class="command">Event 71</span></h1>
+<h1 class="heading"><span class="name">FileBoxOK</span> <span class="command">Event 71</span></h1>
 
 
 

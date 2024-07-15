@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The SimpleCtl Control</span></h1>
+<h1> The SimpleCtl Control</h1>
 
 The `SimpleCtl` Class is illustrated below:
 ```apl
@@ -30,7 +30,7 @@ In APL terms, the argument to our `Render` function, `output`, will be a namespa
 
 Using the `:Signature` statement, the `Render` function is defined to have the same syntax as the method it overrides, i.e. it does not return a result  `void` and takes a single parameter of type `HtmlTextWriter`. Note that to successfully replace the base class method, the `Render` function must have exactly this *:Signature*.
 
-### Using SimpleCtl
+## Using SimpleCtl
 
 Our `SimpleCtl` control may now be included in any .NET Web Page from which `temp.dll` is accessible. The file `samples\asp.net\temp\Simple.aspx` is simply an example. The fact that this control is written in Dyalog APL is immaterial.
 ```apl

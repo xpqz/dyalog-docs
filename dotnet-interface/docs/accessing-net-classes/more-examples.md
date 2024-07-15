@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> More Examples</span></h1>
+<h1> More Examples</h1>
 
-### Directory and File Manipulation
+## Directory and File Manipulation
 
 The .NET Namespace `System.IO` (also in the Assembly `mscorlib.dll`) provides some useful facilities for manipulating files. For example, you can create a `DirectoryInfo` object associated with a particular directory on your computer, call its `GetFiles` method to obtain a list of files, and then get their `Name` and `CreationTime` properties.
 ```apl
@@ -49,7 +49,7 @@ Taking advantage of namespace reference array expansion, an expression to displa
  ...
 ```
 
-### Sending an email
+## Sending an email
 
 The .NET Namespace `System.Web.Mail` provides objects for handing email.
 
@@ -78,7 +78,7 @@ So instead, you can just say:
  
 ```
 
-### Web Scraping
+## Web Scraping
 
 The .NET Framework provides a whole range of classes for accessing the internet from a program. The following example illustrates how you can read the contents of a web page. It is complicated, but realistic, in that it includes code to cater for a firewall/proxy connection to the internet. It is only 9 lines of APL code, but each line requires careful explanation.
 

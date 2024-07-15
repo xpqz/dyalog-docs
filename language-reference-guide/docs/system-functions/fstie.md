@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">File Share Tie</span><span class="command">{R}←X ⎕FSTIE Y</span></h1>
+<h1 class="heading"><span class="name">File Share Tie</span> <span class="command">{R}←X ⎕FSTIE Y</span></h1>
 
 
 
@@ -20,7 +20,7 @@ The shy result of `⎕FSTIE` is the tie number of the file.
 
 
 
-#### Automatic Tie Number Allocation
+## Automatic Tie Number Allocation
 
 
 A tie number of 0 as argument to a create, share tie or exclusive tie operation, allocates the first (closest to zero) available tie number and returns it as an explicit result. This allows you to simplify code. For example:
@@ -39,10 +39,7 @@ to:
 ```
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       'SALES' ⎕FSTIE 1
  

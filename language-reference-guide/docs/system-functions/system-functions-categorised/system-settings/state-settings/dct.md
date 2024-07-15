@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Decimal Comparison Tolerance</span><span class="command">⎕DCT</span></h1>
+<h1 class="heading"><span class="name">Decimal Comparison Tolerance</span> <span class="command">⎕DCT</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The value of `⎕DCT` determines the precision with which two numbers are judged
 
 For further information, see ["Comparison Tolerance: "](ct.md).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕DCT←1E¯10
       1.00000000001 1.0000001 = 1

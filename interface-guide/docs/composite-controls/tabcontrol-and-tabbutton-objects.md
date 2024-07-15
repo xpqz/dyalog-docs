@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The TabControl and TabButton Objects</span></h1>
+<h1> The TabControl and TabButton Objects</h1>
 
 The TabControl object provides access to the standard Windows NT tab control.
 
@@ -37,7 +37,7 @@ Next, create one or more pairs of TabButton and SubForm objects as children of t
 
 ![tabcontrol_default](../img/tabcontrol-default.png)
 
-### Style, FlatSeparators and HotTrack Properties
+## Style, FlatSeparators and HotTrack Properties
 
 The Style property determines the overall appearance of the tabs or buttons in a TabControl and may be `'Tabs'` (the default), `'Buttons'` or `'FlatButtons'`.
 
@@ -53,7 +53,7 @@ If Style is `'FlatButtons'`, the FlatSeparators property specifies whether or no
 
 The HotTrack property specifies whether or not the tabs or buttons in a TabControl object (which are represented by TabButton objects), are automatically highlighted by the mouse pointer.
 
-### The Align Property
+## The Align Property
 
 The Align property specifies along which of the 4 edges of the TabControl the tabs or buttons are arranged. Align also controls the relative positioning of the picture and Caption within each TabButton. Align may be Top (the default), Bottom, Left or Right.
 
@@ -84,7 +84,7 @@ If Align is `'Left'` or `'Right'`, the tabs or buttons are arranged top-to-botto
 
 ![tabcontrol_align_left](../img/tabcontrol-align-left.png)
 
-### The MultiLine Property
+## The MultiLine Property
 
 The MultiLine property of a TabControl determines whether or not your tabs or buttons will be arranged in multiple flights or multiple rows/columns.
 
@@ -100,7 +100,7 @@ If the TabControl has Style `'Buttons'` and MultiLine is set to 1, the buttons a
 
 ![tabcontrol_multiline_buttons](../img/tabcontrol-multiline-buttons.png)
 
-### The ScrollOpposite Property
+## The ScrollOpposite Property
 
 The ScrollOpposite property specifies that unneeded tabs scroll to the opposite side of a TabControl, when a tab is selected. This only applies when MultiLine is 1.
 
@@ -127,7 +127,7 @@ The following example illustrates a TabControl with ScrollOpposite set to 1, aft
 
 If MultiLine is 1, the way that multiple flights of tabs or rows/columns of buttons are displayed is further defined by the Justify property which may be `'Right'` (the default) or `'None'`.
 
-### The Justify Property
+## The Justify Property
 
 If Justify is `'Right'` (which is the default), the TabControl increases the width of each tab, if necessary, so that each row of tabs fills the entire width of the tab control. Otherwise, if Justify is empty or `'None'`, the rows are ragged as shown below.
 ```apl
@@ -150,7 +150,7 @@ The next picture illustrates the effect of Justify `'None'` on a TabControl with
 
 ![tabcontrol_multiline_buttons_justify_none](../img/tabcontrol-multiline-buttons-justify-none.png)
 
-### The TabSize and TabJustify Properties
+## The TabSize and TabJustify Properties
 
 By default, the size of the tabs may vary from one row to another. Fixed size tabs may be obtained by setting the TabSize property.
 
@@ -187,7 +187,7 @@ If, instead, the TabJustify property is set to `'IconEdge'` then the text is cen
 
 ![tabcontrol_tabjustify_iconedge](../img/tabcontrol-tabjustify-iconedge.png)
 
-### The TabFocus Property
+## The TabFocus Property
 
 The TabFocus property specifies the focus behaviour for the TabControl object.
 

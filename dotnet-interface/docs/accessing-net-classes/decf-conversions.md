@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> DECF Conversion</span></h1>
+<h1> DECF Conversion</h1>
 
 Incoming .NET data types VT_DECIMAL (96-bit integer) and VT_CY (currency value represented by a 64-bit two's complement integer, scaled by 10,000) are converted to 126-bit decimal numbers (DECFs). This conversion is performed independently of the value of `⎕FR`.
 

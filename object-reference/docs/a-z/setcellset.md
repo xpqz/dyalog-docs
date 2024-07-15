@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetCellSet</span><span class="command">Method 171</span></h1>
+<h1 class="heading"><span class="name">SetCellSet</span> <span class="command">Method 171</span></h1>
 
 
 

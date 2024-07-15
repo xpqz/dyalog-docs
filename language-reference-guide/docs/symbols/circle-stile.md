@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Circle Stile</span><span class="command">⌽</span></h1>
+<h1 class="heading"><span class="name">Circle Stile</span> <span class="command">⌽</span></h1>
 
 
-##### Monadic Circle Stile means
+## Monadic Circle Stile means
 
 
 [Reverse
@@ -31,7 +31,7 @@ smart
 1  2  3  4
 ```
 
-##### Dyadic Circle Stile means
+## Dyadic Circle Stile means
 
 
 [Rotate

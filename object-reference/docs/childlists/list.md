@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> List Children</span></h1>
+<h1> List Children</h1>
 
 |---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |

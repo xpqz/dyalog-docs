@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Display Form</span><span class="command">{R}←⎕DF Y</span></h1>
+<h1 class="heading"><span class="name">Display Form</span> <span class="command">{R}←⎕DF Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 The result `R` is the previous value of the Display Form which initially is `⎕NULL`.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       'F'⎕WC'Form'

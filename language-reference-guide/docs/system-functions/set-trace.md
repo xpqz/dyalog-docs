@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set Trace</span><span class="command">{R}←X ⎕TRACE Y</span></h1>
+<h1 class="heading"><span class="name">Set Trace</span> <span class="command">{R}←X ⎕TRACE Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 `R` is a simple integer vector of non-negative elements indicating the lines in the function or operator on which a trace control has been placed.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       +(0,⍳10) ⎕TRACE'FOO'
 0 1
@@ -66,10 +63,7 @@ For each traced line, the output from `⎕TRACE` is displayed as a two element v
 - `→` followed by a line number.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕VR 'DSL'
      ∇ R←DSL SKIP;A;B;C;D

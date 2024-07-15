@@ -2,15 +2,15 @@
 
 
 
-<h1 class="heading"><span class="name">Back Slash Bar</span><span class="command">⍀</span></h1>
+<h1 class="heading"><span class="name">Back Slash Bar</span> <span class="command">⍀</span></h1>
 
 
-#### Used as a Function
+## Used as a Function
 
 
 Monadic Back Slash Bar is not defined
 
-##### Dyadic Back Slash Bar means
+### Dyadic Back Slash Bar means
 
 
 [Expand  First](../primitive-functions/expand.md)
@@ -29,12 +29,12 @@ Monadic Back Slash Bar is not defined
 9 10 11 12
 ```
 
-#### Used as an Operator
+## Used as an Operator
 
 
 Back Slash Bar is a Monadic operator with a Dyadic operand
 
-##### Operator Slope Bar means
+#### Operator Slope Bar means
 
 
 [Scan First](../primitive-operators/scan-first.md)

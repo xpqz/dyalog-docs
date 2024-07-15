@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Reciprocal</span><span class="command">R←÷Y</span></h1>
+<h1 class="heading"><span class="name">Reciprocal</span> <span class="command">R←÷Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 `⎕DIV` is an implicit argument of Reciprocal.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ÷4 2 5
 0.25 0.5 0.2

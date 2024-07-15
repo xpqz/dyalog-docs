@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Appendix B: Table of keycodes and keystrokes for PuTTY</span></h1>
+<h1> Appendix B: Table of keycodes and keystrokes for PuTTY</h1>
 
 Keycodes, their common keystrokes, and the keystrokes specific to the PuTTY terminal emulator.
 
-### Notes
+## Notes
 
 1. APL represents the metakey used as the APL character and command shift
 2. Cmd represents the keystroke <Ctrl-x>
@@ -68,6 +68,6 @@ Keycodes, their common keystrokes, and the keystrokes specific to the PuTTY term
 |US     |Up Screen          |Shift+Up             |PgUp                |
 |ZM     |Zoom               |Cmd z                |Shift+Ctrl+PgUp     |
 
-### Notes
+## Notes
 
 - If you are using PuTTY or another emulator that uses the Dyalog Unicode IME, it will be necessary to swap to a non-Dyalog APL keyboard before hitting Ctrl-l; hitting Ctrl-l while in a Dyalog APL keyboard will generate a Quad symbol.

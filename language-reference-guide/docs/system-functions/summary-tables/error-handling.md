@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Error Handling</span></h1>
+<h1> Error Handling</h1>
 
 |Name        |Description                                     |
 |------------|------------------------------------------------|

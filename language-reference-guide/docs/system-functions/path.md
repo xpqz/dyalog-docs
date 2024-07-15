@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Search Path</span><span class="command">⎕PATH</span></h1>
+<h1 class="heading"><span class="name">Search Path</span> <span class="command">⎕PATH</span></h1>
 
 
 
@@ -14,10 +14,7 @@ The `⎕PATH` variable can be used to identify a namespace in which commonly use
 
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 To make the `DISPLAY` function available directly from within any namespace.
@@ -49,10 +46,7 @@ In other words, the search is conducted upwards through enclosing namespaces, em
 Note that the `⎕PATH` mechanism is used ONLY if the function reference cannot be satisfied in the current namespace.  This is analogous to the case when the Windows or UNIX PATH variable begins with a `'.'`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
    ⎕PATH               Search in ...
 

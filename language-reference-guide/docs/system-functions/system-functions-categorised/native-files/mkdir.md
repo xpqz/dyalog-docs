@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Make Directory</span><span class="command">{R}←{X}⎕MKDIR Y</span></h1>
+<h1 class="heading"><span class="name">Make Directory</span> <span class="command">{R}←{X}⎕MKDIR Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ The optional left argument `X` is the numeric scalar 0, 1, 2 or 3 which amends t
 
 If `Y` specifies a single name, the shy result `R` is a scalar 1 if a directory was created or 0 if not. If `Y` is a vector of character vectors, `R` is a vector of 1s and 0s with the same length as `Y`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕NEXISTS '/Users/Pete/Documents/temp'
@@ -59,7 +56,7 @@ FILE NAME ERROR: Unable to create directory ("The system cannot find the path sp
 
 ```
 
-#### Note
+## Note
 
 
 When multiple names are specified they are processed in the order given. If an error occurs at any point whilst creating directories, processing will immediately stop and an error will be signalled. The operation is not atomic; some directories may be created before this happens. In the event of an error there will be no result and therefore no indication of how many directories were created before the error occurred.

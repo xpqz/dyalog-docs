@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Splitter</span><span class="command">Example 4</span></h1>
+<h1 class="heading"><span class="name">Splitter</span> <span class="command">Example 4</span></h1>
 
 
 ```apl

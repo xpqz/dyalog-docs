@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Dependency Table</span></h1>
+<h1> Dependency Table</h1>
 
 The following table describes the dependencies that exist between functions, operators and system variables.
 

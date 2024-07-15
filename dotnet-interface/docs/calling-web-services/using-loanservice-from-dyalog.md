@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Using LoanService from Dyalog APL</span></h1>
+<h1> Using LoanService from Dyalog APL</h1>
 
 For example, the above call to `MakeProxy` will create a C# source code file called `LoanService.cs`, and an assembly called `LoanService.dll` in your current directory. The name of the proxy class in `LoanService.dll` is `LoanService`.
 

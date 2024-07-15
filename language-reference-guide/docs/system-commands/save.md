@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Save Workspace</span><span class="command">)SAVE {-force} {ws}</span></h1>
+<h1 class="heading"><span class="name">Save Workspace</span> <span class="command">)SAVE {-force} {ws}</span></h1>
 
 
 
@@ -43,10 +43,7 @@ A workspace may not be saved if any threads (other than the root thread 0) are r
 After a successful save, the system reports the workspace name, followed by the word  "`saved`" and the current time and date; and if `ws` specified a new name, `⎕WSID` is assigned that name.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       )SAVE MYWORK
 ./MYWORK saved Thu Sep 17 10:32:20 1998

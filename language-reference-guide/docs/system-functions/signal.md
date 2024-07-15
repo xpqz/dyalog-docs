@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Signal Event</span><span class="command">{R}←{X}⎕SIGNAL Y</span></h1>
+<h1 class="heading"><span class="name">Signal Event</span> <span class="command">{R}←{X}⎕SIGNAL Y</span></h1>
 
 
 
@@ -43,10 +43,7 @@ The effect of the system function is to interrupt execution.  The state indicat
 
 An error interrupt may be trapped if the system variable `⎕TRAP` is set to intercept the event.  Otherwise, the standard system action is taken (which may involve cutting back the state indicator further if there are locked functions or operators in the state indicator).  The standard event message is replaced by the text given in `X`, if present.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕VR'DIVIDE'
      ∇ R←A DIVIDE B;⎕TRAP
@@ -74,15 +71,12 @@ If you are using the Microsoft .NET Framework, you may use `⎕SIGNAL` to throw 
      ∇
 ```
 
-#### `⎕SIGNAL 0`: Reset error-related system constants
+## `⎕SIGNAL 0`: Reset error-related system constants
 
 
 If `Y` is a simple integer with the value 0, `⎕SIGNAL` does not interrupt execution, but merely returns the value 0. The side effect of calling `⎕SIGNAL 0` is to reset the values of `⎕DM`, `⎕DMX`, `⎕EN` and `⎕EXCEPTION` to their default values. `⎕SIGNAL 0` is the only form of `⎕SIGNAL` which can be used to reset the aforementioned system constants; including a left argument or using a name/value pair right argument of `⎕SIGNAL` will result in a `DOMAIN ERROR`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ÷0
@@ -104,9 +98,9 @@ DOMAIN ERROR: Divide by zero
 
 ```
 
-#### Further examples
+## Further examples
 
-#### Example 1
+## Example 1
 ```apl
 
       'Hello'⎕SIGNAL 200
@@ -137,7 +131,7 @@ ERROR 200
 
 ```
 
-#### Example 2
+## Example 2
 ```apl
 
       ⎕SIGNAL⊂('EN' 200)('Vendor' 'Andy')('Message' 'My error')

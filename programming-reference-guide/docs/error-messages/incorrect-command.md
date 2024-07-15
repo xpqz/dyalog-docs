@@ -9,10 +9,7 @@
 
 This report is given when an unrecognised system command is entered.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       )CLERA
 incorrect command

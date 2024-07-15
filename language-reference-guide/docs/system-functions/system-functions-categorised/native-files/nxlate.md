@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Translate</span><span class="command">{R}←{X}⎕NXLATE Y</span></h1>
+<h1 class="heading"><span class="name">Native File Translate</span> <span class="command">{R}←{X}⎕NXLATE Y</span></h1>
 
 
 
@@ -28,7 +28,7 @@ The system treats a translate vector with value `(⍳256)-⎕IO` as meaning *no 
 
 The default translation vector established at `⎕NTIE` or `⎕NCREATE` time  is derived from the mapping defined in the current output translation table (normally WIN.DOT) and maps alphabetic, numeric and most other characters in `⎕AV`  to their corresponding ANSI positions. However, some characters are not resolved  by this process and it is recommended that users define translate vectors to cover all cases.
 
-##### Unicode Edition
+## Unicode Edition
 
 
 `⎕NXLATE` is relevant in the Unicode Edition only to process Native Files that contain characters expressed as indices into `⎕AV`, such as files written by the Classic Edition.

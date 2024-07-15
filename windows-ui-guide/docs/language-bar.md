@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Language Bar</span></h1>
+<h1> Language Bar</h1>
 
 The Language Bar is an optional window which is initially docked to the Session Window, to make it easy to pick APL symbols without using the keyboard.
 
@@ -6,7 +6,7 @@ If you hover the mouse pointer over a symbol in the Language Bar, a pop-up tip i
 
 ![language bar](img/language-bar.png)
 
-### Popup Menu
+## Popup Menu
 
 If you click the right mouse button in the Language Bar, the context menu displays the following options:
 

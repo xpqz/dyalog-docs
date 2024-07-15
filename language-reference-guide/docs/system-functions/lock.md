@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Lock Definition</span><span class="command">{R}←{X}⎕LOCK Y</span></h1>
+<h1 class="heading"><span class="name">Lock Definition</span> <span class="command">{R}←{X}⎕LOCK Y</span></h1>
 
 
 
@@ -40,10 +40,7 @@ The shy result `R` is the lock state (1,2 or 3) of `Y`.
 A `DOMAIN ERROR` is reported if `Y` is ill-formed.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕FX'r←foo' 'r←10'
       ⎕NR'foo'  

@@ -1,16 +1,16 @@
-<h1 class="heading"><span class="name"> Shared Variable Principles</span></h1>
+<h1> Shared Variable Principles</h1>
 
 Shared Variables are part of the APL standard, although strictly speaking as an optional facility. They provide a comprehensive mechanism for communicating between two APL workspaces, or between APL and a co-operating non-APL application. Despite some conflicts between Shared Variable concepts and DDE, this standard APL mechanism has overriding advantages as the basis for a DDE interface. The main benefit is that Shared Variables provide a **general** basis for developing communications using a variety of protocols, of which DDE is but a single example. Dyalog APL communications are not therefore designed for and limited to DDE, but can be extended to other protocols which are appropriate in different environments.
 
 Most mainframe APL users will already be familiar with Shared Variables and will need no introduction to their concepts. New APL users, or those whose experience has been only of PC-based interpreters, may find the following introduction helpful.
 
-### Introduction
+## Introduction
 
 It is easiest to consider Shared Variables between two APL workspaces. A Shared Variable is simply a variable that is common to and visible in two workspaces. Once a variable is shared, its value is the same in both workspaces. Communication is achieved by one workspace assigning a new value to the variable and then the other workspace referencing it. Although there is no explicit **send** or **receive**, it is perhaps easier to think of things in this way. When you assign a value to a shared variable, you are in effect transmitting it to your partner. When you reference a shared variable, you are in fact receiving it from your partner.
 
 This discussion of shared variables will refer to the terms **set** and **use**. The term **set** means to assign a (new) value to a variable, i.e. its name appears to the left of an assignment arrow. The term **use** means to refer to the value of a variable, i.e. its name appears to the right of an assignment arrow.
 
-### Sharing a Variable
+## Sharing a Variable
 
 Variables are shared using the system function `⎕SVO`. This is a dyadic function whose right argument specifies the name (or a matrix of names) of the variable, and whose left argument identifies the partner with whom the variable is to be shared. In mainframe APL, you identify the partner by its processor id. For example, the following statement means that you offer to share the variable `X` with processor 123.
 
@@ -26,18 +26,18 @@ A single `⎕SVO` by one workspace is not however sufficient to make a connectio
 
 The coupling process is symmetrical and there is no specific order in which offers must be made. However, there is a concept known as the *degree of coupling* which is returned as the result of `⎕SVO`. The degree of coupling is simply a count of the number of processes which currently have the variable "on offer". When the first process offers to share the variable, its `⎕SVO` will return 1. When the second follows suit, its `⎕SVO` returns 2. The first process can tell when coupling is complete by calling `⎕SVO` monadically at a later point, as illustrated below.
 
-|Process 345 |Process 123 |
-|------------|------------|
-|123 ⎕SVO 'X'|&nbsp;      |
-|1           |&nbsp;      |
-|&nbsp;      |345 ⎕SVO 'X'|
-|&nbsp;      |2           |
-|⎕SVO 'X'    |&nbsp;      |
-|2           |&nbsp;      |
+|Process 345   |Process 123   |
+|--------------|--------------|
+|`123 ⎕SVO 'X'`|&nbsp;        |
+|`1`           |&nbsp;        |
+|&nbsp;        |`345 ⎕SVO 'X'`|
+|&nbsp;        |`2`           |
+|`⎕SVO 'X'`    |&nbsp;        |
+|`2`           |&nbsp;        |
 
 In this example, both partners specified exactly whom they wished to share with. These are termed **specific offers**. It is also possible to make a **general offer**, which means that you offer to share a particular variable with **anyone**. Coupling can be established by any other processor that offers to share the same variable with you, but notice that the other processor must make a **specific offer** to couple with your general one. The rule is in fact, that sharing may be established by matching a specific offer with another specific offer, or by matching a specific offer with a general offer. Two general offers cannot establish a connection.
 
-### The State Vector
+## The State Vector
 
 One of the interesting things about Shared Variables, is that both APL workspaces are equal partners. Either of them is allowed to change the value of a shared variable, thus communication is two way. In any communication of this sort, it is essential to have a mechanism to keep things in step. If not, it is possible for one partner to miss something or to receive the same message twice. In some applications this doesn't matter. For example, if one APL workspace is simply monitoring the current value of a particular currency, it does not matter that a second workspace doesn't see all of the fluctuations as they occur. It is important only that the latest value can be referenced when it is needed. Contrast this with a trading application in which the trading workspace registers each transaction with a second workspace which monitors and stores the transactions on a database. Clearly in this case it is essential that each and every transaction is properly communicated and recorded.
 
@@ -59,7 +59,7 @@ The state vector will have one of the following values:
 
 It may not be immediately apparent as to how the information provided by `⎕SVS` can be used. The answer, as we will see later, is that communications generates **events**. That is to say, when your partner sets a shared variable to a new value or references a value that you have set, an event is generated telling you that something has happened. `⎕SVS` is then used to determine what has happened (set or use) and, if you have several variables shared, which one of the variables has in some way changed state. A shared variable state change is thus the trigger that forces some kind of action out of the other process.
 
-### Access Control
+## Access Control
 
 `⎕SVS` is not sufficient on its own to synchronise data transfer. For example, what if the two partners both set the shared variable to a different value at **exactly** the same point in time ?  This is the role of `⎕SVC` which actually assures data integrity (if required) by imposing access controls. Its purpose is to synchronise the order in which two applications **set** and **use** the value of a shared variable.
 

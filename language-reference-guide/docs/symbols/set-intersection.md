@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Up Shoe</span><span class="command">∩</span></h1>
+<h1 class="heading"><span class="name">Up Shoe</span> <span class="command">∩</span></h1>
 
 
 
 Monadic Set Intersection is not defined
 
-##### Dyadic Set Intersection means
+## Dyadic Set Intersection means
 
 
 [Intersection](../primitive-functions/intersection.md)

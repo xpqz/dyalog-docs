@@ -17,7 +17,7 @@ Prior to Version 14.1, Dyalog assigned all DISPIDs automatically[^1], making it 
 
 From Version 14.1 onwards, the  SetFnInfo, SetPropertyInfo and SetEventInfo methods  allow the Dyalog programmer to assign DISPIDs so that they may be used directly by client applications. The specified DISPID must be a non-zero integer. The special value `¯1` causes Dyalog to assign the DISPID automatically as before.
 
-#### Note
+## Note
 
 
 Each of the DISPIDs exported by a COM object must be unique.  Furthermore, the behaviour of a COM object with non-unique DISPIDs is undefined. Non-unique DISPIDs may prevent the COM object from being registered (with or without generating an error) or may cause a run-time failure.  If Dyalog assigns all the DISPIDs of an object, they will be unique. If you choose to allocate your own DISPIDs to **any** of the members of a Dyalog COM object, the responsibility to ensure that they are **all** unique is yours. In this case, Dyalog does not guarantee nor check for uniqueness.

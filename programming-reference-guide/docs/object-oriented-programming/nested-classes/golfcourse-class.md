@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> GolfCourse Class</span></h1>
+<h1> GolfCourse Class</h1>
 
 ```apl
 

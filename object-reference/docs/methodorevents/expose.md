@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Expose</span><span class="command">Event 32</span></h1>
+<h1 class="heading"><span class="name">Expose</span> <span class="command">Event 32</span></h1>
 
 
 

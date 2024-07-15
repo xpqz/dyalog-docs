@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">JSON Translate Name</span><span class="command">R←X(7162⌶)Y</span></h1>
+<h1 class="heading"><span class="name">JSON Translate Name</span> <span class="command">R←X(7162⌶)Y</span></h1>
 
 
 
@@ -28,10 +28,7 @@ When `X` is 0, `R` is the name in `Y` converted, if necessary, so that it is a v
 
 When `X` is 1, `R` is the name in `Y` which, if mangled, is converted back to the original form.. It performs the same translation of APL names to JSON object names that is performed when exporting JSON.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       0(7162⌶)'2a'
 ⍙2a

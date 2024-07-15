@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Global & Local Names</span></h1>
+<h1> Global & Local Names</h1>
 
 The following names, if present, are local to the defined operation:
 
@@ -17,8 +17,7 @@ In the case of a defined function, the left argument (if any) takes the value of
 
 During execution, a local name temporarily excludes from use an object of the same name with an active definition. This is known as LOCALISATION or SHADOWING. A value or meaning given to a local name will persist only for the duration of execution of the defined operation (including any time whilst the operation is halted). A name which is not local to the operation is said to be GLOBAL. A global name could itself be local to a pendent operation. A global name can be made local to a defined operation during execution by use of the system function `⎕SHADOW`. An object is said to be VISIBLE if there is a definition associated with its name in the active environment.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A←1
  
@@ -45,8 +44,7 @@ Any statement line in the body of a defined operation may begin with a LABEL. A 
 
 The value of a label is available on entering an operation when executed, and it may be used but not altered in any expression.
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕VR'PLUS'
     ∇ R←{A} PLUS B

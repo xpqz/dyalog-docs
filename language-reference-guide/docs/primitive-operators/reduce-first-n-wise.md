@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Reduce First N-Wise</span><span class="command">R←Xf⌿[K]Y</span></h1>
+<h1 class="heading"><span class="name">Reduce First N-Wise</span> <span class="command">R←Xf⌿[K]Y</span></h1>
 
 
 

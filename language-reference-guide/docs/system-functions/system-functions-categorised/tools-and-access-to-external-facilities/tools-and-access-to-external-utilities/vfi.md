@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Verify & Fix Input</span><span class="command">R←{X}⎕VFI Y</span></h1>
+<h1 class="heading"><span class="name">Verify & Fix Input</span> <span class="command">R←{X}⎕VFI Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 
 The length of the items of `R` is the same as the number of identifiable strings (or implied strings) in `Y` separated by blank or the value of `X`.  An element of the first item of `R` is 1 where the corresponding string in `Y` is a valid numeric representation, or 0 otherwise.  An element of the second item of `R` is the numeric value of the corresponding string in `Y` if it is a valid numeric representation, or 0 otherwise.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕VFI '2 -2 ¯2'

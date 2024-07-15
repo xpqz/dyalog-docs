@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Windows Command</span><span class="command">⎕CMD</span></h1>
+<h1 class="heading"><span class="name">Windows Command</span> <span class="command">⎕CMD</span></h1>
 
 
-##### Monadic `⎕CMD` means
+## Monadic `⎕CMD` means
 
 
 [Execute Windows Command](execute-windows-command.md)
@@ -26,7 +26,7 @@
 
 ```
 
-##### Dyadic `⎕CMD` means
+## Dyadic `⎕CMD` means
 
 
 [Start Windows Auxiliary Processor](start-windows-auxiliary-processor.md)

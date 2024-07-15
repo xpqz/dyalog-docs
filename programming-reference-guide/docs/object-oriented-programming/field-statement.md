@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Field Statement</span></h1>
+<h1> :Field Statement</h1>
 
 ```apl
  :Field <Private|Public> <Instance|Shared> <ReadOnly>...
@@ -16,7 +16,7 @@ A `:Field` statement is a single statement whose elements are as follows:
 |`FieldName`|Specifies the name of the Field (mandatory).|
 |`← expr`|Specifies an initial value for the Field.|
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 The following statement defines a Field called `Name`. It is (by default), an Instance Field so every Instance of the Class has a separate value. It is a Public Field and so may be accessed (set or retrieved) from outside an Instance.
 ```apl
@@ -30,7 +30,7 @@ The following statement defines a Field called `Months`.
 
 `Months` is a Shared Field so there is just a single value that is the same for every Instance of the Class. It is (by default), a Private Field and may only be referenced by code running in an Instance or in the Class itself. Furthermore, it is ReadOnly and may not be altered after initialisation. Its initial value is calculated by an expression that obtains the short month names that are appropriate for the current locale using the .NET Type DateTimeFormatInfo.
 
-## Notes
+# Notes
 
 Note that Fields are initialised when a Class script is fixed by the editor or by `⎕FIX`. If the evaluation of `expr` causes an error (for example, a `VALUE ERROR`), an appropriate message will be displayed in the Status Window and `⎕FIX` will fail with a `DOMAIN ERROR`. Note that a ReadOnly Field may only be assigned a value by its `:Field` statement.
 

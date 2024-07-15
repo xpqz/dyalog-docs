@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Conjugate</span><span class="command">R←+Y</span></h1>
+<h1 class="heading"><span class="name">Conjugate</span> <span class="command">R←+Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@ If `Y` is complex, `R` is `Y` with the imaginary part of all elements negated.
 
 If `Y` is real or non-numeric, `R` is the same array unchanged, although `⊣` is faster. See [Same](same.md).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +3j4
 3J¯4

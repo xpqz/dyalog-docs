@@ -136,6 +136,7 @@ nav:
       - Ravel with Axes: primitive-functions/ravel-with-axes.md
       - Reciprocal: primitive-functions/reciprocal.md
       - Replicate: primitive-functions/replicate.md
+      - Replicate First: primitive-functions/replicate-first.md
       - Reshape: primitive-functions/reshape.md
       - Residue: primitive-functions/residue.md
       - Reverse: primitive-functions/reverse.md
@@ -166,7 +167,7 @@ nav:
     - primitive-operators/operator-syntax.md
     - Operators Summarised: primitive-operators/operators-summarised.md
     - primitive-operators/operators-a-z.md
-    - Priimitive Operators (A-Z):
+    - Primitive Operators (A-Z):
       - Assignment (Modified): primitive-operators/assignment-modified.md
       - Assignment (Indexed Modified): primitive-operators/assignment-indexed-modified.md
       - Assignment (Selective Modified): primitive-operators/assignment-selective-modified.md
@@ -307,7 +308,7 @@ nav:
       - Dequeue Events: system-functions/dq.md
       - Data Representation (Monadic): system-functions/data-representation-monadic.md
       - Data Representation (Dyadic): system-functions/data-representation-dyadic.md
-      - system-functions/dt.md
+      - system-functions/dt-print.md
       - Edit Object: system-functions/ed.md
       - Event Message: system-functions/em.md
       - Event Number: system-functions/en.md

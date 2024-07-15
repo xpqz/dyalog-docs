@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> TreeView Feature</span></h1>
+<h1> TreeView Feature</h1>
 
-### Introduction
+## Introduction
 
 The Grid can display a *TreeView like* interface in the row titles and automatically shows and hides row of data as the user expands and contracts nodes of the tree.
 
-### RowTreeDepth property
+## RowTreeDepth property
 
 The tree structure is specified by the RowTreeDepth property.  This is either a scalar 0 or an integer vector of the same length as the number of rows in the grid. RowTreeDepth is similar to the Depth property of the TreeView object.
 
@@ -54,7 +54,7 @@ When the user clicks on one of the nodes indicated by a "+" symbol, the Grid aut
 
 ![grid treeview 2](../img/grid-treeview-2.png)
 
-### RowSetVisibleDepth Method
+## RowSetVisibleDepth Method
 
 The Grid provides a RowSetVisibleDepth method that provides *tier-level* control over which rows are displayed.
 

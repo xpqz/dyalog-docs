@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Expressions</span></h1>
+<h1> Expressions</h1>
 
 An expression is a sequence of one or more syntactic tokens which may be symbols or constants or names representing arrays (variables) or functions.  An expression which produces an array is called an ARRAY EXPRESSION. An expression which produces a function is called a FUNCTION EXPRESSION. Some expressions do not produce a result.
 
@@ -6,8 +6,7 @@ An expression may be enclosed within parentheses.
 
 Evaluation of an expression proceeds from right to left, unless modified by parentheses.  If an entire expression results in an array that is not assigned to a name, then that array value is displayed.  (Some system functions and defined functions return an array result only if the result is assigned to a name or if the result is the argument of a function or operator.)
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       X←2×3-1
  

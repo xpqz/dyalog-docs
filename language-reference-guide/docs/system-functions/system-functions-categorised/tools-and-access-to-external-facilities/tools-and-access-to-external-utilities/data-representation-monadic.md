@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Data Representation (Monadic)</span><span class="command">R←⎕DR Y</span></h1>
+<h1 class="heading"><span class="name">Data Representation (Monadic)</span> <span class="command">R←⎕DR Y</span></h1>
 
 
 
@@ -12,7 +12,7 @@ Monadic `⎕DR` returns the type of its argument `Y`.  The result `R` is an inte
 
 
 
-Unicode Edition
+Table: Unicode Edition
 
 
 |Value|Data Type                                |
@@ -32,7 +32,7 @@ Unicode Edition
 
 
 
-Classic Edition
+Table: Classic Edition
 
 
 |Value|Data Type                                 |

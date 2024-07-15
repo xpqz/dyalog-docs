@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Star Diaeresis</span><span class="command">⍣</span></h1>
+<h1 class="heading"><span class="name">Star Diaeresis</span> <span class="command">⍣</span></h1>
 
 
-##### Star Diaeresis is a Dyadic operator with an ambivalent
+## Star Diaeresis is a Dyadic operator with an ambivalent
       left operand and an integer or dyadic right operand
 
-##### Operator Star Diaeresis means
+## Operator Star Diaeresis means
 
 
 [Power Operator  ](../primitive-operators/power-operator.md)

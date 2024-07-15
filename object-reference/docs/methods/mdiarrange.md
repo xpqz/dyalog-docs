@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">MDIArrange</span><span class="command">Method 112</span></h1>
+<h1 class="heading"><span class="name">MDIArrange</span> <span class="command">Method 112</span></h1>
 
 
 

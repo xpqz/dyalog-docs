@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Current Thread Name</span><span class="command">⎕TNAME</span></h1>
+<h1 class="heading"><span class="name">Current Thread Name</span> <span class="command">⎕TNAME</span></h1>
 
 
 
@@ -15,10 +15,7 @@ The default value of `⎕TNAME` is an empty character vector. `⎕TNAME` has wor
 
 You may set `⎕TNAME` to any valid character vector, but it is recommended that control characters (such as `⎕AV[⎕IO]` ) be avoided.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕TNAME←'Dylan'
       ⎕TNAME

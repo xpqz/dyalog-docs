@@ -1,4 +1,4 @@
-**Example**
+<h1 class="example">Example</h1>
 
 A second example of a Keyed Property is provided by the `KeyedFile` Class which is based upon the [ComponentFile Class](component-file-class-example.md) used previously.
 ```apl

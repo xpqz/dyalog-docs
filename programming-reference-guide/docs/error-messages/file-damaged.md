@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FILE DAMAGED</span><span class="command">23</span></h1>
+<h1 class="heading"><span class="name">FILE DAMAGED</span> <span class="command">23</span></h1>
 
 
 

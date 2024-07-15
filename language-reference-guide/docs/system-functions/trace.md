@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Trace Controls</span><span class="command">⎕TRACE</span></h1>
+<h1 class="heading"><span class="name">Trace Controls</span> <span class="command">⎕TRACE</span></h1>
 
 
-##### Dyadic `⎕TRACE` means
+## Dyadic `⎕TRACE` means
 
 
 [Set Trace Controls](set-trace.md)
@@ -14,7 +14,7 @@
 0 1 2 3 4 5
 ```
 
-##### Monadic `⎕TRACE` means
+## Monadic `⎕TRACE` means
 
 
 [Query Trace Controls](query-trace.md)

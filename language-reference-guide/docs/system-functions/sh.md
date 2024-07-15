@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">UNIX Shell</span><span class="command">⎕SH</span></h1>
+<h1 class="heading"><span class="name">UNIX Shell</span> <span class="command">⎕SH</span></h1>
 
 
-##### Monadic `⎕SH` means
+## Monadic `⎕SH` means
 
 
 [Execute UNIX Command](execute-unix-command.md)
@@ -14,7 +14,7 @@
 FILES WS temp
 ```
 
-##### Dyadic `⎕SH` means
+## Dyadic `⎕SH` means
 
 
 [Start UNIX Auxiliary Processor](start-unix-auxiliary-processor.md)

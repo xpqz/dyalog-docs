@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Take</span><span class="command">R←X↑Y</span></h1>
+<h1 class="heading"><span class="name">Take</span> <span class="command">R←X↑Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ If `Y` is a scalar, it is treated as a one-element array of shape `(⍴,X)⍴1`.
 If more elements are taken than exist on axis `I`, the extra positions in `R` are filled with the fill element of `Y` (`⊂∊⊃Y` with `⎕ml←0`).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       5↑'ABCDEF'
 ABCDE

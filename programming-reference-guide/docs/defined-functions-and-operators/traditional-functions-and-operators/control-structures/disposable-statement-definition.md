@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Disposable Statement</span></h1>
+<h1> :Disposable Statement</h1>
 
 ```
  

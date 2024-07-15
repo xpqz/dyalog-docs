@@ -1,13 +1,13 @@
-<h1 class="heading"><span class="name"> Interoperability</span></h1>
+<h1> Interoperability</h1>
 
-### Introduction
+## Introduction
 
 Workspaces and component files are stored on disk in a binary format. This format differs between machine architectures and among versions of Dyalog. For example, a file component written from Windows will have an internal format that is different from one written from AIX. Similarly, a workspace saved from Dyalog Version {{ version_majmin }} will differ internally from one saved by a previous version of Dyalog APL.
 
 It is convenient for versions of Dyalog APL running on different platforms to be able to
 *interoperate* by sharing workspaces and component files. Component files and workspaces can generally be shared between Dyalog interpreters running on different platforms. However, this is not always possible and the following sections describe limitations in interoperability:
 
-### Code and `⎕OR`s
+## Code and `⎕OR`s
 
 Code that is saved in workspaces, or embedded within `⎕OR`s stored in component files, can only be read by the Dyalog version which saved them and later versions of the interpreter. In the case of workspaces, a load (or copy) into an older version would fail with the message:
 ```apl
@@ -17,18 +17,18 @@ this WS requires a later version of the interpreter.
 Every time a  `⎕OR` 
 object is read by a version later than that which created it, time may be spent in converting the internal representation into the latest form.  Dyalog recommends that  `⎕OR`s should not be used as a mechanism for sharing code or objects between different versions of APL.
 
-### "Ordinary" Arrays
+## "Ordinary" Arrays
 
 With the exception of the Unicode restrictions described in the following paragraphs, Dyalog APL provides interoperability for arrays that only contain (nested) character and numeric data. Such arrays can be stored in component files, or transmitted using
 `TCPSocket` objects and Conga connections, and shared between all versions and across all platforms.
 
 Full cross-platform interoperability of component files is only available for large-span component files.
 
-### Object Representations (`⎕OR`)
+## Object Representations (`⎕OR`)
 
 An attempt to `⎕FREAD` a component containing a `⎕OR` that was created by a later version of Dyalog APL will generate `DOMAIN ERROR: Array is from a later version of APL`. This also applies to APL objects passed via Conga or TCPSockets, or objects that have been serialised using `220⌶`.
 
-### 32 vs. 64-bit Interpreters
+## 32 vs. 64-bit Interpreters
 
 There is complete interoperability between 32- and 64-bit interpreters, except that:
 
@@ -57,7 +57,7 @@ The names of all incompatible objects are instantiated as plain namespaces, with
 
 If a component containing the `⎕OR` of or refs to such objects is read by an interpreter with differing architecture (32 vs 64) from the version that wrote it, each incompatible object is instantiated as a plain namespace, preserving compatible contents as above.
 
-### Unicode vs. Classic Editions
+## Unicode vs. Classic Editions
 
 Two editions are available on some platforms. Unicode editions work with the entire Unicode character set. Classic editions (which are only available to commercial and enterprise users for legacy applications) are limited to the 256 characters defined in the atomic vector, `⎕AV`.
 
@@ -83,24 +83,24 @@ The symbols `⊆`, `⍸`, `⍤`, `⍠`, `⌸`, `⌺` and `⍥`  used for the
 		Stencil and 
 		Over operators respectively are available only in the Unicode edition. In the Classic edition, these symbols are replaced by `⎕U2286`, `⎕U2378`, `⎕U2364`, `⎕U2360`, `⎕U2338`, `⎕U233a` and `⎕U2365` respectively. In both Unicode and Classic editions Variant may be represented by `⎕OPT`.
 
-### Very large array components
+## Very large array components
 
 An attempt to read
 a component greater than 2GB in 32-bit interpreters will result in a `WS FULL`.
 
-### `TCPSocket` Objects and Conga
+## `TCPSocket` Objects and Conga
 
 `TCPSocket` objects and Conga can be used to communicate between differing versions of Dyalog APL and are subject to similar limitations to those described above for component files.
 
-### Auxiliary Processors
+## Auxiliary Processors
 
 A Dyalog APL process is restricted to starting an AP of exactly the same architecture from the same operating system. In other words, the AP must share the same word-width and byte-ordering as its interpreter process.
 
-### Session Files
+## Session Files
 
 Session (.dse) files can only be used on the platform on which they were created and
 saved. Under Microsoft Windows, Session files may only be used by the  architecture (32-bit-or 64-bit) of the Version of Dyalog that saved them.
 
-### Log Files
+## Log Files
 
 Log (.dlf) files can only be used by the version and edition with which they were created and saved.

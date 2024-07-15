@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Printer Properties</span></h1>
+<h1> Printer Properties</h1>
 
 |-----------------------------------------------|-------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[Print](../methodorevents/print.md) ,|[Setup](../methodorevents/setup.md) ,                |

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Query Access Control</span><span class="command">R←⎕SVC Y</span></h1>
+<h1 class="heading"><span class="name">Query Access Control</span> <span class="command">R←⎕SVC Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ If `Y` specifies a single name, the result `R` is a Boolean vector containing th
 
 For further information, see the preceding section on setting the access control vector.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕SVC 'X'
 0 0 0 0

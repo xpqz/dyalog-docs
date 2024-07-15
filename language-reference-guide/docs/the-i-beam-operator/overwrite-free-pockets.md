@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Overwrite Free Pockets</span><span class="command">R←127⌶Y</span></h1>
+<h1 class="heading"><span class="name">Overwrite Free Pockets</span> <span class="command">R←127⌶Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ Some applications (cryptography for example) make use of secure data during exec
 It is the responsibility of the programmer to ensure that there are no USED pockets in the workspace that reference the data.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ foo;a
 [1]    a←'my secure data'
@@ -35,7 +32,7 @@ It is the responsibility of the programmer to ensure that there are no USED pock
 
 ```
 
-#### Whereas
+## Whereas
 ```apl
      ∇ foo;a;b
 [1]    a←'my secure data'

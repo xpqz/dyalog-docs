@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Membership</span><span class="command">R←X∊Y</span></h1>
+<h1 class="heading"><span class="name">Membership</span> <span class="command">R←X∊Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ An element of `X` is considered identical to an element in `Y` if `X≡Y` return
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Membership.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'THIS NOUN' ∊ 'THAT WORD'
 1 1 0 0 1 0 1 0 0

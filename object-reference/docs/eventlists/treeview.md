@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TreeView Events</span></h1>
+<h1> TreeView Events</h1>
 
 |-----------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,        |[GetItemState](../methodorevents/getitemstate.md) ,  |

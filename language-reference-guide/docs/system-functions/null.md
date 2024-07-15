@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Null Item</span><span class="command">R←⎕NULL</span></h1>
+<h1 class="heading"><span class="name">Null Item</span> <span class="command">R←⎕NULL</span></h1>
 
 
 
@@ -15,10 +15,7 @@ This is a reference to a null item, such as may be returned across the COM inter
 - As an item of an array.
 - As the argument to those primitive functions that take character data arguments, for example: `=, ≠, ≡, ≢, ,, ⍴, ⊃, ⊂`
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       'EX'⎕WC'OLEClient' 'Excel.Application'
       WB←EX.Workbooks.Open 'simple.xls'

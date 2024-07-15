@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 Windows Presentation Foundation is a graphical system that includes  a programmable Graphical User Interface. It is supplied as a set of Microsoft .NET assemblies and is supported on all current Windows platforms.
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FontList</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">FontList</span> <span class="command">Property</span></h1>
 
 
 
@@ -32,10 +32,7 @@ which is as follows :
 |`[7]`|Angle of rotation (integer)               |
 |`[8]`|Character set (see [CharSet](charset.md) )|
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
        ↑'.'⎕WG'FontList'
  System                         16 0 0 0 700 0   0

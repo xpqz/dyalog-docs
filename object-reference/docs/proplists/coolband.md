@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> CoolBand Properties</span></h1>
+<h1> CoolBand Properties</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

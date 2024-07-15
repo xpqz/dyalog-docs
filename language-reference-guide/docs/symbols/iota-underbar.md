@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Iota Underbar</span><span class="command">⍸</span></h1>
+<h1 class="heading"><span class="name">Iota Underbar</span> <span class="command">⍸</span></h1>
 
 
-##### Monadic Iota Underbar means
+## Monadic Iota Underbar means
 
 
 [Where](../primitive-functions/where.md)
@@ -22,7 +22,7 @@
 └───┴───┴───┘
 ```
 
-##### Dyadic Iota Underbar means
+## Dyadic Iota Underbar means
 
 
 [Interval Index

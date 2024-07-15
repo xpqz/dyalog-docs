@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Right Tack</span><span class="command">⊢</span></h1>
+<h1 class="heading"><span class="name">Right Tack</span> <span class="command">⊢</span></h1>
 
 
-##### Monadic Right Tack means
+## Monadic Right Tack means
 
 
 [Same](../primitive-functions/same.md)
@@ -15,7 +15,7 @@
 1 2 3
 ```
 
-##### Dyadic Right Tack means
+## Dyadic Right Tack means
 
 
 [Right](../primitive-functions/right.md)

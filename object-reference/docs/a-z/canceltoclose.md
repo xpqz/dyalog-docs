@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">CancelToClose</span><span class="command">Method 367</span></h1>
+<h1 class="heading"><span class="name">CancelToClose</span> <span class="command">Method 367</span></h1>
 
 
 

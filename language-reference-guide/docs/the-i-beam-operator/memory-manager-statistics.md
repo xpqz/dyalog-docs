@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Memory Manager Statistics</span><span class="command">R←{X}(2000⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Memory Manager Statistics</span> <span class="command">R←{X}(2000⌶)Y</span></h1>
 
 
 
@@ -44,10 +44,7 @@ Note: While all other operations are relatively fast, the operation to count the
 
 See also [Specify Workspace Available](specify-workspace-available.md).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2000⌶0
 55414796
@@ -72,17 +69,14 @@ If `X` is specified, it must be either a simple integer scalar, or a vector of t
 
 
 
-#### Notes
+## Notes
 
 - The workspace allocation high-water mark indicates a minimum value for **MAXWS**.
 - Limiting the maximum workspace allocation can be used to prevent code that reserves as much workspace as it can from skewing the peak usage result.
 - Limiting the minimum workspace allocation can avoid repeatedly committing and releasing memory to the Operating System when memory usage is fluctuating.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2000⌶2 3
 6 0 33216252
@@ -122,7 +116,7 @@ If `X` is specified, it must be either a simple integer scalar, or a vector of t
 ```
 
 
-#### WS Full Handling
+## WS Full Handling
 
 
 Potentially, a `WS FULL` error represents a terminal condition that would prevent a program from continuing because the process has, quite literally, run out of memory.

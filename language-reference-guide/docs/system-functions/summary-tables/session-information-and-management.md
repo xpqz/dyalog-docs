@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Session Information and Management</span></h1>
+<h1> Session Information and Management</h1>
 
 |Name    |Description                |
 |--------|---------------------------|

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Namespace</span><span class="command">{R}←{X}⎕NS Y</span></h1>
+<h1 class="heading"><span class="name">Namespace</span> <span class="command">{R}←{X}⎕NS Y</span></h1>
 
 
 
@@ -12,7 +12,7 @@ If specified, `X` must be a simple character scalar or vector identifying the na
 
 `Y` is either a character array which represents a list of names of objects to be copied into the namespace, or a ref to a namespace, or  an array produced by the `⎕OR` of a namespace.
 
-#### Case 1
+## Case 1
 
 
 In the first case, `Y` must be a simple character scalar, vector, matrix or a nested vector of character vectors identifying zero or more workspace objects to be copied into the namespace `X`.  The identifiers in `X` and `Y` may be simple names or compound names separated by `'.'` and including the names of the special namespaces `'#'`, `'##'` and `'⎕SE'`.
@@ -30,10 +30,7 @@ The objects identified in the list `Y` are copied into the namespace `X`.
 If `X` is specified, the result `R` is the full name (starting with `#.` or `⎕SE.`) of the namespace `X`. If `X` is omitted, the result `R` is a namespace reference, or *ref*, to an unnamed namespace.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +'X'⎕NS''               ⍝ Create namespace X.
 #.X
@@ -69,7 +66,7 @@ If `X` is specified, the result `R` is the full name (starting with `#.` or `⎕
  #.[Namespace]  #.[Namespace]  #.[Namespace]
 ```
 
-#### Case 2
+## Case 2
 
 
 The second case is where `Y` is a ref to a namespace or the `⎕OR` of a namespace.

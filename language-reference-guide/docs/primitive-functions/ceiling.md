@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Ceiling</span><span class="command">R←⌈Y</span></h1>
+<h1 class="heading"><span class="name">Ceiling</span> <span class="command">R←⌈Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ If an element of `Y` is real, the corresponding element of `R` is the least inte
 
 If an element of `Y` is complex, the corresponding element of `R` depends on the relationship between the real and imaginary parts of the numbers in `Y`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⌈¯2.3  0.1  100  3.3
 ¯2 1 100 4

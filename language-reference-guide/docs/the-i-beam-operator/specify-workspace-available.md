@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Specify Workspace Available</span><span class="command">R←2002⌶Y</span></h1>
+<h1 class="heading"><span class="name">Specify Workspace Available</span> <span class="command">R←2002⌶Y</span></h1>
 
 
 

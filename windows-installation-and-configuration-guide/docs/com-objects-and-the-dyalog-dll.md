@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> COM Objects and the Dyalog APL DLL</span></h1>
+<h1> COM Objects and the Dyalog APL DLL</h1>
 
-### Introduction
+## Introduction
 
 Each different implementation of Dyalog contains two versions of the Dyalog APL Dynamic Link Library, a development version (Development DLL) and a run-time version (Run-Time DLL). For further details, see [Files](files-and-directories.md).
 
@@ -8,7 +8,7 @@ In the remainder of this section, the term *Dyalog APL DLL* is used to refer to 
 
 The Dyalog APL DLL is used to host COM objects and .NET objects written in Dyalog APL. Although this section describes how it operates with COM objects, much of this also applies when it hosts .NET objects. Further information is provided in the *.NET Interface Guide*.
 
-### Classes, Instances and Namespace Cloning
+## Classes, Instances and Namespace Cloning
 
 A COM object, whether written in Dyalog APL or not, represents a class. When a host application loads a COM object, it actually creates an instance of that class.
 
@@ -18,7 +18,7 @@ Cloned OLEServer and ActiveXControl namespaces are created in almost exactly the
 
 Notice that cloning does not initially replicate all the objects within the OLEServer or ActiveXControl namespace. Instead, the objects inside the cloned namespaces are actually represented by pointers to the original objects in the original namespace. Only when an object is changed does any information get replicated. Typically, the only objects likely to differ from one instance to another are variables, so only one copy of the functions will exist in the workspace. This design enables many instances of a Dyalog APL COM object to exist without overloading the workspace.
 
-### Workspace Management
+## Workspace Management
 
 By default, the Dyalog APL DLL does not use a fixed maximum workspace size, but automatically increases the size of its active workspace as required. If you write a run-away COM object, or if there is insufficient computer memory available to load a new control, it is left to the host application or to Windows itself to deal with the situation.
 
@@ -51,12 +51,12 @@ This design raises a number of points:
 3. Dyalog APL COM objects must not rely on variables or utility functions that were present in the root workspace when they were saved. These functions and variables will *not* be there when the object is run by the Dyalog APL DLL.
 4. A Dyalog APL COM object may *create* and subsequently *use* functions and variables in the root workspace, but if two different COM objects were to adopt the same policy, there is a danger that they would interfere with one another. The same is true for `⎕SE`.
 
-### Multiple COM Objects in a Single Workspace
+## Multiple COM Objects in a Single Workspace
 
 If your workspace contains several OLEServer or ActiveXControl objects which have the same ultimate parent namespace, the Dyalog APL DLL will copy them all into the active workspace at the time when the first one is instanced. If the host application requests a second COM object that is already in the workspace, the namespace tree is not copied again.
 
 If the workspace contains several OLEServer or ActiveXControl objects which have different ultimate parents, their namespace trees will be copied in separately.
 
-### Parameters
+## Parameters
 
 With the exception of **maxws** (see above) the Dyalog APL DLL does not read parameters from the registry, command-line or environment variables. This means that all such parameters will have their default values.

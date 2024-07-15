@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> HTMLRenderer Parents</span></h1>
+<h1> HTMLRenderer Parents</h1>
 
 |-------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,                      |[SetZoomLevel](../methodorevents/setzoomlevel.md) ,    |[GetZoomLevel](../methodorevents/getzoomlevel.md) ,|

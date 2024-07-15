@@ -475,6 +475,7 @@ See also: [JSON_Name_Mangling](json-name-manglling.md).
         ]
         ```
 
+        <div markdown="1" class="example-block">
         **Examples**
 
         ```apl
@@ -500,7 +501,8 @@ See also: [JSON_Name_Mangling](json-name-manglling.md).
         ⎕JSON Fields,[1]↑[1]Items Price Qty)
         ∧
         ```
-
+        </div>
+        <div markdown="1" class="example-block">
         **Further Examples**
         
         ```apl
@@ -517,6 +519,7 @@ See also: [JSON_Name_Mangling](json-name-manglling.md).
               ⎕JSON ((Items Price Qty)Fields)
         [[["Knife","Fork"],[3,4],[23,45]],["Item","Price","Qty"]]
         ```
+        </div>
 
         **Selection**
 
@@ -537,6 +540,7 @@ See also: [JSON_Name_Mangling](json-name-manglling.md).
 
         Wrappers in namespaces and sub-arrays are recognised for special treatment.
 
+        <div markdown="1" class="example-block">
         **Example**
 
         ```apl
@@ -552,6 +556,7 @@ See also: [JSON_Name_Mangling](json-name-manglling.md).
               ⎕JSON a
         ["the","answer",[{"Item":"Knife","Price":3,"Qty":23},{"Item":"Fork","Price":4,"Qty":45}],42]
         ```
+        </div>
 
 [^1]: IETF RFC 7159. The JavaScript Object Notation (JSON) Data Interchange Format is a widely supported, text based data interchange format for the portable representation of structured data; any application which conforms to the standard may exchange data with any other.
 

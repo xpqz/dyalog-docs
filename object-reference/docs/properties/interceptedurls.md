@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">InterceptedURLs</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">InterceptedURLs</span> <span class="command">Property</span></h1>
 
 
 
@@ -52,10 +52,7 @@ Note that if code in the page creates a web socket intended for internal use, wi
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 The following will trigger an  event for all requested URLs.

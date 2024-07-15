@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Properties</span><span class="command">R←X ⎕FPROPS Y</span></h1>
+<h1 class="heading"><span class="name">File Properties</span> <span class="command">R←X ⎕FPROPS Y</span></h1>
 
 
-##### Access Code 1 (to read) or 8192 (to change properties)
+## Access Code 1 (to read) or 8192 (to change properties)
 
 
 `⎕FPROPS` reports and sets the properties of a component file.
@@ -48,7 +48,7 @@ The default properties for a newly created file are as follows:
 
 Note that the defaults for C and J can be overridden by calling `⎕FCREATE` via the Variant operator `⍠`. For further information, see [File Properties](fcreate.md).
 
-#### Journaling Levels
+# Journaling Levels
 
 
 **Level 1** journaling (APL crash-proof) automatically protects a component file from damage in the event of abnormal termination of the APL process. The file state will be implicitly committed between updates and an incomplete update will automatically be rolled forward or back when the file is re-tied. In the event of an operating system crash the file may be more seriously damaged. If checksum was also enabled it may be repaired using `⎕FCHK` but some components may be restored to a previous state or not restored at all.
@@ -69,7 +69,7 @@ Journaling levels 2 and 3 cannot be set unless the checksum option is also enabl
 The default level of journaling may be changed using the **APL_FCREATE_PROPS_J** parameter (see *Dyalog for Microsoft Windows Installation and Configuration Guide: Configuration Parameters* for more information).
 
 
-#### Checksum Option
+## Checksum Option
 
 
 The checksum option is enabled by default. This  enables a damaged file to be repaired using `⎕FCHK`. It will however  reduce the performance of file updates slightly and result in larger component files. The default may be changed using the **APL_FCREATE_PROPS_C** parameter (See User Guide).
@@ -81,10 +81,7 @@ Enabling the checksum option on an existing non-empty component file will result
 
 Journaling and checksum settings may be changed at any time a file is exclusively tied.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       tn←'myfile64' ⎕FCREATE 0
@@ -116,7 +113,7 @@ Note that to set the value of just a single property, the following two statemen
 
 Properties may be read by a task with `⎕FREAD` permission (access code 1), and set by a task with `⎕FSTAC` access (8192). To set the value of the Journaling property, the file must be exclusively tied.
 
-#### Recommendation
+## Recommendation
 
 
 It is recommended that all component files are protected by  a minimum of Level 1 Journalling and have Checksum enabled.
@@ -139,7 +136,7 @@ This recommendation is given for the following reasons:
 - Additional features added in future may not be supported
 
 
-#### Compression Option
+## Compression Option
 
 
 Components are compressed using the *LZ4* compressor which delivers a medium level of compression, but is considered to be very fast compared to other algorithms.

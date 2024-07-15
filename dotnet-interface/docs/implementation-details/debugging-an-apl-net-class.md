@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Debugging an APL.NET Class</span></h1>
+<h1> Debugging an APL.NET Class</h1>
 
 All DYALOG.NET objects are executed by the Dyalog DLL. The full development version of the Dyalog DLL contains all of the development and debug facilities of the APL Session, including the Editors and Tracer. The run-time version contains no debugging facilities at all. The choice of which version of the Dyalog DLL is used is made when the assembly is exported from APL using the *File|Export* menu, or compiled using `dyalogc.exe`.
 
@@ -6,7 +6,7 @@ If an APL .NET object that is bound to the full development version generates an
 
 If an APL .NET object that is bound to the run-time version of the Dyalog DLL generates an untrapped APL error it will throw an exception.
 
-### Specifying the DLL
+## Specifying the DLL
 
 There are a number of different ways that you choose to which of the two versions of the Dyalog DLL your DYALOG.NET class will be bound. Note that the appropriate DLL must be available when the class is subsequently invoked. If the DLL to which the APL .NET class is bound is not present, it will throw an exception.
 
@@ -18,7 +18,7 @@ If your APL .NET class is a Web Page or a Web Service, you specify to which of t
 
 If you omit the `Debug=` attribute in your Web page, the value will be determined from the various .NET `config` files on your computer.
 
-### Forcing a suspension
+## Forcing a suspension
 
 If an APL error occurs in an APL .NET object, a suspension will occur and the Session will be available for debugging. But what if you want to force this to happen so that you can Trace your code and see what is happening?
 
@@ -46,7 +46,7 @@ Finally, you can usually force a suspension by generating a Weak Interrupt. This
 
 The run-time version of the Dyalog DLL does not display an icon in the System Tray.
 
-### Using the Session, Editor and Tracer
+## Using the Session, Editor and Tracer
 
 When an DYALOG.NET object suspends execution, all other active APL .NET objects bound to the full development version of the Dyalog DLL that are currently being executed by the same client application will also suspend. Furthermore, all the classes currently being hosted by the Dyalog DLL are visible to the APL developer whether active (an instance is currently being executed) or not. Note that if a client application, such as ASP.NET, is also hosting APL .NET objects bound to the *runtime* version of the Dyalog DLL, these objects will be hosted in a separate workspace attached to the run-time version of the Dyalog DLL and will not be visible to the developer.
 

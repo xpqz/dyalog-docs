@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 A Web Service can be thought of as a Remote Procedure Call. However, it is a remote procedure call that can be made over the Internet using character-based messages.
 

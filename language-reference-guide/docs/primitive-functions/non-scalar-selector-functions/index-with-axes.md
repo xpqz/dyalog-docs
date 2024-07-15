@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Index with Axes</span><span class="command">R←{X}⌷[K]Y</span></h1>
+<h1 class="heading"><span class="name">Index with Axes</span> <span class="command">R←{X}⌷[K]Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ In general, the result `R` is similar to that obtained by square-bracket indexin
 Note that index with axis may be used with selective specification. `⎕IO` is an implicit argument of index with axis.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
      ⎕IO←1
  

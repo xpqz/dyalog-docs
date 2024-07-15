@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Materialise</span><span class="command">R←⌷Y</span></h1>
+<h1 class="heading"><span class="name">Materialise</span> <span class="command">R←⌷Y</span></h1>
 
 
 
@@ -20,10 +20,7 @@ If  `Y` is a ref to an instance of a COM or .NET Collection object, `⌷` return
 Otherwise, if `Y` is an array, `Y` is returned.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 The following example uses the sample [ComponentFile Class](../../../programming-reference-guide/object-oriented-programming/class-members/properties/component-file-class-example).
@@ -59,7 +56,7 @@ The following example shows how `⌷`obtains the items in an Excel Sheets collec
 
 ```
 
-#### Performance Considerations
+## Performance Considerations
 
 
 Note that the *values* of the index set are obtained or assigned by calls to the corresponding PropertyGet and PropertySet functions. Furthermore, if there is a sequence of primitive functions to the left of the Index function, that operate on the index set itself (functions such as dyadic `⍴,↑,↓,⊃`) as opposed to functions that operate on the *values* of the index set (functions such as `+,⌈,⌊,⍴¨`), calls to the PropertyGet and PropertySet functions are deferred until the required index set has been completely determined. The full set of functions that cause deferral of calls to the PropertyGet and PropertySet functions is the same as the set of functions that applies to selective specification.

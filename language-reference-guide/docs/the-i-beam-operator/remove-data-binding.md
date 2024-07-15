@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Remove Data Binding</span><span class="command">R←2014⌶Y</span></h1>
+<h1 class="heading"><span class="name">Remove Data Binding</span> <span class="command">R←2014⌶Y</span></h1>
 
 
 
@@ -21,10 +21,7 @@ If `Y` or an element of `Y` is a character vector that contains the name of a da
 
 The result `R` is always 1.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       2014⌶'txtSource'

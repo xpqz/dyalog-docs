@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Ellipse</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Ellipse</span> <span class="command">Object</span></h1>
 
 
 
@@ -68,7 +68,7 @@ resized.
 The structure of the property values is best considered separately for single
 and multiple ellipses, circles or arcs.
 
-#### Single Ellipse, Circle or Arc
+## Single Ellipse, Circle or Arc
 
 
 For a single ellipse, circle or arc, [Points](../properties/points.md) is a 2-element vector which specifies the y-coordinate and x-coordinate of the
@@ -90,10 +90,7 @@ specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object
 representing standard colours, or 3-element vectors which specify colours
 explicitly in terms of their RGB values.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md) :
@@ -134,7 +131,7 @@ Ditto, but use a green line and solid red fill :
       'F.E1' ⎕WC 'Ellipse' (10 5)(30 50)('Start'(○0.25))('End'(○0.75))('ArcMode' 2)('FCol' 0 0 255)('FStyle' 0)('FillCol' 255 0 0)
 ```
 
-#### Multiple Ellipses, Circles or Arcs
+## Multiple Ellipses, Circles or Arcs
 
 
 To draw a set of ellipses, circles, or arcs with a single name, [Points](../properties/points.md) may be a simple 2-element vector (specifying the location of all the bounding
@@ -187,10 +184,7 @@ The [Coord](../properties/coord.md), [Dragable](../properties/dragable.md) and 
 object as a whole, and may not be allocated different values for each individual
 ellipse, circle or arc that is drawn.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md) :

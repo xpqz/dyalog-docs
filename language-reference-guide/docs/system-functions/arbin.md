@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Arbitrary Input</span><span class="command">R←X ⎕ARBIN Y</span></h1>
+<h1 class="heading"><span class="name">Arbitrary Input</span> <span class="command">R←X ⎕ARBIN Y</span></h1>
 
 
 
@@ -17,12 +17,12 @@ This transmits a stream of 8-bit codes in `Y` to an output device specified by `
 `X` may take several forms:
 
 
-|------------------------|------|-----|
-|terminate (input output)|⎕ARBIN|codes|
-|terminate input         |⎕ARBIN|codes|
+|--------------------------|--------|-------|
+|`terminate (input output)`|`⎕ARBIN`|`codes`|
+|`terminate input`         |`⎕ARBIN`|`codes`|
 
 
-#### terminate
+## terminate
 
 
 This is a numeric scalar or vector that specifies how the read operation should be terminated.
@@ -33,7 +33,7 @@ This is a numeric scalar or vector that specifies how the read operation should 
 
 
 
-#### input
+## input
 
 
 This is a simple numeric scalar that specifies the input device.
@@ -43,7 +43,7 @@ This is a simple numeric scalar that specifies the input device.
 
 
 
-#### output
+## output
 
 
 If specified, this is a simple numeric integer that identifies the output device.
@@ -62,7 +62,7 @@ The result `R` is a simple numeric vector.  Each item of `R` is the numeric repr
 The operation will fail with a `DOMAIN ERROR` if  `Y` contains anything other than numbers in the range 0-255, or  if the current process does not have permission to read from or write to the specified device(s).
 
 
-#### Examples (UNIX)
+## Examples (UNIX)
 ```apl
       )sh mkfifo ./fifo
 

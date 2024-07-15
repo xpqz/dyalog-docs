@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Circle Children</span></h1>
+<h1> Circle Children</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

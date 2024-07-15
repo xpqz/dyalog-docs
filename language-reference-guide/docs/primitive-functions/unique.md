@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Unique</span><span class="command">R←∪Y</span></h1>
+<h1 class="heading"><span class="name">Unique</span> <span class="command">R←∪Y</span></h1>
 
 
 
@@ -13,10 +13,7 @@
 `⎕CT` and `⎕DCT` are  implicit arguments of Unique.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ∪ 22 10 22 22 21 10 5 10

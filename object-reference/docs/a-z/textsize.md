@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">TextSize</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">TextSize</span> <span class="command">Property</span></h1>
 
 
 
@@ -21,10 +21,7 @@ TextSize is a "read-only" property that reports the size of the bounding rectang
 
 When you query TextSize you give the text item in whose size you are interested and, optionally, the name of a [Font](../objects/font.md) object. The text item may be a simple scalar, a vector or a matrix. If the [Font](../objects/font.md) is omitted, the result is given using the current font for the object in question. When you query TextSize on its own, you must enclose the argument to [`⎕WG`](../../../language-reference-guide/system-functions/wg). This is because APL would otherwise not be able to distinguish between the text string and font name associated with `'TextSize'` and other properties with the same name as these items.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       '.' ⎕WG ⊂'TextSize' 'Hello World'
 2.666666746 9.625

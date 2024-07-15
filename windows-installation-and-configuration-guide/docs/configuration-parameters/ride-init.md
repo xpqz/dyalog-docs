@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> RIDE_Init</span></h1>
+<h1> RIDE_Init</h1>
 
 This parameter determines how the interpreter should behave with respect to the RIDE protocol. Setting this configuration parameter on the machine that hosts the interpreter enables the interpreter-RIDE connection.
 
@@ -39,7 +39,7 @@ This is most useful when multiple interpreters need to be run, each with its own
 
 Note that the **RIDE_Init** configuration parameter is set automatically when launching a new Dyalog Session from the RIDE.
 
-**Examples**
+<h2 class="example">Examples</h2>
 
 To allow an incoming connection through any interface in the machine running the interpreter:
 ```apl

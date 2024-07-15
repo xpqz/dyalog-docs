@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Screen Read</span><span class="command">R←{X}⎕SR Y</span></h1>
+<h1 class="heading"><span class="name">Screen Read</span> <span class="command">R←{X}⎕SR Y</span></h1>
 
 
 
@@ -38,7 +38,7 @@ Thus the 3 uses of `⎕SR` are:
      EXIT_CONTEXT←(EXIT_KEYS)(INITIAL_CONTEXT)⎕SR FIELDS
 ```
 
-#### FIELDS
+## FIELDS
 
 
 If an element of `Y` is an integer scalar, it specifies a field as the index of a row in `⎕SM` (if `⎕SM` is a vector it is regarded as having 1 row).
@@ -49,7 +49,7 @@ If an element of `Y` is an integer vector, it specifies a sub-field.  The first
 
 If an element of `Y` is a character scalar or vector, it specifies the name of a top-level GUI object with which the user may also interact.  Such an object must be a "top-level" object, i.e. the `Root` object ('`.'`) or a `Form` or pop-up `Menu`.  This feature is implemented ONLY in versions of Dyalog APL with GUI support.
 
-#### EXIT_KEYS
+## EXIT_KEYS
 
 
 Each element of `EXIT_KEYS` is a 2-character code from the Input Translate Table for the keyboard.  If the user presses one of these keys, `⎕SR` will terminate and return a result.
@@ -63,7 +63,7 @@ If `EXIT_KEYS` is not specified, it defaults to:
 
 which (normally) specifies <Enter>, <Esc> and <Shift+Esc>.
 
-#### INITIAL_CONTEXT
+## INITIAL_CONTEXT
 
 
 
@@ -99,7 +99,7 @@ Structure of  INITIAL_CONTEXT
 `INITIAL_CONTEXT[6]` is a Boolean scalar or vector the same length as `Y`.  It specifies which of the fields in `Y` has been modified by the user.
 
 
-#### EXIT_CONTEXT
+## EXIT_CONTEXT
 
 
 The result `EXIT_CONTEXT` is a 6 or 9-element vector whose first 6 elements have the same structure as the `INITIAL_CONTEXT`.  Elements 7-9 **only** apply to those versions of Dyalog APL that provide mouse support.
@@ -136,7 +136,7 @@ Structure of the Result of `⎕SR`
 
 `EXIT_CONTEXT[6]` is a Boolean scalar or vector the same length as `Y`.  It specifies which of the fields in `Y` has been modified by the user during **this** `⎕SR`, ORed with `INITIAL_CONTEXT[6]`.  Thus if the `EXIT_CONTEXT` of one call to `⎕SR` is fed back as the `INITIAL_CONTEXT` of the next, `EXIT_CONTEXT[6]` records the fields changed since the start of the process.
 
-#### EXIT_CONTEXT (Window Versions)
+## EXIT_CONTEXT (Window Versions)
 
 
 `⎕SR` returns a 9-element result **ONLY** if it is terminated by the user pressing a mouse button.  In this case:
@@ -147,7 +147,7 @@ Structure of the Result of `⎕SR`
 
 `EXIT_CONTEXT[8 9]` are integer scalars which specify the row and column position of the mouse pointer within the field `EXIT_CONTEXT[7]` when `⎕SR` terminated.
 
-#### Note
+## Note
 
 
 This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.

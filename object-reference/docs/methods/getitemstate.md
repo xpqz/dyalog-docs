@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetItemState</span><span class="command">Method 306</span></h1>
+<h1 class="heading"><span class="name">GetItemState</span> <span class="command">Method 306</span></h1>
 
 
 

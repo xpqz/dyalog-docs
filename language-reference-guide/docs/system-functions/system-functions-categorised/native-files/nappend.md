@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Append</span><span class="command">{R}←X ⎕NAPPEND Y</span></h1>
+<h1 class="heading"><span class="name">Native File Append</span> <span class="command">{R}←X ⎕NAPPEND Y</span></h1>
 
 
 
@@ -16,7 +16,7 @@ The shy result is the location of the internal file pointer which will be pointi
 Note that `8 ⎕NINFO ⊃Y` can be used to report the current position of the file pointer.
 
 
-##### Unicode Edition
+## Unicode Edition
 
 
 Unless you specify the data type in `Y[2`], a character array will by default be written using type 80.
@@ -27,10 +27,7 @@ If the data will not fit into the specified character width (bytes) `⎕NAPPEND`
 
 As a consequence of these two rules, you must specify the data type (either 160 or 320) in order to write Unicode characters whose code-point are in the range 256-65535 and >65535 respectively.
 
-
-
-**Example**
-
+<h1 class="example">Example</h1>
 ```apl
 
 			

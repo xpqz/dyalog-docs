@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Loaded Libraries</span><span class="command">R←950⌶Y</span></h1>
+<h1 class="heading"><span class="name">Loaded Libraries</span> <span class="command">R←950⌶Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ Reports the names of the dynamic link libraries that are currently loaded as a r
 The result `R` is a vector of character vectors containing  the names of all the DLLs or shared libraries that have been explicitly loaded by `⎕NA` and are still loaded by virtue of the presence of at least one external function reference.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )clear
 clear ws

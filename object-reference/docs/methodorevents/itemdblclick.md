@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ItemDblClick</span><span class="command">Event 342</span></h1>
+<h1 class="heading"><span class="name">ItemDblClick</span> <span class="command">Event 342</span></h1>
 
 
 

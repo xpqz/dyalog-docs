@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Creating an APLScript File</span></h1>
+<h1> Creating an APLScript File</h1>
 
 Conceptually, the simplest way to create an `APLScript` file is with Notepad, although you may use many other tools including Microsoft Visual Studio as described in the next Chapter.
 

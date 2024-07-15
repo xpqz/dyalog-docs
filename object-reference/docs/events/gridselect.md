@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GridSelect</span><span class="command">Event 165</span></h1>
+<h1 class="heading"><span class="name">GridSelect</span> <span class="command">Event 165</span></h1>
 
 
 

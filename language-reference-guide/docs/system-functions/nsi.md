@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Namespace Indicator</span><span class="command">R←⎕NSI</span></h1>
+<h1 class="heading"><span class="name">Namespace Indicator</span> <span class="command">R←⎕NSI</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 Note that `⎕NSI` contains the names of spaces *from which* functions were called not those *in which* they are currently running.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       )OBJECTS
 xx      yy

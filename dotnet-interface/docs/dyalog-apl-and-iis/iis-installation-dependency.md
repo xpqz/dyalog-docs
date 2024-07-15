@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> IIS Installation Dependency</span></h1>
+<h1> IIS Installation Dependency</h1>
 
 During installation, Dyalog registers itself with ASP.NET as an ASP.NET programming language. Among other things, this allows ASP.NET web pages to be written in Dyalog. The Dyalog installation program  also registers the Dyalog asp.net sample applications as IIS *Virtual Directories*.
 

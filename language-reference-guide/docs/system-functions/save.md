@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Save Workspace</span><span class="command">{R}←{X}⎕SAVE Y</span></h1>
+<h1 class="heading"><span class="name">Save Workspace</span> <span class="command">{R}←{X}⎕SAVE Y</span></h1>
 
 
 
@@ -44,10 +44,7 @@ As is the case for `)SAVE` (see ["Save Workspace: "](../system-commands/save.md)
 
 Note that the values of all system variables (including `⎕SM`) and all GUI objects are saved.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       (⊃'SAVED' 'ACTIVE' [⎕IO+⎕SAVE'TEMP']),' WS'
 ACTIVE WS

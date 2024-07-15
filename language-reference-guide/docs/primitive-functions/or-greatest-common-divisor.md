@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">Or, Greatest Common Divisor</span><span class="command">R←X∨Y</span></h1>
+<h1 class="heading"><span class="name">Or, Greatest Common Divisor</span> <span class="command">R←X∨Y</span></h1>
 
 
-#### Case 1: `X` and `Y` are Boolean
+## Case 1: `X` and `Y` are Boolean
 
 
 R is Boolean and is determined as follows:
@@ -19,10 +19,7 @@ R is Boolean and is determined as follows:
              1   1     1
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       0 0 1 1 ∨ 0 1 0 1
 0 1 1 1
@@ -30,15 +27,12 @@ R is Boolean and is determined as follows:
 
 
 
-#### Case 2: `X` and `Y` are numeric (non-Boolean)
+## Case 2: `X` and `Y` are numeric (non-Boolean)
 
 
 R is the Greatest Common Divisor of `X` and `Y`. Note that in this case, `⎕CT` and `⎕DCT` are implicit arguments.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       15 1 2 7 ∨ 35 1 4 0
 5 1 2 7

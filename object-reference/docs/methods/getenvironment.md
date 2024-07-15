@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetEnvironment</span><span class="command">Method 510</span></h1>
+<h1 class="heading"><span class="name">GetEnvironment</span> <span class="command">Method 510</span></h1>
 
 
 
@@ -32,10 +32,7 @@ The argument to GetEnvironment is a single item as follows:
 
 The result is a simple character vector or a vector of character vectors.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       GetEnvironment 'MAXWS'
 2G

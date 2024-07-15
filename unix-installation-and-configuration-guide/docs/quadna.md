@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> `⎕NA` under UNIX</span></h1>
+<h1> `⎕NA` under UNIX</h1>
 
 ## Introduction
 
@@ -66,7 +66,7 @@ The APL code to instantiate this function is
 		
 ```
 
-## Example 2
+### Example 2
 
 This is a slightly more complex example, which uses the STRNCPY function in the Dyalog-supplied shared library to retrieve the value of a variable which is referenced by a pointer, returned from the system library function:
 
@@ -91,7 +91,7 @@ char *getenv(const char *name)
 
 Note: the call to STRNCPY has been defined to return a vector of integers so that the result can be passed directly to `⎕UCS`.
 
-## geterrno
+### geterrno
 
 The dyalog shared libary under UNIX includes the function `geterrno`. This returns the current value of errno; be aware that it may not have the same value as at the point when the error was raised. To use this function:
 ```apl
@@ -102,6 +102,6 @@ The dyalog shared libary under UNIX includes the function `geterrno`. This retur
       		
 ```
 
-## Shared libraries and APL threads
+### Shared libraries and APL threads
 
 Any shared library function must mask out all signals for  new threads which it creates. Failure to do so will result in a catastrophic failure of APL's signal handling.

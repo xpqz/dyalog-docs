@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Power Operator</span><span class="command">{R}←{X}(f⍣g)Y</span></h1>
+<h1 class="heading"><span class="name">Power Operator</span> <span class="command">{R}←{X}(f⍣g)Y</span></h1>
 
 
 
@@ -37,10 +37,7 @@ A *negative* right operand `g` applies the *inverse* of the operand function `f`
 
 If the function does not have an inverse, a negative argument `g` generates `DOMAIN ERROR`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
  
     (,∘⊂∘,⍣(1=≡,vec))vec    ⍝ ravel-enclose if simple.
@@ -96,7 +93,7 @@ If the function does not have an inverse, a negative argument `g` generates `DOM
  hw  eo  lr  ll  od
 ```
 
-#### Warning
+## Warning
 
 
 Some expressions, such as the following, will cause an infinite internal loop and APL will appear to hang. In most cases this can be resolved by issuing a hard INTERRUPT.
@@ -108,10 +105,7 @@ Some expressions, such as the following, will cause an infinite internal loop an
 
 One can ensure that weak interrupts and `⎕TKILL` can interrupt by packaging the `⍣` within the dop      `{⍺←⊢ ⋄ ⍺ (⍺⍺{⍺←⊢ ⋄ ⍺ ⍺⍺ ⍵}⍣⍵⍵) ⍵}`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       PowOp←{⍺←⊢ ⋄ ⍺ (⍺⍺{⍺←⊢ ⋄ ⍺ ⍺⍺ ⍵}⍣⍵⍵) ⍵}
       tnum←!PowOp-&1 ⍝ using naked ⍣ will freeze APL

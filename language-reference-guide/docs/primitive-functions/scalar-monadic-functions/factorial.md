@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Factorial</span><span class="command">R←!Y</span></h1>
+<h1 class="heading"><span class="name">Factorial</span> <span class="command">R←!Y</span></h1>
 
 
 
 `Y` must be numeric excluding negative integers.  `R` is numeric.  `R` is the product of the first `Y` integers for positive integer values of `Y`. In general, `!Y` is gamma `Y+1`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       !1 2 3 4 5
 1 2 6 24 120

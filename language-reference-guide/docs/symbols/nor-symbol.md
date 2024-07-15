@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Logical NOR</span><span class="command">⍱</span></h1>
+<h1 class="heading"><span class="name">Logical NOR</span> <span class="command">⍱</span></h1>
 
 
 
 Monadic Logical NOR is not defined
 
-##### Dyadic Logical NOR means
+## Dyadic Logical NOR means
 
 
 [NOR](../primitive-functions/nor.md)

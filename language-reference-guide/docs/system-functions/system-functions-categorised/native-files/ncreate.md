@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Create</span><span class="command">{R}←X ⎕NCREATE Y</span></h1>
+<h1 class="heading"><span class="name">Native File Create</span> <span class="command">{R}←X ⎕NCREATE Y</span></h1>
 
 
 
@@ -16,29 +16,26 @@ This function creates a new file. Under Windows the file is opened with mode 66 
 The shy result of `⎕NCREATE` is the tie number of the new file.
 
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NCREATE` may be applied using the  Variant operator with the options Unique and IfExists. There is no primary option.
 
-#### Unique Option (Boolean)
+## Unique Option (Boolean)
 
 
 |---|---|
 |0|the file named by `X` will be created|
 |`1`|a uniquely named file will be created by extending the base name (see [File Name Parts](nparts.md) ) with random characters. If a unique name cannot be created then an error will be signalled. The actual name of the file can be determined from `⎕NNAMES` or `⎕NINFO` .|
 
-#### IfExists Option (character vector)
+## IfExists Option (character vector)
 
 
 |---------|----------------------------------------------------------------------------|
 |Error    |`⎕NCREATE` will generate a `FILE NAME ERROR` if the file already exists     |
 |`Replace`|`⎕NCREATE` will replace an existing file with an empty one of the same name.|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊢'myfile' ⎕NCREATE 0
 ¯1
@@ -67,7 +64,7 @@ FILE NAME ERROR: myfile: Unable to create file ("The file exists.")
 ```
 
 
-#### Notes
+## Notes
 
 - Setting IfExists to `Replace` has no effect when Unique is 1, because the file cannot already exist.
 - The IfExists option does not affect the operation of *slippery ties*.

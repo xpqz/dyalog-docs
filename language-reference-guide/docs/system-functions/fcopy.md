@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Copy</span><span class="command">R←X ⎕FCOPY Y</span></h1>
+<h1 class="heading"><span class="name">File Copy</span> <span class="command">R←X ⎕FCOPY Y</span></h1>
 
 
-##### Access Code: 4609
+## Access Code: 4609
 
 
 `Y` must be a simple integer scalar or 1 or 2-element vector containing the file tie number and optional passnumber. The file need not be tied exclusively.
@@ -33,10 +33,7 @@ Note that the Access Code is 4609, which is the sum of the Access Codes for `⎕
 
 Note also that although the file need not be tied exclusively, the `⎕FCOPY` function will not yield the file to other APL processes while it is running, and it may take some considerable time to run in the case of a large component file.
 
-
-
-**Example**
-
+<h1 class="example">Example</h1>
 ```apl
       told←'oldfile32'⎕FTIE 0
       'S' ⎕FPROPS told
@@ -53,7 +50,7 @@ If `X` specifies the name of an existing file, the operation fails with a `FILE 
 
 Note: This operation is atomic. If an error occurs during the copy operation (such as disk full) or if a strong interrupt is issued, the copy will be aborted and the new file `X` will not be created.
 
-#### File Properties
+## File Properties
 
 
 
@@ -77,10 +74,7 @@ The Principal Option is  as follows:
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       newfid←'newfile' (⎕FCOPY ⍠3) 1
 

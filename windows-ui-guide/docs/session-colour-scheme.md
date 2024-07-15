@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Session Colour Scheme</span></h1>
+<h1> The Session Colour Scheme</h1>
 
 Within the Development Environment, different colours are used to identify different types of information. These colours are normally defined by registry entries and may be changed using the Colour Configuration dialog box as described later in this chapter.
 
@@ -10,7 +10,7 @@ In the Classic Edition, colours may alternatively be defined in the Output Trans
 
 The first table below shows the colours used for different session components. The second table shows how different colours are used to identify different types of data in edit windows.
 
-Default Colour Scheme - Session
+Table: Default Colour Scheme - Session
 
 |Colour|Used for                   |Default            |
 |------|---------------------------|-------------------|
@@ -20,7 +20,7 @@ Default Colour Scheme - Session
 |253   |Tracer : Pendent Function  |Yellow on Dark Grey|
 |245   |Tracer : Current Line      |White on Red       |
 
-Default Colour Scheme Edit windows
+Table: Default Colour Scheme Edit windows
 
 |Colour|Array Type                 |Editable|Default         |
 |------|---------------------------|--------|----------------|
@@ -33,7 +33,7 @@ Default Colour Scheme Edit windows
 |248   |Function or Operator       |No      |White on Dk Cyan|
 |254   |Function or Operator       |Yes     |White on Blue   |
 
-### Syntax Colouring in the Session
+## Syntax Colouring in the Session
 
 As an adjunct to the overall Session Colour Scheme, you may choose to apply a *syntax colouring scheme* to the current Session Input line(s). You may also extend syntax colouring to previously entered input lines, although this only applies to input lines in the current session; syntax colouring information is not remembered in the Session Log.
 

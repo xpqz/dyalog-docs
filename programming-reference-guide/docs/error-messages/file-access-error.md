@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">FILE ACCESS ERROR</span><span class="command">19</span></h1>
+<h1 class="heading"><span class="name">FILE ACCESS ERROR</span> <span class="command">19</span></h1>
 
 
 
 This report is given when the user attempts to execute a file system function for which the user is not authorised, or has supplied the wrong passnumber.  It also occurs if the file specified as the argument to `⎕FERASE` or `⎕FRENAME` is not exclusively tied.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'SALES' ⎕FSTIE 1
  

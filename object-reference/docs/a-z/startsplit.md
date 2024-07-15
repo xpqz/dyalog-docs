@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">StartSplit</span><span class="command">Event 280</span></h1>
+<h1 class="heading"><span class="name">StartSplit</span> <span class="command">Event 280</span></h1>
 
 
 

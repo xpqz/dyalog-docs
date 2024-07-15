@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Dual Class Example</span></h1>
+<h1> Dual Class Example</h1>
 
 The Dual Class example is based upon the example used to illustrate how you may build an ActiveX Control in Dyalog APL (see [The Dual Control Tutorial](../activex-control/dual-control-tutorial.md)), but re-engineered as an internal Dyalog APL Class. The full listing of the Dual Class script is provided overleaf.
 
@@ -49,7 +49,7 @@ Dual's Constructor `Make` first splits its constructor arguments into those that
                                    ⊂'EdgeStyle' 'Dialog'
 ```
 
-### Dual Class Example
+## Dual Class Example
 ```apl
 :Class Dual: 'SubForm'
     :Include GUITools

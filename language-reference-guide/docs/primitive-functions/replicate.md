@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Replicate</span><span class="command">R←X/[K]Y</span></h1>
+<h1 class="heading"><span class="name">Replicate</span> <span class="command">R←X/[K]Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ If `Y` has length 1 along the `K`<sup>th</sup> (or implied) axis, it is extended
 
 This function is sometimes called Compress when `X` is Boolean.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       1 0 1 0 1/⍳5
 1 3 5

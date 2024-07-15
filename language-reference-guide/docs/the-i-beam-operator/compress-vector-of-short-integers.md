@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Compress Vector of Short Integers</span><span class="command">R←X(219⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Compress Vector of Short Integers</span> <span class="command">R←X(219⌶)Y</span></h1>
 
 
 
@@ -17,7 +17,7 @@ In most cases this I-Beam functionality will be used in conjunction with `220⌶
 `X` specifies the operation to be performed, either compression or decompression, the compression library to be used, and any  optional parameters. `Y` contains the data to be operated on.
 
 
-##### Compression
+## Compression
 
 
 `Y` must be a *sint_vector*.
@@ -41,7 +41,7 @@ In most cases this I-Beam functionality will be used in conjunction with `220⌶
 
 If LZ4 compression is required, then `X` must either be a scalar or a one element vector. Otherwise, `X[2]`, if present, specifies the compression level; higher numbers produce better compression, but take longer.
 
-##### Decompression
+## Decompression
 
 
 `R` is a *sint_vector*, containing the output of applying the decompression library to the input data, `Y`.
@@ -70,10 +70,7 @@ The second, optional, element of `X` specifies the length of the uncompressed da
 
 `X` may not be a two item vector whose first item has the value 0.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
 
       sint←{⍵-256×⍵>127}

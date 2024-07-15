@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TipField Events</span></h1>
+<h1> TipField Events</h1>
 
 |---------------------------------------|---------------------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|

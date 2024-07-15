@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Attributes</span><span class="command">R←{X} ⎕AT Y</span></h1>
+<h1 class="heading"><span class="name">Attributes</span> <span class="command">R←{X} ⎕AT Y</span></h1>
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-#### Monadic Use
+## Monadic Use
 
 
 If `X` is omitted, `R` is a 4-element vector or a 4 column matrix with the same number of rows as names in `Y` containing the following attribute information:
@@ -60,10 +60,7 @@ The following values correspond to the syntax shown alongside:
 
 `R[4]` or `R[;4]`: Each item is a character vector - the network ID of the user who last fixed (edited) the function.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
     ∇ {z}←{l}(fn myop)r
@@ -100,7 +97,7 @@ The following values correspond to the syntax shown alongside:
 ```
 
 
-#### Dyadic Use
+## Dyadic Use
 
 
 The dyadic form of `⎕AT` emulates APL2. It returns the same rank and shape result containing information that matches the APL2 implementation as closely as possible.

@@ -1,63 +1,65 @@
-
 site_name: UNIX User Guide
 theme:
-  favicon: 'img/favicon-32.png'
-  logo: 'img/dyalog-white.svg'
+  favicon: img/favicon-32.png
+  logo: img/dyalog-white.svg
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.path
     - navigation.indexes
   name: material
-
+  font:
+    text: Be Vietnam Pro
 extra_css:
   - style/main.css
   - style/extra.css
   - style/admonition-ucmdhelp.css
-
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 plugins:
+  - privacy
   - search
   - macros
   - site-urls
-
+  - caption:
+      table:
+        enable: true
+        start_index: 1
+        increment_index: 1
+        position: bottom
 extra:
   version_maj: 20
   version_majmin: 20.0
-
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - abbr
   - footnotes
   - md_in_html
   - markdown_tables_extended
-  - image_captions:
-      numbering: true
-  - table_captions:
-      numbering: true
-      caption_top: false
-  - caption
   - toc:
       title: On this page
-
 nav:
-  
-  -  Overview: overview.md
-  -  Entering Characters: entering-characters.md
-  -  Entering the Stencil and Nest Characters: entering-the-stencil-character.md
-  -  Entering Commands: entering-commands.md
-  -  The Different Types of Input Windows: the-different-input-windows.md
-  - Driving the Dyalog APL tty version: driving-tty-dyalog-apl.md
-  -  Starting APL: starting-apl.md
-  -  Configuring the Editor: configuring-the-editor.md
-  - " File permissions and `⎕FSTAC`": file-permissions-and-fstac.md
-  - " `⎕SH`, exit codes and stderr": calling-unix-commands.md
-  - " Signals and `⎕TRAP`, `4007⌶`": signals-and-trap.md
-  -  BuildID: buildid.md
-  -  Core and aplcore files: core-and-aplcore-files.md
-  - " Appendix A: Table of keycodes and keystrokes using a terminal emulator under Linux GUIs": appendix-a-table-of-keycodes-te.md
-  - " Appendix B: Table of keycodes and keystrokes for PuTTY": appendix-b-table-of-keycodes-putty.md
-  - " Appendix C: Unused keycodes": appendix-c-unused-keycodes.md
+  - Overview: overview.md
+  - Entering Characters: entering-characters.md
+  - Entering Nest and Stencil Characters: entering-the-stencil-character.md
+  - Entering Commands: entering-commands.md
+  - Input Windows: the-different-input-windows.md
+  - Driving the tty version: driving-tty-dyalog-apl.md
+  - Starting APL: starting-apl.md
+  - Configuring the Editor: configuring-the-editor.md
+  - File Permissions and FSTAC: file-permissions-and-fstac.md
+  - Calling UNIX Commands: calling-unix-commands.md
+  - Signals and Trap: signals-and-trap.md
+  - BuildID: buildid.md
+  - Core and APLCore Files: core-and-aplcore-files.md
+  - Appendix A: appendix-a-table-of-keycodes-te.md
+  - Appendix B: appendix-b-table-of-keycodes-putty.md
+  - Appendix C: appendix-c-unused-keycodes.md

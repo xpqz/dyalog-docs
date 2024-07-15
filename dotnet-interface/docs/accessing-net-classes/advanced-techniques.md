@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Advanced Techniques</span></h1>
+<h1> Advanced Techniques</h1>
 
-### Shared Members
+## Shared Members
 
 Certain .NET Classes provide methods, fields and properties, that can be called directly without the need to create an instance of the Class first. These *members* are known as shared, because they have the same definition for the class and for any instance of the class.
 
@@ -15,7 +15,7 @@ The methods `Now` and `IsLeapYear` exported by System.DateTime fall into this ca
 1
 ```
 
-### APL language extensions for .NET objects
+## APL language extensions for .NET objects
 
 The .NET Framework provides a set of standard operators (methods) that are supported by certain classes. These operators include methods to compare two .NET objects and methods to add and subtract objects.
 
@@ -93,7 +93,7 @@ In addition, the monadic form of Grade Up (`⍋`) and Grade Down (`⍒`), and th
  
 ```
 
-### Exceptions
+## Exceptions
 
 When a .NET object generates an error, it does so by *throwing an exception*. An exception is in fact a .NET class whose ultimate base class is `System.Exception`.
 
@@ -124,7 +124,7 @@ mscorlib
                             Int32 day)
 ```
 
-### Specifying Overloads and Casts
+## Specifying Overloads and Casts
 
 If a .NET function is overloaded in terms of the types of arguments it accepts, Dyalog APL chooses which overload to call depending upon the data types of the arguments passed to it. For example, if a .NET function `foo()` is declared to take a single argument either of type `int` or of type `double` APL would call the first version if you called it with an integer value and the second version if you called it with a non-integer value.
 
@@ -134,7 +134,7 @@ A second requirement is to be able to specify to what .NET types APL should coer
 
 Both these requirements are met by calling the function via the Variant operator `⍠`. There are two options, **OverloadTypes** (the Principle Option) and **CastToTypes**. Each option takes an array of refs to .NET types, the same length as the number of parameters to the function.
 
-### OverloadTypes Examples
+## OverloadTypes Examples
 
 To force APL to call the double version of function `foo()` regardless of the type of the argument `val`:
 ```apl
@@ -176,7 +176,7 @@ The following statements will call the niladic, double, (double, int) and double
 
 Note that in the niladic case, an enclosed empty vector is used to represent a null reference to a .NET type.
 
-### CastToTypes Example
+## CastToTypes Example
 
 The .NET function `Array.SetValue()` sets the value of a specified element (or elements) of an array. The first argument, the new value, is declared as `System.Object`, but the value supplied must correspond to the type of the `Array` in question. APL has no means to know what this is and will therefore pass the value *as is*, i.e. in whatever internal format it happens to be at the time. For example:
 ```apl
@@ -208,7 +208,7 @@ To rectify the situation, APL must be told to cast the argument to a Boolean as 
 1
 ```
 
-### Overloaded Constructors
+## Overloaded Constructors
 
 If a class provides constructor overloads, a similar mechanism is used to specify which of the constructors is to be used when an instance of the class is created using `⎕NEW`.
 

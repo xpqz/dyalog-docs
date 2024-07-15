@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 This chapter describes how you can write an OLE Automation Server in Dyalog APL.
 
@@ -10,11 +10,11 @@ However, when you access an OLE object, you do so by creating an instance of its
 
 Dyalog APL/W includes the capability for a namespace to spawn instances of itself. Initially, a new instance is simply a pointer to the original namespace (not a copy), but as soon as anything in it is changed, the new value is recorded separately. Thus instance namespaces will typically share functions but maintain separate sets of data.
 
-### Out-of-Process and In-Process OLE Servers
+## Out-of-Process and In-Process OLE Servers
 
 Dyalog APL allows you to create both out-of-process OLE Servers and in-process OLE Servers. An out-of-process OLE Server runs as a completely separate Windows program that communicates with one or more client programs. An in-process OLE Server is implemented as a Dynamic Link Library (DLL) that is loaded into the client process and becomes part of its address space.
 
-### Writing an APL OLE Server
+## Writing an APL OLE Server
 
 The following steps are required to create an OLE Automation Server in Dyalog APL/W:
 
@@ -24,13 +24,13 @@ The following steps are required to create an OLE Automation Server in Dyalog AP
 3. For each of the functions and variables that you wish to expose as methods and properties of your object, you must declare the data types of their parameters and results. You can do this manually, using the COM Properties tab of the Object Properties dialog box, or by invoking the SetFnInfo and SetVarInfo methods. Note that non-exported functions and variables, sub-namespaces and defined operators may be used internally, but are not available directly to an OLE Automation client. It is also possible to generate events from an OLEServer. The mechanism is the same as for an ActiveXControl and is described in the next chapter.
 4. Select Export from the Session File menu and choose in-process or out-of-process COM Server as you prefer.
 
-### Deploying an APL OLE Server
+## Deploying an APL OLE Server
 
 An in-process Dyalog COM Server uses  the dynamic-link library version of the Dyalog interpreter  which must be present in the same directory as your .dll, so you must copy the appropriate version there. You may use either the Development DLL or the Run-Time DLL. If you choose to use the Development DLL, you will also need to copy the DyaRes DLL which it uses.
 
 An out-of-process Dyalog COM Server consists of your workspace and the associated type library (.tlb) file which is created when you export it. The workspace requires the  Development EXE or the  Run-Time EXE, which must be in the same directory as your workspace and type library file.
 
-### Rules for Exported Functions
+## Rules for Exported Functions
 
 There are certain fundamental differences between OLE syntax and APL syntax.
 
@@ -51,7 +51,7 @@ The main advantage of an in-process OLE Server is that communication between the
 
 The main disadvantages of in-process OLE Servers is that there can only be one client per server and they do not support DCOM directly.
 
-### ClassID, TypeLibID and other properties
+## ClassID, TypeLibID and other properties
 
 Windows COM objects are identified using a system of Globally Unique Identifiers (GUIDs). When you create an OLEServer object using `⎕WC`, APL creates a number of GUIDs and allocates them to the OLE Server. One of these is a Class Identifier (often abbreviated to CLSID) that will uniquely identify your OLE object. This is stored in the ClassID property of the OLEServer. Another GUID identifies the Dispatch interface of the object but is not available via a property.
 

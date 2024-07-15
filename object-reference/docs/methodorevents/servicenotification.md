@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ServiceNotification</span><span class="command">Event 94</span></h1>
+<h1 class="heading"><span class="name">ServiceNotification</span> <span class="command">Event 94</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Web Service Data Types</span></h1>
+<h1> Web Service Data Types</h1>
 
 In principle, Web Services are designed to support most, if not all, of the data types supported by the .NET Framework, and to support any new .NET classes that you choose to define.
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Creating .NET Classes with APLScript</span></h1>
+<h1> Creating .NET Classes with APLScript</h1>
 
 It is possible to define and use new .NET classes within an `APLScript`.
 
@@ -22,7 +22,7 @@ However, the new class only inherits a default constructor (which is called with
 
 You can create and use instances of a class by using the `⎕NEW` system function in statements elsewhere in the `APLScript`.
 
-### Exporting Functions as Web Methods
+## Exporting Functions as Web Methods
 
 Within a `:Class` definition block, you may define private functions and public functions. A public function is one that is exposed as a method and may be called by a client that creates an instance of your class. Public functions must have a section of *declaration* statements. Other functions are purely internal to the class and are not directly accessible by a client application.
 
@@ -51,7 +51,7 @@ Specifies that the function is a constructor for a new .NET class. This function
 
 Declares the result of the method to have a given data type, if any. It also declares parameters to the method to have given data types and names. `Namex` is optional and may be any well-formed name that identifies the parameter. This name will appear in the metadata and is made available to a client application as information. It is therefore sensible to choose meaningful names. The names you allocate to parameters have no other meaning and are not associated with the names of local variables that you may choose to receive them. However, it is not a bad idea to use the same local names as the public names of your parameters.
 
-### A .NET Class example
+## A .NET Class example
 
 The following APLScript illustrates how you may create a .NET Class using APLScript. The example class is the same as *Example 1* in Chapter 5. The APLScript code, saved in the file `samples\aplclasses\aplclasses6.apl`, is as follows:
 ```apl
@@ -101,7 +101,7 @@ clear ws
 1 2 3 4 5 6 7 8 9 10
 ```
 
-### Defining Properties
+## Defining Properties
 
 Properties are defined by `:Property` and `:EndProperty` statements. A property pertains to the class in which it is defined.
 ```apl
@@ -190,7 +190,7 @@ clear ws
 0 1 2 3 4 5 6 7 8 9
 ```
 
-### Indexers
+## Indexers
 
 An *indexer* is a property of a class that enables an instance of that class (an object) to be indexed in the same way as an array, if the host language supports this feature. Languages that support object indexing include C# and Visual Basic. Dyalog APL does also allow indexing to be used on objects. This means that you can define an APL class that exports an indexer and you can use the indexer from C#, Visual Basic or Dyalog APL.
 

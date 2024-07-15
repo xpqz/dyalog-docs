@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Window Child Names</span><span class="command">R←{X}⎕WN Y</span></h1>
+<h1 class="heading"><span class="name">Window Child Names</span> <span class="command">R←{X}⎕WN Y</span></h1>
 
 
 
@@ -39,10 +39,7 @@ GUI objects are named **relative** to the current namespace.  The following exa
       F1.B1.⎕WN ''    
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       f←⎕NEW⊂'Form'
       f.n←⎕ns''                  ⍝ A non-GUI object       

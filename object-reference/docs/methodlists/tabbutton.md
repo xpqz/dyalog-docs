@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TabButton Methods</span></h1>
+<h1> TabButton Methods</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Map File</span><span class="command">R←{X}⎕MAP Y</span></h1>
+<h1 class="heading"><span class="name">Map File</span> <span class="command">R←{X}⎕MAP Y</span></h1>
 
 
 
@@ -53,10 +53,7 @@ If no left argument is given, file is assumed to contain a simple APL array, com
 
 Note that a *raw* mapped file may be updated *only* if its *file offset* is 0. Note also that Windows does not support mapped files of zero length.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 Map raw file as a read-only *vector* of doubles:
@@ -108,7 +105,7 @@ If you fail to specify the shape of the data, the data on file will be mapped as
 ¯86
 ```
 
-#### Compatibility between Editions
+## Compatibility between Editions
 
 
 In the Unicode Edition `⎕MAP` will fail with a `TRANSLATION ERROR` (event number 92) if you attempt to map an APL file which contains character data type 82.

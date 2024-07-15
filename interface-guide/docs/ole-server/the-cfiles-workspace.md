@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The cfiles Workspace</span></h1>
+<h1> The cfiles Workspace</h1>
 
 `cfiles.dws` contains a single OLEServer namespace called `CFiles` which implements a basic object-oriented interface to Dyalog APL component files.
 
@@ -18,7 +18,7 @@ To perform file operations, the client invokes the `FREAD`, `FREPLACE`, `FAPPEND
 
 A more sophisticated example might expose each component as a subsidiary object too.
 
-### Registering CFiles as an OLE Server
+## Registering CFiles as an OLE Server
 
 In order to explore the use of an APL OLE Server using the cfiles workspace as an example, you must register the CFiles object on your system.
 
@@ -71,7 +71,7 @@ Then select *Export* from the Session *File* menu and create either an in-proces
 
 ![cfiles create bound file ok](../img/cfiles-create-bound-file-ok.png)
 
-### The GetFile Function
+## The GetFile Function
 ```apl
      ∇ r←GetFile
 [1]    r←2 ⎕NQ'.' 'GetEnvironment' 'DYALOG'
@@ -84,7 +84,7 @@ Then select *Export* from the Session *File* menu and create either an in-proces
 
 ![cfiles getfile properties](../img/cfiles-getfile-properties.png)
 
-### The OpenFile Function
+## The OpenFile Function
 ```apl
      ∇ FILE←OpenFile NAME;F;TIE
 [1]   ⍝ Makes a new File object
@@ -112,7 +112,7 @@ The COM Properties dialog box for `OpenFile` is shown below. The function is dec
 
 ![cfiles openfile properties](../img/cfiles-openfile-properties.png)
 
-### The FSIZE Function
+## The FSIZE Function
 ```apl
      ∇ R←FSIZE
 [1]    R←⎕FSIZE TieNumber
@@ -125,7 +125,7 @@ The COM Properties dialog box for `FSIZE` is shown below. The function is declar
 
 ![cfiles fsize properties](../img/cfiles-fsize-properties.png)
 
-### The FREAD Function
+## The FREAD Function
 ```apl
      ∇ R←FREAD N
 [1]    R←⎕FREAD TieNumber,N
@@ -138,7 +138,7 @@ The COM Properties dialog box for `FREAD` is shown below. The function is declar
 
 ![cfiles fread properties](../img/cfiles-fread-properties.png)
 
-### The FAPPEND Function
+## The FAPPEND Function
 ```apl
      ∇ R←FAPPEND DATA
 [1]    R←DATA ⎕FAPPEND TieNumber
@@ -151,7 +151,7 @@ The COM Properties dialog box for `FAPPEND` is shown below. The function is decl
 
 ![cfiles fappend properties](../img/cfiles-fappend-properties.png)
 
-### The FREPLACE Function
+## The FREPLACE Function
 ```apl
      ∇ FREPLACE ID;I;DATA
 [1]    I DATA←ID
@@ -165,7 +165,7 @@ The COM Properties dialog box for `FREPLACE` is shown below. The function is dec
 
 ![cfiles freplace properties](../img/cfiles-freplace-properties.png)
 
-### Using CFiles from Excel
+## Using CFiles from Excel
 
 Start Excel and load the spreadsheet `cfiles.xlsm` from the Dyalog APL sub-directory `samples\ole`.
 
@@ -193,7 +193,7 @@ To replace a component, first enter the component number. Then type some data el
 
 To append a component, enter some data elsewhere on the spreadsheet and select it. Now click *Append*. This runs the FAppend procedure.
 
-### The FOpen Procedure
+## The FOpen Procedure
 ```apl
 Public CF As Object
 Public File As Object
@@ -231,7 +231,7 @@ Set File = CF.OpenFile(f)
 
 calls the OpenFile function and stores the result (which is an object) in the global variable File.
 
-### The FRead Procedure
+## The FRead Procedure
 ```apl
 Sub FRead()
     c = Cells(4, 2).Value
@@ -260,7 +260,7 @@ calls the `FREAD` function in the instance of the `File` namespace that is conne
 
 The remaining statements copy the data from Data into the spreadsheet.
 
-### The FReplace Procedure
+## The FReplace Procedure
 ```apl
 Sub FReplace()
     c = Cells(4, 2).Value
@@ -291,7 +291,7 @@ Call File.FReplace(c, Data)
 
 calls the `FREPLACE` function in the instance of the `File` namespace that is connected to the (global) Excel variable File.
 
-### The FAppend Procedure
+## The FAppend Procedure
 ```apl
 Sub FAppend()
     Dim Rslt As Variant

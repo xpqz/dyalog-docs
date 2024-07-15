@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Encoding</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">Encoding</span> <span class="command">Property</span></h1>
 
 
 
@@ -24,7 +24,7 @@ The possible values are `'None'`,
 
 
 
-Unicode Edition
+Table: Unicode Edition
 
 
 |Style|Encoding|Description|
@@ -38,7 +38,7 @@ Unicode Edition
 
 
 
-Classic Edition
+Table: Classic Edition
 
 
 |Style|Encoding|Description|

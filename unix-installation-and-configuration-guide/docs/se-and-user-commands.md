@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ⎕SE, User Commands and SALT</span></h1>
+<h1> `⎕SE`, User Commands and SALT</h1>
 
 ## Summary
 
@@ -6,7 +6,7 @@ Support for user commands is included in non-Windows versions of Dyalog APL. Man
 
 Under UNIX there is no autocompletion of user command names.
 
-The SALT code resides in `⎕SE`, which is saved in a session file. The location of the session file is controlled by the environment variable SESSION_FILE; by default this file is $DYALOG/default.dse. Setting SESSION_FILE=/dev/null results in an empty ⎕SE and SALT being disabled.
+The SALT code resides in `⎕SE`, which is saved in a session file. The location of the session file is controlled by the environment variable SESSION_FILE; by default this file is $DYALOG/default.dse. Setting SESSION_FILE=/dev/null results in an empty `⎕SE` and SALT being disabled.
 
 See the  *User Commands User Guide* and the  *SALT User Guide* for more information.
 

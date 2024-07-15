@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Lock</span><span class="command">{R}←X ⎕NLOCK Y</span></h1>
+<h1 class="heading"><span class="name">Native File Lock</span> <span class="command">{R}←X ⎕NLOCK Y</span></h1>
 
 
 
@@ -33,10 +33,7 @@ Locking enables controlled update of native files by co-operating users. A proce
 
 The shy result `R` is `Y`. To unlock the file, this value should subsequently be supplied in the right argument to `0 ⎕NLOCK`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
     2 ⎕NLOCK ¯1        ⍝ write-lock whole file
     0 ⎕NLOCK ¯1        ⍝ unlock whole file.
@@ -71,7 +68,7 @@ The left argument may have a second optional item that specifies a *timeout* val
 ```
 
 
-#### Notes
+## Notes
 
 - There is no *per-byte* cost associated with region locking. It takes the same time to lock/unlock a region, irrespective of that region's size.
 - Different file servers implement locks in slightly different ways. For example on some systems, locks are *advisory*. This means that a write lock on a region precludes other locks intersecting that region, but doesn't stop reads or writes across the region. On the other hand, *mandatory* locks block both other locks *and* read/write operations. `⎕NLOCK` will just pass the server's functionality along to the APL programmer without trying to standardise it across different systems.
@@ -80,7 +77,7 @@ The left argument may have a second optional item that specifies a *timeout* val
 
 
 
-##### Errors
+### Errors
 
 - In this release, an attempt to unlock a region that contains bytes that have not been locked results in a `DOMAIN ERROR`.
 - A `LIMIT ERROR` results if the operating system lock daemon has insufficient resources to honour the locking request.

@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Logical AND</span><span class="command">∧</span></h1>
+<h1 class="heading"><span class="name">Logical AND</span> <span class="command">∧</span></h1>
 
 
 
 Monadic Logical AND is not defined.
 
-##### Dyadic Logical AND means
+## Dyadic Logical AND means
 
 
 [Lowest Common Multiple (AND)](../primitive-functions/and-lowest-common-multiple.md)

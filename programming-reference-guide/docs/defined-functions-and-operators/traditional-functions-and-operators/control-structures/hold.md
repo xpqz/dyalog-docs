@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Hold Statement</span><span class="command">:Hold tkns</span></h1>
+<h1 class="heading"><span class="name">Hold Statement</span> <span class="command">:Hold tkns</span></h1>
 
 
 
@@ -91,10 +91,7 @@ Note that token acquisition for any particular `:Hold` is atomic, that is, eithe
 |-----------------------------------------------------------------------------------|------------------------------------------------------|
 |```apl :Hold 'red'     ...     :Hold 'green'         ...     :EndHold :EndHold  ```|```apl  :Hold 'green' 'red'     ...     :EndHold   ```|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 `:Hold` could be used for example, during the update of a complex data structure that might take several lines of code. In this case, an appropriate value for the token would be the name of the data structure variable itself, although this is just a programming convention: the interpreter does not associate the token value with the data variable.
@@ -150,7 +147,7 @@ Note that `:Hold`, like its component file system counterpart `⎕FHOLD`, is a d
 
 `:Hold` does not *prevent* threads from updating the same data structures concurrently, it prevents threads only from `:Hold`ing the same tokens.
 
-#### High-Priority Callbacks
+## High-Priority Callbacks
 
 
 `:Hold`

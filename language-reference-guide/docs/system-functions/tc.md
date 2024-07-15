@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Terminal Control</span><span class="command">(⎕ML)</span></h1>
+<h1 class="heading"><span class="name">Terminal Control</span> <span class="command">(⎕ML)</span></h1>
 
 
 
@@ -34,7 +34,7 @@ If `⎕ML≥3`the order of the elements of `⎕TC` is instead compatible with IB
 
 Elements of `⎕TC` beyond 3 are not defined but are reserved.
 
-#### Note
+## Note
 
 
 With the introduction of `⎕UCS` in Version 12.0, the use of `⎕TC` is discouraged and it is strongly recommended that you generate control characters using `⎕UCS` instead. This recommendation holds true even if you continue to use the Classic Edition.

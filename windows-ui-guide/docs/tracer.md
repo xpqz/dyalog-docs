@@ -1,24 +1,24 @@
-<h1 class="heading"><span class="name"> The Tracer</span></h1>
+<h1> The Tracer</h1>
 
 The Tracer is a visual debugging aid that allows you to step through an application line by line. During a Trace you can track the path taken through your code, display variables in edit windows and watch them change, skip forwards and backwards in a function. You can cutback the stack to a calling function and use the Session and Editor to experiment with and correct your code. The Tracer may be invoked in several ways as discussed below.
 
-### Tracing an expression
+## Tracing an expression
 
 Firstly, you may explicitly trace an expression that executes one or more defined functions or operators by typing the expression then pressing Ctrl+Enter (TC) or by selecting Trace from the Action menu. This lets you step through the execution of an expression from the beginning.
 
 In the same way as when you execute a statement by pressing Enter, the expression is (if necessary) copied down to the input line and then executed. However, if the expression includes a reference to an unlocked defined function or operator, execution halts at its first line and a Trace window containing the suspended function or operator is displayed on the screen. The cursor is positioned to the left of the first line which is highlighted.
 
-### Naked Trace
+## Naked Trace
 
 The second way to invoke the Tracer is when you have a suspended function in the state indicator and you press Ctrl+Enter (TC) on the empty input line. This is termed *naked trace*. The same thing can be achieved by selecting *Trace* from the *Action* menu on the Session Window.
 
 The effect of naked trace is to open the Tracer and to position the cursor on the currently suspended line. It is exactly as if you had traced to that point from the Input Line expression whose execution caused the suspension.
 
-### Automatic Trace
+## Automatic Trace
 
 The third way to invoke the Tracer is to have the system do it automatically for you whenever an error occurs. This is achieved by setting the Show trace stack on error option in the *Trace/Edit* tab of the *Configuration* dialog (**Trace_on_error** parameter). When an error occurs, the system will automatically deploy the Tracer. Note that this means that when an error occurs, the Trace window will then receive the input focus and not the Session window.
 
-### Tracer Options
+## Tracer Options
 
 From Version 10.1 onwards, the Tracer is designed to be docked in the Session window.
 
@@ -30,7 +30,7 @@ If you do so, you may then choose to have the Tracer operate in multiple windows
 
 These alternatives are discussed later in this Chapter.
 
-### The Trace Window
+## The Trace Window
 
 The Tracer is implemented as a single dockable window that displays the function that is currently being executed. There are two subsidiary information windows which are also fully dockable. The first of these (*SIStack*) displays the current function calling stack; the second (*Threads*) displays a list of running threads.
 
@@ -40,7 +40,7 @@ In the default Session files, the Tracer is docked along the bottom edge of the 
 
 In the default layout, the *SIstack* window is displayed alongside the main Tracer window, although this can be hidden or made to appear as a separate floating window, as required.
 
-### Trace Tools
+## Trace Tools
 
 The Tracer may be controlled from the keyboard, or by using the *Trace Tools* which are arranged along the title bar of the Debugger window. Note that the button names are solely for reference purposes in the description that follows.
 
@@ -97,7 +97,7 @@ At this stage, the state indicator is as follows:
 
 ```
 
-### Controlling Execution
+## Controlling Execution
 
 The point of execution may be moved by clicking the *Back* and *Fwd* buttons in the *Trace Tools* window or, using the keyboard, by pressing Ctrl+Shift+Bksp and Ctrl+Shift+Enter.  Notice however that these buttons do not themselves change the state indicator or the display in the *SIStack* window. This happens only when you restart execution from the new point.
 
@@ -107,7 +107,7 @@ The <RM> button removes the Trace window and resumes execution. The same is achi
 
 The <BH> button continues execution until the current function has run to completion and control has returned to the calling function. It leaves the Trace window displayed and allows you to watch execution progress.
 
-### Using the Session and the Editor
+## Using the Session and the Editor
 
 Whilst using the Tracer you can skip to the Session or to any Edit window and back again. While it is docked, you may resize the Tracer pane by dragging its title bar, and you may use the buttons provided to maximise, minimise and restore the Tracer pane within the Session window.
 
@@ -123,7 +123,7 @@ You can copy text from a trace window to the session for editing and execution o
 
 It is possible to skip from the Tracer to the Session and then re-invoke the Tracer on a different expression.
 
-### Setting Break-Points
+## Setting Break-Points
 
 Break-points are defined by `⎕STOP` and may be toggled on and off in an Edit or Trace window by clicking in the appropriate column. The example below illustrates a function with a `⎕STOP` break-point set on line `[5]`.
 
@@ -131,20 +131,20 @@ Break-points are defined by `⎕STOP` and may be toggled on and off in an Edit o
 
 `⎕STOP` break-points set or cleared in an Edit window are not established until the function is fixed. `⎕STOP` break-points set or cleared in a Trace window are established immediately.
 
-### Clearing All Break-Points
+## Clearing All Break-Points
 
 ![trace_theme-09-00](img/trace-theme-09-00.png)
 ![trace tools reset icon](img/trace-tools-reset-icon.png)
 
 You can clear all break-points by pressing the above button in the Trace Tools window. This in fact resets `⎕STOP` for all functions in the workspace.
 
-### The Classic mode Tracer
+## The Classic mode Tracer
 
 If you select *Classic Dyalog mode* from the *Trace/Edit* tab in the *Configuration* dialog box, the Tracer behaves in the same way as in Dyalog APL Version 8.2. However, the Tracer is not dockable in the Session.
 
 If you select the Classic mode Tracer, you may choose between multiple trace windows or a single trace window using the *Single Trace Window* option.
 
-### Multiple Trace Windows
+## Multiple Trace Windows
 
 The following behaviour is obtained by **deselecting** the *Single Trace Window* option.
 
@@ -159,7 +159,7 @@ The following behaviour is obtained by **deselecting** the *Single Trace Window*
 
 Note that a maximum of 50 Trace windows may be displayed.
 
-### Single Trace Window
+## Single Trace Window
 
 The following behaviour is obtained by **selecting** the Single Trace Window option.
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Modal Dialog Boxes</span></h1>
+<h1> Modal Dialog Boxes</h1>
 
 Up to now, it has been assumed that your user has constant access to all of the interface features and controls that you have provided. The user is in charge; your application merely responds to his requests.
 
@@ -23,7 +23,7 @@ For example, suppose that you want the user to close the dialog box by clicking 
 
 Note that this function is fairly general, as it gets the name of the Form from the name of the object that generated the event.
 
-### The MsgBox and FileBox Objects
+## The MsgBox and FileBox Objects
 
 The MsgBox and FileBox objects are standard MS-Windows dialog boxes and are strictly modal. The following discussion refers to the way a MsgBox is used, but applies equally to a FileBox.
 

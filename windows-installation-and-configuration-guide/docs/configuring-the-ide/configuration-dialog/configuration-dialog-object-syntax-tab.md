@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Object Syntax Tab</span></h1>
+<h1> Object Syntax Tab</h1>
 
 ![configuration dialog object syntax tab](../../img/configuration-dialog-object-syntax-tab.png)
 
 The *Object Syntax* tab of the *Configuration* dialog is used to set your *default preferences* for Object Syntax. Use *Options/Object Syntax* to change the settings for the current workspace.
 
-Configuration dialog: Object Syntax
+Table: Configuration dialog: Object Syntax
 
 |Label|Parameter|Description|
 |---|---|---|

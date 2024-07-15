@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Fix Script</span><span class="command">{R}←{X}⎕FIX Y</span></h1>
+<h1 class="heading"><span class="name">Fix Script</span> <span class="command">{R}←{X}⎕FIX Y</span></h1>
 
 
 
@@ -41,7 +41,7 @@ If `X` is `2`, `Y` is either a character vector containing the name of a script 
 In this case,  the shy result `R` is a vector of character vectors, containing the names of all of the objects that have been established in the workspace; the order of the names in `R` is not defined. Currently `2 ⎕FIX` is not certain to be an atomic operation, although this might change in future versions.
 
 
-#### Example 1
+## Example 1
 
 
 In the first example, the Class specified by `Y` is *named* (`MyClass`) but the result of `⎕FIX` is discarded. The end-result is that `MyClass` is established in the workspace as a Class.
@@ -51,7 +51,7 @@ In the first example, the Class specified by `Y` is *named* (`MyClass`) but the 
 ```
 
 
-#### Example 2
+## Example 2
 
 
 In the second example, the Class specified by `Y` is *named* (`MyClass`) and the result of `⎕FIX` is assigned to a different name (`MYREF`). The end-result is that a Class named `MyClass` is established in the workspace, and `MYREF` is a reference to it.
@@ -67,7 +67,7 @@ MyClass MYREF
 1
 ```
 
-#### Example 3
+## Example 3
 
 
 In the third example, the left-argument of `0` causes the named Class `MyClass` to be visible only via the reference to it (`MYREF`). It is there, but hidden.
@@ -80,7 +80,7 @@ MYREF
 ```
 
 
-#### Example 4
+## Example 4
 
 
 The fourth example illustrates the use of un-named Classes.
@@ -98,7 +98,7 @@ Pete
 
 
 
-#### Example 5
+## Example 5
 
 
 In the final example, the left argument of `2` allows a script containing multiple objects to be fixed:
@@ -118,7 +118,7 @@ In the final example, the left argument of `2` allows a script containing multip
 
 
 
-#### Restriction
+## Restriction
 
 
 `⎕FIX` is unable to fix a namespace from `Y` when `Y` specifies a multi-line dfn which is preceded by a `⋄` (diamond separator).
@@ -131,19 +131,19 @@ DOMAIN ERROR: There were errors processing the script
 ```
 
 
-#### Variant Options
+## Variant Options
 
 
 `⎕FIX` may be applied using the  Variant operator with the options Quiet, FixWithErrors,  AllowLateBinding and InjectReferences. These options apply only to namespaces and classes specified by the script. There is no principal option.
 
-#### Quiet Option
+## Quiet Option
 
 
 |---|------------------------------------------------------------------------------|
 |0  |If the script contains errors, these are displayed in the Status Window.      |
 |`1`|If the script contains errors, the errors are not shown  in the Status Window.|
 
-#### FixWithErrors Option
+## FixWithErrors Option
 
 
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -151,14 +151,14 @@ DOMAIN ERROR: There were errors processing the script
 |`1`|`⎕FIX` fixes all the namespaces and classes in the script regardless of any errors they may contain.                                                                   |
 |`2`|If the script contains errors, `⎕FIX` displays a message box prompting the user to choose whether or not to fix all the offending namespaces and classes in the script.|
 
-#### AllowLateBinding Option
+## AllowLateBinding Option
 
 
 |---|---------------------------------------------------------------------------------------------------------------------|
 |0  |`⎕FIX` will only fix a Class whose Base class (if specified) is defined in the script or is present in the workspace.|
 |`1`|`⎕FIX` will fixes a Class whose Base class is neither defined in the script nor present in the workspace.            |
 
-#### InjectReferences Option
+## InjectReferences Option
 
 
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

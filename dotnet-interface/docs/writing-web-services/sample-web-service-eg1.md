@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Sample Web Service: EG1</span></h1>
+<h1> Sample Web Service: EG1</h1>
 
 The first APLExample sample is supplied in `samples\asp.net\webservices\eg1.asmx` which is mapped via an IIS Virtual Directory to the URL:
 ```apl
@@ -29,7 +29,7 @@ Line [3] could in fact be coded as:
 
 because .NET guarantees that a client can only call the method by providing two 32-bit integers as parameters.
 
-### Testing APLExample from a Browser
+## Testing APLExample from a Browser
 
 If you connect to a URL that represents a Web Service, the browser displays a page that provides information about the service and the methods that it contains. In certain cases, but by no means all, the page also contains form fields that let you invoke a method from the browser.
 

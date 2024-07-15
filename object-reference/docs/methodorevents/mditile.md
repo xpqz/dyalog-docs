@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">MDITile</span><span class="command">Method 111</span></h1>
+<h1 class="heading"><span class="name">MDITile</span> <span class="command">Method 111</span></h1>
 
 
 

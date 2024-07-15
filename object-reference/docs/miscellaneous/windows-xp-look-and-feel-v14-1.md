@@ -11,12 +11,12 @@ Windows *Native Look and Feel* is an optional feature of Windows. It is enabled 
 
 When *Native Look and Feel* is enabled, user-interface controls such as Buttons take on a different appearance and certain controls (such as the ListView) provide enhanced features.
 
-#### Dyalog Session
+## Dyalog Session
 
 
 During development, both the Dyalog Session and the Dyalog APL GUI  displays native style buttons, combo boxes, and other GUI components if *Native Look and Feel* is enabled. The option is provided in the *General* tab of the *Configuration* dialog.
 
-#### Applications
+## Applications
 
 
 There are two ways to disable *Native Look and Feel* in end-user applications.

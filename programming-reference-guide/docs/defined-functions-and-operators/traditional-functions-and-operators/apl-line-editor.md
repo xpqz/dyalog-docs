@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> APL Line Editor</span></h1>
+<h1> APL Line Editor</h1>
 
 The APL Line Editor described herein is included for completeness and for adherence to the ISO APL standard.  Dyalog recommends the use of the more powerful Editor and Tracer in preference to the APL Line Editor. Full details of these facilities can be found in the UI Guides for your version of Dyalog APL, as well as in the descriptions of `⎕ED` and `)ED` which appear in the *Dyalog APL Language Reference Guide.*
 
@@ -14,8 +14,7 @@ The line editor recognises three forms for the opening request.
 
 The opening `∇` symbol is followed by the header line of a defined operation.  Redundant blanks in the request are permitted except within names.  If acceptable, the editor prompts for the first statement of the operation body with the line-number 1 enclosed in brackets.  On successful completion of editing, the defined operation becomes the active definition in the workspace.
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       ∇R←FOO
 [1]  R←10
@@ -44,8 +43,7 @@ defn error
 
 The `∇` symbol followed by the name of a defined operation and then by a closing `∇`, causes the display of the named operation.  Omitting the function name causes the suspended operation (i.e. the one at the top of the state indicator) to be displayed and opened for editing.
 
-**Example**
-
+<h4 class="example">Example</h4>
 ```apl
       ∇FOO∇
      ∇ R←FOO
@@ -73,8 +71,7 @@ The `∇` symbol followed by the name of an active defined operation and an edit
 
 On successful completion of editing, the defined operation becomes the active definition in the workspace which may replace an existing version of the function.  Monitors, and stop and trace vectors are removed.
 
-**Example**
-
+<h5 class="example">Example</h5>
 ```apl
       ∇FOO[2]
 [2]  R←R*2
@@ -97,7 +94,7 @@ Editing directives, summarised in Figure 2(iv) are permitted as the first non-bl
 |`[n]s` |Replaces or inserts a statement at line n                                                                       |
 |`[n⎕m]`|Edits line n placing the cursor at character position m where an Edit Control Symbol performs a specific action.|
 
-## Line Numbers
+##### Line Numbers
 
 Line numbers are associated with lines in the operation.  Initially, numbers are assigned as consecutive integers, beginning with `[0]` for the header line.  The number associated with an operation line remains the same for the duration of the definition mode unless altered by editing directives.  Additional lines may be inserted by decimal numbering.  Up to three places of decimal are permitted.  On closing definition mode, operation lines are re-numbered as consecutive integers.
 
@@ -108,7 +105,7 @@ The editor always prompts with a line number.  The response may be a statement 
 [2]
 ```
 
-## Position
+##### Position
 
 The editing directive `[n]`, where n is a line number, causes the editor to prompt for input at that line number.  A statement or another editing directive may be entered.  If a statement is entered, the next line number to be prompted is the previous number incremented by a unit of the display form of the last decimal digit.  Trailing zeros are not displayed in the fractional part of a line number:
 ```apl
@@ -124,11 +121,11 @@ The editing directive `[n]`s, where `n` is a line number and s is a statement, c
 [1]
 ```
 
-## Delete
+##### Delete
 
 The editing directive `[∆n]`, where `n` is a line number, causes the statement line to be deleted.  The form `[n∆m]`, where `n` is a line number and `m` is a positive integer, causes `m` consecutive statement lines starting from line number `n` to be deleted.
 
-## Edit
+##### Edit
 
 The editing directive `[n⎕m]`, where `n` is a line number and `m` is an integer number, causes line number `n` to be displayed and the cursor placed beneath the `m`{th} character on a new line for editing.  The response is taken to be edit control symbols selected from:
 
@@ -143,8 +140,7 @@ Invalid edit symbols are ignored.  If there are no valid edit symbols entered, 
 
 The line number may be edited.
 
-**Examples**
-
+<h6 class="example">Examples</h6>
 ```apl
 [1]   [1⎕7]
 [1]   R←A+B
@@ -158,7 +154,7 @@ The line number may be edited.
 
 The form `[n⎕0]` causes the line number `n` to be displayed and the cursor to be positioned at the end of the displayed line, omitting the edit phase.
 
-## Display
+##### Display
 
 The editing directive `[⎕]` causes the entire operation to be displayed.  The form `[⎕n]` causes all lines from line number n to be displayed.  The form `[n⎕]` causes only line number `n` to be displayed:
 ```apl
@@ -174,7 +170,7 @@ The editing directive `[⎕]` causes the entire operation to be displayed.  The
 [4]
 ```
 
-## Close Definition Mode
+###### Close Definition Mode
 
 The editing directive `∇` causes definition mode to be closed.  The new definition of the operation becomes the active version in the workspace.  If the name in the operation header (which may or may not be the name used to enter definition mode) refers to a pendent operation, the editor issues the message `warning pendent operation` before exiting.  The new definition becomes the active version, but the original one will continue to be referenced until the operation completes or is cleared from the state indicator.
 
@@ -208,8 +204,7 @@ Improper syntax in expressions within statement lines of the function is not det
 
 These errors are not detected if they occur in a comment or within quotes.  Other syntactical errors in statement lines will remain undetected until the operation is executed.
 
-**Example**
-
+<h7 class="example">Example</h7>
 ```apl
 [4]   R←(A[;1)=2)⌿⍎EXP,'×2
 warning unmatched parentheses
@@ -219,6 +214,6 @@ warning unmatched brackets
 
 Note that there is an imbalance in the number of quotes.  This will result in a `SYNTAX ERROR` when this operation is executed.
 
-## Quit Definition Mode
+###### Quit Definition Mode
 
 The user may quit definition mode by typing the INTERRUPT character.  The active version of the operation (if any) remains unchanged.

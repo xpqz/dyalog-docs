@@ -1,24 +1,24 @@
-<h1 class="heading"><span class="name"> Key Features</span></h1>
+<h1> Key Features</h1>
 
-### Upgrading from Version 17.1 to Version {{ version_majmin }}
+## Upgrading from Version 17.1 to Version {{ version_majmin }}
 
 Please note that if you are upgrading from Version 17.1 to Version {{ version_majmin }}, you should read the [Release Notes for Version 18.0](../relnotes18-0/key-features.md) and the [Release Notes for Version 18.2](../relnotes18-2/key-features.md) in conjunction with this document.
 
-### Linux Restriction
+## Linux Restriction
 
 There is a new restriction in Version 19.0 for Linux which will also apply in forthcoming new versions.
 
 Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxiliary Processors cannot be used (they hang on error). The default value is 1 unless you are not running under a desktop (for example, you are running Dyalog in a PuTTY session when the default is 0).
 
-### Dyalog APL on macOS
+## Dyalog APL on macOS
 
 - Dyalog APL Version 19.0 is available as both a native Intel-based macOS version and a native ARM-based macOS version. Version 19.0 is expected to be the last version to be compiled for Intel-based Macs.
 
-### New Language Features
+## New Language Features
 
 - Currently, multi-threaded applications rely on hand-picked token types and require coordination between developers in the choice of these tokens. There is a new system function designed to remove the need for hard-coded token numbers. See [Allocate Token Range](../language-reference-changes/talloc.md).
 
-### Improved Language Features
+## Improved Language Features
 
 - A variant option `CharSet` is provided to restrict the result of `⎕JSON` export to ASCII characters. Non-ASCII characters are converted to encoded strings. 
 - The memory manager has been extended to give the programmer finer control over `WS FULL` errors. See [Memory Manager Statistics](../language-reference-changes/memory-manager-statistics.md).
@@ -33,11 +33,11 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 - `⎕FHOLD` now accepts an optional left argument to specify a time-out. See [File Hold](../language-reference-changes/fhold.md).
 - The right argument to `⎕SIGNAL` may include 1006 (`TIMEOUT` error).
 
-### GUI Improvements
+## GUI Improvements
 
 - The HTMLRenderer provides a number of new Properties and Methods. See [AllowContextMenu](../object-reference-changes/allowcontextmenu.md), [ExecuteJavaScript](../object-reference-changes/executejavascript.md), [GetZoomLevel](../object-reference-changes/getzoomlevel.md), [IsLoading](../object-reference-changes/isloading.md), [LoadEnd](../object-reference-changes/loadend.md), and [SetZoomLevel](../object-reference-changes/setzoomlevel.md).
 
-### Session Initialisation Improvements
+## Session Initialisation Improvements
 
 - There is a new Boolean configuration parameter that determines whether or not the Session is initialised on start-up. See [DYALOG_INITSESSION](../configuration-parameters/dyalog-initsession.md). By default this is 1 for the development version and 0 for the run-time. This must be 1 to use Link.
 - Nested directory structures are now supported.
@@ -45,7 +45,7 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 - Note that Link is now required for Session initialisation. See [DyalogLink](../configuration-parameters/dyaloglink.md) for how to use a non-default Link.
 - The list of directories from which `⎕SE` is populated can now be extended rather than just replaced. See [DyalogStartupSE](../configuration-parameters/dyalogstartupse.md).
 
-### Session Improvements
+## Session Improvements
 
 - Multi-line input, which was introduced in 18.0, is now enabled by default. On Windows this can be changed by selecting/unselecting the "Enable Multiline Input" Checkbox on the Session tab of the Configure dialog, or on all platforms by setting the configuration parameter DYALOG_LINEEDITOR_MODE to 0 (disabled) or 1 (enabled).
 - The log file used by the Session is now unique to the instance of Dyalog that is running and is reported by a new LogFile property of `⎕SE`. Previously, multiple instances of the Dyalog program shared the same session log. See [Log_File](../configuration-parameters/log-file.md). 
@@ -55,7 +55,7 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 - The Caption property of the Session, which was previously read-only, can now be set. See below.
 - When you edit an object by double-clicking the mouse or pressing the `<ED>` key, or executing `)ED`, and the name of the object is followed by `[n]`, the Editor will position the cursor on line number `n`. Note that there must not be a space between the last character of the name and the "`[`".
 
-### Session Caption
+## Session Caption
 
 The Caption property of the Session may be set dynamically to a character vector comprising free text and field names. Field names must be enclosed in braces and are replaced in-situ by corresponding values.
 
@@ -73,10 +73,9 @@ The Caption property of the Session may be set dynamically to a character vector
 |{CHARS}   |"Classic" or "Unicode"               |
 |{BITS}    |"32" or "64"                         |
 
-Session Caption Fields
+Table: Session Caption Fields
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
      ⎕SE.Caption←'Pete: {WSID} {Product} {VER_A}.{VER_B}'
 ```

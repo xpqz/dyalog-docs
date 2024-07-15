@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Namespace Syntax</span></h1>
+<h1> Namespace Syntax</h1>
 
 Names within namespaces may be referenced *explicitly* or *implicitly*.  An *explicit* reference requires that you identify the object by its full or relative pathname using a `'.'` syntax; for example:
 ```apl
@@ -27,8 +27,7 @@ There are two special space names:
 
 `⎕SE` is a system namespace which is preserved across workspace load and clear.
 
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       WSDOC.PAGE.NO +← 1     ⍝ Increment WSDOC page count
  
@@ -62,7 +61,7 @@ Notice that the expression to the right of a dot may be arbitrarily complex and 
 16 18 20
 ```
 
-## Summary
+# Summary
 
 Apart from its use as a decimal separator (`3.14`), '`.`' is interpreted by looking at the type or *class* of the expression to its left:
 

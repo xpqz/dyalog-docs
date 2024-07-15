@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Matrix Divide</span><span class="command">R←X⌹Y</span></h1>
+<h1 class="heading"><span class="name">Matrix Divide</span> <span class="command">R←X⌹Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@
 The shape of `R` is `(1↓⍴Y),1↓⍴X`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕PP←5
@@ -65,7 +62,7 @@ If there are more rows than columns in the right argument, the least squares sol
 14.941 ¯2.9609
 ```
 
-#### Example: linear regression on complex numbers
+## Example: linear regression on complex numbers
 ```apl
       x←j⌿¯50+?2 13 4⍴100
       y←(x+.×3 4 5 6) + j⌿0.0001×¯50+?2 13⍴100
@@ -79,7 +76,7 @@ If there are more rows than columns in the right argument, the least squares sol
 ```
 
 
-#### Additional Information
+## Additional Information
 ```apl
 
       x⌹y ←→ (⌹(⍉y)+.×y)+.×(⍉y)+.×x

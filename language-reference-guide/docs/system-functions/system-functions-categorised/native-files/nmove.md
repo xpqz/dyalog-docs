@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Move</span><span class="command">{R}←X ⎕NMOVE Y</span></h1>
+<h1 class="heading"><span class="name">Native File Move</span> <span class="command">{R}←X ⎕NMOVE Y</span></h1>
 
 
 
@@ -28,12 +28,12 @@ If `Y` specifies more than one source, `X` must be a character vector  that spec
 The shy result `R` contains count(s) of top-level items moved. If `Y` is a single source name, `R` is a scalar otherwise it is a vector of the same length as `Y`.
 
 
-#### Variant Options
+## Variant Options
 
 
 `⎕NMOVE` may be applied using the  Variant operator with the options Wildcard (the Principal option), IfExists, RenameOnly and ProcessCallback.
 
-#### Wildcard Option (Boolean)
+## Wildcard Option (Boolean)
 
 
 |---|---|
@@ -43,7 +43,7 @@ The shy result `R` contains count(s) of top-level items moved. If `Y` is a singl
 
 Note that when Wildcard is 1, element(s) of `R` can  be 0 or `>1`. If Wildcard is 0, elements of `R` are always 1.
 
-#### IfExists Option
+## IfExists Option
 
 
 The IfExists variant option determines what happens when a source file is to be copied to a target file that already exists. It does not apply to directories, only to the files within them.
@@ -60,7 +60,7 @@ The following cases cause an error to be signalled  regardless of the value of t
 - If the source specifies a directory and the destination specifies an existing file.
 - If the source specifies a file and the same base name exists as a sub-directory in the destination.
 
-#### RenameOnly Option (Boolean)
+## RenameOnly Option (Boolean)
 
 
 The RenameOnly option  determines what happens when it is not possible to rename the source.
@@ -71,15 +71,12 @@ The RenameOnly option  determines what happens when it is not possible to rename
 |`1`|The move will fail                                |
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 A number of possibilities exist, illustrated by the following examples. In all cases, if the source is a file, the file is moved. If the source is a directory, the directory and all of its contents are moved.
 
-##### Examples (single source, Wildcard is 0)
+### Examples (single source, Wildcard is 0)
 
 - The source name must be an existent file or directory.
 - If the destination name does not exist but its path name does exist, the source is moved to the destination name.
@@ -105,7 +102,7 @@ backups/default.dlf
 ```
 
 
-##### Examples (single source, Wildcard is 1)
+### Examples (single source, Wildcard is 1)
 
 - The source name may include wildcard characters which matches a number of existing files and/or directories. The destination name must be an existing directory.
 - The files and/or directories that match the pattern specified by the source name are moved into the destination directory. If there are no matches, zero copies are made.
@@ -128,7 +125,7 @@ backups/UserCommand20.cache
 
 
 
-##### Examples (multiple sources, Wildcard is 0)
+### Examples (multiple sources, Wildcard is 0)
 
 - Each source name must specify a single file or directory which must exist. The destination name must be an existing directory.
 - Each of the files and/or directories specified by the source base names are moved to the destination directory.
@@ -152,7 +149,7 @@ backups/def_uk.dse
 
 
 
-##### Examples (multiple sources, Wildcard is 1)
+### Examples (multiple sources, Wildcard is 1)
 
 - The destination name must be an existing directory.
 - Each of the files and/or directories that match the patterns specified by the source names (if any) are moved to the destination directory.
@@ -173,7 +170,7 @@ backups/UserCommand20.cache
 
 
 
-#### Note
+## Note
 
 
 When `⎕NMOVE` copies and deletes files:
@@ -183,9 +180,9 @@ When `⎕NMOVE` copies and deletes files:
 - Read permissions will be needed on all files within a directory which is moved.
 - If the operation fails at any point and an error is signalled it is possible that there may be files and/or directories left duplicated in both the source and destination. It is not possible that a file or directory may be removed from the source without having been copied to the destination.
 
-#### ProgressCallback Option
+### ProgressCallback Option
 
-#### Overview
+### Overview
 
 
 If this option is enabled, the system function invokes an APL callback function as the file operation (move or copy) proceeds. A system object is used to communicate between the system function and the callback. The file operation has 4 distinct stages:
@@ -226,7 +223,7 @@ The right argument given to the callback function is a 3-element vector:
 |`[3]`|Info    |Reference to a namespace containing information about the event. See below.                                             |
 
 
-#### Event
+### Event
 
 
 
@@ -244,7 +241,7 @@ Event is a character vector which indicates the stage of the copy or move operat
 Note that there will always be at least 2 invocations of the callback, to indicate the start and end of the operation.
 
 
-#### Info
+### Info
 
 
 Info is a ref to a namespace that contains information about the event. This namespace persists for the duration of the execution of the system function and contains the following fields:
@@ -259,7 +256,7 @@ Info is a ref to a namespace that contains information about the event. This nam
 
 
 
-#### Options
+### Options
 
 
 This is a namespace which contains options that control future invocations of the callback. The options persist between these invocations, so there is no need to set them again unless they should be changed. The fields and their default values are:

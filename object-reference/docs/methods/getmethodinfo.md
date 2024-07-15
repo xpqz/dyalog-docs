@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetMethodInfo</span><span class="command">Method 552</span></h1>
+<h1 class="heading"><span class="name">GetMethodInfo</span> <span class="command">Method 552</span></h1>
 
 
 
@@ -35,10 +35,7 @@ The argument to GetMethodInfo is a single item as follows:
 
 The result is a nested vector with one element per method name. Each element of this vector is itself a vector of 2-element character vectors. For each method, the first item describes the help message or description (if any) registered for the method and the data type of its result. Note that if the event does not produce a result, the data type of the result is reported as `'VT_VOID'`. Each of the remaining elements contains a parameter name and its corresponding data type.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       CLNAME←'Microsoft Multimedia Control, Version 6.0'
       'MM' ⎕WC 'OCXClass' CLNAME

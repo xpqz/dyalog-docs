@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Interval Index</span><span class="command">R←X⍸Y</span></h1>
+<h1 class="heading"><span class="name">Interval Index</span> <span class="command">R←X⍸Y</span></h1>
 
 
 
@@ -57,10 +57,7 @@ Like dyadic `⍳` (see [Index Of](index-of.md)), Interval Index works with major
 
 `⎕IO` is an implicit argument of Interval Index. In all the following examples, `⎕IO` is 1.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       10 20 30⍸11 1 31 21
@@ -87,7 +84,7 @@ And in the alphabetic example above:
 - "A" is between `X[1]` and `X[2]`, so the answer is 1
 - as so on ...
 
-##### Example (Classification)
+### Example (Classification)
 
 
 Commercially, olive oil is graded as follows:
@@ -121,7 +118,7 @@ Commercially, olive oil is graded as follows:
 
 ```
 
-#### Example (Data Consolidation by Interval)
+## Example (Data Consolidation by Interval)
 
 
 `x` represents some data sampled in chronological order at timestamps `t`.
@@ -196,15 +193,12 @@ Therefore, the expression `(u⍸t){+/⍵}⌸x` summarises `x` in 5-minute interv
 
 ```
 
-#### Higher-Rank Left Argument
+### Higher-Rank Left Argument
 
 
 If `X` is a higher rank array, the function compares sub-arrays in `Y`  with the major cells of  `X`, where a major cell is  a sub-array on the leading dimension of `X` with shape `1↓⍴X`. In this case, the shape of the result `R` is `(1-⍴⍴X)↓⍴Y`.
 
-
-
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       x ← ↑ 'Fi' 'Jay' 'John' 'Morten' 'Roger'
       x
@@ -250,7 +244,7 @@ Omega  4
 Zeus   5
 ```
 
-#### Further Example
+### Further Example
 ```apl
       ⍴x
 5 6
@@ -281,7 +275,7 @@ Alpha
 
 ```
 
-#### Nested Array Example
+### Nested Array Example
 
 
 A card-player likes to sort a hand into suits spades, hearts, diamond, clubs (fortunately alphabetic) and high-to-low within each suit.

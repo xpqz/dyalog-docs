@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Root Parents</span></h1>
+<h1> Root Parents</h1>
 
 |---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
 |[ChooseFont](../methodorevents/choosefont.md) ,          |[Flush](../methodorevents/flush.md) ,                    |[NameFromHandle](../methodorevents/namefromhandle.md) ,        |

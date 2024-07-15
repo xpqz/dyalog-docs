@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Shared Variables</span></h1>
+<h1> Shared Variables</h1>
 
 |Name  |Description                |
 |------|---------------------------|

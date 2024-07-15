@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> GUI and COM Support</span></h1>
+<h1> GUI and COM Support</h1>
 
 |Name     |Description                |
 |---------|---------------------------|

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Exception</span><span class="command">R←⎕EXCEPTION</span></h1>
+<h1 class="heading"><span class="name">Exception</span> <span class="command">R←⎕EXCEPTION</span></h1>
 
 
 

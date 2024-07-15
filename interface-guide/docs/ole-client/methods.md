@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Methods</span></h1>
+<h1> Methods</h1>
 
 When you create an instance of a COM object, the methods and the properties are directly accessible from the corresponding namespace.
 
-### Calling Methods
+## Calling Methods
 
 You invoke a method in an OLE object as if it were an APL function in your workspace.
 
@@ -21,7 +21,7 @@ For example, the OpenDatabase method in the DAO.DBEngine OLE server may be calle
  
 ```
 
-### Arrays and Pointers
+## Arrays and Pointers
 
 Many parameters to OLE methods are specified by pointers. If, for example, the parameter type is VT_BSTR, it means that the calling routine must supply a pointer to (i.e. the address of) a character string.
 
@@ -29,7 +29,7 @@ Similarly, if the parameter type is defined to be VT_VARIANT, it means that the 
 
 The rule is that if a pointer is required, APL will provide it automatically; you do not have to do so. Instead, all you do is supply the value.
 
-### Optional Parameters
+## Optional Parameters
 
 Methods are often defined to have optional parameters. For example the parameters defined for the OpenDatabase method provided by the DAO.DBEngine OLE object are:
 ```apl
@@ -55,7 +55,7 @@ This means that the method takes either no arguments or one argument. To call it
 
 Note that you cannot therefore call a function in an *APL* server with a single argument that is an empty numeric vector.
 
-### Output Parameters
+## Output Parameters
 
 You may encounter parameters whose data type is defined explicitly as a pointer to something else, for example VT_PTR to VT_UI4 specifies a pointer to an unsigned 4-byte integer.
 
@@ -65,7 +65,7 @@ When you invoke the method you must use data of the type pointed to.
 
 The result of the method is then a vector containing the result defined for the method, followed by the (new) values of the output parameters. This is similar to the mechanism used by `⎕NA`.
 
-### Named Parameters
+## Named Parameters
 
 Visual Basic syntax allows you to specify parameters by position or by name; rather like `⎕WC` and `⎕WS`. For example the parameters defined for the OpenDatabase method provided by the DAO.DBEngine OLE object are:
 ```apl
@@ -88,7 +88,7 @@ You may do the same thing from Dyalog APL, using `⎕WS` syntax. For example, th
 
 Note that you may only use named parameters if they are supported by the method. Many methods do not allow them.
 
-### Methods that return Objects
+## Methods that return Objects
 
 Object hierarchies in OLE are not static, but are created dynamically by calling methods that return objects as their result.
 

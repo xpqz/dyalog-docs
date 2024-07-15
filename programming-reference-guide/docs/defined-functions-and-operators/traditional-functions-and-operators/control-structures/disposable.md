@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Disposable Statement</span><span class="command">:Disposable</span></h1>
+<h1 class="heading"><span class="name">Disposable Statement</span> <span class="command">:Disposable</span></h1>
 
 
 
@@ -28,7 +28,7 @@ Note that exit includes normal exit as the code drops through `:EndDisposable`, 
 
 See also:  .Disposing of .NET Objects.
 
-#### Example (Normal Exit)
+## Example (Normal Exit)
 ```apl
 :Disposable f←⎕NEW Font
 .
@@ -39,7 +39,7 @@ See also:  .Disposing of .NET Objects.
 
 In the above example, when the `:EndDisposable` statement is reached, the system disposes of the Font object `f` (and all the resources associated with it) by calling `(IDisposable)f.Dispose()`. A subsequent reference to `f` would generate `VALUE ERROR`.
 
-#### Example (Normal Exit)
+## Example (Normal Exit)
 ```apl
 :Disposable fonts←⎕NEW ¨Font Font
 .
@@ -50,7 +50,7 @@ In the above example, when the `:EndDisposable` statement is reached, the system
 
 In the above example, Dispose() is called on **each** of the Font objects in `fonts` during the processing of `:EndDisposable`.
 
-#### Example (Branch Exit)
+## Example (Branch Exit)
 ```apl
 :Disposable fonts←⎕NEW ¨Font Font
 .
@@ -62,7 +62,7 @@ In the above example, Dispose() is called on **each** of the Font objects in `fo
 
 In this example, Dispose() is called on  the Font objects in `fonts` during the processing of the branch statement `→0`.
 
-#### Example (TrapExit)
+## Example (TrapExit)
 ```apl
 :trap 0
 

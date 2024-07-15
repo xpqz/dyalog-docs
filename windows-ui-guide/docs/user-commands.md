@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> User Commands</span></h1>
+<h1> User Commands</h1>
 
 Dyalog APL includes a mechanism to define *User Commands*.
 

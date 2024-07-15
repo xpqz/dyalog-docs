@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Drop Component</span><span class="command">{R}←⎕FDROP Y</span></h1>
+<h1 class="heading"><span class="name">File Drop Component</span> <span class="command">{R}←⎕FDROP Y</span></h1>
 
 
-##### Access code 32
+## Access code 32
 
 
 `Y` must be a simple integer vector of length 2 or 3 whose elements are:
@@ -29,10 +29,7 @@ The shy result of a `⎕FDROP` is a vector of the numbers of the dropped compone
 
 Note that the result vector, though potentially large, is generated only on request.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
       ⎕FSIZE 1
 1 21 5436 4294967295

@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Tilde</span><span class="command">~</span></h1>
+<h1 class="heading"><span class="name">Tilde</span> <span class="command">~</span></h1>
 
 
-##### Monadic Tilde means
+## Monadic Tilde means
 
 
 [Not
@@ -16,7 +16,7 @@
 1 0 1 0
 ```
 
-##### Dyadic Tilde means
+## Dyadic Tilde means
 
 
 [Without;Excluding](../primitive-functions/excluding.md)

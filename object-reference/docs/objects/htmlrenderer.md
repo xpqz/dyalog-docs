@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">HTMLRenderer</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">HTMLRenderer</span> <span class="command">Object</span></h1>
 
 
 
@@ -83,10 +83,7 @@ If neither [HTML](../properties/html.md) nor [URL](../properties/url.md) is set
 
 When the HTMLRenderer is displayed in its own window, the  window caption is set by an assignment to its [Caption](../properties/caption.md) property. The window caption may subsequently change  when content is displayed  (typically  by the title tag in the html). The [Caption](../properties/caption.md) property reports the current window caption.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      ∇ Example;enc;Q;U;tw
 [1]    'f'⎕WC'Form' 'HTMLRender'

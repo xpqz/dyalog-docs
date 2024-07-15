@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetBuildID</span><span class="command">Method 992</span></h1>
+<h1 class="heading"><span class="name">GetBuildID</span> <span class="command">Method 992</span></h1>
 
 
 
@@ -40,10 +40,7 @@ Note that although this method is designed to uniquely identify different
 versions of Dyalog by its checksum, it may be used to obtain a checksum
 for *any* arbitrary file.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       GetBuildID ⍬
 38091b76

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Assignment (Selective)</span><span class="command">(EXP X)←Y</span></h1>
+<h1 class="heading"><span class="name">Assignment (Selective)</span> <span class="command">(EXP X)←Y</span></h1>
 
 
 
@@ -14,30 +14,27 @@
 The following functions may appear in the selection expression. Where appropriate these functions may be used with axis `[]` and with the Each operator `¨`.
 
 
-Functions for Selective Assignment
+Table: Functions for Selective Assignment {: #Selective_Assignment_Functions }
 
 
-|---|------------------------------|
-|↑  |Take                          |
-|↓  |Drop                          |
-|,  |Ravel                         |
-|⍪  |Table                         |
-|⌽⊖ |Reverse, Rotate               |
-|⍴  |Reshape                       |
-|⊃  |Disclose, Pick                |
-|⍉  |Transpose (Monadic and Dyadic)|
-|/⌿ |Replicate                     |
-|\⍀ |Expand                        |
-|⌷  |Index                         |
-|∊  |Enlist ( `⎕ML≥1` )            |
+|----|------------------------------|
+|`↑` |Take                          |
+|`↓` |Drop                          |
+|`,` |Ravel                         |
+|`⍪` |Table                         |
+|`⌽⊖`|Reverse, Rotate               |
+|`⍴` |Reshape                       |
+|`⊃` |Disclose, Pick                |
+|`⍉` |Transpose (Monadic and Dyadic)|
+|`/⌿`|Replicate                     |
+|`\⍀`|Expand                        |
+|`⌷` |Index                         |
+|`∊` |Enlist ( `⎕ML≥1` )            |
 
 
 Note: Mix and Split (monadic `↑` and `↓`), Type (monadic `∊` when `⎕ML<1`) and Membership (dyadic `∊`) may not be used in the selection expression.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A←'HELLO'
       ((A∊'AEIOU')/A)←'*'
@@ -71,15 +68,12 @@ H*LL*
 ```
 
 
-#### Each Operator
+## Each Operator
 
 
 The functions listed in the table above may also be used with the Each Operator `¨`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A←'HELLO' 'WORLD'
       (2↑¨A)←'*'
@@ -98,15 +92,12 @@ The functions listed in the table above may also be used with the Each Operator 
 ```
 
 
-#### Bracket Indexing
+## Bracket Indexing
 
 
 Bracket indexing may also be applied to the expression on the left of the assignment arrow.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       MAT←4 3⍴'Hello' 'World'
       (¯2↑¨MAT[;1 3])←'$'

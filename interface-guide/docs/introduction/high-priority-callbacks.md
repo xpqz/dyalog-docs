@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> High-Priority Callback Functions</span></h1>
+<h1> High-Priority Callback Functions</h1>
 
 A high-priority callback function is one that is  invoked by a high-priority
 event which demands that Dyalog must return a result to the operating system before it
@@ -47,7 +47,7 @@ The only way to restore the situation to normal is to force the callback functio
 
 ```
 
-### Thread-Switching and :Hold
+## Thread-Switching and :Hold
 
 Dyalog cannot perform thread-switching during the execution of a
 high-priority callback.

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">New Instance</span><span class="command">R←⎕NEW Y</span></h1>
+<h1 class="heading"><span class="name">New Instance</span> <span class="command">R←⎕NEW Y</span></h1>
 
 
 
@@ -22,7 +22,7 @@ The result `R` is a reference to a new instance of Class, Dyalog GUI object, or
 For further information, see *Interface Guide*.
 
 
-#### Class Example
+## Class Example
 ```apl
 :Class Animal
     ∇ Name nm
@@ -61,7 +61,7 @@ Noname
 ```
 
 
-#### .NET Examples
+## .NET Examples
 ```apl
       ⎕USING←'System' 'System.Web.Mail,System.Web.dll'
       dt←⎕NEW DateTime (2006 1 1)
@@ -79,7 +79,7 @@ If the name specified by the first item of `Y` would otherwise generate a `VALUE
 
 
 
-#### Dyalog GUI Examples
+## Dyalog GUI Examples
 ```apl
       F←⎕NEW ⊂'Form'
       F

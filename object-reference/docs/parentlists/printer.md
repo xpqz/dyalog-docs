@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Printer Parents</span></h1>
+<h1> Printer Parents</h1>
 
 |-----------------------------------------------|-------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[Print](../methodorevents/print.md) ,|[Setup](../methodorevents/setup.md) ,                |

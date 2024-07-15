@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetFocus</span><span class="command">Method 511</span></h1>
+<h1 class="heading"><span class="name">GetFocus</span> <span class="command">Method 511</span></h1>
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetCellRect</span><span class="command">Method 201</span></h1>
+<h1 class="heading"><span class="name">GetCellRect</span> <span class="command">Method 201</span></h1>
 
 
 

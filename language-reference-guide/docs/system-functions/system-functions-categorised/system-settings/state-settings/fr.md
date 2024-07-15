@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Floating-Point Representation</span><span class="command">⎕FR</span></h1>
+<h1 class="heading"><span class="name">Floating-Point Representation</span> <span class="command">⎕FR</span></h1>
 
 
 

@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Event Number</span><span class="command">R←⎕EN</span></h1>
+<h1 class="heading"><span class="name">Event Number</span> <span class="command">R←⎕EN</span></h1>
 
 
 
 This simple integer scalar reports the identification number for the most recent event which occurred, caused by an APL action or by an interrupt or by the `⎕SIGNAL` system function.  Its value in a clear workspace is `0`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ÷0

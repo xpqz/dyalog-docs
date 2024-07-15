@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Array Editor</span></h1>
+<h1> Array Editor</h1>
 
 The Array Editor[^1]  allows you to edit arbitrary arrays. It is invoked by either:
 
@@ -10,15 +10,15 @@ The Array Editor draws data using a format that is similar to the output of the 
 
 ![array editor](img/array-editor.png)
 
-### Documentation
+## Documentation
 
 Full documentation for the Array Editor, including a list of the keystrokes it uses, is available from the Help menu in the Array Editor's window.
 
-### Supported Arrays
+## Supported Arrays
 
 The Array Editor supports arrays that  consist solely of characters and/or numbers. You may not use it to edit an array that contains an object reference or a `⎕OR`.
 
-#### Reject unsupported data
+### Reject unsupported data
 
 The way that the Arrays Editor reacts to unsupported arrays is determined by the value of the **Reject unsupported data** option which is accessed by the *Options/Reject unsupported data* menu item on the Array Editor menubar.
 
@@ -31,7 +31,7 @@ If this is set to true (the default), and you try to edit an array containing an
 
 If this option is cleared, the Array editor will start but you will not be able to do anything. It is therefore advisable that you leave this option set.
 
-### Notes
+## Notes
 
 - The Array Editor is supplied only with Unicode Editions of Dyalog APL/W. Please visit www.davidliebtag.com for details about availability and support for Classic Editions of Dyalog APL/W.
 - Namespaces are not supported.
@@ -56,8 +56,7 @@ For `DyalogEditArrayTitle` the 3rd argument is a character vector whose contents
 
 The result is the newly altered array.
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
 
 ⎕NA'dlaedit.dll|DyalogEditArray <pp >pp'              ⍝ 32-bit

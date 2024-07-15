@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> OLEServer Properties</span></h1>
+<h1> OLEServer Properties</h1>
 
 |---------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,      |[OLERegister](../methodorevents/oleregister.md) ,|[OLEUnregister](../methodorevents/oleunregister.md) ,|

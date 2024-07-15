@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Cells and Sub-arrays</span></h1>
+<h1> Cells and Sub-arrays</h1>
 
 Certain functions and operators operate on particular cells or sub-arrays of an array, which are identified and described as follows.
 
@@ -14,7 +14,7 @@ The *major cells* of an array `X` is a term used to describe the sub-arrays on t
 
 The major cells of a vector are its elements (0-cells). The major cells of a matrix are its rows (1-cells), and the major cells of a 3-dimensional array are its matrices along the first dimension (2-cells).
 
-**Examples**
+<h3 class="example">Examples</h3>
 
 In the following, the major cells of `A`  are 1979, 1990, 1997, 2007, and 2010; those of `B` are `'Thatcher'`, `'Major'`, `'Blair'`, `'Brown'`, and `'Cameron'`; and those of `C` are the four 2-by-3 matrices.
 ```apl

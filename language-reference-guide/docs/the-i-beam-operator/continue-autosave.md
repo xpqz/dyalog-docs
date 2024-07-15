@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Continue Autosave</span><span class="command">{R}←2704⌶Y</span></h1>
+<h1 class="heading"><span class="name">Continue Autosave</span> <span class="command">{R}←2704⌶Y</span></h1>
 
 
 

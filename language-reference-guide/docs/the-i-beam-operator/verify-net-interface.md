@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Verify .NET Interface</span><span class="command">R←2250⌶Y</span></h1>
+<h1 class="heading"><span class="name">Verify .NET Interface</span> <span class="command">R←2250⌶Y</span></h1>
 
 
 
@@ -23,7 +23,7 @@ The result `R` is a 3-element nested array:
 |`R[3]`|A character vector containing error messages generated during load.                                                                                                               |
 
 
-#### Examples (Windows)
+## Examples (Windows)
 ```apl
 
       ⎕←2 ⎕NQ '.' 'GetEnvironment' 'Dyalog_NETCore'
@@ -45,7 +45,7 @@ The result `R` is a 3-element nested array:
 
 ```
 
-#### Implementation Note
+## Implementation Note
 
 
 The underlying code is run once only and the results cached, so all subsequent calls to `2250⌶` will return the same result as the first time.

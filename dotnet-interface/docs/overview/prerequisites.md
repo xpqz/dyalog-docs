@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Prerequisites</span></h1>
+<h1> Prerequisites</h1>
 
 The Dyalog version {{ version_majmin }} .NET Framework interface requires version 4.0 or greater of Microsoft .NET Framework. It does *not* operate with earlier versions of the .NET Framework. In addition:
 

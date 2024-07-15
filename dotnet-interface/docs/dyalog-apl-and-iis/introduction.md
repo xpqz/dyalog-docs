@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 Microsoft Internet Information Services (IIS) is a comprehensive Web Server software package that allows you to publish information on your Intranet, or on the World Wide Web. IIS is included with Professional and Server versions of all recent Windows operating systems; all you need add is a network connection to run your own Web site.
 

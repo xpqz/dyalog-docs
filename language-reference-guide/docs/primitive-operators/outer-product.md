@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Outer Product</span><span class="command">{R}←X∘.gY</span></h1>
+<h1 class="heading"><span class="name">Outer Product</span> <span class="command">{R}←X∘.gY</span></h1>
 
 
 
@@ -16,10 +16,7 @@ Function `g` is applied to all combinations of the elements of `X` and `Y`.  If 
 
 If `X` or `Y` is empty, the result `R` is a conformable empty array, and the operand function is applied *once* between the first items of `X` and `Y` to determine the prototype of `R`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       1 2 3∘.×10 20 30 40
 10 20 30  40

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Signalling Events</span></h1>
+<h1> Signalling Events</h1>
 
 It would be useful to be able to employ the idea of cutting back the stack and taking an alternative route through the code, when a condition other than an APL error occurs. To achieve this, we must be able to trap on errors other than APL errors, and we must be able to define these errors to APL. We do the former by using error codes in the range 500 to 999, and the latter by using `⎕SIGNAL`.
 
@@ -46,6 +46,6 @@ Consider our system; ideally, when an unexpected error occurs, we want to save a
 
 Now when the unexpected error occurs, the first trap specification catches it, and the `BUG` function is executed in place. Instead of logging the user off as before, an `error 500` is signalled to APL. APL checks its trap specifications, sees that 500 has been set in `REPORT` as a cut-back, so cuts back to `REPORT` before branching to `ERR`.
 
-### Flow Control
+## Flow Control
 
 Error handling, which employs a combination of all the system functions and variables described, allows us to dynamically alter the flow of control through our system, as well as allow us to handle errors gracefully. It is a very powerful facility, which is simple to use, but is often neglected.

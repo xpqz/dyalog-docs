@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Coord</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">Coord</span> <span class="command">Property</span></h1>
 
 
 
@@ -72,10 +72,7 @@ cell coordinates will expand and contract when the grid rows and columns are
 resized.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 This statement creates a button 10 pixels high, 20 pixels wide, and 5 pixels

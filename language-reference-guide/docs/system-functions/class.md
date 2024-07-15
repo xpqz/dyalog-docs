@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">Class</span><span class="command">R←{X}⎕CLASS Y</span></h1>
+<h1 class="heading"><span class="name">Class</span> <span class="command">R←{X}⎕CLASS Y</span></h1>
 
 
-#### Monadic Case
+## Monadic Case
 
 
 Monadic `⎕CLASS` returns a list of references to Classes and Interfaces that specifies the class hierarchy for the Class or Instance specified by `Y`.
@@ -19,7 +19,7 @@ Monadic `⎕CLASS` returns a list of references to Classes and Interfaces that s
 
 
 
-#### Example 1
+## Example 1
 
 
 This example illustrates a simple inheritance tree or Class hierarchy. There are 3 Classes, namely:
@@ -55,7 +55,7 @@ Animal
 
 
 
-##### Example 2
+### Example 2
 
 
 The Penguin Class example (see[Programmer's Guide: "Penguin Class Example"](../../../programming-reference-guide/object-oriented-programming/interfaces/interface-example)) illustrates the use of Interfaces.
@@ -70,7 +70,7 @@ In this case, the `Penguin` Class derives from `Animal` (as above) but additiona
 
 
 
-#### Dyadic Case
+## Dyadic Case
 
 
 If `X` is specified, `Y` must be a reference to an Instance of a Class and `X` is a reference to an Interface that is supported by Instance `Y` or to a Class upon which Instance `Y` is based.
@@ -80,7 +80,7 @@ In this case, `R` is a reference to the implementation of Interface `X` by Insta
 
 
 
-##### Example 1
+#### Example 1
 
 
 Once again, the Penguin Class example (see[Programmer's Guide: "Penguin Class Example"](../../../programming-reference-guide/object-oriented-programming/interfaces/interface-example)) is used to illustrate the use of Interfaces.
@@ -101,7 +101,7 @@ Croak, Croak!          
 
 
 
-##### Example 2
+#### Example 2
 
 
 This example illustrates the use of dyadic `⎕CLASS` to cast an Instance to a lower Class and thereby access a member in the lower Class that has been superseded by another Class higher in the tree.

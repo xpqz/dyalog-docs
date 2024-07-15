@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Name Classification</span><span class="command">R←⎕NC Y</span></h1>
+<h1 class="heading"><span class="name">Name Classification</span> <span class="command">R←⎕NC Y</span></h1>
 
 
 
@@ -42,7 +42,7 @@ If `Y` is **nested** a more precise analysis of name class is obtained whereby d
 
 In addition, values in `R` are negative to identify names of methods, properties and events that are inherited through the *class hierarchy* of the current class or instance.
 
-#### Variable (Name-Class 2.1)
+## Variable (Name-Class 2.1)
 
 
 Conventional APL arrays have name-class 2.1.
@@ -64,7 +64,7 @@ Conventional APL arrays have name-class 2.1.
 2.1
 ```
 
-#### Field (Name-Class 2.2)
+## Field (Name-Class 2.2)
 
 
 Fields defined by APL Classes have name-class 2.2.
@@ -113,7 +113,7 @@ Note that the names of Fields are reported as being *unused* if the argument to 
 0 0
 ```
 
-#### Property (Name-Class 2.3)
+## Property (Name-Class 2.3)
 
 
 Properties defined by APL Classes have name-class 2.3.
@@ -175,7 +175,7 @@ Note that the names of Properties are reported as being *unused* if the argument
 0 0
 ```
 
-#### External Property (Name-Class 2.6)
+## External Property (Name-Class 2.6)
 
 
 Properties exposed by external objects (.NET and COM and the APL GUI) have name-class `¯2.6`.
@@ -202,7 +202,7 @@ Note that the names of such Properties are reported as being *unused* if the arg
 ```
 
 
-#### Defined Function (Name-Class 3.1)
+## Defined Function (Name-Class 3.1)
 
 
 Traditional APL defined functions have name-class 3.1.
@@ -248,7 +248,7 @@ Whereas, the name of a function that amalgamates a defined function with any oth
 
 
 
-#### Dfn (Name-Class 3.2)
+## Dfn (Name-Class 3.2)
 
 
 Dfns have name-class 3.2
@@ -262,7 +262,7 @@ Dfns have name-class 3.2
 ```
 
 
-#### Derived Function (Name-Class 3.3)
+## Derived Function (Name-Class 3.3)
 
 
 Names that reference a primitive or derived function have a name-class of 3.3.
@@ -294,7 +294,7 @@ Note the difference between the name-class of a name referring to a defined func
  
 ```
 
-#### External Function (Name-Class 3.6)
+## External Function (Name-Class 3.6)
 
 
 Methods exposed by the Dyalog APL GUI and COM and .NET objects have name-class `¯3.6`. Methods exposed by External Functions created using `⎕NA` and `⎕SH` all have name-class `3.6`.
@@ -337,7 +337,7 @@ Note that the names of such Methods are reported as being *unused* if the argume
 0 0
 ```
 
-#### Operator (Name-Class 4.1)
+## Operator (Name-Class 4.1)
 
 
 Traditional Defined Operators have name-class 4.1.
@@ -353,7 +353,7 @@ Traditional Defined Operators have name-class 4.1.
 4.1
 ```
 
-#### Dop (Name-Class 4.2)
+## Dop (Name-Class 4.2)
 
 
 Dops have name-class 4.2.
@@ -372,7 +372,7 @@ Dops have name-class 4.2.
 ```
 
 
-#### Derived Operator (Name-Class 4.3)
+## Derived Operator (Name-Class 4.3)
 
 
 Derived operators include:
@@ -381,10 +381,7 @@ Derived operators include:
 - A dyadic operator curried with its right-operand. 
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
        each←¨
        each
@@ -406,7 +403,7 @@ Derived operators include:
 
 ```
 
-#### External Event (Name-Class 8.6)
+## External Event (Name-Class 8.6)
 
 
 Events exposed by Dyalog APL GUI objects, COM and .NET objects have name-class `¯8.6`.
@@ -430,7 +427,7 @@ Events exposed by Dyalog APL GUI objects, COM and .NET objects have name-class `
 ```
 
 
-#### Namespace (Name-Class 9.1)
+## Namespace (Name-Class 9.1)
 
 
 Plain namespaces created using `⎕`NS, or fixed from a `:Namespace` script, have name-class 9.1.
@@ -463,7 +460,7 @@ The Name-Class of .NET namespaces (visible through `⎕USING`) is also 9.1
 9.1 9.1
 ```
 
-#### Instance (Name-Class 9.2)
+## Instance (Name-Class 9.2)
 
 
 Instances of Classes created using `⎕NEW`, and GUI objects created using `⎕WC` all have name-class 9.2.
@@ -528,7 +525,7 @@ Correspondingly, if you attach a GUI component to a plain namespace using the mo
 ```
 
 
-#### Class (Name-Class 9.4)
+## Class (Name-Class 9.4)
 
 
 Classes created using the editor or `⎕FIX` have name-class 9.4.
@@ -564,7 +561,7 @@ Note that the name of the Class is visible to a Public Method in that Class, or 
 9.4
 ```
 
-#### Interface (Name-Class 9.5)
+## Interface (Name-Class 9.5)
 
 
 Interfaces, defined by `:Interface ... :EndInterface` clauses, have name-class 9.5.
@@ -590,7 +587,7 @@ Interfaces, defined by `:Interface ... :EndInterface` clauses, have name-class 9
 
 
 
-#### External Class (Name-Class 9.6)
+## External Class (Name-Class 9.6)
 
 
 External Classes (Types) exposed by .NET have name-class 9.6.
@@ -605,7 +602,7 @@ External Classes (Types) exposed by .NET have name-class 9.6.
 Note that referencing a .NET class (type) with `⎕NC`, fixes the name of that class in the workspace and obviates the need for APL to repeat the task of searching for and loading the class when the name is next used.
 
 
-#### External Interface (Name-Class 9.7)
+## External Interface (Name-Class 9.7)
 
 
 External Interfaces exposed by .NET have name-class 9.7.

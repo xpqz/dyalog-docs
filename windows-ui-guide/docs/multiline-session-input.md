@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Multi-line Session Input</span></h1>
+<h1> Multi-line Session Input</h1>
 
 The Session allows multi-line input. This feature is optional and is controlled by the value of the **Dyalog_LineEditor_Mode** parameter which by default is 0 (off). To enable the new behaviour, you must set the parameter to 1.
 
@@ -6,7 +6,7 @@ See [Dyalog_LineEditor_Mode.](../../windows-installation-and-configuration-guide
 
 On Windows Multi-line input can be enabled and disabled via the checkbox on the Session tab of the configuration parameter: see [Dyalog_LineEditor_Mode](configuration-dialog-session-tab.md).
 
-### When Multi-line Input is Enabled
+## When Multi-line Input is Enabled
 
 - The session considers all related lines to be a *group*.
 - Grouped lines are syntax coloured as a whole.

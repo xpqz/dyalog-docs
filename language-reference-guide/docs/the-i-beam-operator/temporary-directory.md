@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Temporary Directory</span><span class="command">R←739⌶Y</span></h1>
+<h1 class="heading"><span class="name">Temporary Directory</span> <span class="command">R←739⌶Y</span></h1>
 
 
 
@@ -15,14 +15,14 @@ Returns the name of a system temporary directory suitable for user files, as a c
 
 The result `R` is a character vector.
 
-#### Example (Windows)
+## Example (Windows)
 ```apl
       739⌶0
 C:/Users/Pete/AppData/Local/Temp
 
 ```
 
-#### Example (non-Windows)
+## Example (non-Windows)
 ```apl
       739⌶0
 /tmp

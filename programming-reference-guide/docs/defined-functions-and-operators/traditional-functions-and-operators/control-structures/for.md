@@ -3,13 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">For Statement</span><span class="command">:For var :In[Each] aexp</span></h1>
+<h1 class="heading"><span class="name">For Statement</span> <span class="command">:For var :In[Each] aexp</span></h1>
 
 
 
 [Formal Definition](for-statement-definition.md)
 
-#### Single Control Variable
+## Single Control Variable
 
 
 The `:For` loop is used to execute a block of code for a series of values of a particular control variable.  For example, the following would execute lines `[2-3]` successively for values of `I` from 3 to 5 inclusive:
@@ -51,7 +51,7 @@ You may also nest `:For` loops.  For example, the following expression finds th
 [9]   :EndFor
 ```
 
-#### Multiple Control Variables
+## Multiple Control Variables
 
 
 The `:For` control structure can also take multiple variables. This has the effect of doing a strand assignment each time around the loop.
@@ -63,7 +63,7 @@ For example `:For a b c :in (1 2 3)(4 5 6)`, sets `a b c←1 2 3`, first time ar
 Another example is `:For i j :In ⍳⍴Matrix`, which sets `i` and `j` to each row and column index of `Matrix`.
 
 
-#### :InEach Control Word
+## :InEach Control Word
 ```apl
       :For var ... :InEach value ...
 ```

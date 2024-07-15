@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Nest</span><span class="command">R←⊆Y</span></h1>
+<h1 class="heading"><span class="name">Nest</span> <span class="command">R←⊆Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 If `Y` is simple, `R` is a scalar array whose item is the array `Y`.  If `Y` is a simple scalar or is already nested, `R` is `Y` unchanged.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊆1 2 3
 ┌─────┐

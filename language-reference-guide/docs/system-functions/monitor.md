@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Monitor Controls</span><span class="command">⎕MONITOR</span></h1>
+<h1 class="heading"><span class="name">Monitor Controls</span> <span class="command">⎕MONITOR</span></h1>
 
 
-##### Dyadic `⎕MONITOR` means
+## Dyadic `⎕MONITOR` means
 
 
 [Set Monitor Controls](set-monitor.md)
@@ -14,7 +14,7 @@
 0 1 2 3 4 5
 ```
 
-##### Monadic `⎕MONITOR` means
+## Monadic `⎕MONITOR` means
 
 
 [Query Monitor Controls](query-monitor.md)

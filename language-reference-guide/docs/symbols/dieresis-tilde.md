@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Tilde Diaeresis</span><span class="command">⍨</span></h1>
+<h1 class="heading"><span class="name">Tilde Diaeresis</span> <span class="command">⍨</span></h1>
 
 
-##### Tilde Diaeresis is a Monadic operator with a Dyadic
+## Tilde Diaeresis is a Monadic operator with a Dyadic
       operand
 
-##### Operator Tilde Diaeresis means
+## Operator Tilde Diaeresis means
 
 
 [Commute     ](../primitive-operators/commute.md)

@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> The APL Command Line</span></h1>
+<h1> The APL Command Line</h1>
 
 The command line for Dyalog APL is described below; the command line for non-Windows versions of Dyalog APL is very similar and is also documented in *Dyalog for UNIX UI Guide: Starting APL*.
 
 Usually the command line is specified in the Target: field of the APL shortcut. The full pathname to the Dyalog executable is usually surrounded by double quotes as it contains spaces.
 
-### Command Line
+## Command Line
 
 dyalog [ options ] [ debug ] [ ws ] [param] [param] [param]...
 
@@ -48,7 +48,7 @@ where:
 
 Note that instead of  a loading a workspace specified by the **ws** option, APL can be instructed to load a program from a script file. For further information, see [Load](configuration-parameters/load.md).
 
-**Examples**
+<h3 class="example">Examples</h3>
 
 Start APL using the configuration file `myconfig.dcfg`:
 ```apl

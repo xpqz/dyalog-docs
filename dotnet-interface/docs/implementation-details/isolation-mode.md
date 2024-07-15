@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Isolation Mode</span></h1>
+<h1> Isolation Mode</h1>
 
 For *each* application which uses a class written in Dyalog APL, at least one copy of the development or run-time version of the Dyalog DLL   will be started in order to host and execute the appropriate APL code. Each of these *engines* will have an APL workspace associated with it, and this workspace will contain classes and instances of these classes. The number of engines (and associated workspaces) which are started will depend on the Isolation Mode which was selected when the APL assemblies used by the application were generated. Isolation modes are:
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Rect Events</span></h1>
+<h1> Rect Events</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

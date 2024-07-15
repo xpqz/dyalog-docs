@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Printer</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Printer</span> <span class="command">Object</span></h1>
 
 
 
@@ -60,10 +60,7 @@ The Printer object five methods :
 |[Abort](../methodorevents/abort.md)                |103  |Aborts the print job              |
 |[RTFPrintSetup](../methodorevents/rtfprintsetup.md)|460  |Displays Printer Set-up dialog box|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 Start a print job on the default printer

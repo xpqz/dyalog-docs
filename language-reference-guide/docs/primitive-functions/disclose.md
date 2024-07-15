@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Disclose</span><span class="command">(⎕ML)</span></h1>
+<h1 class="heading"><span class="name">Disclose</span> <span class="command">(⎕ML)</span></h1>
 
 
 
@@ -22,10 +22,7 @@ If  `⎕ML≥2`, Disclose is represented by the symbol: `↑`.
 Disclose is the inverse of Enclose.  The identity `R←→⊃⊂R` holds for all `R`.  Disclose is also referred to as First.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊃1
 1

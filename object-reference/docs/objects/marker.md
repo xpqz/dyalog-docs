@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Marker</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Marker</span> <span class="command">Object</span></h1>
 
 
 
@@ -46,7 +46,7 @@ The value of [Dragable](../properties/dragable.md) determines whether or not the
 
 The structure of the property values is best considered separately for single and multiple sets of polymarkers.
 
-#### Single Set of Polymarkers
+## Single Set of Polymarkers
 
 
 For a single set of polymarkers, [Points](../properties/points.md) is either a 2-column matrix of (y,x) co-ordinates, or a 2-element vector of y and x co-ordinates respectively.
@@ -57,10 +57,7 @@ For a single set of polymarkers, [Points](../properties/points.md) is either a 2
 
 [FCol](../properties/fcol.md) is either a single number representing a standard colour, or a 3-element vector which specifies the marker colour explicitly in terms of RGB values.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 First make a [Form](form.md):
@@ -101,7 +98,7 @@ Ditto, but use "*" symbols in green:
 ```
 
 
-#### Multiple Sets of Polymarkers
+## Multiple Sets of Polymarkers
 
 
 To draw multiple sets of polymarkers with a single name, [Points](../properties/points.md) is a nested vector whose items are themselves 2-column matrices or 2-element nested vectors.
@@ -113,10 +110,7 @@ To draw multiple sets of polymarkers with a single name, [Points](../properties/
 [FCol](../properties/fcol.md) may be a single number or a single (enclosed) 3-element vector applying to all the sets of polymarkers. Alternatively, [FCol](../properties/fcol.md) may be a vector whose elements refer to each of the sets of polymarkers in turn. If so, the elements may be single numbers or nested RGB triplets, or a combination of the two.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 

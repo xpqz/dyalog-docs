@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Session Status Bar</span></h1>
+<h1> The Session Status Bar</h1>
 
 The session status bar is represented by two CoolBands each of which contains a StatusBar object. There are a number of StatusFields as illustrated below. Your own status bar may be configured differently.
 
@@ -12,7 +12,7 @@ The session status bar is represented by two CoolBands each of which contains a 
 
 The StatusField objects owned by the session StatusBar may have special values of Style, which are used for operations relevant only to the Session. These styles are summarised in the tables shown below.
 
-Session status fields: first row
+Table: Session status fields: first row
 
 |StatusField|Style   |Description                                                                                                                                                               |
 |-----------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,7 +23,7 @@ Session status fields: first row
 |caps       |CapsLock|Indicates the state of the Caps Lock key. Displays "Caps" if Caps Lock is on, blank if off                                                                                |
 |pause      |Pause   |Displays a flashing red "Pause" message when the Pause key is used to halt session output                                                                                 |
 
-Session status fields: second row
+Table: Session status fields: second row
 
 |StatusField|Style      |Description                                                                                               |
 |-----------|-----------|----------------------------------------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ Session status fields: second row
 |io         |IO         |Displays the value of `⎕IO` . Turns red if `⎕IO` is not equal to the value of the **default_io** parameter|
 |ml         |ML         |Displays the value of `⎕ML` . Turns red if `⎕ML` is not equal to the value of the **default_ml** parameter|
 
-### Toggle Status Fields
+## Toggle Status Fields
 
 In the default Session files distributed with this release, the Statusfields used to display the value of `⎕IO`, the state of the Insert key (Ins/Rep) and the current keyboard mode (e.g. Apl/Uni) have callback functions attached to MouseDblClick. This means that you can toggle the state of these fields by double-clicking with the left mouse button.
 

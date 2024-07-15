@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Programming Techniques</span></h1>
+<h1> Programming Techniques</h1>
 
-### Controlling Multi-User Access
+## Controlling Multi-User Access
 
 Obviously, Dyalog APL contains mechanisms that prevent data getting mixed up if two users update a file at the same time. However, it is the programmer's responsibility to control the logic of multi-user updates.
 

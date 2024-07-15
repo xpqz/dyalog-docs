@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Spin</span><span class="command">Event 420</span></h1>
+<h1 class="heading"><span class="name">Spin</span> <span class="command">Event 420</span></h1>
 
 
 

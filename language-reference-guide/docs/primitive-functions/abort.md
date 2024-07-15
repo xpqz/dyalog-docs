@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Abort</span><span class="command">→</span></h1>
+<h1 class="heading"><span class="name">Abort</span> <span class="command">→</span></h1>
 
 
 
@@ -13,10 +13,7 @@ This is a special case of the Branch function used in the niladic sense.  If it 
 The Abort function has no explicit result.  The function is not in the function domain of operators.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ∇ F
 [1]    'F[1]'

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> `⎕SH`, exit codes and stderr</span></h1>
+<h1> `⎕SH`, exit codes and stderr</h1>
 
 Note that `⎕SH` calls /bin/sh; this cannot be altered.
 

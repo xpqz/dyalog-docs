@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Scalar Functions</span></h1>
+<h1> Scalar Functions</h1>
 
-There is a class of primitive functions termed scalar functions This class is identified in **Table 1** below. Scalar functions are **pervasive**, i.e. their properties apply at all levels of nesting.  Scalar functions have the following properties:
+There is a class of primitive functions termed scalar functions This class is identified in [](#ScalarPrimitiveFunctions) below. Scalar functions are **pervasive**, i.e. their properties apply at all levels of nesting.  Scalar functions have the following properties:
 
-Scalar Primitive Functions
+Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 
 |Symbol|Monadic|Dyadic|
 |---|---|---|
@@ -32,20 +32,19 @@ Scalar Primitive Functions
 |`≠`|&nbsp;|[Not Equal](not-equal.md)|
 |$ Dyadic form is not scalar|||
 
-### Monadic Scalar Functions
+## Monadic Scalar Functions
 
 - The function is applied independently to each simple scalar in its argument.
 - The function produces a result with a structure identical to its argument.
 - When applied to an empty argument, the function produces an empty result.  With the exception of `+` and `∊`, the type of this result depends on the function, not on the type of the argument. By definition + and `∊` return a result of the same type as their arguments.
 
-**Example**
-
+<h3 class="example">Example</h3>
 ```apl
       ÷2 (1 4)
 0.5  1 0.25
 ```
 
-### Dyadic Scalar Functions
+## Dyadic Scalar Functions
 
 - The function is applied independently to corresponding pairs of simple scalars in its arguments.
 - A simple scalar will be replicated to conform to the structure of the other argument.  If a simple scalar in the structure of an argument corresponds to a non-simple scalar in the other argument, then the function is applied between the simple scalar and the items of the non-simple scalar.  Replication of simple scalars is called scalar extension.
@@ -53,8 +52,7 @@ Scalar Primitive Functions
 - The function produces a result with a structure identical to that of its arguments (after scalar extensions).
 - If applied between empty arguments, the function produces a composite structure resulting from any scalar extensions, with type appropriate to the particular function. (All scalar dyadic functions return a result of numeric type.)
 
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       2 3 4 + 1 2 3
 3 5 7

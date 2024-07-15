@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> User Commands Tab</span></h1>
+<h1> User Commands Tab</h1>
 
 ![configuration dialog user commands tab](../../img/configuration-dialog-user-commands-tab.png)
 
 This page is used to specify and organise a list of folders that contain User-Command files. When you issue a User Command, these folders will be searched for the source of the command in the order in which they appear in this list.
 
-Configuration dialog: User Commands
+Table: Configuration dialog: User Commands
 
 |Label         |Parameter         |Description                                                                                  |
 |--------------|------------------|---------------------------------------------------------------------------------------------|

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Root Methods</span></h1>
+<h1> Root Methods</h1>
 
 |---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
 |[ChooseFont](../methodorevents/choosefont.md) ,          |[Flush](../methodorevents/flush.md) ,                    |[NameFromHandle](../methodorevents/namefromhandle.md) ,        |

@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File History</span><span class="command">R←⎕FHIST Y</span></h1>
+<h1 class="heading"><span class="name">File History</span> <span class="command">R←⎕FHIST Y</span></h1>
 
 
-##### Access code 16384
+## Access code 16384
 
 
 `Y` must be a simple integer vector of length 1 or 2 containing the file tie number and an optional passnumber. If the passnumber is omitted it is assumed to be zero.
@@ -47,10 +47,7 @@ In the examples that follow, the `FHist` function is used below to format the re
 
 ```
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
      'c:\temp'⎕FCREATE 1 ⋄ FHist 1
                User  TimeStamp            

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 `APLScript` is a Dyalog APL scripting language. It was originally designed specifically to program ASP.NET Web Pages and Web Services, but it has been extended to be of more general use outside the Microsoft .NET environment.
 

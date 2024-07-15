@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">File Hold</span><span class="command">{R}←{X} ⎕FHOLD Y</span></h1>
+<h1 class="heading"><span class="name">File Hold</span> <span class="command">{R}←{X} ⎕FHOLD Y</span></h1>
 
 
-##### Access code 2048
+## Access code 2048
 
 
 This function holds component file(s) and/or external variable(s). It is used  to synchronise access to resources shared between multiple cooperating Dyalog processes. It is not intended to synchronise access between Dyalog threads; for this purpose you should use  `:Hold`.
@@ -61,10 +61,7 @@ Note that a hold is not released by a request for input through `⎕` or `⍞`.
 
 If `Y` is a matrix, the shy result `R` is `Y[1;]`. Otherwise, the  shy result `R` is `Y`.
 
-
-
-**Examples**
-
+<h1 class="example">Examples</h1>
 ```apl
       ⎕FHOLD 1
  

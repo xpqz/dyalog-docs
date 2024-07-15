@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> GUI Objects as Namespaces</span></h1>
+<h1> GUI Objects as Namespaces</h1>
 
 GUI objects are a special type of namespace and this has several useful implications. Firstly, instead of creating the children of an object from *outside* in the workspace, you can use `)CS` to change to an object and create them from within. The only restriction is that you can only create GUI objects that are valid as children of the current object. A second benefit is that you can put the callback functions, together with any global variables they require, into the objects to which they apply. Consider the following example.
 
@@ -94,7 +94,7 @@ The result will appear approximately as shown below
 
 ![gui objects as namespaces](../img/gui-objects-as-namespaces.png)
 
-### Attaching GUI Objects to Namespaces
+## Attaching GUI Objects to Namespaces
 
 Monadic `⎕WC` is used to *attach* a GUI component to an existing object. The existing object must be a pure namespace or an appropriate GUI object (one that can legitimately be placed at that point in the object hierarchy). The operation may be performed by changing space to the object or by running `⎕WC` *inside* the object using the *dot* syntax. For example, the following statements are equivalent.
 ```apl
@@ -113,7 +113,7 @@ This facility is particularly useful if you wish to have functions and variables
 
 An alternative way to achieve this is to prevent the user from closing the Form and instead make it invisible. This is achieved by intercepting the Close event on the Form and set its Visible property to 0. Then, when the Form is subsequently required, its Visible property is set back to 1. However, if the Form needs adjustment because the workspace was loaded on a PC with different screen resolution or for other reasons, it may not be easy to achieve the desired result using `⎕WS`. Monadic `⎕WC` is generally a better solution.
 
-### Namespace References and GUI Objects
+## Namespace References and GUI Objects
 
 The use of a GUI name in an expression is a reference to the GUI object, or *ref* for short. If you assign a *ref* or call a function with a *ref* as an argument, the *reference* to the GUI object is copied, not the GUI object itself.
 

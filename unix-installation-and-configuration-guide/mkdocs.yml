@@ -1,65 +1,67 @@
-
 site_name: UNIX Installation and Configuration Guide
 theme:
-  favicon: 'img/favicon-32.png'
-  logo: 'img/dyalog-white.svg'
+  favicon: img/favicon-32.png
+  logo: img/dyalog-white.svg
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.path
     - navigation.indexes
   name: material
-
+  font:
+    text: Be Vietnam Pro
 extra_css:
   - style/main.css
   - style/extra.css
   - style/admonition-ucmdhelp.css
-
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 plugins:
+  - privacy
   - search
   - macros
   - site-urls
-
+  - caption:
+      table:
+        enable: true
+        start_index: 1
+        increment_index: 1
+        position: bottom
 extra:
   version_maj: 20
   version_majmin: 20.0
-
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.keys
   - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - abbr
   - footnotes
   - md_in_html
   - markdown_tables_extended
-  - image_captions:
-      numbering: true
-  - table_captions:
-      numbering: true
-      caption_top: false
-  - caption
   - toc:
       title: On this page
-
 nav:
-  
-  -  Introduction: introduction.md
-  -  Installation: installation.md
-  -  Dyalog Serial Number: dyalog-serial-number.md
-  -  Configuring a Console/terminal Window to support Dyalog APL for UNIX: linux-console-config.md
-  -  Dyalog APL, RDP and VNC: apl-vnc-rdp.md
-  -  Using PuTTY under Windows: putty.md
+  - Introduction: introduction.md
+  - Installing Dyalog APL: installation.md
+  - Dyalog Serial Number: dyalog-serial-number.md
+  - Konsole: linux-console-config.md
+  - APL VNC RDP: apl-vnc-rdp.md
+  - PuTTY: putty.md
   - Configuration Parameters:
-    -  Configuration Parameters: configuration-parameters/configuration-parameters.md
-    -  Configuration Files: configuration-parameters/configuration-files.md
-    -  Environment Variables: configuration-parameters/environment-variables.md
-  -  Configuring the Editor: configuring-the-editor.md
-  -  Miscellaneous: starting-apl-from-scripts.md
-  -  The file command and magic: magic.md
-  -  ⎕SE, User Commands and SALT: se-and-user-commands.md
-  -  The Directory ~/.dyalog: home-dyalog-directory.md
-  - " `⎕NA` under UNIX": quadna.md
-  -  Session logfile: miscellaneous.md
-  -  BuildID: buildid.md
+      - Introduction: configuration-parameters/configuration-parameters.md
+      - Configuration Files: configuration-parameters/configuration-files.md
+      - Environment Variables: configuration-parameters/environment-variables.md
+  - Configuring the Editor: configuring-the-editor.md
+  - Starting from scripts: starting-apl-from-scripts.md
+  - Magic: magic.md
+  - SE and SALT: se-and-user-commands.md
+  - HOME dyalog directory: home-dyalog-directory.md
+  - QuadNA and UNIX: quadna.md
+  - Miscellaneous: miscellaneous.md
+  - BuildID: buildid.md

@@ -2,12 +2,12 @@
 
 
 
-<h1 class="heading"><span class="name">Jot</span><span class="command">∘</span></h1>
+<h1 class="heading"><span class="name">Jot</span> <span class="command">∘</span></h1>
 
 
-##### Jot is a Dyadic operator
+## Jot is a Dyadic operator
 
-##### Operator Jot means
+## Operator Jot means
 
 
 Beside or Bind

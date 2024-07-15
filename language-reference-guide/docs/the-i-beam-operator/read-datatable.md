@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Read DataTable</span><span class="command">R←{X}2011⌶Y</span></h1>
+<h1 class="heading"><span class="name">Read DataTable</span> <span class="command">R←{X}2011⌶Y</span></h1>
 
 
 
@@ -19,7 +19,7 @@ This function performs a *block read* from an instance of the ADO.NET object Sys
 
 The result `R` depends upon the value of the  Variant option Invert. This the primary option with a default value of 0.
 
-#### Invert Option (Boolean)
+## Invert Option (Boolean)
 
 
 |---|----------------------------------------------------------------------------------------------------------------|
@@ -36,10 +36,7 @@ The optional left argument `X` is a numeric vector with the same length as the n
 |4|Specifies that if the type of the corresponding column is System.String the entire column should be returned as a character matrix rather than a vector of character vectors. Any nulls will be replaced with a row of spaces. This applies only when **Invert** is 1.|
 |5|Combines 1 and 4.|
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕USING←'' 'System.Data,system.data.dll'
       
@@ -110,7 +107,7 @@ System.Int64  System.Int64
 
 ```
 
-#### Handling Nulls
+## Handling Nulls
 ```apl
       2010⌶dt(1 3⍴⎕NULL) ⍝ Add a row of nulls
       ⎕←out←2011⌶ dt 
@@ -137,7 +134,7 @@ System.Int64  System.Int64
 
 ```
 
-#### Performance Considerations
+## Performance Considerations
 
 
 First for comparison is shown the type of code that is required to read a DataTable by looping:

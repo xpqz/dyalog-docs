@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Temperature Converter Class</span></h1>
+<h1> Temperature Converter Class</h1>
 
 You may create user-defined Classes based upon Dyalog GUI objects as illustrated by the Temperature Converter Class which is listed overleaf.
 
@@ -15,7 +15,7 @@ Being based upon a top-level GUI object, the Temperature Converter may be used a
 
 ![temperature converter 8](../img/temperature-converter-8.png)
 
-### Temperature Converter Example
+## Temperature Converter Example
 ```apl
 :Class Temp: 'Form'
     ∇ Make pv;TITLE

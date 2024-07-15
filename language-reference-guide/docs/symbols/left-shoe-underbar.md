@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Left Shoe Underbar</span><span class="command">⊆</span></h1>
+<h1 class="heading"><span class="name">Left Shoe Underbar</span> <span class="command">⊆</span></h1>
 
 
-##### Monadic Left Shoe Underbar means
+## Monadic Left Shoe Underbar means
 
 
 [Nest
@@ -22,7 +22,7 @@
 └────┴────┘
 ```
 
-##### Dyadic Left Shoe Underbar means
+## Dyadic Left Shoe Underbar means
 
 
 [Partition](../primitive-functions/partition.md)

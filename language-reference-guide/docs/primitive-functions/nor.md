@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Nor</span><span class="command">R←X⍱Y</span></h1>
+<h1 class="heading"><span class="name">Nor</span> <span class="command">R←X⍱Y</span></h1>
 
 
 
@@ -17,10 +17,7 @@
              1   1     0
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       0 0 1 1 ⍱ 0 1 0 1
 1 0 0 0

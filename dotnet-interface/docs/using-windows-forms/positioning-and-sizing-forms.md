@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Positioning and Sizing Forms and Controls</span></h1>
+<h1> Positioning and Sizing Forms and Controls</h1>
 
 The position of a form or a control is specified by its `Location` property, which is measured relative to the top left corner of the client area of its container.
 

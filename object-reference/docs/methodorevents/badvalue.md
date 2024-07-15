@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">BadValue</span><span class="command">Event 180</span></h1>
+<h1 class="heading"><span class="name">BadValue</span> <span class="command">Event 180</span></h1>
 
 
 

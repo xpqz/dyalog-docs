@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> APL Errors</span></h1>
+<h1> APL Errors</h1>
 
-APL Error Messages
+Table: APL Error Messages {: #APLErrors }
 
 |Error Code|Report                                |
 |----------|--------------------------------------|

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Documentation</span></h1>
+<h1> Documentation</h1>
 
 The documentation set for Dyalog is installed in the `help` sub-directory of the main Dyalog installation directory.
 
@@ -8,8 +8,7 @@ The latter is given by the expression:
 C:\Program Files\Dyalog\Dyalog APL-64 15.0 Unicode
 ```
 
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       dyalog←2⎕nq'.' 'GetEnvironment' 'DYALOG'

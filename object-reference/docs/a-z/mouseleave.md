@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">MouseLeave</span><span class="command">Event 7</span></h1>
+<h1 class="heading"><span class="name">MouseLeave</span> <span class="command">Event 7</span></h1>
 
 
 

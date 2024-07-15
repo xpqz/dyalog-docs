@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Property Section</span></h1>
+<h1> :Property Section</h1>
 
 A Property is defined by a `:Property ... :EndProperty` section in a Class Script. The syntax of the :Property Statement, and its optional `:Access` statement is as follows:
 ```apl
@@ -34,7 +34,7 @@ Within the body of a Property Section there may be:
 
 The three functions are identified by case-independent names `Get`, `Set` and `Shape`.
 
-### Errors
+## Errors
 
 When a Class is fixed by the Editor or by `⎕FIX`, APL checks the validity of each Property section and the syntax of [PropertyGet](propertyget-function-syntax.md), [PropertySet](propertyset-function-syntax.md) and [PropertyShape](propertyshape-function-syntax.md) functions within them.
 

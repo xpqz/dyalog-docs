@@ -59,13 +59,13 @@ more times to indicate format. As noted below, some sequences allow the first ch
         <tr>
             <td class="Dyalog">MMM</td>
             <td>Abbreviated name</td>
-            <td class="Dyalog">MMM<br />Mmm<br />mmm<br />_mm<sup><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+            <td class="Dyalog">MMM<br />Mmm<br />mmm<br />_mm</td>
             <td class="Dyalog">MAR<br />Mar<br />mar<br />Mar</td>
         </tr>
         <tr>
             <td class="Dyalog">MMMM </td>
             <td>Full name </td>
-            <td class="Dyalog">MMMM<br />Mmmm<br />mmmm<br />_mmm<sup><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+            <td class="Dyalog">MMMM<br />Mmmm<br />mmmm<br />_mmm</td>
             <td class="Dyalog">MARCH<br />March<br />march<br />March</td>
         </tr>
         <tr>
@@ -173,13 +173,13 @@ more times to indicate format. As noted below, some sequences allow the first ch
         <tr>
             <td class="Dyalog">ddd</td>
             <td>Abbreviated name</td>
-            <td class="Dyalog">DDD<br />Ddd<br />ddd<br />_dd<sup><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+            <td class="Dyalog">DDD<br />Ddd<br />ddd<br />_dd</td>
             <td class="Dyalog">MON<br />Mon<br />mon<br />Mon</td>
         </tr>
         <tr>
             <td class="Dyalog">dddd</td>
             <td>Full name</td>
-            <td class="Dyalog">DDDD<br />Dddd<br />dddd<br />_ddd<sup><a class="footnote-ref" href="#fn:1">1</a></sup></td>
+            <td class="Dyalog">DDDD<br />Dddd<br />dddd<br />_ddd</td>
             <td class="Dyalog">MONDAY<br />Monday<br />monday<br />Monday</td>
         </tr>
         <tr>
@@ -196,7 +196,7 @@ more times to indicate format. As noted below, some sequences allow the first ch
             <td class="Dyalog">10<br />10</td>
         </tr>
         <tr>
-            <td rowspan="2" style="vertical-align: middle;">year of ISO<br /><ins>W</ins>eek<br />number<sup><a class="footnote-ref" href="#fn:2">2</a></sup></td>
+            <td rowspan="2" style="vertical-align: middle;">year of ISO<br /><ins>W</ins>eek<br />number</td>
             <td class="Dyalog">WW</td>
             <td>Without century</td>
             <td class="Dyalog">WW</td>
@@ -223,7 +223,7 @@ more times to indicate format. As noted below, some sequences allow the first ch
         </tr>
         <tr>
             <td rowspan="2" style="vertical-align: middle;">
-                <ins>O</ins>rdinal indicator<sup><a class="footnote-ref" href="#fn:3">3</a></sup><br />for day of month</td>
+                <ins>O</ins>rdinal indicator<br />for day of month</td>
             <td class="Dyalog">O</td>
             <td>Short</td>
             <td class="Dyalog">O<br />o</td>
@@ -317,7 +317,7 @@ The following global predefined pattern is built in:
 
 | Name                                                      | Substitutes as |
 |-----------------------------------------------------------| ---  |
-| ISO <sup><a class="footnote-ref" href="#fn:4">4</a></sup> | YYYY-MM-DD"T"hh:mm:ss |
+| ISO  | YYYY-MM-DD"T"hh:mm:ss |
 
 This list may be expanded in future.
 
@@ -483,23 +483,3 @@ In the following examples:
       '__cy__%DateVerbose%' (1200⌶⍠'Dictionary' dict) tn
  the date is 13 Chw 2019
 ```
-
-<div class="footnote" id="fn:1">
-<hr />
-<sup>1</sup>Natural sentence case may be specified for M (month name) and d (day name) only, and causes the text to be substituted in the case which is natural for the language; some languages (e.g. English) always capitalise the first letter of day and month names whereas others (e.g. French) do not.
-</div>
-
-<p>
-<div class="footnote" id="fn:2">
-<sup>2</sup>Dates at the start of the year may be in the final week of the previous year, and dates at the end of the year may be in the first week of the following year.
-</div>
-
-<p>
-<div class="footnote" id="fn:3">
-<sup>3</sup>An ordinal indicator is a character or group of characters following a numeral, such as (in English) the suffixes -st, -nd, -rd, -th as in 1st, 2nd, 3rd, 4th.
-</div>
-
-<p>
-<div class="footnote" id="fn:4">
-<sup>4</sup>An ISO 8601 extended format calendar date and time with no time zone designator.
-</div>

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Create Data Binding Source</span><span class="command">R←{X}2015⌶Y</span></h1>
+<h1 class="heading"><span class="name">Create Data Binding Source</span> <span class="command">R←{X}2015⌶Y</span></h1>
 
 
 
@@ -41,7 +41,7 @@ Here the term *bind variable* refers to any variable specified by `X` and `Y` to
 
 `2015⌶` creates a Binding Source object `R`. This is a .NET object which contains *Path*(s) to one or more bind variables. This object may then be assigned to a property of a WPF object or passed a s as a parameter to a WPF method that requires a Binding Source.
 
-#### Bind Variables and Bind Types
+## Bind Variables and Bind Types
 
 
 A bind variable should be of rank 2 or less. Higher rank arrays are not supported.
@@ -68,7 +68,7 @@ If the bind variable is a matrix, the default binding type is System.Object.
 All the examples that follow assume `⎕USING←'System'`.
 
 
-#### Binding Single Variables
+## Binding Single Variables
 
 
 In this case, `Y` specifies the name of a variable which is one of the following:
@@ -88,7 +88,7 @@ In this case, `Y` specifies the name of a variable which is one of the following
 
 Note that in the following examples, the reason for expunging the name first is discussed in the section headed Rebinding a Variable.
 
-#### Binding a Character Vector
+## Binding a Character Vector
 
 
 This example illustrates how to bind a variable which contains a character vector.
@@ -101,7 +101,7 @@ This example illustrates how to bind a variable which contains a character vecto
 
 In this example, the binding type of the variable `txtSource` will be System.String, suitable for binding to any property that accepts a String, such as the Text property of a `TextBox`.
 
-#### Binding a Numeric Scalar
+## Binding a Numeric Scalar
 
 
 This example illustrates how to bind a variable which contains a numeric scalar value.
@@ -124,12 +124,12 @@ A number of controls have a Value property which must be expressed as a System.D
 ```
 
 
-##### Binding a  Scalar .NET Object
+### Binding a  Scalar .NET Object
 
 
 This is currently not supported.
 
-#### Binding a Vector of Character Vectors
+## Binding a Vector of Character Vectors
 
 
 WPF data binding provides the means to bind controls that display lists of items, such as the ListBox, ListView, and TreeView controls, to collections of data. These controls are all based upon the ItemsControl class. To bind an ItemsControl to a collection object, you use its ItemsSource property.
@@ -145,7 +145,7 @@ This example illustrates how to bind a variable which contains a vector of chara
 
 In this example, the binding type of the variable `itemsSource` will be System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 
-#### Binding a Numeric Vector
+### Binding a Numeric Vector
 
 
 By default, a numeric vector is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
@@ -166,7 +166,7 @@ In principle, a numeric vector may alternatively be bound to a WPF property that
 
 
 
-#### Binding a Vector of .NET Objects
+### Binding a Vector of .NET Objects
 
 
 A vector of .NET objects is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
@@ -201,12 +201,12 @@ Note that, as a specific optimisation for binding DateTime data, it is not neces
 
 ```
 
-##### Binding a Matrix
+#### Binding a Matrix
 
 
 If the bind variable is a matrix, it is bound in a similar way to a vector of namespaces and is discussed below.
 
-#### Rebinding a Variable
+### Rebinding a Variable
 
 
 As mentioned earlier, when a variable is bound its binding type is stored with it in the workspace. If you subsequently attempt to rebind the variable there is no mechanism in place to alter the binding type. If the current binding type (whether specified by the left argument `X`, or by being the default) differs from the saved one, the function will generate a `DOMAIN ERROR`.
@@ -241,10 +241,7 @@ In this case, `Y` specifies the name of a namespace that contains one or more va
 
 If it is required to specify the binding type of any of the variables, or if certain variables are to be excluded, the left argument is a 2-column matrix. The first column contains the names of the variables to be bound, and the second column their binding types.
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 
 
 The following code snippet binds a namespace containing two variables named `txtSource` and `sizeSource`. In this case, the name of each variable may be specified as the Path for a WPF property that requires a String or an Int32. For example, if bindSource were assigned to the DataContext property of a TextBox, its Text property could be bound to `txtSource` and its FontSize property to `sizeSource`.
@@ -264,10 +261,7 @@ In this case, `Y` specifies the name of a variable that contains a vector of ref
 
 Each namespace in `Y` represents one of a collection of  instances of an object, which exports a particular set of properties for binding purposes. For example, `Y` could specify a wine database where each namespace represents a different wine, and each namespace contains the same set of variables that contain the name, price (and so forth) of each wine.
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 ```apl
  winelist←⎕NS¨(⍴Wines)⍴⊂''
  winelist.Name←Wines
@@ -297,10 +291,7 @@ Values in the matrix may be scalar numbers, character scalars or vectors, or nes
 The result `R` is a specific type that is created dynamically and assigned a unique name of the form Dyalog.Data.DyalogCollectionNotifyHandler`1[Dyalog.Data.DataBoundRow_nnnnnnnn]. This is suitable for binding to a WPF property that requires  an IEnumerable implementation, such as the  ItemsSource property of the DataGrid.
 
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 
 
 `mat` is a matrix of numbers and is bound with default property/column names `Column1`, `Column2`, ... `Column10` and the default data type of `System.Object`.
@@ -312,10 +303,7 @@ The result `R` is a specific type that is created dynamically and assigned a uni
 
 ```
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 
 
 
@@ -330,10 +318,7 @@ The result `R` is a specific type that is created dynamically and assigned a uni
 
 
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 
 
 `emp` is a 3-column matrix which contains names,  numbers and  addresses. Each address is made up of two character vectors containing street and town

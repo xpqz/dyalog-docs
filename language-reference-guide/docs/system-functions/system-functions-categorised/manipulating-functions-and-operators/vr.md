@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Vector Representation</span><span class="command">R←⎕VR Y</span></h1>
+<h1 class="heading"><span class="name">Vector Representation</span> <span class="command">R←⎕VR Y</span></h1>
 
 
 
@@ -27,10 +27,7 @@ Its display form is as follows:
 
 If `Y` is the name of a variable, a locked function or operator, an external function, or is undefined, `R` is an empty vector.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       ⍴V←⎕VR'PLUS'
@@ -48,10 +45,7 @@ If `Y` is the name of a variable, a locked function or operator, an external fun
 
 The definition of `⎕VR` has been extended to names assigned to functions by specification (`←`), and to local names of functions used as operands to defined operators. In these cases, the result of `⎕VR` is identical to that of `⎕CR` except that the representation of defined functions and operators is as described above.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       AVG←MEAN∘,

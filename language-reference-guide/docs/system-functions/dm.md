@@ -3,16 +3,13 @@
 
 
 
-<h1 class="heading"><span class="name">Diagnostic Message</span><span class="command">R←⎕DM</span></h1>
+<h1 class="heading"><span class="name">Diagnostic Message</span> <span class="command">R←⎕DM</span></h1>
 
 
 
 This niladic function returns the last reported APL error as a three-element vector, giving error message, line in error and position of caret pointer.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       2÷0

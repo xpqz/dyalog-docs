@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetParentItem</span><span class="command">Method 312</span></h1>
+<h1 class="heading"><span class="name">GetParentItem</span> <span class="command">Method 312</span></h1>
 
 
 

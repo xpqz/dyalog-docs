@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Error Trapping Concepts</span></h1>
+<h1> Error Trapping Concepts</h1>
 
 The purpose of this section is to show some of the ways in which the ideas of error trapping can be used to great effect to change the flow of control in a system.
 
@@ -16,7 +16,7 @@ Every error message reported by Dyalog APL has a corresponding error number (for
 
 Dyalog APL provides two distinct but related mechanisms for the trapping and control of errors. The first is based on the control structure `:Trap ... :EndTrap`, and the second, on the system variable `⎕TRAP`. The control structure is easier to administer and so is recommended for normal use, while the system variable provides slightly finer control and may be necessary for specialist applications.
 
-### Last Error number and Diagnostic Message
+## Last Error number and Diagnostic Message
 
 Dyalog APL keeps a note of the last error that occurred, and provides this information through system functions: `⎕EN`, `⎕EM` and `⎕DM`.
 ```apl
@@ -63,7 +63,7 @@ Mix (`↑`) of this vector produces a matrix that displays the same as the error
         ^
 ```
 
-### Error Trapping Control Structure
+## Error Trapping Control Structure
 
 You can embed a number of lines of code in a `:Trap` control structure within a defined function.
 ```apl
@@ -126,7 +126,7 @@ Traps can be nested. In the following example, code in the inner trap structure 
    [10]  :EndTrap
 ```
 
-### Trap System Variable: `⎕TRAP`
+## Trap System Variable: `⎕TRAP`
 
 The second way of trapping errors is to use the system variable: `⎕TRAP`.
 

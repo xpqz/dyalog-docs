@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Workspace Tab</span></h1>
+<h1> Workspace Tab</h1>
 
 ![configuration dialog workspace tab](../../img/configuration-dialog-workspace-tab.png)
 
-Configuration dialog: Workspace
+Table: Configuration dialog: Workspace
 
 |Label                 |Parameter                                         |Description                                                                                      |
 |----------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------|

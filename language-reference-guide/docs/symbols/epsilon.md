@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Epsilon</span><span class="command">∊</span></h1>
+<h1 class="heading"><span class="name">Epsilon</span> <span class="command">∊</span></h1>
 
 
-##### Monadic Epsilon means
+## Monadic Epsilon means
 
 
 If `⎕ML=0` [Type Of](../primitive-functions/type.md)
@@ -31,7 +31,7 @@ If `⎕ML≥1` [Enlist](../primitive-functions/enlist.md)
 
 ```
 
-##### Dyadic Epsilon means
+## Dyadic Epsilon means
 
 
 [Member Of](../primitive-functions/membership.md)

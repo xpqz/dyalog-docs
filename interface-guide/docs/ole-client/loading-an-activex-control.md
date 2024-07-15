@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Loading an ActiveX Control</span></h1>
+<h1> Loading an ActiveX Control</h1>
 
 An ActiveX or OLE Control is in fact a type of Dynamic Link Library (DLL) which must be loaded before it can be used. This is done by creating an OCXClass object using `⎕WC` or `⎕NEW`.
 
@@ -17,7 +17,7 @@ or, using `⎕WC`
 
 The right argument is a character string containing the name or class identifier of the ActiveX Control. The left argument is an arbitrary name of your own choosing by which you will subsequently refer to the Control class.
 
-### Using an OLE Control
+## Using an OLE Control
 
 Having created an OCXClass object, you may *use* an OLE Control by creating an *instance* of it from its class. The instance must be created as the child of a Form. For example:
 

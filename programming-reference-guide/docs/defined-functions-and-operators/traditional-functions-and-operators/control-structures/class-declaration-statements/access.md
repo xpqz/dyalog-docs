@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Access Statement</span></h1>
+<h1> :Access Statement</h1>
 
 ```apl
 :Access <Private|Public><Instance|Shared><Overridable>
@@ -16,13 +16,13 @@ The :Access statement is used to specify characteristics for Classes, Properties
 |`Overridable`|Applies only to an Instance Method and specifies that the Method may be overridden by a Method in a higher Class. See below.|
 |`Override`|Applies only to an Instance Method and specifies that the Method overrides the corresponding Overridable Method defined in the Base Class. See below.|
 
-### Overridable/Override
+## Overridable/Override
 
 Normally, a Method defined in a higher Class replaces a Method of the same name that is defined in its Base Class, but only for calls made from above or within the higher Class itself (or an Instance of the higher Class). The base method remains available *in the Base Class* and is invoked by a reference to it *from within the Base Class*.
 
 However, a Method declared as being `Overridable` is replaced in situ (i.e. within its own Class) by a Method of the same name in a higher Class if that Method is itself declared with the `Override` keyword. For further information, see ["Superseding Base Class Methods"](../../../../object-oriented-programming/class-members/methods/superceding-base-class-methods.md).
 
-### Nested Classes
+## Nested Classes
 
 The `:Access` statement is also used to control the visibility of one Class that is defined within another (a nested Class). A Nested Class may be either `Private` or `Public`. Note that the `:Access` Statement must precede the definition of any Class contents.
 
@@ -30,7 +30,7 @@ A `Public` Nested Class is visible from outside its containing Class and may be 
 
 However, methods in the containing Class may return instances of Private Nested Classes and in that way expose them to the calling environment.
 
-### WebMethod
+## WebMethod
 
 Note that `:Access WebMethod` is equivalent to:
 ```apl

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Unicode Convert</span><span class="command">R←{X} ⎕UCS Y</span></h1>
+<h1 class="heading"><span class="name">Unicode Convert</span> <span class="command">R←{X} ⎕UCS Y</span></h1>
 
 
 
@@ -26,7 +26,7 @@ If `X` is omitted, `Y` is a simple character or integer array, and the result `R
 If `X` is specified, `Y` must be a simple character or integer vector, and the result `R` is a simple integer or character vector.
 
 
-#### Monadic `⎕UCS`
+## Monadic `⎕UCS`
 
 
 Used monadically, `⎕UCS` simply converts characters to Unicode code points and vice-versa.
@@ -61,7 +61,7 @@ Unicode also contains the APL character set. For example:
 
 ```
 
-#### Dyadic `⎕UCS`
+## Dyadic `⎕UCS`
 
 
 Dyadic `⎕UCS` is used to translate between Unicode characters and one of three standard variable-length Unicode encoding schemes, UTF-8, UTF-16 and UTF-32. These represent a Unicode character string as a vector of 1-byte (UTF-8), 2-byte (UTF-16) and 4-byte (UTF-32) signed integer values respectively.
@@ -102,7 +102,7 @@ Because integers are *signed*, numbers greater than 127 will be represented as 2
 55360 56321 55360 56322 55360 56323
 ```
 
-#### Translation Error
+## Translation Error
 
 
 `⎕UCS` will generate a `DOMAIN ERROR` if the argument cannot be converted. Additionally, in the Classic Edition, a `TRANSLATION ERROR` is generated if the result is not in `⎕AV` or the numeric argument is not in `⎕AVU`.

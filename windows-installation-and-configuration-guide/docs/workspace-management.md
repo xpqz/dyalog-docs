@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Workspace Management</span></h1>
+<h1> Workspace Management</h1>
 
-### Workspace Size and Compaction
+## Workspace Size and Compaction
 
 The *maximum* amount of memory allocated to a Dyalog APL workspace is defined by the **maxws** parameter (on non-Windows platforms this is defined by the environment variable MAXWS).
 

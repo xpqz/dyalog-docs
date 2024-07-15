@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Enclose with Axes</span><span class="command">R←⊂[K]Y</span></h1>
+<h1 class="heading"><span class="name">Enclose with Axes</span> <span class="command">R←⊂[K]Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The shape of each element of `R` is the shape of the `K`th axes of `Y`:
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ]display A←2 3 4⍴'DUCKSWANBIRDWORMCAKESEED'
 ┌┌→───┐

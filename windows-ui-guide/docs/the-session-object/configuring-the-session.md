@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Configuring the Session</span></h1>
+<h1> Configuring the Session</h1>
 
 As supplied, your default session will have a menu bar, a tool bar and a status bar. There are many ways in which you may configure this set-up, including the following:
 
@@ -20,13 +20,13 @@ This section illustrates how you can configure your session using worked example
 
 Please note that these examples assume that *Expose Session Properties* is enabled.
 
-### Changing the Font
+## Changing the Font
 
 The APL session font is defined by the Font property of `⎕SE`. To change the font **permanently**, you should select a different Font and/or size of Font using the combo and spinner boxes on the Session toolbar, and **save your Session**.
 
 Classic Edition is distributed with bitmap fonts suitable for use on your screen, and TrueType fonts for your printer. You *can* use the TrueType font on the screen, but it is less attractive than the bitmap fonts at low resolutions. The bitmap fonts come in two sizes (16 x 8 and 22 x 11) and two weights (normal and bold). You may select other sizes, so long as the height is a multiple of 16 or 22. The scaling is performed automatically by Windows.
 
-### Changing Menu Appearance
+## Changing Menu Appearance
 
 The name of the Session MenuBar is '`⎕SE.mb`'. To simplify the specification of object names, we will first change space to the MenuBar itself:
 ```apl
@@ -56,7 +56,7 @@ To change the colour of the *New* option in the *File* menu to red:
     file.clear.FCol←255 0 0
 ```
 
-### Reorganising the Menu Structure
+## Reorganising the Menu Structure
 
 This example shows how you may alter the structure of the session menus by adding a *Search* menu to the menu bar to provide access to the *Find* and *Find/Replace* dialog boxes and removing these options from the *Edit* menu.
 
@@ -99,7 +99,7 @@ and the following statements add them to the *Search* menu:
                         ('Event' 'Select' '[Replace]')
 ```
 
-### Adding your own MenuItem
+## Adding your own MenuItem
 
 This example shows how you can add a menu item that executes an APL expression. In this case we will do something very simple; namely add a *Time* option to the Tools menu which will execute `⎕TS`. Notice that the statement also defines a Hint. This will be displayed when you select the option, prior to releasing the mouse button to action it.
 
@@ -127,7 +127,7 @@ Selecting *Time* produces the following output in the session:
       2007 12 10 17 10 2 0
 ```
 
-### Adding your own Tool Button
+## Adding your own Tool Button
 
 This example shows how you can add a button to the session tool bar that executes an APL function called `XREF`.
 

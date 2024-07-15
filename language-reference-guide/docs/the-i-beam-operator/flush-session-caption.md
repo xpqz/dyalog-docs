@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Flush Session Caption</span><span class="command">R←2022⌶Y</span></h1>
+<h1 class="heading"><span class="name">Flush Session Caption</span> <span class="command">R←2022⌶Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ However, the Caption is updated only at the six-space prompt; calling `⎕LOAD` 
 
 This I-Beam causes the Session Caption to be updated (flushed) when called. Note that this I-Beam does not alter the contents of the Caption.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       2022⌶0    

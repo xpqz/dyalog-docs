@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Each (with Dyadic Operand)</span><span class="command">{R}←Xf¨Y</span></h1>
+<h1 class="heading"><span class="name">Each (with Dyadic Operand)</span> <span class="command">{R}←Xf¨Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The derived function is applied separately to each pair of corresponding element
 If `X` or `Y` is empty, the operand function is applied *once* between the prototypes of `X` and `Y` to determine the prototype of `R`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +G←(1 (2 3))(4 (5 6))(8 9)10
    1  2 3   4  5 6   8 9  10

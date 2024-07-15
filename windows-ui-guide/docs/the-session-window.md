@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> The Session Window</span></h1>
+<h1> The Session Window</h1>
 
 The primary purpose of the session window is to provide a scrolling area within which you may enter APL expressions and view results. This area is described as the *session log*. Normally, the session window will have a menu bar at the top with a tool bar below it. At the bottom of the session window is a status bar. However, these components of the session may be extensively customised and, although this chapter describes a typical session layout, your own session may look distinctly different. A typical Session is illustrated below.
 
@@ -6,7 +6,7 @@ The primary purpose of the session window is to provide a scrolling area within 
 
 A typical Session window
 
-### Window Management
+## Window Management
 
 When you start APL, the session is loaded from the file specified by the **session_file** parameter. The position and size of the session window are defined by the Posn and Size properties of the Session object `⎕SE`, which will be as they were when the session file was last saved.[^1]
 
@@ -18,7 +18,7 @@ In addition to the Session Window itself, there are various subsidiary windows w
 
 Note that the session window is only displayed **when** it is required, i.e. when APL requests input from or output to the session. This means that end-user applications that do not interact with the user through the session will not have an APL session window.
 
-### Docking
+## Docking
 
 Nearly all of the windows used in the Dyalog APL IDE may be docked in the Session window or be stand-alone floating windows. When windows are docked in the Session, the Session window is split into resizable panes, separated by splitters. The following example, using the Status window, illustrates the principles involved. (The use of the Status window is described later in this Chapter.)
 

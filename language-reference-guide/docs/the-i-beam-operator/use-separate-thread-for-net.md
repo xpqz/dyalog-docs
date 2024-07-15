@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Use Separate Thread For .NET</span><span class="command">R←2520⌶Y</span></h1>
+<h1 class="heading"><span class="name">Use Separate Thread For .NET</span> <span class="command">R←2520⌶Y</span></h1>
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Random Link</span><span class="command">⎕RL</span></h1>
+<h1 class="heading"><span class="name">Random Link</span> <span class="command">⎕RL</span></h1>
 
 
 
@@ -13,7 +13,7 @@
 In a `clear ws` `⎕RL` is `(⍬ 1)`. `⎕RL` has Namespace scope.
 
 
-#### Random Number Seed
+## Random Number Seed
 
 
 The facility to set the seed to a specific value provides the means to generate a repeatable sequence of random numbers, such as might be required by certain types of simulation modelling. This capability is not provided by RNG2.
@@ -24,7 +24,7 @@ If the seed is set to 0, the seed is set randomly but may be retrieved and subse
 
 If the seed is set to `⍬`, Dyalog is able to take advantage of certain optimisations which deliver maximum performance. In this case, the actual seed in use is intentionally hidden and `⎕RL[1]` always reports `⍬`, regardless of the Random Number Generator in use.
 
-#### Random Number Generators
+## Random Number Generators
 
 
 The 3 random number generators are listed in the table below. The 4th column of the table contains the values of seeds that may be assigned to them.
@@ -48,7 +48,7 @@ The Lehmer linear congruential generator *RNG0* was the only random number gener
 
 Under Windows, the Operating System random number generator algorithm *RNG2* uses the `rand_s()` function. Under UNIX/Linux it uses `/dev/urandom`.
 
-#### Random Number Sequences
+## Random Number Sequences
 
 
 Random number sequences may be predictable or not and  repeatable or not. A predictable and repeatable sequence is obtained by starting with the same specific value for the seed. A non-predictable sequence is obtained by starting with a seed which is itself chosen at random, but such a sequence is repeatable if the value of the seed (chosen at random) is visible. A non-predictable and non-repeatable sequence of random numbers is obtained where the initial seed is chosen completely at random and is unknown.
@@ -63,12 +63,12 @@ Using  *RNG0* or *RNG1*:
 
 *RNG2* does not support a user modifiable random number seed, so when using this scheme, it is not possible to obtain a repeatable random number series and the seed must always be `⍬`.
 
-#### Implementation Note
+## Implementation Note
 
 
 `⎕RL` does not behave quite like a regular 2-element variable; it has its own rules relating to assignment and reference.
 
-##### Reference
+### Reference
 
 
 `⎕RL` *returns* a 2-element vector whose second element identifies the scheme in use (0, 1 or 2).
@@ -89,7 +89,7 @@ Otherwise if the seed `⎕RL[1]` is set to a value other than `⍬`:
 - Using *RNG2*, the seed is purely internal and `⎕RL[1]` is always zilde.
 
 
-##### Assignment
+### Assignment
 
 
 `⎕RL` may only be assigned in its entirety. Indexed and selective assignment may not be used to assign values to individual elements.
@@ -97,7 +97,7 @@ Otherwise if the seed `⎕RL[1]` is set to a value other than `⍬`:
 
 To preserve compatibility with Versions of Dyalog prior to Version 15.0 (in which `⎕RL` specifies just the seed) if the value assigned to `⎕RL` represents a valid seed for the random number generator in use, it is taken to be the new seed. Otherwise, the value assigned to `⎕RL` must be a 2-element vector, whose first item is the seed and whose second item is 0, 1 or 2 and specifies the random number generator to be used subsequently.
 
-#### Examples (specific seeds for repeatable sequences)
+## Examples (specific seeds for repeatable sequences)
 ```apl
 
       )CLEAR
@@ -150,7 +150,7 @@ clear ws
 
 ```
 
-#### Examples (0 seed)
+### Examples (0 seed)
 
 
 When you set the seed to 0, a random seed is created for you:
@@ -173,7 +173,7 @@ Setting the seed to 0 gives you a new, unpredictable random sequence yet it is r
 14 22 18 30 42 22 71 32 32 12
 ```
 
-#### Example (zilde)
+### Example (zilde)
 
 
 When you set the seed to zilde, you get the same random initialisation as setting it to 0 but you can't retrieve the actual value of the seed. When it is  set to `⍬` it is subsequently reported as `⍬` and the internal value of the seed is hidden.

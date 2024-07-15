@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Bind</span><span class="command">{R}←A∘fY{R}←(f∘B)Y</span></h1>
+<h1 class="heading"><span class="name">Bind</span> <span class="command">{R}←A∘fY{R}←(f∘B)Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The Bind operator binds an array `A` or `B` to a dyadic function `f` either as i
 The derived function is equivalent to `AfY` or `YfB` and need not return a result.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2 2∘⍴ ¨ 'AB'
  AA  BB

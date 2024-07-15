@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Constants</span></h1>
+<h1> Constants</h1>
 
 |Name   |Description                     |
 |-------|--------------------------------|

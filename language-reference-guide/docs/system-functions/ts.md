@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Timestamp</span><span class="command">R←⎕TS</span></h1>
+<h1 class="heading"><span class="name">Timestamp</span> <span class="command">R←⎕TS</span></h1>
 
 
 
@@ -20,10 +20,7 @@ This is a seven element vector which identifies the clock time set on the partic
 |`⎕TS[7]`|Millisecond|
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕TS
 1989 7 11 10 42 59 123

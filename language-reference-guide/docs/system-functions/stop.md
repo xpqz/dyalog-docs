@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Stop Controls</span><span class="command">⎕STOP</span></h1>
+<h1 class="heading"><span class="name">Stop Controls</span> <span class="command">⎕STOP</span></h1>
 
 
-##### Dyadic `⎕STOP` means
+## Dyadic `⎕STOP` means
 
 
 [Set Stop Controls](set-stop.md)
@@ -14,7 +14,7 @@
 0 1
 ```
 
-##### Monadic `⎕STOP` means
+## Monadic `⎕STOP` means
 
 
 [Query Stop Controls](query-stop.md)

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Flush</span><span class="command">Method 135</span></h1>
+<h1 class="heading"><span class="name">Flush</span> <span class="command">Method 135</span></h1>
 
 
 

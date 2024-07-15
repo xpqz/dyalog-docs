@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Select Statement</span></h1>
+<h1> :Select Statement</h1>
 
 ```
  

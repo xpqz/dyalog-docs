@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Globals and the Order of Execution</span></h1>
+<h1> Globals and the Order of Execution</h1>
 
 It is important to recognise that any reference or assignment to a global or semi-global object (including GUI objects) is **inherently dangerous** (i.e. a source of programming error) if more than one thread is running. Worse still, programming errors of this sort may not become apparent during testing because they are dependent upon random timing differences. Consider the following example:
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Tie</span><span class="command">{R}←X ⎕NTIE Y</span></h1>
+<h1 class="heading"><span class="name">Native File Tie</span> <span class="command">{R}←X ⎕NTIE Y</span></h1>
 
 
 
@@ -40,7 +40,7 @@ On UNIX systems, the second column has no meaning and only the first code (`16|m
 
 `R` is the tie number by which the file may subsequently be referred. If `Y[1]` is a negative integer, then `R` is a shy result; if `Y[1]` is 0, `R` is an explicit result.
 
-#### Automatic Tie Number Allocation
+## Automatic Tie Number Allocation
 
 
 A tie number of 0 as argument to a create or tie operation, allocates, and returns as an explicit result, the first (closest to zero) available tie number. This allows you to simplify code. For example:
@@ -58,10 +58,7 @@ to:
       tie←file ⎕NTIE 0     ⍝ Tie with first available no.
 ```
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 ntie←{                  ⍝ tie file and return tie no.
     ⍺←2+64              ⍝ default all access.
@@ -69,7 +66,7 @@ ntie←{                  ⍝ tie file and return tie no.
 }
 ```
 
-#### Note
+## Note
 
 
 If the native file is already tied, executing `⎕NTIE` with the same or a different tie number simply re-ties it with the same or the new tie number. Re-tying a file with a tie number of 0, re-ties it with the same tie number. This feature may be used to re--tie the file using a different mode.

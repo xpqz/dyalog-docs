@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">DevCaps</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">DevCaps</span> <span class="command">Property</span></h1>
 
 
 
@@ -30,7 +30,7 @@ This property is useful if you want to make objects of a specific physical size.
       'F.R' ⎕WC 'Rect' (5 5) Size ('Coord' 'Pixel')
 ```
 
-#### Notes
+## Notes
 
 - the physical size reported for the screen is typically only a *nominal* size, because, if you use a generic video driver, Windows has no way to tell what size of screen is attached to your computer.
 - The number of colours is reported only if the device has a colour depth of no more than 8 bits per pixel. For devices with greater colour depths, `¯1` is returned.

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Booking Class</span></h1>
+<h1> Booking Class</h1>
 
 ```apl
     :Class Booking

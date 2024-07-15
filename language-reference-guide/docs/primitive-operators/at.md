@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">At</span><span class="command">R←{X}(f@g)Y</span></h1>
+<h1 class="heading"><span class="name">At</span> <span class="command">R←{X}(f@g)Y</span></h1>
 
 
 
@@ -25,7 +25,7 @@ The left operand `f` is either:
 
 The result `R` is the same as `Y` but with the items specified by `g` substituted or modified by `f`.
 
-#### Examples (array @ array)
+## Examples (array @ array)
 
 
 Replace the 2nd and 4th items of `⍳5`:
@@ -102,7 +102,7 @@ Replace nested items using Reach Indexing:
 
 ```
 
-#### Examples (function @ array)
+## Examples (function @ array)
 
 
 Replace the 2nd and 4th items of `⍳5` with their reciprocals:
@@ -149,7 +149,7 @@ Replace the 2nd and 4th rows (major cells) of a matrix with their accumulatives:
 
 ```
 
-#### Examples (array @ function)
+## Examples (array @ function)
 
 
 Replace odd elements with 0:
@@ -176,7 +176,7 @@ Replace multiples of 3 (note              that masked items are substituted in r
 
 ```
 
-#### Examples (function @ function)
+## Examples (function @ function)
 
 
 Replace odd elements with their reciprocals:

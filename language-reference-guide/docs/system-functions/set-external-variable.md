@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set External Variable</span><span class="command">{R}←X ⎕XT Y</span></h1>
+<h1 class="heading"><span class="name">Set External Variable</span> <span class="command">{R}←X ⎕XT Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ If `Y` is the name of a defined function or operator, a label or a namespace in 
 Attempts to assign namespace references or the `⎕OR` of namespaces to an external array will result in a `DOMAIN ERROR`.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       'EXT\ARRAY' ⎕XT 'V'
 ```
@@ -48,10 +45,7 @@ A value assigned to an external variable is stored in file space, not within the
 
 There are no specific restrictions placed on the use of external variables.  They must conform to the normal requirements when used as arguments of functions or as operands of operators.  The essential difference between a variable and an external variable is that an external variable requires only temporary workspace for an operation to accommodate (usually) a part of its value.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       V←⍳5
       +/V
@@ -69,10 +63,7 @@ There are no specific restrictions placed on the use of external variables.  The
 
 Assignment allows the structure or the value of an external variable to be changed without fully defining the external array in the workspace.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       V,←⊂2 4⍴⍳8
  
@@ -93,10 +84,7 @@ Assignment allows the structure or the value of an external variable to be chang
 
 An external array is (usually) preserved in file space when the name of the external variable is disassociated from the file.  It may be re-associated with any valid variable name.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕EX'V'
  
@@ -110,10 +98,7 @@ An external array is (usually) preserved in file space when the name of the exte
 
 In UNIX versions, if `X` is an empty vector, the external array is associated with a temporary file which is erased when the array is disassociated.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ''⎕XT'TEMP'
  

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Scroll</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Scroll</span> <span class="command">Object</span></h1>
 
 
 
@@ -66,7 +66,7 @@ Scrolling is controlled by the [Thumb](../properties/thumb.md), [Range](../prope
 
 [Step](../properties/step.md) determines the size of changes reported when the user clicks a scroll arrow (small change) or clicks on the body of the scrollbar (large change). [Step](../properties/step.md) is a 2-element numeric vector whose first element specifies the value of the "small change" and whose second element specifies the value of the "large change". The [PageSize](../properties/pagesize.md) property specifies the sizes of the thumb in the scrollbar.
 
-#### Examples of Attached Scrollbars
+## Examples of Attached Scrollbars
 ```apl
       'F' ⎕WC 'Form' 'Default Scroll Bar'
       'F.SCR' ⎕WC 'Scroll'
@@ -75,7 +75,7 @@ Scrolling is controlled by the [Thumb](../properties/thumb.md), [Range](../prope
       'F.SCR' ⎕WC 'Scroll' ('HScroll' ¯1)
 ```
 
-#### Examples of Free-Standing Scrollbars
+## Examples of Free-Standing Scrollbars
 ```apl
       'F' ⎕WC 'Form' 'Non-Default Scroll Bar'
       'F.SCR' ⎕WC 'Scroll' (5 45)(90 10)

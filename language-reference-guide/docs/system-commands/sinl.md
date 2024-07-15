@@ -2,16 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">State Indicator & Name List</span><span class="command">)SINL</span></h1>
+<h1 class="heading"><span class="name">State Indicator & Name List</span> <span class="command">)SINL</span></h1>
 
 
 
 This command displays the contents of the state indicator together with local names. The display is the same as for `)SI` (see above) except that a list of local names is appended to each defined function or operator line.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 ```apl
       )SINL

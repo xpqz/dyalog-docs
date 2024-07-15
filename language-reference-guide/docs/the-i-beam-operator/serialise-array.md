@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Serialise/Deserialise Array</span><span class="command">R←X(220⌶)Y</span></h1>
+<h1 class="heading"><span class="name">Serialise/Deserialise Array</span> <span class="command">R←X(220⌶)Y</span></h1>
 
 
 
@@ -37,10 +37,7 @@ The following identity holds true:
 ```
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       a←'ab'

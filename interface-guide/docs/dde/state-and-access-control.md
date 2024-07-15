@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> State and Access Control</span></h1>
+<h1> State and Access Control</h1>
 
 Earlier, we have seen how shared variable state and access controls are used to ensure effective communication between two APL tasks. How do these concepts apply in the DDE environment when APL is using shared variables to communicate via DDE with both other APL workspaces, and with non-APL applications?
 
@@ -16,43 +16,43 @@ Let's see what this means if two APL workspaces are involved.
 |---|---|
 |&nbsp;|&nbsp;|
 |Make general offer|&nbsp;|
-|X←42|&nbsp;|
-|'DDE:' ⎕SVO 'X'|&nbsp;|
-|1|&nbsp;|
-|⎕SVS 'X'|&nbsp;|
-|0 0 0 0 ⍝ No partner|&nbsp;|
-|⎕SVC 'X'|&nbsp;|
-|0 0 0 0 ⍝ No access ctl|&nbsp;|
+|`X←42`|&nbsp;|
+|`'DDE:' ⎕SVO 'X'`|&nbsp;|
+|`1`|&nbsp;|
+|`⎕SVS 'X'`|&nbsp;|
+|`0 0 0 0 ⍝ No partner`|&nbsp;|
+|`⎕SVC 'X'`|&nbsp;|
+|`0 0 0 0 ⍝ No access ctl`|&nbsp;|
 |&nbsp;|&nbsp;|
 |&nbsp;|Make specific offer|
-|&nbsp;|'DDE:DYALOG|SERVER'⎕SVO'X'|
+|&nbsp;|`'DDE:DYALOG|SERVER'⎕SVO'X'`|
 |&nbsp;|<--- initiate ---|
 |ack --->|&nbsp;|
 |&nbsp;|<--- please advise on change|
 |ack --->|&nbsp;|
-|&nbsp;|2  ⍝ Offer accepted|
-|⎕SVS 'X'|⎕SVS 'X'|
-|1 0 1 0⍝ I know, not he|0 1 0 1⍝ He knows, I don't|
+|&nbsp;|`2  ⍝ Offer accepted`|
+|`⎕SVS 'X'`|`⎕SVS 'X'`|
+|`1 0 1 0⍝ I know, not he`|`0 1 0 1⍝ He knows, I don't`|
 |&nbsp;|Client requests data|
-|&nbsp;|Y ← X|
+|&nbsp;|`Y ← X`|
 |&nbsp;|<--- req ---|
 |--- data (42) --->|&nbsp;|
 |&nbsp;|<--- ack ---|
-|⎕SVS 'X'|⎕SVS 'X'|
-|0 0 1 1⍝ We both know|0 0 1 1⍝ We both know|
+|`⎕SVS 'X'`|`⎕SVS 'X'`|
+|`0 0 1 1⍝ We both know`|`0 0 1 1⍝ We both know`|
 |Server changes data|&nbsp;|
-|X ← 20|&nbsp;|
+|`X ← 20`|&nbsp;|
 |--- data has changed -->|&nbsp;|
 |&nbsp;|<--- ack ---|
-|⎕SVS 'X'|⎕SVS 'X'|
-|1 0 1 0⍝ I know, not he|0 1 0 1⍝ He knows, I don't|
+|`⎕SVS 'X'`|`⎕SVS 'X'`|
+|`1 0 1 0⍝ I know, not he`|`0 1 0 1⍝ He knows, I don't`|
 |&nbsp;|Client requests data|
-|&nbsp;|Y ← X|
+|&nbsp;|`Y ← X`|
 |&nbsp;|<--- req ---|
 |--- data (20) --->|&nbsp;|
 |&nbsp;|<--- ack ---|
-|⎕SVS 'X'|⎕SVS 'X'|
-|0 0 1 1⍝ We both know|0 0 1 1⍝ We both know|
+|`⎕SVS 'X'`|`⎕SVS 'X'`|
+|`0 0 1 1⍝ We both know`|`0 0 1 1⍝ We both know`|
 
 As you can see, this has the desired effect, namely that an APL workspace sets the value of a shared variable by assignment to it and **uses** it by reference to it. The mechanism of using the DATA and ACK messages to imply **set** and **use** also works with non-APL applications which do not (in general) support these concepts.
 
@@ -61,43 +61,43 @@ Access control between two APL workspaces is imposed by each workspace acting in
 |Server Workspace|Client Workspace|
 |---|---|
 |No access control|No access control|
-|⎕SVC 'X'|⎕SVC 'X'|
-|0 0 0 0 ⍝ No access ctl|0 0 0 0 ⍝ No access ctl|
+|`⎕SVC 'X'`|`⎕SVC 'X'`|
+|`0 0 0 0 ⍝ No access ctl`|`0 0 0 0 ⍝ No access ctl`|
 |&nbsp;|Client makes multiple requests for data|
-|&nbsp;|Y←X|
-|&nbsp;|Y←X|
+|&nbsp;|`Y←X`|
+|&nbsp;|`Y←X`|
 |Server can set several times|&nbsp;|
-|X←30|&nbsp;|
-|X←40|&nbsp;|
+|`X←30`|&nbsp;|
+|`X←40`|&nbsp;|
 |Set access control|&nbsp;|
-|1 0 0 1 ⎕SVC 'X'|&nbsp;|
-|--- change in ⎕SVC -->|&nbsp;|
-|⎕SVC 'X'|⎕SVC 'X'|
-|```apl 1 0 0 1⍝ I cannot set          until he has          used; he cannot          use untilI          have set ```|```apl 0 1 1 0⍝ He cannot set          until I have          used. I cannot          use until he          has set ```|
+|`1 0 0 1 ⎕SVC 'X'`|&nbsp;|
+|`--- change in ⎕SVC -->`|&nbsp;|
+|`⎕SVC 'X'`|`⎕SVC 'X'`|
+|````apl 1 0 0 1⍝ I cannot set          until he has          used; he cannot          use untilI          have set ````|````apl 0 1 1 0⍝ He cannot set          until I have          used. I cannot          use until he          has set ````|
 |&nbsp;|Client requests data|
-|&nbsp;|Y ← X|
-|&nbsp;|<--- req ---|
+|&nbsp;|`Y ← X`|
+|&nbsp;|`<--- req ---`|
 |&nbsp;|(hangs waiting for data)|
 |Server changes data|&nbsp;|
-|X ← 30|&nbsp;|
+|`X ← 30`|&nbsp;|
 |--- data (30) --->|&nbsp;|
 |&nbsp;|<--- ack ---|
-|&nbsp;|Y⍝ data received|
-|&nbsp;|30|
+|&nbsp;|`Y⍝ data received`|
+|&nbsp;|`30`|
 |Server changes data|&nbsp;|
-|X ← 40|&nbsp;|
+|`X ← 40`|&nbsp;|
 |--- data has changed --->|&nbsp;|
 |&nbsp;|<--- ack ---|
 |Server tries to change data again|&nbsp;|
-|X ← 50|&nbsp;|
+|`X ← 50`|&nbsp;|
 |--- data has changed --->|&nbsp;|
 |(assignment hangs waiting for ack)|&nbsp;|
-|&nbsp;|Y ← X⍝ use data|
+|&nbsp;|`Y ← X⍝ use data`|
 |&nbsp;|<--- req ---|
-|--- data (40) --->|&nbsp;|
+|`--- data (40) --->`|&nbsp;|
 |&nbsp;|<--- ack ---|
-|X⍝ assignment done|Y⍝ data received|
-|50|40|
+|`X⍝ assignment done`|`Y⍝ data received`|
+|`50`|`40`|
 
 Where the second process is a non-APL application, the effective access control vector is maintained only by the APL task and access control can only be imposed by APL. At first sight, it may seem impossible for APL to affect another application in this way, and indeed there are severe limitations in what APL can achieve. Nevertheless, effective access control is possible in the case when it is desirable to inhibit the partner from **setting** the value twice without an intervening **use** by the APL task.
 
@@ -114,7 +114,7 @@ The rule for establishing your partner's initial `⎕SVC` is as follows:
 
 This works in practice as follows:
 
-#### Server = APL, Client = APL
+## Server = APL, Client = APL
 
 You made a general offer which has been accepted by another APL workspace, e.g.
 ```apl
@@ -123,7 +123,7 @@ You made a general offer which has been accepted by another APL workspace, e.g.
 
 Two APL tasks always use a warm DDE link. Therefore, initially, both `⎕SVC`s are (0 0 0 0). Control is (optionally) imposed by both partners subsequently setting `⎕SVC`.
 
-#### Server = APL, Client = another application
+## Server = APL, Client = another application
 
 You made a general offer which has been accepted by another application, e.g.
 ```apl
@@ -132,7 +132,7 @@ You made a general offer which has been accepted by another application, e.g.
 
 The client application establishes the strength of the link (warm or hot). If it is a warm link, the initial value of the client's `⎕SVC` is (0 0 0 0) and, as the client has no means to change it itself, control may only be imposed by the server APL task. If the client establishes a hot link, its initial `⎕SVC` is (1 0 0 1). As it has no means to change it, and as the APL server task cannot (by definition) change it, the client's `⎕SVC` retains this setting for the duration of the conversation. (1 0 0 1) means that both partners are inhibited from setting the value of the shared variable twice in a row without an intervening use (or set) by the other. Given that the other application has requested a hot link (give me the value every time it changes) it is reasonable to assume that the application does not want to miss any values and will happily accept new data every time it is changed.
 
-#### Server = another application, Client = APL
+## Server = another application, Client = APL
 
 You made a **specific offer** to another application, e.g.
 ```apl
@@ -141,6 +141,6 @@ You made a **specific offer** to another application, e.g.
 
 In this case, APL as the client will request a warm DDE link. If the server fails to agree to this request, APL will ask for the current data value and, whether or not the server responds, will not establish a permanent link. Thus the only possibility for a permanent connection is a warm link. This in turn means that the server's `⎕SVC` will be (0 0 0 0). Furthermore, as the server has no means to change it, it's `⎕SVC` will remain (0 0 0 0) for the duration of the conversation. Control is therefore imposed solely by APL.
 
-### Terminating a Conversation
+# Terminating a Conversation
 
 A DDE conversation is terminated by "un-sharing" the variable. This can be done explicitly using `⎕EX` or `⎕SVR`. It is also done automatically when you exit a function in which a shared variable is localised.

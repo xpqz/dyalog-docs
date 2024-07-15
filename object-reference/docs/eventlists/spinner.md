@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Spinner Events</span></h1>
+<h1> Spinner Events</h1>
 
 |-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|

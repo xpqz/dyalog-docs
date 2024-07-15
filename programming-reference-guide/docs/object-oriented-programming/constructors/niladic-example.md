@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Niladic Example</span></h1>
+<h1> Niladic Example</h1>
 
 In the following example, `DomesticParrot` is derived from `Parrot` which is derived from `Bird`. They all share the Field `Desc` (inherited from `Bird`). Each of the 3 Classes has its own *niladic* Constructor called `egg0`.
 ```apl
@@ -32,7 +32,7 @@ In the following example, `DomesticParrot` is derived from `Parrot` which is der
 Bird→Parrot→DomesticParrot
 ```
 
-### Explanation
+## Explanation
 
 `⎕NEW` creates the new instance and runs the niladic Constructor `DomesticParrot.egg0`. As soon as the line:
 ```apl

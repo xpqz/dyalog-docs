@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Using (Microsoft .NET Search Path)</span><span class="command">⎕USING</span></h1>
+<h1 class="heading"><span class="name">Using (Microsoft .NET Search Path)</span> <span class="command">⎕USING</span></h1>
 
 
 
@@ -32,16 +32,13 @@ If `⎕USING` is empty (`⎕USING←0⍴⊂''`), APL will not search for .NET cl
 
 Assigning a simple character vector to `⎕USING` is equivalent to setting it to the enclose of that vector. The statement (`⎕USING←'')` does not empty `⎕USING`, it sets it to a single empty element, which gives access to `mscorlib.dll` and the  Bridge DLL without a namespace prefix.
 
-#### Notes
+## Notes
 
 - The value of `⎕USING` is only used when an object is instantiated. Changing the value of `⎕USING` has no effect on objects that have already been instantiated in the active workspace.
 - When a workspace containing .Net objects is saved, the names of the Net objects are saved with it but they are not automatically re-instantiated when the workspace is loaded or copied. A reference to such an orphaned object will report `(NULL)`. 
 - Some functionality might work with .NET Framework or .NET but not both, for example, SharpPlot requires the .NET Framework and does not work with .NET itself.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
   ⎕USING←'System'
   ]display ⎕USING

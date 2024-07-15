@@ -9,10 +9,7 @@
 
 This report is given on opening and closing definition mode when attempting to edit a pendant function or operator.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 [0]   ∇FOO
 [1]    GOO

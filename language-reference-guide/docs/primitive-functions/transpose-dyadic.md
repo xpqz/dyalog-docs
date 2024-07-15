@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Transpose (Dyadic)</span><span class="command">R←X⍉Y</span></h1>
+<h1 class="heading"><span class="name">Transpose (Dyadic)</span> <span class="command">R←X⍉Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 `⎕IO` is an implicit argument of Dyadic Transpose.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A
  1  2  3  4
@@ -52,7 +49,7 @@
 ```
 
 
-#### Alternative Explanation
+## Alternative Explanation
 
 
 Assign a distinct letter for each unique integer in `X` :
@@ -65,7 +62,7 @@ i j k l
 If `R←X⍉Y`, then `R[i;j;k;…]` equals `Y` indexed by the letters corresponding to elements of `X` .
 
 
-#### For example
+## For example
 ```apl
       ⎕IO←0
 

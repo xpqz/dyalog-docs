@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Shadow Name</span><span class="command">{R}←⎕SHADOW Y</span></h1>
+<h1 class="heading"><span class="name">Shadow Name</span> <span class="command">{R}←⎕SHADOW Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ If a name is ill-formed, or if it is the name of a system constant or system fun
 
 If the name of a top-level GUI object is shadowed, it is made inactive.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕VR'RUN'
      ∇ NAME RUN FN

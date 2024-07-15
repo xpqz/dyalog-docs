@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Tail Calls</span></h1>
+<h1> Tail Calls</h1>
 
 A novel feature of the implementation of dfns is the way in which tail calls are optimised.
 

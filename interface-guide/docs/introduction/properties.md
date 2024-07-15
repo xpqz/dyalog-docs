@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Properties</span></h1>
+<h1> Properties</h1>
 
 Properties may be set using the system functions `⎕WC` and `⎕WS` and their values may be retrieved using `⎕WG`.
 
@@ -8,7 +8,7 @@ Certain properties, in particular the Type property, can only be set using `⎕W
 
 However, any property that can be set by `⎕WS` can be set using assignment and the values of all properties can be retrieved by direct reference or using `⎕WG`.
 
-### Setting Properties with Assignment
+## Setting Properties with Assignment
 
 You may set the value of a property using the assignment arrow `←`. For example:
 ```apl
@@ -52,7 +52,7 @@ Notice however, that used directly in this way, Property names are case-sensitiv
       F.CAPTION←'Hello World'
 ```
 
-### Retrieving property values by reference
+## Retrieving property values by reference
 
 You may obtain the value of a property as if it were a variable, by simply referring to the property name. For example:
 ```apl
@@ -85,7 +85,7 @@ For example, having asked for a Font with face name of "Courier New", you cannot
 1
 ```
 
-### Setting Properties with `⎕WC`
+## Setting Properties with `⎕WC`
 
 Properties may also be set by the right argument of `⎕WC`. In these cases, they may be specified in one of two ways; either by their position in the argument, or by a keyword followed by a value. The keyword is a character vector containing the **name** of the property. Its value may be any appropriate array. Property names and value keywords are not case sensitive; thus `'Form'` could be spelled `'form'`, `'FORM'`, or even `'fOrM'`
 
@@ -112,7 +112,7 @@ The third and fourth properties are (usually) Posn, which specifies the position
    'form' ⎕WC 'Form' ('Posn' 10 20) (60 40)
 ```
 
-### Changing Property Values with `⎕WS`
+## Changing Property Values with `⎕WS`
 
 Once you have created an object using `⎕WC`, you are free to alter most of its properties using `⎕WS`. However in general, those properties that define the overall structure of an object's window cannot be altered using `⎕WS`. Such *immutable* properties include Type and (for some objects) Style. Note that if you find that you do need to alter one of these properties dynamically, it is a simple matter to recreate the object with `⎕WC`.
 
@@ -142,7 +142,7 @@ After assigning the value, the parser resets its internal pointer to the propert
 
 In the reference section for each object, you will find the list of properties applicable to that object, given in the order in which they are to be specified. This information is also reported by the PropList property, which applies to all objects. The list of properties may also be obtained by executing the system command `)PROPS` in an object's namespace.
 
-### The Event Property
+## The Event Property
 
 Of the many different properties supported, the Event property is rather special. Most of the other properties determine an object's appearance and general behaviour. The Event property, however, specifies how the application **reacts to the user**. Furthermore, unlike most other properties, it takes not a single value, but a set of values, each of which determines the action to be taken when a particular **event** occurs. In simple terms, an *event* is something that the user can do. For example, pressing a mouse button, pressing a key, selecting an item from a menu, are all examples of *events*.
 

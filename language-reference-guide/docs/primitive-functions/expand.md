@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Expand</span><span class="command">R←X\[K]Y</span></h1>
+<h1 class="heading"><span class="name">Expand</span> <span class="command">R←X\[K]Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@ If `Y` has length 1 along the `K`<sup>th</sup> (or implied) axis, it is extended
 `R` is composed from the sub-arrays along the `K`<sup>th</sup> axis of `Y`. If `X[I]` (an element of `X`) is the `J`<sup>th</sup> positive element in `X`, then the `J`<sup>th</sup> sub-array along the `K`<sup>th</sup> axis of `Y` is replicated `X[I]` times. If `X[I]` is negative, then a sub-array of fill elements of `Y` is replicated `|X[I]` times and inserted in relative order along the `K`<sup>th</sup> axis of the result. If `X[I]` is zero, it is treated as the value `¯1`. The shape of `R` is the shape of `Y` except that the length of the `K`<sup>th</sup> axis is `+/1⌈|X`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       0\⍳0
 0

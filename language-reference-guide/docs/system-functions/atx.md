@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Extended Attributes</span><span class="command">R←X ⎕ATX Y</span></h1>
+<h1 class="heading"><span class="name">Extended Attributes</span> <span class="command">R←X ⎕ATX Y</span></h1>
 
 
 
@@ -62,10 +62,7 @@ Note: To retrieve this information for an unnamed value, wrap `⎕ATX` in a dfn 
 |Vector of character scalars/vectors|Vector of requested values    |Outer shape from `⍴⍺` , inner shape from `⍴⍵`                          ||
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       Att
 10 11 12 20 23 30 31 32 40 41 42 50 51 52 53 54 55

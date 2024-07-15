@@ -3,14 +3,14 @@
 
 
 
-<h1 class="heading"><span class="name">Grade Up (Monadic)</span><span class="command">R←⍋Y</span></h1>
+<h1 class="heading"><span class="name">Grade Up (Monadic)</span> <span class="command">R←⍋Y</span></h1>
 
 
 
 `Y` may be any array of rank greater than 0 but may not contain namespaces.  `R` is an integer vector being the permutation of `⍳1↑⍴Y` that places the sub-arrays along the first axis in ascending order. The rules for comparing items of `Y` with one another are as follows:
 
 
-#### Rules for comparing simple scalars
+## Rules for comparing simple scalars
 
 - Numeric comparisons are  exact, as if `⎕CT←⎕DCT←0` and `⎕FR←1287`
 - Two real numbers are compared numerically, thus 1.2 precedes 3.
@@ -18,7 +18,7 @@
 - Complex numbers are ordered by first comparing their real parts. If these are equal, the order is determined by comparing their imaginary parts.Thus `1J¯2` precedes `1` which precedes `1J2`.
 - `⎕NULL` (which represents a null item obtained from an external source) precedes all numbers, and all numbers precede all characters.Thus `⎕NULL` precedes 100, and 100 precedes `'A'`. 
 
-#### Rules for comparing non-scalar arrays
+## Rules for comparing non-scalar arrays
 
 - Arrays are compared item by item in ravel order.
 - For arrays of equal  shape, the order is determined by the first pair of items which differ, thus `(1949 4 29)` precedes `(1949 4 30)`. Similarly `('April' 29)` precedes `('April' 30)`.
@@ -29,10 +29,7 @@
 
 `⎕IO` is an implicit argument of Grade Up
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⍋22.5 1 15 3 ¯4
 5 2 4 3 1

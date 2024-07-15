@@ -3,10 +3,10 @@
 
 
 
-<h1 class="heading"><span class="name">Exclusive File Tie</span><span class="command">{R}←X ⎕FTIE Y</span></h1>
+<h1 class="heading"><span class="name">Exclusive File Tie</span> <span class="command">{R}←X ⎕FTIE Y</span></h1>
 
 
-##### Access code 2
+## Access code 2
 
 
 `Y` must be 0 or a simple 1 or 2 element integer vector containing an available file tie number to be associated with the file for further file operations, and an optional passnumber.  If the passnumber is omitted it is assumed to be zero.  The tie number must not already be associated with a share tied or exclusively tied file.
@@ -19,7 +19,7 @@ The file must exist and  the user must have write access to it.  It may not alr
 
 
 
-#### Automatic Tie Number Allocation
+# Automatic Tie Number Allocation
 
 
 A tie number of 0 as argument to a create, share tie or exclusive tie operation, allocates the first (closest to zero) available tie number, and returns it as an explicit result. This allows you to simplify code. For example:
@@ -41,10 +41,7 @@ to:
 
 The shy result of `⎕FTIE` is the tie number of the file.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'SALES' ⎕FTIE 1
  

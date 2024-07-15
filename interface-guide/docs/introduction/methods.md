@@ -1,6 +1,6 @@
-<h1 class="heading"><span class="name"> Methods</span></h1>
+<h1> Methods</h1>
 
-### Calling Methods
+## Calling Methods
 
 A method is similar to a function in that it may or may not take an argument, perform some action, and return a result.
 
@@ -22,7 +22,7 @@ VALUE ERROR
      ^
 ```
 
-### Invoking Methods with `⎕NQ`
+## Invoking Methods with `⎕NQ`
 
 Methods may also be called using `⎕NQ` with a left argument of 2, indeed if `⎕WX` is 0, this is the only way to call a method.
 
@@ -47,7 +47,7 @@ When you call a method using `2 ⎕NQ`, the method name is **not** case-sensitiv
 2000 1 1 5
 ```
 
-### Events as Methods
+## Events as Methods
 
 Methods and events are closely related and most events can be invoked as methods.
 

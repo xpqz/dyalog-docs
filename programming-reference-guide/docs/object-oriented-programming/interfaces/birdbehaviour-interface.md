@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> BirdBehaviour Interface</span></h1>
+<h1> BirdBehaviour Interface</h1>
 
 ```apl
 :Interface BirdBehaviour

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Assignment</span><span class="command">X←Y</span></h1>
+<h1 class="heading"><span class="name">Assignment</span> <span class="command">X←Y</span></h1>
 
 
 
@@ -19,7 +19,7 @@ If `X` contains a single name, the variable assumes the value of `Y`. If `X` con
 The assignment arrow (or specification arrow) is often read as 'Is' or 'Gets'.
 
 
-#### Examples of single assignment
+## Examples of single assignment
 ```apl
 
       A←2.3
@@ -31,7 +31,7 @@ The assignment arrow (or specification arrow) is often read as 'Is' or 'Gets'.
 1 2 3
 ```
 
-#### Examples of multiple assignment using parentheses
+## Examples of multiple assignment using parentheses
 ```apl
 
       (A B)←2
@@ -49,7 +49,7 @@ TEXT
 1 2 3
 ```
 
-#### Example of multiple assignment without parentheses
+## Example of multiple assignment without parentheses
 ```apl
 
       year month day←2017 05 24
@@ -79,15 +79,12 @@ Pass-through assignments are permitted. The value of `Y` is carried through each
 
 ```
 
-#### Function Assignment
+## Function Assignment
 
 
 If `Y` is a function expression, `X` must be a single name which is either undefined, or is the name of an existing function or defined operator. `X` may not be the name of a system function, or a primitive symbol.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       PLUS←+
@@ -102,7 +99,7 @@ If `Y` is a function expression, `X` must be a single name which is either undef
 
 ```
 
-#### Namespace Reference Assignment
+## Namespace Reference Assignment
 
 
 If an expression evaluates to a namespace reference, or *ref*, you may assign it to a name. A name assigned to a simple scalar *ref*, has name class 9, whereas one assigned to an *array* containing *refs* has name class 2.
@@ -126,7 +123,7 @@ If an expression evaluates to a namespace reference, or *ref*, you may assign it
 		
 ```
 
-#### Re-Assignment
+## Re-Assignment
 
 
 A name that already exists may be assigned a new value if the assignment will not alter its name class, or will change it from 2 to 9 or vice versa. The table of permitted re-assignments is as follows:

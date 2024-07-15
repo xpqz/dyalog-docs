@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> APL and DDE in Practice</span></h1>
+<h1> APL and DDE in Practice</h1>
 
 The interface between Dyalog APL/W and DDE is provided by Shared Variables which are implemented as closely as possible in accordance with the APL Standard. There are however some conflicts between Shared Variables and the way in which DDE works. These impose certain restrictions.
 
@@ -8,7 +8,7 @@ An APL application registers itself as a potential server, or initiates a DDE co
 
 Note that, as mentioned in the introduction, DDE does not preclude two-way data transfer, despite its insistence on a client-server relationship. Thus the establishment of a shared variable as a server or as a client does not force the data transfer to be one-way. The choice of whether APL is to act as a server or as client may in practice be determined by convenience.
 
-### APL as the Client
+## APL as the Client
 
 To initiate a DDE conversation with a server, you use `⎕SVO` as follows:
 ```apl
@@ -35,33 +35,33 @@ In principle, the type of link is determined by the client. However, because the
 
 When the shared variable is offered as a client, APL **always** requests a warm link from the server. If the server refuses a warm link, APL instead requests the current value of the data item (a cold link), and, if the server responds, APL stores the value in the variable. In either case, the degree of coupling is set to 2 if the connection was successful.
 
-### Executing Commands in the Server
+## Executing Commands in the Server
 
 As mentioned in the Introduction, it is possible for a client to instruct a server to execute a command by sending it a DDE_EXECUTE message. This is intended to allow the client to condition the environment in which the server is operating and not (as one might first expect) to execute a command which directly returns a result. In fact the only response from a server to a DDE_EXECUTE message is a positive or negative acknowledgement, the meaning of which is application dependent.
 
 You can establish a shared variable as a channel for sending DDE_EXECUTE messages by assigning it a surrogate name of `'⍎'`, the APL execute symbol. After sharing, you send commands to the server as DDE_EXECUTE messages by assigning them, as character vectors, to the shared variable. Following each such assignment, the value of the shared variable is reset to 1 if the server responded with a positive acknowledgement, or 0 if it responded with a negative acknowledgement. This should be interpreted with reference to the server application documentation. Note that most applications require that commands are surrounded by square brackets but several commands may be sent at a time. The following examples use Microsoft Excel Version 2.0 as the server :
 
-### Establish a link to Excel's SYSTEM topic
+## Establish a link to Excel's SYSTEM topic
 ```apl
       'DDE:EXCEL|SYSTEM' ⎕SVO 'X ⍎'
 2
 ```
 
-### Instruct EXCEL to open a spreadsheet file
+## Instruct EXCEL to open a spreadsheet file
 ```apl
       X←'[OPEN(c:\mydir\mysheet.xls)]'
       X
 1
 ```
 
-### Instruct EXCEL to select a range of cells
+## Instruct EXCEL to select a range of cells
 ```apl
       X←'[SELECT("R1C1:R5C10")]'
       X
 1
 ```
 
-### Carry out two commands in one call
+## Carry out two commands in one call
 ```apl
       CMD1←'[OPEN(c:\mydir\mysheet.xls)]'
       CMD2←'[SELECT("R1C1:R5C10")]'
@@ -70,7 +70,7 @@ You can establish a shared variable as a channel for sending DDE_EXECUTE message
 1
 ```
 
-### APL as the Server
+## APL as the Server
 
 A DDE conversation is initiated by a client, and not by a server. If you wish to act as a server, it is therefore necessary to register this fact with the APL interpreter so that it will subsequently respond to a client on your behalf. This is done by making a *general* *offer* using `⎕SVO` as follows:
 ```apl

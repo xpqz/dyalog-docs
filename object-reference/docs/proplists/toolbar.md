@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ToolBar Properties</span></h1>
+<h1> ToolBar Properties</h1>
 
 |-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Event</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">Event</span> <span class="command">Property</span></h1>
 
 
 
@@ -30,10 +30,7 @@ Two syntactic forms are allowed:
 - A composite vector whose first element contains the property name `'Event'`, followed by a series of 2 or 3-element vectors, each defining the action to be taken for a different Event Type (or types).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
      'Event' 'MouseUp' 'foo' 88
      'Event' ('MouseUp' 'MouseDown') 'foo' 88
@@ -53,18 +50,18 @@ When you specify the Event property using `⎕WC` or `⎕WS`, the action to be t
 |Element|Item|Description|||||||||||||
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |`[1]`|Type(s)|see below|||||||||||||
-|`[2]`|Action|numeric scalar or character vector ¯1 inhibit (ignore) event 0 handle event, do not report to APL 1 handle event, then report to APL fn name of callback function fn& name of callback function to be executed *asynchronously* ⍎expr expression to be executed|¯1|inhibit (ignore) event|0|handle event, do not report to APL|1|handle event, then report to APL|fn|name of callback function|fn&|name of callback function to be executed *asynchronously*|⍎expr|expression to be executed|
-|¯1|inhibit (ignore) event||||||||||||||
-|0|handle event, do not report to APL||||||||||||||
-|1|handle event, then report to APL||||||||||||||
-|fn|name of callback function||||||||||||||
-|fn&|name of callback function to be executed *asynchronously*||||||||||||||
-|⍎expr|expression to be executed||||||||||||||
+|`[2]`|Action|numeric scalar or character vector `¯1` inhibit (ignore) event `0` handle event, do not report to APL `1` handle event, then report to APL `fn` name of callback function `fn&` name of callback function to be executed *asynchronously* `⍎expr` expression to be executed|`¯1`|inhibit (ignore) event|`0`|handle event, do not report to APL|`1`|handle event, then report to APL|`fn`|name of callback function|`fn&`|name of callback function to be executed *asynchronously*|`⍎expr`|expression to be executed|
+|`¯1`|inhibit (ignore) event||||||||||||||
+|`0`|handle event, do not report to APL||||||||||||||
+|`1`|handle event, then report to APL||||||||||||||
+|`fn`|name of callback function||||||||||||||
+|`fn&`|name of callback function to be executed *asynchronously*||||||||||||||
+|`⍎expr`|expression to be executed||||||||||||||
 |`[3]`|Arg|any array (optional)|||||||||||||
 
 
 
-#### Event Types
+## Event Types
 
 
 The first element, *Type(s)* may be one of the following:
@@ -79,10 +76,10 @@ The first element, *Type(s)* may be one of the following:
 
 The *onEvent* syntax causes all objects reported in the *event message* (see below) to be identified by a *ref*. Otherwise, objects reported in the event message are identified by name.
 
-#### Action
+## Action
 
 
-##### Inhibit (`¯1`)
+### Inhibit (`¯1`)
 
 
 If *Action* is set to `¯1`, the
@@ -100,7 +97,7 @@ each event type in this chapter.
 
 
 
-##### Default Processing (0)
+### Default Processing (0)
 
 
 If *Action* is set to `0` (the default), the event is processed by APL and
@@ -112,7 +109,7 @@ some other appropriate function.
 
 
 
-##### Terminate `⎕DQ` (1)
+### Terminate `⎕DQ` (1)
 
 
 If *Action* is set to 1, the event is first processed by APL (and Windows)
@@ -122,7 +119,7 @@ is given under the description of each event type.
 
 
 
-##### Callback (function name)
+### Callback (function name)
 
 
 If *Action* is set to a character vector that specifies the name of a
@@ -159,7 +156,7 @@ ERROR`. However, the name of the missing function is reported in
 the Status Window.
 
 
-##### Asynchronous Callback (function name followed by &)
+### Asynchronous Callback (function name followed by &)
 
 
 If *Action* is set to a character vector that specifies the name of a
@@ -181,7 +178,7 @@ in this way should not return a result (because `⎕DQ` does not wait for it) an
 
 
 
-##### Execute
+### Execute
 
 
 If action code is set to a character vector whose first element is the
@@ -201,7 +198,7 @@ and then execute `FOO` without supplying an
 argument. If the function returns a result, it will be displayed in the Session.
 
 
-#### Optional Left Argument (Arg)
+## Optional Left Argument (Arg)
 
 
 If specified, *Arg* is an array whose value will be passed as the left argument to a callback function when that particular event (or events) is generated. Note that this is a constant defined when the value is assigned to the Event property.
@@ -216,7 +213,7 @@ If the callback function is defined to take an explicit left argument and *Arg* 
 
 If the callback function is defined to take an optional left argument  and *Arg* was not specified, a reference to the left argument (`⍺` for a dfn) will generate `VALUE ERROR`.
 
-#### Event Message
+### Event Message
 
 
 When a callback function is invoked by `⎕DQ`,
@@ -226,7 +223,7 @@ the corresponding event message is supplied as its right argument. The event mes
 The same event message is returned as a (shy) result by `⎕DQ` when it is terminated by an event whose Action is set to 1.
 
 
-##### Object(s)
+#### Object(s)
 
 
 The first element of the event message always identifies the object that generated the event. Other elements may identify other objects associated with the event. For example, a DragDrop event reports both the object being dropped, and the object on which it is being dropped.
@@ -237,13 +234,13 @@ Objects are identified by  *names* or *refs*. If the Event property was set usin
 for example, `'onSelect'` or `'on99'`, objects are identified by *refs*.
 This is also true if the object which generated the event has no name (i.e. was created by `⎕NEW`). Otherwise, objects are identified by their names.
 
-##### Event Type
+#### Event Type
 
 
 If, when the event type was specified it was identified by its name,  the second element of the event message will be a character vector containing that name. If it was identified by its number,  the second element of the event message will be an integer containing that number. If the event type was identified using the *onEvent* syntax, the second element of the event message will be a character vector containing the prefix `'on'` followed by the event name, even if it had been specified by number. The exception is that if the event is a user-defined event, the second element of the event message will be a character vector containing the prefix `'on'` followed by the character representation of the user-defined event number.
 
 
-#### Specifying the Event property using Assignment
+### Specifying the Event property using Assignment
 
 
 There are two ways to specify the Event property using assignment; you can
@@ -302,10 +299,7 @@ To define the action to be taken for individual events, one by one, you use the 
 name prefixed by the string `'on'`.
 
 
-
-
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
       F1.onMouseDown ← 'FOO'
 ```
@@ -537,10 +531,7 @@ future releases of Dyalog APL.
 
 You can only **generate** user-defined events under program control with `⎕NQ`.
 
-
-
-**Examples**
-
+<h4 class="example">Examples</h4>
 ```apl
      ∇ foo m
 [1]    ⎕SE.UCMD'display m'
@@ -629,10 +620,7 @@ or
 
 If you use the *onEvent* syntax with *built-in* event numbers, the effect is the same as if you had used the event name. This does not apply to user-defined events.
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 ```apl
 
       'f'⎕WC'Form'
@@ -668,7 +656,7 @@ This differs from the behaviour when you use event number normally:
 ```
 
 
-##### Callback Names
+###### Callback Names
 
 
 When you query the Event property using `⎕WG`, names of callbacks associated with events are reported exactly as they were set. When you reference the Event property, the names are reported as absolute pathnames.
@@ -708,22 +696,19 @@ When you query the Event property using `⎕WG`, names of callbacks associated w
 
 ```
 
-##### Spelling Event Names
+###### Spelling Event Names
 
 
 When using regular event names, case is unimportant. For example, the system will accept `'MouseUp'`, `'MOUSEUP'` or even `'mOuSeUp'`. When using the *onEvent* syntax, case is critical. The `'on'` must be in lower-case and the case of the event name must be spelled exactly as documented. In all cases, the event name will be reported using the documented spelling.
 
 
-##### Special Case for All events
+###### Special Case for All events
 
 
 The event number 0 and the event name `'All'`,
 are convenient shorthands to associate a particular action (such as a callback) with **all** the built-in events supported by an object.
 
-
-
-**Example**
-
+<h4 class="example">Example</h4>
 ```apl
       'f'⎕WC'Form' ('Event' 'All' 1)
       f.Event

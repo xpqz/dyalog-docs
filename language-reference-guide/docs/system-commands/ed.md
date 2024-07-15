@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Edit Object</span><span class="command">)ED nms</span></h1>
+<h1 class="heading"><span class="name">Edit Object</span> <span class="command">)ED nms</span></h1>
 
 
 
@@ -38,10 +38,7 @@ The type of a new object may be specified explicitly by preceding its name with 
 The first object named becomes the top window on the stack.  See the *Dyalog for Microsoft Windows UI Guide* or the *Dyalog for UNIX UI Guide* for details.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       )ED MYFUNCTION

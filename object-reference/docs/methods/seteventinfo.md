@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetEventInfo</span><span class="command">Method 547</span></h1>
+<h1 class="heading"><span class="name">SetEventInfo</span> <span class="command">Method 547</span></h1>
 
 
 
@@ -42,7 +42,7 @@ The argument to SetEventInfo is a 1, 2, 3 or 4-element array as follows:
 
 
 
-#### Event info
+## Event info
 
 
 *Event info*, specifies an optional help string which describes what the event does, the data type of the result (if any) and the names and data types of its arguments.
@@ -55,16 +55,13 @@ However, both the help string and the names of the parameters are optional and m
 
 
 
-#### Help ID
+## Help ID
 
 
 This is an integer value that identifies the help context id for the event within the help file associated with the HelpFile property of the [ActiveXControl](../objects/activexcontrol.md) object. The value `¯1` means that no help is provided. APL stores this information in the registry from where it may be retrieved by the host application.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 The example *Dual* ActiveXControl, that is fully described elsewhere, generates a ChangeValue1 event. This event occurs when the user moves the thumb in a TrackBar that is internal to an instance of the [ActiveXControl](../objects/activexcontrol.md).

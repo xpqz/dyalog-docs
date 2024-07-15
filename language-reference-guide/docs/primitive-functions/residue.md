@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Residue</span><span class="command">R←X|Y</span></h1>
+<h1 class="heading"><span class="name">Residue</span> <span class="command">R←X|Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ For other argument values, `R` is given by the expression `Y-X×⌊Y÷X+0=X`. Th
 `⎕CT` and `⎕DCT` are  implicit arguments of Residue.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       3 3 ¯3 ¯3|¯5 5 ¯4 4
 1 2 ¯1 ¯2

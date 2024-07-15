@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Using NEW instead of WC</span></h1>
+<h1> Using NEW instead of WC</h1>
 
 From Version 11 onwards, it is possible to use `⎕NEW` to create Instances of the built-in GUI Classes. The following function illustrates this approach using the Temperature Converter example described previously.
 ```apl

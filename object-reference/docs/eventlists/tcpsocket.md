@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> TCPSocket Events</span></h1>
+<h1> TCPSocket Events</h1>
 
 |-------------------------------------------------------|-----------------------------------------|---------------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,                |[TCPSend](../methodorevents/tcpsend.md) ,|[TCPGetHostID](../methodorevents/tcpgethostid.md) ,|

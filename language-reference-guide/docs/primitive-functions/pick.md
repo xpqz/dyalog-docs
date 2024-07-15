@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Pick</span><span class="command">R←X⊃Y</span></h1>
+<h1 class="heading"><span class="name">Pick</span> <span class="command">R←X⊃Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ Elements of `X` select from successively deeper levels in the structure of `Y`. 
 `⎕IO` is an implicit argument of Pick.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       G←('ABC' 1)('DEF' 2)('GHI' 3)('JKL' 4)
  

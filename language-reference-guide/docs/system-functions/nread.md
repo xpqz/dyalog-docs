@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Native File Read</span><span class="command">R←⎕NREAD Y</span></h1>
+<h1 class="heading"><span class="name">Native File Read</span> <span class="command">R←⎕NREAD Y</span></h1>
 
 
 
@@ -17,7 +17,7 @@ This monadic function reads data from a native file. `Y` is a 3- or 4-element in
 |`[4]`|start byte, counting from 0. If this value omitted or is `¯1` , data is read starting from the current position in the file (initially `0` ).|
 
 
-#### Notes
+## Notes
 
 
 `8 ⎕NINFO ⊃Y` can be used to report the current position of the file pointer.
@@ -33,7 +33,7 @@ If both `Y[3]` and `Y[4]` have the value `¯1`, then `⎕NREAD` reads data from 
 
 
 
-Unicode Edition: Conversion Codes
+Table: Unicode Edition: Conversion Codes
 
 
 |Value  |Number of bytes read|Result Type      |Result shape|
@@ -51,7 +51,7 @@ Unicode Edition: Conversion Codes
 
 
 
-Classic Edition: Conversion Codes
+Table: Classic Edition: Conversion Codes
 
 
 |Value|Number of bytes read|Result Type     |Result shape|
@@ -67,10 +67,7 @@ Classic Edition: Conversion Codes
 
 Note that types **80, 160** and **320** and **83** and **163** are exclusive to Dyalog APL.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 
       DATA←⎕NREAD ¯1 160 (0.5×⎕NSIZE ¯1) 0 ⍝ Unicode

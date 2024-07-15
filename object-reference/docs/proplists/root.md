@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Root Properties</span></h1>
+<h1> Root Properties</h1>
 
 |---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
 |[ChooseFont](../methodorevents/choosefont.md) ,          |[Flush](../methodorevents/flush.md) ,                    |[NameFromHandle](../methodorevents/namefromhandle.md) ,        |

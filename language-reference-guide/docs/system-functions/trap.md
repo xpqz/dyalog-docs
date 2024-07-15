@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Trap Event</span><span class="command">⎕TRAP</span></h1>
+<h1 class="heading"><span class="name">Trap Event</span> <span class="command">⎕TRAP</span></h1>
 
 
 
@@ -28,7 +28,7 @@ When an event occurs, the system searches for a trap definition for that event.�
 The ACTION code identifies the nature of the action to be taken when an associated event occurs.  Permitted codes are interpreted as follows:
 
 
-Trappable Event Codes
+Table: Trappable Event Codes {: #TrapEvents }
 
 
 |---|---|---|
@@ -105,10 +105,7 @@ Trappable Event Codes
 
 See [Programmer's Guide: "Trap Statement"](../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/trap) for an alternative 'control structured' error trapping mechanism.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕TRAP←⊂(3 4 5) 'E' 'ERROR' ⋄ ⍴⎕TRAP
 1
@@ -166,10 +163,7 @@ The 'cut-back' action is useful for returning control to a known point in the ap
 
 User-defined events may be signalled through the `⎕SIGNAL` system function.  A user-defined event (in the range 500-999) may be trapped explicitly or implicitly by the event code 0.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕TRAP←500 'E' '''USER EVENT 500 - TRAPPED'''
  

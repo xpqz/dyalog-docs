@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Image Children</span></h1>
+<h1> Image Children</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

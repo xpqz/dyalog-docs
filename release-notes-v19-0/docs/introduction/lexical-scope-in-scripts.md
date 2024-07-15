@@ -1,10 +1,10 @@
-<h1 class="heading"><span class="name"> Lexical Scope in Scripts</span></h1>
+<h1> Lexical Scope in Scripts</h1>
 
-### Historical Note
+## Historical Note
 
 Lexical scope in scripts has been part of Dyalog since the implementation of Object Oriented Programming in Version 11.0, and is only partially documented.  See [Namespace Scripts](../../../programming-reference-guide/object-oriented-programming/namespace-scripts/namespace-scripts). This section provides additional explanation and extends the discussion to Classes.
 
-### Introduction
+## Introduction
 
 Objects (Namespaces and Classes) that are defined using scripts, either in the workspace or in script files, may include nested objects (sub-namespaces and sub-classes). If so, Dyalog applies a form of lexical scope to all these objects to allow them to reference one another. Dyalog otherwise uses dynamic scope  – see [https://en.wikipedia.org/wiki/Scope_(computer_science](https://en.wikipedia.org/wiki/Scope_(computer_science))[)](https://en.wikipedia.org/wiki/Scope_(computer_science)).
 
@@ -90,7 +90,7 @@ Andy cannot see NameAsVariable
 
 ```
 
-### Variant Options for `⎕FIX`
+## Variant Options for `⎕FIX`
 
 Despite the essential benefits of lexical scope, there are circumstances in which it is undesirable and `⎕FIX`  provides fine control over the insertion of references. See [InjectReferences Option](../language-reference-changes/fix.md).
 

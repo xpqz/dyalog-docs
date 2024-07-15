@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">CMap</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">CMap</span> <span class="command">Property</span></h1>
 
 
 
@@ -50,7 +50,7 @@ Note that if you are running 16 colours, MS-Windows reserves all 16 entries in t
 |16    |255 |255|255|White       |
 
 
-The default 16-colour CMap
+Table: The default 16-colour CMap
 
 
 If you are using a 256-colour set-up, the first 9 and the last 7 entries of the 256-colour CMap are the same as the first 9 and last 7 entries of the 16-colour CMap shown above. The intervening entries represent additional colours or are initially unused (0 0 0). New colours that you specify will be allocated to unused entries until the table is full.

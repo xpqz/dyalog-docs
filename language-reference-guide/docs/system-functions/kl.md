@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Key Label</span><span class="command">R←⎕KL Y</span></h1>
+<h1 class="heading"><span class="name">Key Label</span> <span class="command">R←⎕KL Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@
 
 `⎕KL` provides the information required to build device-independent help messages into applications, particularly full-screen applications using `⎕SM` and `⎕SR`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕KL 'RC'
 Right

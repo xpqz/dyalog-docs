@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SYNTAX ERROR</span><span class="command">2</span></h1>
+<h1 class="heading"><span class="name">SYNTAX ERROR</span> <span class="command">2</span></h1>
 
 
 
@@ -23,10 +23,7 @@ This report is given when a line of characters does not constitute a meaningful 
 - A dyadic operator is used with only a single operand.
 - An operator is used without any operands.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A>10)/A
 SYNTAX ERROR

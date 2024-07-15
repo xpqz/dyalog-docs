@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> StatusField Properties</span></h1>
+<h1> StatusField Properties</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

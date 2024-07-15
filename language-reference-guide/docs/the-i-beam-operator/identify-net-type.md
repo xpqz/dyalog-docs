@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Identify .NET Type</span><span class="command">R←2017⌶Y</span></h1>
+<h1 class="heading"><span class="name">Identify .NET Type</span> <span class="command">R←2017⌶Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ Returns the .NET Type of a named .NET class that is loaded in the current AppDom
 
 If the object is identified in the current AppDomain, the result `R` is its Type. If not, the function generates `DOMAIN ERROR`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕USING←'System'
       2017⌶'DateTime'

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Left</span><span class="command">R←X⊣Y</span></h1>
+<h1 class="heading"><span class="name">Left</span> <span class="command">R←X⊣Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 The result `R` is the left argument `X`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       42⊣'abc' 1 2 3
 42
@@ -25,10 +22,7 @@ The result `R` is the left argument `X`.
 Note that when `⊣` is applied using reduction, the derived function selects the first sub-array of the array along the specified dimension. This is implemented as an idiom.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⊣/1 2 3
 1

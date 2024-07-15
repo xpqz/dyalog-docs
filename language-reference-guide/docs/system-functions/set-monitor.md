@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Set Monitor</span><span class="command">{R}←X ⎕MONITOR Y</span></h1>
+<h1 class="heading"><span class="name">Set Monitor</span> <span class="command">{R}←X ⎕MONITOR Y</span></h1>
 
 
 
@@ -26,10 +26,7 @@ The effect of `⎕MONITOR` is to accumulate timing statistics for the lines for 
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       +(0,⍳10) ⎕MONITOR 'FOO'
 0 1 2 3 4 5

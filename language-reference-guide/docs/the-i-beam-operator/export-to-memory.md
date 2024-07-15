@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Export To Memory</span><span class="command">R←2100⌶Y</span></h1>
+<h1 class="heading"><span class="name">Export To Memory</span> <span class="command">R←2100⌶Y</span></h1>
 
 
 

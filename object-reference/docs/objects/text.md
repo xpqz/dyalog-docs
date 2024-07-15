@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Text</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Text</span> <span class="command">Object</span></h1>
 
 
 
@@ -93,10 +93,7 @@ specifies whether or not the Text object can be dragged by the user. The value
 of the [AutoConf](../properties/autoconf.md) property determines
 whether or not the Text object is repositioned when its parent is resized.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 Write `'A'` at (10,20)

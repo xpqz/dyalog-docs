@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ShowProperties</span><span class="command">Method 560</span></h1>
+<h1 class="heading"><span class="name">ShowProperties</span> <span class="command">Method 560</span></h1>
 
 
 

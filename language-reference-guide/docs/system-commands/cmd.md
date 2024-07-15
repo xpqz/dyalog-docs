@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Windows Command Processor</span><span class="command">)CMD cmd</span></h1>
+<h1 class="heading"><span class="name">Windows Command Processor</span> <span class="command">)CMD cmd</span></h1>
 
 
 
@@ -16,10 +16,7 @@ The system functions [`⎕SH`](../system-functions/execute-unix-command.md) and 
 
 Note that under Windows, you may not execute `)CMD` without a command.  If you wish to, you can easily open a new Command Prompt window outside APL.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
      )cmd dir
  Volume in drive C is OS
@@ -40,10 +37,7 @@ Note that under Windows, you may not execute `)CMD` without a command.  If you 
 
 If **cmd** issues prompts and expects user input, it is **ESSENTIAL** to explicitly redirect input and output to the console.  If this is done, APL detects the presence of a "`>`" in the command line and runs the command processor in a visible window and does not direct output to the pipe.  If you fail to do this your system will appear to hang because there is no mechanism for you to receive or respond to the prompt.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       )CMD DATE <CON >CON
 ```
@@ -58,7 +52,7 @@ Enter new date (dd-mm-yy): 20-07-95
 
 (Command Prompt window disappears)
 
-#### Implementation Notes
+## Implementation Notes
 
 
 The argument of )`CMD` is simply passed to the appropriate command processor for execution and its output is received using an *unnamed pipe*.
@@ -69,7 +63,7 @@ By default, `)CMD` will execute the string `('cmd.exe /c',Y)` where `Y` is the a
 
 Before execution, the argument is prefixed and postfixed with strings defined by the APL parameters CMD_PREFIX and CMD_POSTFIX. The former specifies the name of your command processor and any parameters that it requires. The latter specifies a string which may be required. If CMD_PREFIX is not defined, it defaults to the name defined by the environment variable COMSPEC followed by "\c".  If COMSPEC is not defined, it defaults to COMMAND.COM or CMD.EXE as appropriate. If CMD_POSTFIX is not defined, it defaults to an empty vector.
 
-#### Note
+## Note
 
 
 This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.

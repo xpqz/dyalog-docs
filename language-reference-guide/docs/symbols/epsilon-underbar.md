@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Epsilon Underbar</span><span class="command">⍷</span></h1>
+<h1 class="heading"><span class="name">Epsilon Underbar</span> <span class="command">⍷</span></h1>
 
 
 
 Monadic Epsilon Underbar is not defined
 
-##### Dyadic Epsilon Underbar means
+## Dyadic Epsilon Underbar means
 
 
 [Find](../primitive-functions/find.md)

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Atop</span><span class="command">{R}←{X}f⍤gY</span></h1>
+<h1 class="heading"><span class="name">Atop</span> <span class="command">{R}←{X}f⍤gY</span></h1>
 
 
 
@@ -21,10 +21,7 @@ The derived function is equivalent to `fgY` or `fXgY` and need not return a resu
 
 The Atop operator allows functions to be *glued* together to build up more complex functions. For further information, see [Function Composition](./operator-syntax.md).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       -⍤÷ 4      ⍝ (  f⍤g y) ≡  f   g y

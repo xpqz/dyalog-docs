@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Remove Loaded File Object Info</span><span class="command">R←5178⌶Y</span></h1>
+<h1 class="heading"><span class="name">Remove Loaded File Object Info</span> <span class="command">R←5178⌶Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ The editor may be used to edit Dyalog script files (*.dyalog* files) and general
 
 Note that the workspace object itself remains in the workspace; just the information about its associated file is removed.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       dyalog←2 ⎕NQ '.' 'GetEnvironment' 'DYALOG' 

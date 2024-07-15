@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> NetControl Children</span></h1>
+<h1> NetControl Children</h1>
 
 |--------------------------------------|--------------------------------------|----------------------------|
 |[NetClient](../objects/netclient.md) ,|[OLEClient](../objects/oleclient.md) ,|[Timer](../objects/timer.md)|

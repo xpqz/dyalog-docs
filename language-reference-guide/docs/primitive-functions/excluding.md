@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Excluding</span><span class="command">R←X~Y</span></h1>
+<h1 class="heading"><span class="name">Excluding</span> <span class="command">R←X~Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ Elements of `X` and `Y` are considered the same if `X≡Y` returns 1 for those e
 
 `⎕CT` and `⎕DCT` are  implicit arguments of Excluding. Excluding is also known as Without.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       'HELLO'~'GOODBYE'
 HLL

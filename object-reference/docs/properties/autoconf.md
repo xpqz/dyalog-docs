@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">AutoConf</span><span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">AutoConf</span> <span class="command">Property</span></h1>
 
 
 
@@ -35,7 +35,7 @@ If AutoConf is 0 or 1 and the object is resized, either by its parent or directl
 
 If AutoConf is 2 or 3 and the object is resized, either by its parent or directly by the user, it propagates a [Configure](../methodorevents/configure.md) (31) Event to each of its children. By default this means that the object's children will be physically reconfigured so that they maintain their relative positions and sizes within it. If their co-ordinate system is `'Pixel'`, the values of their [Posn](posn.md) and [Size](size.md) properties will change as a result.
 
-#### Note
+## Note
 
 
 Additional or alternative control may be imposed by inhibiting the [Configure](../methodorevents/configure.md) (31) Event. This can be done either by setting the event's "action" code to `¯1` or by returning a 0 from a callback function attached to it.

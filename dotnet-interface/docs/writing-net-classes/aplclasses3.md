@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 3</span></h1>
+<h1> Example 3</h1>
 
 The correct .NET behaviour when an APL function fails with an error is to *throw an exception*, and this example shows how to do it.
 
@@ -32,7 +32,7 @@ Load `aplclasses3.dws` and export  `aplclasses3.dll` as before.
 
 ![aplclasses3_2](../img/aplclasses3-2.png)
 
-### program.cs
+## program.cs
 
 The following C# source, called `aplclasses2\Framework\program.cs`,  contains code to catch the exception and to display the exception message.
 ```apl

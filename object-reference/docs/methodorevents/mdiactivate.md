@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">MDIActivate</span><span class="command">Event 42</span></h1>
+<h1 class="heading"><span class="name">MDIActivate</span> <span class="command">Event 42</span></h1>
 
 
 

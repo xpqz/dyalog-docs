@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">RTFPrint</span><span class="command">Method 461</span></h1>
+<h1 class="heading"><span class="name">RTFPrint</span> <span class="command">Method 461</span></h1>
 
 
 

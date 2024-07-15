@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Drop with Axes</span><span class="command">R←X↓[K]Y</span></h1>
+<h1 class="heading"><span class="name">Drop with Axes</span> <span class="command">R←X↓[K]Y</span></h1>
 
 
 
@@ -25,10 +25,7 @@ The size of each axis of `R` is determined by the corresponding element of `X`:
 ```
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕←M←2 3 4⍴⍳24
  1  2  3  4

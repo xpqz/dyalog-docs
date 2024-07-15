@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ClickComment</span><span class="command">Method 225</span></h1>
+<h1 class="heading"><span class="name">ClickComment</span> <span class="command">Method 225</span></h1>
 
 
 

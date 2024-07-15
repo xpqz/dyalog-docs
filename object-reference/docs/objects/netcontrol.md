@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">NetControl</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">NetControl</span> <span class="command">Object</span></h1>
 
 
 

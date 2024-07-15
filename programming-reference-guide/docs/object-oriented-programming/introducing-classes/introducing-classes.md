@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introducing Classes</span></h1>
+<h1> Introducing Classes</h1>
 
 A Class is a blueprint from which one or more *Instances* of the Class can be created (instances are sometimes also referred to as *Objects).*
 
@@ -14,6 +14,6 @@ Members may be defined to be Private or Public. A Public member may be used or a
 
 Although Classes are generally used as blueprints for the creation of instances, a class can have Shared members which can be used without first creating an instance.
 
-### Class Names
+## Class Names
 
 Class names must adhere to the general rules for naming APL objects, and in addition should not conflict with the name of a .NET Type that is defined in any of the .NET Namespaces on the search path specified by  `⎕USING`.

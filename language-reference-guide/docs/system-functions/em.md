@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Event Message</span><span class="command">R←⎕EM Y</span></h1>
+<h1 class="heading"><span class="name">Event Message</span> <span class="command">R←⎕EM Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ If `Y` refers to an undefined error code "`n`", the event message returned is "`
 
 See ["APL Error Messages"](../../../programming-reference-guide/error-messages/apl-errors)
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ⎕EM 11
 DOMAIN ERROR

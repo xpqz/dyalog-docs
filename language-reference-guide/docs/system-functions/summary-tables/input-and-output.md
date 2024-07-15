@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Input and Output</span></h1>
+<h1> Input and Output</h1>
 
 |Name     |Description           |
 |---------|----------------------|

@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Comma</span><span class="command">,</span></h1>
+<h1 class="heading"><span class="name">Comma</span> <span class="command">,</span></h1>
 
 
-##### Monadic Comma means
+## Monadic Comma means
 
 
 [Ravel
@@ -37,7 +37,7 @@ B
 C
 ```
 
-##### Dyadic Comma means
+## Dyadic Comma means
 
 
 [Catenate/Laminate

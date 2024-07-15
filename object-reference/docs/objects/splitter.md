@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Splitter</span><span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Splitter</span> <span class="command">Object</span></h1>
 
 
 
@@ -59,7 +59,7 @@ When the user depresses the mouse button, the Splitter generates a [StartSplit](
 
 Note that the objects named by [SplitObj1](../properties/splitobj1.md) and [SplitObj2](../properties/splitobj2.md) and any sub-objects they contain will generate Configure events when they are resized by the Splitter.
 
-#### Alignment
+## Alignment
 
 
 The [Align](../properties/align.md) property specifies how a Splitter behaves when its parent is resized and may be `'None'`, `'Left'`, `'Right'`, `'Top'` or `'Bottom'`.
@@ -73,7 +73,7 @@ Any other value of [Align](../properties/align.md) attaches the Splitter to the 
 
 Like the [Style](../properties/style.md) property, [Align](../properties/align.md) may be set only when the object is created with `⎕WC` and may not subsequently be changed using `⎕WS`.
 
-#### Using Multiple Splitters
+## Using Multiple Splitters
 
 
 If you want to divide a Form into more than 2 resizable panes, there are two possible approaches, each with its own different characteristics.
@@ -99,7 +99,7 @@ Using the non-hierarchical approach, horizontal and vertical Splitters may be co
 
 Notice that in this example, with the exception of the last Splitter `F.S4`, it is necessary only to specify the [SplitObj1](../properties/splitobj1.md) property for each of the Splitters. The reason is that the first four Splitters only manage one object *directly*. For example, the object to the right of `F.S1` is in fact a horizontal Splitter `F.S2`. Dragging `F.S1` changes the length of `F.S2` which in turn changes the width of `F.E2`. and `F.E3`.
 
-#### Colliding Splitters
+## Colliding Splitters
 
 
 If you have two or more vertical Splitters or two or more horizontal Splitters in the same parent object, it is possible for the user to make the Splitters *collide*. This can occur by dragging one of the Splitters into the other, or, unless both Splitters have Align set to `'None'`, by shrinking the parent.

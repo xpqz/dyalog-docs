@@ -20,12 +20,12 @@ If *Native Look and Feel* is enabled, Windows loads the latest version of `comct
 
 **The Dyalog for Microsoft Windows Object Reference Guide identifies which features require Native Look and Feel to be enabled. It documents the typical appearance of controls with Native Look and Feel disabled but does not specify how the appearance of controls is affected by enabling Native Look and Feel, which is in any case affected by the Visual Styles selected by the user.**
 
-#### Dyalog Session
+## Dyalog Session
 
 
 During development, both the Dyalog Session and the Dyalog APL GUI will display native style buttons, combo boxes, and other GUI components if *Native Look and Feel* is enabled. The option is provided in the *General* tab of the *Configuration* dialog.
 
-#### Applications
+## Applications
 
 
 By default *Native Look and Feel* is disabled in end-user applications. There are two ways to enable it.

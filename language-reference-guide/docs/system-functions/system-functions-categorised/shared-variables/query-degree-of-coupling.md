@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Query Degree of Coupling</span><span class="command">R←⎕SVO Y</span></h1>
+<h1 class="heading"><span class="name">Query Degree of Coupling</span> <span class="command">R←⎕SVO Y</span></h1>
 
 
 
@@ -18,10 +18,7 @@ If `Y` is a scalar, it specifies a single 1-character name.  If `Y` is a matrix,
 
 If `Y` specifies a single name, the result `R` is a 1-element vector whose value 0, 1 or 2 indicates its current degree of coupling.  If `Y` specifies more than one name, `R` is a vector whose elements indicate the current degree of coupling of the variable specified by the corresponding row in `Y`.  A value of 2 indicates that the variable is fully coupled (via a warm or hot DDE link) with a shared variable in another APL workspace, or with a DDE item in another application.  A value of 1 indicates that you have offered the variable but there is no such connection, or that the second application rejected a warm link.  In this case, a transfer of data may have taken place (via a cold link) but the connection is no longer open.  A value of 0 indicates that the name is not a shared variable.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕SVO 'X'
 2

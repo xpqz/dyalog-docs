@@ -2,10 +2,10 @@
 
 
 
-<h1 class="heading"><span class="name">Up Arrow</span><span class="command">↑</span></h1>
+<h1 class="heading"><span class="name">Up Arrow</span> <span class="command">↑</span></h1>
 
 
-##### Monadic Up Arrow means
+## Monadic Up Arrow means
 
 
 If `⎕ML<2` [Mix](../primitive-functions/mix.md)
@@ -33,7 +33,7 @@ If `⎕ML≥2` [First](../primitive-functions/disclose.md)
 
 ```
 
-##### Dyadic Up Arrow means
+## Dyadic Up Arrow means
 
 
 [Take

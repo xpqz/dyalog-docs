@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Copy Workspace</span><span class="command">)COPY {ws {nms}}</span></h1>
+<h1 class="heading"><span class="name">Copy Workspace</span> <span class="command">)COPY {ws {nms}}</span></h1>
 
 
 
@@ -19,10 +19,7 @@ If the list of names is excluded, all defined objects (including namespaces) are
 If the workspace name identifies a valid, readable workspace, the system reports the workspace name, "`saved`" and the date and time when the workspace was last saved.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )COPY WS/UTILITY
 WS/UTILITY saved Mon Nov  1 13:11:19 1992
@@ -56,7 +53,7 @@ If the list of names is included, the names of system variables may also be incl
 
 If an object is not found in the stored workspace, the system reports `not found` followed by the name of the object.
 
-#### Dependent Objects
+## Dependent Objects
 
 
 If the list of names includes the name of:
@@ -85,15 +82,12 @@ If you copy a Class without copying its Base Class, the Class can be used (it wi
 
 In the latter case, the invisible copy which was brought in by `)COPY` will now disappear, since there are no longer any references to it - and if these two Base Classes were different, the behaviour of the derived Class will change (and any changes made to the invisible Base Class since it was copied will be lost).
 
-#### Referenced Objects
+## Referenced Objects
 
 
 If you copy a Class or a namespace that is referenced by a Class as its Base Class or via a `:Include` statement, the referring Class will continue to refer to the original definition of the copied name which will be retained for that purpose. The Class can be made to refer to the copied definition of that name by refixing it.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 
 
 The current workspace has a class named `pete` whose Base class is called `base`.
@@ -135,15 +129,12 @@ Copied  1
 
 ```
 
-#### Copying Objects from Session Files
+## Copying Objects from Session Files
 
 
 You may also copy objects from session (.dse) files, although with certain restrictions.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
         )copy C:\Users\Pete\Desktop\pete.dse ⎕SE.UCMD
 C:\Users\Pete\Desktop\pete.dse saved Wed Oct 14 ...
@@ -154,10 +145,7 @@ C:\Users\Pete\Desktop\pete.dse saved Wed Oct 14 ...
 - You can copy any namespace without GUI from a saved `⎕SE`, no matter what you current namespace is.
 - You can copy any namespace with GUI from a saved `⎕SE` as long as your current namespace is the same as the parent namespace of the namespace you are trying to copy
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 In the following example, the *not copied* cases occur because the current namespace is not an appropriate parent for the object in question.

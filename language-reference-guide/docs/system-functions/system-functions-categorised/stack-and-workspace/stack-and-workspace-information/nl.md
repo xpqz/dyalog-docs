@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Name List</span><span class="command">R←{X}⎕NL Y</span></h1>
+<h1 class="heading"><span class="name">Name List</span> <span class="command">R←{X}⎕NL Y</span></h1>
 
 
 
@@ -23,10 +23,7 @@ If `X` is supplied, `R` contains only those names which begin with any character
 
 If an element of `Y` is an integer, the names of all of the corresponding sub-name-classes are included in `R`. For example, if `Y` contains the value 2, the names of all variables (name-class 2.1), fields (2.2), properties (2.3) and external or shared variables (2.6) are obtained. Otherwise, only the names of members of the corresponding sub-name-class are obtained.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⎕NL 2 3
@@ -53,7 +50,7 @@ V
 
 `⎕NL` can also be used to explore Dyalog GUI Objects, .NET types and COM objects.
 
-##### Dyalog GUI Objects
+### Dyalog GUI Objects
 
 
 `⎕NL` may be used to obtain lists of the Methods, Properties and Events provided by Dyalog APL GUI Objects.
@@ -70,7 +67,7 @@ V
 Close  Create  DragDrop  Configure  ContextMenu  DropFiles  DropObjects  Expose  Help ...
 ```
 
-##### .NET Classes (Types)
+### .NET Classes (Types)
 
 
 `⎕NL` can be used to explore .NET types.
@@ -135,7 +132,7 @@ Fixed3D  FixedDialog  FixedSingle  FixedToolWindow  None  Sizable  SizableToolWi
 
 
 
-##### COM Objects
+### COM Objects
 
 
 Once a reference to a COM object has been obtained, `⎕NL` may be used to obtain lists of its Methods, Properties and Events.

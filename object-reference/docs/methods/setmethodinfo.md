@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetMethodInfo</span><span class="command">Method 556</span></h1>
+<h1 class="heading"><span class="name">SetMethodInfo</span> <span class="command">Method 556</span></h1>
 
 
 

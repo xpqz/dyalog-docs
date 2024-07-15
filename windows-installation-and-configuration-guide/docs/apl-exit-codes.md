@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> APL Exit Codes</span></h1>
+<h1> APL Exit Codes</h1>
 
 When APL or a bound .EXE terminates, it returns an exit code to the calling environment. If APL is started from a desktop icon, the return code is ignored. However, if APL is started from a script (UNIX) or a command processor, the exit code is available and may be used to determine whether or not to continue with other processing tasks. The return codes are:
 
@@ -16,7 +16,7 @@ When APL or a bound .EXE terminates, it returns an exit code to the calling envi
 |10 |CEF sub-process crash - something has gone unexpectedly wrong with either the HTMLRenderer or CEF sub-processes and cannot continue                                             |
 |11 |Cannot create c-stack (macOS only)                                                                                                                                              |
 
-### Notes
+## Notes
 
 Under UNIX exit codes greater than 127 indicates (127+signal number) of the untrapped signal which caused the process to terminate.
 

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Divide</span><span class="command">R←X÷Y</span></h1>
+<h1 class="heading"><span class="name">Divide</span> <span class="command">R←X÷Y</span></h1>
 
 
 
@@ -15,10 +15,7 @@ If `⎕DIV=0` and `Y=0` then if `X=0`, the result of `X÷Y` is 1; if `X≠0` the
 
 If `⎕DIV=1` and `Y=0`, the result of `X÷Y` is `0` for all values of `X`.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       2 0 5÷4 0 2
 0.5 1 2.5

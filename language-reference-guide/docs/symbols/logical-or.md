@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Logical Or</span><span class="command">∨</span></h1>
+<h1 class="heading"><span class="name">Logical Or</span> <span class="command">∨</span></h1>
 
 
 
 Monadic Logical Or is not defined.
 
-##### Dyadic Logical Or means
+## Dyadic Logical Or means
 
 
 [Greatest Common Divisor (Or)](../primitive-functions/or-greatest-common-divisor.md)

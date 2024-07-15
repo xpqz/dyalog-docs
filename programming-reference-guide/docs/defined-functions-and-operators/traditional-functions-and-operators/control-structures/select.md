@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Select Statement</span><span class="command">:Select aexp</span></h1>
+<h1 class="heading"><span class="name">Select Statement</span> <span class="command">:Select aexp</span></h1>
 
 
 
@@ -32,10 +32,7 @@ Instead of a `:Case` statement, you may also use a `:CaseList` statement.  If s
 
 Note also that any code placed between the `:Select` and the first `:Case` or `:CaseList` statements are unreachable; future versions of Dyalog APL may generate an error when attempting to fix functions which include such code.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
 [1]   :Select ?6 6
 [2]   :Case 6 6

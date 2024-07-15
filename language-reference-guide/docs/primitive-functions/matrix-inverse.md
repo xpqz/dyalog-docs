@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Matrix Inverse</span><span class="command">R←⌹Y</span></h1>
+<h1 class="heading"><span class="name">Matrix Inverse</span> <span class="command">R←⌹Y</span></h1>
 
 
 
@@ -16,10 +16,7 @@
 The shape of `R` is `⌽⍴Y`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       M
 2 ¯3

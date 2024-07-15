@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> BrowseBox Properties</span></h1>
+<h1> BrowseBox Properties</h1>
 
 |---------------------------------------|---------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|

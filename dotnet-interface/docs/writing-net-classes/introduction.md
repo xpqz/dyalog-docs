@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Introduction</span></h1>
+<h1> Introduction</h1>
 
 Dyalog APL allows you to build new .NET Classes, components and controls. .NET classes created by Dyalog may be hosted by any application or programming language that supports .NET.
 

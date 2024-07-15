@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 2</span></h1>
+<h1> Example 2</h1>
 
 In Example 1, we said nothing about a constructor used to create an instance of the `Primitives` class. In Example 2, we will show how this is done.
 
@@ -37,7 +37,7 @@ Using this version,  build a new .NET Assembly using *File/Export**…* as befor
 
 ![aplclasses2_2](../img/aplclasses2-2.png)
 
-### program.cs
+## program.cs
 
 The following C# source, called `aplclasses2\Framework\program.cs`, will be used to call the new version of our Dyalog.NET class.
 ```apl

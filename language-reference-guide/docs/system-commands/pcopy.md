@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Protected Copy</span><span class="command">)PCOPY {ws {nms}}</span></h1>
+<h1 class="heading"><span class="name">Protected Copy</span> <span class="command">)PCOPY {ws {nms}}</span></h1>
 
 
 
@@ -29,10 +29,7 @@ If the list of names is excluded, all global defined objects (functions and vari
 For further information, see ["Copy Workspace: "](../system-functions/cy.md).
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       )PCOPY WS/UTILITY
 WS/UTILITY saved Mon Nov  1 13:11:19 1993
@@ -44,7 +41,7 @@ not copied COPIED JOIN
 not found X
 ```
 
-#### Warning
+## Warning
 
 
 If a workspace full condition occurs during the execution of `)PCOPY` the state of the active workspace is unpredictable.

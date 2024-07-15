@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Stencil</span><span class="command">R←(f⌺g)Y</span></h1>
+<h1 class="heading"><span class="name">Stencil</span> <span class="command">R←(f⌺g)Y</span></h1>
 
 
 
@@ -29,10 +29,7 @@ The first rectangle is centred on the first element of `Y` preceded by the appro
 `f` is invoked dyadically with a vector left argument indicating for each axis the number of fill elements and on what side; positive values mean that the padding precedes the array values,
 negative values mean that the padding follows the array values.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       {⊂⍺ ⍵}⌺3 3⊢3 3⍴⍳12
 ┌────────────┬────────────┬─────────────┐
@@ -74,10 +71,7 @@ In order for the first element of `Y` (1) to be centred, the first rectangle is 
 
 Another way to think about the way Stencil operates is that it portions the array into sections or neighbourhoods in which elements can be analysed with respect to their immediate neighbours. Stencil  has uses in image processing applications.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       {⊂⍺ ⍵}⌺(3 3,[.5]2)⊢3 3⍴⍳12
 ┌────────────┬─────────────┐
@@ -144,7 +138,7 @@ Another way to think about the way Stencil operates is that it portions the arra
 
 You can see that the result identifies where there are clusters in `y`.
 
-#### Examples (odd rectangle, movement not 1)
+## Examples (odd rectangle, movement not 1)
 
 
 If the movement is greater than one, corresponding portions are skipped as shown below.
@@ -176,15 +170,12 @@ If the movement is greater than one, corresponding portions are skipped as shown
 
 ```
 
-#### Even Rectangle Size
+## Even Rectangle Size
 
 
 For even rectangle sizes, the "middle" consists of two elements which are moved according to the movement parameter (equal to 1 in these examples).
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕←s←{⊂⍵}⌺ 2 ⍳8
 ┌───┬───┬───┬───┬───┬───┬───┐
@@ -221,7 +212,7 @@ For even rectangle sizes, the "middle" consists of two elements which are moved 
 
 ```
 
-#### Examples (even rectangle, movement not 1)
+## Examples (even rectangle, movement not 1)
 ```apl
       {⊂⍵}⌺(⍪4 2) ⍳8
 ┌───────┬───────┬───────┬───────┐

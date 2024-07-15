@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Create .NET Delegate</span><span class="command">R←2016⌶Y</span></h1>
+<h1 class="heading"><span class="name">Create .NET Delegate</span> <span class="command">R←2016⌶Y</span></h1>
 
 
 
@@ -20,10 +20,7 @@
 The result `R` is a ref to an instance of a .NET type specified by the first element of `Y`, which internally is associated with the function identified by the second element of `Y`.
 
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ∇foo∇
      ∇ foo(ev arg)

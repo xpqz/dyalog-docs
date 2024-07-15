@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ToolButton Properties</span></h1>
+<h1> ToolButton Properties</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

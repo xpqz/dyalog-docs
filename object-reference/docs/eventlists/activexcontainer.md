@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> ActiveXContainer Events</span></h1>
+<h1> ActiveXContainer Events</h1>
 
 |---------------------------------------|-----------------------------------------------------------|------|
 |[Detach](../methodorevents/detach.md) ,|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&nbsp;|

@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">I-Beam</span><span class="command">R←{X}(A⌶)Y</span></h1>
+<h1 class="heading"><span class="name">I-Beam</span> <span class="command">R←{X}(A⌶)Y</span></h1>
 
 
 

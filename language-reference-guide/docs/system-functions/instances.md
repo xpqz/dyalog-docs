@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Instances</span><span class="command">R←⎕INSTANCES Y</span></h1>
+<h1 class="heading"><span class="name">Instances</span> <span class="command">R←⎕INSTANCES Y</span></h1>
 
 
 
@@ -17,10 +17,7 @@ If `Y` is a reference to a Class, `R` is a vector of references to all existing 
 
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 
 
 This example illustrates a simple inheritance tree or Class hierarchy. There are 3 Classes, namely:

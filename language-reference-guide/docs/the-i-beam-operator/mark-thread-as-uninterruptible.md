@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Mark Thread as Uninterruptible</span><span class="command">R←2503⌶Y</span></h1>
+<h1 class="heading"><span class="name">Mark Thread as Uninterruptible</span> <span class="command">R←2503⌶Y</span></h1>
 
 
 

@@ -1,12 +1,12 @@
-<h1 class="heading"><span class="name"> Unicode Edition Keyboard</span></h1>
+<h1> Unicode Edition Keyboard</h1>
 
-### Introduction
+## Introduction
 
 Unicode Edition supports the use of standard Windows keyboards that have the additional capability to generate APL characters when the user presses Ctrl, Alt, AltGr (or some other combination of meta keys) in combination with the normal character keys.
 
 Dyalog APL is supplied with the Dyalog Unicode IME keyboard for a range of different languages as listed below.  The intention is that only APL characters and characters that appear in locations different from the underlying keyboard are defined; any other keystroke is passed through *as is*.
 
-### Installation
+## Installation
 
 During the Installation of Dyalog APL Unicode Edition, setup installs the Dyalog Unicode IME (IME). For any given Input Language the IME consists of an additional service for that Input Language, and a translate table which maps keystrokes for the appropriate keyboard to Unicode code points for APL characters
 

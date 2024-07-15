@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">SetWizard</span><span class="command">Event 365</span></h1>
+<h1 class="heading"><span class="name">SetWizard</span> <span class="command">Event 365</span></h1>
 
 
 

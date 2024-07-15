@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> PropertySheet Methods</span></h1>
+<h1> PropertySheet Methods</h1>
 
 |-----------------------------------------------------|-----------------------------------------------------|---------------------------------------------|
 |[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,      |[SetWizard](../methodorevents/setwizard.md) ,|

@@ -2,13 +2,13 @@
 
 
 
-<h1 class="heading"><span class="name">Equal Sign</span><span class="command">=</span></h1>
+<h1 class="heading"><span class="name">Equal Sign</span> <span class="command">=</span></h1>
 
 
 
 Monadic Equal Sign is not defined
 
-##### Dyadic Equal Sign means
+## Dyadic Equal Sign means
 
 
 [Equal To](../primitive-functions/equal.md)

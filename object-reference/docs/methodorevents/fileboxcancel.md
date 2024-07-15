@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">FileBoxCancel</span><span class="command">Event 72</span></h1>
+<h1 class="heading"><span class="name">FileBoxCancel</span> <span class="command">Event 72</span></h1>
 
 
 

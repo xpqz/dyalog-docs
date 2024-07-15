@@ -1,8 +1,8 @@
-<h1 class="heading"><span class="name"> Output Tab (Classic Edition Only)</span></h1>
+<h1> Output Tab (Classic Edition Only)</h1>
 
 ![configuration dialog output tab](../../img/configuration-dialog-output-tab.png)
 
-Configuration dialog: Output
+Table: Configuration dialog: Output
 
 |Label                   |Parameter                                             |Description                                                        |
 |------------------------|------------------------------------------------------|-------------------------------------------------------------------|

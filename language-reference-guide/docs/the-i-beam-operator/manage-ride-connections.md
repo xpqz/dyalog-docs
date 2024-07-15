@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Manage RIDE Connections</span><span class="command">R←3502⌶Y</span></h1>
+<h1 class="heading"><span class="name">Manage RIDE Connections</span> <span class="command">R←3502⌶Y</span></h1>
 
 
 
@@ -56,7 +56,7 @@ It is therefore possible to override the **RIDE_INIT** variable in the developme
 And similarly for altering the RIDE settings in an active APL session.
 
 
-#### Notes
+## Notes
 
 
 In 14.1 and earlier `3502⌶⍬` was used to enable RIDE; this value is still valid, albeit deprecated: code should call `3502⌶1` instead.

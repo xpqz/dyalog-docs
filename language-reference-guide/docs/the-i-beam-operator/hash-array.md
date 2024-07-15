@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Hash Array</span><span class="command">R←{X}1500⌶Y</span></h1>
+<h1 class="heading"><span class="name">Hash Array</span> <span class="command">R←{X}1500⌶Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ If `X` is 1, the result `R` returns an indication of whether `Y` has been marked
 If `X` is 2, the result `R` is the unhashed form of `Y`.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       R←1500⌶1 2 3    ⍝ R is marked for hashing
@@ -60,10 +57,7 @@ If `R` is a hashed array then certain forms of modified assignment will preserve
       R↓⍨←Y   ⍝ only for negative singleton Y
 ```
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       R←1500⌶1 2 3 ⍝ R is hashed
 

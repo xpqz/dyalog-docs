@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Assignment (Indexed Modified)</span><span class="command">{R}←X[I]f←Y</span></h1>
+<h1 class="heading"><span class="name">Assignment (Indexed Modified)</span> <span class="command">{R}←X[I]f←Y</span></h1>
 
 
 
@@ -19,10 +19,7 @@ The operator loops through the indices specified by `I` in ravel order. For each
 
 `R` is the "pass-through" value, that is, the value of `Y`.  If the result of the derived function is not assigned or used, there is no explicit result.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       A
 1 2 3 4 5
@@ -42,10 +39,7 @@ The operator loops through the indices specified by `I` in ravel order. For each
 
 As the operator performs a loop, if an index in `I` is repeated, function `f` will be applied that number of times and successively to the same item of `X`.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       B←3 5⍴0
       B[1 1 3;1 3 3 5]+←1

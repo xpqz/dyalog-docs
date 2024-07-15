@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> :Attribute Statement</span></h1>
+<h1> :Attribute Statement</h1>
 
 ```apl
 :Attribute <Name> [ConstructorArgs]
@@ -13,7 +13,7 @@ Attributes are descriptive tags that provide additional information about progra
 |`Name`           |The name of a .NET attribute                    |
 |`ConstructorArgs`|Optional arguments for the Attribute constructor|
 
-**Example**
+<h2 class="example">Example</h2>
 
 The following Class has `SerializableAttribute` and `CLSCompliantAttribute` attributes attached to the Class as a whole, and `ObsoleteAttribute` attributes attached to Methods `foo` and `goo` within it.
 ```apl

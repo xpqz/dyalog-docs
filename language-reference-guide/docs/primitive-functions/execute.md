@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Execute</span><span class="command">R←{X}⍎Y</span></h1>
+<h1 class="heading"><span class="name">Execute</span> <span class="command">R←{X}⍎Y</span></h1>
 
 
 
@@ -22,10 +22,7 @@ If `Y` contains a branch expression, the branch is effected in the environment f
 
 If specified, `X` must be a namespace reference or a simple character scalar or vector representing the name of a namespace in which the expression is to be executed. If `X` is omitted or is an empty character vector, the expression is executed in the current space.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
 
       ⍎'2+2'

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Image Methods</span></h1>
+<h1> Image Methods</h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

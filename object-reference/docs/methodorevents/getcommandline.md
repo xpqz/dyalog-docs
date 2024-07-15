@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">GetCommandLine</span><span class="command">Method 145</span></h1>
+<h1 class="heading"><span class="name">GetCommandLine</span> <span class="command">Method 145</span></h1>
 
 
 
@@ -21,10 +21,7 @@ The GetCommandLine method is niladic.
 
 The result is a character vector.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       GetCommandLine
 "C:\Program Files\Dyalog\Dyalog APL-64 13.2 Unicode\dyalog.exe"
@@ -34,7 +31,7 @@ The result is a character vector.
 "C:\Program Files\Dyalog\Dyalog APL-64 13.2 Unicode\dyalog.exe"
 ```
 
-#### Note
+## Note
 
 
 GetCommandLine only works on Windows, and its use is deprecated in favour of [GetCommandLineArgs](getcommandlineargs.md), which works on all platforms.

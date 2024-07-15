@@ -2,7 +2,7 @@
 
 
 
-<h1 class="heading"><span class="name">Write Text File</span><span class="command">{R}←X ⎕NPUT Y</span></h1>
+<h1 class="heading"><span class="name">Write Text File</span> <span class="command">{R}←X ⎕NPUT Y</span></h1>
 
 
 
@@ -60,10 +60,7 @@ If both `encoding` and `newline` are omitted `X` specifies only `content` and ma
 
 The shy result `R` is the number of bytes written to the file.
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       txt←'mene' 'mene' 'tekel' 'upharsin'
 
@@ -84,7 +81,7 @@ The shy result `R` is the number of bytes written to the file.
 ```
 
 
-#### NEOL Option
+## NEOL Option
 
 
 The NEOL variant option specifies how embedded line separators are treated.
@@ -97,7 +94,7 @@ The NEOL variant option specifies how embedded line separators are treated.
 |`¯1`|same as 0 except that a `newline` is not added to the last line                                              |
 
 
-#### Embedded line-separator examples
+## Embedded line-separator examples
 ```apl
       LF CR←⎕UCS 10 13
       t←'adding',LF,'3',CR,'lines',CR,LF
@@ -122,7 +119,7 @@ In the second example, none of the line endings are normalised so the written fi
 
 In the third example, all of the line endings are normalised so the written file contains lines ending with CRLF, CRLF and CRLF.
 
-#### Note
+## Note
 
 
 If two or more APL processes separately write to a file using `⎕NPUT` the behaviour is undefined. In particular, if multiple APLs use `⎕NPUT` with flags set to 2 (append), it is not guaranteed that each  `⎕NPUT` operation will be atomic and all the text written to the file will be complete and/or contiguous.

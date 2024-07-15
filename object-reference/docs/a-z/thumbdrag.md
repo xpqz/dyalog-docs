@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">ThumbDrag</span><span class="command">Event 440</span></h1>
+<h1 class="heading"><span class="name">ThumbDrag</span> <span class="command">Event 440</span></h1>
 
 
 

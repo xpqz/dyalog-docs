@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Table</span><span class="command">R←⍪Y</span></h1>
+<h1 class="heading"><span class="name">Table</span> <span class="command">R←⍪Y</span></h1>
 
 
 
@@ -12,10 +12,7 @@
 
 *Table* has been implemented according to the Extended APL Standard (*ISO/IEC 13751:2001).*
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ]display {⍵ (⍴⍵)} ⍪'a'
 ┌→──────────┐

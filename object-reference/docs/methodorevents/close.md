@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Close</span><span class="command">Event 33</span></h1>
+<h1 class="heading"><span class="name">Close</span> <span class="command">Event 33</span></h1>
 
 
 

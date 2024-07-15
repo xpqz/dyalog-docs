@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Synchronisation</span></h1>
+<h1> Synchronisation</h1>
 
 |Name     |Description         |
 |---------|--------------------|

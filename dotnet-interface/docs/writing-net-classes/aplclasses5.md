@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name"> Example 5</span></h1>
+<h1> Example 5</h1>
 
 This example takes things a stage further and illustrates how you can implement *method overloading*.
 
@@ -45,7 +45,7 @@ Load `aplclasses5.dws` and export `aplclasses5.dll` as before.
 
 ![aplclasses5_2](../img/aplclasses5-2.png)
 
-### program.cs
+## program.cs
 
 `samples\APLClasses\aplfns5.cs`contains code to invoke the three different variants of `IndexGen`, in the new `aplclasses.dll`. Notice that it uses a local sub-routine `PrintArray()`.
 ```apl

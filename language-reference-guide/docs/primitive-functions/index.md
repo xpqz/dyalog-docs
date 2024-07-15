@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Index</span><span class="command">R←X⌷Y</span></h1>
+<h1 class="heading"><span class="name">Index</span> <span class="command">R←X⌷Y</span></h1>
 
 
 
@@ -31,10 +31,7 @@ Note that index may be used with selective specification.
 `⎕IO` is an implicit argument of index.
 
 
-
-
-**Examples**
-
+<h2 class="example">Examples</h2>
 ```apl
       ⎕IO←1
  
@@ -78,15 +75,12 @@ Note that index may be used with selective specification.
 ```
 
 
-#### Indexing  Classes
+## Indexing  Classes
 
 
 If `Y` is a ref to an instance of a Class with a Default property, `⌷` is applied to the Default property. Similarly, `⌷` applied to a COM or .NET collection returns the appropriate item(s) of the collection.
 
-
-
-**Example**
-
+<h2 class="example">Example</h2>
 ```apl
       ↑⎕SRC c
 :Class c                 
