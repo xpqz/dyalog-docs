@@ -5,10 +5,10 @@ The [GolfService Example Class](golfservice-example-class.md) illustrates the us
 [GolfService](golfservice-example-class.md) contains the following nested classes, all of which are `Private`.
 
 |---|---|
-|[GolfCourse](golfcourse-class.md)|A Class that represents a Golf Course, having Fields `Code` and `Name` .|
-|[Slot](slot-class.md)|A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match.|
-|[Booking](booking-class.md)|A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class.|
-|[StartingSheet](startingsheet-class.md)|A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class.|
+|[GolfCourse](golfcourse-class.md){: .noprint }|A Class that represents a Golf Course, having Fields `Code` and `Name` .|
+|[Slot](slot-class.md){: .noprint }|A Class that represents a tee-time or match, having Fields `Time` and `Players` . Up to 4 players may play together in a match.|
+|[Booking](booking-class.md){: .noprint }|A Class that represents a reservation for a particular tee-time at a particular golf course. This has Fields `OK` , `Course` , `TeeTime` and `Message` . The value of `TeeTime` is an Instance of a Slot Class.|
+|[StartingSheet](startingsheet-class.md){: .noprint }|A Class that represents a day's starting-sheet at a particular golf course. It has Fields `OK` , `Course` , `Date` , `Slots` , `Message` . `Slots` is an array of Instances of Slot Class.|
 
 The [GolfService](golfservice-example-class.md) constructor takes the name of a file in which all the data is stored. This file is initialised by method `InitFile` if it doesn't already exist.
 ```apl
@@ -17,7 +17,7 @@ The [GolfService](golfservice-example-class.md) constructor takes the name of a 
 #.[Instance of GolfService]
 ```
 
-The [GetCourses](getcourses-method.md) method returns an array of Instances of the internal (nested) Class [GolfCourse](golfcourse-class.md). Notice how the display form of each Instance is established by the [GolfCourse](golfcourse-class.md) constructor, to obtain the output display shown below.
+The [GetCourses](getcourses-method.md){: .noprint } method returns an array of Instances of the internal (nested) Class [GolfCourse](golfcourse-class.md){: .noprint }. Notice how the display form of each Instance is established by the [GolfCourse](golfcourse-class.md){: .noprint } constructor, to obtain the output display shown below.
 ```apl
       G.GetCourses
  St Andrews(1)  Hindhead(2)  Basingstoke(3) 
@@ -31,7 +31,7 @@ All of the dates and times employ instances of the .NET type System.DateTime, an
 31/03/2006 07:00:00
 ```
 
-The [MakeBooking](makebooking-method.md) method takes between 4 and 7 parameters viz.
+The [MakeBooking](makebooking-method.md){: .noprint } method takes between 4 and 7 parameters viz.
 
 - the code for the golf course at which the reservation is required
 - the date and time of the reservation
@@ -43,7 +43,7 @@ The [MakeBooking](makebooking-method.md) method takes between 4 and 7 parameters
 - a flag to indicate whether or not the nearest available time will do
 - a list of up to 4 players who wish to book that time.
 
-The result is an Instance of the internal Class [Booking](booking-class.md). Once again, `⎕DF` is used to make the default display of these Instances meaningful. In this case, the reservation is successful.
+The result is an Instance of the internal Class [Booking](booking-class.md){: .noprint }. Once again, `⎕DF` is used to make the default display of these Instances meaningful. In this case, the reservation is successful.
 ```apl
       G.MakeBooking 2 TomorrowAt7 1 'Pete' 'Tiger'
   Hindhead(2)   31/03/2006 07:00:00   Pete  Tiger    OK 
@@ -69,7 +69,7 @@ Up to now, all bookings have been made with the tee-time flexibility flag set to
 
 ... so his reservation fails (4-player restriction).
 
-Finally the [GetStartingSheet](getstartingheet-method.md) method is used to obtain an Instance of the internal Class [StartingSheet](startingsheet-class.md) for the given course and day.
+Finally the [GetStartingSheet](getstartingheet-method.md){: .noprint } method is used to obtain an Instance of the internal Class [StartingSheet](startingsheet-class.md){: .noprint } for the given course and day.
 ```apl
       G.GetStartingSheet 2 Tomorrow
   Hindhead(2)  31/03/2006 00:00:00              

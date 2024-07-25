@@ -1,0 +1,87 @@
+ (eventnames eventtypes)←ImportMethodsAndEvents;eventfiles;event;eventfile;html;nid;names;refs;xml;name;type;number;title;ref;nm
+ eventfiles←(d.GetFiles(⊂'* MethodOrEvent.htm')).Name
+ eventfiles←({1=+/' '=⍵}¨eventfiles)/eventfiles
+ eventfiles~←'ActiveXControl MethodOrEvent.htm' 'GetCourses MethodOrEvent.htm' 'MakeBooking MethodOrEvent.htm' 'GetStartingSheet MethodOrEvent.htm'
+ eventnames←¯18↓¨eventfiles
+ EventonlineTOC←MethodonlineTOC←1 2 indent'<TocEntry'
+ EventonlineTOC,←2 2 indent'Title="Events">'
+ MethodonlineTOC,←2 2 indent'Title="Methods">'
+ eventtypes←0⍴⊂''
+ :For event :In eventnames
+     eventfile←indir,'\',event,' MethodOrEvent.htm'
+     nid←eventfile ⎕NTIE 0
+     html←⎕NREAD nid 80(⎕NSIZE nid)0
+     ⎕NUNTIE nid
+     name type number←ExtractMethodOrEventDetails html
+     eventtypes,←⊂type
+     title←name,' ',type
+     eventfile←contentdir,'MethodOrEvents\',name,'.htm'
+     xml←xmlhdr
+     xml,←1 indent'<head><title>',title,'</title>'
+     xml,←1 indent'</head>'
+     xml,←1 indent'<body>'
+
+     xml,←2 indent'<div class="h3">'
+     xml,←3 indent'<table class="h3">'
+     xml,←4 indent'<col />'
+     xml,←4 indent'<col />'
+     xml,←4 indent'<tr>'
+     xml,←5 indent'<td class="h3Left"><a name="',name,'_',type,'"></a>'
+     xml,←6 indent'<MadCap:keyword term="',name,';',type,'s:',name,'" />',name,'</td>'
+     xml,←5 indent'<td class="h3RightGUI">',type,' ',number,'</td>'
+     xml,←4 indent'</tr>'
+     xml,←3 indent'</table>'
+     xml,←2 indent'</div>'
+
+     names refs←'applies to'ExtractList html
+     refs←1↓¨refs
+     refs←(⊂'"../Objects/'),¨refs
+
+     WriteMembers(name type names refs snippetdir contentdir'MethodOrEventApplies')
+
+     :If AppliesToCutOff<⍴refs
+         xml,←2 indent'<p class="Bold" MadCap:conditions="Default.ScreenOnly"><a href="../MethodOrEventApplies/',name,'.htm" target="_popup" class="Popup">Applies To</a></p>'
+     :Else
+         xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+         xml,←3 indent'<col class="SpacedPlainTitle" />'
+         xml,←3 indent'<col />'
+         xml,←3 indent'<tr>'
+         xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+         :For nm ref :InEach names refs
+             xml,←4 indent'<td class="SpacedPlain"><a href=',ref,'>',nm,'</a></td>'
+         :EndFor
+         xml,←3 indent'</tr>'
+         xml,←2 indent'</table>'
+     :EndIf
+
+     xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.PrintOnly">'
+     xml,←3 indent'<col class="SpacedPlainTitle" />'
+     xml,←3 indent'<col />'
+     xml,←3 indent'<tr>'
+     xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+     xml,←4 indent'<td class="SpacedPlain">'
+     xml,←5 indent'<MadCap:snippetText src="../Resources/Snippets/MethodOrEventApplies/',event,'.flsnp" />'
+     xml,←4 indent'</td>'
+     xml,←3 indent'</tr>'
+     xml,←2 indent'</table>'
+
+     xml,←2 indent'<p class="Bold">Description</p>'
+     xml,←type ExtractDescription html
+     xml,←1 indent'</body>'
+     xml,←0 indent'</html>'
+     xml WriteFile eventfile
+     ⍝ Add to TOC
+     :Select type
+     :Case 'Event'
+         EventonlineTOC,←2 2 indent'<TocEntry'
+         EventonlineTOC,←3 2 indent'Title="',name,' ',type,'"'
+         EventonlineTOC,←3 2 indent'Link="/Content/MethodOrEvents/',name,'.htm" />'
+     :Case 'Method'
+         MethodonlineTOC,←2 2 indent'<TocEntry'
+         MethodonlineTOC,←3 2 indent'Title="',name,' ',type,'"'
+         MethodonlineTOC,←3 2 indent'Link="/Content/MethodOrEvents/',name,'.htm" />'
+     :EndSelect
+     eventfile'done'
+ :EndFor
+ EventonlineTOC,←1 2 indent'</TocEntry>'
+ MethodonlineTOC,←1 2 indent'</TocEntry>'

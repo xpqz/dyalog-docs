@@ -1,4 +1,4 @@
-<h1> MsgBox Methods</h1>
+﻿# MsgBox Methods
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|[Wait](../methodorevents/wait.md)|&#160;|

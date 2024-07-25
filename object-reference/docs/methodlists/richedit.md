@@ -1,7 +1,7 @@
-<h1> RichEdit Methods</h1>
+﻿# RichEdit Methods
 
-|-------------------------------------------------|-----------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,          |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[RTFPrintSetup](../methodorevents/rtfprintsetup.md) ,|[RTFPrint](../methodorevents/rtfprint.md) ,      |
-|[FileRead](../methodorevents/fileread.md) ,      |[FileWrite](../methodorevents/filewrite.md)          |&nbsp;                                           |
+|----|----|----|
+|[Animate](../methodorevents/animate.md)|[FileWrite](../methodorevents/filewrite.md)|[RTFPrint](../methodorevents/rtfprint.md)|
+|[ChooseFont](../methodorevents/choosefont.md)|[GetFocus](../methodorevents/getfocus.md)|[RTFPrintSetup](../methodorevents/rtfprintsetup.md)|
+|[Detach](../methodorevents/detach.md)|[GetFocusObj](../methodorevents/getfocusobj.md)|[ShowSIP](../methodorevents/showsip.md)|
+|[FileRead](../methodorevents/fileread.md)|[GetTextSize](../methodorevents/gettextsize.md)|&#160;|

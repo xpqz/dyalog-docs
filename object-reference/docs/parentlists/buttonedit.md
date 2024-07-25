@@ -1,6 +1,5 @@
-<h1> ButtonEdit Parents</h1>
+﻿# ButtonEdit Parents
 
-|-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,      |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md)|&nbsp;                                         |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[SubForm](../objects/subform.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|&#160;|

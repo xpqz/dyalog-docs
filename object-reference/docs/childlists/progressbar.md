@@ -1,6 +1,7 @@
-<h1> ProgressBar Children</h1>
+﻿# ProgressBar Children
 
-|-------------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,      |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ProgressStep](../methodorevents/progressstep.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Rect](../objects/rect.md)|
+|[Circle](../objects/circle.md)|[Icon](../objects/icon.md)|[Text](../objects/text.md)|
+|[Cursor](../objects/cursor.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|&#160;|

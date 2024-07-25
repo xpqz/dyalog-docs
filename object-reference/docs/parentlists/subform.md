@@ -1,6 +1,7 @@
-<h1> SubForm Parents</h1>
+﻿# SubForm Parents
 
-|-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,      |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md)|&nbsp;                                         |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[MDIClient](../objects/mdiclient.md)|[ToolBar](../objects/toolbar.md)|
+|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[ToolControl](../objects/toolcontrol.md)|
+|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|&#160;|
+|[Group](../objects/group.md)|[TabControl](../objects/tabcontrol.md)|&#160;|

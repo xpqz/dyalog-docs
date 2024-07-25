@@ -1,4 +1,4 @@
-<h1> Font Children</h1>
+﻿# Font Children
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

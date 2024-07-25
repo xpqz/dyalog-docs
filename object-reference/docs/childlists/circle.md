@@ -1,4 +1,4 @@
-<h1> Circle Children</h1>
+﻿# Circle Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

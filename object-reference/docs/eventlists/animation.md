@@ -1,7 +1,12 @@
-<h1> Animation Events</h1>
+﻿# Animation Events
 
-|-------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[AnimOpen](../methodorevents/animopen.md) ,|[AnimClose](../methodorevents/animclose.md) ,    |[AnimPlay](../methodorevents/animplay.md) ,      |
-|[AnimStop](../methodorevents/animstop.md)  |&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[AnimStarted](../methodorevents/animstarted.md)|[Expose](../methodorevents/expose.md)|[LostFocus](../methodorevents/lostfocus.md)|
+|[AnimStopped](../methodorevents/animstopped.md)|[GesturePan](../methodorevents/gesturepan.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|
+|[Close](../methodorevents/close.md)|[GesturePressAndTap](../methodorevents/gesturepressandtap.md)|[MouseDown](../methodorevents/mousedown.md)|
+|[Configure](../methodorevents/configure.md)|[GestureRotate](../methodorevents/gesturerotate.md)|[MouseEnter](../methodorevents/mouseenter.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[GestureTwoFingerTap](../methodorevents/gesturetwofingertap.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[Create](../methodorevents/create.md)|[GestureZoom](../methodorevents/gesturezoom.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[DragDrop](../methodorevents/dragdrop.md)|[GotFocus](../methodorevents/gotfocus.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[DropFiles](../methodorevents/dropfiles.md)|[Help](../methodorevents/help.md)|[MouseWheel](../methodorevents/mousewheel.md)|
+|[DropObjects](../methodorevents/dropobjects.md)|[KeyPress](../methodorevents/keypress.md)|&#160;|

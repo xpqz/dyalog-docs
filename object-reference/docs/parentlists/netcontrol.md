@@ -1,4 +1,5 @@
 <h1> NetControl Parents</h1>
 
-|--------------------------------------|--------------------------------------|----------------------------|
-|[NetClient](../objects/netclient.md) ,|[OLEClient](../objects/oleclient.md) ,|[Timer](../objects/timer.md)|
+|------------------------------------------|--------------------------------|----------------------------|
+|[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |[Group](../objects/group.md)|
+|[PropertyPage](../objects/propertypage.md)|[SubForm](../objects/subform.md)|&nbsp;                      |

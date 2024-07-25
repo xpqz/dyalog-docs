@@ -1,6 +1,6 @@
-<h1> HTMLRenderer Events</h1>
+﻿# HTMLRenderer Events
 
-|-------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                      |[SetZoomLevel](../methodorevents/setzoomlevel.md) ,    |[GetZoomLevel](../methodorevents/getzoomlevel.md) ,|
-|[ExecuteJavaScript](../methodorevents/executejavascript.md) ,|[WebSocketClose](../methodorevents/websocketclose.md) ,|[PrintToPDF](../methodorevents/printtopdf.md) ,    |
-|[WebSocketSend](../methodorevents/websocketsend.md) ,        |[ShowDevTools](../methodorevents/showdevtools.md) ,    |[Wait](../methodorevents/wait.md)                  |
+|----|----|----|
+|[Close](../methodorevents/close.md)|[HTTPRequest](../methodorevents/httprequest.md)|[WebSocketError](../methodorevents/websocketerror.md)|
+|[Create](../methodorevents/create.md)|[LoadEnd](../methodorevents/loadend.md)|[WebSocketReceive](../methodorevents/websocketreceive.md)|
+|[DoPopup](../methodorevents/dopopup.md)|[SelectCertificate](../methodorevents/selectcertificate.md)|[WebSocketUpgrade](../methodorevents/websocketupgrade.md)|

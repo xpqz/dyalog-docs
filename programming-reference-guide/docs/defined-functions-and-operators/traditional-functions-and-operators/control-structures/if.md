@@ -8,7 +8,7 @@
 
 
 
-[Formal Definition](if-statement-definition.md)
+[Formal Definition](if-statement-definition.md){: .noprint }
 
 
 The simplest `:If` control structure is a single condition of the form:

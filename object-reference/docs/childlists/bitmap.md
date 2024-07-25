@@ -1,5 +1,7 @@
-<h1> Bitmap Children</h1>
+﻿# Bitmap Children
 
-|-----------------------------------------|-------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,  |[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md) ,  |
-|[MakePNG](../methodorevents/makepng.md) ,|[MakeGIF](../methodorevents/makegif.md) ,  |[GetTextSize](../methodorevents/gettextsize.md)|
+|----|----|----|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|
+|[Font](../objects/font.md)|[Poly](../objects/poly.md)|&#160;|
+|[Image](../objects/image.md)|[Rect](../objects/rect.md)|&#160;|

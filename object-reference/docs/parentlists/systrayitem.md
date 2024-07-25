@@ -1,4 +1,4 @@
-<h1> SysTrayItem Parents</h1>
+﻿# SysTrayItem Parents
 
-|---------------------------------------|-------------------------------------------------------|---------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[ShowBalloonTip](../methodorevents/showballoontip.md) ,|[Wait](../methodorevents/wait.md)|
+|----|----|----|
+|[Form](../objects/form.md)|[Root](../objects/root.md)|&#160;|

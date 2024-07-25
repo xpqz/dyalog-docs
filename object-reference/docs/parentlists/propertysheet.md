@@ -1,6 +1,5 @@
-<h1> PropertySheet Parents</h1>
+﻿# PropertySheet Parents
 
-|-----------------------------------------------------|-----------------------------------------------------|---------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,      |[SetWizard](../methodorevents/setwizard.md) ,|
-|[SetFinishText](../methodorevents/setfinishtext.md) ,|[CancelToClose](../methodorevents/canceltoclose.md) ,|[GetFocus](../methodorevents/getfocus.md) ,  |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,    |[Wait](../methodorevents/wait.md)                    |&nbsp;                                       |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|[SubForm](../objects/subform.md)|
+|[Form](../objects/form.md)|[Root](../objects/root.md)|[TCPSocket](../objects/tcpsocket.md)|

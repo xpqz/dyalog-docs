@@ -1,4 +1,4 @@
-<h1> Timer Events</h1>
+﻿# Timer Events
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[Timer](../methodorevents/timer.md)|

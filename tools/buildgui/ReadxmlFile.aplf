@@ -1,0 +1,21 @@
+ xml←ReadxmlFile file;nid;signature;nums
+ :Trap 22
+     nid←file ⎕NTIE 0
+     signature←3↑⎕NREAD nid 83 3 0
+     :If signature≡¯17 ¯69 ¯65 ⍝ UTF-8
+         nums←⎕NREAD nid 83(¯2+⎕NSIZE nid)3
+         xml←'UTF-8'⎕UCS{⍵+256×⍵<0}nums ⍝ Signed ints
+     :ElseIf (2↑signature)≡¯1 ¯2 ⍝ Unicode (UTF-16)
+         xml←⎕NREAD nid 160(¯1+⎕NSIZE nid)2
+     :Else ⍝ ANSI
+         '*** ANSI: ',file
+         xml←⎕NREAD nid 80(⎕NSIZE nid)0
+     :EndIf
+     ⎕NUNTIE nid
+ :Else
+     xml←''
+ :EndTrap
+
+⍝ :If GotKeepTogether xml
+⍝     GotKeepTogetherFiles,←⊂file
+⍝ :EndIf

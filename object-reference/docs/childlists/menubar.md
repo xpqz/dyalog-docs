@@ -1,4 +1,5 @@
-<h1> MenuBar Children</h1>
+﻿# MenuBar Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[MenuItem](../objects/menuitem.md)|[Timer](../objects/timer.md)|
+|[Menu](../objects/menu.md)|[Separator](../objects/separator.md)|&#160;|

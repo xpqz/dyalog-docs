@@ -1,5 +1,9 @@
-<h1> UpDown Events</h1>
+﻿# UpDown Events
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[DropObjects](../methodorevents/dropobjects.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[Configure](../methodorevents/configure.md)|[Expose](../methodorevents/expose.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[Help](../methodorevents/help.md)|[Select](../methodorevents/select.md)|
+|[Create](../methodorevents/create.md)|[MouseDown](../methodorevents/mousedown.md)|[Spin](../methodorevents/spin.md)|
+|[DragDrop](../methodorevents/dragdrop.md)|[MouseEnter](../methodorevents/mouseenter.md)|&#160;|
+|[DropFiles](../methodorevents/dropfiles.md)|[MouseLeave](../methodorevents/mouseleave.md)|&#160;|

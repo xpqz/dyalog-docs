@@ -1,0 +1,3 @@
+ txt←ni indent txt;n;i
+ n i←2↑ni,4
+ txt←(n/i⍴' '),txt,⎕AV[4 3]

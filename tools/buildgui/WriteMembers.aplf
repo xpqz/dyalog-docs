@@ -1,0 +1,41 @@
+ WriteMembers(obj members names refs snippetdir contentdir memdir);xml;nrows;r;c;i;ncols;nmembers;ref;name;snipfile;membersfile
+ snipfile←(snippetdir,memdir,'\',obj,'.flsnp')
+ membersfile←(contentdir,memdir,'\',obj,'.htm')
+ nmembers←⍴names
+ xml←xmlhdr
+ xml,←1 indent'<body>'
+ xml,←2 indent'<table class="Normal"><MadCap:keyword term="',obj,';',members,':',obj,'" />'
+ nrows←⌈(⍴refs)÷ncols←3
+ xml,←⊃,/ncols⍴⊂3 indent'<col class="GUIMember" />'
+ :For r :In ⍳nrows
+     xml,←3 indent'<tr>'
+     :For c :In ⍳ncols
+         i←c+ncols×r-1
+         :If i≤nmembers
+             ref name←i⊃¨refs names
+             xml,←4 indent'<td class="NormalPlain"><a href=',ref,' MadCap:conditions="Default.ScreenOnly" MadCap:excludeAction="unbind" target="_parent">',name,'</a>'
+             :If i<nmembers
+                 xml,←5 indent'<MadCap:snippetText src="../CommaSpace.flsnp" />'
+             :EndIf
+             xml,←4 indent'</td>'
+         :Else
+             xml,←4 indent'<td class="NormalPlain">&#160;</td>'
+         :EndIf
+     :EndFor
+     xml,←3 indent'</tr>'
+ :EndFor
+ xml,←2 indent'</table>'
+ xml,←1 indent'</body>'
+ xml,←0 indent'</html>'
+ Files,←⊂xml WriteFile snipfile
+
+ xml←xmlhdr
+ xml,←1 indent'<head><title>',obj,' ',members,'</title>'
+ xml,←1 indent'</head>'
+ xml,←1 indent'<body>'
+ xml,←2 indent'<h2><a name="',obj,'_',members,'"></a>',obj,' ',members
+ xml,←2 indent'</h2>'
+ xml,←2 indent'<MadCap:snippetBlock src="../Resources/Snippets/',memdir,'/',obj,'.flsnp" />'
+ xml,←1 indent'</body>'
+ xml,←0 indent'</html>'
+ Files,←⊂xml WriteFile membersfile

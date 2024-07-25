@@ -1,4 +1,4 @@
-<h1> Poly Methods</h1>
+﻿# Poly Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

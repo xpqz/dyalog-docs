@@ -1,6 +1,6 @@
-<h1> Printer Parents</h1>
+﻿# Printer Parents
 
-|-----------------------------------------------|-------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[Print](../methodorevents/print.md) ,|[Setup](../methodorevents/setup.md) ,                |
-|[NewPage](../methodorevents/newpage.md) ,      |[Abort](../methodorevents/abort.md) ,|[RTFPrintSetup](../methodorevents/rtfprintsetup.md) ,|
-|[GetTextSize](../methodorevents/gettextsize.md)|&nbsp;                               |&nbsp;                                               |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|[Root](../objects/root.md)|
+|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[Form](../objects/form.md)|[PropertySheet](../objects/propertysheet.md)|&#160;|

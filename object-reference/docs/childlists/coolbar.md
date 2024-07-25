@@ -1,5 +1,5 @@
-<h1> CoolBar Children</h1>
+﻿# CoolBar Children
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[CoolBand](../objects/coolband.md)|[Menu](../objects/menu.md)|&#160;|
+|[ImageList](../objects/imagelist.md)|[Timer](../objects/timer.md)|&#160;|

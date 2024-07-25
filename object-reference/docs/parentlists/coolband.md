@@ -1,4 +1,4 @@
-<h1> CoolBand Parents</h1>
+﻿# CoolBand Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[CoolBar](../objects/coolbar.md)|&#160;|&#160;|

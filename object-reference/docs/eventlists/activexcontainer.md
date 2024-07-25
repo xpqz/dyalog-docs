@@ -1,4 +1,4 @@
-<h1> ActiveXContainer Events</h1>
+﻿# ActiveXContainer Events
 
-|---------------------------------------|-----------------------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&nbsp;|
+|----|----|----|
+|[AmbientChanged](../methodorevents/ambientchanged.md)|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|

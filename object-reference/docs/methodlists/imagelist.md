@@ -1,4 +1,4 @@
-<h1> ImageList Methods</h1>
+﻿# ImageList Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

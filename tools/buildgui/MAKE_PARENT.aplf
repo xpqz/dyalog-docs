@@ -1,0 +1,17 @@
+ NAME←MAKE_PARENT OBJ;I;P
+ I←Objects⍳⊂OBJ
+ P←(ParentMap[;I])/Objects
+ :If 0=⍴,P
+     P←⊂ASK_PARENT OBJ
+ :EndIf
+ :If (OBJ≡'Root')∨(⊂'Root')∊P
+     NAME←''
+     :Return
+ :EndIf
+ :If (⊂'Form')∊P
+     NAME←,'F'
+     'F'⎕WC'Form'
+     :Return
+ :EndIf
+ NAME←MAKE_PARENT⊃P
+ NAME←NAME MAKE_INSTANCE⊃P

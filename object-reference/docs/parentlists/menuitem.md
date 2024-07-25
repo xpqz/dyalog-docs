@@ -1,4 +1,4 @@
-<h1> MenuItem Parents</h1>
+﻿# MenuItem Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Menu](../objects/menu.md)|[MenuBar](../objects/menubar.md)|&#160;|

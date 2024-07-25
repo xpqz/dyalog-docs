@@ -1,10 +1,11 @@
 <h1> Root Parents</h1>
 
-|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
-|[ChooseFont](../methodorevents/choosefont.md) ,          |[Flush](../methodorevents/flush.md) ,                    |[NameFromHandle](../methodorevents/namefromhandle.md) ,        |
-|[GreetBitmap](../methodorevents/greetbitmap.md) ,        |[GetCommandLine](../methodorevents/getcommandline.md) ,  |[GetCommandLineArgs](../methodorevents/getcommandlineargs.md) ,|
-|[GetEnvironment](../methodorevents/getenvironment.md) ,  |[ListTypeLibs](../methodorevents/listtypelibs.md) ,      |[DeleteTypeLib](../methodorevents/deletetypelib.md) ,          |
-|[SetServiceState](../methodorevents/setservicestate.md) ,|[GetServiceState](../methodorevents/getservicestate.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,              |
-|[GetFocus](../methodorevents/getfocus.md) ,              |[ShowSIP](../methodorevents/showsip.md) ,                |[GetFocusObj](../methodorevents/getfocusobj.md) ,              |
-|[IDNToDate](../methodorevents/idntodate.md) ,            |[DateToIDN](../methodorevents/datetoidn.md) ,            |[TCPGetHostID](../methodorevents/tcpgethostid.md) ,            |
-|[GetBuildID](../methodorevents/getbuildid.md) ,          |[Wait](../methodorevents/wait.md)                        |&nbsp;                                                         |
+|------------------------------------|--------------------------------------------|----------------------------------------|
+|[Bitmap](../objects/bitmap.md)      |[BrowseBox](../objects/browsebox.md)        |[Clipboard](../objects/clipboard.md)    |
+|[Cursor](../objects/cursor.md)      |[FileBox](../objects/filebox.md)            |[Font](../objects/font.md)              |
+|[Form](../objects/form.md)          |[Icon](../objects/icon.md)                  |[ImageList](../objects/imagelist.md)    |
+|[Locator](../objects/locator.md)    |[Menu](../objects/menu.md)                  |[Metafile](../objects/metafile.md)      |
+|[MsgBox](../objects/msgbox.md)      |[NetClient](../objects/netclient.md)        |[NetType](../objects/nettype.md)        |
+|[OCXClass](../objects/ocxclass.md)  |[OLEClient](../objects/oleclient.md)        |[OLEServer](../objects/oleserver.md)    |
+|[Printer](../objects/printer.md)    |[PropertySheet](../objects/propertysheet.md)|[SysTrayItem](../objects/systrayitem.md)|
+|[TCPSocket](../objects/tcpsocket.md)|[Timer](../objects/timer.md)                |[TipField](../objects/tipfield.md)      |

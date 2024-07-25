@@ -1,4 +1,5 @@
-<h1> Splitter Events</h1>
+﻿# Splitter Events
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[EndSplit](../methodorevents/endsplit.md)|[StartSplit](../methodorevents/startsplit.md)|
+|[Create](../methodorevents/create.md)|[Splitting](../methodorevents/splitting.md)|&#160;|

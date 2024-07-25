@@ -1,0 +1,27 @@
+ {format}WriteUnicodeFile(name chars);nid;signature;nums
+     ⍝ Write ANSI or Unicode character file (Windows)
+     ⍝ format = ANSI or UTF-8 or UTF-16
+ ⎕SIGNAL(~∨/80 160=⎕DR chars)/11
+ :If 0=⎕NC'format'
+     format←(80 160⍳⎕DR chars)⊃'ANSI' 'UTF-16'
+ :EndIf
+ ⎕SIGNAL(~(⊂format)∊'ANSI' 'UTF-8' 'UTF-16')/11
+ :Trap 22
+     nid←name ⎕NCREATE 0
+ :Else
+     nid←name ⎕NTIE 0
+     name ⎕NERASE nid
+     nid←name ⎕NCREATE 0
+ :EndTrap
+ :Select format
+ :Case 'ANSI'
+     chars ⎕NAPPEND nid 80
+ :Case 'UTF-8'
+     ¯17 ¯69 ¯65 ⎕NAPPEND nid 83
+     nums←⎕UCS'UTF-8'⎕UCS chars
+     nums ⎕NAPPEND nid 80
+ :Else
+     ¯1 ¯2 ⎕NAPPEND nid 83
+     chars ⎕NAPPEND nid 160
+ :EndSelect
+ ⎕NUNTIE nid

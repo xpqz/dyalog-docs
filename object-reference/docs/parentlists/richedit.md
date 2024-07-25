@@ -1,7 +1,6 @@
-<h1> RichEdit Parents</h1>
+﻿# RichEdit Parents
 
-|-------------------------------------------------|-----------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,          |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[RTFPrintSetup](../methodorevents/rtfprintsetup.md) ,|[RTFPrint](../methodorevents/rtfprint.md) ,      |
-|[FileRead](../methodorevents/fileread.md) ,      |[FileWrite](../methodorevents/filewrite.md)          |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[ToolBar](../objects/toolbar.md)|
+|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[ToolControl](../objects/toolcontrol.md)|
+|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|&#160;|

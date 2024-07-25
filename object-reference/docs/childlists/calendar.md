@@ -1,7 +1,5 @@
-<h1> Calendar Children</h1>
+﻿# Calendar Children
 
-|-------------------------------------------------|---------------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,          |[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,              |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[GetVisibleRange](../methodorevents/getvisiblerange.md) ,|[GetMinSize](../methodorevents/getminsize.md) ,  |
-|[IDNToDate](../methodorevents/idntodate.md) ,    |[DateToIDN](../methodorevents/datetoidn.md)              |&nbsp;                                           |
+|----|----|----|
+|[Cursor](../objects/cursor.md)|[Menu](../objects/menu.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[Font](../objects/font.md)|[MsgBox](../objects/msgbox.md)|[Timer](../objects/timer.md)|

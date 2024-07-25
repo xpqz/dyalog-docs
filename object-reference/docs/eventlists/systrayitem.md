@@ -1,4 +1,7 @@
-<h1> SysTrayItem Events</h1>
+﻿# SysTrayItem Events
 
-|---------------------------------------|-------------------------------------------------------|---------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[ShowBalloonTip](../methodorevents/showballoontip.md) ,|[Wait](../methodorevents/wait.md)|
+|----|----|----|
+|[BalloonHide](../methodorevents/balloonhide.md)|[Close](../methodorevents/close.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[BalloonShow](../methodorevents/balloonshow.md)|[Create](../methodorevents/create.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[BalloonTimeout](../methodorevents/balloontimeout.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|&#160;|
+|[BalloonUserClick](../methodorevents/balloonuserclick.md)|[MouseDown](../methodorevents/mousedown.md)|&#160;|

@@ -1,4 +1,4 @@
-<h1> Clipboard Children</h1>
+﻿# Clipboard Children
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

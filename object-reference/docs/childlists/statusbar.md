@@ -1,6 +1,9 @@
-<h1> StatusBar Children</h1>
+﻿# StatusBar Children
 
-|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,  |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Rect](../objects/rect.md)|
+|[BrowseBox](../objects/browsebox.md)|[Icon](../objects/icon.md)|[StatusField](../objects/statusfield.md)|
+|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Text](../objects/text.md)|
+|[Cursor](../objects/cursor.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|&#160;|
+|[FileBox](../objects/filebox.md)|[ProgressBar](../objects/progressbar.md)|&#160;|

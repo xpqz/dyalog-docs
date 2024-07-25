@@ -1,4 +1,5 @@
-<h1> Font Events</h1>
+﻿# Font Events
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[FontCancel](../methodorevents/fontcancel.md)|[Select](../methodorevents/select.md)|
+|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|&#160;|

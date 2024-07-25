@@ -1,8 +1,7 @@
-<h1> OCXClass Parents</h1>
+﻿# OCXClass Parents
 
-|-----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                    |[GetPropertyInfo](../methodorevents/getpropertyinfo.md) ,|[GetEventInfo](../methodorevents/geteventinfo.md) ,            |
-|[GetMethodInfo](../methodorevents/getmethodinfo.md) ,      |[GetTypeInfo](../methodorevents/gettypeinfo.md) ,        |[SetPropertyInfo](../methodorevents/setpropertyinfo.md) ,      |
-|[SetMethodInfo](../methodorevents/setmethodinfo.md) ,      |[ShowHelp](../methodorevents/showhelp.md) ,              |[ShowProperties](../methodorevents/showproperties.md) ,        |
-|[Browse](../methodorevents/browse.md) ,                    |[OLEAddEventSink](../methodorevents/oleaddeventsink.md) ,|[OLEDeleteEventSink](../methodorevents/oledeleteeventsink.md) ,|
-|[OLEListEventSinks](../methodorevents/olelisteventsinks.md)|&nbsp;                                                   |&nbsp;                                                         |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[ToolBar](../objects/toolbar.md)|
+|[Form](../objects/form.md)|[Root](../objects/root.md)|[ToolControl](../objects/toolcontrol.md)|
+|[Grid](../objects/grid.md)|[SubForm](../objects/subform.md)|&#160;|

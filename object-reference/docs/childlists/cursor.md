@@ -1,4 +1,4 @@
-<h1> Cursor Children</h1>
+﻿# Cursor Children
 
-|---------------------------------------|-------------------------------------------|-------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md)|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

@@ -1,6 +1,6 @@
-<h1> Form Parents</h1>
+﻿# Form Parents
 
-|-----------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md) ,|[Wait](../methodorevents/wait.md)                |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[Form](../objects/form.md)|[Root](../objects/root.md)|&#160;|
+|[OLEClient](../objects/oleclient.md)|[SubForm](../objects/subform.md)|&#160;|

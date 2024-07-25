@@ -1,4 +1,4 @@
-<h1> TabBtn Parents</h1>
+﻿# TabBtn Parents
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[TabBar](../objects/tabbar.md)|&#160;|&#160;|

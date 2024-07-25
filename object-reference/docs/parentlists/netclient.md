@@ -1,3 +1,4 @@
-<h1> NetClient Parents</h1>
+﻿# NetClient Parents
 
-|
+|----|----|----|
+|[NetType](../objects/nettype.md)|[Root](../objects/root.md)|&#160;|

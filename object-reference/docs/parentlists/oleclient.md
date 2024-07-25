@@ -1,8 +1,5 @@
-<h1> OLEClient Parents</h1>
+﻿# OLEClient Parents
 
-|-------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
-|[Browse](../methodorevents/browse.md) ,                      |[Detach](../methodorevents/detach.md) ,                        |[GetEventInfo](../methodorevents/geteventinfo.md) ,          |
-|[GetMethodInfo](../methodorevents/getmethodinfo.md) ,        |[GetPropertyInfo](../methodorevents/getpropertyinfo.md) ,      |[GetTypeInfo](../methodorevents/gettypeinfo.md) ,            |
-|[OLEAddEventSink](../methodorevents/oleaddeventsink.md) ,    |[OLEDeleteEventSink](../methodorevents/oledeleteeventsink.md) ,|[OLEListEventSinks](../methodorevents/olelisteventsinks.md) ,|
-|[OLEQueryInterface](../methodorevents/olequeryinterface.md) ,|[SetMethodInfo](../methodorevents/setmethodinfo.md) ,          |[SetPropertyInfo](../methodorevents/setpropertyinfo.md) ,    |
-|[ShowHelp](../methodorevents/showhelp.md)                    |&nbsp;                                                         |&nbsp;                                                       |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[Root](../objects/root.md)|
+|[CoolBand](../objects/coolband.md)|[OLEServer](../objects/oleserver.md)|[TCPSocket](../objects/tcpsocket.md)|

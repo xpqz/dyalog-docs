@@ -1,4 +1,5 @@
-<h1> Splitter Parents</h1>
+﻿# Splitter Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[SubForm](../objects/subform.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|&#160;|

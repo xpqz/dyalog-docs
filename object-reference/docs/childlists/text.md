@@ -1,4 +1,4 @@
-<h1> Text Children</h1>
+﻿# Text Children
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

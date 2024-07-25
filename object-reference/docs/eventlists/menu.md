@@ -1,4 +1,5 @@
-<h1> Menu Events</h1>
+﻿# Menu Events
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[DropDown](../methodorevents/dropdown.md)|&#160;|
+|[Create](../methodorevents/create.md)|[Select](../methodorevents/select.md)|&#160;|

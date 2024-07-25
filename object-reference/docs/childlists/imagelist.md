@@ -1,4 +1,5 @@
-<h1> ImageList Children</h1>
+﻿# ImageList Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Icon](../objects/icon.md)|&#160;|
+|[Cursor](../objects/cursor.md)|[Timer](../objects/timer.md)|&#160;|

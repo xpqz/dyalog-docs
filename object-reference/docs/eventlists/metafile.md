@@ -1,4 +1,4 @@
-<h1> Metafile Events</h1>
+﻿# Metafile Events
 
-|---------------------------------------|-------------------------------------------|-------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[Select](../methodorevents/select.md)|

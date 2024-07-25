@@ -44,6 +44,7 @@ If a value in `X` is positive it indicates that a time number type is expected i
 |_                      _|56|CCSDS Julian Date|Day count with fractional part|1958-01-01 00:00|Yes|
 |Decimal encoded[^9]|60|Floating-point decimal encoded format Digits take the form yyyymmdd.hhmmss|Encoded broken-down time 1s resolution|N/A|No|
 |_                 _|61|Integer decimal encoded format Digits take the form yyyymmddhhmmss(J digit time)|Encoded broken-down time 1s resolution|N/A|No|
+{: .bigtable }
 
 ## Time Stamps
 

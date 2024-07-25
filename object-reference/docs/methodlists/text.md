@@ -1,4 +1,4 @@
-<h1> Text Methods</h1>
+﻿# Text Methods
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[ChooseFont](../methodorevents/choosefont.md)|[Detach](../methodorevents/detach.md)|&#160;|

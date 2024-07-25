@@ -1,5 +1,9 @@
-<h1> TabBar Events</h1>
+﻿# TabBar Events
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[DropObjects](../methodorevents/dropobjects.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[Configure](../methodorevents/configure.md)|[Expose](../methodorevents/expose.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[Help](../methodorevents/help.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[Create](../methodorevents/create.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|[MouseWheel](../methodorevents/mousewheel.md)|
+|[DragDrop](../methodorevents/dragdrop.md)|[MouseDown](../methodorevents/mousedown.md)|[Select](../methodorevents/select.md)|
+|[DropFiles](../methodorevents/dropfiles.md)|[MouseEnter](../methodorevents/mouseenter.md)|&#160;|

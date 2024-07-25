@@ -1,4 +1,4 @@
-<h1> TabButton Events</h1>
+﻿# TabButton Events
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[Select](../methodorevents/select.md)|

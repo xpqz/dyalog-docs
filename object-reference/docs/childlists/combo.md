@@ -1,6 +1,6 @@
-<h1> Combo Children</h1>
+﻿# Combo Children
 
-|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,  |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[Circle](../objects/circle.md)|[Font](../objects/font.md)|[Rect](../objects/rect.md)|
+|[Cursor](../objects/cursor.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Timer](../objects/timer.md)|

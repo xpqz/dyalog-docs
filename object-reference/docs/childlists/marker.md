@@ -1,4 +1,4 @@
-<h1> Marker Children</h1>
+﻿# Marker Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

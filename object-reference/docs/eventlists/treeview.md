@@ -1,9 +1,15 @@
-<h1> TreeView Events</h1>
+﻿# TreeView Events
 
-|-----------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,        |[GetItemState](../methodorevents/getitemstate.md) ,  |
-|[SetItemState](../methodorevents/setitemstate.md) ,  |[AddItems](../methodorevents/additems.md) ,            |[DeleteItems](../methodorevents/deleteitems.md) ,    |
-|[AddChildren](../methodorevents/addchildren.md) ,    |[DeleteChildren](../methodorevents/deletechildren.md) ,|[GetParentItem](../methodorevents/getparentitem.md) ,|
-|[GetItemHandle](../methodorevents/getitemhandle.md) ,|[SetItemImage](../methodorevents/setitemimage.md) ,    |[ShowItem](../methodorevents/showitem.md) ,          |
-|[GetTextSize](../methodorevents/gettextsize.md) ,    |[Animate](../methodorevents/animate.md) ,              |[GetFocus](../methodorevents/getfocus.md) ,          |
-|[ShowSIP](../methodorevents/showsip.md) ,            |[GetFocusObj](../methodorevents/getfocusobj.md)        |&nbsp;                                               |
+|----|----|----|
+|[BeginEditLabel](../methodorevents/begineditlabel.md)|[FontOK](../methodorevents/fontok.md)|[KeyPress](../methodorevents/keypress.md)|
+|[Close](../methodorevents/close.md)|[GesturePan](../methodorevents/gesturepan.md)|[LostFocus](../methodorevents/lostfocus.md)|
+|[Configure](../methodorevents/configure.md)|[GesturePressAndTap](../methodorevents/gesturepressandtap.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[GestureRotate](../methodorevents/gesturerotate.md)|[MouseDown](../methodorevents/mousedown.md)|
+|[Create](../methodorevents/create.md)|[GestureTwoFingerTap](../methodorevents/gesturetwofingertap.md)|[MouseEnter](../methodorevents/mouseenter.md)|
+|[DragDrop](../methodorevents/dragdrop.md)|[GestureZoom](../methodorevents/gesturezoom.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[DropFiles](../methodorevents/dropfiles.md)|[GetTipText](../methodorevents/gettiptext.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[DropObjects](../methodorevents/dropobjects.md)|[GotFocus](../methodorevents/gotfocus.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[EndEditLabel](../methodorevents/endeditlabel.md)|[Help](../methodorevents/help.md)|[MouseWheel](../methodorevents/mousewheel.md)|
+|[Expanding](../methodorevents/expanding.md)|[ItemDblClick](../methodorevents/itemdblclick.md)|[Retracting](../methodorevents/retracting.md)|
+|[Expose](../methodorevents/expose.md)|[ItemDown](../methodorevents/itemdown.md)|[Select](../methodorevents/select.md)|
+|[FontCancel](../methodorevents/fontcancel.md)|[ItemUp](../methodorevents/itemup.md)|&#160;|

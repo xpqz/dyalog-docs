@@ -1,4 +1,4 @@
-<h1> TabButton Children</h1>
+﻿# TabButton Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

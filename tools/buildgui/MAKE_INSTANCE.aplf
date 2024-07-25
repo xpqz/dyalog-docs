@@ -1,0 +1,29 @@
+ NAME←PARENT MAKE_INSTANCE OBJ
+ NAME←PARENT,((0<⍴PARENT)/'.'),'T'
+ :Select OBJ
+ :Case 'ActiveXContainer'
+     NAME ⎕WC PARENT ⎕WG'Container'
+ :CaseList 'Bitmap' 'Icon' 'Cursor'
+     NAME ⎕WC OBJ''(32 32⍴0)
+ :Case 'Circle'
+     NAME ⎕WC OBJ(50 50)10
+ :CaseList 'Marker' 'Poly'
+     NAME ⎕WC OBJ(2 2⍴10 10 20 30)
+ :CaseList 'Rect' 'Ellipse'
+     NAME ⎕WC OBJ(10 10)(10 10)
+ :CaseList 'OCXClass' 'NetType' 'OLEClient' 'NetClient' 'NetControl'
+     NAME←''
+     :Return
+ :Case 'Font'
+     NAME ⎕WC OBJ'Arial'
+ :Case 'Image'
+     NAME ⎕WC OBJ(10 10)
+ :Case 'Root'
+     NAME←,'#'
+ :Case 'Text'
+     NAME ⎕WC OBJ'Hello World'(10 10)
+ :Case 'TCPSocket'
+     NAME ⎕WC OBJ''('LocalPort' 8081)
+ :Else
+     NAME ⎕WC OBJ
+ :EndSelect

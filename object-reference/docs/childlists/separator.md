@@ -1,4 +1,4 @@
-<h1> Separator Children</h1>
+﻿# Separator Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

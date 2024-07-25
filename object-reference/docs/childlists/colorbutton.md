@@ -1,5 +1,5 @@
 <h1> ColorButton Children</h1>
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----------------------------------------------|------------------------------------------|--------------------------------|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |
+|[Group](../objects/group.md)                  |[PropertyPage](../objects/propertypage.md)|[SubForm](../objects/subform.md)|

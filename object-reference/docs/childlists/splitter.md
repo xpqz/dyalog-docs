@@ -1,4 +1,4 @@
-<h1> Splitter Children</h1>
+﻿# Splitter Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

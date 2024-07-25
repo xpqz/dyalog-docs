@@ -1,4 +1,4 @@
-<h1> ToolButton Parents</h1>
+﻿# ToolButton Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[ToolControl](../objects/toolcontrol.md)|&#160;|&#160;|

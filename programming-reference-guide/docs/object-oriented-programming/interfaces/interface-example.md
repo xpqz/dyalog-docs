@@ -2,11 +2,11 @@
 
 The Penguin Class example illustrates the use of Interfaces to implement *multiple inheritance*.
 
-[FishBehaviour Interface](fishbehaviour-interface.md)
+[FishBehaviour Interface](fishbehaviour-interface.md){: .noprint }
 
-[BirdBehaviour Interface](birdbehaviour-interface.md)
+[BirdBehaviour Interface](birdbehaviour-interface.md){: .noprint }
 
-[Penguin Class](penguin-class.md)
+[Penguin Class](penguin-class.md){: .noprint }
 
 In this case, the `Penguin` Class derives from `Animal` but additionally supports the `BirdBehaviour` and `FishBehaviour` Interfaces, thereby inheriting members from both.
 ```apl

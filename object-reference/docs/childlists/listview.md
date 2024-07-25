@@ -1,7 +1,7 @@
-<h1> ListView Children</h1>
+﻿# ListView Children
 
-|-------------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,  |
-|[Animate](../methodorevents/animate.md) ,              |[GetFocus](../methodorevents/getfocus.md) ,        |[ShowSIP](../methodorevents/showsip.md) ,          |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,      |[GetItemState](../methodorevents/getitemstate.md) ,|[SetItemState](../methodorevents/setitemstate.md) ,|
-|[GetItemPosition](../methodorevents/getitemposition.md)|&nbsp;                                             |&nbsp;                                             |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Poly](../objects/poly.md)|
+|[Circle](../objects/circle.md)|[Icon](../objects/icon.md)|[Rect](../objects/rect.md)|
+|[Cursor](../objects/cursor.md)|[ImageList](../objects/imagelist.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|

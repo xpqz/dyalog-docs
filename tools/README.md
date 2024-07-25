@@ -1,4 +1,4 @@
-# Docker tools for Dyalog documentation authors
+# Tools for Dyalog documentation authors
 
 The `tools/` directory contains Docker-based tools for Dyalog's documentation authors. You will need a working installation of [Docker](https://www.docker.com/products/docker-desktop/). We use the `docker-compose` orchestration tool to bundle up a set of containers that are useful for documentation authors who do not wish to keep a local Python environmment.
 
@@ -78,3 +78,42 @@ DOCS_DIR=/Users/stefan/work/dyalog-docs/documentation
 CHM_OUTPUT_DIR=/Users/stefan/work/dyalog-docs/documentation/tools/project
 PDF_OUTPUT_DIR=/Users/stefan/work/dyalog-docs/documentation/tools/project
 ```
+
+## APL-based tools
+
+### BuildGUI
+
+Note:
+
+1. This code has been exported from the workspace `Core/ws/GUIMaint.dws`.
+2. The code can only be run on Windows.
+
+The main purpose of the code herein is to generate the cross-reference tables present in the `Object Reference Guide`. In
+all likelihood, this is now fairly static, but changes do still occasionally happen. The code was written a long time ago, before
+Dyalog contained, for example, `⎕XML`. There are a few other, related functions in present, but only the cross-references generation has been ported to the new format for now.
+
+The code has been left as-is, with the following exceptions:
+
+1. The workspace has been exported to text, so that it can be versioned.
+2. The function `WriteFile` now ensures that any directories not present in its path are created.
+
+Additionally, two new functions have been added:
+
+1. `NewBuildGUI`: the new entry point, serving the same purpose as `BuildGUI`, but not writing entries into a
+   Table-of-Contents file, and not writing stubbed entries of new object.
+2. `NewWriteMembers`: analogous to `WriteMembers`, creating the actual crossreference tables, but writing
+   Markdown instead of XML. This function will sort the tables it generates in col-major order. The old code generated
+   tables that were occasionally not sorted at all.
+
+To run this code, say
+
+```apl
+files ← NewBuildGUI '/some/path/to/your/chosen/dir/here'
+```
+
+Note that the old `BuildGUI` also takes a left arg 0 for "run" and 1 for "dry run". The old version was intended to
+write straight to the documentation repository, but we probably don't need to do that with the new one: write out the
+files to a fresh directory, do a diff against the existing, and integrate manually in the rare cases that something
+changed. 
+
+We don't envisage that this will need doing as part of the day-to-day documentation authoring process, but something that will be run once per major version release. 

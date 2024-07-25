@@ -1,4 +1,5 @@
-<h1> BrowseBox Events</h1>
+﻿# BrowseBox Events
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[FileBoxCancel](../methodorevents/fileboxcancel.md)|&#160;|
+|[Create](../methodorevents/create.md)|[FileBoxOK](../methodorevents/fileboxok.md)|&#160;|

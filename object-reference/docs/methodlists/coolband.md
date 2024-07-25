@@ -1,4 +1,4 @@
-<h1> CoolBand Methods</h1>
+﻿# CoolBand Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

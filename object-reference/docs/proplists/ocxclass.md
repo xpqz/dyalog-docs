@@ -1,8 +1,9 @@
-<h1> OCXClass Properties</h1>
+﻿# OCXClass Properties
 
-|-----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                    |[GetPropertyInfo](../methodorevents/getpropertyinfo.md) ,|[GetEventInfo](../methodorevents/geteventinfo.md) ,            |
-|[GetMethodInfo](../methodorevents/getmethodinfo.md) ,      |[GetTypeInfo](../methodorevents/gettypeinfo.md) ,        |[SetPropertyInfo](../methodorevents/setpropertyinfo.md) ,      |
-|[SetMethodInfo](../methodorevents/setmethodinfo.md) ,      |[ShowHelp](../methodorevents/showhelp.md) ,              |[ShowProperties](../methodorevents/showproperties.md) ,        |
-|[Browse](../methodorevents/browse.md) ,                    |[OLEAddEventSink](../methodorevents/oleaddeventsink.md) ,|[OLEDeleteEventSink](../methodorevents/oledeleteeventsink.md) ,|
-|[OLEListEventSinks](../methodorevents/olelisteventsinks.md)|&nbsp;                                                   |&nbsp;                                                         |
+|----|----|----|
+|[ChildList](../properties/childlist.md)|[HelpFile](../properties/helpfile.md)|[ToolboxBitmap](../properties/toolboxbitmap.md)|
+|[ClassID](../properties/classid.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
+|[ClassName](../properties/classname.md)|[LicenseKey](../properties/licensekey.md)|[Type](../properties/type.md)|
+|[Data](../properties/data.md)|[MethodList](../properties/methodlist.md)|[TypeList](../properties/typelist.md)|
+|[Event](../properties/event.md)|[PropList](../properties/proplist.md)|&#160;|
+|[EventList](../properties/eventlist.md)|[QueueEvents](../properties/queueevents.md)|&#160;|

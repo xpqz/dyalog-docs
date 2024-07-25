@@ -1,7 +1,5 @@
-<h1> Calendar Parents</h1>
+﻿# Calendar Parents
 
-|-------------------------------------------------|---------------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,          |[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,              |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[GetVisibleRange](../methodorevents/getvisiblerange.md) ,|[GetMinSize](../methodorevents/getminsize.md) ,  |
-|[IDNToDate](../methodorevents/idntodate.md) ,    |[DateToIDN](../methodorevents/datetoidn.md)              |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[SubForm](../objects/subform.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|[ToolBar](../objects/toolbar.md)|

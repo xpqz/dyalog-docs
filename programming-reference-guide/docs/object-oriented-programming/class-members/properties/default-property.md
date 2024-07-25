@@ -2,7 +2,7 @@
 
 A single Numbered Property may be identified as the *Default* Property for the Class. If a Class has a Default Property, indexing with the `⌷` primitive function and `[...]` indexing may be applied to the Property directly via a reference to the Class or Instance.
 
-The Numbered Property example of the [ComponentFile Class](component-file-class-example.md) can be extended by adding the control word `Default` to the `:Property` statement for the `Component` Property.
+The Numbered Property example of the [ComponentFile Class](component-file-class-example.md){: .noprint } can be extended by adding the control word `Default` to the `:Property` statement for the `Component` Property.
 
 Indexing may now be applied directly to the Instance `F1`. In essence, `F1[n]` is simply shorthand for `F1.Component[n]` and `n⌷F1` is shorthand for `n⌷F1.Component`
 ```apl

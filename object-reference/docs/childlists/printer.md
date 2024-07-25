@@ -1,6 +1,7 @@
-<h1> Printer Children</h1>
+﻿# Printer Children
 
-|-----------------------------------------------|-------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[Print](../methodorevents/print.md) ,|[Setup](../methodorevents/setup.md) ,                |
-|[NewPage](../methodorevents/newpage.md) ,      |[Abort](../methodorevents/abort.md) ,|[RTFPrintSetup](../methodorevents/rtfprintsetup.md) ,|
-|[GetTextSize](../methodorevents/gettextsize.md)|&nbsp;                               |&nbsp;                                               |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Icon](../objects/icon.md)|[Poly](../objects/poly.md)|
+|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Rect](../objects/rect.md)|
+|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Font](../objects/font.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|

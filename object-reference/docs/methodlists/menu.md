@@ -1,4 +1,4 @@
-<h1> Menu Methods</h1>
+﻿# Menu Methods
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|[Wait](../methodorevents/wait.md)|&#160;|

@@ -1,10 +1,7 @@
-<h1> Root Events</h1>
+﻿# Root Events
 
-|---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|
-|[ChooseFont](../methodorevents/choosefont.md) ,          |[Flush](../methodorevents/flush.md) ,                    |[NameFromHandle](../methodorevents/namefromhandle.md) ,        |
-|[GreetBitmap](../methodorevents/greetbitmap.md) ,        |[GetCommandLine](../methodorevents/getcommandline.md) ,  |[GetCommandLineArgs](../methodorevents/getcommandlineargs.md) ,|
-|[GetEnvironment](../methodorevents/getenvironment.md) ,  |[ListTypeLibs](../methodorevents/listtypelibs.md) ,      |[DeleteTypeLib](../methodorevents/deletetypelib.md) ,          |
-|[SetServiceState](../methodorevents/setservicestate.md) ,|[GetServiceState](../methodorevents/getservicestate.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,              |
-|[GetFocus](../methodorevents/getfocus.md) ,              |[ShowSIP](../methodorevents/showsip.md) ,                |[GetFocusObj](../methodorevents/getfocusobj.md) ,              |
-|[IDNToDate](../methodorevents/idntodate.md) ,            |[DateToIDN](../methodorevents/datetoidn.md) ,            |[TCPGetHostID](../methodorevents/tcpgethostid.md) ,            |
-|[GetBuildID](../methodorevents/getbuildid.md) ,          |[Wait](../methodorevents/wait.md)                        |&nbsp;                                                         |
+|----|----|----|
+|[ActivateApp](../methodorevents/activateapp.md)|[ExitWindows](../methodorevents/exitwindows.md)|[ServiceNotification](../methodorevents/servicenotification.md)|
+|[DDE](../methodorevents/dde.md)|[FontCancel](../methodorevents/fontcancel.md)|[SysColorChange](../methodorevents/syscolorchange.md)|
+|[DisplayChange](../methodorevents/displaychange.md)|[FontOK](../methodorevents/fontok.md)|[WinIniChange](../methodorevents/wininichange.md)|
+|[ExitApp](../methodorevents/exitapp.md)|[Idle](../methodorevents/idle.md)|&#160;|

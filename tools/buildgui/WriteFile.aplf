@@ -1,0 +1,5 @@
+file←stuff WriteFile file;nid
+:If ~testing
+    3 ⎕MKDIR ⊃⎕NPARTS file ⍝ [SAK] create any missing dirs
+    'UTF-8'WriteUnicodeFile file stuff
+:EndIf

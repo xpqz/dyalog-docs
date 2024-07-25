@@ -7,7 +7,7 @@
 
 
 
-[Formal Definition](while-statement-definition.md)
+[Formal Definition](while-statement-definition.md){: .noprint }
 
 
 The simplest `:While` loop is :

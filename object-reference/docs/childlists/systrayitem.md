@@ -1,4 +1,4 @@
-<h1> SysTrayItem Children</h1>
+﻿# SysTrayItem Children
 
-|---------------------------------------|-------------------------------------------------------|---------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[ShowBalloonTip](../methodorevents/showballoontip.md) ,|[Wait](../methodorevents/wait.md)|
+|----|----|----|
+|[Icon](../objects/icon.md)|[Menu](../objects/menu.md)|[Timer](../objects/timer.md)|

@@ -1,6 +1,5 @@
-<h1> DateTimePicker Children</h1>
+﻿# DateTimePicker Children
 
-|-------------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[IDNToDate](../methodorevents/idntodate.md) ,  |[DateToIDN](../methodorevents/datetoidn.md)      |
+|----|----|----|
+|[Cursor](../objects/cursor.md)|[Menu](../objects/menu.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[Font](../objects/font.md)|[MsgBox](../objects/msgbox.md)|[Timer](../objects/timer.md)|

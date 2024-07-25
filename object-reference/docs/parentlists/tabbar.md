@@ -1,5 +1,4 @@
-<h1> TabBar Parents</h1>
+﻿# TabBar Parents
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|

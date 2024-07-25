@@ -1,4 +1,4 @@
-<h1> Splitter Methods</h1>
+﻿# Splitter Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

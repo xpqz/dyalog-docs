@@ -1,4 +1,5 @@
-<h1> MenuBar Parents</h1>
+﻿# MenuBar Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[SubForm](../objects/subform.md)|&#160;|
+|[Form](../objects/form.md)|[ToolControl](../objects/toolcontrol.md)|&#160;|

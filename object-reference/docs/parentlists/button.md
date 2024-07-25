@@ -1,6 +1,6 @@
-<h1> Button Parents</h1>
+﻿# Button Parents
 
-|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,  |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Grid](../objects/grid.md)|[SubForm](../objects/subform.md)|
+|[CoolBand](../objects/coolband.md)|[Group](../objects/group.md)|[ToolBar](../objects/toolbar.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|[ToolControl](../objects/toolcontrol.md)|

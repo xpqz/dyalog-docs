@@ -1,5 +1,4 @@
-<h1> TabControl Events</h1>
+﻿# TabControl Events
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|&#160;|

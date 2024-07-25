@@ -1,0 +1,93 @@
+ methodnames←BuildMethods;methodfile;names;refs;xml;name;nm;ref;title;eventinfo;methodnumbers;number
+ MethodonlineTOC←1 2 indent'<TocEntry'
+ MethodonlineTOC,←2 2 indent'Title="Methods">'
+ methodnames←∪⊃,/Methods
+ methodnames←methodnames[⍋↑methodnames]
+ eventinfo←↑2031⌶0
+ methodnumbers←eventinfo[eventinfo[;2]⍳methodnames;1]
+ :For name number :InEach methodnames methodnumbers
+     methodfile←contentdir,'MethodOrEvents\',name,'.htm'
+     names←((⊂⊂name)∊¨Methods)/Objects
+     refs←(⊂'"../Objects/'),¨names,¨⊂'.htm"'
+     WriteMembers(name'Method'names refs snippetdir contentdir'MethodOrEventApplies')
+
+     xml←ReadxmlFile methodfile
+     :If 0=⍴xml
+         xml←xmlhdr
+         title←name,' Method'
+         xml,←1 indent'<head><title>',title,'</title>'
+         xml,←1 indent'</head>'
+         xml,←1 indent'<body>'
+
+         xml,←2 indent'<div class="h3">'
+         xml,←3 indent'<table class="h3">'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<tr>'
+         xml,←5 indent'<td class="h3Left"><a name="',name,'_Method"></a>'
+         xml,←6 indent'<MadCap:keyword term="',name,';Methods:',name,'" />',name,'</td>'
+         xml,←5 indent'<td class="h3RightGUI">Method ',(⍕number),'</td>'
+         xml,←4 indent'</tr>'
+         xml,←3 indent'</table>'
+         xml,←2 indent'</div>'
+         :If AppliesToCutOff<⍴refs
+             xml,←2 indent'<p class="Bold" MadCap:conditions="Default.ScreenOnly"><a href="../MethodOrEventApplies/',name,'.htm" target="_popup" class="Popup">Applies To</a></p>'
+         :Else
+             xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+             xml,←3 indent'<col class="SpacedPlainTitle" />'
+             xml,←3 indent'<col />'
+             xml,←3 indent'<tr>'
+             xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+             :For nm ref :InEach names refs
+                 xml,←4 indent'<td class="SpacedPlain"><a href=',ref,'>',nm,'</a></td>'
+             :EndFor
+             xml,←3 indent'</tr>'
+             xml,←2 indent'</table>'
+         :EndIf
+
+         xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.PrintOnly">'
+         xml,←3 indent'<col class="SpacedPlainTitle" />'
+         xml,←3 indent'<col />'
+         xml,←3 indent'<tr>'
+         xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+         xml,←4 indent'<td class="SpacedPlain">'
+         xml,←5 indent'<MadCap:snippetText src="../Resources/Snippets/MethodOrEventApplies/',name,'.flsnp" />'
+         xml,←4 indent'</td>'
+         xml,←3 indent'</tr>'
+         xml,←2 indent'</table>'
+
+         xml,←2 indent'<p class="Bold">Description</p>'
+         xml,←1 indent'</body>'
+         xml,←0 indent'</html>'
+         Files,←⊂xml WriteFile methodfile
+
+     ⍝ Replace "Applies to" section
+     :ElseIf 0≠i←('</div>',⎕UCS 13 10)FindPos xml ⍝ End of h3 div
+     :AndIf 0≠j←'        <table class="GUIMembers" MadCap:conditions="Default.PrintOnly">'FindPos xml
+         head←(i+7)↑xml
+         tail←(j-1)↓xml
+         xml←head
+         :If AppliesToCutOff<⍴refs
+             xml,←2 indent'<p class="Bold" MadCap:conditions="Default.ScreenOnly"><a href="../MethodOrEventApplies/',name,'.htm" target="_popup" class="Popup">Applies To</a></p>'
+         :Else
+             xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+             xml,←3 indent'<col class="SpacedPlainTitle" />'
+             xml,←3 indent'<col />'
+             xml,←3 indent'<tr>'
+             xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+             :For nm ref :InEach names refs
+                 xml,←4 indent'<td class="SpacedPlain"><a href=',ref,'>',nm,'</a></td>'
+             :EndFor
+             xml,←3 indent'</tr>'
+             xml,←2 indent'</table>'
+         :EndIf
+         xml,←tail
+         Files,←⊂xml WriteFile methodfile
+     :EndIf
+
+     ⍝ Add to TOC
+     MethodonlineTOC,←2 2 indent'<TocEntry'
+     MethodonlineTOC,←3 2 indent'Title="',name,' Method"'
+     MethodonlineTOC,←3 2 indent'Link="/Content/GUI/MethodOrEvents/',name,'.htm" />'
+ :EndFor
+ MethodonlineTOC,←1 2 indent'</TocEntry>'

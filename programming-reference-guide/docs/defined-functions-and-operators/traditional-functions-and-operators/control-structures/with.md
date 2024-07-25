@@ -7,7 +7,7 @@
 
 
 
-[Formal Definition](with-statement-definition.md)
+[Formal Definition](with-statement-definition.md){: .noprint }
 
 
 

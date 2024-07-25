@@ -1,9 +1,7 @@
-<h1> TreeView Children</h1>
+﻿# TreeView Children
 
-|-----------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,        |[GetItemState](../methodorevents/getitemstate.md) ,  |
-|[SetItemState](../methodorevents/setitemstate.md) ,  |[AddItems](../methodorevents/additems.md) ,            |[DeleteItems](../methodorevents/deleteitems.md) ,    |
-|[AddChildren](../methodorevents/addchildren.md) ,    |[DeleteChildren](../methodorevents/deletechildren.md) ,|[GetParentItem](../methodorevents/getparentitem.md) ,|
-|[GetItemHandle](../methodorevents/getitemhandle.md) ,|[SetItemImage](../methodorevents/setitemimage.md) ,    |[ShowItem](../methodorevents/showitem.md) ,          |
-|[GetTextSize](../methodorevents/gettextsize.md) ,    |[Animate](../methodorevents/animate.md) ,              |[GetFocus](../methodorevents/getfocus.md) ,          |
-|[ShowSIP](../methodorevents/showsip.md) ,            |[GetFocusObj](../methodorevents/getfocusobj.md)        |&nbsp;                                               |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Poly](../objects/poly.md)|
+|[Circle](../objects/circle.md)|[Icon](../objects/icon.md)|[Rect](../objects/rect.md)|
+|[Cursor](../objects/cursor.md)|[ImageList](../objects/imagelist.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|

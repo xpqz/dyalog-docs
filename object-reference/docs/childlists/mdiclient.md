@@ -1,6 +1,6 @@
-<h1> MDIClient Children</h1>
+﻿# MDIClient Children
 
-|-----------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[MDICascade](../methodorevents/mdicascade.md) ,  |[MDITile](../methodorevents/mditile.md) ,      |
-|[MDIArrange](../methodorevents/mdiarrange.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[SubForm](../objects/subform.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Text](../objects/text.md)|
+|[Font](../objects/font.md)|[Rect](../objects/rect.md)|[Timer](../objects/timer.md)|

@@ -1,6 +1,6 @@
-<h1> DateTimePicker Parents</h1>
+﻿# DateTimePicker Parents
 
-|-------------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,          |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,        |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,|[IDNToDate](../methodorevents/idntodate.md) ,  |[DateToIDN](../methodorevents/datetoidn.md)      |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[ToolBar](../objects/toolbar.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|&#160;|
+|[Grid](../objects/grid.md)|[SubForm](../objects/subform.md)|&#160;|

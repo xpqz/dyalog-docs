@@ -7,7 +7,7 @@
 
 
 
-[Formal Definition](for-statement-definition.md)
+[Formal Definition](for-statement-definition.md){: .noprint }
 
 ## Single Control Variable
 

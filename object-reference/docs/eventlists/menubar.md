@@ -1,4 +1,4 @@
-<h1> MenuBar Events</h1>
+﻿# MenuBar Events
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|&#160;|

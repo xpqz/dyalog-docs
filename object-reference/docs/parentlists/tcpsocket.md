@@ -1,5 +1,7 @@
-<h1> TCPSocket Parents</h1>
+﻿# TCPSocket Parents
 
-|-------------------------------------------------------|-----------------------------------------|---------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                |[TCPSend](../methodorevents/tcpsend.md) ,|[TCPGetHostID](../methodorevents/tcpgethostid.md) ,|
-|[TCPSendPicture](../methodorevents/tcpsendpicture.md) ,|[Wait](../methodorevents/wait.md)        |&nbsp;                                             |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|
+|[Calendar](../objects/calendar.md)|[NetType](../objects/nettype.md)|[Root](../objects/root.md)|
+|[CoolBand](../objects/coolband.md)|[OLEClient](../objects/oleclient.md)|[SubForm](../objects/subform.md)|
+|[DateTimePicker](../objects/datetimepicker.md)|[OLEServer](../objects/oleserver.md)|[TCPSocket](../objects/tcpsocket.md)|

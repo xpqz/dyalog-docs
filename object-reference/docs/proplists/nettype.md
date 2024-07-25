@@ -1,3 +1,4 @@
-<h1> NetType Properties</h1>
+﻿# NetType Properties
 
-|
+|----|----|----|
+|[BaseClass](../properties/baseclass.md)|&#160;|&#160;|

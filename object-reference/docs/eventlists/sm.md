@@ -1,5 +1,7 @@
-<h1> SM Events</h1>
+﻿# SM Events
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Help](../methodorevents/help.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[Configure](../methodorevents/configure.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[Create](../methodorevents/create.md)|[MouseDown](../methodorevents/mousedown.md)|&#160;|
+|[DragDrop](../methodorevents/dragdrop.md)|[MouseEnter](../methodorevents/mouseenter.md)|&#160;|

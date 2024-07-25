@@ -1,0 +1,26 @@
+ R←ASK_PARENT OBJ;FF
+ :Select OBJ
+ :Case 'ActiveXContainer'
+     R←'ActiveXControl'
+ :Case 'CoolBand'
+     R←'CoolBar'
+ :Case 'PropertyPage'
+     R←'PropertySheet'
+ :Case 'Root'
+     R←'Root'
+ :Case 'ToolButton'
+     R←'ToolControl'
+ :Case 'TabButton'
+     R←'TabControl'
+ :Else
+     'FF'⎕WC'Form'('Choose a Parent for ',OBJ)
+     FF.onClose←1
+     FF.Coord←'Pixel'
+     FF.Size←500 300
+     'FF.L'⎕WC'List'Objects(0 0)(460 500)
+     'FF.OK'⎕WC'Button' 'OK'(470 210)(⍬ 80)('Event' 'Select' 1)
+     ⎕DQ'FF'
+     :With 'FF.L'
+         R←⊃SelItems/Items
+     :EndWith
+ :EndSelect

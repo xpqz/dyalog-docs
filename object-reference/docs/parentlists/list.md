@@ -1,6 +1,6 @@
-<h1> List Parents</h1>
+﻿# List Parents
 
-|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,  |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[ToolBar](../objects/toolbar.md)|
+|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[ToolControl](../objects/toolcontrol.md)|
+|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|&#160;|

@@ -1,4 +1,4 @@
-<h1> ImageList Events</h1>
+﻿# ImageList Events
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|&#160;|

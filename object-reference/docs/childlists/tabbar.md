@@ -1,5 +1,6 @@
-<h1> TabBar Children</h1>
+﻿# TabBar Children
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[TabBtn](../objects/tabbtn.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Text](../objects/text.md)|
+|[Font](../objects/font.md)|[Rect](../objects/rect.md)|[Timer](../objects/timer.md)|

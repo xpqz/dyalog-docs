@@ -1,4 +1,4 @@
-<h1> Separator Methods</h1>
+﻿# Separator Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

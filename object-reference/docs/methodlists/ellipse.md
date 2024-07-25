@@ -1,4 +1,4 @@
-<h1> Ellipse Methods</h1>
+﻿# Ellipse Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

@@ -1,4 +1,4 @@
-<h1> ActiveXContainer Parents</h1>
+﻿# ActiveXContainer Parents
 
-|---------------------------------------|-----------------------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&nbsp;|
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|&#160;|&#160;|

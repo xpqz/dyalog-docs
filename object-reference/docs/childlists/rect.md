@@ -1,4 +1,4 @@
-<h1> Rect Children</h1>
+﻿# Rect Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

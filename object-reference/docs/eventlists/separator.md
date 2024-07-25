@@ -1,4 +1,4 @@
-<h1> Separator Events</h1>
+﻿# Separator Events
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|&#160;|

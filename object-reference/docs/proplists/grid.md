@@ -1,12 +1,34 @@
-<h1> Grid Properties</h1>
+﻿# Grid Properties
 
-|-----------------------------------------------------|---------------------------------------------------|---------------------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,              |
-|[Animate](../methodorevents/animate.md) ,            |[GetFocus](../methodorevents/getfocus.md) ,        |[ShowSIP](../methodorevents/showsip.md) ,                      |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,    |[DelRow](../methodorevents/delrow.md) ,            |[DelCol](../methodorevents/delcol.md) ,                        |
-|[SetCellType](../methodorevents/setcelltype.md) ,    |[RowChange](../methodorevents/rowchange.md) ,      |[ColChange](../methodorevents/colchange.md) ,                  |
-|[Undo](../methodorevents/undo.md) ,                  |[SetCellSet](../methodorevents/setcellset.md) ,    |[RowSetVisibleDepth](../methodorevents/rowsetvisibledepth.md) ,|
-|[ColSorted](../methodorevents/colsorted.md) ,        |[DuplicateRow](../methodorevents/duplicaterow.md) ,|[DuplicateColumn](../methodorevents/duplicatecolumn.md) ,      |
-|[CellFromPoint](../methodorevents/cellfrompoint.md) ,|[GetCellRect](../methodorevents/getcellrect.md) ,  |[LockRows](../methodorevents/lockrows.md) ,                    |
-|[LockColumns](../methodorevents/lockcolumns.md) ,    |[AddComment](../methodorevents/addcomment.md) ,    |[DelComment](../methodorevents/delcomment.md) ,                |
-|[GetComment](../methodorevents/getcomment.md)        |&nbsp;                                             |&nbsp;                                                         |
+|----|----|----|
+|[Accelerator](../properties/accelerator.md)|[Dragable](../properties/dragable.md)|[ResizeRows](../properties/resizerows.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[EdgeStyle](../properties/edgestyle.md)|[RowHiddenDepth](../properties/rowhiddendepth.md)|
+|[Active](../properties/active.md)|[EnterReadOnlyCells](../properties/enterreadonlycells.md)|[RowLineTypes](../properties/rowlinetypes.md)|
+|[AlignChar](../properties/alignchar.md)|[Event](../properties/event.md)|[RowTitleAlign](../properties/rowtitlealign.md)|
+|[AlwaysShowBorder](../properties/alwaysshowborder.md)|[EventList](../properties/eventlist.md)|[RowTitleBCol](../properties/rowtitlebcol.md)|
+|[AlwaysShowSelection](../properties/alwaysshowselection.md)|[FCol](../properties/fcol.md)|[RowTitleDepth](../properties/rowtitledepth.md)|
+|[Attach](../properties/attach.md)|[FontObj](../properties/fontobj.md)|[RowTitleFCol](../properties/rowtitlefcol.md)|
+|[AutoConf](../properties/autoconf.md)|[FormatString](../properties/formatstring.md)|[RowTitles](../properties/rowtitles.md)|
+|[AutoExpand](../properties/autoexpand.md)|[GridBCol](../properties/gridbcol.md)|[RowTreeDepth](../properties/rowtreedepth.md)|
+|[BCol](../properties/bcol.md)|[GridFCol](../properties/gridfcol.md)|[RowTreeImages](../properties/rowtreeimages.md)|
+|[Border](../properties/border.md)|[GridLineFCol](../properties/gridlinefcol.md)|[RowTreeStyle](../properties/rowtreestyle.md)|
+|[CellFonts](../properties/cellfonts.md)|[GridLineWidth](../properties/gridlinewidth.md)|[SelItems](../properties/selitems.md)|
+|[CellHeights](../properties/cellheights.md)|[HScroll](../properties/hscroll.md)|[SelectionBorderWidth](../properties/selectionborderwidth.md)|
+|[CellSelect](../properties/cellselect.md)|[Handle](../properties/handle.md)|[SelectionColor](../properties/selectioncolor.md)|
+|[CellSet](../properties/cellset.md)|[HighlightHeaders](../properties/highlightheaders.md)|[SelectionColorAlpha](../properties/selectioncoloralpha.md)|
+|[CellTypes](../properties/celltypes.md)|[Hint](../properties/hint.md)|[ShowInput](../properties/showinput.md)|
+|[CellWidths](../properties/cellwidths.md)|[HintObj](../properties/hintobj.md)|[Size](../properties/size.md)|
+|[ChildList](../properties/childlist.md)|[Index](../properties/index.md)|[Sizeable](../properties/sizeable.md)|
+|[ClipCells](../properties/clipcells.md)|[Input](../properties/input.md)|[TabIndex](../properties/tabindex.md)|
+|[ColLineTypes](../properties/collinetypes.md)|[InputMode](../properties/inputmode.md)|[TextSize](../properties/textsize.md)|
+|[ColSortImages](../properties/colsortimages.md)|[InputModeKey](../properties/inputmodekey.md)|[Tip](../properties/tip.md)|
+|[ColTitleAlign](../properties/coltitlealign.md)|[InputProperties](../properties/inputproperties.md)|[TipObj](../properties/tipobj.md)|
+|[ColTitleBCol](../properties/coltitlebcol.md)|[KeepOnClose](../properties/keeponclose.md)|[TitleHeight](../properties/titleheight.md)|
+|[ColTitleDepth](../properties/coltitledepth.md)|[MethodList](../properties/methodlist.md)|[TitleWidth](../properties/titlewidth.md)|
+|[ColTitleFCol](../properties/coltitlefcol.md)|[OverflowChar](../properties/overflowchar.md)|[Translate](../properties/translate.md)|
+|[ColTitles](../properties/coltitles.md)|[Posn](../properties/posn.md)|[Type](../properties/type.md)|
+|[Coord](../properties/coord.md)|[PropList](../properties/proplist.md)|[VScroll](../properties/vscroll.md)|
+|[CornerTitleBCol](../properties/cornertitlebcol.md)|[Redraw](../properties/redraw.md)|[Values](../properties/values.md)|
+|[CurCell](../properties/curcell.md)|[ResizeColTitles](../properties/resizecoltitles.md)|[Visible](../properties/visible.md)|
+|[CursorObj](../properties/cursorobj.md)|[ResizeCols](../properties/resizecols.md)|[XRange](../properties/xrange.md)|
+|[Data](../properties/data.md)|[ResizeRowTitles](../properties/resizerowtitles.md)|[YRange](../properties/yrange.md)|

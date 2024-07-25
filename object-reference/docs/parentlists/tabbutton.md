@@ -1,4 +1,4 @@
-<h1> TabButton Parents</h1>
+﻿# TabButton Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[TabControl](../objects/tabcontrol.md)|&#160;|&#160;|

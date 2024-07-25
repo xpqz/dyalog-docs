@@ -1,3 +1,4 @@
-<h1> NetType Parents</h1>
+﻿# NetType Parents
 
-|
+|----|----|----|
+|[Root](../objects/root.md)|&#160;|&#160;|

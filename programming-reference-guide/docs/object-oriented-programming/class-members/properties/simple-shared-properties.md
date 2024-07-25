@@ -1,6 +1,6 @@
 <h1> Simple Shared Properties</h1>
 
-The [ComponentFile Class](component-file-class-example.md)  specifies a Simple Shared Property named `Files` which returns the names of all the Component Files in the current directory.
+The [ComponentFile Class](component-file-class-example.md){: .noprint }  specifies a Simple Shared Property named `Files` which returns the names of all the Component Files in the current directory.
 
 The previous examples have illustrated the use of Instance Properties. It is also possible to define *Shared* properties.
 

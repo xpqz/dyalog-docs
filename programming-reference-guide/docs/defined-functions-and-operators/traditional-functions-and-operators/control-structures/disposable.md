@@ -7,7 +7,7 @@
 
 
 
-[Formal Definition](disposable-statement-definition.md)
+[Formal Definition](disposable-statement-definition.md){: .noprint }
 
 
 The Dyalog interface to .NET involves the creation and removal of .NET objects. Many such objects are *managed* in that the .NET Common Language RunTime (CLR)  automatically releases the memory allocated to the object when that object is no longer used. However, it is not possible to predict when the CLR garbage collection will occur. Furthermore, the garbage collector has no knowledge of *unmanaged* resources such as window handles, or open files and streams.

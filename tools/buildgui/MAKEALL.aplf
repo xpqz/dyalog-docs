@@ -1,0 +1,22 @@
+ MAKEALL;NAME;P;T;F;I;OBJ;ref
+ Events←Methods←Properties←(⍴Objects)⍴⊂''
+ ParentMap←(2⍴⍴Objects)⍴0
+ ParentMap[Objects⍳⊂'Root';Objects⍳('.'⎕WG'ChildList')~'Class' 'Session']←1
+ 'F'⎕WC'Form'
+ ParentMap[Objects⍳⊂'Form';Objects⍳('F'⎕WG'ChildList')~'OCXControl' 'NetControl']←1
+ ⎕EX'F'
+ :For I :In ⍳⍴Objects
+     NAME←MAKE_PARENT OBJ←I⊃Objects
+     NAME←NAME MAKE_INSTANCE I⊃Objects
+     :If 0≠⍴,NAME
+         ref←⍎NAME
+     :Else
+         ref←#.ObjectMembers.⍎OBJ
+     :EndIf
+     Properties[I]←⊂ref.PropList
+     Events[I]←⊂ref.EventList
+     Methods[I]←⊂ref.MethodList
+     ParentMap[I;]←0
+     ParentMap[I;Objects⍳ref.ChildList∩Objects]←1
+ :EndFor
+ Methods[Objects⍳⊂'Root']←⊂(⊃Methods[Objects⍳⊂'Root'])~'Aplmon' 'SetUnicodeTable' 'SetOutputEncoding' 'SetInputEncoding'

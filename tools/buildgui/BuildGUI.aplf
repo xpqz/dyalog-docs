@@ -1,0 +1,161 @@
+ Files←{testing}BuildGUI projectdir;d;indir;objfiles;objectnames;firstword;memfile;xml;tag;mask;first;head;tail;itag;iend;end;segs;refs;names;nrows;ncols;obj;members;id;r;c;ref;name;snippetdir;snipfile;xml;contentdir;membersfile;memdir;objfile;xmlhdr;guionlineTOC;title;i;ex;exfile;propertynames;Chapter2TOC;types;type;toc;dirs;eventnames;eventtypes;EventonlineTOC;MethodonlineTOC;maski;membermask;memhtml;AppliesToCutOff;miscfiles;tabfiles;Chapter2TOCStart;obji;methodnames;projectdir
+ ⍝ Create all the cross-references for the GUI
+ ⍝ projectdir←'C:\Dyalog18.1\Core\'
+ :If 0=⎕NC'testing' ⋄ testing←1 ⋄ :EndIf
+ Files←GotKeepTogetherFiles←0⍴⊂''
+ MAKEALL
+ AppliesToCutOff←6
+ guionlineTOC←0 2 indent'<?xml version="1.0" encoding="utf-8"?>'
+ guionlineTOC,←0 2 indent'<CatapultToc'
+ guionlineTOC,←1 2 indent'Version="1">'
+ guionlineTOC,←1 2 indent'<TocEntry'
+ Chapter2TOCStart←guionlineTOC
+ guionlineTOC,←2 2 indent'Title="Object Reference">'
+ guionlineTOC,←2 2 indent'<TocEntry'
+ guionlineTOC,←3 2 indent'Title="GUI Overview"'
+ guionlineTOC,←3 2 indent'Link="/Project/TOCs/GUI Overview.fltoc" />'
+ guionlineTOC,←2 2 indent'<TocEntry'
+ guionlineTOC,←3 2 indent'Title="Objects">'
+ xmlhdr←0 indent'<?xml version="1.0" encoding="utf-8"?>'
+ xmlhdr,←0 indent'<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">'
+ contentdir←projectdir,'Content\GUI\'
+ snippetdir←contentdir,'Resources\Snippets\'
+ ⎕USING←'System' 'System.IO'
+
+ :For obj obji :InEach Objects(⍳⍴Objects)
+     objfile←contentdir,'Objects\',obj,'.htm'
+
+     membermask←5⍴1
+     names←ParentMap[;obji]/Objects
+     :If membermask[1]←0<⍴names
+         refs←(⊂'"../Objects/'),¨names,¨⊂'.htm"'
+         WriteMembers(obj'Parents'names refs snippetdir contentdir'ParentLists')
+     :EndIf
+
+     names←ParentMap[obji;]/Objects
+     :If membermask[2]←0<⍴names
+         refs←(⊂'"../Objects/'),¨names,¨⊂'.htm"'
+         WriteMembers(obj'Children'names refs snippetdir contentdir'ChildLists')
+     :EndIf
+
+     names←obji⊃Properties
+     refs←(⊂'"../../../Properties/'),¨names,¨⊂'.htm"'
+     WriteMembers(obj'Properties'names refs snippetdir contentdir'PropLists')
+
+     names←obji⊃Methods
+     refs←(⊂'"../../../MethodOrEvents/'),¨names,¨⊂'.htm"'
+     WriteMembers(obj'Methods'names refs snippetdir contentdir'MethodLists')
+
+     names←obji⊃Events
+     refs←(⊂'"../../../MethodOrEvents/'),¨names,¨⊂'.htm"'
+     WriteMembers(obj'Events'names refs snippetdir contentdir'EventLists')
+
+     objfile←contentdir,'Objects\',obj,'.htm'
+     :If 0=⍴xml←ReadxmlFile objfile
+         xml←xmlhdr
+         xml,←1 indent'<head><title>',obj,' Object','</title>'
+         xml,←1 indent'</head>'
+         xml,←1 indent'<body>'
+
+         xml,←2 indent'<div class="h3">'
+         xml,←3 indent'<table class="h3">'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<tr>'
+         xml,←5 indent'<td class="h3Left"><a name="',obj,'_Object"></a>'
+         xml,←6 indent'<MadCap:keyword term="',obj,';Objects:',obj,'" />',obj,'</td>'
+         xml,←5 indent'<td class="h3RightGUI">Object</td>'
+         xml,←4 indent'</tr>'
+         xml,←3 indent'</table>'
+         xml,←2 indent'</div>'
+
+         xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+         xml,←⊃,/5⍴⊂3 indent'<col />'
+         xml,←3 indent'<tr>'
+         :For members memdir :InEach (⊂membermask)/¨('Parents' 'Children' 'Properties' 'Methods' 'Events')('ParentLists' 'ChildLists' 'PropLists' 'MethodLists' 'EventLists')
+             xml,←4 indent'<td class="SpacedPlain"><a href="../',memdir,'/',obj,'.htm" target="_popup" class="Popup">',members,'</a>'
+             xml,←4 indent'</td>'
+         :EndFor
+         xml,←3 indent'</tr>'
+         xml,←2 indent'</table>'
+
+         xml,←2 indent'<table class="GUIMembers">'
+         xml,←3 indent'<col class="SpacedPlainTitle" />'
+         xml,←3 indent'<col />'
+         xml,←3 indent'<tr>'
+         xml,←4 indent'<td class="SpacedPlainTitle">Purpose:</td>'
+         xml,←4 indent'<td class="SpacedPlain">',' purpose','</td>'
+         xml,←3 indent'</tr>'
+
+         :For members memdir :InEach (⊂membermask)/¨('Parents' 'Children' 'Properties' 'Methods' 'Events')('ParentLists' 'ChildLists' 'PropLists' 'MethodLists' 'EventLists')
+             xml,←3 indent'<tr MadCap:conditions="Default.PrintOnly">'
+             xml,←4 indent'<td class="SpacedPlainTitle">',members,'</td>'
+             xml,←4 indent'<td class="SpacedPlain">'
+             xml,←5 indent'<MadCap:snippetText src="../Resources/Snippets/',memdir,'/',obj,'.flsnp" />'
+             xml,←4 indent'</td>'
+             xml,←3 indent'</tr>'
+         :EndFor
+         xml,←2 indent'</table>'
+         xml,←2 indent'<p class="Bold">Description</p>'
+         xml,←1 indent'</body>'
+         xml,←0 indent'</html>'
+         Files,←⊂xml WriteFile objfile
+     :EndIf
+
+    ⍝ Add to TOC
+     guionlineTOC,←3 2 indent'<TocEntry'
+     guionlineTOC,←4 2 indent'Title="',obj,' Object"'
+     guionlineTOC,←4 2 indent'Link="/Content/GUI/Objects/',obj,'.htm" />'
+
+ :EndFor
+ guionlineTOC,←2 2 indent'</TocEntry>'
+
+ propertynames←BuildProperties
+ eventnames←BuildEvents
+ methodnames←BuildMethods
+
+ names←Objects,propertynames,eventnames,methodnames
+ types←(⍴Objects)⍴⊂'Object'
+ types,←(⍴propertynames)⍴⊂'Property'
+ types,←(⍴eventnames)⍴⊂'Event'
+ types,←(⍴methodnames)⍴⊂'Method'
+ dirs←(⍴Objects)⍴⊂'Objects'
+ dirs,←(⍴propertynames)⍴⊂'Properties'
+ dirs,←(⍴eventnames,methodnames)⍴⊂'MethodOrEvents'
+ refs←(↓⍉↑types dirs){'Link="/Content/GUI/',(2⊃⍺),'/',⍵,'.htm#',⍵,'_',(1⊃⍺),'"'}¨names
+ i←⍋lcase↑names
+ names←names[i]
+ types←types[i]
+ refs←refs[i]
+ Chapter2TOC←''
+ :For name type ref :InEach names types refs
+     toc←1 2 indent'<TocEntry'
+     toc,←2 2 indent'Title="',name,' ',type,'"'
+     toc,←2 2 indent ref,' />'
+     Chapter2TOC,←toc
+ :EndFor
+
+ guionlineTOC,←EventonlineTOC
+ guionlineTOC,←MethodonlineTOC
+
+ guionlineTOC,←2 2 indent'<TocEntry'
+ guionlineTOC,←3 2 indent'Title="(A-Z)">'
+ :For name type ref :InEach names types refs
+     toc←4 2 indent'<TocEntry'
+     toc,←4 2 indent'Title="',name,' ',type,'"'
+     toc,←4 2 indent ref,' />'
+     guionlineTOC,←toc
+ :EndFor
+ guionlineTOC,←1 2 indent'</TocEntry>'
+ guionlineTOC,←0 2 indent'</TocEntry>'
+ guionlineTOC,←0 2 indent'</CatapultToc>'
+ Files,←⊂guionlineTOC WriteFile projectdir,'project\TOCs\GUI (on-line).fltoc'
+
+ Chapter2TOCStart,←2 2 indent'Title="Chapter 2"'
+ Chapter2TOCStart,←2 2 indent'Link="/Content/GUI/Chapter 2.htm">'
+
+ Chapter2TOC←Chapter2TOCStart,Chapter2TOC
+ Chapter2TOC,←0 2 indent'</TocEntry>'
+ Chapter2TOC,←0 2 indent'</CatapultToc>'
+
+ Files,←⊂Chapter2TOC WriteFile projectdir,'project\TOCs\Object Reference Chapter 2.fltoc'

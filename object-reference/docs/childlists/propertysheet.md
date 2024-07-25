@@ -1,6 +1,10 @@
-<h1> PropertySheet Children</h1>
+﻿# PropertySheet Children
 
-|-----------------------------------------------------|-----------------------------------------------------|---------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,              |[ChooseFont](../methodorevents/choosefont.md) ,      |[SetWizard](../methodorevents/setwizard.md) ,|
-|[SetFinishText](../methodorevents/setfinishtext.md) ,|[CancelToClose](../methodorevents/canceltoclose.md) ,|[GetFocus](../methodorevents/getfocus.md) ,  |
-|[GetFocusObj](../methodorevents/getfocusobj.md) ,    |[Wait](../methodorevents/wait.md)                    |&nbsp;                                       |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Printer](../objects/printer.md)|
+|[BrowseBox](../objects/browsebox.md)|[Icon](../objects/icon.md)|[PropertyPage](../objects/propertypage.md)|
+|[Circle](../objects/circle.md)|[Locator](../objects/locator.md)|[Rect](../objects/rect.md)|
+|[Clipboard](../objects/clipboard.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Cursor](../objects/cursor.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|
+|[Ellipse](../objects/ellipse.md)|[MsgBox](../objects/msgbox.md)|[TipField](../objects/tipfield.md)|
+|[FileBox](../objects/filebox.md)|[Poly](../objects/poly.md)|&#160;|

@@ -1,5 +1,4 @@
-<h1> CoolBar Parents</h1>
+﻿# CoolBar Parents
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|&#160;|

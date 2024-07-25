@@ -1,6 +1,7 @@
-<h1> Static Children</h1>
+﻿# Static Children
 
-|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,  |[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Poly](../objects/poly.md)|
+|[Cursor](../objects/cursor.md)|[Locator](../objects/locator.md)|[Rect](../objects/rect.md)|
+|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Font](../objects/font.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|

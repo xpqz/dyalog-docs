@@ -1,4 +1,5 @@
-<h1> TipField Events</h1>
+﻿# TipField Events
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[FontCancel](../methodorevents/fontcancel.md)|&#160;|
+|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|&#160;|

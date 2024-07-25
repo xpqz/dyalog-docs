@@ -1,7 +1,7 @@
-<h1> Animation Children</h1>
+﻿# Animation Children
 
-|-------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[AnimOpen](../methodorevents/animopen.md) ,|[AnimClose](../methodorevents/animclose.md) ,    |[AnimPlay](../methodorevents/animplay.md) ,      |
-|[AnimStop](../methodorevents/animstop.md)  |&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Text](../objects/text.md)|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|
+|[Cursor](../objects/cursor.md)|[Poly](../objects/poly.md)|&#160;|
+|[Ellipse](../objects/ellipse.md)|[Rect](../objects/rect.md)|&#160;|

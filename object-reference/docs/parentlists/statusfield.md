@@ -1,4 +1,4 @@
-<h1> StatusField Parents</h1>
+﻿# StatusField Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[StatusBar](../objects/statusbar.md)|&#160;|&#160;|

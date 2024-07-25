@@ -1,4 +1,4 @@
-<h1> Poly Children</h1>
+﻿# Poly Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

@@ -1,5 +1,5 @@
-<h1> SM Parents</h1>
+﻿# SM Parents
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|[ToolBar](../objects/toolbar.md)|
+|[Group](../objects/group.md)|[SubForm](../objects/subform.md)|[ToolControl](../objects/toolcontrol.md)|

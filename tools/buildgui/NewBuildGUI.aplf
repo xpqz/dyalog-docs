@@ -1,0 +1,40 @@
+Files←NewBuildGUI projectdir;contentdir;obj;obji;objfile;membermask;names;refs;⎕ML
+ ⍝ Create all the cross-references for the GUI
+ ⍝ projectdir ← '/path/to/output/dir'
+ testing ← 0 ⍝ global
+ ⎕ML ← 1
+ Files ← 0⍴⊂''
+ MAKEALL
+
+ contentdir ← ('[/\\]$'⎕R''⊢projectdir), '/'
+ ⎕USING ← 'System' 'System.IO'
+
+ :For obj obji :InEach Objects(⍳⍴Objects)
+     objfile ← contentdir, 'objects/', ⎕C obj, '.md'
+
+     membermask ← 5⍴1
+     names ← ParentMap[;obji]/Objects
+     :If membermask[1] ← 0<⍴names
+         refs ← ⎕C(⊂'../objects/'),¨names,¨⊂'.md"'
+         Files ,← ⊂NewWriteMembers obj 'Parents' names refs contentdir 'parentlists'
+     :EndIf
+
+     names ← ParentMap[obji;]/Objects
+     :If membermask[2] ← 0<⍴names
+         refs ← ⎕C(⊂'../objects/'),¨names,¨⊂'.md"'
+         Files ,← ⊂NewWriteMembers obj 'Children' names refs contentdir 'childlists'
+     :EndIf
+
+     names ← obji⊃Properties
+     refs ← ⎕C(⊂'../properties/'),¨names,¨⊂'.md'
+     Files ,← ⊂NewWriteMembers obj 'Properties' names refs contentdir 'proplists'
+
+     names ← obji⊃Methods
+     refs ← ⎕C(⊂'../methodorevents/'),¨names,¨⊂'.md"'
+     Files ,← ⊂NewWriteMembers obj 'Methods' names refs contentdir 'methodlists'
+
+     names ← obji⊃Events
+     refs ← ⎕C(⊂'../methodorevents/'),¨names,¨⊂'.md"'
+     Files ,← ⊂NewWriteMembers obj 'Events' names refs contentdir 'eventlists'
+
+ :EndFor

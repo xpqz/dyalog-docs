@@ -1,4 +1,4 @@
-<h1> StatusField Methods</h1>
+﻿# StatusField Methods
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|&#160;|&#160;|

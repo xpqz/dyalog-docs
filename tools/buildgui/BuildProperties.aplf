@@ -1,0 +1,90 @@
+ propertynames←BuildProperties;propfiles;prop;propfile;html;nid;names;refs;xml;name;ref;i;j;head;tail
+ propertynames←∪⊃,/Properties
+ propertynames←propertynames[⍋↑propertynames]
+
+ guionlineTOC,←1 2 indent'<TocEntry'
+ guionlineTOC,←2 2 indent'Title="Properties">'
+
+ :For prop :In propertynames
+     names←((⊂⊂prop)∊¨Properties)/Objects
+     refs←(⊂'"../Objects/'),¨names,¨⊂'.htm"'
+     WriteMembers(prop'Property'names refs snippetdir contentdir'PropertyApplies')
+
+     propfile←contentdir,'Properties\',prop,'.htm'
+     xml←ReadxmlFile propfile
+     :If 0=⍴xml
+         xml←xmlhdr
+         xml,←1 indent'<head><title>',prop,' Property','</title>'
+         xml,←1 indent'</head>'
+         xml,←1 indent'<body>'
+
+         xml,←2 indent'<div class="h3">'
+         xml,←3 indent'<table class="h3">'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<col />'
+         xml,←4 indent'<tr>'
+         xml,←5 indent'<td class="h3Left"><a name="',prop,'_Property"></a>'
+         xml,←6 indent'<MadCap:keyword term="',prop,';Properties:',prop,'" />',prop,'</td>'
+         xml,←5 indent'<td class="h3RightGUI">Property</td>'
+         xml,←4 indent'</tr>'
+         xml,←3 indent'</table>'
+         xml,←2 indent'</div>'
+         :If AppliesToCutOff<⍴refs
+             xml,←2 indent'<p class="Bold" MadCap:conditions="Default.ScreenOnly"><a href="../PropertyApplies/',prop,'.htm" target="_popup" class="Popup">Applies To</a></p>'
+         :Else
+             xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+             xml,←3 indent'<col class="SpacedPlainTitle" />'
+             xml,←3 indent'<col />'
+             xml,←3 indent'<tr>'
+             xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+             :For name ref :InEach names refs
+                 xml,←4 indent'<td class="SpacedPlain"><a href=',ref,'>',name,'</a></td>'
+             :EndFor
+             xml,←3 indent'</tr>'
+             xml,←2 indent'</table>'
+         :EndIf
+         xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.PrintOnly">'
+         xml,←3 indent'<col class="SpacedPlainTitle" />'
+         xml,←3 indent'<col />'
+         xml,←3 indent'<tr>'
+         xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+         xml,←4 indent'<td class="SpacedPlain">'
+         xml,←5 indent'<MadCap:snippetText src="../Resources/Snippets/PropertyApplies/',prop,'.flsnp" />'
+         xml,←4 indent'</td>'
+         xml,←3 indent'</tr>'
+         xml,←2 indent'</table>'
+
+         xml,←2 indent'<p class="Bold">Description</p>'
+         xml,←1 indent'</body>'
+         xml,←0 indent'</html>'
+         Files,←⊂xml WriteFile propfile
+       ⍝ Replace "Applies to" section
+     :ElseIf 0≠i←('</div>',⎕UCS 13 10)FindPos xml ⍝ End of h3 div
+     :AndIf 0≠j←'        <table class="GUIMembers" MadCap:conditions="Default.PrintOnly">'FindPos xml
+         head←(i+7)↑xml
+         tail←(j-1)↓xml
+         xml←head
+         :If AppliesToCutOff<⍴refs
+             xml,←2 indent'<p class="Bold" MadCap:conditions="Default.ScreenOnly"><a href="../PropertyApplies/',prop,'.htm" target="_popup" class="Popup">Applies To</a></p>'
+         :Else
+             xml,←2 indent'<table class="GUIMembers" MadCap:conditions="Default.ScreenOnly">'
+             xml,←3 indent'<col class="SpacedPlainTitle" />'
+             xml,←3 indent'<col />'
+             xml,←3 indent'<tr>'
+             xml,←4 indent'<td class="SpacedPlainTitle">Applies&#160;To:</td>'
+             :For name ref :InEach names refs
+                 xml,←4 indent'<td class="SpacedPlain"><a href=',ref,'>',name,'</a></td>'
+             :EndFor
+             xml,←3 indent'</tr>'
+             xml,←2 indent'</table>'
+         :EndIf
+         xml,←tail
+         Files,←⊂xml WriteFile propfile
+     :EndIf
+
+         ⍝ Add to TOC
+     guionlineTOC,←2 2 indent'<TocEntry'
+     guionlineTOC,←3 2 indent'Title="',prop,' Property"'
+     guionlineTOC,←3 2 indent'Link="/Content/GUI/Properties/',prop,'.htm" />'
+ :EndFor
+ guionlineTOC,←1 2 indent'</TocEntry>'

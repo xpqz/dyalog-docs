@@ -1,4 +1,6 @@
-<h1> TipField Children</h1>
+﻿# TipField Children
 
-|---------------------------------------|---------------------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[ChooseFont](../methodorevents/choosefont.md)|&nbsp;|
+|----|----|----|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Timer](../objects/timer.md)|
+|[Font](../objects/font.md)|[Rect](../objects/rect.md)|&#160;|

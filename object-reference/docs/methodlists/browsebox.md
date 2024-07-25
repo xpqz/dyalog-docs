@@ -1,4 +1,4 @@
-<h1> BrowseBox Methods</h1>
+﻿# BrowseBox Methods
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|[Wait](../methodorevents/wait.md)|&#160;|

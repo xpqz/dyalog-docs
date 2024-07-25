@@ -1,0 +1,25 @@
+NewWriteMembers ← { ⎕ML←1
+    ⍝ [SAK] Write cross-references as a Markdown table in
+    ⍝       extended syntax:
+    ⍝
+    ⍝       https://github.com/fumbles/tables_extended
+
+    (obj members names refs contentdir memdir) ← ⍵
+    mdfile ← contentdir, memdir, '/', (⎕C obj), '.md'
+    lf ← ⎕UCS 10
+    nbsp ← ⊂'&#160;'
+
+    mklink ← {'[', ⍺ ,'](', ('"'⎕R''⊢⍵), ')'}  ⍝ Make Markdown links. Refs have double quotes we need to remove
+
+    ⍝ Ensure alphabetical ordering, col-major.
+    sortp ← ⍋names
+    refs ← refs[sortp]
+    names ← names[sortp]
+
+    y ← ⌈(≢refs)÷x←3
+
+    matr ← ⍉(x y)⍴(2⍴nbsp),⍨mklink⌿↑names refs ⍝ Col-major
+
+    markdown ← '# ',obj, ' ', members, lf,lf,'|----|----|----|',lf,∊'|',¨matr,lf
+    markdown WriteFile mdfile
+}

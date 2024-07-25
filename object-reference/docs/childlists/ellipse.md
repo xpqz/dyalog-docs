@@ -1,4 +1,4 @@
-<h1> Ellipse Children</h1>
+﻿# Ellipse Children
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

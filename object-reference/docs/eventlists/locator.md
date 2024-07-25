@@ -1,4 +1,5 @@
-<h1> Locator Events</h1>
+﻿# Locator Events
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Locator](../methodorevents/locator.md)|&#160;|
+|[Create](../methodorevents/create.md)|[Select](../methodorevents/select.md)|&#160;|

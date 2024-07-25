@@ -1,5 +1,5 @@
-<h1> OLEServer Parents</h1>
+﻿# OLEServer Parents
 
-|---------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[OLERegister](../methodorevents/oleregister.md) ,|[OLEUnregister](../methodorevents/oleunregister.md) ,|
-|[SetFnInfo](../methodorevents/setfninfo.md) ,|[SetVarInfo](../methodorevents/setvarinfo.md) ,  |[SetEventInfo](../methodorevents/seteventinfo.md)    |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|&#160;|
+|[Form](../objects/form.md)|[Root](../objects/root.md)|&#160;|

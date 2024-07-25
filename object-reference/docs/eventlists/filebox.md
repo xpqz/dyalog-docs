@@ -1,4 +1,5 @@
-<h1> FileBox Events</h1>
+﻿# FileBox Events
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[FileBoxCancel](../methodorevents/fileboxcancel.md)|[Select](../methodorevents/select.md)|
+|[Create](../methodorevents/create.md)|[FileBoxOK](../methodorevents/fileboxok.md)|&#160;|

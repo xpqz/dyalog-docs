@@ -7,7 +7,7 @@
 
 
 
-[Formal Definition](trap-statement-definition.md)
+[Formal Definition](trap-statement-definition.md){: .noprint }
 
 
 `:Trap` is an error trapping mechanism that can be used in conjunction with, or as an alternative to, the `⎕TRAP` system variable. It is equivalent to APL2's `⎕EA`, except that the code to be executed is not restricted to a single expression and is not contained within quotes (and so is slightly more efficient).

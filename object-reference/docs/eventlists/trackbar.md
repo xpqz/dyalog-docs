@@ -1,5 +1,9 @@
-<h1> TrackBar Events</h1>
+﻿# TrackBar Events
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[Close](../methodorevents/close.md)|[DropObjects](../methodorevents/dropobjects.md)|[MouseDown](../methodorevents/mousedown.md)|
+|[Configure](../methodorevents/configure.md)|[Expose](../methodorevents/expose.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[GotFocus](../methodorevents/gotfocus.md)|[MouseUp](../methodorevents/mouseup.md)|
+|[Create](../methodorevents/create.md)|[Help](../methodorevents/help.md)|[Scroll](../methodorevents/scroll.md)|
+|[DragDrop](../methodorevents/dragdrop.md)|[KeyPress](../methodorevents/keypress.md)|[Select](../methodorevents/select.md)|
+|[DropFiles](../methodorevents/dropfiles.md)|[LostFocus](../methodorevents/lostfocus.md)|[ThumbDrag](../methodorevents/thumbdrag.md)|

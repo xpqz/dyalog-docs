@@ -1,4 +1,4 @@
-<h1> Icon Methods</h1>
+﻿# Icon Methods
 
-|---------------------------------------|-------------------------------------------|-------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md)|
+|----|----|----|
+|[Detach](../methodorevents/detach.md)|[FileRead](../methodorevents/fileread.md)|[FileWrite](../methodorevents/filewrite.md)|

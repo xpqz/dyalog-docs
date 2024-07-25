@@ -1,4 +1,6 @@
-<h1> Metafile Children</h1>
+﻿# Metafile Children
 
-|---------------------------------------|-------------------------------------------|-------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,|[FileRead](../methodorevents/fileread.md) ,|[FileWrite](../methodorevents/filewrite.md)|
+|----|----|----|
+|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Rect](../objects/rect.md)|
+|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Font](../objects/font.md)|[Poly](../objects/poly.md)|[Timer](../objects/timer.md)|

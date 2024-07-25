@@ -1,5 +1,5 @@
-<h1> TabControl Children</h1>
+﻿# TabControl Children
 
-|-------------------------------------------|-------------------------------------------------|-----------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,      |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md)|
+|----|----|----|
+|[ImageList](../objects/imagelist.md)|[TabButton](../objects/tabbutton.md)|&#160;|
+|[SubForm](../objects/subform.md)|[Timer](../objects/timer.md)|&#160;|

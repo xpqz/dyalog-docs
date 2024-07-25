@@ -1,6 +1,5 @@
-<h1> HTMLRenderer Parents</h1>
+﻿# HTMLRenderer Parents
 
-|-------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,                      |[SetZoomLevel](../methodorevents/setzoomlevel.md) ,    |[GetZoomLevel](../methodorevents/getzoomlevel.md) ,|
-|[ExecuteJavaScript](../methodorevents/executejavascript.md) ,|[WebSocketClose](../methodorevents/websocketclose.md) ,|[PrintToPDF](../methodorevents/printtopdf.md) ,    |
-|[WebSocketSend](../methodorevents/websocketsend.md) ,        |[ShowDevTools](../methodorevents/showdevtools.md) ,    |[Wait](../methodorevents/wait.md)                  |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[Root](../objects/root.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|[SubForm](../objects/subform.md)|

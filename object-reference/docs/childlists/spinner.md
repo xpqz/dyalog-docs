@@ -1,6 +1,6 @@
-<h1> Spinner Children</h1>
+﻿# Spinner Children
 
-|-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,      |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md)|&nbsp;                                         |&nbsp;                                           |
+|----|----|----|
+|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
+|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|[Timer](../objects/timer.md)|
+|[Font](../objects/font.md)|[Rect](../objects/rect.md)|&#160;|

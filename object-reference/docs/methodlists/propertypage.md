@@ -1,6 +1,6 @@
-<h1> PropertyPage Methods</h1>
+﻿# PropertyPage Methods
 
-|-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,        |[ChooseFont](../methodorevents/choosefont.md) ,|[GetTextSize](../methodorevents/gettextsize.md) ,|
-|[Animate](../methodorevents/animate.md) ,      |[GetFocus](../methodorevents/getfocus.md) ,    |[ShowSIP](../methodorevents/showsip.md) ,        |
-|[GetFocusObj](../methodorevents/getfocusobj.md)|&nbsp;                                         |&nbsp;                                           |
+|----|----|----|
+|[Animate](../methodorevents/animate.md)|[GetFocus](../methodorevents/getfocus.md)|[ShowSIP](../methodorevents/showsip.md)|
+|[ChooseFont](../methodorevents/choosefont.md)|[GetFocusObj](../methodorevents/getfocusobj.md)|&#160;|
+|[Detach](../methodorevents/detach.md)|[GetTextSize](../methodorevents/gettextsize.md)|&#160;|

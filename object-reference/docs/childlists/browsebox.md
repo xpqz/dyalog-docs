@@ -1,4 +1,4 @@
-<h1> BrowseBox Children</h1>
+﻿# BrowseBox Children
 
-|---------------------------------------|---------------------------------|------|
-|[Detach](../methodorevents/detach.md) ,|[Wait](../methodorevents/wait.md)|&nbsp;|
+|----|----|----|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

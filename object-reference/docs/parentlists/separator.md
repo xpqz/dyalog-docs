@@ -1,4 +1,4 @@
-<h1> Separator Parents</h1>
+﻿# Separator Parents
 
-|-------------------------------------|------|------|
-|[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|
+|----|----|----|
+|[Menu](../objects/menu.md)|[MenuBar](../objects/menubar.md)|&#160;|

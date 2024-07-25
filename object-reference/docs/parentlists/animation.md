@@ -1,7 +1,5 @@
-<h1> Animation Parents</h1>
+﻿# Animation Parents
 
-|-------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,    |[GetTextSize](../methodorevents/gettextsize.md) ,|[Animate](../methodorevents/animate.md) ,        |
-|[GetFocus](../methodorevents/getfocus.md) ,|[ShowSIP](../methodorevents/showsip.md) ,        |[GetFocusObj](../methodorevents/getfocusobj.md) ,|
-|[AnimOpen](../methodorevents/animopen.md) ,|[AnimClose](../methodorevents/animclose.md) ,    |[AnimPlay](../methodorevents/animplay.md) ,      |
-|[AnimStop](../methodorevents/animstop.md)  |&nbsp;                                           |&nbsp;                                           |
+|----|----|----|
+|[ActiveXControl](../objects/activexcontrol.md)|[Group](../objects/group.md)|[SubForm](../objects/subform.md)|
+|[Form](../objects/form.md)|[PropertyPage](../objects/propertypage.md)|&#160;|

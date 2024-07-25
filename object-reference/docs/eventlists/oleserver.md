@@ -1,5 +1,4 @@
-<h1> OLEServer Events</h1>
+﻿# OLEServer Events
 
-|---------------------------------------------|-------------------------------------------------|-----------------------------------------------------|
-|[Detach](../methodorevents/detach.md) ,      |[OLERegister](../methodorevents/oleregister.md) ,|[OLEUnregister](../methodorevents/oleunregister.md) ,|
-|[SetFnInfo](../methodorevents/setfninfo.md) ,|[SetVarInfo](../methodorevents/setvarinfo.md) ,  |[SetEventInfo](../methodorevents/seteventinfo.md)    |
+|----|----|----|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|&#160;|
