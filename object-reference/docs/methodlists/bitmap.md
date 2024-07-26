@@ -1,5 +1,5 @@
 ﻿# Bitmap Methods
 
 |----|----|----|
-|[Detach](../methodorevents/detach.md)|[FileWrite](../methodorevents/filewrite.md)|[MakeGIF](../methodorevents/makegif.md)|
-|[FileRead](../methodorevents/fileread.md)|[GetTextSize](../methodorevents/gettextsize.md)|[MakePNG](../methodorevents/makepng.md)|
+|[Detach](../methodorevents/detach.md)|[FileRead](../methodorevents/fileread.md)|[FileWrite](../methodorevents/filewrite.md)|
+|[MakePNG](../methodorevents/makepng.md)|[MakeGIF](../methodorevents/makegif.md)|[GetTextSize](../methodorevents/gettextsize.md)|

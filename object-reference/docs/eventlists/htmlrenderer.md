@@ -1,6 +1,6 @@
 ﻿# HTMLRenderer Events
 
 |----|----|----|
-|[Close](../methodorevents/close.md)|[HTTPRequest](../methodorevents/httprequest.md)|[WebSocketError](../methodorevents/websocketerror.md)|
-|[Create](../methodorevents/create.md)|[LoadEnd](../methodorevents/loadend.md)|[WebSocketReceive](../methodorevents/websocketreceive.md)|
-|[DoPopup](../methodorevents/dopopup.md)|[SelectCertificate](../methodorevents/selectcertificate.md)|[WebSocketUpgrade](../methodorevents/websocketupgrade.md)|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[LoadEnd](../methodorevents/loadend.md)|
+|[HTTPRequest](../methodorevents/httprequest.md)|[WebSocketUpgrade](../methodorevents/websocketupgrade.md)|[WebSocketReceive](../methodorevents/websocketreceive.md)|
+|[WebSocketError](../methodorevents/websocketerror.md)|[DoPopup](../methodorevents/dopopup.md)|[SelectCertificate](../methodorevents/selectcertificate.md)|

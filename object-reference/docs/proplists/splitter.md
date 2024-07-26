@@ -1,10 +1,10 @@
 ﻿# Splitter Properties
 
 |----|----|----|
-|[Active](../properties/active.md)|[Event](../properties/event.md)|[SplitObj1](../properties/splitobj1.md)|
-|[Align](../properties/align.md)|[EventList](../properties/eventlist.md)|[SplitObj2](../properties/splitobj2.md)|
-|[BCol](../properties/bcol.md)|[KeepOnClose](../properties/keeponclose.md)|[Style](../properties/style.md)|
-|[ChildList](../properties/childlist.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[Coord](../properties/coord.md)|[Posn](../properties/posn.md)|[Visible](../properties/visible.md)|
-|[CursorObj](../properties/cursorobj.md)|[PropList](../properties/proplist.md)|&#160;|
-|[Data](../properties/data.md)|[Size](../properties/size.md)|&#160;|
+|[Type](../properties/type.md)|[SplitObj1](../properties/splitobj1.md)|[SplitObj2](../properties/splitobj2.md)|
+|[Posn](../properties/posn.md)|[Size](../properties/size.md)|[Style](../properties/style.md)|
+|[Coord](../properties/coord.md)|[Align](../properties/align.md)|[Active](../properties/active.md)|
+|[Visible](../properties/visible.md)|[Event](../properties/event.md)|[BCol](../properties/bcol.md)|
+|[CursorObj](../properties/cursorobj.md)|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

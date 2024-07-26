@@ -1,9 +1,9 @@
 ﻿# TabButton Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[ImageIndex](../properties/imageindex.md)|[State](../properties/state.md)|
-|[Caption](../properties/caption.md)|[KeepOnClose](../properties/keeponclose.md)|[TabObj](../properties/tabobj.md)|
-|[ChildList](../properties/childlist.md)|[MethodList](../properties/methodlist.md)|[Tip](../properties/tip.md)|
-|[Data](../properties/data.md)|[Posn](../properties/posn.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[PropList](../properties/proplist.md)|&#160;|
-|[EventList](../properties/eventlist.md)|[Size](../properties/size.md)|&#160;|
+|[Type](../properties/type.md)|[Caption](../properties/caption.md)|[Posn](../properties/posn.md)|
+|[Size](../properties/size.md)|[State](../properties/state.md)|[Event](../properties/event.md)|
+|[ImageIndex](../properties/imageindex.md)|[Data](../properties/data.md)|[Tip](../properties/tip.md)|
+|[TabObj](../properties/tabobj.md)|[Accelerator](../properties/accelerator.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

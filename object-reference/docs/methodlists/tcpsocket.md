@@ -1,5 +1,5 @@
 ﻿# TCPSocket Methods
 
 |----|----|----|
-|[Detach](../methodorevents/detach.md)|[TCPSend](../methodorevents/tcpsend.md)|[Wait](../methodorevents/wait.md)|
-|[TCPGetHostID](../methodorevents/tcpgethostid.md)|[TCPSendPicture](../methodorevents/tcpsendpicture.md)|&#160;|
+|[Detach](../methodorevents/detach.md)|[TCPSend](../methodorevents/tcpsend.md)|[TCPGetHostID](../methodorevents/tcpgethostid.md)|
+|[TCPSendPicture](../methodorevents/tcpsendpicture.md)|[Wait](../methodorevents/wait.md)|&#160;|

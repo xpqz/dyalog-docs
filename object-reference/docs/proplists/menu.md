@@ -1,11 +1,11 @@
 ﻿# Menu Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[Data](../properties/data.md)|[ImageListObj](../properties/imagelistobj.md)|
-|[Active](../properties/active.md)|[EdgeStyle](../properties/edgestyle.md)|[KeepOnClose](../properties/keeponclose.md)|
-|[Align](../properties/align.md)|[Event](../properties/event.md)|[MethodList](../properties/methodlist.md)|
-|[BCol](../properties/bcol.md)|[EventList](../properties/eventlist.md)|[Posn](../properties/posn.md)|
-|[BtnPix](../properties/btnpix.md)|[FCol](../properties/fcol.md)|[PropList](../properties/proplist.md)|
-|[Caption](../properties/caption.md)|[FontObj](../properties/fontobj.md)|[Translate](../properties/translate.md)|
-|[ChildList](../properties/childlist.md)|[Handle](../properties/handle.md)|[Type](../properties/type.md)|
-|[Coord](../properties/coord.md)|[ImageIndex](../properties/imageindex.md)|&#160;|
+|[Type](../properties/type.md)|[Caption](../properties/caption.md)|[Posn](../properties/posn.md)|
+|[Coord](../properties/coord.md)|[Align](../properties/align.md)|[Active](../properties/active.md)|
+|[Event](../properties/event.md)|[FontObj](../properties/fontobj.md)|[FCol](../properties/fcol.md)|
+|[BCol](../properties/bcol.md)|[BtnPix](../properties/btnpix.md)|[Data](../properties/data.md)|
+|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|[Translate](../properties/translate.md)|
+|[Accelerator](../properties/accelerator.md)|[KeepOnClose](../properties/keeponclose.md)|[ImageListObj](../properties/imagelistobj.md)|
+|[ImageIndex](../properties/imageindex.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

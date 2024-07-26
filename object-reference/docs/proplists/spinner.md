@@ -1,20 +1,20 @@
 ﻿# Spinner Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[EventList](../properties/eventlist.md)|[ReadOnly](../properties/readonly.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[FCol](../properties/fcol.md)|[Redraw](../properties/redraw.md)|
-|[Active](../properties/active.md)|[FieldType](../properties/fieldtype.md)|[Size](../properties/size.md)|
-|[Align](../properties/align.md)|[FontObj](../properties/fontobj.md)|[Sizeable](../properties/sizeable.md)|
-|[Attach](../properties/attach.md)|[FormatString](../properties/formatstring.md)|[Step](../properties/step.md)|
-|[AutoConf](../properties/autoconf.md)|[Handle](../properties/handle.md)|[TabIndex](../properties/tabindex.md)|
-|[BCol](../properties/bcol.md)|[Hint](../properties/hint.md)|[Text](../properties/text.md)|
-|[Border](../properties/border.md)|[HintObj](../properties/hintobj.md)|[Thumb](../properties/thumb.md)|
-|[Changed](../properties/changed.md)|[Items](../properties/items.md)|[Tip](../properties/tip.md)|
-|[ChildList](../properties/childlist.md)|[Justify](../properties/justify.md)|[TipObj](../properties/tipobj.md)|
-|[Coord](../properties/coord.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[CursorObj](../properties/cursorobj.md)|[Limits](../properties/limits.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[MaxLength](../properties/maxlength.md)|[ValidIfEmpty](../properties/validifempty.md)|
-|[Decimals](../properties/decimals.md)|[MethodList](../properties/methodlist.md)|[Value](../properties/value.md)|
-|[Dragable](../properties/dragable.md)|[Password](../properties/password.md)|[Visible](../properties/visible.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[Posn](../properties/posn.md)|[Wrap](../properties/wrap.md)|
-|[Event](../properties/event.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[Items](../properties/items.md)|[Text](../properties/text.md)|
+|[Posn](../properties/posn.md)|[Size](../properties/size.md)|[Coord](../properties/coord.md)|
+|[Align](../properties/align.md)|[Border](../properties/border.md)|[Justify](../properties/justify.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Thumb](../properties/thumb.md)|[Step](../properties/step.md)|[Wrap](../properties/wrap.md)|
+|[Limits](../properties/limits.md)|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|
+|[FontObj](../properties/fontobj.md)|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|
+|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|
+|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|
+|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|
+|[TipObj](../properties/tipobj.md)|[FieldType](../properties/fieldtype.md)|[MaxLength](../properties/maxlength.md)|
+|[Decimals](../properties/decimals.md)|[Password](../properties/password.md)|[ValidIfEmpty](../properties/validifempty.md)|
+|[ReadOnly](../properties/readonly.md)|[FormatString](../properties/formatstring.md)|[Changed](../properties/changed.md)|
+|[Value](../properties/value.md)|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[KeepOnClose](../properties/keeponclose.md)|[Redraw](../properties/redraw.md)|
+|[TabIndex](../properties/tabindex.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

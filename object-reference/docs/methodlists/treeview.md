@@ -1,9 +1,9 @@
 ﻿# TreeView Methods
 
 |----|----|----|
-|[AddChildren](../methodorevents/addchildren.md)|[Detach](../methodorevents/detach.md)|[GetTextSize](../methodorevents/gettextsize.md)|
-|[AddItems](../methodorevents/additems.md)|[GetFocus](../methodorevents/getfocus.md)|[SetItemImage](../methodorevents/setitemimage.md)|
-|[Animate](../methodorevents/animate.md)|[GetFocusObj](../methodorevents/getfocusobj.md)|[SetItemState](../methodorevents/setitemstate.md)|
-|[ChooseFont](../methodorevents/choosefont.md)|[GetItemHandle](../methodorevents/getitemhandle.md)|[ShowItem](../methodorevents/showitem.md)|
-|[DeleteChildren](../methodorevents/deletechildren.md)|[GetItemState](../methodorevents/getitemstate.md)|[ShowSIP](../methodorevents/showsip.md)|
-|[DeleteItems](../methodorevents/deleteitems.md)|[GetParentItem](../methodorevents/getparentitem.md)|&#160;|
+|[Detach](../methodorevents/detach.md)|[ChooseFont](../methodorevents/choosefont.md)|[GetItemState](../methodorevents/getitemstate.md)|
+|[SetItemState](../methodorevents/setitemstate.md)|[AddItems](../methodorevents/additems.md)|[DeleteItems](../methodorevents/deleteitems.md)|
+|[AddChildren](../methodorevents/addchildren.md)|[DeleteChildren](../methodorevents/deletechildren.md)|[GetParentItem](../methodorevents/getparentitem.md)|
+|[GetItemHandle](../methodorevents/getitemhandle.md)|[SetItemImage](../methodorevents/setitemimage.md)|[ShowItem](../methodorevents/showitem.md)|
+|[GetTextSize](../methodorevents/gettextsize.md)|[Animate](../methodorevents/animate.md)|[GetFocus](../methodorevents/getfocus.md)|
+|[ShowSIP](../methodorevents/showsip.md)|[GetFocusObj](../methodorevents/getfocusobj.md)|&#160;|

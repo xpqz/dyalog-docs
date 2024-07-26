@@ -1,9 +1,9 @@
 ﻿# ImageList Parents
 
 |----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|[ListView](../objects/listview.md)|[TabControl](../objects/tabcontrol.md)|
-|[ButtonEdit](../objects/buttonedit.md)|[OLEServer](../objects/oleserver.md)|[ToolBar](../objects/toolbar.md)|
-|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[ToolControl](../objects/toolcontrol.md)|
-|[CoolBar](../objects/coolbar.md)|[Root](../objects/root.md)|[TreeView](../objects/treeview.md)|
-|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|&#160;|
-|[Group](../objects/group.md)|[TCPSocket](../objects/tcpsocket.md)|&#160;|
+|[ActiveXControl](../objects/activexcontrol.md)|[ButtonEdit](../objects/buttonedit.md)|[CoolBand](../objects/coolband.md)|
+|[CoolBar](../objects/coolbar.md)|[Form](../objects/form.md)|[Group](../objects/group.md)|
+|[ListView](../objects/listview.md)|[OLEServer](../objects/oleserver.md)|[PropertyPage](../objects/propertypage.md)|
+|[Root](../objects/root.md)|[SubForm](../objects/subform.md)|[TabControl](../objects/tabcontrol.md)|
+|[TCPSocket](../objects/tcpsocket.md)|[ToolBar](../objects/toolbar.md)|[ToolControl](../objects/toolcontrol.md)|
+|[TreeView](../objects/treeview.md)|&#160;|&#160;|

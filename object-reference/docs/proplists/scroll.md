@@ -1,16 +1,16 @@
 ﻿# Scroll Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[EdgeStyle](../properties/edgestyle.md)|[Range](../properties/range.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[Event](../properties/event.md)|[Redraw](../properties/redraw.md)|
-|[Active](../properties/active.md)|[EventList](../properties/eventlist.md)|[Size](../properties/size.md)|
-|[Align](../properties/align.md)|[HScroll](../properties/hscroll.md)|[Sizeable](../properties/sizeable.md)|
-|[Attach](../properties/attach.md)|[Handle](../properties/handle.md)|[Step](../properties/step.md)|
-|[AutoConf](../properties/autoconf.md)|[Hint](../properties/hint.md)|[TabIndex](../properties/tabindex.md)|
-|[BCol](../properties/bcol.md)|[HintObj](../properties/hintobj.md)|[Thumb](../properties/thumb.md)|
-|[Border](../properties/border.md)|[KeepOnClose](../properties/keeponclose.md)|[Tip](../properties/tip.md)|
-|[ChildList](../properties/childlist.md)|[Limits](../properties/limits.md)|[TipObj](../properties/tipobj.md)|
-|[Coord](../properties/coord.md)|[MethodList](../properties/methodlist.md)|[Translate](../properties/translate.md)|
-|[CursorObj](../properties/cursorobj.md)|[PageSize](../properties/pagesize.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[Posn](../properties/posn.md)|[VScroll](../properties/vscroll.md)|
-|[Dragable](../properties/dragable.md)|[PropList](../properties/proplist.md)|[Visible](../properties/visible.md)|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Size](../properties/size.md)|
+|[Coord](../properties/coord.md)|[Align](../properties/align.md)|[Border](../properties/border.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Thumb](../properties/thumb.md)|[Range](../properties/range.md)|[Step](../properties/step.md)|
+|[VScroll](../properties/vscroll.md)|[HScroll](../properties/hscroll.md)|[Limits](../properties/limits.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[BCol](../properties/bcol.md)|
+|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|
+|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|
+|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|
+|[TipObj](../properties/tipobj.md)|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[KeepOnClose](../properties/keeponclose.md)|[Redraw](../properties/redraw.md)|
+|[TabIndex](../properties/tabindex.md)|[PageSize](../properties/pagesize.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

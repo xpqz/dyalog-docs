@@ -1,7 +1,7 @@
 ﻿# SysTrayItem Events
 
 |----|----|----|
-|[BalloonHide](../methodorevents/balloonhide.md)|[Close](../methodorevents/close.md)|[MouseMove](../methodorevents/mousemove.md)|
-|[BalloonShow](../methodorevents/balloonshow.md)|[Create](../methodorevents/create.md)|[MouseUp](../methodorevents/mouseup.md)|
-|[BalloonTimeout](../methodorevents/balloontimeout.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|&#160;|
-|[BalloonUserClick](../methodorevents/balloonuserclick.md)|[MouseDown](../methodorevents/mousedown.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[MouseDown](../methodorevents/mousedown.md)|
+|[MouseUp](../methodorevents/mouseup.md)|[MouseMove](../methodorevents/mousemove.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|
+|[BalloonShow](../methodorevents/balloonshow.md)|[BalloonHide](../methodorevents/balloonhide.md)|[BalloonTimeout](../methodorevents/balloontimeout.md)|
+|[BalloonUserClick](../methodorevents/balloonuserclick.md)|&#160;|&#160;|

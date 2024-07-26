@@ -1,9 +1,9 @@
 ﻿# Font Properties
 
 |----|----|----|
-|[CharSet](../properties/charset.md)|[Handle](../properties/handle.md)|[Rotate](../properties/rotate.md)|
-|[ChildList](../properties/childlist.md)|[Italic](../properties/italic.md)|[Size](../properties/size.md)|
-|[Coord](../properties/coord.md)|[KeepOnClose](../properties/keeponclose.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[MethodList](../properties/methodlist.md)|[Underline](../properties/underline.md)|
-|[EventList](../properties/eventlist.md)|[PName](../properties/pname.md)|[Weight](../properties/weight.md)|
-|[Fixed](../properties/fixed.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[PName](../properties/pname.md)|[Size](../properties/size.md)|
+|[Fixed](../properties/fixed.md)|[Italic](../properties/italic.md)|[Underline](../properties/underline.md)|
+|[Weight](../properties/weight.md)|[Rotate](../properties/rotate.md)|[CharSet](../properties/charset.md)|
+|[Coord](../properties/coord.md)|[Data](../properties/data.md)|[Handle](../properties/handle.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

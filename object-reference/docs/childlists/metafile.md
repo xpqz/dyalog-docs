@@ -1,6 +1,6 @@
 ﻿# Metafile Children
 
 |----|----|----|
-|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Rect](../objects/rect.md)|
-|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
-|[Font](../objects/font.md)|[Poly](../objects/poly.md)|[Timer](../objects/timer.md)|
+|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)|
+|[Image](../objects/image.md)|[Marker](../objects/marker.md)|[Poly](../objects/poly.md)|
+|[Rect](../objects/rect.md)|[Text](../objects/text.md)|[Timer](../objects/timer.md)|

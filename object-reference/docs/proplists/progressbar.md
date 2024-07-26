@@ -1,16 +1,16 @@
 ﻿# ProgressBar Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[EventList](../properties/eventlist.md)|[Sizeable](../properties/sizeable.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[Handle](../properties/handle.md)|[Step](../properties/step.md)|
-|[Active](../properties/active.md)|[Hint](../properties/hint.md)|[Style](../properties/style.md)|
-|[Attach](../properties/attach.md)|[HintObj](../properties/hintobj.md)|[TabIndex](../properties/tabindex.md)|
-|[AutoConf](../properties/autoconf.md)|[Interval](../properties/interval.md)|[Thumb](../properties/thumb.md)|
-|[BCol](../properties/bcol.md)|[KeepOnClose](../properties/keeponclose.md)|[Tip](../properties/tip.md)|
-|[ChildList](../properties/childlist.md)|[Limits](../properties/limits.md)|[TipObj](../properties/tipobj.md)|
-|[Coord](../properties/coord.md)|[MethodList](../properties/methodlist.md)|[Translate](../properties/translate.md)|
-|[CursorObj](../properties/cursorobj.md)|[Posn](../properties/posn.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[ProgressStyle](../properties/progressstyle.md)|[Visible](../properties/visible.md)|
-|[Dragable](../properties/dragable.md)|[PropList](../properties/proplist.md)|[Wrap](../properties/wrap.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[Redraw](../properties/redraw.md)|&#160;|
-|[Event](../properties/event.md)|[Size](../properties/size.md)|&#160;|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Size](../properties/size.md)|
+|[Style](../properties/style.md)|[Coord](../properties/coord.md)|[Active](../properties/active.md)|
+|[Visible](../properties/visible.md)|[Event](../properties/event.md)|[Thumb](../properties/thumb.md)|
+|[Step](../properties/step.md)|[Wrap](../properties/wrap.md)|[Limits](../properties/limits.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[BCol](../properties/bcol.md)|
+|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|
+|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|
+|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|
+|[TipObj](../properties/tipobj.md)|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[KeepOnClose](../properties/keeponclose.md)|[ProgressStyle](../properties/progressstyle.md)|
+|[Redraw](../properties/redraw.md)|[TabIndex](../properties/tabindex.md)|[Interval](../properties/interval.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

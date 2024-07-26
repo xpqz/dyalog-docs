@@ -1,7 +1,7 @@
 ﻿# RichEdit Children
 
 |----|----|----|
-|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Rect](../objects/rect.md)|
-|[Circle](../objects/circle.md)|[Icon](../objects/icon.md)|[Text](../objects/text.md)|
-|[Cursor](../objects/cursor.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|
-|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|&#160;|
+|[Bitmap](../objects/bitmap.md)|[Circle](../objects/circle.md)|[Cursor](../objects/cursor.md)|
+|[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)|[Icon](../objects/icon.md)|
+|[Marker](../objects/marker.md)|[Poly](../objects/poly.md)|[Rect](../objects/rect.md)|
+|[Text](../objects/text.md)|[Timer](../objects/timer.md)|&#160;|

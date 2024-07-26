@@ -1,18 +1,18 @@
 ﻿# RichEdit Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[Event](../properties/event.md)|[RTFText](../properties/rtftext.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[EventList](../properties/eventlist.md)|[Redraw](../properties/redraw.md)|
-|[Active](../properties/active.md)|[FCol](../properties/fcol.md)|[SelText](../properties/seltext.md)|
-|[Attach](../properties/attach.md)|[File](../properties/file.md)|[Size](../properties/size.md)|
-|[AutoConf](../properties/autoconf.md)|[FontObj](../properties/fontobj.md)|[Sizeable](../properties/sizeable.md)|
-|[BCol](../properties/bcol.md)|[HScroll](../properties/hscroll.md)|[TabIndex](../properties/tabindex.md)|
-|[Border](../properties/border.md)|[Handle](../properties/handle.md)|[Text](../properties/text.md)|
-|[Changed](../properties/changed.md)|[Hint](../properties/hint.md)|[Tip](../properties/tip.md)|
-|[CharFormat](../properties/charformat.md)|[HintObj](../properties/hintobj.md)|[TipObj](../properties/tipobj.md)|
-|[ChildList](../properties/childlist.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[Coord](../properties/coord.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[CursorObj](../properties/cursorobj.md)|[PageWidth](../properties/pagewidth.md)|[VScroll](../properties/vscroll.md)|
-|[Data](../properties/data.md)|[ParaFormat](../properties/paraformat.md)|[Visible](../properties/visible.md)|
-|[Dragable](../properties/dragable.md)|[Posn](../properties/posn.md)|[WantsReturn](../properties/wantsreturn.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[PropList](../properties/proplist.md)|[WordFormat](../properties/wordformat.md)|
+|[Type](../properties/type.md)|[Text](../properties/text.md)|[Posn](../properties/posn.md)|
+|[Size](../properties/size.md)|[File](../properties/file.md)|[Coord](../properties/coord.md)|
+|[Border](../properties/border.md)|[Active](../properties/active.md)|[Visible](../properties/visible.md)|
+|[Event](../properties/event.md)|[VScroll](../properties/vscroll.md)|[HScroll](../properties/hscroll.md)|
+|[SelText](../properties/seltext.md)|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|
+|[FontObj](../properties/fontobj.md)|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|
+|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|
+|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|
+|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|
+|[TipObj](../properties/tipobj.md)|[Changed](../properties/changed.md)|[RTFText](../properties/rtftext.md)|
+|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|[CharFormat](../properties/charformat.md)|
+|[WordFormat](../properties/wordformat.md)|[ParaFormat](../properties/paraformat.md)|[PageWidth](../properties/pagewidth.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[WantsReturn](../properties/wantsreturn.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[Redraw](../properties/redraw.md)|[TabIndex](../properties/tabindex.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

@@ -1,7 +1,7 @@
 ﻿# Printer Children
 
 |----|----|----|
-|[Bitmap](../objects/bitmap.md)|[Icon](../objects/icon.md)|[Poly](../objects/poly.md)|
-|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Rect](../objects/rect.md)|
-|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
-|[Font](../objects/font.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|
+|[Bitmap](../objects/bitmap.md)|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|
+|[Font](../objects/font.md)|[Icon](../objects/icon.md)|[Image](../objects/image.md)|
+|[Marker](../objects/marker.md)|[Metafile](../objects/metafile.md)|[Poly](../objects/poly.md)|
+|[Rect](../objects/rect.md)|[Text](../objects/text.md)|[Timer](../objects/timer.md)|

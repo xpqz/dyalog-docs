@@ -1,10 +1,10 @@
 ﻿# StatusBar Events
 
 |----|----|----|
-|[Close](../methodorevents/close.md)|[Expose](../methodorevents/expose.md)|[MouseLeave](../methodorevents/mouseleave.md)|
-|[Configure](../methodorevents/configure.md)|[FontCancel](../methodorevents/fontcancel.md)|[MouseMove](../methodorevents/mousemove.md)|
-|[ContextMenu](../methodorevents/contextmenu.md)|[FontOK](../methodorevents/fontok.md)|[MouseUp](../methodorevents/mouseup.md)|
-|[Create](../methodorevents/create.md)|[Help](../methodorevents/help.md)|[MouseWheel](../methodorevents/mousewheel.md)|
-|[DragDrop](../methodorevents/dragdrop.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|[Select](../methodorevents/select.md)|
-|[DropFiles](../methodorevents/dropfiles.md)|[MouseDown](../methodorevents/mousedown.md)|&#160;|
-|[DropObjects](../methodorevents/dropobjects.md)|[MouseEnter](../methodorevents/mouseenter.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|
+|[FontCancel](../methodorevents/fontcancel.md)|[DragDrop](../methodorevents/dragdrop.md)|[Configure](../methodorevents/configure.md)|
+|[ContextMenu](../methodorevents/contextmenu.md)|[DropFiles](../methodorevents/dropfiles.md)|[DropObjects](../methodorevents/dropobjects.md)|
+|[Expose](../methodorevents/expose.md)|[Help](../methodorevents/help.md)|[MouseDown](../methodorevents/mousedown.md)|
+|[MouseUp](../methodorevents/mouseup.md)|[MouseMove](../methodorevents/mousemove.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|
+|[MouseEnter](../methodorevents/mouseenter.md)|[MouseLeave](../methodorevents/mouseleave.md)|[MouseWheel](../methodorevents/mousewheel.md)|
+|[Select](../methodorevents/select.md)|&#160;|&#160;|

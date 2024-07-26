@@ -1,7 +1,7 @@
 ﻿# Timer Properties
 
 |----|----|----|
-|[Active](../properties/active.md)|[EventList](../properties/eventlist.md)|[MethodList](../properties/methodlist.md)|
-|[ChildList](../properties/childlist.md)|[FireOnce](../properties/fireonce.md)|[PropList](../properties/proplist.md)|
-|[Data](../properties/data.md)|[Interval](../properties/interval.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[KeepOnClose](../properties/keeponclose.md)|&#160;|
+|[Type](../properties/type.md)|[Interval](../properties/interval.md)|[Active](../properties/active.md)|
+|[Event](../properties/event.md)|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[FireOnce](../properties/fireonce.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

@@ -1,7 +1,7 @@
 ﻿# Bitmap Children
 
 |----|----|----|
-|[Circle](../objects/circle.md)|[Marker](../objects/marker.md)|[Text](../objects/text.md)|
-|[Ellipse](../objects/ellipse.md)|[Metafile](../objects/metafile.md)|[Timer](../objects/timer.md)|
-|[Font](../objects/font.md)|[Poly](../objects/poly.md)|&#160;|
-|[Image](../objects/image.md)|[Rect](../objects/rect.md)|&#160;|
+|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)|
+|[Image](../objects/image.md)|[Marker](../objects/marker.md)|[Metafile](../objects/metafile.md)|
+|[Poly](../objects/poly.md)|[Rect](../objects/rect.md)|[Text](../objects/text.md)|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

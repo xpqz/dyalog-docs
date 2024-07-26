@@ -1,12 +1,12 @@
 ﻿# Animation Events
 
 |----|----|----|
-|[AnimStarted](../methodorevents/animstarted.md)|[Expose](../methodorevents/expose.md)|[LostFocus](../methodorevents/lostfocus.md)|
-|[AnimStopped](../methodorevents/animstopped.md)|[GesturePan](../methodorevents/gesturepan.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|
-|[Close](../methodorevents/close.md)|[GesturePressAndTap](../methodorevents/gesturepressandtap.md)|[MouseDown](../methodorevents/mousedown.md)|
-|[Configure](../methodorevents/configure.md)|[GestureRotate](../methodorevents/gesturerotate.md)|[MouseEnter](../methodorevents/mouseenter.md)|
-|[ContextMenu](../methodorevents/contextmenu.md)|[GestureTwoFingerTap](../methodorevents/gesturetwofingertap.md)|[MouseLeave](../methodorevents/mouseleave.md)|
-|[Create](../methodorevents/create.md)|[GestureZoom](../methodorevents/gesturezoom.md)|[MouseMove](../methodorevents/mousemove.md)|
-|[DragDrop](../methodorevents/dragdrop.md)|[GotFocus](../methodorevents/gotfocus.md)|[MouseUp](../methodorevents/mouseup.md)|
-|[DropFiles](../methodorevents/dropfiles.md)|[Help](../methodorevents/help.md)|[MouseWheel](../methodorevents/mousewheel.md)|
-|[DropObjects](../methodorevents/dropobjects.md)|[KeyPress](../methodorevents/keypress.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[DragDrop](../methodorevents/dragdrop.md)|
+|[Configure](../methodorevents/configure.md)|[ContextMenu](../methodorevents/contextmenu.md)|[DropFiles](../methodorevents/dropfiles.md)|
+|[DropObjects](../methodorevents/dropobjects.md)|[Expose](../methodorevents/expose.md)|[Help](../methodorevents/help.md)|
+|[KeyPress](../methodorevents/keypress.md)|[GotFocus](../methodorevents/gotfocus.md)|[LostFocus](../methodorevents/lostfocus.md)|
+|[MouseDown](../methodorevents/mousedown.md)|[MouseUp](../methodorevents/mouseup.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[MouseDblClick](../methodorevents/mousedblclick.md)|[MouseEnter](../methodorevents/mouseenter.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[MouseWheel](../methodorevents/mousewheel.md)|[GestureZoom](../methodorevents/gesturezoom.md)|[GesturePan](../methodorevents/gesturepan.md)|
+|[GestureRotate](../methodorevents/gesturerotate.md)|[GestureTwoFingerTap](../methodorevents/gesturetwofingertap.md)|[GesturePressAndTap](../methodorevents/gesturepressandtap.md)|
+|[AnimStarted](../methodorevents/animstarted.md)|[AnimStopped](../methodorevents/animstopped.md)|&#160;|

@@ -1,6 +1,6 @@
 ﻿# Printer Parents
 
 |----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|[Root](../objects/root.md)|
-|[CoolBand](../objects/coolband.md)|[PropertyPage](../objects/propertypage.md)|[TCPSocket](../objects/tcpsocket.md)|
-|[Form](../objects/form.md)|[PropertySheet](../objects/propertysheet.md)|&#160;|
+|[ActiveXControl](../objects/activexcontrol.md)|[CoolBand](../objects/coolband.md)|[Form](../objects/form.md)|
+|[OLEServer](../objects/oleserver.md)|[PropertyPage](../objects/propertypage.md)|[PropertySheet](../objects/propertysheet.md)|
+|[Root](../objects/root.md)|[TCPSocket](../objects/tcpsocket.md)|&#160;|

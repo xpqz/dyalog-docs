@@ -1,8 +1,8 @@
 ﻿# Separator Properties
 
 |----|----|----|
-|[BCol](../properties/bcol.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|
-|[ChildList](../properties/childlist.md)|[FCol](../properties/fcol.md)|[Style](../properties/style.md)|
-|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[Posn](../properties/posn.md)|&#160;|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Style](../properties/style.md)|
+|[Event](../properties/event.md)|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|
+|[Data](../properties/data.md)|[EdgeStyle](../properties/edgestyle.md)|[Translate](../properties/translate.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

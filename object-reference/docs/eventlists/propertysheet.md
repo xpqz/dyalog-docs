@@ -1,5 +1,5 @@
 ﻿# PropertySheet Events
 
 |----|----|----|
-|[Close](../methodorevents/close.md)|[FontCancel](../methodorevents/fontcancel.md)|&#160;|
-|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|
+|[FontCancel](../methodorevents/fontcancel.md)|&#160;|&#160;|

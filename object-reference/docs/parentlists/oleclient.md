@@ -1,5 +1,5 @@
 ﻿# OLEClient Parents
 
 |----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[Root](../objects/root.md)|
-|[CoolBand](../objects/coolband.md)|[OLEServer](../objects/oleserver.md)|[TCPSocket](../objects/tcpsocket.md)|
+|[ActiveXControl](../objects/activexcontrol.md)|[CoolBand](../objects/coolband.md)|[Form](../objects/form.md)|
+|[OLEServer](../objects/oleserver.md)|[Root](../objects/root.md)|[TCPSocket](../objects/tcpsocket.md)|

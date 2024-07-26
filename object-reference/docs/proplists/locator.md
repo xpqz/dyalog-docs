@@ -1,9 +1,9 @@
 ﻿# Locator Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[EventList](../properties/eventlist.md)|[Size](../properties/size.md)|
-|[ChildList](../properties/childlist.md)|[KeepOnClose](../properties/keeponclose.md)|[Sizeable](../properties/sizeable.md)|
-|[Coord](../properties/coord.md)|[LStyle](../properties/lstyle.md)|[Step](../properties/step.md)|
-|[CursorObj](../properties/cursorobj.md)|[MethodList](../properties/methodlist.md)|[Style](../properties/style.md)|
-|[Data](../properties/data.md)|[Posn](../properties/posn.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Size](../properties/size.md)|
+|[LStyle](../properties/lstyle.md)|[Style](../properties/style.md)|[Coord](../properties/coord.md)|
+|[Event](../properties/event.md)|[Step](../properties/step.md)|[Sizeable](../properties/sizeable.md)|
+|[CursorObj](../properties/cursorobj.md)|[Data](../properties/data.md)|[Accelerator](../properties/accelerator.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

@@ -1,8 +1,8 @@
 ﻿# ImageList Properties
 
 |----|----|----|
-|[ChildList](../properties/childlist.md)|[Handle](../properties/handle.md)|[MethodList](../properties/methodlist.md)|
-|[Coord](../properties/coord.md)|[ImageCount](../properties/imagecount.md)|[PropList](../properties/proplist.md)|
-|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|[Size](../properties/size.md)|
-|[Event](../properties/event.md)|[MapCols](../properties/mapcols.md)|[Translate](../properties/translate.md)|
-|[EventList](../properties/eventlist.md)|[Masked](../properties/masked.md)|[Type](../properties/type.md)|
+|[Type](../properties/type.md)|[Size](../properties/size.md)|[Event](../properties/event.md)|
+|[Coord](../properties/coord.md)|[Data](../properties/data.md)|[Handle](../properties/handle.md)|
+|[Translate](../properties/translate.md)|[ImageCount](../properties/imagecount.md)|[Masked](../properties/masked.md)|
+|[MapCols](../properties/mapcols.md)|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

@@ -1,5 +1,5 @@
 ﻿# Clipboard Events
 
 |----|----|----|
-|[ClipChange](../methodorevents/clipchange.md)|[Create](../methodorevents/create.md)|&#160;|
-|[Close](../methodorevents/close.md)|[Select](../methodorevents/select.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[ClipChange](../methodorevents/clipchange.md)|
+|[Select](../methodorevents/select.md)|&#160;|&#160;|

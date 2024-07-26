@@ -1,4 +1,4 @@
 ﻿# ActiveXContainer Events
 
 |----|----|----|
-|[AmbientChanged](../methodorevents/ambientchanged.md)|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[AmbientChanged](../methodorevents/ambientchanged.md)|

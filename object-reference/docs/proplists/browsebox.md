@@ -1,8 +1,8 @@
 ﻿# BrowseBox Properties
 
 |----|----|----|
-|[BrowseFor](../properties/browsefor.md)|[EventList](../properties/eventlist.md)|[StartIn](../properties/startin.md)|
-|[Caption](../properties/caption.md)|[HasEdit](../properties/hasedit.md)|[Target](../properties/target.md)|
-|[ChildList](../properties/childlist.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[Data](../properties/data.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[Caption](../properties/caption.md)|[BrowseFor](../properties/browsefor.md)|
+|[Target](../properties/target.md)|[StartIn](../properties/startin.md)|[HasEdit](../properties/hasedit.md)|
+|[Event](../properties/event.md)|[Data](../properties/data.md)|[Translate](../properties/translate.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

@@ -1,17 +1,17 @@
 ﻿# List Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[Event](../properties/event.md)|[Redraw](../properties/redraw.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[EventList](../properties/eventlist.md)|[SelItems](../properties/selitems.md)|
-|[Active](../properties/active.md)|[FCol](../properties/fcol.md)|[Size](../properties/size.md)|
-|[Attach](../properties/attach.md)|[FontObj](../properties/fontobj.md)|[Sizeable](../properties/sizeable.md)|
-|[AutoConf](../properties/autoconf.md)|[Handle](../properties/handle.md)|[SortItems](../properties/sortitems.md)|
-|[BCol](../properties/bcol.md)|[Hint](../properties/hint.md)|[Style](../properties/style.md)|
-|[Border](../properties/border.md)|[HintObj](../properties/hintobj.md)|[TabIndex](../properties/tabindex.md)|
-|[ChildList](../properties/childlist.md)|[Index](../properties/index.md)|[Tip](../properties/tip.md)|
-|[ColumnWidth](../properties/columnwidth.md)|[Items](../properties/items.md)|[TipObj](../properties/tipobj.md)|
-|[Coord](../properties/coord.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[CursorObj](../properties/cursorobj.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[MultiColumn](../properties/multicolumn.md)|[VScroll](../properties/vscroll.md)|
-|[Dragable](../properties/dragable.md)|[Posn](../properties/posn.md)|[Visible](../properties/visible.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[Items](../properties/items.md)|[Posn](../properties/posn.md)|
+|[Size](../properties/size.md)|[Style](../properties/style.md)|[Coord](../properties/coord.md)|
+|[Border](../properties/border.md)|[Active](../properties/active.md)|[Visible](../properties/visible.md)|
+|[Event](../properties/event.md)|[VScroll](../properties/vscroll.md)|[SelItems](../properties/selitems.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[FontObj](../properties/fontobj.md)|
+|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|[CursorObj](../properties/cursorobj.md)|
+|[AutoConf](../properties/autoconf.md)|[Index](../properties/index.md)|[Data](../properties/data.md)|
+|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|
+|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|
+|[TipObj](../properties/tipobj.md)|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|
+|[AcceptFiles](../properties/acceptfiles.md)|[MultiColumn](../properties/multicolumn.md)|[ColumnWidth](../properties/columnwidth.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[Redraw](../properties/redraw.md)|[SortItems](../properties/sortitems.md)|
+|[TabIndex](../properties/tabindex.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

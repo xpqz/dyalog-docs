@@ -1,8 +1,8 @@
 ﻿# OLEClient Methods
 
 |----|----|----|
-|[Browse](../methodorevents/browse.md)|[GetTypeInfo](../methodorevents/gettypeinfo.md)|[SetMethodInfo](../methodorevents/setmethodinfo.md)|
-|[Detach](../methodorevents/detach.md)|[OLEAddEventSink](../methodorevents/oleaddeventsink.md)|[SetPropertyInfo](../methodorevents/setpropertyinfo.md)|
-|[GetEventInfo](../methodorevents/geteventinfo.md)|[OLEDeleteEventSink](../methodorevents/oledeleteeventsink.md)|[ShowHelp](../methodorevents/showhelp.md)|
-|[GetMethodInfo](../methodorevents/getmethodinfo.md)|[OLEListEventSinks](../methodorevents/olelisteventsinks.md)|&#160;|
-|[GetPropertyInfo](../methodorevents/getpropertyinfo.md)|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&#160;|
+|[Browse](../methodorevents/browse.md)|[Detach](../methodorevents/detach.md)|[GetEventInfo](../methodorevents/geteventinfo.md)|
+|[GetMethodInfo](../methodorevents/getmethodinfo.md)|[GetPropertyInfo](../methodorevents/getpropertyinfo.md)|[GetTypeInfo](../methodorevents/gettypeinfo.md)|
+|[OLEAddEventSink](../methodorevents/oleaddeventsink.md)|[OLEDeleteEventSink](../methodorevents/oledeleteeventsink.md)|[OLEListEventSinks](../methodorevents/olelisteventsinks.md)|
+|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|[SetMethodInfo](../methodorevents/setmethodinfo.md)|[SetPropertyInfo](../methodorevents/setpropertyinfo.md)|
+|[ShowHelp](../methodorevents/showhelp.md)|&#160;|&#160;|

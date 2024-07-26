@@ -1,7 +1,7 @@
 ﻿# TabBtn Events
 
 |----|----|----|
-|[Close](../methodorevents/close.md)|[FontOK](../methodorevents/fontok.md)|[MouseUp](../methodorevents/mouseup.md)|
-|[Create](../methodorevents/create.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|[Select](../methodorevents/select.md)|
-|[DropObjects](../methodorevents/dropobjects.md)|[MouseDown](../methodorevents/mousedown.md)|&#160;|
-|[FontCancel](../methodorevents/fontcancel.md)|[MouseMove](../methodorevents/mousemove.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|
+|[FontCancel](../methodorevents/fontcancel.md)|[DropObjects](../methodorevents/dropobjects.md)|[Select](../methodorevents/select.md)|
+|[MouseDown](../methodorevents/mousedown.md)|[MouseUp](../methodorevents/mouseup.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[MouseDblClick](../methodorevents/mousedblclick.md)|&#160;|&#160;|

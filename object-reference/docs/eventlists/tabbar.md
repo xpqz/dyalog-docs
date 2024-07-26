@@ -1,9 +1,9 @@
 ﻿# TabBar Events
 
 |----|----|----|
-|[Close](../methodorevents/close.md)|[DropObjects](../methodorevents/dropobjects.md)|[MouseLeave](../methodorevents/mouseleave.md)|
-|[Configure](../methodorevents/configure.md)|[Expose](../methodorevents/expose.md)|[MouseMove](../methodorevents/mousemove.md)|
-|[ContextMenu](../methodorevents/contextmenu.md)|[Help](../methodorevents/help.md)|[MouseUp](../methodorevents/mouseup.md)|
-|[Create](../methodorevents/create.md)|[MouseDblClick](../methodorevents/mousedblclick.md)|[MouseWheel](../methodorevents/mousewheel.md)|
-|[DragDrop](../methodorevents/dragdrop.md)|[MouseDown](../methodorevents/mousedown.md)|[Select](../methodorevents/select.md)|
-|[DropFiles](../methodorevents/dropfiles.md)|[MouseEnter](../methodorevents/mouseenter.md)|&#160;|
+|[Close](../methodorevents/close.md)|[Create](../methodorevents/create.md)|[DragDrop](../methodorevents/dragdrop.md)|
+|[Configure](../methodorevents/configure.md)|[ContextMenu](../methodorevents/contextmenu.md)|[DropFiles](../methodorevents/dropfiles.md)|
+|[DropObjects](../methodorevents/dropobjects.md)|[Expose](../methodorevents/expose.md)|[Help](../methodorevents/help.md)|
+|[MouseDown](../methodorevents/mousedown.md)|[MouseUp](../methodorevents/mouseup.md)|[MouseMove](../methodorevents/mousemove.md)|
+|[MouseDblClick](../methodorevents/mousedblclick.md)|[MouseEnter](../methodorevents/mouseenter.md)|[MouseLeave](../methodorevents/mouseleave.md)|
+|[MouseWheel](../methodorevents/mousewheel.md)|[Select](../methodorevents/select.md)|&#160;|

@@ -1,18 +1,18 @@
 ﻿# TrackBar Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[FontObj](../properties/fontobj.md)|[Sizeable](../properties/sizeable.md)|
-|[AcceptFiles](../properties/acceptfiles.md)|[HScroll](../properties/hscroll.md)|[Step](../properties/step.md)|
-|[Active](../properties/active.md)|[Handle](../properties/handle.md)|[Style](../properties/style.md)|
-|[Attach](../properties/attach.md)|[HasTicks](../properties/hasticks.md)|[TabIndex](../properties/tabindex.md)|
-|[AutoConf](../properties/autoconf.md)|[Hint](../properties/hint.md)|[Thumb](../properties/thumb.md)|
-|[BCol](../properties/bcol.md)|[HintObj](../properties/hintobj.md)|[ThumbRect](../properties/thumbrect.md)|
-|[Border](../properties/border.md)|[KeepOnClose](../properties/keeponclose.md)|[TickAlign](../properties/tickalign.md)|
-|[ChildList](../properties/childlist.md)|[Limits](../properties/limits.md)|[TickSpacing](../properties/tickspacing.md)|
-|[Coord](../properties/coord.md)|[MethodList](../properties/methodlist.md)|[Tip](../properties/tip.md)|
-|[CursorObj](../properties/cursorobj.md)|[Posn](../properties/posn.md)|[TipObj](../properties/tipobj.md)|
-|[Data](../properties/data.md)|[PropList](../properties/proplist.md)|[TrackRect](../properties/trackrect.md)|
-|[Dragable](../properties/dragable.md)|[Redraw](../properties/redraw.md)|[Translate](../properties/translate.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[SelRange](../properties/selrange.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[ShowThumb](../properties/showthumb.md)|[VScroll](../properties/vscroll.md)|
-|[EventList](../properties/eventlist.md)|[Size](../properties/size.md)|[Visible](../properties/visible.md)|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Size](../properties/size.md)|
+|[Style](../properties/style.md)|[Coord](../properties/coord.md)|[Border](../properties/border.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Thumb](../properties/thumb.md)|[Step](../properties/step.md)|[VScroll](../properties/vscroll.md)|
+|[HScroll](../properties/hscroll.md)|[Limits](../properties/limits.md)|[SelRange](../properties/selrange.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[FontObj](../properties/fontobj.md)|
+|[BCol](../properties/bcol.md)|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|
+|[Data](../properties/data.md)|[Attach](../properties/attach.md)|[EdgeStyle](../properties/edgestyle.md)|
+|[Handle](../properties/handle.md)|[Hint](../properties/hint.md)|[HintObj](../properties/hintobj.md)|
+|[Tip](../properties/tip.md)|[TipObj](../properties/tipobj.md)|[Translate](../properties/translate.md)|
+|[Accelerator](../properties/accelerator.md)|[TickAlign](../properties/tickalign.md)|[TickSpacing](../properties/tickspacing.md)|
+|[HasTicks](../properties/hasticks.md)|[ShowThumb](../properties/showthumb.md)|[TrackRect](../properties/trackrect.md)|
+|[ThumbRect](../properties/thumbrect.md)|[AcceptFiles](../properties/acceptfiles.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[Redraw](../properties/redraw.md)|[TabIndex](../properties/tabindex.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

@@ -1,13 +1,13 @@
 ﻿# Circle Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[End](../properties/end.md)|[OnTop](../properties/ontop.md)|
-|[ArcMode](../properties/arcmode.md)|[Event](../properties/event.md)|[Points](../properties/points.md)|
-|[AutoConf](../properties/autoconf.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|
-|[BCol](../properties/bcol.md)|[FCol](../properties/fcol.md)|[Radius](../properties/radius.md)|
-|[ChildList](../properties/childlist.md)|[FStyle](../properties/fstyle.md)|[RadiusMode](../properties/radiusmode.md)|
-|[Coord](../properties/coord.md)|[FillCol](../properties/fillcol.md)|[Start](../properties/start.md)|
-|[CursorObj](../properties/cursorobj.md)|[KeepOnClose](../properties/keeponclose.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[LStyle](../properties/lstyle.md)|[Visible](../properties/visible.md)|
-|[Dragable](../properties/dragable.md)|[LWidth](../properties/lwidth.md)|&#160;|
-|[DrawMode](../properties/drawmode.md)|[MethodList](../properties/methodlist.md)|&#160;|
+|[Type](../properties/type.md)|[Points](../properties/points.md)|[Radius](../properties/radius.md)|
+|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|[Start](../properties/start.md)|
+|[End](../properties/end.md)|[ArcMode](../properties/arcmode.md)|[LStyle](../properties/lstyle.md)|
+|[LWidth](../properties/lwidth.md)|[FStyle](../properties/fstyle.md)|[FillCol](../properties/fillcol.md)|
+|[Coord](../properties/coord.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Dragable](../properties/dragable.md)|[OnTop](../properties/ontop.md)|[CursorObj](../properties/cursorobj.md)|
+|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|[Accelerator](../properties/accelerator.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[DrawMode](../properties/drawmode.md)|[RadiusMode](../properties/radiusmode.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

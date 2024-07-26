@@ -1,9 +1,9 @@
 ﻿# StatusBar Children
 
 |----|----|----|
-|[Bitmap](../objects/bitmap.md)|[Font](../objects/font.md)|[Rect](../objects/rect.md)|
-|[BrowseBox](../objects/browsebox.md)|[Icon](../objects/icon.md)|[StatusField](../objects/statusfield.md)|
-|[Circle](../objects/circle.md)|[Image](../objects/image.md)|[Text](../objects/text.md)|
-|[Cursor](../objects/cursor.md)|[Marker](../objects/marker.md)|[Timer](../objects/timer.md)|
-|[Ellipse](../objects/ellipse.md)|[Poly](../objects/poly.md)|&#160;|
-|[FileBox](../objects/filebox.md)|[ProgressBar](../objects/progressbar.md)|&#160;|
+|[Bitmap](../objects/bitmap.md)|[BrowseBox](../objects/browsebox.md)|[Circle](../objects/circle.md)|
+|[Cursor](../objects/cursor.md)|[Ellipse](../objects/ellipse.md)|[FileBox](../objects/filebox.md)|
+|[Font](../objects/font.md)|[Icon](../objects/icon.md)|[Image](../objects/image.md)|
+|[Marker](../objects/marker.md)|[Poly](../objects/poly.md)|[ProgressBar](../objects/progressbar.md)|
+|[Rect](../objects/rect.md)|[StatusField](../objects/statusfield.md)|[Text](../objects/text.md)|
+|[Timer](../objects/timer.md)|&#160;|&#160;|

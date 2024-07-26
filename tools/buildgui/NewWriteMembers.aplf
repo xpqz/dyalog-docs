@@ -11,15 +11,8 @@ NewWriteMembers ← { ⎕ML←1
 
     mklink ← {'[', ⍺ ,'](', ('"'⎕R''⊢⍵), ')'}  ⍝ Make Markdown links. Refs have double quotes we need to remove
 
-    ⍝ Ensure alphabetical ordering, col-major.
-    sortp ← ⍋names
-    refs ← refs[sortp]
-    names ← names[sortp]
-
     y ← ⌈(≢refs)÷x←3
-
-    matr ← ⍉(x y)⍴(2⍴nbsp),⍨mklink⌿↑names refs ⍝ Col-major
-
+    matr ← y x⍴(2⍴nbsp),⍨mklink⌿↑names refs
     markdown ← '# ',obj, ' ', members, lf,lf,'|----|----|----|',lf,∊'|',¨matr,lf
     markdown WriteFile mdfile
 }

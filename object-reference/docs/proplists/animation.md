@@ -1,14 +1,14 @@
 ﻿# Animation Properties
 
 |----|----|----|
-|[AcceptFiles](../properties/acceptfiles.md)|[Dragable](../properties/dragable.md)|[PropList](../properties/proplist.md)|
-|[Active](../properties/active.md)|[EdgeStyle](../properties/edgestyle.md)|[Size](../properties/size.md)|
-|[Align](../properties/align.md)|[Event](../properties/event.md)|[Sizeable](../properties/sizeable.md)|
-|[Attach](../properties/attach.md)|[EventList](../properties/eventlist.md)|[Tip](../properties/tip.md)|
-|[AutoConf](../properties/autoconf.md)|[File](../properties/file.md)|[TipObj](../properties/tipobj.md)|
-|[AutoPlay](../properties/autoplay.md)|[Handle](../properties/handle.md)|[Translate](../properties/translate.md)|
-|[BCol](../properties/bcol.md)|[Hint](../properties/hint.md)|[Transparent](../properties/transparent.md)|
-|[Border](../properties/border.md)|[HintObj](../properties/hintobj.md)|[Type](../properties/type.md)|
-|[ChildList](../properties/childlist.md)|[KeepOnClose](../properties/keeponclose.md)|[Visible](../properties/visible.md)|
-|[Coord](../properties/coord.md)|[MethodList](../properties/methodlist.md)|&#160;|
-|[Data](../properties/data.md)|[Posn](../properties/posn.md)|&#160;|
+|[Type](../properties/type.md)|[Posn](../properties/posn.md)|[Size](../properties/size.md)|
+|[File](../properties/file.md)|[Coord](../properties/coord.md)|[Border](../properties/border.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[BCol](../properties/bcol.md)|
+|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|[Attach](../properties/attach.md)|
+|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|[Hint](../properties/hint.md)|
+|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|[TipObj](../properties/tipobj.md)|
+|[Translate](../properties/translate.md)|[AcceptFiles](../properties/acceptfiles.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[AutoPlay](../properties/autoplay.md)|[Transparent](../properties/transparent.md)|[Align](../properties/align.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

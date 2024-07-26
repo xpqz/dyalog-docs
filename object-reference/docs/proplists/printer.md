@@ -1,14 +1,14 @@
 ﻿# Printer Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[EventList](../properties/eventlist.md)|[PaperSources](../properties/papersources.md)|
-|[ChildList](../properties/childlist.md)|[FontList](../properties/fontlist.md)|[PrintRange](../properties/printrange.md)|
-|[Collate](../properties/collate.md)|[FontObj](../properties/fontobj.md)|[PropList](../properties/proplist.md)|
-|[ColorMode](../properties/colormode.md)|[Handle](../properties/handle.md)|[Resolution](../properties/resolution.md)|
-|[Coord](../properties/coord.md)|[KeepOnClose](../properties/keeponclose.md)|[Resolutions](../properties/resolutions.md)|
-|[Copies](../properties/copies.md)|[MethodList](../properties/methodlist.md)|[TextSize](../properties/textsize.md)|
-|[Data](../properties/data.md)|[Orientation](../properties/orientation.md)|[Translate](../properties/translate.md)|
-|[DevCaps](../properties/devcaps.md)|[PName](../properties/pname.md)|[Type](../properties/type.md)|
-|[Duplex](../properties/duplex.md)|[PaperSize](../properties/papersize.md)|[XRange](../properties/xrange.md)|
-|[EdgeStyle](../properties/edgestyle.md)|[PaperSizes](../properties/papersizes.md)|[YRange](../properties/yrange.md)|
-|[Event](../properties/event.md)|[PaperSource](../properties/papersource.md)|&#160;|
+|[Type](../properties/type.md)|[PName](../properties/pname.md)|[DevCaps](../properties/devcaps.md)|
+|[Coord](../properties/coord.md)|[Event](../properties/event.md)|[FontObj](../properties/fontobj.md)|
+|[FontList](../properties/fontlist.md)|[YRange](../properties/yrange.md)|[XRange](../properties/xrange.md)|
+|[Data](../properties/data.md)|[TextSize](../properties/textsize.md)|[EdgeStyle](../properties/edgestyle.md)|
+|[Handle](../properties/handle.md)|[Orientation](../properties/orientation.md)|[Copies](../properties/copies.md)|
+|[PrintRange](../properties/printrange.md)|[Collate](../properties/collate.md)|[PaperSize](../properties/papersize.md)|
+|[PaperSizes](../properties/papersizes.md)|[PaperSource](../properties/papersource.md)|[PaperSources](../properties/papersources.md)|
+|[ColorMode](../properties/colormode.md)|[Resolution](../properties/resolution.md)|[Resolutions](../properties/resolutions.md)|
+|[Duplex](../properties/duplex.md)|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

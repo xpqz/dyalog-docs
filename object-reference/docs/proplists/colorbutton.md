@@ -1,15 +1,15 @@
 ﻿# ColorButton Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[Dragable](../properties/dragable.md)|[Redraw](../properties/redraw.md)|
-|[Active](../properties/active.md)|[EdgeStyle](../properties/edgestyle.md)|[ShowDropDown](../properties/showdropdown.md)|
-|[Attach](../properties/attach.md)|[Event](../properties/event.md)|[Size](../properties/size.md)|
-|[AutoConf](../properties/autoconf.md)|[EventList](../properties/eventlist.md)|[Sizeable](../properties/sizeable.md)|
-|[Caption](../properties/caption.md)|[Handle](../properties/handle.md)|[TabIndex](../properties/tabindex.md)|
-|[ChildList](../properties/childlist.md)|[Hint](../properties/hint.md)|[Tip](../properties/tip.md)|
-|[Coord](../properties/coord.md)|[HintObj](../properties/hintobj.md)|[TipObj](../properties/tipobj.md)|
-|[CurrentColor](../properties/currentcolor.md)|[KeepOnClose](../properties/keeponclose.md)|[Translate](../properties/translate.md)|
-|[CursorObj](../properties/cursorobj.md)|[MethodList](../properties/methodlist.md)|[Type](../properties/type.md)|
-|[CustomColors](../properties/customcolors.md)|[OtherButton](../properties/otherbutton.md)|[Visible](../properties/visible.md)|
-|[Data](../properties/data.md)|[Posn](../properties/posn.md)|&#160;|
-|[DefaultColors](../properties/defaultcolors.md)|[PropList](../properties/proplist.md)|&#160;|
+|[Type](../properties/type.md)|[Caption](../properties/caption.md)|[Posn](../properties/posn.md)|
+|[Size](../properties/size.md)|[CurrentColor](../properties/currentcolor.md)|[DefaultColors](../properties/defaultcolors.md)|
+|[CustomColors](../properties/customcolors.md)|[OtherButton](../properties/otherbutton.md)|[Coord](../properties/coord.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[Sizeable](../properties/sizeable.md)|[Dragable](../properties/dragable.md)|[CursorObj](../properties/cursorobj.md)|
+|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|[Attach](../properties/attach.md)|
+|[EdgeStyle](../properties/edgestyle.md)|[Handle](../properties/handle.md)|[Hint](../properties/hint.md)|
+|[HintObj](../properties/hintobj.md)|[Tip](../properties/tip.md)|[TipObj](../properties/tipobj.md)|
+|[Translate](../properties/translate.md)|[Accelerator](../properties/accelerator.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[ShowDropDown](../properties/showdropdown.md)|[Redraw](../properties/redraw.md)|[TabIndex](../properties/tabindex.md)|
+|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|
+|[PropList](../properties/proplist.md)|&#160;|&#160;|

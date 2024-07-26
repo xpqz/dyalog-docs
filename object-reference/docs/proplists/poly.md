@@ -1,11 +1,11 @@
 ﻿# Poly Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[DrawMode](../properties/drawmode.md)|[LWidth](../properties/lwidth.md)|
-|[AutoConf](../properties/autoconf.md)|[Event](../properties/event.md)|[MethodList](../properties/methodlist.md)|
-|[BCol](../properties/bcol.md)|[EventList](../properties/eventlist.md)|[OnTop](../properties/ontop.md)|
-|[ChildList](../properties/childlist.md)|[FCol](../properties/fcol.md)|[Points](../properties/points.md)|
-|[Coord](../properties/coord.md)|[FStyle](../properties/fstyle.md)|[PropList](../properties/proplist.md)|
-|[CursorObj](../properties/cursorobj.md)|[FillCol](../properties/fillcol.md)|[Type](../properties/type.md)|
-|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|[Visible](../properties/visible.md)|
-|[Dragable](../properties/dragable.md)|[LStyle](../properties/lstyle.md)|&#160;|
+|[Type](../properties/type.md)|[Points](../properties/points.md)|[FCol](../properties/fcol.md)|
+|[BCol](../properties/bcol.md)|[LStyle](../properties/lstyle.md)|[LWidth](../properties/lwidth.md)|
+|[FStyle](../properties/fstyle.md)|[FillCol](../properties/fillcol.md)|[Coord](../properties/coord.md)|
+|[Visible](../properties/visible.md)|[Event](../properties/event.md)|[Dragable](../properties/dragable.md)|
+|[OnTop](../properties/ontop.md)|[CursorObj](../properties/cursorobj.md)|[AutoConf](../properties/autoconf.md)|
+|[Data](../properties/data.md)|[Accelerator](../properties/accelerator.md)|[KeepOnClose](../properties/keeponclose.md)|
+|[DrawMode](../properties/drawmode.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

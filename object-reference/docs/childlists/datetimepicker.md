@@ -1,5 +1,5 @@
 ﻿# DateTimePicker Children
 
 |----|----|----|
-|[Cursor](../objects/cursor.md)|[Menu](../objects/menu.md)|[TCPSocket](../objects/tcpsocket.md)|
-|[Font](../objects/font.md)|[MsgBox](../objects/msgbox.md)|[Timer](../objects/timer.md)|
+|[Cursor](../objects/cursor.md)|[Font](../objects/font.md)|[Menu](../objects/menu.md)|
+|[MsgBox](../objects/msgbox.md)|[TCPSocket](../objects/tcpsocket.md)|[Timer](../objects/timer.md)|

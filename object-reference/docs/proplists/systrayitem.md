@@ -1,7 +1,7 @@
 ﻿# SysTrayItem Properties
 
 |----|----|----|
-|[ChildList](../properties/childlist.md)|[IconObj](../properties/iconobj.md)|[PropList](../properties/proplist.md)|
-|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|[Tip](../properties/tip.md)|
-|[Event](../properties/event.md)|[MethodList](../properties/methodlist.md)|[Translate](../properties/translate.md)|
-|[EventList](../properties/eventlist.md)|[Popup](../properties/popup.md)|[Type](../properties/type.md)|
+|[Type](../properties/type.md)|[Event](../properties/event.md)|[IconObj](../properties/iconobj.md)|
+|[Data](../properties/data.md)|[Tip](../properties/tip.md)|[Translate](../properties/translate.md)|
+|[Popup](../properties/popup.md)|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

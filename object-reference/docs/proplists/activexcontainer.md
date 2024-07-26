@@ -1,7 +1,7 @@
 ﻿# ActiveXContainer Properties
 
 |----|----|----|
-|[BCol](../properties/bcol.md)|[EventList](../properties/eventlist.md)|[MethodList](../properties/methodlist.md)|
-|[ChildList](../properties/childlist.md)|[FCol](../properties/fcol.md)|[PropList](../properties/proplist.md)|
-|[Data](../properties/data.md)|[FontObj](../properties/fontobj.md)|[Type](../properties/type.md)|
-|[Event](../properties/event.md)|[KeepOnClose](../properties/keeponclose.md)|&#160;|
+|[Type](../properties/type.md)|[Event](../properties/event.md)|[FontObj](../properties/fontobj.md)|
+|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|[Data](../properties/data.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|[ChildList](../properties/childlist.md)|
+|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|&#160;|

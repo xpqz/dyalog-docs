@@ -1,5 +1,5 @@
 ﻿# Menu Children
 
 |----|----|----|
-|[Bitmap](../objects/bitmap.md)|[MenuItem](../objects/menuitem.md)|[Timer](../objects/timer.md)|
-|[Menu](../objects/menu.md)|[Separator](../objects/separator.md)|&#160;|
+|[Bitmap](../objects/bitmap.md)|[Menu](../objects/menu.md)|[MenuItem](../objects/menuitem.md)|
+|[Separator](../objects/separator.md)|[Timer](../objects/timer.md)|&#160;|

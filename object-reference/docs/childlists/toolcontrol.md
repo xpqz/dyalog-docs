@@ -1,15 +1,15 @@
 ﻿# ToolControl Children
 
 |----|----|----|
-|[Bitmap](../objects/bitmap.md)|[ImageList](../objects/imagelist.md)|[SM](../objects/sm.md)|
-|[BrowseBox](../objects/browsebox.md)|[Label](../objects/label.md)|[Scroll](../objects/scroll.md)|
-|[Button](../objects/button.md)|[List](../objects/list.md)|[Spinner](../objects/spinner.md)|
-|[Combo](../objects/combo.md)|[ListView](../objects/listview.md)|[Static](../objects/static.md)|
-|[ComboEx](../objects/comboex.md)|[Locator](../objects/locator.md)|[SubForm](../objects/subform.md)|
-|[Cursor](../objects/cursor.md)|[Menu](../objects/menu.md)|[Timer](../objects/timer.md)|
-|[Edit](../objects/edit.md)|[MenuBar](../objects/menubar.md)|[ToolButton](../objects/toolbutton.md)|
-|[FileBox](../objects/filebox.md)|[Metafile](../objects/metafile.md)|[TrackBar](../objects/trackbar.md)|
-|[Font](../objects/font.md)|[MsgBox](../objects/msgbox.md)|[TreeView](../objects/treeview.md)|
-|[Group](../objects/group.md)|[OCXClass](../objects/ocxclass.md)|[UpDown](../objects/updown.md)|
-|[Icon](../objects/icon.md)|[ProgressBar](../objects/progressbar.md)|&#160;|
-|[Image](../objects/image.md)|[RichEdit](../objects/richedit.md)|&#160;|
+|[Bitmap](../objects/bitmap.md)|[BrowseBox](../objects/browsebox.md)|[Button](../objects/button.md)|
+|[Combo](../objects/combo.md)|[ComboEx](../objects/comboex.md)|[Cursor](../objects/cursor.md)|
+|[Edit](../objects/edit.md)|[FileBox](../objects/filebox.md)|[Font](../objects/font.md)|
+|[Group](../objects/group.md)|[Icon](../objects/icon.md)|[Image](../objects/image.md)|
+|[ImageList](../objects/imagelist.md)|[Label](../objects/label.md)|[List](../objects/list.md)|
+|[ListView](../objects/listview.md)|[Locator](../objects/locator.md)|[Menu](../objects/menu.md)|
+|[MenuBar](../objects/menubar.md)|[Metafile](../objects/metafile.md)|[MsgBox](../objects/msgbox.md)|
+|[OCXClass](../objects/ocxclass.md)|[ProgressBar](../objects/progressbar.md)|[RichEdit](../objects/richedit.md)|
+|[Scroll](../objects/scroll.md)|[SM](../objects/sm.md)|[Spinner](../objects/spinner.md)|
+|[Static](../objects/static.md)|[SubForm](../objects/subform.md)|[Timer](../objects/timer.md)|
+|[ToolButton](../objects/toolbutton.md)|[TrackBar](../objects/trackbar.md)|[TreeView](../objects/treeview.md)|
+|[UpDown](../objects/updown.md)|&#160;|&#160;|

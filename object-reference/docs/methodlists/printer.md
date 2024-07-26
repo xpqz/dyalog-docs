@@ -1,6 +1,6 @@
 ﻿# Printer Methods
 
 |----|----|----|
-|[Abort](../methodorevents/abort.md)|[NewPage](../methodorevents/newpage.md)|[Setup](../methodorevents/setup.md)|
-|[Detach](../methodorevents/detach.md)|[Print](../methodorevents/print.md)|&#160;|
-|[GetTextSize](../methodorevents/gettextsize.md)|[RTFPrintSetup](../methodorevents/rtfprintsetup.md)|&#160;|
+|[Detach](../methodorevents/detach.md)|[Print](../methodorevents/print.md)|[Setup](../methodorevents/setup.md)|
+|[NewPage](../methodorevents/newpage.md)|[Abort](../methodorevents/abort.md)|[RTFPrintSetup](../methodorevents/rtfprintsetup.md)|
+|[GetTextSize](../methodorevents/gettextsize.md)|&#160;|&#160;|

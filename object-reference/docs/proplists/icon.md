@@ -1,9 +1,9 @@
 ﻿# Icon Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[Event](../properties/event.md)|[Mask](../properties/mask.md)|
-|[Bits](../properties/bits.md)|[EventList](../properties/eventlist.md)|[MethodList](../properties/methodlist.md)|
-|[CBits](../properties/cbits.md)|[File](../properties/file.md)|[PropList](../properties/proplist.md)|
-|[CMap](../properties/cmap.md)|[Handle](../properties/handle.md)|[Size](../properties/size.md)|
-|[ChildList](../properties/childlist.md)|[KeepBits](../properties/keepbits.md)|[Style](../properties/style.md)|
-|[Data](../properties/data.md)|[KeepOnClose](../properties/keeponclose.md)|[Type](../properties/type.md)|
+|[Type](../properties/type.md)|[File](../properties/file.md)|[Bits](../properties/bits.md)|
+|[CMap](../properties/cmap.md)|[Mask](../properties/mask.md)|[Style](../properties/style.md)|
+|[KeepBits](../properties/keepbits.md)|[Size](../properties/size.md)|[Event](../properties/event.md)|
+|[Data](../properties/data.md)|[Handle](../properties/handle.md)|[Accelerator](../properties/accelerator.md)|
+|[KeepOnClose](../properties/keeponclose.md)|[CBits](../properties/cbits.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

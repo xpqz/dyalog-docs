@@ -1,11 +1,11 @@
 ﻿# TabBtn Properties
 
 |----|----|----|
-|[Accelerator](../properties/accelerator.md)|[ChildList](../properties/childlist.md)|[MethodList](../properties/methodlist.md)|
-|[Active](../properties/active.md)|[Data](../properties/data.md)|[Posn](../properties/posn.md)|
-|[Align](../properties/align.md)|[EdgeStyle](../properties/edgestyle.md)|[PropList](../properties/proplist.md)|
-|[Attach](../properties/attach.md)|[Event](../properties/event.md)|[Size](../properties/size.md)|
-|[AutoConf](../properties/autoconf.md)|[EventList](../properties/eventlist.md)|[TabObj](../properties/tabobj.md)|
-|[BCol](../properties/bcol.md)|[FCol](../properties/fcol.md)|[Translate](../properties/translate.md)|
-|[Border](../properties/border.md)|[FontObj](../properties/fontobj.md)|[Type](../properties/type.md)|
-|[Caption](../properties/caption.md)|[KeepOnClose](../properties/keeponclose.md)|[Visible](../properties/visible.md)|
+|[Type](../properties/type.md)|[Caption](../properties/caption.md)|[Posn](../properties/posn.md)|
+|[Size](../properties/size.md)|[Align](../properties/align.md)|[Border](../properties/border.md)|
+|[Active](../properties/active.md)|[Visible](../properties/visible.md)|[Event](../properties/event.md)|
+|[FontObj](../properties/fontobj.md)|[FCol](../properties/fcol.md)|[BCol](../properties/bcol.md)|
+|[AutoConf](../properties/autoconf.md)|[Data](../properties/data.md)|[Attach](../properties/attach.md)|
+|[EdgeStyle](../properties/edgestyle.md)|[TabObj](../properties/tabobj.md)|[Translate](../properties/translate.md)|
+|[Accelerator](../properties/accelerator.md)|[KeepOnClose](../properties/keeponclose.md)|[MethodList](../properties/methodlist.md)|
+|[ChildList](../properties/childlist.md)|[EventList](../properties/eventlist.md)|[PropList](../properties/proplist.md)|

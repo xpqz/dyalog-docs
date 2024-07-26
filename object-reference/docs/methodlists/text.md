@@ -1,4 +1,4 @@
 ﻿# Text Methods
 
 |----|----|----|
-|[ChooseFont](../methodorevents/choosefont.md)|[Detach](../methodorevents/detach.md)|&#160;|
+|[Detach](../methodorevents/detach.md)|[ChooseFont](../methodorevents/choosefont.md)|&#160;|
