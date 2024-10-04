@@ -36,7 +36,7 @@ If [FieldType](../properties/fieldtype.md) is `'Char'` the [Value](../properties
 If [FieldType](../properties/fieldtype.md) is `'Numeric'`, `'LongNumeric'`, `'Currency'`, `'Date'`, `'LongDate'`, or `'Time'` the [Value](../properties/value.md) contains a number. For fields of these types, basic validation is provided during user input. The field is revalidated when the user attempts to "leave" it and at this point the object will generate a [BadValue](../methodorevents/badvalue.md) event if its contents are inconsistent with its [FieldType](../properties/fieldtype.md).
 
 
-Note that when an Edit object is used as the [Input](../properties/input.md) property of a [Grid](grid.md), it is the [Value](../properties/value.md) of the Edit object (and not its [Text](../properties/text.md) property) that is used to update the [Values](../properties/values.md) property (i.e. the contents of) the [Grid](grid.md) when the user moves away from the cell.
+Note that when an Edit object is used as the [Input](../properties/input.md) property of a [Grid](grid.md), it is the [Value](../properties/value.md) of the Edit object (and not its [Text](../properties/text.md) property) that is used to update the [Values](../properties/values.md) property (that is, the contents of) the [Grid](grid.md) when the user moves away from the cell.
 
 
 The [MaxLength](../properties/maxlength.md) property defines the maximum number of characters that the user may enter into the object.

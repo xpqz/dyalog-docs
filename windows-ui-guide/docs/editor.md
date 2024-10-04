@@ -12,7 +12,7 @@ The type of a new object defaults to function/operator unless the object is shad
 
 If the name is not already being edited, it is assigned a new edit window. If you edit a name which is already being edited, the system *focuses* on the existing edit window rather than opening a new one. Edit windows are displayed using the colour combination associated with the type of the object being edited.
 
-If the name is followed by a line-number in square brackets, e.g. `MyFn[1000]`, the Editor will position the cursor on the specified line. This applies to alll methods of invoking the Editor, except `⎕ED`. There must not be a space between the last character of the name and the "[".
+If the name is followed by a line-number in square brackets, for example, `MyFn[1000]`, the Editor will position the cursor on the specified line. This applies to alll methods of invoking the Editor, except `⎕ED`. There must not be a space between the last character of the name and the "[".
 
 ## Window Management (Standard)
 
@@ -69,7 +69,7 @@ Closing an edit window from its System Menu has the same effect as choosing Exit
 
 ### Minimising an edit window
 
-Minimising an edit window causes it to be displayed as a Dyalog APL *Edit* icon, with the name of the object underneath. The edit window can be restored in the normal way, or by an attempt to re-edit the same name.
+Minimising an edit window causes it to be displayed as a Dyalog *Edit* icon, with the name of the object underneath. The edit window can be restored in the normal way, or by an attempt to re-edit the same name.
 
 ## Selecting Text
 
@@ -264,7 +264,7 @@ If the cursor is at the end of the last line in the function, pressing Enter add
 
 ###### Indenting Text
 
-Dyalog APL allows you to insert leading spaces in lines of a function and (unless the **AutoFormat** parameter is set) preserves these spaces between editing sessions. Embedded spaces are however discarded. You can enter spaces using the space bar or the Tab key. Pressing Tab inserts spaces up to the next tab stop corresponding to the value of the **TabStops** parameter. If the **AutoIndent** parameter is set, new lines are automatically indented the same amount as the preceding line.
+Dyalog allows you to insert leading spaces in lines of a function and (unless the **AutoFormat** parameter is set) preserves these spaces between editing sessions. Embedded spaces are however discarded. You can enter spaces using the space bar or the Tab key. Pressing Tab inserts spaces up to the next tab stop corresponding to the value of the **TabStops** parameter. If the **AutoIndent** parameter is set, new lines are automatically indented the same amount as the preceding line.
 
 ###### Reformatting
 
@@ -316,7 +316,7 @@ When you position the caret over a name, control word, or simple text or to the 
 
 When you press the <AC> key, or select Align Comments in the Editor's context menu, the alignment of the comments in every line in the function will be changed so that the left-most comment (Lamp) symbol is in the same column as the cursor, except that:
 
-- Comment symbols that are preceded only by white space, i.e. comments in lines that contain no code, are ignored and are not adjusted in any way.
+- Comment symbols that are preceded only by white space, that is, comments in lines that contain no code, are ignored and are not adjusted in any way.
 - Comment symbols that lie between the first column and the first tab stop will remain in or be moved to the first column. For information on setting tab stops, see 
 
 Installation & Configuration Guide:

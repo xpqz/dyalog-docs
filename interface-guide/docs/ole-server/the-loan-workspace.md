@@ -147,7 +147,7 @@ Start Excel and load the spreadsheet Loan.xlsm from the Dyalog APL sub-directory
 
 The *Payments* button fires a simple macro that uses the APL dyalog.Loan object to perform repayment calculations. To run the example enter data into the cells as shown below, then click *Payments*. When you do so, Excel runs the Calc macro and this causes OLE to initialise the dyalog.Loan OLE Server
 
-The Calc macro actually calculates the repayments matrix by calling the CalcPayments method in the dyalog.Loan object; i.e. it runs the `CalcPayments` function in the `Loan` namespace.
+The Calc macro actually calculates the repayments matrix by calling the CalcPayments method in the dyalog.Loan object; that is, it runs the `CalcPayments` function in the `Loan` namespace.
 
 ![loan excel example](../img/loan-excel-example.png)
 

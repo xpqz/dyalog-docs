@@ -10,7 +10,7 @@ The mechanism permits APL to determine only that the member is exported; it says
 
 - That the member is a method
 - That it may take up to 16 optional arguments
-- That each argument is input/output (i.e. specified via a pointer)
+- That each argument is input/output (that is, specified via a pointer)
 - That the method returns a result.
 
 This means that if you know, from its documentation or another source, that a COM object provides a certain Method or Property, you may therefore access that member by simply calling a function of that name in the OLEClient namespace. Note that any parameters you pass will be returned in the result, because APL assumes that all parameters are input/output. Furthermore, APL will be unable to check the validity of the parameters you specify because it does not know what data types are expected.

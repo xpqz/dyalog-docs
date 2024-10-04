@@ -303,7 +303,7 @@ The function may itself call `⎕R` or `⎕S`.
 There may be only one transformation function, regardless of the number of search patterns.
 
 
-The locations of the match within Block and subpatterns within Match are given as offsets rather than positions, i.e. the values are the number of characters preceding the data, and are not affected by the Index Origin.
+The locations of the match within Block and subpatterns within Match are given as offsets rather than positions, that is, the values are the number of characters preceding the data, and are not affected by the Index Origin.
 
 
 The value of `¯1` may appear in both the Offsets and Fields items (in corresponding positions). They indicate that the subpattern to which they refer did not appear in the match at all.
@@ -553,7 +553,7 @@ When the stream is read from its start, and the start of the stream contains a r
 |ANSI        |Same as Windows-1252                                                                                                              |
 
 
-For compatibility with the OutEnc option, the above UTF formats may be qualified with -BOM (e.g. UTF-8-BOM) or -NOBOM. For input streams, the qualified and unqualified options are equivalent.
+For compatibility with the OutEnc option, the above UTF formats may be qualified with -BOM (for example, UTF-8-BOM) or -NOBOM. For input streams, the qualified and unqualified options are equivalent.
 
 
 
@@ -581,7 +581,7 @@ When the output is written to a stream, this option specifies how the data is to
 |ANSI        |Same as Windows-1252                                                                                                           |
 
 
-The above UTF formats may be qualified with -BOM (e.g. UTF-8-BOM) to specify that a Byte Order Mark should be written at the start of the stream or, -NOBOM that it should not. For files, this is ignored if the file already contains any data.  If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.
+The above UTF formats may be qualified with -BOM (for example, UTF-8-BOM) to specify that a Byte Order Mark should be written at the start of the stream or, -NOBOM that it should not. For files, this is ignored if the file already contains any data.  If the -BOM or -NOBOM suffix is omitted, UTF-8 defaults to UTF-8-NOBOM, while the other UTF formats default to -BOM.
 
 
 

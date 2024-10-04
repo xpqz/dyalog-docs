@@ -34,4 +34,4 @@ The `Add1` function defined above is exported as a method named `Add`, that take
 ∇
 ```
 
-The `Add2` function defined above is exported as a method that takes an array of `Double` and returns a result of type `Double`. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog APL will call `Add1` or `Add2` - or generate an exception if the argument does not match any of the signatures.
+The `Add2` function defined above is exported as a method that takes an array of `Double` and returns a result of type `Double`. Depending on the type of the arguments provided when the method is invoked, .NET and Dyalog will call `Add1` or `Add2` - or generate an exception if the argument does not match any of the signatures.

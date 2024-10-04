@@ -8,7 +8,7 @@ To draw a line you use the Poly object. The following example draws a line in a 
 
 ![drawing lines 1](../img/drawing-lines-1.png)
 
-In the previous example, the points are specified as a 2-element nested vector containing y-coordinates and x-coordinates respectively. You can also use a 2-column matrix, e.g.
+In the previous example, the points are specified as a 2-element nested vector containing y-coordinates and x-coordinates respectively. You can also use a 2-column matrix. For example:
 ```apl
       'F.Line'⎕WC'Poly'(4 2⍴90 5 5 50 90 95 90 5)
 ```

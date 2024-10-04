@@ -2,7 +2,7 @@
 
 ## Accessing your Application using RIDE
 
-If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace. This is different from previous versions of Dyalog which had separate RIDE DLLs.
+If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace.
 
 ## Additional Files for Syncfusion
 
@@ -43,7 +43,7 @@ This DLL is used by some of the functions provided in the `QUADNA.DWS` workspace
 
 Under Windows, many of the Dyalog APL run-time components (.EXE and .DLL) are linked dynamically with the Microsoft Universal C Runtime library (the UCRT) which is supplied and installed as part of the normal Dyalog development installation.
 
-At execution time it is important that the Dyalog runtime components bind with a version of the UCRT that is compatible with (i.e. the same as or newer than) the one with which they were built.
+At execution time it is important that the Dyalog runtime components bind with a version of the UCRT that is compatible with (that is, the same as or newer than) the one with which they were built.
 
 ### Windows 10
 

@@ -51,7 +51,7 @@ nav:
   - Files and Directories: files-and-directories.md
   - File Associations: file-associations.md
   - APL Fonts: apl-fonts.md
-  - Interoperability: interoperability.md
+  - Interoperability and Compatibility: interoperability.md
   - The APL Command Line: apl-command-line.md
   - APL Exit Codes: apl-exit-codes.md
   - Dyalog Serial Number: dyalog-serial-number.md

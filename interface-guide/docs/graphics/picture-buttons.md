@@ -31,7 +31,7 @@ Note that if you use the Picture property on Radio or Check buttons, the buttons
 
 You can obtain **complete** control over the appearance of a Button by using the BtnPix property; however this entails more work on your part.
 
-BtnPix allows you to associate three bitmaps with a Button, i.e.
+BtnPix allows you to associate three bitmaps with a Button, that is:
 
 - one for when the Button is in its normal state
 - one for when it is pressed/selected
@@ -42,7 +42,7 @@ For example, if you have created three Bitmap objects called `UP`, `DOWN` and `D
       'F.B' ⎕WC 'Button' ('BtnPix' UP DOWN DEAD)
 ```
 
-APL subsequently displays one of the three Bitmap objects according to the state of the Button; i.e. `UP` for its normal state (State 0), `DOWN` for its pressed/selected state (State 1) or `DEAD` when it is inactive (Active 0).
+APL subsequently displays one of the three Bitmap objects according to the state of the Button; that is, `UP` for its normal state (State 0), `DOWN` for its pressed/selected state (State 1) or `DEAD` when it is inactive (Active 0).
 
 The BtnPix property requires that you use Bitmap objects; it doesn't work for Icons. This is because icons are normally at least partly **transparent**. However, it is very easy to convert an icon file to a Bitmap object. First you create an Icon object from the icon (.ICO) file. Next you read the icon's pattern definition (Bits property) and colour map (CMap property) into the workspace. Then finally, you create a Bitmap from these two arrays.
 

@@ -37,6 +37,6 @@ Table: Session status fields: second row
 
 ## Toggle Status Fields
 
-In the default Session files distributed with this release, the Statusfields used to display the value of `⎕IO`, the state of the Insert key (Ins/Rep) and the current keyboard mode (e.g. Apl/Uni) have callback functions attached to MouseDblClick. This means that you can toggle the state of these fields by double-clicking with the left mouse button.
+In the default Session files distributed with this release, the Statusfields used to display the value of `⎕IO`, the state of the Insert key (Ins/Rep) and the current keyboard mode (for example, Apl/Uni) have callback functions attached to MouseDblClick. This means that you can toggle the state of these fields by double-clicking with the left mouse button.
 
 If you dislike this behaviour, you may set the Event property of the StatusFields to 0 and re-save the Session file. Alternatively, you may modify the buildse workspace and rebuild the Session from scratch.

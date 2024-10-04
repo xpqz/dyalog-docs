@@ -1,5 +1,5 @@
-﻿# Animation Parents
+<h1> Animation Parents</h1>
 
-|----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[Group](../objects/group.md)|
-|[PropertyPage](../objects/propertypage.md)|[SubForm](../objects/subform.md)|&#160;|
+|----------------------------------------------|--------------------------------|----------------------------|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)      |[Group](../objects/group.md)|
+|[PropertyPage](../objects/propertypage.md)    |[SubForm](../objects/subform.md)|&nbsp;                      |

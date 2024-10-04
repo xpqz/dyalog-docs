@@ -7,7 +7,7 @@
 
 
 
-`)ED` invokes the Dyalog APL editor and opens an Edit window for each of the objects specified in `nms`.
+`)ED` invokes the Dyalog editor and opens an Edit window for each of the objects specified in `nms`.
 
 
 If a name includes the slash character  ("\" or "/") it is taken to be the name of a file. See [Editing Scripts and Text Files](../../../windows-ui-guide/editing-scripts-and-text-files).
@@ -50,7 +50,7 @@ The first object named becomes the top window on the stack.  See the *Dyalog fo
 ```
 
 
-Objects specified in `nms` that cannot be edited are silently ignored. Objects qualified with a namespace path  (e.g. `a.b.c.foo`) are silently ignored if the namespace does not exist.
+Objects specified in `nms` that cannot be edited are silently ignored. Objects qualified with a namespace path  (for example, `a.b.c.foo`) are silently ignored if the namespace does not exist.
 
 
 

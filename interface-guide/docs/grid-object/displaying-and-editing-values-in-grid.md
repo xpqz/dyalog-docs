@@ -12,8 +12,7 @@ Associated Edit, Label and Combo objects may be *external* to the Grid (for exam
 
 ## Using a Floating Edit Field
 
-If the Edit object specified by Input is owned by (i.e. is a child of) the Grid itself, the Edit object *floats* from cell to cell as the user moves around the Grid. For example, if the user clicks on the cell addressed by row 4, column 3, the Edit object is automatically moved to that location and the data in that cell is copied into it ready for editing. When the user moves the focus away from this cell, the data in the Edit object is copied back into it (and into the corresponding element of the Values property) before the Edit object is moved away to the new cell location. This mechanism provides *in-situ* editing. Continuing the example illustrated by [The components of the Grid object ](chapter-heading.md), in-situ editing could be achieved as follows:
-
+If the Edit object specified by Input is owned by (that is, is a child of) the Grid itself, the Edit object *floats* from cell to cell as the user moves around the Grid. For example, if the user clicks on the cell addressed by row 4, column 3, the Edit object is automatically moved to that location and the data in that cell is copied into it ready for editing. When the user moves the focus away from this cell, the data in the Edit object is copied back into it (and into the corresponding element of the Values property) before the Edit object is moved away to the new cell location. This mechanism provides *in-situ* editing. Continuing the example illustrated by [The components of the Grid object ](chapter-heading.md), in-situ editing could be achieved as follows:
 ```apl
       'Test.G.ED' ⎕WC 'Edit' ('FieldType' 'Numeric')
       'Test.G'    ⎕WS 'Input' 'Test.G.ED'
@@ -24,7 +23,6 @@ In-situ editing provides two input modes; Scroll and InCell. In Scroll mode the 
 ## Using a Fixed Edit Field
 
 A different style of editing may be provided by specifying the name of an external Edit object that you have created. This can be any Edit object you wish to use; it need not even be owned by the same Form as the Grid. In this case, the Edit object remains stationary  (wherever you have positioned it), but as the user moves the focus from cell to cell, the cell contents are copied into it and made available for editing. The current cell is identified by a thick border. When the user shifts the focus, the data is copied out from the Edit object into the corresponding cell before data in the newly selected one is copied in. Continuing the example illustrated by [The components of the Grid object ](chapter-heading.md), external editing could be achieved as follows:
-
 ```apl
       'Test.ED'   ⎕WC 'Edit' ('FieldType' 'Numeric')
       'Test.G'    ⎕WS 'Input' 'Test.ED'
@@ -45,7 +43,6 @@ If you use a floating Combo, the appearance of the non-current cells depends upo
 Note that ShowInput may be a scalar that applies to the whole Grid, or a vector whose elements applies to different cells through the CellType property.
 
 The following Grid uses two internal Combo objects for the *Job Title* and *Region* columns, but with ShowInput set to 0. Only the current cell has Combo appearance.
-
 ```apl
      ∇ Employees;Surname;JobTitle;Region;Salary;DATA;Jobs;Regions
 [1]    'F'⎕WC'Form' ''('Size' 126 401)('Coord' 'Pixel')
@@ -73,7 +70,6 @@ The following Grid uses two internal Combo objects for the *Job Title* and *Regi
 ![grid employee database showinput 0](../img/grid-employee-database-showinput-0.png)
 
 The same Grid with ShowInput set to 1 is illustrated below. In this case, all of the cells associated with Combo objects have Combo appearance.
-
 ```apl
       F.G.ShowInput
 0
@@ -94,7 +90,6 @@ By default, the value of the EdgeStyle property for a Radio or Check Button whic
 You can refine the appearance of the Radio or Check Button using its Align property. This may be set to `'Left'`, `'Right'` or `'Centre'` (and `'Center'`). The latter causes the symbol part of the Button (the circle or checkbox) to be centred within the corresponding Grid cell(s) but should only be used if the Caption property is empty.
 
 The following illustrates different values for the Align property using Check Buttons.
-
 ```apl
      ∇ AlignedCheckBoxes;CStyle
 [1]    'F'⎕WC'Form' 'Aligned Check Boxes in a Grid'

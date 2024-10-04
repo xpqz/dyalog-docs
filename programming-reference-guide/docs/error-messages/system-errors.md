@@ -68,7 +68,7 @@ If APL crashes and saves an *aplcore* file, please email the following informati
 2. details of your version of Dyalog APL: the full version number, whether it is Unicode or Classic Edition, and the BuildID.  This information appears in the *Help->About* box; the *Copy* button copies this information into the clipboard, from where it can be pasted into an email etc.
 3. a compressed form of the *aplcore* file itself
 
-If the problem is reproducible, i.e. can be easily repeated, please also send the appropriate description, workspace, and other files required to do so.
+If the problem is reproducible, that is, can be easily repeated, please also send the appropriate description, workspace, and other files required to do so.
 
 ## System Error Dialog Box
 
@@ -101,7 +101,7 @@ Note: Under a 32-bit interpreter the `⎕NA` call should refer to dyalog32.
 |Create a process dump file|Dumps a complete core image, see below.|
 |Create Trappable Error|If you check this box (only enabled on System Error codes 995 and 996), APL will not terminate but will instead generate an error 91 ( `EXTERNAL DLL EXCEPTION` ) when you press *Dismiss* .|
 |Create an aplcore file|If this box is checked, an *aplcore* file will be created.|
-|Pass exception on to operating system|If this box is checked, the exception will be passed on to your current debugging tool (e.g. *Visual Studio* ). See **PassExceptionsToOpSys** .|
+|Pass exception on to operating system|If this box is checked, the exception will be passed on to your current debugging tool (for example, *Visual Studio* ). See **PassExceptionsToOpSys** .|
 |Copy to clipboard|Copies the contents of the APL stack trace window to the Clipboard.|
 
 ## Create a process dump file

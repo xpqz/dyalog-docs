@@ -8,18 +8,16 @@ Most mainframe APL users will already be familiar with Shared Variables and will
 
 It is easiest to consider Shared Variables between two APL workspaces. A Shared Variable is simply a variable that is common to and visible in two workspaces. Once a variable is shared, its value is the same in both workspaces. Communication is achieved by one workspace assigning a new value to the variable and then the other workspace referencing it. Although there is no explicit **send** or **receive**, it is perhaps easier to think of things in this way. When you assign a value to a shared variable, you are in effect transmitting it to your partner. When you reference a shared variable, you are in fact receiving it from your partner.
 
-This discussion of shared variables will refer to the terms **set** and **use**. The term **set** means to assign a (new) value to a variable, i.e. its name appears to the left of an assignment arrow. The term **use** means to refer to the value of a variable, i.e. its name appears to the right of an assignment arrow.
+This discussion of shared variables will refer to the terms **set** and **use**. The term **set** means to assign a (new) value to a variable, that is, its name appears to the left of an assignment arrow. The term **use** means to refer to the value of a variable, that is, its name appears to the right of an assignment arrow.
 
 ## Sharing a Variable
 
 Variables are shared using the system function `⎕SVO`. This is a dyadic function whose right argument specifies the name (or a matrix of names) of the variable, and whose left argument identifies the partner with whom the variable is to be shared. In mainframe APL, you identify the partner by its processor id. For example, the following statement means that you offer to share the variable `X` with processor 123.
-
 ```apl
       123 ⎕SVO 'X'
 ```
 
-A single `⎕SVO` by one workspace is not however sufficient to make a connection. It is necessary that **both** partners make an offer to share the variable. Thus if you are process 345, your partner must complete the coupling by making an equivalent shared variable offer, e.g.
-
+A single `⎕SVO` by one workspace is not however sufficient to make a connection. It is necessary that **both** partners make an offer to share the variable. Thus if you are process 345, your partner must complete the coupling by making an equivalent shared variable offer. For example:
 ```apl
       345 ⎕SVO 'X'
 ```
@@ -43,8 +41,7 @@ One of the interesting things about Shared Variables, is that both APL workspace
 
 Synchronisation is provided by two system functions, `⎕SVS` and `⎕SVC`. `⎕SVS` reports the current value of a shared variable's **State Vector**. This provides information concerning the state of the variable from each partner's point of view. The second function, `⎕SVC`, allows you and your partner to specify interlocking that enforces the level of synchronisation required by your application.
 
-Each shared variable has a **state vector** which indicates which partner has set a value of which the other is still ignorant, and which partner is aware of the current value. The current state of a shared variable is reported by the monadic system function `⎕SVS`. Its argument is the name of the shared variable. Its result is a 4-element Boolean vector which specifies the current state vector, i.e.
-
+Each shared variable has a **state vector** which indicates which partner has set a value of which the other is still ignorant, and which partner is aware of the current value. The current state of a shared variable is reported by the monadic system function `⎕SVS`. Its argument is the name of the shared variable. Its result is a 4-element Boolean vector which specifies the current state vector, that is:
 ```apl
       state ← ⎕SVS name
 ```
@@ -65,8 +62,7 @@ It may not be immediately apparent as to how the information provided by `⎕SVS
 
 In simple terms, `⎕SVC` allows an application to inhibit its partner from setting a new value before it has read the current one, and/or to inhibit its partner from using a variable again before it has been reset.
 
-`⎕SVC` is a dyadic system function. Its right argument specifies the name of the shared variable; its left argument the access control vector, i.e.
-
+`⎕SVC` is a dyadic system function. Its right argument specifies the name of the shared variable; its left argument the access control vector, that is,
 ```apl
        access ⎕SVC name
 ```
@@ -80,21 +76,18 @@ The access control vector is a 4-element Boolean vector whose elements specify a
 |`[4]`|1 means that your partner cannot use the variable until you have set it. |
 
 In principle, each of the two partners maintains its own copy of the access control vector using `⎕SVC`. Control is actually imposed by the **effective access control vector** which is the result of "ORing" the two individual ones. From your own point of view, the effective access control vector is:
-
 ```apl
    (your ⎕SVC)  ∨  (your partner's ⎕SVC)[3 4 1 2]
 ```
 
 Whenever either of the partners attempts an operation (set or use) on a shared variable, the system consults its effective access control vector. If the vector indicates that the operation is currently permitted, it goes ahead. If however the vector indicates that the operation is currently inhibited, the operation is delayed until the situation changes.
 
-For example, suppose that the effective access control vector is (1 0 0 1). This prevents either partner from setting the shared variable twice in a row, without an intervening use by the other. The purpose of this is to prevent loss of data. Suppose now that one workspace assigns the value 10 to the shared variable (which is called `DATA`), i.e.
-
+For example, suppose that the effective access control vector is (1 0 0 1). This prevents either partner from setting the shared variable twice in a row, without an intervening use by the other. The purpose of this is to prevent loss of data. Suppose now that one workspace assigns the value 10 to the shared variable (which is called `DATA`), that is:
 ```apl
       DATA ← 10
 ```
 
 Then, before the partner has referenced the new value it attempts to execute the statement:
-
 ```apl
       DATA ← 20
 ```
@@ -103,14 +96,12 @@ APL will **not** execute the statement. Instead it will wait (indefinitely if re
 
 Similarly, suppose that the effective access control vector is (0 0 1 1). This means that neither partner can **use** the variable twice in succession without an intervening **set** by the other. This type of control is appropriate where each **set** corresponds to an individual transaction, and you want to prevent transactions from inadvertently being duplicated.
 
-Suppose now that one workspace references the shared variable (which is called `DATA`), i.e.
-
+Suppose now that one workspace references the shared variable (which is called `DATA`), that is:
 ```apl
       TRANSACTION ← DATA
 ```
 
-Then, soon after, it executes the statement again, but without an intervening **set** by its partner, i.e.
-
+Then, soon after, it executes the statement again, but without an intervening **set** by its partner, that is:
 ```apl
       TRANSACTION ← DATA
 ```

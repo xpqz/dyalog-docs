@@ -33,11 +33,10 @@ The [ ClassName](../properties/classname.md) property specifies the name of the 
 
 
 Once you have created an instance of a particular NetControl, the properties, events and methods it supports may be obtained using `⎕NL`. These are the properties, events and methods defined for the control by its author. The "Dyalog" properties listed above, are not reported by
-`⎕NL`, but take precedence over (i.e. mask) any members of the same name that may be exposed by the class itself.
+`⎕NL`, but take precedence over (that is, mask) any members of the same name that may be exposed by the class itself.
 
 
 The following example illustrates the use of the Button class. In this case, the FlatStyle property of the button is set to "Popup". This gives the button a flat appearance until the mouse is hovered over it, when its appearance it changes to 3-dimensional.
-
 ```apl
        ⎕USING←'System'
        ⎕USING,←⊂'System.Windows.Forms,system.windows.forms.dll'

@@ -26,10 +26,10 @@ This property determines the type of line used to draw a graphics object. It tak
 |5  |null line (invisible)|
 
 
-If LStyle is in the range 1-4, the gaps between the dashes and dots are drawn using the colour specified by [BCol](bcol.md), or are left undrawn (i.e. transparent) if [BCol](bcol.md) is not defined.
+If LStyle is in the range 1-4, the gaps between the dashes and dots are drawn using the colour specified by [BCol](bcol.md), or are left undrawn (that is, transparent) if [BCol](bcol.md) is not defined.
 
 
-In versions of Dyalog APL prior to 13.2 revision 19489, if LWidth specified a line width greater than 1 pixel, a solid line was drawn in the colour specified by the FCol Property, regardless of the value of [LStyle](lstyle.md). From that revision onwards, if the value of LWidth is greater than 1  then the value of LStyle is honoured, but only the FCol of the line is honoured - the BCol is still ignored.
+In versions of Dyalog prior to v13.2 revision 19489, if LWidth specified a line width greater than 1 pixel, a solid line was drawn in the colour specified by the FCol Property, regardless of the value of [LStyle](lstyle.md). From that revision onwards, if the value of LWidth is greater than 1  then the value of LStyle is honoured, but only the FCol of the line is honoured - the BCol is still ignored.
 
 
 

@@ -13,7 +13,7 @@
 **Description**
 
 
-This property has been replaced by the [GetTextSize](../methodorevents/gettextsize.md) method, which should be used instead. TextSize is retained only for compatibility with previous versions of Dyalog APL.
+This property has been replaced by the [GetTextSize](../methodorevents/gettextsize.md) method, which should be used instead. TextSize is retained only for compatibility with previous versions of Dyalog.
 
 
 TextSize is a "read-only" property that reports the size of the bounding rectangle of a text item in a given font. The result is given in the co-ordinate system of the object in question. This property is useful for positioning [Text](../objects/text.md) objects.

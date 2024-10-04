@@ -23,7 +23,7 @@ For example, the OpenDatabase method in the DAO.DBEngine OLE server may be calle
 
 ## Arrays and Pointers
 
-Many parameters to OLE methods are specified by pointers. If, for example, the parameter type is VT_BSTR, it means that the calling routine must supply a pointer to (i.e. the address of) a character string.
+Many parameters to OLE methods are specified by pointers. If, for example, the parameter type is VT_BSTR, it means that the calling routine must supply a pointer to (that is, the address of) a character string.
 
 Similarly, if the parameter type is defined to be VT_VARIANT, it means that the parameter is the address of an arbitrary array (the VT_VARIANT data type actually maps nicely onto a Dyalog APL nested array).
 

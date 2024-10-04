@@ -58,7 +58,7 @@ C:\Program Files\Dyalog\Dyalog APL 12.0 Unicode\ws\avu saved Thu Dec 06 11:24:32
 When the Unicode Edition imports APL objects from a non-Unicode source, function comments and character data of type 82 are converted to Unicode. When the Classic Edition imports APL objects from a Unicode source, this translation is performed in reverse.
 
 
-If the objects are imported from a Version 12.0 (or later) workspace (i.e. from a workspace that contains its own value of `⎕AVU`) the value of `#.⎕AVU` (the value of `⎕AVU` in the root) in the *source* workspace is used. Otherwise, such as when APL objects are imported from a pre-Version 12 workspace, from a component file, or from a TCP socket, the local value of `⎕AVU` in the *target* workspace is used.
+If the objects are imported from a Version 12.0 (or later) workspace (that is, from a workspace that contains its own value of `⎕AVU`) the value of `#.⎕AVU` (the value of `⎕AVU` in the root) in the *source* workspace is used. Otherwise, such as when APL objects are imported from a pre-Version 12 workspace, from a component file, or from a TCP socket, the local value of `⎕AVU` in the *target* workspace is used.
 
 
 ## Rules for Conversion on Export

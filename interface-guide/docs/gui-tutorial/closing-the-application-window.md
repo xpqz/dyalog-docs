@@ -1,7 +1,6 @@
 <h1> Closing the Application Window</h1>
 
-Then we need something to allow our user to terminate our application. He will expect the application to terminate when he closes the window. We will implement this by having a callback function called `QUIT` which will simply call `⎕OFF`, i.e.
-
+Then we need something to allow our user to terminate our application. He will expect the application to terminate when he closes the window. We will implement this by having a callback function called `QUIT` which will simply call `⎕OFF`, that is:
 ```apl
      ∇ QUIT
 [1]   ⎕OFF
@@ -9,7 +8,6 @@ Then we need something to allow our user to terminate our application. He will e
 ```
 
 We can associate this with the Close event on the Form `TEMP`. This event will be generated when the user closes the window from its System Menu
-
 ```apl
       TEMP.onClose←'QUIT'
 ```

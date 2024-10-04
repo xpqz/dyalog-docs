@@ -1,4 +1,4 @@
-﻿# MenuItem Parents
+<h1> MenuItem Parents</h1>
 
-|----|----|----|
-|[Menu](../objects/menu.md)|[MenuBar](../objects/menubar.md)|&#160;|
+|--------------------------|--------------------------------|------|
+|[Menu](../objects/menu.md)|[MenuBar](../objects/menubar.md)|&nbsp;|

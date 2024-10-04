@@ -12,7 +12,7 @@ Graphical output is performed using the following objects:
 |[Image](../../../object-reference/objects/image)    |displays or prints Bitmaps, Icons and Metafiles|
 |[Text](../../../object-reference/objects/text)      |displays or prints graphical text              |
 
-These graphical objects can be drawn in (i.e. be the children of) a wide range of other objects including a Form, Static, Printer and Bitmap.
+These graphical objects can be drawn in (that is, be the children of) a wide range of other objects including a Form, Static, Printer and Bitmap.
 
 Additional graphical resources are provided by the following objects. These are unusual in that they are not visible except when referenced as the property of another object:
 

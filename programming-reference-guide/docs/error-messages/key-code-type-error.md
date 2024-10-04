@@ -7,7 +7,7 @@
 
 
 
-This report is given if a key code supplied to `⎕SR` or `⎕PFKEY` is numeric or nested; i.e. is not a valid key code.
+This report is given if a key code supplied to `⎕SR` or `⎕PFKEY` is numeric or nested; that is, is not a valid key code.
 
 
 

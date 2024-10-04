@@ -23,7 +23,7 @@ Each entry is a string value whose name identifies the window as follows:
 |WSSearch      |The Find Objects tool                                                                                                             |
 |Syserror      |The Syserror Message Box                                                                                                          |
 
-Each string value should contain a mixture of your own text and keywords which are enclosed in braces, e.g. {TITLE}. Keywords act like variables and are replaced at display time by corresponding values as described in the table below.
+Each string value should contain a mixture of your own text and keywords which are enclosed in braces, for example, {TITLE}. Keywords act like variables and are replaced at display time by corresponding values as described in the table below.
 
 |Keyword    |Value                                                                |
 |-----------|---------------------------------------------------------------------|
@@ -31,9 +31,9 @@ Each string value should contain a mixture of your own text and keywords which a
 |`{WSID}`   |Workspace ID ( `⎕WSID` )                                             |
 |`{NSID}`   |Current Namespace                                                    |
 |`{SNSID}`  |Current Namespace (short version)                                    |
-|`{PRODUCT}`|The name of the Dyalog product, e.g. "Dyalog APL/W - 64"             |
-|`{VER_A}`  |The main version number, e.g. "14"                                   |
-|`{VER_B}`  |The secondary version number, e.g. "0"                               |
+|`{PRODUCT}`|The name of the Dyalog product, for example, "Dyalog APL/W - 64"     |
+|`{VER_A}`  |The main version number, for example, "14"                           |
+|`{VER_B}`  |The secondary version number, for example, "0"                       |
 |`{VER_C}`  |The tertiary  version number (currently the internal revision number)|
 |`{PID}`    |The process ID                                                       |
 |`{CHARS}`  |"Classic" or "Unicode"                                               |

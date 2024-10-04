@@ -6,11 +6,11 @@ The supported versions of Dyalog are now versions 19.0, 18.2, 18.0, and 17.1. Ve
 
 ## Dyalog on macOS
 
-Version 19.0 is expected to be the last version that will be available for Intel-based Macs. Version 19.0 is natively available for both Intel and ARM-based Macs.
+Dyalog v19.0 is natively available for both Intel and ARM-based Macs. Dyalog v19.0 is expected to be the last version that will be available for Intel-based Macs.
 
 ## Performance Issue with Namespaces
 
-We have identified a namespace performance issue which is especially noticeable with JSON Import. We have a fixed planned for the next release of Dyalog. In the meantime, there is an easy workaround.
+We have identified a namespace performance issue which is especially noticeable with JSON Import. We have a fix planned for the next release of Dyalog. In the meantime, there is an easy workaround.
 
 For further information, see [Performance Warning](../../../language-reference-guide/system-functions/json)
 
@@ -24,7 +24,7 @@ The proposed size increase may potentially cause `WS FULL` errors or may change 
 
 To allow the user to evaluate the effect of this future change on their applications, two new I-beam functions have been provided. These functions increase the space allocated to the internal tables for the sole purpose of testing these potential effects. The new I-beams may affect performance either directly or by triggering a change of algorithm, but should not be used for that sole purpose since performance degradation in some cases cannot be excluded. See [Hash Table Size](../language-reference-changes/hash-table-size.md) and [Lookup Table Size](../language-reference-changes/lookup-table-size.md).
 
-When the next major release is published, it is anticipated that few, if any users will notice negative effects from changing the internal table sizes. Rather, they will benefit from the improved performance that will result.
+When the next major release is published, it is anticipated that few, if any, users will notice negative effects from changing the internal table sizes. Rather, they will benefit from the improved performance that will result.
 
 ## PCRE2 Upgrade
 
@@ -36,9 +36,9 @@ Version 19.0 is supplied with CEF version 121 on all supported platforms.
 
 ## Forthcoming Removal of 819⌶
 
-The system function `⎕C` was introduced in Dyalog version 18.0, at which point we announced that `819⌶` was deprecated. `819⌶` is still present in Dyalog version 19.0, but it will be removed from the next version.
+The system function `⎕C` was introduced in Dyalog v18.0, at which point we announced that `819⌶` was deprecated. `819⌶` is still present in Dyalog v19.0, but it will be removed from the next version.
 
-There is a temporary new configuration parameter **DYALOG_IBEAM819**.
+There is a temporary new configuration parameter: **DYALOG_IBEAM819**.
 
 If **DYALOG_IBEAM819** is set to 0, use of `819⌶` will  signal an error and the DMX.Message will state that it has been withdrawn; in other words, the behaviour is what you would get with the next release. This is to help users prepare for its removal now if they want to.
 
@@ -46,13 +46,13 @@ If **DYALOG_IBEAM819** is set to 0, use of `819⌶` will  signal an error and th
 
 ## Forthcoming Removal of Array Editor
 
-Version 19.0 is expected to be the last version that will include David Liebtag's Array Editor.
+Dyalog v19.0 is expected to be the last version that will include David Liebtag's Array Editor.
 
 ## Forthcoming Removal of Syncfusion from Microsoft Windows installation images
 
-Version 19.0 is expected to be the last version that will include the Syncfusion library of WPF controls; Dyalog Ltd will cease to offer support for the Syncfusion controls from the end of September 2024.
+Dyalog v19.0 is expected to be the last version that will include the Syncfusion library of WPF controls; Dyalog Ltd will cease to offer support for the Syncfusion controls from the end of September 2024.
 
-The Syncfusion licence provided with Dyalog 19.0 will continue to be valid for use with Dyalog 19.0 beyond this date, but later versions of Dyalog will not include this licence.
+The Syncfusion licence provided with Dyalog v19.0 will continue to be valid for use with Dyalog v19.0 beyond this date, but later versions of Dyalog will not include a Syncfusion licence.
 
 ## Removal of RConnect (R Interface)
 

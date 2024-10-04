@@ -74,7 +74,7 @@ length must be the same as the number of points specified by [Points](../propert
 
 
 [BCol](../properties/bcol.md) specifies the background colour of the
-text, i.e. the colour for the part of the character cell that is blank. It is
+text, that is, the colour for the part of the character cell that is blank. It is
 defined in the same way as [FCol](../properties/fcol.md).
 
 

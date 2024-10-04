@@ -47,6 +47,8 @@ Table: Unicode Edition: Conversion Codes
 |320    |4 `×` count         |32-bits character|count       |
 |323    |4 `×` count         |32 bits integer  |count       |
 |645    |8 `×` count         |64 bits floating |count       |
+|1287   |16 `×` count        |128 bits decimal |count       |
+|1289   |16 `×` count        |128 bits complex |count       |
 
 
 
@@ -62,10 +64,9 @@ Table: Classic Edition: Conversion Codes
 |163  |2 `×` count         |16 bits integer |count       |
 |323  |4 `×` count         |32 bits integer |count       |
 |645  |8 `×` count         |64 bits floating|count       |
+|1287 |16 `×` count        |128 bits decimal|count       |
+|1289 |16 `×` count        |128 bits complex|count       |
 
-
-
-Note that types **80, 160** and **320** and **83** and **163** are exclusive to Dyalog APL.
 
 <h2 class="example">Example</h2>
 ```apl

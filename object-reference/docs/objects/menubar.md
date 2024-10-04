@@ -42,7 +42,7 @@ The following example illustrates how a menu structure can be built up from a Me
 ```
 
 
-Note that putting a [Separator](separator.md) (either [Style](../properties/style.md)) in a MenuBar has the effect of breaking the bar vertically, i.e. the next [Menu](menu.md) or [MenuItem](menuitem.md) you add will appear on the left-hand side on the line below.
+Note that putting a [Separator](separator.md) (either [Style](../properties/style.md)) in a MenuBar has the effect of breaking the bar vertically, that is, the next [Menu](menu.md) or [MenuItem](menuitem.md) you add will appear on the left-hand side on the line below.
 
 
 The [EdgeStyle](../properties/edgestyle.md) property has no effect on the appearance of a MenuBar or of a direct child of a MenuBar. However, if you want the sub-menus to have a 3-dimensional appearance, you **must** set the [EdgeStyle](../properties/edgestyle.md) property of the MenuBar to something other than `'None'`.

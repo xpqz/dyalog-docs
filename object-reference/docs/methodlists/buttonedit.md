@@ -1,6 +1,6 @@
-﻿# ButtonEdit Methods
+<h1> ButtonEdit Methods</h1>
 
-|----|----|----|
-|[Detach](../methodorevents/detach.md)|[ChooseFont](../methodorevents/choosefont.md)|[GetTextSize](../methodorevents/gettextsize.md)|
-|[Animate](../methodorevents/animate.md)|[GetFocus](../methodorevents/getfocus.md)|[ShowSIP](../methodorevents/showsip.md)|
-|[GetFocusObj](../methodorevents/getfocusobj.md)|&#160;|&#160;|
+|-----------------------------------------------|---------------------------------------------|-----------------------------------------------|
+|[Detach](../methodorevents/detach.md)          |[ChooseFont](../methodorevents/choosefont.md)|[GetTextSize](../methodorevents/gettextsize.md)|
+|[Animate](../methodorevents/animate.md)        |[GetFocus](../methodorevents/getfocus.md)    |[ShowSIP](../methodorevents/showsip.md)        |
+|[GetFocusObj](../methodorevents/getfocusobj.md)|&nbsp;                                       |&nbsp;                                         |

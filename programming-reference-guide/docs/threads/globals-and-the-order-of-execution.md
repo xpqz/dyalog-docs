@@ -1,6 +1,6 @@
 <h1> Globals and the Order of Execution</h1>
 
-It is important to recognise that any reference or assignment to a global or semi-global object (including GUI objects) is **inherently dangerous** (i.e. a source of programming error) if more than one thread is running. Worse still, programming errors of this sort may not become apparent during testing because they are dependent upon random timing differences. Consider the following example:
+It is important to recognise that any reference or assignment to a global or semi-global object (including GUI objects) is **inherently dangerous** (that is, a source of programming error) if more than one thread is running. Worse still, programming errors of this sort may not become apparent during testing because they are dependent upon random timing differences. Consider the following example:
 
 ```apl
      ∇ BUG;SEMI_GLOBAL
@@ -39,12 +39,12 @@ This is because APL may switch from one thread to another between any two lines 
 
 Secondly, consider the possibility that APL switches from the `FOO` thread to the `GOO` thread after `FOO[1]`. If this happens, the value of `SEMI_GLOBAL` passed to `DO_SOMETHING` will be 1 and not 0. Here is another source of error.
 
-In fact, in this case, there are two ways to resolve the problem. To ensure that the value of `SEMI_GLOBAL` remains the same from `FOO[1]` to `FOO[2]`, you may use diamonds instead of separate statements, e.g.
+In  this case, there are two ways to resolve the problem. To ensure that the value of `SEMI_GLOBAL` remains the same from `FOO[1]` to `FOO[2]`, you can use diamonds instead of separate statements. For example:
 ```apl
       :If SEMI_GLOBAL=0 ⋄ DO_SOMETHING SEMI_GLOBAL
 ```
 
-Even better, although less efficient, you may use `:Hold` to synchronise access to the variable, for example:
+Even better, although less efficient, you can use `:Hold` to synchronise access to the variable. For example:
 ```apl
       ∇ FOO
 [1]    :Hold 'SEMI_GLOBAL'

@@ -7,7 +7,7 @@
 
 
 
-In this section, the term *sint_vector* is used to refer to a simple integer vector whose items are all in the range `¯128` to `127` i.e. they are type 83. 
+In this section, the term *sint_vector* is used to refer to a simple integer vector whose items are all in the range `¯128` to `127`, that is, they are type 83. 
  For further information see [Data Representation (Monadic)](../system-functions/data-representation-monadic.md).
 
 

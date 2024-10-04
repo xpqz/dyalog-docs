@@ -18,7 +18,7 @@ If `⎕ML≥2`, Mix is represented by the symbol: `⊃`.
 
 `Y` may be any array whose items may be uniform in rank and shape, or differ in rank and shape. If the items of `Y` are non-uniform, they are extended prior to the application of the function as follows:
 
-1. If the items of `Y` have different ranks, each item is extended in rank to that of the greatest rank by padding with leading 1s. 
+1. If the items of `Y` have different ranks, each item is extended in rank to that of the greatest rank by padding its shape with leading 1s. 
 2. If the items of `Y` have different shapes, each is padded with the corresponding prototype to a shape that represents the greatest length along each axis of all items in `Y`.
 
 
@@ -43,7 +43,7 @@ If `K` is absent, the axes of `y` appear as the last axes of the result.
 ## Simple Vector Examples
 
 
-In this example, the shape of `Y` is 3, and the shape of  `y` is 2. So the shape of the result will be a permutation of 2 and 3, i.e. in this simple example, either `(2 3)` or `(3 2`).
+In this example, the shape of `Y` is 3, and the shape of  `y` is 2. So the shape of the result will be a permutation of 2 and 3, that is, in this simple example, either `(2 3)` or `(3 2`).
 
 
 
@@ -57,7 +57,7 @@ If `K` is omitted, the shape of the result is `(⍴Y),⍴y`.
 
 
 
-If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because `(⍴y)` is inserted between the 0<sup>th</sup> and the 1<sup>st</sup> axis of the result, i.e. at the beginning.
+If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because `(⍴y)` is inserted between the 0<sup>th</sup> and the 1<sup>st</sup> axis of the result, that is, at the beginning.
 ```apl
 
       ↑[.5](1 2)(3 4)(5 6)
@@ -66,7 +66,7 @@ If `K` is between 0 and 1, the shape of the result is `(⍴y),⍴Y` because `(�
 ```
 
 
-If `K` is between 1 and 2, the shape of the result is `(⍴Y),⍴y` because `(⍴y)` is inserted between the 1<sup>st</sup> and 2<sup>nd</sup> axis of the result, i.e. at the end. This is the same as the case when `K` is omitted.
+If `K` is between 1 and 2, the shape of the result is `(⍴Y),⍴y` because `(⍴y)` is inserted between the 1<sup>st</sup> and 2<sup>nd</sup> axis of the result, that is, at the end. This is the same as the case when `K` is omitted.
 ```apl
 
       ↑[1.5](1 2)(3 4)(5 6)

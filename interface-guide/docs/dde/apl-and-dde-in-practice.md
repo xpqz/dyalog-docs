@@ -93,7 +93,7 @@ To allow another application to act as a client, you must have previously publis
 
 In the case of a single general offer, the result of `⎕SVO` will always be 1. When subsequently a client application attempts to initiate a conversation with a server with the application name `'DYALOG'` and topic `⎕WSID`, the APL interpreter will respond and complete the connection.
 
-At this point, if and when the client has requested a hot or warm link to the item *SALES*, the degree of coupling (which is reported by using `⎕SVO` monadically) becomes 2, i.e.
+At this point, if and when the client has requested a hot or warm link to the item *SALES*, the degree of coupling (which is reported by using `⎕SVO` monadically) becomes 2, that is:
 ```apl
       ⎕SVO 'X1'
 2

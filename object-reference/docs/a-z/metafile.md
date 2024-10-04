@@ -54,7 +54,7 @@ You can also copy a Metafile object to the Windows Clipboard from where it can b
 
 The [FileWrite](../methodorevents/filewrite.md) method may be used to save a Metafile object on a file. The following statements save the Metafile `MF` in a file called TEST.WMF.
 ```apl
-      MF.File←TEST'
+      MF.File←'TEST'
       MF.FileWrite
 ```
 

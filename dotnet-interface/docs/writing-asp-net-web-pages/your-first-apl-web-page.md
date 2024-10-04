@@ -73,7 +73,7 @@ In the server, ASP.NET reloads the page and processes it again. In fact, because
 
 This time, because a POST back is loading the page, and because the `Pressme` button caused the POST, ASP.NET executes the function associated with its `onClick` attribute, namely the `APLScript` function `Reverse`.
 
-When it is called, the argument supplied to Reverse contains two items. The first of these is an object that represents the control that generated the `onClick` event; the second is an object that represents the event itself. In fact, `Reverse` and its argument are very similar to a standard Dyalog APL callback function.
+When it is called, the argument supplied to Reverse contains two items. The first of these is an object that represents the control that generated the `onClick` event; the second is an object that represents the event itself. In fact, `Reverse` and its argument are very similar to a standard Dyalog callback function.
 
 ```apl
 ∇Reverse args

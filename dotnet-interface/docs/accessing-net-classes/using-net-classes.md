@@ -1,6 +1,6 @@
 <h1> Using .NET Classes</h1>
 
-To create a Dyalog APL object as an instance of a .NET class, you use the `⎕NEW` system function. The `⎕NEW` system function is monadic. It takes a 1 or 2-element argument, the first element being a *class*.
+To create a Dyalog object as an instance of a .NET class, you use the `⎕NEW` system function. The `⎕NEW` system function is monadic. It takes a 1 or 2-element argument, the first element being a *class*.
 
 If the argument is a scalar or a 1-element vector, an instance of the class is created using the *constructor* that takes NO argument.
 
@@ -33,7 +33,7 @@ If you want to use fully qualified class names instead, one of the elements of `
       mydt←⎕NEW System.DateTime (2008 4 30)
 ```
 
-When creating an instance of the `DateTime` class, you are required to provide an argument with two elements: (the class and the *constructor argument*, in our case a 3-element vector representing the date). Many classes provide a default constructor which takes no arguments. From Dyalog APL, the *default constructor* is called by calling `⎕NEW` with only a reference to the class in the argument. For example, to obtain a default `Button` object, we only need to write:
+When creating an instance of the `DateTime` class, you are required to provide an argument with two elements: (the class and the *constructor argument*, in our case a 3-element vector representing the date). Many classes provide a default constructor which takes no arguments. From Dyalog, the *default constructor* is called by calling `⎕NEW` with only a reference to the class in the argument. For example, to obtain a default `Button` object, we only need to write:
 ```apl
       mybtn←⎕NEW Button
 ```
@@ -48,7 +48,7 @@ Each .NET Class has one or more *constructor* methods. A constructor is a method
 
 This concept, which is known as *overloading*, may seem somewhat alien to the APL programmer. After all, we are used to defining functions that accept a whole range of different arguments. However, type checking, which is fundamental to the .NET Framework, requires that a method is called with the correct number of parameters, and that each parameter is of a predefined type. Overloading solves this issue.
 
-When you create an instance of a class in C#, you do so using the `new` operator. This is automatically mapped to the appropriate constructor method by matching the parameters you supply to the various forms of the constructor. A similar mechanism is implemented in Dyalog APL using the `⎕NEW` system function.
+When you create an instance of a class in C#, you do so using the `new` operator. This is automatically mapped to the appropriate constructor method by matching the parameters you supply to the various forms of the constructor. A similar mechanism is implemented in Dyalog using the `⎕NEW` system function.
 
 ## How the `⎕NEW` System Function is implemented
 
@@ -59,7 +59,7 @@ When APL executes an expression such as:
 
 the following logic is used to resolve the reference to `DateTime` correctly.
 
-The first time that APL encounters a reference to a non-existent name (i.e. a name that would otherwise generate a `VALUE ERROR`), it searches the .NET namespaces/assemblies specified by `⎕USING` for a .NET class of that name. If found, the name (in this case `DateTime`) is recorded in the APL symbol table with a name class of 9.6 and is associated with the corresponding .NET namespace. If not, `VALUE ERROR` is reported as usual. Note that this search ONLY takes place if `⎕USING` has been assigned a value.
+The first time that APL encounters a reference to a non-existent name (that is, a name that would otherwise generate a `VALUE ERROR`), it searches the .NET namespaces/assemblies specified by `⎕USING` for a .NET class of that name. If found, the name (in this case `DateTime`) is recorded in the APL symbol table with a name class of 9.6 and is associated with the corresponding .NET namespace. If not, `VALUE ERROR` is reported as usual. Note that this search ONLY takes place if `⎕USING` has been assigned a value.
 
 Subsequent references to that symbol (in this case `DateTime`) are resolved directly and do not involve any assembly searching.
 
@@ -90,7 +90,7 @@ Note that if you want to check the type of an object, this can be obtained using
 
 .NET objects are managed by the .NET Common Language Runtime (CLR). The CLR allocates memory for an object when it is created, and de-allocates this memory when it is no longer required.
 
-When the (last) reference from Dyalog APL to a .NET object is expunged by `⎕EX` or by localisation, the system marks the object as unused, leaving it to the CLR to de-allocate the memory that it had previously allocated to it, when appropriate. Note that even though Dyalog has de-referenced the APL name, the object could potentially still be referenced by another .NET class.
+When the (last) reference from Dyalog to a .NET object is expunged by `⎕EX` or by localisation, the system marks the object as unused, leaving it to the CLR to de-allocate the memory that it had previously allocated to it, when appropriate. Note that even though Dyalog has de-referenced the APL name, the object could potentially still be referenced by another .NET class.
 
 De-allocated memory may not actually be re-used immediately and may indeed never be re-used,  depending upon the algorithms used by the CLR garbage disposal.
 
@@ -98,4 +98,4 @@ Furthermore, a .NET object may allocate unmanaged resources (such as window han
 
 To allow the programmer to control the freeing of resources associated with .NET objects in a standard way, objects implement the IDisposable interface which provides a Dispose() method. The C# language provides a `using` control structure that automates the freeing of resources. Crucially, it does so however the flow of execution exits the control structure, even as a result of error handling. This obviates the need for the programmer to call Dispose() explicitly wherever it may be required.
 
-This programming convenience is provide in Dyalog APL by the `:Disposable ... :EndDisposable` control structure. For further information, see   Disposable Statement.
+This programming convenience is provide in Dyalog by the `:Disposable ... :EndDisposable` control structure. For further information, see   Disposable Statement.

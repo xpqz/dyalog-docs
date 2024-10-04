@@ -139,6 +139,7 @@ nav:
           - Ravel with Axes: primitive-functions/ravel-with-axes.md
           - Reciprocal: primitive-functions/reciprocal.md
           - Replicate: primitive-functions/replicate.md
+          - Replicate First: primitive-functions/replicate-first.md
           - Reshape: primitive-functions/reshape.md
           - Residue: primitive-functions/residue.md
           - Reverse: primitive-functions/reverse.md

@@ -88,7 +88,7 @@ First, you create an Edit, a SubForm, and a Splitter as children of the *Form*, 
 Notice that, by default, when the first Splitter is shifted to the left, both panes in the SubForm expand equally.
 
 
-The second approach is to create multiple Splitters *at the same level*, i.e. owned by the same parent. [ See Splitter: Example 4.](../examples/splitter-example-4.md)
+The second approach is to create multiple Splitters *at the same level*, that is, owned by the same parent. [ See Splitter: Example 4.](../examples/splitter-example-4.md)
 
 
 In this case, the third Edit object `F.E3` is unaffected by movement of the leftmost Splitter `F.S1`. Note also, that the first Splitter `F.S1` may not be dragged further right than the second Splitter `F.S2`.

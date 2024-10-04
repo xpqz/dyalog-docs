@@ -43,7 +43,7 @@ Table: File Encodings {: #Encodings }
 
 
 
-The above UTF formats may be qualified with -BOM or -NOBOM (e.g. UTF-8-BOM). See [Write Text File](nput.md).
+The above UTF formats may be qualified with -BOM or -NOBOM (for example, UTF-8-BOM). See [Write Text File](nput.md).
 
 
 Whether or not `X` is specified, if the start of the file contains a recognised   Byte Order Mark (BOM), the file is decoded according to the BOM. Otherwise, if `X` is specified the file is decoded according to the value of `X`. Otherwise, the file is examined to try to decide its encoding and is decoded accordingly.

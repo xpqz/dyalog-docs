@@ -12,7 +12,7 @@ The operation to read the Type Information may take several seconds, possibly mi
 
 ## Late Binding
 
-In some circumstances it may  be desirable  to avoid the process of reading the Type information in its entirety (known as *early binding*), and instead use a different approach whereby Type information is obtained only when it is needed, i.e. when a particular property, method or event is referenced. This is called *late binding* and is specified by setting the LateBind property of the OLEClient object to 1 when you create it. When this scheme is used, APL only reads the Type information for properties and methods that are actually used, although the benefit of having all the Type information held in the workspace is lost.
+In some circumstances it may  be desirable  to avoid the process of reading the Type information in its entirety (known as *early binding*), and instead use a different approach whereby Type information is obtained only when it is needed, that is, when a particular property, method or event is referenced. This is called *late binding* and is specified by setting the LateBind property of the OLEClient object to 1 when you create it. When this scheme is used, APL only reads the Type information for properties and methods that are actually used, although the benefit of having all the Type information held in the workspace is lost.
 
 ## Missing Type Information
 
@@ -182,7 +182,7 @@ Then, we can obtain information about a particular event (or events) by invoking
 5
 ```
 
-The first element contains a description of the event and the data type of its result (few events generate results, so this is usually VT_VOID), i.e.
+The first element contains a description of the event and the data type of its result (few events generate results, so this is usually VT_VOID), that is:
 ```apl
       ⊃INFO
 Sent when a mouse button is pressed  VT_VOID 

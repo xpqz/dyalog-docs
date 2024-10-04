@@ -17,26 +17,26 @@ This function returns information about the state of the workspace and provides 
 If `X` is omitted, the result `R` is an array with the same structure as `Y`, but with values in `Y` replaced by the following statistics.  For any value in `Y` outside those listed below, the result is undefined.
 
 
-|Value|Description                                                                                                                                                  |
-|-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|0    |Workspace available (a "quick" `⎕WA` ).                                                                                                                      |
-|1    |Workspace used.                                                                                                                                              |
-|2    |Number of compactions since the workspace was loaded.                                                                                                        |
-|3    |Number of garbage collections that found garbage.                                                                                                            |
-|4    |Current number of garbage pockets in the workspace.                                                                                                          |
-|9    |Current number of free pockets in the workspace.                                                                                                             |
-|10   |Current number of used pockets in the workspace.                                                                                                             |
-|12   |Sediment size.                                                                                                                                               |
-|13   |Current workspace allocation, i.e. the amount of memory that is actually being used.                                                                         |
-|14   |Workspace allocation high-water mark, i.e. the maximum amount of memory that has been allocated since the workspace was loaded or since this count was reset.|
-|15   |Limit on minimum workspace allocation.                                                                                                                       |
-|16   |Limit on maximum workspace allocation.                                                                                                                       |
-|19   |The number of calls to `⎕WA` or `2002⌶` since the last time `2000⌶` was called, or when the process started.                                                 |
-|20   |The requested size of the `WS Full Buffer` , i.e. the amount of workspace requested for handling `WS FULL` errors.                                           |
-|21   |The actual size of the `WS Full Buffer` .                                                                                                                    |
-|22   |The number of `WS FULL` handlers that are currently running.                                                                                                 |
-|23   |The total number of `WS FULL` errors that have occurred.                                                                                                     |
-|24   |The total number of `WS FULL` errors that have been trapped.                                                                                                 |
+|Value|Description                                                                                                                                                      |
+|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|0    |Workspace available (a "quick" `⎕WA` ).                                                                                                                          |
+|1    |Workspace used.                                                                                                                                                  |
+|2    |Number of compactions since the workspace was loaded.                                                                                                            |
+|3    |Number of garbage collections that found garbage.                                                                                                                |
+|4    |Current number of garbage pockets in the workspace.                                                                                                              |
+|9    |Current number of free pockets in the workspace.                                                                                                                 |
+|10   |Current number of used pockets in the workspace.                                                                                                                 |
+|12   |Sediment size.                                                                                                                                                   |
+|13   |Current workspace allocation, that is, the amount of memory that is actually being used.                                                                         |
+|14   |Workspace allocation high-water mark, that is, the maximum amount of memory that has been allocated since the workspace was loaded or since this count was reset.|
+|15   |Limit on minimum workspace allocation.                                                                                                                           |
+|16   |Limit on maximum workspace allocation.                                                                                                                           |
+|19   |The number of calls to `⎕WA` or `2002⌶` since the last time `2000⌶` was called, or when the process started.                                                     |
+|20   |The requested size of the `WS Full Buffer` , that is, the amount of workspace requested for handling `WS FULL` errors.                                           |
+|21   |The actual size of the `WS Full Buffer` .                                                                                                                        |
+|22   |The number of `WS FULL` handlers that are currently running.                                                                                                     |
+|23   |The total number of `WS FULL` errors that have occurred.                                                                                                         |
+|24   |The total number of `WS FULL` errors that have been trapped.                                                                                                     |
 
 
 Note: While all other operations are relatively fast, the operation to count the number of garbage pockets (4) may take a noticeable amount of time, depending upon the size and state of the workspace.
@@ -126,7 +126,7 @@ To alleviate the problem,. Dyalog reserves a special *WS Full Buffer* for handli
 
 
 
-In simple terms, when a `WS FULL` error occurs that triggers a handler, i.e. an expression executed via `⎕TRAP` or `:Trap`,  the reserved workspace in the *WS Full Buffer* is released to provide additional memory space for that expression to execute. When the expression terminates, the system removes the memory that it had previously released, reserving it once more for another potential `WS FULL`.
+In simple terms, when a `WS FULL` error occurs that triggers a handler, that is, an expression executed via `⎕TRAP` or `:Trap`,  the reserved workspace in the *WS Full Buffer* is released to provide additional memory space for that expression to execute. When the expression terminates, the system removes the memory that it had previously released, reserving it once more for another potential `WS FULL`.
 
 
 Note that until a `WS FULL` handler starts, the memory allocated to the *WS Full Buffer* is unavailable and inaccessible for any other purpose, thereby reducing the amount of active workspace available (`⎕WA`).

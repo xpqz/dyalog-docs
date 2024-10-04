@@ -93,10 +93,10 @@ The Caption property of the Session may be set dynamically to a character vector
 |{WSID}    |`⎕WSID`                              |
 |{NSID}    |current namespace                    |
 |{SNSID}   |short version of namespace (no `#` .)|
-|{PRODUCT} |e.g. Dyalog APL/W                    |
-|{VER_A}   |e.g. 19                              |
-|{VER_B}   |e.g. 0                               |
-|{VER_C}   |e.g. 47586 (SVN revision)            |
+|{PRODUCT} |for example, Dyalog APL/W            |
+|{VER_A}   |for example, 19                      |
+|{VER_B}   |for example, 0                       |
+|{VER_C}   |for example, 47586 (SVN revision)    |
 |{PID}     |process ID (decimal)                 |
 |{CHARS}   |"Classic" or "Unicode"               |
 |{BITS}    |"32" or "64"                         |

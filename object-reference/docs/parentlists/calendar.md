@@ -1,5 +1,5 @@
-﻿# Calendar Parents
+<h1> Calendar Parents</h1>
 
-|----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[Group](../objects/group.md)|
-|[PropertyPage](../objects/propertypage.md)|[SubForm](../objects/subform.md)|[ToolBar](../objects/toolbar.md)|
+|----------------------------------------------|--------------------------------|--------------------------------|
+|[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)      |[Group](../objects/group.md)    |
+|[PropertyPage](../objects/propertypage.md)    |[SubForm](../objects/subform.md)|[ToolBar](../objects/toolbar.md)|

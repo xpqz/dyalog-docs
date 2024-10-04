@@ -126,7 +126,7 @@ mscorlib
 
 ## Specifying Overloads and Casts
 
-If a .NET function is overloaded in terms of the types of arguments it accepts, Dyalog APL chooses which overload to call depending upon the data types of the arguments passed to it. For example, if a .NET function `foo()` is declared to take a single argument either of type `int` or of type `double` APL would call the first version if you called it with an integer value and the second version if you called it with a non-integer value.
+If a .NET function is overloaded in terms of the types of arguments it accepts, Dyalog chooses which overload to call depending upon the data types of the arguments passed to it. For example, if a .NET function `foo()` is declared to take a single argument either of type `int` or of type `double` APL would call the first version if you called it with an integer value and the second version if you called it with a non-integer value.
 
 In some circumstances it may be desirable to override this mechanism and explicitly specify which overload to use.
 
@@ -178,7 +178,7 @@ Note that in the niladic case, an enclosed empty vector is used to represent a n
 
 ## CastToTypes Example
 
-The .NET function `Array.SetValue()` sets the value of a specified element (or elements) of an array. The first argument, the new value, is declared as `System.Object`, but the value supplied must correspond to the type of the `Array` in question. APL has no means to know what this is and will therefore pass the value *as is*, i.e. in whatever internal format it happens to be at the time. For example:
+The .NET function `Array.SetValue()` sets the value of a specified element (or elements) of an array. The first argument, the new value, is declared as `System.Object`, but the value supplied must correspond to the type of the `Array` in question. APL has no means to know what this is and will therefore pass the value *as is*, that is, in whatever internal format it happens to be at the time. For example:
 ```apl
       ⎕USING←'System'
 

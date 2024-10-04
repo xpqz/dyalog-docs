@@ -121,6 +121,6 @@ Table E8: SALT and user commands related environment variables
 |---|---|
 |Variable|Notes|
 |SESSION_FILE|Specifies the location of the file containing `⎕SE` . The default value is $DYALOG/default.dse|
-|UCMDCACHEFILE|Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache"` e.g. `UserCommand25.182U64.cache` in the `dyalog` directory.|
+|UCMDCACHEFILE|Specifies the location of the user command cache file. Defaults to `"UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache"` , for example, `UserCommand25.182U64.cache` in the `dyalog` directory.|
 
 Further information about SALT and user commands appear in the *User Commands User Guide* and the *SALT User Guide*.

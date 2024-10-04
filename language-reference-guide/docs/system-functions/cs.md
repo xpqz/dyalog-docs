@@ -20,7 +20,7 @@ The result `R` is the full name (starting `#.`) of the space in which the functi
 
 
 
-`⎕CS` changes the space in which the current function or operator is running to the namespace `Y` and returns the original space, in which the function was previously running, as a shy result.  **After the** `⎕CS`, references to *global* names (with the exception of those specified in `X`) are taken to be references to *global* names in `Y`.  References to *local* names (i.e. those local to the current function or operator) are, with the exception of those with name class 9, unaffected. Local names with name class  9 are however no longer visible.
+`⎕CS` changes the space in which the current function or operator is running to the namespace `Y` and returns the original space, in which the function was previously running, as a shy result.  **After the** `⎕CS`, references to *global* names (with the exception of those specified in `X`) are taken to be references to *global* names in `Y`.  References to *local* names (that is, those local to the current function or operator) are, with the exception of those with name class 9, unaffected. Local names with name class  9 are however no longer visible.
 
 
 When the function or operator terminates, the calling function resumes execution in its original space.
@@ -86,7 +86,7 @@ Suppose a form `F1` contains buttons `B1` and `B2`. Each button maintains a coun
 
  
     ∇ CAPT←INST FMT TOTL      ⍝ Format button caption.
-[1]   CAPT←(⍕INST),'/',⍕TOTL  ⍝ E.g. 40/100.
+[1]   CAPT←(⍕INST),'/',⍕TOTL  ⍝ For example, 40/100.
     ∇
 ```
 

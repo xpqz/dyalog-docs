@@ -4,9 +4,9 @@
 
 The components used to support the .NET interface are summarised below. Different versions of each component are supplied  according to the target platform.
 
-- The Bridge DLL. This is the interface library through which all calls between Dyalog APL and the .NET Framework are processed
+- The Bridge DLL. This is the interface library through which all calls between Dyalog and the .NET Framework are processed
 - The DyalogProvider DLL. This DLL performs the initial processing of an `APLScript`.
-- The *APLScript* Compiler. This is itself  written in Dyalog APL and packaged as an executable.
+- The *APLScript* Compiler. This is itself  written in Dyalog and packaged as an executable.
 - The DyalogNet DLL; a subsidiary library
 - The Dyalog DLL. This is the engine that executes all APL code that is hosted by and called from another .NET application.
 

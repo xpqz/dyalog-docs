@@ -2,7 +2,7 @@
 
 You may draw graphics on a Grid by creating graphical objects (Circle, Ellipse, Image, Marker, Poly, Rect and text) as *children* of the Grid.
 
-For the Grid (but only for the Grid) the Coord property may be set to `'Cell'` as an alternative to `'Prop'`, `'Pixel'` or `'User'`. This allows you to easily position graphical objects relative to individual cells or ranges of cells. The origin of the Grid (0,0) is deemed to be the top left corner of the data  (i.e. the area inside the row and column titles). In Cell co-ordinates, the value (1,1) is therefore the bottom right corner of the first cell. Regardless of the coordinate system, graphical objects scroll with the data.
+For the Grid (but only for the Grid) the Coord property may be set to `'Cell'` as an alternative to `'Prop'`, `'Pixel'` or `'User'`. This allows you to easily position graphical objects relative to individual cells or ranges of cells. The origin of the Grid (0,0) is deemed to be the top left corner of the data  (that is, the area inside the row and column titles). In Cell co-ordinates, the value (1,1) is therefore the bottom right corner of the first cell. Regardless of the coordinate system, graphical objects scroll with the data.
 
 The following example illustrates how to draw a box around the cells in rows 2 to 4 and columns 3 to 6.
 ```apl

@@ -42,7 +42,7 @@ These are treated as follows:
 ## Action = 0 (the default)
 
 
-`⎕DQ` performs "standard" processing appropriate to the object and type of event.  For example, the standard processing for a KeyPress event in an Edit object is to action the key press, i.e. to echo the character on the screen.
+`⎕DQ` performs "standard" processing appropriate to the object and type of event.  For example, the standard processing for a KeyPress event in an Edit object is to action the key press, that is, to echo the character on the screen.
 
 ## Action = `¯`1
 
@@ -86,7 +86,7 @@ Firstly, `⎕DQ` terminates when an event occurs whose "action code" is 1.  In 
 `⎕DQ` also terminates if all of the objects named in `Y` have been deleted.  In this case, the result is an empty character vector.  Objects are deleted either using `⎕EX`, or on exit from a defined function or operator if the names are localised in the header, or on closing a form using the system menu.
 
 
-Thirdly, `⎕DQ` terminates if the object named in its right argument is a special *modal* object, such as a `MsgBox`, `FileBox` or `Locator`, and the user has finished interacting with the object (e.g. by pressing an "OK" button).  The return value of `⎕DQ` in this case depends on the action code of the event.
+Thirdly, `⎕DQ` terminates if the object named in its right argument is a special *modal* object, such as a `MsgBox`, `FileBox` or `Locator`, and the user has finished interacting with the object (for example, by pressing an "OK" button).  The return value of `⎕DQ` in this case depends on the action code of the event.
 
 
 Finally, `⎕DQ` terminates with a `VALUE ERROR` if it attempts to execute a callback function that is undefined.

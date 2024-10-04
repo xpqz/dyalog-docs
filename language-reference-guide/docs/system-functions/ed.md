@@ -33,7 +33,7 @@ If `⎕ED` is called from a defined function or operator, its behaviour is diffe
 `⎕ED` terminates and returns a result ONLY when the user explicitly closes all the windows for the named objects. In this case the result contains the names of any objects which have been newly (re)fixed in the workspace as a result of the `⎕ED`, and has the same structure as `Y`.
 
 
-Objects named in `Y` that cannot be edited are silently ignored. Objects qualified with a namespace path are (e.g. `a.b.c.foo`) are silently ignored if the namespace does not exist.
+Objects named in `Y` that cannot be edited are silently ignored. Objects qualified with a namespace path are (for example, `a.b.c.foo`) are silently ignored if the namespace does not exist.
 
 
 ## Variants of Edit Object
@@ -64,12 +64,15 @@ The `'EditName'` option determines whether or not the user may open another edit
 There is no Principal Option.
 
 <h2 class="example">Examples</h2>
+```apl
+      A←3 11⍴'Hello World'
+```
 
 
 
 In the first example, `⎕ED` will display the contents of `A` as an editable character array which the user may change. The user can double-click on *Hello* to open an edit window on an object named `Hello` (which will be a new function if `Hello` is currently undefined). Furthermore, the user can enter any arbitrary name and double-click to edit it. This may be undesirable in an application.
 ```apl
-      A←3 11⍴'Hello World'
+      ⎕ED A
 ```
 
 

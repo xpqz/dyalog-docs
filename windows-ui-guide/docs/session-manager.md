@@ -8,7 +8,7 @@ Components of the session that perform actions (MenuItem and Button objects) do 
 
 Like any other object, `⎕SE` is a namespace that may contain functions and variables. Furthermore, `⎕SE` is independent of the active workspace and is unaffected by `)LOAD` and `)CLEAR`. It is therefore sensible to store commonly used utilities, particularly those utilities that are invoked by events on session objects, in `⎕SE` itself, rather than in each of your application workspaces.
 
-The possibility of configuring your APL session so extensively leads to the requirement to have different sessions for different purposes. To meet this need, sessions are stored in special files with a .DSE (Dyalog Session) extension. The default session (i.e. the one loaded when you start APL) is specified by the **session_file** parameter. You may customise this session and then save it over the default one or in a separate file. You can load a new session from file at any stage without affecting your active workspace.
+The possibility of configuring your APL session so extensively leads to the requirement to have different sessions for different purposes. To meet this need, sessions are stored in special files with a .DSE (Dyalog Session) extension. The default session (that is, the one loaded when you start APL) is specified by the **session_file** parameter. You may customise this session and then save it over the default one or in a separate file. You can load a new session from file at any stage without affecting your active workspace.
 
 ## Positioning the Cursor
 
@@ -56,4 +56,4 @@ If you drag-and-drop text within the Session window, the text is copied and not 
 
 ## Interrupts
 
-To generate an interrupt, click on the Dyalog APL icon in the Windows System Tray; then choose *Weak Interrupt* or *Strong Interrupt*. To close the menu, click *Cancel*. Alternatively, to generate a weak interrupt, press Ctrl+Break, or select *Interrupt* from the *Action* menu on the Session Window.
+To generate an interrupt, click on the Dyalog icon in the Windows System Tray; then choose *Weak Interrupt* or *Strong Interrupt*. To close the menu, click *Cancel*. Alternatively, to generate a weak interrupt, press Ctrl+Break, or select *Interrupt* from the *Action* menu on the Session Window.

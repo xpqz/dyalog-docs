@@ -17,7 +17,7 @@ Table: Configuration dialog: Unicode Input
 
 ![ime properties](../../img/ime-properties.png)
 
-Table: Dyalog APL Input Method Editor Properties
+Table: Dyalog Input Method Editor Properties
 
 |Label|Parameter|Description|
 |---|---|---|

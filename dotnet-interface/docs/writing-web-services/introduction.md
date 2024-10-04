@@ -6,7 +6,7 @@ Web Services are implemented using Simple Object Access Protocol (SOAP), Extensi
 
 A Web Service is a class that may be called by any program running on the computer, any program running on a computer on the same LAN, or any program running on any computer on the internet.
 
-Web Services are hosted (i.e. executed) by ASP.NET running under Microsoft IIS. Any one Web Service sits on a single server computer and runs there under ASP.NET/IIS. The messages that invoke the Web Service, pass its arguments, and return its results, utilise standard HTTP/SOAP/XML protocols.
+Web Services are hosted (that is, executed) by ASP.NET running under Microsoft IIS. Any one Web Service sits on a single server computer and runs there under ASP.NET/IIS. The messages that invoke the Web Service, pass its arguments, and return its results, utilise standard HTTP/SOAP/XML protocols.
 
 A Web Service consists of a single text script file, with the extension `.asmx`, in an IIS Virtual Directory on the server computer.
 

@@ -240,7 +240,7 @@ between the last visible cell and the edge of the Grid with the [GridBCol](../pr
 
 
 The [CellSet](../properties/cellset.md) property is a Boolean array
-that marks which cells are *set* (i.e. have values) and which are empty.
+that marks which cells are *set* (that is, have values) and which are empty.
 This allows you to edit large numeric matrices which contain empty cells without
 a severe workspace penalty.
 

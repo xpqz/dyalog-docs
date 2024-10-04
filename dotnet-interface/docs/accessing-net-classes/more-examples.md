@@ -62,7 +62,7 @@ Please note that these examples will only work if your computer is configured to
       m.From←'tony.blair@uk.gov'
       m.To←'sales@dyalog.com'
       m.Subject←'order'
-      m.Body←'Send me 100 copies of Dyalog APL now'
+      m.Body←'Send me 100 copies of Dyalog now'
  
       SmtpMail.Send m
 ```
@@ -144,4 +144,4 @@ Note that to avoid running out of connections, it is necessary to close the Stre
  
 ```
 
-[^1]: In this document, we will refer to the location where Dyalog APL is installed as C:\Dyalog. Your installation of Dyalog APL may be in a different folder or even on a different drive but the examples should work just the same it you replace C:\Dyalog by your folder name
+[^1]: In this document, we will refer to the location where Dyalog is installed as C:\Dyalog. Your installation of Dyalog might be in a different folder or even on a different drive but the examples should work just the same it you replace C:\Dyalog by your folder name

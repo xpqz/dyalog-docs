@@ -242,7 +242,7 @@ But after executing:
 - ... and so forth.
 
 
-The following tables show which objects in Namespace `Pete` can *see* (i.e. refer to) which other objects representing members of the family, in each case; `All`, `InClasses` and `None`.
+The following tables show which objects in Namespace `Pete` can *see* (that is, refer to) which other objects representing members of the family, in each case; `All`, `InClasses` and `None`.
 
 
 

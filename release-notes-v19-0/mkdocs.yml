@@ -71,7 +71,6 @@ nav:
       - File Hold: language-reference-changes/fhold.md
       - Fix Script: language-reference-changes/fix.md
       - Allocate Token Range: language-reference-changes/talloc.md
-      - Set aplcore Parameters: language-reference-changes/set-aplcore-parameters.md
       - Memory Manager Statistics: language-reference-changes/memory-manager-statistics.md
       - Enable Compression of Large Components: language-reference-changes/enable-compression-of-large-components.md
       - Discard Source Information: language-reference-changes/discard-source-information.md

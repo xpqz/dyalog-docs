@@ -29,7 +29,7 @@ Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxil
 - An option is provided to control the implementation of lexical scope in Namespace and Class scripts. This extension applies only to `⎕FIX`; scripts fixed using the editor are unaffected by this change. See [Lexical Scope in Scripts](lexical-scope-in-scripts.md) and [Fix Script](../language-reference-changes/fix.md).
 - An option is provided to control whether or not source code is retained in the workspace exactly as it was typed. This is now the default. See [Source as Typed](./source-as-typed.md), [Discard Source Information](../language-reference-changes/discard-source-code.md) and [Discard Source Information](../language-reference-changes/discard-source-information.md).
 - Support is added for LZ4 *frames* which allows the LZ4 compression library to handle data > 2GB in size. Previously, extremely large file components could not be compressed because the LZ4 library could not process them and they were written uncompressed. Now, these large components will (in the absence of any other reason) be compressed as well. However, such components will be unreadable by previous Versions. `3012⌶` allows the user to specify that LZ4 frames should not be used for component compression, for when interoperability is required. See [Enable Compression of Large Components](../language-reference-changes/enable-compression-of-large-components.md). `219⌶` has been extended to allow arrays >2GB to be compressed.
-- There is a new I-beam function to set the parameters for generating aplcore files dynamically. See [Set aplcore Parameters](../language-reference-changes/set-aplcore-parameters.md).
+- There is a new I-beam function to set the parameters for generating aplcore files dynamically. See [Set aplcore Parameters](../../../language-reference-guide/the-i-beam-operator/set-aplcore-parameters).
 - `⎕FHOLD` now accepts an optional left argument to specify a time-out. See [File Hold](../language-reference-changes/fhold.md).
 - The right argument to `⎕SIGNAL` may include 1006 (`TIMEOUT` error).
 
@@ -65,10 +65,10 @@ The Caption property of the Session may be set dynamically to a character vector
 |{WSID}    |`⎕WSID`                              |
 |{NSID}    |current namespace                    |
 |{SNSID}   |short version of namespace (no `#` .)|
-|{PRODUCT} |e.g. Dyalog APL/W                    |
-|{VER_A}   |e.g. 19                              |
-|{VER_B}   |e.g. 0                               |
-|{VER_C}   |e.g. 47586 (SVN revision)            |
+|{PRODUCT} |for example, Dyalog APL/W            |
+|{VER_A}   |for example, 19                      |
+|{VER_B}   |for example, 0                       |
+|{VER_C}   |for example, 47586 (SVN revision)    |
 |{PID}     |process ID (decimal)                 |
 |{CHARS}   |"Classic" or "Unicode"               |
 |{BITS}    |"32" or "64"                         |

@@ -26,86 +26,86 @@ Methods are effectively functions that an object provides; they are things that 
 
 The following objects are supported.
 
-|System Objects                                                                                                                            ||
-|----------------------------------------------------------------------|--------------------------------------------------------------------|
-|[Root](../../../object-reference/objects/root)                        |system-level object                                                 |
-|[Printer](../../../object-reference/objects/printer)                  |for hard-copy output                                                |
-|[Clipboard](../../../object-reference/objects/clipboard)              |provides access to Windows clipboard                                |
-|Container Objects                                                                                                                         ||
-|[CoolBand](../../../object-reference/objects/coolband)                |represents a band in a CoolBar                                      |
-|[CoolBar](../../../object-reference/objects/coolbar)                  |a container for CoolBand objects                                    |
-|[Form](../../../object-reference/objects/form)                        |top-level Window                                                    |
-|[MDIClient](../../../object-reference/objects/mdiclient)              |container for MDI windows                                           |
-|[SubForm](../../../object-reference/objects/subform)                  |acts as an MDI window or a constrained Form                         |
-|[Group](../../../object-reference/objects/group)                      |a frame for grouping Buttons and other objects                      |
-|[Static](../../../object-reference/objects/static)                    |a frame for drawing and clipping graphics                           |
-|[StatusBar](../../../object-reference/objects/statusbar)              |ribbon status bar                                                   |
-|[TabBar](../../../object-reference/objects/tabbar)                    |contains TabBtns (tabs)                                             |
-|[TabControl](../../../object-reference/objects/tabcontrol)            |contains TabButtons (tabs)                                          |
-|[ToolBar](../../../object-reference/objects/toolbar)                  |ribbon tool bar                                                     |
-|[ToolControl](../../../object-reference/objects/toolcontrol)          |standard Windows tool control                                       |
-|[PropertySheet](../../../object-reference/objects/propertysheet)      |contains PropertyPages                                              |
-|[PropertyPage](../../../object-reference/objects/propertypage)        |tabbed or paged container for other controls                        |
-|[Splitter](../../../object-reference/objects/splitter)                |divides a container into panes                                      |
-|Menu                                                                                                                                      ||
-|[MenuBar](../../../object-reference/objects/menubar)                  |pull-down menu bar                                                  |
-|[Menu](../../../object-reference/objects/menu)                        |pop-up menu                                                         |
-|[MenuItem](../../../object-reference/objects/menuitem)                |selects an option or action                                         |
-|[Separator](../../../object-reference/objects/separator)              |separator between items                                             |
-|Action                                                                                                                                    ||
-|[Button](../../../object-reference/objects/button)                    |selects an option                                                   |
-|[ToolButton](../../../object-reference/objects/toolbutton)            |performs an action or selects an option                             |
-|[TabBtn](../../../object-reference/objects/tabbtn)                    |selects a tabbed SubForm                                            |
-|[TabButton](../../../object-reference/objects/tabbutton)              |selects a tabbed SubForm                                            |
-|[Scroll](../../../object-reference/objects/scroll)                    |scroll bar                                                          |
-|[UpDown](../../../object-reference/objects/updown)                    |spin buttons                                                        |
-|[Locator](../../../object-reference/objects/locator)                  |graphical (positional) input device                                 |
-|[Timer](../../../object-reference/objects/timer)                      |generates events at regular intervals                               |
-|Information                                                                                                                               ||
-|[Label](../../../object-reference/objects/label)                      |displays static text                                                |
-|[StatusField](../../../object-reference/objects/statusfield)          |displays status information                                         |
-|[MsgBox](../../../object-reference/objects/msgbox)                    |displays a message box                                              |
-|[TipField](../../../object-reference/objects/tipfield)                |displays pop-up context sensitive help                              |
-|[ProgressBar](../../../object-reference/objects/progressbar)          |displays the progress of a lengthy operation                        |
-|Input & Selection                                                                                                                         ||
-|[Calendar](../../../object-reference/objects/calendar)                |displays a month calendar control                                   |
-|[Grid](../../../object-reference/objects/grid)                        |displays a data matrix as a spreadsheet                             |
-|[Edit](../../../object-reference/objects/edit)                        |text input field                                                    |
-|[RichEdit](../../../object-reference/objects/richedit)                |text input with word-processing capabilities                        |
-|[Spinner](../../../object-reference/objects/spinner)                  |input field with spin buttons                                       |
-|[List](../../../object-reference/objects/list)                        |for selecting an item                                               |
-|[ListView](../../../object-reference/objects/listview)                |displays a collection of items for selection                        |
-|[Combo](../../../object-reference/objects/combo)                      |edit field with selectable list of choices                          |
-|[TreeView](../../../object-reference/objects/treeview)                |displays a hierarchical collection of items                         |
-|[TrackBar](../../../object-reference/objects/trackbar)                |a slider control for analogue input/output                          |
-|[FileBox](../../../object-reference/objects/filebox)                  |prompts user to select a file                                       |
-|Resource                                                                                                                                  ||
-|[Font](../../../object-reference/objects/font)                        |loads a font                                                        |
-|[Bitmap](../../../object-reference/objects/bitmap)                    |defines a bitmap                                                    |
-|[Icon](../../../object-reference/objects/icon)                        |defines an icon                                                     |
-|[ImageList](../../../object-reference/objects/imagelist)              |defines a collection of bitmaps or icons                            |
-|[Metafile](../../../object-reference/objects/metafile)                |loads a Windows Metafile                                            |
-|[Cursor](../../../object-reference/objects/cursor)                    |defines a cursor                                                    |
-|Graphical Output                                                                                                                          ||
-|[Circle](../../../object-reference/objects/circle)                    |draws a circle                                                      |
-|[Ellipse](../../../object-reference/objects/ellipse)                  |draws an ellipse                                                    |
-|[Marker](../../../object-reference/objects/marker)                    |draws a series of polymarkers                                       |
-|[Poly](../../../object-reference/objects/poly)                        |draws lines                                                         |
-|[Rect](../../../object-reference/objects/rect)                        |draws rectangles                                                    |
-|[Image](../../../object-reference/objects/image)                      |displays Bitmaps, Icons and Metafiles                               |
-|[Text](../../../object-reference/objects/text)                        |draws graphical text                                                |
-|Miscellaneous                                                                                                                             ||
-|[ActiveXContainer](../../../object-reference/objects/activexcontainer)|represents the application hosting a Dyalog APL       ActiveXControl|
-|[ActiveXControl](../../../object-reference/objects/activexcontrol)    |represents an ActiveX control written in Dyalog APL                 |
-|[HTMLRenderer](../../../object-reference/objects/htmlrenderer)        |displays HTML content                                               |
-|[NetClient](../../../object-reference/objects/netclient)              |provides access to .NET Classes                                     |
-|[NetControl](../../../object-reference/objects/netcontrol)            |instantiates a .NET Control.                                        |
-|[NetType](../../../object-reference/objects/nettype)                  |exports an APL namespace as a Net Class                             |
-|[OCXClass](../../../object-reference/objects/ocxclass)                |provides access to OLE Custom Controls                              |
-|[OLEClient](../../../object-reference/objects/oleclient)              |provides access to OLE Automation objects                           |
-|[OLEServer](../../../object-reference/objects/oleserver)              |enables APL to act as an OLE Automation server                      |
-|[SM](../../../object-reference/objects/sm)                            |specifies a window for `⎕SM` (character mode interface)             |
-|[TCPSocket](../../../object-reference/objects/tcpsocket)              |provides an interface to TCP/IP sockets                             |
+|System Objects                                                                                                                        ||
+|----------------------------------------------------------------------|----------------------------------------------------------------|
+|[Root](../../../object-reference/objects/root)                        |system-level object                                             |
+|[Printer](../../../object-reference/objects/printer)                  |for hard-copy output                                            |
+|[Clipboard](../../../object-reference/objects/clipboard)              |provides access to Windows clipboard                            |
+|Container Objects                                                                                                                     ||
+|[CoolBand](../../../object-reference/objects/coolband)                |represents a band in a CoolBar                                  |
+|[CoolBar](../../../object-reference/objects/coolbar)                  |a container for CoolBand objects                                |
+|[Form](../../../object-reference/objects/form)                        |top-level Window                                                |
+|[MDIClient](../../../object-reference/objects/mdiclient)              |container for MDI windows                                       |
+|[SubForm](../../../object-reference/objects/subform)                  |acts as an MDI window or a constrained Form                     |
+|[Group](../../../object-reference/objects/group)                      |a frame for grouping Buttons and other objects                  |
+|[Static](../../../object-reference/objects/static)                    |a frame for drawing and clipping graphics                       |
+|[StatusBar](../../../object-reference/objects/statusbar)              |ribbon status bar                                               |
+|[TabBar](../../../object-reference/objects/tabbar)                    |contains TabBtns (tabs)                                         |
+|[TabControl](../../../object-reference/objects/tabcontrol)            |contains TabButtons (tabs)                                      |
+|[ToolBar](../../../object-reference/objects/toolbar)                  |ribbon tool bar                                                 |
+|[ToolControl](../../../object-reference/objects/toolcontrol)          |standard Windows tool control                                   |
+|[PropertySheet](../../../object-reference/objects/propertysheet)      |contains PropertyPages                                          |
+|[PropertyPage](../../../object-reference/objects/propertypage)        |tabbed or paged container for other controls                    |
+|[Splitter](../../../object-reference/objects/splitter)                |divides a container into panes                                  |
+|Menu                                                                                                                                  ||
+|[MenuBar](../../../object-reference/objects/menubar)                  |pull-down menu bar                                              |
+|[Menu](../../../object-reference/objects/menu)                        |pop-up menu                                                     |
+|[MenuItem](../../../object-reference/objects/menuitem)                |selects an option or action                                     |
+|[Separator](../../../object-reference/objects/separator)              |separator between items                                         |
+|Action                                                                                                                                ||
+|[Button](../../../object-reference/objects/button)                    |selects an option                                               |
+|[ToolButton](../../../object-reference/objects/toolbutton)            |performs an action or selects an option                         |
+|[TabBtn](../../../object-reference/objects/tabbtn)                    |selects a tabbed SubForm                                        |
+|[TabButton](../../../object-reference/objects/tabbutton)              |selects a tabbed SubForm                                        |
+|[Scroll](../../../object-reference/objects/scroll)                    |scroll bar                                                      |
+|[UpDown](../../../object-reference/objects/updown)                    |spin buttons                                                    |
+|[Locator](../../../object-reference/objects/locator)                  |graphical (positional) input device                             |
+|[Timer](../../../object-reference/objects/timer)                      |generates events at regular intervals                           |
+|Information                                                                                                                           ||
+|[Label](../../../object-reference/objects/label)                      |displays static text                                            |
+|[StatusField](../../../object-reference/objects/statusfield)          |displays status information                                     |
+|[MsgBox](../../../object-reference/objects/msgbox)                    |displays a message box                                          |
+|[TipField](../../../object-reference/objects/tipfield)                |displays pop-up context sensitive help                          |
+|[ProgressBar](../../../object-reference/objects/progressbar)          |displays the progress of a lengthy operation                    |
+|Input & Selection                                                                                                                     ||
+|[Calendar](../../../object-reference/objects/calendar)                |displays a month calendar control                               |
+|[Grid](../../../object-reference/objects/grid)                        |displays a data matrix as a spreadsheet                         |
+|[Edit](../../../object-reference/objects/edit)                        |text input field                                                |
+|[RichEdit](../../../object-reference/objects/richedit)                |text input with word-processing capabilities                    |
+|[Spinner](../../../object-reference/objects/spinner)                  |input field with spin buttons                                   |
+|[List](../../../object-reference/objects/list)                        |for selecting an item                                           |
+|[ListView](../../../object-reference/objects/listview)                |displays a collection of items for selection                    |
+|[Combo](../../../object-reference/objects/combo)                      |edit field with selectable list of choices                      |
+|[TreeView](../../../object-reference/objects/treeview)                |displays a hierarchical collection of items                     |
+|[TrackBar](../../../object-reference/objects/trackbar)                |a slider control for analogue input/output                      |
+|[FileBox](../../../object-reference/objects/filebox)                  |prompts user to select a file                                   |
+|Resource                                                                                                                              ||
+|[Font](../../../object-reference/objects/font)                        |loads a font                                                    |
+|[Bitmap](../../../object-reference/objects/bitmap)                    |defines a bitmap                                                |
+|[Icon](../../../object-reference/objects/icon)                        |defines an icon                                                 |
+|[ImageList](../../../object-reference/objects/imagelist)              |defines a collection of bitmaps or icons                        |
+|[Metafile](../../../object-reference/objects/metafile)                |loads a Windows Metafile                                        |
+|[Cursor](../../../object-reference/objects/cursor)                    |defines a cursor                                                |
+|Graphical Output                                                                                                                      ||
+|[Circle](../../../object-reference/objects/circle)                    |draws a circle                                                  |
+|[Ellipse](../../../object-reference/objects/ellipse)                  |draws an ellipse                                                |
+|[Marker](../../../object-reference/objects/marker)                    |draws a series of polymarkers                                   |
+|[Poly](../../../object-reference/objects/poly)                        |draws lines                                                     |
+|[Rect](../../../object-reference/objects/rect)                        |draws rectangles                                                |
+|[Image](../../../object-reference/objects/image)                      |displays Bitmaps, Icons and Metafiles                           |
+|[Text](../../../object-reference/objects/text)                        |draws graphical text                                            |
+|Miscellaneous                                                                                                                         ||
+|[ActiveXContainer](../../../object-reference/objects/activexcontainer)|represents the application hosting a Dyalog       ActiveXControl|
+|[ActiveXControl](../../../object-reference/objects/activexcontrol)    |represents an ActiveX control written in Dyalog                 |
+|[HTMLRenderer](../../../object-reference/objects/htmlrenderer)        |displays HTML content                                           |
+|[NetClient](../../../object-reference/objects/netclient)              |provides access to .NET Classes                                 |
+|[NetControl](../../../object-reference/objects/netcontrol)            |instantiates a .NET Control.                                    |
+|[NetType](../../../object-reference/objects/nettype)                  |exports an APL namespace as a Net Class                         |
+|[OCXClass](../../../object-reference/objects/ocxclass)                |provides access to OLE Custom Controls                          |
+|[OLEClient](../../../object-reference/objects/oleclient)              |provides access to OLE Automation objects                       |
+|[OLEServer](../../../object-reference/objects/oleserver)              |enables APL to act as an OLE Automation server                  |
+|[SM](../../../object-reference/objects/sm)                            |specifies a window for `⎕SM` (character mode interface)         |
+|[TCPSocket](../../../object-reference/objects/tcpsocket)              |provides an interface to TCP/IP sockets                         |
 
 ## Implementation Overview
 

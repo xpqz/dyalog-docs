@@ -7,7 +7,7 @@
 
 
 
-This command lists the names of Dyalog APL workspaces contained in the given directory.
+This command lists the names of Dyalog workspaces contained in the given directory.
 
 <h2 class="example">Example</h2>
 ```apl

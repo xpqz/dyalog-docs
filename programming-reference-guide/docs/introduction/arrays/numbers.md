@@ -4,7 +4,7 @@ Dyalog APL supports both real numbers and complex numbers.
 
 ## Real Numbers
 
-Numbers are entered or displayed using conventional decimal notation (e.g. 299792.458) or using a scaled form (e.g. 2.999792458E5).
+Numbers are entered or displayed using conventional decimal notation (for example, 299792.458) or using a scaled form for example, 2.999792458E5).
 
 On entry, a decimal point is optional if there is no fractional part.  On output, a number with no fractional part (an integer) is displayed without a decimal point.
 

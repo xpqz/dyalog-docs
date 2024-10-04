@@ -4,7 +4,7 @@ Certain .NET methods take parameters that are pointers.
 
 An example is the `DivRem` method that is provided by the `System.Math` class. This method performs an integer division, returning the quotient as its result, and the remainder in an address specified as a pointer by the calling program.
 
-APL does not have a mechanism for dealing with pointers, so Dyalog provides a .NET class for this purpose. This is the `Dyalog.ByRef` class, which is a provided by an Assembly that is loaded automatically by the Dyalog APL program.
+APL does not have a mechanism for dealing with pointers, so Dyalog provides a .NET class for this purpose. This is the `Dyalog.ByRef` class, which is a provided by an Assembly that is loaded automatically by the Dyalog program.
 
 Firstly, to gain access to the Dyalog .NET Namespace, it must be specified by `⎕USING`. Note that you need not specify the Assembly (DLL) from which it is obtained (the  Bridge DLL), because (like `mscorlib.dll`) it is automatically loaded by when APL starts.
 ```apl

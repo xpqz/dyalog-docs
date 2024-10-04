@@ -7,7 +7,7 @@
 
 
 
-The Dyalog APL GUI is based upon the concepts of *objects*, *properties*, *events* and *methods*.
+The Dyalog GUI is based upon the concepts of *objects*, *properties*, *events* and *methods*.
 
 ## Objects
 

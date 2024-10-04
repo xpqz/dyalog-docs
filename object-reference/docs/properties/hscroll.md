@@ -20,10 +20,10 @@ For most objects to which it applies, this property determines whether or not a 
 **HScroll may only be set when the object is created with ⎕WC and may not subsequently be changed with ⎕WS or assignment.**
 
 
-When applied to a [Combo](../objects/combo.md), or to an [Edit](../objects/edit.md) object with [Style ](style.md)`'Single'` (i.e. a single-line edit field), the value 0 inhibits scrolling, and prevents the user from entering more data when the field is full. If instead it has the value `¯2`, the field is scrollable, and the length of data that may be entered is not limited by the length of the field.
+When applied to a [Combo](../objects/combo.md), or to an [Edit](../objects/edit.md) object with [Style ](style.md)`'Single'` (that is, a single-line edit field), the value 0 inhibits scrolling, and prevents the user from entering more data when the field is full. If instead it has the value `¯2`, the field is scrollable, and the length of data that may be entered is not limited by the length of the field.
 
 
-When applied to an [Edit](../objects/edit.md) object with [Style ](style.md)`'Multi'` (i.e. a multi-line text box), the value 0 inhibits scrolling, and causes individual lines to be "word-wrapped". The values `¯2` and `¯1` enable sideways scrolling, and permit individual lines to exceed the width of the object. The value `¯1` means that a horizontal scrollbar is provided.
+When applied to an [Edit](../objects/edit.md) object with [Style ](style.md)`'Multi'` (that is, a multi-line text box), the value 0 inhibits scrolling, and causes individual lines to be "word-wrapped". The values `¯2` and `¯1` enable sideways scrolling, and permit individual lines to exceed the width of the object. The value `¯1` means that a horizontal scrollbar is provided.
 
 
 For a [Scroll](../objects/scroll.md) object, the scrollbar is horizontal if HScroll is `¯1` and vertical if HScroll is 0. For a [Form](../objects/form.md), a horizontal scrollbar is provided if HScroll is set to `¯1`. The default value is 0 (no scrollbar).

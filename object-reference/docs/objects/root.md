@@ -34,7 +34,7 @@ The [FontList](../properties/fontlist.md) property provides a list of all the ch
 As the default value of [Coord](../properties/coord.md) is `'Inherit'` for all other objects, the value of [Coord](../properties/coord.md) for `'.'` defines the default co-ordinate system. It may be either `'Prop'` (the default) or `'Pixel'`. `'Inherit'` and `'User'` are not allowed.
 
 
-The [CursorObj](../properties/cursorobj.md) property is used to define a cursor for the application as a whole. Its default value is an empty character vector. If it is set to any value other than `''` or 0, the selected cursor overrides the [CursorObj](../properties/cursorobj.md) values for all other objects. If you want to indicate that the application is "busy", you can therefore set the [CursorObj](../properties/cursorobj.md) property on `'.'` to an hourglass for the duration of the operation, e.g.
+The [CursorObj](../properties/cursorobj.md) property is used to define a cursor for the application as a whole. Its default value is an empty character vector. If it is set to any value other than `''` or 0, the selected cursor overrides the [CursorObj](../properties/cursorobj.md) values for all other objects. If you want to indicate that the application is "busy", you can therefore set the [CursorObj](../properties/cursorobj.md) property on `'.'` to an hourglass for the duration of the operation. For example:
 ```apl
       '.' ⎕WS 'CursorObj' 1  ⍝ Set cursor to an hourglass
 ```

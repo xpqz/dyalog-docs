@@ -1,4 +1,4 @@
-﻿# ActiveXContainer Parents
+<h1> ActiveXContainer Parents</h1>
 
-|----|----|----|
-|[ActiveXControl](../objects/activexcontrol.md)|&#160;|&#160;|
+|----------------------------------------------|------|------|
+|[ActiveXControl](../objects/activexcontrol.md)|&nbsp;|&nbsp;|

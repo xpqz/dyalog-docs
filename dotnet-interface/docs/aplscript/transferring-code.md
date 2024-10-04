@@ -2,7 +2,7 @@
 
 You may find it easier to write APL code using the Dyalog APL function or class editor that is provided by the Dyalog APL Session. Or you may already have code in a workspace that you want to copy into an `APLScript` file.
 
-If so, you can transfer code from the Session into your `APLScript` editor (e.g. Notepad) using the clipboard. Notice that because APLScript requires Unicode encoding (for APL symbols), you must ensure that character data is written to the clipboard in Unicode.
+If so, you can transfer code from the Session into your `APLScript` editor (for example, Notepad) using the clipboard. Notice that because APLScript requires Unicode encoding (for APL symbols), you must ensure that character data is written to the clipboard in Unicode.
 
 In the Unicode interpreter this is always done. In the Classic interpreter this is controlled by a parameter called UnicodeToClipboard that specifies whether or not data is transferred to and from the Windows clipboard as Unicode. This parameter may be changed using the Trace/Edit page of the Configure dialog box.
 

@@ -14,7 +14,7 @@ Stencil is used in image processing, artificial neural networks, computational f
 
 
 
-In general, the right operand `g` is a 2- row matrix of positive non-zero integers with up to `⍴⍴Y` columns. The first row contains the rectangle sizes, the second row the *movements* i.e. how much to move the rectangle in each step. If `g` is a scalar or vector it specifies the rectangle size and the movement defaults to 1.
+In general, the right operand `g` is a 2- row matrix of positive non-zero integers with up to `⍴⍴Y` columns. The first row contains the rectangle sizes, the second row the *movements* that is, how much to move the rectangle in each step. If `g` is a scalar or vector it specifies the rectangle size and the movement defaults to 1.
 
 
 The predominant case uses a rectangle size which is odd and a movement of 1.

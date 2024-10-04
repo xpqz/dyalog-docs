@@ -1,6 +1,6 @@
 <h1> The TemperatureConverterCtl1 Control</h1>
 
-The `TemperatureConverterCtl1` control is an example of a *compositional* control, i.e. a server-side custom control that is composed of other standard controls.
+The `TemperatureConverterCtl1` control is an example of a *compositional* control, that is, a server-side custom control that is composed of other standard controls.
 
 In this example, The `TemperatureConverterCtl1` control gathers together two textboxes and two push buttons into a single component as illustrated below. Type a number into the *Centigrade* box, click the *Centigrade To Fahrenheit* button, and the control converts accordingly. If you click the *Fahrenheit To Centigrade* button, the reverse conversion is performed.
 

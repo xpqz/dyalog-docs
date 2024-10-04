@@ -59,7 +59,7 @@ Table: Print Configuration dialog: Header/Footer
 |Prefix other objects with|DoSepOther|Specifies whether or not text is printed before other objects. These include locked functions, external functions, `⎕NA` functions, derived functions and namespaces.|
 |Prefix other objects with|SepOtherText|The text to be printed before other objects. This can include its name.|
 
-The specification for headers and footers may include a mixture of your own text, and keywords which are enclosed in braces, e.g. {objname}. Keywords act like variables and are replaced at print time by corresponding values.
+The specification for headers and footers may include a mixture of your own text, and keywords which are enclosed in braces, for example, {objname}. Keywords act like variables and are replaced at print time by corresponding values.
 
 Any of the following fields may be included in headers, footers and separators.
 
@@ -94,7 +94,7 @@ Table: Print Configuration dialog: Print
 
 |Label|Parameter|Description|
 |---|---|---|
-|Name|PrinterField|The name of the printer to be used for printing from Dyalog APL.|
+|Name|PrinterField|The name of the printer to be used for printing from Dyalog.|
 |Properties|&nbsp;|Click this to set Printer options.|
 |Where|&nbsp;|Reports the printer device|
 |Print|&nbsp;|Allows you to choose between printing all of the current object or just the selection. Note that this option is present only when the dialog box is displayed in response to selecting Print.|

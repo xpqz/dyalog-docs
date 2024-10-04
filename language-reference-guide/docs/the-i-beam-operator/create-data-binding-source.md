@@ -148,7 +148,7 @@ In this example, the binding type of the variable `itemsSource` will be System.C
 ### Binding a Numeric Vector
 
 
-By default, a numeric vector is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
+By default, a numeric vector is bound in the same way as a vector of character vectors, that is, as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 ```apl
       ⎕EX'yearsSource'
       yearsSource←2000+⍳20
@@ -157,7 +157,7 @@ By default, a numeric vector is bound in the same way as a vector of character v
 
 
 
-In principle, a numeric vector may alternatively be bound to a WPF property that requires a 1-dimensional numeric array, by specifying the appropriate data type (e.g. Int32, Double) for the array as the left argument. For example:
+In principle, a numeric vector may alternatively be bound to a WPF property that requires a 1-dimensional numeric array, by specifying the appropriate data type (for example, Int32, Double) for the array as the left argument. For example:
 ```apl
       ⎕EX'arraySource'
       arraySource←42 24
@@ -169,7 +169,7 @@ In principle, a numeric vector may alternatively be bound to a WPF property that
 ### Binding a Vector of .NET Objects
 
 
-A vector of .NET objects is bound in the same way as a vector of character vectors, i.e. as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
+A vector of .NET objects is bound in the same way as a vector of character vectors, that is, as a System.Collection, suitable for binding to the ItemSource property of an ItemsControl.
 ```apl
       ↑Easter
 2015 4 12

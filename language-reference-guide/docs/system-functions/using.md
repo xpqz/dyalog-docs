@@ -10,7 +10,7 @@
 `⎕USING` specifies a list of Microsoft .NET Namespaces that are to be searched for a reference to a .NET class. `⎕USING` has Namespace scope.
 
 
-`⎕USING` is a vector of character vectors each element of which contains 1 or 2 comma-delimited strings. The first string specifies the name of a .NET namespace; the second specifies the *pathname* of an assembly file. This may be a full pathname or a relative one, but must include the file extension (`.dll`). If just the file name is specified, it is assumed to be located in the standard  .NET Framework directory that was specified when the .NET Framework was installed (e.g. `C:\Windows\Microsoft.NET\Framework64\v4.0.30319`)
+`⎕USING` is a vector of character vectors each element of which contains 1 or 2 comma-delimited strings. The first string specifies the name of a .NET namespace; the second specifies the *pathname* of an assembly file. This may be a full pathname or a relative one, but must include the file extension (`.dll`). If just the file name is specified, it is assumed to be located in the standard  .NET Framework directory that was specified when the .NET Framework was installed (for example, `C:\Windows\Microsoft.NET\Framework64\v4.0.30319`)
 
 
 
@@ -24,7 +24,7 @@ It is convenient to treat .NET namespaces and assemblies in pairs. For example:
 Note that because Dyalog APL automatically loads `mscorlib.dll` (which contains the most commonly used classes in the `System` Namespace), it is not actually necessary to specify it explicitly in `⎕USING`.
 
 
-`⎕USING` has Namespace scope, i.e. each Dyalog APL Namespace, Class or Instance has its own value of `⎕USING` that is initially inherited from its parent space but which may be separately modified. `⎕USING` may also be localised in a function header, so that different functions can declare different search paths for .NET namespaces/assemblies.
+`⎕USING` has Namespace scope, that is, each Dyalog namespace, class or instance has its own value of `⎕USING` that is initially inherited from its parent space but which may be separately modified. `⎕USING` may also be localised in a function header, so that different functions can declare different search paths for .NET namespaces/assemblies.
 
 
 If `⎕USING` is empty (`⎕USING←0⍴⊂''`), APL will not search for .NET classes in order to resolve names which would otherwise give a `VALUE ERROR`.

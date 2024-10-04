@@ -116,7 +116,7 @@ This works in practice as follows:
 
 ## Server = APL, Client = APL
 
-You made a general offer which has been accepted by another APL workspace, e.g.
+You made a general offer which has been accepted by another APL workspace. For example:
 ```apl
       'DDE:' ⎕SVO 'DATA'
 ```
@@ -125,7 +125,7 @@ Two APL tasks always use a warm DDE link. Therefore, initially, both `⎕SVC`s a
 
 ## Server = APL, Client = another application
 
-You made a general offer which has been accepted by another application, e.g.
+You made a general offer which has been accepted by another application. For example:
 ```apl
       'DDE:' ⎕SVO 'DATA'
 ```
@@ -134,7 +134,7 @@ The client application establishes the strength of the link (warm or hot). If it
 
 ## Server = another application, Client = APL
 
-You made a **specific offer** to another application, e.g.
+You made a **specific offer** to another application. For example:
 ```apl
       'DDE:EXCEL|SHEET1' ⎕SVO 'DATA R1C1:R3C4'
 ```

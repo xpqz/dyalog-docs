@@ -2,7 +2,7 @@
 
 Up to now, it has been assumed that your user has constant access to all of the interface features and controls that you have provided. The user is in charge; your application merely responds to his requests.
 
-Although this is generally considered desirable, there are times when a particular operation must be allowed to complete before anything else can be done. For example, an unexpected error may occur and the user must decide upon the next course of action (e.g. Continue, Restart, Quit). In these situations, a *modal* dialog box is required. A modal dialog box is one to which the user must respond before the application will continue. While the modal dialog box is in operation, interaction with all other objects is inhibited.
+Although this is generally considered desirable, there are times when a particular operation must be allowed to complete before anything else can be done. For example, an unexpected error may occur and the user must decide upon the next course of action (for example,  Continue, Restart, Quit). In these situations, a *modal* dialog box is required. A modal dialog box is one to which the user must respond before the application will continue. While the modal dialog box is in operation, interaction with all other objects is inhibited.
 
 A modal dialog box is simply achieved by calling `⎕DQ` with just the name of the corresponding Form in its argument. This can be done from within a callback function or indeed from any point in an application. To make the local `⎕DQ` terminate, you may specify an action code of 1 for an event. Alternatively, if you wish to make exclusive use of callback functions to process events, you can cause the `⎕DQ` to terminate by erasing the Form from a callback function.
 

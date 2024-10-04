@@ -39,7 +39,7 @@ Eeyore
 
 
 
-If `⎕NEW` is called with just a Class reference (i.e. without parameters for the Constructor), the default constructor will be called. A default constructor is defined by a niladic function with the :Implements Constructor attribute. For example, the Animal Class may be redefined as:
+If `⎕NEW` is called with just a Class reference (that is, without parameters for the Constructor), the default constructor will be called. A default constructor is defined by a niladic function with the :Implements Constructor attribute. For example, the Animal Class may be redefined as:
 ```apl
 :Class Animal
     ∇ NoName

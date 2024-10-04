@@ -1,6 +1,6 @@
 <h1> Temperature Converter Tutorial</h1>
 
-This tutorial illustrates how to go about developing a simple WPF application in Dyalog APL. It is functionally identical to the GUI tutorial example that illustrates how to develop a GUI application using the built-in Dyalog APL Graphical User Interface. See 
+This tutorial illustrates how to go about developing a simple WPF application in Dyalog. It is functionally identical to the GUI tutorial example that illustrates how to develop a GUI application using the built-in Dyalog Graphical User Interface. See 
 Interface Guide: 
 
 GUI Tutorial.

@@ -49,7 +49,7 @@ The next statement specifies that the function is exported as a method named `In
 ```
 
 
-The next block of statements specifies that the function is exported as a method named `Mix`. The method has 4 different signatures; i.e. it may be called with 4 different parameter/result combinations.
+The next block of statements specifies that the function is exported as a method named `Mix`. The method has 4 different signatures; that is, it may be called with 4 different parameter/result combinations.
 ```apl
       :Signature Int32[,]←Mix Double Dimension, ...
             ...Int32[] Vec1, Int32[] Vec2

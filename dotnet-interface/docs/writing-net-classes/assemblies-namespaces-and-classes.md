@@ -1,6 +1,6 @@
 <h1> Assemblies, Namespaces and Classes</h1>
 
-To create a .NET class in Dyalog APL, you simply create a standard APL Class and export the workspace as a *Microsoft .NET Assembly (*.dll)*.
+To create a .NET class in Dyalog, you simply create a standard APL Class and export the workspace as a *Microsoft .NET Assembly (*.dll)*.
 
 .NET Classes are organised in .NET Namespaces. If you wrap your Class (or Classes) within an APL namespace, the name of that namespace will be used to identify the name of the corresponding .NET Namespace in your Assembly.
 
@@ -10,7 +10,7 @@ Once you have defined the functionality of your .NET classes, you are ready to s
 
 You will be prompted to specify the directory and name of the assembly (DLL) and it will then be created and saved. Your .NET class is now ready for use by any .NET development environment, including APL itself.
 
-When a Dyalog .NET class is invoked by a host application, it automatically loads the Dyalog DLL, the developer/debug or run-time dynamic link library version of Dyalog APL. You decide which of these DLLs is to be used according to the setting of the *Runtime application* checkbox in the *Create bound file* dialog box. Note however that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.
+When a Dyalog .NET class is invoked by a host application, it automatically loads the Dyalog DLL, the developer/debug or run-time dynamic link library version of Dyalog. You decide which of these DLLs is to be used according to the setting of the *Runtime application* checkbox in the *Create bound file* dialog box. Note however that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.
 
 Note that if you wish to include a Dyalog .NET class in a Visual Studio application it is recommended that you add the  Bridge DLL as a reference in a  Visual Studio .NET project.
 

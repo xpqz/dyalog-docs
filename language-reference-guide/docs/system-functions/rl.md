@@ -84,10 +84,6 @@ Otherwise if the seed `⎕RL[1]` is set to a value other than `⍬`:
 - using *RNG1*, the system internally retains a block of 312 64-bit numbers which are used one by one to generate the results of roll and deal. When the first block of 312 have been used up, the system generates a second block. In this case, `⎕RL[1]` is an integer vector of 32-bit numbers of length 625 (the first is an index into the block of 312) which represents the internal state of the random number generator. This means that, as with *RNG0*, you may save the value of  `⎕RL` in a variable and reassign it later.
 - Using *RNG2*, the seed is purely internal and `⎕RL[1]` is always zilde.
 
-- using *RNG0*, `⎕RL[1]` is an integer which  represents the *seed* for the next random number in the sequence.
-- using *RNG1*, the system internally retains a block of 312 64-bit numbers which are used one by one to generate the results of roll and deal. When the first block of 312 have been used up, the system generates a second block. In this case, `⎕RL[1]` is an integer vector of 32-bit numbers of length 625 (the first is an index into the block of 312) which represents the internal state of the random number generator. This means that, as with *RNG0*, you may save the value of  `⎕RL` in a variable and reassign it later.
-- Using *RNG2*, the seed is purely internal and `⎕RL[1]` is always zilde.
-
 
 ### Assignment
 

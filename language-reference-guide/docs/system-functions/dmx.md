@@ -7,7 +7,7 @@
 
 
 
-`⎕DMX` is a system object that provides information about the last reported APL error. `⎕DMX` has *thread scope*, i.e. its value differs according to the thread from which it is referenced. In a multi-threaded application therefore, each thread has its own value of `⎕DMX`.
+`⎕DMX` is a system object that provides information about the last reported APL error. `⎕DMX` has *thread scope*, that is, its value differs according to the thread from which it is referenced. In a multi-threaded application therefore, each thread has its own value of `⎕DMX`.
 
 
 `⎕DMX` contains the following Properties (name class 2.6). Note that this list is likely to change. Your code should not assume that this list will remain unchanged. You should also not assume that the display form of `⎕DMX` will remain unchanged.

@@ -31,7 +31,7 @@ If the argument is `⍬`, the bitmap is
 removed.
 
 
-The image may also be displayed initially by setting parameter: **greet_bitmap** on the command line, e.g.:
+The image can also be displayed initially by setting parameter: **greet_bitmap** on the command line. For example:
 ```apl
 c:\myapp\dyalogrt greet_bitmap=mylogo myws
 ```

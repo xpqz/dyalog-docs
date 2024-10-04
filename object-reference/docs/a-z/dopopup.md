@@ -22,7 +22,7 @@ By default the HTMLRenderer ignores a request for a new window, but if  the DoPo
 
 
 
-The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 4-element vector as follows:
+The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows:
 
 
 |-----|----------|---------------------------------------|
@@ -30,6 +30,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |`[2]`|Event     |`'DoPopup'` or 846                     |
 |`[3]`|URL       |the requested url                      |
 |`[4]`|Attributes|requested window attributes (see below)|
+|`[5]`|Framename |character vector framename             |
 
 
 

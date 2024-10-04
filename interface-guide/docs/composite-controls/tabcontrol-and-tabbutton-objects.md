@@ -41,7 +41,7 @@ Next, create one or more pairs of TabButton and SubForm objects as children of t
 
 The Style property determines the overall appearance of the tabs or buttons in a TabControl and may be `'Tabs'` (the default), `'Buttons'` or `'FlatButtons'`.
 
-A TabControl object with Style `'Buttons'` or `'FlatButtons'` may be used in a similar way (i.e. to display a set of alternative pages), although buttons in this type of TabControl are more normally used to execute commands. For this reason, these styles of TabControl are borderless.
+A TabControl object with Style `'Buttons'` or `'FlatButtons'` may be used in a similar way (that is, to display a set of alternative pages), although buttons in this type of TabControl are more normally used to execute commands. For this reason, these styles of TabControl are borderless.
 
 ![tabcontrol_style_buttons](../img/tabcontrol-style-buttons.png)
 

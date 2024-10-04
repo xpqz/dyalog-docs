@@ -17,7 +17,7 @@ Then click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program
 
 ![aplclasses2a_2](../img/aplclasses2a-2.png)
 
-Notice that in Dyalog APL, the `)SI` System Command  provides information about the entire calling stack, including the .NET function calls that are involved. Notice too that the `CTOR` function, the constructor for this APL .NET class, is running here in APL thread 1, which is associated with the system thread 30732.
+Notice that in Dyalog, the `)SI` System Command  provides information about the entire calling stack, including the .NET function calls that are involved. Notice too that the `CTOR` function, the constructor for this APL .NET class, is running here in APL thread 1, which is associated with the system thread 30732.
 
 In this case, debugging is simple, and you can simply type:
 ```apl

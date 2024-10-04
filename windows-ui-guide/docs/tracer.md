@@ -22,7 +22,7 @@ The third way to invoke the Tracer is to have the system do it automatically for
 
 From Version 10.1 onwards, the Tracer is designed to be docked in the Session window.
 
-In previous versions of Dyalog APL, the Tracer was implemented as a stack of separate windows (one per function on the calling stack) or as a single, but still separate, window.
+In previous versions of Dyalog, the Tracer was implemented as a stack of separate windows (one per function on the calling stack) or as a single, but still separate, window.
 
 You can disable the standard behaviour by selecting *Classic Dyalog mode* from the *Trace/Edit* tab of the *Configuration* dialog box.
 
@@ -140,7 +140,7 @@ You can clear all break-points by pressing the above button in the Trace Tools w
 
 ## The Classic mode Tracer
 
-If you select *Classic Dyalog mode* from the *Trace/Edit* tab in the *Configuration* dialog box, the Tracer behaves in the same way as in Dyalog APL Version 8.2. However, the Tracer is not dockable in the Session.
+If you select *Classic Dyalog mode* from the *Trace/Edit* tab in the *Configuration* dialog box, the Tracer behaves in the same way as in Dyalog version 8.2. However, the Tracer is not dockable in the Session.
 
 If you select the Classic mode Tracer, you may choose between multiple trace windows or a single trace window using the *Single Trace Window* option.
 
@@ -152,7 +152,7 @@ The following behaviour is obtained by **deselecting** the *Single Trace Window*
 - When you press Ctrl+Enter or click the *Trace* button on a line that calls another function, a new trace window appears on top of the stack and displays the newly called function.
 - When a function exits, its trace window disappears and the focus moves to the previous trace window. When the last function in a traced suspension exits, the last trace window disappears.
 - If you click the *Quit this function* button in the *Trace Tools* window, or press Escape, or close the trace window by clicking on its [X] button or typing Alt-F4, the top trace window disappears and the focus moves to the previous trace window
-- If you close any of the trace windows further down the stack, the stack will be cut back to the corresponding point, i.e. to the line of code that called the function whose trace window you closed.
+- If you close any of the trace windows further down the stack, the stack will be cut back to the corresponding point, that is, to the line of code that called the function whose trace window you closed.
 - The <RM> button removes all the trace windows and resumes execution. The same is achieved by the expression `→⎕LC`. The <CS> button also continues execution, but leaves the trace windows displayed and allows you to watch their progress.
 - If you minimise any of the trace windows, the entire stack is minimised to a single icon, from which it may be restored.
 - If you drag any Trace window with the mouse and at the same time press Ctrl+Shift, the entire set of Trace windows is dragged.

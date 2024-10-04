@@ -1,4 +1,4 @@
-﻿# ActiveXContainer Methods
+<h1> ActiveXContainer Methods</h1>
 
-|----|----|----|
-|[Detach](../methodorevents/detach.md)|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&#160;|
+|-------------------------------------|-----------------------------------------------------------|------|
+|[Detach](../methodorevents/detach.md)|[OLEQueryInterface](../methodorevents/olequeryinterface.md)|&nbsp;|

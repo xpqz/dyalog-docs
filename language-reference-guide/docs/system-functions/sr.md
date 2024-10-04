@@ -47,7 +47,7 @@ If an element of `Y` is an integer scalar, it specifies a field as the index of 
 If an element of `Y` is an integer vector, it specifies a sub-field.  The first element in `Y` specifies the top-level field as above.  The next element is used to index a row in the form defined by `⊃⎕SM[Y[1];1]` and so forth.
 
 
-If an element of `Y` is a character scalar or vector, it specifies the name of a top-level GUI object with which the user may also interact.  Such an object must be a "top-level" object, i.e. the `Root` object ('`.'`) or a `Form` or pop-up `Menu`.  This feature is implemented ONLY in versions of Dyalog APL with GUI support.
+If an element of `Y` is a character scalar or vector, it specifies the name of a top-level GUI object with which the user may also interact.  Such an object must be a "top-level" object, that is, the `Root` object ('`.'`) or a `Form` or pop-up `Menu`.  This feature is implemented ONLY in versions of Dyalog APL with GUI support.
 
 ## EXIT_KEYS
 

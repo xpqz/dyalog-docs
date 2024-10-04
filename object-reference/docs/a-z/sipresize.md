@@ -14,7 +14,7 @@
 **Description**
 
 
-**SIPResize applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.**
+**SIPResize applies only to PocketAPL. In versions of Dyalog for other platforms, it has no effect.**
 
 
 This is a Boolean property that specifies the behaviour of a Form when the Input Panel is raised or lowered.

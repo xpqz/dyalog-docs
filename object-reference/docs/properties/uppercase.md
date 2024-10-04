@@ -26,7 +26,7 @@ ROOT
 ```
 
 
-In Dyalog APL Version 6, property names were always reported in upper case. This was changed in Version 7. The UpperCase property is provided to enable applications developed prior to Dyalog APL/W Version 7 to function with minimal alteration.
+In Dyalog v6, property names were always reported in upper case. This was changed in Version 7. The UpperCase property is provided to enable applications developed prior to Dyalog v7 to function with minimal alteration.
 
 
 

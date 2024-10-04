@@ -1,6 +1,6 @@
 <h1> Scalar Functions</h1>
 
-There is a class of primitive functions termed scalar functions This class is identified in [](#ScalarPrimitiveFunctions) below. Scalar functions are **pervasive**, i.e. their properties apply at all levels of nesting.  Scalar functions have the following properties:
+There is a class of primitive functions termed scalar functions This class is identified in [](#ScalarPrimitiveFunctions) below. Scalar functions are **pervasive**, that is, their properties apply at all levels of nesting.  Scalar functions have the following properties:
 
 Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 

@@ -88,7 +88,7 @@ Lines[5&12] obtain the fully qualified identifier for this particular instance o
 
 Lines[18-22] and Lines[24-28] generate and output the HTML to represent the two buttons that convert from Fahrenheit to Centigrade and from Centigrade to Fahrenheit respectively.
 
-Lines[19-20] and [25-26]generate HTML that wires the buttons up to JavaScript handlers to be executed *by the browser*. The JavaScript simply causes the browser to execute a postback, i.e. send the page contents back to the server. `GetPostBackEventReference` is a (shared) method provided by the `System.Web.UI.Page` class that generates a reference to a client-side script function. In this case it is called with two parameters, an object that represents the current instance of the `TemperatureConverterCtl2` control, and a string that will be passed to the server to indicate the cause of the postback (i.e. which button was pressed). The first parameter is a reference to the current object, which is returned by the system function `⎕THIS`.
+Lines[19-20] and [25-26]generate HTML that wires the buttons up to JavaScript handlers to be executed *by the browser*. The JavaScript simply causes the browser to execute a postback, that is, send the page contents back to the server. `GetPostBackEventReference` is a (shared) method provided by the `System.Web.UI.Page` class that generates a reference to a client-side script function. In this case it is called with two parameters, an object that represents the current instance of the `TemperatureConverterCtl2` control, and a string that will be passed to the server to indicate the cause of the postback (that is, which button was pressed). The first parameter is a reference to the current object, which is returned by the system function `⎕THIS`.
 
 The client-side script is itself generated, and inserted into the HTML stream automatically.
 
@@ -100,7 +100,7 @@ Once the server-side control has rendered the HTML for the browser, the user is 
 
 When the user presses a button, the browser runs the client-side JavaScript code that in turn generates a postback to the server.
 
-The `:Class` statement for  `TemperatureConverterCtl2` specifies that it supports the `IPostBackDataHandler` interface. This interface must be implemented by controls that want to receive postback data (i.e., the contents of Form fields that the user may have entered or changed) `IpostBackDataHandler` has two methods `LoadPostData` and `RaisePostDataChangedEvent`. `LoadPostData` is automatically invoked when a postback occurs, and the postback data is supplied as a parameter.
+The `:Class` statement for  `TemperatureConverterCtl2` specifies that it supports the `IPostBackDataHandler` interface. This interface must be implemented by controls that want to receive postback data (that is, the contents of Form fields that the user may have entered or changed) `IpostBackDataHandler` has two methods `LoadPostData` and `RaisePostDataChangedEvent`. `LoadPostData` is automatically invoked when a postback occurs, and the postback data is supplied as a parameter.
 
 So when the postback occurs, the server reloads the original page and, because this is a postback situation and our control has advertised the fact that it implements `IPostBackDataHandler`, ASP.NET invokes its `LoadPostBack` method. This method is called with two parameters. The first is a key and the second is a collection of name/value pairs. This contains the names of all the Form fields on the page (and there may be others not directly associated with our custom control) and the values they had when the user pressed the button. The key provides the means to extract the relevant part of this collection. The `LoadPostData` function is shown below.
 ```apl
@@ -115,7 +115,7 @@ So when the postback occurs, the server reloads the original page and, because t
 
 ```
 
-Line[2] obtains the two parameters from the argument and Line[3] uses the key to extract the appropriate data from the collection. `ControlValues` is a comma-delimited string containing name/value pairs. The function `ParseControlValues` simply extracts the values from this string, i.e. the contents of the Fahrenheit and Centigrade text boxes.
+Line[2] obtains the two parameters from the argument and Line[3] uses the key to extract the appropriate data from the collection. `ControlValues` is a comma-delimited string containing name/value pairs. The function `ParseControlValues` simply extracts the values from this string, that is, the contents of the Fahrenheit and Centigrade text boxes.
 
 ## Postback Events
 

@@ -1,4 +1,4 @@
-﻿# PropertyPage Parents
+<h1> PropertyPage Parents</h1>
 
-|----|----|----|
-|[PropertySheet](../objects/propertysheet.md)|&#160;|&#160;|
+|--------------------------------------------|------|------|
+|[PropertySheet](../objects/propertysheet.md)|&nbsp;|&nbsp;|

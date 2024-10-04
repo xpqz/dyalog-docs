@@ -29,9 +29,6 @@ If `Y` is a character vector and RIDE is currently disabled, then the current in
 The initialisation string has the same syntax as the value of the **RIDE_INIT** configuration parameter which is described in the RIDE User Guide
 
 
-If RIDE is currently disabled, and `3502⌶0` is called or if RIDE is currently enabled and `3502⌶1` is called, no action is taken and `R` will have the value `¯1`.
-
-
 The configuration parameter **RIDE_INIT** can still be used to establish the initial value of the RIDE initialisation string.
 
 

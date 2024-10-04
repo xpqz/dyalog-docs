@@ -51,7 +51,7 @@ appropriate resize behaviour using their [Attach](../properties/attach.md) prop
 
 
 A TabControl object with [Style](../properties/style.md) `'Buttons'` [(Example 2)](../examples/tabcontrol-example-2.md) or `'FlatButtons'`[ (Example 3)](../examples/tabcontrol-example-3.md) may be used in a similar
-way (i.e. to display a set of alternative pages), although buttons in this type
+way (that is, to display a set of alternative pages), although buttons in this type
 of TabControl are more normally used to execute commands. For this reason, these
 styles of TabControl are without borders.
 

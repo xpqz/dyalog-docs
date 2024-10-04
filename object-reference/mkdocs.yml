@@ -32,10 +32,6 @@ plugins:
 extra:
   version_maj: 20
   version_majmin: 20.0
-  logger:
-      handlers:
-          console:
-              level: ERROR
 markdown_extensions:
   - admonition
   - pymdownx.details

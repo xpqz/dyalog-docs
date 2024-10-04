@@ -2,9 +2,9 @@
 
 ## What is an ActiveX Control ?
 
-An ActiveX Control is a dynamic link library that represents a particular type of COM object. When an ActiveX Control is loaded by a host application, it runs *in-process*, i.e. it is part of the host application's address space. Furthermore, an ActiveX Control typically has a *window* associated with it, which normally appears on the screen and has a user interface.
+An ActiveX Control is a dynamic link library that represents a particular type of COM object. When an ActiveX Control is loaded by a host application, it runs *in-process*, that is, it is part of the host application's address space. Furthermore, an ActiveX Control typically has a *window* associated with it, which normally appears on the screen and has a user interface.
 
-An ActiveX Control is usually stored in file with the extension .OCX. The functionality provided by the control can be supplied entirely by functions in that file alone, or can be provided by other dynamic link libraries that it loads and calls, i.e. an ActiveX Control can be stand-alone or can rely on one or more other dynamic link libraries.
+An ActiveX Control is usually stored in file with the extension .OCX. The functionality provided by the control can be supplied entirely by functions in that file alone, or can be provided by other dynamic link libraries that it loads and calls, that is, an ActiveX Control can be stand-alone or can rely on one or more other dynamic link libraries.
 
 ## What is a Dyalog APL ActiveX Control ?
 

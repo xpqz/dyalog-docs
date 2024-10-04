@@ -22,7 +22,7 @@ CBits provides an alternative representation to that provided by the [Bits](bits
 CBits is a rank-2 numeric array whose dimensions represent the rows and columns of pixels in the image. The values in CBits represent the colour of each pixel and (for an [Icon](../objects/icon.md)) its transparency.
 
 
-For a [Bitmap](../objects/bitmap.md), the colour value of each pixel is obtained by encoding the red, green and blue components, i.e.
+For a [Bitmap](../objects/bitmap.md), the colour value of each pixel is obtained by encoding the red, green and blue components, that is:
 ```apl
       PIXEL←256⊥RED GREEN BLUE
 ```

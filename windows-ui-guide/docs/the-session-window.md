@@ -16,11 +16,11 @@ You can move, resize, minimise or maximise the Session Window using the standard
 
 In addition to the Session Window itself, there are various subsidiary windows which are described later in the Chapter. In general, these subsidiary windows may be docked inside the Session window, or may be stand-alone floating windows. You may dock and undock these windows as required. The standard Session layout illustrated above, contains docked Editor, Tracer and SIStack windows.
 
-Note that the session window is only displayed **when** it is required, i.e. when APL requests input from or output to the session. This means that end-user applications that do not interact with the user through the session will not have an APL session window.
+Note that the session window is only displayed **when** it is required, that is, when APL requests input from or output to the session. This means that end-user applications that do not interact with the user through the session will not have an APL session window.
 
 ## Docking
 
-Nearly all of the windows used in the Dyalog APL IDE may be docked in the Session window or be stand-alone floating windows. When windows are docked in the Session, the Session window is split into resizable panes, separated by splitters. The following example, using the Status window, illustrates the principles involved. (The use of the Status window is described later in this Chapter.)
+Nearly all of the windows used in the Dyalog IDE may be docked in the Session window or be stand-alone floating windows. When windows are docked in the Session, the Session window is split into resizable panes, separated by splitters. The following example, using the Status window, illustrates the principles involved. (The use of the Status window is described later in this Chapter.)
 
 To start with, the Status window is hidden. You may display it by selecting the *Status* menu item from the *Tools* menu. It initially appears as a floating (undocked) window as shown below.
 
@@ -59,4 +59,4 @@ The last picture shows the effect of using Hide Caption to remove the title bar.
 
 ![session docking 7](img/session-docking-7.png)
 
-[^1]: In a Windows shortcut to an application,  the Run: state may be one of "Normal window", "Minimised" and "Maximised". There are other states which can be set when a process is spawned. If the Run: state is Normal or Default, Dyalog APL will use the settings in the current session file to determine the state and size of the session on startup; for all other states (including Maximised and Minimised) these states will be used, superceding the settings in the current session file.
+[^1]: In a Windows shortcut to an application,  the Run: state may be one of "Normal window", "Minimised" and "Maximised". There are other states which can be set when a process is spawned. If the Run: state is Normal or Default, Dyalog will use the settings in the current session file to determine the state and size of the session on startup; for all other states (including Maximised and Minimised) these states will be used, superceding the settings in the current session file.

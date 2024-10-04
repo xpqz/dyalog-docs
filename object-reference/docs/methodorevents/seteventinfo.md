@@ -27,7 +27,7 @@ An [ActiveXControl](../objects/activexcontrol.md) or [OLEServer](../objects/oles
 Another way to think about it is that when you generate an event using `4 ⎕NQ`, you are effectively calling a function, of your specification, in the host application. To enable the host application to accept the function call, it needs to know the number of parameters that you will supply and their data types.
 
 
-A further consideration is that if you specify that the data type of a parameter is a *pointer* (e.g. `'VT_PTR TO I4'`) this will allow a callback function to modify the parameter in-situ. If so, the result returned by `4 ⎕NQ` will be the modified values of any such parameters; this is a similar mechanism to `⎕NA`.
+A further consideration is that if you specify that the data type of a parameter is a *pointer* (for example, `'VT_PTR TO I4'`) this will allow a callback function to modify the parameter in-situ. If so, the result returned by `4 ⎕NQ` will be the modified values of any such parameters; this is a similar mechanism to `⎕NA`.
 
 
 

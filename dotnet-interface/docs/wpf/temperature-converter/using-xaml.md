@@ -107,7 +107,7 @@ Objects are given names so that they can be referenced from the code that displa
 </Window>
 ```
 
-This extract of XAML defines a Window control; a top-level window that is equivalent to a Dyalog APL GUI Form.
+This extract of XAML defines a Window control; a top-level window that is equivalent to a Dyalog GUI Form.
 
 The *xmlns* attributes define the XML namespaces (effectively the vocabulary of the xml scheme) and are mandatory in an XAML document.
 
@@ -140,7 +140,7 @@ The attachment of a particular child control is specified by setting its DockPan
 
 ![wpf_example2](../../img/wpf-example2.png)
 
-The above extract from the XAML defines a Menu. Setting Dock to "Top" causes the Menu as a whole to be docked, so that it appears like a menubar, along the top of the DockPanel. The Menu contains a single MenuItem labelled *Scale* which itself contains two sub-items labelled *Fahrenheit* and *Centigrade* respectively. The IsCheckable property specifies whether or not the user can check the MenuItem, and the IsChecked property sets and reports its checked state. The underscore characters (e.g. as in "_Scale") identify the following character as a keyboard shortcut.
+The above extract from the XAML defines a Menu. Setting Dock to "Top" causes the Menu as a whole to be docked, so that it appears like a menubar, along the top of the DockPanel. The Menu contains a single MenuItem labelled *Scale* which itself contains two sub-items labelled *Fahrenheit* and *Centigrade* respectively. The IsCheckable property specifies whether or not the user can check the MenuItem, and the IsChecked property sets and reports its checked state. The underscore characters (for example, as in "_Scale") identify the following character as a keyboard shortcut.
 
 ## The Grid
 ```apl
@@ -162,7 +162,7 @@ Here the XAML specifies that the Grid contains 3 rows, each of which has a Heigh
       </Grid.RowDefinitions> 
 ```
 
-Similarly, there are 3 columns. The first column (which will contain labels) takes its width from its content, i.e. it will be just wide enough to display the longest label. The other columns   for the edit boxes and buttons are specified to be 80px and 60px wide respectively. In this case, the content (TextBox and Button objects) will take their widths from that of the column.
+Similarly, there are 3 columns. The first column (which will contain labels) takes its width from its content, that is, it will be just wide enough to display the longest label. The other columns   for the edit boxes and buttons are specified to be 80px and 60px wide respectively. In this case, the content (TextBox and Button objects) will take their widths from that of the column.
 ```apl
      <Grid.ColumnDefinitions>
         <ColumnDefinition Width="Auto"/>
@@ -294,7 +294,7 @@ Finally the code displays the Window and hands it over to the user by calling th
 [21]   sink←win.ShowDialog
 ```
 
-ShowDialog displays the Window *modally*; i.e. until it is closed, the user may interact only with that Window. It is equivalent to `⎕DQ win` or `win.Wait` in the Dyalog built-in GUI.
+ShowDialog displays the Window *modally*; that is, until it is closed, the user may interact only with that Window. It is equivalent to `⎕DQ win` or `win.Wait` in the Dyalog built-in GUI.
 
 ## The CallBack Functions
 
@@ -355,7 +355,6 @@ In this case the code uses the NewValue property of the ScrollEventArgs object. 
      ∇
 
 ```
-
 ```apl
 
      ∇ C2F Msg;C;F;val
@@ -396,4 +395,4 @@ Finally, the callback function `Quit` which is attached to the Click event on th
 
 Notice that unlike its equivalent in the Dyalog GUI, it is not appropriate to close the Window using the expression `⎕EX 'win'`. This would expunge the ref to the Window but have no effect on the Window itself.
 
-[^1]: A ScrollBar is not the ideal choice of control for this type of user interation, but this example is designed to look and behave like the original Dyalog GUI example, which was written for the original version of Dyalog APL for Windows.
+[^1]: A ScrollBar is not the ideal choice of control for this type of user interation, but this example is designed to look and behave like the original Dyalog GUI example, which was written for the original version of Dyalog  for Microsoft Windows.

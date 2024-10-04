@@ -13,7 +13,7 @@
 This system function reports the GUI objects whose parent is `Y`.
 
 
-If `Y` is a name (i.e. is a character vector) then the result `R` is a vector of character vectors containing the names of the named direct GUI children of `Y`.
+If `Y` is a name (that is, is a character vector) then the result `R` is a vector of character vectors containing the names of the named direct GUI children of `Y`.
 
 
 If `Y` is a reference  then the result `R` is a vector of references to  the direct GUI children of `Y`, named or otherwise.

@@ -42,7 +42,7 @@ To copy a specific block of cells to the clipboard whether or not they are selec
 ```
 
 
-If you omit these parameters, the currently selected block of cells will be copied to the clipboard. If no cells are selected, the entire contents of the Grid will be copied. i.e.
+If you omit these parameters, the currently selected block of cells will be copied to the clipboard. If no cells are selected, the entire contents of the Grid will be copied. That is:
 ```apl
      Gridname.GridCopy ⍬
 ```

@@ -10,7 +10,7 @@
 If `Y` is complex, `R` is `Y` with the imaginary part of all elements negated.
 
 
-If `Y` is real or non-numeric, `R` is the same array unchanged, although `⊣` is faster. See [Same](same.md).
+If `Y` is real or non-numeric, `R` is the same array unchanged, although `⊢` is faster. See [Same](same.md).
 
 <h2 class="example">Examples</h2>
 ```apl

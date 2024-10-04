@@ -1,6 +1,6 @@
 <h1> Classic Edition Keyboard</h1>
 
-The standard Classic Edition keyboard tables are files supplied in the aplkeys sub-directory named cc.din where cc is the standard 2-character country code, e.g. `uk.din`.
+The standard Classic Edition keyboard tables are files supplied in the aplkeys sub-directory named cc.din where cc is the standard 2-character country code, for example, `uk.din`.
 
 Note that the standard tables do not support the entry of APL underscored characters `⍙ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ`.
 

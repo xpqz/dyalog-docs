@@ -13,7 +13,7 @@
 The derived function is equivalent to `YfX`.  The derived function need not return a result.
 
 
-If left argument `X` is omitted, the right argument `Y` is duplicated in its place, i.e.
+If left argument `X` is omitted, the right argument `Y` is duplicated in its place, that is:
 ```apl
       f⍨Y ←→ Y f⍨Y
 ```

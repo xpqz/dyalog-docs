@@ -1,5 +1,5 @@
-﻿# Calendar Children
+<h1> Calendar Children</h1>
 
-|----|----|----|
-|[Cursor](../objects/cursor.md)|[Font](../objects/font.md)|[Menu](../objects/menu.md)|
+|------------------------------|------------------------------------|----------------------------|
+|[Cursor](../objects/cursor.md)|[Font](../objects/font.md)          |[Menu](../objects/menu.md)  |
 |[MsgBox](../objects/msgbox.md)|[TCPSocket](../objects/tcpsocket.md)|[Timer](../objects/timer.md)|

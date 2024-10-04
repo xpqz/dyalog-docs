@@ -2,7 +2,7 @@
 
 It is possible to define and use new .NET classes within an `APLScript`.
 
-A class is defined by `:Class` and `:EndClass` statements. The methods provided by the class are defined as function bodies enclosed within these statements. Please see the Language Reference for a complete discussion of writing classes in Dyalog APL. This chapter will only provide a brief introduction to the subject, aimed specifically at APLScript.
+A class is defined by `:Class` and `:EndClass` statements. The methods provided by the class are defined as function bodies enclosed within these statements. Please see the Language Reference for a complete discussion of writing classes in Dyalog. This chapter will only provide a brief introduction to the subject, aimed specifically at APLScript.
 
 You may also define sub-classes or nested classes using nested `:Class` and `:EndClass` statements.
 ```apl
@@ -26,7 +26,7 @@ You can create and use instances of a class by using the `⎕NEW` system functio
 
 Within a `:Class` definition block, you may define private functions and public functions. A public function is one that is exposed as a method and may be called by a client that creates an instance of your class. Public functions must have a section of *declaration* statements. Other functions are purely internal to the class and are not directly accessible by a client application.
 
-The declaration statements for public functions perform the same task for an `APLScript` that is performed using the .NET Properties dialog box, or by executing SetMethodInfo in the Dyalog APL Session, prior to creating a .NET assembly. The following declaration statements may be used.
+The declaration statements for public functions perform the same task for an `APLScript` that is performed using the .NET Properties dialog box, or by executing SetMethodInfo in the Dyalog Session, prior to creating a .NET assembly. The following declaration statements may be used.
 ```apl
       :Access Public
 ```
@@ -192,8 +192,8 @@ clear ws
 
 ## Indexers
 
-An *indexer* is a property of a class that enables an instance of that class (an object) to be indexed in the same way as an array, if the host language supports this feature. Languages that support object indexing include C# and Visual Basic. Dyalog APL does also allow indexing to be used on objects. This means that you can define an APL class that exports an indexer and you can use the indexer from C#, Visual Basic or Dyalog APL.
+An *indexer* is a property of a class that enables an instance of that class (an object) to be indexed in the same way as an array, if the host language supports this feature. Languages that support object indexing include C# and Visual Basic. Dyalog does also allow indexing to be used on objects. This means that you can define an APL class that exports an indexer and you can use the indexer from C#, Visual Basic, or Dyalog.
 
 Indexers are defined in the same way as properties, between `:Property Default` and `:EndProperty` statements. There may be only one indexer defined for a class.
 
-Note: the `:Property Default` statement in Dyalog APL is closely modelled on the indexer feature in C# and employs similar syntax. If you use `ILDASM` to browse a .NET class containing an indexer, you will see the indexer as the *default property* of that class, which is how it is actually implemented.
+Note: the `:Property Default` statement in Dyalog is closely modelled on the indexer feature in C# and employs similar syntax. If you use `ILDASM` to browse a .NET class containing an indexer, you will see the indexer as the *default property* of that class, which is how it is actually implemented.

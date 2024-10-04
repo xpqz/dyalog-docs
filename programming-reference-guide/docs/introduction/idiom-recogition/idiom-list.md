@@ -162,6 +162,6 @@ The idiom generalises uniformly to higher-rank arrays.
 
 **Euler's idiom** `*○NA` produces accurate results for right argument values that are a multiple of `0J0.5`. This is so that Euler's famous identity `0=1+*○0J1` holds, despite pi being represented as a floating point number.
 
-For clarification; `XA↓⍨←NS`. If `NS` is `¯3` then the idiom removes the last `-¯3` (i.e. 3) items.
+For clarification; `XA↓⍨←NS`. If `NS` is `¯3` then the idiom removes the last `-¯3` (that is, 3) items.
 
 The idiom `XM1{(↓⍺)⍳↓⍵}XM2` is still recognised, but since Version 14.0 is no faster than `XM1⍳XM2`.

@@ -7,7 +7,7 @@
 
 
 
-This function reports whether or not file and directories exist.
+This function reports whether or not files and directories exist.
 
 
 `Y` is a character vector or scalar containing a single file/directory name, or a vector of character vectors containing zero or more file/directory names.

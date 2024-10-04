@@ -78,7 +78,7 @@ Dyalog APL automatically switches to the SESSION screen for default output, if i
 ```
 
 
-in the APL session will cause the screen to switch first to the USER screen, display the form defined by `⎕SM`, and then switch back to the SESSION screen to issue the 6-space prompt.  This normally happens so quickly that all the user sees is a flash on the screen.To retain the USER screen in view it is necessary to issue a call to `⎕SR` or for APL to continue processing. e.g.
+in the APL session will cause the screen to switch first to the USER screen, display the form defined by `⎕SM`, and then switch back to the SESSION screen to issue the 6-space prompt.  This normally happens so quickly that all the user sees is a flash on the screen.To retain the USER screen in view it is necessary to issue a call to `⎕SR` or for APL to continue processing. For example:
 
 ```apl
       ⎕SM ← expression  ⋄  ⎕SR 1

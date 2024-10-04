@@ -29,7 +29,7 @@ The `:Access` statement is used to specify characteristics for functions  that r
 Normally, a Method defined in a higher Class replaces a Method of the same name that is defined in its Base Class, but only for calls made from above or within the higher Class itself (or an Instance of the higher Class). The base method remains available *in the Base Class* and is invoked by a reference to it *from within the Base Class*.
 
 
-However, a Method declared as being `Overridable` is replaced in-situ (i.e. within its own Class) by a Method of the same name in a higher Class if that Method is itself declared with the `Override` keyword. For further information, see ["Superseding Base Class Methods"](../../../../object-oriented-programming/class-members/methods/superceding-base-class-methods.md).
+However, a Method declared as being `Overridable` is replaced in-situ (that is, within its own Class) by a Method of the same name in a higher Class if that Method is itself declared with the `Override` keyword. For further information, see ["Superseding Base Class Methods"](../../../../object-oriented-programming/class-members/methods/superceding-base-class-methods.md).
 
 
 ## WebMethod

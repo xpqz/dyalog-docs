@@ -8,7 +8,7 @@ A set of system functions is supplied to perform a range of file operations. The
 
 ## Tying and Untying Files
 
-To access an existing component file it must be **tied**, i.e. opened for use. The tie may be **exclusive** (single-user access) or **shared** (multi-user access). A file is **untied**, i.e. closed, using `⎕FUNTIE` or on terminating Dyalog APL. File ties survive `)LOAD`, `⎕LOAD` and `)CLEAR` operations.
+To access an existing component file it must be **tied**, that is, opened for use. The tie may be **exclusive** (single-user access) or **shared** (multi-user access). A file is **untied**, that is, closed, using `⎕FUNTIE` or on terminating Dyalog APL. File ties survive `)LOAD`, `⎕LOAD` and `)CLEAR` operations.
 
 ## Tie Numbers
 
@@ -16,7 +16,7 @@ A file is tied by associating a **file name** with a **tie number**. Tie numbers
 
 ## Creating and Removing Files
 
-A component file is created using `⎕FCREATE` which automatically ties the file for exclusive use. A newly created file is empty, i.e. contains 0 components. A file is removed with `⎕FERASE`, although it must be exclusively tied to do so.
+A component file is created using `⎕FCREATE` which automatically ties the file for exclusive use. A newly created file is empty, that is, contains 0 components. A file is removed with `⎕FERASE`, although it must be exclusively tied to do so.
 
 ## Adding and Removing Components
 
@@ -32,7 +32,7 @@ In addition to the data held in a component, the user ID that wrote it and the t
 
 ## Multi-User Access
 
-`⎕FSTIE` ties a file for **shared** (i.e. multi-user) access. This kind of access would be appropriate for a multi-user UNIX system, a network of single user PCs, or multiple APL tasks under Microsoft Windows.
+`⎕FSTIE` ties a file for **shared** (that is, multi-user) access. This kind of access would be appropriate for a multi-user UNIX system, a network of single user PCs, or multiple APL tasks under Microsoft Windows.
 
 `⎕FHOLD` provides the means for the user to temporarily prevent other co-operating users from accessing one or more files. This is necessary to allow a single logical update involving more than one component, and perhaps more than one file, to be completed without interference from another user. `⎕FHOLD` is applicable to External Variables as well as Component Files
 

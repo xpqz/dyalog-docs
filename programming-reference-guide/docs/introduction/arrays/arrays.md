@@ -19,7 +19,7 @@ Each axis of an array may contain zero or more items.  The number of items along
 
 ## Depth
 
-An array whose items are all simple scalars (i.e. single numbers, characters or refs) is called a simple array.  If one or more items of an array is not a simple scalar (i.e. is another array, or a `⎕OR`), the array is called a nested array.  A nested array may contain items which are themselves nested arrays.  The degree of nesting of an array is called its depth.  A simple scalar has a depth of 0.  A simple vector, matrix, or multi-dimensional array has depth 1.  An array whose items are all depth 1 subarrays has depth 2; one whose items are all depth 2 subarrays has depth 3, and so forth.
+An array whose items are all simple scalars (that is, single numbers, characters or refs) is called a simple array.  If one or more items of an array is not a simple scalar (that is, is another array, or a `⎕OR`), the array is called a nested array.  A nested array may contain items which are themselves nested arrays.  The degree of nesting of an array is called its depth.  A simple scalar has a depth of 0.  A simple vector, matrix, or multi-dimensional array has depth 1.  An array whose items are all depth 1 subarrays has depth 2; one whose items are all depth 2 subarrays has depth 3, and so forth.
 
 ## Type
 

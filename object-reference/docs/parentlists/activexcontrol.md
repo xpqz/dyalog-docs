@@ -1,4 +1,4 @@
-﻿# ActiveXControl Parents
+<h1> ActiveXControl Parents</h1>
 
-|----|----|----|
-|[Form](../objects/form.md)|&#160;|&#160;|
+|--------------------------|------|------|
+|[Form](../objects/form.md)|&nbsp;|&nbsp;|

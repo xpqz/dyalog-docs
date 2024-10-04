@@ -14,7 +14,7 @@
 **Description**
 
 
-This property identifies which cells in a [Grid](../objects/grid.md) are *set* (i.e. have values) and which are empty. Its purpose is to allow large numeric matrices containing blank cells to be displayed and edited efficiently.
+This property identifies which cells in a [Grid](../objects/grid.md) are *set* (that is, have values) and which are empty. Its purpose is to allow large numeric matrices containing blank cells to be displayed and edited efficiently.
 
 
 The CellSet property is a Boolean matrix with the same shape as the [Values](values.md) property. If an element of CellSet is 0, the cell is defined to be empty. Empty cells are displayed as blank and the cell contents by the [Values](values.md) property are ignored.

@@ -1,8 +1,8 @@
 <h1> Compilation</h1>
 
-When the Web Service, specified by the `.asmx` file, is called **for the first time**, ASP.NET invokes the appropriate language compiler (in this case, the Dyalog APL Script compiler) whose job is to produce an Assembly that defines and describes a class. When the Web Service is used subsequently, the request is satisfied by creating and using an instance of the class. However, ASP.NET detects if the `.asmx` script has been modified, and recompiles it in this case.
+When the Web Service, specified by the `.asmx` file, is called **for the first time**, ASP.NET invokes the appropriate language compiler (in this case, the Dyalog Script compiler) whose job is to produce an Assembly that defines and describes a class. When the Web Service is used subsequently, the request is satisfied by creating and using an instance of the class. However, ASP.NET detects if the `.asmx` script has been modified, and recompiles it in this case.
 
-The Dyalog APL Script compiler creates a `DLL` containing a workspace, which itself contains the Web Service class. The class contains all the functions, which are defined within the script, together with any variables that were established by expressions in the script. A single function comprises all the statements enclosed within a pair of del (`∇`) symbols.
+The Dyalog Script compiler creates a `DLL` containing a workspace, which itself contains the Web Service class. The class contains all the functions, which are defined within the script, together with any variables that were established by expressions in the script. A single function comprises all the statements enclosed within a pair of del (`∇`) symbols.
 
 For example, the following script would define a class, instances of which would run using `⎕ML←2`, containing a single function `FOO` and a variable `X`.
 ```apl

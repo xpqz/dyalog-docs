@@ -1,4 +1,4 @@
-﻿# CoolBand Parents
+<h1> CoolBand Parents</h1>
 
-|----|----|----|
-|[CoolBar](../objects/coolbar.md)|&#160;|&#160;|
+|--------------------------------|------|------|
+|[CoolBar](../objects/coolbar.md)|&nbsp;|&nbsp;|

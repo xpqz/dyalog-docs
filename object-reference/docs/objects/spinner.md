@@ -18,7 +18,7 @@
 **Description**
 
 
-The Spinner object is a special Dyalog APL composite object that consists of an edit field and a pair of spin buttons. The user may enter a value by typing in the edit field and may adjust the value with the spin buttons. The Spinner may cycle through a pre-defined set of values specified by the [Items](../properties/items.md) property or through a range of values specified by the [Limits](../properties/limits.md) property. The [FieldType](../properties/fieldtype.md) property supports all of the standard data types, i.e. Char, Numeric, LongNumeric, Currency, Date, LongDate and Time.
+The Spinner object is a special Dyalog APL composite object that consists of an edit field and a pair of spin buttons. The user may enter a value by typing in the edit field and may adjust the value with the spin buttons. The Spinner may cycle through a pre-defined set of values specified by the [Items](../properties/items.md) property or through a range of values specified by the [Limits](../properties/limits.md) property. The [FieldType](../properties/fieldtype.md) property supports all of the standard data types, that is, Char, Numeric, LongNumeric, Currency, Date, LongDate, and Time.
 
 
 
@@ -43,6 +43,6 @@ The Spinner generates two special events, [Spin](../methodorevents/spin.md) and 
 Like an [Edit](edit.md) object, the Spinner has a [Changed](../properties/changed.md) property and generates a Change event when loses the focus after the value of its Text and/or [Thumb](../properties/thumb.md) property has been altered.
 
 
-If [FieldType](../properties/fieldtype.md) is Numeric, LongNumeric, Currency, Date, LongDate or Time, the Spinner will generate a [BadValue](../methodorevents/badvalue.md) event when it loses the focus if the text in the edit field (i.e. the Text property) is in conflict with the [FieldType](../properties/fieldtype.md) property and cannot be converted to an appropriate number, or is outside the range specified by the [Limits](../properties/limits.md) property. If the edit field is empty, a [BadValue](../methodorevents/badvalue.md) event will be generated if [ValidIfEmpty](../properties/validifempty.md) is 0, but not if it is set to 1.
+If [FieldType](../properties/fieldtype.md) is Numeric, LongNumeric, Currency, Date, LongDate or Time, the Spinner will generate a [BadValue](../methodorevents/badvalue.md) event when it loses the focus if the text in the edit field (that is, the Text property) is in conflict with the [FieldType](../properties/fieldtype.md) property and cannot be converted to an appropriate number, or is outside the range specified by the [Limits](../properties/limits.md) property. If the edit field is empty, a [BadValue](../methodorevents/badvalue.md) event will be generated if [ValidIfEmpty](../properties/validifempty.md) is 0, but not if it is set to 1.
 
 

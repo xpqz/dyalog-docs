@@ -20,7 +20,7 @@ The SocketType property is a character vector that specifies the type of the TCP
 SocketType must be defined when the object is created and may not be set or changed using `⎕WS`.
 
 
-For two Dyalog APL applications to communicate, their [TCPSocket](../objects/tcpsocket.md) objects must have the same SocketType.
+For two Dyalog applications to communicate, their [TCPSocket](../objects/tcpsocket.md) objects must have the same SocketType.
 
 
 

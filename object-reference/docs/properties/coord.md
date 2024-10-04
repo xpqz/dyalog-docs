@@ -85,7 +85,7 @@ down and along from the top-left corner of the parent [Form](../objects/form.md)
 
 
 If you set Coord to `'RealPixel'` in the [Root](../objects/root.md) object `'.'`, then query its [Size](size.md),
-you get the dimensions of the screen in pixels, i.e.
+you get the dimensions of the screen in pixels, that is:
 ```apl
       '.' ⎕WS 'Coord' 'RealPixel'
       '.' ⎕WG 'Size'
@@ -96,7 +96,7 @@ you get the dimensions of the screen in pixels, i.e.
 
 
 If you set Coord to `'ScaledPixel'` in the [Root](../objects/root.md) object `'.'`, then query its [Size](size.md),
-you get the virtual resolution of the screen, i.e.
+you get the virtual resolution of the screen, that is:
 ```apl
       '.'⎕WS 'Coord' 'ScaledPixel'
       '.'⎕WG'Size'

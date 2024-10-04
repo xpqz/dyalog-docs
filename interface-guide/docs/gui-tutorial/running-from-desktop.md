@@ -32,7 +32,7 @@ c:\MyWS\TEMP.dws saved Wed Jun  1 14:53:48 2016
       )OFF
 ```
 
-The next step is to add the application to the Desktop. This is done in the normal way, i.e.
+The next step is to add the application to the Desktop. This is done in the normal way, that is:
 
 Right-click on the Desktop and choose "New" followed by "Shortcut".
 

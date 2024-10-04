@@ -11,8 +11,8 @@ This program is called automatically by `ASP.NET` when a client application requ
 
 - Compile an APLScript into a workspace (`.dws`) that you may subsequently run using `dyalog.exe` or `dyalogrt.exe` in the traditional manner.
 - Compile an APLScript into a .NET class (`.dll`) which may subsequently be used by any other .NET compatible host language such as C# or Visual Basic.
-- Compile an APLScript into a native Windows executable program (`.exe`), which may be run as a stand-alone executable. This program may be distributed, along with the Dyalog APL runtime DLL, as a packaged application, and does not require any of the additional support files and registry entries that are typically needed by the Dyalog APL run-time `dyalogrt.exe`. Note too that the Dyalog APL dynamic link library does not use MAXWS but instead allocates workspace dynamically as required. See the *Dyalog for Microsoft Windows Installation and Configuration Guide: Run-Time Applications and Components* for further details.
-- Compile a Dyalog APL Workspace (.dws) into a native Windows executable program, with the same characteristics and advantages described above.
+- Compile an APLScript into a native Windows executable program (`.exe`), which may be run as a stand-alone executable. This program may be distributed, along with the Dyalog runtime DLL, as a packaged application, and does not require any of the additional support files and registry entries that are typically needed by the Dyalog run-time `dyalogrt.exe`. Note too that the Dyalog dynamic link library does not use MAXWS but instead allocates workspace dynamically as required. See the *Dyalog for Microsoft Windows Installation and Configuration Guide: Run-Time Applications and Components* for further details.
+- Compile a Dyalog workspace (.dws) into a native Microsoft Windows executable program, with the same characteristics and advantages described above.
 
 The Script is designed to be run from a command prompt. If in the 64-bit Unicode Edition change to the appropriate directory and type `dyalogc64_unicode /?` (to query its usage) the following output is displayed:
 

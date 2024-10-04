@@ -7,4 +7,4 @@ The default value is:
 UserCommand{UcmdMajor}{UcmdMinor}.{DyalogMajor}{DyalogMinor}{U|C}{bits}.cache
 ```
 
-e.g. `UserCommand25.182U64.cache`
+For example, `UserCommand25.182U64.cache`

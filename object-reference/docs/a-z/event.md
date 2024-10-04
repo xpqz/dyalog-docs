@@ -87,7 +87,7 @@ event is inhibited (if possible) by APL. If, for example, you set the action on 
 to `¯1`, all keystrokes for the object in
 question will be ignored. Similarly, if you set the *action* on a Close
 event for a Form to `¯1`, the user will be
-unable to close the Form. This is possible because APL intercepts most events before Windows itself takes any action. However, certain events (e.g. focus
+unable to close the Form. This is possible because APL intercepts most events before Windows itself takes any action. However, certain events (for example, focus
 change events) are not notified to APL until **after** the event has occurred
 and **after** Windows has itself responded in some way. In these
 circumstances it is not always practical for APL to undo what Windows has
@@ -232,7 +232,7 @@ The first element of the event message always identifies the object that generat
 
 Objects are identified by  *names* or *refs*. If the Event property was set using the *onEvent* syntax (whereby the event name  or number is prefixed by the string `'on'`),
 for example, `'onSelect'` or `'on99'`, objects are identified by *refs*.
-This is also true if the object which generated the event has no name (i.e. was created by `⎕NEW`). Otherwise, objects are identified by their names.
+This is also true if the object which generated the event has no name (that is, was created by `⎕NEW`). Otherwise, objects are identified by their names.
 
 #### Event Type
 
@@ -342,7 +342,7 @@ SYNTAX ERROR: Invalid modified assignment, or an attempt was made to change name
 #### Specifying the Event property using `⎕WC` and `⎕WS`
 
 
-When you set the Event property using `⎕WC` and `⎕WS` you define the actions for the event types that you specify in the argument, leaving the actions for all other event types unchanged. When you create an object with `⎕WC`, all unspecified event types will be unhandled; i.e. those events will perform the default processing. However, when you specify the action for a new event type using `⎕WS`, any actions previously defined for other event types will remain as they were.
+When you set the Event property using `⎕WC` and `⎕WS` you define the actions for the event types that you specify in the argument, leaving the actions for all other event types unchanged. When you create an object with `⎕WC`, all unspecified event types will be unhandled; that is, those events will perform the default processing. However, when you specify the action for a new event type using `⎕WS`, any actions previously defined for other event types will remain as they were.
 
 
 #### Examples using Event Names

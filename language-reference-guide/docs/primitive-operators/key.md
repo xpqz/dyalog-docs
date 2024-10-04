@@ -32,7 +32,7 @@ Key is similar to the GROUP BY clause in SQL.
 <h2 class="example">Example</h2>
 
 
-In this example, both arrays are vectors so their major cells are their elements. The function `{⍺':'⍵}` is applied between the unique elements in `suits` (`'Spades' 'Hearts' 'Clubs'`) and the elements in `cards` grouped according to their corresponding elements in `suits`, i.e. (`'2' 'Ace'`), (`'Queen' 'Jack'`) and (`,'4'`).
+In this example, both arrays are vectors so their major cells are their elements. The function `{⍺':'⍵}` is applied between the unique elements in `suits` (`'Spades' 'Hearts' 'Clubs'`) and the elements in `cards` grouped according to their corresponding elements in `suits`, that is, (`'2' 'Ace'`), (`'Queen' 'Jack'`) and (`,'4'`).
 ```apl
       cards←'2' 'Queen' 'Ace' '4' 'Jack'
       suits←'Spades' 'Hearts' 'Spades' 'Clubs' 'Hearts'

@@ -118,7 +118,7 @@ Similarly, `EG1[32]` defines the `BorderStyle` property of the form using the `F
 
 ## Example 2
 
-Functions `EG2` and `EG2A` illustrate how the Each operator (`¨`) and the extended namespace reference syntax in Dyalog APL may be used to produce more succinct, and no less readable, code.
+Functions `EG2` and `EG2A` illustrate how the Each operator (`¨`) and the extended namespace reference syntax in Dyalog may be used to produce more succinct, and no less readable, code.
 ```apl
      ∇ EG2;form1;label1;textBox1;true;false;⎕USING;Z
 [1]    ⎕USING←,⊂'System.Windows.Forms,

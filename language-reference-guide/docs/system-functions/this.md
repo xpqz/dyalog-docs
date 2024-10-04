@@ -7,7 +7,7 @@
 
 
 
-`⎕THIS` returns a reference to the current namespace, i.e. to the space in which it is referenced.
+`⎕THIS` returns a reference to the current namespace, that is, to the space in which it is referenced.
 
 
 If `NC9` is a reference to any object whose name-class is `9`, then:

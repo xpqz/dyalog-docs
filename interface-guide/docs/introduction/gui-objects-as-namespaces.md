@@ -80,7 +80,7 @@ You can also make `CHANGE` a callback function for the two Buttons.
       DOWN.onSelect←'CHANGE' ¯1
 ```
 
-Notice that because you were in the `F1.CH` namespace when you made this association, the event will fire the function `CHANGE` in the `F1.CH` namespace and, furthermore, it will execute it within that namespace. Hence the names referenced by the function are the local names, i.e. the variable `COUNT` and the Label `CTR`, within that namespace.
+Notice that because you were in the `F1.CH` namespace when you made this association, the event will fire the function `CHANGE` in the `F1.CH` namespace and, furthermore, it will execute it within that namespace. Hence the names referenced by the function are the local names, that is, the variable `COUNT` and the Label `CTR`, within that namespace.
 
 So if you now switch back to the outer workspace
 ```apl

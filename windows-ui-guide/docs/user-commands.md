@@ -1,6 +1,6 @@
 <h1> User Commands</h1>
 
-Dyalog APL includes a mechanism to define *User Commands*.
+Dyalog includes a mechanism to define *User Commands*.
 
 User commands are developer tools, written in APL, which can be executed without having to explicitly copy code into your workspace and/or save it in every workspace in which you want to use it.
 

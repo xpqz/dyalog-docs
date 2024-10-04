@@ -238,7 +238,7 @@ Note that a function that is simply cloned from a defined function by assignment
 ```
 
 
-Whereas, the name of a function that amalgamates a defined function with any other functions has the name-class of a Derived Function, i.e. 3.3.
+Whereas, the name of a function that amalgamates a defined function with any other functions has the name-class of a Derived Function, that is, 3.3.
 ```apl
       VMEAN←AVG∘,
       ⎕NC'AVG' 'VMEAN'

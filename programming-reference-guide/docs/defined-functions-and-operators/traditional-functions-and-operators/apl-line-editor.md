@@ -41,7 +41,7 @@ defn error
 
 ## Listing Defined Operation
 
-The `∇` symbol followed by the name of a defined operation and then by a closing `∇`, causes the display of the named operation.  Omitting the function name causes the suspended operation (i.e. the one at the top of the state indicator) to be displayed and opened for editing.
+The `∇` symbol followed by the name of a defined operation and then by a closing `∇`, causes the display of the named operation.  Omitting the function name causes the suspended operation (that is, the one at the top of the state indicator) to be displayed and opened for editing.
 
 <h4 class="example">Example</h4>
 ```apl
@@ -63,7 +63,7 @@ The `∇` symbol followed by the name of a defined operation and then by a closi
 
 Definition mode is entered by typing `∇` followed optionally by a name and editing directive.
 
-The `∇` symbol on its own causes the suspended operation (i.e.  the one at the top of the state indicator) to be displayed.  The editor then prompts for a statement or editing directive with a line-number one greater than the highest line-number in the function.  If the state indicator is empty, the system reports `defn error` and definition mode is not entered.
+The `∇` symbol on its own causes the suspended operation (that is,  the one at the top of the state indicator) to be displayed.  The editor then prompts for a statement or editing directive with a line-number one greater than the highest line-number in the function.  If the state indicator is empty, the system reports `defn error` and definition mode is not entered.
 
 The `∇` symbol followed by the name of an active defined operation causes the display of the named operation.  The editor then prompts for input as described above.  If the name given is not the name of an active referent in the workspace, the opening request is taken to be the creation of a new operation as described in paragraph 1.  If the name refers to a pendent operation, the editor issues the message `warning pendent operation` prior to displaying the operation.  If the name refers to a locked operation, the system reports defn error and definition mode is not entered.
 

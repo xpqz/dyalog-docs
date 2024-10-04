@@ -47,7 +47,7 @@ C:\Program Files\Dyalog\Dyalog APL 15.0 Unicode\Samples\asp.net\webservices\bin\
 
 ```
 
-Select the *Export…* item from the Session *File* menu, and save the assembly as `eg2.dll` in the same directory, i.e. `samples\asp.net\webservices\bin`.
+Select the *Export…* item from the Session *File* menu, and save the assembly as `eg2.dll` in the same directory, that is, `samples\asp.net\webservices\bin`.
 
 ![eg2_2](../img/eg2-2.png)
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A configuration file is an optional text file containing configuration parameters and their values. It may cascade, i.e. it can extend (inherit) configuration values from other configuration files, and supplement and/or override them.
+A configuration file is an optional text file containing configuration parameters and their values. It may cascade, that is, it can extend (inherit) configuration values from other configuration files, and supplement and/or override them.
 
 Configuration files use JSON5 (a superset of standard JSON) syntax, as described below. These files are portable across all systems supported by Dyalog.
 

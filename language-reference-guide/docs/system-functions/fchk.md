@@ -23,7 +23,7 @@ Options for `⎕FCHK` are specified using the Variant operator `⍠` or by the o
 
 In either case, the default behaviour is as follows:
 
-1. If the file appears to have been cleanly untied previously, return `⍬`, i.e. report that the file is good.
+1. If the file appears to have been cleanly untied previously, return `⍬`, that is, report that the file is good.
 2. Otherwise, validate the file and return the appropriate result. If the file is corrupt, no attempt is made to repair it.
 
 
@@ -122,7 +122,7 @@ Following a *repair* of the file, the result indicates those components that cou
 
 
 
-Repair can recover only check-summed components from the file, i.e. only those components that were written with the checksum option enabled (see ["File Properties: "](fprops.md)).
+Repair can recover only check-summed components from the file, that is, only those components that were written with the checksum option enabled (see ["File Properties: "](fprops.md)).
 
 
 Following an operating system crash, repair may result in one or more individual components being rolled back to a previous version or not recovered at all, unless Journaling levels 2 or 3 were also set when these components were written.

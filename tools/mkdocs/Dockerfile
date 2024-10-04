@@ -8,7 +8,6 @@ RUN pip install \
     mkdocs-material \
     mkdocs-macros-plugin \
     mkdocs-monorepo-plugin \
-    mkdocs-toc-plugin \
     mkdocs-site-urls \
     mkdocs-caption \
     markdown-tables-extended

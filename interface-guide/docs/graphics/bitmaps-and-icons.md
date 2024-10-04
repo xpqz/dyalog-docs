@@ -45,7 +45,7 @@ Thus the example above can be achieved using a single array `CBITS` as follows:
       'BM' ⎕WC 'Bitmap' ('CBits' CBITS)
 ```
 
-While it is possible to define bitmaps by creating appropriate APL arrays, it is likely that you will load them from file, e.g.
+While it is possible to define bitmaps by creating appropriate APL arrays, it is likely that you will load them from file. For example:
 ```apl
       'BM' ⎕WC 'Bitmap' (ROOT,'\WS\CARS')
       PIX CM ← 'BM' ⎕WG 'Bits' 'CMap'

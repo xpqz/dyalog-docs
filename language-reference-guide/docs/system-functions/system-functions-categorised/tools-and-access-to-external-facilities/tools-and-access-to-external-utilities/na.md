@@ -461,9 +461,9 @@ The function when called can then decode the pointer arguments appropriately usi
 
 Under Windows, most library functions that take character arguments, or return character results have two forms: one Unicode (Wide) and one ANSI. For example, a function such as `MessageBox()`, has two forms `MessageBoxA()` and `MessageBoxW()`. The `A` stands for ANSI (1-byte) characters, and the `W` for wide (2-byte Unicode) characters.
 
-It is essential that you associate the form of the library function that is appropriate for the Dyalog Edition you are using, i.e. `MessageBoxA()` for the Classic Edition, but `MessageBoxW()` for the Unicode Edition.
+It is essential that you associate the form of the library function that is appropriate for the Dyalog Edition you are using, that is, `MessageBoxA()` for the Classic Edition, but `MessageBoxW()` for the Unicode Edition.
 
-Whilst this is convenient it is not complete. It is adequate for character arrays that consist of characters from UCS-2 (i.e. those that will fit in an array with a `⎕DR` of 80 or 160). If a more complete support is required then the W form of the function would be required and explicit use of UTF16 specified.
+Whilst this is convenient it is not complete. It is adequate for character arrays that consist of characters from UCS-2 (that is, those that will fit in an array with a `⎕DR` of 80 or 160). If a more complete support is required then the W form of the function would be required and explicit use of UTF16 specified.
 
 To simplify writing portable code for both Editions, you may specify the character `*` instead of `A` or `W` at the end of a function name. This will be replaced by `A` in the Classic Edition and `W` in the Unicode Edition.
 
@@ -771,7 +771,7 @@ There are three points to note.
 
 An alternative way of coding and using this function is to treat the second argument as an input/output array.
 
-e.g.
+For example:
 ```apl
       ⎕NA 'I User32|GetWindowText* P =0T I'
  

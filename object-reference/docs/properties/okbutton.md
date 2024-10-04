@@ -18,7 +18,7 @@ This is a Boolean property that specifies whether or not an [OK] button appears 
 
 
 
-**OKButton applies only to PocketAPL. In versions of Dyalog APL for other platforms, it has no effect.**
+**OKButton applies only to PocketAPL. In versions of Dyalog for other platforms, it has no effect.**
 
 
 OKButton may only be specified when the [Form](../objects/form.md) is created using `⎕WC`; you cannot subsequently change its value.

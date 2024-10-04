@@ -1,6 +1,6 @@
 <h1> Introduction</h1>
 
-Dyalog APL allows you to build new .NET Classes, components and controls. .NET classes created by Dyalog may be hosted by any application or programming language that supports .NET.
+Dyalog allows you to build new .NET Classes, components and controls. .NET classes created by Dyalog may be hosted by any application or programming language that supports .NET.
 
 A component is a class with emphasis on cleanup and containment and implements specific interfaces.
 

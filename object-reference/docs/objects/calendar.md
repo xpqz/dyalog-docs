@@ -35,7 +35,7 @@ The Calendar object will display as many full months as it can fit into the area
 ![cal2](../img/cal2.gif)
 
 
-The [Today](../properties/today.md) property is an [IDN](../miscellaneous/international-day-number.md) that specifies the current day. Its default value is today's date, i.e. the local date set on your computer.
+The [Today](../properties/today.md) property is an [IDN](../miscellaneous/international-day-number.md) that specifies the current day. Its default value is today's date, that is, the local date set on your computer.
 
 
 The [CircleToday](../properties/circletoday.md) property is either 0 or 1 (the default) and specifies whether or not the Today date is circled when the Calendar object is showing the corresponding month.

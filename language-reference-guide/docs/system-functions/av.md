@@ -23,7 +23,8 @@ In the Unicode Edition, the contents of `⎕AV` are defined by the system variab
       ⎕AV[48+⍳10]
 0123456789
  
-      5 52⍴12↓⎕av%'⍺⍵_abcdefghijklmnopqrstuvwxyz¯.⍬0123456789⊢¥$£¢
+      5 52⍴12↓⎕AV
+%'⍺⍵_abcdefghijklmnopqrstuvwxyz¯.⍬0123456789⊢¥$£¢
 ∆ABCDEFGHIJKLMNOPQRSTUVWXYZý·⍙ÁÂÃÇÈÊËÌÍÎÏÐÒÓÔÕÙÚÛ
 Ýþãìðòõ{€}⊣⌷¨ÀÄÅÆ⍨ÉÑÖØÜßàáâäåæçèéêëíîïñ[/⌿\⍀<≤=≥>≠∨∧
 -+÷×?∊⍴~↑↓⍳○*⌈⌊∇∘(⊂⊃∩∪⊥⊤|;,⍱⍲⍒⍋⍉⌽⊖⍟⌹!⍕⍎⍫⍪≡≢óôöø"#&´

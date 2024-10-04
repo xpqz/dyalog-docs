@@ -27,7 +27,7 @@ If `B` is a two item vector `q r`, it is implicitly extended to `r q r`. If  `B`
 If an item `k` of `B` is zero or positive it selects k-cells of the corresponding argument. If it is negative, it selects (r+k)-cells where `r` is the rank of the corresponding argument. A value of `¯1` selects major cells.  For further information, see ["Cells and Sub-arrays"](../../../programming-reference-guide/introduction/arrays/cells-and-subarrays).
 
 
-If `X` is omitted, `f` may be any monadic function that returns a result. `Y` may be any array. The Rank operator `⍤` applies function `f` successively to the sub-arrays in `Y` specified by `p` (i.e. the first item of `B`, as specified or implicitly extended).
+If `X` is omitted, `f` may be any monadic function that returns a result. `Y` may be any array. The Rank operator `⍤` applies function `f` successively to the sub-arrays in `Y` specified by `p` (that is, the first item of `B`, as specified or implicitly extended).
 
 
 If `X` is specified, it may be any array and `f` may be any dyadic function that returns a result. `Y` may be any array. In this case, the Rank operator applies function `f` successively between the sub-arrays in `X` specified by `q` and the sub-arrays in `Y` specified by `r`.
@@ -36,7 +36,7 @@ If `X` is specified, it may be any array and `f` may be any dyadic function that
 The sub-arrays of `R` are the results of the individual applications of `f`. If these results differ in rank or shape, they are extended to a common rank and shape in the manner of Mix. See [Mix](../primitive-functions/mix.md).
 
 
-Notice that it is necessary to prevent the right operand `k` binding to the right argument. This can be done using parentheses e.g. `(f⍤1)Y`. The same can be achieved using  `⊢` e.g. `f⍤1⊢Y` because `⍤` binds tighter to its right operand than `⊢` does to its left argument, and `⊢` therefore resolves to Identity.
+Notice that it is necessary to prevent the right operand `k` binding to the right argument. This can be done using parentheses, for example, `(f⍤1)Y`. The same can be achieved using  `⊢`, for example, `f⍤1⊢Y` because `⍤` binds tighter to its right operand than `⊢` does to its left argument, and `⊢` therefore resolves to Identity.
 
 ## Monadic Examples
 

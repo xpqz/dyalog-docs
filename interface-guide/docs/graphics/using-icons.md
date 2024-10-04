@@ -8,7 +8,7 @@ Firstly, you can associate an icon with a Form or so that the icon is displayed 
       'F1' ⎕WC 'Form' ('IconObj' star)
 ```
 
-The IconObj property also applies to the Root object `'.'`. This defines the icon to be displayed for your **application** as a whole when the user toggles between applications using Alt+Tab. It is used in conjunction with the Caption property which determines the description of your application that is shown alongside the icon, e.g.
+The IconObj property also applies to the Root object `'.'`. This defines the icon to be displayed for your **application** as a whole when the user toggles between applications using Alt+Tab. It is used in conjunction with the Caption property which determines the description of your application that is shown alongside the icon. For example:
 ```apl
       'MYIcon' ⎕WC 'Icon' ...
       '.' ⎕WS ('IconObj' MYIcon) ('Caption' 'My System')

@@ -20,7 +20,7 @@ The ReportImageIndex property is an integer scalar or matrix  that specifies the
 If it is a matrix, its first column specifies the indices of the icons to be displayed against the [Items](items.md) of the [ListView](../objects/listview.md), overriding the icons specified by [ImageIndex](imageindex.md), and its subsequent columns specify the indices of the icons to be displayed against the elements of [ReportInfo](reportinfo.md).
 
 
-i.e. if non-scalar, `(⍴ReportImageIndex)←→(0 1+⍴ReportInfo)`
+That is, if non-scalar, `(⍴ReportImageIndex)←→(0 1+⍴ReportInfo)`
 
 
 Each  element of ReportImageIndex specifies an index into the [ImageList](../objects/imagelist.md) object specified by the [ImageListObj](imagelistobj.md) property.

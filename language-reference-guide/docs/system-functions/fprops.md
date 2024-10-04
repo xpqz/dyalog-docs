@@ -142,7 +142,7 @@ This recommendation is given for the following reasons:
 Components are compressed using the *LZ4* compressor which delivers a medium level of compression, but is considered to be very fast compared to other algorithms.
 
 
-Compression is intended to deliver a performance gain reading and writing large components on fast computers with slow (e.g. network) file access. Conversely, on a slow computer with fast file access compression may actually reduce read/write performance. For this reason it is optional at the component level.
+Compression is intended to deliver a performance gain reading and writing large components on fast computers with slow (for example, network) file access. Conversely, on a slow computer with fast file access compression may actually reduce read/write performance. For this reason it is optional at the component level.
 
 
 The default for the `'Z'` property is 0 which means no compression; 1 means compression. When written, components are compressed or not according to the current value of the `'Z'` property. Changing this property does not change any components already in the file.

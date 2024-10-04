@@ -228,13 +228,13 @@ There are 3 options which may be specified using the Variant operator `⍠` (rec
 |UnknownEntity           |unknown-entity                |
 
 
-The values of each option are tabulated below. In each case the value of the option for Variant is given first, followed by its equivalent for the optional left argument in brackets; e.g. **UnknownEntity (unknown-entity)**.
+The values of each option are tabulated below. In each case the value of the option for Variant is given first, followed by its equivalent for the optional left argument in brackets; for example, **UnknownEntity (unknown-entity)**.
 
 
 Note that the default value is shown first, and that the option names and values are case-sensitive.
 
 
-If options are specified using the optional left argument,  `X` specifies a set of option/value pairs, each of which is a character vector. `X` may be a 2-element vector, or a vector of 2-element character vectors. In the examples below, this method is illustrated by the equivalent expression written as a comment, following the recommended approach using the Variant operator `⍠`. i.e.
+If options are specified using the optional left argument,  `X` specifies a set of option/value pairs, each of which is a character vector. `X` can be a 2-element vector, or a vector of 2-element character vectors. In the examples below, this method is illustrated by the equivalent expression written as a comment, following the recommended approach using the Variant operator `⍠`:
 ```apl
 
       ]display (⎕XML⍠'Whitespace' 'Strip')eg

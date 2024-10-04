@@ -63,7 +63,7 @@ The `:Class` statement starts the definition of a new class and specifies its na
 
 The three `:Field` declaration statements specify the names and data types of three public fields. The `Public` attributes are necessary to make the fields visible to methods within the `LoanService` class as a whole, as well as to external clients.
 
-The `Periods` field is defined to be an array of integers; the `InterestRates` field an array of `Double`. Both these arrays are 1-dimensional, i.e. vectors. These will contain the numbers of years, and the different interest rates, to which the repayments matrix applies.
+The `Periods` field is defined to be an array of integers; the `InterestRates` field an array of `Double`. Both these arrays are 1-dimensional, that is, vectors. These will contain the numbers of years, and the different interest rates, to which the repayments matrix applies.
 
 Notice however that `Payments` is also defined to be 1-dimensional when in fact it is, more naturally, a 2-dimesional matrix. The reason for this is that, currently, Web Services do not support multi-dimensional arrays. This is a .NET restriction and not a Dyalog restriction.
 

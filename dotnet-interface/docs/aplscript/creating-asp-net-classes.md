@@ -1,6 +1,6 @@
 <h1> Creating ASP.NET Classes with APLScript</h1>
 
-As mentioned previously, the original purpose of APLScript was to provide the ability to write ASP.NET Web Pages and Web Services in Dyalog APL. Both these applications are based upon script files.
+As mentioned previously, the original purpose of APLScript was to provide the ability to write ASP.NET Web Pages and Web Services in Dyalog. Both these applications are based upon script files.
 
 ## Web Page Layout
 
@@ -52,8 +52,8 @@ ASP.NET associates the compiled assembly with the script file, and only recompil
 
 ASP.NET does not itself compile a script; it delegates this task to a specialised compiler that is associated with the language declared in the script. This association is made either in the application's web.config file or in the global `machine.config` file. Dyalog Installs a default web.config file which includes these settings in the `samples\asp.net` folder.
 
-The `APLScript` compiler is itself written in Dyalog APL.
+The `APLScript` compiler is itself written in Dyalog.
 
 Although the compilation process takes some time, it is typically only performed once, so the performance of an `APLScript` Web Service or Web Page is not compromised. Once it has been compiled, ASP.NET redirects all subsequent requests for an `APLScript` to its compiled assembly.
 
-Please note that the use of the word *compile* in this process does not imply that your APL code is actually compiled into Microsoft Intermediate Language (MSIL). Although the process does in fact generate *some* MSIL, your APL code will still be interpreted by the Dyalog APL DLL engine at run-time. The word *compile* is used only to be consistent with the messages displayed by ASP.NET when it first processes the script.
+Please note that the use of the word *compile* in this process does not imply that your APL code is actually compiled into Microsoft Intermediate Language (MSIL). Although the process does in fact generate *some* MSIL, your APL code will still be interpreted by the Dyalog DLL engine at run-time. The word *compile* is used only to be consistent with the messages displayed by ASP.NET when it first processes the script.

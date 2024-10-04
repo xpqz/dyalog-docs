@@ -72,7 +72,7 @@ If there are more rows than columns in the right argument, the least squares sol
 13
       y ⌹ x
 3J0.000011066 4J¯0.000018499 5J0.000005745 6J0.000050328
-      ⍝ i.e. y⌹x recovered the coefficients 3 4 5 6
+      ⍝ that is, y⌹x recovered the coefficients 3 4 5 6
 ```
 
 

@@ -28,11 +28,11 @@ The `Render` method defined by the `System.Web.UI.Control` base class is `void` 
 
 In APL terms, the argument to our `Render` function, `output`, will be a namespace reference, and the function can simply call its `WriteLine` method with a character vector argument. This argument can contain any valid HTML string and defines the appearance of the `SimpleCtl` control.
 
-Using the `:Signature` statement, the `Render` function is defined to have the same syntax as the method it overrides, i.e. it does not return a result  `void` and takes a single parameter of type `HtmlTextWriter`. Note that to successfully replace the base class method, the `Render` function must have exactly this *:Signature*.
+Using the `:Signature` statement, the `Render` function is defined to have the same syntax as the method it overrides, that is, it does not return a result  `void` and takes a single parameter of type `HtmlTextWriter`. Note that to successfully replace the base class method, the `Render` function must have exactly this *:Signature*.
 
 ## Using SimpleCtl
 
-Our `SimpleCtl` control may now be included in any .NET Web Page from which `temp.dll` is accessible. The file `samples\asp.net\temp\Simple.aspx` is simply an example. The fact that this control is written in Dyalog APL is immaterial.
+Our `SimpleCtl` control may now be included in any .NET Web Page from which `temp.dll` is accessible. The file `samples\asp.net\temp\Simple.aspx` is simply an example. The fact that this control is written in Dyalog is immaterial.
 ```apl
 <%@ Register TagPrefix="Dyalog"
              Namespace="DyalogSamples" Assembly="temp" %>

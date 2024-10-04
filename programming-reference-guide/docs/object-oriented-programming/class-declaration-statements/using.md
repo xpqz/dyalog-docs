@@ -25,4 +25,4 @@ or
 
 `:Using ,mscorlib.dll`
 
-i.e. specify an empty namespace name followed by no assembly, or followed by the default assembly, which is always loaded.
+that is, specify an empty namespace name followed by no assembly, or followed by the default assembly, which is always loaded.

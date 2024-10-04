@@ -6,7 +6,7 @@ Each method is exposed as a function with the same name (the synchronous version
 
 The `Beginxxx` functions take two additional parameters; a delegate class that represents a callback function and a state parameter.
 
-To initiate the call, you execute the `Beginxxx` method using the standard parameters followed by two objects. The first is an object of type `System.AsyncCallback` that represents an asynchronous callback, i.e. a callback to be invoked when the asynchronous call is complete. The second is an object which is used to supply extra information. We will see how callbacks are used later in this section. If you are not using a callback, these items should be null object references. You can specify a reference to a null object using the expression `(⎕NS'')`. For example, using the `LoanService` sample as above:
+To initiate the call, you execute the `Beginxxx` method using the standard parameters followed by two objects. The first is an object of type `System.AsyncCallback` that represents an asynchronous callback, that is, a callback to be invoked when the asynchronous call is complete. The second is an object which is used to supply extra information. We will see how callbacks are used later in this section. If you are not using a callback, these items should be null object references. You can specify a reference to a null object using the expression `(⎕NS'')`. For example, using the `LoanService` sample as above:
 ```apl
       A←LN.BeginCalcPayments 10000 16 10 12
                              9(⎕NS'')(⎕NS'')
