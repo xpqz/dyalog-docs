@@ -1,6 +1,6 @@
 # Tools for Dyalog documentation authors
 
-The `tools/` directory contains Docker-based tools for Dyalog's documentation authors. You will need a working installation of [Docker](https://www.docker.com/products/docker-desktop/). We use the `docker-compose` orchestration tool to bundle up a set of containers that are useful for documentation authors who do not wish to keep a local Python environmment.
+The `tools/` directory contains Docker-based tools for Dyalog's documentation authors. You will need a working installation of [Docker](https://www.docker.com/products/docker-desktop/). We use the `docker-compose` orchestration tool to bundle up a set of containers that are useful for documentation authors who do not wish to keep a local Python environment.
 
 Note: the directory settings can be stashed in a `.env` file; see [below](#the-env-file).
 
@@ -15,16 +15,16 @@ docker-compose up [--build][--remove-orphans] mkdocs-server
 
 for example, for the whole lot, do:
 ```shell
-export DOCS_DIR=/Users/stefan/work/dyalog-docs/documentation
+export DOCS_DIR=/Users/stefan/work/documentation
 docker-compose up mkdocs-server
 ```
 and for a particular set,
 ```shell
-export DOCS_DIR=/Users/stefan/work/dyalog-docs/documentation/language-reference-guide/
+export DOCS_DIR=/Users/stefan/work/documentation/language-reference-guide/
 docker-compose up mkdocs-server
 ```
 
-Visit [the preview page](http://0.0.0.0:8000/) on http://0.0.0.0:8000/
+Visit [the preview page](http://localhost:8000/) on http://localhost:8000/
 
 For individual documents, this is pretty swift, and subsequent source changes will be reflected live.
 
@@ -41,17 +41,17 @@ docker-compose down
 
 Note: this is normally a job for the build pipeline and final testing.
 
-[CHM](https://en.wikipedia.org/wiki/Microsoft_Compiled_HTML_Help) is the long deprecated, but still widely used, Microsoft format for off-line help. We bundle our documentation as a CHM-file with the Windows build of the interpreter.
+[CHM](https://en.wikipedia.org/wiki/Microsoft_Compiled_HTML_Help) is the still widely used, Microsoft format for off-line help. We bundle our documentation as a CHM-file with the Windows build of the interpreter.
 
 To render the CHM file, do:
 ```shell
-export DOCS_DIR=/Users/stefan/work/dyalog-docs/documentation
-export CHM_OUTPUT_DIR=/Users/stefan/work/dyalog-docs/documentation/tools/project
+export DOCS_DIR=/Users/stefan/work/documentation
+export CHM_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
 docker-compose run [--build]  mkdocs2chm
 ```
 which produces `$CHM_OUTPUT_DIR/dyalog.chm` (and several other build artefacts useful for troubleshooting).
 
-NOTE: you want the `DOCS_DIR` variable to point to the top level documentation directory, not a sub-directory for one of the constituent parts (making a CHM-file for a single document makes no sense). 
+> **Note** you want the `DOCS_DIR` variable to point to the top level documentation directory, not a sub-directory for one of the constituent parts (making a CHM-file for a single document makes no sense). 
 
 ## Rendering PDFs (experimental)
 
@@ -71,14 +71,37 @@ A successful run will create two files: the .pdf-file and also the merged .htm-f
 
 ## The .env file
 
-You can gather the environment variable settings into a `.env` file which will be read by `docker-compose`. Create a file called `.env` in the `tools/` directory. There is a file `.env.template` included in the reposiory. Here's mine:
+You can gather the environment variable settings into a `.env` file which will be read by `docker-compose`. Create a file called `.env` in the `tools/` directory. There is a file `.env.template` included in the repository. Here's mine:
 
 ```
-DOCS_DIR=/Users/stefan/work/dyalog-docs/documentation
-CHM_OUTPUT_DIR=/Users/stefan/work/dyalog-docs/documentation/tools/project
-PDF_OUTPUT_DIR=/Users/stefan/work/dyalog-docs/documentation/tools/project
+DOCS_DIR=/Users/stefan/work/documentation
+CHM_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
+PDF_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
 ```
 
+## Running Docker on Windows
+
+To run `docker-compose up` on Windows, you'll need to have `Docker Desktop` for Windows installed and
+running. `Docker Desktop` includes both `Docker` and `Docker Compose`.
+
+**Install Docker Desktop for Windows**
+
+1. Download and run the [Docker Desktop installer](https://docs.docker.com/desktop/install/windows-install/) and follow
+   the prompts to complete the installation.
+2. `Docker Desktop` will require you to enable the [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) feature
+   and install a Linux kernel update package if you're on Windows 10. Follow the installation guide provided by
+   the `Docker` installer.
+3. After installation, run `Docker Desktop`. You might need to log in with your Docker account.
+
+**Open a terminal**
+
+1. You can use either Command Prompt (cmd) or PowerShell to run Docker commands on Windows.
+2. Use the `cd` command to go to the directory containing the `docker-compose.yml` file.
+3. Run `docker-compose up`. This command reads the `docker-compose.yml` file in the current directory, builds the images
+   if they don't exist, and starts the containers as specified in the file.
+4. If you've made changes to your `Dockerfile` or Docker Compose configuration and want to rebuild the images, you can
+   use `docker-compose up --build mkdocs-server`.
+   
 ## APL-based tools
 
 ### BuildGUI
@@ -89,8 +112,7 @@ Note:
 2. The code can only be run on Windows.
 
 The main purpose of the code herein is to generate the cross-reference tables present in the `Object Reference Guide`. In
-all likelihood, this is now fairly static, but changes do still occasionally happen. The code was written a long time ago, before
-Dyalog contained, for example, `⎕XML`. There are a few other, related functions in present, but only the cross-references generation has been ported to the new format for now.
+all likelihood, this is now fairly static, but changes do still occasionally happen. The code was written a long time ago, before Dyalog contained, for example, `⎕XML`. There are a few other, related functions in present, but only the cross-references generation has been ported to the new format for now.
 
 The code has been left as-is, with the following exceptions:
 
@@ -101,7 +123,7 @@ Additionally, two new functions have been added:
 
 1. `NewBuildGUI`: the new entry point, serving the same purpose as `BuildGUI`, but not writing entries into a
    Table-of-Contents file, and not writing stubbed entries of new object.
-2. `NewWriteMembers`: analogous to `WriteMembers`, creating the actual crossreference tables, but writing
+2. `NewWriteMembers`: analogous to `WriteMembers`, creating the actual cross-reference tables, but writing
    Markdown instead of XML. This function will sort the tables it generates in col-major order. The old code generated
    tables that were occasionally not sorted at all.
 
@@ -111,9 +133,6 @@ To run this code, say
 files ← NewBuildGUI '/some/path/to/your/chosen/dir/here'
 ```
 
-Note that the old `BuildGUI` also takes a left arg 0 for "run" and 1 for "dry run". The old version was intended to
-write straight to the documentation repository, but we probably don't need to do that with the new one: write out the
-files to a fresh directory, do a diff against the existing, and integrate manually in the rare cases that something
-changed. 
+Note that the old `BuildGUI` also takes a left arg 0 for "run" and 1 for "dry run". Write out the files to a fresh directory, do a diff against the existing, and integrate manually in the rare cases that something changed. 
 
 We don't envisage that this will need doing as part of the day-to-day documentation authoring process, but something that will be run once per major version release. 
