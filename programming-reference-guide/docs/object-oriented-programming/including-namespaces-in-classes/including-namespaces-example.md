@@ -1,4 +1,4 @@
-<h1 class="example">Example</h1>
+<h1 class="heading"><span class="name">Example</span></h1>
 
 In this example, Class `Penguin` inherits from `Animal` and includes functions from the plain Namespaces `BirdStuff` and `FishStuff`.
 ```apl

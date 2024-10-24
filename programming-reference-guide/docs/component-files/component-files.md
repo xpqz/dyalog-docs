@@ -1,4 +1,4 @@
-<h1> Component Files</h1>
+<h1 class="heading"><span class="name">Component Files</span></h1>
 
 ## Overview
 
@@ -47,8 +47,7 @@ Under Windows, this is a number which is defined by the **aplnid** parameter.   
 ## Permission Code
 
 This is an integer representation of a Boolean mask. Each bit in the mask indicates whether or not a particular file operation is permitted as follows:
-```apl
-
+```other
 ┌──┬──┬──┬──┬──┬──┬─┬─┬─┬─┬─┬─┬─┬─┬─┐ Bit No.
 │15│14│13│12│11│10│9│8│7│6│5│4│3│2│1│
 └──┴──┴──┴──┴──┴──┴─┴─┴─┴─┴─┴─┴─┴─┴─┘  File      Access
@@ -151,7 +150,7 @@ Let us suppose that you have written an APL system that builds a personnel datab
 
 Then the following APL expressions can be used to access the database:
 
-### Example 1
+<h2 class="example">Example 1</h2>
 
 Show record 2
 ```apl
@@ -163,7 +162,7 @@ Show record 2
 '∊-------------------------'
 ```
 
-### Example 2
+<h2 class="example">Example 2</h2>
 
 How many people in the database?
 ```apl
@@ -171,14 +170,14 @@ How many people in the database?
      123
 ```
 
-### Example 3
+<h2 class="example">Example 3</h2>
 
 Update Pauline's age
 ```apl
            (2 2⊃DATA)←16
 ```
 
-### Example 4
+<h2 class="example">Example 4</h2>
 
 Add a new record to the database
 ```apl
@@ -201,7 +200,7 @@ Now write the data to the file. We could write a function that loops to do this,
 
 Now we'll try our previous examples using this file.
 
-### Example 1
+<h2 class="example">Example 1</h2>
 
 Show record 2
 ```apl
@@ -214,7 +213,7 @@ Show record 2
 
 ```
 
-### Example 2
+<h2 class="example">Example 2</h2>
 
 How many people in our database?
 ```apl
@@ -228,7 +227,7 @@ How many people in our database?
 
 The fourth element of `⎕FSIZE` indicates the file size limit. Dyalog APL does not impose a file size limit, although your operating system may do so, but the concept is retained in order to make this version of Component Files compatible with others.
 
-### Example 3
+<h2 class="example">Example 3</h2>
 
 Update Pauline's age
 ```apl
@@ -237,21 +236,21 @@ Update Pauline's age
         REC ⎕FREPLACE 1 2      ⍝ And replace component
 ```
 
-### Example 4
+<h2 class="example">Example 4</h2>
 
 Add a new record
 ```apl
        ('Janet' 25 'Basingstoke') ⎕FAPPEND 1
 ```
 
-### Example 5
+<h2 class="example">Example 5</h2>
 
 Rename our file
 ```apl
        'PERSONNEL' ⎕FRENAME 1
 ```
 
-### Example 6
+<h2 class="example">Example 6</h2>
 
 Tie an existing file; give file name and have the interpreter allocate the next available tie number.
 ```apl
@@ -259,14 +258,14 @@ Tie an existing file; give file name and have the interpreter allocate the next 
   2
 ```
 
-### Example 7
+<h2 class="example">Example 7</h2>
 
 Give everyone access to the PERSONNEL file
 ```apl
        (1 3⍴0 ¯1 0)⎕FSTAC 1
 ```
 
-### Example 8
+<h2 class="example">Example 8</h2>
 
 Set different permissions on `SALARIES`.
 ```apl
@@ -279,7 +278,7 @@ Set different permissions on `SALARIES`.
        AM ⎕FSTAC 2        ⍝ Store access matrix
 ```
 
-### Example 9
+<h2 class="example">Example 9</h2>
 
 Report on file names and associated numbers
 ```apl
@@ -288,7 +287,7 @@ Report on file names and associated numbers
  SALARIES   2
 ```
 
-### Example 10
+<h2 class="example">Example 10</h2>
 
 Untie all files
 ```apl

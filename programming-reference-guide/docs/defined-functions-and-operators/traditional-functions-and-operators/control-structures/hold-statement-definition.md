@@ -1,4 +1,4 @@
-<h1> :Hold Statement</h1>
+<h1 class="heading"><span class="name">:Hold Statement</span></h1>
 
 ```
  

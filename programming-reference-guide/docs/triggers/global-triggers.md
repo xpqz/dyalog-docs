@@ -1,4 +1,4 @@
-<h1> Global Triggers</h1>
+<h1 class="heading"><span class="name">Global Triggers</span></h1>
 
 A global Trigger is a function that triggers on any assignment to a global variable in the same namespace. Global Triggers may be disabled and re-enabled using `2007⌶`. See [Disable Global Triggers](../../../language-reference-guide/the-i-beam-operator/disable-global-triggers).
 
@@ -55,12 +55,11 @@ The argument to the trigger function is an instance of the internal class `Trigg
 
 ```
 
-# Notes
-
-- like other Triggers,  only the most recently fixed global trigger function will apply and be called on assignment to a global variable. 
-- global triggers do not apply to local names nor to semi-globals (names which are localised further up the stack).
-- an assignment to a global variable will fire both its specific trigger (if defined) and the global trigger. However, the order of execution is undefined.
-- do not use an argument name for your trigger function that may conflict with a global variable name in the namespace.
+!!! note
+     - like other Triggers, only the most recently fixed global trigger function will apply and be called on assignment to a global variable. 
+     - global triggers do not apply to local names nor to semi-globals (names which are localised further up the stack).
+     - an assignment to a global variable will fire both its specific trigger (if defined) and the global trigger. However, the order of execution is undefined.
+     - do not use an argument name for your trigger function that may conflict with a global variable name in the namespace.
 
 ## Further Example
 

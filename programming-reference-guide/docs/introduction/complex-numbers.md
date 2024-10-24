@@ -1,4 +1,4 @@
-<h1> Complex Numbers</h1>
+<h1 class="heading"><span class="name">Complex Numbers</span></h1>
 
 A complex number is a number consisting of a real and an imaginary part which is usually written in the form a+ bi, where a and b are real numbers, and i is the standard imaginary unit with the property i<sup>2</sup>= −1.
 
@@ -87,7 +87,9 @@ Note that `9○Y` and `11○Y` return the real and imaginary parts of `Y` respec
 
 In comparing two complex numbers `X` and `Y,` `X=Y` is 1 if the magnitude of `X-Y` does not exceed `⎕CT` times the larger of the magnitudes of `X` and `Y`; geometrically, `X=Y` if the number smaller in magnitude lies on or within a circle centred on the one with larger magnitude, having radius `⎕CT` times the larger magnitude.
 
-![comparison](../img/comparison.png) As with real values, complex values sufficiently close to Boolean or integral values are accepted by functions which require Boolean or integral values. For example:
+![comparison](../img/comparison.png)
+
+As with real values, complex values sufficiently close to Boolean or integral values are accepted by functions which require Boolean or integral values. For example:
 ```apl
       2j1e¯14 ⍴ 12
 12 12

@@ -1,4 +1,4 @@
-<h1> :Attribute Statement</h1>
+<h1 class="heading"><span class="name">:Attribute Statement</span></h1>
 
 ```apl
 :Attribute <Name> [ConstructorArgs]

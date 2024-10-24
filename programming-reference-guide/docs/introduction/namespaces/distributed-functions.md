@@ -1,4 +1,4 @@
-<h1> Distributed Functions</h1>
+<h1 class="heading"><span class="name">Distributed Functions</span></h1>
 
 Namespace ref array expansion syntax applies to functions too.
 ```apl

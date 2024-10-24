@@ -324,16 +324,16 @@ the result of the bind is shown in this table:
 
 where
 
-**A**: Array[^1], for example, `0 1 2 'hello' ⍺ ⍵` </br>
-**F**: Function[^1] {primitive | defined | derived | system}, for example, `+ - +.× myfn ⎕CR {⍺ ⍵}` </br>
-**H**: Hybrid[^1] function/operator, that is, `/ ⌿ \ ⍀` </br>
-**AF**:   Bound left argument, for example, `2+` </br>
-**MOP**: Monadic operator[^1], for example, `¨ ⍨ &` </br>
-**DOP**:   Dyadic operator, for example, `⍣ ⍠ ⍤ ⌸` </br>
-**JOT**:   Jot, that is, compose/null operand `∘` </br>
-**DOT**:   Dot, that is, reference/product `.` </br>
-**IDX**:   square-bracketed expression, for example, `[⍺+⍳⍵]` </br>
-**ERR**:   Error
+- **A**: Array[^1], for example, `0 1 2 'hello' ⍺ ⍵`
+- **F**: Function[^1] {primitive | defined | derived | system}, for example, `+ - +.× myfn ⎕CR {⍺ ⍵}`
+- **H**: Hybrid[^1] function/operator, that is, `/ ⌿ \ ⍀`
+- **AF**: Bound left argument, for example, `2+`
+- **MOP**: Monadic operator[^1], for example, `¨ ⍨ &`
+- **DOP**: Dyadic operator, for example, `⍣ ⍠ ⍤ ⌸`
+- **JOT**: Jot, that is, compose/null operand `∘`
+- **DOT**: Dot, that is, reference/product `.`
+- **IDX**: square-bracketed expression, for example, `[⍺+⍳⍵]`
+- **ERR**: Error
 
 In this table:
 

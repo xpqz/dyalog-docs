@@ -1,4 +1,4 @@
-<h1> Triggers</h1>
+<h1 class="heading"><span class="name">Triggers</span></h1>
 
 *Triggers* provide the ability to have a function called automatically whenever a variable or a Field is assigned. Triggers are actioned by all forms of assignment (`←`), but only by assignment.
 

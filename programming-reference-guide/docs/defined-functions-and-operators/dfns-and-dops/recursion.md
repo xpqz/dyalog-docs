@@ -1,4 +1,4 @@
-<h1> Recursion</h1>
+<h1 class="heading"><span class="name">Recursion</span></h1>
 
 A recursive dfn can refer to itself using its name explicitly, but because we allow unnamed functions, we also need a special symbol for implicit self-reference: `'∇'`. For example:
 ```apl
@@ -43,7 +43,7 @@ The following example shows a rather contrived use of the second form of (operat
 
 ```
 
-# Example: Pythagorean triples
+## Example: Pythagorean triples
 
 The following sequence shows an example of combining dfns and dops in an attempt to find Pythagorean triples: `(3 4 5)(5 12 13)` ...
 ```apl

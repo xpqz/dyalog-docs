@@ -1,4 +1,4 @@
-<h1> Methods</h1>
+<h1 class="heading"><span class="name">Methods</span></h1>
 
 Methods are implemented as regular defined functions, but with some special attributes that control how they are called and where they are executed.
 
@@ -28,4 +28,4 @@ Shared methods are typically used to manipulate Shared Properties and Fields or 
 
 Instance Methods may be declared with `:Access Overridable`.
 
-A Method declared as being Overridable is replaced in situ (that is, within its own Class) by a Method of the same name that is defined in a higher Class which itself is declared with the Override keyword. See ["Superseding Base Class Methods"](superceding-base-class-methods.md).
+A Method declared as being Overridable is replaced in situ (that is, within its own Class) by a Method of the same name that is defined in a higher Class which itself is declared with the Override keyword. See [Superseding Base Class Methods](superceding-base-class-methods.md).

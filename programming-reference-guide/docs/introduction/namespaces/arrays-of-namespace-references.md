@@ -1,4 +1,4 @@
-<h1> Arrays of Namespace References</h1>
+<h1 class="heading"><span class="name">Arrays of Namespace References</span></h1>
 
 You may construct arrays of refs using strand notation, catenate (`,`) and reshape (`⍴`).
 ```apl

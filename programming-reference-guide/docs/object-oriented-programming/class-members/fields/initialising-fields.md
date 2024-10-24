@@ -1,4 +1,4 @@
-<h1> Initialising Fields</h1>
+<h1 class="heading"><span class="name">Initialising Fields</span></h1>
 
 A Field may be assigned an initial value. This can be specified by an arbitrary expression that is executed when the Class is fixed by the Editor or by `⎕FIX`.
 
@@ -28,4 +28,4 @@ Dicky
 
 Note that if a Field is ReadOnly, this is the only way that it may be assigned a value.
 
-See also: ["Shared Fields".](shared-fields.md)
+See also: [Shared Fields.](shared-fields.md)

@@ -1,4 +1,4 @@
-<h1> :Implements Statement</h1>
+<h1 class="heading"><span class="name">:Implements Statement</span></h1>
 
 The `:Implements` statement identifies the function to be one of the following types.
 ```apl

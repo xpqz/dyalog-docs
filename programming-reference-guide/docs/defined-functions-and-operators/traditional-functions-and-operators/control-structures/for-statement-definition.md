@@ -1,4 +1,4 @@
-<h1> :For Statement</h1>
+<h1 class="heading"><span class="name">:For Statement</span></h1>
 
 ```
  

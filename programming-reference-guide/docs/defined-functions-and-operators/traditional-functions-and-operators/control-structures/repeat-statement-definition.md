@@ -1,4 +1,4 @@
-<h1> :Repeat Statement</h1>
+<h1 class="heading"><span class="name">:Repeat Statement</span></h1>
 
 ```
  

@@ -1,4 +1,4 @@
-<h1> :Interface Statement</h1>
+<h1 class="heading"><span class="name">:Interface Statement</span></h1>
 
 ```apl
  :Interface <interface name>

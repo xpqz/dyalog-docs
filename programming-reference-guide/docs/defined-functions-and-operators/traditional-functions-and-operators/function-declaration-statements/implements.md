@@ -1,11 +1,4 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Implements Statement</span> <span class="command">:Implements</span></h1>
-
-
 
 The `:Implements` statement identifies the function to be one of the following types.
 ```apl
@@ -14,7 +7,6 @@ The `:Implements` statement identifies the function to be one of the following t
 :Implements Method <InterfaceName.MethodName>
 :Implements Trigger <name1><,name2,name3,...>
 :Implements Trigger *
-			
 ```
 
 

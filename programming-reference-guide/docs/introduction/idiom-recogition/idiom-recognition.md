@@ -11,6 +11,6 @@ For example, the idiom `BV/⍳⍴A` (where `BV` is a Boolean vector and `A` is a
 
 In the current Version of Dyalog APL, the expression is recognised in its entirety and processed in a single step as if it were a single primitive function. In this case, the resultant improvement in performance is between 2 and 4.5.
 
-Idiom recognition is precise; an expression that is almost identical but not exactly identical to an expression given in the ["Idiom List"](idiom-list.md) table will not be recognised.
+Idiom recognition is precise; an expression that is almost identical but not exactly identical to an expression given in the [Idiom List](idiom-list.md) table will not be recognised.
 
 For example, `⎕AV⍳` will be recognised as an idiom, but `(⎕AV)⍳` will not. Similarly, `(,)/` would not be recognized as the Join idiom.

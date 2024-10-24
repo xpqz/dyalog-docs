@@ -1,4 +1,4 @@
-<h1> GolfService Example Class</h1>
+<h1 class="heading"><span class="name">GolfService Example Class</span></h1>
 
 ```apl
 :Class GolfService

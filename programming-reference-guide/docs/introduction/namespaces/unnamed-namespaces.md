@@ -1,4 +1,4 @@
-<h1> Unnamed Namespaces</h1>
+<h1 class="heading"><span class="name">Unnamed Namespaces</span></h1>
 
 The monadic form of `⎕NS` makes a new (and unique) unnamed namespace and returns a ref to it.
 

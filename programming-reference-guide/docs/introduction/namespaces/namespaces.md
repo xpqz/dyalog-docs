@@ -1,4 +1,4 @@
-<h1> Namespaces</h1>
+<h1 class="heading"><span class="name">Namespaces</span></h1>
 
 Namespace is a (class 9) object in Dyalog APL. Namespaces are analogous to
 nested workspaces.
@@ -48,7 +48,7 @@ object oriented programming style.
 
 - Workspaces can be arranged so that there are many fewer names at each namespace level. This means that when copying objects from saved workspaces there is a much reduced chance of a clash with existing names. 
 - Utility functions in a saved workspace may be coded as a single namespace and therefore on being copied into the active workspace consume only a single name. This avoids the complexity and expense of a solution which is sometimes used in 'flat' workspaces, where such utilities dynamically fix local functions on each call.
-- In flat APL, workspace administration functions such as `WSDOC` must share names with their subject namespace. This leads to techniques for trying to avoid name clashes such as using obscure name prefixes like '`⍙⍙L1`' This problem is now virtually eliminated because such a utility can operate exclusively in its own namespace.
+- In flat APL, workspace administration functions such as `WSDOC` must share names with their subject namespace. This leads to techniques for trying to avoid name clashes such as using obscure name prefixes like `⍙⍙L1` This problem is now virtually eliminated because such a utility can operate exclusively in its own namespace.
 
 ## The programming of GUI objects is considerably simplified.
 

@@ -1,4 +1,4 @@
-<h1> Function Trains</h1>
+<h1 class="heading"><span class="name">Function Trains</span></h1>
 
 ## Introduction
 
@@ -119,7 +119,7 @@ e f g h i j k → e f(g h(i j k))     ⍝ fork(fork(fork))
 f g h i j k →   f(g h(i j k))       ⍝ atop(fork(fork))
 ```
 
-<h4 class="example">Examples</h4>
+<h3 class="example">Examples</h3>
 ```apl
       6( +,-,×,÷)2     ⍝ fork:(6+2),((6-2),((6×2),(6÷2)))
 8 4 12 3
@@ -166,7 +166,7 @@ Was -trains=box
 
 The binding strength between the items of a train is less than that of operand-operator binding. In other words, operators bind first with their function (or array) operands to form derived functions, which may then participate as items in a train.
 
-<h5 class="example">Example</h5>
+<h3 class="example">Example</h3>
 ```apl
       +⌿ ÷ ≢            ⍝ fork for mean value
 ┌─────┬─┬─┐

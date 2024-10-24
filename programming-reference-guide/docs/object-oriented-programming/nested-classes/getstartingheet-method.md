@@ -1,4 +1,4 @@
-<h1> GetStartingheet Method</h1>
+<h1 class="heading"><span class="name">GetStartingheet Method</span></h1>
 
 ```apl
     ∇ R←GetStartingSheet ARGS;CODE;COURSE;DATE;COURSECODES

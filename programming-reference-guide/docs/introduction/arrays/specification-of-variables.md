@@ -1,8 +1,8 @@
-<h1> Specification of Variables</h1>
+<h1 class="heading"><span class="name">Specification of Variables</span></h1>
 
 A variable is a named array.  An undefined name or an existing variable may be assigned an array by specification with the left arrow (`←`).
 
-<h2 class="example">Examples</h2>
+## Examples { .example }
 ```apl
       A←'CHIPS WITH EVERYTHING'
       A

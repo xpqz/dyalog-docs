@@ -1,4 +1,4 @@
-<h1> Keyed Properties</h1>
+<h1 class="heading"><span class="name">Keyed Properties</span></h1>
 
 A Keyed Property is similar to a Numbered Property except that it may **only** be accessed by indexing (so-called square-bracket indexing) and indices are not restricted to integers but may be arbitrary arrays.
 
@@ -15,4 +15,4 @@ Note too that indices **may be elided**. If `KProp` is a Keyed Property of Insta
       I1.KProp[;'One' 'Two']←10
 ```
 
-When APL calls a monadic `get` or a `set` function, it supplies an argument of type PropertyArguments,  which identifies which dimensions and indices were specified. See ["PropertyArguments Class"](../../../property-section/propertyarguments-class.md).
+When APL calls a monadic `get` or a `set` function, it supplies an argument of type PropertyArguments,  which identifies which dimensions and indices were specified. See [PropertyArguments Class](../../../property-section/propertyarguments-class.md).

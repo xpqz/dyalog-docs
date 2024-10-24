@@ -1,4 +1,4 @@
-<h1> Nested Classes</h1>
+<h1 class="heading"><span class="name">Nested Classes</span></h1>
 
 It is possible to define *Classes within Classes* (Nested Classes).
 

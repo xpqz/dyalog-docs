@@ -1,4 +1,4 @@
-<h1> GetCourses Method</h1>
+<h1 class="heading"><span class="name">GetCourses Method</span></h1>
 
 ```apl
 

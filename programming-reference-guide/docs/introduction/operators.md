@@ -1,4 +1,4 @@
-<h1> Operators</h1>
+<h1 class="heading"><span class="name">Operators</span></h1>
 
 An operator is an operation on one or two operands which produces a function called a DERIVED FUNCTION. An operand may be a function or an array.  Operators are not ambivalent.  They require either one or two operands as applicable to the particular operator.  However, the derived function may be ambivalent.  The derived function need not return a result.  Operators have higher precedence than functions.  Operators have long scope on the left.  That is, the left operand is the longest function or array expression on its left.  The left operand may be terminated by:
 
@@ -35,7 +35,7 @@ An operator is an operation on one or two operands which produces a function cal
 10
 ```
 
-# Defined Operators
+## Defined Operators
 
 Operators may be defined with the system function `⎕FX`, or with the function editor. A defined operator consists of a HEADER which identifies the syntax of the operator, and a BODY in which one or more APL statements are specified.
 

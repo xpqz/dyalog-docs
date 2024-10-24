@@ -1,4 +1,4 @@
-<h1> Penguin Class</h1>
+<h1 class="heading"><span class="name">Penguin Class</span></h1>
 
 ```apl
 :Class Penguin: Animal,BirdBehaviour,FishBehaviour

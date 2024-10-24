@@ -1,12 +1,12 @@
-<h1> Constructor Overloading</h1>
+<h1 class="heading"><span class="name">Constructor Overloading</span></h1>
 
-NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its *signature*. See [ "Namelists"](../../defined-functions-and-operators/traditional-functions-and-operators/namelists.md) for details. The [Clover Class](constructor-overload-example-class.md){: .noprint } illustrates this principle.
+NameList header syntax is used to define different versions of a Constructor each with a different number of parameters, referred to as its *signature*. See [Namelists](../../defined-functions-and-operators/traditional-functions-and-operators/namelists.md) for details. The [Clover Class](constructor-overload-example-class.md){: .noprint } illustrates this principle.
 
 In deciding which Constructor to call, APL matches the shape of the Constructor argument with the signature of each of the Constructors that are defined. If a constructor with the same number of arguments exists (remembering that 0 arguments will match a niladic Constructor), it is called. If there is no exact match, and there is a Constructor with a general signature (an un-parenthesised right argument), it is called. If no suitable constructor is found, a `LENGTH ERROR` is reported.
 
 There may be one and only one constructor with a particular signature.
 
-The only way a Constructor function should be invoked is by `⎕NEW`. See ["Base Constructors"](./base-constructors.md) for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a `SYNTAX ERROR`. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.
+The only way a Constructor function should be invoked is by `⎕NEW`. See [Base Constructors](./base-constructors.md) for further details. If you attempt to call a Constructor function  from outside its Class, it will cause a `SYNTAX ERROR`. A Constructor function should not call another Constructor function within the same Class, although it will not generate an error. This would cause the Base Constructor to be called twice, with unpredictable consequences.
 
 In the [Clover Class](constructor-overload-example-class.md){: .noprint } example Class, the following Constructors are defined:
 
