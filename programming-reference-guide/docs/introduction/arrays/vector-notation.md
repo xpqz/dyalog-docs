@@ -1,4 +1,4 @@
-<h1> Vector Notation</h1>
+<h1 class="heading"><span class="name">Vector Notation</span></h1>
 
 A series of two or more adjacent expressions results in a vector whose elements are the enclosed arrays resulting from each expression.  This is known as vector (or strand) notation. Each expression in the series may consist of one of the following:
 
@@ -11,7 +11,7 @@ A series of two or more adjacent expressions results in a vector whose elements 
 7. the name of a niladic, defined function yielding a result
 8. any other APL expression which yields a result, within parentheses
 
-<h2 class="example">Examples</h2>
+## Examples { .example }
 ```apl
       ⍴A←2 4 10
 3

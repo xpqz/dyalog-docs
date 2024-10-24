@@ -1,4 +1,4 @@
-<h1> DiaryStuff Example Namespace</h1>
+<h1 class="heading"><span class="name">DiaryStuff Example Namespace</span></h1>
 
 ```apl
 :Namespace DiaryStuff

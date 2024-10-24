@@ -1,4 +1,4 @@
-<h1> Multi-Threading language elements.</h1>
+<h1 class="heading"><span class="name">Multi-Threading Language Elements</span></h1>
 
 The following language elements are provided to support threads.
 
@@ -9,7 +9,7 @@ The following language elements are provided to support threads.
 - System commands: `)HOLDS`, `)TID`.
 - Extended `)SI` and `)SINL` display.
 
-## Running CallBack Functions as Threads
+## Running Callback Functions as Threads
 
 A callback function is associated with a particular event via the Event property of the object concerned. A callback function is executed by `⎕DQ` when the event occurs, or by `⎕NQ`.
 

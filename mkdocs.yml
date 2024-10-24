@@ -1,4 +1,5 @@
 site_name: Documentation
+repo_url: https://github.com/dyalog/documentation
 
 theme:
   favicon: 'img/favicon-32.png'

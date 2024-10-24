@@ -1,4 +1,4 @@
-<h1> Using APLMON</h1>
+<h1 class="heading"><span class="name">Using APLMON</span></h1>
 
 APLMON is enabled and disabled using the APLMON method of Root. It takes a single argument, the name of the file to which the results are to be written. If the file name is empty, APLMON is disabled.
 

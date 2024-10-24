@@ -1,4 +1,4 @@
-<h1> Namespaces and Localisation</h1>
+<h1 class="heading"><span class="name">Namespaces and Localisation</span></h1>
 
 The rules for name resolution have been generalised for namespaces.
 
@@ -8,10 +8,30 @@ With namespaces, a defined function or operator is evaluated in its 'home' names
 
 For example, if  `#.FN1`  calls  `XX.FN2`  calls  `#.FN3`  calls  `XX.FN4`, then:
 
-`FN1`:        is evaluated in `#`        can see its own dynamic local names        can see global names in `#``FN2`:        is evaluated in `XX`        can see its own dynamic local names        can see global names in `XX``FN3`:        is evaluated in `#`        can see its own dynamic local names        can see dynamic local names in `FN1`        can see global names in `#``FN4`:        is evaluated in `XX`        can see its own dynamic local names        can see dynamic local names in `FN2`        can see global names in `XX`
+- `FN1`:
+    - is evaluated in `#`
+    - can see its own dynamic local names
+    - can see global names in `#`
+
+- `FN2`:
+    - is evaluated in `XX`
+    - can see its own dynamic local names
+    - can see global names in `XX`
+
+- `FN3`:
+    - is evaluated in `#`
+    - can see its own dynamic local names
+    - can see dynamic local names in `FN1`
+    - can see global names in `#`
+
+- `FN4`:
+    - is evaluated in `XX`
+    - can see its own dynamic local names
+    - can see dynamic local names in `FN2`
+    - can see global names in `XX`
 
 The following picture illustrates how APL looks down the stack to find names:
-```apl
+```other
 
     │           │           │
     │    a+b+c  │           │ [8] h references a, b and c
@@ -38,31 +58,28 @@ The above diagram represents the SI stack, growing upwards from two namespaces `
 
 1. Function `f` in `X` localises names `a` and `b`.
 2. Function `f` references names `a`, `b` and `c`.
-```apl
-           ∇ f;a;b
-       [1]   a+b+c
-       [2]   Y.g
-```
-
-- The interpreter looks down the stack and finds local names `a` and `b` in `f`'s header and `c` in namespace `X`.
+    ```apl
+            ∇ f;a;b
+        [1]   a+b+c
+        [2]   Y.g
+    ```
+    The interpreter looks down the stack and finds local names `a` and `b` in `f`'s header and `c` in namespace `X`.
 
 1. Function `f` calls function `g` in namespace `Y`.
 2. Function `g` in `Y` localises names `a` and `c`.
 3. Function `g` references names `a`, `b` and `c`.
-```apl
-           ∇ g;a;c
-       [1]   a+b+c
-       [2]   X.h
-```
-
-- The interpreter looks down the stack and finds local names `a` and `c` in `g`'s header and `b` in namespaces `Y`.
+    ```apl
+            ∇ g;a;c
+        [1]   a+b+c
+        [2]   X.h
+    ```
+    The interpreter looks down the stack and finds local names `a` and `c` in `g`'s header and `b` in namespaces `Y`.
 
 1. Function `g` calls function `h` in namespace `X`.
 2. Function `h` in `X` localises name `a`.
 3. Function `h` references names `a`, `b` and `c`.
-```apl
-           ∇ h;a
-       [1]   a+b+c
-```
-
-- The interpreter looks down the stack and finds local name `a` in `h`'s header; `b` in `f`'s header; and `c` in namespace `X`.
+    ```apl
+            ∇ h;a
+        [1]   a+b+c
+    ```
+    The interpreter looks down the stack and finds local name `a` in `h`'s header; `b` in `f`'s header; and `c` in namespace `X`.

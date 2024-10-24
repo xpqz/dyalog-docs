@@ -1,9 +1,9 @@
-<h1> Statements</h1>
+<h1 class="heading"><span class="name">Statements</span></h1>
 
 A statement is a line of characters understood by APL.  It may be composed of:
 
 1. a LABEL (which must be followed by a colon `:`), or a CONTROL STATEMENT (which is preceded by a colon), or both, 
-2. an EXPRESSION (see ["Expressions"](../../introduction/expressions.md)),
+2. an EXPRESSION (see [Expressions](../../introduction/expressions.md)),
 3. a SEPARATOR (consisting of the diamond character `⋄` which must separate adjacent expressions),
 4. a COMMENT (which must start with the character `⍝`).
 

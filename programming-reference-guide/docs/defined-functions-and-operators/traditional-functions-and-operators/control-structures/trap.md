@@ -38,7 +38,7 @@ Note that the error trapping is in effect **only** during execution of the initi
 
 Note that the statement  `:Trap ⍬` results in no errors being trapped.
 
-<h1 class="example">Examples</h1>
+<h2 class="example">Examples</h2>
 ```apl
      ∇ lx
 [1]    :Trap 1000        ⍝ Cutback and exit on interrupt

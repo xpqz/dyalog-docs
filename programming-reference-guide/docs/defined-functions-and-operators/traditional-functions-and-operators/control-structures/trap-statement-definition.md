@@ -1,4 +1,4 @@
-<h1> :Trap Statement</h1>
+<h1 class="heading"><span class="name">:Trap Statement</span></h1>
 
 ```
  

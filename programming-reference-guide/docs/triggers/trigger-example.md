@@ -1,4 +1,4 @@
-<h1> Trigger Example</h1>
+<h1 class="heading"><span class="name">Trigger Example</span></h1>
 
 The following function displays information when the value of variables `A` or `B` changes.
 ```apl
@@ -60,4 +60,4 @@ However, the connection (between `A` and `TRIG`) remains and the Trigger Functio
  A  was      #.A
 ```
 
-See ["Trigger Fields"](../object-oriented-programming/class-members/fields/trigger-fields.md) for information on how a Field (in a Class) may be used as a Trigger.
+See [Trigger Fields](../object-oriented-programming/class-members/fields/trigger-fields.md) for information on how a Field (in a Class) may be used as a Trigger.

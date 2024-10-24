@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 A defined function is a program that takes 0, 1, or 2 arrays as **arguments** and may produce an array as a result.
 
@@ -8,5 +8,5 @@ To simplify the text, the term **operation** is used within this chapter to mean
 
 Dyalog provides two types of operations:
 
-- *Tradtional* Functions and Operators; the original user-defined functions and operators that are part of the APL standard.
+- *Traditional* Functions and Operators; the original user-defined functions and operators that are part of the APL standard.
 - Dfns and Dops which are unique to Dyalog.

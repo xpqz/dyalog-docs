@@ -1,4 +1,4 @@
-<h1> Clover Class Example</h1>
+<h1 class="heading"><span class="name">Clover Class Example</span></h1>
 
 ```apl
 :Class Clover ⍝ Constructor Overload Example

@@ -1,4 +1,4 @@
-<h1> System Errors</h1>
+<h1 class="heading"><span class="name">System Errors</span></h1>
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-<h1> Fields</h1>
+<h1 class="heading"><span class="name">Fields</span></h1>
 
 A Field behaves just like an APL variable.
 
@@ -13,4 +13,4 @@ A Field may be declared anywhere in a Class script by a `:Field` statement. This
 - the .NET type for the Field when the Class is exported as a .NET Assembly.
 - optionally, an initial value for the Field.
 
-Note that [Triggers](../../../triggers/triggers.md) may be associated with Fields. See ["Trigger Fields"](trigger-fields.md) for details.
+Note that [Triggers](../../../triggers/triggers.md) may be associated with Fields. See [Trigger Fields](trigger-fields.md) for details.

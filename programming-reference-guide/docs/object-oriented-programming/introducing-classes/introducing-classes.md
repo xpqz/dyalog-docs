@@ -1,4 +1,4 @@
-<h1> Introducing Classes</h1>
+<h1 class="heading"><span class="name">Introducing Classes</span></h1>
 
 A Class is a blueprint from which one or more *Instances* of the Class can be created (instances are sometimes also referred to as *Objects).*
 

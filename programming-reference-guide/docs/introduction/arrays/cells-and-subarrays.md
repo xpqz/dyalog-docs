@@ -1,4 +1,4 @@
-<h1> Cells and Sub-arrays</h1>
+<h1 class="heading"><span class="name">Cells and Sub-arrays</span></h1>
 
 Certain functions and operators operate on particular cells or sub-arrays of an array, which are identified and described as follows.
 
@@ -46,6 +46,6 @@ Cameron
 
 ```
 
-Using the k-cell terminology, if `r` is the rank of the array, its major cells are its  `r-1`-cells.
+Using the k-cell terminology, if `r` is the rank of the array, its major cells are its `r-1`-cells.
 
 Note that if the right operand `k` of the Rank Operator `⍤` is negative, it is interpreted as `0⌈r+k`. Therefore the value `¯1` selects the major cells of the array.

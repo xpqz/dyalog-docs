@@ -1,4 +1,4 @@
-<h1> Base Constructors</h1>
+<h1 class="heading"><span class="name">Base Constructors</span></h1>
 
 Constructors in a Class hierarchy are not inherited in the same way as other members. However, there is a mechanism for all the Classes in the Class inheritance tree to participate in the initialisation of an Instance.
 
@@ -9,7 +9,7 @@ The statement:
       :Implements Constructor :Base expr
 ```
 
-calls *a monadic* Constructor in the Base Class. The choice of Constructor depends upon the rank and shape of the result of `expr` (see ["Constructor Overloading"](constructor-overloading.md) for details).
+calls *a monadic* Constructor in the Base Class. The choice of Constructor depends upon the rank and shape of the result of `expr` (see [Constructor Overloading](constructor-overloading.md) for details).
 
 Whereas, the statement:
 ```apl
