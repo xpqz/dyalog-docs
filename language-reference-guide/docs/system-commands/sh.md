@@ -11,7 +11,7 @@ This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH`
 
 
 
-The system functions [`⎕SH`](../system-functions/execute-unix-command.md) and [`⎕CMD`](../system-functions/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see [Execute (UNIX) Command: ](../system-functions/execute-unix-command.md) and [Execute Windows Command: ](../system-functions/execute-windows-command.md).
+The system functions [`⎕SH`](../system-functions/execute-unix-command.md) and [`⎕CMD`](../system-functions/execute-windows-command.md) provide similar facilities but may be executed from within APL code. For further information, see [Execute (UNIX) Command](../system-functions/execute-unix-command.md) and [Execute Windows Command](../system-functions/execute-windows-command.md).
 
 
 `)SH` allows UNIX shell commands to be given from APL. The argument must be entered in the appropriate case (usually lower-case).  The result of the command, if any, is displayed.
@@ -37,9 +37,7 @@ The parameters CMD_PREFIX and CMD_POSTFIX may be used to execute a different she
   6179 11665660      -  0:00 sshd
 ```
 
-## Note
-
-
-This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.
+!!! note
+    This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.
 
 

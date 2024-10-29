@@ -1,36 +1,21 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Key</span> <span class="command">R←{X}f⌸Y</span></h1>
 
-
-
-**Classic Edition:**
-  the symbol `⌸` is not available in Classic Edition, and the Key operator is instead represented by `⎕U2338`.
-
+!!! note "Classic Edition"
+    The symbol `⌸` is not available in Classic Edition, and the Key operator is instead represented by `⎕U2338`.
 
 `f` may be any dyadic function that returns a result.
 
-
 If `X` is specified, it is an array whose major cells specify keys for corresponding major cells of `Y`.  The Key operator `⌸` applies the function `f` to each unique key in `X` and the major cells of `Y` having that key.
-
 
 If `X` is omitted, `Y` is an array whose major cells represent keys. In this case, the Key operator applies the function `f` to each unique key in  `Y` and the  elements of `⍳≢Y` having that key.  `f⌸Y` is the same as `Y f⌸⍳≢Y`.
 
-
 The elements of `R` appear in the order in which they first appear in `Y`.
 
-
 Key is similar to the GROUP BY clause in SQL.
-
-
 
 `⎕CT` and `⎕DCT` are  implicit arguments of the Key operator.
 
 <h2 class="example">Example</h2>
-
 
 In this example, both arrays are vectors so their major cells are their elements. The function `{⍺':'⍵}` is applied between the unique elements in `suits` (`'Spades' 'Hearts' 'Clubs'`) and the elements in `cards` grouped according to their corresponding elements in `suits`, that is, (`'2' 'Ace'`), (`'Queen' 'Jack'`) and (`,'4'`).
 ```apl
@@ -75,7 +60,6 @@ y 1
 
 ## Further Examples
 
-
 `x` is a vector of stock codes, `y` is a corresponding matrix of values.
 ```apl
       ⍴x
@@ -93,9 +77,7 @@ y 1
  AAPL  52 67
  AAPL   0 38
  IBM    6 41
-
 ```
-
 
 If we apply the function `{⍺ ⍵}` to `x` and `y` using the `⌸` operator, we can see how the rows (its major cells) of `y` are grouped according to the corresponding elements (its major cells) of `x`.
 ```apl
@@ -112,7 +94,6 @@ If we apply the function `{⍺ ⍵}` to `x` and `y` using the `⌸` operator, we
  MSFT  51 83       
 ```
 
-
 More usefully, we can apply the function `{⍺(+⌿⍵)}`, which delivers the stock codes and the corresponding totals in `y`:
 ```apl
       x{⍺(+⌿⍵)}⌸y
@@ -120,9 +101,7 @@ More usefully, we can apply the function `{⍺(+⌿⍵)}`, which delivers the st
   AAPL   190 196 
   GOOG   88 71   
   MSFT   51 83   
-
 ```
-
 
 There is no need for the function to use its left argument. So to obtain just the totals in `y` grouped by the stock codes in `x`:
 ```apl
@@ -134,7 +113,6 @@ There is no need for the function to use its left argument. So to obtain just th
 ```
 
 ## Defined Function Example
-
 
 This example appends the data for a stock into a component file named by the symbol.
 ```apl
@@ -171,7 +149,6 @@ This example appends the data for a stock into a component file named by the sym
 
 ## Another Example
 
-
 Given a list of names and scores., the problem is to sum the scores for each unique name. A solution is presented first without using the Key operator, and then with the Key operator.
 ```apl
       names ⍝ 12, some repeat
@@ -203,7 +180,4 @@ Given a list of names and scores., the problem is to sum the scores for each uni
 
       names {+/⍵}⌸ scores
 399 85 71 109
-
 ```
-
-

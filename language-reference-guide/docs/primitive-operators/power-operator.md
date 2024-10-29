@@ -18,11 +18,7 @@ If a left argument `X` is present, it is bound as left argument to left operand 
       X (f ⍣ g) Y → (X∘f ⍣ g) Y
 ```
 
-
-
-
 A *negative* right operand `g` applies the *inverse* of the operand function `f`, `(|g)`times. In this case, `f` may be a primitive function or an expression of primitive functions combined with primitive operators:
-
 
 |----|-------------|
 |`∘` |compose      |
@@ -32,8 +28,6 @@ A *negative* right operand `g` applies the *inverse* of the operand function `f`
 |`\` |scan         |
 |`[]`|axis         |
 |`⍣` |power        |
-
-
 
 If the function does not have an inverse, a negative argument `g` generates `DOMAIN ERROR`.
 
@@ -49,8 +43,6 @@ If the function does not have an inverse, a negative argument `g` generates `DOM
     a b c←1 0 1⊂cap¨abc     ⍝ enclose first and last.
 ```
 ```apl
-
- 
     succ←1∘+                ⍝ successor function.
  
     (succ⍣4)10              ⍝ fourth successor of 10. 
@@ -93,17 +85,14 @@ If the function does not have an inverse, a negative argument `g` generates `DOM
  hw  eo  lr  ll  od
 ```
 
-## Warning
-
-
-Some expressions, such as the following, will cause an infinite internal loop and APL will appear to hang. In most cases this can be resolved by issuing a hard INTERRUPT.
-```apl
+!!! warning
+    Some expressions, such as the following, will cause an infinite internal loop and APL will appear to hang. In most cases this can be resolved by issuing a hard INTERRUPT.
+    ```apl
       !⍣-1
       !⍣-2
-```
+    ```
 
-
-One can ensure that weak interrupts and `⎕TKILL` can interrupt by packaging the `⍣` within the dop      `{⍺←⊢ ⋄ ⍺ (⍺⍺{⍺←⊢ ⋄ ⍺ ⍺⍺ ⍵}⍣⍵⍵) ⍵}`.
+One can ensure that weak interrupts and `⎕TKILL` can interrupt by packaging the `⍣` within the dop `{⍺←⊢ ⋄ ⍺ (⍺⍺{⍺←⊢ ⋄ ⍺ ⍺⍺ ⍵}⍣⍵⍵) ⍵}`.
 
 <h2 class="example">Example</h2>
 ```apl

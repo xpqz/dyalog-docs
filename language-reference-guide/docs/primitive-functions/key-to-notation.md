@@ -1,4 +1,4 @@
-<h1> Key to Notation</h1>
+<h1 class="heading"><span class="name">Key to Notation</span></h1>
 
 The following definitions and conventions apply throughout this section:
 

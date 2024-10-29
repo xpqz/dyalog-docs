@@ -1,12 +1,12 @@
-<h1> GUI and COM Support</h1>
+<h1 class="heading"><span class="name">GUI and COM Support</span></h1>
 
 |Name     |Description                |
 |---------|---------------------------|
-|`⎕DQ`    |Await and process events   |
-|`⎕EXPORT`|Export objects             |
-|`⎕NQ`    |Place an event on the Queue|
-|`⎕WC`    |Create GUI object          |
-|`⎕WG`    |Get GUI object properties  |
-|`⎕WN`    |Query GUI object Names     |
-|`⎕WS`    |Set GUI object properties  |
-|`⎕WX`    |Expose GUI property names  |
+|[`⎕DQ`](../dq.md)    |Await and process events   |
+|[`⎕EXPORT`](../export.md)|Export objects             |
+|[`⎕NQ`](../nq.md)    |Place an event on the Queue|
+|[`⎕WC`](../wc.md)    |Create GUI object          |
+|[`⎕WG`](../wg.md)    |Get GUI object properties  |
+|[`⎕WN`](../wn.md)    |Query GUI object Names     |
+|[`⎕WS`](../ws.md)    |Set GUI object properties  |
+|[`⎕WX`](../wx.md)    |Expose GUI property names  |

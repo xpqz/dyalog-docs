@@ -1,11 +1,11 @@
-<h1> Error Handling</h1>
+<h1 class="heading"><span class="name">Error Handling</span></h1>
 
 |Name        |Description                                     |
 |------------|------------------------------------------------|
-|`⎕DM`       |Diagnostic Message                              |
-|`⎕DMX`      |Extended Diagnostic Message                     |
-|`⎕EM`       |Event Messages                                  |
-|`⎕EN`       |Event Number                                    |
-|`⎕EXCEPTION`|Reports the most recent Microsoft .NET Exception|
-|`⎕SIGNAL`   |Signal event                                    |
-|`⎕TRAP`     |Event Trap                                      |
+|[`⎕DM`](../dm.md)       |Diagnostic Message                              |
+|[`⎕DMX`](../dmx.md)      |Extended Diagnostic Message                     |
+|[`⎕EM`](../em.md)       |Event Messages                                  |
+|[`⎕EN`](../en.md)       |Event Number                                    |
+|[`⎕EXCEPTION`](../exception.md)|Reports the most recent Microsoft .NET Exception|
+|[`⎕SIGNAL`](../signal.md)   |Signal event                                    |
+|[`⎕TRAP`](../trap.md)     |Event Trap                                      |

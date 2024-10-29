@@ -1,11 +1,11 @@
-<h1> Shared Variables</h1>
+<h1 class="heading"><span class="name">Shared Variables</span></h1>
 
 |Name  |Description                |
 |------|---------------------------|
-|`⎕SVC`|Set access Control         |
-|`⎕SVC`|Query access Control       |
-|`⎕SVO`|Shared Variable Offer      |
-|`⎕SVO`|Query degree of coupling   |
-|`⎕SVQ`|Shared Variable Query      |
-|`⎕SVR`|Retract offer              |
-|`⎕SVS`|Query Shared Variable State|
+|[`⎕SVC`](../set-access-control.md)|Set access Control         |
+|[`⎕SVC`](../query-access-control.md)|Query access Control       |
+|[`⎕SVO`](../shared-variable-offer.md)|Shared Variable Offer      |
+|[`⎕SVO`](../query-degree-of-coupling.md)|Query degree of coupling   |
+|[`⎕SVQ`](../svq.md)|Shared Variable Query      |
+|[`⎕SVR`](../svr.md)|Retract offer              |
+|[`⎕SVS`](../svs.md)|Query Shared Variable State|

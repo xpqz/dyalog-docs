@@ -23,7 +23,7 @@
 ```
 
 
-`⎕IO` and `⎕RL` are implicit arguments of Deal. A side effect of Deal is to change the value of `⎕RL`. See ["Random Link: "](../system-functions/rl.md).
+`⎕IO` and `⎕RL` are implicit arguments of Deal. A side effect of Deal is to change the value of `⎕RL`. See [Random Number Seed](../system-functions/rl.md/#random-number-seed).
 
 
 

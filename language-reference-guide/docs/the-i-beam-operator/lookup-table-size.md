@@ -9,10 +9,8 @@
 
 Increases the maximum amount of workspace allocated to internal lookup tables. These tables are created when a set primitive is executed. Lookup tables are faster than hash tables, and are used when hashing is not required.
 
-## Note
-
-
-**The purpose of this function is to allow the user to evaluate potential side-effects of the proposed increase in table size in the next major version of Dyalog.**
+!!! note
+    The purpose of this function is to allow the user to evaluate potential side-effects of the proposed increase in table size in the next major version of Dyalog.
 
 
 `Y` may be ⍬, or an integer from 0 to 16777216.

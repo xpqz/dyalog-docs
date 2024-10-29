@@ -7,7 +7,8 @@
 
 
 
-**Windows only.**
+!!! note
+    **Windows only**
 
 
 Certain COM objects, for example, VT_BLOBs, cannot be represented in APL or may be in error. By default Dyalog will generate a `DOMAIN ERROR` in these cases. For COM objects of type **VT_EMPTY** the interpreter by default returns `⎕NULL`.

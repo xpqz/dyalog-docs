@@ -9,7 +9,7 @@ Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 |`+`|[Conjugate](conjugate.md)|[Plus (Add)](add.md)|
 |`-`|[Negative](negative.md)|[Minus (Subtract)](subtract.md)|
 |`×`|[Direction (Signum)](direction.md)|[Times (Multiply)](multiply.md)|
-|`÷`|[Reciproca](reciprocal.md) l|[Divide](divide.md)|
+|`÷`|[Reciprocal](reciprocal.md) l|[Divide](divide.md)|
 |`|`|[Magnitude](magnitude.md)|[Residue](residue.md)|
 |`⌊`|[Floor](floor.md)|[Minimum](minimum.md)|
 |`⌈`|[Ceiling](ceiling.md)|[Maximum](maximum.md)|
@@ -38,7 +38,7 @@ Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 - The function produces a result with a structure identical to its argument.
 - When applied to an empty argument, the function produces an empty result.  With the exception of `+` and `∊`, the type of this result depends on the function, not on the type of the argument. By definition + and `∊` return a result of the same type as their arguments.
 
-<h3 class="example">Example</h3>
+<h2 class="example">Example</h2>
 ```apl
       ÷2 (1 4)
 0.5  1 0.25
@@ -52,7 +52,7 @@ Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 - The function produces a result with a structure identical to that of its arguments (after scalar extensions).
 - If applied between empty arguments, the function produces a composite structure resulting from any scalar extensions, with type appropriate to the particular function. (All scalar dyadic functions return a result of numeric type.)
 
-<h4 class="example">Examples</h4>
+<h2 class="example">Examples</h2>
 ```apl
       2 3 4 + 1 2 3
 3 5 7
@@ -78,4 +78,5 @@ Table: Scalar Primitive Functions {: #ScalarPrimitiveFunctions }
 0  0 0
 ```
 
-**Note:**  The Axis operator applies to all scalar dyadic functions.
+!!! note 
+      The Axis operator applies to all scalar dyadic functions.

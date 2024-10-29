@@ -1,11 +1,4 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Ravel</span> <span class="command">R←,Y</span></h1>
-
-
 
 `Y` may be any array.  `R` is a vector of the elements of `Y` taken in row-major order.
 
@@ -30,8 +23,7 @@ ABCDEFGHIJKL
 1
 ```
 
-
-See also: [Ravel with Axes below](ravel-with-axes.md).
+See also: [Ravel with Axes](ravel-with-axes.md).
 
 
 

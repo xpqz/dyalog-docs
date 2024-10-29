@@ -7,7 +7,8 @@
 
 
 
-**Windows only.**
+!!! note
+    **Windows only**
 
 
 Determines how Coord `'Pixel'` is interpreted. This is determined initially by the value of the DYALOG_PIXEL_TYPE parameter and, when altered by this function,  applies to all subsequent GUI operations.

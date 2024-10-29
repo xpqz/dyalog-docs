@@ -1,25 +1,13 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Interval Index</span> <span class="command">R←X⍸Y</span></h1>
 
-
-
-**Classic Edition:**  the symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Interval Index is instead represented by `⎕U2378`.
-
+!!! note "Classic Edition"
+    The symbol `⍸` (Iota Underbar) is not available in Classic Edition, and Interval Index is instead represented by `⎕U2378`.
 
 `X` is an ordered non-scalar array that represents a set of intervals or ranges.
 
-
 Note that the `i`<sup>th</sup> interval starts at  `X[i]`, then includes all subsequent values up to but not including `X[i+1]`.
 
-
-
-
 For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as follows.
-
 
 |---|--------------------------|-----------|
 |0  |less than 1               |`<1`       |
@@ -27,11 +15,7 @@ For example, if `X` is  `(1 3 5)` it defines 4 intervals numbered 0 to 3 as foll
 |2  |between 3 and 5           |`(≥3)∧(<5)`|
 |3  |greater than or equal to 5|`≥5`       |
 
-
-
-
 If `X` is `'AEIOU'` it defines 6 intervals numbered 0 to 5 as follows:
-
 
 |---|---------------|------------|
 |0  |before A       |`⎕UCS 0,⍳64`|
@@ -41,29 +25,22 @@ If `X` is `'AEIOU'` it defines 6 intervals numbered 0 to 5 as follows:
 |4  |between O and U|`OPQREST`   |
 |5  |U and after    |`UVWXYZ...` |
 
-
-
 `Y` is an array of the same type (numeric or character) as `X`.
-
 
 The result `R` is an integer array that identifies into which interval  the corresponding value in `Y` falls.
 
-
 Like dyadic `⍳` (see [Index Of](index-of.md)), Interval Index works with major cells. For a vector these are its elements; for a matrix its rows, and so forth.
-
 
 `X` and `Y` are compared using  the same logic as monadic `⍋` (see [Grade Up (Monadic)](grade-up-monadic.md)) which is independent of `⎕CT` and `⎕DCT`.
 
-
 `⎕IO` is an implicit argument of Interval Index. In all the following examples, `⎕IO` is 1.
 
-<h2 class="example">Examples</h2>
+<h2 class="example">Example</h2>
 ```apl
 
       10 20 30⍸11 1 31 21
 1 0 3 2
 ```
-
 
 In the above example:
 
@@ -76,7 +53,6 @@ In the above example:
 1 5 1 3 4 2
 ```
 
-
 And in the alphabetic example above:
 
 - "D" is between `X[1]` and `X[2]`, so the answer is 1
@@ -84,8 +60,7 @@ And in the alphabetic example above:
 - "A" is between `X[1]` and `X[2]`, so the answer is 1
 - as so on ...
 
-### Example (Classification)
-
+<h2 class="example">Example (Classification)</h2>
 
 Commercially, olive oil is graded as follows:
 
@@ -118,8 +93,7 @@ Commercially, olive oil is graded as follows:
 
 ```
 
-## Example (Data Consolidation by Interval)
-
+<h2 class="example">Example (Data Consolidation by Interval)</h2>
 
 `x` represents some data sampled in chronological order at timestamps `t`.
 ```apl
@@ -150,7 +124,6 @@ Commercially, olive oil is graded as follows:
 └─────┴────────┘
 ```
 
-
 `u` represents timestamps for 5-minute intervals:
 ```apl
 
@@ -170,7 +143,6 @@ Commercially, olive oil is graded as follows:
 │0 45 0│23 55 0│
 └──────┴───────┘
 ```
-
 
 Therefore, the expression `(u⍸t){+/⍵}⌸x` summarises `x` in 5-minute intervals.
 ```apl
@@ -195,10 +167,9 @@ Therefore, the expression `(u⍸t){+/⍵}⌸x` summarises `x` in 5-minute interv
 
 ### Higher-Rank Left Argument
 
-
 If `X` is a higher rank array, the function compares sub-arrays in `Y`  with the major cells of  `X`, where a major cell is  a sub-array on the leading dimension of `X` with shape `1↓⍴X`. In this case, the shape of the result `R` is `(1-⍴⍴X)↓⍴Y`.
 
-<h3 class="example">Example</h3>
+<h2 class="example">Example</h2>
 ```apl
       x ← ↑ 'Fi' 'Jay' 'John' 'Morten' 'Roger'
       x
@@ -244,7 +215,7 @@ Omega  4
 Zeus   5
 ```
 
-### Further Example
+<h2 class="example">Further Example</h2>
 ```apl
       ⍴x
 5 6
@@ -275,8 +246,7 @@ Alpha
 
 ```
 
-### Nested Array Example
-
+<h2 class="example">Nested Array Example</h2>
 
 A card-player likes to sort a hand into suits spades, hearts, diamond, clubs (fortunately alphabetic) and high-to-low within each suit.
 ```apl
@@ -300,10 +270,7 @@ A card-player likes to sort a hand into suits spades, hearts, diamond, clubs (fo
 ├────────┼──┤
 │Clubs   │8 │
 └────────┴──┘
-
-
 ```
-
 
 Another card, the 10 of diamonds is dealt. Where must it go in the hand ?
 ```apl
@@ -329,7 +296,4 @@ Another card, the 10 of diamonds is dealt. Where must it go in the hand ?
 └────────┴──┘
 ```
 
-
 Note that if `(∧/Y∊X)` and `X` is sorted and `⎕CT=0` ,then `x⍸y` is the same as `x⍳y`.
-
-

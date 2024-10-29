@@ -57,8 +57,8 @@ nav:
       - Mixed Functions: primitive-functions/mixed-functions.md
       - Notes: primitive-functions/notes.md
       - Scalar Monadic Functions:
-          - Negative: primitive-functions/negative.md
-          - Direction (Signum): primitive-functions/direction.md
+          - Negative: primitive-functions/negative/#negative
+          - Direction (Signum): primitive-functions/direction/#direction
           - Reciprocal: primitive-functions/reciprocal.md
           - Magnitude: primitive-functions/magnitude.md
           - Floor: primitive-functions/floor.md
@@ -204,7 +204,7 @@ nav:
           - Grade Up Dyadic: primitive-functions/grade-up-dyadic.md
           - Greater: primitive-functions/greater.md
           - Greater Or Equal: primitive-functions/greater-or-equal.md
-          - Index: primitive-functions/index.md
+          - Index: primitive-functions/squad.md
           - Index with Axes: primitive-functions/index-with-axes.md
           - Index Generator: primitive-functions/index-generator.md
           - Index Of: primitive-functions/index-of.md
@@ -327,7 +327,7 @@ nav:
       - Number of Threads: the-i-beam-operator/number-of-threads.md
       - Parallel Execution Threshold: the-i-beam-operator/parallel-execution-threshold.md
       - Update Function Timestamp: the-i-beam-operator/update-function-timestamp.md
-      - Format Date-time: the-i-beam-operator/format-datetime.md
+      - Format Datetime: the-i-beam-operator/format-datetime.md
       - Set aplcore Parameters: the-i-beam-operator/set-aplcore-parameters.md
       - Hash Array: the-i-beam-operator/hash-array.md
       - Memory Manager Statistics: the-i-beam-operator/memory-manager-statistics.md
@@ -338,7 +338,7 @@ nav:
       - Remove Data Binding: the-i-beam-operator/remove-data-binding.md
       - Create Data Binding Source: the-i-beam-operator/create-data-binding-source.md
       - Create .NET Delegate: the-i-beam-operator/create-net-delegate.md
-      - Identify NET Type: the-i-beam-operator/identify-net-type.md
+      - Identify .NET Type: the-i-beam-operator/identify-net-type.md
       - Flush Session Caption: the-i-beam-operator/flush-session-caption.md
       - Close all Windows: the-i-beam-operator/close-all-windows.md
       - Set Dyalog Pixel Type: the-i-beam-operator/set-dyalog-pixel-type.md
@@ -355,9 +355,9 @@ nav:
       - Continue Autosave: the-i-beam-operator/continue-autosave.md
       - Disable Component Checksum Validation: the-i-beam-operator/disable-component-checksum-validation.md
       - Enable Compression of Large Components: the-i-beam-operator/enable-compression-of-large-components.md
-      - Send Text to RIDE-embedded Browser: the-i-beam-operator/send-text-to-ride-embedded-browser.md
-      - Connected to the RIDE: the-i-beam-operator/connected-to-the-ride.md
-      - Manage RIDE: the-i-beam-operator/manage-ride-connections.md
+      - Send Text to Ride-embedded Browser: the-i-beam-operator/send-text-to-ride-embedded-browser.md
+      - Connected to Ride: the-i-beam-operator/connected-to-the-ride.md
+      - Manage Ride: the-i-beam-operator/manage-ride-connections.md
       - Fork New Task: the-i-beam-operator/fork-new-task.md
       - Change User: the-i-beam-operator/change-user.md
       - Reap Forked Tasks: the-i-beam-operator/reap-forked-tasks.md
@@ -375,9 +375,9 @@ nav:
       - Lookup Table Size: the-i-beam-operator/lookup-table-size.md
       - Sample Probability Distribution: the-i-beam-operator/sample-probability-distribution.md
       - Line Count: the-i-beam-operator/line-count.md
-      - RIDE and Experimental Features-related I-Beams: the-i-beam-operator/supplementary-i-beam-functions.md
+      - Ride and Experimental Features-related I-Beams: the-i-beam-operator/supplementary-i-beam-functions.md
   - System Functions:
-      - Introduction: system-functions/summary-tables/introduction.md
+      - Introduction: system-functions/introduction.md
       - System Functions Categorised:
           - Introduction: system-functions/summary-tables/system-functions-categorised.md
           - System Settings:
@@ -632,7 +632,7 @@ nav:
           - Dequeue Events: system-functions/dq.md
           - Data Representation Monadic: system-functions/data-representation-monadic.md
           - Data Representation Dyadic: system-functions/data-representation-dyadic.md
-          - Date-time: system-functions/dt.md
+          - Datetime: system-functions/dt.md
           - Edit Object: system-functions/ed.md
           - Event Message: system-functions/em.md
           - Event Number: system-functions/en.md

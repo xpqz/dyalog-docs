@@ -52,9 +52,7 @@ If the Wildcard option is 1, `R` indicates whether or not one or more matches to
 
 ```
 
-## Note
-
-
-If `Y` is a symbolic link, `⎕NEXISTS` will return 1 whether or not the target of the symbolic link exists.
+!!! note
+    If `Y` is a symbolic link, `⎕NEXISTS` will return 1 whether or not the target of the symbolic link exists.
 
 

@@ -7,7 +7,8 @@
 
 
 
-**Windows only.**
+!!! note
+    **Windows only**
 
 
 Under Windows, the Session Caption displays information such as the name of the current workspace. The contents of the Caption can be modified: see *Window Captions* in the *Installation and Configuration Guide* for more details.

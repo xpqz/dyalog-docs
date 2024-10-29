@@ -7,7 +7,8 @@
 
 
 
-This applies to AIX only.
+!!! note
+    **AIX only**
 
 
 `Y` must be is a simple empty vector but is ignored.

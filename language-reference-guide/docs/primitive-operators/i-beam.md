@@ -1,27 +1,15 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">I-Beam</span> <span class="command">R←{X}(A⌶)Y</span></h1>
-
-
 
 I-Beam is a monadic operator that provides a range of system related services.
 
-
-**WARNING:** Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams](../the-i-beam-operator/supplementary-i-beam-functions.md).
-
-
+!!! warning
+    Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams](../the-i-beam-operator/supplementary-i-beam-functions.md).
 
 `A` is an integer that specifies the type of operation to be performed  as shown in the table below. `Y` is an array that supplies further information about what is to be done.
 
-
 `X` may or may not be required depending on `A`.
 
-
 `R` is the result of the derived function.
-
 
 When attempting to use  I-Beam with an unsupported operation value, `A`, one of three different error messages will be reported:
 
@@ -29,14 +17,11 @@ When attempting to use  I-Beam with an unsupported operation value, `A`, one of 
 - I-Beam function xxx has been withdrawn
 - I-Beam function xxx is not supported by this interpreter
 
-
 This allows the user to distinguish between operation values that have never been used, those that have been used in earlier versions but are no longer included in the current version, and those
 that are valid in other editions or on other platforms other than the current interpreter.
 
 
-
 The column labelled *O/S* indicates if a function applies only on Windows (W), only on Windows .NET Framework, (WF), only under IBM AIX (AIX), or only on non-Windows (X) platforms.
-
 
 |A      |Derived Function                                                                                           |O/S   |
 |-------|-----------------------------------------------------------------------------------------------------------|------|
@@ -107,6 +92,3 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 |`9469` |[Lookup Table Size](../the-i-beam-operator/lookup-table-size.md)                                           |&nbsp;|
 |`16808`|[Sample Probability Distribution](../the-i-beam-operator/sample-probability-distribution.md)               |&nbsp;|
 |`50100`|[Line Count](../the-i-beam-operator/line-count.md)                                                         |&nbsp;|
-
-
-

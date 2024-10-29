@@ -1,29 +1,16 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Assignment (Indexed)</span> <span class="command">{R}←X[I]←Y</span></h1>
-
-
 
 Indexed Assignment is the Assignment function modified by the Indexing function.  The phrase `[I]←` is treated as the function for descriptive purposes.
 
-
-`Y` may be any array.  `X` may be the *name* of any array or a selection from a named array `(EXP X)[I]←Y`, see ["Assignment (Selective)"](assignment-selective.md).  `I` must be a valid index specification.  The shape of `Y` must conform with the shape (implied) of the indexed structure defined by `I`.  If `Y` is a scalar or a 1-element vector it will be extended to conform.  A side effect of Indexed Assignment is to change the value of the indexed elements of `X`.
-
+`Y` may be any array.  `X` may be the *name* of any array or a selection from a named array `(EXP X)[I]←Y`, see [Assignment (Selective)](assignment-selective.md).  `I` must be a valid index specification.  The shape of `Y` must conform with the shape (implied) of the indexed structure defined by `I`.  If `Y` is a scalar or a 1-element vector it will be extended to conform.  A side effect of Indexed Assignment is to change the value of the indexed elements of `X`.
 
 `R` is the value of `Y`.  If the result is not explicitly assigned or used it is suppressed.
 
-
 `⎕IO` is an implicit argument of Indexed Assignment.
-
 
 Three forms of indexing are permitted.
 
-
 ## Simple Indexed Assignment
-
 
 For vector `X`, `I` is a simple integer array whose items are from the set `⍳⍴R`.  Elements of `X` identified by index positions `I` are replaced by corresponding elements of `Y`.
 
@@ -37,13 +24,11 @@ For vector `X`, `I` is a simple integer array whose items are from the set `⍳�
  
 ```
 
-
 The last-most element of `Y` is assigned when an index is repeated in `I`:
 ```apl
       A[2 2]←100 101 ⋄ A
 1 101 10 4 5
 ```
-
 
 For matrix `X`, `I` is composed of two simple integer arrays separated by the semicolon character (`;`).  The arrays select indices from the rows and columns of `X` respectively.
 
@@ -57,7 +42,6 @@ SUN
 RED
 SON
 ```
-
 
 For higher-rank array `X`, `I` is a series of simple integer arrays with adjacent arrays separated by a single semicolon character (`;`).  Each array selects indices from an axis of `X` taken in row-major order.
 
@@ -78,7 +62,6 @@ For higher-rank array `X`, `I` is a series of simple integer arrays with adjacen
 24 25  26
 ```
 
-
 An indexing array may be ELIDED.  That is, if an indexing array is omitted from the `K`th axis, the indexing vector `⍳(⍴X)[K]` is implied:
 ```apl
       C[;1;2 3]←2 2⍴112 113 122 123 ⋄ C
@@ -97,7 +80,6 @@ An indexing array may be ELIDED.  That is, if an indexing array is omitted from 
 ```
 
 ## Choose Indexed Assignment
-
 
 The index specification `I` is a non-simple integer array. Each item identifies a single element of `X` by a set of indices with one element per axis of `X` in row-major order.
 
@@ -120,7 +102,6 @@ The index specification `I` is a non-simple integer array. Each item identifies 
 201  22 203 204
 ```
 
-
 A scalar may be indexed by the enclosed empty vector:
 ```apl
       S
@@ -130,7 +111,6 @@ A scalar may be indexed by the enclosed empty vector:
       S[⊂⍳0]←5 ⋄ S
 5
 ```
-
 
 Choose Indexed Assignment may be used very effectively in conjunction with Index Generator (`⍳`) and Structural functions in order to assign into an array:
 ```apl
@@ -152,7 +132,6 @@ Choose Indexed Assignment may be used very effectively in conjunction with Index
 ```
 
 ## Reach Indexed Assignment
-
 
 The index specification `I` is a non-simple integer array, each of whose items reach down to a nested element of `X`.  The items of an item of `I` are simple vectors (or scalars) forming sets of indices that index arrays at successive levels of `X` starting at the top-most level.  A set of indices has one element per axis at the respective level of nesting of `X` in row-major order.
 
@@ -182,12 +161,10 @@ The index specification `I` is a non-simple integer array, each of whose items r
  GREEN  MELLOW  RED
 ```
 
-
 The context of indexing is important.  In the last example, the indexing method is determined to be Reach rather than Choose since `E` is a vector, not a matrix as would be required for Choose.  Observe that:
 ```apl
       ⊂2 1 ←→ ⊂(⊂2),(⊂1)
 ```
-
 
 Note that for any array `A`, `A[⊂⍬]` represents a scalar quantity, which is the whole of `A`, so:
 ```apl
@@ -200,7 +177,6 @@ Note that for any array `A`, `A[⊂⍬]` represents a scalar quantity, which is 
 ```
 
 ## Combined Indexed and Selective Assignment
-
 
 Instead of `X` being a name, it may be a selection from a named array, and the statement is of the form `(EXP X)[I]←Y`.
 ```apl

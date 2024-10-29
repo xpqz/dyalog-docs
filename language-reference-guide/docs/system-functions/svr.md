@@ -16,7 +16,7 @@ This system function terminates communication via one or more shared variables, 
 The result `R` is vector whose length corresponds to the number of names specified by Y, indicating the level of sharing of each variable after retraction.
 
 
-See ["Shared Variable State: "](svs.md) for further information on the possible states of a shared variable.
+See [Shared Variable State](svs.md) for further information on the possible states of a shared variable.
 
 
 

@@ -1,18 +1,9 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Hash Table Size</span> <span class="command">{R}←8468⌶Y</span></h1>
-
-
 
 Increases the amount of workspace allocated to internal hash tables. These tables are created when a set primitive is executed or by the Hash Array function (`1500⌶`).
 
-## Note
-
-
-**The purpose of this function is to allow the user to evaluate potential side-effects of the proposed increase in table size in the next major version of Dyalog.**
+!!! note
+    The purpose of this function is to allow the user to evaluate potential side-effects of the proposed increase in table size in the next major version of Dyalog.
 
 
 `Y` may be ⍬, or an integer 0, 1, 2, or 3.

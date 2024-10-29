@@ -42,7 +42,7 @@ red:    300     200     100
 
 
 The following cycle of dependencies has caused the deadlock:
-```apl
+```
 Thread 300 attempts to acquire blue,      300 → blue
 which is owned by 100,                     ↑      ↓
 which is waiting for red,                 red ←  100

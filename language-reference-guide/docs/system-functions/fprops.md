@@ -1,36 +1,24 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">File Properties</span> <span class="command">R←X ⎕FPROPS Y</span></h1>
-
 
 ## Access Code 1 (to read) or 8192 (to change properties)
 
-
 `⎕FPROPS` reports and sets the properties of a component file.
-
 
 `Y` must be a simple integer scalar or  1 or 2-element vector containing the file tie number followed by an optional passnumber. If the passnumber is omitted, it is assumed to be 0.
 
-
 `X` must be a simple character scalar or vector containing one or more valid Identifiers listed in the table below, or a 2-element nested vector which specifies an Identifier and a (new) value for that property. To set new values for more than one property, `X` must be is a vector of 2-element vectors, each of which contains an Identifier and a (new) value for that property.
-
-
-
 
 If the left argument is a simple character array, the result `R` contains the current values for the properties identified by `X`. If the left argument is nested, the result `R` contains the previous values for the properties identified by `X`.
 
 
 |Identifier|Property|Description / Legal Values|
 |---|---|---|
-|`S`|File Size (read only)|32 = Small-span Component Files (<4GB) 64 = Large-span Component Files|
-|`E`|Endian-ness (read only)|0 = Little-endian 1 = Big-endian|
-|`U`|Unicode|0 = Characters will be written as type 82 arrays 1 = Characters will be written as Unicode arrays|
-|`J`|Journaling|0 = Disable Journaling 1 = Enable *APL crash proof* Journaling 2 = Enable *System crash proof* Journaling; repair needed on recovery 3 = Enable full *System crash proof* Journaling|
-|`C`|Checksum|0 = Disable checksum 1 = Enable checksum|
-|`Z`|Compression|0 = Disable compression 1 = Enable compression|
+|`S`|File Size (read only)|32 = Small-span Component Files (<4GB)<br>64 = Large-span Component Files|
+|`E`|Endian-ness (read only)|0 = Little-endian<br>1 = Big-endian|
+|`U`|Unicode|0 = Characters will be written as type 82 arrays<br>1 = Characters will be written as Unicode arrays|
+|`J`|Journaling|0 = Disable Journaling<br>1 = Enable *APL crash proof* Journaling<br>2 = Enable *System crash proof* Journaling; repair needed on recovery<br>3 = Enable full *System crash proof* Journaling|
+|`C`|Checksum|0 = Disable checksum<br>1 = Enable checksum|
+|`Z`|Compression|0 = Disable compression<br>1 = Enable compression|
 
 
 

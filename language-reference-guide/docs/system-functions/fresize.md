@@ -24,7 +24,7 @@ During compaction, the file is restructured by reordering the components and by 
 
 The shy result of `⎕FRESIZE` is the tie number of the file.
 
-<h1 class="example">Example</h1>
+<h2 class="example">Example</h2>
 ```apl
       'test'⎕FCREATE 1 ⋄ ⎕FSIZE 1
 1 1 120 1.844674407E19

@@ -42,10 +42,10 @@ If the workspace name identifies a file that is not a workspace, the system repo
 If the source workspace is too large to be loaded, the system reports `ws too large`.
 
 
-When copying data between Classic and Unicode Editions, `)COPY` will fail with `TRANSLATION ERROR` if *any* object in the source workspace fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `nms`. See ["Atomic Vector - Unicode: "](../system-functions/avu.md) for further details.
+When copying data between Classic and Unicode Editions, `)COPY` will fail with `TRANSLATION ERROR` if *any* object in the source workspace fails conversion between Unicode and `⎕AV` indices, whether or not that object is specified by `nms`. See [Atomic Vector - Unicode](../system-functions/avu.md) for further details.
 
 
-If "`ws`" is omitted, the file open dialog box is displayed and all objects copied from the selected workspace.
+If `ws` is omitted, the file open dialog box is displayed and all objects copied from the selected workspace.
 
 
 If the list of names is included, the names of system variables may also be included and copied into the active workspace.  The global referents will be copied.
@@ -104,7 +104,6 @@ The current workspace has a class named `pete` whose Base class is called `base`
 
 ```
 
-
 A second workspace named `copy.dws` contains a different version of the `base` class:
 ```apl
 :Class base
@@ -124,18 +123,14 @@ Original  1
       inst←⎕NEW pete
       inst.foo 1
 Copied  1
-    
-
-
 ```
 
 ## Copying Objects from Session Files
 
-
 You may also copy objects from session (.dse) files, although with certain restrictions.
 
 <h2 class="example">Example</h2>
-```apl
+```
         )copy C:\Users\Pete\Desktop\pete.dse ⎕SE.UCMD
 C:\Users\Pete\Desktop\pete.dse saved Wed Oct 14 ...
 
@@ -147,22 +142,21 @@ C:\Users\Pete\Desktop\pete.dse saved Wed Oct 14 ...
 
 <h2 class="example">Examples</h2>
 
-
 In the following example, the *not copied* cases occur because the current namespace is not an appropriate parent for the object in question.
-```apl
+```
       )CS #
 #
       )copy C:\Users\...\pete.dse ⎕SE.Dyalog.Callbacks
 C:\Users\...\pete.dse saved Wed Oct 14 15:31:14 2015
 
 ```
-```apl
+```
        )copy C:\Users\...\pete.dse ⎕SE.cbbot
 C:\Users\...\pete.dse saved Wed Oct 14 15:31:14 2015
 not copied cbbot
 
 ```
-```apl
+```
        )CS ⎕SE
 ⎕SE
       )copy C:\Users\...\pete.dse ⎕SE.cbbot
@@ -171,7 +165,6 @@ C:\Users\...\pete.dse saved Wed Oct 14 15:31:14 2015
       )copy C:\Users\...\pete.dse ⎕SE.cbbot.bandsb1
 C:\Users\...\pete.dse saved Wed Oct 14 15:31:14 2015
 not copied bandsb1
-
 ```
 
 

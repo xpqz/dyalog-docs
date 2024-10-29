@@ -7,7 +7,8 @@
 
 
 
-This applies to AIX only.
+!!! note
+    **AIX only**
 
 
 Under UNIX, when a child process terminates, it signals to its parent that it has terminated and waits for the parent to acknowledge that signal. `4002⌶` is the mechanism to allow the APL programmer to issue such acknowledgements.
@@ -33,7 +34,7 @@ The remaining 15 columns are the contents of the `rusage` structure returned by 
 
 
 The current `rusage` structure contains:
-```apl
+```c
 struct rusage {
     struct timeval ru_utime; /* user time used */
     struct timeval ru_stime; /* system time used */
