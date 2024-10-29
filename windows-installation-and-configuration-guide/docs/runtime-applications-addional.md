@@ -1,8 +1,8 @@
-<h1> Run-Time Applications Additonal Considerations</h1>
+<h1 class="heading"><span class="name">Run-Time Applications Additonal Considerations</span></h1>
 
-## Accessing your Application using RIDE
+## Accessing your Application using Ride
 
-If you wish to access your run-time application remotely using the RIDE, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace.
+If you wish to access your run-time application remotely using Ride, you must  put a copy of the appropriate Conga DLLs (see [Files](files-and-directories.md)) in the same directory as your .EXE or workspace.
 
 ## Additional Files for Syncfusion
 
@@ -69,11 +69,10 @@ Install the Dyalog development package (ideally onto a separate system just for 
 
 - those beginning with `api-ms*`
 - `ucrtbase.dll`
-
 - `vcruntime140.dll`
 
-#### Or
+### Or
 
-Download and install the Windows 10 SDK from:[https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk), and follow the instructions in the link below.[https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt](https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt)
+Download and install the Windows 10 SDK from: [https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk), and follow the instructions in the link below. [https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt](https://blogs.msdn.microsoft.com/vcblog/2015/03/03/introducing-the-universal-crt)
 
 Finally, modify your installer to add these files to the same folder as your Dyalog run-time application.

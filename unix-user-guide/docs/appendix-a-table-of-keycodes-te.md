@@ -1,4 +1,4 @@
-<h1> Appendix A: Table of keycodes and keystrokes using a terminal emulator under Linux GUIs</h1>
+<h1 class="heading"><span class="name">Appendix A: Table of keycodes and keystrokes using a terminal emulator under Linux GUIs</span></h1>
 
 Keycodes, their common keystrokes, and the keystrokes specific to terminal emulators under Linux GUIs.
 

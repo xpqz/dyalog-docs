@@ -1,4 +1,4 @@
-<h1> The TemperatureConverterCtl1 Control</h1>
+<h1 class="heading"><span class="name">The TemperatureConverterCtl1 Control</span></h1>
 
 The `TemperatureConverterCtl1` control is an example of a *compositional* control, that is, a server-side custom control that is composed of other standard controls.
 

@@ -1,4 +1,4 @@
-<h1> `⎕NA` under UNIX</h1>
+<h1 class="heading"><span class="name">`⎕NA` under UNIX</span></h1>
 
 ## Introduction
 

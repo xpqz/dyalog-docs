@@ -1,4 +1,4 @@
-<h1> Marker Properties</h1>
+<h1 class="heading"><span class="name">Marker Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[Points](../properties/points.md)          |[Style](../properties/style.md)        |

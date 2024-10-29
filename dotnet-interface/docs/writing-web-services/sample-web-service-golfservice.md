@@ -1,4 +1,4 @@
-<h1> Sample Web Service: GolfService</h1>
+<h1 class="heading"><span class="name">Sample Web Service: GolfService</span></h1>
 
 `GolfService` is an example Web Service that resides in the directory `samples\asp.net\Golf` and is associated with the IIS Virtual Directory `dyalog.net/Golf`. This example makes extensive use of internal classes to define data structures that are appropriate for a client application, such as C# or VB.
 

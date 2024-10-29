@@ -1,4 +1,4 @@
-<h1> Edit Properties</h1>
+<h1 class="heading"><span class="name">Edit Properties</span></h1>
 
 |---------------------------------------------------------|-------------------------------------------------|---------------------------------------------|
 |[Type](../properties/type.md)                            |[Text](../properties/text.md)                    |[Posn](../properties/posn.md)                |

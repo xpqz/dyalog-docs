@@ -1,4 +1,4 @@
-<h1> Mixed Functions</h1>
+<h1 class="heading"><span class="name">Mixed Functions</span></h1>
 
 Mixed rank functions and special symbols are summarised in [](#MixedRankFunctions). For convenience, they are sub-divided into five classes:
 

@@ -1,4 +1,4 @@
-<h1> DateTimePicker Methods</h1>
+<h1 class="heading"><span class="name">DateTimePicker Methods</span></h1>
 
 |-----------------------------------------------|---------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md)          |[ChooseFont](../methodorevents/choosefont.md)|[GetTextSize](../methodorevents/gettextsize.md)|

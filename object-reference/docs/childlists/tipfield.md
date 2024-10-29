@@ -1,4 +1,4 @@
-<h1> TipField Children</h1>
+<h1 class="heading"><span class="name">TipField Children</span></h1>
 
 |------------------------------|--------------------------------|--------------------------|
 |[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)|

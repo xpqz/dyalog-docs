@@ -1,4 +1,4 @@
-<h1> CFEXT</h1>
+<h1 class="heading"><span class="name">CFEXT</span></h1>
 
 This parameter specifies component file filename extensions.
 

@@ -1,4 +1,4 @@
-<h1> Workspace Management</h1>
+<h1 class="heading"><span class="name">Workspace Management</span></h1>
 
 ## Workspace Size and Compaction
 
@@ -34,5 +34,4 @@ The system function `⎕WA` may therefore be used judiciously (workspace reorgan
 
 Note that in Dyalog APL, the SYMBOL TABLE is entirely dynamic and grows and shrinks in size automatically. There is no `SYMBOL TABLE FULL` condition.
 
-Additional functions for managing the memory used by the workspace are described in   [Memory Manager Statistics:](../../language-reference-guide/the-i-beam-operator/memory-manager-statistics) and
-		                                                                                     [Specify Workspace Available:](../../language-reference-guide/the-i-beam-operator/specify-workspace-available).
+Additional functions for managing the memory used by the workspace are described in [Memory Manager Statistics](../../language-reference-guide/the-i-beam-operator/memory-manager-statistics) and [Specify Workspace Available](../../language-reference-guide/the-i-beam-operator/specify-workspace-available).

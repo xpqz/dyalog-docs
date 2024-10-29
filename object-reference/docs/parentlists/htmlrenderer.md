@@ -1,4 +1,4 @@
-<h1> HTMLRenderer Parents</h1>
+<h1 class="heading"><span class="name">HTMLRenderer Parents</span></h1>
 
 |----------------------------------------------|--------------------------|--------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[Group](../objects/group.md)    |

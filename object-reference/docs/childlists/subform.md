@@ -1,4 +1,4 @@
-<h1> SubForm Children</h1>
+<h1 class="heading"><span class="name">SubForm Children</span></h1>
 
 |--------------------------------------------|------------------------------------------|----------------------------------------------|
 |[Animation](../objects/animation.md)        |[Bitmap](../objects/bitmap.md)            |[BrowseBox](../objects/browsebox.md)          |

@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 This manual describes the Dyalog interface to the Microsoft .NET Framework. This document does not attempt to explain the features of the .NET Framework, except in terms of their APL interfaces. For information concerning the .NET Framework, see the documentation, articles and help files, which are available from Microsoft and other sources.
 

@@ -1,4 +1,4 @@
-<h1> Font Properties</h1>
+<h1 class="heading"><span class="name">Font Properties</span></h1>
 
 |-------------------------------------------|-----------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[PName](../properties/pname.md)          |[Size](../properties/size.md)          |

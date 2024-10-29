@@ -1,4 +1,4 @@
-<h1> System Requirements</h1>
+<h1 class="heading"><span class="name">System Requirements</span></h1>
 
 ## Microsoft Windows
 

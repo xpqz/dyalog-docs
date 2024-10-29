@@ -1,4 +1,4 @@
-<h1> Example 2</h1>
+<h1 class="heading"><span class="name">Example 2</span></h1>
 
 This example illustrates the use of the optional left argument to `2015⌶` to specify the data type used to export the value of the bound variable.
 

@@ -1,4 +1,4 @@
-<h1> SingleTrace</h1>
+<h1 class="heading"><span class="name">SingleTrace</span></h1>
 
 Specifies whether there is a single Trace window, or one Trace window per function. 
  This applies only if **ClassicMode** is 1.  See [ ClassicMode](./classicmode.md).

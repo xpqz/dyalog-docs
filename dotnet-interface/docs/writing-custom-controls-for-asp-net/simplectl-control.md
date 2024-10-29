@@ -1,4 +1,4 @@
-<h1> The SimpleCtl Control</h1>
+<h1 class="heading"><span class="name">The SimpleCtl Control</span></h1>
 
 The `SimpleCtl` Class is illustrated below:
 ```apl

@@ -1,4 +1,4 @@
-<h1> AutoComplete/Rows</h1>
+<h1 class="heading"><span class="name">AutoComplete/Rows</span></h1>
 
 This parameter specifies the maximum number of rows (height) in the Auto Complete pop-up suggestions box.
 

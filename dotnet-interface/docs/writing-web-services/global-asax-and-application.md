@@ -1,4 +1,4 @@
-<h1> Global.asax, Application and Session Objects</h1>
+<h1 class="heading"><span class="name">Global.asax, Application and Session Objects</span></h1>
 
 When a Web Service runs, it has access to the Application and Session objects. These are objects provided by ASP.NET through which you can manage the execution of the Web Service. ASP.NET creates an Application object when it first starts the Application, that is, when any client requests any Web Service or Web Page stored in the same IIS Virtual Directory. It also creates a Session object for each client process.
 

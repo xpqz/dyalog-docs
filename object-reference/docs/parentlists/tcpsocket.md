@@ -1,4 +1,4 @@
-<h1> TCPSocket Parents</h1>
+<h1 class="heading"><span class="name">TCPSocket Parents</span></h1>
 
 |----------------------------------------------|------------------------------------|------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Calendar](../objects/calendar.md)  |[CoolBand](../objects/coolband.md)        |

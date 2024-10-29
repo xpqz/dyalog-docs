@@ -1,4 +1,4 @@
-<h1> Grid Properties</h1>
+<h1 class="heading"><span class="name">Grid Properties</span></h1>
 
 |-----------------------------------------------------------|-------------------------------------------------------------|-----------------------------------------------------|
 |[Type](../properties/type.md)                              |[Values](../properties/values.md)                            |[Posn](../properties/posn.md)                        |

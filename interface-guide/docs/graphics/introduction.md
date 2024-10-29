@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 Graphical output is performed using the following objects:
 

@@ -1,4 +1,4 @@
-<h1> Timer Properties</h1>
+<h1 class="heading"><span class="name">Timer Properties</span></h1>
 
 |---------------------------------------|-----------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)          |[Interval](../properties/interval.md)    |[Active](../properties/active.md)          |

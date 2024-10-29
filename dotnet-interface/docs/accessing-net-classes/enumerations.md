@@ -1,4 +1,4 @@
-<h1> Enumerations</h1>
+<h1 class="heading"><span class="name">Enumerations</span></h1>
 
 An enumeration is a set of named constants that may apply to a particular operation. For example, when you open a file you typically want to specify whether the file is to be opened for reading, for writing, or for both. A method that opens a file will take a parameter that allows you to specify this. If this is implemented using an enumerated constant, the parameter may be one of a specific set of (typically) integer values; for example, 1=read, 2=write, 3=both read and write. However, to avoid using meaningless numbers in code, it is conventional to use names to represent particular values. These are known as *enumerated constants* or, more simply, as *enums*.
 

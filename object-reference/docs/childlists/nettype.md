@@ -1,4 +1,4 @@
-<h1> NetType Children</h1>
+<h1 class="heading"><span class="name">NetType Children</span></h1>
 
 |------------------------------|------------------------------------|------------------------------------|
 |[Bitmap](../objects/bitmap.md)|[NetClient](../objects/netclient.md)|[TCPSocket](../objects/tcpsocket.md)|

@@ -1,4 +1,4 @@
-<h1> Component Files</h1>
+<h1 class="heading"><span class="name">Component Files</span></h1>
 
 |Name       |Description                |
 |-----------|---------------------------|

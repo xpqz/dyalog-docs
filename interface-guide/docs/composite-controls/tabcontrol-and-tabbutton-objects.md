@@ -1,4 +1,4 @@
-<h1> The TabControl and TabButton Objects</h1>
+<h1 class="heading"><span class="name">The TabControl and TabButton Objects</span></h1>
 
 The TabControl object provides access to the standard Windows NT tab control.
 

@@ -1,4 +1,4 @@
-<h1> Fill Elements</h1>
+<h1 class="heading"><span class="name">Fill Elements</span></h1>
 
 Some primitive functions may include fill elements in their result.  The fill element for an array is the enclosed type of the disclose of the array (`⊂∊⊃Y` for array `Y` with `⎕ML←0`).  The Type function (`∊` with `⎕ml←0`) replaces a numeric value with zero and a character value with `' '`.
 

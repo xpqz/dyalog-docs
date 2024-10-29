@@ -1,4 +1,4 @@
-<h1> MDIClient Children</h1>
+<h1 class="heading"><span class="name">MDIClient Children</span></h1>
 
 |--------------------------------|--------------------------------|----------------------------|
 |[Circle](../objects/circle.md)  |[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)  |

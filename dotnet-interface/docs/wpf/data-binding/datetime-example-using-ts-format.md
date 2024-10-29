@@ -1,4 +1,4 @@
-<h1> Example 6a (Casting to DateTime)</h1>
+<h1 class="heading"><span class="name">Example 6a (Casting to DateTime)</span></h1>
 
 This example is similar to Example 6 but illustrates how numeric data in `⎕TS` format can be converted to  DateTime type.
 

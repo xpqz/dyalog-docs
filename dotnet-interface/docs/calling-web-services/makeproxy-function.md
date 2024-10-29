@@ -1,4 +1,4 @@
-<h1> The MakeProxy function</h1>
+<h1 class="heading"><span class="name">The MakeProxy function</span></h1>
 
 The `MakeProxy` function is provided in the supplied workspace `samples\asp.net\webservices\webservices.dws`.
 

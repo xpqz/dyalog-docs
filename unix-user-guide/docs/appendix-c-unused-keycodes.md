@@ -1,4 +1,4 @@
-<h1> Appendix C: Unused keycodes</h1>
+<h1 class="heading"><span class="name">Appendix C: Unused keycodes</span></h1>
 
 Keycodes defined for Dyalog APL, but not used or should not be used in the Dyalog APL tty version
 

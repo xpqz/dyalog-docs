@@ -1,4 +1,4 @@
-<h1> AutoComplete/Cols</h1>
+<h1 class="heading"><span class="name">AutoComplete/Cols</span></h1>
 
 This parameter specifies the maximum number of columns (width) in the Auto Complete pop-up suggestions box.
 

@@ -1,4 +1,4 @@
-<h1> Configuring the Editor</h1>
+<h1 class="heading"><span class="name">Configuring the Editor</span></h1>
 
 The editor in non-GUI versions of Dyalog APL can be considered to have 5 separate functional columns.  Below is the contents of the editor window, which shows the namespace ns, which has two traditional-style functions and one dfn.  The statement `5 ⎕STOP 'ns.fn1'` has been run too:
 ```apl

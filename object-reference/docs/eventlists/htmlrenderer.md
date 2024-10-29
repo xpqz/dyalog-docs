@@ -1,4 +1,4 @@
-<h1> HTMLRenderer Events</h1>
+<h1 class="heading"><span class="name">HTMLRenderer Events</span></h1>
 
 |-----------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------|
 |[Close](../methodorevents/close.md)                  |[Create](../methodorevents/create.md)                    |[LoadEnd](../methodorevents/loadend.md)                    |

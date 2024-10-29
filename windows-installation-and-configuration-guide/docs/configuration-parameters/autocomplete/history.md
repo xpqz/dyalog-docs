@@ -1,4 +1,4 @@
-<h1> AutoComplete/History</h1>
+<h1 class="heading"><span class="name">AutoComplete/History</span></h1>
 
 Specifies whether or not Auto Complete maintains a list of previous Auto Completions.
 

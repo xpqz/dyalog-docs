@@ -1,4 +1,4 @@
-<h1> Using .NET Classes</h1>
+<h1 class="heading"><span class="name">Using .NET Classes</span></h1>
 
 To create a Dyalog object as an instance of a .NET class, you use the `⎕NEW` system function. The `⎕NEW` system function is monadic. It takes a 1 or 2-element argument, the first element being a *class*.
 

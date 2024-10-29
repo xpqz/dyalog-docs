@@ -1,4 +1,4 @@
-<h1> Menu Children</h1>
+<h1 class="heading"><span class="name">Menu Children</span></h1>
 
 |------------------------------------|----------------------------|----------------------------------|
 |[Bitmap](../objects/bitmap.md)      |[Menu](../objects/menu.md)  |[MenuItem](../objects/menuitem.md)|

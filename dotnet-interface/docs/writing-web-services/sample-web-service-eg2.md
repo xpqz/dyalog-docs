@@ -1,4 +1,4 @@
-<h1> Sample Web Service: EG2</h1>
+<h1 class="heading"><span class="name">Sample Web Service: EG2</span></h1>
 
 In all the previous examples, we have relied upon ASP.NET to compile the `APLScript` into a .NET class prior to running it. This sample illustrates how you can make a .NET class yourself.
 

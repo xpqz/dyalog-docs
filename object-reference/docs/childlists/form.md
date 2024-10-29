@@ -1,4 +1,4 @@
-<h1> Form Children</h1>
+<h1 class="heading"><span class="name">Form Children</span></h1>
 
 |----------------------------------------------|------------------------------------------|----------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Animation](../objects/animation.md)      |[Bitmap](../objects/bitmap.md)                |

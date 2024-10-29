@@ -1,4 +1,4 @@
-<h1> Menu Properties</h1>
+<h1 class="heading"><span class="name">Menu Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|---------------------------------------------|
 |[Type](../properties/type.md)              |[Caption](../properties/caption.md)        |[Posn](../properties/posn.md)                |

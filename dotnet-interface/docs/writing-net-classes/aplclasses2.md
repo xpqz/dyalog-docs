@@ -1,4 +1,4 @@
-<h1> Example 2</h1>
+<h1 class="heading"><span class="name">Example 2</span></h1>
 
 In Example 1, we said nothing about a constructor used to create an instance of the `Primitives` class. In Example 2, we will show how this is done.
 

@@ -1,4 +1,4 @@
-<h1> Configuration Files</h1>
+<h1 class="heading"><span class="name">Configuration Files</span></h1>
 
 ## Introduction
 

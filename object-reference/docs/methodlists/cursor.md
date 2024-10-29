@@ -1,4 +1,4 @@
-<h1> Cursor Methods</h1>
+<h1 class="heading"><span class="name">Cursor Methods</span></h1>
 
 |-------------------------------------|-----------------------------------------|-------------------------------------------|
 |[Detach](../methodorevents/detach.md)|[FileRead](../methodorevents/fileread.md)|[FileWrite](../methodorevents/filewrite.md)|

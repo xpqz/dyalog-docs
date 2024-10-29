@@ -1,4 +1,4 @@
-<h1> TCPSocket Properties</h1>
+<h1 class="heading"><span class="name">TCPSocket Properties</span></h1>
 
 |-------------------------------------------------|-------------------------------------------------|-----------------------------------------------|
 |[Type](../properties/type.md)                    |[LocalAddr](../properties/localaddr.md)          |[LocalPort](../properties/localport.md)        |

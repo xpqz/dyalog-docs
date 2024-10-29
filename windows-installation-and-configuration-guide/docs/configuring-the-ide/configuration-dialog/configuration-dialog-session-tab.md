@@ -1,4 +1,4 @@
-<h1> Session Tab</h1>
+<h1 class="heading"><span class="name">Session Tab</span></h1>
 
 ![configuration dialog session tab](../../img/configuration-dialog-session-tab.png)
 

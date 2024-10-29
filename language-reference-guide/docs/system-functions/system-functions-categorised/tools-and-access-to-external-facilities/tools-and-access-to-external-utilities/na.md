@@ -41,7 +41,7 @@ The full syntax for the right argument of `⎕NA` is:
 
 Note that functions associated with DLLs are never dyadic. All arguments are passed as items of a (possibly nested) vector on the right of the function.
 
-<h1> Locating the DLL</h1>
+<h1 class="heading"><span class="name">Locating the DLL</span></h1>
 
 The DLL may be specified using a full pathname, file extension, and function type.
 

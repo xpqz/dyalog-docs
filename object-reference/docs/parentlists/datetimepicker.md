@@ -1,4 +1,4 @@
-<h1> DateTimePicker Parents</h1>
+<h1 class="heading"><span class="name">DateTimePicker Parents</span></h1>
 
 |----------------------------------------------|------------------------------------------|--------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |

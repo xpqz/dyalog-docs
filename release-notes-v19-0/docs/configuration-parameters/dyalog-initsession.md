@@ -1,4 +1,4 @@
-<h1> DYALOG_INITSESSION</h1>
+<h1 class="heading"><span class="name">DYALOG_INITSESSION</span></h1>
 
 This Boolean parameter governs whether (1) or not (0) Dyalog performs Session Initialisation on start-up. See [Session Initialisation](../../../windows-ui-guide/the-session-object/session-initialisation).
 

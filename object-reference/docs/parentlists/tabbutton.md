@@ -1,4 +1,4 @@
-<h1> TabButton Parents</h1>
+<h1 class="heading"><span class="name">TabButton Parents</span></h1>
 
 |--------------------------------------|------|------|
 |[TabControl](../objects/tabcontrol.md)|&nbsp;|&nbsp;|

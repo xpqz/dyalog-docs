@@ -1,4 +1,4 @@
-<h1> DyalogStartup_X</h1>
+<h1 class="heading"><span class="name">DyalogStartup_X</span></h1>
 
 During Session initialisation, code is loaded from the directories specified by the **DyalogStartupSE** parameter into a corresponding namespace tree in the Session namespace `⎕SE`. Optionally, the code is then executed.
 

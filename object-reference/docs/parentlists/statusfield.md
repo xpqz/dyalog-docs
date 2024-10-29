@@ -1,4 +1,4 @@
-<h1> StatusField Parents</h1>
+<h1 class="heading"><span class="name">StatusField Parents</span></h1>
 
 |------------------------------------|------|------|
 |[StatusBar](../objects/statusbar.md)|&nbsp;|&nbsp;|

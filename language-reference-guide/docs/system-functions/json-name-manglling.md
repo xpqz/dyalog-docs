@@ -1,4 +1,4 @@
-<h1> JSON Name Mangling</h1>
+<h1 class="heading"><span class="name">JSON Name Mangling</span></h1>
 
 When Dyalog converts from JSON to APL data, and a member of a JSON object has a name which is not a valid APL name, it is renamed.
 

@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 The previous chapter showed how you can build ASP.NET Web Pages by combining APL code with the Web Controls provided in the .NET Namespace `System.Web.UI.WebControls`. These controls are in fact just ordinary .NET classes. In particular, they are extensible components that can be used to develop more complex controls that encapsulate additional functionality.
 

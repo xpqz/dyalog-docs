@@ -1,4 +1,4 @@
-<h1> Text Parents</h1>
+<h1 class="heading"><span class="name">Text Parents</span></h1>
 
 |----------------------------------------------|--------------------------------------------|----------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Animation](../objects/animation.md)        |[Bitmap](../objects/bitmap.md)          |

@@ -1,4 +1,4 @@
-<h1> Methods</h1>
+<h1 class="heading"><span class="name">Methods</span></h1>
 
 ## Calling Methods
 

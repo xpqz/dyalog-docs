@@ -1,4 +1,4 @@
-<h1> Syncfusion Circular Gauge Example</h1>
+<h1 class="heading"><span class="name">Syncfusion Circular Gauge Example</span></h1>
 
 ![syncfusion gauge 1](../img/syncfusion-gauge-1.png)
 

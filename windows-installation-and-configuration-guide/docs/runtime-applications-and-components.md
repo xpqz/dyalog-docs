@@ -1,4 +1,4 @@
-<h1> Run-Time Applications and Components</h1>
+<h1 class="heading"><span class="name">Run-Time Applications and Components</span></h1>
 
 Using Dyalog APL you may create different types of run-time applications and components. Note that the distribution of run-time applications and components requires a Dyalog APL Run-Time Agreement. Please contact Dyalog or your distributor, or see the Dyalog web page for more information.
 
@@ -91,7 +91,7 @@ The command-line for your COM Server must be specified in the field labelled *Co
 
 You may change the contents of the *Command Line* field to use a configuration file, in the same way as for a workspace-based runtime. The following example uses the Loan COM Server. See [The LOAN Workspace](../../interface-guide/ole-server/the-loan-workspace).
 
-<h3 class="example">Example</h3>
+<h2 class="example">Example</h2>
 ```apl
       dyalog.exe C:\Dyalog18.0\myloan.dws
 ```

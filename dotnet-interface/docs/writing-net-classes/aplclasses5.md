@@ -1,4 +1,4 @@
-<h1> Example 5</h1>
+<h1 class="heading"><span class="name">Example 5</span></h1>
 
 This example takes things a stage further and illustrates how you can implement *method overloading*.
 

@@ -1,4 +1,4 @@
-<h1> Edit_Offset_X</h1>
+<h1 class="heading"><span class="name">Edit_Offset_X</span></h1>
 
 This parameter specify the number of characters by which an edit window is staggered horizontally from the previous one.
 

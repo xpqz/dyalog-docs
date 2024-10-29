@@ -1,4 +1,4 @@
-<h1> System Settings</h1>
+<h1 class="heading"><span class="name">System Settings</span></h1>
 
 ## Settings Affecting Behaviour of Primitive Functions
 

@@ -1,4 +1,4 @@
-<h1> TrackBar Methods</h1>
+<h1 class="heading"><span class="name">TrackBar Methods</span></h1>
 
 |-----------------------------------------|-----------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md)    |[GetTextSize](../methodorevents/gettextsize.md)|[Animate](../methodorevents/animate.md)        |

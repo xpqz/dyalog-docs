@@ -1,4 +1,4 @@
-<h1> Unicode Edition Keyboard</h1>
+<h1 class="heading"><span class="name">Unicode Edition Keyboard</span></h1>
 
 ## Introduction
 

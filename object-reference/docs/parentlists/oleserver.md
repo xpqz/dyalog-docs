@@ -1,4 +1,4 @@
-<h1> OLEServer Parents</h1>
+<h1 class="heading"><span class="name">OLEServer Parents</span></h1>
 
 |----------------------------------------------|--------------------------|------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[OLEServer](../objects/oleserver.md)|

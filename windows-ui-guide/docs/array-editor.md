@@ -1,4 +1,4 @@
-<h1> Array Editor</h1>
+<h1 class="heading"><span class="name">Array Editor</span></h1>
 
 The Array Editor[^1]  allows you to edit arbitrary arrays. It is invoked by either:
 

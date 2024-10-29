@@ -1,4 +1,4 @@
-<h1> ColorButton Children</h1>
+<h1 class="heading"><span class="name">ColorButton Children</span></h1>
 
 |----------------------------------------------|------------------------------------------|--------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |

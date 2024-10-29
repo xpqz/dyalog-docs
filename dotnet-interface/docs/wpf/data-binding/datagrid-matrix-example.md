@@ -1,4 +1,4 @@
-<h1> Example 8</h1>
+<h1 class="heading"><span class="name">Example 8</span></h1>
 
 This example illustrates data binding using a matrix and is practically identical to Example 7 except that it uses a matrix instead of a vector of namespaces.
 

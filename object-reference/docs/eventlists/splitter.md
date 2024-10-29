@@ -1,4 +1,4 @@
-<h1> Splitter Events</h1>
+<h1 class="heading"><span class="name">Splitter Events</span></h1>
 
 |-------------------------------------------|-----------------------------------------|---------------------------------------------|
 |[Close](../methodorevents/close.md)        |[Create](../methodorevents/create.md)    |[StartSplit](../methodorevents/startsplit.md)|

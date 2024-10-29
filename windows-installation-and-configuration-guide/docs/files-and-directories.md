@@ -1,4 +1,4 @@
-<h1> Files and Directories</h1>
+<h1 class="heading"><span class="name">Files and Directories</span></h1>
 
 ## Unicode and Classic Editions
 
@@ -35,7 +35,7 @@ With the exception of the following all these files may be distributed as part o
 
 |Name               |File                                    |
 |-------------------|----------------------------------------|
-|32-bit Unicode     |Dyalog APL {{ version_majmin }} Unicode\|
+|32-bit Unicode { .shaded }    |Dyalog APL {{ version_majmin }} Unicode\\ { .shaded }|
 |Development EXE    |`dyalog.exe`                            |
 |Development DLL    |`dyalog{{ version_maj }}_32_unicode.dll`|
 |Shell Script Engine|`dyascript.exe`                         |
@@ -61,7 +61,7 @@ With the exception of the following all these files may be distributed as part o
 
 |Name               |File                                    |
 |-------------------|----------------------------------------|
-|32-bit Classic     |Dyalog APL {{ version_majmin }} Classic\|
+|32-bit Classic { .shaded }     |Dyalog APL {{ version_majmin }} Classic\\  { .shaded }|
 |Development EXE    |`dyalog.exe`                            |
 |Development DLL    |`dyalog{{ version_maj }}_32.dll`        |
 |Shell Script Engine|`dyascript.exe`                         |
@@ -87,7 +87,7 @@ With the exception of the following all these files may be distributed as part o
 
 |Name               |File                                       |
 |-------------------|-------------------------------------------|
-|64-bit Unicode     |Dyalog APL-64 {{ version_majmin }} Unicode\|
+|64-bit Unicode { .shaded }     |Dyalog APL-64 {{ version_majmin }} Unicode\\  { .shaded }|
 |Development EXE    |`dyalog.exe`                               |
 |Development DLL    |`dyalog{{ version_maj }}_64_unicode.dll`   |
 |Shell Script Engine|`dyascript.exe`                            |
@@ -113,7 +113,7 @@ With the exception of the following all these files may be distributed as part o
 
 |Name               |File                                       |
 |-------------------|-------------------------------------------|
-|64-bit Classic     |Dyalog APL-64 {{ version_majmin }} Classic\|
+|64-bit Classic { .shaded }     |Dyalog APL-64 {{ version_majmin }} Classic\\ { .shaded }|
 |Development EXE    |`dyalog.exe`                               |
 |Development DLL    |`dyalog{{ version_maj }}_64.dll`           |
 |Shell Script Engine|`dyascript.exe`                            |
@@ -155,4 +155,5 @@ The following file naming conventions have been adopted for the various files di
 |.dyalog  |Dyalog APL SALT file            |
 |.dyapp   |Dyalog APL SALT application file|
 
-Note that some of these extensions, notably .dcf, .dlf, .dot and .DXF, are not unique to Dyalog and conflict with the same extensions used by other software applications. Although all the above file extensions are associated with Dyalog during its installation, these associations may subsequently be changed by the installation of other software or by a Windows System restore.
+!!! note
+    Some of these extensions, notably .dcf, .dlf, .dot and .DXF, are not unique to Dyalog and conflict with the same extensions used by other software applications. Although all the above file extensions are associated with Dyalog during its installation, these associations may subsequently be changed by the installation of other software or by a Windows System restore.

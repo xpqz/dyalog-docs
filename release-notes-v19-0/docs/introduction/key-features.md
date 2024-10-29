@@ -1,4 +1,4 @@
-<h1> Key Features</h1>
+<h1 class="heading"><span class="name">Key Features</span></h1>
 
 ## Upgrading from Version 17.1 to Version {{ version_majmin }}
 

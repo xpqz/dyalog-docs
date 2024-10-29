@@ -1,4 +1,4 @@
-<h1> Grid Children</h1>
+<h1 class="heading"><span class="name">Grid Children</span></h1>
 
 |----------------------------------|----------------------------------------------|------------------------------|
 |[Bitmap](../objects/bitmap.md)    |[BrowseBox](../objects/browsebox.md)          |[Button](../objects/button.md)|

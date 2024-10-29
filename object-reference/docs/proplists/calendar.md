@@ -1,4 +1,4 @@
-<h1> Calendar Properties</h1>
+<h1 class="heading"><span class="name">Calendar Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|---------------------------------------------|
 |[Type](../properties/type.md)              |[Posn](../properties/posn.md)              |[Size](../properties/size.md)                |

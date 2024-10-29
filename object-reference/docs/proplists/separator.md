@@ -1,4 +1,4 @@
-<h1> Separator Properties</h1>
+<h1 class="heading"><span class="name">Separator Properties</span></h1>
 
 |-------------------------------------------|-----------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[Posn](../properties/posn.md)            |[Style](../properties/style.md)        |

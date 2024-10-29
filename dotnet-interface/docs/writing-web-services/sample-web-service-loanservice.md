@@ -1,4 +1,4 @@
-<h1> Sample Web Service: LoanService</h1>
+<h1 class="heading"><span class="name">Sample Web Service: LoanService</span></h1>
 
 The `LoanService` sample is supplied in `Dyalog\Samples\asp.net\Loan\Loan.asmx`, which is mapped via an IIS Virtual Directory to the URL:
 ```apl

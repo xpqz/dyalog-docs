@@ -1,4 +1,4 @@
-<h1> ListView Properties</h1>
+<h1 class="heading"><span class="name">ListView Properties</span></h1>
 
 |-----------------------------------------------------------|-----------------------------------------------|-----------------------------------------------------|
 |[Type](../properties/type.md)                              |[Items](../properties/items.md)                |[Posn](../properties/posn.md)                        |

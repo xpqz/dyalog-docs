@@ -1,4 +1,4 @@
-<h1> NetControl Parents</h1>
+<h1 class="heading"><span class="name">NetControl Parents</span></h1>
 
 |------------------------------------------|--------------------------------|----------------------------|
 |[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |[Group](../objects/group.md)|

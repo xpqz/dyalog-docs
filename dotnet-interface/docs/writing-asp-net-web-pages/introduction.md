@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 Under Microsoft IIS, a *static* web page is defined by a simple text file with the extension .htm or .html that contains simple HTML. When a browser requests such a page, IIS simply reads it and sends its content back to the client. The contents of a static web page are constant and, until somebody changes it, the page appears the same to all users at all times.
 

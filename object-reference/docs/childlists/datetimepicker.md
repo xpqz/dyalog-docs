@@ -1,4 +1,4 @@
-<h1> DateTimePicker Children</h1>
+<h1 class="heading"><span class="name">DateTimePicker Children</span></h1>
 
 |------------------------------|------------------------------------|----------------------------|
 |[Cursor](../objects/cursor.md)|[Font](../objects/font.md)          |[Menu](../objects/menu.md)  |

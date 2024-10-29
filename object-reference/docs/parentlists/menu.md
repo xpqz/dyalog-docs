@@ -1,4 +1,4 @@
-<h1> Menu Parents</h1>
+<h1 class="heading"><span class="name">Menu Parents</span></h1>
 
 |----------------------------------------------|----------------------------------------------|----------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Calendar](../objects/calendar.md)            |[CoolBand](../objects/coolband.md)      |

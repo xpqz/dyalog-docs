@@ -1,4 +1,4 @@
-<h1> Splitter Methods</h1>
+<h1 class="heading"><span class="name">Splitter Methods</span></h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

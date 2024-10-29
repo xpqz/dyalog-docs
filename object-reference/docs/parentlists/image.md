@@ -1,4 +1,4 @@
-<h1> Image Parents</h1>
+<h1 class="heading"><span class="name">Image Parents</span></h1>
 
 |----------------------------------------------|------------------------------------------|----------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Bitmap](../objects/bitmap.md)            |[Form](../objects/form.md)        |

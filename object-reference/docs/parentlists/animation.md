@@ -1,4 +1,4 @@
-<h1> Animation Parents</h1>
+<h1 class="heading"><span class="name">Animation Parents</span></h1>
 
 |----------------------------------------------|--------------------------------|----------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)      |[Group](../objects/group.md)|

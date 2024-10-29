@@ -1,4 +1,4 @@
-<h1> More Examples</h1>
+<h1 class="heading"><span class="name">More Examples</span></h1>
 
 ## Directory and File Manipulation
 

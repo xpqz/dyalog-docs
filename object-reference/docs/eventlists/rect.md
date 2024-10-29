@@ -1,4 +1,4 @@
-<h1> Rect Events</h1>
+<h1 class="heading"><span class="name">Rect Events</span></h1>
 
 |---------------------------------------------------|---------------------------------------|-------------------------------------------|
 |[Close](../methodorevents/close.md)                |[Create](../methodorevents/create.md)  |[DragDrop](../methodorevents/dragdrop.md)  |

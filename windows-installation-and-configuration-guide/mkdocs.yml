@@ -49,7 +49,7 @@ markdown_extensions:
 nav:
   - Documentation: documentation.md
   - Files and Directories: files-and-directories.md
-  - File Associations: file-associations.md
+  - File Extensions: file-associations.md
   - APL Fonts: apl-fonts.md
   - Interoperability and Compatibility: interoperability.md
   - The APL Command Line: apl-command-line.md
@@ -73,18 +73,18 @@ nav:
       - APL_TextInAplCore: configuration-parameters/apl-textinaplcore.md
       - AutoDPI: configuration-parameters/autodpi.md
       - AutoComplete:
-          - AutoComplete/CancelKey1: configuration-parameters/autocomplete/cancelkey1.md
-          - AutoComplete/CancelKey2: configuration-parameters/autocomplete/cancelkey2.md
-          - AutoComplete/Cols: configuration-parameters/autocomplete/cols.md
-          - AutoComplete/CommonKey1: configuration-parameters/autocomplete/commonkey1.md
-          - AutoComplete/CompleteKey1: configuration-parameters/autocomplete/completekey1.md
-          - AutoComplete/CompleteKey2: configuration-parameters/autocomplete/completekey2.md
-          - AutoComplete/Enabled: configuration-parameters/autocomplete/enabled.md
-          - AutoComplete/History: configuration-parameters/autocomplete/history.md
-          - AutoComplete/HistorySize: configuration-parameters/autocomplete/historysize.md
-          - AutoComplete/PrefixSize: configuration-parameters/autocomplete/prefixsize.md
-          - AutoComplete/Rows: configuration-parameters/autocomplete/rows.md
-          - AutoComplete/ShowFiles: configuration-parameters/autocomplete/showfiles.md
+          - CancelKey1: configuration-parameters/autocomplete/cancelkey1.md
+          - CancelKey2: configuration-parameters/autocomplete/cancelkey2.md
+          - Cols: configuration-parameters/autocomplete/cols.md
+          - CommonKey1: configuration-parameters/autocomplete/commonkey1.md
+          - CompleteKey1: configuration-parameters/autocomplete/completekey1.md
+          - CompleteKey2: configuration-parameters/autocomplete/completekey2.md
+          - Enabled: configuration-parameters/autocomplete/enabled.md
+          - History: configuration-parameters/autocomplete/history.md
+          - HistorySize: configuration-parameters/autocomplete/historysize.md
+          - PrefixSize: configuration-parameters/autocomplete/prefixsize.md
+          - Rows: configuration-parameters/autocomplete/rows.md
+          - ShowFiles: configuration-parameters/autocomplete/showfiles.md
       - AutoFormat: configuration-parameters/autoformat.md
       - AutoIndent: configuration-parameters/autoindent.md
       - auto_pw: configuration-parameters/auto-pw.md

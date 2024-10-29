@@ -1,4 +1,4 @@
-<h1> Example 7</h1>
+<h1 class="heading"><span class="name">Example 7</span></h1>
 
 This example illustrates data binding using a vector of namespaces.
 

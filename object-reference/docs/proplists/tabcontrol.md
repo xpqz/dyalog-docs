@@ -1,4 +1,4 @@
-<h1> TabControl Properties</h1>
+<h1 class="heading"><span class="name">TabControl Properties</span></h1>
 
 |-------------------------------------------------|-------------------------------------------------|-----------------------------------------|
 |[Type](../properties/type.md)                    |[Posn](../properties/posn.md)                    |[Size](../properties/size.md)            |

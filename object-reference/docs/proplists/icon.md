@@ -1,4 +1,4 @@
-<h1> Icon Properties</h1>
+<h1 class="heading"><span class="name">Icon Properties</span></h1>
 
 |-------------------------------------------|---------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)              |[File](../properties/file.md)          |[Bits](../properties/bits.md)              |

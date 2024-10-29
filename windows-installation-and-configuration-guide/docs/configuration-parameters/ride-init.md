@@ -1,4 +1,4 @@
-<h1> RIDE_Init</h1>
+<h1 class="heading"><span class="name">RIDE_Init</span></h1>
 
 This parameter determines how the interpreter should behave with respect to the RIDE protocol. Setting this configuration parameter on the machine that hosts the interpreter enables the interpreter-RIDE connection.
 

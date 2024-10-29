@@ -1,4 +1,4 @@
-<h1> CoolBar Children</h1>
+<h1 class="heading"><span class="name">CoolBar Children</span></h1>
 
 |----------------------------------|------------------------------------|--------------------------|
 |[CoolBand](../objects/coolband.md)|[ImageList](../objects/imagelist.md)|[Menu](../objects/menu.md)|

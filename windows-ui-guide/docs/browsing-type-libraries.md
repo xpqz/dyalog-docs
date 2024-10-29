@@ -1,4 +1,4 @@
-<h1> Browsing Type Libraries</h1>
+<h1 class="heading"><span class="name">Browsing Type Libraries</span></h1>
 
 When the *View/Type Libraries* option is enabled, the *Workspace Explorer* allows you to:
 
