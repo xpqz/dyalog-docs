@@ -1,4 +1,4 @@
-<h1> Threading</h1>
+<h1 class="heading"><span class="name">Threading</span></h1>
 
 The .NET Framework is inherently a multi-threaded environment. For example, ASP.NET runs its own thread pool from which it allocates system threads to its clients. Calls from ASP.NET into APL Web Pages and Web Services will typically be made from different system threads. This means that APL will receive calls from .NET while it is processing a previous call. The situation is further complicated when you write an APL Web Page that calls an APL Web Service, both of which may be hosted by a single Dyalog DLL inside ASP.NET. In these circumstances, ASP.NET may well allocate different system threads to the .NET calls, which are made into the two separate APL objects. Although in the first example (multiple clients) APL could theoretically impose its own queuing mechanism for incoming calls, it cannot do so in the second case without causing a deadlock situation.
 

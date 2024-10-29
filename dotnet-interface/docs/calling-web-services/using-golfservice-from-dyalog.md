@@ -1,4 +1,4 @@
-<h1> Using GolfService from Dyalog APL</h1>
+<h1 class="heading"><span class="name">Using GolfService from Dyalog APL</span></h1>
 
 The workspace `samples\asp.net\webservices\webservices` contains functions that present a GUI interface to the `GolfService` web service.
 

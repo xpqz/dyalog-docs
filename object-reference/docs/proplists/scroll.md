@@ -1,4 +1,4 @@
-<h1> Scroll Properties</h1>
+<h1 class="heading"><span class="name">Scroll Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)              |[Posn](../properties/posn.md)              |[Size](../properties/size.md)              |

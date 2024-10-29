@@ -1,4 +1,4 @@
-<h1> Creating Programs (.exe) with APLScript</h1>
+<h1 class="heading"><span class="name">Creating Programs (.exe) with APLScript</span></h1>
 
 The following examples, which illustrate how you can create an executable program (`.exe`) direct from an APLScript file, may be found in the directory `samples\aplscript`.
 

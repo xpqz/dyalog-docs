@@ -1,4 +1,4 @@
-<h1> `⎕SE`, User Commands and SALT</h1>
+<h1 class="heading"><span class="name">`⎕SE`, User Commands and SALT</span></h1>
 
 ## Summary
 

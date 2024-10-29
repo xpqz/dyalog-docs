@@ -1,4 +1,4 @@
-<h1> Syncfusion Libraries</h1>
+<h1 class="heading"><span class="name">Syncfusion Libraries</span></h1>
 
 Under a licensing agreement with Syncfusion, Dyalog includes the Syncfusion library of WPF controls. These may be used by Dyalog APL users to develop applications, and may be distributed with Dyalog APL run-time applications.
 

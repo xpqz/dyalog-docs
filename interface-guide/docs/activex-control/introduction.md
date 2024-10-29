@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 An *ActiveX Control* is basically a user-defined control that may be included in GUI applications and Web Browsers.
 

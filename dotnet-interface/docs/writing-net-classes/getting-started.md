@@ -1,4 +1,4 @@
-<h1> Getting Started</h1>
+<h1 class="heading"><span class="name">Getting Started</span></h1>
 
 **This tutorial, as provided, supports the 64-bit Unicode version of Dyalog only.**
 

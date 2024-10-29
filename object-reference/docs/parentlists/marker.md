@@ -1,4 +1,4 @@
-<h1> Marker Parents</h1>
+<h1 class="heading"><span class="name">Marker Parents</span></h1>
 
 |----------------------------------------------|--------------------------------------------|----------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Animation](../objects/animation.md)        |[Bitmap](../objects/bitmap.md)          |

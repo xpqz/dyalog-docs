@@ -1,4 +1,4 @@
-<h1> FileBox Properties</h1>
+<h1 class="heading"><span class="name">FileBox Properties</span></h1>
 
 |-----------------------------------------|---------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)            |[Caption](../properties/caption.md)    |[Directory](../properties/directory.md)    |

@@ -1,4 +1,4 @@
-<h1> Font Events</h1>
+<h1 class="heading"><span class="name">Font Events</span></h1>
 
 |---------------------------------------------|-------------------------------------|-------------------------------------|
 |[Close](../methodorevents/close.md)          |[Create](../methodorevents/create.md)|[FontOK](../methodorevents/fontok.md)|

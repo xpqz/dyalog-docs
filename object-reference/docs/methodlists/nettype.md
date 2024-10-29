@@ -1,3 +1,3 @@
-<h1> NetType Methods</h1>
+<h1 class="heading"><span class="name">NetType Methods</span></h1>
 
 |

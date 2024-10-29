@@ -1,4 +1,4 @@
-<h1> Manipulating Functions and Operators</h1>
+<h1 class="heading"><span class="name">Manipulating Functions and Operators</span></h1>
 
 |Name      |Description             |
 |----------|------------------------|

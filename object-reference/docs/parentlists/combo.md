@@ -1,4 +1,4 @@
-<h1> Combo Parents</h1>
+<h1 class="heading"><span class="name">Combo Parents</span></h1>
 
 |----------------------------------------------|----------------------------------|------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[CoolBand](../objects/coolband.md)|[Form](../objects/form.md)                |

@@ -1,4 +1,4 @@
-<h1> Sample Web Service: EG1</h1>
+<h1 class="heading"><span class="name">Sample Web Service: EG1</span></h1>
 
 The first APLExample sample is supplied in `samples\asp.net\webservices\eg1.asmx` which is mapped via an IIS Virtual Directory to the URL:
 ```apl

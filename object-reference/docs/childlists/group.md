@@ -1,4 +1,4 @@
-<h1> Group Children</h1>
+<h1 class="heading"><span class="name">Group Children</span></h1>
 
 |----------------------------------------|----------------------------------------------|----------------------------------------|
 |[Animation](../objects/animation.md)    |[Bitmap](../objects/bitmap.md)                |[Button](../objects/button.md)          |

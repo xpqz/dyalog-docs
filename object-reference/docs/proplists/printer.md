@@ -1,4 +1,4 @@
-<h1> Printer Properties</h1>
+<h1 class="heading"><span class="name">Printer Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|---------------------------------------------|
 |[Type](../properties/type.md)              |[PName](../properties/pname.md)            |[DevCaps](../properties/devcaps.md)          |

@@ -1,4 +1,4 @@
-<h1> Example 3</h1>
+<h1 class="heading"><span class="name">Example 3</span></h1>
 
 This example uses APL code to both build the user-interface (instead of using XAML) and handle the data binding. In this case both the Text and the FontSize properties are bound to APL variables. The function is shown below:
 ```apl

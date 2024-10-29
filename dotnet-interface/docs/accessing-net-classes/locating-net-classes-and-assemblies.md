@@ -1,4 +1,4 @@
-<h1> Locating .NET Classes and Assemblies</h1>
+<h1 class="heading"><span class="name">Locating .NET Classes and Assemblies</span></h1>
 
 Unlike COM objects, which are referenced via the Windows Registry, .NET assemblies and the classes they contain, are generally self-contained independent entities (they can be based upon classes in other assemblies). In simple terms, you can install a class on your system by copying the assembly file onto your hard disk and you can de-install it by erasing the file.
 

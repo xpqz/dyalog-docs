@@ -1,4 +1,4 @@
-<h1> CoolBand Events</h1>
+<h1 class="heading"><span class="name">CoolBand Events</span></h1>
 
 |-----------------------------------------|-----------------------------------------------|---------------------------------------------|
 |[Close](../methodorevents/close.md)      |[Create](../methodorevents/create.md)          |[DockStart](../methodorevents/dockstart.md)  |

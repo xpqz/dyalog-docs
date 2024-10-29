@@ -1,4 +1,4 @@
-<h1> Poly Events</h1>
+<h1 class="heading"><span class="name">Poly Events</span></h1>
 
 |---------------------------------------------------|---------------------------------------|-------------------------------------------|
 |[Close](../methodorevents/close.md)                |[Create](../methodorevents/create.md)  |[DragDrop](../methodorevents/dragdrop.md)  |

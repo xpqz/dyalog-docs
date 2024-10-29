@@ -1,4 +1,4 @@
-<h1> MenuBar Parents</h1>
+<h1 class="heading"><span class="name">MenuBar Parents</span></h1>
 
 |----------------------------------------------|--------------------------|--------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|

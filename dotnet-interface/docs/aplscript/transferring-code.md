@@ -1,4 +1,4 @@
-<h1> Copying code from the Dyalog  Session</h1>
+<h1 class="heading"><span class="name">Copying code from the Dyalog  Session</span></h1>
 
 You may find it easier to write APL code using the Dyalog APL function or class editor that is provided by the Dyalog APL Session. Or you may already have code in a workspace that you want to copy into an `APLScript` file.
 

@@ -1,4 +1,4 @@
-<h1> Compilation</h1>
+<h1 class="heading"><span class="name">Compilation</span></h1>
 
 When the Web Service, specified by the `.asmx` file, is called **for the first time**, ASP.NET invokes the appropriate language compiler (in this case, the Dyalog Script compiler) whose job is to produce an Assembly that defines and describes a class. When the Web Service is used subsequently, the request is satisfied by creating and using an instance of the class. However, ASP.NET detects if the `.asmx` script has been modified, and recompiles it in this case.
 

@@ -1,4 +1,4 @@
-<h1> OLEServer Children</h1>
+<h1 class="heading"><span class="name">OLEServer Children</span></h1>
 
 |----------------------------------|--------------------------------------------|------------------------------------|
 |[Bitmap](../objects/bitmap.md)    |[BrowseBox](../objects/browsebox.md)        |[Clipboard](../objects/clipboard.md)|

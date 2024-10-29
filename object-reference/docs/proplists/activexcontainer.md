@@ -1,4 +1,4 @@
-<h1> ActiveXContainer Properties</h1>
+<h1 class="heading"><span class="name">ActiveXContainer Properties</span></h1>
 
 |-------------------------------------------|-----------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[Event](../properties/event.md)          |[FontObj](../properties/fontobj.md)    |

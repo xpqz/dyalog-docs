@@ -1,4 +1,4 @@
-<h1> Clipboard Properties</h1>
+<h1 class="heading"><span class="name">Clipboard Properties</span></h1>
 
 |-----------------------------------------|-------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)            |[Event](../properties/event.md)            |[Data](../properties/data.md)              |

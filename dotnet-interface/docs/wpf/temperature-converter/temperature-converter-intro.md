@@ -1,4 +1,4 @@
-<h1> Temperature Converter Tutorial</h1>
+<h1 class="heading"><span class="name">Temperature Converter Tutorial</span></h1>
 
 This tutorial illustrates how to go about developing a simple WPF application in Dyalog. It is functionally identical to the GUI tutorial example that illustrates how to develop a GUI application using the built-in Dyalog Graphical User Interface. See 
 Interface Guide: 

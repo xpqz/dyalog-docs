@@ -1,4 +1,4 @@
-<h1> Creating Objects</h1>
+<h1 class="heading"><span class="name">Creating Objects</span></h1>
 
 You create objects using `⎕WC`. Its left argument is a character vector that specifies the name of the object to be created. Its right argument specifies the object's Type and various other properties. Its (shy) result is the full pathname of the newly created object.
 

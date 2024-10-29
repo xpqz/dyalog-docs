@@ -1,4 +1,4 @@
-<h1> Default_DIV</h1>
+<h1 class="heading"><span class="name">Default_DIV</span></h1>
 
 This parameter specifies the value of `⎕DIV` in a clear workspace. Its default value is 0.
 

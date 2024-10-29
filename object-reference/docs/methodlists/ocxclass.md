@@ -1,4 +1,4 @@
-<h1> OCXClass Methods</h1>
+<h1 class="heading"><span class="name">OCXClass Methods</span></h1>
 
 |-----------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|
 |[Detach](../methodorevents/detach.md)                      |[GetPropertyInfo](../methodorevents/getpropertyinfo.md)|[GetEventInfo](../methodorevents/geteventinfo.md)            |

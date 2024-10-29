@@ -1,4 +1,4 @@
-<h1> DateTimePicker Properties</h1>
+<h1 class="heading"><span class="name">DateTimePicker Properties</span></h1>
 
 |---------------------------------------------|---------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)                |[Posn](../properties/posn.md)                |[Size](../properties/size.md)              |

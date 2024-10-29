@@ -1,4 +1,4 @@
-<h1> Using Code</h1>
+<h1 class="heading"><span class="name">Using Code</span></h1>
 
 The functions for this example are provided in the workspace `WPFIntro.dws` in the namespace `WPF.UsingCode`. To run the example:
 ```apl

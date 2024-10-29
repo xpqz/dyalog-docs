@@ -1,4 +1,4 @@
-<h1> User Interaction & Events</h1>
+<h1 class="heading"><span class="name">User Interaction & Events</span></h1>
 
 ## Giving Control to the User
 

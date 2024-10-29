@@ -1,4 +1,4 @@
-<h1> Configuration Parameters</h1>
+<h1 class="heading"><span class="name">Configuration Parameters</span></h1>
 
 ## Introduction
 

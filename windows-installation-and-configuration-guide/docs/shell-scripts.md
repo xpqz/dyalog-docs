@@ -1,4 +1,4 @@
-<h1> Shell Scripts</h1>
+<h1 class="heading"><span class="name">Shell Scripts</span></h1>
 
 Shell scripts are typically executed  from a terminal (or *shell*).
 
@@ -95,4 +95,4 @@ Note that the interpreter reads both of these locations, the command line in the
 
 ### Debugging
 
-It is not currently possible to use RIDE to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information.
+It is not currently possible to use Ride to debug APL shell scripts. However there is an I-beam function, which can be used to provide some simple debugging/diagnostic information.

@@ -1,4 +1,4 @@
-<h1> ComboEx Properties</h1>
+<h1 class="heading"><span class="name">ComboEx Properties</span></h1>
 
 |---------------------------------------------------|-------------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)                      |[Items](../properties/items.md)                  |[Text](../properties/text.md)              |

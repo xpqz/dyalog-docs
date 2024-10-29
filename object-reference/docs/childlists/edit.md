@@ -1,4 +1,4 @@
-<h1> Edit Children</h1>
+<h1 class="heading"><span class="name">Edit Children</span></h1>
 
 |------------------------------|------------------------------|--------------------------------|
 |[Circle](../objects/circle.md)|[Cursor](../objects/cursor.md)|[Ellipse](../objects/ellipse.md)|

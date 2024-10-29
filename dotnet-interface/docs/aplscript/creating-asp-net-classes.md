@@ -1,4 +1,4 @@
-<h1> Creating ASP.NET Classes with APLScript</h1>
+<h1 class="heading"><span class="name">Creating ASP.NET Classes with APLScript</span></h1>
 
 As mentioned previously, the original purpose of APLScript was to provide the ability to write ASP.NET Web Pages and Web Services in Dyalog. Both these applications are based upon script files.
 

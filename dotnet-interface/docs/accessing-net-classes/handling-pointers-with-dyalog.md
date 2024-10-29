@@ -1,4 +1,4 @@
-<h1> Handling Pointers with Dyalog.ByRef</h1>
+<h1 class="heading"><span class="name">Handling Pointers with Dyalog.ByRef</span></h1>
 
 Certain .NET methods take parameters that are pointers.
 

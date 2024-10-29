@@ -1,4 +1,4 @@
-<h1> Stack and Workspace Information</h1>
+<h1 class="heading"><span class="name">Stack and Workspace Information</span></h1>
 
 |Name     |Description              |
 |---------|-------------------------|

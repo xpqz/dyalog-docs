@@ -1,4 +1,4 @@
-<h1> Files Installed with Dyalog</h1>
+<h1 class="heading"><span class="name">Files Installed with Dyalog</span></h1>
 
 ## NET Interface Components
 

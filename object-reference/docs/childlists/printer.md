@@ -1,4 +1,4 @@
-<h1> Printer Children</h1>
+<h1 class="heading"><span class="name">Printer Children</span></h1>
 
 |------------------------------|----------------------------------|--------------------------------|
 |[Bitmap](../objects/bitmap.md)|[Circle](../objects/circle.md)    |[Ellipse](../objects/ellipse.md)|

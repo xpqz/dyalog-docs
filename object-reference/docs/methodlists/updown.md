@@ -1,4 +1,4 @@
-<h1> UpDown Methods</h1>
+<h1 class="heading"><span class="name">UpDown Methods</span></h1>
 
 |-----------------------------------------|-----------------------------------------------|-----------------------------------------------|
 |[Detach](../methodorevents/detach.md)    |[GetTextSize](../methodorevents/gettextsize.md)|[Animate](../methodorevents/animate.md)        |

@@ -1,4 +1,4 @@
-<h1> General principles of APLScript</h1>
+<h1 class="heading"><span class="name">General principles of APLScript</span></h1>
 
 The layout of an `APLScript` file differs according to whether the script defines a Web Page, a Web Service, a .NET class, or an APL application that may have nothing to do with the .NET Framework. However, within the `APLScript`, the code layout rules are basically the same.
 

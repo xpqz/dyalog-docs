@@ -1,4 +1,4 @@
-<h1> CoolBar Parents</h1>
+<h1 class="heading"><span class="name">CoolBar Parents</span></h1>
 
 |----------------------------------------------|--------------------------|------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)|&nbsp;|

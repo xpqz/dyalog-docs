@@ -1,4 +1,4 @@
-<h1> Trace/Edit Tab</h1>
+<h1 class="heading"><span class="name">Trace/Edit Tab</span></h1>
 
 ![configuration dialog trace edit tab](../../img/configuration-dialog-trace-edit-tab.png)
 

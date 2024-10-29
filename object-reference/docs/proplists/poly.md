@@ -1,4 +1,4 @@
-<h1> Poly Properties</h1>
+<h1 class="heading"><span class="name">Poly Properties</span></h1>
 
 |---------------------------------------|-------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)          |[Points](../properties/points.md)          |[FCol](../properties/fcol.md)              |

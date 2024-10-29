@@ -1,4 +1,4 @@
-<h1> Primitive Operators</h1>
+<h1 class="heading"><span class="name">Primitive Operators</span></h1>
 
 |------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------|
 |[Each](each-with-monadic-operand.md)      |`f¨Y`                     |apply monadic `f` to elements of `Y`                                                                    |

@@ -1,4 +1,4 @@
-<h1> MsgBox Properties</h1>
+<h1 class="heading"><span class="name">MsgBox Properties</span></h1>
 
 |-------------------------------------------|-----------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[Caption](../properties/caption.md)      |[Text](../properties/text.md)          |

@@ -1,3 +1,3 @@
-<h1> NetClient Properties</h1>
+<h1 class="heading"><span class="name">NetClient Properties</span></h1>
 
 |

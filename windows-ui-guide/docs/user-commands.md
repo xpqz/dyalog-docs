@@ -1,4 +1,4 @@
-<h1> User Commands</h1>
+<h1 class="heading"><span class="name">User Commands</span></h1>
 
 Dyalog includes a mechanism to define *User Commands*.
 

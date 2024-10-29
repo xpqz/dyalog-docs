@@ -1,4 +1,4 @@
-<h1> Creating .NET Classes with APLScript</h1>
+<h1 class="heading"><span class="name">Creating .NET Classes with APLScript</span></h1>
 
 It is possible to define and use new .NET classes within an `APLScript`.
 

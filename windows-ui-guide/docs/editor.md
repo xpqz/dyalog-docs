@@ -1,4 +1,4 @@
-<h1> The Editor</h1>
+<h1 class="heading"><span class="name">The Editor</span></h1>
 
 ## Invoking the Editor
 

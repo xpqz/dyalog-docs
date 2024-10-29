@@ -1,4 +1,4 @@
-<h1> MsgBox Events</h1>
+<h1 class="heading"><span class="name">MsgBox Events</span></h1>
 
 |---------------------------------------|---------------------------------------|---------------------------------------|
 |[Close](../methodorevents/close.md)    |[Create](../methodorevents/create.md)  |[MsgBtn1](../methodorevents/msgbtn1.md)|

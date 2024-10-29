@@ -1,4 +1,4 @@
-<h1> Dyalog Serial Number</h1>
+<h1 class="heading"><span class="name">Dyalog Serial Number</span></h1>
 
 If you have registered your copy of Dyalog or have a commercial licence then you will have been sent a Dyalog serial number; this serial number is individual to you and corresponds to the type of licence that you are entitled to use.
 
@@ -23,8 +23,7 @@ or
       ⎕SE.Dyalog.Serial ''
 ```
 
-## NOTE
+!!! note 
+    Using or entering a serial number other than the one issued to you is not permitted. Transferring the serial number to anyone else is not permitted.For the full licence terms and conditions, see: [Terms and Conditions](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf)
 
-Using or entering a serial number other than the one issued to you is not permitted. Transferring the serial number to anyone else is not permitted.For the full licence terms and conditions, see:[https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf)
-
-[^1]: This string can also be  set using regedit but Dyalog Ltd does not recommend this approach.
+[^1]: This string can also be set using regedit but Dyalog Ltd does not recommend this approach.

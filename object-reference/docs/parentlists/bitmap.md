@@ -1,4 +1,4 @@
-<h1> Bitmap Parents</h1>
+<h1 class="heading"><span class="name">Bitmap Parents</span></h1>
 
 |----------------------------------------------|------------------------------------------|--------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Animation](../objects/animation.md)      |[Button](../objects/button.md)              |

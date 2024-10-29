@@ -1,4 +1,4 @@
-<h1> FileBox Events</h1>
+<h1 class="heading"><span class="name">FileBox Events</span></h1>
 
 |---------------------------------------------------|-------------------------------------|-------------------------------------------|
 |[Close](../methodorevents/close.md)                |[Create](../methodorevents/create.md)|[FileBoxOK](../methodorevents/fileboxok.md)|

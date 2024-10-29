@@ -1,4 +1,4 @@
-<h1> TipField Properties</h1>
+<h1 class="heading"><span class="name">TipField Properties</span></h1>
 
 |---------------------------------------|-------------------------------------------|-----------------------------------------|
 |[Type](../properties/type.md)          |[Event](../properties/event.md)            |[FontObj](../properties/fontobj.md)      |

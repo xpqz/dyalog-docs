@@ -1,4 +1,4 @@
-<h1> Introduction</h1>
+<h1 class="heading"><span class="name">Introduction</span></h1>
 
 Dyalog APL supports dockable Forms, SubForms, CoolBands and ToolControls.
 

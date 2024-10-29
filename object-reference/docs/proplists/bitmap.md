@@ -1,4 +1,4 @@
-<h1> Bitmap Properties</h1>
+<h1 class="heading"><span class="name">Bitmap Properties</span></h1>
 
 |-------------------------------------------|---------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)              |[File](../properties/file.md)          |[Bits](../properties/bits.md)              |

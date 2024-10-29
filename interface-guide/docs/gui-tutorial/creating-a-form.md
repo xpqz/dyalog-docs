@@ -1,4 +1,4 @@
-<h1> Creating a Form</h1>
+<h1 class="heading"><span class="name">Creating a Form</span></h1>
 
 The first task is to create a Form which is to act as the main window for our application. We will call the Form `'TEMP'` and give it a title (Caption) of "Temperature Converter".
 

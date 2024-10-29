@@ -1,4 +1,4 @@
-<h1> ProgressBar Children</h1>
+<h1 class="heading"><span class="name">ProgressBar Children</span></h1>
 
 |--------------------------------|------------------------------|------------------------------|
 |[Bitmap](../objects/bitmap.md)  |[Circle](../objects/circle.md)|[Cursor](../objects/cursor.md)|

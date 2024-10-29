@@ -1,4 +1,4 @@
-<h1> Modal Dialog Boxes</h1>
+<h1 class="heading"><span class="name">Modal Dialog Boxes</span></h1>
 
 Dialog Boxes are displayed modally to prevent the user from performing tasks outside of the dialog box.
 

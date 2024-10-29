@@ -1,4 +1,4 @@
-<h1> TabBtn Parents</h1>
+<h1 class="heading"><span class="name">TabBtn Parents</span></h1>
 
 |------------------------------|------|------|
 |[TabBar](../objects/tabbar.md)|&nbsp;|&nbsp;|

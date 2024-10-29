@@ -1,4 +1,4 @@
-<h1> Metafile Parents</h1>
+<h1 class="heading"><span class="name">Metafile Parents</span></h1>
 
 |----------------------------------------------|------------------------------------------|--------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Bitmap](../objects/bitmap.md)            |[CoolBand](../objects/coolband.md)          |

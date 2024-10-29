@@ -1,4 +1,4 @@
-<h1> Example 2a</h1>
+<h1 class="heading"><span class="name">Example 2a</span></h1>
 
 In Example 2, the argument to `CTOR`, the constructor for the `Primitives` class, was defined to be `Int32`. This means that the .NET Framework will allow a client to specify *any* integer when it creates an instance of the `Primitives` class. What happens if the client uses a parameter of 2? Clearly this is going to cause an APL `DOMAIN ERROR` when used to set `⎕IO`.
 

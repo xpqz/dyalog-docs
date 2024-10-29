@@ -1,4 +1,4 @@
-<h1> Example 4</h1>
+<h1 class="heading"><span class="name">Example 4</span></h1>
 
 This example builds on Example 3 and illustrates how you can implement *constructor overloading*, by establishing several different constructor functions.
 

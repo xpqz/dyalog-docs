@@ -1,4 +1,4 @@
-<h1> Exporting Methods</h1>
+<h1 class="heading"><span class="name">Exporting Methods</span></h1>
 
 Your Web Service will be of no use unless it exports at least one method. To export a function as a method, you must include declaration statements. Such declarations may be supplied anywhere within the function body, but it is recommended that they appear together as the first block of statements in your code. All declaration statements begin with the colon (:) character and the following declaration statements are supported:
 ```apl

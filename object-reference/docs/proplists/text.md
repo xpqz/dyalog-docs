@@ -1,4 +1,4 @@
-<h1> Text Properties</h1>
+<h1 class="heading"><span class="name">Text Properties</span></h1>
 
 |-------------------------------------------|-------------------------------------------|---------------------------------------|
 |[Type](../properties/type.md)              |[Text](../properties/text.md)              |[Points](../properties/points.md)      |

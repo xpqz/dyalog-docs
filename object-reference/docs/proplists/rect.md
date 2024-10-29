@@ -1,4 +1,4 @@
-<h1> Rect Properties</h1>
+<h1 class="heading"><span class="name">Rect Properties</span></h1>
 
 |---------------------------------------|-------------------------------------------|-------------------------------------------|
 |[Type](../properties/type.md)          |[Points](../properties/points.md)          |[Size](../properties/size.md)              |

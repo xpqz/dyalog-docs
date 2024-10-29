@@ -1,4 +1,4 @@
-<h1> The TemperatureConverterCtl2 Control</h1>
+<h1 class="heading"><span class="name">The TemperatureConverterCtl2 Control</span></h1>
 
 The previous example showed how to compose an ASP.NET custom control from other standard controls. This example shows how you can instead generate standard form elements on the browser by rendering the HTML for them directly.
 

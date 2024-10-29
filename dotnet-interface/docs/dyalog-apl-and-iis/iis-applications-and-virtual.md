@@ -1,4 +1,4 @@
-<h1> IIS Applications, Virtual Directories, Application Pools</h1>
+<h1 class="heading"><span class="name">IIS Applications, Virtual Directories, Application Pools</span></h1>
 
 IIS supports the concept of an *Application*. An application is a logically separate service or web site. IIS can run any number of Applications concurrently. The files associated with an application are stored in a physical directory on disk, which is linked to an IIS *Virtual Directory*. The name of the Virtual Directory is the name of the Application or Web Site.
 

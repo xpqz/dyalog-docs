@@ -1,4 +1,4 @@
-<h1> ColorButton Parents</h1>
+<h1 class="heading"><span class="name">ColorButton Parents</span></h1>
 
 |----------------------------------------------|------------------------------------------|--------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[Form](../objects/form.md)                |[Grid](../objects/grid.md)      |

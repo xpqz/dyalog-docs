@@ -1,4 +1,4 @@
-<h1> Starting APL</h1>
+<h1 class="heading"><span class="name">Starting APL</span></h1>
 
 By default, to start the non-GUI versions of Dyalog APL, run the mapl script which is in the installation directory of Dyalog APL.
 

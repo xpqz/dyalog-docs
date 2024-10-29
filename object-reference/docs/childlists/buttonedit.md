@@ -1,4 +1,4 @@
-<h1> ButtonEdit Children</h1>
+<h1 class="heading"><span class="name">ButtonEdit Children</span></h1>
 
 |------------------------------------|--------------------------------|----------------------------|
 |[Circle](../objects/circle.md)      |[Ellipse](../objects/ellipse.md)|[Font](../objects/font.md)  |

@@ -1,4 +1,4 @@
-<h1> Example 3</h1>
+<h1 class="heading"><span class="name">Example 3</span></h1>
 
 The correct .NET behaviour when an APL function fails with an error is to *throw an exception*, and this example shows how to do it.
 

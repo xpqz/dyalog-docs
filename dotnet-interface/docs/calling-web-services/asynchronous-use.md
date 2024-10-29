@@ -1,4 +1,4 @@
-<h1> Asynchronous Use</h1>
+<h1 class="heading"><span class="name">Asynchronous Use</span></h1>
 
 Web Services provide both synchronous (client calls the function and waits for a result) and asynchronous operation.
 

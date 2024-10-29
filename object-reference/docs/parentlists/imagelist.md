@@ -1,4 +1,4 @@
-<h1> ImageList Parents</h1>
+<h1 class="heading"><span class="name">ImageList Parents</span></h1>
 
 |----------------------------------------------|--------------------------------------|------------------------------------------|
 |[ActiveXControl](../objects/activexcontrol.md)|[ButtonEdit](../objects/buttonedit.md)|[CoolBand](../objects/coolband.md)        |

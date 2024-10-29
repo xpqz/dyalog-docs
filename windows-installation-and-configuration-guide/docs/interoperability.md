@@ -1,4 +1,4 @@
-<h1> Interoperability</h1>
+<h1 class="heading"><span class="name">Interoperability</span></h1>
 
 ## Introduction
 

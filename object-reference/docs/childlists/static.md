@@ -1,4 +1,4 @@
-<h1> Static Children</h1>
+<h1 class="heading"><span class="name">Static Children</span></h1>
 
 |------------------------------|----------------------------------|--------------------------------|
 |[Circle](../objects/circle.md)|[Cursor](../objects/cursor.md)    |[Ellipse](../objects/ellipse.md)|

@@ -1,3 +1,3 @@
-<h1> OLEClient Events</h1>
+<h1 class="heading"><span class="name">OLEClient Events</span></h1>
 
 |

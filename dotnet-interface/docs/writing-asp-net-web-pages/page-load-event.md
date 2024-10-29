@@ -1,4 +1,4 @@
-<h1> The Page_Load Event</h1>
+<h1 class="heading"><span class="name">The Page_Load Event</span></h1>
 
 `Intro3.aspx` illustrates how you can dynamically initialise the contents of a Web Page using the Page_Load event. This example also introduces another type of Web Control, the `DropDownList` object.
 ```apl

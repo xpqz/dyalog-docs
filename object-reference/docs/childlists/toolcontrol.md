@@ -1,4 +1,4 @@
-<h1> ToolControl Children</h1>
+<h1 class="heading"><span class="name">ToolControl Children</span></h1>
 
 |--------------------------------------|----------------------------------------|----------------------------------|
 |[Bitmap](../objects/bitmap.md)        |[BrowseBox](../objects/browsebox.md)    |[Button](../objects/button.md)    |

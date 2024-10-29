@@ -1,4 +1,4 @@
-<h1> Example 1</h1>
+<h1 class="heading"><span class="name">Example 1</span></h1>
 
 Load the workspace `aplclasses1.dws`, then view the `Primitives` class:
 ```apl

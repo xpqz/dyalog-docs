@@ -1,4 +1,4 @@
-<h1> Poly Methods</h1>
+<h1 class="heading"><span class="name">Poly Methods</span></h1>
 
 |-------------------------------------|------|------|
 |[Detach](../methodorevents/detach.md)|&nbsp;|&nbsp;|

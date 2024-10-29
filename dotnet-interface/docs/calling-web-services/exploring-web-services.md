@@ -1,4 +1,4 @@
-<h1> Exploring Web Services</h1>
+<h1 class="heading"><span class="name">Exploring Web Services</span></h1>
 
 You can use the Workspace Explorer to browse the proxy class associated with a Web Service, in exactly the same way that you can browse any other .NET Assembly. The following screen shots show the *Metadata* for `LoanService`, loaded from the `LoanService.dll` proxy.
 

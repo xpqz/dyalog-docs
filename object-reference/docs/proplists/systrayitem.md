@@ -1,4 +1,4 @@
-<h1> SysTrayItem Properties</h1>
+<h1 class="heading"><span class="name">SysTrayItem Properties</span></h1>
 
 |---------------------------------------|-------------------------------------------|-----------------------------------------|
 |[Type](../properties/type.md)          |[Event](../properties/event.md)            |[IconObj](../properties/iconobj.md)      |

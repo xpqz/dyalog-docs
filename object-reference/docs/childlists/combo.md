@@ -1,4 +1,4 @@
-<h1> Combo Children</h1>
+<h1 class="heading"><span class="name">Combo Children</span></h1>
 
 |------------------------------|------------------------------|--------------------------------|
 |[Circle](../objects/circle.md)|[Cursor](../objects/cursor.md)|[Ellipse](../objects/ellipse.md)|

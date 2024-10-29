@@ -1,4 +1,4 @@
-<h1> Announcements</h1>
+<h1 class="heading"><span class="name">Announcements</span></h1>
 
 ## Supported Versions
 

@@ -1,4 +1,4 @@
-<h1> Root Events</h1>
+<h1 class="heading"><span class="name">Root Events</span></h1>
 
 |-------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------|
 |[FontOK](../methodorevents/fontok.md)            |[FontCancel](../methodorevents/fontcancel.md)                  |[DDE](../methodorevents/dde.md)                    |
