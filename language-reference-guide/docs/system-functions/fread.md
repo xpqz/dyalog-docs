@@ -32,7 +32,7 @@ will return the same result as:
 
 However, the first statement will, in the case of a share-tied file,  prevent any potential intervening file access from another user (without the need for a  `⎕FHOLD`). It will also perform slightly faster, especially when reading from a share-tied file.
 
-<h1 class="example">Examples</h1>
+<h2 class="example">Examples</h2>
 ```apl
       ⍴SALES←⎕FREAD 1 241
 3 2 12

@@ -1,17 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Exception</span> <span class="command">R←⎕EXCEPTION</span></h1>
-
-
 
 This is a system object that identifies the most recent *Exception* thrown by a Microsoft .NET object.
 
-
 `⎕EXCEPTION` derives from the Microsoft .NET class System.Exception. Among its properties are the following, all of which are strings:
-
 
 |------------|-------------------------------------------------------------------|
 |`Source`    |The name of the .NET namespace in which the exception was generated|
@@ -42,10 +33,9 @@ mscorlib
                             Int32 month, Int32 day)
 ```
 
-
 Similarly to GUI objects, `⎕EXCEPTION` is not preserved across a save/load cycle if the workspace is loaded in a different interpreter.
 
-
-Note: `⎕SIGNAL` can be used to reset the value of this system constant.
+!!! note
+    `⎕SIGNAL` can be used to reset the value of this system constant.
 
 

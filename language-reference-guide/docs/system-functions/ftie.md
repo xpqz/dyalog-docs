@@ -19,7 +19,7 @@ The file must exist and  the user must have write access to it.  It may not alr
 
 
 
-# Automatic Tie Number Allocation
+## Automatic Tie Number Allocation
 
 
 A tie number of 0 as argument to a create, share tie or exclusive tie operation, allocates the first (closest to zero) available tie number, and returns it as an explicit result. This allows you to simplify code. For example:

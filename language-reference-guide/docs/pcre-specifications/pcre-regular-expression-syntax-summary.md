@@ -1,7 +1,7 @@
-<h1> PCRE Regular Expression Syntax Summary</h1>
+<h1 class="heading"><span class="name">PCRE Regular Expression Syntax Summary</span></h1>
 
 The following is a summary of search pattern syntax.
-```apl
+```other
 PCRESYNTAX(3)              Library Functions Manual              PCRESYNTAX(3)
 
 NAME

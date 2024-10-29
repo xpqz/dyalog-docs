@@ -7,7 +7,7 @@
 
 
 
-This is a simple vector of line numbers drawn from the state indicator (See ["The State Indicator"](../defined-functions-and-operators/state-indicator.md)).  The most recently activated line is shown first.  If a value corresponds to a defined function in the state indicator, it represents the current line number where the function is either suspended or pendent.
+This is a simple vector of line numbers drawn from the state indicator (See [The State Indicator](../defined-functions-and-operators/state-indicator.md)).  The most recently activated line is shown first.  If a value corresponds to a defined function in the state indicator, it represents the current line number where the function is either suspended or pendent.
 
 
 The value of `⎕LC` changes immediately upon completion of the most recently activated line, or upon completion of execution within `⍎` or `⎕`.  If a `⎕STOP` control is set, `⎕LC` identifies the line on which the stop control is effected.  In the case where a stop control is set on line 0 of a defined function, the first entry in `⎕LC` is 0 when the control is effected.

@@ -1,13 +1,3 @@
+<h1 class="heading"><span class="name">First</span> <span class="command">(⎕ML) R←⊃Y or R←↑Y</span></h1>
 
-
-
-
-
-<h1 class="heading"><span class="name">First</span> <span class="command">(⎕ML)</span></h1>
-
-
-
-See function ["Disclose"](disclose.md).
-
-
-
+See function [Disclose](disclose.md).

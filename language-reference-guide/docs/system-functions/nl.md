@@ -6,7 +6,7 @@
 
 
 
-`Y` must be a simple numeric scalar or vector containing one or more of the values for name-class.  See also ["Name Classification: "](nc.md).
+`Y` must be a simple numeric scalar or vector containing one or more of the values for name-class.  See also [Name Classification](nc.md).
 
 
 `X` is optional. If present, it must be a simple character scalar or vector. `R` is a list of the names of active objects whose name-class is included in `Y` in standard sorted order.

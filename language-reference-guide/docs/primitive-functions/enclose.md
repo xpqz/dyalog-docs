@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Enclose</span> <span class="command">R←⊂Y</span></h1>
 
-
-
 `Y` may be any array.  `R` is a scalar array whose item is the array `Y`.  If `Y` is a simple scalar, `R` is the simple scalar unchanged.  Otherwise, `R` has a depth whose magnitude is one greater than the magnitude of the depth of `Y`.
-
 
 <h2 class="example">Examples</h2>
 ```apl
@@ -36,7 +28,7 @@ A
 10
 ```
 
+See also: [Enclose with Axes](enclose-with-axes.md).
 
-See also: [Enclose with Axes below](enclose-with-axes.md).
 
 

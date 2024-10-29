@@ -1,9 +1,9 @@
-<h1> Input and Output</h1>
+<h1 class="heading"><span class="name">Input and Output</span></h1>
 
 |Name     |Description           |
 |---------|----------------------|
-|`⎕`      |Evaluated Input/Output|
-|`⍞`      |Character Input/Output|
-|`⎕ARBIN` |Arbitrary Input       |
-|`⎕ARBOUT`|Arbitrary Output      |
-|`⎕RTL`   |Response Time Limit   |
+|[`⎕`](../evaluated-input-output.md)      |Evaluated Input/Output|
+|[`⍞`](../character-input-output.md)      |Character Input/Output|
+|[`⎕ARBIN`](../arbin.md) |Arbitrary Input       |
+|[`⎕ARBOUT`](../arbout.md)|Arbitrary Output      |
+|[`⎕RTL`](../rtl.md)   |Response Time Limit   |

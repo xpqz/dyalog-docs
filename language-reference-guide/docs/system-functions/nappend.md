@@ -27,7 +27,7 @@ If the data will not fit into the specified character width (bytes) `⎕NAPPEND`
 
 As a consequence of these two rules, you must specify the data type (either 160 or 320) in order to write Unicode characters whose code-point are in the range 256-65535 and >65535 respectively.
 
-<h1 class="example">Example</h1>
+<h2 class="example">Example</h2>
 ```apl
 
 			

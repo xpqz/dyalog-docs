@@ -35,5 +35,3 @@ If `X` is negative, each sub-vector is reversed before being reduced.
       ¯2,/⍳4   ⍝ (2,1) (3,2) (4,3)
  2 1  3 2  4 3 
 ```
-
-

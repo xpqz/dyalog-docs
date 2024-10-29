@@ -26,7 +26,7 @@ If the workspace name is the name of a valid, readable workspace, the system rep
 If the list of names is excluded, all global defined objects (functions and variables) are copied.  If an object is not found in the stored workspace, the system reports "`not found`" followed by the name of the object. If an object cannot be copied into the active workspace because there is an existing referent, the system reports "`not copied`" followed by the name of the object.
 
 
-For further information, see ["Copy Workspace: "](../system-functions/cy.md).
+For further information, see [Copy Workspace](../system-functions/cy.md).
 
 
 <h2 class="example">Examples</h2>
@@ -41,10 +41,8 @@ not copied COPIED JOIN
 not found X
 ```
 
-## Warning
-
-
-If a workspace full condition occurs during the execution of `)PCOPY` the state of the active workspace is unpredictable.
+!!! warning
+    If a workspace full condition occurs during the execution of `)PCOPY` the state of the active workspace is unpredictable.
 
 
 

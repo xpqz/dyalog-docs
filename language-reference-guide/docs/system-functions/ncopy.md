@@ -34,7 +34,7 @@ The shy result `R` contains count(s) of top-level items copied. If `Y` is a sing
 
 
 |---|---|
-|0|The name or names in `Y` identifies a specific file name.|
+|0 { .shaded } |The name or names in `Y` identifies a specific file name.|
 |`1`|The name or names in `Y` that specify the *base name* and *extension* (see [NParts](./nparts.md) ), may also contain the wildcard characters "?" and "*". An asterisk is a substitute for any 0 or more characters in a file name or extension; a question-mark is a substitute for any single character.|
 
 
@@ -47,9 +47,9 @@ Note that when Wildcard is 1, element(s) of `R` can  be 0, 1 or `>1`. If Wildcar
 The IfExists variant option determines what happens when a source file is to be copied to a target file that already exists. It does not apply to directories, only to the files within them.
 
 
-|Value             |Description                                                                                                                                                       |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|'Error'           |Existing files will not be overwritten and an error will be signalled. This is the default                                                                        |
+|Value             |Description                                                                                        |
+|------------------|---------------------------------------------------------------------------------------------------|
+|'Error' { .shaded } |Existing files will not be overwritten and an error will be signalled. This is the default                                                                        |
 |`'Skip'`          |Existing files will not be overwritten but the corresponding copy operation will be skipped (ignored).                                                            |
 |`'Replace'`       |Existing files will be overwritten.                                                                                                                               |
 |`'ReplaceIfNewer'`|Existing files may be overwritten if, and only if, the corresponding source file is newer (more recently modified) than the existing one, otherwise it is skipped.|
@@ -68,7 +68,7 @@ The PreserveAttributes variant option determines whether or not file attributes 
 
 
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|0  |file attributes are not preserved.                                                                                                                                                         |
+|0 { .shaded } |file attributes are not preserved.                                                                                                                                                         |
 |`1`|where possible, copied files will be given at least the same modification time as the source. Other file attributes will be preserved as permitted by the operating system and file system.|
 
 

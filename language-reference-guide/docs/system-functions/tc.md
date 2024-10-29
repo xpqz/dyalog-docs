@@ -43,7 +43,7 @@ With the introduction of `⎕UCS` in Version 12.0, the use of `⎕TC` is discour
 |Control Character|Old                           |New      |
 |-----------------|------------------------------|---------|
 |Backspace        |`⎕TC[1]`                      |`⎕UCS 8` |
-|Linefeed         |`⎕TC[2] (⎕ML<3)⎕TC[3] (⎕ML≥3)`|`⎕UCS 10`|
-|Newline          |`⎕TC[3] (⎕ML<3)⎕TC[2] (⎕ML≥3)`|`⎕UCS 13`|
+|Linefeed         |`⎕TC[2] (⎕ML<3)`<br>`⎕TC[3] (⎕ML≥3)`|`⎕UCS 10`|
+|Newline          |`⎕TC[3] (⎕ML<3)`<br>`⎕TC[2] (⎕ML≥3)`|`⎕UCS 13`|
 
 

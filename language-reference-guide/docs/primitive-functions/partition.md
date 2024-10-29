@@ -1,32 +1,19 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Partition</span> <span class="command"></span></h1>
 
-
-
-**Classic Edition:**  the symbol `⊆` (Left Shoe Underbar) is not available in Classic Edition, and Partition is instead represented by `⎕U2286`.
-
+!!! note "Classic Edition"
+    The symbol `⊆` (Left Shoe Underbar) is not available in Classic Edition, and Partition is instead represented by `⎕U2286`.
 
 `Y` may be any non-scalar array.
 
-
 `X` must be a simple scalar or vector of non-negative integers.
-
 
 The axis specification is optional.  If present, it must be a simple integer scalar or one element array representing an axis of `Y`.  If absent, the last axis is implied.
 
-
 `R` is an array of the elements of `Y` partitioned according to `X`.
-
 
 A new partition is started in the result whenever the corresponding element in `X` is greater than the previous one. Items in `Y` corresponding to `0`s in `X` are not included in the result.
 
-
 Note that if `⎕ML≥3`, the symbol `⊂` means the same as `⊆`.
-
 
 <h2 class="example">Examples</h2>
 ```apl
@@ -121,5 +108,3 @@ Note that if `⎕ML≥3`, the symbol `⊂` means the same as `⊆`.
 │ └~─┘  └~─┘  └~─┘  └~─┘  │
 └∊────────────────────────┘
 ```
-
-

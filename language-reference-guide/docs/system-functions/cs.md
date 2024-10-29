@@ -114,10 +114,7 @@ This example uses `⎕CS` to explore a namespace tree and display the structure.
 .   z
 ```
 
-
-## Note
-
-
-`⎕CS` is not permitted in a dfn or dop. If used therein it will cause a `NONCE ERROR`.
+!!! note
+    `⎕CS` is not permitted in a dfn or dop. If used therein it will cause a `NONCE ERROR`.
 
 

@@ -1,4 +1,4 @@
-<h1> System Functions and Variables (A-Z)</h1>
+<h1 class="heading"><span class="name">System Functions and Variables (A-Z)</span></h1>
 
 |------------|----------|-----------|----------|-----------|
 |`⎕`         |`⍞`       |`⎕Á`       |`⎕A`      |`⎕AI`      |

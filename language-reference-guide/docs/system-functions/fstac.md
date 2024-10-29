@@ -17,7 +17,7 @@
 
 The shy result of `⎕FSTAC` is the tie number of the file.
 
-<h1 class="example">Examples</h1>
+<h2 class="example">Examples</h2>
 ```apl
 
       'SALES' ⎕FCREATE 1

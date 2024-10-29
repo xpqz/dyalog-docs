@@ -7,7 +7,8 @@
 
 
 
-**.NET Framework only**
+!!! note
+    **.NET Framework only**
 
 
 Creates an object that may be used as a data source for WPF data binding. [^1]

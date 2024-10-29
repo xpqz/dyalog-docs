@@ -1,10 +1,10 @@
-<h1> Synchronisation</h1>
+<h1 class="heading"><span class="name">Synchronisation</span></h1>
 
 |Name     |Description         |
 |---------|--------------------|
-|`⎕TALLOC`|Allocate Token Range|
-|`⎕TGET`  |Get Tokens          |
-|`⎕TKILL` |Kill Threads        |
-|`⎕TPOOL` |Token Pool          |
-|`⎕TPUT`  |Put Tokens          |
-|`⎕TREQ`  |Token Requests      |
+|[`⎕TALLOC`](../talloc.md)|Allocate Token Range|
+|[`⎕TGET`](../tget.md)  |Get Tokens          |
+|[`⎕TKILL`](../tkill.md) |Kill Threads        |
+|[`⎕TPOOL`](../tpool.md) |Token Pool          |
+|[`⎕TPUT`](../tput.md)  |Put Tokens          |
+|[`⎕TREQ`](../treq.md)  |Token Requests      |

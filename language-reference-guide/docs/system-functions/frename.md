@@ -21,7 +21,7 @@ The file being renamed must be tied exclusively.
 
 The shy result of `⎕FRENAME` is the tie number of the file.
 
-<h1 class="example">Examples</h1>
+<h2 class="example">Examples</h2>
 ```apl
       'SALES' ⎕FTIE 1
       'PROFIT' ⎕FTIE 2

@@ -8,10 +8,7 @@
 
 
 Controls the actions of the Compiler. For further information, see 
-Compiler User Guide
-
-.
-
+_Compiler User Guide_.
 
 The optional left-argument `X` must be one of the following:
 

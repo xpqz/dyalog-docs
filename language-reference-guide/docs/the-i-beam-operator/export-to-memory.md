@@ -7,7 +7,8 @@
 
 
 
-**Windows only.**
+!!! note
+    **Windows only**
 
 
 This function exports the current active workspace as an in-memory .NET Assembly.

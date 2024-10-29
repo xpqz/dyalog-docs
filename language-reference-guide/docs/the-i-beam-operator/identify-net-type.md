@@ -7,7 +7,8 @@
 
 
 
-**.NET Framework only**
+!!! note
+    **.NET Framework only**
 
 
 Returns the .NET Type of a named .NET class that is loaded in the current AppDomain. Note that System.Type.GetType requires the fully qualified name, that is, prefixed by the assembly name, whereas (`2017⌶`) does not.

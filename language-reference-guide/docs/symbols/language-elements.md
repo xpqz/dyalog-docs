@@ -158,7 +158,6 @@
     </tr>
 </table>
 
-
 ## Primitive Operators
 
 <table class="Normal">
@@ -208,59 +207,17 @@
 
 ## Other Language Elements
 
-<table class="Normal">
-    <tr>
-        <td class="NormalPlain"><a href="../brackets">Brackets</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../special-symbols">Special Syntax</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/introduction/arrays/arrays">Variables</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/introduction/namespaces/namespaces">Namespaces</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../defined-functions-and-operators/defined-functions-and-operators">Defined Fns &amp; Ops</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators">Dynamic Fns &amp; Ops</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/threads/multithreading-overview">MultiThreading</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/object-oriented-programming/introducing-classes/introducing-classes">Object Oriented
-Programming</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/control-structures-summary">Control Structures</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/triggers/triggers">Triggers</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../system-functions/summary-tables/introduction">System Functions</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../system-commands/introduction">System Commands</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="NormalPlain"><a href="../../../programming-reference-guide/error-messages/apl-errors">Error Messages</a>
-        </td>
-    </tr>
-</table>
+- [Brackets](../brackets)
+- [Special Syntax](../special-symbols)
+- [Variables](../../../programming-reference-guide/introduction/arrays/arrays)
+- [Namespaces](../../../programming-reference-guide/introduction/namespaces/namespaces)
+- [Defined Fns & Ops](../defined-functions-and-operators/defined-functions-and-operators)
+- [Dynamic Fns & Ops](../../../programming-reference-guide/defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators)
+- [MultiThreading](../../../programming-reference-guide/threads/multithreading-overview)
+- [Object Oriented Programming](../../../programming-reference-guide/object-oriented-programming/introducing-classes/introducing-classes)
+- [Control Structures](../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/control-structures-summary)
+- [Triggers](../../../programming-reference-guide/triggers/triggers)
+- [System Functions](../system-functions/summary-tables/introduction)
+- [System Commands](../system-commands/introduction)
+- [Error Messages](../../../programming-reference-guide/error-messages/apl-errors)
 

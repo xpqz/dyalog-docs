@@ -16,7 +16,7 @@ Thus `⎕CT` is not used as an absolute value in comparisons, but rather specifi
 `⎕CT` may be assigned any value in the range from `0` to  `2*¯32`  (about `2.3E¯10`). A value of `0` ensures exact comparison.  The value in a clear workspace is `1E¯14`. `⎕CT` has Namespace scope.
 
 
-If `⎕FR` is 1287, the system uses `⎕DCT`. See [Decimal Comparison Tolerance ](dct.md).
+If [`⎕FR`](fr.md) is 1287, the system uses `⎕DCT`. See [Decimal Comparison Tolerance ](dct.md).
 
 
 `⎕CT` and `⎕DCT` are implicit arguments of the monadic primitive functions Ceiling (`⌈`), Floor (`⌊`) and Unique (`∪`), and of the dyadic functions Equal (`=`), Excluding (`~`), Find (`⍷`), Greater (`>`), Greater or Equal (`≥`), Greatest Common Divisor (`∨`), Index of (`⍳`), Intersection (`∩`), Less (`<`), Less or Equal (`≤`), Lowest Common Multiple (`∧`), Match (`≡`), Membership (`∊`), Not Match (`≢`), Not Equal (`≠`), Residue (`|`) and Union (`∪`), as well as `⎕FMT` O-format.

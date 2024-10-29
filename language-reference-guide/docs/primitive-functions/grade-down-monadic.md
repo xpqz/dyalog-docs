@@ -36,7 +36,9 @@
 
 
 
-**Note that character arrays sort differently in the Unicode and Classic Editions.**
+!!! note
+    Character arrays sort differently in the Unicode and Classic Editions.
+
 ```apl
       M
 Goldilocks
@@ -45,11 +47,33 @@ Porridge
 3 bears 
 ```
 
+<table>
+<tr>
+ <th>Unicode Edition</th>
+ <th>Classic Edition</th>
+</tr>
+<tr>
+ <td><pre><code>      ⍋M
+2 3 1 4</code></pre></td>
+ <td><pre><code>      ⍋M
+3 1 4 2</code></pre></td>
+</tr>
+<tr>
+ <td><pre><code>      M[⍋M;]
+porridge
+Porridge
+Goldilocks
+3 bears
+</code></pre></td>
+ <td><pre><code>      M[⍋M;]
+Porridge
+Goldilocks
+3 bears
+porridge
+</code></pre></td>
+</tr>
+</table>
 
-|Unicode Edition                                             |Classic Edition                                             |
-|------------------------------------------------------------|------------------------------------------------------------|
-|```apl       ⍒M 2 3 1 4 ```                                 |```apl       ⍒M 3 1 4 2 ```                                 |
-|```apl       M[⍒M;] porridge Porridge Goldilocks 3 bears ```|```apl       M[⍒M;] Porridge Goldilocks 3 bears porridge ```|
 
 ```apl
       ⍴pb

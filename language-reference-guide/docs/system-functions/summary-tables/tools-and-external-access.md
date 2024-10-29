@@ -1,24 +1,24 @@
-<h1> Tools and Access to External Utilities</h1>
+<h1 class="heading"><span class="name">Tools and Access to External Utilities</span></h1>
 
 |Name    |Description                                             |
 |--------|--------------------------------------------------------|
-|`⎕C`    |Case Convert                                            |
-|`⎕CMD`  |Execute the Windows Command Processor or another program|
-|`⎕CMD`  |Start a Windows AP                                      |
-|`⎕CSV`  |Comma Separated Values                                  |
-|`⎕DR`   |Data Representation (Monadic)                           |
-|`⎕DR`   |Data Representation (Dyadic)                            |
-|`⎕DT`   |Datetime                                                |
-|`⎕FMT`  |Resolve display                                         |
-|`⎕FMT`  |Format array                                            |
-|`⎕JSON` |JSON Convert                                            |
-|`⎕MAP`  |Map a file                                              |
-|`⎕NA`   |Declare a DLL function                                  |
-|`⎕R`    |Replace                                                 |
-|`⎕S`    |Search                                                  |
-|`⎕SH`   |Execute a UNIX command or another program               |
-|`⎕SH`   |Start a UNIX AP                                         |
-|`⎕UCS`  |Unicode Convert                                         |
-|`⎕USING`|Microsoft .NET Search Path                              |
-|`⎕VFI`  |Verify and Fix numeric                                  |
-|`⎕XML`  |XML Convert                                             |
+|[`⎕C`](../c.md)    |Case Convert                                            |
+|[`⎕CMD`](../execute-windows-command.md)  |Execute the Windows Command Processor or another program|
+|[`⎕CMD`](../start-windows-auxiliary-processor.md)  |Start a Windows AP        |
+|[`⎕CSV`](../csv.md)  |Comma Separated Values                                  |
+|[`⎕DR`](../data-representation-monadic.md)   |Data Representation (Monadic)                           |
+|[`⎕DR`](../data-representation-dyadic.md)   |Data Representation (Dyadic)                            |
+|[`⎕DT`](../dt.md)   |Datetime                                                |
+|[`⎕FMT`](../format-monadic.md)  |Resolve display                                         |
+|[`⎕FMT`](../format-dyadic.md)  |Format array                                            |
+|[`⎕JSON`](../json.md) |JSON Convert                                            |
+|[`⎕MAP`](../map.md)  |Map a file                                              |
+|[`⎕NA`](../na.md)   |Declare a DLL function                                  |
+|[`⎕R`](../r.md)    |Replace                                                 |
+|[`⎕S`](../s.md)    |Search                                                  |
+|[`⎕SH`](../execute-unix-command.md)   |Execute a UNIX command or another program               |
+|[`⎕SH`](../start-unix-auxiliary-processor.md)   |Start a UNIX AP                                         |
+|[`⎕UCS`](../ucs.md)  |Unicode Convert                                         |
+|[`⎕USING`](../using.md)|Microsoft .NET Search Path                              |
+|[`⎕VFI`](../vfi.md)  |Verify and Fix numeric                                  |
+|[`⎕XML`](../xml.md)  |XML Convert                                             |

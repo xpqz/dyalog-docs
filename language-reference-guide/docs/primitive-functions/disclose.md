@@ -3,7 +3,7 @@
 
 
 
-<h1 class="heading"><span class="name">Disclose</span> <span class="command">(⎕ML)</span></h1>
+<h1 class="heading"><span class="name">Disclose</span> <span class="command">(⎕ML) R←⊃Y or R←↑Y</span></h1>
 
 
 

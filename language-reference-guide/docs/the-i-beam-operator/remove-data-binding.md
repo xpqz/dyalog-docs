@@ -1,14 +1,7 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Remove Data Binding</span> <span class="command">R←2014⌶Y</span></h1>
 
-
-
-**.NET Framework only**
-
+!!! note
+    **.NET Framework only**
 
 This function disassociates a data-bound variable from its data binding source.
 
