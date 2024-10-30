@@ -41,7 +41,7 @@ Dyalog APL responds to weak and strong interrupts; the `kill` operating system c
 
 The tables below show the keystrokes that can be used in the different windows.
 
-Commands Common to all Window Types
+## Commands Common to all Window Types
 
 <table>
     <col />
@@ -81,7 +81,7 @@ Commands Common to all Window Types
     </tr>
 </table>
 
-Window Commands
+## Window Commands
 
 <table>
     <col />
@@ -121,7 +121,7 @@ Window Commands
     </tr>
 </table>
 
-Session Commands
+## Session Commands
 
 <table>
     <col style="width: 100px;" />
@@ -143,7 +143,7 @@ Session Commands
     </tr>
 </table>
 
-Editor Commands
+## Editor Commands
 
 <table>
     <col />
@@ -230,14 +230,13 @@ Editor Commands
     </tr>
 </table>
 
-### Notes
+!!! note
+    1. The editor can also be started using `)ED` or `⎕ED`. Hitting ED in the session with a suspended function on the stack will open the editor on that function; this is called Naked Edit.
+    2. By default, outlines are not shown. See "Configuring the Editor" for further details.
+    3. By default, there is no visual indication that a breakpoint has been set, although `⎕STOP` will show the breakpoints. However, it is possible to view breakpoints - see "Configuring the Editor" for further details.
+    4. AO, DO, RD only work in 13.1 onwards
 
-1. The editor can also be started using `)ED` or `⎕ED`. Hitting ED in the session with a suspended function on the stack will open the editor on that function; this is called Naked Edit.
-2. By default, outlines are not shown. See "Configuring the Editor" for further details.
-3. By default, there is no visual indication that a breakpoint has been set, although `⎕STOP` will show the breakpoints. However, it is possible to view breakpoints - see "Configuring the Editor" for further details.
-4. AO, DO, RD only work in 13.1 onwards
-
-Tracer Commands
+## Tracer Commands
 
 <table>
     <col />
@@ -295,12 +294,11 @@ Tracer Commands
     </tr>
 </table>
 
-### Notes
+!!! note
+    1. Hitting TC in the session with a suspended function on the stack will open one trace window for each function on the stack; this is called Naked Trace.
+    2. By default, there is no visual indication that a breakpoint has been set, although `⎕STOP` will show the breakpoints. However, it is possible to view breakpoints - see "Configuring the Editor" for further details.
 
-1. Hitting TC in the session with a suspended function on the stack will open one trace window for each function on the stack; this is called Naked Trace.
-2. By default, there is no visual indication that a breakpoint has been set, although `⎕STOP` will show the breakpoints. However, it is possible to view breakpoints - see "Configuring the Editor" for further details.
-
-Search and Replace Commands
+## Search and Replace Commands
 
 <table>
     <col />
@@ -339,13 +337,12 @@ Search and Replace Commands
     </tr>
 </table>
 
-### Notes
+!!! note
+    1. Applies to session, editor and tracer
+    2. Applies to the session and editor only
+    3. Caution: the Repeat All replaces ALL matches in the current object
 
-1. Applies to session, editor and tracer
-2. Applies to the session and editor only
-3. Caution: the Repeat All replaces ALL matches in the current object
-
-Session-related Commands
+## Session-related Commands
 
 <table>
     <col />
@@ -385,11 +382,9 @@ Session-related Commands
     </tr>
 </table>
 
-Screen Manager Commands
+## Screen Manager Commands
 
 | Command | Code | Description |
 | --- | --- | ---  |
 | Move between `⎕SM` and session/trace/edit windows | HK | With non-empty `⎕SM` , toggle between `⎕SM` window and trace/edit/session window. HK is a valid exit key for `⎕SR` , but using it as such can be confusing ! |
 | Exit keys | EP QT ER | Default exit keys for `⎕SR` |
-
-[^1]: 

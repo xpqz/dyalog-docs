@@ -64,9 +64,41 @@ EDITOR_COLUMNS_NAMESPACE=94 shows all columns (the first example in this section
 
 Various values for EDITOR_COLUMNS_FUNCTION
 
-|-----|--------------------------------------------------------------------|
-|Value|Editor window appearance                                            |
-|0    |```apl  fn1 a  :If a=1      b←2  :EndIf ```                         |
-|22   |```apl  [0]   fn1 a [1]   :If a=1 [2] ○     b←2 [3]   :EndIf 		 ``` |
-|26   |```apl     fn1 a  ├ :If a=1 ○│     b←2  ├ :EndIf ```                |
-|40   |```apl  [0]    fn1 a [1]  ├ :If a=1 [2] ○│     b←2 [3]  ├ :EndIf ```|
+<table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Editor window appearance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td><pre>fn1 a
+:If a=1
+    b←2
+:EndIf</pre></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><pre>[0] fn1 a
+[1] :If a=1
+[2] ○   b←2
+[3] :EndIf</pre></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td><pre>fn1 a
+ ├ :If a=1
+○│     b←2
+ ├ :EndIf</pre></td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td><pre>[0] fn1 a
+[1]  ├ :If a=1
+[2] ○│     b←2
+[3]  ├ :EndIf</pre></td>
+            </tr>
+        </tbody>
+</table>

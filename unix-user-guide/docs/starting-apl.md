@@ -24,9 +24,8 @@ Table: Parameters for the mapl or dyalog script:
 |-*|Any other parameter that starts with a "-" will be passed to the interpreter; all parameters that start with a "-" will be passed before any parameters that do not start with a "-".|
 |*|This is usually the name of the workspace that is to be loaded when the interpreter is started. Unless the "-x" flag is passed to the interpreter, the latent expression in the workspace will be executed once the workspace has been loaded.|
 
-# Note
-
-- the -c parameter has different uses depending on whether it is passed to the mapl script, or to the dyalog executable.
+!!! note
+    The -c parameter has different uses depending on whether it is passed to the mapl script, or to the dyalog executable.
 
 Table: Parameters for the Dyalog interpreter:
 

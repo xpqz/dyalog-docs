@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">Appendix B: Table of keycodes and keystrokes for PuTTY</span></h1>
+<h1 class="heading"><span class="name">Appendix B</span></h1>
 
 Keycodes, their common keystrokes, and the keystrokes specific to the PuTTY terminal emulator.
 
