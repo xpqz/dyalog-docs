@@ -370,7 +370,6 @@ nav:
       - Loaded File Object Info: the-i-beam-operator/loaded-file-object-info.md
       - JSON Translate Name: the-i-beam-operator/json-translate-name.md
       - Singular Value Decomposition: the-i-beam-operator/singular-value-decomposition.md
-      - Externalise Array: the-i-beam-operator/externalise-array.md
       - Hash Table Size: the-i-beam-operator/hash-table-size.md
       - Lookup Table Size: the-i-beam-operator/lookup-table-size.md
       - Sample Probability Distribution: the-i-beam-operator/sample-probability-distribution.md
