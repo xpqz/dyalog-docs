@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">Signals and `⎕TRAP`, `4007⌶`</span></h1>
+<h1 class="heading"><span class="name">Signals and <span class="command">⎕TRAP, 4007⌶</span></span></h1>
 
 ## Signals and `⎕TRAP`
 
