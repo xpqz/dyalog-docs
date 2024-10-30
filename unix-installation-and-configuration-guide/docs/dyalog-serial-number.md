@@ -25,8 +25,8 @@ or
       ⎕SE.Dyalog.Serial ''
 ```
 
-## NOTE
 
-Using or entering a serial number other than the one issued to you is not permitted. Transferring the serial number to anyone else is not permitted.For the full licence terms and conditions, see: [https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf)
+!!! note
+    Using or entering a serial number other than the one issued to you is not permitted. Transferring the serial number to anyone else is not permitted.For the full licence terms and conditions, see: [https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf)
 
 [^1]: $HOME/.dyalog/serial is the default location for your serial number file but you can set the DYALOG_SERIALFILE environment variable to point to any other valid location.

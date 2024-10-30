@@ -33,6 +33,6 @@ or by contacting Dyalog support. The same resources can be used to obtain inform
 
 APL characters are available under Linux window managers. However some of the characters may appear inelegant; most noticeable are very small "`⋄`" and overly large "`⌶`". To resolve this, it is possible to use the Freemono fonts (these are installed by default on some distributions (such as openSUSE)), or to download and install the APL385 Unicode font. This font is freely downloadable from:
 
-https://www.dyalog.com/apl-font-keyboard.htm
+[https://www.dyalog.com/apl-font-keyboard.htm](https://www.dyalog.com/apl-font-keyboard.htm)
 
 Details of how to install the font will appear in the documentation for your window manager.

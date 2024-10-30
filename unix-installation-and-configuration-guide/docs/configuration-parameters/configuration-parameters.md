@@ -10,4 +10,4 @@ Dyalog can be customised using configuration parameters. These can be set in var
 
 This provides a great deal of flexibility, enabling a user to override one setting with another. For example, a "usual" workspace size (**MAXWS**) can be defined in the user configuration file, but be temporarily superseded by entering a different value when starting a Dyalog Session from the command line.
 
-For more information on configuration files, see ["Configuration Files"](configuration-files.md). For more information on environment variables, see ["Environment Variables"](environment-variables.md).
+For more information on configuration files, see [Configuration Files](configuration-files.md). For more information on environment variables, see [Environment Variables](environment-variables.md).

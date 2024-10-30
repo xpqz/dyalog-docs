@@ -13,23 +13,23 @@ Many of these environment variables are set in the mapl script; their values are
 
 The environment variables are broken down into several tables:
 
-- Table E1: The most commonly defined and used for non-GUI versions of Dyalog APL under UNIX. Most of these variables are essential for a usable APL session
-- Table E2: Variables used to control default values in the workspace
-- Table E3: Variables used to configure the Session
-- Table E4: Miscellaneous Variables used by non-GUI Dyalog APL
-- Table E5: Editor-related environment variables
-- Table E6: Tracer-related environment variables
-- Table E7: RIDE-related environment variables
-- Table E8: SALT and User Command-related environment variables
+- [](#E1): The most commonly defined and used for non-GUI versions of Dyalog APL under UNIX. Most of these variables are essential for a usable APL session
+- [](#E2): Variables used to control default values in the workspace
+- [](#E3): Variables used to configure the Session
+- [](#E4): Miscellaneous Variables used by non-GUI Dyalog APL
+- [](#E5): Editor-related environment variables
+- [](#E6): Tracer-related environment variables
+- [](#E7): RIDE-related environment variables
+- [](#E8): SALT and User Command-related environment variables
 
-Table E1: Commonly used Variables
+Table: Commonly used Variables { #E1 }
 
 |Variable|Notes|
 |---|---|
-|TERM APLK APLK0 APLT APLTn|Define the input and output translate tables used by Dyalog APL. The values of APLK0 and APLTn override the values of APLK and APLT if set, and they in turn override the value of (Unicode) *default*, or (Classic) TERM if set. APLK is for input translation, APLT for output translation. These are used in conjunction with ..|
+|TERM<br/>APLK<br/>APLK0<br/>APLT<br/>APLTn|Define the input and output translate tables used by Dyalog APL. The values of APLK0 and APLTn override the values of APLK and APLT if set, and they in turn override the value of (Unicode) *default*, or (Classic) TERM if set.<p/><p/>APLK is for input translation, APLT for output translation.<p/><p/>These are used in conjunction with ..|
 |APLKEYS APLTTRANS|Define the search path for the input and output translate tables respectively. If unset, the interpreter will default to $DYALOG; if $DYALOG too is not set, will default to /usr/dyalog.|
 |APLNID|This variable is ignored by the UNIX versions of Dyalog APL: `⎕ai` and `⎕an` pick up their values from the user's uid and /etc/passwd.|
-|APLSTATUSFD|If set, this defines the stream number on which all messages for the Status Window appear. It is then possible to redirect this output when APL is started. If unset, the output will appear in the same terminal window as the APL session, although it is not part of the session; such output can be removed by hitting SR (Screen Redraw - often defined to be Ctrl-L).|
+|APLSTATUSFD|If set, this defines the stream number on which all messages for the Status Window appear. It is then possible to redirect this output when APL is started.<p/><p/>If unset, the output will appear in the same terminal window as the APL session, although it is not part of the session; such output can be removed by hitting SR (Screen Redraw - often defined to be Ctrl-L).|
 |DYALOG_NETCORE|This parameter is a Boolean value with a default value of 1. If set to 0, it disables the .NET interface.|
 |DYALOG_SERIAL|This parameter contains your Dyalog serial number. This must be set to the serial number issued to you. If not set, then the software is unregistered. For the full licence terms and conditions, see [https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf](https://www.dyalog.com/uploads/documents/Terms_and_Conditions.pdf) .|
 |DYALOG_SERIALFILE|This parameter specifies the full path to the text file containing your Dyalog serial number.|
@@ -37,7 +37,7 @@ Table E1: Commonly used Variables
 |ERRORONEXTERNALEXCEPTION|By default, any error when calling `⎕NA` will result in APL terminating; if `ERRORONEXTERNALEXCEPTION` is set to 1, then APL will instead generate an event 91: `EXTERNAL DLL EXCEPTION` . Be aware however that the workspace may become corrupted. This is best used when developing `⎕NA` code rather than in production.|
 |LIBPATH|A suitable entry for the Conga libraries needs to be added to the LIBPATH variable if Conga is to be used. For more information see the Conga Guide.|
 |MAXWS|Defines the size of the workspace that will be presented to the user when Dyalog APL is started. A simple integer value will be treated as being in KB. K, M and G can be appended to the value to indicate KiB, MiB and GiB (binary) respectively. If unset, the default value is 256M.|
-|WSPATH|Defines the search path for both workspaces and Auxiliary processors. If unset, there is no default value. Workspaces and APs that are not on the WSPATH can be accessed using absolute or relative pathnames.|
+|WSPATH|Defines the search path for both workspaces and Auxiliary processors.<p/><p/>If unset, there is no default value. Workspaces and APs that are not on the WSPATH can be accessed using absolute or relative pathnames.|
 
 ## Note
 
@@ -48,7 +48,7 @@ is used.
 
 Under macOS and Linux, if the configuration parameter **ENABLE_CEF** is 1, Auxiliary Processors cannot be used (they hang on error). The default value is 1 unless you are not running under a desktop (for example, you are running Dyalog in a PuTTY session when the default is 0).
 
-Table E2: Default workspace values
+Table: Default workspace values { #E2 }
 
 |Variable|Notes|
 |---|---|
@@ -64,7 +64,7 @@ For numeric values, the interpreter takes the value of the environment variable,
 
 This string, now of digits only, is converted into an integer. If the resulting value is valid, then that is the value that will be used in the workspace. If the resulting value is invalid, then the default value will be used instead.
 
-Table E3: Variables used to configure the Session.
+Table: Variables used to configure the Session  { #E3 }
 
 |Variable|Notes|
 |---|---|
@@ -81,11 +81,11 @@ Table E3: Variables used to configure the Session.
 To set values, use K to indicate KB. Note that the buffers will contain other information, so the buffer size will not be exact. Note also that multibyte Unicode characters will take up more space than single byte characters, and that 32 and 64 bit versions of Dyalog APL can require different amounts of space for holding the same information.
 
 Example:
-```apl
-$ HISTORY_SIZE=4K my_apl_startup_script
+```
+HISTORY_SIZE=4K my_apl_startup_script
 ```
 
-Table E4: Miscellaneous Variables used by non-GUI Dyalog APL
+Table: Miscellaneous Variables used by non-GUI Dyalog APL  { #E4 }
 
 |---|---|
 |Variable|Notes|
@@ -97,26 +97,26 @@ Table E4: Miscellaneous Variables used by non-GUI Dyalog APL
 
 These are the remaining variables listed in the *Dyalog for Microsoft Windows Installation and Configuration Guide* which are effective in the non-GUI UNIX versions of Dyalog APL
 
-Table E5: Editor-related environment variables
+Table: Editor-related environment variables { #E5 }
 
 |---|---|
 |Variable|Notes|
 |EDITOR_COLUMNS_*|See [Configuring the Editor](configuring-the-editor.md). Can be one of EDITOR_COLUMNS_CHARACTER_ARRAY EDITOR_COLUMNS_CLASS EDITOR_COLUMNS_FUNCTION EDITOR_COLUMNS_NAMESPACE EDITOR_COLUMNS_NUMERIC_ARRAY|
 |DYALOG_DISCARD_FN_SOURCE|Specifies whether source code is retained in the workspace|
 
-Table E6:Tracer-related environment variables
+Table: Tracer-related environment variables { #E6 }
 
 |--------------|--------------------------------------------------------------------------------------|
 |Variable      |Notes                                                                                 |
 |TRACE_ON_ERROR|With this is set to 1 (the default) the tracer is opened if an untrapped error occurs.|
 
-Table E7:RIDE-related environment variables
+Table: Ride-related environment variables { #E7 }
 
 |---------|----------------------------------------------------------------------------|
 |Variable |Notes                                                                       |
-|RIDE_INIT|Enables and configures RIDE; see the *RIDE User Guide* for more information.|
+|RIDE_INIT|Enables and configures Ride; see the [Ride User Guide](https://dyalog.github.io/ride) for more information.|
 
-Table E8: SALT and user commands related environment variables
+Table: SALT and user commands related environment variables { #E8 }
 
 |---|---|
 |Variable|Notes|

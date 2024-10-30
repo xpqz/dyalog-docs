@@ -7,17 +7,17 @@ All Dyalog APL binary files have a unique magic number: the first byte is always
 AIX still uses a very early version of `magic`, so it is not possible to give as much information about Dyalog APL files as on Linux.
 
 Dyalog provides a file, `magic`, which is located in the top level installation directory of Dyalog APL. To use this file to extend the capabilities of the `file` command either run
-```apl
+```
 file -m /opt/mdyalog/{{ version_majmin }}/32/classic/p5/magic *
 ```
 
 or catenate the contents of /opt/mdyalog/{{ version_majmin }}/32/classic/p5/magic onto /etc/magic, and then run
-```apl
+```
 file *
 ```
 
 <h3 class="example">Example</h3>
-```apl
+```
 $ file -m /opt/mdyalog/{{ version_majmin }}/32/classic/p6/magic *
 1_apl_j1: Dyalog APL component file 64-bit level 1 journaled non-checksummed
 1_apl_j2: Dyalog APL component file 64-bit level 2 journaled checksummed
@@ -38,7 +38,7 @@ utf8: Dyalog APL workspace type 12 subtype 4 32-bit unicode little-endian
 Most Linux distributions include details about Dyalog-related files in their magic files; Dyalog has submitted two versions of the magic file for inclusion in distributions. To check whether your Linux distribution has the more recent version, create a journaled component file and then run the file command against that component file. The two examples below show the output with the earlier and later versions of magic in use.
 
 ## Example, using the older default magic file
-```apl
+```
 $ file *
 1_apl_j1: data
 1_apl_j2: data
@@ -52,12 +52,10 @@ colours: \012- Dyalog APL\012- workspace\012- version 12\012- .4
 core: ELF 32-bit LSB core file Intel 80386, version 1 (SYSV), SVR4-style
 signals: \012- Dyalog APL\012- workspace\012- version 12\012- .4
 utf8: \012- Dyalog APL\012- workspace\012- version 12\012- .4
-
 ```
 
 ### Example, with more recent magic file
-```apl
-
+```
 $ file *
 1_apl_j1: Dyalog APL component file 64-bit level 1 journaled non-checksummed
 1_apl_j2: Dyalog APL component file 64-bit level 2 journaled checksummed
