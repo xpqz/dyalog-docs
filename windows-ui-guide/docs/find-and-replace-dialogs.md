@@ -2,7 +2,7 @@
 
 The *Find* and *Find/Replace* dialog boxes are used to locate and modify text in an Edit window.
 
-![find replace dialog](img/find-replace-dialog.png)
+![](img/find-replace-dialog.png)
 
 |---|---|
 |Search For|Enter the text string that you want to find. Note that the text from the last 10 searches is available from the drop-down list. If appropriate, the search text is copied from the Find Objects tool. This makes it easy to first search for functions containing a particular string, and then to locate the same string in the functions.|

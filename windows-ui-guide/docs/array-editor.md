@@ -1,14 +1,14 @@
 <h1 class="heading"><span class="name">Array Editor</span></h1>
 
-The Array Editor[^1]  allows you to edit arbitrary arrays. It is invoked by either:
+The Array Editor[^1] allows you to edit arbitrary arrays. It is invoked by either:
 
-- Clicking the ![edit numbers icon](img/edit-numbers-icon.png) icon in the Session toolbar when the mouse pointer is over the name of a suitable variable.
+- Clicking the ![](img/edit-numbers-icon.png) icon in the Session toolbar when the mouse pointer is over the name of a suitable variable.
 - Calling the user command `]array.edit`, specifying the name of a suitable variable as its argument.
 - Calling it directly via `⎕NA`
 
 The Array Editor draws data using a format that is similar to the output of the `DISPLAY` function. For example:
 
-![array editor](img/array-editor.png)
+![](img/array-editor.png)
 
 ## Documentation
 
@@ -42,9 +42,9 @@ If this option is cleared, the Array editor will start but you will not be able 
 
 ### Implementation
 
-The Array Editor is implemented by a DLL named `dlaedit.dll` (32-bit) or      `dlaedit64.dll` (64-bit).
+The Array Editor is implemented by a DLL named `dlaedit.dll` (32-bit) or `dlaedit64.dll` (64-bit).
 
-The DLL exports two functions:  `DyalogEditArray` and `DyalogEditArrayTitle`. The latter is used when you click  the ![edit numbers icon](img/edit-numbers-icon.png) icon in the Session toolbar (via the APL function `⎕SE.NumEd.numed`)  and by the user command `]array.edit`
+The DLL exports two functions:  `DyalogEditArray` and `DyalogEditArrayTitle`. The latter is used when you click  the ![](img/edit-numbers-icon.png) icon in the Session toolbar (via the APL function `⎕SE.NumEd.numed`)  and by the user command `]array.edit`
 
 ### Calling the Array Editor Directly
 
@@ -56,9 +56,8 @@ For `DyalogEditArrayTitle` the 3rd argument is a character vector whose contents
 
 The result is the newly altered array.
 
-<h4 class="example">Examples</h4>
+<h3 class="example">Examples</h3>
 ```apl
-
 ⎕NA'dlaedit.dll|DyalogEditArray <pp >pp'              ⍝ 32-bit
 ⎕NA'dlaedit.dll|DyalogEditArrayTitle <pp >pp <0C2[]'  ⍝ 32-bit
 			
@@ -67,8 +66,7 @@ The result is the newly altered array.
 			
 New←DyalogEditArray Old 0
 New←DyalogEditArrayTitle Old 0 Name
-
 ```
 
 [^1]: Array Editor Version 1 Release 1 © Copyright davidliebtag.com 2012, 2015
-[^2]: Note that these are not standard ⎕NA calls, but rather use an extension to ⎕NA , called Direct Workspace Access . Dyalog does not intend to make this feature generally available at present: if you are interested in this feature please contact sales@dyalog.com.
+[^2]: Note that these are not standard ⎕NA calls, but rather use an extension to ⎕NA, called Direct Workspace Access. Dyalog does not intend to make this feature generally available at present: if you are interested in this feature please contact sales@dyalog.com.

@@ -2,7 +2,7 @@
 
 The Session popup menu (`⎕SE.popup`) is displayed by clicking the right mouse button anywhere in the Session or Editor window.
 
-![session popup menu](img/session-popup-menu.png)
+![](img/session-popup-menu.png)
 
 If the mouse pointer is over a visible object name, the popup menu allows you to edit, print, delete it or view its properties. Note that the name of the pop-up menu is specified by the Popup property of `⎕SE`.
 
@@ -36,4 +36,4 @@ Table: Session popup menu operations
 |Open link|`[OpenLink]`|Opens the URL or link using the appropriate program. Unicode Edition only.|
 |Copy link to clipboard|`[CopyLink]`|Copies the URL or link to the Windows Clipboard.  Unicode Edition only.|
 
-For the last two items, see [Underline URLs and links](configuration-dialog.md))
+For the last two items, see [Underline URLs and links](configuration-dialog.md).

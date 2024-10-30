@@ -2,7 +2,7 @@
 
 The Threads Tool is used to monitor and debug multi-threaded applications. To display the Threads Tool, select *Show Threads Tool* from the *Session Threads* menu, or *Threads* from the Session pop-up menu.
 
-![threads tool](img/threads-tool.png)
+![](img/threads-tool.png)
 
 The above picture illustrates a situation using the `lift.dws` workspace after executing the function `RUN`. The *Pause on Error* option was enabled and a Stop was set on `RUN[63]`. When `RUN` suspended at this point, all other threads (1-8) were automatically Paused. Note that all other threads happen to be Paused in the middle of calls to system functions
 
@@ -18,26 +18,26 @@ The columns of the Threads Tool display the following information.
 
 ## Thread States
 
-|State                      |Description                                                                                                                      |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|Pending                    |Not yet running                                                                                                                  |
-|Initializing               |Not yet running                                                                                                                  |
-|Defined function           |Between lines of a defined function                                                                                              |
-|Dfn                        |Between lines of a dfn                                                                                                           |
-|Suspended                  |Indicates that the thread is suspended and is able to accept input from the Session window.                                      |
-|Session                    |Indicates that Session window is connected to this thread.                                                                       |
+|State                      |Description                                                                               |
+|---------------------------|---------------------------------------------------------------------------------------------|
+|Pending                    |Not yet running                                                                       |
+|Initializing               |Not yet running                                                                       |
+|Defined function           |Between lines of a defined function                                                   |
+|Dfn                        |Between lines of a dfn                                                                |
+|Suspended                  |Indicates that the thread is suspended and is able to accept input from the Session window.   |
+|Session                    |Indicates that Session window is connected to this thread.                            |
 |(no stack)                 |Indicates that the thread has no SI stack and the Session is connected to another thread. This state can only occur for Thread 0.|
-|Exiting                    |About to be terminated                                                                                                           |
-|`:Hold`                    |Waiting for a `:Hold` token                                                                                                      |
-|`:EndHold`                 |Waiting for a `:Hold` token                                                                                                      |
-|`⎕DL`                      |Executing `⎕DL`                                                                                                                  |
-|`⎕DQ`                      |Executing `⎕DQ`                                                                                                                  |
-|`⎕NA`                      |Waiting for a DLL `(⎕NA` ) call to return.                                                                                       |
-|`⎕TGET`                    |Executing `⎕TGET` , waiting for a token                                                                                          |
-|`⎕TGET` (Ready to continue)|Executing `⎕TGET` , having got a token                                                                                           |
-|`⎕TSYNC`                   |Waiting for another thread to terminate                                                                                          |
-|Awaiting request           |Indicates a thread that is associated with a .NET system thread, but is currently unused                                         |
-|Called .NET                |Waiting for a call to .NET to return.                                                                                            |
+|Exiting                    |About to be terminated|
+|`:Hold`                    |Waiting for a `:Hold` token|
+|`:EndHold`                 |Waiting for a `:Hold` token|
+|`⎕DL`                      |Executing `⎕DL`|
+|`⎕DQ`                      |Executing `⎕DQ`|
+|`⎕NA`                      |Waiting for a DLL (`⎕NA`) call to return.|
+|`⎕TGET`                    |Executing `⎕TGET`, waiting for a token|
+|`⎕TGET` (Ready to continue)|Executing `⎕TGET`, having got a token |
+|`⎕TSYNC`                   |Waiting for another thread to terminate |
+|Awaiting request           |Indicates a thread that is associated with a .NET system thread, but is currently unused|
+|Called .NET                |Waiting for a call to .NET to return.|
 
 ## Paused/Normal
 
@@ -45,7 +45,7 @@ In addition to the thread state as described above, a thread may be *Paused* or 
 
 ## Threads Tool Pop-Up Menu
 
-![threads tool menu](img/threads-tool-menu.png)
+![](img/threads-tool-menu.png)
 
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Switch to             |Selecting this item causes APL to attempt to suspend (if necessary) and switch to the selected thread, connecting it to the Session and Debugger windows.|

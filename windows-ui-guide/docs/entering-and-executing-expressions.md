@@ -16,7 +16,7 @@ You can move around in the session using the scrollbar, the cursor keys, and the
 
 You may delete one or more lines from the Session using the DK command (Ctrl+Delete). This action removes the current line or the selected block of lines  from the Session window and from the Session log. The removal is permanent and you will be prompted to confirm:
 
-![modify session log](img/modify-session-log.png)
+![](img/modify-session-log.png)
 
 ## Auto Complete
 

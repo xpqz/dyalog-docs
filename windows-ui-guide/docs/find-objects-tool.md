@@ -4,7 +4,7 @@ The *Find Objects* tool is a modeless dialog box that may be toggled on and off 
 
 The Find Objects tool allows you to search the active workspace for objects that satisfy various criteria.
 
-![find objects dialog](img/find-objects-dialog.png)
+![](img/find-objects-dialog.png)
 
 ## Name
 
@@ -44,7 +44,7 @@ You can restrict the search to a particular namespace by typing its name into th
 
 When you press the *Find Now* button, the system searches for objects that satisfy all of the criteria that you have specified on all 3 pages of the dialog box and displays them in a ListView. The example below illustrates the result of searching the workspace for all objects containing references to the symbol `Speak`.
 
-![find objects dialog results](img/find-objects-dialog-results.png)
+![](img/find-objects-dialog-results.png)
 
 You may change the way in which the objects are displayed in the ListView using the *View* menu or the tool buttons, in the same manner as for objects displayed in the Workspace Explorer. You may also edit, delete and rename objects in the same way. Furthermore, objects can be copied or moved by dragging from the ListView in the Search tool to the TreeView in the Explorer.
 

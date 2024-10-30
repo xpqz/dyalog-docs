@@ -21,7 +21,7 @@ Alternatively, type `)ED` followed by the pathname to the file. To identify the 
 
 If the named file does not exist, you will be asked whether or not you want to create it:
 
-![editing text files (new text file)](img/editing-text-files-new-text-file.png)
+![](img/editing-text-files-new-text-file.png)
 
 If you edit a Dyalog script file, the editor will treat it as such and provide the same formatting and syntax colouring as if it were a script in the workspace.
 
@@ -29,19 +29,19 @@ Otherwise, the file will be edited as if it were a character vector with embedde
 
 When you exit the editor with *Exit and fix*,  you will be offered a number of alternatives depending upon the type of file, as shown below.
 
-![editing text files (save text file content)](img/editing-text-files-save-text-file-content.png)
+![](img/editing-text-files-save-text-file-content.png)
 
-Saving a Text file.
+**Saving a Text file**
 
 Note that if you choose *Save as text in the workspace*, information about the file and the text variable associated with it is retained in the workspace. This information  may be obtained using `5176⌶` and `5177⌶`. See [List Loaded Files](../../language-reference-guide/the-i-beam-operator/list-loaded-files) and [List Loaded File Objects](../../language-reference-guide/the-i-beam-operator/list-loaded-file-objects).
 
-![editing text files (save script file content)](img/editing-text-files-save-script-file-content.png)
+![](img/editing-text-files-save-script-file-content.png)
 
-Saving a Script file.
+**Saving a Script file**
 
 Note that if you choose *Fix as code in the workspace* or *Save as text in the workspace*, information about the file and the text variable associated with it is retained in the workspace. This information  may be obtained using `5176⌶` and `5177⌶`. See [List Loaded Files](../../language-reference-guide/the-i-beam-operator/list-loaded-files) and [List Loaded File Objects](../../language-reference-guide/the-i-beam-operator/list-loaded-file-objects).
 
-# Fix as code in the workspace
+## Fix as code in the workspace
 
 If you choose this option, the file will be updated and the script will also be fixed in the workspace. Note that if the script refers to a base class or other external elements, it cannot be fixed unless these elements are also present in the workspace.
 
@@ -49,11 +49,11 @@ If you choose this option, the file will be updated and the script will also be 
 
 If you choose this option, the file will be updated and the contents of the file will also be saved to a variable in the workspace. First you will see the following warning dialog, which may be disabled subsequently by checking *Do not ask this question again*.
 
-![editing text files (save text warning)](img/editing-text-files-save-text-warning.png)
+![](img/editing-text-files-save-text-warning.png)
 
 Then you will be prompted to supply its name, which may be a new name or the name of an existing variable:
 
-![editing text files (variable name)](img/editing-text-files-variable-name.png)
+![](img/editing-text-files-variable-name.png)
 
 ## Only save file to disk
 

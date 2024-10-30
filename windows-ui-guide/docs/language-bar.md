@@ -4,13 +4,13 @@ The Language Bar is an optional window which is initially docked to the Session 
 
 If you hover the mouse pointer over a symbol in the Language Bar, a pop-up tip is displayed to remind you of its usage. If you click on a symbol in the Language Bar, that symbol is inserted at the cursor in the current line in the Session.
 
-![language bar](img/language-bar.png)
+![](img/language-bar.png)
 
 ## Popup Menu
 
 If you click the right mouse button in the Language Bar, the context menu displays the following options:
 
-![language bar popup menu](img/language-bar-popup-menu.png)
+![](img/language-bar-popup-menu.png)
 
 |Item                |Description                                                                                                  |
 |--------------------|-------------------------------------------------------------------------------------------------------------|

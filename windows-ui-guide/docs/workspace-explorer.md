@@ -4,7 +4,7 @@ The Explorer tool is a modeless dialog box that may be toggled on and off by the
 
 The Explorer contains two sub-windows. The one on the left displays the namespace structure of your workspace using a TreeView. The right-hand window is a ListView that displays the contents of the namespace that is selected in the TreeView.
 
-![workspace explorer 1](img/workspace-explorer-1.png)
+![](img/workspace-explorer-1.png)
 
 The Explorer is closely modelled on the *Windows Explorer* in Windows and the facilities it provides are very similar. For Windows users, the operation of this tool is probably self-explanatory. However, other users may find the following discussion useful.
 
@@ -13,15 +13,15 @@ The Explorer is closely modelled on the *Windows Explorer* in Windows and the fa
 The TreeView displays the structure of your workspace. Initially it shows the root and Session namespaces `#` and `⎕SE`. The icon for `#` is open indicating that its contents are those that appear in the ListView. You can expand or collapse the TreeView of the workspace structure by clicking on the mini-buttons (labelled + and -) or by double-clicking the icons. A single click on a namespace icon opens it and causes its contents to be displayed in the ListView. Another way to open a namespace is to double-click its icon in the ListView. Only one namespace can be open at a time. The icons used in the display are described below.
 
 |-------------------------------------------------------------------------------|----------------------------------------|
-|![ws explorer class icon](img/ws-explorer-class-icon.png)                      |Class                                   |
-|![ws explorer closed namespace icon](img/ws-explorer-closed-namespace-icon.png)|Namespace                               |
-|![ws explorer closed gui icon](img/ws-explorer-closed-gui-icon.png)            |GUI Namespace                           |
-|![ws explorer function icon](img/ws-explorer-function-icon.png)                |Function                                |
-|![ws explorer variable icon](img/ws-explorer-variable-icon.png)                |Variable                                |
-|![ws explorer operator icon](img/ws-explorer-operator-icon.png)                |Operator                                |
-|![ws explorer erased object icon](img/ws-explorer-erased-object-icon.png)      |Indicates an object that has been erased|
-|![ws explorer typelib icon](img/ws-explorer-typelib-icon.png)                  |Type Library                            |
-|![ws explorer net icon](img/ws-explorer-net-icon.png)                          |.NET object                             |
+|![](img/ws-explorer-class-icon.png)                      |Class                                   |
+|![](img/ws-explorer-closed-namespace-icon.png)|Namespace                               |
+|![](img/ws-explorer-closed-gui-icon.png)            |GUI Namespace                           |
+|![](img/ws-explorer-function-icon.png)                |Function                                |
+|![](img/ws-explorer-variable-icon.png)                |Variable                                |
+|![](img/ws-explorer-operator-icon.png)                |Operator                                |
+|![](img/ws-explorer-erased-object-icon.png)      |Indicates an object that has been erased|
+|![](img/ws-explorer-typelib-icon.png)                  |Type Library                            |
+|![](img/ws-explorer-net-icon.png)                          |.NET object                             |
 
 ## Viewing and Arranging Objects
 
@@ -31,7 +31,7 @@ The ListView displays the contents of a namespace in one of four different ways 
 |Location|This is the namespace containing the object. By definition, this is the same for all of the objects shown in the ListView and is normally hidden.|
 |Type|Type of object.|
 |Description|For a function or operator, this is the function header stripped of localised names and comment. For a variable, the description indicates its rank, shape and data type. For a namespace, the description indicates the nature of the namespace; a plain namespace is described as namespace, a GUI Form object is described as Form, and so forth.|
-|Size|The size of the object as reported by `⎕SIZE` .|
+|Size|The size of the object as reported by `⎕SIZE`.|
 |Modified on|For functions and operators, this is the timestamp when the object was last fixed. For other objects this field is empty.|
 |Modified by|For functions and operators, this is the name of the user who last fixed the object. For other objects this field is empty.|
 
@@ -59,7 +59,7 @@ You can open up an edit window for a function or variable by double-clicking its
 
 If you open the *Fns/Ops* item, the names of the functions and operators in the namespace are displayed below it alphabetically in the left (tree view) pane. When you select one of these names, the function itself is opened in the right (list view) pane.
 
-![ws explorer as editor](img/ws-explorer-as-editor.png)
+![](img/ws-explorer-as-editor.png)
 
 You may use this feature to quickly cycle through the functions (or variables) in a namespace, pressing cursor up and cursor down in the left (tree view) pane to move from one to another.
 
@@ -67,7 +67,7 @@ You may also edit the function directly in the right (list view) pane before mov
 
 ## The File Menu
 
-![ws explorer file menu](img/ws-explorer-file-menu.png)
+![](img/ws-explorer-file-menu.png)
 
 The *File* menu, illustrated above, provides the following actions. All but *Print setup*  and *Close* act on the object or objects that are currently selected in the ListView.
 
@@ -82,8 +82,8 @@ The *File* menu, illustrated above, provides the following actions. All but *Pri
 ## The Edit Menu
 
 |-------------------------------------------------------|---------------------------------------------------------------------|
-|![ws explorer edit menu](img/ws-explorer-edit-menu.png)|&nbsp;                                                               |
-|&nbsp;                                                 |![ws explorer edit select menu](img/ws-explorer-edit-select-menu.png)|
+|![](img/ws-explorer-edit-menu.png)|&nbsp;                                                               |
+|&nbsp;                                                 |![](img/ws-explorer-edit-select-menu.png)|
 
 The *Edit* menu, illustrated above, provides the following actions. The *Edit*, *Copy* and *Move* operations act on the object or objects that are currently selected in the ListView.
 
@@ -99,7 +99,7 @@ The *Edit* menu, illustrated above, provides the following actions. The *Edit*, 
 
 ## The Options Menu
 
-![ws explorer options menu](img/ws-explorer-options-menu.png)
+![](img/ws-explorer-options-menu.png)
 
 The Options menu, illustrated above, provides the following actions.
 
@@ -116,8 +116,8 @@ If *Auto Refresh* is checked the Explorer is updated every time APL returns to d
 
 ## The View Menu
 
-![ws explorer view menu](img/ws-explorer-view-menu.png)
-![ws explorer view columns menu](img/ws-explorer-view-columns-menu.png)
+![](img/ws-explorer-view-menu.png)
+![](img/ws-explorer-view-columns-menu.png)
 
 The View menu, illustrated above, provides the following actions.
 
@@ -136,7 +136,7 @@ The View menu, illustrated above, provides the following actions.
 
 ## The Tools Menu
 
-![ws explorer tools menu](img/ws-explorer-tools-menu.png)
+![](img/ws-explorer-tools-menu.png)
 
 The *Tools* menu, illustrated above, provides the following actions.
 

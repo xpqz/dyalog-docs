@@ -7,7 +7,7 @@ You can choose:
 - which types of events you want to monitor
 - which objects you want to monitor
 
-![event viewer](img/event-viewer.png)
+![](img/event-viewer.png)
 
 In the example illustrated above, the user has chosen to monitor events on a Form `#.f`. Furthermore, the user has chosen to monitor GotFocus, LostFocus, MouseUp, MouseDblClick and Configure events.
 
@@ -15,7 +15,7 @@ Entries in the *Action* column report the action  that was associated with the e
 
 ## The Spy Menu
 
-![event viewer spy menu](img/event-viewer-spy-menu.png)
+![](img/event-viewer-spy-menu.png)
 
 The Spy menu, illustrated above, provides the following options and actions.
 
@@ -31,7 +31,7 @@ The Spy menu, illustrated above, provides the following options and actions.
 
 ## The Columns Menu
 
-![event viewer columns menu](img/event-viewer-columns-menu.png)
+![](img/event-viewer-columns-menu.png)
 
 The Columns menu allows you to choose which information is displayed for the events you are monitoring.
 
@@ -50,7 +50,7 @@ The Columns menu allows you to choose which information is displayed for the eve
 
 ## The Select Menu
 
-![event viewer select menu](img/event-viewer-select-menu.png)
+![](img/event-viewer-select-menu.png)
 
 The *Select* menu allows you to highlight certain events in the *Event Viewer*. For example, if you are monitoring TCP/IP events on a number of TCPSockets, you can highlight just the events for a particular socket.
 
@@ -65,7 +65,7 @@ These items are also available from the pop-up menu that appears when you press 
 
 ## The Options Menu
 
-![event viewer options menu](img/event-viewer-options-menu.png)
+![](img/event-viewer-options-menu.png)
 
 The *Options* menu allows you to choose which information is displayed for the events you are monitoring.
 
@@ -79,7 +79,7 @@ The *Options* menu allows you to choose which information is displayed for the e
 
 The *Event Viewer Options* dialog box allows you to select the objects and events that you wish to monitor.
 
-![event viewer options dialog](img/event-viewer-options-dialog.png)
+![](img/event-viewer-options-dialog.png)
 
 ## Events to view
 

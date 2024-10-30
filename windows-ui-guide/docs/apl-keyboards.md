@@ -14,7 +14,7 @@ In both Classic and Unicode Editions APL characters are generated when the user 
 
 For both input techniques it is possible to alter the mapping of keystrokes to APL characters, and to add support for new languages. It is also possible to alter the keystrokes which define special command keyboard shortcuts. For further details, see [Unicode Edition Keyboard](unicode-edition-keyboard.md) or [Classic Edition Keyboard.](classic-edition-keyboard.md)
 
-### Unicode Edition and the Dyalog Unicode IME
+## Unicode Edition and the Dyalog Unicode IME
 
 The Dyalog Unicode IME is the default input mechanism for generating APL characters for Unicode editions of Dyalog APL. The version of the IME supplied with version {{ version_majmin }} can be used  with version 12.1 and later, provided that they are patched to a version created on or after 1<sup>st</sup> April 2011.
 
@@ -34,7 +34,7 @@ In particular, Dyalog APL for Windows Unicode Edition does not use the mappings 
 
 Note that the Dyalog Unicode IME replaces any previous IME, as well as the Dyalog Ctrl and Dyalog AltGr keyboards.
 
-### Unicode Edition and the Registry Keyboard
+## Unicode Edition and the Registry Keyboard
 
 The Registry Keyboard provides an alternative mechanism for the Unicode Edition. This feature maps keystrokes to APL characters using entries in the Windows Registry. Dyalog supports the mechanism but does not provide the mappings which must therefore be defined by the user.
 
@@ -57,7 +57,7 @@ In the first entry, the APL character is  Unicode code point  `230A` which is `�
 
 In the second entry, the APL character is Unicode code point `235F` which is `⍟`. The character is entered by pressing &lt;\*&gt; (hex 38) with <kbd>Shift </kbd>+ <kbd>Ctrl</kbd> (hex 03).
 
-### Classic Edition
+## Classic Edition
 
 The mapping for each of the `⎕AV` positions and its associated keystroke is defined by a selectable translate table. `⎕AV` includes all the APL symbols used by Dyalog APL as well as all the (non-APL) characters which appear on a standard keyboard. This mapping only works with Classic Edition.
 
@@ -65,6 +65,6 @@ The Classic Edition installation also includes the Dyalog Unicode IME (described
 
 The Classic Edition includes support for Danish, Finnish, French, German, Italian, Swedish, and both British and American English keyboards. The default keyboard mapping for unsupported languages is American English.
 
-### Backtick Keyboard
+## Backtick Keyboard
 
 In addition to the standard APL keyboards, the RIDE keyboard  may be used natively. See [Backtick Keyboard](ime-configuration.md).
