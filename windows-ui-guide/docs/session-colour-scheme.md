@@ -3,14 +3,14 @@
 Within the Development Environment, different colours are used to identify different types of information. These colours are normally defined by registry entries and may be changed using the Colour Configuration dialog box as described later in this chapter.
 
 In the Classic Edition, colours may alternatively be defined in the Output Translate Table (normally WIN.DOT). This table recognises up to 256 foreground and 256 background colours which are referenced by colour indices 0-255. These colour indices are mapped to physical colours in terms of their Red, Green and Blue intensities (also 0-255). Foreground and background colours are specified independently as Cnnn or Bnnn. For example, the following entry in the Output Translate Table defines colour 250 to be red on magenta.
-```apl
+```
    C250: 255 0 0   + Red foreground
    B250: 255 0 255 + Magenta background
 ```
 
 The first table below shows the colours used for different session components. The second table shows how different colours are used to identify different types of data in edit windows.
 
-Table: Default Colour Scheme - Session
+Table: Default Colour Scheme - Session { #default-colour-scheme-session }
 
 |Colour|Used for                   |Default            |
 |------|---------------------------|-------------------|
@@ -20,7 +20,7 @@ Table: Default Colour Scheme - Session
 |253   |Tracer : Pendent Function  |Yellow on Dark Grey|
 |245   |Tracer : Current Line      |White on Red       |
 
-Table: Default Colour Scheme Edit windows
+Table: Default Colour Scheme Edit windows { #default-colour-scheme-edit-windows }
 
 |Colour|Array Type                 |Editable|Default         |
 |------|---------------------------|--------|----------------|

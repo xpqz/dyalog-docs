@@ -6,4 +6,4 @@ You may experiment by changing the value of the delay before which Value Tips ar
 
 Note that the colour scheme used to display the Value Tip for a function need not necessarily be the same colour scheme as you use for the function editor.
 
-![value tips configuration](img/value-tips-configuration.png)
+![](img/value-tips-configuration.png)

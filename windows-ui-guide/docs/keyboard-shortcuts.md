@@ -10,7 +10,7 @@ In the Unicode Edition, Keyboard Shortcuts are defined using Options/Configure/K
 
 To the right of the last symbol in the Language Bar is the Keyboard Shortcut icon ![keyboard shortcut icon](img/keyboard-shortcut-icon.png). If you hover the mouse over this icon, a pop-up tip is displayed to remind you of your keyboard shortcuts as illustrated below.
 
-![keyboard_shortcut_popup](img/keyboard-shortcut-popup.png)
+![](img/keyboard-shortcut-popup.png)
 
 ## Classic Edition
 

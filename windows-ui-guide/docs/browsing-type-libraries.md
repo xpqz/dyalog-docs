@@ -13,7 +13,7 @@ If the Microsoft .NET Framework is installed, you may in addition:
 
 If the *Type Libraries* option is enabled, the *Workspace Explorer* displays a folder labelled *TypeLibs* which, when opened, displays two others labelled *Loaded Libraries* and *Registered Libraries* as shown below.
 
-![browsing type libraries](img/browsing-type-libraries.png)
+![](img/browsing-type-libraries.png)
 
 ## Browsing Registered Libraries
 
@@ -23,11 +23,11 @@ If you select one of these Library names, some summary information is displayed 
 
 For example, the result of selecting the Microsoft Excel 16.0 Object Library is illustrated below.
 
-![browsing registered libraries 1](img/browsing-registered-libraries-1.png)
+![](img/browsing-registered-libraries-1.png)
 
 If instead, you select the Registered Libraries folder itself, the list of Registered Type Libraries is displayed in the list view pane
 
-![browsing registered libraries 2](img/browsing-registered-libraries-2.png)
+![](img/browsing-registered-libraries-2.png)
 
 ## Loading a Type Library
 
@@ -45,7 +45,7 @@ If you have already loaded any Type Libraries into the workspace, using the Work
 
 The picture below illustrates the effect of having loaded the Microsoft Excel 16.0 Object Library.
 
-![browsing loaded libraries 1](img/browsing-loaded-libraries-1.png)
+![](img/browsing-loaded-libraries-1.png)
 
 Notice that any external references to other libraries causes these to be brought in too.
 
@@ -59,11 +59,11 @@ A Type Library describes a number of *objects*. Typically, all of the objects ha
 
 For example, the Microsoft Excel 16.0 Object Library contains seven CoClasses named *Application*, *Chart*, *Global* etc as shown below.
 
-![browsing loaded libraries 2](img/browsing-loaded-libraries-2.png)
+![](img/browsing-loaded-libraries-2.png)
 
 Opening the Application folder you can see that the *Application* CoClass comprises the *_Application* object coupled with the *AppEvents* event set as shown below.
 
-![browsing loaded libraries 3](img/browsing-loaded-libraries-3.png)
+![](img/browsing-loaded-libraries-3.png)
 
 The specific methods, properties and events supported by the CoClass object can be examined by opening the appropriate sub-folder. The same information for these and other objects is also accessible from the *Objects* and *Event Sets* folders as discussed below.
 
@@ -73,17 +73,17 @@ The *Objects* folder contains several sub-folders each of which represents a nam
 
 Each object folder contains two sub-folders named Methods and Properties. Selecting one of these causes the list of Methods or Properties to be displayed in the list view pane. The picture below shows the Methods exposed by the Microsoft Excel 16.0 Range object.
 
-![browsing loaded libraries 4](img/browsing-loaded-libraries-4.png)
+![](img/browsing-loaded-libraries-4.png)
 
 If you open the *Methods* or *Properties* subfolder, you can display more detailed information about individual Methods and Properties. For example, the following picture shows information about the *SaveAs* method exposed by the Microsoft Excel 16.0 Worksheet object.
 
-![browsing loaded libraries 5](img/browsing-loaded-libraries-5.png)
+![](img/browsing-loaded-libraries-5.png)
 
 This tells you that the *SaveAs* method takes up to 10 parameters of which the first, Filename, is mandatory and is of data type VT_BSTR (a character string). Note that [in] indicates that the parameter is an *input* parameter.
 
 Incidentally, the optional Fileformat parameter is an example of a parameter whose value must be one of a list of Enumerated Constants. Even without looking at the documentation, the possible values can be deduced by browsing the *Enums* folder, with the results shown below.
 
-![browsing loaded libraries 6](img/browsing-loaded-libraries-6.png)
+![](img/browsing-loaded-libraries-6.png)
 
 You can therefore deduce that the following expression, executed in the namespace associated with the currently active worksheet, will save the sheet in comma-separated format (CSV) in a file called mysheet.csv:
 ```apl
@@ -101,7 +101,7 @@ The *Event Sets* folder contains several sub-folders each of which represents a 
 
 If you open one of these event sets, the names of the events it contains are displayed in the tree view pane. If you then select one of the events, its details are displayed in the list view pane as shown below.
 
-![browsing loaded libraries 7](img/browsing-loaded-libraries-7.png)
+![](img/browsing-loaded-libraries-7.png)
 
 This example shows that when it fires, the SheetActivate event invokes your callback function with a single argument named *Sh* whose datatype is VT_DISPATCH (in practice, a Worksheet object).
 
@@ -111,4 +111,4 @@ The *Enums* folder will typically contain several sub-folders each of which repr
 
 If you select one of these sets, the names and values of the constants it contains are displayed in the list view pane as shown below.
 
-![browsing loaded libraries 8](img/browsing-loaded-libraries-8.png)
+![](img/browsing-loaded-libraries-8.png)

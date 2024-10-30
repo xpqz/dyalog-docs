@@ -2,11 +2,11 @@
 
 The session status bar is represented by two CoolBands each of which contains a StatusBar object. There are a number of StatusFields as illustrated below. Your own status bar may be configured differently.
 
-![session statusbar classic](img/session-statusbar-classic.png)
+![](img/session-statusbar-classic.png)
 
 **Classic Edition**
 
-![session statusbar unicode](img/session-statusbar-unicode.png)
+![](img/session-statusbar-unicode.png)
 
 **Unicode Edition**
 

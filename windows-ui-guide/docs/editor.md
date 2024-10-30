@@ -4,7 +4,7 @@
 
 The editor may be invoked in several ways. From the session, you can use the system command `)ED` or the system function `⎕ED`, specifying the names(s) of the object(s) to be edited. You can also type the name of the object and then press Shift+Enter (ED), click the *Edit* tool on the tool bar, or select *Edit* from the *Action* menu. If you invoke the editor when the cursor is positioned on the empty input line, with a suspended function in the state indicator, the editor is invoked on the suspended function and the cursor is positioned on the line at which it is suspended. This is termed *naked edit*. These ways of invoking the editor apply only in the session window
 
-![editor 1](img/editor-1.png)
+![](img/editor-1.png)
 
 In addition, there is a general *point-and-edit* facility which works in edit and trace windows too. Simply position the input cursor over a name and double-click the left mouse button. Alternatively, you can press Shift+Enter or select *Edit* from the *File* menu. The name can appear in the Session, in an Edit window, or in a Trace window; the effect is the same. Note that, in the Session, typing a name and pressing Shift+Enter is actually a special case of *point-and-edit*. Note also that a *naked edit* can be invoked by double-clicking the left mouse button in the empty input line.
 
@@ -18,7 +18,7 @@ If the name is followed by a line-number in square brackets, for example, `MyFn[
 
 Unless *Classic Dyalog mode* is selected (*Options/Configure/Trace/Edit*), the Editor is a Multiple Document Interface (MDI) window that may be a stand-alone window, or be docked in the Session window. Each of the objects being edited is displayed in a separate sub-window. Individual edit windows are managed using standard MDI facilities.
 
-![editor 2](img/editor-2.png)
+![](img/editor-2.png)
 
 The first edit sub-window window is created at the position specified by the **edit_first_y** and **edit_first_x** parameters which  are specified in terms of the size of a character in the current font relative to the top-left corner of the main Editor window. Subsequent ones are staggered according to the values of the **edit_offset_y** and **edit_offset_x** parameters.
 
@@ -28,9 +28,9 @@ Note that the blue triangles indicate that the line of text is longer than can b
 
 By default, the Session has the Editor docked along the right edge of the Session window. When you edit a function, the Editor window automatically springs into view as illustrated below.
 
-![editor 3](img/editor-3.png)
+![](img/editor-3.png)
 
-![editor 4](img/editor-4.png)
+![](img/editor-4.png)
 
 You can resize the Editor pane to view more or less of the Session itself, by dragging its title bar.
 
@@ -38,7 +38,7 @@ Using the buttons in the title bar, you can instantly maximise the Editor pane t
 
 The picture below shows the effect of maximising the Editor. The `BUILD_SESSION` edit window is itself maximised within the Editor too.
 
-![editor 5](img/editor-5.png)
+![](img/editor-5.png)
 
 Note that when the Editor has the focus, the Editor menubar is displayed in place of the Session menubar.
 
@@ -53,11 +53,11 @@ When the first Edit window is opened, its position is determined as follows:
 
 The initial size of an edit window is specified by the **edit_rows** and **edit_cols** parameters.
 
-![editor 6](img/editor-6.png)
+![](img/editor-6.png)
 
 Subsequent ones are staggered according to the values of the **edit_offset_y** and **edit_offset_x** parameters.
 
-![editor 7](img/editor-7.png)
+![](img/editor-7.png)
 
 ### Moving around an edit window
 
@@ -77,32 +77,32 @@ You may select text in an Editor window by clicking the left or right mouse butt
 
 ### Editor ToolBar
 
-![editor toolbar](img/editor-toolbar.png)
+![](img/editor-toolbar.png)
 
 In the table below, the first image shows the appearance of the toolbutton with Native Look and Feel enabled; the second with it disabled.
 
 |Button|Description|
 |---|---|
-|![trace_theme-14-00](img/trace-theme-14-00.png) ![editor line numbers icon](img/editor-line-numbers-icon.png) Toggle line numbers|Toggles Line numbers on/off|
-|![editor toggle treeview icon](img/editor-toggle-treeview-icon.png) ![editor toggle treeview icon](img/nlf-disabled/editor-toggle-treeview-icon.png) Toggle tree view|Toggles the treeview on/off. See **Editing Classes** .|
-|![editor previous location icon](img/editor-previous-location-icon.png) ![editor previous location icon](img/nlf-disabled/editor-previous-location-icon.png) Previous Location|Certain operations (such as selecting an item in the treeview)  reposition the caret in the Editor window. This button moves the caret back to its previous location.|
-|![trace_theme-12-00](img/trace-theme-12-00.png) ![editor comment icon](img/editor-comment-icon.png) Comment selected text|Inserts a comment symbol to the left of the selection in each of the selected lines.|
-|![trace_theme-13-00](img/trace-theme-13-00.png) ![editor uncomment icon](img/editor-uncomment-icon.png) Uncomment selected text|Removes the comment symbol (if present) from the left-most column of the selection in each of the selected lines.|
-|![trace_theme-02-00](img/trace-theme-02-00.png) ![editor save icon](img/editor-save-icon.png) Save changes and return|Saves changes and closes the current edit window|
-|![editor search icon](img/editor-search-icon.png) ![editor search icon](img/nlf-disabled/editor-search-icon.png) Search Box|Enter search text and click one of the following two buttons|
-|![trace_theme-16-00](img/trace-theme-16-00.png) ![editor next match icon](img/editor-next-match-icon.png) Search for Next Match|Locates the next occurrence of the search text|
-|![trace_theme-15-00](img/trace-theme-15-00.png) ![editor previous match icon](img/editor-previous-match-icon.png) Search for Previous Match|Locates the previous occurrence of the search|
-|![trace_theme-17-00](img/trace-theme-17-00.png) ![editor search hidden text icon](img/editor-search-hidden-text-icon.png) Search hidden text|Determines whether or not the search examines collapsed blocks|
-|![trace_theme-21-00](img/trace-theme-21-00.png) ![editor match case icon](img/editor-match-case-icon.png) Match case|Specifies whether or not the search is case-sensitive|
-|![trace_theme-22-00](img/trace-theme-22-00.png) ![editor match whole word icon](img/editor-match-whole-word-icon.png) Match whole word|Specifies whether or not the search matches a whole word|
-|![trace_theme-23-00](img/trace-theme-23-00.png) ![editor use regular expressions icon](img/editor-use-regular-expressions-icon.png) Use Regular Expressions|Specifies whether or not the search uses PCRE regular expressions|
-|![trace_theme-18-00](img/trace-theme-18-00.png) ![editor refactor method icon](img/editor-refactor-method-icon.png) Refactor text as method|Inserts a Method template for the selected name|
-|![trace_theme-19-00](img/trace-theme-19-00.png) ![editor refactor field icon](img/editor-refactor-field-icon.png) Refactor text as field|Inserts a Field template for the selected name|
-|![trace_theme-20-00](img/trace-theme-20-00.png) ![editor refactor property icon](img/editor-refactor-property-icon.png) Refactor text as property|Inserts a Property template for the selected name|
+|![](img/trace-theme-14-00.png) ![](img/editor-line-numbers-icon.png) Toggle line numbers|Toggles Line numbers on/off|
+|![](img/editor-toggle-treeview-icon.png) ![](img/nlf-disabled/editor-toggle-treeview-icon.png) Toggle tree view|Toggles the treeview on/off. See **Editing Classes** .|
+|![](img/editor-previous-location-icon.png) ![](img/nlf-disabled/editor-previous-location-icon.png) Previous Location|Certain operations (such as selecting an item in the treeview)  reposition the caret in the Editor window. This button moves the caret back to its previous location.|
+|![](img/trace-theme-12-00.png) ![](img/editor-comment-icon.png) Comment selected text|Inserts a comment symbol to the left of the selection in each of the selected lines.|
+|![](img/trace-theme-13-00.png) ![](img/editor-uncomment-icon.png) Uncomment selected text|Removes the comment symbol (if present) from the left-most column of the selection in each of the selected lines.|
+|![](img/trace-theme-02-00.png) ![](img/editor-save-icon.png) Save changes and return|Saves changes and closes the current edit window|
+|![](img/editor-search-icon.png) ![](img/nlf-disabled/editor-search-icon.png) Search Box|Enter search text and click one of the following two buttons|
+|![](img/trace-theme-16-00.png) ![](img/editor-next-match-icon.png) Search for Next Match|Locates the next occurrence of the search text|
+|![](img/trace-theme-15-00.png) ![](img/editor-previous-match-icon.png) Search for Previous Match|Locates the previous occurrence of the search|
+|![](img/trace-theme-17-00.png) ![](img/editor-search-hidden-text-icon.png) Search hidden text|Determines whether or not the search examines collapsed blocks|
+|![](img/trace-theme-21-00.png) ![](img/editor-match-case-icon.png) Match case|Specifies whether or not the search is case-sensitive|
+|![](img/trace-theme-22-00.png) ![](img/editor-match-whole-word-icon.png) Match whole word|Specifies whether or not the search matches a whole word|
+|![](img/trace-theme-23-00.png) ![](img/editor-use-regular-expressions-icon.png) Use Regular Expressions|Specifies whether or not the search uses PCRE regular expressions|
+|![](img/trace-theme-18-00.png) ![](img/editor-refactor-method-icon.png) Refactor text as method|Inserts a Method template for the selected name|
+|![](img/trace-theme-19-00.png) ![](img/editor-refactor-field-icon.png) Refactor text as field|Inserts a Field template for the selected name|
+|![](img/trace-theme-20-00.png) ![](img/editor-refactor-property-icon.png) Refactor text as property|Inserts a Property template for the selected name|
 
 ### The File Menu
 
-![editor file menu](img/editor-file-menu.png)
+![](img/editor-file-menu.png)
 
 The *File* menu illustrated above is displayed when editing a simple object and provides the following options.
 
@@ -124,7 +124,7 @@ The *File* menu illustrated above is displayed when editing a simple object and 
 
 ### The File Menu (editing a script)
 
-![editor file menu class](img/editor-file-menu-class.png)
+![](img/editor-file-menu-class.png)
 
 |---------------------------|------------------------------------------------------------|
 |Fix whole script           |Fixes the entire script                                     |
@@ -151,7 +151,7 @@ In addition, the Configuration Dialog (see [Fixing Scripts](configuration-dialog
 
 The *Edit* menu provides a means to execute those commands that are concerned with editing text. The Edit menu and the actions it provides are described below.
 
-![editor edit menu](img/editor-edit-menu.png)
+![](img/editor-edit-menu.png)
 
 |Item|Description|
 |---|---|
@@ -180,9 +180,9 @@ The *Find* and *Replace* items are used to display the *Find* dialog box and the
 
 Once displayed, each of the two dialog boxes remains on the screen until it is either closed or replaced by the other. This is convenient if the same operations are to be performed over and over again, and/or in several windows. *Find* and *Find/Replace* operations are effective in the window that previously had the focus.
 
-#### The Syntax Menu
+### The Syntax Menu
 
-![editor syntax menu](img/editor-syntax-menu.png)
+![](img/editor-syntax-menu.png)
 
 The *Syntax* menu illustrated above provides options to specify  how the data displayed in the Editor window is to be syntax coloured. For workspace objects, the default is *APL* for functions and operators, and *Nothing* for variables.
 
@@ -193,24 +193,24 @@ The *Syntax* menu illustrated above provides options to specify  how the data di
 |JSON   |JSON array      |
 |XML    |XML array       |
 
-#### The Window Menu
+### The Window Menu
 
 The *Window* menu provides a means to control the display of the various edit windows. The *Window* menu and the actions it provides are described below.
 
-![editor window menu](img/editor-window-menu.png)
+![](img/editor-window-menu.png)
 
-|Item             |Description                                                                                                                                       |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|Item             |Description                                                      |
+|-----------------|--------------------------------------------------------------|
 |Close All Windows|Closes all the edit windows. If *Confirm on Edit Window Closed* is checked, you will be prompted to confirm for any objects that you have changed.|
-|Cascade          |Arranges the edit windows in overlapping fashion.                                                                                                 |
-|Tile Vertically  |Arranges the edit windows tiled one above the other.                                                                                              |
-|Tile Horizontally|Arranges the edit windows tiled alongside one another.                                                                                            |
-|Arrange Icons    |Arranges any minimised edit windows.                                                                                                              |
-|Editor           |Allows you to Select the edit window corresponding to the named object.                                                                           |
+|Cascade          |Arranges the edit windows in overlapping fashion.                                             |
+|Tile Vertically  |Arranges the edit windows tiled one above the other.                                       |
+|Tile Horizontally|Arranges the edit windows tiled alongside one another.                            |
+|Arrange Icons    |Arranges any minimised edit windows.                    |
+|Editor           |Allows you to Select the edit window corresponding to the named object.      |
 
-#### The Refactor Menu
+### The Refactor Menu
 
-![editor refactor menu](img/editor-refactor-menu.png)
+![](img/editor-refactor-menu.png)
 
 The *Refactor* menu illustrated above applies only when editing a Class and provides the following options. In each case, the user must highlight a name in the Edit window, and then select one of these options to insert the appropriate template for that name into the body of the Class.
 
@@ -220,9 +220,9 @@ The *Refactor* menu illustrated above applies only when editing a Class and prov
 |Add text as Property|Inserts a Property template for the selected name.   |
 |Add text as Method  |Inserts a Method template for the selected text name.|
 
-#### The View Menu
+### The View Menu
 
-![editor view menu](img/editor-view-menu.png)
+![](img/editor-view-menu.png)
 
 The *View* menu, illustrated above, provides the following actions.
 
@@ -240,41 +240,41 @@ The *View* menu, illustrated above, provides the following actions.
 |Collapse All Outlines|Collapses all outlines|
 |Expand all Outlines below here|Expands all outlines below the level of the current line.|
 
-##### Function Line Numbers
+#### Function Line Numbers
 
 The *Function Line Numbers* option in the Editor menu provides an additional level of line-numbering. If selected, line numbers are displayed *independently* on each individual function (or operator) in the Class. This option is only enabled when you are editing a Class, Namespace script or Interface, and is disabled for all other types of object.
 
 Note that function line-numbering and general line-numbering are independent options and it is possible to have the entire Class numbered (from [0] to the number of lines in the Class) in addition to having line-numbering on each individual function.
 
-#### Using the Editor
+## Using the Editor
 
-###### Creating a New Function
+### Creating a New Function
 
 Type the name of your function and invoke the editor. To do this you may press Shift+Enter, or select *Edit* from the *Action* menu, or double-click the left button on your mouse, or click the *Edit* tool in the tool bar. A new window will appear on the screen with the name you have chosen displayed in the top border. The name is also inserted in the function header and the cursor positioned to the right. The new window is automatically given the input focus.
 
-###### Line-Numbers on/off
+### Line-Numbers on/off
 
 Try changing the line numbers setting by clicking on the *Line Numbers* option in the *Options* menu. Note that line-numbering on/off is effective for **all** edit windows.
 
-###### Adding Lines
+### Adding Lines
 
 If the keyboard is in *Insert* mode, pressing Enter at the end of a line opens you a new blank line under the current one and positions the cursor there ready for input. You can also open a new blank line by pressing Ctrl+Shift+Insert (OP).
 
 If the cursor is at the end of the last line in the function, pressing Enter adds another line even if the keyboard is in Replace mode.
 
-###### Indenting Text
+### Indenting Text
 
 Dyalog allows you to insert leading spaces in lines of a function and (unless the **AutoFormat** parameter is set) preserves these spaces between editing sessions. Embedded spaces are however discarded. You can enter spaces using the space bar or the Tab key. Pressing Tab inserts spaces up to the next tab stop corresponding to the value of the **TabStops** parameter. If the **AutoIndent** parameter is set, new lines are automatically indented the same amount as the preceding line.
 
-###### Reformatting
+### Reformatting
 
 The RD command (which by default is mapped to Keypad-Slash) reformats a function according to your **AutoFormat** and **TabStops** settings. See [ Trace/Edit Tab](configuration-dialog.md).
 
-###### Deleting Lines
+### Deleting Lines
 
 To delete a block of lines, select them by dragging the mouse or using the keyboard and then press Delete or select *Clear* from the *Edit* menu. A quick way to delete the current line without selecting it first is to press Ctrl+Delete (DK) or select *Delete Line* from the *Edit* menu.
 
-###### Copying Lines
+### Copying Lines
 
 Select the lines you wish to copy by dragging the mouse or using the keyboard. Then press Ctrl+Insert or select *Copy* from the *Edit* menu. This action copies the selection to the clipboard. Now position the input cursor where you wish to make the copy and press Shift+Insert, or select *Paste* from the *Edit* menu. You can also use this method to duplicate a ragged block of text.
 
@@ -284,7 +284,7 @@ To copy text using drag-and-drop editing:
 2. Hold down the Ctrl key, point to the selected text and then press and hold down the left mouse button. When the drag-and-drop pointer appears, drag the cursor to a new location.
 3. Release the mouse button to drop the text into place.
 
-###### Moving Lines
+### Moving Lines
 
 Select the lines you wish to copy by dragging the mouse or using the keyboard. Then press Shift+Delete or select *Cut* from the Edit menu. This action copies the selection to the clipboard and removes it. Now position the input cursor at the new location and press Shift+Insert, or select *Past*e from the Edit menu. You can also use this method to move a *ragged* block of text.
 
@@ -294,17 +294,17 @@ To move text using drag-and-drop editing:
 2. Point to the selected text and then press and hold down the left mouse button. When the drag-and-drop pointer appears, drag the cursor to a new location.
 3. Release the mouse button to drop the text into place.
 
-###### Joining and Splitting Lines
+### Joining and Splitting Lines
 
 To join a line to the previous one: select Insert mode; position the cursor on the first character in the line; press Bksp.
 
 To split a line: select Insert mode; position the cursor at the place you want it split; press Return.
 
-###### Toggling Localisation
+### Toggling Localisation
 
 The TL command (which by default is mapped to Ctrl+Up) toggles the localisation of the name under the cursor. If the name is currently global, pressing Ctrl+Up causes the name to be added to the list of locals in the function header. If the name is already localised, pressing Ctrl+Alt+l removes it from the header.
 
-###### Matching Occurences
+### Matching Occurences
 
 When you position the caret over a name, control word, or simple text or to the right of a parenthesis, bracket, or brace, matching occurrences are identified (by a thin box). In particular :
 
@@ -312,7 +312,7 @@ When you position the caret over a name, control word, or simple text or to the 
 - matching parentheses, brackets and braces
 - all control words associated with the one under the caret. For example, if the caret is on `:If`, then nested `:AndIf`, `:OrIf`, `:Else` and the final `:Endif` are identified.
 
-###### Aligning Comments
+### Aligning Comments
 
 When you press the <AC> key, or select Align Comments in the Editor's context menu, the alignment of the comments in every line in the function will be changed so that the left-most comment (Lamp) symbol is in the same column as the cursor, except that:
 
@@ -331,15 +331,15 @@ Installation & Configuration Guide:
 
 Configuration Dialog (Keyboard Shortcuts Tab).
 
-###### Stop, Trace and Monitor Controls
+### Stop, Trace and Monitor Controls
 
 If any of the *Stop*, *Trace*, and *Monitor* options of the *View* menu are set, the Editor displays  an area to the left of the function body containing up to 3 columns. If a function line is enabled by `⎕TRACE`,`⎕STOP` or `⎕MONITOR` the corresponding column displays a yellow circle (trace), red circle (stop) or clock symbol (monitor).
 
-![trace edit monitor](img/trace-edit-monitor.png)
+![](img/trace-edit-monitor.png)
 
 When you move the mouse-pointer over this area, the pointer displays the appropriate symbol and you can toggle the corresponding setting on and off by clicking the mouse.
 
-#### White Space in Source Code
+### White Space in Source Code
 
 Settings that impact the automatic reformatting of code can cause changes to whitespace – this can be interpreted as changes to the source code. This means that:
 
@@ -347,7 +347,7 @@ Settings that impact the automatic reformatting of code can cause changes to whi
 - viewing an object can change its file timestamp; source code management systems can subsequently report changes due to the changed file timestamp.
 - source code changes resulting from reformatting will be evident in the results of system functions such as `⎕AT`, `⎕SRC`, `⎕CR`, `⎕VR` and `⎕NR`.
 
-###### Outlining
+### Outlining
 
 When you are editing a function, outlining identifies the blocks of code within control structures, and allows you to collapse and expand these blocks so that you can focus your attention on particular parts of the code
 
@@ -356,17 +356,17 @@ The picture below shows the result of opening the function `⎕SE.cbtop.TB_POPUP
       )ed ⎕SE.cbtop.TB_POPUP
 ```
 
-![editor outlining 1](img/editor-outlining-1.png)
+![](img/editor-outlining-1.png)
 
 Notice that the various control structure blocks are delineated by a treeview diagram.
 
 - When you hover the mouse pointer over one of the boxes that mark the start of a block, the line marking the extent of that block becomes highlighted, as shown above.
-- If you click on a ![editor outlining collapse icon](img/editor-outlining-collapse-icon.png) box, the corresponding section collapses, so that only the first line of the block is displayed, as shown below.
-- If you click on a  ![editor outlining expand icon](img/editor-outlining-expand-icon.png) box, the corresponding section is expanded.
+- If you click on a ![](img/editor-outlining-collapse-icon.png) box, the corresponding section collapses, so that only the first line of the block is displayed, as shown below.
+- If you click on a  ![](img/editor-outlining-expand-icon.png) box, the corresponding section is expanded.
 
-![editor outlining 2](img/editor-outlining-2.png)
+![](img/editor-outlining-2.png)
 
-###### Sections
+### Sections
 
 Functions and scripted objects (classes, namespaces etc.) can be subdivided into Sections with `:Section` and `:EndSection` statements. Both statements may be followed by an optional and arbitrary name or description. The purpose is to split the function up into sections that you can open and close in the Editor, thereby aiding readability and code management. Sections have no effect on the execution of the code, but must follow the nesting rules of other control structures.
 
@@ -374,7 +374,7 @@ The following picture illustrates the use of sections in a function called `Dump
 
 The first picture shows the function with all sections closed.
 
-![editor sections 1](img/editor-sections-1.png)
+![](img/editor-sections-1.png)
 
 The next picture shows the effect of opening the *Comments* section. Notice how this is delineated by the statements:
 ```apl
@@ -383,44 +383,44 @@ The next picture shows the effect of opening the *Comments* section. Notice how 
       :EndSection Comments
 ```
 
-![editor sections 2](img/editor-sections-2.png)
+![](img/editor-sections-2.png)
 
 And with the `Init` section opened too:
 
-![editor sections 3](img/editor-sections-3.png)
+![](img/editor-sections-3.png)
 
 Finally, with all the sections opened:
 
-![editor sections 4](img/editor-sections-4.png)
+![](img/editor-sections-4.png)
 
-###### Editing Classes
+### Editing Classes
 
 The picture below shows the result of opening the `ComponentFile` class. Notice how each function is delineated separately and that each function is individually line-numbered.
 ```apl
       )ed ComponentFile
 ```
 
-![editor classes 1](img/editor-classes-1.png)
+![](img/editor-classes-1.png)
 
 The outlining feature really comes into its own when editing classes because you can collapse and expand whole functions. The picture below shows the effect of collapsing all but the `Append` method.
 
-![editor classes 2](img/editor-classes-2.png)
+![](img/editor-classes-2.png)
 
 When you edit a class, a separate treeview is optionally displayed in the left pane to make it easy to navigate within the class. When you click on a name in the treeview, the editor automatically scrolls the appropriate section into view (if necessary) and positions the edit cursor at its start. The picture below illustrates the result of opening the `[Methods]` section and then clicking on *Rename*.
 
-![editor classes 3](img/editor-classes-3.png)
+![](img/editor-classes-3.png)
 
-###### Sections within Scripts
+### Sections within Scripts
 
 Scripts can also be subdivided into Sections using `:Section` and `:EndSection` statements. As with single functions, the purpose is only to split the script up into sections that you can open and close in the Editor. Sections have no effect on the execution of the code.
 
 The following picture illustrates a Class named `actuarial` which, for editing purposes, has been sub-divided into five separate Sections named `Main`, `MenuHandlers`, `Validation`, `Utilities` and `OldCode`. In this picture, all the Sections are closed.
 
-![editor classes 4](img/editor-classes-4.png)
+![](img/editor-classes-4.png)
 
 The next picture shows the effect of opening just the `Main` section.
 
-![editor classes 5](img/editor-classes-5.png)
+![](img/editor-classes-5.png)
 
 Notice that this section is delimited by the two statements:
 ```apl
@@ -438,4 +438,4 @@ Similarly, the section called `Validation` is delimited by:
       :EndSection Validation
 ```
 
-![editor classes 6](img/editor-classes-6.png)
+![](img/editor-classes-6.png)

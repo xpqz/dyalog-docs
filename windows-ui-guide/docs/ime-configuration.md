@@ -11,9 +11,9 @@ The language specified in the description of the IME is the name of the IME tran
 To change the properties of the IME go to  *Options/Configure/Unicode Input* tab and select
  *Configure Layout*:
 
-![configuration dialog unicode input tab](img/configuration-dialog-unicode-input-tab.png)
+![](img/configuration-dialog-unicode-input-tab.png)
 
-![ime properties](img/ime-properties.png)
+![](img/ime-properties.png)
 
 ## Input translate table
 
@@ -38,7 +38,7 @@ OS).
 
 With this option selected, when the character following the Overstrike Introducer Key is pressed, a popup box displays all the overstrikes which contain the last character typed: in the example below Ctrl+Bksp has been followed by Ctrl+h:
 
-![overstrikepopup](img/overstrikepopup.png)
+![](img/overstrikepopup.png)
 
 Note the fine (red) line under the `∆`. This indicates that an overstrike creation operation is in progress.
 
