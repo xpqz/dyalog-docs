@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../propertyapplies/points.md)
 
 
 **Description**

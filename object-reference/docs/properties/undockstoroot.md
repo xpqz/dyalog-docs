@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|--------------------------|--------------------------------|----------------------------------------|
-|Applies To:|[CoolBand](../objects/coolband.md)|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|[ToolControl](../objects/toolcontrol.md)|
+**Applies To:** [CoolBand](../objects/coolband.md), [Form](../objects/form.md), [SubForm](../objects/subform.md), [ToolControl](../objects/toolcontrol.md)
+
 
 
 **Description**

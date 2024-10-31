@@ -27,6 +27,6 @@ icodir←(2 ⎕NQ'.' 'GetEnvironment' 'Dyalog'),'\ws\'
 ```
 
 
-![tab3](../img/tab3.gif)
+![](../img/tab3.gif)
 
 

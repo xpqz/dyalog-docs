@@ -22,10 +22,10 @@
 ```
 
 
-![tool6](../img/tool6.gif)
+![](../img/tool6.gif)
 
 
-![tool7](../img/tool7.gif)
+![](../img/tool7.gif)
 
 ```apl
 'F.TB'⎕WC'ToolControl'('MultiLine' 1)('Style' 'List')

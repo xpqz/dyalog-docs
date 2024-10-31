@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[CoolBand](../objects/coolband.md)|
+**Applies To:** [CoolBand](../objects/coolband.md)
+
 
 
 **Description**

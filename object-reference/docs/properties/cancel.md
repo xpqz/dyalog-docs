@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|
-|Applies To:|[Button](../objects/button.md)|
+**Applies To:** [Button](../objects/button.md)
+
 
 
 **Description**

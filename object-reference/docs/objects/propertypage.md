@@ -39,7 +39,7 @@ Other properties and behaviour depend upon the Style of the parent PropertySheet
 ## Standard Behaviour
 
 
-![ps1](../img/ps1.gif)
+![](../img/ps1.gif)
 
 
 In a *Standard* PropertySheet, the Caption property of each PropertyPage specifies the text that is written in its tab.
@@ -65,7 +65,7 @@ You may control the value of the Changed property using `⎕WS` or by calling [P
 ## Wizard Behaviour
 
 
-![ps2](../img/ps2.gif)
+![](../img/ps2.gif)
 
 
 If the PropertyPage is owned by a *Wizard* [PropertySheet](propertysheet.md), its Caption property specifies the text that appears in the title bar of the [PropertySheet](propertysheet.md) window when the PropertyPage is the current page. Note that a Wizard [PropertySheet](propertysheet.md) ignores its own Caption property.

@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
+
 
 
 **Description**
@@ -26,7 +26,7 @@ Using the example illustrated in the [HttpRequest](httprequest.md) topic ...
 ```
 
 
-![showdevtools](../img/showdevtools.png)
+![](../img/showdevtools.png)
 
 
 

@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -45,7 +45,7 @@ is 1, and so forth. For example:
 ```
 
 
-![gridrt](../img/gridrt.gif)
+![](../img/gridrt.gif)
 
 
 Note that the [LockRows](../methodorevents/lockrows.md) method is not

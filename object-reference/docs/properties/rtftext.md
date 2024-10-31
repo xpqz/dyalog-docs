@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------|----------------------------------|
-|Applies To:|[Clipboard](../objects/clipboard.md)|[RichEdit](../objects/richedit.md)|
+**Applies To:** [Clipboard](../objects/clipboard.md), [RichEdit](../objects/richedit.md)
+
 
 
 **Description**

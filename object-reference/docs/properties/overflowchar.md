@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -32,7 +32,7 @@ If the value of OverflowChar is an empty vector (the default) the data in a nume
 ```
 
 
-![gridovfl](../img/gridovfl.gif)
+![](../img/gridovfl.gif)
 
 
 
@@ -40,7 +40,7 @@ If the value of OverflowChar is an empty vector (the default) the data in a nume
 The same Grid without OverflowChar being defined appears as follows. Notice how the numbers have been truncated
 
 
-![gridovno](../img/gridovno.gif)
+![](../img/gridovno.gif)
 
 
 

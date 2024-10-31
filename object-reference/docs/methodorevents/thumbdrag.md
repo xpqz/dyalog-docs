@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|----------------------------------|
-|Applies To:|[Scroll](../objects/scroll.md)|[TrackBar](../objects/trackbar.md)|
+**Applies To:** [Scroll](../objects/scroll.md), [TrackBar](../objects/trackbar.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[SubForm](../objects/subform.md)|
+**Applies To:** [SubForm](../objects/subform.md)
+
 
 
 **Description**

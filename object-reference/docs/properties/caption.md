@@ -6,7 +6,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../propertyapplies/caption.md)
 
 
 **Description**

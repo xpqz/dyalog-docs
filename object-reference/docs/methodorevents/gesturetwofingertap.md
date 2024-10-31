@@ -6,7 +6,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../methodoreventapplies/gesturetwofingertap.md)
 
 
 **Description**

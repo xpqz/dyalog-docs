@@ -6,8 +6,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[TreeView](../objects/treeview.md)|
+**Applies To:** [TreeView](../objects/treeview.md)
+
 
 
 **Description**

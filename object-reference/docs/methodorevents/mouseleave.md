@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../methodoreventapplies/mouseleave.md)
 
 
 **Description**

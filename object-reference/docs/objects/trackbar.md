@@ -22,7 +22,7 @@ The TrackBar object consists of a window which contains a slider bar, a thumb, a
 
 
 
-![track1](../img/track1.gif)
+![](../img/track1.gif)
 
 
 The position and size of the container window are defined by the [Posn](../properties/posn.md) and [Size](../properties/size.md) properties. Its appearance is defined by the [EdgeStyle](../properties/edgestyle.md), [Border](../properties/border.md) and [BCol](../properties/bcol.md) properties. The defaults are `('EdgeStyle' 'None')`, `('Border' 0)` and `('BCol' 0)`. The default background colour `('BCol' 0)` obtains either the standard Window Background colour, or grey to match the colour of the parent object if it has a 3-dimensional appearance.

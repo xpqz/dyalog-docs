@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../propertyapplies/edgestyle.md)
 
 
 **Description**

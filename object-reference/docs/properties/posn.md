@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../propertyapplies/posn.md)
 
 
 **Description**

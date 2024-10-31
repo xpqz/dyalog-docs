@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|------------------------------|--------------------------------|
-|Applies To:|[Form](../objects/form.md)|[Scroll](../objects/scroll.md)|[SubForm](../objects/subform.md)|
+**Applies To:** [Form](../objects/form.md), [Scroll](../objects/scroll.md), [SubForm](../objects/subform.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|----------------------------------------------|--------------------------|
-|Applies To:|[Calendar](../objects/calendar.md)|[DateTimePicker](../objects/datetimepicker.md)|[Root](../objects/root.md)|
+**Applies To:** [Calendar](../objects/calendar.md), [DateTimePicker](../objects/datetimepicker.md), [Root](../objects/root.md)
+
 
 
 **Description**

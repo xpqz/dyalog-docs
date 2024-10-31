@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------|
-|Applies To:|[Timer](../objects/timer.md)|
+**Applies To:** [Timer](../objects/timer.md)
+
 
 
 **Description**

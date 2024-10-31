@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[Animation](../objects/animation.md)|
+**Applies To:** [Animation](../objects/animation.md)
+
 
 
 **Description**

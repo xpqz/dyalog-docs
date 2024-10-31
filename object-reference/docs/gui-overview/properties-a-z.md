@@ -116,7 +116,7 @@
 |[Handle](../properties/handle.md)|Returns the window handle of an object|
 |[HasApply](../properties/hasapply.md)|Specifies whether or not a [PropertySheet](../objects/propertysheet.md) has an Apply button|
 |[HasButtons](../properties/hasbuttons.md)|Specifies whether or not a [TreeView](../objects/treeview.md) object displays buttons|
-|[HasClearButton](../properties/hasclearbutton.md)|Specifies whether or not an [Edit](../objects/edit.md) object displays an ![clearbutton](../img/clearbutton.png) button which may be used to clear the contents of the field.|
+|[HasClearButton](../properties/hasclearbutton.md)|Specifies whether or not an [Edit](../objects/edit.md) object displays an ![](../img/clearbutton.png) button which may be used to clear the contents of the field.|
 |[HasHelp](../properties/hashelp.md)|Specifies whether or not a Help button is displayed or active|
 |[HasLines](../properties/haslines.md)|Specifies whether or not a [TreeView](../objects/treeview.md) object displays tree lines|
 |[HasTicks](../properties/hasticks.md)|Specifies whether or not tick marks are displayed in a [TrackBar](../objects/trackbar.md)|
@@ -137,7 +137,7 @@
 |[ImageCount](../properties/imagecount.md)|Reports the number of images in an [ImageList](../objects/imagelist.md)|
 |[ImageIndex](../properties/imageindex.md)|Maps images in an [ImageList](../objects/imagelist.md) to items in a [ListView](../objects/listview.md) or [TreeView](../objects/treeview.md)|
 |[ImageListObj](../properties/imagelistobj.md)|Associates an [ImageList](../objects/imagelist.md) with a [ListView](../objects/listview.md) or [TreeView](../objects/treeview.md)|
-|[Index](../properties/index.md)|position of items in [Combo](../objects/combo.md) or [List](../objects/list.md) ,       or selected filter in a [FileBox](../objects/filebox.md)|
+|[Index](../properties/index-property.md)|position of items in [Combo](../objects/combo.md) or [List](../objects/list.md) ,       or selected filter in a [FileBox](../objects/filebox.md)|
 |[Input](../properties/input.md)|names of objects associated with cells of [Grid](../objects/grid.md)|
 |[InputMode](../properties/inputmode.md)|specifies the behaviour of cursor keys etc. in a [Grid](../objects/grid.md)|
 |[InputModeKey](../properties/inputmodekey.md)|specifies the key used to switch to Incell editing in a [Grid](../objects/grid.md)|

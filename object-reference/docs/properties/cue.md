@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------------|--------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md)
+
 
 
 **Description**
@@ -33,7 +33,7 @@ The  Boolean property [ShowCueWhenFocused](showcuewhenfocused.md)  determines wh
 ```
 
 
-![cue property](../img/cue-property.png)
+![](../img/cue-property.png)
 
 
 

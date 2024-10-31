@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------|--------------------------------|
-|Applies To:|[BrowseBox](../objects/browsebox.md)|[FileBox](../objects/filebox.md)|
+**Applies To:** [BrowseBox](../objects/browsebox.md), [FileBox](../objects/filebox.md)
+
 
 
 **Description**

@@ -11,6 +11,6 @@
 ```
 
 
-![cal1](../img/cal1.gif)
+![](../img/cal1.gif)
 
 

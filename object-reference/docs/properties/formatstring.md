@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------------|--------------------------|--------------------------|----------------------------|--------------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|[Grid](../objects/grid.md)|[Label](../objects/label.md)|[Spinner](../objects/spinner.md)|
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md), [Grid](../objects/grid.md), [Label](../objects/label.md), [Spinner](../objects/spinner.md)
+
 
 
 **Description**
@@ -35,6 +35,6 @@ In a Grid, formatted data may be aligned vertically using the [AlignChar](alignc
 
 
 
-![gridfmt](../img/gridfmt.gif)
+![](../img/gridfmt.gif)
 
 

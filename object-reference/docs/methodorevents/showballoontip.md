@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[SysTrayItem](../objects/systrayitem.md)|
+**Applies To:** [SysTrayItem](../objects/systrayitem.md)
+
 
 
 **Description**

@@ -78,7 +78,7 @@ The following example illustrates the use of DropDown buttons:
 ```
 
 
-![tool9](../img/tool9.gif)
+![](../img/tool9.gif)
 
 
 

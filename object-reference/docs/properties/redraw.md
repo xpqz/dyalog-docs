@@ -6,7 +6,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../propertyapplies/redraw.md)
 
 
 **Description**

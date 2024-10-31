@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -31,7 +31,7 @@ RowHiddenDepth is an integer vector with the same number of elements as there ar
 ```
 
 
-![rowhiddendepth0](../img/rowhiddendepth0.png)
+![](../img/rowhiddendepth0.png)
 
 
 
@@ -48,7 +48,7 @@ With all nodes closed, RowHiddenDepth is the same as RowTreeDepth.
 The next picture shows the Grid after the user has opened nodes 5,6 and 9.
 
 
-![rowhiddendepth1](../img/rowhiddendepth1.png)
+![](../img/rowhiddendepth1.png)
 ```apl
       F.G.RowHiddenDepth
 0 1 2 3 0 0 0 1 0 0

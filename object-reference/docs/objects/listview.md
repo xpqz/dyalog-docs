@@ -43,10 +43,10 @@ When View is set to `'List'`, the items are
 arranged *column-wise* using small icons. Examples of `'Icon'` and `'List'` views are illustrated below.
 
 
-![listview_icon](../img/listview-icon.png)
+![](../img/listview-icon.png)
 
 
-![listview_list](../img/listview-list.png)
+![](../img/listview-list.png)
 
 
 When View is set to `'Report'`, the items
@@ -70,7 +70,7 @@ resized by the user dragging the bars between the titles, or under program
 control using the SetColSize event. A `'Report'` view example is illustrated below.
 
 
-![listview_report](../img/listview-report.png)
+![](../img/listview-report.png)
 
 
 The [DragItems](../properties/dragitems.md) property is Boolean and
@@ -110,7 +110,7 @@ In `'Report'` View, the [ReportImageIndex](../properties/reportimageindex.md) pr
 The following example illustrates the use of these properties.
 
 
-![listview_weather](../img/listview-weather.png)
+![](../img/listview-weather.png)
 
 
 The [ReportBCol](../properties/reportbcol.md) property specifies each item's background colour.
@@ -130,6 +130,6 @@ The [ItemGroups](../properties/itemgroups.md) and [ItemGroupMetrics](../properti
  is enabled.**
 
 
-![lvsg1](../img/lvsg1.gif)
+![](../img/lvsg1.gif)
 
 

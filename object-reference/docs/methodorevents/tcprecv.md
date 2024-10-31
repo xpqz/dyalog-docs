@@ -6,8 +6,8 @@
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
+**Applies To:** [TCPSocket](../objects/tcpsocket.md)
+
 
 
 **Description**

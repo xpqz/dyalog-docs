@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Form](../objects/form.md)|
+**Applies To:** [Form](../objects/form.md)
+
 
 
 **Description**

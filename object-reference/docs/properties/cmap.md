@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|------------------------------------|------------------------------|--------------------------|
-|Applies To:|[Bitmap](../objects/bitmap.md)|[Clipboard](../objects/clipboard.md)|[Cursor](../objects/cursor.md)|[Icon](../objects/icon.md)|
+**Applies To:** [Bitmap](../objects/bitmap.md), [Clipboard](../objects/clipboard.md), [Cursor](../objects/cursor.md), [Icon](../objects/icon.md)
+
 
 
 **Description**
@@ -29,6 +29,7 @@ Secondly, Windows reserves a certain number of colours in the colour map for its
 
 Note that if you are running 16 colours, MS-Windows reserves all 16 entries in the colour map for its own use. This means that on a 16-colour system, you **cannot** use any colours other than the default ones reserved by MS-Windows. In practice, the "standard" 16-colour CMap is shown in the following table.
 
+Table: The default 16-colour CMap { #default-16-colour-cmap }
 
 |Bits[]|CMap      |||Colour      |
 |------|----|---|---|------------|
@@ -50,7 +51,7 @@ Note that if you are running 16 colours, MS-Windows reserves all 16 entries in t
 |16    |255 |255|255|White       |
 
 
-Table: The default 16-colour CMap
+
 
 
 If you are using a 256-colour set-up, the first 9 and the last 7 entries of the 256-colour CMap are the same as the first 9 and last 7 entries of the 16-colour CMap shown above. The intervening entries represent additional colours or are initially unused (0 0 0). New colours that you specify will be allocated to unused entries until the table is full.

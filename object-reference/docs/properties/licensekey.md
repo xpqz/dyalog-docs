@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[OCXClass](../objects/ocxclass.md)|
+**Applies To:** [OCXClass](../objects/ocxclass.md)
+
 
 
 **Description**

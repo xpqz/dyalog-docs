@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -38,7 +38,7 @@ whose ColTitleDepth is 1, and so forth. For example:
 ```
 
 
-![gridct](../img/gridct.gif)
+![](../img/gridct.gif)
 
 
 Note that the [LockColumns](../methodorevents/lockcolumns.md) method is

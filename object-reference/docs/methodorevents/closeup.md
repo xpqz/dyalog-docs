@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------------------|
-|Applies To:|[DateTimePicker](../objects/datetimepicker.md)|
+**Applies To:** [DateTimePicker](../objects/datetimepicker.md)
+
 
 
 **Description**

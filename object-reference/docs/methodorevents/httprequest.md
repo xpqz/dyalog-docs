@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
+
 
 
 **Description**
@@ -132,9 +132,9 @@ Requested URL is: http://dyalog_root/Hello?firstname=Mickey&lastname=Mouse
 ```
 
 
-![httprequest1](../img/httprequest1.png)
+![](../img/httprequest1.png)
 
 
-![httprequest2](../img/httprequest2.png)
+![](../img/httprequest2.png)
 
 

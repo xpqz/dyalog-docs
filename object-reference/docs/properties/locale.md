@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[OLEClient](../objects/oleclient.md)|
+**Applies To:** [OLEClient](../objects/oleclient.md)
+
 
 
 **Description**

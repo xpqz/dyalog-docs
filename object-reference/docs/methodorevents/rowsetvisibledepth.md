@@ -6,8 +6,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -39,19 +39,19 @@ Note:[ Expanding](./expanding.md) and [Retracting](./retracting.md) events are n
 ```
 
 
-![gridtree1](../img/gridtree1.gif)
+![](../img/gridtree1.gif)
 ```apl
       F.G.RowSetVisibleDepth 1
 ```
 
 
-![gridtree12](../img/gridtree12.gif)
+![](../img/gridtree12.gif)
 
 ```apl
       F.G.RowSetVisibleDepth 99
 ```
 
 
-![gridtree13](../img/gridtree13.gif)
+![](../img/gridtree13.gif)
 
 

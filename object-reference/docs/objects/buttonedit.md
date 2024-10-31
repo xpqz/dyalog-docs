@@ -57,13 +57,9 @@ The following picture illustrates two ButtonEdit objects
 ```
 
 
-![buttonedit](../img/buttonedit.png)
+![](../img/buttonedit.png)
 
-## Note
-
-
-For full functionality (in particular, for the [Cue](../properties/cue.md) property to apply), the ButtonEdit object requires that  [Native Look and Feel ](../miscellaneous/windows-xp-look-and-feel.md)
-
- is enabled.
+!!! note
+    For full functionality (in particular, for the [Cue](../properties/cue.md) property to apply), the ButtonEdit object requires that [Native Look and Feel](../miscellaneous/windows-xp-look-and-feel.md) is enabled.
 
 

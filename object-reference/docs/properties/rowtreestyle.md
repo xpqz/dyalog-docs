@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -33,7 +33,7 @@ The value of the RowTreeStyle property is a character vector chosen from the fol
 The default value, `'ImagesAndLines'`, is illustrated in the first picture below. Other values are displayed in subsequent pictures.
 
 
-![gridtree3](../img/gridtree3.gif)
+![](../img/gridtree3.gif)
 
 
 ```apl
@@ -41,7 +41,7 @@ F.G.RowTreeStyle←'LinesOnly'
 ```
 
 
-![gridtree4](../img/gridtree4.gif)
+![](../img/gridtree4.gif)
 
 
 ```apl
@@ -52,7 +52,7 @@ f.g.RowTreeStyle←'ImagesOnly'
 ```
 
 
-![gridtree5](../img/gridtree5.gif)
+![](../img/gridtree5.gif)
 
 
 ```apl
@@ -62,7 +62,7 @@ f.g.RowTreeStyle←'AllImagesOnly'
 ```
 
 
-![gridtree6](../img/gridtree6.gif)
+![](../img/gridtree6.gif)
 
 
 ```apl
@@ -73,7 +73,7 @@ f.g.RowTreeStyle←'AllImagesAndLines'
 ```
 
 
-![gridtree7](../img/gridtree7.gif)
+![](../img/gridtree7.gif)
 
 
 

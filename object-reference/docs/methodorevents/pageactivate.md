@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[PropertyPage](../objects/propertypage.md)|
+**Applies To:** [PropertyPage](../objects/propertypage.md)
+
 
 
 **Description**

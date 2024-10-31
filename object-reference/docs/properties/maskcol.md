@@ -6,8 +6,8 @@
 
 
 
-|-----------|------------------------------|--------------------------|
-|Applies To:|[Bitmap](../objects/bitmap.md)|[Form](../objects/form.md)|
+**Applies To:** [Bitmap](../objects/bitmap.md), [Form](../objects/form.md)
+
 
 
 **Description**

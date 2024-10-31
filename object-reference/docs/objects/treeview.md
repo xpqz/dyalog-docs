@@ -61,7 +61,7 @@ When a parent item is in its retracted state (its children are not visible) it c
 The [EditLabels](../properties/editlabels.md) is a Boolean property (default 0) that determines whether or not the user may edit the labels which are specified by the Items property.
 
 
-The [SelItems](../properties/selitems.md) property is a Boolean vector that indicates which of the items is currently selected and has the focus. If more items are visible than can fit within the object, a scrollbar is automatically provided. The [Index](../properties/index.md) property is a `⎕IO` sensitive integer that reports the index number of the first item displayed in the object and changes as the items are scrolled.
+The [SelItems](../properties/selitems.md) property is a Boolean vector that indicates which of the items is currently selected and has the focus. If more items are visible than can fit within the object, a scrollbar is automatically provided. The [Index](../properties/index-property.md) property is a `⎕IO` sensitive integer that reports the index number of the first item displayed in the object and changes as the items are scrolled.
 
 
 **Warning:** Due to the limitations of the Win32 TreeView object, it is necessary to query the state of each item in a TreeView in order to obtain the value of the [SelItems](../properties/selitems.md) property, making it a comparatively slow operation if there are a lot of [Items](../properties/items.md).

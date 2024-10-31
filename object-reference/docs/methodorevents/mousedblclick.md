@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../methodoreventapplies/mousedblclick.md)
 
 
 **Description**

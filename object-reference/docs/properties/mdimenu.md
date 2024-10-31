@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[MenuBar](../objects/menubar.md)|
+**Applies To:** [MenuBar](../objects/menubar.md)
+
 
 
 **Description**

@@ -6,8 +6,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Root](../objects/root.md)|
+**Applies To:** [Root](../objects/root.md)
+
 
 
 **Description**

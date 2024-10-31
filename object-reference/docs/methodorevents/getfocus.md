@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../methodoreventapplies/getfocus.md)
 
 
 **Description**

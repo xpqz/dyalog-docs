@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------------|----------------------------------------|
-|Applies To:|[ColorButton](../objects/colorbutton.md)|[ToolControl](../objects/toolcontrol.md)|
+**Applies To:** [ColorButton](../objects/colorbutton.md), [ToolControl](../objects/toolcontrol.md)
+
 
 
 **Description**
@@ -34,7 +34,7 @@ If the ShowDropDown  property of the parent [ToolControl](../objects/toolcontrol
 The following picture illustrates a [ToolControl](../objects/toolcontrol.md) with ShowDropDown set to 1:
 
 
-![tool9](../img/tool9.gif)
+![](../img/tool9.gif)
 
 
 

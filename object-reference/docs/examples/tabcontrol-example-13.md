@@ -9,12 +9,12 @@
 **The TabJustify Property.**
 
 
-![tab13](../img/tab13.gif)
+![](../img/tab13.gif)
 
 
-![tab14](../img/tab14.gif)
+![](../img/tab14.gif)
 
 
-![tab15](../img/tab15.gif)
+![](../img/tab15.gif)
 
 

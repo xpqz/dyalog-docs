@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
+**Applies To:** [ListView](../objects/listview.md)
+
 
 
 **Description**
@@ -23,7 +23,7 @@ GridLines is a single number with the value 0 (no lines are displayed) or 1 (lin
 The picture below illustrate the effect on the appearance of a [ListView](../objects/listview.md) object, of setting GridLines to 1.
 
 
-![listview_gridlines](../img/listview-gridlines.png)
+![](../img/listview-gridlines.png)
 
 
 

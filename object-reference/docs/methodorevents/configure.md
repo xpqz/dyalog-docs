@@ -7,7 +7,7 @@
 
 
 
-**Applies To**
+[**Applies To**](../methodoreventapplies/configure.md)
 
 
 **Description**

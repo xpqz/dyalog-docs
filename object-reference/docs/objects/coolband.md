@@ -57,16 +57,16 @@ resize the CoolBand within its parent [CoolBar](coolbar.md).
 [GripperMode](../properties/grippermode.md) may be '`Always'`(the default), `'Never'` or `'Auto'`.
 
 
-The position of a Cool Band within a [CoolBar](coolbar.md) is determined by its [Index](../properties/index.md) and [NewLine](../properties/newline.md) properties, and by the position and size of preceding CoolBand objects in the
+The position of a Cool Band within a [CoolBar](coolbar.md) is determined by its [Index](../properties/index-property.md) and [NewLine](../properties/newline.md) properties, and by the position and size of preceding CoolBand objects in the
 same [CoolBar](coolbar.md). For a CoolBand, [Posn](../properties/posn.md) is a read-only property that reports its position but [Posn](../properties/posn.md) may not be used to set it.
 
 
-The [Index](../properties/index.md) property specifies the position
+The [Index](../properties/index-property.md) property specifies the position
 of a CoolBand within its parent [CoolBar](coolbar.md),
-relative to other CoolBands and is `⎕IO` dependent. Initially, the value of [Index](../properties/index.md) is
+relative to other CoolBands and is `⎕IO` dependent. Initially, the value of [Index](../properties/index-property.md) is
 determined by the order in which the CoolBands are created. You may re-order the
 CoolBands within a [CoolBar](coolbar.md), under program
-control, by changing [Index](../properties/index.md) with `⎕WS`.
+control, by changing [Index](../properties/index-property.md) with `⎕WS`.
 
 
 The [NewLine](../properties/newline.md) property specifies whether
@@ -91,12 +91,12 @@ If you create two or more CoolBands in the same row and you do not specify [Size
 the first CoolBand will be maximised, and the others minimised.
 
 
-When the user drags a CoolBand to a different row its [Index](../properties/index.md) and [NewLine](../properties/newline.md) properties may change, as may
-the [Index](../properties/index.md) and [NewLine](../properties/newline.md) properties of any another CoolBand that is affected by the operation.
+When the user drags a CoolBand to a different row its [Index](../properties/index-property.md) and [NewLine](../properties/newline.md) properties may change, as may
+the [Index](../properties/index-property.md) and [NewLine](../properties/newline.md) properties of any another CoolBand that is affected by the operation.
 
 
 If you wish to remember the user's chosen layout when your application
-terminates, you must store the values of [Index](../properties/index.md), [Size](../properties/size.md) and [NewLine](../properties/newline.md) for each of the CoolBands. When your application is next started, you must
+terminates, you must store the values of [Index](../properties/index-property.md), [Size](../properties/size.md) and [NewLine](../properties/newline.md) for each of the CoolBands. When your application is next started, you must
 re-create the CoolBands with the same values of these properties.
 
 

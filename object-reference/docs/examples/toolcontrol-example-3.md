@@ -21,6 +21,6 @@
 ```
 
 
-![tool8](../img/tool8.gif)
+![](../img/tool8.gif)
 
 

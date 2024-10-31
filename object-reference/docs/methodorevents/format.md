@@ -7,8 +7,8 @@
 
 
 
-|-----------|---------------------------------------------------------------------|
-|Applies To:|[Editor](../../../windows-ui-guide/the-session-object/session-object)|
+**Applies To:** [Editor](../../../windows-ui-guide/the-session-object/session-object)
+
 
 
 **Description**

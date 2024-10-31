@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[ImageList](../objects/imagelist.md)|
+**Applies To:** [ImageList](../objects/imagelist.md)
+
 
 
 **Description**

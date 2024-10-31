@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------------|--------------------------|--------------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|[Spinner](../objects/spinner.md)|
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md), [Spinner](../objects/spinner.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -102,7 +102,7 @@ The following example illustrates the use of different types of object
 specified by the Input and [ShowInput](showinput.md) properties:
 
 
-![input](../img/input.gif)
+![](../img/input.gif)
 
 
 

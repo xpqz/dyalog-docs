@@ -119,6 +119,6 @@ When the HTMLRenderer is displayed in its own window, the  window caption is set
 ```
 
 
-![htmlrenderer1](../img/htmlrenderer1.png)
+![](../img/htmlrenderer1.png)
 
 

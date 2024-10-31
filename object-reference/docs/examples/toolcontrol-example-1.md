@@ -19,24 +19,24 @@
 ```
 
 
-![tool1](../img/tool1.gif)
+![](../img/tool1.gif)
 
 
-![tool2](../img/tool2.gif)
+![](../img/tool2.gif)
 
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'Buttons')
 ```
 
 
-![tool3](../img/tool3.gif)
+![](../img/tool3.gif)
 
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'FlatList')
 ```
 
 
-![tool4](../img/tool4.gif)
+![](../img/tool4.gif)
 
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'List')

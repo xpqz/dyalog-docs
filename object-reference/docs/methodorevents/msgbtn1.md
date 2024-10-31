@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|
-|Applies To:|[MsgBox](../objects/msgbox.md)|
+**Applies To:** [MsgBox](../objects/msgbox.md)
+
 
 
 **Description**

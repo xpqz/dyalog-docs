@@ -6,8 +6,8 @@
 
 
 
-|-----------|------------------------------|------------------------------------|--------------------------|
-|Applies To:|[Bitmap](../objects/bitmap.md)|[Clipboard](../objects/clipboard.md)|[Icon](../objects/icon.md)|
+**Applies To:** [Bitmap](../objects/bitmap.md), [Clipboard](../objects/clipboard.md), [Icon](../objects/icon.md)
+
 
 
 **Description**

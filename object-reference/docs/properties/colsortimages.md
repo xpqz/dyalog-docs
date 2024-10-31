@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
+**Applies To:** [Grid](../objects/grid.md)
+
 
 
 **Description**
@@ -54,6 +54,6 @@ The [Bitmap](../objects/bitmap.md) specified by the 3rd element of ColSortImages
 ```
 
 
-![colsortimages](../img/colsortimages.png)
+![](../img/colsortimages.png)
 
 

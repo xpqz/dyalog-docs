@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[ToolControl](../objects/toolcontrol.md)|
+**Applies To:** [ToolControl](../objects/toolcontrol.md)
+
 
 
 **Description**
@@ -23,10 +23,10 @@ Divider is a single number with the value 0 (dividing line is *not* drawn) or 1 
 The pictures below illustrates a [ToolControl](../objects/toolcontrol.md) drawn with and without a divider.
 
 
-![tool1](../img/tool1.gif)
+![](../img/tool1.gif)
 
 
-![tool5](../img/tool5.gif)
+![](../img/tool5.gif)
 
 
 

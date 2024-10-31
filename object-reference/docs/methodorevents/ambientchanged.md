@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------------------------|----------------------------------------------|
-|Applies To:|[ActiveXContainer](../objects/activexcontainer.md)|[ActiveXControl](../objects/activexcontrol.md)|
+**Applies To:** [ActiveXContainer](../objects/activexcontainer.md), [ActiveXControl](../objects/activexcontrol.md)
+
 
 
 **Description**

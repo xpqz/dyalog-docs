@@ -30,7 +30,7 @@ The StatusBar is a container object that manages [StatusField](statusfield.md)s.
 ```
 
 
-![sb_example](../img/sb-example.png)
+![](../img/sb-example.png)
 
 
 The [Align](../properties/align.md) property determines to which side of the parent [Form](form.md) or [SubForm](subform.md) the StatusBar is attached. By default, a StatusBar is positioned along the lower edge of the [Form](form.md) ([Align ](../properties/align.md)`'Bottom')`.  Using the [Align](../properties/align.md), [Posn](../properties/posn.md) and [Size](../properties/size.md) properties you may create StatusBars in different positions and with differing sizes if you wish. Notice that the [Align](../properties/align.md) property controls how the StatusBar reacts to its parent [Form](form.md) being resized. If [Align](../properties/align.md) is `'Top'` or `'Bottom'`, the StatusBar remains fixed in height but stretches and shrinks sideways with the [Form](form.md). If [Align](../properties/align.md) is `'Left'` or `'Right'`, the StatusBar remains fixed in width and stretches and shrinks vertically with the [Form](form.md).

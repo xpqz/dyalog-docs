@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[Splitter](../objects/splitter.md)|
+**Applies To:** [Splitter](../objects/splitter.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
+**Applies To:** [ListView](../objects/listview.md)
+
 
 
 **Description**
@@ -52,7 +52,7 @@ For example, the following expressions executed in the WTUTOR95 workspace will r
 ```
 
 
-![lvsg1](../img/lvsg1.gif)
+![](../img/lvsg1.gif)
 
 
 You can control the appearance of the groupings using the [ItemGroupMetrics](itemgroupmetrics.md) property.

@@ -13,6 +13,6 @@
 ```
 
 
-![split2](../img/split2.gif)
+![](../img/split2.gif)
 
 

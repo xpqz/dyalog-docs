@@ -6,8 +6,8 @@
 
 
 
-|-----------|--------------------------------------------------|------------------------------------|
-|Applies To:|[ActiveXContainer](../objects/activexcontainer.md)|[OLEClient](../objects/oleclient.md)|
+**Applies To:** [ActiveXContainer](../objects/activexcontainer.md), [OLEClient](../objects/oleclient.md)
+
 
 
 **Description**

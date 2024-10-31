@@ -112,7 +112,7 @@ foreground colour of the corresponding cell, the 3rd element of [BCol](../proper
 The [CurCell](../properties/curcell.md) property may be used to set
 or query the current cell. The current cell is the cell which the user has
 picked by clicking the mouse over it or by using the cursor keys. [CurCell](../properties/curcell.md) is a 2-element vector containing the current cell's row number and column
-number respectively and is `⎕IO` dependent. The [Index](../properties/index.md) property specifies the
+number respectively and is `⎕IO` dependent. The [Index](../properties/index-property.md) property specifies the
 row and column number of the cell in the top-left corner of the Grid. It too is `⎕IO` dependent.
 
 

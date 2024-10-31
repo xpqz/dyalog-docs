@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
+**Applies To:** [ListView](../objects/listview.md)
+
 
 
 **Description**
@@ -24,8 +24,8 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |`[1]`|Object       |ref or character vector                                                           |
 |`[2]`|Event        |`'ColumnClick'` or 320                                                            |
 |`[3]`|Column number|Integer                                                                           |
-|`[4]`|Button       |button pressed (number) 1 = left button 2 =        right button 4 = middle button |
-|`[5]`|Shift State  |sum of shift key codes (number) 1 = Shift key        is down 2 =  Ctrl key is down|
+|`[4]`|Button       |button pressed (number)<br/>1 = left button<br/>2 = right button<br/>4 = middle button |
+|`[5]`|Shift State  |sum of shift key codes (number)<br/>1 = Shift key is down<br/>2 = Ctrl key is down|
 
 
 

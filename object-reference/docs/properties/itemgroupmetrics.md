@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
+**Applies To:** [ListView](../objects/listview.md)
+
 
 
 **Description**
@@ -37,7 +37,7 @@ The following expression, coupled with the code shown in the SetGroups example, 
 ```
 
 
-![lvsg2](../img/lvsg2.gif)
+![](../img/lvsg2.gif)
 
 
 

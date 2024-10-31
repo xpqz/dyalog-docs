@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|[TreeView](../objects/treeview.md)|
+**Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
+
 
 
 **Description**
@@ -26,7 +26,7 @@ For a [ListView](../objects/listview.md), FullRowSelect only applies if its [Vie
 The picture below illustrates the effect on the appearance of a [ListView](../objects/listview.md) object, of setting FullRowSelect to 1.
 
 
-![listview_fullrowselect](../img/listview-fullrowselect.png)
+![](../img/listview-fullrowselect.png)
 
 
 

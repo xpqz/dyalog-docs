@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[CoolBand](../objects/coolband.md)|
+**Applies To:** [CoolBand](../objects/coolband.md)
+
 
 
 **Description**
@@ -23,10 +23,10 @@ ChildEdge is a single number with the value 0 (no space) or 1 (space is provided
 The following pictures illustrate the effect of the ChildEdge property.
 
 
-![cool2](../img/cool2.gif)
+![](../img/cool2.gif)
 
 
-![cool4](../img/cool4.gif)
+![](../img/cool4.gif)
 
 
 

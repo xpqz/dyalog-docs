@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------------|--------------------------------------|
-|Applies To:|[SysTrayItem](../objects/systrayitem.md)|[ToolButton](../objects/toolbutton.md)|
+**Applies To:** [SysTrayItem](../objects/systrayitem.md), [ToolButton](../objects/toolbutton.md)
+
 
 
 **Description**

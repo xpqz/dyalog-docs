@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[Locator](../objects/locator.md)|
+**Applies To:** [Locator](../objects/locator.md)
+
 
 
 **Description**

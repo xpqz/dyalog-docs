@@ -6,8 +6,8 @@
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[ProgressBar](../objects/progressbar.md)|
+**Applies To:** [ProgressBar](../objects/progressbar.md)
+
 
 
 **Description**

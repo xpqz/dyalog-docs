@@ -20,6 +20,6 @@
 ```
 
 
-![split5](../img/split5.gif)
+![](../img/split5.gif)
 
 

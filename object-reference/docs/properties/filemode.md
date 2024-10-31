@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[FileBox](../objects/filebox.md)|
+**Applies To:** [FileBox](../objects/filebox.md)
+
 
 
 **Description**

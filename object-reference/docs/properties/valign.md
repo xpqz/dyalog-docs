@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Text](../objects/text.md)|
+**Applies To:** [Text](../objects/text.md)
+
 
 
 **Description**

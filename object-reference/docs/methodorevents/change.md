@@ -6,8 +6,8 @@
 
 
 
-|-----------|--------------------------------------|----------------------------|--------------------------|----------------------------------|--------------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Combo](../objects/combo.md)|[Edit](../objects/edit.md)|[RichEdit](../objects/richedit.md)|[Spinner](../objects/spinner.md)|
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Combo](../objects/combo.md), [Edit](../objects/edit.md), [RichEdit](../objects/richedit.md), [Spinner](../objects/spinner.md)
+
 
 
 **Description**

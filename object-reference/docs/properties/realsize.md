@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[Metafile](../objects/metafile.md)|
+**Applies To:** [Metafile](../objects/metafile.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|
-|Applies To:|[List](../objects/list.md)|
+**Applies To:** [List](../objects/list.md)
+
 
 
 **Description**
@@ -24,7 +24,7 @@ The following example illustrates its use.
 ```
 
 
-![multicol](../img/multicol.gif)
+![](../img/multicol.gif)
 
 
 

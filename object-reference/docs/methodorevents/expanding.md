@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------|----------------------------------|
-|Applies To:|[Grid](../objects/grid.md)|[TreeView](../objects/treeview.md)|
+**Applies To:** [Grid](../objects/grid.md), [TreeView](../objects/treeview.md)
+
 
 
 **Description**

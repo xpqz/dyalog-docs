@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|
-|Applies To:|[Button](../objects/button.md)|
+**Applies To:** [Button](../objects/button.md)
+
 
 
 **Description**
@@ -29,7 +29,7 @@ F.clb.Note←'www.dyalog.com'
 ```
 
 
-![commandlink button2](../img/commandlink-button2.png)
+![](../img/commandlink-button2.png)
 
 
 

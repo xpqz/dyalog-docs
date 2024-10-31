@@ -56,6 +56,6 @@ The illustration shown below was produced as follows :
 ```
 
 
-![sm_example](../img/sm-example.png)
+![](../img/sm-example.png)
 
 

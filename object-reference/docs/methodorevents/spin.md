@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|------------------------------|
-|Applies To:|[Spinner](../objects/spinner.md)|[UpDown](../objects/updown.md)|
+**Applies To:** [Spinner](../objects/spinner.md), [UpDown](../objects/updown.md)
+
 
 
 **Description**

@@ -7,8 +7,8 @@
 
 
 
-|-----------|----------------------------------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|[TreeView](../objects/treeview.md)|
+**Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
+
 
 
 **Description**

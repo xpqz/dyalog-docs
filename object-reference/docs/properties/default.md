@@ -7,8 +7,8 @@
 
 
 
-|-----------|------------------------------|------------------------------|
-|Applies To:|[Button](../objects/button.md)|[MsgBox](../objects/msgbox.md)|
+**Applies To:** [Button](../objects/button.md), [MsgBox](../objects/msgbox.md)
+
 
 
 **Description**

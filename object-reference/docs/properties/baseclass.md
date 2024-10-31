@@ -7,8 +7,8 @@
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[NetType](../objects/nettype.md)|
+**Applies To:** [NetType](../objects/nettype.md)
+
 
 
 **Description**

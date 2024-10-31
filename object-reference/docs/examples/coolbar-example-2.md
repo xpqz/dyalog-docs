@@ -25,6 +25,6 @@
 ```
 
 
-![cool2](../img/cool2.gif)
+![](../img/cool2.gif)
 
 

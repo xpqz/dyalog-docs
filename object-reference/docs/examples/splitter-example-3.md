@@ -16,10 +16,10 @@
 ```
 
 
-![split3](../img/split3.gif)
+![](../img/split3.gif)
 
 
-![split3a](../img/split3a.gif)
+![](../img/split3a.gif)
 
 
 After dragging the first Splitter to the left.
