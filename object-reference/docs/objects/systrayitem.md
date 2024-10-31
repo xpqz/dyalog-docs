@@ -7,12 +7,12 @@
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/systrayitem.md)|[Children](../childlists/systrayitem.md)|[Properties](../proplists/systrayitem.md)|[Methods](../methodlists/systrayitem.md)|[Events](../eventlists/systrayitem.md)|
+[Parents](../parentlists/systrayitem.md), [Children](../childlists/systrayitem.md), [Properties](../proplists/systrayitem.md), [Methods](../methodlists/systrayitem.md), [Events](../eventlists/systrayitem.md)
 
 
-|--------|-----------------------------------------------------------------------------------------|
-|Purpose:|The SysTrayItem object represents an item that you can create in the Windows System Tray.|
+
+**Purpose:** The SysTrayItem object represents an item that you can create in the Windows System Tray.
+
 
 
 **Description**

@@ -7,12 +7,12 @@
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/marker.md)|[Children](../childlists/marker.md)|[Properties](../proplists/marker.md)|[Methods](../methodlists/marker.md)|[Events](../eventlists/marker.md)|
+[Parents](../parentlists/marker.md), [Children](../childlists/marker.md), [Properties](../proplists/marker.md), [Methods](../methodlists/marker.md), [Events](../eventlists/marker.md)
 
 
-|--------|--------------------------------------------|
-|Purpose:|A graphical object used to draw polymarkers.|
+
+**Purpose:** A graphical object used to draw polymarkers.
+
 
 
 **Description**

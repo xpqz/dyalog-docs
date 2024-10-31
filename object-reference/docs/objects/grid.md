@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/grid.md)|[Children](../childlists/grid.md)|[Properties](../proplists/grid.md)|[Methods](../methodlists/grid.md)|[Events](../eventlists/grid.md)|
+[Parents](../parentlists/grid.md), [Children](../childlists/grid.md), [Properties](../proplists/grid.md), [Methods](../methodlists/grid.md), [Events](../eventlists/grid.md)
 
 
-|--------|---------------------------------------------------|
-|Purpose:|Spreadsheet object for displaying and editing data.|
+
+**Purpose:** Spreadsheet object for displaying and editing data.
+
 
 
 **Description**

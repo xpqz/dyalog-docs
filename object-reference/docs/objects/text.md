@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/text.md)|[Children](../childlists/text.md)|[Properties](../proplists/text.md)|[Methods](../methodlists/text.md)|[Events](../eventlists/text.md)|
+[Parents](../parentlists/text.md), [Children](../childlists/text.md), [Properties](../proplists/text.md), [Methods](../methodlists/text.md), [Events](../eventlists/text.md)
 
 
-|--------|------------|
-|Purpose:|Writes text.|
+
+**Purpose:** Writes text.
+
 
 
 **Description**

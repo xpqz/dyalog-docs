@@ -7,12 +7,12 @@
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/locator.md)|[Children](../childlists/locator.md)|[Properties](../proplists/locator.md)|[Methods](../methodlists/locator.md)|[Events](../eventlists/locator.md)|
+[Parents](../parentlists/locator.md), [Children](../childlists/locator.md), [Properties](../proplists/locator.md), [Methods](../methodlists/locator.md), [Events](../eventlists/locator.md)
 
 
-|--------|-------------------------------------------------------------|
-|Purpose:|Allows the user to input a point, ellipse, line or rectangle.|
+
+**Purpose:** Allows the user to input a point, ellipse, line or rectangle.
+
 
 
 **Description**

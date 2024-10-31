@@ -7,12 +7,12 @@
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/treeview.md)|[Children](../childlists/treeview.md)|[Properties](../proplists/treeview.md)|[Methods](../methodlists/treeview.md)|[Events](../eventlists/treeview.md)|
+[Parents](../parentlists/treeview.md), [Children](../childlists/treeview.md), [Properties](../proplists/treeview.md), [Methods](../methodlists/treeview.md), [Events](../eventlists/treeview.md)
 
 
-|--------|----------------------------------------------------------|
-|Purpose:|The TreeView object displays a hierarchical list of items.|
+
+**Purpose:** The TreeView object displays a hierarchical list of items.
+
 
 
 **Description**

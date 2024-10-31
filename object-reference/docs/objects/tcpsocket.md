@@ -7,12 +7,12 @@
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/tcpsocket.md)|[Children](../childlists/tcpsocket.md)|[Properties](../proplists/tcpsocket.md)|[Methods](../methodlists/tcpsocket.md)|[Events](../eventlists/tcpsocket.md)|
+[Parents](../parentlists/tcpsocket.md), [Children](../childlists/tcpsocket.md), [Properties](../proplists/tcpsocket.md), [Methods](../methodlists/tcpsocket.md), [Events](../eventlists/tcpsocket.md)
 
 
-|--------|-----------------------------------------------------|
-|Purpose:|The TCPSocket object provides an interface to TCP/IP.|
+
+**Purpose:** The TCPSocket object provides an interface to TCP/IP.
+
 
 
 **Description**

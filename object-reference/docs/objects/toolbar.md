@@ -7,12 +7,12 @@
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/toolbar.md)|[Children](../childlists/toolbar.md)|[Properties](../proplists/toolbar.md)|[Methods](../methodlists/toolbar.md)|[Events](../eventlists/toolbar.md)|
+[Parents](../parentlists/toolbar.md), [Children](../childlists/toolbar.md), [Properties](../proplists/toolbar.md), [Methods](../methodlists/toolbar.md), [Events](../eventlists/toolbar.md)
 
 
-|--------|------------------------------------------------------------|
-|Purpose:|To manage a group of controls such as [Button](button.md) s.|
+
+**Purpose:** To manage a group of controls such as [Button](button.md) s.
+
 
 
 **Description**

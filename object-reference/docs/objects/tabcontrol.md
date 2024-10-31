@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------------|---------------------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-|[Parents](../parentlists/tabcontrol.md)|[Children](../childlists/tabcontrol.md)|[Properties](../proplists/tabcontrol.md)|[Methods](../methodlists/tabcontrol.md)|[Events](../eventlists/tabcontrol.md)|
+[Parents](../parentlists/tabcontrol.md), [Children](../childlists/tabcontrol.md), [Properties](../proplists/tabcontrol.md), [Methods](../methodlists/tabcontrol.md), [Events](../eventlists/tabcontrol.md)
 
 
-|--------|--------------------------------------------------------------------------------|
-|Purpose:|The TabControl object provides access to the native Windows tab         control.|
+
+**Purpose:** The TabControl object provides access to the native Windows tab         control.
+
 
 
 **Description**

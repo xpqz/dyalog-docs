@@ -7,12 +7,12 @@
 
 
 
-|----------------------------------|----------------------------------|-----------------------------------|----------------------------------|--------------------------------|
-|[Parents](../parentlists/group.md)|[Children](../childlists/group.md)|[Properties](../proplists/group.md)|[Methods](../methodlists/group.md)|[Events](../eventlists/group.md)|
+[Parents](../parentlists/group.md), [Children](../childlists/group.md), [Properties](../proplists/group.md), [Methods](../methodlists/group.md), [Events](../eventlists/group.md)
 
 
-|--------|-------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|This object is used to group a related set of controls together         visually, and to impose "radio-button" behaviour.|
+
+**Purpose:** This object is used to group a related set of controls together         visually, and to impose "radio-button" behaviour.
+
 
 
 **Description**

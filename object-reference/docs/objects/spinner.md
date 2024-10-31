@@ -7,12 +7,12 @@
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/spinner.md)|[Children](../childlists/spinner.md)|[Properties](../proplists/spinner.md)|[Methods](../methodlists/spinner.md)|[Events](../eventlists/spinner.md)|
+[Parents](../parentlists/spinner.md), [Children](../childlists/spinner.md), [Properties](../proplists/spinner.md), [Methods](../methodlists/spinner.md), [Events](../eventlists/spinner.md)
 
 
-|--------|------------------------------------------------------------------------------------------------------------------|
-|Purpose:|The Spinner object allows the user to enter a value, using an [UpDown](updown.md) object to adjust it as required.|
+
+**Purpose:** The Spinner object allows the user to enter a value, using an [UpDown](updown.md) object to adjust it as required.
+
 
 
 **Description**

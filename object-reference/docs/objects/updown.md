@@ -7,12 +7,12 @@
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/updown.md)|[Children](../childlists/updown.md)|[Properties](../proplists/updown.md)|[Methods](../methodlists/updown.md)|[Events](../eventlists/updown.md)|
+[Parents](../parentlists/updown.md), [Children](../childlists/updown.md), [Properties](../proplists/updown.md), [Methods](../methodlists/updown.md), [Events](../eventlists/updown.md)
 
 
-|--------|------------------------------------------------------------------------------------|
-|Purpose:|The UpDown object is a pair of arrow buttons used to increment or decrement a value.|
+
+**Purpose:** The UpDown object is a pair of arrow buttons used to increment or decrement a value.
+
 
 
 **Description**

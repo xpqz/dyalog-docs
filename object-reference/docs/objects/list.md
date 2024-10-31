@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/list.md)|[Children](../childlists/list.md)|[Properties](../proplists/list.md)|[Methods](../methodlists/list.md)|[Events](../eventlists/list.md)|
+[Parents](../parentlists/list.md), [Children](../childlists/list.md), [Properties](../proplists/list.md), [Methods](../methodlists/list.md), [Events](../eventlists/list.md)
 
 
-|--------|--------------------------------------------------------|
-|Purpose:|Allows the user to select one or more items from a list.|
+
+**Purpose:** Allows the user to select one or more items from a list.
+
 
 
 **Description**

@@ -1,10 +1,10 @@
 <h1 class="heading"><span class="name">Cursor</span> <span class="command">Object</span></h1>
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/cursor.md)|[Children](../childlists/cursor.md)|[Properties](../proplists/cursor.md)|[Methods](../methodlists/cursor.md)|[Events](../eventlists/cursor.md)|
+[Parents](../parentlists/cursor.md), [Children](../childlists/cursor.md), [Properties](../proplists/cursor.md), [Methods](../methodlists/cursor.md), [Events](../eventlists/cursor.md)
 
-|--------|-----------------------------|
-|Purpose:|This object defines a cursor.|
+
+**Purpose:** This object defines a cursor.
+
 
 **Description**
 

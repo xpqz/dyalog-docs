@@ -7,12 +7,12 @@
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/subform.md)|[Children](../childlists/subform.md)|[Properties](../proplists/subform.md)|[Methods](../methodlists/subform.md)|[Events](../eventlists/subform.md)|
+[Parents](../parentlists/subform.md), [Children](../childlists/subform.md), [Properties](../proplists/subform.md), [Methods](../methodlists/subform.md), [Events](../eventlists/subform.md)
 
 
-|--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|This object represents a window that is owned by and constrained         within another [Form](form.md) or an [MDIClient](mdiclient.md) .|
+
+**Purpose:** This object represents a window that is owned by and constrained         within another [Form](form.md) or an [MDIClient](mdiclient.md) .
+
 
 
 **Description**

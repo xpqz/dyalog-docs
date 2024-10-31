@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------------|---------------------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-|[Parents](../parentlists/toolbutton.md)|[Children](../childlists/toolbutton.md)|[Properties](../proplists/toolbutton.md)|[Methods](../methodlists/toolbutton.md)|[Events](../eventlists/toolbutton.md)|
+[Parents](../parentlists/toolbutton.md), [Children](../childlists/toolbutton.md), [Properties](../proplists/toolbutton.md), [Methods](../methodlists/toolbutton.md), [Events](../eventlists/toolbutton.md)
 
 
-|--------|-----------------------------------------------------------|
-|Purpose:|The ToolButton object represents a button in a ToolControl.|
+
+**Purpose:** The ToolButton object represents a button in a ToolControl.
+
 
 
 **Description**

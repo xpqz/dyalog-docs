@@ -7,12 +7,12 @@
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/trackbar.md)|[Children](../childlists/trackbar.md)|[Properties](../proplists/trackbar.md)|[Methods](../methodlists/trackbar.md)|[Events](../eventlists/trackbar.md)|
+[Parents](../parentlists/trackbar.md), [Children](../childlists/trackbar.md), [Properties](../proplists/trackbar.md), [Methods](../methodlists/trackbar.md), [Events](../eventlists/trackbar.md)
 
 
-|--------|--------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|The TrackBar object is a slider control that allows the user to enter a value by positioning a pointer (thumb) on a scale.|
+
+**Purpose:** The TrackBar object is a slider control that allows the user to enter a value by positioning a pointer (thumb) on a scale.
+
 
 
 **Description**

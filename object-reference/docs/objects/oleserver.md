@@ -7,12 +7,12 @@
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/oleserver.md)|[Children](../childlists/oleserver.md)|[Properties](../proplists/oleserver.md)|[Methods](../methodlists/oleserver.md)|[Events](../eventlists/oleserver.md)|
+[Parents](../parentlists/oleserver.md), [Children](../childlists/oleserver.md), [Properties](../proplists/oleserver.md), [Methods](../methodlists/oleserver.md), [Events](../eventlists/oleserver.md)
 
 
-|--------|-----------------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client.|
+
+**Purpose:** The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client.
+
 
 
 **Description**

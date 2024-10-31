@@ -7,12 +7,12 @@
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/richedit.md)|[Children](../childlists/richedit.md)|[Properties](../proplists/richedit.md)|[Methods](../methodlists/richedit.md)|[Events](../eventlists/richedit.md)|
+[Parents](../parentlists/richedit.md), [Children](../childlists/richedit.md), [Properties](../proplists/richedit.md), [Methods](../methodlists/richedit.md), [Events](../eventlists/richedit.md)
 
 
-|--------|-----------------------------------------------------------------------------------------------------------|
-|Purpose:|The RichEdit object is a multi-line text editor that provides a wide range of word-processing capabilities.|
+
+**Purpose:** The RichEdit object is a multi-line text editor that provides a wide range of word-processing capabilities.
+
 
 
 **Description**

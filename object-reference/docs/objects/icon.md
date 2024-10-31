@@ -7,12 +7,12 @@
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/icon.md)|[Children](../childlists/icon.md)|[Properties](../proplists/icon.md)|[Methods](../methodlists/icon.md)|[Events](../eventlists/icon.md)|
+[Parents](../parentlists/icon.md), [Children](../childlists/icon.md), [Properties](../proplists/icon.md), [Methods](../methodlists/icon.md), [Events](../eventlists/icon.md)
 
 
-|--------|----------------------------|
-|Purpose:|This object defines an icon.|
+
+**Purpose:** This object defines an icon.
+
 
 
 **Description**

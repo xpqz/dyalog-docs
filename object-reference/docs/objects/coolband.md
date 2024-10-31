@@ -7,12 +7,12 @@
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/coolband.md)|[Children](../childlists/coolband.md)|[Properties](../proplists/coolband.md)|[Methods](../methodlists/coolband.md)|[Events](../eventlists/coolband.md)|
+[Parents](../parentlists/coolband.md), [Children](../childlists/coolband.md), [Properties](../proplists/coolband.md), [Methods](../methodlists/coolband.md), [Events](../eventlists/coolband.md)
 
 
-|--------|-----------------------------------------------------------------------------------------|
-|Purpose:|The CoolBand object represents an area in a CoolBar that contains a         child window.|
+
+**Purpose:** The CoolBand object represents an area in a CoolBar that contains a         child window.
+
 
 
 **Description**

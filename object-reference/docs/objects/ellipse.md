@@ -7,12 +7,12 @@
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/ellipse.md)|[Children](../childlists/ellipse.md)|[Properties](../proplists/ellipse.md)|[Methods](../methodlists/ellipse.md)|[Events](../eventlists/ellipse.md)|
+[Parents](../parentlists/ellipse.md), [Children](../childlists/ellipse.md), [Properties](../proplists/ellipse.md), [Methods](../methodlists/ellipse.md), [Events](../eventlists/ellipse.md)
 
 
-|--------|----------------------------------------------------------|
-|Purpose:|A Graphical object to draw ellipses, arcs, and pie-slices.|
+
+**Purpose:** A Graphical object to draw ellipses, arcs, and pie-slices.
+
 
 
 **Description**

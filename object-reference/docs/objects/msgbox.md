@@ -7,12 +7,12 @@
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/msgbox.md)|[Children](../childlists/msgbox.md)|[Properties](../proplists/msgbox.md)|[Methods](../methodlists/msgbox.md)|[Events](../eventlists/msgbox.md)|
+[Parents](../parentlists/msgbox.md), [Children](../childlists/msgbox.md), [Properties](../proplists/msgbox.md), [Methods](../methodlists/msgbox.md), [Events](../eventlists/msgbox.md)
 
 
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.|
+
+**Purpose:** Provides a "modal" dialog box for displaying messages, errors, warnings and other information. The dialog box has a title, one or more lines of text, and up to three buttons.
+
 
 
 **Description**

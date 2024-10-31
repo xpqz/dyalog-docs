@@ -7,12 +7,12 @@
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/oleclient.md)|[Children](../childlists/oleclient.md)|[Properties](../proplists/oleclient.md)|[Methods](../methodlists/oleclient.md)|[Events](../eventlists/oleclient.md)|
+[Parents](../parentlists/oleclient.md), [Children](../childlists/oleclient.md), [Properties](../proplists/oleclient.md), [Methods](../methodlists/oleclient.md), [Events](../eventlists/oleclient.md)
 
 
-|--------|----------------------------------------------------------------|
-|Purpose:|The OLEClient object provides access to an OLE Automation Server|
+
+**Purpose:** The OLEClient object provides access to an OLE Automation Server
+
 
 
 **Description**

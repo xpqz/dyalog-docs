@@ -11,8 +11,8 @@
 |[Parents](../parentlists/netcontrol.md)|[Children](../childlists/netcontrol.md)|[Properties](../proplists/netcontrol.md)|
 
 
-|--------|-------------------------------------------------------------------------------------------------|
-|Purpose:|The NetControl object provides the means to instantiate a .NET control         in the Dyalog GUI.|
+**Purpose:** The NetControl object provides the means to instantiate a .NET control         in the Dyalog GUI.
+
 
 
 **Description**
