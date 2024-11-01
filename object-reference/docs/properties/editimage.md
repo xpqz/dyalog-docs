@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">EditImage</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[ComboEx](../objects/comboex.md)|
-
+**Applies To:** [ComboEx](../objects/comboex.md)
 
 **Description**
 

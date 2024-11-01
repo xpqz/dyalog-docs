@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FileBoxOK</span> <span class="command">Event 71</span></h1>
 
 
 
-|-----------|------------------------------------|--------------------------------|
-|Applies To:|[BrowseBox](../objects/browsebox.md)|[FileBox](../objects/filebox.md)|
-
+**Applies To:** [BrowseBox](../objects/browsebox.md), [FileBox](../objects/filebox.md)
 
 **Description**
 
@@ -23,7 +16,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|---------|-----------------------------------------------------------------------------------|
 |`[1]`|Object   |ref or character vector                                                            |
 |`[2]`|Event    |`'FileBoxOK'` or 71                                                                |
-|`[3]`|File name|character vector containing the name of the currently selected file (empty if none)|
+|`[3]`|File name|character vector containing the name of the currently selected file (empty if none)|
 
 
 

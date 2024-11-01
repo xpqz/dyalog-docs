@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MouseUp</span> <span class="command">Event 2</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/mouseup.md)
 
 **Description**
 

@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Font</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/font.md)|[Children](../childlists/font.md)|[Properties](../proplists/font.md)|[Methods](../methodlists/font.md)|[Events](../eventlists/font.md)|
+[Parents](../parentlists/font.md), [Children](../childlists/font.md), [Properties](../proplists/font.md), [Methods](../methodlists/font.md), [Events](../eventlists/font.md)
 
 
-|--------|---------------------|
-|Purpose:|Loads a font resource|
 
+**Purpose:** Loads a font resource
 
 **Description**
 

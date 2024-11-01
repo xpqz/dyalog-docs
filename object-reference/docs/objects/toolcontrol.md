@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ToolControl</span> <span class="command">Object</span></h1>
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/toolcontrol.md)|[Children](../childlists/toolcontrol.md)|[Properties](../proplists/toolcontrol.md)|[Methods](../methodlists/toolcontrol.md)|[Events](../eventlists/toolcontrol.md)|
+[Parents](../parentlists/toolcontrol.md), [Children](../childlists/toolcontrol.md), [Properties](../proplists/toolcontrol.md), [Methods](../methodlists/toolcontrol.md), [Events](../eventlists/toolcontrol.md)
 
 
-|--------|-----------------------------------------------------------|
-|Purpose:|The ToolControl object provides a standard Windows ToolBar.|
 
+**Purpose:** The ToolControl object provides a standard Windows ToolBar.
 
 **Description**
 
@@ -46,22 +39,22 @@ The overall appearance of the [ToolButton](toolbutton.md) objects displayed by t
 ```
 
 
-![tool1](../img/tool1.gif)
+![](../img/tool1.gif)
 
 
-![tool2](../img/tool2.gif)
+![](../img/tool2.gif)
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'Buttons')
 ```
 
 
-![tool3](../img/tool3.gif)
+![](../img/tool3.gif)
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'FlatList')
 ```
 
 
-![tool4](../img/tool4.gif)
+![](../img/tool4.gif)
 ```apl
 'F.TB'⎕WC'ToolControl'('Style' 'List')
 ```
@@ -88,10 +81,10 @@ The [MultiLine](../properties/multiline.md) property specifies whether or not [T
 ```
 
 
-![tool6](../img/tool6.gif)
+![](../img/tool6.gif)
 
 
-![tool7](../img/tool7.gif)
+![](../img/tool7.gif)
 ```apl
 'F.TB'⎕WC'ToolControl'('MultiLine' 1)('Style' 'List')
 ```
@@ -114,7 +107,7 @@ The [Transparent](../properties/transparent.md) property specifies whether or no
 ```
 
 
-![tool8](../img/tool8.gif)
+![](../img/tool8.gif)
 
 
 The [ShowCaptions](../properties/showcaptions.md) property specifies whether or not the captions of [ToolButton](toolbutton.md) objects are drawn. Its default value is 1 (draw captions). [ToolButtons](toolbutton.md) drawn without captions occupy much less space and [ShowCaptions](../properties/showcaptions.md) provides a quick way to turn captions on/off for user customisation.
@@ -151,6 +144,6 @@ Although nothing is done to prevent it, the use of other objects in a ToolContro
 ```
 
 
-![tool10](../img/tool10.gif)
+![](../img/tool10.gif)
 
 

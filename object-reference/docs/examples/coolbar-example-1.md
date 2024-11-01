@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">CoolBar</span> <span class="command">Example 1</span></h1>
 
 
@@ -30,22 +26,22 @@
 ```
 
 
-![cool1](../img/cool1.gif)
+![](../img/cool1.gif)
 
 
-![cool1a](../img/cool1a.gif)
+![](../img/cool1a.gif)
 
 
 after user has moved band 2 into row 1
 
 
-![cool1b](../img/cool1b.gif)
+![](../img/cool1b.gif)
 
 
 after user has maximised band 1
 
 
-![cool1c](../img/cool1c.gif)
+![](../img/cool1c.gif)
 
 
 after user has maximised band 2

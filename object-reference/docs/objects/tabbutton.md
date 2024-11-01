@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabButton</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/tabbutton.md)|[Children](../childlists/tabbutton.md)|[Properties](../proplists/tabbutton.md)|[Methods](../methodlists/tabbutton.md)|[Events](../eventlists/tabbutton.md)|
+[Parents](../parentlists/tabbutton.md), [Children](../childlists/tabbutton.md), [Properties](../proplists/tabbutton.md), [Methods](../methodlists/tabbutton.md), [Events](../eventlists/tabbutton.md)
 
 
-|--------|--------------------------------------------------------------------------------------------|
-|Purpose:|The TabButton object represents an individual tab or button in a [TabControl](tabcontrol.md)|
 
+**Purpose:** The TabButton object represents an individual tab or button in a [TabControl](tabcontrol.md)
 
 **Description**
 

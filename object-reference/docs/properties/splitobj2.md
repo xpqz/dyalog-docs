@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SplitObj2</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[Splitter](../objects/splitter.md)|
-
+**Applies To:** [Splitter](../objects/splitter.md)
 
 **Description**
 

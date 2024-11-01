@@ -1,15 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">IsLoading</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 

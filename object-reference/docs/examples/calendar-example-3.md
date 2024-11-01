@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Calendar</span> <span class="command">Example 3</span></h1>
 
 
@@ -11,6 +7,6 @@
 ```
 
 
-![cal3](../img/cal3.gif)
+![](../img/cal3.gif)
 
 

@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TipObj</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/tipobj.md)
 
 **Description**
 

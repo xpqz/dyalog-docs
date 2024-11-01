@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetSpinnerText</span> <span class="command">Event 421</span></h1>
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[Spinner](../objects/spinner.md)|
-
+**Applies To:** [Spinner](../objects/spinner.md)
 
 **Description**
 
@@ -23,7 +16,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |-----|-----------|------------------------------------------------------------------------------------------------------|
 |`[1]`|Object     |ref or character vector                                                                               |
 |`[2]`|Event      |`'SetSpinnerText'` or 421                                                                             |
-|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons.|
+|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons.|
 |`[4]`|Text       |The text that is about to be put into the edit field.                                                 |
 
 

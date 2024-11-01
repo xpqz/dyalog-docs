@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Events A-Z</span></h1>
 
 
@@ -92,7 +88,7 @@
 |[HThumbDrag](../methodorevents/hthumbdrag.md)|442|user has dragged the thumb of the horizontal scrollbar of a [Form](../objects/form.md) or [SubForm](../objects/subform.md)|
 |[HTTPRequest](../methodorevents/httprequest.md)|&nbsp;|raised when an [HTMLRenderer](../objects/htmlrenderer.md) issues a request for a url on the internal server|
 |[Idle](../methodorevents/idle.md)|130|generated when system is idle|
-|[IndexChanged](../methodorevents/indexchanged.md)|210|user has scrolled the data in a [Grid](../objects/grid.md) so that the value of its [Index](../properties/index.md) property has changed|
+|[IndexChanged](../methodorevents/indexchanged.md)|210|user has scrolled the data in a [Grid](../objects/grid.md) so that the value of its [Index](../properties/index-property.md) property has changed|
 |[ItemDblClick](../methodorevents/itemdblclick.md)|342|user has double-clicked on an item in a [ListView](../objects/listview.md) or [TreeView](../objects/treeview.md) object|
 |[ItemDown](../methodorevents/itemdown.md)|340|user has depressed the left mouse button over an item in a [ListView](../objects/listview.md) or [TreeView](../objects/treeview.md) object|
 |[ItemUp](../methodorevents/itemup.md)|341|user has released the left mouse button over an item in a [ListView](../objects/listview.md) or [TreeView](../objects/treeview.md) object|

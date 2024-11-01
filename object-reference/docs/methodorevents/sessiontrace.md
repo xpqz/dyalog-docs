@@ -1,20 +1,14 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SessionTrace</span> <span class="command">Event 527</span></h1>
 
 
 
-|-----------|----------------------------------------------------------------------|
-|Applies To:|[Session](../../../windows-ui-guide/the-session-object/session-object)|
+**Applies To:** [Session](../../../windows-ui-guide/the-session-object/session-object)
 
 
-|---|---|---|---|---|
-|Applies To:|[Session](../../../windows-ui-guide/the-session-object/session-object)|[Session](../../../windows-ui-guide/the-session-object/session-object)|&nbsp;|&nbsp;|
+
+**Applies To:** [Session](../../../windows-ui-guide/the-session-object/session-object)
+
 |[Session](../../../windows-ui-guide/the-session-object/session-object)|&nbsp;|&nbsp;|||
-
 
 **Description**
 

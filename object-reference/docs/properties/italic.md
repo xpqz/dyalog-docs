@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Italic</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Font](../objects/font.md)|
-
+**Applies To:** [Font](../objects/font.md)
 
 **Description**
 

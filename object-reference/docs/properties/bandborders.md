@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BandBorders</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[CoolBar](../objects/coolbar.md)|
-
+**Applies To:** [CoolBar](../objects/coolbar.md)
 
 **Description**
 
@@ -23,10 +16,10 @@ BandBorders is a single number with the value 0 (no lines) or 1 (lines are displ
 The effect of BandBorders is illustrated below.
 
 
-![cool2](../img/cool2.gif)
+![](../img/cool2.gif)
 
 
-![cool3](../img/cool3.gif)
+![](../img/cool3.gif)
 
 
 

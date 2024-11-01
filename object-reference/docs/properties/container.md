@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Container</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------------------|
-|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|
-
+**Applies To:** [ActiveXControl](../objects/activexcontrol.md)
 
 **Description**
 

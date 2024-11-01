@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DelCol</span> <span class="command">Method 155</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 

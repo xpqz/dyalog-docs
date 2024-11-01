@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">AddChildren</span> <span class="command">Method 310</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [TreeView](../objects/treeview.md)
 
 **Description**
 

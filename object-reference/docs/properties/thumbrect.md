@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ThumbRect</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[TrackBar](../objects/trackbar.md)|
-
+**Applies To:** [TrackBar](../objects/trackbar.md)
 
 **Description**
 

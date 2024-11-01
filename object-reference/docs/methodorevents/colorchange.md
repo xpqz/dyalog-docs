@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ColorChange</span> <span class="command">Event 430</span></h1>
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[ColorButton](../objects/colorbutton.md)|
-
+**Applies To:** [ColorButton](../objects/colorbutton.md)
 
 **Description**
 

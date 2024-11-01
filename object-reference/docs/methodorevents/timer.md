@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Timer</span> <span class="command">Event 140</span></h1>
 
 
 
-|-----------|----------------------------|
-|Applies To:|[Timer](../objects/timer.md)|
-
+**Applies To:** [Timer](../objects/timer.md)
 
 **Description**
 

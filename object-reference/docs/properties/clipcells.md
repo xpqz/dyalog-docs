@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ClipCells</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -20,10 +13,10 @@ This property determines whether or not the [Grid](../objects/grid.md) displays 
 The first picture below shows a default [Grid](../objects/grid.md) (ClipCells is 1) in which the third column of data is in fact incomplete (clipped), although this is by no means apparent to the user. The second picture shows the effect on the [Grid](../objects/grid.md) of setting ClipCells to 0 which prevents such potential confusion.
 
 
-![clip1](../img/clip1.gif)
+![](../img/clip1.gif)
 
 
-![clip2](../img/clip2.gif)
+![](../img/clip2.gif)
 
 
 

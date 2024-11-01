@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Hint</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/hint.md)
 
 **Description**
 

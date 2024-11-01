@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TCPConnect</span> <span class="command">Event 372</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
-
+**Applies To:** [TCPSocket](../objects/tcpsocket.md)
 
 **Description**
 

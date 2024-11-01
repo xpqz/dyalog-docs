@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetFinishText</span> <span class="command">Method 366</span></h1>
 
 
 
-|-----------|--------------------------------------------|
-|Applies To:|[PropertySheet](../objects/propertysheet.md)|
-
+**Applies To:** [PropertySheet](../objects/propertysheet.md)
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ItemGroupMetrics</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
-
+**Applies To:** [ListView](../objects/listview.md)
 
 **Description**
 
@@ -37,7 +30,7 @@ The following expression, coupled with the code shown in the SetGroups example, 
 ```
 
 
-![lvsg2](../img/lvsg2.gif)
+![](../img/lvsg2.gif)
 
 
 

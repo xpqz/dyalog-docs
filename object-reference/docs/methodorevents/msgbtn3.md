@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MsgBtn3</span> <span class="command">Event 63</span></h1>
 
 
 
-|-----------|------------------------------|
-|Applies To:|[MsgBox](../objects/msgbox.md)|
-
+**Applies To:** [MsgBox](../objects/msgbox.md)
 
 **Description**
 

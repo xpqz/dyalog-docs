@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BrowseBox</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/browsebox.md)|[Children](../childlists/browsebox.md)|[Properties](../proplists/browsebox.md)|[Methods](../methodlists/browsebox.md)|[Events](../eventlists/browsebox.md)|
+[Parents](../parentlists/browsebox.md), [Children](../childlists/browsebox.md), [Properties](../proplists/browsebox.md), [Methods](../methodlists/browsebox.md), [Events](../eventlists/browsebox.md)
 
 
-|--------|-------------------------------------------------------------------------------------------------|
-|Purpose:|The BrowseBox object allows the user to browse for and select a folder         or other resource.|
 
+**Purpose:** The BrowseBox object allows the user to browse for and select a folder         or other resource.
 
 **Description**
 
@@ -48,7 +41,7 @@ The action code for the FileBoxOK and FileBoxCancel events must be set to 1 so
 that the appropriate result is returned by the modal `⎕DQ`.
 
 
-After the user has pressed OK or Cancel, the [Target](../properties/target.md) property contains the name of the chosen folder or other resource.
+After the user has pressed OK or Cancel, the [Target](../properties/target.md) property contains the name of the chosen folder or other resource.
 
 <h2 class="example">Example</h2>
 ```apl

@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Splitter</span> <span class="command">Example 1</span></h1>
 
 
@@ -13,6 +9,6 @@
 ```
 
 
-![split1](../img/split1.gif)
+![](../img/split1.gif)
 
 

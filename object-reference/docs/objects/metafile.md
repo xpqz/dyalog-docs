@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Metafile</span> <span class="command">Object</span></h1>
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/metafile.md)|[Children](../childlists/metafile.md)|[Properties](../proplists/metafile.md)|[Methods](../methodlists/metafile.md)|[Events](../eventlists/metafile.md)|
+[Parents](../parentlists/metafile.md), [Children](../childlists/metafile.md), [Properties](../proplists/metafile.md), [Methods](../methodlists/metafile.md), [Events](../eventlists/metafile.md)
 
 
-|--------|------------------------------------------------------------|
-|Purpose:|This object represents a picture in Windows Metafile format.|
 
+**Purpose:** This object represents a picture in Windows Metafile format.
 
 **Description**
 

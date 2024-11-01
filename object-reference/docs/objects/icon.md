@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Icon</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/icon.md)|[Children](../childlists/icon.md)|[Properties](../proplists/icon.md)|[Methods](../methodlists/icon.md)|[Events](../eventlists/icon.md)|
+[Parents](../parentlists/icon.md), [Children](../childlists/icon.md), [Properties](../proplists/icon.md), [Methods](../methodlists/icon.md), [Events](../eventlists/icon.md)
 
 
-|--------|----------------------------|
-|Purpose:|This object defines an icon.|
 
+**Purpose:** This object defines an icon.
 
 **Description**
 

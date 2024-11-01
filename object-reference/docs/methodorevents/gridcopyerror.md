@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GridCopyError</span> <span class="command">Event 196</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 

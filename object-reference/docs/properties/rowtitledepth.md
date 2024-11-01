@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RowTitleDepth</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -45,7 +38,7 @@ is 1, and so forth. For example:
 ```
 
 
-![gridrt](../img/gridrt.gif)
+![](../img/gridrt.gif)
 
 
 Note that the [LockRows](../methodorevents/lockrows.md) method is not

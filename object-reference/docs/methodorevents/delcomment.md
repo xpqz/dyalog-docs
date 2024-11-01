@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DelComment</span> <span class="command">Method 221</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 

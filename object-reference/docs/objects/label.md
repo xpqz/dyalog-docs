@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Label</span> <span class="command">Object</span></h1>
 
 
 
-|----------------------------------|----------------------------------|-----------------------------------|----------------------------------|--------------------------------|
-|[Parents](../parentlists/label.md)|[Children](../childlists/label.md)|[Properties](../proplists/label.md)|[Methods](../methodlists/label.md)|[Events](../eventlists/label.md)|
+[Parents](../parentlists/label.md), [Children](../childlists/label.md), [Properties](../proplists/label.md), [Methods](../methodlists/label.md), [Events](../eventlists/label.md)
 
 
-|--------|---------------------|
-|Purpose:|Displays static text.|
 
+**Purpose:** Displays static text.
 
 **Description**
 

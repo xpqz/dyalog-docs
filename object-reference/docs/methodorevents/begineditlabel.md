@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BeginEditLabel</span> <span class="command">Event 300</span></h1>
 
 
 
-|-----------|----------------------------------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
 
 **Description**
 

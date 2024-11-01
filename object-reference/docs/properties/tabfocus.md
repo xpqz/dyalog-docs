@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabFocus</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------------|
-|Applies To:|[TabControl](../objects/tabcontrol.md)|
-
+**Applies To:** [TabControl](../objects/tabcontrol.md)
 
 **Description**
 

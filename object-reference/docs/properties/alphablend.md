@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">AlphaBlend</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Form](../objects/form.md)|
-
+**Applies To:** [Form](../objects/form.md)
 
 **Description**
 

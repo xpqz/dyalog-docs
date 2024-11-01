@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PageDeactivate</span> <span class="command">Event 361</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[PropertyPage](../objects/propertypage.md)|
-
+**Applies To:** [PropertyPage](../objects/propertypage.md)
 
 **Description**
 

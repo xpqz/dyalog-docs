@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">QueueEvents</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|------------------------------------|
-|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
-
+**Applies To:** [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md)
 
 **Description**
 

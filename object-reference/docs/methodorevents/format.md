@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Format</span> <span class="command">Event 821</span></h1>
 
 
 
-|-----------|---------------------------------------------------------------------|
-|Applies To:|[Editor](../../../windows-ui-guide/the-session-object/session-object)|
-
+**Applies To:** [Editor](../../../windows-ui-guide/the-session-object/session-object)
 
 **Description**
 

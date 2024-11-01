@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">ToolControl</span> <span class="command">Example 3</span></h1>
 
 
@@ -21,6 +17,6 @@
 ```
 
 
-![tool8](../img/tool8.gif)
+![](../img/tool8.gif)
 
 

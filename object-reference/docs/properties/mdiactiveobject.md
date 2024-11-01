@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDIActiveObject</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[MDIClient](../objects/mdiclient.md)|
-
+**Applies To:** [MDIClient](../objects/mdiclient.md)
 
 **Description**
 

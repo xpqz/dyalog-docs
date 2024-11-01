@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">ToolControl</span> <span class="command">Example 2</span></h1>
 
 
@@ -22,10 +18,10 @@
 ```
 
 
-![tool6](../img/tool6.gif)
+![](../img/tool6.gif)
 
 
-![tool7](../img/tool7.gif)
+![](../img/tool7.gif)
 
 ```apl
 'F.TB'⎕WC'ToolControl'('MultiLine' 1)('Style' 'List')

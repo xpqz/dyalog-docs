@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Scroll</span> <span class="command">Object</span></h1>
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/scroll.md)|[Children](../childlists/scroll.md)|[Properties](../proplists/scroll.md)|[Methods](../methodlists/scroll.md)|[Events](../eventlists/scroll.md)|
+[Parents](../parentlists/scroll.md), [Children](../childlists/scroll.md), [Properties](../proplists/scroll.md), [Methods](../methodlists/scroll.md), [Events](../eventlists/scroll.md)
 
 
-|--------|--------------------------------------------|
-|Purpose:|Provides a vertical or horizontal scrollbar.|
 
+**Purpose:** Provides a vertical or horizontal scrollbar.
 
 **Description**
 

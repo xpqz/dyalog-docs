@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ActiveXContainer</span> <span class="command">Object</span></h1>
 
 
@@ -11,9 +6,7 @@
 |[Parents](../parentlists/activexcontainer.md)|[Properties](../proplists/activexcontainer.md)|[Methods](../methodlists/activexcontainer.md)|[Events](../eventlists/activexcontainer.md)|
 
 
-|--------|-------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object.|
-
+**Purpose:** The ActiveXContainer object represents the application that is currently hosting an instance of an ActiveXControl object.
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">URL</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 
@@ -17,7 +10,7 @@
 The URL property is a character vector that  specifies the url of a resource to be requested by the [HTMLRenderer](../objects/htmlrenderer.md). Its default value is an empty character vector.
 
 
-Specifying URL is an alternative way to setting the [HTML](html.md) property in order to display content in the [HTMLRenderer](../objects/htmlrenderer.md).
+Specifying URL is an alternative way to setting the [HTML](html.md) property in order to display content in the [HTMLRenderer](../objects/htmlrenderer.md).
 
 
 When you set the URL property, the [HTMLRenderer](../objects/htmlrenderer.md) will request the corresponding resource (from either the internet or the workspace via an [HTTPRequest](../methodorevents/httprequest.md) event) and the display will change according to the response. The [HTML](html.md) property is ignored and remains unchanged.

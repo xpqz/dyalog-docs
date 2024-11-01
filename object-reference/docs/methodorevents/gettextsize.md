@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetTextSize</span> <span class="command">Method 146</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/gettextsize.md)
 
 **Description**
 

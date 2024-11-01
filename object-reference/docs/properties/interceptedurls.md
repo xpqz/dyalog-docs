@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">InterceptedURLs</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 
@@ -29,7 +22,7 @@ The first column is a wild-carded character scalar or vector containing a patter
 
 
 
-If the requested url is a relative rather than an absolute URL, it is prepended by the string `http://dyalog_root/`. So, for example, if the [HTML](html.md) property contains :
+If the requested url is a relative rather than an absolute URL, it is prepended by the string `http://dyalog_root/`. So, for example, if the [HTML](html.md) property contains :
 ```apl
 <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>

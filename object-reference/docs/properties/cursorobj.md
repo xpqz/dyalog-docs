@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CursorObj</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/cursorobj.md)
 
 **Description**
 
@@ -20,7 +12,7 @@ This property is used to associate a particular cursor with an object.
 
 Its
 value is either a simple scalar number which specifies a standard Windows
-cursor, or the name of, or ref to, a [Cursor](../objects/cursor.md) object. The standard Windows cursors are :
+cursor, or the name of, or ref to, a [Cursor](../objects/cursor.md) object. The standard Windows cursors are :
 
 
 |---|-------------------------------------------------|

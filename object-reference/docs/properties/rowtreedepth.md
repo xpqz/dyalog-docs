@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RowTreeDepth</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -33,13 +26,13 @@ The [RowSetVisibleDepth](../methodorevents/rowsetvisibledepth.md) method can be 
 ```
 
 
-![gridtree1](../img/gridtree1.gif)
+![](../img/gridtree1.gif)
 
 
 The user can interact with the tree images to expand and contract rows of the [Grid](../objects/grid.md).
 
 
-![gridtree2](../img/gridtree2.gif)
+![](../img/gridtree2.gif)
 
 
 

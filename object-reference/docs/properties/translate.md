@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Translate</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/translate.md)
 
 **Description**
 
@@ -35,7 +27,7 @@ passed between APL and the object with no translation.
 
 If you set the value of the Translate property to `'ANSI'`,
 APL does not attempt to resolve characters as they are typed by the user via the
-Input Translate Table. Using Translate `'ANSI'` in combination with the appropriate value of [CharSet](charset.md) and the corresponding National Language keyboard will permit users to enter
+Input Translate Table. Using Translate `'ANSI'` in combination with the appropriate value of [CharSet](charset.md) and the corresponding National Language keyboard will permit users to enter
 strings in non-western languages.
 
 

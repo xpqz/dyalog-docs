@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">OLEQueryInterface</span> <span class="command">Method 543</span></h1>
 
 
 
-|-----------|--------------------------------------------------|------------------------------------|
-|Applies To:|[ActiveXContainer](../objects/activexcontainer.md)|[OLEClient](../objects/oleclient.md)|
-
+**Applies To:** [ActiveXContainer](../objects/activexcontainer.md), [OLEClient](../objects/oleclient.md)
 
 **Description**
 

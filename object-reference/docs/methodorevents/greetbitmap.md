@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GreetBitmap</span> <span class="command">Method 138</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Root](../objects/root.md)|
-
+**Applies To:** [Root](../objects/root.md)
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetTipText</span> <span class="command">Event 325</span></h1>
 
 
 
-|-----------|----------------------------------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
 
 **Description**
 
@@ -23,8 +16,8 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |-----|-------------|------------------------------------------------------------|
 |`[1]`|Object       |ref or character vector                                     |
 |`[2]`|Event        |`'GetTipText'` or 325                                       |
-|`[3]`|Item index   |Integer ( `⎕IO` dependent)                                  |
-|`[4]`|SubItem index|Integer ( `⎕IO` dependent, currently always equal to `⎕IO` )|
+|`[3]`|Item index   |Integer ( `⎕IO` dependent)                                  |
+|`[4]`|SubItem index|Integer ( `⎕IO` dependent, currently always equal to `⎕IO` )|
 |`[5]`|TipText      |The text to be displayed.                                   |
 
 

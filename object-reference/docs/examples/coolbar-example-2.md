@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">CoolBar</span> <span class="command">Example 2</span></h1>
 
 
@@ -25,6 +21,6 @@
 ```
 
 
-![cool2](../img/cool2.gif)
+![](../img/cool2.gif)
 
 

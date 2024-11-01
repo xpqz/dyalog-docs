@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Popup</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------------|--------------------------------------|
-|Applies To:|[SysTrayItem](../objects/systrayitem.md)|[ToolButton](../objects/toolbutton.md)|
-
+**Applies To:** [SysTrayItem](../objects/systrayitem.md), [ToolButton](../objects/toolbutton.md)
 
 **Description**
 

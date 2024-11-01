@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ToolButton</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------------|---------------------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-|[Parents](../parentlists/toolbutton.md)|[Children](../childlists/toolbutton.md)|[Properties](../proplists/toolbutton.md)|[Methods](../methodlists/toolbutton.md)|[Events](../eventlists/toolbutton.md)|
+[Parents](../parentlists/toolbutton.md), [Children](../childlists/toolbutton.md), [Properties](../proplists/toolbutton.md), [Methods](../methodlists/toolbutton.md), [Events](../eventlists/toolbutton.md)
 
 
-|--------|-----------------------------------------------------------|
-|Purpose:|The ToolButton object represents a button in a ToolControl.|
 
+**Purpose:** The ToolButton object represents a button in a ToolControl.
 
 **Description**
 
@@ -78,7 +71,7 @@ The following example illustrates the use of DropDown buttons:
 ```
 
 
-![tool9](../img/tool9.gif)
+![](../img/tool9.gif)
 
 
 

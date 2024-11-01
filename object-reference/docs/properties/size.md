@@ -1,13 +1,6 @@
-
-
-
-
 <h1 class="heading"><span class="name">Size</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/size.md)
 
 **Description**
 

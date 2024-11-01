@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HasToday</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|----------------------------------------------|
-|Applies To:|[Calendar](../objects/calendar.md)|[DateTimePicker](../objects/datetimepicker.md)|
-
+**Applies To:** [Calendar](../objects/calendar.md), [DateTimePicker](../objects/datetimepicker.md)
 
 **Description**
 

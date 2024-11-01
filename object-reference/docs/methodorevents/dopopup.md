@@ -1,29 +1,14 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DoPopup</span> <span class="command">Event 846</span></h1>
 
-
-
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 
-
-This event is triggered when the [HTMLRenderer](../objects/htmlrenderer.md) client attempts to open a new window. This could be fired by an HTML <a> tag with the target attribute set to open a URL in a new window or by a JavaScript `window.open()` call. Note that this does not apply to JavaScript Popup Boxes.
-
-
+This event is triggered when the [HTMLRenderer](../objects/htmlrenderer.md) client attempts to open a new window. This could be fired by an HTML `<a>` tag with the target attribute set to open a URL in a new window or by a JavaScript `window.open()` call. Note that this does not apply to JavaScript Popup Boxes.
 
 By default the HTMLRenderer ignores a request for a new window, but if  the DoPoup event, is enabled, it provides the information needed to process the request in the workspace.
 
-
-
 The event message reported as the result of [`⎕DQ`](../../../language-reference-guide/system-functions/dq), or supplied as the right argument to your callback function, is a 5-element vector as follows:
-
 
 |-----|----------|---------------------------------------|
 |`[1]`|Object    |ref or character vector                |
@@ -32,12 +17,9 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |`[4]`|Attributes|requested window attributes (see below)|
 |`[5]`|Framename |character vector framename             |
 
-
-
 **Attributes** is a 7-element nested vector that specifies the requested attributes for the new window. The HTMLRenderer  currently provides no mechanism to use this information.
 
-
-|-----|----------------------------------------------------------------------------------------------------------------------------|
+|-----|---------------------------------------------|
 |`[1]`|2-element vector of top, left positions – positions not specified are ⍬                                                     |
 |`[2]`|2-element vector of height, width – sizes not specified are ⍬                                                               |
 |`[3]`|Integer "WindowDisposition". See https://magpcss.org/ceforum/apidocs3/projects/(default)/cef_window_open_disposition_t.html.|
@@ -46,10 +28,9 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |`[6]`|Boolean statusbar (default=1)                                                                                               |
 |`[7]`|Boolean location/toolbar (default=1)                                                                                        |
 
-
 To respond to the request for a new window, the callback function should open the requested URL as appropriate, for example, in a newly created [HTMLRenderer](../objects/htmlrenderer.md) object.
 
-## For example
+<h2 class="example">Example</h2>
 ```apl
       'h'⎕WC  'HTMLRenderer'
       'h'⎕WS  ('Event' 'DoPopUp' 'DoPopUpCB')
@@ -70,7 +51,7 @@ To respond to the request for a new window, the callback function should open th
 
 ```
 
-## Extended Example
+<h2 class="example">Extended Example</h2>
 ```apl
      ∇ {r}←DoPopupDemo args;html;h;c;s;e;p;d
 [1]    →EndHTML
@@ -113,10 +94,7 @@ To respond to the request for a new window, the callback function should open th
 
 ```
 
-
-The example funtion show above will display a new window when the button labelled Click me! is pressed. To start, type:
+The example function show above will display a new window when the button labelled Click me! is pressed. To start, type:
 ```apl
       DoPopupDemo ''
 ```
-
-

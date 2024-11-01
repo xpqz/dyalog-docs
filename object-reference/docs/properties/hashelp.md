@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HasHelp</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------------|--------------------------------------------|
-|Applies To:|[PropertyPage](../objects/propertypage.md)|[PropertySheet](../objects/propertysheet.md)|
-
+**Applies To:** [PropertyPage](../objects/propertypage.md), [PropertySheet](../objects/propertysheet.md)
 
 **Description**
 

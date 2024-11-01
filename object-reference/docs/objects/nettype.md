@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">NetType</span> <span class="command">Object</span></h1>
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/nettype.md)|[Children](../childlists/nettype.md)|[Properties](../proplists/nettype.md)|[Methods](../methodlists/nettype.md)|[Events](../eventlists/nettype.md)|
+[Parents](../parentlists/nettype.md), [Children](../childlists/nettype.md), [Properties](../proplists/nettype.md), [Methods](../methodlists/nettype.md), [Events](../eventlists/nettype.md)
 
 
-|--------|--------------------------------------------------------------------------|
-|Purpose:|The NetType object is used to export a namespace as a Microsoft.NET class.|
 
+**Purpose:** The NetType object is used to export a namespace as a Microsoft.NET class.
 
 **Description**
 

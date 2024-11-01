@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CharFormat</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[RichEdit](../objects/richedit.md)|
-
+**Applies To:** [RichEdit](../objects/richedit.md)
 
 **Description**
 
@@ -18,18 +11,12 @@ The CharFormat property describes or applies formatting to the currently selecte
 
 
 
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|`[1]`|A vector of character vectors which describes the text attributes and is comprised of the following keywords: `'Autocolour'` default colour (Windows text colour) `'Bold'` bold text `'Italic'` bold text `'Underline'` underlined `'StrikeOut'` line through text `'Protected'` protected (read-only) text|`'Autocolour'`|default colour (Windows text colour)|`'Bold'`|bold text|`'Italic'`|bold text|`'Underline'`|underlined|`'StrikeOut'`|line through text|`'Protected'`|protected (read-only) text|
-|`'Autocolour'`|default colour (Windows text colour)|||||||||||||
-|`'Bold'`|bold text|||||||||||||
-|`'Italic'`|bold text|||||||||||||
-|`'Underline'`|underlined|||||||||||||
-|`'StrikeOut'`|line through text|||||||||||||
-|`'Protected'`|protected (read-only) text|||||||||||||
-|`[2]`|A character vector that specifies the face name of the font used to draw the text|||||||||||||
-|`[3]`|Character height in [Twips](../miscellaneous/twips.md) .|||||||||||||
-|`[4]`|Text colour. A single integer or an enclosed vector of 3 RGB values. The default is 0 which implies the standard Windows text colour.|||||||||||||
-|`[5]`|Integer specifying the vertical offset of the character from the base line in [Twips](../miscellaneous/twips.md) . This is used to specify superscript (positive offset) and subscript (negative offset) symbols. The default value is 0.|||||||||||||
+|---|---|
+|`[1]`|A vector of character vectors which describes the text attributes and is comprised of the following keywords:<br/>`'Autocolour'` default colour (Windows text colour)<br/>`'Bold'` bold text<br/>`'Italic'` bold text<br/>`'Underline'` underlined<br/>`'StrikeOut'` line through text<br/>`'Protected'` protected (read-only) text|
+|`[2]`|A character vector that specifies the face name of the font used to draw the text|
+|`[3]`|Character height in [Twips](../miscellaneous/twips.md) .|
+|`[4]`|Text colour. A single integer or an enclosed vector of 3 RGB values. The default is 0 which implies the standard Windows text colour.|
+|`[5]`|Integer specifying the vertical offset of the character from the base line in [Twips](../miscellaneous/twips.md) . This is used to specify superscript (positive offset) and subscript (negative offset) symbols. The default value is 0.|
 
 
 When you set the character format using `⎕WC` or `⎕WS` the following rules apply:

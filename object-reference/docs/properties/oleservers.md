@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">OLEServers</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Root](../objects/root.md)|
-
+**Applies To:** [Root](../objects/root.md)
 
 **Description**
 

@@ -1,21 +1,15 @@
-
-
-
-
 <h1 class="heading"><span class="name">LockRows</span> <span class="command">Method 226</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
 
 This method is used to lock one or more Rows of a [Grid](../objects/grid.md).
 However, LockRows is not supported in combination with hierarchical row titles
-as specified by the [RowTitleDepth](../properties/rowtitledepth.md) property.
+as specified by the [RowTitleDepth](../properties/rowtitledepth.md) property.
 
 
 The argument to LockRows is a 1 or 2-element vector as follows.

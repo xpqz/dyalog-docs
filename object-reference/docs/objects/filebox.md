@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FileBox</span> <span class="command">Object</span></h1>
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/filebox.md)|[Children](../childlists/filebox.md)|[Properties](../proplists/filebox.md)|[Methods](../methodlists/filebox.md)|[Events](../eventlists/filebox.md)|
+[Parents](../parentlists/filebox.md), [Children](../childlists/filebox.md), [Properties](../proplists/filebox.md), [Methods](../methodlists/filebox.md), [Events](../eventlists/filebox.md)
 
 
-|--------|------------------------------|
-|Purpose:|Prompts user to select a file.|
 
+**Purpose:** Prompts user to select a file.
 
 **Description**
 
@@ -44,12 +37,12 @@ The [Style](../properties/style.md) property specifies whether the user may choo
 The [Filters](../properties/filters.md) property is a nested scalar or vector containing a list of filters. Each filter is a 2-element vector of character vectors which contain a file type mask and a file type description respectively. The file type descriptions appear in a drop-down combo box labelled "List File of Type". When the user selects one of these, the currently selected directory is searched for files which match the corresponding mask. The default value of [Filters](../properties/filters.md) is an empty vector. This gives a file type mask of "*.*" and a file type description of "All Files (*.*)". Hence an empty vector is equivalent to `(⊂'*.*' 'All Files (*.*)').`
 
 
-The [Index](../properties/index.md) property determines which of the filters is initially selected. Its default value is `⎕IO`.
+The [Index](../properties/index-property.md) property determines which of the filters is initially selected. Its default value is `⎕IO`.
 
 
-Note that when [`⎕DQ`](../../../language-reference-guide/system-functions/dq) terminates with [FileBoxOK](../methodorevents/fileboxok.md), the [File](../properties/file.md), [Directory](../properties/directory.md), and [Index](../properties/index.md) properties are updated to reflect the contents of the fields within the FileBox.
+Note that when [`⎕DQ`](../../../language-reference-guide/system-functions/dq) terminates with [FileBoxOK](../methodorevents/fileboxok.md), the [File](../properties/file.md), [Directory](../properties/directory.md), and [Index](../properties/index-property.md) properties are updated to reflect the contents of the fields within the FileBox.
 
 
-The operating system imposes limits on both the length of the name of the file, and on the total path length. In version {{ version_majmin }}attempting to set the `File` or `Directory` Properties to too long a name will generate a DOMAIN ERROR, while attempting to use too long a File name within the FileBox will result in the appearence of an error MessageBox.
+The operating system imposes limits on both the length of the name of the file, and on the total path length. In version {{ version_majmin }}attempting to set the `File` or `Directory` Properties to too long a name will generate a DOMAIN ERROR, while attempting to use too long a File name within the FileBox will result in the appearence of an error MessageBox.
 
 

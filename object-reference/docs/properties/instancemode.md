@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">InstanceMode</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[OLEClient](../objects/oleclient.md)|
-
+**Applies To:** [OLEClient](../objects/oleclient.md)
 
 **Description**
 

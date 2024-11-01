@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ActiveXControl</span> <span class="command">Object</span></h1>
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/activexcontrol.md)|[Children](../childlists/activexcontrol.md)|[Properties](../proplists/activexcontrol.md)|[Methods](../methodlists/activexcontrol.md)|[Events](../eventlists/activexcontrol.md)|
+[Parents](../parentlists/activexcontrol.md), [Children](../childlists/activexcontrol.md), [Properties](../proplists/activexcontrol.md), [Methods](../methodlists/activexcontrol.md), [Events](../eventlists/activexcontrol.md)
 
 
-|--------|----------------------------------------------------------------------------------|
-|Purpose:|The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.|
 
+**Purpose:** The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.
 
 **Description**
 

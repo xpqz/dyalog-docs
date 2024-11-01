@@ -1,20 +1,13 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CharSet</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Font](../objects/font.md)|
-
+**Applies To:** [Font](../objects/font.md)
 
 **Description**
 
 
-CharSet is an integer that specifies the character encoding of the [Font](../objects/font.md) object.
+CharSet is an integer that specifies the character encoding of the [Font](../objects/font.md) object.
 
 
 
@@ -61,7 +54,7 @@ The following example illustrates how the character string `'ôï
 according to the value of CharSet.
 
 
-![charset](../img/charset.gif)
+![](../img/charset.gif)
 ```apl
       'F'⎕WC'FORM' 'CharSet Property'('Size' 300 400)('Coord' 'Pixel')
       F.Coord←'Prop'
@@ -77,10 +70,7 @@ according to the value of CharSet.
       'F.E3'⎕WC'Edit'STRING(70 10)(⍬ 80)('Font' 'F.F3')('Translate' 'ANSI')
 ```
 
-
-
-Note that setting Translate to 'ANSI' means that characters entered into the
-Edit fields using a corresponding  National Language keyboard (Greek and
-Arabic) will appear in that language as intended
+!!! note
+    Setting Translate to 'ANSI' means that characters entered into the Edit fields using a corresponding  National Language keyboard (Greek and Arabic) will appear in that language as intended.
 
 

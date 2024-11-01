@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DrawMode</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|--------------------------------|------------------------------|--------------------------|--------------------------|--------------------------|
-|Applies To:|[Circle](../objects/circle.md)|[Ellipse](../objects/ellipse.md)|[Marker](../objects/marker.md)|[Poly](../objects/poly.md)|[Rect](../objects/rect.md)|[Text](../objects/text.md)|
-
+**Applies To:** [Circle](../objects/circle.md), [Ellipse](../objects/ellipse.md), [Marker](../objects/marker.md), [Poly](../objects/poly.md), [Rect](../objects/rect.md), [Text](../objects/text.md)
 
 **Description**
 

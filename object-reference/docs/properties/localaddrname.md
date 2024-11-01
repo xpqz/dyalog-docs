@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">LocalAddrName</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
-
+**Applies To:** [TCPSocket](../objects/tcpsocket.md)
 
 **Description**
 

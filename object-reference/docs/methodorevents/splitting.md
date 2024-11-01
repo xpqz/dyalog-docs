@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Splitting</span> <span class="command">Event 281</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[Splitter](../objects/splitter.md)|
-
+**Applies To:** [Splitter](../objects/splitter.md)
 
 **Description**
 

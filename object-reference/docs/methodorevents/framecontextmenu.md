@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FrameContextMenu</span> <span class="command">Event 411</span></h1>
 
 
 
-|-----------|--------------------------|--------------------------------|
-|Applies To:|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
-
+**Applies To:** [Form](../objects/form.md), [SubForm](../objects/subform.md)
 
 **Description**
 

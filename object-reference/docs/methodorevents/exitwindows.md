@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ExitWindows</span> <span class="command">Event 131</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Root](../objects/root.md)|
-
+**Applies To:** [Root](../objects/root.md)
 
 **Description**
 

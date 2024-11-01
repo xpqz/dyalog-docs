@@ -1,21 +1,14 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">LockColumns</span> <span class="command">Method 227</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
 
-This method is used to lock one or more columns of a [Grid](../objects/grid.md) object. However, LockColumns is not supported in combination with hierarchical
-column titles as specified by the [ColTitleDepth](../properties/coltitledepth.md) property.
+This method is used to lock one or more columns of a [Grid](../objects/grid.md) object. However, LockColumns is not supported in combination with hierarchical
+column titles as specified by the [ColTitleDepth](../properties/coltitledepth.md) property.
 
 
 
@@ -90,7 +83,7 @@ When you lock a column, the position you specify for it to be locked at is a
 position *in the data* and not the physical position of the column as
 displayed in the [Grid](../objects/grid.md)*.* The physical
 column in the [Grid](../objects/grid.md) depends upon the value of the
-[Index](../properties/index.md) property at the time it was locked.
+[Index](../properties/index-property.md) property at the time it was locked.
 
 
 
@@ -103,6 +96,6 @@ given column is to be locked, the value of the physical column `P` at which it w
 
 
 Furthermore, the position of a locked column given by the result of the
-LockColumns method changes (with the [Index](../properties/index.md) property) as the [Grid](../objects/grid.md) is scrolled.
+LockColumns method changes (with the [Index](../properties/index-property.md) property) as the [Grid](../objects/grid.md) is scrolled.
 
 

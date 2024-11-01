@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ItemDown</span> <span class="command">Event 340</span></h1>
 
 
 
-|-----------|----------------------------------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
 
 **Description**
 
@@ -23,9 +16,9 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |---|---|---|
 |`[1]`|Object|ref or character vector|
 |`[2]`|Event|`'ItemDown'` or 340|
-|`[3]`|Item number|Integer. The index of the item.|
+|`[3]`|Item number|Integer. The index of the item.|
 |`[4]`|Mouse button|Integer.|
-|`[5]`|Shift state|Integer. Sum of 1=shift key, 2=Ctrl key, 4=Alt key|
+|`[5]`|Shift state|Integer. Sum of 1=shift key, 2=Ctrl key, 4=Alt key|
 |`[6]`|Position|Integer. Indicates the position of the mouse-pointer within the item. It is either 2 (over the icon), 4 (over the label), 8 (over the line), 16 (over the symbol) or 32 (to the right of the label).|
 
 

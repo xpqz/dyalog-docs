@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DateTimeChange</span> <span class="command">Event 267</span></h1>
 
 
 
-|-----------|----------------------------------------------|
-|Applies To:|[DateTimePicker](../objects/datetimepicker.md)|
-
+**Applies To:** [DateTimePicker](../objects/datetimepicker.md)
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Note</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|
-|Applies To:|[Button](../objects/button.md)|
-
+**Applies To:** [Button](../objects/button.md)
 
 **Description**
 
@@ -29,7 +22,7 @@ F.clb.Note←'www.dyalog.com'
 ```
 
 
-![commandlink button2](../img/commandlink-button2.png)
+![](../img/commandlink-button2.png)
 
 
 

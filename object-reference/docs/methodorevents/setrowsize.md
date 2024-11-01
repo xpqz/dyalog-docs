@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetRowSize</span> <span class="command">Event 175</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -28,9 +21,9 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|----------|-----------------------------------------------------------------------------------------------------------------------------------------|
 |`[1]`|Object    |ref or character vector                                                                                                                  |
 |`[2]`|Event     |`'SelRowSize'` or 175                                                                                                                    |
-|`[3]`|Row number|Integer. This is sensitive to the index origin, `⎕IO` , but is `¯1` if the user has resized the column titles.                           |
+|`[3]`|Row number|Integer. This is sensitive to the index origin, `⎕IO` , but is `¯1` if the user has resized the column titles.                           |
 |`[4]`|Height    |Integer containing the value of the (new) row height. This is `¯3` if the user has double-clicked to request automatic height adjustment.|
-|`[5]`|Undo flag |0 or 1                                                                                                                                   |
+|`[5]`|Undo flag |0 or 1                                                                                                                                   |
 
 
 

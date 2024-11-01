@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ScrollOpposite</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------------|
-|Applies To:|[TabControl](../objects/tabcontrol.md)|
-
+**Applies To:** [TabControl](../objects/tabcontrol.md)
 
 **Description**
 
@@ -25,7 +18,7 @@ ScrollOpposite is a single number with the value 0 (normal scrolling) or 1 (scro
 The picture below illustrates a [TabControl](../objects/tabcontrol.md) with ScrollOpposite set to 1, after the user has clicked *Third Tab*.
 
 
-![tab10](../img/tab10.gif)
+![](../img/tab10.gif)
 
 
 

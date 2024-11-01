@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">WebSocketSend</span> <span class="command">Method 847</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 

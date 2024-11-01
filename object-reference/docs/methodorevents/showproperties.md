@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowProperties</span> <span class="command">Method 560</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[OCXClass](../objects/ocxclass.md)|
-
+**Applies To:** [OCXClass](../objects/ocxclass.md)
 
 **Description**
 

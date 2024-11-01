@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HasEdit</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[BrowseBox](../objects/browsebox.md)|
-
+**Applies To:** [BrowseBox](../objects/browsebox.md)
 
 **Description**
 

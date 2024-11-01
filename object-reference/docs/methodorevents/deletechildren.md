@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DeleteChildren</span> <span class="command">Method 311</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [TreeView](../objects/treeview.md)
 
 **Description**
 

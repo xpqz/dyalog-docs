@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Static</span> <span class="command">Object</span></h1>
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/static.md)|[Children](../childlists/static.md)|[Properties](../proplists/static.md)|[Methods](../methodlists/static.md)|[Events](../eventlists/static.md)|
+[Parents](../parentlists/static.md), [Children](../childlists/static.md), [Properties](../proplists/static.md), [Methods](../methodlists/static.md), [Events](../eventlists/static.md)
 
 
-|--------|------------------------------------------------------------------|
-|Purpose:|This object is primarily used to display graphics in a sub-window.|
 
+**Purpose:** This object is primarily used to display graphics in a sub-window.
 
 **Description**
 

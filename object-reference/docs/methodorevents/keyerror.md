@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">KeyError</span> <span class="command">Event 23</span></h1>
 
 
 
-|-----------|--------------------------------------|--------------------------|--------------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|[Spinner](../objects/spinner.md)|
-
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md), [Spinner](../objects/spinner.md)
 
 **Description**
 

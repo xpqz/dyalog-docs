@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Close</span> <span class="command">Event 33</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/close.md)
 
 **Description**
 
@@ -29,7 +21,7 @@ By trapping this event you can control termination of your application in many d
 
 
 
-Note that although all the object's child GUI objects will also be destroyed, none of the child objects will generate a Close event.
+Note that although all the object's child GUI objects will also be destroyed, none of the child objects will generate a Close event.
 
 
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">State</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|--------------------------|--------------------------------|------------------------------------|--------------------------------------|
-|Applies To:|[Button](../objects/button.md)|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|[TabButton](../objects/tabbutton.md)|[ToolButton](../objects/toolbutton.md)|
-
+**Applies To:** [Button](../objects/button.md), [Form](../objects/form.md), [SubForm](../objects/subform.md), [TabButton](../objects/tabbutton.md), [ToolButton](../objects/toolbutton.md)
 
 **Description**
 

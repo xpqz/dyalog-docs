@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HThumbDrag</span> <span class="command">Event 442</span></h1>
 
 
 
-|-----------|--------------------------|--------------------------------|
-|Applies To:|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
-
+**Applies To:** [Form](../objects/form.md), [SubForm](../objects/subform.md)
 
 **Description**
 

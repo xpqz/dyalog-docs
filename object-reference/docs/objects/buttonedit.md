@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ButtonEdit</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------------|---------------------------------------|----------------------------------------|---------------------------------------|-------------------------------------|
-|[Parents](../parentlists/buttonedit.md)|[Children](../childlists/buttonedit.md)|[Properties](../proplists/buttonedit.md)|[Methods](../methodlists/buttonedit.md)|[Events](../eventlists/buttonedit.md)|
+[Parents](../parentlists/buttonedit.md), [Children](../childlists/buttonedit.md), [Properties](../proplists/buttonedit.md), [Methods](../methodlists/buttonedit.md), [Events](../eventlists/buttonedit.md)
 
 
-|--------|----------------------------------|
-|Purpose:|Allows user to enter or edit data.|
 
+**Purpose:** Allows user to enter or edit data.
 
 **Description**
 
@@ -57,13 +50,9 @@ The following picture illustrates two ButtonEdit objects
 ```
 
 
-![buttonedit](../img/buttonedit.png)
+![](../img/buttonedit.png)
 
-## Note
-
-
-For full functionality (in particular, for the [Cue](../properties/cue.md) property to apply), the ButtonEdit object requires that  [Native Look and Feel ](../miscellaneous/windows-xp-look-and-feel.md)
-
- is enabled.
+!!! note
+    For full functionality (in particular, for the [Cue](../properties/cue.md) property to apply), the ButtonEdit object requires that [Native Look and Feel](../miscellaneous/windows-xp-look-and-feel.md) is enabled.
 
 

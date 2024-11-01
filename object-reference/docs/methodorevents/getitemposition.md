@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetItemPosition</span> <span class="command">Method 323</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[ListView](../objects/listview.md)|
-
+**Applies To:** [ListView](../objects/listview.md)
 
 **Description**
 

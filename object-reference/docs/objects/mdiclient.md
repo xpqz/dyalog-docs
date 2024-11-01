@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDIClient</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/mdiclient.md)|[Children](../childlists/mdiclient.md)|[Properties](../proplists/mdiclient.md)|[Methods](../methodlists/mdiclient.md)|[Events](../eventlists/mdiclient.md)|
+[Parents](../parentlists/mdiclient.md), [Children](../childlists/mdiclient.md), [Properties](../proplists/mdiclient.md), [Methods](../methodlists/mdiclient.md), [Events](../eventlists/mdiclient.md)
 
 
-|--------|-------------------------------------------------------|
-|Purpose:|Implements Multiple Document Interface (MDI) behaviour.|
 
+**Purpose:** Implements Multiple Document Interface (MDI) behaviour.
 
 **Description**
 

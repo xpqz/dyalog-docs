@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Configure</span> <span class="command">Event 31</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/configure.md)
 
 **Description**
 
@@ -18,21 +10,21 @@ If enabled, this event is generated when the configuration of an object
 
 
 
-For a [Form](../objects/form.md), the event is generated when the [Form](../objects/form.md) is resized or moved by the user.
+For a [Form](../objects/form.md), the event is generated when the [Form](../objects/form.md) is resized or moved by the user.
 
 
 For any object other than a [Form](../objects/form.md), it can
-occur in one of two ways. Firstly, whenever a [Form](../objects/form.md) is resized, the system (by default) re-arranges its children so as to maintain
+occur in one of two ways. Firstly, whenever a [Form](../objects/form.md) is resized, the system (by default) re-arranges its children so as to maintain
 their relative position and size. This generates a Configure event (if enabled)
 for each one of them.
 
 
 Secondly, it can occur as a result of the user resizing the object directly.
-This facility is enabled by setting the object's [Sizeable](../properties/sizeable.md) property to 1.
+This facility is enabled by setting the object's [Sizeable](../properties/sizeable.md) property to 1.
 
 
 Note that a Configure event is **not** reported when an object is moved
-using "drag & drop". See [Dragable](../properties/dragable.md) (property) and [DragDrop](./dragdrop.md) (event) for details
+using "drag & drop". See [Dragable](../properties/dragable.md) (property) and [DragDrop](./dragdrop.md) (event) for details
 of this operation.
 
 

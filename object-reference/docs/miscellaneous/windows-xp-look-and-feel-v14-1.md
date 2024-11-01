@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Native Look and Feel</span></h1>
 
 

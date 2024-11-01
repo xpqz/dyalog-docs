@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ColSorted</span> <span class="command">Method 174</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -42,7 +35,7 @@ If you wish to use your own images, you may specify them using the [ColSortImage
 ```
 
 
-![colsorted0](../img/colsorted0.png)
+![](../img/colsorted0.png)
 
 
 ```apl
@@ -51,7 +44,7 @@ If you wish to use your own images, you may specify them using the [ColSortImage
 ```
 
 
-![colsorted1](../img/colsorted1.png)
+![](../img/colsorted1.png)
 
 
 ```apl
@@ -62,7 +55,7 @@ If you wish to use your own images, you may specify them using the [ColSortImage
 ```
 
 
-![colsorted2](../img/colsorted2.png)
+![](../img/colsorted2.png)
 
 
 

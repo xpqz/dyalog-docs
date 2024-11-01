@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetWizard</span> <span class="command">Event 365</span></h1>
 
 
 
-|-----------|--------------------------------------------|
-|Applies To:|[PropertySheet](../objects/propertysheet.md)|
-
+**Applies To:** [PropertySheet](../objects/propertysheet.md)
 
 **Description**
 

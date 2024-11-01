@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BalloonHide</span> <span class="command">Event 862</span></h1>
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[SysTrayItem](../objects/systrayitem.md)|
-
+**Applies To:** [SysTrayItem](../objects/systrayitem.md)
 
 **Description**
 

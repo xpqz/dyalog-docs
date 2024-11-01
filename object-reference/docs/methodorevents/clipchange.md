@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ClipChange</span> <span class="command">Event 120</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[Clipboard](../objects/clipboard.md)|
-
+**Applies To:** [Clipboard](../objects/clipboard.md)
 
 **Description**
 

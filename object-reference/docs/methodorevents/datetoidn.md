@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DateToIDN</span> <span class="command">Method 264</span></h1>
 
 
 
-|-----------|----------------------------------|----------------------------------------------|--------------------------|
-|Applies To:|[Calendar](../objects/calendar.md)|[DateTimePicker](../objects/datetimepicker.md)|[Root](../objects/root.md)|
-
+**Applies To:** [Calendar](../objects/calendar.md), [DateTimePicker](../objects/datetimepicker.md), [Root](../objects/root.md)
 
 **Description**
 

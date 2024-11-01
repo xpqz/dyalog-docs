@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Attach</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/attach.md)
 
 **Description**
 

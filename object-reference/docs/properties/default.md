@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Default</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|------------------------------|
-|Applies To:|[Button](../objects/button.md)|[MsgBox](../objects/msgbox.md)|
-
+**Applies To:** [Button](../objects/button.md), [MsgBox](../objects/msgbox.md)
 
 **Description**
 

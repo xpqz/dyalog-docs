@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Wait</span> <span class="command">Method 147</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/wait.md)
 
 **Description**
 

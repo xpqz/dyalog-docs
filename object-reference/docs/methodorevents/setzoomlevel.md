@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetZoomLevel</span> <span class="command">Method</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 
@@ -41,25 +34,25 @@ The argument to SetZoomLevel is a single numeric value:
 ```
 
 
-![zoomlevel 0](../img/zoomlevel-0.png)
+![](../img/zoomlevel-0.png)
 
 ```apl
       hr Zoom 1
 ```
 
 
-![zoomlevel 1](../img/zoomlevel-1.png)
+![](../img/zoomlevel-1.png)
 
 ```apl
       hr Zoom 2
 ```
 
 
-![zoomlevel 2](../img/zoomlevel-2.png)
+![](../img/zoomlevel-2.png)
 
 ```apl
       hr Zoom ¯1
 ```
 
-![zoomlevel neg1](../img/zoomlevel-neg1.png)
+![](../img/zoomlevel-neg1.png)
 

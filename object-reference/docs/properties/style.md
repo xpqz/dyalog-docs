@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Style</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/style.md)
 
 **Description**
 
@@ -61,7 +53,7 @@ a single date. If Style is `'Multi`', the
 user may select a contiguous range of dates.
 
 
-For a [Combo](../objects/combo.md) or [ComboEx](../objects/comboex.md) object, Style may be `'Simple'` `'DropEdit'` or `'Drop'` (the default). `'Simple'` specifies a simple combo box in which the associated list box is displayed at
+For a [Combo](../objects/combo.md) or [ComboEx](../objects/comboex.md) object, Style may be `'Simple'` `'DropEdit'` or `'Drop'` (the default). `'Simple'` specifies a simple combo box in which the associated list box is displayed at
 all times. The other two styles provide list boxes which "drop down"
 when the user clicks on a symbol displayed to the right of the [Combo](../objects/combo.md)'s
 edit field. A `'DropEdit'` Style allows the
@@ -75,7 +67,7 @@ either `'Combo'` (the default) or `'UpDown'`.
 
 For an [Edit](../objects/edit.md) object, Style may be `'Single'` or `'Multi'`. If Style is `'Single'` the object displays only a single line of text and the user may not enter any
 more lines. If the Style is `'Multi'` the
-number of lines displayed is governed by the [Rows](rows.md) or [Size](size.md) property and the user may insert, add
+number of lines displayed is governed by the [Rows](rows.md) or [Size](size.md) property and the user may insert, add
 or delete lines as desired.
 
 
@@ -94,7 +86,7 @@ is drawn as the user moves the mouse.
 
 
 For a [MenuItem](../objects/menuitem.md), Style may be `'Check'` (the default) or `'Radio'`. The latter
-specifies that within a contiguous block of such MenuItems, only one may have [Checked](checked.md) set to 1. Setting [Checked](checked.md) to 1 on any item
+specifies that within a contiguous block of such MenuItems, only one may have [Checked](checked.md) set to 1. Setting [Checked](checked.md) to 1 on any item
 in that group automatically sets [Checked](checked.md) to
 0 on the others. A radio style [MenuItem](../objects/menuitem.md) that
 is checked has a small radio dot drawn to the left of its Caption.
@@ -143,11 +135,11 @@ it monitors and may be one of the following:
 
 
 For a [Splitter](../objects/splitter.md), the Style property
-specifies the orientation of the [Splitter](../objects/splitter.md) and may be `'Vert'` (the default) or `'Horz'`.
+specifies the orientation of the [Splitter](../objects/splitter.md) and may be `'Vert'` (the default) or `'Horz'`.
 
 
 For a [TabControl](../objects/tabcontrol.md), the Style property
-determines the appearance of its [TabButton](../objects/tabbutton.md) children, and may be `'Tabs'` (the default),
+determines the appearance of its [TabButton](../objects/tabbutton.md) children, and may be `'Tabs'` (the default),
 `'Buttons'` or `'FlatButtons'`.
 
 
@@ -164,7 +156,7 @@ specifies the behaviour of the button and may be `'Push'` (the default), `'Check
 
 
 For a [ToolControl](../objects/toolcontrol.md), the Style property
-determines the appearance of its [ToolButton](../objects/toolbutton.md) children and may be `'Buttons'`, `'FlatButtons'` (the default), `'List'` or `'FlatList'`.
+determines the appearance of its [ToolButton](../objects/toolbutton.md) children and may be `'Buttons'`, `'FlatButtons'` (the default), `'List'` or `'FlatList'`.
 
 
 For a [TrackBar](../objects/trackbar.md), the Style property

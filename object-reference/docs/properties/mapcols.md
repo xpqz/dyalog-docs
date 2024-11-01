@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MapCols</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[ImageList](../objects/imagelist.md)|
-
+**Applies To:** [ImageList](../objects/imagelist.md)
 
 **Description**
 
@@ -25,7 +18,7 @@ If MapCols is 1, the following colour mappings are performed:
 
 |Colour       |Description|Mapped to       |
 |-------------|-----------|----------------|
-|`0   0   0`  |Black      |Button Text     |
+|`0   0   0`  |Black      |Button Text     |
 |`128 128 128`|Dark grey  |Button Shadow   |
 |`191 191 191`|Light grey |Button Face     |
 |`192 192 192`|Light grey |Button Face     |

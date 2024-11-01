@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetFnInfo</span> <span class="command">Method 545</span></h1>
 
 
 
-|-----------|----------------------------------------------|------------------------------------|
-|Applies To:|[ActiveXControl](../objects/activexcontrol.md)|[OLEServer](../objects/oleserver.md)|
-
+**Applies To:** [ActiveXControl](../objects/activexcontrol.md), [OLEServer](../objects/oleserver.md)
 
 **Description**
 

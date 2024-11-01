@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BalloonTimeout</span> <span class="command">Event 863</span></h1>
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[SysTrayItem](../objects/systrayitem.md)|
-
+**Applies To:** [SysTrayItem](../objects/systrayitem.md)
 
 **Description**
 

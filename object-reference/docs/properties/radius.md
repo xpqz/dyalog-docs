@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Radius</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|--------------------------|
-|Applies To:|[Circle](../objects/circle.md)|[Rect](../objects/rect.md)|
-
+**Applies To:** [Circle](../objects/circle.md), [Rect](../objects/rect.md)
 
 **Description**
 

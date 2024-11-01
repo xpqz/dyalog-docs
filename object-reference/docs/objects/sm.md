@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SM</span> <span class="command">Object</span></h1>
 
 
 
-|-------------------------------|-------------------------------|--------------------------------|-------------------------------|-----------------------------|
-|[Parents](../parentlists/sm.md)|[Children](../childlists/sm.md)|[Properties](../proplists/sm.md)|[Methods](../methodlists/sm.md)|[Events](../eventlists/sm.md)|
+[Parents](../parentlists/sm.md), [Children](../childlists/sm.md), [Properties](../proplists/sm.md), [Methods](../methodlists/sm.md), [Events](../eventlists/sm.md)
 
 
-|--------|------------------------------------|
-|Purpose:|Defines a window for `⎕SM` / `⎕SR` .|
 
+**Purpose:** Defines a window for `⎕SM` / `⎕SR` .
 
 **Description**
 
@@ -56,6 +49,6 @@ The illustration shown below was produced as follows :
 ```
 
 
-![sm_example](../img/sm-example.png)
+![](../img/sm-example.png)
 
 

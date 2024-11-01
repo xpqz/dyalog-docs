@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CoolBar</span> <span class="command">Object</span></h1>
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/coolbar.md)|[Children](../childlists/coolbar.md)|[Properties](../proplists/coolbar.md)|[Methods](../methodlists/coolbar.md)|[Events](../eventlists/coolbar.md)|
+[Parents](../parentlists/coolbar.md), [Children](../childlists/coolbar.md), [Properties](../proplists/coolbar.md), [Methods](../methodlists/coolbar.md), [Events](../eventlists/coolbar.md)
 
 
-|--------|------------------------------------------------------------|
-|Purpose:|The CoolBar object acts as a container for CoolBand objects.|
 
+**Purpose:** The CoolBar object acts as a container for CoolBand objects.
 
 **Description**
 
@@ -23,7 +16,7 @@ an interface to Windows *Rebar Controls*
 
 
 
-A CoolBar contains one or more bands ([CoolBand](coolband.md) objects). Each band can have any combination of a gripper bar, a bitmap, a text
+A CoolBar contains one or more bands ([CoolBand](coolband.md) objects). Each band can have any combination of a gripper bar, a bitmap, a text
 label, and a single child object.
 
 
@@ -59,25 +52,25 @@ containing 2 CoolBands each of which is displaying a ToolControl object.
 ```
 
 
-![cool1](../img/cool1.gif)
+![](../img/cool1.gif)
 
 
 The CoolBar allows the user to organise the CoolBands within it as required. The next three pictures illustrate this feature.
 
 
-![cool1a](../img/cool1a.gif)
+![](../img/cool1a.gif)
 
 
 after user has moved band 2 into row 1
 
 
-![cool1b](../img/cool1b.gif)
+![](../img/cool1b.gif)
 
 
 after user has maximised band 1
 
 
-![cool1c](../img/cool1c.gif)
+![](../img/cool1c.gif)
 
 
 after user has maximised band 2
@@ -106,7 +99,7 @@ respectively.
 ```
 
 
-![cool2](../img/cool2.gif)
+![](../img/cool2.gif)
 
 
 The [VariableHeight](../properties/variableheight.md) property
@@ -121,18 +114,18 @@ whether or not narrow lines are drawn to separate adjacent bands. The default is
 
 The [DblClickToggle](../properties/dblclicktoggle.md) property
 specifies whether or not the user must single-click (the default) or
-double-click to toggle a child [CoolBand](coolband.md) between its maximised and minimised state.
+double-click to toggle a child [CoolBand](coolband.md) between its maximised and minimised state.
 
 
 The [FixedOrder](../properties/fixedorder.md) property specifies
-whether or not the CoolBar displays [CoolBands](coolband.md) in the same order. If [FixedOrder](../properties/fixedorder.md) is 1,
+whether or not the CoolBar displays [CoolBands](coolband.md) in the same order. If [FixedOrder](../properties/fixedorder.md) is 1,
 the user may move bands to different rows, but the band order is static. The
 default is 0. Note that when the user moves a CoolBand within a CoolBar, its
 Index and (potentially) [NewLine](../properties/newline.md) properties
 will change to reflect its new position.
 
 
-If you wish to display pictures in one or more of the [CoolBands](coolband.md) owned by a CoolBar, you do so by setting the [ImageListObj](../properties/imagelistobj.md) property to the name of an [ImageList](imagelist.md) object
-which contains the pictures. Pictures are allocated to individual [CoolBands](coolband.md) via their ImageIndex properties.
+If you wish to display pictures in one or more of the [CoolBands](coolband.md) owned by a CoolBar, you do so by setting the [ImageListObj](../properties/imagelistobj.md) property to the name of an [ImageList](imagelist.md) object
+which contains the pictures. Pictures are allocated to individual [CoolBands](coolband.md) via their ImageIndex properties.
 
 

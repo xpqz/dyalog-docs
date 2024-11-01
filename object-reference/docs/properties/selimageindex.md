@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SelImageIndex</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------|----------------------------------|
-|Applies To:|[ComboEx](../objects/comboex.md)|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [ComboEx](../objects/comboex.md), [TreeView](../objects/treeview.md)
 
 **Description**
 

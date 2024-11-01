@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Splitter</span> <span class="command">Example 4</span></h1>
 
 
@@ -15,10 +11,10 @@
 ```
 
 
-![split4](../img/split4.gif)
+![](../img/split4.gif)
 
 
-![split4a](../img/split4a.gif)
+![](../img/split4a.gif)
 
 
 After dragging the first Splitter to the left.

@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">EdgeStyle</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/edgestyle.md)
 
 **Description**
 
@@ -51,12 +43,12 @@ property is ignored. If EdgeStyle is `'Default'`,
 all controls are drawn using their default EdgeStyle properties.
 
 
-Note that [MsgBox](../objects/msgbox.md), [FileBox](../objects/filebox.md) and the set-up dialog box associated with the [Printer](../objects/printer.md) object are all drawn with 3-dimensional effects regardless of the value of
+Note that [MsgBox](../objects/msgbox.md), [FileBox](../objects/filebox.md) and the set-up dialog box associated with the [Printer](../objects/printer.md) object are all drawn with 3-dimensional effects regardless of the value of
 EdgeStyle on [Root](../objects/root.md). These objects do not have
 their own EdgeStyle properties.
 
 
-If you set EdgeStyle to `'None'` on the [Root](../objects/root.md) object, all your objects will (by default) be drawn without 3-dimensional
+If you set EdgeStyle to `'None'` on the [Root](../objects/root.md) object, all your objects will (by default) be drawn without 3-dimensional
 effects.
 
 

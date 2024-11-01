@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DockShowCaption</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|--------------------------------|
-|Applies To:|[Form](../objects/form.md)|[SubForm](../objects/subform.md)|
-
+**Applies To:** [Form](../objects/form.md), [SubForm](../objects/subform.md)
 
 **Description**
 
@@ -28,7 +21,7 @@ The DockShowCaption property may be toggled on and off by the user from the obje
 The first picture below illustrates a Form, docked as a SubForm, whose DockShowCaption property is 1, but is about to be set to 0.
 
 
-![dockeg20](../img/dockeg20.gif)
+![](../img/dockeg20.gif)
 
 
 
@@ -36,7 +29,7 @@ The first picture below illustrates a Form, docked as a SubForm, whose DockShowC
 The next picture shows the same docked Form with DockShowCaption set to 0.
 
 
-![dockeg21](../img/dockeg21.gif)
+![](../img/dockeg21.gif)
 
 
 

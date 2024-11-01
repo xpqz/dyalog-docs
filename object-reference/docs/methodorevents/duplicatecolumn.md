@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DuplicateColumn</span> <span class="command">Method 178</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -21,11 +14,11 @@ The argument to DuplicateColumn is a 2, 3, 4 or 5-element vector as follows:
 
 
 |-----|--------------------|-----------------------------------------------|
-|`[1]`|Source Column number|number of the column (integer) to be duplicated|
-|`[2]`|Target Column number|new column number (integer)                    |
-|`[3]`|Comment flag        |0 or 1 (optional, default 1)                   |
-|`[4]`|Lock flag           |0 or 1 (optional, default 1)                   |
-|`[5]`|Undo flag           |0 or 1 (optional; default 0)                   |
+|`[1]`|Source Column number|number of the column (integer) to be duplicated|
+|`[2]`|Target Column number|new column number (integer)                    |
+|`[3]`|Comment flag        |0 or 1 (optional, default 1)                   |
+|`[4]`|Lock flag           |0 or 1 (optional, default 1)                   |
+|`[5]`|Undo flag           |0 or 1 (optional; default 0)                   |
 
 
 If the *Comment flag* is 1 (the default), any Comments associated with cells in the source column are duplicated in the target column.

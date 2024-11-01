@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Circle</span> <span class="command">Object</span></h1>
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/circle.md)|[Children](../childlists/circle.md)|[Properties](../proplists/circle.md)|[Methods](../methodlists/circle.md)|[Events](../eventlists/circle.md)|
+[Parents](../parentlists/circle.md), [Children](../childlists/circle.md), [Properties](../proplists/circle.md), [Methods](../methodlists/circle.md), [Events](../eventlists/circle.md)
 
 
-|--------|---------------------------------------------------------|
-|Purpose:|A Graphical object to draw circles, arcs, and pie-slices.|
 
+**Purpose:** A Graphical object to draw circles, arcs, and pie-slices.
 
 **Description**
 

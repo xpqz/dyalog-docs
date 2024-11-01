@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">CBits</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------|------------------------------------|--------------------------|
-|Applies To:|[Bitmap](../objects/bitmap.md)|[Clipboard](../objects/clipboard.md)|[Icon](../objects/icon.md)|
-
+**Applies To:** [Bitmap](../objects/bitmap.md), [Clipboard](../objects/clipboard.md), [Icon](../objects/icon.md)
 
 **Description**
 

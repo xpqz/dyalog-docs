@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ProgressStyle</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[ProgressBar](../objects/progressbar.md)|
-
+**Applies To:** [ProgressBar](../objects/progressbar.md)
 
 **Description**
 
@@ -40,7 +33,7 @@ The pictures below illustrate the appearance of the different values of Progress
 
 
 
-![progressstyle normal](../img/progressstyle-normal.png)
+![](../img/progressstyle-normal.png)
 
 
 ProgressStyle Normal (the default)
@@ -48,7 +41,7 @@ ProgressStyle Normal (the default)
 
 
 
-![progressstyle smooth](../img/progressstyle-smooth.png)
+![](../img/progressstyle-smooth.png)
 
 
 ProgressStyle Smooth (Windows Classic Theme only)
@@ -56,7 +49,7 @@ ProgressStyle Smooth (Windows Classic Theme only)
 
 
 
-![progressstyle marquee](../img/progressstyle-marquee.png)
+![](../img/progressstyle-marquee.png)
 
 
 

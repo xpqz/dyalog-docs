@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HTTPRequest</span> <span class="command">Event 840</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 
@@ -79,9 +72,7 @@ For a complete list of media/MIME types, see:
 <head>
 <Title>HTTPRequest Example</Title>
 </head>
-<body>
-
-<h1>Simple Form</h1>
+<body><h1>Simple Form</h1>
 
 <form action="Hello">
   First name:<br>
@@ -132,9 +123,9 @@ Requested URL is: http://dyalog_root/Hello?firstname=Mickey&lastname=Mouse
 ```
 
 
-![httprequest1](../img/httprequest1.png)
+![](../img/httprequest1.png)
 
 
-![httprequest2](../img/httprequest2.png)
+![](../img/httprequest2.png)
 
 

@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Image</span> <span class="command">Object</span></h1>
 
 
 
-|----------------------------------|----------------------------------|-----------------------------------|----------------------------------|--------------------------------|
-|[Parents](../parentlists/image.md)|[Children](../childlists/image.md)|[Properties](../proplists/image.md)|[Methods](../methodlists/image.md)|[Events](../eventlists/image.md)|
+[Parents](../parentlists/image.md), [Children](../childlists/image.md), [Properties](../proplists/image.md), [Methods](../methodlists/image.md), [Events](../eventlists/image.md)
 
 
-|--------|---------------------------------------------|
-|Purpose:|Positions bitmaps and icons within an object.|
 
+**Purpose:** Positions bitmaps and icons within an object.
 
 **Description**
 

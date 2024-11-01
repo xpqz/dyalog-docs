@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabBtn</span> <span class="command">Object</span></h1>
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/tabbtn.md)|[Children](../childlists/tabbtn.md)|[Properties](../proplists/tabbtn.md)|[Methods](../methodlists/tabbtn.md)|[Events](../eventlists/tabbtn.md)|
+[Parents](../parentlists/tabbtn.md), [Children](../childlists/tabbtn.md), [Properties](../proplists/tabbtn.md), [Methods](../methodlists/tabbtn.md), [Events](../eventlists/tabbtn.md)
 
 
-|--------|--------------------------------|
-|Purpose:|To tab a [SubForm](subform.md) .|
 
+**Purpose:** To tab a [SubForm](subform.md) .
 
 **Description**
 

@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MenuItem</span> <span class="command">Object</span></h1>
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/menuitem.md)|[Children](../childlists/menuitem.md)|[Properties](../proplists/menuitem.md)|[Methods](../methodlists/menuitem.md)|[Events](../eventlists/menuitem.md)|
+[Parents](../parentlists/menuitem.md), [Children](../childlists/menuitem.md), [Properties](../proplists/menuitem.md), [Methods](../methodlists/menuitem.md), [Events](../eventlists/menuitem.md)
 
 
-|--------|-------------------------------------------------------------------------------------|
-|Purpose:|This object allows the user to initiate an action or to select an option from a menu.|
 
+**Purpose:** This object allows the user to initiate an action or to select an option from a menu.
 
 **Description**
 

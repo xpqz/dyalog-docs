@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PageApply</span> <span class="command">Event 350</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[PropertyPage](../objects/propertypage.md)|
-
+**Applies To:** [PropertyPage](../objects/propertypage.md)
 
 **Description**
 

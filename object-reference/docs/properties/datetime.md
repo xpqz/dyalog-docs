@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DateTime</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------------------|
-|Applies To:|[DateTimePicker](../objects/datetimepicker.md)|
-
+**Applies To:** [DateTimePicker](../objects/datetimepicker.md)
 
 **Description**
 

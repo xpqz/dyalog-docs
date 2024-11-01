@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Bitmap</span> <span class="command">Object</span></h1>
 
 
 
-|-----------------------------------|-----------------------------------|------------------------------------|-----------------------------------|---------------------------------|
-|[Parents](../parentlists/bitmap.md)|[Children](../childlists/bitmap.md)|[Properties](../proplists/bitmap.md)|[Methods](../methodlists/bitmap.md)|[Events](../eventlists/bitmap.md)|
+[Parents](../parentlists/bitmap.md), [Children](../childlists/bitmap.md), [Properties](../proplists/bitmap.md), [Methods](../methodlists/bitmap.md), [Events](../eventlists/bitmap.md)
 
 
-|--------|---------------------------------------------------------------------------------------------------------------------------------------------|
-|Purpose:|A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects.|
 
+**Purpose:** A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects.
 
 **Description**
 

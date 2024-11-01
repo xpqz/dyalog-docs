@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MultiLine</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------------|----------------------------------------|
-|Applies To:|[TabControl](../objects/tabcontrol.md)|[ToolControl](../objects/toolcontrol.md)|
-
+**Applies To:** [TabControl](../objects/tabcontrol.md), [ToolControl](../objects/toolcontrol.md)
 
 **Description**
 

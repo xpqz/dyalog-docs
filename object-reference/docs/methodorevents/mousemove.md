@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MouseMove</span> <span class="command">Event 3</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/mousemove.md)
 
 **Description**
 

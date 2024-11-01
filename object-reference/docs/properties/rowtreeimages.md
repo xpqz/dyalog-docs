@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RowTreeImages</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -42,6 +35,6 @@ The Bitmap specified by the 3<sup>rd</sup> element of RowTreeImages is used to d
 ```
 
 
-![gridtree11](../img/gridtree11.gif)
+![](../img/gridtree11.gif)
 
 

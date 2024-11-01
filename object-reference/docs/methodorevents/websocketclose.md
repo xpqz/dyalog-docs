@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">WebSocketClose</span> <span class="command">Event 843</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 

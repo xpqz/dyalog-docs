@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowCueWhenFocused</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------------|--------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Edit](../objects/edit.md)|
-
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md)
 
 **Description**
 

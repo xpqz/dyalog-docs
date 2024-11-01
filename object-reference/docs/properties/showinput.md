@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowInput</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -25,7 +18,7 @@ The ShowInput property is either a single Boolean value that applies to all the 
 The example below illustrates the appearance of a [Grid](../objects/grid.md) in which ShowInput is set to 0 for the Job Title column and 1 for the Region and Permanent columns.
 
 
-![show1](../img/show1.gif)
+![](../img/show1.gif)
 
 
 
@@ -33,7 +26,7 @@ The example below illustrates the appearance of a [Grid](../objects/grid.md) in 
 The appearance of the same [Grid](../objects/grid.md) but with ShowInput set to 0 throughout is illustrated below:
 
 
-![show2](../img/show2.gif)
+![](../img/show2.gif)
 
 
 

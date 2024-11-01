@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Locator</span> <span class="command">Event 80</span></h1>
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[Locator](../objects/locator.md)|
-
+**Applies To:** [Locator](../objects/locator.md)
 
 **Description**
 
@@ -27,9 +20,9 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |`[4]`|X           |x-position of [Locator](../objects/locator.md) after [`⎕DQ`](../../../language-reference-guide/system-functions/dq)|
 |`[5]`|H           |height of [Locator](../objects/locator.md) after [`⎕DQ`](../../../language-reference-guide/system-functions/dq)    |
 |`[6]`|W           |width of [Locator](../objects/locator.md) after [`⎕DQ`](../../../language-reference-guide/system-functions/dq)     |
-|`[7]`|Mouse Button|number of the button which was released (0 if keystroke)                                                           |
+|`[7]`|Mouse Button|number of the button which was released (0 if keystroke)                                                           |
 |`[8]`|Keystroke   |character scalar or vector containing the "Input Code" for the key that terminated the operation                   |
-|`[9]`|Shift state |integer scalar                                                                                                     |
+|`[9]`|Shift state |integer scalar                                                                                                     |
 
 
 

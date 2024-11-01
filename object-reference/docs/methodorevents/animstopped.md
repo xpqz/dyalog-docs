@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">AnimStopped</span> <span class="command">Event 295</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[Animation](../objects/animation.md)|
-
+**Applies To:** [Animation](../objects/animation.md)
 
 **Description**
 

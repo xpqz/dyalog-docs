@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FCol</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/fcol.md)
 
 **Description**
 
@@ -71,7 +63,7 @@ colour. For a [Static](../objects/static.md) object however, FCol
 specifies the colour of its border.
 
 
-For the [Ellipse](../objects/ellipse.md), [Poly](../objects/poly.md) and [Rect](../objects/rect.md) objects, FCol specifies the colour of
+For the [Ellipse](../objects/ellipse.md), [Poly](../objects/poly.md) and [Rect](../objects/rect.md) objects, FCol specifies the colour of
 the line drawn around the perimeter of the object. If a dashed or dotted line is
 used ([LStyle](lstyle.md) 1-4) the "gaps" in
 the line are drawn using the colour specified by [BCol](bcol.md),
@@ -80,7 +72,7 @@ For the [Marker](../objects/marker.md) object, FCol specifies the
 colour in which the markers are drawn. For the graphics objects [Ellipse](../objects/ellipse.md),
 [Poly](../objects/poly.md), [Rect](../objects/rect.md) and [Text](../objects/text.md),
 FCol may be a vector of 3-element vectors specifying a set of colours for the
-constituent parts of the object. For example, a [Poly](../objects/poly.md) object consisting of four polygons, may have a FCol property of four 3-element
-vectors. In addition, for graphics objects, FCol is used in place of [FillCol](fillcol.md) if the latter is not specified.
+constituent parts of the object. For example, a [Poly](../objects/poly.md) object consisting of four polygons, may have a FCol property of four 3-element
+vectors. In addition, for graphics objects, FCol is used in place of [FillCol](fillcol.md) if the latter is not specified.
 
 

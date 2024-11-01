@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GridLineWidth</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 

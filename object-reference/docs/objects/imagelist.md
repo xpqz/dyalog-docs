@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ImageList</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/imagelist.md)|[Children](../childlists/imagelist.md)|[Properties](../proplists/imagelist.md)|[Methods](../methodlists/imagelist.md)|[Events](../eventlists/imagelist.md)|
+[Parents](../parentlists/imagelist.md), [Children](../childlists/imagelist.md), [Properties](../proplists/imagelist.md), [Methods](../methodlists/imagelist.md), [Events](../eventlists/imagelist.md)
 
 
-|--------|----------------------------------------------------------|
-|Purpose:|The ImageList object represents a set of bitmapped images.|
 
+**Purpose:** The ImageList object represents a set of bitmapped images.
 
 **Description**
 

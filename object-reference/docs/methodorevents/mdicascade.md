@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDICascade</span> <span class="command">Method 110</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[MDIClient](../objects/mdiclient.md)|
-
+**Applies To:** [MDIClient](../objects/mdiclient.md)
 
 **Description**
 

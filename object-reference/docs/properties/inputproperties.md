@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">InputProperties</span> <span class="command">Property</span></h1>
 
 

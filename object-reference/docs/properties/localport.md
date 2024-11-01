@@ -1,30 +1,23 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">LocalPort</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[TCPSocket](../objects/tcpsocket.md)|
-
+**Applies To:** [TCPSocket](../objects/tcpsocket.md)
 
 **Description**
 
 
 The LocalPort property is a scalar integer in the range 1-65536 that
 identifies the [port number](../miscellaneous/port-number.md) associated with a [TCPSocket](../objects/tcpsocket.md)
- object.
+ object.
 
 
 
 Note that you may use *either* LocalPort *or* [LocalPortName](localportname.md)
- to identify the service. The use of [LocalPortName](localportname.md)
- is slightly slower but it avoids hard-coding the port number in your program and
+ to identify the service. The use of [LocalPortName](localportname.md)
+ is slightly slower but it avoids hard-coding the port number in your program and
 is generally more flexible. If you specify both properties, the value of [LocalPortName](localportname.md)
- will be ignored.
+ will be ignored.
 
 
 LocalPort may be specified only by the process that is initiating the

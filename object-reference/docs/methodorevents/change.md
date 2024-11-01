@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">Change</span> <span class="command">Event 36</span></h1>
 
 
 
-|-----------|--------------------------------------|----------------------------|--------------------------|----------------------------------|--------------------------------|
-|Applies To:|[ButtonEdit](../objects/buttonedit.md)|[Combo](../objects/combo.md)|[Edit](../objects/edit.md)|[RichEdit](../objects/richedit.md)|[Spinner](../objects/spinner.md)|
-
+**Applies To:** [ButtonEdit](../objects/buttonedit.md), [Combo](../objects/combo.md), [Edit](../objects/edit.md), [RichEdit](../objects/richedit.md), [Spinner](../objects/spinner.md)
 
 **Description**
 
@@ -28,7 +22,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|-----------|-----------------------------------------------------------------------------------|
 |`[1]`|Object     |ref or character vector                                                            |
 |`[2]`|Event      |`'Change'` or 36                                                                   |
-|`[3]`|Object name|character vector (name of object that is to receive the focus or generate an event)|
+|`[3]`|Object name|character vector (name of object that is to receive the focus or generate an event)|
 
 
 If the focus is transferred to an external application, the third element is an empty vector.

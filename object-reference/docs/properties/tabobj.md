@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabObj</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------|------------------------------|------------------------------|------------------------------------|--------------------------------------|
-|Applies To:|[SubForm](../objects/subform.md)|[TabBar](../objects/tabbar.md)|[TabBtn](../objects/tabbtn.md)|[TabButton](../objects/tabbutton.md)|[TabControl](../objects/tabcontrol.md)|
-
+**Applies To:** [SubForm](../objects/subform.md), [TabBar](../objects/tabbar.md), [TabBtn](../objects/tabbtn.md), [TabButton](../objects/tabbutton.md), [TabControl](../objects/tabcontrol.md)
 
 **Description**
 

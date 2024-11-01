@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ComboEx</span> <span class="command">Object</span></h1>
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/comboex.md)|[Children](../childlists/comboex.md)|[Properties](../proplists/comboex.md)|[Methods](../methodlists/comboex.md)|[Events](../eventlists/comboex.md)|
+[Parents](../parentlists/comboex.md), [Children](../childlists/comboex.md), [Properties](../proplists/comboex.md), [Methods](../methodlists/comboex.md), [Events](../eventlists/comboex.md)
 
 
-|--------|---------------------------------------------------------------------------------------------------------------------|
-|Purpose:|The ComboEx object is an extended version of the Combo object that provides additional features including item images|
 
+**Purpose:** The ComboEx object is an extended version of the Combo object that provides additional features including item images
 
 **Description**
 

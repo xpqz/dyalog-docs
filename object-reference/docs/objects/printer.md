@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Printer</span> <span class="command">Object</span></h1>
 
 
 
-|------------------------------------|------------------------------------|-------------------------------------|------------------------------------|----------------------------------|
-|[Parents](../parentlists/printer.md)|[Children](../childlists/printer.md)|[Properties](../proplists/printer.md)|[Methods](../methodlists/printer.md)|[Events](../eventlists/printer.md)|
+[Parents](../parentlists/printer.md), [Children](../childlists/printer.md), [Properties](../proplists/printer.md), [Methods](../methodlists/printer.md), [Events](../eventlists/printer.md)
 
 
-|--------|--------------------------|
-|Purpose:|To provide printer output.|
 
+**Purpose:** To provide printer output.
 
 **Description**
 

@@ -1,0 +1,4 @@
+<h1 class="heading"><span class="name">CaseSensitive Property</span></h1>
+
+|--------------------------------|------|------|
+|[ComboEx](../objects/comboex.md)|&nbsp;|&nbsp;|

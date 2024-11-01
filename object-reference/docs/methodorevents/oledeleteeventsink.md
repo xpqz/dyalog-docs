@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">OLEDeleteEventSink</span> <span class="command">Method 541</span></h1>
 
 
 
-|-----------|----------------------------------|------------------------------------|
-|Applies To:|[OCXClass](../objects/ocxclass.md)|[OLEClient](../objects/oleclient.md)|
-
+**Applies To:** [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md)
 
 **Description**
 

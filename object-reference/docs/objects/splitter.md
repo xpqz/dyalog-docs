@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Splitter</span> <span class="command">Object</span></h1>
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/splitter.md)|[Children](../childlists/splitter.md)|[Properties](../proplists/splitter.md)|[Methods](../methodlists/splitter.md)|[Events](../eventlists/splitter.md)|
+[Parents](../parentlists/splitter.md), [Children](../childlists/splitter.md), [Properties](../proplists/splitter.md), [Methods](../methodlists/splitter.md), [Events](../eventlists/splitter.md)
 
 
-|--------|-------------------------------------------------------------|
-|Purpose:|The Splitter object divides a container into resizable panes.|
 
+**Purpose:** The Splitter object divides a container into resizable panes.
 
 **Description**
 

@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Edit</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/edit.md)|[Children](../childlists/edit.md)|[Properties](../proplists/edit.md)|[Methods](../methodlists/edit.md)|[Events](../eventlists/edit.md)|
+[Parents](../parentlists/edit.md), [Children](../childlists/edit.md), [Properties](../proplists/edit.md), [Methods](../methodlists/edit.md), [Events](../eventlists/edit.md)
 
 
-|--------|----------------------------------|
-|Purpose:|Allows user to enter or edit data.|
 
+**Purpose:** Allows user to enter or edit data.
 
 **Description**
 
@@ -56,7 +49,7 @@ The [HScroll](../properties/hscroll.md) property determines whether or not the d
 If the [Style](../properties/style.md) is `'Multi'`, [Text](../properties/text.md) may set using a simple character vector, a simple matrix, or a vector of vectors. If  [Text](../properties/text.md) is specified by a matrix or by a vector of vectors, "new-line" characters are automatically added at the end of each line in the Edit control.
 
 
-The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../properties/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../properties/text.md) was not specified  by [`⎕WC`](../../../language-reference-guide/system-functions/wc) or  [`⎕WS`](../../../language-reference-guide/system-functions/ws) it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](../properties/text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
+The user may insert a "new-line" character in the text by pressing Ctrl-Enter. If [Text](../properties/text.md) was set by a matrix, it is returned as a matrix. Otherwise it is returned as a vector of vectors. "New-line" characters are not returned. If [Text](../properties/text.md) was not specified  by [`⎕WC`](../../../language-reference-guide/system-functions/wc) or  [`⎕WS`](../../../language-reference-guide/system-functions/ws) it is returned  an empty matrix (`1 0⍴''`). However,  if [Text](../properties/text.md) was not specified, but the user types and then empties the field, it is returned as an empty nested array  (`,⊂''`)
 
 
 The [Justify](../properties/justify.md) property determines whether the text in a multi-line Edit object is `'Left'`, `'Right'`, or `'Centre'` justified. Setting [Justify](../properties/justify.md) to `'Centre'` or `'Right'` also forces word-wrapping and disables horizontal scrolling, whatever the value of [HScroll](../properties/hscroll.md). Note that the keyword `'Centre'` may also be spelled `'Center'`. [Justify](../properties/justify.md) may only be specified when the object is created using `⎕WC`.

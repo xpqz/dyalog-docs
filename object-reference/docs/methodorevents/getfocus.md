@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetFocus</span> <span class="command">Method 511</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/getfocus.md)
 
 **Description**
 

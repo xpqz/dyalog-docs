@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">AutoPlay</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|
-|Applies To:|[Animation](../objects/animation.md)|
-
+**Applies To:** [Animation](../objects/animation.md)
 
 **Description**
 

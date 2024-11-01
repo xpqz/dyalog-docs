@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GridPasteError</span> <span class="command">Event 194</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -32,7 +25,7 @@ vector as follows:
 |`[1]`|Object|ref or character vector|
 |`[2]`|Event|`'GridPasteError'` or 194|
 |`[3]`|Values|Contents of the clipboard.|
-|`[4]`|CellSet flags|Boolean array indicating which elements of the clipboard data are         empty.|
+|`[4]`|CellSet flags|Boolean array indicating which elements of the clipboard data are         empty.|
 |`[5]`|Start|2-element integer vector containing the row, column address of the top         left cell in the selected block. If there is no selection, this is the         address of the current cell (CurCell).|
 |`[6]`|End|2-element integer vector containing the row, column address of the         bottom right cell in the selected block. If there is no selection, this         is the address of the bottom right cell of the block starting at the         current cell that will be overwritten|
 |`[7]`|Error Number|`4 (RANK ERROR)` or `5         (LENGTH ERROR)`|

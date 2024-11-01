@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabJustify</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------------|
-|Applies To:|[TabControl](../objects/tabcontrol.md)|
-
+**Applies To:** [TabControl](../objects/tabcontrol.md)
 
 **Description**
 
@@ -25,7 +18,7 @@ TabJustify is a character vector that may be `'Centre'`, `'Edge'`, or `'IconEdge
 If TabJustify is `'Centre'`, the picture and caption are arranged in the centre of the [TabButton](../objects/tabbutton.md).
 
 
-![tab13](../img/tab13.gif)
+![](../img/tab13.gif)
 
 
 
@@ -33,7 +26,7 @@ If TabJustify is `'Centre'`, the picture and caption are arranged in the centre 
 If TabJustify is `'Edge'`, the picture and caption are together aligned to  the appropriate edge of the [TabButton](../objects/tabbutton.md) according to the value of Align.
 
 
-![tab14](../img/tab14.gif)
+![](../img/tab14.gif)
 
 
 
@@ -41,7 +34,7 @@ If TabJustify is `'Edge'`, the picture and caption are together aligned to  the 
 If TabJustify is set to `'IconEdge'`, the caption is drawn centrally and only picture is aligned to the edge.
 
 
-![tab15](../img/tab15.gif)
+![](../img/tab15.gif)
 
 
 

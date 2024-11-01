@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CloseUp</span> <span class="command">Event 46</span></h1>
 
 
 
-|-----------|----------------------------------------------|
-|Applies To:|[DateTimePicker](../objects/datetimepicker.md)|
-
+**Applies To:** [DateTimePicker](../objects/datetimepicker.md)
 
 **Description**
 

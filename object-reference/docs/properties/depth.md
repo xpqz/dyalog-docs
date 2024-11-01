@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Depth</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[TreeView](../objects/treeview.md)|
-
+**Applies To:** [TreeView](../objects/treeview.md)
 
 **Description**
 
@@ -51,7 +44,7 @@ For example:
 ```
 
 
-![tv1](../img/tv1.gif)
+![](../img/tv1.gif)
 
 
 

@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Animation</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/animation.md)|[Children](../childlists/animation.md)|[Properties](../proplists/animation.md)|[Methods](../methodlists/animation.md)|[Events](../eventlists/animation.md)|
+[Parents](../parentlists/animation.md), [Children](../childlists/animation.md), [Properties](../proplists/animation.md), [Methods](../methodlists/animation.md), [Events](../eventlists/animation.md)
 
 
-|--------|-----------------------------------------------------------------------------------|
-|Purpose:|The Animation object displays simple animations from basic .AVI files or resources.|
 
+**Purpose:** The Animation object displays simple animations from basic .AVI files or resources.
 
 **Description**
 

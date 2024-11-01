@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">User Datagram Protocol (UDP)</span></h1>
 
 

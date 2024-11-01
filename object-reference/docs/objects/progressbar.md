@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ProgressBar</span> <span class="command">Object</span></h1>
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/progressbar.md)|[Children](../childlists/progressbar.md)|[Properties](../proplists/progressbar.md)|[Methods](../methodlists/progressbar.md)|[Events](../eventlists/progressbar.md)|
+[Parents](../parentlists/progressbar.md), [Children](../childlists/progressbar.md), [Properties](../proplists/progressbar.md), [Methods](../methodlists/progressbar.md), [Events](../eventlists/progressbar.md)
 
 
-|--------|-------------------------------------------------------------------------------|
-|Purpose:|The ProgressBar object is used to indicate the progress of a lengthy operation.|
 
+**Purpose:** The ProgressBar object is used to indicate the progress of a lengthy operation.
 
 **Description**
 

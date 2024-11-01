@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BCol</span> <span class="command">Property</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../propertyapplies/bcol.md)
 
 **Description**
 
@@ -27,10 +19,10 @@ terms of its red, green and blue intensities.
 If BCol is set to 0 (which is the default) the background colour is defined by your
 current colour scheme for the object in question. For example, if you select
 yellow as your MS-Windows "Menu Bar" colour, you will by default get a
-yellow background in [Menu](../objects/menu.md) and [MenuItem](../objects/menuitem.md) objects, simply by not specifying BCol or by setting it to 0.
+yellow background in [Menu](../objects/menu.md) and [MenuItem](../objects/menuitem.md) objects, simply by not specifying BCol or by setting it to 0.
 
 
-If BCol is set to `⍬` (Zilde), Dyalog APL will never paint the background of the object. If therefore the object is overlaid by another window and then exposed, its background will not be redrawn and it will simply contain whatever was previously shown on that area of the screen.
+If BCol is set to `⍬` (Zilde), Dyalog APL will never paint the background of the object. If therefore the object is overlaid by another window and then exposed, its background will not be redrawn and it will simply contain whatever was previously shown on that area of the screen.
 
 
 
@@ -64,14 +56,14 @@ adapter and driver, and the current Windows colour map.
 
 
 For a [Button](../objects/button.md), BCol is only effective if the
-[Style](style.md) is `'Radio'` or `'Check'` and is ignored if the [Style](style.md) is `'Push'`.
+[Style](style.md) is `'Radio'` or `'Check'` and is ignored if the [Style](style.md) is `'Push'`.
 
 
-It is recommended that you only use **pure** background colours in [Combo](../objects/combo.md) and [Edit](../objects/edit.md) objects. This is because the text
+It is recommended that you only use **pure** background colours in [Combo](../objects/combo.md) and [Edit](../objects/edit.md) objects. This is because the text
 written in these objects cannot itself have a dithered background.
 
 
-For the [Ellipse](../objects/ellipse.md), [Poly](../objects/poly.md) and [Rect](../objects/rect.md) objects, BCol specifies the background
+For the [Ellipse](../objects/ellipse.md), [Poly](../objects/poly.md) and [Rect](../objects/rect.md) objects, BCol specifies the background
 colour of the line drawn around the perimeter of the object and is effective
 only when a non-solid line ([LStyle](lstyle.md) 1-4) is
 used. It also specifies the colour used to fill the spaces between hatch lines

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Interval</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|----------------------------------------|----------------------------|
-|Applies To:|[ProgressBar](../objects/progressbar.md)|[Timer](../objects/timer.md)|
-
+**Applies To:** [ProgressBar](../objects/progressbar.md), [Timer](../objects/timer.md)
 
 **Description**
 

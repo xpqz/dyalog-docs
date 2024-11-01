@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HAlign</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Text](../objects/text.md)|
-
+**Applies To:** [Text](../objects/text.md)
 
 **Description**
 

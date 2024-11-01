@@ -11,7 +11,7 @@
 |[HScroll](../properties/hscroll.md)                |[SelItems](../properties/selitems.md)            |[SelText](../properties/seltext.md)        |
 |[Sizeable](../properties/sizeable.md)              |[Dragable](../properties/dragable.md)            |[FontObj](../properties/fontobj.md)        |
 |[FCol](../properties/fcol.md)                      |[BCol](../properties/bcol.md)                    |[CursorObj](../properties/cursorobj.md)    |
-|[AutoConf](../properties/autoconf.md)              |[Index](../properties/index.md)                  |[Data](../properties/data.md)              |
+|[AutoConf](../properties/autoconf.md)              |[Index](../properties/index-property.md)                  |[Data](../properties/data.md)              |
 |[Attach](../properties/attach.md)                  |[EdgeStyle](../properties/edgestyle.md)          |[Handle](../properties/handle.md)          |
 |[Hint](../properties/hint.md)                      |[HintObj](../properties/hintobj.md)              |[Tip](../properties/tip.md)                |
 |[TipObj](../properties/tipobj.md)                  |[Translate](../properties/translate.md)          |[Accelerator](../properties/accelerator.md)|

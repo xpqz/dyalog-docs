@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">ProgressStep</span> <span class="command">Method 250</span></h1>
 
 
 
-|-----------|----------------------------------------|
-|Applies To:|[ProgressBar](../objects/progressbar.md)|
-
+**Applies To:** [ProgressBar](../objects/progressbar.md)
 
 **Description**
 

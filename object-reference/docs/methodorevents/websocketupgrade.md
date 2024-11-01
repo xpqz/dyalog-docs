@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">WebSocketUpgrade</span> <span class="command">Event 841</span></h1>
 
 
 
-|-----------|------------------------------------------|
-|Applies To:|[HTMLRenderer](../objects/htmlrenderer.md)|
-
+**Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
 
 **Description**
 

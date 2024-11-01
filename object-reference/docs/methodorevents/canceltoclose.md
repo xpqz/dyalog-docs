@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CancelToClose</span> <span class="command">Method 367</span></h1>
 
 
 
-|-----------|--------------------------------------------|
-|Applies To:|[PropertySheet](../objects/propertysheet.md)|
-
+**Applies To:** [PropertySheet](../objects/propertysheet.md)
 
 **Description**
 

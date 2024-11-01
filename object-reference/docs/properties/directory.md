@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Directory</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------------|
-|Applies To:|[FileBox](../objects/filebox.md)|
-
+**Applies To:** [FileBox](../objects/filebox.md)
 
 **Description**
 

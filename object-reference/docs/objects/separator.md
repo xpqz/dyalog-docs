@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Separator</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/separator.md)|[Children](../childlists/separator.md)|[Properties](../proplists/separator.md)|[Methods](../methodlists/separator.md)|[Events](../eventlists/separator.md)|
+[Parents](../parentlists/separator.md), [Children](../childlists/separator.md), [Properties](../proplists/separator.md), [Methods](../methodlists/separator.md), [Events](../eventlists/separator.md)
 
 
-|--------|---------------------------------------------------------------|
-|Purpose:|A horizontal or vertical line used to separate items in a menu.|
 
+**Purpose:** A horizontal or vertical line used to separate items in a menu.
 
 **Description**
 

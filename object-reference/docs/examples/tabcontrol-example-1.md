@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">TabControl</span> <span class="command">Example 1</span></h1>
 
 
@@ -31,7 +27,7 @@ icodir←(2 ⎕NQ'.' 'GetEnvironment' 'Dyalog'),'\ws\'
 ```
 
 
-![tab1](../img/tab1.gif)
+![](../img/tab1.gif)
 
 
 

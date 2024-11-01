@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Calendar</span> <span class="command">Object</span></h1>
 
 
 
-|-------------------------------------|-------------------------------------|--------------------------------------|-------------------------------------|-----------------------------------|
-|[Parents](../parentlists/calendar.md)|[Children](../childlists/calendar.md)|[Properties](../proplists/calendar.md)|[Methods](../methodlists/calendar.md)|[Events](../eventlists/calendar.md)|
+[Parents](../parentlists/calendar.md), [Children](../childlists/calendar.md), [Properties](../proplists/calendar.md), [Methods](../methodlists/calendar.md), [Events](../eventlists/calendar.md)
 
 
-|--------|-----------------------------------------------------------------------|
-|Purpose:|The Calendar object provides an interface to the Month Calendar Control|
 
+**Purpose:** The Calendar object provides an interface to the Month Calendar Control
 
 **Description**
 
@@ -22,7 +15,7 @@ The Calendar object displays a calendar and allows the user to select a date or 
 
 
 
-![cal1](../img/cal1.gif)
+![](../img/cal1.gif)
 
 
 The Calendar object will display as many full months as it can fit into the area specified by its Size property as shown below. The minimum size required to encompass a single month may be obtained using the [GetMinSize](../methodorevents/getminsize.md) method.
@@ -32,7 +25,7 @@ The Calendar object will display as many full months as it can fit into the area
 ```
 
 
-![cal2](../img/cal2.gif)
+![](../img/cal2.gif)
 
 
 The [Today](../properties/today.md) property is an [IDN](../miscellaneous/international-day-number.md) that specifies the current day. Its default value is today's date, that is, the local date set on your computer.
@@ -54,7 +47,7 @@ The following example shows a Calendar with both [CircleToday](../properties/cir
 ```
 
 
-![cal3](../img/cal3.gif)
+![](../img/cal3.gif)
 
 
 The [FirstDay](../properties/firstday.md) property is an integer whose value is in the range 0-6. [FirstDay](../properties/firstday.md) specifies the day that is considered to be the first day of the week and which appears first in the Calendar. The default value for [FirstDay](../properties/firstday.md) depends upon your International Settings.

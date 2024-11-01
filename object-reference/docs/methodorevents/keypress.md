@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">KeyPress</span> <span class="command">Event 22</span></h1>
 
-
-
-**Applies To**
-
+[**Applies To**](../methodoreventapplies/keypress.md)
 
 **Description**
 

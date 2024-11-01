@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Clipboard</span> <span class="command">Object</span></h1>
 
 
 
-|--------------------------------------|--------------------------------------|---------------------------------------|--------------------------------------|------------------------------------|
-|[Parents](../parentlists/clipboard.md)|[Children](../childlists/clipboard.md)|[Properties](../proplists/clipboard.md)|[Methods](../methodlists/clipboard.md)|[Events](../eventlists/clipboard.md)|
+[Parents](../parentlists/clipboard.md), [Children](../childlists/clipboard.md), [Properties](../proplists/clipboard.md), [Methods](../methodlists/clipboard.md), [Events](../eventlists/clipboard.md)
 
 
-|--------|-----------------------------------------------------|
-|Purpose:|This object provides access to the Windows clipboard.|
 
+**Purpose:** This object provides access to the Windows clipboard.
 
 **Description**
 

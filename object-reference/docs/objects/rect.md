@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Rect</span> <span class="command">Object</span></h1>
 
 
 
-|---------------------------------|---------------------------------|----------------------------------|---------------------------------|-------------------------------|
-|[Parents](../parentlists/rect.md)|[Children](../childlists/rect.md)|[Properties](../proplists/rect.md)|[Methods](../methodlists/rect.md)|[Events](../eventlists/rect.md)|
+[Parents](../parentlists/rect.md), [Children](../childlists/rect.md), [Properties](../proplists/rect.md), [Methods](../methodlists/rect.md), [Events](../eventlists/rect.md)
 
 
-|--------|--------------------------------------|
-|Purpose:|A graphical object used to draw boxes.|
 
+**Purpose:** A graphical object used to draw boxes.
 
 **Description**
 

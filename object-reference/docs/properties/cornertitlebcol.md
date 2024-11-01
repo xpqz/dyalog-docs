@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CornerTitleBCol</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|--------------------------|
-|Applies To:|[Grid](../objects/grid.md)|
-
+**Applies To:** [Grid](../objects/grid.md)
 
 **Description**
 
@@ -25,7 +18,7 @@ CornerTitleBCol may be a 3-element vector of integer values  in the range 0-255 
 ```
 
 
-![cornertitlebcol](../img/cornertitlebcol.png)
+![](../img/cornertitlebcol.png)
 
 
 

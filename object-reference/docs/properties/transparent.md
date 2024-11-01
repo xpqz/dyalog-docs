@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Transparent</span> <span class="command">Property</span></h1>
 
 
 
-|-----------|------------------------------------|--------------------------------------|----------------------------------------|
-|Applies To:|[Animation](../objects/animation.md)|[ButtonEdit](../objects/buttonedit.md)|[ToolControl](../objects/toolcontrol.md)|
-
+**Applies To:** [Animation](../objects/animation.md), [ButtonEdit](../objects/buttonedit.md), [ToolControl](../objects/toolcontrol.md)
 
 **Description**
 
@@ -23,7 +16,7 @@ Transparent is a single number with the value 0 (the default) or 1.
 If Transparent is 1, the visual effect is as if the [ToolButtons](../objects/toolbutton.md) (and other controls owned by the [ToolControl](../objects/toolcontrol.md)) were drawn directly on the parent Form as illustrated below.
 
 
-![tool8](../img/tool8.gif)
+![](../img/tool8.gif)
 
 
 

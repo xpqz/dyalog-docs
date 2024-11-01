@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SelDateChange</span> <span class="command">Event 265</span></h1>
 
 
 
-|-----------|----------------------------------|
-|Applies To:|[Calendar](../objects/calendar.md)|
-
+**Applies To:** [Calendar](../objects/calendar.md)
 
 **Description**
 

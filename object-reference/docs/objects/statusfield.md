@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">StatusField</span> <span class="command">Object</span></h1>
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/statusfield.md)|[Children](../childlists/statusfield.md)|[Properties](../proplists/statusfield.md)|[Methods](../methodlists/statusfield.md)|[Events](../eventlists/statusfield.md)|
+[Parents](../parentlists/statusfield.md), [Children](../childlists/statusfield.md), [Properties](../proplists/statusfield.md), [Methods](../methodlists/statusfield.md), [Events](../eventlists/statusfield.md)
 
 
-|--------|--------------------------------------------------------|
-|Purpose:|This object is used to display information for the user.|
 
+**Purpose:** This object is used to display information for the user.
 
 **Description**
 

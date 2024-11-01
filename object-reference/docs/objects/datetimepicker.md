@@ -1,19 +1,12 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DateTimePicker</span> <span class="command">Object</span></h1>
 
 
 
-|---|---|---|---|---|
-|[Parents](../parentlists/datetimepicker.md)|[Children](../childlists/datetimepicker.md)|[Properties](../proplists/datetimepicker.md)|[Methods](../methodlists/datetimepicker.md)|[Events](../eventlists/datetimepicker.md)|
+[Parents](../parentlists/datetimepicker.md), [Children](../childlists/datetimepicker.md), [Properties](../proplists/datetimepicker.md), [Methods](../methodlists/datetimepicker.md), [Events](../eventlists/datetimepicker.md)
 
 
-|--------|-----------------------------------------------------------------------------------------------------|
-|Purpose:|The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.|
 
+**Purpose:** The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.
 
 **Description**
 
@@ -56,7 +49,7 @@ the same as specifying `'Date'`. Note that `'DateCentury'` always displays a 4-d
 
 
 If FieldType is set to `'Custom'`, the
-format is defined by the [CustomFormat](../properties/customformat.md) property. CustomFormat is a character vector that may contain a mixture of
+format is defined by the [CustomFormat](../properties/customformat.md) property. CustomFormat is a character vector that may contain a mixture of
 date/time format elements and body text.
 
 
