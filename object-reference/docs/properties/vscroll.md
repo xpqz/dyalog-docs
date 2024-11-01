@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">VScroll</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/vscroll.md)
-
 
 **Description**
 

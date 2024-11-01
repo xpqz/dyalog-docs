@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">OLEUnregister</span> <span class="command">Method 531</span></h1>
 
 
 
 **Applies To:** [OLEServer](../objects/oleserver.md)
-
-
 
 **Description**
 

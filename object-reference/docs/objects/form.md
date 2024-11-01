@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Form</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This is a top-level window used to contain other objects (controls).
-
-
 
 **Description**
 

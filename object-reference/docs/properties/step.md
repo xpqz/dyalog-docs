@@ -1,13 +1,6 @@
-
-
-
-
 <h1 class="heading"><span class="name">Step</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/step.md)
-
 
 **Description**
 

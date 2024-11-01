@@ -2,7 +2,6 @@
 
 **Applies To:** [ListView](../objects/listview.md), [TreeView](../objects/treeview.md)
 
-
 **Description**
 
 The CheckBoxes property specifies whether or not check boxes are displayed

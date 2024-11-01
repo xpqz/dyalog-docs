@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MakePNG</span> <span class="command">Method 260</span></h1>
 
 
 
 **Applies To:** [Bitmap](../objects/bitmap.md)
-
-
 
 **Description**
 

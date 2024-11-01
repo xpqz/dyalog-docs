@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RichEdit</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The RichEdit object is a multi-line text editor that provides a wide range of word-processing capabilities.
-
-
 
 **Description**
 

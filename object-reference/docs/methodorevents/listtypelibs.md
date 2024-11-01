@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ListTypeLibs</span> <span class="command">Method 520</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

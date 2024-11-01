@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BalloonUserClick</span> <span class="command">Event 864</span></h1>
 
 
 
 **Applies To:** [SysTrayItem](../objects/systrayitem.md)
-
-
 
 **Description**
 

@@ -5,7 +5,6 @@
 
 **Purpose:** This object defines a cursor.
 
-
 **Description**
 
 The [File](../properties/file.md) property defines the name of a cursor file associated with the Cursor object, or it specifies the name of a DLL and the resource number or name of the cursor therein. If you omit the file extension, the system assumes .CUR. To use an animated cursor you must therefore specify the .AMI extension explicitly.

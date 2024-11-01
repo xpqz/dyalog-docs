@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ActiveXControl</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ActiveXControl object represents a Dyalog APL namespace as an ActiveX control.
-
-
 
 **Description**
 

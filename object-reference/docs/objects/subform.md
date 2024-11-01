@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SubForm</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object represents a window that is owned by and constrained         within another [Form](form.md) or an [MDIClient](mdiclient.md) .
-
-
 
 **Description**
 

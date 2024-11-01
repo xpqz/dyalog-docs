@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FieldType</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ButtonEdit](../objects/buttonedit.md), [DateTimePicker](../objects/datetimepicker.md), [Edit](../objects/edit.md), [Label](../objects/label.md), [Spinner](../objects/spinner.md)
-
-
 
 **Description**
 

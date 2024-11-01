@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">StatusBar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object is used to manage [StatusField](statusfield.md) objects which display  information for the user.
-
-
 
 **Description**
 

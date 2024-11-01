@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">StartSplit</span> <span class="command">Event 280</span></h1>
 
 
 
 **Applies To:** [Splitter](../objects/splitter.md)
-
-
 
 **Description**
 

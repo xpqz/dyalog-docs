@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Abort</span> <span class="command">Method 103</span></h1>
 
 
 
 **Applies To:** [Printer](../objects/printer.md)
-
-
 
 **Description**
 

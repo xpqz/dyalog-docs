@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetVarInfo</span> <span class="command">Method 546</span></h1>
 
 
 
 **Applies To:** [ActiveXControl](../objects/activexcontrol.md), [OLEServer](../objects/oleserver.md)
-
-
 
 **Description**
 

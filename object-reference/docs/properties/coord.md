@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Coord</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/coord.md)
-
 
 **Description**
 

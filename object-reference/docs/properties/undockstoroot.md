@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">UndocksToRoot</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [CoolBand](../objects/coolband.md), [Form](../objects/form.md), [SubForm](../objects/subform.md), [ToolControl](../objects/toolcontrol.md)
-
-
 
 **Description**
 

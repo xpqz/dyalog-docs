@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Picture</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/picture.md)
-
 
 **Description**
 

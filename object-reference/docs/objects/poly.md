@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Poly</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** A graphical object used to draw lines, polygons, and filled areas.
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">StatusField</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object is used to display information for the user.
-
-
 
 **Description**
 

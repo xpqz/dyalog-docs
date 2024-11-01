@@ -2,7 +2,6 @@
 
 **Applies To:** [DateTimePicker](../objects/datetimepicker.md)
 
-
 **Description**
 
 Specifies a custom format for the date/time display in a [DateTimePicker](../objects/datetimepicker.md).

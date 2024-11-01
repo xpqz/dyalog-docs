@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ProgressBar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ProgressBar object is used to indicate the progress of a lengthy operation.
-
-
 
 **Description**
 

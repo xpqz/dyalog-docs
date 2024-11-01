@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PropertyPage</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The PropertyPage object represents a single page in a PropertySheet.
-
-
 
 **Description**
 

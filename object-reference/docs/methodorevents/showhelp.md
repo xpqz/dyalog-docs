@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowHelp</span> <span class="command">Method 580</span></h1>
 
 
 
 **Applies To:** [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md)
-
-
 
 **Description**
 

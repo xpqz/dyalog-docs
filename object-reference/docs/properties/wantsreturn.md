@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">WantsReturn</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Edit](../objects/edit.md), [RichEdit](../objects/richedit.md)
-
-
 
 **Description**
 

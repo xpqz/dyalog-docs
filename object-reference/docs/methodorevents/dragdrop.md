@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DragDrop</span> <span class="command">Event 11</span></h1>
 
-
-
 [**Applies To**](../methodoreventapplies/dragdrop.md)
-
 
 **Description**
 

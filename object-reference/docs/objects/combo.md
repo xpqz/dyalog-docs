@@ -5,7 +5,6 @@
 
 **Purpose:** This object combines an input area with a list box and allows the user to enter a selection by typing text or by choosing an item from the list.
 
-
 **Description**
 
 Three types of Combo box are provided by the [Style](../properties/style.md) property which may be `'Drop'` (the default), `'Simple'` or `'DropEdit'`.

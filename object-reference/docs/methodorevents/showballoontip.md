@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowBalloonTip</span> <span class="command">Method 860</span></h1>
 
 
 
 **Applies To:** [SysTrayItem](../objects/systrayitem.md)
-
-
 
 **Description**
 

@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">GridKeyPress</span> <span class="command">Event 24</span></h1>
 
 
 
 **Applies To:** [Grid](../objects/grid.md)
-
-
 
 **Description**
 

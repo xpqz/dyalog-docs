@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">DyalogCustomMessage1</span> <span class="command">Event 95</span></h1>
 
 
 
 **Applies To:** [Form](../objects/form.md)
-
-
 
 **Description**
 

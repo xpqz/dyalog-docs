@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Scroll</span> <span class="command">Event 37</span></h1>
 
 
 
 **Applies To:** [Scroll](../objects/scroll.md), [TrackBar](../objects/trackbar.md)
-
-
 
 **Description**
 

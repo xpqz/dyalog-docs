@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Locator</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Allows the user to input a point, ellipse, line or rectangle.
-
-
 
 **Description**
 

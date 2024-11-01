@@ -1046,7 +1046,7 @@ nav:
       - ImageList Object: objects/imagelist.md
       - ImageListObj Property: properties/imagelistobj.md
       - Indents Property: properties/indents.md
-      - Index Property: properties/index.md
+      - Index Property: properties/index-property.md
       - IndexChanged Event: methodorevents/indexchanged.md
       - Input Property: properties/input.md
       - InputMode Property: properties/inputmode.md

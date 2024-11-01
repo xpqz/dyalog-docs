@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Separator</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** A horizontal or vertical line used to separate items in a menu.
-
-
 
 **Description**
 

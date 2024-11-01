@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabControl</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The TabControl object provides access to the native Windows tab         control.
-
-
 
 **Description**
 

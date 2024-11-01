@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ShowDevTools</span> <span class="command">Method 849</span></h1>
 
 
 
 **Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
-
-
 
 **Description**
 

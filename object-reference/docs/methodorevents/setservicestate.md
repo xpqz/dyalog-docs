@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetServiceState</span> <span class="command">Method 93</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

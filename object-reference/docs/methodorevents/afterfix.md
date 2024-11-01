@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">AfterFix</span> <span class="command">Event 822</span></h1>
 
 
 
 **Applies To:** [Editor](../../../windows-ui-guide/the-session-object/session-object)
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DateTimePicker</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The DateTimePicker object is an editable date/time field with an         optional drop-down Calendar.
-
-
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDIDeactivate</span> <span class="command">Event 43</span></h1>
 
 
 
 **Applies To:** [SubForm](../objects/subform.md)
-
-
 
 **Description**
 

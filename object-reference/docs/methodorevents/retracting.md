@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">Retracting</span> <span class="command">Event 304</span></h1>
 
 
 
 **Applies To:** [Grid](../objects/grid.md), [TreeView](../objects/treeview.md)
-
-
 
 **Description**
 

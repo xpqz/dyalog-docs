@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MenuBar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Specifies a horizontal menu bar displayed at the top of a [Form](form.md) .
-
-
 
 **Description**
 

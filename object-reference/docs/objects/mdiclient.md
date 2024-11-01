@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDIClient</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Implements Multiple Document Interface (MDI) behaviour.
-
-
 
 **Description**
 

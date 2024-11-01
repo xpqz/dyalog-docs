@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Transparent</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Animation](../objects/animation.md), [ButtonEdit](../objects/buttonedit.md), [ToolControl](../objects/toolcontrol.md)
-
-
 
 **Description**
 

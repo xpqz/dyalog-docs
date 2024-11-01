@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HeaderImageIndex</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ListView](../objects/listview.md)
-
-
 
 **Description**
 

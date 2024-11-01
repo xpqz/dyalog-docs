@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Animate</span> <span class="command">Method 29</span></h1>
 
-
-
 [**Applies To**](../methodoreventapplies/animate.md)
-
 
 **Description**
 

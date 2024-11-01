@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">DeleteTypeLib</span> <span class="command">Method 521</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

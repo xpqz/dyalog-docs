@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TCPGetHostID</span> <span class="command">Method 376</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md), [TCPSocket](../objects/tcpsocket.md)
-
-
 
 **Description**
 

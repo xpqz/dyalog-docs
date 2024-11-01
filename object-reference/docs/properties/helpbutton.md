@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HelpButton</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Form](../objects/form.md), [PropertySheet](../objects/propertysheet.md), [SubForm](../objects/subform.md)
-
-
 
 **Description**
 

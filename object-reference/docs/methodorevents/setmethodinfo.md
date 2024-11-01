@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">SetMethodInfo</span> <span class="command">Method 556</span></h1>
 
 
 
 **Applies To:** [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md)
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TrackBar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The TrackBar object is a slider control that allows the user to enter a value by positioning a pointer (thumb) on a scale.
-
-
 
 **Description**
 

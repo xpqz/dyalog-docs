@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">OLEClient</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The OLEClient object provides access to an OLE Automation Server
-
-
 
 **Description**
 

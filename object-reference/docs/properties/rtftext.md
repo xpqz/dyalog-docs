@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RTFText</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Clipboard](../objects/clipboard.md), [RichEdit](../objects/richedit.md)
-
-
 
 **Description**
 

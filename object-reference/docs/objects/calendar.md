@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Calendar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The Calendar object provides an interface to the Month Calendar Control
-
-
 
 **Description**
 

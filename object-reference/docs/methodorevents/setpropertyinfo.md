@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetPropertyInfo</span> <span class="command">Method 554</span></h1>
 
 
 
 **Applies To:** [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md)
-
-
 
 **Description**
 

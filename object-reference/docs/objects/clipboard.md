@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Clipboard</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object provides access to the Windows clipboard.
-
-
 
 **Description**
 

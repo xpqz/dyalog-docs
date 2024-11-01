@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ToolButton</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ToolButton object represents a button in a ToolControl.
-
-
 
 **Description**
 

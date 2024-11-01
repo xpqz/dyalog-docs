@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">RowSetVisibleDepth</span> <span class="command">Method 173</span></h1>
 
 
 
 **Applies To:** [Grid](../objects/grid.md)
-
-
 
 **Description**
 

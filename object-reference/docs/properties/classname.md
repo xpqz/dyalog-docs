@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ClassName</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ActiveXControl](../objects/activexcontrol.md), [OCXClass](../objects/ocxclass.md), [OLEClient](../objects/oleclient.md), [OLEServer](../objects/oleserver.md)
-
-
 
 **Description**
 

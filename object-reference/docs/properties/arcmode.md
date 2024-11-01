@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ArcMode</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Circle](../objects/circle.md), [Ellipse](../objects/ellipse.md)
-
-
 
 **Description**
 

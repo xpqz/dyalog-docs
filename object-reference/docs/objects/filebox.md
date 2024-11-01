@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FileBox</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Prompts user to select a file.
-
-
 
 **Description**
 

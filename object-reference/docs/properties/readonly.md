@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ReadOnly</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Button](../objects/button.md), [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md), [Spinner](../objects/spinner.md)
-
-
 
 **Description**
 

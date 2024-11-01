@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SysTrayItem</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The SysTrayItem object represents an item that you can create in the Windows System Tray.
-
-
 
 **Description**
 

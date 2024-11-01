@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MDIArrange</span> <span class="command">Method 112</span></h1>
 
 
 
 **Applies To:** [MDIClient](../objects/mdiclient.md)
-
-
 
 **Description**
 

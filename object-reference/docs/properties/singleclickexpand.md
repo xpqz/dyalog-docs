@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SingleClickExpand</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [TreeView](../objects/treeview.md)
-
-
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BadValue</span> <span class="command">Event 180</span></h1>
 
 
 
 **Applies To:** [ButtonEdit](../objects/buttonedit.md), [Edit](../objects/edit.md), [Spinner](../objects/spinner.md)
-
-
 
 **Description**
 

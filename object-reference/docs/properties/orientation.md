@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Orientation</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Printer](../objects/printer.md)
-
-
 
 **Description**
 

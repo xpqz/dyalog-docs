@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Static</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object is primarily used to display graphics in a sub-window.
-
-
 
 **Description**
 

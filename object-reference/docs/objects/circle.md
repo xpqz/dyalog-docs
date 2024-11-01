@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Circle</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** A Graphical object to draw circles, arcs, and pie-slices.
-
-
 
 **Description**
 

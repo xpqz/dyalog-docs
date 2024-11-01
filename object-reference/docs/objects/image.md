@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Image</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Positions bitmaps and icons within an object.
-
-
 
 **Description**
 

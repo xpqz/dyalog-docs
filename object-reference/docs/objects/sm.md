@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SM</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Defines a window for `⎕SM` / `⎕SR` .
-
-
 
 **Description**
 

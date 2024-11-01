@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DisplayChange</span> <span class="command">Event 137</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

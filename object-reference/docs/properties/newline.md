@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">NewLine</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [CoolBand](../objects/coolband.md)
-
-
 
 **Description**
 

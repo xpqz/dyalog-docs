@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TabButton</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The TabButton object represents an individual tab or button in a [TabControl](tabcontrol.md)
-
-
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Masked</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ImageList](../objects/imagelist.md)
-
-
 
 **Description**
 

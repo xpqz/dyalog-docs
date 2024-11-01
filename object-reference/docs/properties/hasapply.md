@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HasApply</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [PropertySheet](../objects/propertysheet.md)
-
-
 
 **Description**
 

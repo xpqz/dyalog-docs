@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SessionPrint</span> <span class="command">Event 526</span></h1>
 
 
 
 **Applies To:** [Session](../../../windows-ui-guide/the-session-object/session-object)
-
-
 
 **Description**
 

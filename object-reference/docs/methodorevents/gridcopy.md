@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">GridCopy</span> <span class="command">Event 191</span></h1>
 
 
 
 **Applies To:** [Grid](../objects/grid.md)
-
-
 
 **Description**
 

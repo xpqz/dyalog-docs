@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">RTFPrintSetup</span> <span class="command">Method 460</span></h1>
 
 
 
 **Applies To:** [Printer](../objects/printer.md), [RichEdit](../objects/richedit.md)
-
-
 
 **Description**
 

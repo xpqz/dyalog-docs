@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Bitmap</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** A graphical object used to represent a bitmap which may be used both to display a picture or as a pattern (brush) used to fill other objects.
-
-
 
 **Description**
 

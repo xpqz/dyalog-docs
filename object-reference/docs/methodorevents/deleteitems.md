@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DeleteItems</span> <span class="command">Method 309</span></h1>
 
 
 
 **Applies To:** [TreeView](../objects/treeview.md)
-
-
 
 **Description**
 

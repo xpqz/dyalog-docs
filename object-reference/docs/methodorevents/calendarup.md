@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CalendarUp</span> <span class="command">Event 272</span></h1>
 
 
 
 **Applies To:** [Calendar](../objects/calendar.md)
-
-
 
 **Description**
 

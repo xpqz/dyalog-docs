@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Items</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Combo](../objects/combo.md), [ComboEx](../objects/comboex.md), [List](../objects/list.md), [ListView](../objects/listview.md), [Spinner](../objects/spinner.md), [TreeView](../objects/treeview.md)
-
-
 
 **Description**
 

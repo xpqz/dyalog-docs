@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Grid</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Spreadsheet object for displaying and editing data.
-
-
 
 **Description**
 

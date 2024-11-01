@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PageActivate</span> <span class="command">Event 360</span></h1>
 
 
 
 **Applies To:** [PropertyPage](../objects/propertypage.md)
-
-
 
 **Description**
 

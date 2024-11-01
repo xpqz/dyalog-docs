@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">LostFocus</span> <span class="command">Event 41</span></h1>
 
-
-
 [**Applies To**](../methodoreventapplies/lostfocus.md)
-
 
 **Description**
 

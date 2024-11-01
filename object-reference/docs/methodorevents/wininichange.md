@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">WinIniChange</span> <span class="command">Event 133</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

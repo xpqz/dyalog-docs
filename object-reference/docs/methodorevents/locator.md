@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Locator</span> <span class="command">Event 80</span></h1>
 
 
 
 **Applies To:** [Locator](../objects/locator.md)
-
-
 
 **Description**
 

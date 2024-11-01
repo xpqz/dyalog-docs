@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">UpDown</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The UpDown object is a pair of arrow buttons used to increment or decrement a value.
-
-
 
 **Description**
 

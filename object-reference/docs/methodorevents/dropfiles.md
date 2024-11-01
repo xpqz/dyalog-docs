@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DropFiles</span> <span class="command">Event 450</span></h1>
 
-
-
 [**Applies To**](../methodoreventapplies/dropfiles.md)
-
 
 **Description**
 

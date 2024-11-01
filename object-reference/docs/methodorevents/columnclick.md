@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ColumnClick</span> <span class="command">Event 320</span></h1>
 
 
 
 **Applies To:** [ListView](../objects/listview.md)
-
-
 
 **Description**
 

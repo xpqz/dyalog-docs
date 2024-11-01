@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DockStart</span> <span class="command">Event 480</span></h1>
 
 
 
 **Applies To:** [CoolBand](../objects/coolband.md), [CoolBar](../objects/coolbar.md), [Form](../objects/form.md), [SubForm](../objects/subform.md), [ToolControl](../objects/toolcontrol.md)
-
-
 
 **Description**
 

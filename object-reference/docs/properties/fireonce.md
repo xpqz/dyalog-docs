@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FireOnce</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Timer](../objects/timer.md)
-
-
 
 **Description**
 

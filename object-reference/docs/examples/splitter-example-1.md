@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Splitter</span> <span class="command">Example 1</span></h1>
 
 

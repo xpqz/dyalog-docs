@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PropList</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/proplist.md)
-
 
 **Description**
 

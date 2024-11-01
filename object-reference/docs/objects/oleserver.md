@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">OLEServer</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The OLEServer object is used to establish a namespace as an OLE Server         object that can be used by an OLE Automation client.
-
-
 
 **Description**
 

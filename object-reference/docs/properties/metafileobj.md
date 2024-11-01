@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MetafileObj</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Clipboard](../objects/clipboard.md)
-
-
 
 **Description**
 

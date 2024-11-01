@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PageBack</span> <span class="command">Event 353</span></h1>
 
 
 
 **Applies To:** [PropertyPage](../objects/propertypage.md)
-
-
 
 **Description**
 

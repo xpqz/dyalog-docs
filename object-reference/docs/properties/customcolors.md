@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CustomColors</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ColorButton](../objects/colorbutton.md)
-
-
 
 **Description**
 

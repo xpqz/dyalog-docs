@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">CoolBand</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The CoolBand object represents an area in a CoolBar that contains a         child window.
-
-
 
 **Description**
 

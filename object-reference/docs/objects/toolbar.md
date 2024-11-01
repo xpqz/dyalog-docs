@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ToolBar</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** To manage a group of controls such as [Button](button.md) s.
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">TCPSocket</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The TCPSocket object provides an interface to TCP/IP.
-
-
 
 **Description**
 

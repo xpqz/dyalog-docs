@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Checked</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [MenuItem](../objects/menuitem.md)
-
-
 
 **Description**
 

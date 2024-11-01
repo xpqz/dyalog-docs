@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Edit</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Allows user to enter or edit data.
-
-
 
 **Description**
 

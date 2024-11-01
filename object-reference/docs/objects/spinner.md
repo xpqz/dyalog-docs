@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Spinner</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The Spinner object allows the user to enter a value, using an [UpDown](updown.md) object to adjust it as required.
-
-
 
 **Description**
 

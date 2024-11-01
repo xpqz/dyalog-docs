@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Text</span> <span class="command">Property</span></h1>
 
-
-
 [**Applies To**](../propertyapplies/text.md)
-
 
 **Description**
 

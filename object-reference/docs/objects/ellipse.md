@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Ellipse</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** A Graphical object to draw ellipses, arcs, and pie-slices.
-
-
 
 **Description**
 

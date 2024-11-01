@@ -1,14 +1,6 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GestureRotate</span> <span class="command">Event 495</span></h1>
 
-
-
 [**Applies To**](../methodoreventapplies/gesturerotate.md)
-
 
 **Description**
 

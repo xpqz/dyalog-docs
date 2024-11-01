@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ComboEx</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ComboEx object is an extended version of the Combo object that provides additional features including item images
-
-
 
 **Description**
 

@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">FileBoxOK</span> <span class="command">Event 71</span></h1>
 
 
 
 **Applies To:** [BrowseBox](../objects/browsebox.md), [FileBox](../objects/filebox.md)
-
-
 
 **Description**
 

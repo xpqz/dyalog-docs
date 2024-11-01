@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MultiColumn</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [List](../objects/list.md)
-
-
 
 **Description**
 

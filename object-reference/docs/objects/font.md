@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Font</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Loads a font resource
-
-
 
 **Description**
 

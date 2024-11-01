@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Icon</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object defines an icon.
-
-
 
 **Description**
 

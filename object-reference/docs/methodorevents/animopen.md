@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">AnimOpen</span> <span class="command">Method 290</span></h1>
 
 
 
 **Applies To:** [Animation](../objects/animation.md)
-
-
 
 **Description**
 

@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">Objects Categorised</span></h1>
 
 

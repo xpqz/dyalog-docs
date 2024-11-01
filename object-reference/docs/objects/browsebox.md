@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BrowseBox</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The BrowseBox object allows the user to browse for and select a folder         or other resource.
-
-
 
 **Description**
 

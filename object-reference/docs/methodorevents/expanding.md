@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Expanding</span> <span class="command">Event 302</span></h1>
 
 
 
 **Applies To:** [Grid](../objects/grid.md), [TreeView](../objects/treeview.md)
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">MenuItem</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object allows the user to initiate an action or to select an option from a menu.
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Printer</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** To provide printer output.
-
-
 
 **Description**
 

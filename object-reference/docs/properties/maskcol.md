@@ -1,14 +1,8 @@
-
-
-
-
 <h1 class="heading"><span class="name">MaskCol</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Bitmap](../objects/bitmap.md), [Form](../objects/form.md)
-
-
 
 **Description**
 

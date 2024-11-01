@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">PropertySheet</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The PropertySheet object represents a standard multi-page dialog box.
-
-
 
 **Description**
 

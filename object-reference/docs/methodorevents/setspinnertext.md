@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">SetSpinnerText</span> <span class="command">Event 421</span></h1>
 
 
 
 **Applies To:** [Spinner](../objects/spinner.md)
-
-
 
 **Description**
 

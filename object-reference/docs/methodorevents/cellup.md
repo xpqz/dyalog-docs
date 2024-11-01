@@ -2,7 +2,6 @@
 
 **Applies To:** [Grid](../objects/grid.md)
 
-
 **Description**
 
 If enabled, this event is reported when the user **releases** a mouse button down whilst over a cell in a [Grid](../objects/grid.md). This event is a companion to the [CellDown](./celldown.md) event and could be used to hide a pop-up which was displayed in response to the [CellDown](./celldown.md). The CellUp event performs no default action and may not be disabled.

@@ -2,7 +2,6 @@
 
 **Applies To:** [Grid](../objects/grid.md)
 
-
 **Description**
 
 The [Grid](../objects/grid.md) supports the selection of a contiguous block of cells by the user, using the mouse and/or the keyboard. The ability to select a range of cells is determined by the CellSelect property.

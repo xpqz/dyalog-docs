@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">LoadEnd</span> <span class="command">Event 836</span></h1>
 
 
 
 **Applies To:** [HTMLRenderer](../objects/htmlrenderer.md)
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ToolControl</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ToolControl object provides a standard Windows ToolBar.
-
-
 
 **Description**
 

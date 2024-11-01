@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">NetControl</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The NetControl object provides the means to instantiate a .NET control         in the Dyalog GUI.
-
-
 
 **Description**
 

@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Metafile</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object represents a picture in Windows Metafile format.
-
-
 
 **Description**
 

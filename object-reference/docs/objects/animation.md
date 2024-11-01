@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Animation</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The Animation object displays simple animations from basic .AVI files or resources.
-
-
 
 **Description**
 

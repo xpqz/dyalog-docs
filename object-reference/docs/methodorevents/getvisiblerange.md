@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetVisibleRange</span> <span class="command">Method 262</span></h1>
 
 
 
 **Applies To:** [Calendar](../objects/calendar.md)
-
-
 
 **Description**
 

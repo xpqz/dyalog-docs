@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">ImageList</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The ImageList object represents a set of bitmapped images.
-
-
 
 **Description**
 

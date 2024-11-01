@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Flush</span> <span class="command">Method 135</span></h1>
 
 
 
 **Applies To:** [Root](../objects/root.md)
-
-
 
 **Description**
 

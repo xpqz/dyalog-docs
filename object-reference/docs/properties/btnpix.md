@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">BtnPix</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [Button](../objects/button.md), [Menu](../objects/menu.md), [MenuItem](../objects/menuitem.md)
-
-
 
 **Description**
 

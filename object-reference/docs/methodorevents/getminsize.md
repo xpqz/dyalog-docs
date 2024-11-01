@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">GetMinSize</span> <span class="command">Method 275</span></h1>
 
 
 
 **Applies To:** [Calendar](../objects/calendar.md)
-
-
 
 **Description**
 

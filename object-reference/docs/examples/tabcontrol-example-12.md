@@ -1,7 +1,3 @@
-
-
-
-
 <h1 class="heading"><span class="name">TabControl</span> <span class="command">Example 12</span></h1>
 
 

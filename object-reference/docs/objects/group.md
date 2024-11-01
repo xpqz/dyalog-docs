@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Group</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This object is used to group a related set of controls together         visually, and to impose "radio-button" behaviour.
-
-
 
 **Description**
 

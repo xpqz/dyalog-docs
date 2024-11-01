@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Menu</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** This is a pop-up object which allows the user to initiate an action or         to select an option using a "menu".
-
-
 
 **Description**
 

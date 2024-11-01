@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">DblClickToggle</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [CoolBar](../objects/coolbar.md)
-
-
 
 **Description**
 

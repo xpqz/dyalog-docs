@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">HTMLRenderer</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** The HTMLRenderer Object is a cross-platform mechanism for producing Graphical User Interfaces (GUI), based on HyperText Markup Language (HTML).
-
-
 
 **Description**
 

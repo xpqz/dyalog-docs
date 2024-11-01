@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Divider</span> <span class="command">Property</span></h1>
 
 
 
 **Applies To:** [ToolControl](../objects/toolcontrol.md)
-
-
 
 **Description**
 

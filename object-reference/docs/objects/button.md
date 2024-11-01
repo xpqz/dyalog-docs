@@ -1,8 +1,3 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Button</span> <span class="command">Object</span></h1>
 
 
@@ -12,8 +7,6 @@
 
 
 **Purpose:** Allows the user to initiate an action or to select an option using a button.
-
-
 
 **Description**
 

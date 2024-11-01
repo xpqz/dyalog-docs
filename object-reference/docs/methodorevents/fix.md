@@ -1,15 +1,8 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">Fix</span> <span class="command">Event 820</span></h1>
 
 
 
 **Applies To:** [Editor](../../../windows-ui-guide/the-session-object/session-object)
-
-
 
 **Description**
 
