@@ -16,7 +16,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|---------|-----------------------------------------------------------------------------------|
 |`[1]`|Object   |ref or character vector                                                            |
 |`[2]`|Event    |`'FileBoxOK'` or 71                                                                |
-|`[3]`|File name|character vector containing the name of the currently selected file (empty if none)|
+|`[3]`|File name|character vector containing the name of the currently selected file (empty if none)|
 
 
 

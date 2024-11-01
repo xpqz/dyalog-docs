@@ -8,7 +8,7 @@
 
 
 ColTitleDepth specifies the structure of a set of hierarchical column titles.
-It is an integer vector with the same length as the [ColTitles](coltitles.md) property. A value of 0 indicates that the corresponding element of [ColTitles](coltitles.md) is a top-level title. A value of 1 indicates that the corresponding title is a
+It is an integer vector with the same length as the [ColTitles](coltitles.md) property. A value of 0 indicates that the corresponding element of [ColTitles](coltitles.md) is a top-level title. A value of 1 indicates that the corresponding title is a
 sub-title of the most recent title whose ColTitleDepth is 0; a value of 2
 indicates that the corresponding title is a sub-title of the most recent title
 whose ColTitleDepth is 1, and so forth. For example:

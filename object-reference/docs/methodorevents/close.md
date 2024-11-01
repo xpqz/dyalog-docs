@@ -21,7 +21,7 @@ By trapping this event you can control termination of your application in many d
 
 
 
-Note that although all the object's child GUI objects will also be destroyed, none of the child objects will generate a Close event.
+Note that although all the object's child GUI objects will also be destroyed, none of the child objects will generate a Close event.
 
 
 

@@ -43,7 +43,7 @@ recommended as it implies less registry activity during the development of the
 object.
 
 
-The [ExportedFns](../properties/exportedfns.md) and [ExportedVars](../properties/exportedvars.md) properties specify the names of the functions and variables that will be exposed
+The [ExportedFns](../properties/exportedfns.md) and [ExportedVars](../properties/exportedvars.md) properties specify the names of the functions and variables that will be exposed
 by the object to OLE clients.
 
 
@@ -56,6 +56,6 @@ The [ShowSession](../properties/showsession.md) property is either 0
 displayed when the first instance of the OLEServer is created.
 
 
-[RunMode](../properties/runmode.md) and [ShowSession](../properties/showsession.md) apply only to *out-of-process* OLEServers.
+[RunMode](../properties/runmode.md) and [ShowSession](../properties/showsession.md) apply only to *out-of-process* OLEServers.
 
 

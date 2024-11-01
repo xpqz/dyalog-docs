@@ -16,7 +16,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |-----|-----------|----------------------------------------------------------------------------------------|
 |`[1]`|Object     |ref or character vector                                                                 |
 |`[2]`|Event      |`'ThumbDrag'` or 440                                                                    |
-|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user dragging the thumb.|
+|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user dragging the thumb.|
 
 
 

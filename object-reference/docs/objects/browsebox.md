@@ -41,7 +41,7 @@ The action code for the FileBoxOK and FileBoxCancel events must be set to 1 so
 that the appropriate result is returned by the modal `⎕DQ`.
 
 
-After the user has pressed OK or Cancel, the [Target](../properties/target.md) property contains the name of the chosen folder or other resource.
+After the user has pressed OK or Cancel, the [Target](../properties/target.md) property contains the name of the chosen folder or other resource.
 
 <h2 class="example">Example</h2>
 ```apl

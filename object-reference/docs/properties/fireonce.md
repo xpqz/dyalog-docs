@@ -7,7 +7,7 @@
 **Description**
 
 
-This property specifies one-off  behaviour for a [Timer](../objects/timer.md) object. It has the value 0, 1 or 2.
+This property specifies one-off  behaviour for a [Timer](../objects/timer.md) object. It has the value 0, 1 or 2.
 
 
 Setting FireOnce to 1, will cause the [Timer](../objects/timer.md) to generate a single event and no more unless it is reset. After generating the single event, FireOnce is automatically set to 2 and this change occurs prior to the invocation of a callback function.

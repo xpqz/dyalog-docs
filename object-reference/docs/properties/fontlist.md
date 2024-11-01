@@ -17,7 +17,7 @@ which is as follows :
 
 |-----|------------------------------------------|
 |`[1]`|Face name (character vector)              |
-|`[2]`|Character height in "points" (integer)    |
+|`[2]`|Character height in "points" (integer)    |
 |`[3]`|Fixed width or not (Boolean)              |
 |`[4]`|Italic or not (Boolean)                   |
 |`[5]`|Underline or not (Boolean)                |
@@ -42,7 +42,7 @@ which is as follows :
 ```
 
 
-Note that the list of fonts obtained from FontList for a [Printer](../objects/printer.md) object will include TrueType fonts and printer fonts but will exclude screen
+Note that the list of fonts obtained from FontList for a [Printer](../objects/printer.md) object will include TrueType fonts and printer fonts but will exclude screen
 fonts. FontList for [Root](../objects/root.md) will include TrueType
 fonts and screen fonts, but exclude printer-only fonts. The two lists will
 therefore (typically) be different.

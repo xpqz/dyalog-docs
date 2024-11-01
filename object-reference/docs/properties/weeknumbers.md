@@ -8,7 +8,7 @@
 
 
 The WeekNumbers property specifies whether or not a [Calendar](../objects/calendar.md)
- object displays week numbers.
+ object displays week numbers.
 
 
 WeekNumbers is a single number with the value 0 (week numbers are *not*

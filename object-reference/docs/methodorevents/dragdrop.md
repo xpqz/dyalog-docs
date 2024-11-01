@@ -19,7 +19,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |`[5]`|X             |x-position of mouse pointer in the target object                                                                                  |
 |`[6]`|H             |height of dragged object in the coordinate system of the target object                                                            |
 |`[7]`|W             |width of dragged object in the coordinate system of the target object                                                             |
-|`[8]`|Shift State   |numeric scalar containing the sum of the values associated with the Shift(1), Ctrl(2) and Alt(4) keys when the object was dropped.|
+|`[8]`|Shift State   |numeric scalar containing the sum of the values associated with the Shift(1), Ctrl(2) and Alt(4) keys when the object was dropped.|
 
 
 Note that Y, H, X and W are all reported relative to the target object.

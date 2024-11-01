@@ -16,7 +16,7 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|-----------|----------------------------------------------------------------|
 |`[1]`|Object     |ref or character vector                                         |
 |`[2]`|Event      |`'GotFocus'` or 40                                              |
-|`[3]`|Object name|character vector (name of object which previously had the focus)|
+|`[3]`|Object name|character vector (name of object which previously had the focus)|
 
 
 

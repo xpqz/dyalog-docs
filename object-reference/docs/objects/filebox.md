@@ -43,6 +43,6 @@ The [Index](../properties/index-property.md) property determines which of the fi
 Note that when [`⎕DQ`](../../../language-reference-guide/system-functions/dq) terminates with [FileBoxOK](../methodorevents/fileboxok.md), the [File](../properties/file.md), [Directory](../properties/directory.md), and [Index](../properties/index-property.md) properties are updated to reflect the contents of the fields within the FileBox.
 
 
-The operating system imposes limits on both the length of the name of the file, and on the total path length. In version {{ version_majmin }}attempting to set the `File` or `Directory` Properties to too long a name will generate a DOMAIN ERROR, while attempting to use too long a File name within the FileBox will result in the appearence of an error MessageBox.
+The operating system imposes limits on both the length of the name of the file, and on the total path length. In version {{ version_majmin }}attempting to set the `File` or `Directory` Properties to too long a name will generate a DOMAIN ERROR, while attempting to use too long a File name within the FileBox will result in the appearence of an error MessageBox.
 
 

@@ -6,10 +6,10 @@
 
 **Description**
 
-The Text object is used to write arbitrary text. It can be used in a [Form](form.md), [SubForm](subform.md) or [Group](group.md) instead of a [Label](label.md). The main difference is that a [Label](label.md) is implemented as a true window object (thus consuming Windows resources). A Text object is not a window and consumes no MS-Windows resources. However, a [Label](label.md) supports [DragDrop](../methodorevents/dragdrop.md) events and has various
+The Text object is used to write arbitrary text. It can be used in a [Form](form.md), [SubForm](subform.md) or [Group](group.md) instead of a [Label](label.md). The main difference is that a [Label](label.md) is implemented as a true window object (thus consuming Windows resources). A Text object is not a window and consumes no MS-Windows resources. However, a [Label](label.md) supports [DragDrop](../methodorevents/dragdrop.md) events and has various
 useful properties that are not shared by the Text object.
 
-The contents of the Text object are defined by its [Text](../properties/text.md) property. This is a character array containing one of the following :
+The contents of the Text object are defined by its [Text](../properties/text.md) property. This is a character array containing one of the following :
 
 - a simple scalar
 - an enclosed vector or matrix (also a scalar)
@@ -33,17 +33,17 @@ is written at the specified point.
       3. If Text is a matrix, each row of Text is written at the corresponding position in [Points](../properties/points.md).
 
 [FontObj](../properties/fontobj.md) specifies a **single** font
-to be used to write the Text. See a description of the [FontObj](../properties/fontobj.md) property for details.
+to be used to write the Text. See a description of the [FontObj](../properties/fontobj.md) property for details.
 
 [FCol](../properties/fcol.md) specifies the colour of the Text. For a single text item, FCol may be a single number which specifies one of the
-standard MS-Windows colours, or a simple 3-element numeric vector of RGB colour intensities. If more than one text item is involved, [FCol](../properties/fcol.md) may be a vector which specifies the colour for each item separately. If so, its length must be the same as the number of points specified by [Points](../properties/points.md).
+standard MS-Windows colours, or a simple 3-element numeric vector of RGB colour intensities. If more than one text item is involved, [FCol](../properties/fcol.md) may be a vector which specifies the colour for each item separately. If so, its length must be the same as the number of points specified by [Points](../properties/points.md).
 
 [BCol](../properties/bcol.md) specifies the background colour of the text, that is, the colour for the part of the character cell that is blank. It is
 defined in the same way as [FCol](../properties/fcol.md).
 
-[HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) specify the horizontal and vertical alignment of the text respectively. They may each be numeric scalars or vectors with the same length as the number of points specified in [Points](../properties/points.md). See [HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) for details.
+[HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) specify the horizontal and vertical alignment of the text respectively. They may each be numeric scalars or vectors with the same length as the number of points specified in [Points](../properties/points.md). See [HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) for details.
 
-When one or more of [FCol](../properties/fcol.md), [BCol](../properties/bcol.md), [HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) are vectors, the different components of Text are drawn using the corresponding colours and alignments.
+When one or more of [FCol](../properties/fcol.md), [BCol](../properties/bcol.md), [HAlign](../properties/halign.md) and [VAlign](../properties/valign.md) are vectors, the different components of Text are drawn using the corresponding colours and alignments.
 
 The value of the [Dragable](../properties/dragable.md) property specifies whether or not the Text object can be dragged by the user. The value
 of the [AutoConf](../properties/autoconf.md) property determines whether or not the Text object is repositioned when its parent is resized.

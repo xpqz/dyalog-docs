@@ -16,7 +16,7 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |-----|-----------|------------------------------------------------------------------------------------------------------|
 |`[1]`|Object     |ref or character vector                                                                               |
 |`[2]`|Event      |`'SetSpinnerText'` or 421                                                                             |
-|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons.|
+|`[3]`|Thumb value|Integer. The new value of the Thumb property resulting from the user pressing one of the spin buttons.|
 |`[4]`|Text       |The text that is about to be put into the edit field.                                                 |
 
 

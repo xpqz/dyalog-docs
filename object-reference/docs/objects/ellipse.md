@@ -11,10 +11,10 @@
 **Description**
 
 
-This object duplicates much of the functionality of the [Circle](circle.md) object, but differs in two major respects. Firstly, ellipses, circles, and arcs
+This object duplicates much of the functionality of the [Circle](circle.md) object, but differs in two major respects. Firstly, ellipses, circles, and arcs
 are specified in terms of their **bounding rectangles**, rather than in terms
 of their centre(s) and radii. Secondly, the Ellipse object behaves like any
-other (rectangular) object when it is resized by its parent. The [Circle](circle.md) object behaves differently in that when resized by its parent, it maintains a
+other (rectangular) object when it is resized by its parent. The [Circle](circle.md) object behaves differently in that when resized by its parent, it maintains a
 constant ratio between its **physical** height and width.
 
 
@@ -27,10 +27,10 @@ rectangles. The position is defined to be the position of the corner that is **n
 The [Size](../properties/size.md) property specifies the height and
 width of each bounding rectangle, measuring away from the origin. To obtain a
 perfect circle, you must take the **aspect ratio** of the device into
-account. This is available from the [DevCaps](../properties/devcaps.md) property of the [Root](root.md) and [Printer](printer.md) objects. Alternatively you can use the [Circle](circle.md) object.
+account. This is available from the [DevCaps](../properties/devcaps.md) property of the [Root](root.md) and [Printer](printer.md) objects. Alternatively you can use the [Circle](circle.md) object.
 
 
-The [Start](../properties/start.md) and/or [End](../properties/end.md) properties are used to draw partial ellipses and circles. They specify start and
+The [Start](../properties/start.md) and/or [End](../properties/end.md) properties are used to draw partial ellipses and circles. They specify start and
 end angles respectively, measuring from the x-axis at the centre of the bounding
 rectangle in a counter-clockwise direction and are expressed in radians. The
 type of arc is controlled by [ArcMode](../properties/arcmode.md) as
@@ -44,17 +44,17 @@ follows:
 |2|An arc is drawn from [Start](../properties/start.md) to [End](../properties/end.md) .       In addition, two lines are drawn from each end of the arc to the centre,       resulting in a pie-slice.|
 
 
-[LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) define the style and width of the lines used to draw the boundaries of the
-ellipse(s), circle(s) or arc(s). [FCol](../properties/fcol.md) and [BCol](../properties/bcol.md) determine the colour of the lines.
+[LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) define the style and width of the lines used to draw the boundaries of the
+ellipse(s), circle(s) or arc(s). [FCol](../properties/fcol.md) and [BCol](../properties/bcol.md) determine the colour of the lines.
 
 
 [FStyle](../properties/fstyle.md) specifies whether or not the
-ellipse(s), circle(s) or arc(s) are filled, and if so, how. For a solid fill ([FStyle](../properties/fstyle.md) 0), [FillCol](../properties/fillcol.md) defines the fill colour used.
-For a pattern fill ([FStyle](../properties/fstyle.md) 1-6) [FillCol](../properties/fillcol.md) defines the colour of the hatch lines and [BCol](../properties/bcol.md) the colour of the spaces between them.
+ellipse(s), circle(s) or arc(s) are filled, and if so, how. For a solid fill ([FStyle](../properties/fstyle.md) 0), [FillCol](../properties/fillcol.md) defines the fill colour used.
+For a pattern fill ([FStyle](../properties/fstyle.md) 1-6) [FillCol](../properties/fillcol.md) defines the colour of the hatch lines and [BCol](../properties/bcol.md) the colour of the spaces between them.
 
 
 The value of [Dragable](../properties/dragable.md) determines
-whether or not the object can be dragged. The value of [AutoConf](../properties/autoconf.md) determines whether or not the Ellipse object is resized when its parent is
+whether or not the object can be dragged. The value of [AutoConf](../properties/autoconf.md) determines whether or not the Ellipse object is resized when its parent is
 resized.
 
 
@@ -64,7 +64,7 @@ and multiple ellipses, circles or arcs.
 ## Single Ellipse, Circle or Arc
 
 
-For a single ellipse, circle or arc, [Points](../properties/points.md) is a 2-element vector which specifies the y-coordinate and x-coordinate of the
+For a single ellipse, circle or arc, [Points](../properties/points.md) is a 2-element vector which specifies the y-coordinate and x-coordinate of the
 top-left corner of the bounding rectangle.
 
 
@@ -72,14 +72,14 @@ top-left corner of the bounding rectangle.
 whose elements specify the height and width of the bounding rectangle.
 
 
-[LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) are both simple scalar numbers.
+[LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) are both simple scalar numbers.
 
 
 [FStyle](../properties/fstyle.md) is either a single number
-specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used to fill the ellipse, circle or arc.
+specifying a standard fill pattern, or the name of a [Bitmap](bitmap.md) object which is to be used to fill the ellipse, circle or arc.
 
 
-[FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) are each either single numbers
+[FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) are each either single numbers
 representing standard colours, or 3-element vectors which specify colours
 explicitly in terms of their RGB values.
 
@@ -127,7 +127,7 @@ Ditto, but use a green line and solid red fill :
 ## Multiple Ellipses, Circles or Arcs
 
 
-To draw a set of ellipses, circles, or arcs with a single name, [Points](../properties/points.md) may be a simple 2-element vector (specifying the location of all the bounding
+To draw a set of ellipses, circles, or arcs with a single name, [Points](../properties/points.md) may be a simple 2-element vector (specifying the location of all the bounding
 rectangles), **or** a 2-column matrix whose first column specifies their
 y-coordinates and whose second column specifies their x-coordinates, **or** a
 2-element nested vector whose first element specifies their y-coordinate(s) and
@@ -141,7 +141,7 @@ their widths, **or** a 2-element nested vector whose first element specifies
 their height(s) and whose second element specifies their width(s).
 
 
-If specified, [Start](../properties/start.md) and/or [End](../properties/end.md) define arcs in terms of the angles made by drawing a line from the centre of the
+If specified, [Start](../properties/start.md) and/or [End](../properties/end.md) define arcs in terms of the angles made by drawing a line from the centre of the
 bounding box to the two ends of the arc. Both properties may be simple scalars,
 or vectors containing one element per arc drawn.
 
@@ -152,10 +152,10 @@ If [End](../properties/end.md) is specified, but not [Start](../properties/start
 start angles default to `0,¯1↓+\End`
 
 
-This means that you can draw a pie-chart using either [Start](../properties/start.md) or [End](../properties/end.md) angles; you do not have to specify both.
+This means that you can draw a pie-chart using either [Start](../properties/start.md) or [End](../properties/end.md) angles; you do not have to specify both.
 
 
-[ArcMode](../properties/arcmode.md), [LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) may each be simple scalar values
+[ArcMode](../properties/arcmode.md), [LStyle](../properties/lstyle.md) and [LWidth](../properties/lwidth.md) may each be simple scalar values
 (applying to all the ellipses, circles or arcs) or simple vectors whose elements
 refer to each of the corresponding ellipses, circles or arcs in turn.
 
@@ -166,14 +166,14 @@ applying to all rectangles, or a vector whose elements refer to each of the
 corresponding ellipses, circles or arcs in turn.
 
 
-Similarly, [FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) may each be single numbers or a
+Similarly, [FCol](../properties/fcol.md), [BCol](../properties/bcol.md) and [FillCol](../properties/fillcol.md) may each be single numbers or a
 single (enclosed) 3-element vector applying to all the rectangles.
 Alternatively, these properties may contain vectors whose elements refer to each
 of the rectangles in turn. If so, their elements may be single numbers or nested
 RGB triplets, or a combination of the two.
 
 
-The [Coord](../properties/coord.md), [Dragable](../properties/dragable.md) and [Data](../properties/data.md) properties are specified for the
+The [Coord](../properties/coord.md), [Dragable](../properties/dragable.md) and [Data](../properties/data.md) properties are specified for the
 object as a whole, and may not be allocated different values for each individual
 ellipse, circle or arc that is drawn.
 

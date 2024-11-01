@@ -10,7 +10,7 @@ The ListView object is a window that displays a collection of items, each item c
 arranging items and displaying individual items. For example, additional information about each item can be displayed in columns to the right of the icon
 and label. An example of the use of a ListView object is the "My Computer" Windows utility.
 
-The Items property is a vector of character vectors that specifies the labels for the items displayed by the ListView. The [ImageListObj](../properties/imagelistobj.md) property specifies the names of two [ImageList](imagelist.md) objects that define two sets of icons; a large icon (32x32 pixel) set and a
+The Items property is a vector of character vectors that specifies the labels for the items displayed by the ListView. The [ImageListObj](../properties/imagelistobj.md) property specifies the names of two [ImageList](imagelist.md) objects that define two sets of icons; a large icon (32x32 pixel) set and a
 small icon (16x16 pixel) set. Alternatively, [ImageListObj](../properties/imagelistobj.md) may be empty (no icons displayed) or contain just the name of a single large icon [ImageList](imagelist.md).
 
 The [View](../properties/view.md) property contains a character vector that determines how the items are displayed. It may have one of the
@@ -20,9 +20,9 @@ following values; `'Icon'` (the default), `'SmallIcon'`, `'List'` or `'Report'`.
 
 ![](../img/listview-list.png)
 
-When View is set to `'Report'`, the items are displayed in a single column using small icons but with the matrix specified by [ReportInfo](../properties/reportinfo.md) displayed alongside. In this format, the Boolean [Header](../properties/header.md) property determines whether or not the object also provides column headings. Its default value is 1. The column headings themselves are specified by the ColTitles property. Their alignment (and the alignment of the data in the columns beneath them) is defined by the [ColTitleAlign](../properties/coltitlealign.md) property.
+When View is set to `'Report'`, the items are displayed in a single column using small icons but with the matrix specified by [ReportInfo](../properties/reportinfo.md) displayed alongside. In this format, the Boolean [Header](../properties/header.md) property determines whether or not the object also provides column headings. Its default value is 1. The column headings themselves are specified by the ColTitles property. Their alignment (and the alignment of the data in the columns beneath them) is defined by the [ColTitleAlign](../properties/coltitlealign.md) property.
 
-The appearance of the column titles is further controlled by the [ColTitle3D](../properties/coltitle3d.md) property. This is a Boolean value (default 1) which specifies whether or not the column titles have a 3-dimensional (plinth) appearance. [Header](../properties/header.md) and [ColTitle3D](../properties/coltitle3d.md) may only be set when the object is created using `⎕WC` and may not subsequently be changed by `⎕WS`.
+The appearance of the column titles is further controlled by the [ColTitle3D](../properties/coltitle3d.md) property. This is a Boolean value (default 1) which specifies whether or not the column titles have a 3-dimensional (plinth) appearance. [Header](../properties/header.md) and [ColTitle3D](../properties/coltitle3d.md) may only be set when the object is created using `⎕WC` and may not subsequently be changed by `⎕WS`.
 
 In `'Report'` View, columns may be resized by the user dragging the bars between the titles, or under program control using the SetColSize event. A `'Report'` view example is illustrated below.
 
@@ -55,7 +55,7 @@ The [ReportBCol](../properties/reportbcol.md) property specifies each item's bac
 The [FullRowSelect](../properties/fullrowselect.md) property is Boolean and specifies whether or not the entire row is highlighted to indicate
 selected items. This applies only when View is `'Report'`. Its default value is 0.
 
-The [ItemGroups](../properties/itemgroups.md) and [ItemGroupMetrics](../properties/itemgroupmetrics.md) properties allow you to display items in groups as illustrated below.
+The [ItemGroups](../properties/itemgroups.md) and [ItemGroupMetrics](../properties/itemgroupmetrics.md) properties allow you to display items in groups as illustrated below.
 
 !!! note
     This feature only applies if [Native Look and Feel](../miscellaneous/windows-xp-look-and-feel.md) is enabled.

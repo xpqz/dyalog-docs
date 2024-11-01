@@ -7,7 +7,7 @@
 **Description**
 
 
-This method displays or hides the CEF development tools window that displays information about the content being displayed by the HTMLRenderer.
+This method displays or hides the CEF development tools window that displays information about the content being displayed by the HTMLRenderer.
 
 
 It takes a Boolean argument 0(hide) or 1(display).

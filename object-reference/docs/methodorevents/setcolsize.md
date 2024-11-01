@@ -21,9 +21,9 @@ The event message reported as the result of [`⎕DQ`](../../../language-referenc
 |-----|-------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 |`[1]`|Object       |ref or character vector                                                                                                                  |
 |`[2]`|Event        |`'SetColSize'` or 176                                                                                                                    |
-|`[3]`|Column number|Integer. This is sensitive to the index origin, `⎕IO` , but is `¯1` if the user has resized the row titles in a Grid.                    |
+|`[3]`|Column number|Integer. This is sensitive to the index origin, `⎕IO` , but is `¯1` if the user has resized the row titles in a Grid.                    |
 |`[4]`|Width        |Integer containing the value of the (new)column width. This is `¯3` if the user has double-clicked to request automatic width adjustment.|
-|`[5]`|Undo flag    |0 or 1                                                                                                                                   |
+|`[5]`|Undo flag    |0 or 1                                                                                                                                   |
 
 
 

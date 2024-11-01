@@ -22,12 +22,12 @@ A special type of tab control displays tabs that look like buttons. For
 example, the Windows taskbar is such a tab control.
 
 
-The overall appearance of the TabControl is determined by the [Style](../properties/style.md) property which may be `'Tabs'` (the
+The overall appearance of the TabControl is determined by the [Style](../properties/style.md) property which may be `'Tabs'` (the
 default), `'Buttons'` or `'FlatButtons'`.
 
 
-Individual tabs or buttons are represented by [TabButton](tabbutton.md) objects which should be created as children of the TabControl object. Optional
-captions and pictures are specified by the [Caption](../properties/caption.md) and [ImageIndex](../properties/imageindex.md) properties of the
+Individual tabs or buttons are represented by [TabButton](tabbutton.md) objects which should be created as children of the TabControl object. Optional
+captions and pictures are specified by the [Caption](../properties/caption.md) and [ImageIndex](../properties/imageindex.md) properties of the
 individual [TabButton](tabbutton.md) objects themselves.
 Otherwise, the appearance of the tabs or buttons is determined by properties of
 the TabControl itself.
@@ -35,12 +35,12 @@ the TabControl itself.
 
 To implement a multiple page tabbed dialog [(see Example 1)](../examples/tabcontrol-example-1.md), you should create a [Form](form.md), then a
 TabControl with Style `'Tabs'` as a child of
-the [Form](form.md). Next, create one or more pairs of [TabButton](tabbutton.md) and [SubForm](subform.md) objects as children of the
+the [Form](form.md). Next, create one or more pairs of [TabButton](tabbutton.md) and [SubForm](subform.md) objects as children of the
 TabControl. You associate each [SubForm](subform.md) with a
-particular tab by setting its [TabObj](../properties/tabobj.md) property to the name of, or ref to, the associated [TabButton](tabbutton.md) object. Making the [SubForms](subform.md) children of the
+particular tab by setting its [TabObj](../properties/tabobj.md) property to the name of, or ref to, the associated [TabButton](tabbutton.md) object. Making the [SubForms](subform.md) children of the
 TabControl ensures that, by default, they will automatically be resized
-correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](form.md) and establish
-appropriate resize behaviour using their [Attach](../properties/attach.md) property.
+correctly. You may alternatively create your [SubForms](subform.md) as children of the main [Form](form.md) and establish
+appropriate resize behaviour using their [Attach](../properties/attach.md) property.
 
 
 A TabControl object with [Style](../properties/style.md) `'Buttons'` [(Example 2)](../examples/tabcontrol-example-2.md) or `'FlatButtons'`[ (Example 3)](../examples/tabcontrol-example-3.md) may be used in a similar
@@ -62,7 +62,7 @@ effect of setting [FlatSeparators](../properties/flatseparators.md) to
 
 
 The [Align](../properties/align.md) property specifies along which
-of the 4 edges of the TabControl the tabs or buttons are arranged. [Align](../properties/align.md) also controls the relative positioning of the picture and Caption within each
+of the 4 edges of the TabControl the tabs or buttons are arranged. [Align](../properties/align.md) also controls the relative positioning of the picture and Caption within each
 TabButton. [Align](../properties/align.md) may be Top (the default),
 Bottom, Left or Right.
 
@@ -105,7 +105,7 @@ displayed in multiple flights [(Example 8)](../examples/tabcontrol-example-8.md)
 
 The [ScrollOpposite](../properties/scrollopposite.md) property
 specifies that unneeded tabs scroll to the opposite side of a TabControl, when a
-tab is selected. Setting [ScrollOpposite](../properties/scrollopposite.md) to 1 forces [MultiLine](../properties/multiline.md) to 1 also.
+tab is selected. Setting [ScrollOpposite](../properties/scrollopposite.md) to 1 forces [MultiLine](../properties/multiline.md) to 1 also.
 
 
 [Example 10](../examples/tabcontrol-example-10.md) illustrates a
@@ -126,15 +126,15 @@ Otherwise, if [Justify](../properties/justify.md) is empty or `'None'`,
 the rows are ragged.
 
 
-See [Example 11](../examples/tabcontrol-example-11.md) (for tabs) and [Example 12](../examples/tabcontrol-example-12.md) (for
+See [Example 11](../examples/tabcontrol-example-11.md) (for tabs) and [Example 12](../examples/tabcontrol-example-12.md) (for
 buttons).
 
 
 By default, the size of the tabs may vary from one to another. Fixed size
-tabs may be obtained by setting the [TabSize](../properties/tabsize.md) property.
+tabs may be obtained by setting the [TabSize](../properties/tabsize.md) property.
 
 
-To obtain fixed sized tabs with [MultiLine](../properties/multiline.md) set to 1, you must however also set Justify to `'None'`.
+To obtain fixed sized tabs with [MultiLine](../properties/multiline.md) set to 1, you must however also set Justify to `'None'`.
 
 
 If fixed size tabs are in effect, the positions at which the picture and
@@ -148,7 +148,7 @@ or `'IconEdge'`.
 13](../examples/tabcontrol-example-13.md) illustrates these different settings.
 
 
-The font used to draw the captions in the [TabButton](tabbutton.md) objects is determined by the [FontObj](../properties/fontobj.md) property of the TabControl.
+The font used to draw the captions in the [TabButton](tabbutton.md) objects is determined by the [FontObj](../properties/fontobj.md) property of the TabControl.
 
 
 You cannot specify the foreground or background colours of the tabs/buttons,
@@ -158,13 +158,13 @@ TabControl.
 
 
 The [TabObj](../properties/tabobj.md) property is read-only and
-reports the name of, or ref to, the [TabButton](tabbutton.md) that is currently selected.
+reports the name of, or ref to, the [TabButton](tabbutton.md) that is currently selected.
 
 
 The [MultiSelect](../properties/multiselect.md) property specifies
 whether or not the user can select more than one button in a TabControl at the
 same time, by holding down the Ctrl key when clicking. The default is 0 (only
-one button may be selected). [MultiSelect](../properties/multiselect.md) is ignored if Style is `'Tabs'`.
+one button may be selected). [MultiSelect](../properties/multiselect.md) is ignored if Style is `'Tabs'`.
 
 
 The [TabFocus](../properties/tabfocus.md) property specifies the

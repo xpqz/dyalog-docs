@@ -49,7 +49,7 @@ the same as specifying `'Date'`. Note that `'DateCentury'` always displays a 4-d
 
 
 If FieldType is set to `'Custom'`, the
-format is defined by the [CustomFormat](../properties/customformat.md) property. CustomFormat is a character vector that may contain a mixture of
+format is defined by the [CustomFormat](../properties/customformat.md) property. CustomFormat is a character vector that may contain a mixture of
 date/time format elements and body text.
 
 

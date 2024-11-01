@@ -21,7 +21,7 @@ and [TabBar](tabbar.md)s) of its parent.
 The properties
 that control its appearance, including [Sizeable](../properties/sizeable.md),
 [Moveable](../properties/moveable.md), [SysMenu](../properties/sysmenu.md),
-[Border](../properties/border.md), [MaxButton](../properties/maxbutton.md) and [MinButton](../properties/minbutton.md), all default to 0. The [EdgeStyle](../properties/edgestyle.md) property also defaults to `'None'`, so the
+[Border](../properties/border.md), [MaxButton](../properties/maxbutton.md) and [MinButton](../properties/minbutton.md), all default to 0. The [EdgeStyle](../properties/edgestyle.md) property also defaults to `'None'`, so the
 background of the SubForm defaults to the Window Background colour.
 
 
@@ -34,12 +34,12 @@ centre of its parent object.
 The [Posn](../properties/posn.md) property specifies the location of
 the **internal** top-left corner of the SubForm relative to its parent. If
 the SubForm has a title bar, border, or a 3-dimensional shadow, you must allow
-sufficient space for these components. Similarly, the [Size](../properties/size.md) property specifies the internal size of the SubForm excluding the title bar and
+sufficient space for these components. Similarly, the [Size](../properties/size.md) property specifies the internal size of the SubForm excluding the title bar and
 border.
 
 
 A SubForm is constrained so that it cannot be moved outside its parent. In
-all other respects it behaves in a similar manner to a [Form](form.md) object. See [Form](form.md) object and the descriptions of
+all other respects it behaves in a similar manner to a [Form](form.md) object. See [Form](form.md) object and the descriptions of
 its properties for further details.
 
 

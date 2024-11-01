@@ -14,11 +14,11 @@ The argument to DuplicateRow is a 2, 3, 4 or 5-element vector as follows:
 
 
 |-----|-----------------|--------------------------------------------|
-|`[1]`|Source Row number|number of the row (integer) to be duplicated|
-|`[2]`|Target Row number|new row number (integer)                    |
-|`[3]`|Comment flag     |0 or 1 (optional, default 1)                |
-|`[4]`|Lock flag        |0 or 1 (optional, default 1)                |
-|`[5]`|Undo flag        |0 or 1 (optional; default 0)                |
+|`[1]`|Source Row number|number of the row (integer) to be duplicated|
+|`[2]`|Target Row number|new row number (integer)                    |
+|`[3]`|Comment flag     |0 or 1 (optional, default 1)                |
+|`[4]`|Lock flag        |0 or 1 (optional, default 1)                |
+|`[5]`|Undo flag        |0 or 1 (optional; default 0)                |
 
 
 If the *Comment flag* is 1 (the default), any Comments associated with cells in the source row are duplicated in the target row.

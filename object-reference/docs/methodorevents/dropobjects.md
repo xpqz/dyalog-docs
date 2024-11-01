@@ -15,8 +15,8 @@ The event message reported as the result of `⎕DQ`, or supplied as the right ar
 |`[1]`|Object|ref or character vector|
 |`[2]`|Event|`'DropObjects'` or 455|
 |`[3]`|Objects|Vector of character vectors containing the object names.|
-|`[4]`|Item number|Integer. The index of the item within the object onto which the file(s) was dropped. Applies only to objects that have an [Items](../properties/items.md) property such as List, [ListView](../objects/listview.md) and [TreeView](../objects/treeview.md) . Otherwise this value is -1.|
-|`[5]`|Shift state|Integer. Sum of 1=Shift key, 2=Ctrl key, 4=Alt key|
+|`[4]`|Item number|Integer. The index of the item within the object onto which the file(s) was dropped. Applies only to objects that have an [Items](../properties/items.md) property such as List, [ListView](../objects/listview.md) and [TreeView](../objects/treeview.md) . Otherwise this value is -1.|
+|`[5]`|Shift state|Integer. Sum of 1=Shift key, 2=Ctrl key, 4=Alt key|
 
 
 

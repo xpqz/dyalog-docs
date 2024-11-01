@@ -20,21 +20,21 @@ or cancels the operation (by clicking elsewhere).
 
 
 
-If a Menu belongs to a [Form](form.md), [SubForm](subform.md) or is a top-level object, it must be popped up by the application. This is
-commonly done in response to a [MouseDown](../methodorevents/mousedown.md) event. A Menu is popped-up by calling [`⎕DQ`](../../../language-reference-guide/system-functions/dq) with only the name of the Menu as its argument. The user may therefore not
+If a Menu belongs to a [Form](form.md), [SubForm](subform.md) or is a top-level object, it must be popped up by the application. This is
+commonly done in response to a [MouseDown](../methodorevents/mousedown.md) event. A Menu is popped-up by calling [`⎕DQ`](../../../language-reference-guide/system-functions/dq) with only the name of the Menu as its argument. The user may therefore not
 interact with any other object until a selection is made or until the operation
 is cancelled. When either occurs, the Menu is automatically popped down and
-de-activated, and its [`⎕DQ`](../../../language-reference-guide/system-functions/dq) terminates.
+de-activated, and its [`⎕DQ`](../../../language-reference-guide/system-functions/dq) terminates.
 
 
-The Menu object does not have a [Size](../properties/size.md) property. Instead, its size is determined automatically by its contents.
+The Menu object does not have a [Size](../properties/size.md) property. Instead, its size is determined automatically by its contents.
 
 
 If a Menu is owned by a [MenuBar](menubar.md) or by
 another Menu, its position within its parent is also calculated automatically,
-dependent on the order in which other related objects are established. The [Posn](../properties/posn.md) property may however be used to **insert** a new Menu into an existing
+dependent on the order in which other related objects are established. The [Posn](../properties/posn.md) property may however be used to **insert** a new Menu into an existing
 structure. For example, having defined three Menu objects as children of a [MenuBar](menubar.md),
-you can insert a fourth one between the first and the second by specifying its [Posn](../properties/posn.md) to be 2. Note that the value of [Posn](../properties/posn.md) for the
+you can insert a fourth one between the first and the second by specifying its [Posn](../properties/posn.md) to be 2. Note that the value of [Posn](../properties/posn.md) for the
 Menus that were previously second and third will then be reset to 3 and 4
 respectively.
 
@@ -53,11 +53,11 @@ names of, or refs to, three [Bitmap](bitmap.md) objects.
 The first [Bitmap](bitmap.md) is displayed when the Menu
 does not have the focus (normal), the second when it does have the focus
 (highlighted). The third [Bitmap](bitmap.md) is displayed
-when the Menu is made inactive ([Active](../properties/active.md) property is 0). If [Caption](../properties/caption.md) is also defined,
+when the Menu is made inactive ([Active](../properties/active.md) property is 0). If [Caption](../properties/caption.md) is also defined,
 it is displayed **on top of** the bitmaps.
 
 
-If the Menu is a submenu (owned by a Menu), you may set its [EdgeStyle](../properties/edgestyle.md) property to `'Plinth'`. This causes the Menu
+If the Menu is a submenu (owned by a Menu), you may set its [EdgeStyle](../properties/edgestyle.md) property to `'Plinth'`. This causes the Menu
 to take on an appearance that is similar to a pushbutton and be raised when not
 selected and recessed when selected. Note that to enable 3-dimensional
 appearance, you must set [EdgeStyle](../properties/edgestyle.md) to
