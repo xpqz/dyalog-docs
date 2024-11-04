@@ -4,7 +4,7 @@ COM methods and properties frequently return null values for which there is no d
 
 The following spreadsheet contains a number of empty cells.
 
-![ole client null values example](../img/ole-client-null-values-example.png)
+![](../img/ole-client-null-values-example.png)
 
 Using the Excel.Application COM object, the contents of the spreadsheet can be obtained as follows:
 ```apl

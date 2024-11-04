@@ -31,7 +31,7 @@ The following objects are supported.
 |[Root](../../../object-reference/objects/root)                        |system-level object                                             |
 |[Printer](../../../object-reference/objects/printer)                  |for hard-copy output                                            |
 |[Clipboard](../../../object-reference/objects/clipboard)              |provides access to Windows clipboard                            |
-|Container Objects                                                                                                                     ||
+|**Container Objects**                                                                                                                 ||
 |[CoolBand](../../../object-reference/objects/coolband)                |represents a band in a CoolBar                                  |
 |[CoolBar](../../../object-reference/objects/coolbar)                  |a container for CoolBand objects                                |
 |[Form](../../../object-reference/objects/form)                        |top-level Window                                                |
@@ -47,12 +47,12 @@ The following objects are supported.
 |[PropertySheet](../../../object-reference/objects/propertysheet)      |contains PropertyPages                                          |
 |[PropertyPage](../../../object-reference/objects/propertypage)        |tabbed or paged container for other controls                    |
 |[Splitter](../../../object-reference/objects/splitter)                |divides a container into panes                                  |
-|Menu                                                                                                                                  ||
+|**Menu**                                                                                                                              ||
 |[MenuBar](../../../object-reference/objects/menubar)                  |pull-down menu bar                                              |
 |[Menu](../../../object-reference/objects/menu)                        |pop-up menu                                                     |
 |[MenuItem](../../../object-reference/objects/menuitem)                |selects an option or action                                     |
 |[Separator](../../../object-reference/objects/separator)              |separator between items                                         |
-|Action                                                                                                                                ||
+|**Action**                                                                                                                            ||
 |[Button](../../../object-reference/objects/button)                    |selects an option                                               |
 |[ToolButton](../../../object-reference/objects/toolbutton)            |performs an action or selects an option                         |
 |[TabBtn](../../../object-reference/objects/tabbtn)                    |selects a tabbed SubForm                                        |
@@ -61,13 +61,13 @@ The following objects are supported.
 |[UpDown](../../../object-reference/objects/updown)                    |spin buttons                                                    |
 |[Locator](../../../object-reference/objects/locator)                  |graphical (positional) input device                             |
 |[Timer](../../../object-reference/objects/timer)                      |generates events at regular intervals                           |
-|Information                                                                                                                           ||
+|**Information**                                                                                                                       ||
 |[Label](../../../object-reference/objects/label)                      |displays static text                                            |
 |[StatusField](../../../object-reference/objects/statusfield)          |displays status information                                     |
 |[MsgBox](../../../object-reference/objects/msgbox)                    |displays a message box                                          |
 |[TipField](../../../object-reference/objects/tipfield)                |displays pop-up context sensitive help                          |
 |[ProgressBar](../../../object-reference/objects/progressbar)          |displays the progress of a lengthy operation                    |
-|Input & Selection                                                                                                                     ||
+|**Input & Selection**                                                                                                                 ||
 |[Calendar](../../../object-reference/objects/calendar)                |displays a month calendar control                               |
 |[Grid](../../../object-reference/objects/grid)                        |displays a data matrix as a spreadsheet                         |
 |[Edit](../../../object-reference/objects/edit)                        |text input field                                                |
@@ -79,14 +79,14 @@ The following objects are supported.
 |[TreeView](../../../object-reference/objects/treeview)                |displays a hierarchical collection of items                     |
 |[TrackBar](../../../object-reference/objects/trackbar)                |a slider control for analogue input/output                      |
 |[FileBox](../../../object-reference/objects/filebox)                  |prompts user to select a file                                   |
-|Resource                                                                                                                              ||
+|**Resource**                                                                                                                          ||
 |[Font](../../../object-reference/objects/font)                        |loads a font                                                    |
 |[Bitmap](../../../object-reference/objects/bitmap)                    |defines a bitmap                                                |
 |[Icon](../../../object-reference/objects/icon)                        |defines an icon                                                 |
 |[ImageList](../../../object-reference/objects/imagelist)              |defines a collection of bitmaps or icons                        |
 |[Metafile](../../../object-reference/objects/metafile)                |loads a Windows Metafile                                        |
 |[Cursor](../../../object-reference/objects/cursor)                    |defines a cursor                                                |
-|Graphical Output                                                                                                                      ||
+|**Graphical Output**                                                                                                                  ||
 |[Circle](../../../object-reference/objects/circle)                    |draws a circle                                                  |
 |[Ellipse](../../../object-reference/objects/ellipse)                  |draws an ellipse                                                |
 |[Marker](../../../object-reference/objects/marker)                    |draws a series of polymarkers                                   |
@@ -94,7 +94,7 @@ The following objects are supported.
 |[Rect](../../../object-reference/objects/rect)                        |draws rectangles                                                |
 |[Image](../../../object-reference/objects/image)                      |displays Bitmaps, Icons and Metafiles                           |
 |[Text](../../../object-reference/objects/text)                        |draws graphical text                                            |
-|Miscellaneous                                                                                                                         ||
+|**Miscellaneous**                                                                                                                     ||
 |[ActiveXContainer](../../../object-reference/objects/activexcontainer)|represents the application hosting a Dyalog       ActiveXControl|
 |[ActiveXControl](../../../object-reference/objects/activexcontrol)    |represents an ActiveX control written in Dyalog                 |
 |[HTMLRenderer](../../../object-reference/objects/htmlrenderer)        |displays HTML content                                           |
@@ -111,12 +111,12 @@ The following objects are supported.
 
 The Dyalog APL GUI is implemented by the following system functions :
 
-|-----|--------------------|--------------------------------------------|
-|`⎕DQ`|Dequeue             |processes user actions, invoking callbacks  |
-|`⎕NQ`|Enqueue             |generates an event under program control    |
-|`⎕WC`|Create       Object |creates new object with specified properties|
-|`⎕WG`|Get       Properties|gets values of properties from an object    |
-|`⎕WN`|Object       Names  |reports names of all children of an object  |
-|`⎕WS`|Set       Properties|sets values of properties for an object     |
+|--------------------------------------------------------------|---------------|--------------------------------------------|
+|[`⎕DQ`](../../../language-reference-guide/system-functions/dq)|Dequeue        |processes user actions, invoking callbacks  |
+|[`⎕NQ`](../../../language-reference-guide/system-functions/nq)|Enqueue        |generates an event under program control    |
+|[`⎕WC`](../../../language-reference-guide/system-functions/wc)|Create Object  |creates new object with specified properties|
+|[`⎕WG`](../../../language-reference-guide/system-functions/wg)|Get Properties |gets values of properties from an object    |
+|[`⎕WN`](../../../language-reference-guide/system-functions/wn)|Object Names   |reports names of all children of an object  |
+|[`⎕WS`](../../../language-reference-guide/system-functions/ws)|Set Properties |sets values of properties for an object     |
 
 GUI Objects are a special type of *namespace* and have a name class of 9. They may therefore be managed like any other workspace object. This means that they can be localised in function headers and erased with `⎕EX`. GUI objects are saved with your workspace and reappear when it is loaded or copied.

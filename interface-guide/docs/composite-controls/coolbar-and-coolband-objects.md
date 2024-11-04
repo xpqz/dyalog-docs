@@ -31,11 +31,11 @@ The following example illustrates a CoolBar containing two CoolBands, each of wh
 :EndWith
 ```
 
-![coolbar_toolcontrols](../img/coolbar-toolcontrols.png)
+![](../img/coolbar-toolcontrols.png)
 
 The user may move band 2 into row 1 by dragging the gripper bar:
 
-![coolbar_toolcontrols1](../img/coolbar-toolcontrols1.png)
+![](../img/coolbar-toolcontrols1.png)
 
 ## CoolBar: FixedOrder Property
 
@@ -49,7 +49,7 @@ GripperMode is a property of a CoolBand and specifies whether or not the CoolBan
 
 The next picture shows the second CoolBand maximised.
 
-![coolbar_toolcontrols3](../img/coolbar-toolcontrols3.png)
+![](../img/coolbar-toolcontrols3.png)
 
 ## CoolBar: DblClickToggle Property
 
@@ -57,7 +57,7 @@ If it has a gripper bar, the user may maximise one of the bands in a row, causin
 
 If DblClickToggle is 0 (the default), the user must single-click the gripper bar. If DblClickToggle is 1, the user must double-click the gripper bar. These actions toggle a child CoolBand between its maximised and minimised state. The following picture shows the first CoolBand maximised.
 
-![coolbar_toolcontrols2](../img/coolbar-toolcontrols2.png)
+![](../img/coolbar-toolcontrols2.png)
 
 ## CoolBar: VariableHeight/BandBorders Properties
 
@@ -85,19 +85,19 @@ The following example uses simple controls (as opposed to container controls) as
 :EndWith
 ```
 
-![coolbar_simplecontrols0](../img/coolbar-simplecontrols0.png)
+![](../img/coolbar-simplecontrols0.png)
 
 If the CoolBands are arranged in the same row, the height of the row expands to accommodate the largest one as shown below.
 
-![coolbar_simplecontrols1](../img/coolbar-simplecontrols1.png)
+![](../img/coolbar-simplecontrols1.png)
 
 The picture below illustrates the effect of setting VariableHeight to 0.
 
-![coolbar_simplecontrols2](../img/coolbar-simplecontrols2.png)
+![](../img/coolbar-simplecontrols2.png)
 
 The picture below shows the effect on appearance of setting BandBorders to 1.
 
-![coolbar_simplecontrols3](../img/coolbar-simplecontrols3.png)
+![](../img/coolbar-simplecontrols3.png)
 
 ## CoolBand: ChildEdge Property
 
@@ -105,7 +105,7 @@ ChildEdge is a property of a CoolBand and specifies whether or not the CoolBand 
 
 If the ChildEdge property of each CoolBand had been set to 1 in the above example, then the result would show wider borders between each band.
 
-![coolband_childedge](../img/coolband-childedge.png)
+![](../img/coolband-childedge.png)
 
 ## CoolBand: Caption and ImageIndex Properties
 
@@ -140,11 +140,11 @@ The picture is defined by an image in an ImageList object whose name is referenc
 :EndWith
 ```
 
-![coolband_caption_imageindex0](../img/coolband-caption-imageindex0.png)
+![](../img/coolband-caption-imageindex0.png)
 
 Note that the Caption and image are displayed when the CoolBand is minimised as shown below:
 
-![coolband_caption_imageindex1](../img/coolband-caption-imageindex1.png)
+![](../img/coolband-caption-imageindex1.png)
 
 ## CoolBand: Size, Posn, NewLine, Index Properties
 
@@ -188,4 +188,4 @@ The following example illustrates this technique. Note that the SubForms are dis
 :EndWith
 ```
 
-![coolbar_subforms](../img/coolbar-subforms.png)
+![](../img/coolbar-subforms.png)

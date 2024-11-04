@@ -92,7 +92,7 @@ and click on the buttons...
 
 The result will appear approximately as shown below
 
-![gui objects as namespaces](../img/gui-objects-as-namespaces.png)
+![](../img/gui-objects-as-namespaces.png)
 
 ## Attaching GUI Objects to Namespaces
 
@@ -124,7 +124,6 @@ So for example, if you have a Form named `F`:
 
 Assigning `F` to `F1`, does not create a second Form `F1`; it simply creates a second reference (`F1`) to the Form `F`.  Subsequently, you can manipulate the Form `F` using either `F` or `F1`.
 ```apl
- 
       F1←F
       F1
 #.F
@@ -190,6 +189,6 @@ The new Group `F.F` is an exact copy of `F.B` and will have the same Posn, Size 
 
 The result is illustrated below.
 
-![cloning example](../img/cloning-example.png)
+![](../img/cloning-example.png)
 
 Note that when a namespace is cloned in this way, the objects (functions, variables and other namespaces) within it are not necessarily duplicated. Instead, the objects in cloned namespaces are in effect just pointers to the original objects. However, if you subsequently change the clone, or the original object to which it refers, the two are de-coupled and a second *copy* ensues. This mechanism makes it possible to create large numbers of *instances* of a single *class* namespace without consuming an excessive amount of workspace.

@@ -67,7 +67,7 @@ The following Grid uses two internal Combo objects for the *Job Title* and *Regi
 
 ```
 
-![grid employee database showinput 0](../img/grid-employee-database-showinput-0.png)
+![](../img/grid-employee-database-showinput-0.png)
 
 The same Grid with ShowInput set to 1 is illustrated below. In this case, all of the cells associated with Combo objects have Combo appearance.
 ```apl
@@ -77,7 +77,7 @@ The same Grid with ShowInput set to 1 is illustrated below. In this case, all of
 
 ```
 
-![grid employee database showinput 1](../img/grid-employee-database-showinput-1.png)
+![](../img/grid-employee-database-showinput-1.png)
 
 ## Using Radio and Check Button Objects
 
@@ -105,4 +105,4 @@ The following illustrates different values for the Align property using Check Bu
 
 ```
 
-![grid aligned checkboxes](../img/grid-aligned-checkboxes.png)
+![](../img/grid-aligned-checkboxes.png)

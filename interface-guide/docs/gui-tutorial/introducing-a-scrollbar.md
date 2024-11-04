@@ -6,7 +6,7 @@ Another way to improve the application would be to allow the user to input using
       'TEMP.S' ⎕WC SCR
 ```
 
-![temperature converter 9](../img/temperature-converter-9.png)
+![](../img/temperature-converter-9.png)
 
 The range of a scrollbar goes from 1 to the value of the Range property. Setting Range to 101 will give us a range of 1-101. You will see in a moment why we need to do this. The Scroll event will be generated whenever the user moves the scrollbar. We have associated it with the callback function `'C2F'` which we will define as follows:
 ```apl
@@ -21,4 +21,4 @@ The Event message `MSG` contains information about the Scroll event. Its 4th ele
 
 Try moving the scrollbar and see what happens...
 
-![temperature converter 10](../img/temperature-converter-10.png)
+![](../img/temperature-converter-10.png)

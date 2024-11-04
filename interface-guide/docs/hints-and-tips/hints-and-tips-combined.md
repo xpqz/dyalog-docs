@@ -19,6 +19,6 @@ There is no reason why you cannot provide Hints *and* Tips. The next example sho
       'Test.C' ⎕WS 'Tip' 'Wine Cellar'
 ```
 
-![hints and tips combined](../img/hints-and-tips-combined.png)
+![](../img/hints-and-tips-combined.png)
 
 Hints and Tips Combined

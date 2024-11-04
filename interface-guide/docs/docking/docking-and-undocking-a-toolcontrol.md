@@ -39,11 +39,11 @@ The following function creates a Form containing a dockable ToolControl. The Too
 
 The picture below shows the initial appearance of the `Host` Form and its ToolControl.
 
-![docking_toolcontrol 0](../img/docking-toolcontrol-0.png)
+![](../img/docking-toolcontrol-0.png)
 
 Because the ToolControl is dockable, the user may pick it up and drag it out of its parent Form as shown below.
 
-![docking_toolcontrol 1](../img/docking-toolcontrol-1.png)
+![](../img/docking-toolcontrol-1.png)
 
 When the user drops the ToolControl outside the `Host` Form, it (the ToolControl) generates a DockRequest event which is attached to the `UNDOCK` callback function. This function, creates a new Form called `Floater`, makes a copy of the ToolControl as a child of `Floater`, and then expunges the original ToolControl from the `Host` Form. The function, and the results of the operation, are shown below. The following points should be noted.
 
@@ -67,9 +67,9 @@ When the user drops the ToolControl outside the `Host` Form, it (the ToolControl
      ∇
 ```
 
-![docking_toolcontrol 2](../img/docking-toolcontrol-2.png)
+![](../img/docking-toolcontrol-2.png)
 
-![docking_toolcontrol 3](../img/docking-toolcontrol-3.png)
+![](../img/docking-toolcontrol-3.png)
 
 The user may dock the ToolControl back into Host by dragging the `Floater` Form into it.
 
@@ -83,7 +83,7 @@ The `DOCKMOVE` callback function, shown below, prevents the ToolControl (represe
 
 The picture below illustrates the moment just before the user releases the mouse button to dock Floater back into Host.
 
-![docking_toolcontrol 4](../img/docking-toolcontrol-4.png)
+![](../img/docking-toolcontrol-4.png)
 
 At this point, the `Host` Form generates a DockAccept event and the callback function `DOCK` is invoked. This function recreates the ToolControl as a child of `Host` (making it dockable once more), and then expunges the `Floater` Form.
 ```apl
@@ -99,4 +99,4 @@ At this point, the `Host` Form generates a DockAccept event and the callback fun
 
 Once again, the result of the callback function is 0 to tell APL that you have dealt with the situation and it is to take no further action.
 
-![docking_toolcontrol 0](../img/docking-toolcontrol-0.png)
+![](../img/docking-toolcontrol-0.png)

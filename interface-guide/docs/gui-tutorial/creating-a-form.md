@@ -10,4 +10,4 @@ The Form will have a height equal to 30% of the height of the screen, and a widt
       'TEMP' ⎕WC 'Form' TITLE (68 50)(30 40)
 ```
 
-![temperature converter 1](../img/temperature-converter-1.png)
+![](../img/temperature-converter-1.png)

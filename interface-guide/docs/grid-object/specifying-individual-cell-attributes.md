@@ -20,7 +20,7 @@ DATA←?12 3⍴300
 
 ```
 
-![grid example1](../img/grid-example1.png)
+![](../img/grid-example1.png)
 
 `CellTypes[]` is either 1 or 2, according to whether the value in the corresponding cell is 150 or less. So the cells whose value is 150 or less use `BCol[1]` which is `255 255 255` (white) whereas those cells whose value is `>150` use `BCol[2]` which is `192 192 192` (grey).
 
@@ -37,7 +37,7 @@ Continuing on from the first example, suppose that in addition, you want to show
  'F.G'⎕WS'CellFonts' 'Normal' 'Normal' 'Bold'
 ```
 
-![grid example2](../img/grid-example2.png)
+![](../img/grid-example2.png)
 
 In this example, there are three different sets of attributes, selected according to where the value in `CellTypes[]` is 1, 2 or 3.
 
@@ -77,4 +77,4 @@ This means that we need 4 types of cell; the "names" cells, the "date of birth" 
  'F.G'⎕WS'CellFonts'FONTS
 ```
 
-![grid example3](../img/grid-example3.png)
+![](../img/grid-example3.png)

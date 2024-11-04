@@ -12,6 +12,6 @@ This example shows how easy it is to associate a tip with an object, in this cas
       'Test.B' ⎕WC 'Button' '&Ok' ('Tip' 'Press Me')
 ```
 
-![tips](../img/tips.png)
+![](../img/tips.png)
 
 Using Tips

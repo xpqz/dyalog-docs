@@ -4,7 +4,7 @@ Modern high resolution screens  present some practical challenges to a Graphical
 
 Also, people have different preferences and Windows enables the user to change the DPI setting.
 
-![display dialog](../img/display-dialog.png)
+![](../img/display-dialog.png)
 
 To address this issue, the Desktop Window Manager, which is enabled in Windows Vista and above, automatically scales up windows and their content to match the current DPI setting.
 
@@ -59,7 +59,7 @@ The DPI-Aware scaling features provided by Dyalog APL are designed to allow you 
 However, if you wish to ignore these facilities and fall back on Windows DWM scaling, you may do so as follows.
 
 If you wish to *enable* DWM scaling in your application, you can either remove or set to zero the **AUTODPI** parameter. For example, the command line to start a run-time application might be:
-```apl
+```
 dyalogrt.exe myruntime.dws AUTODPI=0
 ```
 
@@ -80,7 +80,6 @@ This is done by setting the XML entity *dpiAware* to the value *false* as illust
    </asmv3:windowsSettings>
  </asmv3:application>
 </assembly>
-
 ```
 
 If *dpiAware* appears in the manifest file, its value take precedence over the value of the **AUTODPI** parameter, whether it is specified implicitly by omission (it defaults to 1) or is specified in the registry or on the command line.
@@ -88,13 +87,13 @@ If *dpiAware* appears in the manifest file, its value take precedence over the v
 ## Naming a Manifest File
 
 The name of the manifest file is the full name of the application file followed by an optional resource id (if omitted, the default is 1) and the extension `.manifest`. If your application runs courtesy of the dyalogrt.exe or dyalogrt.dll, the name of the manifest file should be one of:
-```apl
+```
    dyalogrt.exe.<resource ID>.manifest
    dyalogrt.dll.<resource ID>.manifest
 ```
 
 If you have exported your application as an executable called example.exe or as a dll called example.dll, it should be one of:
-```apl
+```
    example.exe.<resource ID>.manifest
    example.dll.<resource ID>.manifest
 ```

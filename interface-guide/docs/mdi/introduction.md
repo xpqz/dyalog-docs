@@ -2,7 +2,7 @@
 
 The multiple-document interface (MDI) is a document-oriented interface that is commonly used by word-processors, spreadsheets and other applications that deal with *documents*. An MDI application allows the user to display multiple documents at the same time, with each document displayed in its own window. Document windows are implemented as child forms that are contained within a parent form. When a child form is minimised, its icon appears on the parent form instead of on the desktop. An example MDI application is illustrated below.
 
-![mdi example 0](../img/mdi-example-0.png)
+![](../img/mdi-example-0.png)
 
 Child forms displayed within an MDIClient
 

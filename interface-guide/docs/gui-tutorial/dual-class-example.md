@@ -41,7 +41,7 @@ For example, function `RUN` creates a Form and 3 Instances of Dual; one to conve
      ∇
 ```
 
-![dual instances](../img/dual-instances.png)
+![](../img/dual-instances.png)
 
 Dual's Constructor `Make` first splits its constructor arguments into those that apply to the Dual Class itself, and those that apply to the SubForm. Its `:Implements Constructor` statement then passes these on to the Base Constructor, together with an appropriate setting for EdgeStyle.
 ```apl
@@ -171,5 +171,4 @@ The utilities contained in in the GUITools Namespace are as follows:
 [3]    n←'_',¨n
 [4]    ⍎(⍕,n,⊂'n'),'←v,0'
      ∇
-
 ```

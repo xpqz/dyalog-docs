@@ -10,11 +10,11 @@ With the exception of ToolControls, when a dockable object is docked or undocked
 
 |&nbsp;              |Parent Object                                                    ||||
 |--------------------|---------------|------------------|--------------------|------------|
-|Dockable Object     |Form `F1`      |SubForm `F1.S1`   |CoolBar `F1.CB1`    |Root `(.)`  |
-|Form `F2`           |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `F2`   |
-|Form `F1.F2`        |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `F1.F2`|
-|SubForm `F2.S2`     |SubForm `F1.F2`|SubForm `F1.S1.F2`|CoolBand `F1.CB1.F2`|Form `S2`   |
-|CoolBand `F2.CB2.C2`|SubForm `F1.C2`|SubForm `F1.S1.C2`|CoolBand `F1.CB1.C2`|Form `C2`   |
+|**Dockable Object** |Form<br/>`F1`      |SubForm<br/>`F1.S1`   |CoolBar<br/>`F1.CB1`    |Root<br/>`(.)`  |
+|Form<br/>`F2`           |SubForm<br/>`F1.F2`|SubForm<br/>`F1.S1.F2`|CoolForm<br/>`F1.CB1.F2`|Form<br/>`F2`   |
+|Form<br/>`F1.F2`        |SubForm<br/>`F1.F2`|SubForm<br/>`F1.S1.F2`|CoolForm<br/>`F1.CB1.F2`|Form<br/>`F1.F2`|
+|SubForm<br/>`F2.S2`     |SubForm<br/>`F1.F2`|SubForm<br/>`F1.S1.F2`|CoolForm<br/>`F1.CB1.F2`|Form<br/>`S2`   |
+|CoolForm<br/>`F2.CB2.C2`|SubForm<br/>`F1.C2`|SubForm<br/>`F1.S1.C2`|CoolForm<br/>`F1.CB1.C2`|Form<br/>`C2`   |
 
 For example, a top-level Form `F2` when docked in another top-level Form `F1`, becomes a SubForm named `F2.F1`.
 

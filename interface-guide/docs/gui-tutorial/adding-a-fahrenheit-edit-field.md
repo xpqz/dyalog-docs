@@ -5,4 +5,4 @@ Now let's add the edit field for Fahrenheit. We will call it `F` and place it al
 'TEMP.F' ⎕WC 'Edit' '' (10 40)(⍬ 20)('FieldType' 'Numeric')
 ```
 
-![temperature converter 3](../img/temperature-converter-3.png)
+![](../img/temperature-converter-3.png)

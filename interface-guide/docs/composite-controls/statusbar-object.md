@@ -12,7 +12,7 @@ The following example illustrates a default StatusBar containing three StatusFie
 'TEST.SB.S3'⎕WC'StatusField' 'Field3:' 'text3'
 ```
 
-![statusbar_simple](../img/statusbar-simple.png)
+![](../img/statusbar-simple.png)
 
 A Default StatusBar
 
@@ -29,7 +29,7 @@ The following example illustrates a scrolling StatusBar. The fourth StatusField 
 'TEST.SB.S4'⎕WC'StatusField' 'Field4:' 'text4'
 ```
 
-![statusbar_scrolling](../img/statusbar-scrolling.png)
+![](../img/statusbar-scrolling.png)
 
 A Scrolling StatusBar
 
@@ -44,7 +44,7 @@ As an alternative to single-row scrolling StatusBar, you can have a multi-line o
 'TEST.SB.S4'⎕WC'StatusField' 'Field4:' 'text4'
 ```
 
-![statusbar_multiline](../img/statusbar-multiline.png)
+![](../img/statusbar-multiline.png)
 
 A Multi-line StatusBar
 
@@ -78,4 +78,4 @@ The following example illustrates different uses of the StatusField object. The 
 'F.L'⎕WC'List'WINES(0 0)(F.Size×0.8 1)('Hint' 'Choose a Wine')
 ```
 
-![statusbar_wines](../img/statusbar-wines.png)
+![](../img/statusbar-wines.png)

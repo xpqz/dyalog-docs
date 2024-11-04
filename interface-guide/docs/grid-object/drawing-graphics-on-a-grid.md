@@ -11,7 +11,7 @@ The following example illustrates how to draw a box around the cells in rows 2 t
  'F.G.L'⎕WC'Rect'(1 2)(3 4)('LWidth' 4)('Coord' 'Cell')
 ```
 
-![grid graphics 1](../img/grid-graphics-1.png)
+![](../img/grid-graphics-1.png)
 
 The OnTop property of the graphical object controls how it is drawn relative to the grid lines and cell text. For graphical objects created as a child of a Grid, OnTop may be 0, 1 or 2.
 
@@ -31,16 +31,16 @@ The following example shows the effect of the OnTop property on how an Image is 
  'F.G.I'⎕WS('Picture' 'F.M')('OnTop' 0)
 ```
 
-![grid graphics 2](../img/grid-graphics-2.png)
+![](../img/grid-graphics-2.png)
 
 ```apl
       F.G.I.OnTop←1
 ```
 
-![grid graphics 3](../img/grid-graphics-3.png)
+![](../img/grid-graphics-3.png)
 
 ```apl
       F.G.I.OnTop←2
 ```
 
-![grid graphics 4](../img/grid-graphics-4.png)
+![](../img/grid-graphics-4.png)

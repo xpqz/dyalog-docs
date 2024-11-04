@@ -22,6 +22,6 @@ An icon can be displayed using the Image object. This object is used to position
        F1.I.Dragable←2
 ```
 
-![icon image](../img/icon-image.png)
+![](../img/icon-image.png)
 
 Notice that setting `Dragable` to 2 specifies that an object is fully displayed while it is being dragged. Setting `Dragable` to 1 causes only the bounding rectangle around the object to be dragged.

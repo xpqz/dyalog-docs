@@ -15,7 +15,7 @@ Then you can use the Bitmap to fill the background of a Form by:
       'F1' ⎕WC 'Form' ('Picture' CARS 1)('Size' 25 50)
 ```
 
-![cars](../img/cars.png)
+![](../img/cars.png)
 
 The "1" in the expression specifies that the Bitmap is to be used to "tile" the background of the Form. The result is shown in the illustration below. You can also position the Bitmap in the top-left (0) or centre (3) of the Form, or even have the Bitmap scaled automatically (2) to fit exactly in the Form. These settings are useful for displaying pictures. You can explore these facilities using the `BMVIEW` function in the UTIL workspace.
 

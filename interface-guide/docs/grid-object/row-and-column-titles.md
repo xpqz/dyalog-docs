@@ -25,7 +25,6 @@ Multi-level titles are also possible and are defined by the RowTitleDepth and Co
 [16]   CDEPTH←0 1 1 0 1 1 1 0
 [17]   F.G.(ColTitles ColTitleDepth)←TITLES CDEPTH
      ∇
-
 ```
 
-![grid hierarchical titles](../img/grid-hierarchical-titles.png)
+![](../img/grid-hierarchical-titles.png)

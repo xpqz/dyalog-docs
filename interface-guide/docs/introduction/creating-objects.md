@@ -7,7 +7,7 @@ The following statement creates a Form called `'f1'` with the title "A Default F
       'f1' ⎕WC 'Form' 'A Default Form'
 ```
 
-![default form](../img/default-form.png)
+![](../img/default-form.png)
 
 ## Naming Objects
 
@@ -49,10 +49,10 @@ This example illustrates how an object hierarchy is defined. The following state
 'accounts.type.ACTUAL' ⎕WC 'Button' 'ACTUAL' (70 32)
 ```
 
-![accounts](../img/accounts.png)
+![](../img/accounts.png)
 
 Schematically, this object structure looks as follows:
-```apl
+```
  
                             __ACTUAL
         .___accounts___type___BUDGET
