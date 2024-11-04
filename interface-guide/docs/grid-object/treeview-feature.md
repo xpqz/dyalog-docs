@@ -12,7 +12,7 @@ Each element of RowTreeDepth specifies the depth of the corresponding row of the
 
 The picture below illustrates the initial appearance of a Grid with TreeView behaviour. Notice that at first only the top-level rows are displayed.
 
-![grid treeview 1](../img/grid-treeview-1.png)
+![](../img/grid-treeview-1.png)
 
 The tree structure is defined on `TreeGrid[26]`. In this example, the Grid has top-level rows (RowTreeDepth of 0) that contain annual totals. The second-tier rows (RowTreeDepth of 1), contain quarterly totals, while the third-tier rows (RowTreeDepth of 2) contain monthly figures.
 ```apl
@@ -52,7 +52,7 @@ The tree structure is defined on `TreeGrid[26]`. In this example, the Grid has t
 
 When the user clicks on one of the nodes indicated by a "+" symbol, the Grid automatically expands to display the rows at the next level below that node. At the same time, an Expanding event is generated. In the next picture, the user has clicked on the *2001* node and, below that, the *Q3* node.
 
-![grid treeview 2](../img/grid-treeview-2.png)
+![](../img/grid-treeview-2.png)
 
 ## RowSetVisibleDepth Method
 
@@ -62,11 +62,11 @@ The value of its argument is an integer that specifies the depth of rows to be d
 
 The next picture shows how the Grid is displayed after choosing *Expand Years* from the *View* menu. Notice that, as specified by `TreeGrid[6]` this menu item simply executes the RowSetVisibleDepth method with an argument of 1.
 
-![grid treeview 3](../img/grid-treeview-3.png)
+![](../img/grid-treeview-3.png)
 
 Similarly, the *Expand All item*  executes RowSetVisibleDepth 2, as specified by `TreeGrid[7]` and this causes the Grid to display all rows up to and including RowTreeDepth of 2 as shown below.
 
-![grid treeview 4](../img/grid-treeview-4.png)
+![](../img/grid-treeview-4.png)
 
 Note that the *Collapse All* item executes RowSetVisibleDepth 0, which causes only the top-level rows to be displayed.
 

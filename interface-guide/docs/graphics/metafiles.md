@@ -28,11 +28,11 @@ The following statement creates a Form containing the Metafile object  `Ducky`.
     'F1'⎕WC'Form' ('Size' 50 30) ('Picture' Ducky)
 ```
 
-![ducky](../img/ducky.png)
+![](../img/ducky.png)
 
 The next statement replaces the Picture with the Metafile object `METADUCK`.
 ```apl
       F1.Picture←METADUCK
 ```
 
-![metaduck](../img/metaduck.png)
+![](../img/metaduck.png)

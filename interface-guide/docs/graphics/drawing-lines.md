@@ -6,14 +6,14 @@ To draw a line you use the Poly object. The following example draws a line in a 
       'F.Line' ⎕WC 'Poly' ((10 90)(5 60))
 ```
 
-![drawing lines 1](../img/drawing-lines-1.png)
+![](../img/drawing-lines-1.png)
 
 In the previous example, the points are specified as a 2-element nested vector containing y-coordinates and x-coordinates respectively. You can also use a 2-column matrix. For example:
 ```apl
       'F.Line'⎕WC'Poly'(4 2⍴90 5 5 50 90 95 90 5)
 ```
 
-![drawing lines 2](../img/drawing-lines-2.png)
+![](../img/drawing-lines-2.png)
 
 Notice that because the second example **replaced** the object `F.Line`, the original line drawn in the first example has been erased.
 

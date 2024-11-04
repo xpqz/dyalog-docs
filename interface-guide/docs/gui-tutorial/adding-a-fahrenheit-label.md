@@ -7,4 +7,4 @@ Let's create the "Fahrenheit" label first. It doesn't really matter what we call
       'TEMP.LF' ⎕WC'Label' 'Fahrenheit'(10 10)
 ```
 
-![temperature converter 2](../img/temperature-converter-2.png)
+![](../img/temperature-converter-2.png)

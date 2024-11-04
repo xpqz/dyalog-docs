@@ -51,7 +51,6 @@ Workspace is now mycfiles with empty ⎕LX
 CFiles
       CFiles.Type
 OLEServer
-
 ```
 
 You should now save your workspace in a personal directory to which you have write access. This will allow you to export CFiles as either an in-process or out-of-process OLE Server.
@@ -60,16 +59,15 @@ You should now save your workspace in a personal directory to which you have wri
 was mycfiles.dws
       )SAVE
 c:\MyWS\mycfiles.dws saved Wed Jun  1 13:53:56 2016
-
 ```
 
 Then select *Export* from the Session *File* menu and create either an in-process or out-of-process OLE Server.
 
-![cfiles create bound file](../img/cfiles-create-bound-file.png)
+![](../img/cfiles-create-bound-file.png)
 
-![cfiles create bound file status](../img/cfiles-create-bound-file-status.png)
+![](../img/cfiles-create-bound-file-status.png)
 
-![cfiles create bound file ok](../img/cfiles-create-bound-file-ok.png)
+![](../img/cfiles-create-bound-file-ok.png)
 
 ## The GetFile Function
 ```apl
@@ -77,12 +75,11 @@ Then select *Export* from the Session *File* menu and create either an in-proces
 [1]    r←2 ⎕NQ'.' 'GetEnvironment' 'DYALOG'
 [2]    r,←'\samples\ole\test.dcf'
      ∇
-
 ```
 
 `GetFile` simply returns the full pathname of the `test.dcf` component file.
 
-![cfiles getfile properties](../img/cfiles-getfile-properties.png)
+![](../img/cfiles-getfile-properties.png)
 
 ## The OpenFile Function
 ```apl
@@ -110,7 +107,7 @@ Note that there is a separate instance of `File` for every file opened by every 
 
 The COM Properties dialog box for `OpenFile` is shown below. The function is declared to take a single parameter called *FileName* whose data type is VT_BSTR (a string). The result of the function is of data type VT_DISPATCH. This data type is used to represent an object.
 
-![cfiles openfile properties](../img/cfiles-openfile-properties.png)
+![](../img/cfiles-openfile-properties.png)
 
 ## The FSIZE Function
 ```apl
@@ -123,7 +120,7 @@ The COM Properties dialog box for `OpenFile` is shown below. The function is dec
 
 The COM Properties dialog box for `FSIZE` is shown below. The function is declared to take no parameters. The result of the function is of data type VT_VARIANT. This data type is used to represent an arbitrary APL array.
 
-![cfiles fsize properties](../img/cfiles-fsize-properties.png)
+![](../img/cfiles-fsize-properties.png)
 
 ## The FREAD Function
 ```apl
@@ -136,7 +133,7 @@ The COM Properties dialog box for `FSIZE` is shown below. The function is declar
 
 The COM Properties dialog box for `FREAD` is shown below. The function is declared to take a single parameter called *Component* whose data type is VT_I4 (an integer). The result of the function is of data type VT_VARIANT. This data type is used to represent an arbitrary APL array.
 
-![cfiles fread properties](../img/cfiles-fread-properties.png)
+![](../img/cfiles-fread-properties.png)
 
 ## The FAPPEND Function
 ```apl
@@ -149,7 +146,7 @@ The COM Properties dialog box for `FREAD` is shown below. The function is declar
 
 The COM Properties dialog box for `FAPPEND` is shown below. The function is declared to take a single parameter called *Data* whose data type is VT_VARIANT. This data type is used to represent an arbitrary APL array. The result of the function is of data type VT_I4 (an integer).
 
-![cfiles fappend properties](../img/cfiles-fappend-properties.png)
+![](../img/cfiles-fappend-properties.png)
 
 ## The FREPLACE Function
 ```apl
@@ -163,7 +160,7 @@ The COM Properties dialog box for `FAPPEND` is shown below. The function is decl
 
 The COM Properties dialog box for `FREPLACE` is shown below. The function is declared to take two parameters. The first is called *Component* and is of data type VT_I4 (integer). The second parameter is called *Data* and is of data type VT_VARIANT. This data type is used to represent an arbitrary APL array. The result of the function is of data type VT_VOID, which means that the function does not return a result.
 
-![cfiles freplace properties](../img/cfiles-freplace-properties.png)
+![](../img/cfiles-freplace-properties.png)
 
 ## Using CFiles from Excel
 
@@ -171,23 +168,23 @@ Start Excel and load the spreadsheet `cfiles.xlsm` from the Dyalog APL sub-direc
 
 Please note that to simplify the Excel code, only components containing matrices (such as those contained in samples\ole\test.dcf) are handled. Components containing scalars, vectors, higher-rank arrays and complex nested arrays are not supported.
 
-![cfiles excel example 1](../img/cfiles-excel-example-1.png)
+![](../img/cfiles-excel-example-1.png)
 
 Depending upon your configuration settings, it is likely that the macros in cfiles.xlsm are disabled when the spreadsheet is loaded, as shown above. If so, click the *Options* button and enable them. The security warning is then removed as shown below.
 
-![cfiles excel example 2](../img/cfiles-excel-example-2.png)
+![](../img/cfiles-excel-example-2.png)
 
 The next step is to enter the name of your component file. A sample file named `test.dcf` is provided in the `samples\ole` sub-directory. To get the pathname of this sample file, click *Get File Name*. The result is shown below:
 
-![cfiles excel example 3](../img/cfiles-excel-example-3.png)
+![](../img/cfiles-excel-example-3.png)
 
 The next step is to open the file by clicking the *Open* button. This runs the FOpen procedure. Note that if this step is critical; otherwise any attempt to read or write to the file will fail. When the file is opened, the size of the file is displayed as shown below.
 
-![cfiles excel example 4](../img/cfiles-excel-example-4.png)
+![](../img/cfiles-excel-example-4.png)
 
 Finally, to read a component, enter the component number, move the input focus to a different cell, and then and click *Read*. This runs the FRead procedure.
 
-![cfiles excel example 5](../img/cfiles-excel-example-5.png)
+![](../img/cfiles-excel-example-5.png)
 
 To replace a component, first enter the component number. Then type some data elsewhere on the spreadsheet and select it. Now click *Replace*. This runs the FReplace procedure.
 

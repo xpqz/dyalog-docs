@@ -2,7 +2,7 @@
 
 Most MDI applications incorporate a Window menu. This is a special menu that displays the captions of all open SubForms as shown below. The caption of the SubForm which currently has the focus is checked and the user can switch focus to another SubForm by selecting it from the Window menu.
 
-![mdi example 3](../img/mdi-example-3.png)
+![](../img/mdi-example-3.png)
 
 The Window menu
 

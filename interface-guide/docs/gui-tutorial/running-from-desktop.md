@@ -38,14 +38,14 @@ Right-click on the Desktop and choose "New" followed by "Shortcut".
 
 Browse to the Dyalog program and add the name of the workspace to the command line.
 
-![temperature converter 12](../img/temperature-converter-12.png)
+![](../img/temperature-converter-12.png)
 
 Select "Next" and give the application a name, then select "Finish".
 
-![temperature converter 13](../img/temperature-converter-13.png)
+![](../img/temperature-converter-13.png)
 
 The resulting icon is shown below. Note that although by default you will get a standard Dyalog APL icon, you could of course select another one from elsewhere on your system.
 
-![temperature converter 14](../img/temperature-converter-14.png)
+![](../img/temperature-converter-14.png)
 
 Clicking on this icon will start your application. Notice that the APL Session Window will NOT appear at any stage unless there is an error in your code. All the user will see is your "Temperature Converter" dialog box.

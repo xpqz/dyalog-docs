@@ -6,7 +6,7 @@ Your ActiveX control will be called a *Dyalog Dual Control* and is based on the 
 
 The Dual control allows the user to enter a number using a slider, whilst displaying its value in two different units. For example, you could use it to enter a temperature value which is displayed in both Centigrade and Fahrenheit units. Equally, the same control could be used to enter a measurement of length which is concurrently displayed in centimetres and inches.
 
-![dual overview](../img/dual-overview.png)
+![](../img/dual-overview.png)
 
 ## Methods
 
@@ -167,9 +167,9 @@ Save the workspace (`c:\MyWS\Dual.dws`).
 
 From the Session *File* menu, select *Export*, choose where you want to save your OCX, and then click Save. It is a good idea to clear the *Runtime application* checkbox so that you can debug the control if anything goes wrong.
 
-![dual export](../img/dual-export.png)
+![](../img/dual-export.png)
 
-![dual export 1](../img/dual-export-1.png)
+![](../img/dual-export-1.png)
 
 ## Testing the Dual Control
 
@@ -273,7 +273,7 @@ Display the *Object Properties* dialog box for the function `GetCaption1`. (Hint
 
 Select the *COM Properties* tab. As you have not yet defined any OLE attributes, the default display is as follows:
 
-![dual getcaption1 a](../img/dual-getcaption1-a.png)
+![](../img/dual-getcaption1-a.png)
 
 Check the *Exported* option button.
 
@@ -285,7 +285,7 @@ Note that it is not necessary for the property name referenced by the *Get* and 
 
 The final *COM Properties* dialog box for `GetCaption1` should appear as follows. Click *OK* to save your changes.
 
-![dual getcaption1 b](../img/dual-getcaption1-b.png)
+![](../img/dual-getcaption1-b.png)
 
 Now do the same for the `SetCaption1` function. This function takes an argument which it expects to be a character vector. It must therefore be defined as having a single parameter of data type VT_BSTR; the parameter name is unimportant. However, you must ensure that the *Optional* button is unchecked.
 
@@ -293,19 +293,19 @@ In APL terms, the function does not return a result. However, in OLE terms the r
 
 The OLE properties for `SetCaption1` should appear as follows:
 
-![dual setcaption1](../img/dual-setcaption1.png)
+![](../img/dual-setcaption1.png)
 
 An alternative way to define the syntax for exported functions is to use the *COM Functions* tab in the Properties dialog box for the ActiveXControl object itself. (Hint: using the Workspace Explorer, open `F` so that its contents, `Dual`, are displayed in the right-hand list, select `Dual`, then click *Props*).
 
 The *COM Functions* tab should appear as follows:
 
-![dual com functions a](../img/dual-com-functions-a.png)
+![](../img/dual-com-functions-a.png)
 
 The right-hand Combo box allows you to view and edit their syntax for the exported functions you have already defined. The left-hand Combo box displays the list of other non-exported functions that are defined in the ActiveXControl.
 
 Select `GetCaption2` from the left-hand Combo box, and then click *Add*. The dialog box will change to display the default syntax for `GetCaption2`. Alter the *Result* data type to VT_BSTR, select *Prop Get*, and enter the name of the property, `Caption2`, so that the dialog box appears as follows:
 
-![dual com functions b](../img/dual-com-functions-b.png)
+![](../img/dual-com-functions-b.png)
 
 The third way to define the syntax for exported functions is to use the SetFnInfo method of the ActiveXControl object. This allows you to export functions using APL code, which in some circumstances may be more convenient than filling in dialog boxes.
 
@@ -435,7 +435,7 @@ c:\MyWS\Dual.dws saved Mon Aug  1 14:52:14 2016
 
 Then, re-export the workspace, updating your `.ocx` file with all the new information.
 
-![dual export 2](../img/dual-export-2.png)
+![](../img/dual-export-2.png)
 
 ## Setting Properties from VB
 
@@ -470,7 +470,7 @@ In the Properties dialog box, change the default Dual1 properties to the followi
 
 Double-click the left mouse button over your Form (*Form1*). This will bring up the code editor dialog box. Edit the `Form1_Load()` subroutine, entering the program statements shown below. This code will be run when VB starts your application and loads the Form *Form1*. It illustrates how you can change the properties of your Dyalog APL ActiveX control dynamically.
 
-![dual form1_load 1](../img/dual-form1-load-1.png)
+![](../img/dual-form1-load-1.png)
 
 Now test your application by clicking *Start Debugging*. When you have finished, click  *Stop Debugging*.
 
@@ -502,7 +502,7 @@ In the column labelled *Param Name* enter  `Value1`, then change the *Type* to V
 
 The final appearance of this dialog box should be as follows:
 
-![dual com events](../img/dual-com-events.png)
+![](../img/dual-com-events.png)
 
 Click *OK*, change back to the root space, and save the workspace.
 ```apl
@@ -512,7 +512,7 @@ Click *OK*, change back to the root space, and save the workspace.
 
 Select *File/Export* and rebuild your `.ocx` file.
 
-![dual com events 1](../img/dual-com-events-1.png)
+![](../img/dual-com-events-1.png)
 
 ## Using Events from VB
 
@@ -529,7 +529,7 @@ Click on the *Dyalog DUAL Control* tool and drag it onto your Form. An instance 
 
 Select the label tool and add a label object (*Label1*) to the Form. Select its Font property and change it to 14-point bold.
 
-![dual com events 2](../img/dual-com-events-2.png)
+![](../img/dual-com-events-2.png)
 
 View the code window and choose the object AxDual1 and its only event ChangeValue1. Enter a line of code to set the Caption property of the Label object Label1 to the String equivalent of the event parameter Value1.
 
@@ -538,19 +538,19 @@ Enter the following code, and then close the code window, that is
 Label1.Text = Str(e.Value1)
 ```
 
-![dual com events 3](../img/dual-com-events-3.png)
+![](../img/dual-com-events-3.png)
 
 Start the application using *Start Debugging*. Exercise the Dual control and observe that VB updates the Label1 control in response to the ChangeValue1 events. When you have finished, select *Stop Debugging*.
 
-![dual com events 4](../img/dual-com-events-4.png)
+![](../img/dual-com-events-4.png)
 
 In the code window, add the following line of code to the `AxDual1_ChangeValue` subroutine:
 ```apl
 e.Value1=2 * (e.Value1\2)
 ```
 
-![dual com events 5](../img/dual-com-events-5.png)
+![](../img/dual-com-events-5.png)
 
 Start the application using *Start Debugging*. Exercise the Dual control and observe that now the slider moves in increments of 2. When you have finished, select *Stop Debugging*
 
-![dual com events 6](../img/dual-com-events-6.png)
+![](../img/dual-com-events-6.png)

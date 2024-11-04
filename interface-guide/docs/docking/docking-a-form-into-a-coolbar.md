@@ -35,14 +35,14 @@ The following example illustrates the effect of docking a Form into a CoolBar.
      ∇
 ```
 
-![docking_coolbar_host 0](../img/docking-coolbar-host-0.png)
+![](../img/docking-coolbar-host-0.png)
 
-![docking_coolbar_client 0](../img/docking-coolbar-client-0.png)
+![](../img/docking-coolbar-client-0.png)
 
 The following picture shows the effect of dragging the client Form to the CoolBar in the `host`, just before the mouse button is released.
 
-![docking_coolbar_host 1](../img/docking-coolbar-host-1.png)
+![](../img/docking-coolbar-host-1.png)
 
 The next picture shows the result after docking. The client Form has become a CoolBand called `host.cb.edit`.
 
-![docking_coolbar_host 2](../img/docking-coolbar-host-2.png)
+![](../img/docking-coolbar-host-2.png)

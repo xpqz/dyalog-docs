@@ -10,7 +10,7 @@ Note that the GUI objects we have created are all saved with the workspace. You 
 
 If this was a Run-Time application, we would have to use `⎕DQ` to run it. However, as it is not, we can just go ahead and use it from the Session. Click on the Fahrenheit edit field and enter a number (say 212). Now click on the "F->C" button. The Temperature Converter window should look like the picture below.
 
-![temperature converter 8](../img/temperature-converter-8.png)
+![](../img/temperature-converter-8.png)
 
 If you have mis-typed any of the functions in this example, you may get an error. If this happens, don't worry; simply correct the error as you would with any other APL application, and type `→⎕LC`.
 

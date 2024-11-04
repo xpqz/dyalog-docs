@@ -61,4 +61,4 @@ For brevity, only a couple of the callback functions are shown here.
      ∇
 ```
 
-![temperature converter 8](../img/temperature-converter-8.png)
+![](../img/temperature-converter-8.png)

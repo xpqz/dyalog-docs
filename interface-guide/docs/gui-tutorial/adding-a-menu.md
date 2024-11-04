@@ -14,7 +14,7 @@ Then we can add a menu with the Caption `'Scale'`. The name of the menu is `'TEM
       'TEMP.MB.M' ⎕WC 'Menu' '&Scale'
 ```
 
-![temperature converter 11](../img/temperature-converter-11.png)
+![](../img/temperature-converter-11.png)
 
 Note that the ampersand (&) allows the user to select the menu quickly by pressing "Alt+S".
 

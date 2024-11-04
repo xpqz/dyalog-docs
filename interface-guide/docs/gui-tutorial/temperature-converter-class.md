@@ -13,7 +13,7 @@ Being based upon a top-level GUI object, the Temperature Converter may be used a
  
 ```
 
-![temperature converter 8](../img/temperature-converter-8.png)
+![](../img/temperature-converter-8.png)
 
 ## Temperature Converter Example
 ```apl

@@ -23,7 +23,7 @@ This example illustrates the use of a StatusField object to display hints. .
     'Test.SB.H' ⎕WC 'StatusField' ('Size' ⍬ 98)
 ```
 
-![hints_statusbar](../img/hints-statusbar.png)
+![](../img/hints-statusbar.png)
 
 Using a StatusBar to display Hints
 
@@ -41,6 +41,6 @@ You can display a much larger amount of information using a multi-line Edit obje
       'Test.ED' ⎕WC 'Edit' ('Style' 'Multi')
 ```
 
-![hints_edit](../img/hints-edit.png)
+![](../img/hints-edit.png)
 
 Displaying Hints in an Edit object

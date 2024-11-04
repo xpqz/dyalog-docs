@@ -73,7 +73,6 @@ PeriodType
 [22]   PAYMENTS←PER,[1]PAYMENTS
 [23]   PAYMENTS←(0,INT),PAYMENTS
      ∇
-
 ```
 
 ## Registering Loan as an OLE Server
@@ -108,12 +107,11 @@ Next, change space into the `Loan` namespace and use `⎕NL` to display the name
       ⎕NL 2 3
 CalcPayments
 PeriodType  
-
 ```
 
 Right-click over the name `CalcPayments` and select *Properties* from the pop-up menu. This brings up the *Properties* dialog box for `Loan.CalcPayments`. Click on the *COM Properties* tab, check the *Exported* box and then fill in the names and data types of its  parameters as illustrated below.
 
-![loan calcpayments properties](../img/loan-calcpayments-properties.png)
+![](../img/loan-calcpayments-properties.png)
 
 The picture above shows the COM properties that are required to export function `CalcPayments` as a method. The function is declared to require 5 parameters of type VT_I4 (integers) and return a result of type VT_ARRAY of VT_R8 (an array of floating-point numbers).
 
@@ -121,7 +119,7 @@ The names you choose for the parameters will be visible in an object browser and
 
 Do the same for the `PeriodType` variable so that it is exported as a  property.
 
-![loan periodtype properties](../img/loan-periodtype-properties.png)
+![](../img/loan-periodtype-properties.png)
 
 The picture above shows the COM properties to export variable `PeriodType` as a property. The property is declared to be of type VT_I4 (integer).
 
@@ -135,11 +133,11 @@ c:\MyWS\myloan.dws saved...
 
 Finally, to create your OLE Server, choose *Export* from the Session *File* menu and complete the *Create bound file* dialog box as shown below. In this case, the OLE Server is created as an in-process server, bound to the development version of the Dyalog APL DLL (because the *Runtime application* checkbox is cleared)
 
-![loan create bound file](../img/loan-create-bound-file.png)
+![](../img/loan-create-bound-file.png)
 
-![loan create bound file status](../img/loan-create-bound-file-status.png)
+![](../img/loan-create-bound-file-status.png)
 
-![loan create bound file ok](../img/loan-create-bound-file-ok.png)
+![](../img/loan-create-bound-file-ok.png)
 
 ## Using Loan from Excel
 
@@ -149,7 +147,7 @@ The *Payments* button fires a simple macro that uses the APL dyalog.Loan object 
 
 The Calc macro actually calculates the repayments matrix by calling the CalcPayments method in the dyalog.Loan object; that is, it runs the `CalcPayments` function in the `Loan` namespace.
 
-![loan excel example](../img/loan-excel-example.png)
+![](../img/loan-excel-example.png)
 
 ## How it Works
 ```apl

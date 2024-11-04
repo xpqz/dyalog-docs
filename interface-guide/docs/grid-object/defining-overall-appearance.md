@@ -20,8 +20,8 @@ The ClipCells property determines whether or not the Grid displays partial cells
 
 The following example shows a default Grid (ClipCells is 1) in which the third column of data is in fact incomplete (clipped), although this is by no means apparent to the user.
 
-![grid clipcells 1](../img/grid-clipcells-1.png)
+![](../img/grid-clipcells-1.png)
 
 This second picture shows the effect on the Grid of setting ClipCells to 0 which prevents such potential confusion.
 
-![grid clipcells 0](../img/grid-clipcells-0.png)
+![](../img/grid-clipcells-0.png)

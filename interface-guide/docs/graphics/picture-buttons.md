@@ -15,7 +15,7 @@ The Picture property overlays a Bitmap, Icon or Metafile on top of a standard pu
      ∇
 ```
 
-![spider button](../img/spider-button.png)
+![](../img/spider-button.png)
 
 Notice that (by definition) an icon is 32 x 32 pixels in size. To allow space for the button borders you have to make the Button at least 40 x 40 pixels. The "3" means put the `'spider'` in the **centre** of the button.
 
@@ -76,6 +76,6 @@ Now define the Button. Notice that the third (inactive) bitmap is optional.
 
 The pictures below show the button in its *normal* and *pressed* states.
 
-![btnpix 1](../img/btnpix-1.png)
+![](../img/btnpix-1.png)
 
-![btnpix 2](../img/btnpix-2.png)
+![](../img/btnpix-2.png)

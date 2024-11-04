@@ -158,8 +158,8 @@ nav:
       - Shared Variable Principles: dde/shared-variable-principles.md
       - APL and DDE in Practice: dde/apl-and-dde-in-practice.md
       - State and Access Control: dde/state-and-access-control.md
-      - Example Communication Between APLs: dde/example-communication-between-apls.md
-      - Example Excel as the Server: dde/example-excel-as-the-server.md
-      - Example Excel as the Client: dde/example-excel-as-the-client.md
-      - Example APL as Compute Server for Excel: dde/example-apl-as-compute-server-for-excel.md
+      - Communication Between APLs: dde/example-communication-between-apls.md
+      - Excel as the Server: dde/example-excel-as-the-server.md
+      - Excel as the Client: dde/example-excel-as-the-client.md
+      - APL as Compute Server for Excel: dde/example-apl-as-compute-server-for-excel.md
       - Restrictions Limitations: dde/restrictions-limitations.md

@@ -12,15 +12,15 @@ Typically, you will want your ToolControls to provide standard Windows buttons a
 
 Resource number 120 (`IDB_STD_SMALL_COLOR`) and 121 (`IDB_STD_LARGE_COLOR`) contain the following set of assorted bitmap images.
 
-![idb_std_bitmaps](../img/idb-std-bitmaps.bmp)
+![](../img/idb-std-bitmaps.bmp)
 
 Resource number 124 (`IDB_VIEW_SMALL_COLOR`) and 125 (`IDB_VIEW_LARGE_COLOR`) contain a set of bitmaps relating to different views of information. These are used, for example in the Windows Explorer tool bar
 
-![idb_view_bitmaps](../img/idb-view-bitmaps.bmp)
+![](../img/idb-view-bitmaps.bmp)
 
 Resource number 130 (IDB_HIST_SMALL_COLOR) and 131 (IDB_HIST_LARGE_COLOR) contain another useful set of bitmaps
 
-![idb_hist_bitmaps](../img/idb-hist-bitmaps.bmp)
+![](../img/idb-hist-bitmaps.bmp)
 
 COMCTL32.DLL also contains individual bitmaps in resources 132-134.
 
@@ -34,21 +34,21 @@ The *normal* set of bitmaps associated with the Session buttons may be created u
       'bm'⎕wc'Bitmap' ('dyares180_64.dll' 'tb_normal')
 ```
 
-![tb_normal bitmaps](../img/tb-normal-bitmaps.bmp)
+![](../img/tb-normal-bitmaps.bmp)
 
 The bitmaps used when the buttons are *highlighted* may be created using the statement.
 ```apl
       'bm'⎕wc'Bitmap' ('dyares180_64.dll' 'tb_hot')
 ```
 
-![tb_hot bitmaps](../img/tb-hot-bitmaps.bmp)
+![](../img/tb-hot-bitmaps.bmp)
 
 The bitmaps used when the buttons are *inactive* may be created using the statement
 ```apl
       'bm'⎕wc'Bitmap' ('dyares180_64.dll' 'tb_inactive')
 ```
 
-![tb_inactive bitmaps](../img/tb-inactive-bitmaps.bmp)
+![](../img/tb-inactive-bitmaps.bmp)
 
 Note that in the Dyalog Session, if Native Look and Feel is enabled, these bitmaps are overridden by a single set of images designed to operate with the user's chosen theme and Visual Styles. For further information, see [Native Look and Feel](../introduction/native-look-and-feel.md).
 
@@ -76,7 +76,7 @@ The following example illustrates how a simple ToolControl can be constructed us
 'F.TB.B3'⎕WC'ToolButton' 'Save'('ImageIndex' 9)
 ```
 
-![toolcontrol style flatbuttons](../img/toolcontrol-style-flatbuttons.png)
+![](../img/toolcontrol-style-flatbuttons.png)
 
 ## The Style Property
 
@@ -86,17 +86,17 @@ Note that the Style property may only be set when the ToolControl is created usi
 
 Style may be `'FlatButtons'`, `'Buttons'`, `'List'` or `'FlatList'`. The default Style is of a ToolControl is `'FlatButtons'`, as is the first example above. The following examples illustrate the other three styles:
 
-![toolcontrol style buttons](../img/toolcontrol-style-buttons.png)
+![](../img/toolcontrol-style-buttons.png)
 
-![toolcontrol style list](../img/toolcontrol-style-list.png)
+![](../img/toolcontrol-style-list.png)
 
-![toolcontrol style flatlist](../img/toolcontrol-style-flatlist.png)
+![](../img/toolcontrol-style-flatlist.png)
 
 ## The Divider Property
 
 You will notice that, in the above examples, there is a thin groove drawn above the ToolControl. The presence or absence of this groove is controlled by the Divider property whose default is 1. The following picture illustrates the effect of setting Divider to 0.
 
-![toolcontrol no divider](../img/toolcontrol-no-divider.png)
+![](../img/toolcontrol-no-divider.png)
 
 ## The MultiLine Property
 
@@ -121,11 +121,11 @@ Note that you may change MultiLine dynamically, using `⎕WS`.
 'F.TB.B6'⎕WC'ToolButton' 'Delete'('ImageIndex' 6)
 ```
 
-![toolcontrol multiline 0](../img/toolcontrol-multiline-0.png)
+![](../img/toolcontrol-multiline-0.png)
 
 If we set MultiLine to 1, the ToolButtons are instead displayed in several rows:
 
-![toolcontrol multiline 1](../img/toolcontrol-multiline-1.png)
+![](../img/toolcontrol-multiline-1.png)
 
 ## The Transparent Property
 
@@ -148,7 +148,7 @@ ROOT←'C:\Program Files\Dyalog\Dyalog APL 13.1 Unicode\'
 'F.TB.B3'⎕WC'ToolButton' 'Save'('ImageIndex' 9)
 ```
 
-![toolcontrol transparent](../img/toolcontrol-transparent.png)
+![](../img/toolcontrol-transparent.png)
 
 ## Radio buttons, Check buttons and Separators
 
@@ -183,11 +183,11 @@ The following example illustrates how two groups of radio buttons are establishe
 'F.TB.B7'⎕WC'ToolButton' 'Date'('ImageIndex' 7)('Style' 'Radio')
 ```
 
-![toolcontrol radio buttons](../img/toolcontrol-radio-buttons.png)
+![](../img/toolcontrol-radio-buttons.png)
 
 Notice that the appearance of the Separator ToolButton is less obvious when the ToolControl Style is Buttons or List, but the radio grouping effect is the same:
 
-![toolcontrol list radio buttons](../img/toolcontrol-list-radio-buttons.png)
+![](../img/toolcontrol-list-radio-buttons.png)
 
 ## Drop-Down buttons
 
@@ -219,7 +219,7 @@ If the ShowDropDown property of the parent ToolControl is 1, clicking the dropdo
 
 ```
 
-![toolcontrol dropdown buttons](../img/toolcontrol-dropdown-buttons.png)
+![](../img/toolcontrol-dropdown-buttons.png)
 
 ## A MenuBar as the child of a ToolControl
 
@@ -246,7 +246,7 @@ Although nothing is done to prevent it, the use of other objects in a ToolContro
 :EndWith
 ```
 
-![toolcontrol menubar](../img/toolcontrol-menubar.png)
+![](../img/toolcontrol-menubar.png)
 
 ## Providing User Customisation
 
@@ -256,7 +256,7 @@ The ShowCaptions property specifies whether or not the captions of ToolButton ob
 
 ToolButtons drawn without captions occupy much less space and ShowCaptions provides a quick way to turn captions on/off for user customisation.
 
-![toolcontrol user options](../img/toolcontrol-user-options.png)
+![](../img/toolcontrol-user-options.png)
 
 The following functions illustrate how this was achieved.
 ```apl

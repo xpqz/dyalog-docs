@@ -22,13 +22,13 @@ During development, an in-process OLE Server is automatically registered when yo
 
 The Windows utility regsvr32.exe should be used to register an *in-process* OLE Server independently, or to install a runtime in-process OLE Server on a target computer. For example:
 
-```apl
+```
 C:\WINDOWS\System32>regsvr32 c:\MyWS\mysvr.dll
 ```
 
 regsvr32 should also be used (with the */u* flag) to unregister an in-process OLE Server. For example:
 
-```apl
+```
 C:\WINDOWS\System32>regsvr32 /u c:\MyWS\mysvr.dll
 ```
 

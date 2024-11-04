@@ -6,4 +6,4 @@ Now we need to add a corresponding Centigrade label and edit field. We'll call t
 'TEMP.C' ⎕WC 'Edit' '' (40 40)(⍬ 20)('FieldType' 'Numeric')
 ```
 
-![temperature converter 4](../img/temperature-converter-4.png)
+![](../img/temperature-converter-4.png)

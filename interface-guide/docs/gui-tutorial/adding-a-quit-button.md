@@ -11,6 +11,6 @@ To make the statement fit on the page, it is split into three. The Posn and Size
       'TEMP.Q' ⎕WC QB
 ```
 
-![temperature converter 7](../img/temperature-converter-7.png)
+![](../img/temperature-converter-7.png)
 
 Notice how the ampersand (&) in the Caption is used to specify the *mnemonic* (short-cut) key. This can be used to press the button instead of clicking the mouse.

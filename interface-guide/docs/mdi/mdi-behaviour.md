@@ -6,8 +6,8 @@
 - You cannot hide a SubForm. Setting its Visible property to 0 has no effect.
 - A SubForm does not display its MenuBar. Instead, it is displayed in place of the parent Form's MenuBar when the SubForm has the focus.
 
-![mdi example 1](../img/mdi-example-1.png)
+![](../img/mdi-example-1.png)
 
-![mdi example 2](../img/mdi-example-2.png)
+![](../img/mdi-example-2.png)
 
 The effect of maximising a SubForm

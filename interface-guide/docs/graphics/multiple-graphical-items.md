@@ -19,7 +19,7 @@ The next statement achieves the same result, but uses only one object:
 
 The rectangles drawn by both these sets of statements are shown below.
 
-![multiple graphical items](../img/multiple-graphical-items.png)
+![](../img/multiple-graphical-items.png)
 
 The capability to specify more than one graphical item as a single object is particularly useful with the Text object as it allows you to display or print several text items (at different positions and in different colours if you wish) in a single statement. For example, the following expressions display a set of "labels" in a Form `'F1'`:
 ```apl
@@ -28,4 +28,4 @@ The capability to specify more than one graphical item as a single object is par
       'F1.LABS' ⎕WC 'Text' LAB POS
 ```
 
-![multiple text items](../img/multiple-text-items.png)
+![](../img/multiple-text-items.png)

@@ -35,7 +35,7 @@ Next, create one or more pairs of TabButton and SubForm objects as children of t
 'F.TC.S3'⎕WC'SubForm'('TabObj' 'F.TC.T3')
 ```
 
-![tabcontrol_default](../img/tabcontrol-default.png)
+![](../img/tabcontrol-default.png)
 
 ## Style, FlatSeparators and HotTrack Properties
 
@@ -43,13 +43,13 @@ The Style property determines the overall appearance of the tabs or buttons in a
 
 A TabControl object with Style `'Buttons'` or `'FlatButtons'` may be used in a similar way (that is, to display a set of alternative pages), although buttons in this type of TabControl are more normally used to execute commands. For this reason, these styles of TabControl are borderless.
 
-![tabcontrol_style_buttons](../img/tabcontrol-style-buttons.png)
+![](../img/tabcontrol-style-buttons.png)
 
-![tabcontrol_style_flatbuttons](../img/tabcontrol-style-flatbuttons.png)
+![](../img/tabcontrol-style-flatbuttons.png)
 
 If Style is `'FlatButtons'`, the FlatSeparators property specifies whether or not separators are drawn between the buttons. The following example illustrates the effect of setting FlatSeparators to 1.
 
-![tabcontrol_style_flatbuttons_flatseparators](../img/tabcontrol-style-flatbuttons-flatseparators.png)
+![](../img/tabcontrol-style-flatbuttons-flatseparators.png)
 
 The HotTrack property specifies whether or not the tabs or buttons in a TabControl object (which are represented by TabButton objects), are automatically highlighted by the mouse pointer.
 
@@ -78,11 +78,11 @@ If Align is `'Top'` or `'Bottom'`, the tabs or buttons are arranged along the to
 'F.S3'⎕WC'SubForm'('TabObj' 'F.TC.T3')
 ```
 
-![tabcontrol_align_bottom](../img/tabcontrol-align-bottom.png)
+![](../img/tabcontrol-align-bottom.png)
 
 If Align is `'Left'` or `'Right'`, the tabs or buttons are arranged top-to-bottom along the left or right edge of the TabControl as shown below.
 
-![tabcontrol_align_left](../img/tabcontrol-align-left.png)
+![](../img/tabcontrol-align-left.png)
 
 ## The MultiLine Property
 
@@ -90,15 +90,15 @@ The MultiLine property of a TabControl determines whether or not your tabs or bu
 
 The default value of MultiLine is 0, in which case, if you have more tabs or buttons than will fit in the space provided, the TabControl displays an UpDown control to permit the user to scroll them.
 
-![tabcontrol_multiline_default](../img/tabcontrol-multiline-default.png)
+![](../img/tabcontrol-multiline-default.png)
 
 If MultiLine is set to 1, the tabs are displayed in multiple flights.
 
-![tabcontrol_multiline_tabs](../img/tabcontrol-multiline-tabs.png)
+![](../img/tabcontrol-multiline-tabs.png)
 
 If the TabControl has Style `'Buttons'` and MultiLine is set to 1, the buttons are displayed in multiple rows.
 
-![tabcontrol_multiline_buttons](../img/tabcontrol-multiline-buttons.png)
+![](../img/tabcontrol-multiline-buttons.png)
 
 ## The ScrollOpposite Property
 
@@ -123,7 +123,7 @@ The following example illustrates a TabControl with ScrollOpposite set to 1, aft
 'F.TC.T4'⎕WC'TabButton' 'Fourth Tab'('ImageIndex' 1)
 ```
 
-![tabcontrol_multiline_scrollopposite](../img/tabcontrol-multiline-scrollopposite.png)
+![](../img/tabcontrol-multiline-scrollopposite.png)
 
 If MultiLine is 1, the way that multiple flights of tabs or rows/columns of buttons are displayed is further defined by the Justify property which may be `'Right'` (the default) or `'None'`.
 
@@ -144,11 +144,11 @@ If Justify is `'Right'` (which is the default), the TabControl increases the wid
 'F.TC.T4'⎕WC'TabButton' 'Fourth Tab'('ImageIndex' 1)
 ```
 
-![tabcontrol_multiline_tabs_justify_none](../img/tabcontrol-multiline-tabs-justify-none.png)
+![](../img/tabcontrol-multiline-tabs-justify-none.png)
 
 The next picture illustrates the effect of Justify `'None'` on a TabControl with Style `'Buttons'`.
 
-![tabcontrol_multiline_buttons_justify_none](../img/tabcontrol-multiline-buttons-justify-none.png)
+![](../img/tabcontrol-multiline-buttons-justify-none.png)
 
 ## The TabSize and TabJustify Properties
 
@@ -170,7 +170,7 @@ If fixed size tabs are in effect, the positions at which the picture and Caption
 'F.TC.T3'⎕WC'TabButton' 'Three'('ImageIndex' 3) 
 ```
 
-![tabcontrol_tabjustify_centre](../img/tabcontrol-tabjustify-centre.png)
+![](../img/tabcontrol-tabjustify-centre.png)
 
 If TabJustify is set to `'Edge'` then the picture and text on the TabButton are justified along the side defined by the Align property (default `'Top'`).
 ```apl
@@ -181,11 +181,11 @@ If TabJustify is set to `'Edge'` then the picture and text on the TabButton are 
 
 etc.
 
-![tabcontrol_tabjustify_edge](../img/tabcontrol-tabjustify-edge.png)
+![](../img/tabcontrol-tabjustify-edge.png)
 
 If, instead, the TabJustify property is set to `'IconEdge'` then the text is centred and only the icons are justified.
 
-![tabcontrol_tabjustify_iconedge](../img/tabcontrol-tabjustify-iconedge.png)
+![](../img/tabcontrol-tabjustify-iconedge.png)
 
 ## The TabFocus Property
 
