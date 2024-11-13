@@ -48,7 +48,7 @@
         <td>&#160;</td>
     </tr>
     <tr>
-        <td class="Dyalog"><a href="../less-than-sign">&lt</a>
+        <td class="Dyalog"><a href="../less-than-sign">&lt;</a>
         </td>
         <td class="Dyalog"><a href="../less-than-or-equal-to-sign">≤</a>
         </td>
