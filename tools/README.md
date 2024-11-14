@@ -6,6 +6,19 @@ Note: the directory settings can be stashed in a `.env` file; see [below](#the-e
 
 ## Live preview
 
+A "sub-site" is one of the component documents as defined by the nav section in the top-level `mkdocs.yml` file, currently:
+
+- release-notes-v19-0
+- windows-installation-and-configuration-guide
+- unix-installation-and-configuration-guide
+- programming-reference-guide
+- language-reference-guide
+- object-reference
+- windows-ui-guide
+- interface-guide
+- dotnet-interface
+- unix-user-guide
+
 To preview a mkdocs site, do:
 
 ```shell
@@ -18,11 +31,13 @@ for example, for the whole lot, do:
 export DOCS_DIR=/Users/stefan/work/documentation
 docker-compose up mkdocs-server
 ```
-and for a particular set,
+and for a particular sub-site, e.g the `language-reference-guide` (see list above):
 ```shell
 export DOCS_DIR=/Users/stefan/work/documentation/language-reference-guide/
 docker-compose up mkdocs-server
 ```
+
+> **Note**: The first time you run `docker-compose`, the various containers will be built. Subsequent runs will reuse the containers, and will be quicker to start.
 
 Visit [the preview page](http://localhost:8000/) on http://localhost:8000/
 
@@ -32,7 +47,7 @@ Note that building the complete set takes several minutes. Consider previewing t
 
 Note also that you'll see many screens of warnings about links referencing files that do not exist -- this is expected, and a consequence of the [monorepo plugin](https://backstage.github.io/mkdocs-monorepo-plugin/). Links referencing pages across sub-sites will only be valid _after_ the final rendering is complete.
 
-Quit with <kbd>Ctrl</kbd>-<kbd>c</kbd>, and tidy up with 
+The docker image will consume resources, so when you're finished, be sure to quit with <kbd>Ctrl</kbd>-<kbd>c</kbd>, and tidy up with 
 ```shell
 docker-compose down
 ```
@@ -69,14 +84,40 @@ It relies on the two variables `DOCS_DIR` and `PDF_OUTPUT_DIR` to be set. Consid
 
 A successful run will create two files: the .pdf-file and also the merged .htm-file from which it was derived. 
 
-## The .env file
+## The `.env` file
 
-You can gather the environment variable settings into a `.env` file which will be read by `docker-compose`. Create a file called `.env` in the `tools/` directory. There is a file `.env.template` included in the repository. Here's mine:
+You can gather the environment variable settings into a `.env` file which will be read by `docker-compose`. Create a file called `.env` in the `tools/` directory. There is a file `.env.template` included in the repository. It should look like this (for a complete render of _all_ docs):
+
+```
+DOCS_DIR={YOUR_REPO}
+CHM_OUTPUT_DIR={YOUR_REPO}/tools/project
+PDF_OUTPUT_DIR={YOUR_REPO}/tools/project
+```
+
+Here is mine:
 
 ```
 DOCS_DIR=/Users/stefan/work/documentation
 CHM_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
 PDF_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
+```
+
+and for a specific sub-site, in this case `language-reference-guide`:
+
+```
+DOCS_DIR=/Users/stefan/work/documentation/language-reference-guide
+CHM_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
+PDF_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
+```
+
+> **Note**: the last two lines don't need to change.
+
+If you're on Windows, you _must_ use backslashes:
+
+```
+DOCS_DIR=C:\devt\documentation
+CHM_OUTPUT_DIR=C:\devt\documentation\tools\project
+PDF_OUTPUT_DIR=C:\devt\documentation\tools\project
 ```
 
 ## Running Docker on Windows
@@ -88,9 +129,9 @@ running. `Docker Desktop` includes both `Docker` and `Docker Compose`.
 
 1. Download and run the [Docker Desktop installer](https://docs.docker.com/desktop/install/windows-install/) and follow
    the prompts to complete the installation.
-2. `Docker Desktop` will require you to enable the [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) feature
-   and install a Linux kernel update package if you're on Windows 10. Follow the installation guide provided by
-   the `Docker` installer.
+2. `Docker Desktop` will recommend you to enable the [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) feature
+   and potentially install a Linux kernel update package. Follow the installation guide provided by
+   the `Docker` installer. Windows 10 users report that you should not use WSL2, despite recommendations.
 3. After installation, run `Docker Desktop`. You might need to log in with your Docker account.
 
 **Open a terminal**
