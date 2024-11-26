@@ -162,4 +162,4 @@ nav:
       - Excel as the Server: dde/example-excel-as-the-server.md
       - Excel as the Client: dde/example-excel-as-the-client.md
       - APL as Compute Server for Excel: dde/example-apl-as-compute-server-for-excel.md
-      - Restrictions Limitations: dde/restrictions-limitations.md
+      - Restrictions and Limitations: dde/restrictions-limitations.md
