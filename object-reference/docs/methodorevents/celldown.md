@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">CellDown</span> <span class="command">Event 161</span></h1>
+<h1 class="heading"><span class="name">CellDown</span> <span class="right">Event 161</span></h1>
 
 
 

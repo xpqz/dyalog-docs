@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">CoolBar</span> <span class="command">Example 2</span></h1>
+<h1 class="heading"><span class="name">CoolBar</span> <span class="right">Example 2</span></h1>
 
 
 ```apl

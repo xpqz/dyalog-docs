@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">AddItems</span> <span class="command">Method 308</span></h1>
+<h1 class="heading"><span class="name">AddItems</span> <span class="right">Method 308</span></h1>
 
 
 

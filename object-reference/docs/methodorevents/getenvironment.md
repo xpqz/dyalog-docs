@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">GetEnvironment</span> <span class="command">Method 510</span></h1>
+<h1 class="heading"><span class="name">GetEnvironment</span> <span class="right">Method 510</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">ShowHelp</span> <span class="command">Method 580</span></h1>
+<h1 class="heading"><span class="name">ShowHelp</span> <span class="right">Method 580</span></h1>
 
 
 

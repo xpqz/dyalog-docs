@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">TCPGetHostID</span> <span class="command">Method 376</span></h1>
+<h1 class="heading"><span class="name">TCPGetHostID</span> <span class="right">Method 376</span></h1>
 
 
 

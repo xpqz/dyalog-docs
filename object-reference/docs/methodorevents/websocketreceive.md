@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">WebSocketReceive</span> <span class="command">Event 842</span></h1>
+<h1 class="heading"><span class="name">WebSocketReceive</span> <span class="right">Event 842</span></h1>
 
 
 

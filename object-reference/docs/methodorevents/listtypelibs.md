@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">ListTypeLibs</span> <span class="command">Method 520</span></h1>
+<h1 class="heading"><span class="name">ListTypeLibs</span> <span class="right">Method 520</span></h1>
 
 
 

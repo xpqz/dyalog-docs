@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">MouseUp</span> <span class="command">Event 2</span></h1>
+<h1 class="heading"><span class="name">MouseUp</span> <span class="right">Event 2</span></h1>
 
 [**Applies To**](../methodoreventapplies/mouseup.md)
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">TextSize</span> <span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">TextSize</span> <span class="right">Property</span></h1>
 
 [**Applies To**](../propertyapplies/textsize.md)
 

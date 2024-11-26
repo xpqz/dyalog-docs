@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">Root</span> <span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">Root</span> <span class="right">Object</span></h1>
 
 [Children](../childlists/root.md), [Properties](../proplists/root.md), [Methods](../methodlists/root.md), [Events](../eventlists/root.md)
 

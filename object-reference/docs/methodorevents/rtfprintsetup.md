@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">RTFPrintSetup</span> <span class="command">Method 460</span></h1>
+<h1 class="heading"><span class="name">RTFPrintSetup</span> <span class="right">Method 460</span></h1>
 
 
 

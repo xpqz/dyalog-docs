@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">GetItemPosition</span> <span class="command">Method 323</span></h1>
+<h1 class="heading"><span class="name">GetItemPosition</span> <span class="right">Method 323</span></h1>
 
 
 

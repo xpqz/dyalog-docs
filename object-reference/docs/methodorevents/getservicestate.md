@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">GetServiceState</span> <span class="command">Method 92</span></h1>
+<h1 class="heading"><span class="name">GetServiceState</span> <span class="right">Method 92</span></h1>
 
 **Applies To:** [Root](../objects/root.md)
 

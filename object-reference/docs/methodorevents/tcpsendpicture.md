@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">TCPSendPicture</span> <span class="command">Method 380</span></h1>
+<h1 class="heading"><span class="name">TCPSendPicture</span> <span class="right">Method 380</span></h1>
 
 **Applies To:** [TCPSocket](../objects/tcpsocket.md)
 

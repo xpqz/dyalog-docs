@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">DelComment</span> <span class="command">Method 221</span></h1>
+<h1 class="heading"><span class="name">DelComment</span> <span class="right">Method 221</span></h1>
 
 
 

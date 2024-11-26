@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">Detach</span> <span class="command">Method 270</span></h1>
+<h1 class="heading"><span class="name">Detach</span> <span class="right">Method 270</span></h1>
 
 [**Applies To**](../methodoreventapplies/detach.md)
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">EndEditLabel</span> <span class="command">Event 301</span></h1>
+<h1 class="heading"><span class="name">EndEditLabel</span> <span class="right">Event 301</span></h1>
 
 
 

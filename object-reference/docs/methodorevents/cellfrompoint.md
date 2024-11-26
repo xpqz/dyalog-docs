@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">CellFromPoint</span> <span class="command">Method 200</span></h1>
+<h1 class="heading"><span class="name">CellFromPoint</span> <span class="right">Method 200</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">AfterFix</span> <span class="command">Event 822</span></h1>
+<h1 class="heading"><span class="name">AfterFix</span> <span class="right">Event 822</span></h1>
 
 
 
