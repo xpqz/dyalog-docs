@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">DockRequest</span> <span class="command">Event 482</span></h1>
+<h1 class="heading"><span class="name">DockRequest</span> <span class="right">Event 482</span></h1>
 
 
 

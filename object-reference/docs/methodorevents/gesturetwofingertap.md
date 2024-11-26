@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">GestureTwoFingerTap</span> <span class="command">Event 496</span></h1>
+<h1 class="heading"><span class="name">GestureTwoFingerTap</span> <span class="right">Event 496</span></h1>
 
 [**Applies To**](../methodoreventapplies/gesturetwofingertap.md)
 

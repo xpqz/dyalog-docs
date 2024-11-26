@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">WebSocketClose</span> <span class="command">Event 843</span></h1>
+<h1 class="heading"><span class="name">WebSocketClose</span> <span class="right">Event 843</span></h1>
 
 
 

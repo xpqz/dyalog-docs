@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">SessionTrace</span> <span class="command">Event 527</span></h1>
+<h1 class="heading"><span class="name">SessionTrace</span> <span class="right">Event 527</span></h1>
 
 
 

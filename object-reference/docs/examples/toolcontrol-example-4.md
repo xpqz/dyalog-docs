@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">ToolControl</span> <span class="command">Example 4</span></h1>
+<h1 class="heading"><span class="name">ToolControl</span> <span class="right">Example 4</span></h1>
 
 
 ```apl

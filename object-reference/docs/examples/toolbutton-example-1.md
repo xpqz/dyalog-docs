@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">ToolButton</span> <span class="command">Example 1</span></h1>
+<h1 class="heading"><span class="name">ToolButton</span> <span class="right">Example 1</span></h1>
 
 
 ```apl

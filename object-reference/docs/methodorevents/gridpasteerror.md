@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">GridPasteError</span> <span class="command">Event 194</span></h1>
+<h1 class="heading"><span class="name">GridPasteError</span> <span class="right">Event 194</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">DateTimeChange</span> <span class="command">Event 267</span></h1>
+<h1 class="heading"><span class="name">DateTimeChange</span> <span class="right">Event 267</span></h1>
 
 
 

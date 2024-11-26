@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">HTMLRenderer</span> <span class="command">Object</span></h1>
+<h1 class="heading"><span class="name">HTMLRenderer</span> <span class="right">Object</span></h1>
 
 
 

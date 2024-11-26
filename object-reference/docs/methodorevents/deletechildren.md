@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">DeleteChildren</span> <span class="command">Method 311</span></h1>
+<h1 class="heading"><span class="name">DeleteChildren</span> <span class="right">Method 311</span></h1>
 
 
 

@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">BalloonHide</span> <span class="command">Event 862</span></h1>
+<h1 class="heading"><span class="name">BalloonHide</span> <span class="right">Event 862</span></h1>
 
 
 

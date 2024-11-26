@@ -1,4 +1,4 @@
-<h1 class="heading"><span class="name">LStyle</span> <span class="command">Property</span></h1>
+<h1 class="heading"><span class="name">LStyle</span> <span class="right">Property</span></h1>
 
 
 
