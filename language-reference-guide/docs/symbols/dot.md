@@ -5,13 +5,13 @@
 <h1 class="heading"><span class="name">Dot</span> <span class="command">.</span></h1>
 
 
-## Dot can be used as a Dyadic operator with Dyadic
-      operands
+## Dot can be used as a Dyadic operator with Dyadic operands
 
 ## Operator Dot means
 
 
 [Inner Product](../primitive-operators/inner-product.md)
+
 ```apl
       1 2 3 +.× 4 5 6
 32
@@ -25,8 +25,7 @@
 15 22
 ```
 
-## Used with Jot in place of the left operand Jot
-      Dot means
+## Used with Jot in place of the left operand Jot Dot means
 
 
 [Outer Product](../primitive-operators/outer-product.md)
@@ -40,9 +39,10 @@
 ```
 
 
-N.B. Dot is also used as a decimal point and as a name separator in namespace reference syntax.
+!!!note
+    Dot is also used as a decimal point and as a name separator in namespace reference syntax.
 
 
-[Language Elements](./language-elements.md)
+[Language Elements](language-elements.md)
 
 
