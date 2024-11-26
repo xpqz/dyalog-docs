@@ -211,7 +211,7 @@
 - [Special Syntax](../special-symbols)
 - [Variables](../../../programming-reference-guide/introduction/arrays/arrays)
 - [Namespaces](../../../programming-reference-guide/introduction/namespaces/namespaces)
-- [Defined Fns & Ops](../defined-functions-and-operators/defined-functions-and-operators)
+- [Defined Fns & Ops](../../../programming-reference-guide/defined-functions-and-operators/introduction)
 - [Dynamic Fns & Ops](../../../programming-reference-guide/defined-functions-and-operators/dfns-and-dops/dynamic-functions-and-operators)
 - [MultiThreading](../../../programming-reference-guide/threads/multithreading-overview)
 - [Object Oriented Programming](../../../programming-reference-guide/object-oriented-programming/introducing-classes/introducing-classes)
