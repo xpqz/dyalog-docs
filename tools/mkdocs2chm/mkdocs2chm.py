@@ -110,7 +110,7 @@ def _process_nav_item(item: dict | str, parent: Node, project='project') -> None
     node = Node(key, value, parent.depth + 1, parent)
     parent.children.append(node)
 
-    if isinstance(value, list):  # {'Documentation': 'documentation.md'}
+    if isinstance(value, list):
         for sub_item in value:
             _process_nav_item(sub_item, node, project)
 
@@ -283,10 +283,11 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
             'markdown_tables_extended',  # https://github.com/fumbles/tables_extended
             'pymdownx.details',          # https://facelessuser.github.io/pymdown-extensions/extensions/details/
             'pymdownx.superfences',      # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
-            TableCaptionExtension(),     # https://github.com/flywire/captionpip install openai faiss-cpu
+            TableCaptionExtension(),     # https://github.com/flywire/caption
         ])
 
-        body = body.replace('``', '') # Empty code blocks aren't rendered correctly
+        body = body.replace('``', '')  # Empty code blocks aren't rendered correctly
+        body = fix_links_html(body)
 
         with open(realpath_newname, "w", encoding="utf-8") as f:
             f.write(f"{head}<style>\n{css}\n</style></head><body>\n{body}\n</body></html>")
@@ -543,47 +544,50 @@ def table_captions(body: str) -> str:
     body = re.sub(r"Table:\s*(.*?)\s*\{:\s*#(\S+)\s*\}", lambda match: replace_table_captions(match, idx_list), body)
     return re.sub(r"\[\]\(#(\S+)\)", replace_table_refs, body)  # Update table references
 
-
-def fix_links(b: str) -> str:
+def fix_links_html(html: str) -> str:
     """
-    Links in the mkdocs source are "clean URLs" -- the renderer will remove the .md extensions
-    on link targets. We have to do that transformation ourselves -- or rather, change to .htm.
+    Applies the link transformations to an HTML document:
+    1. Links with targets ending in ".md" are changed to ".htm".
+    2. Links without extensions and leading "../" are lifted one relative level, and suffixed with ".htm".
+    3. Off-site links starting with "http" remain unchanged.
 
-    Three cases:
+    Parameters:
+        html (str): The HTML content as a string.
 
-    1. Intra-doc links present with link targets ending in ".md" -- they go to other pages
-    defined within the same mkdocs.yml sub-site. Fix those by changing suffix to ".htm".
-
-    2. Inter-doc links have a target presenting with (potentially several) leading "../" and no
-    extension. The first actual component (not "../") of the path will be the name of one of the other
-    sub-sites. Make the link absolute, and add the ".htm" extension.
-
-    3. Off-site links start with "http" -- return those unchanged.
+    Returns:
+        str: The modified HTML content.
     """
 
-    def link_transform(match: re.Match) -> str:
-        link_text = match.group(1)
-        link_target = match.group(2)
+    def transform_link(href: str) -> str:
+        """
+        Transforms an individual href link according to the rules.
+        """
+        if href.startswith('http'):  # Off-site link: leave unchanged
+            return href
 
-        if link_target.startswith('http'):  # Off-site link: return unchanged
-            return f'[{link_text}]({link_target})'
-
-        path, name = os.path.split(link_target)
+        path, name = os.path.split(href)
         base, ext = os.path.splitext(name)
-        htm_target = f'{os.path.join(path, base)}.htm'
 
-        if ext == '.md':  # Intra-doc link: change extension to ".htm"
-            return f'[{link_text}]({htm_target})'
+        if ext == '.md':  # Link to another sub-site: change ".md" to ".htm"
+            return os.path.join(path, f'{base}.htm')
 
-        if ext == '':  # Inter-doc link: make absolute, change extension
-            # Replace any number of leading ../ with a single /
-            no_slashdot = re.sub(r'^[/.]+', '/', htm_target)
-            return f'[{link_text}]({no_slashdot})'
+        if ext == '':  # Link within the same side -- lift one relative level, and add .htm
+            target = re.sub(r'^\.\.\/', '', href, count=1)
+            return f'{target}.htm'
 
-        # Something else; leave alone
-        return f'[{link_text}]({link_target})'
+        # Something else; leave unchanged
+        return href
 
-    return re.sub(r'\[([^]]+)]\(([^)]+)\)', link_transform, b)
+    # Parse the HTML
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Find and transform all <a> tags with href attributes
+    for a_tag in soup.find_all('a', href=True):
+        original_href = a_tag['href']
+        a_tag['href'] = transform_link(original_href)
+
+    # Return the modified HTML as a string
+    return str(soup)
 
 
 if __name__ == "__main__":
@@ -630,7 +634,6 @@ if __name__ == "__main__":
         css,
         macros=yml_data.get('extra', {}),
         transforms=[
-            fix_links,
             table_captions
         ],
         project=args.project_dir

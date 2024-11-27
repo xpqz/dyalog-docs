@@ -74,7 +74,12 @@ th, td {
     font-family: APL;
 }
 
-/* Compress lists a bit vertcially */
+.right {
+    text-align: right;
+    color: black;
+}
+
+/* Compress lists a bit vertically */
 li {
     margin-bottom: 0px !important;
 }
