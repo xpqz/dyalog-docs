@@ -813,7 +813,6 @@ nav:
           - Reset State Indicator: system-commands/reset.md
           - Save Workspace: system-commands/save.md
           - Execute UNIX Command: system-commands/sh.md
-          - Execute UNIX Command: system-commands/sh.md
           - State Indicator: system-commands/si.md
           - Clear State Indicator: system-commands/sic.md
           - State Indicator Name List: system-commands/sinl.md
