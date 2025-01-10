@@ -14,6 +14,8 @@
 FILES WS temp
 ```
 
+See also [`⎕SHELL`](shell.md).
+
 ## Dyadic `⎕SH` means
 
 

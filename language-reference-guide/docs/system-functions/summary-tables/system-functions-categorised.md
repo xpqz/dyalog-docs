@@ -79,6 +79,7 @@ NOTE: Tolerant comparisons depend on `⎕FR` to select which of `⎕CT` and `⎕
 |[`⎕S`](../s.md)    |Search                                                  |
 |[`⎕SH`](../execute-unix-command.md)   |Execute a UNIX command or another program               |
 |[`⎕SH`](../start-unix-auxiliary-processor.md)   |Start a UNIX AP                                         |
+|[`⎕SHELL`](../shell.md)|Execute a shell command or another program              |
 |[`⎕UCS`](../ucs.md)  |Unicode Convert                                         |
 |[`⎕USING`](../using.md)|Microsoft .NET Search Path                              |
 |[`⎕VFI`](../vfi.md)  |Verify and Fix numeric                                  |

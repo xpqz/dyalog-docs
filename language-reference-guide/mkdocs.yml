@@ -426,6 +426,7 @@ nav:
                   - Search: system-functions/s.md
                   - Execute UNIX Command: system-functions/execute-unix-command.md
                   - Start UNIX Auxiliary Processor: system-functions/start-unix-auxiliary-processor.md
+                  - Execute External Program: system-functions/shell.md
                   - Unicode Convert: system-functions/ucs.md
                   - Using Microsoft Net Search Path: system-functions/using.md
                   - Verify Fix Input: system-functions/vfi.md
@@ -734,7 +735,7 @@ nav:
           - Execute UNIX Command: system-functions/execute-unix-command.md
           - Start UNIX Auxiliary Processor: system-functions/start-unix-auxiliary-processor.md
           - Shadow Name: system-functions/shadow.md
-          - Shell: system-functions/shell.md
+          - Execute external program: system-functions/shell.md
           - State Indicator: system-functions/si.md
           - Signal Event: system-functions/signal.md
           - Size of Object: system-functions/size.md
