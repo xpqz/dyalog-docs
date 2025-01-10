@@ -86,6 +86,7 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 |`5178` |[Remove Loaded File Object Info](../the-i-beam-operator/remove-loaded-file-object-info.md)                 |&nbsp;|
 |`5179` |[Loaded File Object Info](../the-i-beam-operator/loaded-file-object-info.md)                               |&nbsp;|
 |`7162` |[JSON Translate Name](../the-i-beam-operator/json-translate-name.md)                                       |&nbsp;|
+|`8373` |[Shell Process Control](../the-i-beam-operator/shell-process-control.md)
 |`8415` |[Singular Value Decomposition](../the-i-beam-operator/singular-value-decomposition.md)                     |&nbsp;|
 |`8674` |[Externalise Array](../the-i-beam-operator/externalise-array.md)                                           |&nbsp;|
 |`9468` |[Hash Table Size](../the-i-beam-operator/hash-table-size.md)                                               |&nbsp;|
