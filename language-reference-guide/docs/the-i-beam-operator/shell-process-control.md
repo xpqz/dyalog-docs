@@ -7,7 +7,8 @@ If the I-beam is run monadically with `⍬` as its right argument, it returns a 
 
 When the I-beam is run with a positive integer as the right argument, it interprets that integer as an APL thread number, and if that thread is currently running [`⎕SHELL`](../system-functions/shell.md), the child process ID is returned.
 
-<h2 class="example">Example</h2>
+Example
+{ .example}
 ```apl
 	tid←{
         ...
@@ -25,5 +26,5 @@ If the I-beam is run dyadically, the left argument must be a integer scalar repr
 
 The return value is a Boolean scalar, indicating if the signal was successfully sent, as reported by the operating-system.
 
-!!! note
-	On Windows, the only valid signal number is 9, which makes the I-beam call `TerminateProcess()` on the child process.
+!!! windows "Dyalog on Microsoft Windows"
+	On Microsoft Windows, the only valid left argument is `9`, which makes the I-beam call `TerminateProcess()` on the child process.
