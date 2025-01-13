@@ -7,8 +7,7 @@ If the I-beam is run monadically with `⍬` as its right argument, it returns a 
 
 When the I-beam is run with a positive integer as the right argument, it interprets that integer as an APL thread number, and if that thread is currently running [`⎕SHELL`](../system-functions/shell.md), the child process ID is returned.
 
-Example
-{ .example}
+### Example { .example }
 ```apl
 	tid←{
         ...

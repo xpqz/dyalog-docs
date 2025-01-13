@@ -16,8 +16,7 @@ The shell being used can be changed using the [`Shell`](#Shell) variant, but the
 - Microsoft Windows: `PowerShell`
 - Linux, macOS, AIX: `/bin/sh`
 
-Example (Windows)
-{ .example}
+#### Example (Windows) { .example }
 ```apl
       ↑⊃⊃⎕SHELL 'Get-ChildItem -path C:\tmp'
       
@@ -226,8 +225,7 @@ The value must be a character vector or a vector of character vectors with a len
 
 Shells typically takes some argument which specify that the next argument is a command to run, such as `/bin/bash -c` on Linux, but since the argument differs from shell to shell, it must be specified manually.
 
-Example using bash (Linux)
-{ .example}
+#### Example using bash (Linux) { .example }
 ```apl
       ⎕SHELL⍠'Shell' ('/bin/bash' '-c')⊢'someCmd'
 ...
