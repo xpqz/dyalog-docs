@@ -26,8 +26,6 @@
 
 ```
 
-See also [`⎕SHELL`](shell.md).
-
 ## Dyadic `⎕CMD` means
 
 

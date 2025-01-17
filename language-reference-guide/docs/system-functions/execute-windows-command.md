@@ -13,6 +13,9 @@
 The system commands [`)SH`](../system-commands/sh.md) and [`)CMD`](../system-commands/cmd.md) provide similar facilities. For further information, see [Execute (UNIX) Command: ](../system-commands/sh.md) and [Example](../system-commands/cmd.md).
 
 
+See also [`⎕SHELL`](shell.md).
+
+
 ## Executing the Windows Command Processor
 
 
