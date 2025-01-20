@@ -1,22 +1,20 @@
 <h1 class="heading"><span class="name">Execute External Program</span> <span class="command">R←⎕SHELL Y</span></h1>
 
 `⎕SHELL` executes an external program, either directly or using the operating system's shell.
-The argument `Y` describes the command to execute, and when the command is done, the result of the system function contains information about the termination reason, along with output collected.
+
+`Y` describes the command to execute. `Y` is specified as either a character vector or a vector of character vectors.
+`R` contains information about the termination reason, along with output collected.
 
 The system function is cross-platform, but the command specification is inherently operating-system specific.
 
-## Program Specification
-The right argument `Y` is either a character vector, in which case the system's shell is used, or a vector of character vectors, in which case the command specified by the first element is executed directly.
-
-
 ### Using the System's Shell
-When the right argument is a character vector, the contents are executed using the system's shell.
-The shell being used can be changed using the [`Shell`](#Shell) variant, but the following are the defaults:
+When `Y` is a character vector, the contents are executed using the system's shell.
+The shell being used can be changed using the [`Shell`](#Shell) variant. The defaults are:
 
 - Microsoft Windows: `PowerShell`
 - Linux, macOS, AIX: `/bin/sh`
 
-#### Example (Windows) { .example }
+#### Example ( Microsoft Windows) { .example }
 ```apl
       ↑⊃⊃⎕SHELL 'Get-ChildItem -path C:\tmp'
       
@@ -33,43 +31,41 @@ d-----        26-11-2024     12:56                ullu
 ```
 
 ### Direct Execution
-When the right argument is a vector of character vectors, or an enclosed character vector, the first element of the array is treated as a program name, and the rest as individual arguments.
-The program is executed directly, without invoking the system's shell first.
-The program name can either be an absolute path, a relative path, or the name of an executable in the current search path (operating-system specific).
-When the program is specified as a relative path, the name is resolved relative to the working directory, which can be set with the [`WorkingDir`](#WorkingDir) option.
 
-
+When `Y` is a vector of character vectors or an enclosed character vector, the first element of the array is treated as a program name, and the rest as individual arguments. The program is executed directly, without invoking the system's shell first. The program name can be an absolute path, a relative path, or the name of an executable in the current search path (operating-system specific). When the program is specified as a relative path, the name is resolved relative to the working directory, which can be set with the [`WorkingDir`](#WorkingDir) variant.
 
 ## Return Value
+
 The result is a five element nested vector:
 ```apl
 (StreamData StreamIds ExitCode ExitReason Pid)←R
 ```
-The first two elements, `StreamData` and `StreamIds`, describe the output that was collected while the program ran.
-`ExitCode` and `ExitReason` describe why the `⎕SHELL` call ended.
-In the cases where the `⎕SHELL` call ends before the child process has ended, the `Pid` element is the positive integer process ID of the child process, and `¯1` otherwise.
+
+Within this:
+
+- `StreamData` and `StreamIds`, describe the output that was collected while the program ran.
+- `ExitCode` and `ExitReason` describe why the `⎕SHELL` call ended.
+- `Pid` is either the positive integer process ID of the child process (if the `⎕SHELL` call ends before the child process has ended), or `¯1`.
 
 ### Stream Data
-All running processes have a set of numbered open streams they can read from or write to. A *stream* is a connection between the process and some resource, such as a file, or a pipe connecting two different processes.
-Even though the streams are referenced by number, some of them have conventions for what they are typically used for:
+
+A stream is a connection between the process and some resource, such as a file, or a pipe connecting two different processes. All running processes have a set of open, numbered, streams that they can read from or write to. Even though the streams are referenced by number, some streams have typical usage conventions:
 
 | Stream number | Name | Type | Description |
 | --- | --- | --- | --- |
 | 0 | Standard input | Input | In interactive programs running in a terminal window, input typed on the keyboard typically goes to standard input. In a shell pipeline, standard output of one program is connected to standard input of another program. |
 | 1 | Standard output | Output | Used to print regular output data. |
-| 2 | Standard error | Output | Typically used to print error messages or other information which is not part of the main output.
+| 2 | Standard error | Output | Used to print error messages or other information that is not part of the main output. |
 
 `⎕SHELL` provides great flexibility in what the streams should point to, by using the [`Output`](#Output) and [`Input`](#Input) variants. By default, the two output streams, 1 and 2, are configured such that the output produced on standard error is redirected to standard output and effectively merged together, and then turned into an APL array representing the lines of text.
 
-Both the `StreamData` and `StreamIds` elements of the result are vectors of the same length, and the `StreamIds` are always sorted in ascending order.
-Each index describes one collected output stream; `StreamIds` contains the integer stream IDs, and the elements of `StreamData` depend on how the output is collected (see the [`Output`](#Output) variant).
+The StreamData and StreamIds vectors have the same length. The StreamIds are always sorted in ascending order. Each index describes one collected output stream; StreamIds contains the integer stream IDs, and the elements of StreamData depend on how the output is collected (see the [`Output`](#Output) variant).
 
-Due to the default configuration, `⊃⊃⎕SHELL cmd` returns a vector of character vectors representing the lines of the collected output text from the child process (both standard output and standard error).
-
+By default, `⊃⊃⎕SHELL cmd` returns a vector of character vectors representing the lines of the collected output text from the child process (both standard output and standard error).
 
 ### Exit Reasons
 
-There are a number of reasons why a call to `⎕SHELL` ends, which are described in the table below. The value of `ExitReason` is an integer that describes the overall reason, while `ExitCode` provides additional information.
+The  reasons why a call to `⎕SHELL` ends are described in the table below. `ExitReason` is an integer that describes the overall reason, and `ExitCode` provides additional information.
 
 | `ExitReason` | Description | `ExitCode` |
 | --- | --- | --- |
@@ -79,31 +75,32 @@ There are a number of reasons why a call to `⎕SHELL` ends, which are described
 | 3 | `⎕SHELL` was interrupted by a weak interrupt in the IDE. | The constant `¯1002`. |
 
 !!! windows "Dyalog on Microsoft Windows"
-    `ExitReason` cannot be 2 on Windows.
+    `ExitReason` cannot be 2 on Microsoft Windows.
 
-
-The reason the exit code is returned instead of `⎕SHELL` producing some trappable error is that it makes it possible to access the other parts of the result, such as the error messages that were printed on the standard error stream. However, it is possible to turn non-successful exits into trappable errors using the [`ExitCheck`](#ExitCheck) variant.
+Returning the exit code (instead of `⎕SHELL` producing some trappable error) makes it possible to access the other parts of the result, such as the error messages that were printed on the standard error stream. However, it is possible to turn non-successful exits into trappable errors using the [`ExitCheck`](#ExitCheck) variant.
 
 When the `ExitReason` is 2 or 3, the child process had not stopped running before `⎕SHELL` stopped, which means it might still be running, and require some appropriate cleanup (see [8373⌶](../../the-i-beam-operator/shell-process-control)).
-In practice, the child process often goes away automatically shortly after, either due to the default signal being sent to it on non-Windows platforms (see the [`Signal`](#Signal) option), or because the connected streams are closed on the `⎕SHELL` end.
+In practice, the child process often closes shortly after without the need for intervention, either due to the default signal being sent to it on non-Windows platforms (see the [`Signal`](#Signal) option), or because the connected streams are closed on the `⎕SHELL` end.
 
 ## Thread Switching
 `⎕SHELL` is a thread switch point, which means the interpreter will run other APL threads while a long-running `⎕SHELL` call is in progress.
 
-When an APL thread running `⎕SHELL` is terminated by [`⎕TKILL`](tkill.md) or [`)reset`](../system-commands/reset.md), the child process might be left running, as if `⎕SHELL` was interrupted.
+When an APL thread running `⎕SHELL` is terminated by [`⎕TKILL`](tkill.md) or [`)RESET`](../system-commands/reset.md), the child process might be left running, as if `⎕SHELL` was interrupted.
 
-## Options
-`⎕SHELL` supports a number of variant options, to control certain parts of the program execution context.
+## Variant Options
+`⎕SHELL` supports the following variant options to control certain parts of the program execution context.
 
 ### Output
-Controls output stream redirections.
-The value must describe a set of redirections, in one of the following formats:
+The `Output` variant option controls output stream redirections. The value must describe a set of redirections, in one of the following formats:
 
 - a two-column matrix.
 - a two-element vector.
 - a vector of two-element vectors.
 
-Each row or two-element vector should be of the form `(Stream Destination)`, where `Stream` is the integer stream number, and `Destination` is one of the possible destinations described in the table below.
+Each row or two-element vector should be of the form `(Stream Destination)`, in which:
+- `Stream` is the integer stream number.
+- `Destination` is one of the possible destinations described in the table below.
+
 Any output the child process produces on its stream `Stream` will go to the specified destination.
 
 | Format | Description |
@@ -119,17 +116,17 @@ Any output the child process produces on its stream `Stream` will go to the spec
 | `('Callback' fn)` | This is identical to the other callback format, with the difference that the data is converted into lines of text in the same way as when the `'Array'` format is used, using heuristics to determine the line endings and text encoding. |
 | `n` | When the destination is a scalar integer, it is treated as a shorthand for either `('Stream' n)` or `('File' n)`, depending on the sign of the integer. All non-negative numbers are treated as stream IDs, while negative numbers are treated as native file ties.
 
-The default if not specified is `0 2⍴0`, but see [Default Redirections](#default-redirections).
+The default is is `0 2⍴0`, but see [Default Redirections](#default-redirections).
 
 #### Callbacks
-The callbacks supported by the `(Callback fn)` and `(Callback fn encodingOrType)` destinations are described here in more detail.
+The callbacks supported by the `(Callback fn)` and `(Callback fn encodingOrType)` can be invoked either monadically or dyadically, depending on the format of `fn`:
 
-The callback function is invoked either monadically or dyadically, depending on the format of `fn`.
-A simple character vector is understood as the name of the function to call, while a two-element vector `(name leftarg)` specifies the character vector name, and some arbitrary data to be passed as the left argument to the callback function.
+- A simple character vector: the name of the function to call.
+- A two-element vector `(name leftarg)`: the character vector name, and some arbitrary data to be passed as the left argument to the callback function.
 
-When `encodingOrType` is a scalar integer, specifying a data type, the callback is said to be run in *simple vector mode*, and otherwise it runs in *line mode*. `(Callback fn)` without an explicit encoding is similar, but the text encoding is deduced automatically on the first call to the callback, and reused for subsequent calls.
+When `encodingOrType` is a scalar integer, specifying a data type, the callback runs in *simple vector mode*, otherwise it runs in *line mode*. `(Callback fn)` without an explicit encoding is similar, but the text encoding is deduced automatically on the first call to the callback, and reused for subsequent calls.
 
-The right argument is a namespace which contains the members described in the table below. The namespace is created once for each callback specification, and updated just before each call.
+The right argument is a namespace that contains the members described in the table below. The namespace is created once for each callback specification and updated just before each call.
 
 | Name | Description |
 | --- | --- |
@@ -138,7 +135,7 @@ The right argument is a namespace which contains the members described in the ta
 | `Encoding` | A character vector describing the text encoding that was used to decode the raw bytes. When the callback runs in simple vector mode, this member is an empty vector. It is most useful when the callback is specified as `('Callback' fn)`, without an explicit text encoding. |
 | `Output` | The APL array produced from converting the bytes produced since the previous callback, according to the encoding or type specified. When the callback is running in line mode, it will also include any partial line from the end of the previous call's `Output`. |
 | `Stream` | A scalar integer specifying the stream number. This allows the same callback function to be used on multiple output streams, and provides a way for the callback code to determine which stream it is currently processing. |
-| `PartialLine` | A Boolean scalar indicating whether or not the last line in `Output` was terminated by a newline character or sequence. As partial lines are included again in the next call's `Output`, it is possible to process only the complete lines by conditionally ignoring the last element of `Output` when `PartialLine=1`. In simple vector mode, this member is always 0. |
+| `PartialLine` | A Boolean scalar indicating whether the last line in `Output` was terminated by a newline character or sequence (1 indicates that the line is partial, not terminated by a newline character or sequence). As partial lines are included again in the next call's `Output`, it is possible to process only the complete lines by conditionally ignoring the last element of `Output` when `PartialLine=1`. In simple vector mode, this is always 0. |
 
 The callback is invoked when:
 
@@ -146,18 +143,19 @@ The callback is invoked when:
 - there is data in the internal buffer, but no I/O is immediately possible between the interpreter and the child process.
 - there is data in the internal buffer, and the child process has finished running.
 
-Depending on the type or encoding, some of these conditions could happen when the buffer contains a number of bytes which do not make up a full item, such as when the buffer is full and the last byte is only one of multiple needed to encode a UTF-8 character.
-When this happens, the bytes for the partial item are left for the next invocation of the callback function.
+Depending on the type or encoding, some of these conditions could happen when the buffer contains a number of bytes that do not make up a full item, such as when the buffer is full and the last byte is only one of multiple bytes needed to encode a UTF-8 character.
 
 ### Input
-Controls input stream redirections.
-The value must describe a set of redirections, in one of the following formats:
+The Input variant option controls input stream redirections. The value must describe a set of redirections, in one of the following formats:
 
 - a two-column matrix.
 - a two-element vector.
 - a vector of two-element vectors.
 
-Each row or two-element vector should be of the form `(Stream Source)`, where `Stream` is the integer stream number, and `Source` is one of the possible sources described in the table below.
+Each row or two-element vector should be of the form `(Stream Source)`, in which:
+- `Stream` is the integer stream number.
+- `Source` is one of the possible sources described in the table below.
+
 Any input the child process tries to read on its stream `Stream` will come from the specified source.
 
 | Format | Description |
@@ -171,32 +169,28 @@ Any input the child process tries to read on its stream `Stream` will come from 
 | `'Null'` | Input comes from the operating-system's null device, which effectively means no input is provided. |
 | `('Token' n)` | `⎕SHELL` will periodically see if any tokens are available on the token number `n`, such as those produced by `X ⎕TPUT n`. When one becomes available, the token data `X` is parsed as one of the `('Array' ...)` sources, and appended to a buffer of data that the child process then sees on the specified stream. A token with no data, as constructed by a monadic [`⎕TPUT`](tput.md) call, closes the stream. This, combined with running `⎕SHELL` on its own APL thread, provides a mechanism for feeding a child process input input dynamically. |
 
-The default if not specified is `0 2⍴0`, but see [Default Redirections](#default-redirections).
+The default is `0 2⍴0`, but see [Default Redirections](#default-redirections).
 
 ### WorkingDir
-Sets the working directory of the child process.
-The value must be a character vector which refers to a valid directory, such as `'/tmp/somedir'` on Linux, or `'C:\tmp\somedir'` on Microsoft Windows.
+The `WorkingDir` variant option sets the working directory of the child process. The value must be a character vector that refers to a valid directory, such as `'/tmp/somedir'` on Linux, or `'C:\tmp\somedir'` on Microsoft Windows.
 
-The default if not specified, is the current working directory of the interpreter.
+The default is the current working directory of the interpreter.
 
 ### InheritEnv
-Specifies whether or not the set of environment variables from the interpreter should be inherited in the child process.
-The value must be a Boolean scalar.
+The `InheritEnv` variant option specifies whether the set of environment variables from the interpreter should be inherited by the child process. The value must be a Boolean scalar.
 
-The default if not specified is `1`.
+The default is `1`.
 
 ### Env
-Specifies any additional environment variables and their values.
-If an environment variable that already exists in the set of inherited variables (see [`InheritEnv`](#InheritEnv)) is specified here, the value from `Env` takes precedence.
-The option value must be one of the following:
+The `Env` variant option specifies any additional environment variables and their values. If an environment variable that already exists in the set of inherited variables (see [`InheritEnv`](#InheritEnv)) is specified here, the value from `Env` takes precedence. The option value must be one of the following:
 
 - a two-column matrix.
 - a two-element vector.
 - a vector of two-element vectors.
 
-Each row or two-element vector consists of an environment variable name, and its value, both specified as character vectors.
+Each row or two-element vector consists of an environment variable name and its value, both specified as character vectors.
 
-For example, to add three environment variables `DAY=monday`, `MONTH=december`, and `WEEK=50`, the following could be done
+Example: Add three environment variables: `DAY=monday`, `MONTH=december`, and `WEEK=50`.
 
 ```apl
       ⍝ Using a two-column matrix and array notation
@@ -214,16 +208,17 @@ For example, to add three environment variables `DAY=monday`, `MONTH=december`, 
 ...
 ```
 
-All the environment variable names must be unique.
+All the environment variable names must be unique within the scope of the call to `⎕SHELL`.
 
-The default if not specified is `0 2⍴⍬`.
+The default is `0 2⍴⍬`.
 
 ### Shell
-Sets the shell to be used when the right argument `Y` of `⎕SHELL` is a character vector.
+The `Shell` variant option sets the shell to be used when `Y` is a character vector.
 
-The value must be a character vector or a vector of character vectors with a length of at least one.
+The value must be a character vector or a vector of character vectors with a length of at least 1.
 
-Shells typically takes some argument which specify that the next argument is a command to run, such as `/bin/bash -c` on Linux, but since the argument differs from shell to shell, it must be specified manually.
+!!! info
+    Shells typically takes some argument which specify that the next argument is a command to run, such as `/bin/bash -c` on Linux, but since the argument differs from shell to shell, it must be specified manually.
 
 #### Example using bash (Linux) { .example }
 ```apl
@@ -231,7 +226,7 @@ Shells typically takes some argument which specify that the next argument is a c
 ...
 ```
 
-Note that there is no difference between the following two calls, and that the `Shell` option is simply a convenience.
+There is no difference between the following two calls; the `Shell` variant option is simply a convenience.
 ```apl
       ⎕SHELL'/bin/bash' '-c' 'a b c'
       ⎕SHELL⍠'Shell' ('/bin/bash' '-c')⊢'a b c'
@@ -239,52 +234,53 @@ Note that there is no difference between the following two calls, and that the `
 
 When the right argument of `⎕SHELL` is a nested vector, the `Shell` option has no effect.
 
-The default if not specified depends on the operating-system:
+The default depends on the operating-system:
 
 - Microsoft Windows: `('C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' '-Command')`.
 - Linux, macOS, AIX: `('/bin/sh' '-c')`.
 
 ### ExitCheck
-If enabled, `⎕SHELL` turns abnormal exit reasons and exit codes into a `DOMAIN ERORR`. The value must be a boolean scalar.
+The `ExitCheck` variant option specifies whether `⎕SHELL` should convert abnormal exit reasons and exit codes into a `DOMAIN ERORR`. The value must be a boolean scalar; if set to 1, a `DOMAIN ERROR` is reported if `ExitReason` and `ExitCode` are not both 0.
 
-The default if not specified is `0`.
+The default `0`.
 
 ### Timeout
-Specifies an upper limit on how long the `⎕SHELL` call is going to take.
-The value must be a non-negative numeric scalar which represents a number of milliseconds.
+The `TimeOut` variant option specifies an upper limit for the duration of the `⎕SHELL` call.
+The value must be a non-negative numeric scalar representing the number of milliseconds.
 The value `0` allows the `⎕SHELL` call to run for as long as it needs.
 
-The default if not specified is `0`.
+The default is `0`.
 
 ### Signal
-Specifies a signal to send to the child process when it is being abandoned by `⎕SHELL`.
-The value must be an integer which represents a valid signal number, or `0` which means no signal should be sent.
-On Microsoft Windows, the only valid signal number is `9`, which causes `⎕SHELL` to call `TerminateProcess()` on the child process, which is similar to signal `9` on the other platforms where it is `SIGKILL`.
+The `Signal` variant option specifies a signal to send to the child process when it is being abandoned by `⎕SHELL`.
+The value must be either an integer representing a valid signal number, or `0` (which means no signal should be sent).
 
-The default if not specified depends on the operating-system:
+!!! note "Dyalog on Microsoft Windows"
+    On Microsoft Windows, the only valid signal number is `9`, which causes `⎕SHELL` to call `TerminateProcess()` on the child process, which is similar to signal `9` on the other platforms where it is `SIGKILL`.
 
-- Windows: `0`.
+The default depends on the operating-system:
+
+- Microsoft Windows: `0`.
 - Linux, macOS, AIX: the numeric value of `SIGTERM` which is the signal that asks the child process to shut itself down.
 
 ### Window
 !!! windows "Dyalog on Microsoft Windows"
     This option only has an effect on Windows.
 
-Specifies the initial window mode.
-The value must be a character vector containing one of the initial window parameters described on [`⎕CMD`](execute-windows-command.md#starting-a-windows-program).
+The `Window` variant option specifies the initial window mode. The value must be a character vector containing one of the initial window parameters described on [`⎕CMD`](execute-windows-command.md#starting-a-windows-program).
 
-The default if not specified is `'Hidden'`.
+The default is `'Hidden'`.
 
 See also [8373⌶](../../the-i-beam-operator/shell-process-control).
 
 ## Default Redirections
-Most programs assume the three standard streams are setup to something when the program starts, and for that reason, `⎕SHELL` always sets up some redirections for those three, even when variant options have explicitly only setup some of them. For example, when `⎕SHELL⍠'Output' (1 ('File' '/tmp/log.txt'))⊢cmd` is run, stream 0 and stream 2 are set up to their default values.
+Most programs assume that the three standard streams are configured when the program starts. For this reason, `⎕SHELL` always sets up some redirections for those three, even when variant options have explicitly only set up some of them. For example, when `⎕SHELL⍠'Output' (1 ('File' '/tmp/log.txt'))⊢cmd` is run, stream 0 and stream 2 are set up to their default values.
 
 The default redirections for the two output streams are:
 
 - `(1 'Array')`: Collect standard output as lines of text.
 - `(2 ('Stream' 1))`: Send standard error to standard output, so it is collected together.
 
-And the default for the input stream is
+The default for the input stream is
 
 - `(0 'Null')`: Provide no data on standard input.
