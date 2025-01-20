@@ -307,7 +307,7 @@ nav:
           - Stencil: primitive-operators/stencil.md
           - Variant: primitive-operators/variant.md
   - The I-Beam Operator:
-      - Introduction: primitive-operators/i-beam.md
+      - Introduction: the-i-beam-operator/i-beam.md
       - Inverted Table Index Of: the-i-beam-operator/inverted-table-index-of.md
       - Execute Expression: the-i-beam-operator/execute-expression.md
       - Overwrite Free Pockets: the-i-beam-operator/overwrite-free-pockets.md
@@ -369,6 +369,7 @@ nav:
       - Remove Loaded File Object Info: the-i-beam-operator/remove-loaded-file-object-info.md
       - Loaded File Object Info: the-i-beam-operator/loaded-file-object-info.md
       - JSON Translate Name: the-i-beam-operator/json-translate-name.md
+      - Shell Process Control: the-i-beam-operator/shell-process-control.md
       - Singular Value Decomposition: the-i-beam-operator/singular-value-decomposition.md
       - Hash Table Size: the-i-beam-operator/hash-table-size.md
       - Lookup Table Size: the-i-beam-operator/lookup-table-size.md
@@ -425,6 +426,7 @@ nav:
                   - Search: system-functions/s.md
                   - Execute UNIX Command: system-functions/execute-unix-command.md
                   - Start UNIX Auxiliary Processor: system-functions/start-unix-auxiliary-processor.md
+                  - Execute External Program: system-functions/shell.md
                   - Unicode Convert: system-functions/ucs.md
                   - Using Microsoft Net Search Path: system-functions/using.md
                   - Verify Fix Input: system-functions/vfi.md
@@ -733,6 +735,7 @@ nav:
           - Execute UNIX Command: system-functions/execute-unix-command.md
           - Start UNIX Auxiliary Processor: system-functions/start-unix-auxiliary-processor.md
           - Shadow Name: system-functions/shadow.md
+          - Execute external program: system-functions/shell.md
           - State Indicator: system-functions/si.md
           - Signal Event: system-functions/signal.md
           - Size of Object: system-functions/size.md

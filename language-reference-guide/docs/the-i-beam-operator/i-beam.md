@@ -1,27 +1,15 @@
-
-
-
-
-
 <h1 class="heading"><span class="name">I-Beam</span> <span class="command">R←{X}(A⌶)Y</span></h1>
-
-
 
 I-Beam is a monadic operator that provides a range of system related services.
 
 !!! warning 
     Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams](./supplementary-i-beam-functions.md).
 
-
-
 `A` is an integer that specifies the type of operation to be performed  as shown in the table below. `Y` is an array that supplies further information about what is to be done.
-
 
 `X` may or may not be required depending on `A`.
 
-
 `R` is the result of the derived function.
-
 
 When attempting to use  I-Beam with an unsupported operation value, `A`, one of three different error messages will be reported:
 
@@ -101,6 +89,7 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 |`5178` |[Remove Loaded File Object Info](./remove-loaded-file-object-info.md)                 |&nbsp;|
 |`5179` |[Loaded File Object Info](./loaded-file-object-info.md)                               |&nbsp;|
 |`7162` |[JSON Translate Name](./json-translate-name.md)                                       |&nbsp;|
+|`8373` |[Shell Process Control](./shell-process-control.md)                                   |&nbsp;|
 |`8415` |[Singular Value Decomposition](./singular-value-decomposition.md)                     |&nbsp;|
 |`8674` |[Externalise Array](./externalise-array.md)                                           |&nbsp;|
 |`9468` |[Hash Table Size](./hash-table-size.md)                                               |&nbsp;|

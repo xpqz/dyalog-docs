@@ -19,6 +19,8 @@ The system commands [`)SH`](../system-commands/sh.md) and [`)CMD`](../system-com
 
 `Y` may be any acceptable UNIX command. If the command does not produce any output, `R` is `0⍴⊂''` but the result is suppressed if not explicitly used or assigned.  If the command has a non-zero exit code, then APL will signal a `DOMAIN ERROR`.  If the command returns a result and has a zero exit code, then each element of `R` will be a line from the standard output (stdout) of the command.  Output from standard error (stderr) is not captured unless redirected to stdout.
 
+See also [`⎕SHELL`](shell.md).
+
 <h2 class="example">Examples</h2>
 ```apl
       ⎕SH'ls'
@@ -33,7 +35,6 @@ bin:!:2:2::/bin:
 ```
 
 ## Note
-
 
 This function is disabled and instead generates a `DOMAIN ERROR` if the RIDE_SPAWNED parameter is non-zero. This is designed to prevent it being invoked from a RIDE session which does not support this type of user interface. For further details, see the *RIDE User Guide*.
 

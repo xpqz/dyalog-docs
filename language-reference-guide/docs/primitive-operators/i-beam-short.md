@@ -12,6 +12,6 @@ I-Beam is a monadic operator that provides a range of system related services.
 
 `R` is the result of the derived function.
 
-For further information, see [I-Beam](./i-beam.md).
+For further information, see [I-Beam](../../the-i-beam-operator/i-beam).
 
 
