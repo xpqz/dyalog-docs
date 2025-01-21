@@ -3,7 +3,7 @@
 The purpose of this document is to outline how documentation authors should contribute material to the Dyalog documentation.
 When working with the Dyalog documentation, we follow common `git` workflows, preferring to think about treating [documentation as code](https://www.writethedocs.org/guide/docs-as-code/).
 
-> **Note**: In order to be a Dyalog documentation contributor, you need basic `git` and GitHub proficiency and a GitHub account. You need to be fluent in Markdown and YAML.
+> **Note:** In order to be a Dyalog documentation contributor, you need basic `git` and GitHub proficiency and a GitHub account. You need to be fluent in Markdown and at least somewhat familiar with YAML.
 
 There are slight process variations depending on if you're a member of the Dyalog GitHub organisation or not.
 
@@ -21,7 +21,7 @@ The issue's body describes what the work entails. Note that an issue may evolve 
 
 ## Branch
 
-> **Note** If you're not a member of the Dyalog GitHub organisation, you cannot push branches to the repository directly. Instead you must first _fork_ the documentation repository into your own GitHub account, and then follow the process outlined below. PRs can then be raised from your fork.
+> **Note:** If you're not a member of the Dyalog GitHub organisation, you cannot push branches to the repository directly. Instead you must first _fork_ the documentation repository into your own GitHub account, and then follow the process outlined below. PRs can then be raised from your fork.
 
 Each issue should be accompanied by a single branch off the main. These branches should conform to a very specific naming scheme:
 
@@ -52,14 +52,14 @@ If your push succeeds, you should be presented with a link to open a _pull reque
 
 A PR means a request to merge in some changes into the main branch. A PR should never be merged unless it's been reviewed: the PR screen on the GitHub website will normally suggest a reviewer -- you can either accept the suggestion, or add your own, or leave it blank: you can add a review request after the PR has been opened. 
 
-> **Note** If you're a contributor from outside Dyalog, leave the reviewer field blank.
+> **Note:** If you're a contributor from outside Dyalog, leave the reviewer field blank.
 
 When requesting a review, discuss this with the person -- again, GitHub notifications have a tendency to drown in the flow. It is polite to send the reviewer the link to the PR, with the _files changed_ tab open. This means they can get right into it.
 
 ```
 Hi Alex --
 
-thanks for agreeing to review my PR for the ⎕SHELL function.
+thanks for agreeing to review my PR for the ⎕SHELL system function.
 
 The issue is here: https://github.com/Dyalog/documentation/issues/4
 
@@ -72,13 +72,17 @@ Sam
 
 ## Review and Merge
 
-A review is a two-way conversation. Do use the GitHub interface for PR review so that we have a log. Doing reviews well is an art form and requires practice on both sides. Be respectful: as the reviewee, you have requested the time and effort from someone to help you with your work. Respect their input. As the reviewer, the reviewee has committed their time and effort to improve the Dyalog product by providing documentation for an area of their expertise. Respect _their_ work. Focus on correctness, clarity and completeness before formatting and style: it's not the reviewer's role to force the writing into _their_ particular tastes and preferences. 
+A review is a two-way conversation. Do use the GitHub interface for PR review so that we have a log. Most doc reviews will involve a lot of changes. It is most helpful to leave those inline -- in the diff view on GitHub, locate the line where the paragraph or section begins, and hover just to the right of the line number. You should see a "+" appearing. Clicking this gives you a text field into which you can type your comment. If you're proposing a stylistic rewording, a nice touch is to provide the complete replacement for the paragraph. This means that the author, if they agree with your suggestion, can lift the whole thing as-is. If you're querying the correctness or validity, write a concise question. 
 
-Do not underestimate the effort being a reviewer requires -- the reviewer must ensure they understand the feature being documented so they can assess correctness. Before you accept a request to become a reviewer, indicate a timeline to the reviewee: if your earliest convenience is three weeks from now, it may be better to let someone else do the review.
+Sometimes, it can be more productive to do a review "live", over a shared screen. If your review takes this form, the reviewer should approve the PR via the green button towards the top-right, and leave a comment "This was reviewed in person".
 
-As the reviewee, you're not _obligated_ to take every suggestion made by the reviewer (and the reviewer should be prepared for this). However, a PR will not be merged until the review has been marked as approved jointly by reviewee and reviewer(s). 
+Doing reviews well is an art form and requires practice on both sides. Be respectful: as the reviewee, you have requested the time and effort from someone to help you with your work. Respect their input. As the reviewer, the reviewee has committed their time and effort to improve the Dyalog product by providing documentation for an area of their expertise. Respect _their_ work. Focus on correctness, clarity and completeness before formatting and style: it's not the reviewer's role to force the writing into _their_ particular tastes and preferences. 
 
-A review typically involves changes. The reviewee should commit and push any agreed changes to PR branch, never the reviewer. 
+Do not underestimate the effort being a reviewer requires -- the reviewer must ensure they understand the feature being documented so they can assess correctness. Before you accept a request to become a reviewer, indicate a timeline to the reviewee: if your earliest convenience is three weeks from now, it may be better to let someone else do the review. 
+
+As the reviewee, you're not _obligated_ to accept every suggestion made by the reviewer (and the reviewer should be prepared for this). However, a PR will not be merged until the review has been marked as approved jointly by reviewee and reviewer(s). 
+
+A review typically involves several changes. The reviewee should commit and push any agreed changes to PR branch, never the reviewer. 
 
 Once a review is approved, if the reviewee is a Dyalog member, they should merge it, marking the PR branch for deletion. If the reviewee is external, the reviewer should merge it (marking the PR branch for deletion). In the merge message, auto-close the issue, for example:
 

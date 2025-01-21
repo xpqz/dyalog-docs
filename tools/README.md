@@ -53,6 +53,24 @@ The docker image will consume resources, so when you're finished, be sure to qui
 docker-compose down
 ```
 
+### Preview a remote branch
+
+If, for example, you're asked to review a PR branch, checkout the remote branch, and run the preview as described above. If you're using the commandline version of git, simply do
+
+```shell
+git checkout -b branch-name-here origin/branch-name-here
+cd tools
+export DOCS_DIR=/Users/stefan/work/documentation/language-reference-guide/
+docker-compose up mkdocs-server  # Note: full command name
+```
+
+If you're using a GUI tool for git, like [GitHub Desktop](https://github.com/apps/desktop), 
+
+1. In the menu, select `Repository > Fetch`
+2. Set "Current branch" to the branch to be reviewed
+
+See [CONTRIBUTE](../CONTRIBUTE.md) for how to leave a PR review.
+
 ## Making the CHM file
 
 Note: this is normally a job for the build pipeline and final testing.
