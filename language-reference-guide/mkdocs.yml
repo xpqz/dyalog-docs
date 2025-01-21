@@ -379,9 +379,9 @@ nav:
   - System Functions:
       - Introduction: system-functions/introduction.md
       - System Functions Categorised:
-          - Introduction: system-functions/summary-tables/system-functions-categorised.md
+          - Introduction: system-functions/system-functions-categorised.md
           - System Settings:
-              - Introduction: system-functions/summary-tables/system-settings.md
+              - Introduction: system-functions/system-settings.md
               - State Settings:
                   - Comparison Tolerance: system-functions/ct.md
                   - Decimal Comparison Tolerance: system-functions/dct.md
@@ -392,7 +392,7 @@ nav:
                   - Print Precision: system-functions/pp.md
                   - Random Link: system-functions/rl.md
           - Session Information and Management:
-              - Introduction: system-functions/summary-tables/session-information-and-management.md
+              - Introduction: system-functions/session-information-and-management.md
               - Account Information: system-functions/ai.md
               - Account Name: system-functions/an.md
               - Clear Workspace: system-functions/clear.md
@@ -404,13 +404,13 @@ nav:
               - Save Workspace: system-functions/save.md
               - Timestamp: system-functions/ts.md
           - System Constants:
-              - Introduction: system-functions/summary-tables/constants.md
+              - Introduction: system-functions/constants.md
               - Constants:
                   - Alphabetic Characters: system-functions/a.md
                   - Digits: system-functions/d.md
                   - Null Item: system-functions/null.md
           - Tools and Access to External Facilities:
-              - Introduction: system-functions/summary-tables/tools-and-external-access.md
+              - Introduction: system-functions/tools-and-external-access.md
               - Tools and Access to External Utilities:
                   - Execute Windows Command: system-functions/execute-windows-command.md
                   - Start Windows Auxiliary Processor: system-functions/start-windows-auxiliary-processor.md
@@ -432,7 +432,7 @@ nav:
                   - Verify Fix Input: system-functions/vfi.md
                   - XML Convert: system-functions/xml.md
           - Manipulating Functions and Operators:
-              - Introduction: system-functions/summary-tables/manipulating-functions-and-operators.md
+              - Introduction: system-functions/manipulating-functions-and-operators.md
               - Attributes: system-functions/at.md
               - Canonical Representation: system-functions/cr.md
               - Edit Object: system-functions/ed.md
@@ -451,7 +451,7 @@ nav:
               - Query Trace: system-functions/query-trace.md
               - Vector Representation: system-functions/vr.md
           - Namespaces and Objects:
-              - Introduction: system-functions/summary-tables/namespaces-and-objects.md
+              - Introduction: system-functions/namespaces-and-objects.md
               - Base Class: system-functions/base.md
               - Class: system-functions/class.md
               - Change Space: system-functions/cs.md
@@ -463,7 +463,7 @@ nav:
               - Source: system-functions/src.md
               - This Space: system-functions/this.md
           - Input and Output:
-              - Introduction: system-functions/summary-tables/input-and-output.md
+              - Introduction: system-functions/input-and-output.md
               - Input/Output:
                   - Character Input/Output: system-functions/character-input-output.md
                   - Evaluated Input/Output: system-functions/evaluated-input-output.md
@@ -471,7 +471,7 @@ nav:
                   - Arbitrary Output: system-functions/arbout.md
                   - Response Time Limit: system-functions/rtl.md
           - Component Files:
-              - Introduction: system-functions/summary-tables/component-files.md
+              - Introduction: system-functions/component-files.md
               - Append Component: system-functions/fappend.md
               - File System Availability: system-functions/favail.md
               - File Check and Repair: system-functions/fchk.md
@@ -497,7 +497,7 @@ nav:
               - Tie File: system-functions/ftie.md
               - Untie Files: system-functions/funtie.md
           - Native Files:
-              - Introduction: system-functions/summary-tables/native-files.md
+              - Introduction: system-functions/native-files.md
               - File Parts: system-functions/nparts.md
               - Make Directory: system-functions/mkdir.md
               - Append Value to a Native File: system-functions/nappend.md
@@ -523,7 +523,7 @@ nav:
               - Close one or more Native Files: system-functions/nuntie.md
               - Specify/report Native File translation: system-functions/nxlate.md
           - Threads:
-              - Introduction: system-functions/summary-tables/threads.md
+              - Introduction: system-functions/threads.md
               - Thread Child Numbers: system-functions/tcnums.md
               - Current Thread Identity: system-functions/tid.md
               - Kill Thread: system-functions/tkill.md
@@ -531,14 +531,14 @@ nav:
               - Thread Numbers: system-functions/tnums.md
               - Wait for Threads to Terminate: system-functions/tsync.md
           - Synchronisation:
-              - Introduction: system-functions/summary-tables/synchronisation.md
+              - Introduction: system-functions/synchronisation.md
               - Get Tokens: system-functions/tget.md
               - Kill Thread: system-functions/tkill.md
               - Token Pool: system-functions/tpool.md
               - Put Tokens: system-functions/tput.md
               - Token Requests: system-functions/treq.md
           - Error Handling:
-              - Introduction: system-functions/summary-tables/error-handling.md
+              - Introduction: system-functions/error-handling.md
               - Diagnostic Message: system-functions/dm.md
               - Extended Diagnostic Message: system-functions/dmx.md
               - Event Message: system-functions/em.md
@@ -547,7 +547,7 @@ nav:
               - Signal Event: system-functions/signal.md
               - Trap Events: system-functions/trap.md
           - Stack and Workspace:
-              - Introduction: system-functions/summary-tables/stack-and-workspace.md
+              - Introduction: system-functions/stack-and-workspace.md
               - Stack and Workspace Information:
                   - Line Count: system-functions/lc.md
                   - Latent Expression: system-functions/lx.md
@@ -564,7 +564,7 @@ nav:
                   - Workspace Identification: system-functions/wsid.md
                   - Extended State Indicator: system-functions/xsi.md
           - Shared Variables:
-              - Introduction: system-functions/summary-tables/shared-variables.md
+              - Introduction: system-functions/shared-variables.md
               - Query Access Control: system-functions/query-access-control.md
               - Set Access Control: system-functions/set-access-control.md
               - Offer Shared Variable: system-functions/svo.md
@@ -574,7 +574,7 @@ nav:
               - Shared Variable Retract Offer: system-functions/svr.md
               - Shared Variable State: system-functions/svs.md
           - GUI and COM Support:
-              - Introduction: system-functions/summary-tables/gui-and-com-support.md
+              - Introduction: system-functions/gui-and-com-support.md
               - Dequeue Events: system-functions/dq.md
               - Export Object: system-functions/export.md
               - Enqueue Event: system-functions/nq.md
@@ -584,7 +584,7 @@ nav:
               - Windows Set Property: system-functions/ws.md
               - Window Expose: system-functions/wx.md
           - Miscellaneous:
-              - Introduction: system-functions/summary-tables/miscellaneous.md
+              - Introduction: system-functions/miscellaneous.md
               - Underscored Alphabetic Characters: system-functions/underscored-alphabetic-characters.md
               - Atomic Vector: system-functions/av.md
               - Atomic Vector Unicode: system-functions/avu.md
@@ -597,9 +597,9 @@ nav:
               - Terminal Control: system-functions/tc.md
               - Set External Variable: system-functions/set-external-variable.md
               - Query External Variable: system-functions/query-external-variable.md
-      - System Variables: system-functions/summary-tables/system-variables.md
+      - System Variables: system-functions/system-variables.md
       - System Functions (A-Z):
-          - Introduction: system-functions/summary-tables/system-functions-and-variables-colwise.md
+          - Introduction: system-functions/system-functions-and-variables-colwise.md
           - Character Input Output: system-functions/character-input-output.md
           - Evaluated Input Output: system-functions/evaluated-input-output.md
           - Underscored Alphabetic Characters: system-functions/underscored-alphabetic-characters.md
