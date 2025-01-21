@@ -19,14 +19,15 @@ A "sub-site" is one of the component documents as defined by the nav section in 
 - dotnet-interface
 - unix-user-guide
 
+> **Note:** When using the Docker-based tools, you need to give `docker-compose` the **full command name**, _not_ a bare `docker-compose up`. 
+
 To preview a mkdocs site, do:
 
 ```shell
 export DOCS_DIR=path-to-dir-containing-docs  # or use a .env file; see below
 docker-compose up [--build][--remove-orphans] mkdocs-server
 ```
-
-for example, for the whole lot, do:
+Note the full command name. For example, for the whole lot, do:
 ```shell
 export DOCS_DIR=/Users/stefan/work/documentation
 docker-compose up mkdocs-server
@@ -62,7 +63,7 @@ To render the CHM file, do:
 ```shell
 export DOCS_DIR=/Users/stefan/work/documentation
 export CHM_OUTPUT_DIR=/Users/stefan/work/documentation/tools/project
-docker-compose run [--build]  mkdocs2chm
+docker-compose run [--build] mkdocs2chm
 ```
 which produces `$CHM_OUTPUT_DIR/dyalog.chm` (and several other build artefacts useful for troubleshooting).
 
@@ -127,11 +128,13 @@ running. `Docker Desktop` includes both `Docker` and `Docker Compose`.
 
 **Install Docker Desktop for Windows**
 
+> **Warning:** If you're using Microsoft Windows 10, you cannot use WSL2 with Docker. Choose HyperV instead during installation.
+
 1. Download and run the [Docker Desktop installer](https://docs.docker.com/desktop/install/windows-install/) and follow
    the prompts to complete the installation.
 2. `Docker Desktop` will recommend you to enable the [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) feature
    and potentially install a Linux kernel update package. Follow the installation guide provided by
-   the `Docker` installer. Windows 10 users report that you should not use WSL2, despite recommendations.
+   the `Docker` installer. 
 3. After installation, run `Docker Desktop`. You might need to log in with your Docker account.
 
 **Open a terminal**
