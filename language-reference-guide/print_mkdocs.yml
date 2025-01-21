@@ -273,11 +273,11 @@ nav:
           - Line Count: the-i-beam-operator/line-count.md
           - RIDE and Experimental Features-related I-Beams: the-i-beam-operator/supplementary-i-beam-functions.md
   - 'Chapter 6: System Functions and Variables':
-      - Introduction: system-functions/summary-tables/introduction.md
-      - System Functions (A-Z): system-functions/summary-tables/system-functions-and-variables-print.md
-      - System Functions Categorised: system-functions/summary-tables/system-functions-categorised.md
-      - System Variables: system-functions/summary-tables/system-variables.md
-      - Functions (A-Z): system-functions/summary-tables/functions-a-z.md
+      - Introduction: system-functions/introduction.md
+      - System Functions (A-Z): system-functions/system-functions-and-variables-print.md
+      - System Functions Categorised: system-functions/system-functions-categorised.md
+      - System Variables: system-functions/system-variables.md
+      - Functions (A-Z): system-functions/functions-a-z.md
       - System Functions (A-Z)-1:
           - Character Input Output: system-functions/character-input-output.md
           - Evaluated Input Output: system-functions/evaluated-input-output.md

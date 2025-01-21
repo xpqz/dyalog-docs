@@ -6,44 +6,45 @@ System variables may be localised by inclusion in the header line of a defined f
 
 A system variable can never be undefined. Default values are assigned to all system variables in a clear workspace.
 
-|Name    |Description                  |Scope    |
-|--------|-----------------------------|---------|
-|`⎕AVU`  |Atomic Vector – Unicode      |Namespace|
-|`⎕CT`   |Comparison Tolerance         |Namespace|
-|`⎕DCT`  |Decimal Comp Tolerance       |Namespace|
-|`⎕DIV`  |Division Method              |Namespace|
-|`⎕FR`   |Floating-Point Representation|Namespace|
-|`⎕IO`   |Index Origin                 |Namespace|
-|`⎕LX`   |Latent Expression            |Workspace|
-|`⎕ML`   |Migration Level              |Namespace|
-|`⎕PATH` |Search Path                  |Session  |
-|`⎕PP`   |Print Precision              |Namespace|
-|`⎕PW`   |Print Width                  |Session  |
-|`⎕RL`   |Random Link                  |Namespace|
-|`⎕RTL`  |Response Time Limit          |Namespace|
-|`⎕SM`   |Screen Map                   |Workspace|
-|`⎕TNAME`|Thread Name                  |Workspace|
-|`⎕TRAP` |Event Trap                   |Workspace|
-|`⎕USING`|Microsoft .NET Search Path   |Namespace|
-|`⎕WSID` |Workspace ID                 |Workspace|
-|`⎕WX`   |Window Expose                |Namespace|
 
-In other words,  `⎕PATH` and `⎕PW` relate to the session.  `⎕LX`, `⎕SM`, `⎕TRAP` and `⎕WSID` relate to the active workspace.  All the other system variables relate to the current namespace.
+|Name           |Description                               |Scope      |
+|---------------|-----------------------------------------|-----------|
+|[`⎕AVU`](avu.md)  |Atomic Vector – Unicode              |Namespace  |
+|[`⎕CT`](ct.md)    |Comparison Tolerance                |Namespace  |
+|[`⎕DCT`](dct.md)  |Decimal Comp Tolerance              |Namespace  |
+|[`⎕DIV`](div.md)  |Division Method                     |Namespace  |
+|[`⎕FR`](fr.md)    |Floating-Point Representation       |Namespace  |
+|[`⎕IO`](io.md)    |Index Origin                        |Namespace  |
+|[`⎕LX`](lx.md)    |Latent Expression                   |Workspace  |
+|[`⎕ML`](ml.md)    |Migration Level                     |Namespace  |
+|[`⎕PATH`](path.md)|Search Path                         |Session    |
+|[`⎕PP`](pp.md)    |Print Precision                     |Namespace  |
+|[`⎕PW`](pw.md)    |Print Width                         |Session    |
+|[`⎕RL`](rl.md)    |Random Link                         |Namespace  |
+|[`⎕RTL`](rtl.md)  |Response Time Limit                 |Namespace  |
+|[`⎕SM`](sm.md)    |Screen Map                          |Workspace  |
+|[`⎕TNAME`](tname.md)|Thread Name                      |Workspace  |
+|[`⎕TRAP`](trap.md)|Event Trap                          |Workspace  |
+|[`⎕USING`](using.md)|Microsoft .NET Search Path       |Namespace  |
+|[`⎕WSID`](wsid.md)|Workspace ID                        |Workspace  |
+|[`⎕WX`](wx.md)    |Window Expose                       |Namespace  |
 
-|Session|Workspace|Namespace|
-|-------|---------|---------|
-|`⎕PATH`|`⎕LX`    |`⎕AVU`   |
-|`⎕PW`  |`⎕SM`    |`⎕CT`    |
-|&nbsp; |`⎕TRAP`  |`⎕DCT`   |
-|&nbsp; |`⎕WSID`  |`⎕DIV`   |
-|&nbsp; |&nbsp;   |`⎕FR`    |
-|&nbsp; |&nbsp;   |`⎕IO`    |
-|&nbsp; |&nbsp;   |`⎕ML`    |
-|&nbsp; |&nbsp;   |`⎕PP`    |
-|&nbsp; |&nbsp;   |`⎕RL`    |
-|&nbsp; |&nbsp;   |`⎕RTL`   |
-|&nbsp; |&nbsp;   |`⎕USING` |
-|&nbsp; |&nbsp;   |`⎕WX`    |
+In other words, [`⎕PATH`](path.md) and [`⎕PW`](pw.md) relate to the session. [`⎕LX`](lx.md), [`⎕SM`](sm.md), [`⎕TRAP`](trap.md), and [`⎕WSID`](wsid.md) relate to the active workspace. All the other system variables relate to the current namespace.
+
+|Session   |Workspace     |Namespace        |
+|----------|--------------|-----------------|
+|[`⎕PATH`](path.md) |[`⎕LX`](lx.md)    |[`⎕AVU`](avu.md)   |
+|[`⎕PW`](pw.md)     |[`⎕SM`](sm.md)    |[`⎕CT`](ct.md)     |
+|&nbsp;                 |[`⎕TRAP`](trap.md) |[`⎕DCT`](dct.md)   |
+|&nbsp;                 |[`⎕WSID`](wsid.md) |[`⎕DIV`](div.md)   |
+|&nbsp;                 |&nbsp;               |[`⎕FR`](fr.md)     |
+|&nbsp;                 |&nbsp;               |[`⎕IO`](io.md)     |
+|&nbsp;                 |&nbsp;               |[`⎕ML`](ml.md)     |
+|&nbsp;                 |&nbsp;               |[`⎕PP`](pp.md)     |
+|&nbsp;                 |&nbsp;               |[`⎕RL`](rl.md)     |
+|&nbsp;                 |&nbsp;               |[`⎕RTL`](rtl.md)   |
+|&nbsp;                 |&nbsp;               |[`⎕USING`](using.md)|
+|&nbsp;                 |&nbsp;               |[`⎕WX`](wx.md)     |
 
 Note that the value assigned to a system variable must be appropriate; otherwise an error will be reported immediately.
 
