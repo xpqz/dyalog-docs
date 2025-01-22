@@ -7,7 +7,7 @@
 
 
 
-This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH` is a synonym of `)CMD`. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)SH` is probably more natural for the UNIX user. This section describes the behaviour of `)SH` and `)CMD` under UNIX. See ["Windows Command Processor: "](cmd.md) for a discussion of their behaviour under Windows.
+This command allows WINDOWS or UNIX shell commands to be given from APL.  `)SH` is a synonym of `)CMD`. Either command may be given in either environment (Windows or UNIX) with exactly the same effect.  `)SH` is probably more natural for the UNIX user. This section describes the behaviour of `)SH` and `)CMD` under UNIX. See [Windows Command Processor](cmd.md) for a discussion of their behaviour under Windows.
 
 
 

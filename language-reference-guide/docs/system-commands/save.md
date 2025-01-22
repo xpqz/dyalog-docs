@@ -7,7 +7,7 @@
 
 
 
-This command compacts (see ["Workspace Available: "](../system-functions/wa.md) for details) and saves the active workspace.
+This command compacts (see [Workspace Available](../system-functions/wa.md) for details) and saves the active workspace.
 
 
 If specified, `ws` is a full or relative path name to the file in which the workspace will be written. If `ws` is omitted, it defaults to `⎕WSID`. Unless the path specified by `ws` or `⎕WSID` is a full pathname, it is taken to be relative to the current working directory which may be obtained by the expression: `⊃1 ⎕NPARTS ''`.
