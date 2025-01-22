@@ -7,7 +7,7 @@
 
 
 
-`⎕SH` executes a UNIX shell or a Windows Command Processor.  `⎕SH` is a synonym of `⎕CMD`.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  `⎕SH` is probably more natural for the UNIX user.  This section describes the behaviour of `⎕SH` and `⎕CMD` under UNIX.  See ["Execute Windows Command: "](execute-windows-command.md) for a discussion of the behaviour of these system functions under Windows.
+`⎕SH` executes a UNIX shell or a Windows Command Processor.  `⎕SH` is a synonym of `⎕CMD`.  Either function may be used in either environment (UNIX or Windows) with exactly the same effect.  `⎕SH` is probably more natural for the UNIX user.  This section describes the behaviour of `⎕SH` and `⎕CMD` under UNIX.  See [Execute Windows Command](execute-windows-command.md) for a discussion of the behaviour of these system functions under Windows.
 
 
 The system commands [`)SH`](../system-commands/sh.md) and [`)CMD`](../system-commands/cmd.md) provide similar facilities. For further information, see [Execute (UNIX) Command: ](../system-commands/sh.md) and [Example](../system-commands/cmd.md).

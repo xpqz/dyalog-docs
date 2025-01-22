@@ -23,7 +23,7 @@
 
 
 
-See ["Native File Read: "](nread.md) for a list of valid conversion codes.
+See [Native File Read](nread.md) for a list of valid conversion codes.
 
 
 The shy result is the location of the internal file pointer which will be pointing to the end of the newly written data. Used, for example, in:

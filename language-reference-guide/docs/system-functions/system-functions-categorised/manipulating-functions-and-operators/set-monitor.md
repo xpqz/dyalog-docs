@@ -22,7 +22,7 @@ Note that `⎕MONITOR` does not apply to  dfns or dops.
 `R` is a vector of numbers on which a monitor has been placed in ascending order.  The result is suppressed unless it is explicitly used or assigned. `R` will be empty for dfns and dops.
 
 
-The effect of `⎕MONITOR` is to accumulate timing statistics for the lines for which the monitor has been set.  See ["Query Monitor: "](query-monitor.md) for details.
+The effect of `⎕MONITOR` is to accumulate timing statistics for the lines for which the monitor has been set.  See [Query Monitor](query-monitor.md) for details.
 
 
 
