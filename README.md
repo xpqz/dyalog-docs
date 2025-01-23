@@ -4,7 +4,7 @@
 
 If you want to contribute content to Dyalog's documentation, see the file [CONTRIBUTE.md](CONTRIBUTE.md) for an outline of the process we use.
 
-Please consult the (Dyalog Documentation Guidelines](https://dyalog.github.io/documentation-guidelines) for the style and language conventions we adopt.
+Please consult the [Dyalog Documentation Guidelines](https://dyalog.github.io/documentation-guidelines) for the style and language conventions we adopt.
 
 ## Organisation
 
