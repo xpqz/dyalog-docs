@@ -4,6 +4,8 @@
 
 If you want to contribute content to Dyalog's documentation, see the file [CONTRIBUTE.md](CONTRIBUTE.md) for an outline of the process we use.
 
+Please consult the (Dyalog Documentation Guidelines](https://dyalog.github.io/documentation-guidelines) for the style and language conventions we adopt.
+
 ## Organisation
 
 This is a mkdocs _monorepo_, using the Spotify [monorepo](https://github.com/backstage/mkdocs-monorepo-plugin) plugin. The top-level site is defined by the file `mkdocs.yml` in the root, and the `docs/` directory. The other directories are the respective sub-sites included in the `nav` section in `mkdocs.yml`, currently:
@@ -40,6 +42,6 @@ git config --global http.postBuffer 524288000"
 [For the person responsible for publishing]
 
 ```
-mike set-default --push [--remote github] 20.0  # only needed once
-mike deploy --push [--remote github] 20.0
+mike set-default --push 20.0  # only needed once
+mike deploy --push 20.0
 ```
