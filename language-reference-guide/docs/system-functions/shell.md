@@ -75,7 +75,7 @@ The  reasons why a call to `⎕SHELL` ends are described in the table below. `Ex
 | 3 | `⎕SHELL` was interrupted by a weak interrupt in the IDE. | The constant `¯1002`. |
 
 !!! windows "Dyalog on Microsoft Windows"
-    `ExitReason` cannot be 2 on Microsoft Windows.
+    `ExitReason` cannot be 1 on Microsoft Windows.
 
 Returning the exit code (instead of `⎕SHELL` producing some trappable error) makes it possible to access the other parts of the result, such as the error messages that were printed on the standard error stream. However, it is possible to turn non-successful exits into trappable errors using the [`ExitCheck`](#ExitCheck) variant.
 
