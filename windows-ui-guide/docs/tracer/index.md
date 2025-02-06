@@ -36,7 +36,7 @@ The Tracer is implemented as a single dockable window that displays the function
 
 In the default Session files, the Tracer is docked along the bottom edge of the Session window. When you invoke the Tracer, it springs up as illustrated below. In this example, the function being traced is `⎕SE.UCMD`, which is invoked by typing a user-command, in this case `]display`.
 
-![](img/tracer-1.png)
+![](../img/tracer-1.png)
 
 In the default layout, the *SIstack* window is displayed alongside the main Tracer window, although this can be hidden or made to appear as a separate floating window, as required.
 
@@ -46,30 +46,30 @@ The Tracer may be controlled from the keyboard, or by using the *Trace Tools* wh
 
 |Button||Name|Key Code|Keystroke|Description|
 |---|---|---|---|---|---|
-|![](img/trace-tools-exec-icon.png)|Exec|ER|Enter|Execute expression|
-|![](img/trace-tools-trace-icon.png)|Trace|TC|Ctrl+Enter|Trace expression|
-|![](img/trace-tools-back-icon.png)|Back|BK|Ctrl+Shift+Bksp|Go back one line|
-|![](img/trace-tools-fwd-icon.png)|Fwd|FD|Ctrl+Shift+Enter|Skip current line|
-|![](img/trace-tools-continue-icon.png)|Continue|BH|&nbsp;|Stop on next line of calling function|
-|![](img/trace-tools-restart-icon.png)|Restart|RM|`→⎕LC`|Continue execution of this thread|
-|![](img/trace-tools-resart-all-threads-icon.png)|Restart all|&nbsp;|&nbsp;|Continue execution of all threads|
-|![](img/trace-tools-edit-icon.png)|Edit|ED|Shift+Enter|Edit name|
-|![](img/trace-tools-exit-icon.png)|Exit|EP|Esc|Quit this function|
-|![](img/trace-tools-intr-icon.png)|Intr|&nbsp;|Ctrl+Pause|Interrupt|
-|![](img/trace-tools-reset-icon.png)|Reset|CB|&nbsp;|Clear trace/stop/monitor for this object|
-|![](img/editor-line-numbers-icon.png)|&nbsp;|LN|&nbsp;|Toggle line numbers|
-|![](img/editor-next-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for next match|
-|![](img/editor-previous-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for previous match|
-|![](img/editor-search-hidden-text-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search hidden text|
-|![](img/editor-match-case-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match case|
-|![](img/editor-match-whole-word-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match whole word|
-|![](img/editor-use-regular-expressions-icon.png)|&nbsp;|&nbsp;|&nbsp;|Use Regular Expressions|
+|![](../img/trace-tools-exec-icon.png)|Exec|ER|Enter|Execute expression|
+|![](../img/trace-tools-trace-icon.png)|Trace|TC|Ctrl+Enter|Trace expression|
+|![](../img/trace-tools-back-icon.png)|Back|BK|Ctrl+Shift+Bksp|Go back one line|
+|![](../img/trace-tools-fwd-icon.png)|Fwd|FD|Ctrl+Shift+Enter|Skip current line|
+|![](../img/trace-tools-continue-icon.png)|Continue|BH|&nbsp;|Stop on next line of calling function|
+|![](../img/trace-tools-restart-icon.png)|Restart|RM|`→⎕LC`|Continue execution of this thread|
+|![](../img/trace-tools-resart-all-threads-icon.png)|Restart all|&nbsp;|&nbsp;|Continue execution of all threads|
+|![](../img/trace-tools-edit-icon.png)|Edit|ED|Shift+Enter|Edit name|
+|![](../img/trace-tools-exit-icon.png)|Exit|EP|Esc|Quit this function|
+|![](../img/trace-tools-intr-icon.png)|Intr|&nbsp;|Ctrl+Pause|Interrupt|
+|![](../img/trace-tools-reset-icon.png)|Reset|CB|&nbsp;|Clear trace/stop/monitor for this object|
+|![](../img/editor-line-numbers-icon.png)|&nbsp;|LN|&nbsp;|Toggle line numbers|
+|![](../img/editor-next-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for next match|
+|![](../img/editor-previous-match-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search for previous match|
+|![](../img/editor-search-hidden-text-icon.png)|&nbsp;|&nbsp;|&nbsp;|Search hidden text|
+|![](../img/editor-match-case-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match case|
+|![](../img/editor-match-whole-word-icon.png)|&nbsp;|&nbsp;|&nbsp;|Match whole word|
+|![](../img/editor-use-regular-expressions-icon.png)|&nbsp;|&nbsp;|&nbsp;|Use Regular Expressions|
 
 Using the Trace Tools, you can **single-step** through the function or operator by clicking the *Exec* and/or *Trace* buttons. If you click *Exec* the current line of the function or operator is executed and the system halts at the next line. If you click *Trace*, the current line is executed but any defined functions or operators referenced on that line are themselves traced. After execution of the line the system again halts at the next one. Using the keyboard, the same effect can be achieved by pressing Enter or Ctrl+Enter.
 
 The illustration below shows the state of execution having clicked *Exec* 16 times to reach `⎕SE.UCMD[17]`.
 
-![](img/tracer-2.png)
+![](../img/tracer-2.png)
 
 Execution Reached `⎕SE.UCMD[35]`
 
@@ -77,13 +77,13 @@ The next illustration shows the result of clicking *Trace* at this point. This c
 
 Notice how each function call on the stack is represented by an item in the *SIstack* window.
 
-![](img/tracer-3.png)
+![](../img/tracer-3.png)
 
 Execution Reached `⎕SE.SALTUtils.Spice[1]`
 
 The illustration below shows the state of execution having traced deeper into the system.
 
-![](img/tracer-4.png)
+![](../img/tracer-4.png)
 
 Execution reached four levels deep
 
@@ -127,14 +127,14 @@ It is possible to skip from the Tracer to the Session and then re-invoke the Tra
 
 Break-points are defined by `⎕STOP` and may be toggled on and off in an Edit or Trace window by clicking in the appropriate column. The example below illustrates a function with a `⎕STOP` break-point set on line `[5]`.
 
-![](img/tracer-5.png)
+![](../img/tracer-5.png)
 
 `⎕STOP` break-points set or cleared in an Edit window are not established until the function is fixed. `⎕STOP` break-points set or cleared in a Trace window are established immediately.
 
 ## Clearing All Break-Points
 
-![](img/trace-theme-09-00.png)
-![](img/trace-tools-reset-icon.png)
+![](../img/trace-theme-09-00.png)
+![](../img/trace-tools-reset-icon.png)
 
 You can clear all break-points by pressing the above button in the Trace Tools window. This in fact resets `⎕STOP` for all functions in the workspace.
 

@@ -1,6 +1,6 @@
 # Trace Primitives
 
-_Trace Primitive_ (TP) is an extension to the tracer that allows the developer to step through the execution of individual primitives of expressions, examining intermediate results and left and right arguments of sub-expressions. It's a powerful addition to the developer's toolbox: it enables the introspection of complex expressions typed directly into the session, and can be used in conjunction with the traditional tracing mode to skip over lines you're not interested in, and step through primitive by primitive in complex expressions where you need to.
+The ability to trace primitives is an extension to the Tracer that allows you to step through the execution of individual primitives within expressions, examining intermediate results and arguments of sub-expressions. It enables an in-depth inspection of complex expressions typed directly into the session, and can be used in conjunction with the traditional tracing mode to skip over lines you're not interested in and step through primitive-by-primitive in complex expressions where required.
 
 !!! note
     _Trace Primitives_ is not an entirely accurate name: it is tracing with the (approximate) granularity of primitives, though it does stop on non-primitives.
@@ -9,26 +9,22 @@ _Trace Primitive_ (TP) is an extension to the tracer that allows the developer t
 
 There is a command **&lt;TP&gt;** called *Trace Primitive* with the default keyboard shortcut <kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd> which is used to trace primitives.
 
-There are four primary means of starting a TP session:
+To start tracing primitives, position the cursor within an expression and do one of the following:
 
-1. Issue the command **&lt;TP&gt;** directly in the session.
-2. Select **Trace Primitives…** from the _Action_ menu.
-3. Select **Action > Trace Primitives…** from the context menu.
-4. Click the **Next Primitive** icon in the tracer's toolbar, showing as a downward arrow over three dots:
+- enter the _Trace Primitive_ command (**&lt;TP&gt;**) in the session.
+- select **Action > Trace Primitives…** from the Session menu bar.
+- select **Action > Trace Primitives…** from the Session window's context menu.
+- click the **Next Primitive** icon ![](../../img/tp-next-primitive.png) in the Tracer toolbar.
 
-    ![](../../img/next-primitive.png)
+The Tracer opens with primitive tracing activated.
 
-If you enter an expression in the session such as:
-```apl
-(+/÷≢)⍳10
-```
-and hit <kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd>, you should see:
+<h2 class="example">Example</h2>
+In a Session, enter the expression `(+/÷≢)⍳10` and start tracing primitives.
 
-![](../../img/start-tbt.png)
+![](../../img/tp-start.png)
 
-The little red box surrounding the `⍳` in the tracer pane is showing the next primitive to be executed. Keep hitting <kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd> a few times to see how the execution progresses through the expression. 
-
-The **Next Primitive** icon is always present in the tracer. The new **&lt;TP&gt;** command lets you open a tracer on an expression typed directly in the session that previously could not be traced into. 
+The red outline around the `⍳ `in the Tracer shows the next primitive to be executed. Enter **&lt;TP&gt;** or click the **Next Primitive** icon in the Tracer toolbar to see how the execution progresses through the expression.
+The **Next Primitive** icon is always present in the Tracer. The **&lt;TP&gt;** command lets you open a Tracer on an expression that has been typed directly in the Session.
 
 ## Anatomy of the TP Interface
 
@@ -56,21 +52,19 @@ In the last two layout modes, the tracer panes are docked into the main window. 
 
 ### Aspect Panes
 
-There are several more aspects of an expression that can be inspected in TP mode beyond the left and right arguments. These are available under the **Windows** menu when in tracing mode.
-
-The aspect pane options are divided into two groups: 1-4, which apply to the *current* function, and 5-9, which apply to the *previously* executed function. They are:
+When tracing primitives, there are several more aspects of an expression that can be inspected beyond the default ones for left and right arguments, available under the **Windows** menu in the Tracer. These are divided into two sections; items 1-4 apply to the current function, and items 5-9 apply to the previously-executed function. They are:
 
 1. **Left Argument**
 
-    The **Left Argument** pane is enabled (but minimised) by default. As you step through an expression, it will display the left argument about to be passed to the highlighted function. 
+    As you step through an expression, this displays the left argument that is about to be passed to the highlighted function. Enabled (but minimised) by default.  
 
 2. **Current Function**
 
-    The **Current Function** is the one highlighted with the red box in the tracer. Opening a dedicated aspect pane allows you to select different presentation modes, see the section [Aspect Pane Options](#aspect-pane-options) below.
+    The function that is highlighted with a red outline in the Tracer. Opening a dedicated aspect pane allows you to select different presentation modes; see [Aspect Pane Options](#aspect-pane-options) for more information.
 
 3. **Right Argument**
 
-    The **Right Argument** pane is enabled (but minimised) by default. As you step through an expression, it will display the right argument about to be passed to the highlighted function. 
+    As you step through an expression, this displays the right argument that is about to be passed to the highlighted function. Enabled (but minimised) by default. 
     
 4. **Axis Specification**
 
@@ -78,23 +72,23 @@ The aspect pane options are divided into two groups: 1-4, which apply to the *cu
 
 5. **Previous Result**
     
-    The result of the function evaluation immediately before the one highlighted with the red box. 
-    
+    The result of the function evaluation immediately before the highlighted function.
+
 6. **Previous Left**
 
-    The left argument of the function evaluation immediately before the one highlighted with the red box.
+    The left argument of the function evaluation immediately before the highlighted function.
 
 7. **Previous Function**
 
-    The function that was evaluated immediately before the one highlighted with the red box. 
+    The function that was evaluated immediately before the highlighted function. 
 
 8. **Previous Right**
 
-    The right argument of the function evaluation immediately before the one highlighted with the red box.
+    The right argument of the function evaluation immediately before the highlighted function.
 
 9. **Previous Axis**
 
-    The bracket axis applied to the function evaluation immediately before the one highlighted with the red box (if any).
+    The bracket axis applied to the function evaluation immediately before the highlighted function (if any).
 
 The relationship between these panes can be illustrated as
 
@@ -108,53 +102,55 @@ Current Function  ┘     │ │ └  Previous Axis
 ```
 
 !!! note 
-    Each of these options correspond to a new pane in the tracer. With every such pane enabled and visible, the interface will become busy. A good strategy is to enable these on a case by case basis.
+    Each of these options corresponds to a new pane in the Tracer. Having all panes enabled and visible can result in the interface becoming cluttered and information being hard to locate; Dyalog Ltd recommends enabling these on a case-by-case basis.
 
 ### Aspect Pane Options
 
-The settings available under the **Options** menu can be used to configure the behaviour of the aspect panes. They are:
+When a docked aspect pane is the focus, the Session's **Options** menu enables configuration of the behaviour of that aspect pane (for floating panes, the **Options** menu is within the aspect pane). The options are:
 
-1. **Show Status Bars**
+- **Show Status Bars**
 
-    This controls the appearance of status bars at the bottom of TP windows.
+    Whether status bars are displayed beneath the aspect pane.
 
-2. **Minimise until first use**
+- **Minimise until first use**
     
-    This means that if you have saved a tracer layout, the panes should remain minimised until they're activated. This is the default setting. For complex tracer layouts, this can often mean a better use of the screen real estate.
+    Whether a saved layout should minimise aspect panes until they are activated. For complex layouts this can improve usability.
 
-3. **Show functions as trees**
+- **Show functions as trees**
 
-    When using the **Current/Previous Function** panes, **Show functions as trees** uses the same display mode as `]box on -trains=tree`. Default is `]box on -trains=box`. This option can be helpful when dealing with tacit expressions. 
+    When using the **Current/Previous Function** panes, whether **Show functions as trees** uses the same display mode as `]Boxing on -trains=tree`. If this option is not selected, the display mode is `]Boxing on -trains=box`. This can be helpful when investigating tacit expressions. 
 
-4. **Trace idioms**
+- **Trace idioms**
 
-    When selected, the TP tracer will trace _into_ any expression that the interpreter might otherwise optimise out. If not selected, the tracer will instead treat such expressions as atomic functions.
+    Whether specific expressions that the interpreter might treat as special cases (for example, idioms) are included when tracing primitives. If this option is not selected, such expressions are treated as atomic functions.
  
-5. **Use Array Notation**
+- **Use Array Notation**
 
-    Use APL array notation in the panes for arguments and results, instead of the traditional APL array display.
+    Whether APL array notation is used to display arguments and results.
 
-Here is an illustration of the effect of choosing **Show functions as trees** on the **Current Function** pane:
+The following screenshot illustrates the effect of choosing **Show functions as trees** on the **Current Function** pane:
 
 ![](../../img/tbt-current-fn-options-menu.png)
 
 ## Tracing Diamond-Separated Expressions
 
-Sometimes you encounter a line of code which is a set of expressions separated by diamonds, but you might only want to TP into some of them. Consider three diamond-separated expressions, but we want to skip the first two, and TP-trace into the last expression only:
+A line of code can comprise a set of expressions separated by diamonds. In this situation, you might only want to trace into some of them and skip others; this can be done by using the command **&lt;ER&gt;** (by default, this is <kbd>enter</kbd>).
+
+For example, consider a line that consists of three diamond-separated expressions; you want to skip the first two, and trace primitives in the third one:
 
 ```apl
 a ← 3 3⍴⍳9 ⋄ b ← ⍉a ⋄ a + b
 ```
 
-Enter the expressions in the session, and commence TP by hitting <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd>. You should see:
+Enter the expressions in the Session, and start primitive tracing. You should see:
 
 ![](../../img/tbt-diamond1.png)
 
-with the first expression highlighted. Now hit <kbd>enter</kbd> to execute single expression:
+with the first expression highlighted (red outline). Enter <ER> (<kbd>enter</kbd>) to execute the single expression before the first diamond separator:
 
 ![](../../img/tbt-diamond2.png)
 
-and hit <kbd>enter</kbd> again to skip the middle expression, and then <kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd> to TP into the final expression:
+The second expression is now highlighted. Enter <ER> (<kbd>enter</kbd>) again to execute the second expression, then enter <TP> (<kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd>) to start tracing the primitives in the third expression:
 
 ![](../../img/tbt-diamond3.png)
 
