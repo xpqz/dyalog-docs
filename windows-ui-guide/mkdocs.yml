@@ -22,7 +22,6 @@ plugins:
   - privacy
   - search
   - macros
-  - site-urls
   - caption:
       table:
         enable: true

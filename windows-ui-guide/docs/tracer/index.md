@@ -24,15 +24,41 @@ From Version 10.1 onwards, the Tracer is designed to be docked in the Session wi
 
 In previous versions of Dyalog, the Tracer was implemented as a stack of separate windows (one per function on the calling stack) or as a single, but still separate, window.
 
-You can disable the standard behaviour by selecting *Classic Dyalog mode* from the *Trace/Edit* tab of the *Configuration* dialog box.
+There are three available layout modes (each of which can be adjusted and configured). They are available under the **Debugger Layout** menu:
 
-If you do so, you may then choose to have the Tracer operate in multiple windows or in a single window.
+- **Floating**
+- **At the bottom**
+- **On the left**
 
-These alternatives are discussed later in this Chapter.
+The layout is a matter of preference; the functionality is the same. The default behaviour is **Debugger at the bottom**. 
+
+The **Floating** layout mode detaches the Tracer window, allowing it to be positioned according to preference. 
+
+![](../img/tbt-classic.png)
+
+The **At the bottom** layout mode:
+
+![](../img/tbt-debugger-bottom.png)
+
+The **To the left** layout mode:
+
+![](../img/tbt-debugger-left.png)
+
+In the latter two layout modes, the Tracer is docked into the main window.
+
+In **Floating** mode,
+
+- The trace window contains a combo box whose drop-down displays the contents of the SI stack. This box is not provided if there are multiple trace windows.
+- The trace window is re-used when tracing into, or returning from, a called function. This means that there is never more than one trace window present.
+- When the last function in a traced suspension exits, the trace window disappears.
+- If you click the *Quit this function* button in the *Trace Tools* window, or press <kbd>Esc</kbd>, the current function is removed from the stack and the trace window reused to display the calling function if there is one.
+- If you move or resize the trace window, Dyalog APL remembers its position, so that it reappears in the same position when next used.
 
 ## The Trace Window
 
-The Tracer is implemented as a single dockable window that displays the function that is currently being executed. There are two subsidiary information windows which are also fully dockable. The first of these (*SIStack*) displays the current function calling stack; the second (*Threads*) displays a list of running threads.
+The Tracer is implemented as a single dockable window that displays the function that is currently being executed. There are several subsidiary information panes which are also fully dockable. The first of these (*SIStack*) displays the current function calling stack; the second (*Threads*) displays a list of running threads.
+
+ There are also two docked, but minimised panes, named **Left Argument** and **Right Argument**. They will open up automatically if you [trace primitives](trace-primitives.md).
 
 In the default Session files, the Tracer is docked along the bottom edge of the Session window. When you invoke the Tracer, it springs up as illustrated below. In this example, the function being traced is `⎕SE.UCMD`, which is invoked by typing a user-command, in this case `]APLCart`.
 
@@ -46,24 +72,25 @@ The Tracer may be controlled from the keyboard, or by using the *Trace Tools* wh
 
 |Button|Name|Key Code|Keystroke|Description|
 |---|---|---|---|---|
-|![](../img/trace-theme-04-00.png)|Exec|**&lt;ER&gt;**|<kbd>Enter</kbd>|Execute expression|
-|![](../img/trace-theme-05-00.png)|Trace|**&lt;TC&gt;**|<kbd>Ctrl</kbd>+<kbd>Enter</kbd>|Trace expression|
-|![](../img/trace-theme-00-00.png)|Back|**&lt;BK&gt;**|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Bksp</kbd>|Go back one line|
-|![](../img/trace-theme-01-00.png)|Fwd|**&lt;FD&gt;**|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>|Skip current line|
-|![](../img/trace-theme-06-00.png)|Continue|**&lt;BH&gt;**|&nbsp;|Stop on next line of calling function|
-|![](../img/trace-theme-07-00.png)|Restart|**&lt;RM&gt;**|`→⎕LC`|Continue execution of this thread|
-|![](../img/trace-theme-10-00.png)|Restart all|&nbsp;|&nbsp;|Continue execution of all threads|
-|![](../img/trace-theme-03-00.png)|Edit|**&lt;ED&gt;**|<kbd>Shift</kbd>+<kbd>Enter</kbd>|Edit name|
-|![](../img/trace-theme-02-00.png)|Exit|**&lt;EP&gt;**|<kbd>Esc</kbd>|Quit this function|
-|![](../img/trace-theme-08-00.png)|Intr|&nbsp;|<kbd>Ctrl</kbd>+<kbd>Pause</kbd>|Interrupt|
-|![](../img/trace-theme-09-00.png)|Reset|**&lt;CB&gt;**|&nbsp;|Clear trace/stop/monitor for this object|
-|![](../img/trace-theme-14-00.png)|&nbsp;|**&lt;LN&gt;**|&nbsp;|Toggle line numbers|
-|![](../img/trace-theme-16-00.png)|&nbsp;|&nbsp;|&nbsp;|Search for next match|
-|![](../img/trace-theme-15-00.png)|&nbsp;|&nbsp;|&nbsp;|Search for previous match|
-|![](../img/trace-theme-17-00.png)|&nbsp;|&nbsp;|&nbsp;|Search hidden text|
-|![](../img/trace-theme-21-00.png)|&nbsp;|&nbsp;|&nbsp;|Match case|
-|![](../img/trace-theme-22-00.png)|&nbsp;|&nbsp;|&nbsp;|Match whole word|
-|![](../img/trace-theme-23-00.png)|&nbsp;|&nbsp;|&nbsp;|Use Regular Expressions|
+|<span class="toolbar-icon" style="background-position: -64px 0"></span>|Exec|**&lt;ER&gt;**|<kbd>Enter</kbd>|Execute expression|
+|<span class="toolbar-icon" style="background-position: -80px 0"></span>|Trace|**&lt;TC&gt;**|<kbd>Ctrl</kbd>+<kbd>Enter</kbd>|Trace expression|
+|<span class="toolbar-icon" style="background-position: -432px 0"></span>|Trace Primitive|**&lt;TP&gt;**|<kbd>Shift</kbd>+<kbd>Alt</kbd>+<kbd>Enter</kbd>|Trace Primitive|
+|<span class="toolbar-icon" style="background-position: 0 0"></span>|Back|**&lt;BK&gt;**|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Bksp</kbd>|Go back one line|
+|<span class="toolbar-icon" style="background-position: -16px 0"></span>|Fwd|**&lt;FD&gt;**|<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>|Skip current line|
+|<span class="toolbar-icon" style="background-position: -96px 0"></span>|Continue|**&lt;BH&gt;**|&nbsp;|Stop on next line of calling function|
+|<span class="toolbar-icon" style="background-position: -112px 0"></span>|Restart|**&lt;RM&gt;**|`→⎕LC`|Continue execution of this thread|
+|<span class="toolbar-icon" style="background-position: -160px 0"></span>|Restart all|&nbsp;|&nbsp;|Continue execution of all threads|
+|<span class="toolbar-icon" style="background-position: -48px 0"></span>|Edit|**&lt;ED&gt;**|<kbd>Shift</kbd>+<kbd>Enter</kbd>|Edit name|
+|<span class="toolbar-icon" style="background-position: -32px 0"></span>|Exit|**&lt;EP&gt;**|<kbd>Esc</kbd>|Quit this function|
+|<span class="toolbar-icon" style="background-position: -128px 0"></span>|Intr|&nbsp;|<kbd>Ctrl</kbd>+<kbd>Pause</kbd>|Interrupt|
+|<span class="toolbar-icon" style="background-position: -144px 0"></span>|Reset|**&lt;CB&gt;**|&nbsp;|Clear trace/stop/monitor for this object|
+|<span class="toolbar-icon" style="background-position: -224px 0"></span>|&nbsp;|**&lt;LN&gt;**|&nbsp;|Toggle line numbers|
+|<span class="toolbar-icon" style="background-position: -256px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Search for next match|
+|<span class="toolbar-icon" style="background-position: -240px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Search for previous match|
+|<span class="toolbar-icon" style="background-position: -272px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Search hidden text|
+|<span class="toolbar-icon" style="background-position: -336px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Match case|
+|<span class="toolbar-icon" style="background-position: -352px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Match whole word|
+|<span class="toolbar-icon" style="background-position: -368px 0"></span>|&nbsp;|&nbsp;|&nbsp;|Use Regular Expressions|
 
 Using the Trace Tools, you can **single-step** through the function or operator by clicking the *Exec* and/or *Trace* buttons. If you click *Exec* the current line of the function or operator is executed and the system halts at the next line. If you click *Trace*, the current line is executed but any defined functions or operators referenced on that line are themselves traced. After execution of the line the system again halts at the next one. Using the keyboard, the same effect can be achieved by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd>+<kbd>Enter</kbd>.
 
@@ -87,15 +114,17 @@ At this stage, the state indicator is as follows:
 ⎕SE.UCMD[2]
 ```
 
+See also the section on [tracing primitives](trace-primitives.md).
+
 ## Controlling Execution
 
-The point of execution may be moved by clicking the *Back* and *Fwd* buttons in the *Trace Tools* window or, using the keyboard, by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Bksp</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.  Notice however that these buttons do not themselves change the state indicator or the display in the *SIStack* window. This happens only when you restart execution from the new point.
+The point of execution may be moved by clicking the *Back* and *Fwd* buttons in the *Trace Tools* window or, using the keyboard, by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Bksp</kbd> and <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Notice however that these buttons do not themselves change the state indicator or the display in the *SIStack* window. This happens only when you restart execution from the new point.
 
-You can cut back the stack by clicking the <EP> button in the *Trace Tools* window. This causes execution to be suspended at the start of the line which was previously traced. The same effect can be achieved using the keyboard by pressing Esc. It can also be done by selecting *Exit* from the *File* menu on the Trace Window or by selecting *Close* from its system menu.
+You can cut back the stack by clicking the **&lt;EP&gt;** button in the *Trace Tools* window. This causes execution to be suspended at the start of the line which was previously traced. The same effect can be achieved using the keyboard by pressing Esc. It can also be done by selecting *Exit* from the *File* menu on the Trace Window or by selecting *Close* from its system menu.
 
-The <RM> button removes the Trace window and resumes execution. The same is achieved by the expression `→⎕LC`.
+The **&lt;RM&gt;** button removes the Trace window and resumes execution. The same is achieved by the expression `→⎕LC`.
 
-The <BH> button continues execution until the current function has run to completion and control has returned to the calling function. It leaves the Trace window displayed and allows you to watch execution progress.
+The **&lt;BH&gt;** button continues execution until the current function has run to completion and control has returned to the calling function. It leaves the Trace window displayed and allows you to watch execution progress.
 
 ## Using the Session and the Editor
 
@@ -113,48 +142,18 @@ You can copy text from a trace window to the session for editing and execution o
 
 It is possible to skip from the Tracer to the Session and then re-invoke the Tracer on a different expression.
 
-## Setting Break-Points
+## Setting Breakpoints
 
-Break-points are defined by `⎕STOP` and may be toggled on and off in an Edit or Trace window by clicking in the appropriate column. The example below illustrates a function with a `⎕STOP` break-point set on line `[5]`.
+Breakpoints are defined by `⎕STOP` and may be toggled on and off in an Edit or Trace window by clicking in the appropriate column. The example below illustrates a function with a `⎕STOP` breakpoint set on line `[5]`.
 
 ![](../img/tracer-5.png)
 
-`⎕STOP` break-points set or cleared in an Edit window are not established until the function is fixed. `⎕STOP` break-points set or cleared in a Trace window are established immediately.
+`⎕STOP` breakpoints set or cleared in an Edit window are not established until the function is fixed. `⎕STOP` breakpoints set or cleared in a Trace window are established immediately.
 
 ## Clearing All Break-Points
 
-![](../img/trace-theme-09-00.png)
+<span class="toolbar-icon" style="background-position: -144px 0"></span>
 
-You can clear all break-points by pressing the above button in the Trace Tools window. This in fact resets `⎕STOP` for all functions in the workspace.
+You can clear all breakpoints by pressing the above button in the Trace Tools window. This in fact resets `⎕STOP` for all functions in the workspace.
 
-## The Classic mode Tracer
 
-If you select *Classic Dyalog mode* from the *Trace/Edit* tab in the *Configuration* dialog box, the Tracer behaves in the same way as in Dyalog version 8.2. However, the Tracer is not dockable in the Session.
-
-If you select the Classic mode Tracer, you may choose between multiple trace windows or a single trace window using the *Single Trace Window* option.
-
-## Multiple Trace Windows
-
-The following behaviour is obtained by **deselecting** the *Single Trace Window* option.
-
-- Each function on the SI stack is represented by a separate trace window. The top window contains the function that is currently executing, other windows display functions further up the stack, in the order in which they were called.
-- When you press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> or click the *Trace* button on a line that calls another function, a new trace window appears on top of the stack and displays the newly called function.
-- When a function exits, its trace window disappears and the focus moves to the previous trace window. When the last function in a traced suspension exits, the last trace window disappears.
-- If you click the *Quit this function* button in the *Trace Tools* window, or press Escape, or close the trace window by clicking on its [X] button or typing Alt-F4, the top trace window disappears and the focus moves to the previous trace window
-- If you close any of the trace windows further down the stack, the stack will be cut back to the corresponding point, that is, to the line of code that called the function whose trace window you closed.
-- The <RM> button removes all the trace windows and resumes execution. The same is achieved by the expression `→⎕LC`. The <CS> button also continues execution, but leaves the trace windows displayed and allows you to watch their progress.
-- If you minimise any of the trace windows, the entire stack is minimised to a single icon, from which it may be restored.
-- If you drag any Trace window with the mouse and at the same time press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>, the entire set of Trace windows is dragged.
-
-Note that a maximum of 50 Trace windows may be displayed.
-
-## Single Trace Window
-
-The following behaviour is obtained by **selecting** the Single Trace Window option.
-
-- The trace window contains a combo box whose drop-down displays the contents of the SI stack. This box is not provided if there are multiple trace windows.
-- The trace window is re-used when tracing into, or returning from, a called function. This means that there is never more than one trace window present.
-- When the last function in a traced suspension exits, the trace window disappears.
-- If you click the *Quit this function* button in the *Trace Tools* window, or press Escape, the current function is removed from the stack and the trace window reused to display the calling function if there is one.
-- Closing the trace window by clicking on its [X] button or typing Alt-F4 removes the window and *clears the current suspension*. It is equivalent to typing naked branch (`→`) in the session window.
-- If you move or resize the trace window, APL remembers its position, so that it reappears in the same position when next used.

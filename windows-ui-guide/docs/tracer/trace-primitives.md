@@ -1,4 +1,4 @@
-# Trace Primitives
+<h1 class="heading"><span class="name">Trace Primitives</span></h1>
 
 The ability to trace primitives is an extension to the Tracer that allows you to step through the execution of individual primitives within expressions, examining intermediate results and arguments of sub-expressions. It enables an in-depth inspection of complex expressions typed directly into the session, and can be used in conjunction with the traditional tracing mode to skip over lines you're not interested in and step through primitive-by-primitive in complex expressions where required.
 
@@ -14,7 +14,7 @@ To start tracing primitives, position the cursor within an expression and do one
 - enter the _Trace Primitive_ command (**&lt;TP&gt;**) in the session.
 - select **Action > Trace Primitives…** from the Session menu bar.
 - select **Action > Trace Primitives…** from the Session window's context menu.
-- click the **Next Primitive** icon ![](../../img/tp-next-primitive.png) in the Tracer toolbar.
+- click the **Next Primitive** icon <span class="toolbar-icon" style="background-position: -432px 0"></span> in the Tracer toolbar.
 
 The Tracer opens with primitive tracing activated.
 
@@ -25,30 +25,6 @@ In a Session, enter the expression `(+/÷≢)⍳10` and start tracing primitives
 
 The red outline around the `⍳ `in the Tracer shows the next primitive to be executed. Enter **&lt;TP&gt;** or click the **Next Primitive** icon in the Tracer toolbar to see how the execution progresses through the expression.
 The **Next Primitive** icon is always present in the Tracer. The **&lt;TP&gt;** command lets you open a Tracer on an expression that has been typed directly in the Session.
-
-## Anatomy of the TP Interface
-
-There are three available layout modes (each of which can be adjusted and configured to taste). They are available under the **Layout** menu:
-
-- **Classic**
-- **Debugger at the bottom**
-- **Debugger on the left**
-
-The layout is a matter of preference; the functionality is the same. The default behaviour is **Debugger at the bottom**. 
-
-The **Classic** layout mode detaches the tracer window, allowing it to be placed on a second monitor. 
-
-![](../../img/tbt-classic.png)
-
-The **Debugger at the bottom** layout mode:
-
-![](../../img/tbt-debugger-bottom.png)
-
-The **Debugger to the left** layout mode:
-
-![](../../img/tbt-debugger-left.png)
-
-In the last two layout modes, the tracer panes are docked into the main window. In all three modes, by default, there are two docked, but minimised panes, named **Left Argument** and **Right Argument**. They will open up automatically as you trace through an expression.
 
 ### Aspect Panes
 
@@ -146,11 +122,11 @@ Enter the expressions in the Session, and start primitive tracing. You should se
 
 ![](../../img/tbt-diamond1.png)
 
-with the first expression highlighted (red outline). Enter <ER> (<kbd>enter</kbd>) to execute the single expression before the first diamond separator:
+with the first expression highlighted (red outline). Enter **&lt;ER&gt;** (<kbd>enter</kbd>) to execute the single expression before the first diamond separator:
 
 ![](../../img/tbt-diamond2.png)
 
-The second expression is now highlighted. Enter <ER> (<kbd>enter</kbd>) again to execute the second expression, then enter <TP> (<kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd>) to start tracing the primitives in the third expression:
+The second expression is now highlighted. Enter **&lt;ER&gt;** (<kbd>enter</kbd>) again to execute the second expression, then enter **&lt;TP&gt;** (<kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd>) to start tracing the primitives in the third expression:
 
 ![](../../img/tbt-diamond3.png)
 
