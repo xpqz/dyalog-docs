@@ -57,7 +57,7 @@ The XAML for the Temperature Converter is shown below.
 
 ```
 
-![wpf_example1](../../img/wpf-example1.png)
+![](../../img/wpf-example1.png)
 
 The window defined by this XAML is illustrated in the screen image shown above. Let us examine the XAML, component by component.
 
@@ -138,7 +138,7 @@ The attachment of a particular child control is specified by setting its DockPan
     </Menu>
 ```
 
-![wpf_example2](../../img/wpf-example2.png)
+![](../../img/wpf-example2.png)
 
 The above extract from the XAML defines a Menu. Setting Dock to "Top" causes the Menu as a whole to be docked, so that it appears like a menubar, along the top of the DockPanel. The Menu contains a single MenuItem labelled *Scale* which itself contains two sub-items labelled *Fahrenheit* and *Centigrade* respectively. The IsCheckable property specifies whether or not the user can check the MenuItem, and the IsChecked property sets and reports its checked state. The underscore characters (for example, as in "_Scale") identify the following character as a keyboard shortcut.
 
@@ -217,9 +217,8 @@ Setting DockPanel.Dock to "Right" means that it will be docked (aligned) on the 
 
 Note that in order to cause the ScrollBar to be docked (aligned) along the right edge of the DockPanel it is necessary to set LastChildFill to "False" (for the DockPanel) and Dock to "Right" (for the ScrollBar), because the value of LastChildFill (default "True") overrides the Dock value of the last defined child of the DockPanel.
 
-## Note
-
-The XAML that defines this user-interface is at the same time both simple and complex. It is simple because (in this case) it is readily understood. It is complex because in order to write it, the user-interface designer must understand precisely how the  various controls and their properties behave and work together. For these details, you should refer to the appropriate documentation and check out the large number of examples published on the internet.
+!!! note
+    The XAML that defines this user-interface is at the same time both simple and complex. It is simple because (in this case) it is readily understood. It is complex because in order to write it, the user-interface designer must understand precisely how the  various controls and their properties behave and work together. For these details, you should refer to the appropriate documentation and check out the large number of examples published on the internet.
 
 ## The Code to display the XAML
 
@@ -269,7 +268,6 @@ Note that apart from the names given to the objects by the XAML and used by the 
 
 Earlier, it was explained that objects defined by the XAML must be *named* in order that they can be referenced (used) by the code. The mechanism to achieve this is to call the FindName method of the Window, which returns a reference to the specified (named) object. So these statements:
 ```apl
-
 [11]   txtFahrenheit←win.FindName⊂'txtFahrenheit'
 [12]   txtCentigrade←win.FindName⊂'txtCentigrade'
 ```
@@ -288,13 +286,12 @@ Most of the remaining statements obtain refs to the MenuItem, Button and ScrollB
 [20]   (scrTemp←win.FindName⊂'scrTemp').onScroll←'F2C'
 ```
 
-Finally the code displays the Window and hands it over to the user by calling the ShowDialog method of the top-level Window.
+Finally the code displays the Window and hands it over to the user by calling the `ShowDialog` method of the top-level Window.
 ```apl
-
 [21]   sink←win.ShowDialog
 ```
 
-ShowDialog displays the Window *modally*; that is, until it is closed, the user may interact only with that Window. It is equivalent to `⎕DQ win` or `win.Wait` in the Dyalog built-in GUI.
+`ShowDialog` displays the Window *modally*; that is, until it is closed, the user may interact only with that Window. It is equivalent to `⎕DQ win` or `win.Wait` in the Dyalog built-in GUI.
 
 ## The CallBack Functions
 

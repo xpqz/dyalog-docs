@@ -4,7 +4,7 @@ This example illustrates data binding using a vector of namespaces.
 
 Each row in the WPF DataGrid control is represented by an object, and each column as a property of that object. Each row in the DataGrid is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
 
-![data binding datagrid1](../../img/data-binding-datagrid1.png)
+![](../../img/data-binding-datagrid1.png)
 
 ## The XAML
 
@@ -63,11 +63,11 @@ The global variable `Wines` contains a vector of character vectors, each of whic
       Grid
 ```
 
-![data binding datagrid1](../../img/data-binding-datagrid1.png)
+![](../../img/data-binding-datagrid1.png)
 
 Let's round the prices to the nearest $5.
 ```apl
  winelist.Price←5×⌊0.5+winelist.Price÷5
 ```
 
-![data binding datagrid2](../../img/data-binding-datagrid2.png)
+![](../../img/data-binding-datagrid2.png)

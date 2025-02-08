@@ -6,7 +6,7 @@ The `GOLF` function accesses `GolfService` through a proxy class. `GOLF` is call
 
 Note that you cannot make the proxy for `GolfService` unless the Web Server class has been compiled on the server. At present, the only way to trigger the compilation of golf.asmx into a Web Service is to visit the page once using Internet Explorer as described in the previous chapter.
 
-The first few lines of the function are listed below. If the argument is 1, line[2] makes the proxy class `GolfService.DLL` in the current directory; if not it is assumed to be there already. Line[6] defines `⎕USING` to use it, and Line[7] creates a new instance which is assigned to `GS`. Line[8] calls the `GetCourses` method, which returns a vector of `GolfCourse` objects. Notice how namespace reference array expansion is used to extract the course codes and names from the `Code` and `Name` fields respectively.
+The first few lines of the function are listed below. If the argument is 1, line [2] makes the proxy class `GolfService.DLL` in the current directory; if not it is assumed to be there already. Line [6] defines `⎕USING` to use it, and Line [7] creates a new instance which is assigned to `GS`. Line [8] calls the `GetCourses` method, which returns a vector of `GolfCourse` objects. Notice how namespace reference array expansion is used to extract the course codes and names from the `Code` and `Name` fields respectively.
 ```apl
      ∇ GOLF FORCE;F;DLL;COURSES;COURSECODES;N;GS;⎕USING
 [1]    :If FORCE≢0
@@ -22,7 +22,7 @@ The first few lines of the function are listed below. If the argument is 1, line
 
 The following screen shot illustrates the user interface provided by `GOLF`. In this example, the user has typed the names of two golfers (one rather more famous than the other - at least in APL circles) and then presses the *Book it!* button.
 
-![golfservice_1](../img/golfservice-1.png)
+![](../img/golfservice-1.png)
 
 This action fires the `BOOK` callback function which is shown below.
 ```apl
@@ -50,11 +50,11 @@ This action fires the `BOOK` callback function which is shown below.
      ∇
 ```
 
-Line[6] calls the `MakeBooking` method of the `GS` object, passing it the data entered by the user. The result, a `Booking` object, is assigned to `BOOKING`. Line[8] checks its `OK` field to tell whether or not the reservation was successful. If so, lines[9-11] display the message box illustrated below.
+Line [6] calls the `MakeBooking` method of the `GS` object, passing it the data entered by the user. The result, a `Booking` object, is assigned to `BOOKING`. Line [8] checks its `OK` field to tell whether or not the reservation was successful. If so, lines [9-11] display the message box illustrated below.
 
 Notice how the various fields are extracted and notice how the `ToLongDateString` and `ToShortTime String` methods are employed.
 
-![golfservice_2](../img/golfservice-2.png)
+![](../img/golfservice-2.png)
 
 Pressing the *Starting Sheet* button runs the `SS` callback listed below.
 ```apl
@@ -87,6 +87,6 @@ Pressing the *Starting Sheet* button runs the `SS` callback listed below.
      ∇
 ```
 
-Line[3] calls the `GetStartingSheet` method of the `GS` object. The result, a `StartingSheet` object, is assigned to `SHEET`. Line[4] checks its `OK` field to see if the call succeeded. If so, lines[5-12] display the result in a Grid, which is illustrated below.
+Line [3] calls the `GetStartingSheet` method of the `GS` object. The result, a `StartingSheet` object, is assigned to `SHEET`. Line [4] checks its `OK` field to see if the call succeeded. If so, lines [5-12] display the result in a Grid, which is illustrated below.
 
-![golfservice_3](../img/golfservice-3.png)
+![](../img/golfservice-3.png)

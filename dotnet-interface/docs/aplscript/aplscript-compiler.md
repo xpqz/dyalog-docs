@@ -2,10 +2,10 @@
 
 APLScript files are *compiled* into executable code by the APLScript compiler whose name is given in the table below.
 
-|&nbsp;|Unicode Edition        |Classic Edition|
-|------|-----------------------|---------------|
-|32-Bit|`dyalogc_unicode.exe`  |`dyalogc.exe`  |
-|64-Bit|`dyalogc64_unicode.exe`|`dyalogc64.exe`|
+|&nbsp;    |Unicode Edition        |Classic Edition|
+|----------|-----------------------|---------------|
+|**32-Bit**|`dyalogc_unicode.exe`  |`dyalogc.exe`  |
+|**64-Bit**|`dyalogc64_unicode.exe`|`dyalogc64.exe`|
 
 This program is called automatically by `ASP.NET` when a client application requests a Web Page (.aspx) or Web Service (.asmx) and in these circumstances always generates the corresponding .NET class. However, the Script Compiler may also be used to:
 
@@ -16,7 +16,7 @@ This program is called automatically by `ASP.NET` when a client application requ
 
 The Script is designed to be run from a command prompt. If in the 64-bit Unicode Edition change to the appropriate directory and type `dyalogc64_unicode /?` (to query its usage) the following output is displayed:
 
-```apl
+```other
 c:\Program Files\Dyalog\Dyalog APL-64 18.0 Unicode>dyalogc64_unicode /?
 Dyalog APLScript compiler 64 bit. Unicode Mode. Version 18.0.38524.0
 Copyright Dyalog Ltd 2000-2020
@@ -55,20 +55,20 @@ dyalogc.exe command line options:
 Note that the isolation mode specified by the `/i` option overrides the setting in `web.config`. See [DyalogIsolationMode](../implementation-details/asp-net-configuration-file.md).
 
 The `/a` option is used to specify the name of a JSON file that contains assembly info. For example:
-```apl
+```
 dyalogc64_unicode.exe /t:library j:/ws/attributetest.dws /a:c:/tmp/atts.json
 ```
 
 where `c:/tmp/atts.json` contains:
-```apl
+```json
 {
-"AssemblyVersion":"1.2.2.2",
-"AssemblyFileVersion":"2.1.1.4",
-"AssemblyProduct":"My Application",
-"AssemblyCompany":"My Company",
-"AssemblyCopyright":"Copyright 2020",
-"AssemblyDescription":"Provides a text description for an assembly.",
-"AssemblyTitle":"My Assembly Title",
-"AssemblyTrademark":"Your Legal Trademarks",
+   "AssemblyVersion": "1.2.2.2",
+   "AssemblyFileVersion": "2.1.1.4",
+   "AssemblyProduct": "My Application",
+   "AssemblyCompany": "My Company",
+   "AssemblyCopyright": "Copyright 2020",
+   "AssemblyDescription": "Provides a text description for an assembly.",
+   "AssemblyTitle": "My Assembly Title",
+   "AssemblyTrademark": "Your Legal Trademarks"
 }
 ```

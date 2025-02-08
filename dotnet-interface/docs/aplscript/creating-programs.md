@@ -17,9 +17,9 @@ The following APLScript illustrates the simplest possible GUI application that d
 
 This example, which is saved in the file `eg1.apl`, is compiled to a Windows executable (`.exe`) using `dyalogc.exe` and run from the same command window as shown below. Notice that it is essential to surround the code with `:Namespace / :EndNamespace` statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the `dyalogc` command.
 
-![aplscript1](../img/aplscript1.png)
+![](../img/aplscript1.png)
 
-![aplscript2](../img/aplscript2.png)
+![](../img/aplscript2.png)
 
 You can associate the `.exe` with a desktop icon, and it will run stand-alone, without a Command Prompt window. Furthermore, any default APL output that would normally be displayed in the session window will simply be ignored.
 
@@ -39,7 +39,7 @@ This example, which is saved in the file `eg2.apl`, is compiled to a Windows exe
 
 Once more, it is essential to surround the code with `:Namespace/:EndNamespace` statements and to define a `⎕LX` either in the APLScript itself, or as a parameter to the `dyalogc` command.
 
-![aplscript3](../img/aplscript3.png)
+![](../img/aplscript3.png)
 
 ## Defining Namespaces
 
@@ -90,4 +90,4 @@ Notice that `⎕`PATH is defined *dynamically* in function RUN. If it were defin
 
 This program is shown, compiled and run as a console application, below.
 
-![aplscript4](../img/aplscript4.png)
+![](../img/aplscript4.png)

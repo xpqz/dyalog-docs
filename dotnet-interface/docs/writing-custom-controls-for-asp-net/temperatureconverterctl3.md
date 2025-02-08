@@ -78,7 +78,7 @@ It is then up to the page that is hosting the control to respond to the event in
 ## Hosting the Control on a Page
 
 The following example illustrates an ASP.NET web page that hosts the TemperatureConverterCtl3 custom control and responds to its Export event. The page uses a <script> written in APL, but it could just as easily be written in VB.NET.
-```apl
+```xml
 <%@ Register TagPrefix="Dyalog" Namespace="DyalogSamples"
                                 Assembly="TEMP"%>
  
@@ -123,4 +123,4 @@ In this example, the host page associates a callback function `ExportCB` with th
 
 The picture below illustrates what happens when you run the page. Notice that the user can independently convert values between the two temperature scales and export these values from the control, to the host page, by pressing the Export button.
 
-![temperatureconverterctl3](../img/temperatureconverterctl3.png)
+![](../img/temperatureconverterctl3.png)

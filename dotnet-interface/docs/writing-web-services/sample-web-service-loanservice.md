@@ -73,7 +73,7 @@ Notice however that `Payments` is also defined to be 1-dimensional when in fact 
 
 Like the methods exported by the `APLEXample` Web Services described above, the `CalcPayments` method exported by `LoanService` is callable from a browser and the page that is displayed when you point a browser at it is shown below.
 
-![loanservice1](../img/loanservice1.png)
+![](../img/loanservice1.png)
 
 To test the `CalcPayments` method, you can enter numbers into the form fields in this page, as shown in the screen shot above, and then press the *Invoke* button. The result of the method is then displayed in a separate window as illustrated below.
 
@@ -87,4 +87,4 @@ Similarly, the `Payments` field contains the calculated repayment values.
 
 Finally the `Periods` field, contains a vector of integers from the minimum period to the maximum period that we specified on the input form, in increments of 1.
 
-![loanservice2](../img/loanservice2.png)
+![](../img/loanservice2.png)

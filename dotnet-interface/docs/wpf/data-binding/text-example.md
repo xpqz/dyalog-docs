@@ -2,7 +2,7 @@
 
 This example illustrates data binding using XAML to specify the user-interface coupled with an APL function to drive it and handle the data binding.
 
-![data binding text xaml 1](../../img/data-binding-text-xaml-1.png)
+![](../../img/data-binding-text-xaml-1.png)
 
 ## The XAML
 
@@ -21,7 +21,7 @@ The XAML shown below, describes a Window containing a TextBox.
 ```
 
 It contains a data binding expression, namely:
-```apl
+```xml
       Text="{Binding txtSource,Mode=TwoWay,
              UpdateSourceTrigger=PropertyChanged}"
 ```
@@ -107,16 +107,16 @@ The following expressions may be used to explore the effect of data binding.
       Text 'Hello World'
 ```
 
-![data binding text xaml 1](../../img/data-binding-text-xaml-1.png)
+![](../../img/data-binding-text-xaml-1.png)
 ```apl
      txtSource←⌽txtSource
 ```
 
-![data binding text xaml 2](../../img/data-binding-text-xaml-2.png)
+![](../../img/data-binding-text-xaml-2.png)
 
 Typing into the TextBox changes the value of the bound variable.
 
-![data binding text xaml 3](../../img/data-binding-text-xaml-3.png)
+![](../../img/data-binding-text-xaml-3.png)
 ```apl
       txtSource
 What is in txtSource now?

@@ -25,7 +25,7 @@ If an APL error occurs in an APL .NET object, a suspension will occur and the Se
 If your APL class is built directly from a workspace, you can force a suspension by setting stops in your code before using *Export* to build the DLL. If your class is a Web Page or Web Service where the code is contained in a workspace using the *workspace behind* technique (See Chapter 8), you can set stops in this workspace before you `)SAVE` it.
 
 If your APL class is defined entirely in a Web Page, Web Service, or an APLScript file, the only way to set a break point is to insert a line that sets a stop explicitly using `⎕STOP`. It is essential that this line appears after the definition of the function in the script. For example, to set a stop in the `Intro\intro1.aspx` example discussed in Chapter 8, the script section could be as follows:
-```apl
+```xml
 <script language="dyalog" runat="server">
  
 ∇Rotate args

@@ -76,11 +76,10 @@ nav:
           - Using XAML: wpf/temperature-converter/using-xaml.md
           - Using Code: wpf/temperature-converter/using-code.md
       - Data Binding:
-          - Introduction: wpf/data-binding/data-binding-introduction.md
           - Text Example: wpf/data-binding/text-example.md
           - FontSize Example: wpf/data-binding/fontsize-example.md
           - Text and FontSize using Code: wpf/data-binding/text-and-fontsize-code.md
-          - Text and Fontsize using XAML: wpf/data-binding/text-and-fontsize-xaml.md
+          - Text and FontSize using XAML: wpf/data-binding/text-and-fontsize-xaml.md
           - Filtered List Example: wpf/data-binding/filtered-list.md
           - NetObject Example: wpf/data-binding/netobject-example.md
           - DateTime Example: wpf/data-binding/datetime-example-using-ts-format.md
@@ -151,4 +150,4 @@ nav:
       - Structure of the Active Workspace: implementation-details/structure-of-the-active-workspace.md
       - Threading: implementation-details/threading.md
       - Debugging an APL NET Class: implementation-details/debugging-an-apl-net-class.md
-      - The web.config file: implementation-details/asp-net-configuration-file.md
+      - ASP.NET Configuration: implementation-details/asp-net-configuration-file.md

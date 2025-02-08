@@ -26,7 +26,7 @@ Each of the sub-directories contained in `aplclasses`, namely `aplclasses1` - `a
 
 When the application is executed by VS it will be run  in the `bin` sub-diredctory.
 
-It is mandatory that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.
+**It is mandatory that the Dyalog .NET class, and all the Dyalog DLLs on which it depends, reside in the same directory as the host program.**
 
 Therefore, copies of the requisite Dyalog DLLs are provided in the `bin`sub-directory. These DLLs are:
 

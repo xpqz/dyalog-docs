@@ -7,7 +7,6 @@ This example illustrates data binding using a vector of .NET objects, in this ca
 The XAML shown below,  describes a Window containing a StackPanel, inside which is a ListBox.
 ```xml
 <Window 
-
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Title="NetObjects (DateTime) Example"
@@ -33,12 +32,10 @@ The function `NetObjects` is shown below.
 [5]    win.dates.ItemsSource←2015⌶'dt'
 [6]    sink←win.ShowDialog
      ∇
-
 ```
 
 `NetObjects[3]` uses FindName to obtain a ref to the ListBox (defined in the XAML) named *EasterDates:*
 ```apl
-
 [3]    win.dates←win.FindName⊂'EasterDates'
 ```
 
@@ -60,13 +57,11 @@ The global variable `Easter` contains a vector of 3-element numeric vectors repr
 
 `NetObjects[4]` creates a vector of DateTime objects from the global variable `Easter`.
 ```apl
-
 [4]    dt←{⎕NEW DateTime ⍵}¨Easter
 ```
 
 Then, NetObjects[5] creates a binding source object from this array and assigns it to the ItemsSource property of the ListBox.
 ```apl
-
 [5]    win.dates.ItemsSource←2015⌶'dt'
 ```
 
@@ -74,7 +69,6 @@ Then, NetObjects[5] creates a binding source object from this array and assigns 
 ```apl
       )LOAD wpfintro
       DataBinding.NETObjects.NETObjects
-
 ```
 
-![data binding netobjects1](../../img/data-binding-netobjects1.png)
+![](../../img/data-binding-netobjects1.png)

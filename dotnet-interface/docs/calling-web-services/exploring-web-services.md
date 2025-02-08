@@ -6,8 +6,8 @@ Remember, `LoanService` was written in `APLScript`, but it appears and behaves j
 
 The first picture displays the structure of the `LoanResult` class.
 
-![exploring loanservice_1](../img/exploring-loanservice-1.png)
+![](../img/exploring-loanservice-1.png)
 
 The second picture shows the methods exposed by `LoanService`. In addition to `CalcPayments`, which was written in `APLScript`, there are a large number of other methods, which have been inherited from the base class.
 
-![exploring loanservice_2](../img/exploring-loanservice-2.png)
+![](../img/exploring-loanservice-2.png)

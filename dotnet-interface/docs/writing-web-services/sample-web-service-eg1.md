@@ -35,13 +35,13 @@ If you connect to a URL that represents a Web Service, the browser displays a pa
 
 The screen shot below shows the page displayed by Google Chrome when it is pointed at `eg1.asmx`. It shows that the Web Service is called `APLExample`, and that it exports a single method called `Add`. Furthermore, the `Add` method takes two parameters of type `int`, named *arg1* and *arg2*.
 
-![eg1_1](../img/eg1-1.png)
+![](../img/eg1-1.png)
 
 The following screen shot shows the result of entering the values 23 and 19 into the form fields and then pressing the Invoke button.
 
 In this case, the method returns an `int` value 42.
 
-![eg1_2](../img/eg1-2.png)
+![](../img/eg1-2.png)
 
 It is important to understand what is happening here.
 

@@ -45,7 +45,6 @@ Apart from the code that creates the controls, the only material difference betw
 
 In code (as opposed to using XAML) this is done using explicit Binding objects[^1] The code for binding the Text property to the `txtSource` variable is as follows:
 ```apl
-
 [19]   win.txtbinding←⎕NEW Data.Binding(⊂'txtSource')
 [20]   win.txtbinding.Source←2015⌶'txtSource'
 [21]   win.txtbinding.Mode←Data.BindingMode.TwoWay
@@ -55,19 +54,16 @@ In code (as opposed to using XAML) this is done using explicit Binding objects[^
 
 Line [19] creates a Binding object, passing the constructor  the name of the APL variable `txtSource` as the Path to the binding value.
 ```apl
-
 [19]   win.txtbinding←⎕NEW Data.Binding(⊂'txtSource')
 ```
 
 Line [20] creates a Binding Source object using `2015⌶` as before, but this time assigns it to the Source property of the Binding object.
 ```apl
-
 [20]   win.txtbinding.Source←2015⌶'txtSource'
 ```
 
 Line [21] sets the Mode property of the Binding object to TwoWay (a field of the BindingMode Type). As in Example 1, this specifies two-way binding.
 ```apl
-
 [21]   win.txtbinding.Mode←Data.BindingMode.TwoWay
 ```
 
@@ -100,26 +96,25 @@ Note however that (as in Example 2) the left-argument to `(2015⌶)` specifies t
       TextFontSize 'Hello World' 30
 ```
 
-![data binding text fontsize 1](../../img/data-binding-text-fontsize-1.png)
+![](../../img/data-binding-text-fontsize-1.png)
 ```apl
       txtSource sizeSource←(⌽txtSource) 18
 ```
 
-![data binding text fontsize 2](../../img/data-binding-text-fontsize-2.png)
+![](../../img/data-binding-text-fontsize-2.png)
 
 As in previous examples, when the user changes the text, the new text appears in `txtSource`.
 
-![data binding text fontsize 3](../../img/data-binding-text-fontsize-3.png)
+![](../../img/data-binding-text-fontsize-3.png)
 ```apl
       txtSource
 Learn to play the bouzouki!
 
 ```
 
-## Note
+!!! note
+    It is perhaps worth mentioning that if you want to bind two properties *of the same object* to two APL variables, it has to be done by writing code as shown in this example, using two separate Binding Source objects. This is because using XAML you may only associate a single Binding Source to an object.
 
-It is perhaps worth mentioning that if you want to bind two properties *of the same object* to two APL variables, it has to be done by writing code as shown in this example, using two separate Binding Source objects. This is because using XAML you may only associate a single Binding Source to an object.
-
-However, this minor restriction is easily surmounted by using an APL namespace as a Binding Source as illustrated in the next Example.
+    However, this minor restriction is easily surmounted by using an APL namespace as a Binding Source as illustrated in the next Example.
 
 [^1]: Binding objects are implicit in all binding operations, but are created declaratively when using XAML.

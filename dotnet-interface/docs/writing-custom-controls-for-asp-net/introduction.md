@@ -11,18 +11,17 @@ The `Control` class provides a `Render` method whose job is to generate the HTML
 The `TemperatureConverterCtl1` control is an example of a compositional control, that is, one that is composed of other standard controls packaged with special functionality. The `TemperatureConverterCtl2` control, uses the basic approach of the `SimpleCtl` control, but provides the same functionality as `TemperatureConverterCtl1`. The `TemperatureConverterCtl3` control illustrates how to generate events for the hosting page to catch and process.
 
 These examples, which are based upon a series of articles called *Advanced ASP.NET Server-Side Controls* by George Shepherd that appeared in the *msdn magazine* (October 2000, January 2001 and March 2001 issues), are implemented as Dyalog classes in a namespace called `DyalogSamples` in the workspace `samples\asp.net\temp\bin\temp.dws.` The corresponding .NET Assembly `samples\asp.net\temp\bin\temp.dll` was generated from this workspace.
-```apl
+```
       )LOAD "C:\Program Files (x86)\Dyalog\Dyalog APL 15.0 Unicode\Samples\asp.net\temp\bin\temp.dws"
 ```
 ```apl
 C:\Program Files (x86)\Dyalog\Dyalog APL 15.0 Unicode\Samples\asp.net\temp\bin\temp.dws saved Tue Nov 22 15:04:11 2016
 ```
-```apl
+```
       )obs
 DyalogSamples
       )cs DyalogSamples
 #.DyalogSamples
       )Classes
 SimpleCtl       TemperatureConverterCtl1        TemperatureConverterCtl2        TemperatureConverterCtl3
-
 ```

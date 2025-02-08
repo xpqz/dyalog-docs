@@ -8,11 +8,11 @@ The information that describes .NET classes, which is known as its *Metadata*, i
 
 To gain information about one or more .NET Classes, open the Workspace Explorer, right click the *Metadata* folder, and choose *Load*.
 
-![browsing net classes 1](../img/browsing-net-classes-1.png)
+![](../img/browsing-net-classes-1.png)
 
 This brings up the *Browse .NET Assembly* dialog box as shown below. Navigate to the .NET assembly of your choice, and click *Open*.
 
-![browsing net classes 2](../img/browsing-net-classes-2.png)
+![](../img/browsing-net-classes-2.png)
 
 The .NET Classes provided with the .NET Framework are typically located in `C:\WINDOWS\Microsoft.NET\Framework64\V4.0.30319` (on a 64-bit computer). The last named folder is the Version number.
 
@@ -20,17 +20,17 @@ The most commonly used classes of the .NET Namespace System are stored in this d
 
 The result of opening this Assembly is illustrated in the following screen shot. The somewhat complex tree structure that is shown in the Workspace Explorer merely reflects the structure of the Metadata itself.
 
-![browsing net classes 3](../img/browsing-net-classes-3.png)
+![](../img/browsing-net-classes-3.png)
 
 Opening the *System/ Classes* sub-folder causes the Explorer to display the list of classes contained in the .NET Namespace *System* as shown in the picture below.
 
-![browsing net classes 4](../img/browsing-net-classes-4.png)
+![](../img/browsing-net-classes-4.png)
 
 The *Constructors* folder shows you the list of all of the valid constructors and their parameter sets with which you may create a new instance of the Class by calling `New`. The constructors are those named *.ctor*; you may ignore the one named *.cctor*, (the class constructor) and any labelled as *Private*.
 
 For example, you can deduce that `DateTime.New` may be called with three numeric (`Int32`) parameters, or six numeric (`Int32`) parameters, and so forth. There are in fact seven different ways that you can create an instance of a `DateTime`.
 
-![browsing net classes 5](../img/browsing-net-classes-5.png)
+![](../img/browsing-net-classes-5.png)
 
 For example, the following statement may be used to create a new instance of `DateTime` (09:30 in the morning on 30<sup>th</sup> April 2001):
 ```apl
@@ -42,7 +42,7 @@ For example, the following statement may be used to create a new instance of `Da
 
 The *Properties* folder provides a list of the properties supported by the Class. It shows the name of the property followed by its data type. For example, the `DayOfYear` property is defined to be of type `Int32`.
 
-![browsing net classes 6](../img/browsing-net-classes-6.png)
+![](../img/browsing-net-classes-6.png)
 
 You can query a property by direct reference:
 ```apl
@@ -64,10 +64,10 @@ The *Methods* folder lists the methods supported by the Class. The Explorer show
 1
 ```
 
-![browsing net classes 7](../img/browsing-net-classes-7.png)
+![](../img/browsing-net-classes-7.png)
 
-Many of the reported objects are listed as *Private*, which means they are inaccessible to users of the class – you are not able to call them or inspect their value. For more information about classes, see  Object Oriented Programming[Introducing Classes](../../../programming-reference-guide/object-oriented-programming/introducing-classes/introducing-classes).
+Many of the reported objects are listed as *Private*, which means they are inaccessible to users of the class – you are not able to call them or inspect their value. For more information about classes, see [Introducing Classes](../../../programming-reference-guide/object-oriented-programming/introducing-classes/introducing-classes).
 
-![browsing net classes 8](../img/browsing-net-classes-8.png)
+![](../img/browsing-net-classes-8.png)
 
 [^1]: ILDASM.EXE can be found in the .NET SDK and is distributed with Visual Studio

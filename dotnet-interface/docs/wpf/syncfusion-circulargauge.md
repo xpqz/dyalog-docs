@@ -4,7 +4,7 @@
 
 ## The XAML
 
-Like most Syncfusion controls, the CircularGauge is made up of  a complex structure of objects, and the XAML (see variable `XAML_SF`) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled *Essential Gauge for WPF*, which may be downloaded from [http://help.syncfusion.com/wpf/gauge](http://help.syncfusion.com/wpf/gauge).
+Like most Syncfusion controls, the CircularGauge is made up of  a complex structure of objects, and the XAML (see variable `XAML_SF`) is too extensive to describe in detail herein. It was created from the sample XAML from the Syncfusion documentation for this control entitled *Essential Gauge for WPF*, which may be downloaded from [https://help.syncfusion.com/wpf/gauge](https://help.syncfusion.com/wpf/gauge).
 
 The key statements in the XAML are as follows:
 ```xml
@@ -14,12 +14,12 @@ xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Gauge;assembly=Syncfusion.Gau
 The above statement defines the prefix `syncfusion` to mean the specified Syncfusion namespace and assembly. When the prefix `syncfusion` is subsequently used in front of a control in the XAML, the system knows where to find it.
 
 The next two statements define CircularPointer controls (the needles on the gauges); one for the Fahrenheit gauge (named *f_pointer*) and one for the Centigrade gauge (named *c_pointer*).
-```apl
+```xml
  <syncfusion:CircularPointer Name="f_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
   Value="32"/>
 ```
-```apl
+```xml
  <syncfusion:CircularPointer Name="c_pointer" BorderWidth="0.3"
   PointerLength="100" PointerPlacement="Inside" PointerWidth="20"
   Value="0"/

@@ -90,7 +90,7 @@ Thirdly, the ItemsSource property of the ListBox named *filtered* is bound to th
       FilteredList
 ```
 
-![data binding filteredlist 1](../../img/data-binding-filteredlist-1.png)
+![](../../img/data-binding-filteredlist-1.png)
 
 If the user types a single character, in this case "e", into the TextBox, this fires a TextChanged event which in turn fires the callback function shown below:
 ```apl
@@ -103,8 +103,8 @@ If the user types a single character, in this case "e", into the TextBox, this f
 
 When the callback runs, the variable `MySource.Filter`, which is bound to the Text property of the TextBox, will contain "e". The function calculates a mask `hits` which identifies which members of the variable `DyalogNames`  contain this string. It then assigns that subset to the variable `MySource.FilteredList`. This is bound to the ItemsSource property of the right-hand ListBox, so the result is as follows:
 
-![data binding filteredlist 2](../../img/data-binding-filteredlist-2.png)
+![](../../img/data-binding-filteredlist-2.png)
 
 Similarly, typing "er" into the TextBox reduces the number of hits as shown below:
 
-![data binding filteredlist 3](../../img/data-binding-filteredlist-3.png)
+![](../../img/data-binding-filteredlist-3.png)

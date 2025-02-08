@@ -391,7 +391,7 @@ If you point your browser at the URL:
 
 The three methods exposed by `GolfService` are listed.
 
-![golfservice1](../img/golfservice1.png)
+![](../img/golfservice1.png)
 
 Invoking the `GetCourses` method generates the following output.
 
@@ -401,7 +401,7 @@ All this information is derived from the declarations in the `Golf.asmx` script.
 
 As supplied, the `GolfData` component file contains only 3 golf courses as shown below.
 
-![golfservice2](../img/golfservice2.png)
+![](../img/golfservice2.png)
 
 ASP.NET generates a Form containing fields that allow the user to invoke the `MakeBookings` method as shown below.
 
@@ -409,25 +409,25 @@ Notice the way a `DateTime` value is specified. Note too that the `GimmeNearest`
 
 When you try this yourself, remember to enter a date that is within the next 30 days, and a time between 07:00 and 15:00. Alternatively, you may wish to experiment with invalid data to check the error handling.
 
-![golfservice3](../img/golfservice3.png)
+![](../img/golfservice3.png)
 
 The result of invoking `MakeBooking` with this data is shown below.
 
 Notice how all the information about the `Booking` object structure, including the structure of the sub-objects, is provided.
 
-![golfservice4](../img/golfservice4.png)
+![](../img/golfservice4.png)
 
 The following picture shows data suitable for invoking the `GetStartingSheet` method.
 
 If you try this for yourself, choose a course and date on which you have made at least one successful booking.
 
-![golfservice5](../img/golfservice5.png)
+![](../img/golfservice5.png)
 
 Finally, the result of the `GetStartingSheet` function is illustrated below.
 
 The output clearly shows that the result, a `StartingSheet` object, contains an array of `Slot` objects, each of which contains a `Time` field and a `Players` field.
 
-![golfservice6](../img/golfservice6.png)
+![](../img/golfservice6.png)
 
 ### Using GolfService from C#
 
