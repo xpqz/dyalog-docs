@@ -200,6 +200,18 @@ Table: Threads Menu Operations { #threads-menu-operations }
 |Resume all Threads |`[ThreadsResumeAll]`   |Resumes all threads                                |
 |Restart all Threads|`[ThreadsRestartAll]`  |Restarts all threads                               |
 
+## The Debugger Layout Menu
+
+The *Debugger Layout* menu (`⎕SE.mb.XYZ`) provides layout options for the Debugger.
+
+Table: Debugger Layout Menu Operations { #debugger-layout-menu-operations }
+
+|Item           |Action             |Description                                        |
+|---------------|-------------------|---------------------------------------------------|
+|Floating       |`[XXX]`            |Detaches the Debugger window                       |
+|At the bottom  |`[YYY]`            |Docks the Debugger at the bottom (default)         |
+|On the left    |`[ZZZ]`            |Docks the Debugger to the left                     |
+
 ## The Help Menu
 
 The *Help* menu (`⎕SE.mb.help`) provides access to the help system which is packaged as a single *Microsoft HTML Help* compiled help file named `help\dyalog.chm.`
