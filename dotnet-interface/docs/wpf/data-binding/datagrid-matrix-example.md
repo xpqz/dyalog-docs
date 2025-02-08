@@ -4,7 +4,7 @@ This example illustrates data binding using a matrix and is practically identica
 
 Each row in the WPF DataGrid control is represented by an object, and each column as a property of that object. Each row in the DataGrid is bound to an object in the data source, and each column in the data grid is bound to a property of the data object.
 
-![data binding datagrid1](../../img/data-binding-datagrid1.png)
+![](../../img/data-binding-datagrid1.png)
 
 ## The XAML
 
@@ -73,14 +73,14 @@ As in Example 7, the global variable `Wines` contains a vector of character vect
       Grid
 ```
 
-![data binding datagrid1](../../img/data-binding-datagrid1.png)
+![](../../img/data-binding-datagrid1.png)
 
 Let's round the prices to the nearest $5.
 ```apl
  winelist[;2]←5×⌊0.5+winelist[;2]÷5
 ```
 
-![data binding datagrid2](../../img/data-binding-datagrid2.png)
+![](../../img/data-binding-datagrid2.png)
 ## Using Code
 
 The same result can be achieved using code instead of XAML as illustrated by the function `GridCodeNoFmt`. The function is so-named because this code is insufficient to display the second column in currency format.
@@ -109,7 +109,7 @@ The same result can be achieved using code instead of XAML as illustrated by the
 
 This is because by default the DataGrid generates its columns automatically with default formatting.
 
-![data binding datagrid3](../../img/data-binding-datagrid3.png)
+![](../../img/data-binding-datagrid3.png)
 
 In order to apply special formatting to one or more columns, it is necessary to set the AutoGenerateColumns property to 0, and to generate the columns programmatically as is shown in the second version of the function, `GridCode`.
 
@@ -143,9 +143,8 @@ In order to apply special formatting to one or more columns, it is necessary to 
 [26]
 [27]   win.Show
      ∇
-
 ```
 
 In this version of the function, lines `[19-25]` create the two columns `Name` and `Price`, applying currency format to the `Price` column.
 
-![data binding datagrid4](../../img/data-binding-datagrid4.png)
+![](../../img/data-binding-datagrid4.png)

@@ -12,7 +12,7 @@ The following picture shows the namespace tree that exists in the Dyalog DLL wor
 
 In this case, there is a single AppDomain involved whose name, `DyApp_vshost_exe` is specified by .NET. APL has made a corresponding namespace called `AppDomain_DyApp_vshost_exe`. Next, there is a namespace associated with the Assembly `aplclasses`, named `Assembly_aplclasses`. Beneath this is a namespace called `APLClasses` associated with the .NET Namespace of the same name. Finally, there is the APL Class called `Primitives` .
 
-![workspace structure1](../img/workspace-structure1.png)
+![](../img/workspace-structure1.png)
 
 Notice that the state indicator displays the entire .NET calling structure, and not just the APL stack. In this case, the state indicator shows that `IndexGen` was called from `MainClass.Main`, which combines the class and method names specified in `aplfns.cs`. Note that .NET calls are slightly indented.
 
@@ -22,4 +22,4 @@ The possibility for the client to execute code in several instances of an object
 
 The picture below shows the workspace structure when the assembly was generated with isolation mode set to *Each assembly has its own workspace*. In this case, the AppDomain and Assembly structure is not created above the classes  in the workspace, so the workspace structure is somewhat simpler:
 
-![workspace structure2](../img/workspace-structure2.png)
+![](../img/workspace-structure2.png)

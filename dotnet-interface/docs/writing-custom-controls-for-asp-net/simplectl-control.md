@@ -19,7 +19,6 @@ The `SimpleCtl` Class is illustrated below:
     ∇                                           
                                                 
 :EndClass ⍝ SimpleCtl                           
-
 ```
 
 The `Render` function **supercedes** (see [:Access Statement](../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/class-declaration-statements/access)) the `Render` method that `SimpleCtl` has inherited from its base class, `System.Web.UI.Control`.
@@ -33,7 +32,7 @@ Using the `:Signature` statement, the `Render` function is defined to have the s
 ## Using SimpleCtl
 
 Our `SimpleCtl` control may now be included in any .NET Web Page from which `temp.dll` is accessible. The file `samples\asp.net\temp\Simple.aspx` is simply an example. The fact that this control is written in Dyalog is immaterial.
-```apl
+```xml
 <%@ Register TagPrefix="Dyalog"
              Namespace="DyalogSamples" Assembly="temp" %>
 
@@ -47,4 +46,4 @@ Our `SimpleCtl` control may now be included in any .NET Web Page from which `tem
 
 The first line of the script specifies that any controls referenced later in the script that are prefixed by `Dyalog:`, refer to custom controls in the .NET Namespace called `DyalogSamples` which is located in the Assembly `temp.dll` in the `bin` subdirectory.
 
-![simplectl3](../img/simplectl3.png)
+![](../img/simplectl3.png)

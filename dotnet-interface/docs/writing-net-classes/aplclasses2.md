@@ -26,21 +26,20 @@ Load the workspace `aplclasses2.dws` from `aplclasses2`, then display the `Primi
     ∇                                  
                                        
 :EndClass ⍝ Primitives                 
-
 ```
 
 This version of `Primitives` contains a *constructor* function called `CTOR` that simply sets `⎕IO` to the value of its argument. The name of this function is purely arbitrary.
 
 Using this version,  build a new .NET Assembly using *File/Export**…* as before. Remember that  the *Build runtime assembly* checkbox is unchecked.
 
-![aplclasses2_1](../img/aplclasses2-1.png)
+![](../img/aplclasses2-1.png)
 
-![aplclasses2_2](../img/aplclasses2-2.png)
+![](../img/aplclasses2-2.png)
 
 ## program.cs
 
 The following C# source, called `aplclasses2\Framework\program.cs`, will be used to call the new version of our Dyalog.NET class.
-```apl
+```cs
       using System;
       using APLClasses;
       public class MainClass
@@ -57,14 +56,14 @@ The following C# source, called `aplclasses2\Framework\program.cs`, will be used
 ```
 
 The program is the same as in the previous example, except that the code that creates an instance of the `Primitives` class is simply changed to specify an argument; in this case 0.
-```apl
+```cs
 Primitives apl = new Primitives(0);
 ```
 
 Using VS, open the solution file `d:\aplclasses\aplclasses2\Framework\project.sln` and view `program.cs`.
 
-![aplclasses2_3](../img/aplclasses2-3.png)
+![](../img/aplclasses2-3.png)
 
-Then click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
+Then click *Debug/Start Without debugging* (or press <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the program. The results are shown in a console window.
 
-![aplclasses2_4](../img/aplclasses2-4.png)
+![](../img/aplclasses2-4.png)

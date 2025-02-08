@@ -17,7 +17,6 @@ The XAML is much the same as in Example 1 and 2 except that it connects two prop
              UpdateSourceTrigger=PropertyChanged}"
       FontSize="{Binding sizeSource,Mode=OneWay}"/>
 </Window>
-
 ```
 
 ## The APL Code
@@ -38,7 +37,6 @@ The function `TextFontSize` is shown below.
 [11]
 [12]   win.Show
      ∇
-
 ```
 
 Lines [6-7] create a new namespace src containing two variables `txtSource` and `sizeSource` which are initialised to the arguments of the function.
@@ -73,18 +71,17 @@ As shown before, the left argument of `2015⌶)` is optional. Without it, the na
       DB_Text_FontSize_XAML'Hello World' 30
 ```
 
-![data binding text fontsize 1](../../img/data-binding-text-fontsize-1.png)
+![](../../img/data-binding-text-fontsize-1.png)
 ```apl
       src.(txtSource sizeSource←(⌽txtSource) 18)
 ```
 
-![data binding text fontsize 2](../../img/data-binding-text-fontsize-2.png)
+![](../../img/data-binding-text-fontsize-2.png)
 
 As in previous examples, when the user changes the text, the new text appears in `txtSource`.
 
-![data binding text fontsize 3](../../img/data-binding-text-fontsize-3.png)
+![](../../img/data-binding-text-fontsize-3.png)
 ```apl
       src.txtSource
 Learn to play the bouzouki!
-
 ```

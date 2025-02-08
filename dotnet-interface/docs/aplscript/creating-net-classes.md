@@ -77,17 +77,17 @@ This APLScript code defines a namespace called `APLClasses`. This simply acts as
 
 Using VS, open the solution file `d:\aplclasses\aplclasses6\Framework\project.sln` and view `aplclasses6.dll`.
 
-![aplclasses6_1](../img/aplclasses6-1.png)
+![](../img/aplclasses6-1.png)
 
 This shows that `aplclasses6.dll` contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int).
 
 Next, Display the c# program `program.cs`. This is the same program as in Example1.
 
-![aplclasses6_2](../img/aplclasses6-2.png)
+![](../img/aplclasses6-2.png)
 
 Now click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses6_3](../img/aplclasses6-3.png)
+![](../img/aplclasses6-3.png)
 
 This .NET Class can also be called from APL just like any other. For example:
 ```apl
@@ -161,17 +161,17 @@ The following APLScript, saved in the file `samples\aplclasses\aplclasses7.apl`,
 
 Using VS, open the solution file `d:\aplclasses\aplclasses7\Framework\project.sln` and view `aplclasses7.dll`.
 
-![aplclasses7_1](../img/aplclasses7-1.png)
+![](../img/aplclasses7-1.png)
 
 This shows that `aplclasses7.dll` contains a .NET namespace called APLClasses, which in turn contains the Primitives class. Primitives has a single method named IndexGen() which takes a number (an int) and a property named IndexOrigin.
 
 Next, Display the c# program `program.cs`. Notice that the main program calls a subroutine iota twice to calculate `⍸5` in origin 0 and 1.
 
-![aplclasses7_2](../img/aplclasses7-2.png)
+![](../img/aplclasses7-2.png)
 
 Now click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
 
-![aplclasses7_3](../img/aplclasses7-3.png)
+![](../img/aplclasses7-3.png)
 
 This .NET Class can also be called from APL just like any other. For example:
 ```apl

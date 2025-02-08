@@ -7,9 +7,7 @@ By way of an example, when a client application creates an instance of the `Prim
 The simplest way to implement this is to have two public constructor functions `CTOR1` and `CTOR2`, which call a private constructor function `CTOR`.
 
 `aplclasses4.dws` contains a new version of the `Primitives` class with these additions:
-```apl
-
- 
+```apl 
       ∇ CTOR1 IO
 [1]    :Implements constructor
 [2]    :Access public
@@ -55,14 +53,14 @@ Next, a function called `GetIOML` is defined and exported as a Public Method. It
 
 Load `aplclasses4.dws` and export a new version of `aplclasses.dll` as before.
 
-![aplclasses4_1](../img/aplclasses4-1.png)
+![](../img/aplclasses4-1.png)
 
-![aplclasses4_2](../img/aplclasses4-2.png)
+![](../img/aplclasses4-2.png)
 
 ## program.cs
 
 `aplclasses4\Framework\program.cs` contains code to invoke the two different constructor functions `CTOR1` and `CTOR2` :
-```apl
+```cs
 using System;
 using APLClasses;
 public class MainClass
@@ -88,8 +86,8 @@ The C# compiler matches the first call with `CTOR1`, because `CTOR1` is defined 
 
 Using VS, open the solution file `d:\aplclasses\aplclasses4\Framework\project.sln` and view `program.cs`.
 
-![aplclasses4_3](../img/aplclasses4-3.png)
+![](../img/aplclasses4-3.png)
 
-Click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
+Click *Debug/Start Without debugging* (or press <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the program. The results are shown in a console window.
 
-![aplclasses4_4](../img/aplclasses4-4.png)
+![](../img/aplclasses4-4.png)

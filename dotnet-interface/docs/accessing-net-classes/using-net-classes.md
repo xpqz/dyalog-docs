@@ -98,4 +98,4 @@ Furthermore, a .NET object may allocate unmanaged resources (such as window han
 
 To allow the programmer to control the freeing of resources associated with .NET objects in a standard way, objects implement the IDisposable interface which provides a Dispose() method. The C# language provides a `using` control structure that automates the freeing of resources. Crucially, it does so however the flow of execution exits the control structure, even as a result of error handling. This obviates the need for the programmer to call Dispose() explicitly wherever it may be required.
 
-This programming convenience is provide in Dyalog by the `:Disposable ... :EndDisposable` control structure. For further information, see   Disposable Statement.
+This programming convenience is provide in Dyalog by the `:Disposable ... :EndDisposable` control structure. For further information, see [Disposable Statement](../../../programming-reference-guide/defined-functions-and-operators/traditional-functions-and-operators/control-structures/disposable/)

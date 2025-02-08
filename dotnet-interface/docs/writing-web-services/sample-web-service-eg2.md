@@ -6,7 +6,7 @@ For this example, the Web Service script, which is supplied in the file s`amples
 
 The entire file, viewed in `Notepad`, is shown below.
 
-![eg2_1](../img/eg2-1.png)
+![](../img/eg2-1.png)
 
 Given this instruction, ASP.NET will locate the `APLServices.Example` Web Service by searching the `bin` sub-directory for assemblies. Therefore, to make this work, we have only to create a .NET assembly in `samples\asp.net\aplservices\bin`. The assembly should contain a .NET Namespace named `APLServices`, which in turn defines a class named `Example`.
 
@@ -49,11 +49,11 @@ C:\Program Files\Dyalog\Dyalog APL 15.0 Unicode\Samples\asp.net\webservices\bin\
 
 Select the *Export…* item from the Session *File* menu, and save the assembly as `eg2.dll` in the same directory, that is, `samples\asp.net\webservices\bin`.
 
-![eg2_2](../img/eg2-2.png)
+![](../img/eg2-2.png)
 
 When you click *Save*, the Status Window displays the following information to confirm that the assembly has been created correctly.
 
-![eg2_3](../img/eg2-3.png)
+![](../img/eg2-3.png)
 
 ## Testing EG2 from a Browser
 
@@ -66,8 +66,8 @@ ASP.NET will fabricate a page about it for the browser to display as shown below
 
 The `Add` method exposed by `APLServices.Example` is shown, together with a Form from which you can invoke it.
 
-![eg2_4](../img/eg2-4.png)
+![](../img/eg2-4.png)
 
 If you enter the numbers 123 and 456 in the fields provided, then press *Invoke*, the method will be called and the result displayed as shown below.
 
-![eg2_5](../img/eg2-5.png)
+![](../img/eg2-5.png)

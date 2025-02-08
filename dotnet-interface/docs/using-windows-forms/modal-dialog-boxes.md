@@ -6,7 +6,7 @@ To create a modal dialog box, you create a `Form`, set its `BorderStyle` propert
 
 A modal dialog box has a `DialogResult` property that is set when the `Form` is closed, or when the user presses OK or Cancel. The value of this property is returned by the `ShowDialog` method, so the simplest way to handle user actions is to check the result of `ShowDialog` and proceed accordingly. Example 1 illustrates a simple modal dialog box.
 
-## Example 1
+<h2 class="example">Example 1</h2>
 
 Function `EG1` illustrates how to create and use a simple modal dialog box. Much of the function is self-explanatory, but the following points are noteworthy.
 
@@ -110,13 +110,14 @@ Similarly, `EG1[32]` defines the `BorderStyle` property of the form using the `F
      ∇
 ```
 
-**Warning:** The use of modal forms in .NET can lead to problematic situations while debugging. As the control is passed to .NET the APL interpreter cannot regain control in the event of an unforeseen error. It is advisable to change the code to something like the following until the code is fully tested:
-```apl
-[52]   form1.Visible←1
-[53]   :While form1.Visible ⋄ :endwhile
-```
+!!! warning
+    The use of modal forms in .NET can lead to problematic situations while debugging. As the control is passed to .NET the APL interpreter cannot regain control in the event of an unforeseen error. It is advisable to change the code to something like the following until the code is fully tested:
+     ```apl
+     [52]   form1.Visible←1
+     [53]   :While form1.Visible ⋄ :endwhile
+     ```
 
-## Example 2
+<h2 class="example">Example 2</h2>
 
 Functions `EG2` and `EG2A` illustrate how the Each operator (`¨`) and the extended namespace reference syntax in Dyalog may be used to produce more succinct, and no less readable, code.
 ```apl

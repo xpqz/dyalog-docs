@@ -3,7 +3,7 @@
 It is often desirable to separate the code content of a page completely from the HTML and other text, layout or graphical information by placing it in a separate file. In ASP.NET parlance, this technique is known as *code behind*.
 
 The `intro5.aspx` example illustrates this technique.
-```apl
+```
 <%@Page Language="Dyalog"
 	Inherits="FruitSelection"
 	src="fruit.apl" %>
@@ -27,14 +27,12 @@ The `intro5.aspx` example illustrates this technique.
 </body>
 <tutorial:index runat="server"/>
 </html>
-
 ```
 
 The statement
-```apl
+```
 %@Page Language="Dyalog" Inherits="FruitSelection" src="fruit.apl" %>
 ```
-
 says that this page, when compiled, should inherit from a class called `FruitSelection`. Furthermore, the `FruitSelection` class is written in the "Dyalog" language, and its source code resides in a file called `fruit.apl`. `FruitSelection` is effectively the *base class* for the `.aspx` page.
 
 In this case, `fruit.apl` is simply another text file containing the `APLScript` code and is shown below.
@@ -66,6 +64,6 @@ The name of the class, in this case `FruitSelection`, must be the same name as i
 
 The body of the script is just the same as the script section from the previous example. Only the names of the fruit have been changed so that it is clear which example is being executed.
 
-![intro5_1](../img/intro5-1.png)
+![](../img/intro5-1.png)
 
-![intro5_2](../img/intro5-2.png)
+![](../img/intro5-2.png)

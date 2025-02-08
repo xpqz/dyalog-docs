@@ -5,8 +5,11 @@ Load the workspace `aplclasses1.dws`, then view the `Primitives` class:
       )load D:\aplclasses\aplclasses1\aplclasses1.dws
 D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
 
-      )ed ○APLClasses.Primitives[^1]
+      )ed ○APLClasses.Primitives
 ```
+!!! note
+    The character before the name `APLClasses.Primitives`, `○`, is typically obtained with <kbd>Ctrl</kbd>-<kbd>O</kbd>. It is used to tell the editor to edit a class.
+
 ```apl
 :Class Primitives
 :Using System
@@ -23,7 +26,7 @@ D:\aplclasses\aplclasses1\aplclasses1.dws ⍝ saved ...
 The public characteristics for the exported method are included in the definition of the class and its functions. Those are specified in the `:Signature` statement.
 
 Its syntax is:
-```apl
+```
 :Signature [return type←] fnname [arg1type [arg1name]
                                  [,argNtype [argNname]]*]
 ```
@@ -36,18 +39,18 @@ It should be noted that in the previous release of Dyalog the statements :`Retur
 
 Now you are ready to create the assembly. This is done by selecting *Export…* from the Session *File* menu. This displays the following dialog box.
 
-![aplclasses1_1](../img/aplclasses1-1.png)
+![](../img/aplclasses1-1.png)
 
 This gives you the opportunity to change the name or path of the assembly.  The *Runtime application* checkbox allows you to choose to which if the two versions of the Dyalog dynamic link library the assembly will be bound. In this tutorial we will use the Development version. The *Isolation Mode* Combo box allows you to choose which Isolation Mode you require.
 
 - Browse to the `Framework\bin` sub-diectory.
 - Clear the *Runtime application* checkbox
 
-![aplclasses1_1a](../img/aplclasses1-1a.png)
+![](../img/aplclasses1-1a.png)
 
 Finally, click *Save*. APL now makes the assembly and, as it does so, displays information in the Status window as shown below. If any errors occur during this process, the Status window will inform you.
 
-![aplclasses1_2](../img/aplclasses1-2.png)
+![](../img/aplclasses1-2.png)
 
 ## program.cs
 
@@ -56,7 +59,7 @@ The following C# source, called `aplclasses1Framework\program.cs`, will be used 
 The `using` statements specify the names of .NET namespaces to be searched for unqualified class names.
 
 The program creates an object named `apl` of type `Primitives` by calling the `new` operator on that class. Then it calls the `IndexGen` method with a parameter of 10.
-```apl
+```cs
       using System;
       using APLClasses;
       public class MainClass
@@ -73,10 +76,10 @@ The program creates an object named `apl` of type `Primitives` by calling the `n
 
 Using VS, open the solution file `d:\aplclasses\aplclasses1\Framework\project.sln` and view `program.cs`.
 
-![aplclasses1_3](../img/aplclasses1-3.png)
+![](../img/aplclasses1-3.png)
 
-Now click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
+Now click *Debug/Start Without debugging* (or press <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the program. The results are shown in a console window.
 
-![aplclasses1_4](../img/aplclasses1-4.png)
+![](../img/aplclasses1-4.png)
 
-[^1]: The character before the name APLClasses.Primitives , ○ , is typically obtained with Ctrl-O. It is used to tell the editor to edit a class
+

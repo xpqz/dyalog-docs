@@ -1,7 +1,7 @@
 <h1 class="heading"><span class="name">The Page_Load Event</span></h1>
 
 `Intro3.aspx` illustrates how you can dynamically initialise the contents of a Web Page using the Page_Load event. This example also introduces another type of Web Control, the `DropDownList` object.
-```apl
+```
 <%@Register TagPrefix="tutorial" Namespace="Tutorial" Assembly="tutorial" %>
 <script language="Dyalog" runat="server">
 
@@ -40,7 +40,6 @@ out.Text←'You selected ',list.SelectedItem.Text
 <tutorial:index runat="server"/>
 </body>
 </html>
-
 ```
 
 When an ASP.NET web page is loaded, it generates a `Page_Load` event. You can use this event to perform initialisation simply by defining a public function called `Page_Load` in your `APLScript`. This function will automatically be called every time the page is loaded. The `Page_Load` function should be niladic.
@@ -56,17 +55,18 @@ is that the `DropDownList` WebControl has an `Items` property that is a collecti
 
 Notice that the name of the object `list` is defined by the `id="list"` attribute of the `DropDownList` control that is defined in the page layout section of the page.
 
-![intro3_1](../img/intro3-1.png)
+![](../img/intro3-1.png)
 
 In this example, the page is processed by a POST back caused by pressing the `Submit` button. As it stands, changing the selection in the `list` object does not cause the text in the `out` object to be changed; you have to press the `Submit` button first.
 
-![intro3_2](../img/intro3-2.png)
+![](../img/intro3-2.png)
 
 However, you can make this happen automatically by adding the following attributes to the `list` object (see `intro4.aspx`):
 
+```xml
 AutoPostback="true"
-
 OnSelectedIndexChanged="Select"/>
+```
 
 `AutoPostback` causes the object to generate HTML that will provoke a post back whenever the selection is changed. When it does so, the `OnSelectedIndexChanged` event will be generated in the server-side script which in turn will call `Select`, which in turn will cause the text in the out object to change.
 

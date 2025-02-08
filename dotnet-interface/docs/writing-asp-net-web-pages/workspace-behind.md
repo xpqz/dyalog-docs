@@ -12,15 +12,15 @@ Dyalog is grateful to David Hughes who provided the original workspaces and advi
 
 The two workspaces are named `ACTFNS.DWS` and `PROJ.DWS`. The original code used the Dyalog APL GUI to display an input Form, collect and validate the user's input, and calculate and display the results. The original logic supported field level validation and results were immediately recalculated whenever any field was changed. With some exceptions, this has been changed so that the user must press a button to tell the system to recalculate the results. This approach is more appropriate in an Internet application, especially when connection speed is low. Apart from this change, the applications run more-or-less as originally designed.
 
-![actuarial diagram](../img/actuarial-diagram.png)
+![](../img/actuarial-diagram.png)
 
 The diagram above illustrates the structure of the web application and the various files involved. The starting page, `actfns.htm`, simply provides a menu of choices which link to various `.aspx` web pages. These pages in turn are linked to one of the two workspaces via the `src=""` declaration
 
-![actfns_1](../img/actfns-1.png)
+![](../img/actfns-1.png)
 
 The `actfns.htm` start page offers 3 application choices
 
-![actfns_2](../img/actfns-2.png)
+![](../img/actfns-2.png)
 
 The result of choosing *Tabulate single life insurance and annuity values*
 

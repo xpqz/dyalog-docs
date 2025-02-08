@@ -28,14 +28,14 @@ When you create the instance of the `Exception` class, you may specify a string 
 
 Load `aplclasses3.dws` and export  `aplclasses3.dll` as before.
 
-![aplclasses3_1](../img/aplclasses3-1.png)
+![](../img/aplclasses3-1.png)
 
-![aplclasses3_2](../img/aplclasses3-2.png)
+![](../img/aplclasses3-2.png)
 
 ## program.cs
 
 The following C# source, called `aplclasses2\Framework\program.cs`,  contains code to catch the exception and to display the exception message.
-```apl
+```cs
 using System;
 using APLClasses;
 public class MainClass
@@ -61,8 +61,8 @@ catch (Exception e)
 
 Using VS, open the solution file `d:\aplclasses\aplclasses3\Framework\project.sln` and view `program.cs`.
 
-![aplclasses3_3](../img/aplclasses3-3.png)
+![](../img/aplclasses3-3.png)
 
-Click *Debug/Start Without debugging* (or press Ctrl+F5) to run the program. The results are shown in a console window.
+Click *Debug/Start Without debugging* (or press <kbd>Ctrl</kbd>+<kbd>F5</kbd>) to run the program. The results are shown in a console window.
 
-![aplclasses3_4](../img/aplclasses3-4.png)
+![](../img/aplclasses3-4.png)

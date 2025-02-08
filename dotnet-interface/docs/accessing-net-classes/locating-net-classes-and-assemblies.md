@@ -25,7 +25,8 @@ In Dyalog, this mechanism is implemented by the `⎕USING` system variable. `⎕
 It is convenient to treat .NET namespaces and assemblies in pairs. For example:
 ```apl
 ⎕USING←'System,mscorlib.dll'
-  ⎕USING,←⊂'System.Windows.Forms,System.Windows.Forms.dll'  ⎕USING,←⊂'System.Drawing,System.Drawing.dll'
+⎕USING,←⊂'System.Windows.Forms,System.Windows.Forms.dll'
+⎕USING,←⊂'System.Drawing,System.Drawing.dll'
 ```
 
 Note that because Dyalog APL automatically loads `mscorlib.dll` (which contains the most commonly used classes in the `System` Namespace), it is not actually necessary to specify it explicitly in `⎕USING`.
