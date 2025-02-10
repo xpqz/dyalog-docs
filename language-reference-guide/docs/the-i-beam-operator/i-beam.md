@@ -29,6 +29,7 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 |A      |Derived Function                                                                      |O/S   |
 |-------|--------------------------------------------------------------------------------------|------|
 |`8`    |[Inverted Table Index-of](./inverted-table-index-of.md)                               |&nbsp;|
+|`43`   |[Monadic Operator Generator](./monadic-operator-generator.md)                         |&nbsp;|
 |`85`   |[Execute Expression](./execute-expression.md)                                         |&nbsp;|
 |`127`  |[Overwrite Free Pockets](./overwrite-free-pockets.md)                                 |&nbsp;|
 |`180`  |[Canonical Representation](./canonical-representation.md)                             |&nbsp;|
