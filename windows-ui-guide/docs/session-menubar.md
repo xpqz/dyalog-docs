@@ -13,7 +13,7 @@ Table: File Menu Operations { #file-menu-operations }
 |New|`[WSClear]`|Prompts for confirmation, then clears the workspace|
 |Open|`[WSLoad]`|Prompts for a workspace file name, then loads it|
 |Copy|`[WSCopy]`|Prompts for a workspace file name, then copies it|
-|Save|`[WSSave`]|Saves the active workspace|
+|Save|`[WSSave]`|Saves the active workspace|
 |Save As|`[WSSaveas]`|Prompts for a workspace file name, then saves it|
 |Export|`[Makeexe]`|Creates a bound executable, an OLE Server, an ActiveX Control, or a .NET Assembly. See [Creating Executables and COM Servers](../../windows-installation-and-configuration-guide/creating-executables)|
 |Export to Memory|`[MakeMemoryAssembly]`|Creates an *in-memory* .NET Assembly|
