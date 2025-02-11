@@ -16,34 +16,40 @@ Note: time numbers in `R` may be of type DECF even if `⎕FR` is 645 if their ma
 
 If a value in `X` is positive it indicates that a time number type is expected in `Y` or generated in `R`, as follows. Note that the last column indicated whether (Yes) or not (No) negative numbers are allowed.
 
-| Code  | Description                                                                                  | Category                                       | Epoch<sup>1</sup>            | Neg<sup>8</sup>  |
-|-------|----------------------------------------------------------------------------------------------|------------------------------------------------|------------------------------|------------------|
-| 1     | Dyalog Date Number                                                                           | Day count with fractional part                 | 1899-12-31 00:00             | Yes              |
-| 2     | Dyalog component file time                                                                   | Tick count 1÷60<sup>th</sup> ticks<sup>2</sup> | 1970-01-01 00:00             | Yes              |
-| 10    | J (J nanosecond time)                                                                        | Tick count 1ns ticks <sup>2</sup>              | 2000-01-01 00:00             | Yes              |
-| 11    | Shakti K7                                                                                    | Tick count 1ms ticks <sup>2</sup>              | 2024-01-01 00:00             | Yes              |
-| 12    | JavaScript / D / Q                                                                           | Tick count 1ms ticks <sup>2</sup>              | 1970-01-01 00:00             | Yes              |
-| 13    | R (R chron format)                                                                           | Day count with fractional part                 | 1970-01-01 00:00             | Yes              |
-| 14    | Shakti K9                                                                                    | Tick count 1ms ticks <sup>2</sup>              | 2001-01-01 00:00             | Yes              |
-| 20    | Unix time                                                                                    | Tick count 1s ticks <sup>2</sup>               | 1970-01-01 00:00             | Yes              |
-| 30    | Microsoft DOS date/time                                                                      | Encoded broken-down time 2s resolution         | N/A                          | No               |
-| 31    | Microsoft Win32 FILETIME                                                                     | Tick count <sup>3</sup> 100ns ticks            | 1601-01-01 00:00             | No               |
-| 32    | Microsoft CLR DateTime (.NET)(Ticks property thereof)                                        | Tick count <sup>3</sup> 100ns ticks            | 0001-01-01 00:00             | No               |
-| 33    | Microsoft OLE Automation Date(also known as Variant Time)                                    | Day count with fractional part                 | 1899-12-30 00:00             | Yes <sup>7</sup> |
-| 40    | Excel (1900 Date System)<sup>4</sup> / Lotus 1-2-3                                           | Day count with fractional part<sup>5</sup>     | 1899-12-31 00:00<sup>6</sup> | No               |
-| 41    | Excel (1904 Date System)<sup>4</sup>                                                         | Day count with fractional part                 | 1904-01-01 00:00             | No               |
-| 42    | Stata statistics package                                                                     | Tick count 1ms ticks<sup>2</sup>               | 1960-01-01 00:00             | Yes              |
-| 43    | SPSS statistics package                                                                      | Tick count 1s ticks<sup>2</sup>                | 1582-10-14 00:00             | No               |
-| 44    | SAS                                                                                          | Tick count 1s ticks<sup>2</sup>                | 1960-01-01 00:00             | Yes              |
-| 50    | Julian Date                                                                                  | Day count with fractional part                 | ¯4717-11-24 12:00            | No               |
-| 51    | J (J dayno)                                                                                  | Day count with fractional part                 | 1800-01-01 00:00             | No               |
-| 52    | Reduced Julian Date                                                                          | Day count with fractional part                 | 1858-11-16 12:00             | Yes              |
-| 53    | Modified Julian Date                                                                         | Day count with fractional part                 | 1858-11-17 00:00             | Yes              |
-| 54    | Dublin Julian Date                                                                           | Day count with fractional part                 | 1899-12-31 12:00             | Yes              |
-| 55    | CNES Julian Date                                                                             | Day count with fractional part                 | 1950-01-01 00:00             | Yes              |
-| 56    | CCSDS Julian Date                                                                            | Day count with fractional part                 | 1958-01-01 00:00             | Yes              |
-| 60    | Floating-point decimal encoded format<sup>9</sup> Digits take the form yyyymmdd.hhmmss       | Encoded broken-down time 1s resolution         | N/A                          | No               |
-| 61    | Integer decimal encoded format<sup>9</sup> Digits take the form yyyymmddhhmmss(J digit time) | Encoded broken-down time 1s resolution         | N/A                          | No               |
+|Code|Description|Category|Epoch<sup>1</sup>|Neg<sup>8</sup>|
+|---|---|---|---|---|
+|1|Dyalog Date Number|Day count with fractional part|1899-12-31 00:00|Yes|
+|2|Dyalog component file time|Tick count 1÷60s ticks<sup>2</sup>|1970-01-01 00:00|Yes|
+|10|J (J nanosecond time)|Tick count<sup>3</sup> 1ns ticks<sup>2</sup>|2000-01-01 00:00|Yes|
+|11|Shakti K7|Tick count 1ms ticks<sup>2</sup>|2024-01-01 00:00|Yes|
+|12|JavaScript / D / Q / Go UnixMilli |Tick count 1ms ticks<sup>2</sup>|1970-01-01 00:00|Yes|
+|13|R (R chron format)|Day count with fractional part|1970-01-01 00:00|Yes|
+|14|Shakti K9|Tick count 1ms ticks<sup>2</sup>|2001-01-01 00:00|Yes|
+|15|Go UnixMicro|Tick count 1µs ticks<sup>2</sup>|1970-01-01 00:00|Yes|
+|16|Go UnixNano|Tick count 1ns ticks<sup>2</sup>|1970-01-01 00:00|Yes|
+|17|APL+Win and APL64 workspace timestamp|Tick count 1μs ticks<sup>2</sup>|1900-01-01 00:00|No|
+|20|Unix time|Tick count 1s ticks<sup>2</sup>|1970-01-01 00:00|Yes|
+|21|Apollo NCS UUID|Tick count 4µs ticks<sup>2</sup>|1980-01-01 00:00|No|
+|22|OSF DCE UUID"|Tick count 1ns ticks<sup>2</sup>|1582-10-15 00:00|No|
+|30|Microsoft DOS date/time|Encoded broken-down time 2s resolution|N/A|No|
+|31|Microsoft Win32 FILETIME|Tick count<sup>3</sup> 100ns ticks|1601-01-01 00:00|No|
+|32|Microsoft CLR DateTime (.NET)(Ticks property thereof)|Tick count<sup>3</sup> 100ns ticks|0001-01-01 00:00|No|
+|33|Microsoft OLE Automation Date(also known as Variant Time)|Day count with fractional part|1899-12-30 00:00|Yes<sup>10</sup>|
+|40|Excel (1900 Date System)<sup>4</sup> / Lotus 1-2-3|Day count with fractional part<sup>5</sup>|1899-12-31 00:00<sup>6</sup>|No|
+|41|Excel (1904 Date System)<sup>4</sup>|Day count with fractional part|1904-01-01 00:00|No|
+|42|Stata statistics package|Tick count 1ms ticks<sup>2</sup>|1960-01-01 00:00|Yes|
+|43|SPSS statistics package|Tick count 1s ticks<sup>2</sup>|1582-10-14 00:00|No|
+|44|SAS|Tick count 1s ticks<sup>2</sup>|1960-01-01 00:00|Yes|
+|50|Julian Date|Day count with fractional part|¯4717-11-24 12:00|No|
+|51|J (J dayno)|Day count with fractional part|1800-01-01 00:00|No|
+|52|Reduced Julian Date|Day count with fractional part|1858-11-16 12:00|Yes|
+|53|Modified Julian Date|Day count with fractional part|1858-11-17 00:00|Yes|
+|54|Dublin Julian Date|Day count with fractional part|1899-12-31 12:00|Yes|
+|55|CNES Julian Date|Day count with fractional part|1950-01-01 00:00|Yes|
+|56|CCSDS Julian Date|Day count with fractional part|1958-01-01 00:00|Yes|
+|60|Floating-point decimal encoded format Digits take the form yyyymmdd.hhmmss|Encoded broken-down time 1s resolution|N/A|No|
+|61|Integer decimal encoded format Digits take the form yyyymmddhhmmss(J digit time)|Encoded broken-down time 1s resolution|N/A|No|
+|70|AmigaOS|Tick count 1ms ticks<sup>2</sup>|1978-01-01 00:00|No|
 {: .bigtable }
 
 ### Footnotes { .example }

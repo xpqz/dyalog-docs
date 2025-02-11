@@ -21,15 +21,20 @@ If a value in `X` is positive it indicates that a time number type is expected i
 |Dyalog APL|1|Dyalog Date Number|Day count with fractional part|1899-12-31 00:00|Yes|
 |_        _|2|Dyalog component file time|Tick count 1÷60s ticks[^2]|1970-01-01 00:00|Yes|
 |Other languages|10|J (J nanosecond time)|Tick count[^3] 1ns ticks [^2]|2000-01-01 00:00|Yes|
-|                |11|Shakti K7|Tick count 1ms ticks [^2]|2024-01-01 00:00|Yes|
-|                |12|JavaScript / D / Q|Tick count 1ms ticks [^2]|1970-01-01 00:00|Yes|
+|                |11|Shakti K7|Tick count 1ms ticks[^2]|2024-01-01 00:00|Yes|
+|                |12|JavaScript / D / Q / Go UnixMilli |Tick count 1ms ticks[^2]|1970-01-01 00:00|Yes|
 |                |13|R (R chron format)|Day count with fractional part|1970-01-01 00:00|Yes|
-|_              _|14|Shakti K9|Tick count 1ms ticks [^2]|2001-01-01 00:00|Yes|
-|UNIX|20|Unix time|Tick count 1s ticks [^2]|1970-01-01 00:00|Yes|
-|Microsoft|30|Microsoft DOS date/time|Encoded broken-down time 2s resolution|N/A|No|
-|         |31|Microsoft Win32 FILETIME|Tick count [^3] 100ns ticks|1601-01-01 00:00|No|
-|         |32|Microsoft CLR DateTime (.NET)(Ticks property thereof)|Tick count [^3] 100ns ticks|0001-01-01 00:00|No|
-|_       _|33|Microsoft OLE Automation Date(also known as Variant Time)|Day count with fractional part|1899-12-30 00:00|Yes [^10]|
+|                |14|Shakti K9|Tick count 1ms ticks[^2]|2001-01-01 00:00|Yes|
+|                |15|Go UnixMicro|Tick count 1µs ticks[^2]|1970-01-01 00:00|Yes|
+|                |16|Go UnixNano|Tick count 1ns ticks[^2]|1970-01-01 00:00|Yes|
+|_              _|17|APL+Win and APL64 workspace timestamp|Tick count 1μs ticks[^2]|1900-01-01 00:00|No|
+|UNIX     |20|Unix time|Tick count 1s ticks[^2]|1970-01-01 00:00|Yes|
+|         |21|Apollo NCS UUID|Tick count 4µs ticks[^2]|1980-01-01 00:00|No|
+|_       _|22|OSF DCE UUID"|Tick count 1ns ticks[^2]|1582-10-15 00:00|No|
+|Microsoft Windows|30|Microsoft DOS date/time|Encoded broken-down time 2s resolution|N/A|No|
+|                 |31|Microsoft Win32 FILETIME|Tick count[^3] 100ns ticks|1601-01-01 00:00|No|
+|                 |32|Microsoft CLR DateTime (.NET)(Ticks property thereof)|Tick count [^3] 100ns ticks|0001-01-01 00:00|No|
+|_               _|33|Microsoft OLE Automation Date(also known as Variant Time)|Day count with fractional part|1899-12-30 00:00|Yes [^10]|
 |Application|40|Excel (1900 Date System)[^4] / Lotus 1-2-3|Day count with fractional part[^5]|1899-12-31 00:00[^6]|No|
 |           |41|Excel (1904 Date System)[^4]|Day count with fractional part|1904-01-01 00:00|No|
 |           |42|Stata statistics package|Tick count 1ms ticks[^2]|1960-01-01 00:00|Yes|
@@ -44,6 +49,7 @@ If a value in `X` is positive it indicates that a time number type is expected i
 |_                      _|56|CCSDS Julian Date|Day count with fractional part|1958-01-01 00:00|Yes|
 |Decimal encoded[^9]|60|Floating-point decimal encoded format Digits take the form yyyymmdd.hhmmss|Encoded broken-down time 1s resolution|N/A|No|
 |_                 _|61|Integer decimal encoded format Digits take the form yyyymmddhhmmss(J digit time)|Encoded broken-down time 1s resolution|N/A|No|
+|Misc. Operating Systems|70|AmigaOS|Tick count 1ms ticks[^2]|1978-01-01 00:00|No|
 {: .bigtable }
 
 ## Time Stamps
