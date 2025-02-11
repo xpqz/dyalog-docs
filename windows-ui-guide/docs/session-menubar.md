@@ -10,24 +10,20 @@ Table: File Menu Operations { #file-menu-operations }
 
 |Item|Action|Description|
 |---|---|---|
-|New|[WSClear]|Prompts for confirmation, then clears the workspace|
-|Open|[WSLoad]|Prompts for a workspace file name, then loads it|
-|Copy|[WSCopy]|Prompts for a workspace file name, then copies it|
-|Save|[WSSave]|Saves the active workspace|
+|New|`[WSClear]`|Prompts for confirmation, then clears the workspace|
+|Open|`[WSLoad]`|Prompts for a workspace file name, then loads it|
+|Copy|`[WSCopy]`|Prompts for a workspace file name, then copies it|
+|Save|`[WSSave`]|Saves the active workspace|
 |Save As|`[WSSaveas]`|Prompts for a workspace file name, then saves it|
-|Export|`[Makeexe]`|Creates a bound executable, an OLE Server, an ActiveX Control, or a .NET Assembly. See [Creating Executables and COM Servers](../../windows-installation-and-configuration-guide/creating-executables) .|
+|Export|`[Makeexe]`|Creates a bound executable, an OLE Server, an ActiveX Control, or a .NET Assembly. See [Creating Executables and COM Servers](../../windows-installation-and-configuration-guide/creating-executables)|
 |Export to Memory|`[MakeMemoryAssembly]`|Creates an *in-memory* .NET Assembly|
 |Close AppDomain|`[CloseAppDomain]`|Closes .NET App Domain|
 |Drop|`[WSDrop]`|Prompts for a workspace file name, then erases it|
-|Edit Text File|`[EditTextFile]`|Displays the *Open Source File dialog* to select a file to exit.|
+|Edit Text File|`[EditTextFile]`|Displays the *Open Source File dialog* to select Dyalog script file (.dyalog) or an arbitrary text file to open in the Editor. See [Editing Scripts and Text Files](editing-scripts-and-text-files.md)|
 |Print|`[PrintFnsInNS]`|Prints functions and operators in current namespace|
 |Print Setup|`[PrintSetup]`|Invokes the print set-up dialog box|
 |Continue|`[Continue]`|Saves the active workspace in CONTINUE.DWS and exits APL|
 |Exit|`[Off]`|Exits APL|
-
-## Edit Text File
-
-The Edit Text File menu item allows you to edit a Dyalog script file (.dyalog) or an arbitrary text file. The system prompts you to choose the file, which is then displayed in the Editor, allowing you to change it and save it. See [Editing Scripts and Text Files](editing-scripts-and-text-files.md).
 
 ## The Edit Menu
 
