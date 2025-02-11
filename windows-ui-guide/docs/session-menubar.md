@@ -19,7 +19,7 @@ Table: File Menu Operations { #file-menu-operations }
 |Export to Memory|`[MakeMemoryAssembly]`|Creates an *in-memory* .NET Assembly|
 |Close AppDomain|`[CloseAppDomain]`|Closes .NET App Domain|
 |Drop|`[WSDrop]`|Prompts for a workspace file name, then erases it|
-|Edit Text File|`[EditTextFile]`|Displays the *Open Source File dialog* to select Dyalog script file (.dyalog) or an arbitrary text file to open in the Editor. See [Editing Scripts and Text Files](editing-scripts-and-text-files.md)|
+|Edit Text File|`[EditTextFile]`|Displays the *Open Source File* dialog to select Dyalog script file (*.dyalog*) or an arbitrary text file to open in the Editor. See [Editing Scripts and Text Files](editing-scripts-and-text-files.md)|
 |Print|`[PrintFnsInNS]`|Prints functions and operators in current namespace|
 |Print Setup|`[PrintSetup]`|Invokes the print set-up dialog box|
 |Continue|`[Continue]`|Saves the active workspace in CONTINUE.DWS and exits APL|
@@ -33,11 +33,11 @@ Table: Edit menu operations { #edit-menu-operations }
 
 |Item             |Action          |Description                                                                               |
 |-----------------|----------------|------------------------------------------------------------------------------------------|
-|Back             |`[Undo]`        |Displays the previous input line. Repeated use of this command cycles back through the input history.|
-|Forward          |`[Redo]`        |Displays the next input line. Repeated use of this command cycles forward through the input history.|
+|Back             |`[Undo]`        |Displays the previous input line. Repeated use of this command cycles back through the input history|
+|Forward          |`[Redo]`        |Displays the next input line. Repeated use of this command cycles forward through the input history|
 |Cut              |`[Delete]`      |Cuts the selected text to the clipboard|
 |Copy             |`[Copy]`        |Copies the selection to the clipboard|
-|Paste            |`[Paste]`       |Pastes the text contents of the clipboard into the session log at the current location. The new lines are *marked* and may be executed by pressing Enter.|
+|Paste            |`[Paste]`       |Pastes the text contents of the clipboard into the session log at the current location. The new lines are *marked* and may be executed by pressing Enter|
 |Paste Unicode    |`[PasteUnicode]`|Same as *Paste* , but gets the Unicode text from the clipboard and converts to `⎕AV` . **Classic Edition only**|
 |Paste Non-Unicode|`[PasteAnsi]`   |Same as *Paste* , but gets the ANSI text from the clipboard and converts to `⎕AV` . **Classic Edition only**|
 |Find             |`[Find]`        |Displays the *Find* dialog|
@@ -77,9 +77,9 @@ Table: Session menu operations { #session-menu-operations }
 
 |Item|Action|Description|
 |---|---|---|
-|Open|`[SELoad]`|Prompts for a session file name, then loads the session from it, replacing the current one. Sets the File property of `⎕SE` to the name of the file from which the session was loaded.|
+|Open|`[SELoad]`|Prompts for a session file name, then loads the session from it, replacing the current one. Sets the File property of `⎕SE` to the name of the file from which the session was loaded|
 |Save|`[SESave]`|Saves the current session (as defined by `⎕SE` ) to the session file specified by the File property of `⎕SE`|
-|Save As|`[SESaveAs]`|Prompts for a session file name, then saves the current session (as defined by `⎕SE` ) in it. Resets the File property of `⎕SE` .|
+|Save As|`[SESaveAs]`|Prompts for a session file name, then saves the current session (as defined by `⎕SE` ) in it. Resets the File property of `⎕SE`|
 
 ## The Log Menu
 
@@ -108,7 +108,7 @@ Table: Action menu operations { #actions-menu-operations }
 |Execute     |`[Execute]`  |Executes the current line                                                                                                             |
 |Copy Object |`[ObjCopy]`  |Copies the contents of the current object to the clipboard                                                                            |
 |Paste Object|`[ObjPaste]` |Pastes the contents of the clipboard into the current object, replacing its previous value                                            |
-|Print Object|`[ObjPrint]` |Prints the current object. Note that if the object is being edited, the version of the object displayed in the edit window is printed.|
+|Print Object|`[ObjPrint]` |Prints the current object. Note that if the object is being edited, the version of the object displayed in the edit window is printed |
 |Clear Stops |`[ClearTSM]` |Clears all `⎕STOP` , `⎕MONITOR` and `⎕TRACE` settings                                                                                 |
 |Interrupt   |`[Interrupt]`|Generates a weak interrupt                                                                                                            |
 |Reset       |`[Reset]`    |Performs `)RESET`                                                                                                                     |
@@ -125,7 +125,7 @@ Table: Options menu operations { #options-menu-operations }
 |Expose Root Properties   |`[ExposeRoot]`              |Exposes the names of the properties, methods and events of the Root object                                       |
 |Expose Session Properties|`[ExposeSession]`           |Exposes the names of the properties, methods and events of `⎕SE`                                                 |
 |Line Numbers             |`[LineNumbers]`             |Toggle the display of line numbers in edit and trace windows on/off                                              |
-|Disable traps in session |`[DisableTrapsAtSuspension]`|Disables the error trapping mechanism used by `:Trap` and `⎕TRAP` . This can be useful in debugging applications.|
+|Disable traps in session |`[DisableTrapsAtSuspension]`|Disables the error trapping mechanism used by `:Trap` and `⎕TRAP`. This can be useful in debugging applications  |
 |Configure                |`[Configure]`               |Displays the *Configuration* dialog box                                                                          |
 |Colours                  |`[ChooseColors]`            |Displays the *Colours Selection* dialog box                                                                      |
 
