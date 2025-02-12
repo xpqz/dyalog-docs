@@ -1,16 +1,30 @@
 <h1 class="heading"><span class="name">Date-time</span> <span class="command">R←X ⎕DT Y</span></h1>
 
+This function validates date-times or converts date-times between one format and another.
+
+A date-time is a date and time of day represented by a *timestamp*, a *time number* or a *military time-zone character*.
+
+- A *timestamp* is a date-time expressed as a multiple element numeric vector, of which there are several different sorts (principally `⎕TS` format).
+- A *time number* is a date-time expressed as a scalar numeric value, of which there are several different sorts.
+- A *military time zone character* is a scalar character that represents the current date-time ("now") in a particular time zone. For example, `'A'` represents the current date-time (UTC) + 1 hour.
+
 `Y` is an array of any shape whose elements contain a timestamp, time number or military time zone character, in any combination.
 
 `X` may be a single integer value or a 2-element integer vector.
 
-When `X` is a 2-element integer vector, `X[1]` is a date-time code that explicitly specifies the date-time representation of the numeric elements in `Y`. `X[2]` is  either 0 or a date-time code listed in the tables below. 0 specifies that the elements of `Y` are to be validated. A non-zero value specifies the date-time representation to which the elements of `Y` are to be converted.
+When `X` is a single integer value, it must be either 0 or a date-time code listed in the tables below. 0 specifies that the elements of `Y` are to be validated. A non-zero value specifies the date-time representation to which the elements of `Y` are to be converted. In this case, the numeric elements of `Y` are interpreted as follows:
+
+- scalars are assumed to be time numbers of type Dyalog Date Number (code 1)
+- vectors are assumed to be `⎕TS` timestamps (code ¯1)
+
+When `X` is a 2-element integer vector, `X[1]` is a date-time code that explicitly specifies the date-time representation of the numeric elements in `Y`. `X[2]` is either 0 or a date-time code listed in the tables below. 0 specifies that the elements of `Y` are to be validated. A non-zero value specifies the date-time representation to which the elements of `Y` are to be converted.
 
 Character scalars in `Y` are always interpreted as meaning "now".
 
 `R` is an array of the same shape as `Y`, where each element is either a timestamp, time number or Boolean value as determined by the second or only element in `X`.
 
-Note: time numbers in `R` may be of type DECF even if `⎕FR` is 645 if their magnitude can be too great to store precisely in a double. See the table below for the type numbers where this is so.
+!!! note
+    Time numbers in `R` may be of type DECF even if `⎕FR` is 645 if their magnitude can be too great to store precisely in a double. See the table below for the type numbers where this is so.
 
 ## Time Numbers
 
