@@ -1,22 +1,27 @@
 <h1 class="heading"><span class="name">Monadic Operator Generator</span> <span class="command">R←43⌶Y</span></h1>
 
-Returns a monadic operator, selected by the right argument `Y`.
+Returns a monadic operator, with functionality determined by the value of `Y`.
 
-`Y` is a scalar integer from the following table.
-Running 43⌶ with a right argument not in the table below results in a `DOMAIN ERROR`.
+`Y` is a scalar integer. Possible values for `Y` are shown in the table below. If an undefined value is specified, a `DOMAIN ERROR` is generated.
 
-`R` is a monadic operator, chosen by the value of `Y`. Its functionality is described in the following table. Since the result is a monadic operator, it is recommended that the evaluation of this I-Beam is either parenthesised or named.
+`R` is a monadic operator with functionality determined by the value of `Y`.
 
-| Y | Returned Operator | Notes |
+!!! Tip "Hints and Recommendations"
+	As `R`is a monadic operator, Dyalog Ltd recommends that the evaluation of this I-Beam is either parenthesised or named.
+
+| `Y` | Returned Operator | Notes |
 |---|---                |---|
 |632|[Generics Operator](#632-generics-operator)| Requires .NET. |
 
 
 !!! warning
-	The set of supported values for `Y` might change from one release to the next. Saving the resulting operator in a workspace and attempting to run in in a later release might therefore cause a `DOMAIN ERROR`, if support has been withdrawn. It is guaranteed that documented `Y` values will not be repurposed for other operators once they are withdrawn.
+	The set of supported values for `Y` might change, with existing values being withdrawn as well as new ones being added. This means that saving the resulting operator in a workspace and attempting to run it in a later release might result in a `DOMAIN ERROR` if support has been withdrawn. However, Dyalog Ltd will not repurpose documented `Y` values for other operators once they have been withdrawn.
 
-### Example
-The following example demonstrates the calling syntax.
+
+### 632 - Generics Operator
+The generics operator can create concrete versions of generic classes and execute generic methods. For more information, see the *.NET Interface Guide*.
+
+<h3 class="example">Example</h3>
 
 ```apl
       ⎕USING←''
@@ -28,8 +33,3 @@ The following example demonstrates the calling syntax.
       GenOp←43⌶632
       CharList←System.Collections.Generic.List GenOp System.Char
 ```
-
-### 632 - Generics Operator
-The generics operator is used to deal with generic .NET classes and methods. It can create concrete versions of generic classes, and execute generic methods.
-
-For more information, see the .NET interface guide.
