@@ -1,0 +1,13 @@
+name: Convert MkDocs to PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder Step
+        run: |
+          echo "This is a placeholder workflow."
+          echo "It exists to enable workflow_dispatch triggers for PR testing."
