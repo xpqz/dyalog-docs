@@ -18,15 +18,12 @@ jobs:
         BRANCH=$(git rev-parse --abbrev-ref HEAD)
         HASH=$(git rev-parse --short HEAD)
         echo "GIT_INFO=${BRANCH}:${HASH}" >> $GITHUB_OUTPUT
-
-    - name: Get Build Date
-      id: build-date
-      run: echo "BUILD_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
+        python-version: '3.10'
 
     - name: Install system dependencies
       run: |
@@ -44,6 +41,8 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install \
+          mkdocs \
+          mkdocs-material \
           weasyprint \
           beautifulsoup4 \
           markdown \
@@ -64,36 +63,70 @@ jobs:
     - name: Convert MkDocs to PDF
       env:
         GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
-        BUILD_DATE: ${{ steps.build-date.outputs.BUILD_DATE }}
+        BUILD_DATE: ${{ steps.git-info.outputs.DATE }}
       working-directory: ${{ github.workspace }}
       run: |
         # Verify required files and directories exist
         [ -f "pdf/mkdocs2pdf.py" ] || { echo "pdf/mkdocs2pdf.py not found"; exit 1; }
         [ -f "mkdocs.yml" ] || { echo "mkdocs.yml not found in repository root"; exit 1; }
         [ -d "pdf/assets" ] || { echo "pdf/assets directory not found"; exit 1; }
-        chmod +x pdf/mkdocs2pdf.py
-
-        # Check for mandatory config file
         [ -f "pdf/config.json" ] || { echo "Error: pdf/config.json not found"; exit 1; }
-        CONFIG_ARG="--config pdf/config.json"
+        chmod +x pdf/mkdocs2pdf.py
 
         # Run the conversion script
         python pdf/mkdocs2pdf.py \
           --mkdocs-yml mkdocs.yml \
-          $CONFIG_ARG \
+          --config pdf/config.json \
           --project-dir pdf/output \
           --assets-dir pdf/assets
 
-    - name: Upload PDF artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: documentation-pdfs
-        path: pdf/output/*.pdf
-        if-no-files-found: error
+    - name: Install yq
+      run: |
+        sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+        sudo chmod +x /usr/local/bin/yq
 
-    - name: Upload HTML artifacts
-      uses: actions/upload-artifact@v4
-      with:
-        name: documentation-html
-        path: pdf/output/*.htm
-        if-no-files-found: error
+    - name: Get Version Info
+      id: version
+      run: |
+        # Get X.Y from mkdocs.yml
+        VERSION_XY=$(yq '.extra.version_majmin' mkdocs.yml)
+        # Get commit count for Z
+        COMMIT_COUNT=$(git rev-list --count HEAD)
+        # Construct full version
+        echo "VERSION=v${VERSION_XY}.${COMMIT_COUNT}" >> $GITHUB_OUTPUT
+        echo "Constructed version: v${VERSION_XY}.${COMMIT_COUNT}"
+
+    - name: Create Draft Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Function to get next available tag
+        get_available_tag() {
+          local base_tag=$1
+          local tag=$base_tag
+          local suffix=""
+          local letter="a"
+          
+          while gh release view "$tag" &>/dev/null; do
+            echo "Tag $tag exists, trying next suffix..."
+            tag="${base_tag}${letter}"
+            # Increment letter (a -> b -> c etc)
+            letter=$(echo "$letter" | tr "a-y" "b-z")
+          done
+          
+          echo "$tag"
+        }
+        
+        # Create release using version
+        BASE_TAG="${{ steps.version.outputs.VERSION }}"
+        RELEASE_TAG=$(get_available_tag "$BASE_TAG")
+        RELEASE_NAME="Documentation PDFs $RELEASE_TAG"
+        
+        echo "Using release tag: $RELEASE_TAG"
+        
+        # Create a draft release
+        gh release create "$RELEASE_TAG" \
+          --draft \
+          --title "$RELEASE_NAME" \
+          --notes "Documentation PDFs generated from ${{ steps.git-info.outputs.GIT_INFO }}" \
+          pdf/output/*.pdf
