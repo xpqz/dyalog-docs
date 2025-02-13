@@ -7,10 +7,20 @@
 
 
 
-If specified, `X` must be a simple character scalar or vector identifying the name of a namespace.
+If specified, `X` must be an array that identifies one or more namespaces. This means X can be either:
 
+* a simple character scalar or vector identifying the name of a namespace.
+* a nested vector where each item is one of the above.
 
 `Y` is either a character array which represents a list of names of objects to be copied into the namespace, or a ref to a namespace, or  an array produced by the `⎕OR` of a namespace.
+
+The result `R` is shy when the system function is invoked dyadically.
+
+## Nested `X`
+When `X` is nested, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. If `X` is empty, the result `R` is `X`.
+Otherwise, the system function is equivalent to `X ⎕NS¨⊂Y`.
+
+The rest of this document describes `⎕NS` as if the left argument is not specified, or it is not nested.
 
 ## Case 1
 
@@ -80,4 +90,75 @@ Otherwise, the result of the operation depends upon the existence of `X`.
 - If `X` does not currently exist (name class is 0), `X` is created as a complete copy (clone) of the original namespace represented by `Y`. If `Y` is a ref to or the `⎕OR` of a GUI object or of a namespace containing GUI objects, the corresponding GUI components of `Y` will be instantiated in `X`.
 - If `X` is the name of an existing namespace (name class 9), the contents of `Y`, including any GUI components, are merged into `X`. Any items in `X` with corresponding names in `Y` (names with the same path in both `Y` and `X`) will be replaced by the names in `Y`, unless they have a conflicting name class in which case the existing items in `X` will remain unchanged. However, all GUI spaces in `X` will be stripped of their GUI components prior to the merge operation.
 
+`Y` can also be a vector of namespaces, in which case each item of `Y` is processed as explained above, in ravel order. The effect is that all the namespaces are merged into the target namespace.
 
+<h3 class="example">Examples</h3>
+```apl
+      original←⎕NS⍬
+      original.(A B C)←1 2 3
+      cloned←⎕NS original		⍝ cloning a namespace
+      cloned.D←4
+
+      original.⎕NL ¯2
+ A  B  C
+      cloned.⎕NL ¯2
+ A  B  C  D
+```
+
+```apl
+      defaults←(
+        name: '<no name>'
+        age: '<no age>'
+        phone: '<no phone>'
+        email: '<no email>'
+      )
+      jack←(name: 'Jack' ⋄ email: 'jack@example.com')
+      person←(age: 42 ⋄ phone: 12345678)
+      show←⎕JSON⍠'Compact' 0
+
+      show ⎕NS defaults jack		⍝ merge defaults and jack
+{
+  "age": "<no age>",
+  "email": "jack@example.com",
+  "name": "Jack",
+  "phone": "<no phone>"
+}
+      show ⎕NS defaults person	⍝ merge defaults and person
+{
+  "age": 42,
+  "email": "<no email>",
+  "name": "<no name>",
+  "phone": 12345678
+}
+
+```
+## Variant Options
+
+`⎕NS` supports a single variant option `'Trigger'`.
+
+### Trigger
+
+The trigger variant option specifies whether any [triggers](../../programming-reference-guide/triggers/triggers) should be run for the modified variables in the target namespace which have triggers attached.
+The value must be a Boolean scalar.
+
+The default is `0`.
+
+<h4 class="example">Example</h4>
+
+```apl
+      ⎕VR 'trigger'
+     ∇trigger arg
+[1]   :Implements Trigger X,Y
+[2]   ⎕←'Running trigger for: ',arg.Name
+     ∇
+
+      newValues←(Y: 1 ⋄ Z: 2)
+
+      ⍝ ⎕NS without running triggers
+      # ⎕NS newValues
+      # ⎕NS⍠'Trigger' 0⊢newValues
+
+      ⍝ ⎕NS running triggers
+      # ⎕NS⍠'Trigger' 1⊢newValues
+Running trigger for: Y
+```
