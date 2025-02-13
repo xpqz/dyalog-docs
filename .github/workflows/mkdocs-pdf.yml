@@ -6,8 +6,94 @@ on:
 jobs:
   convert-docs:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Placeholder Step
-        run: |
-          echo "This is a placeholder workflow."
-          echo "It exists to enable workflow_dispatch triggers for PR testing."
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Required for git info
+
+    - name: Get Git Info
+      id: git-info
+      run: |
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        HASH=$(git rev-parse --short HEAD)
+        echo "GIT_INFO=${BRANCH}:${HASH}" >> $GITHUB_OUTPUT
+
+    - name: Get Build Date
+      id: build-date
+      run: echo "BUILD_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          libcairo2-dev \
+          libpango1.0-dev \
+          libgdk-pixbuf2.0-dev \
+          libffi-dev \
+          shared-mime-info \
+          fonts-liberation \
+          fonts-dejavu
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install \
+          weasyprint \
+          beautifulsoup4 \
+          markdown \
+          ruamel.yaml \
+          pymdown-extensions \
+          markdown-tables-extended
+
+    - name: Prepare directories
+      run: |
+        # Ensure output directory exists with proper permissions
+        mkdir -p pdf/output
+        chmod 755 pdf/output
+        
+        # List directory structure for debugging
+        echo "Directory structure:"
+        ls -la pdf/
+
+    - name: Convert MkDocs to PDF
+      env:
+        GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
+        BUILD_DATE: ${{ steps.build-date.outputs.BUILD_DATE }}
+      working-directory: ${{ github.workspace }}
+      run: |
+        # Verify required files and directories exist
+        [ -f "pdf/mkdocs2pdf.py" ] || { echo "pdf/mkdocs2pdf.py not found"; exit 1; }
+        [ -f "mkdocs.yml" ] || { echo "mkdocs.yml not found in repository root"; exit 1; }
+        [ -d "pdf/assets" ] || { echo "pdf/assets directory not found"; exit 1; }
+        chmod +x pdf/mkdocs2pdf.py
+
+        # Check for mandatory config file
+        [ -f "pdf/config.json" ] || { echo "Error: pdf/config.json not found"; exit 1; }
+        CONFIG_ARG="--config pdf/config.json"
+
+        # Run the conversion script
+        python pdf/mkdocs2pdf.py \
+          --mkdocs-yml mkdocs.yml \
+          $CONFIG_ARG \
+          --project-dir pdf/output \
+          --assets-dir pdf/assets
+
+    - name: Upload PDF artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: documentation-pdfs
+        path: pdf/output/*.pdf
+        if-no-files-found: error
+
+    - name: Upload HTML artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: documentation-html
+        path: pdf/output/*.htm
+        if-no-files-found: error
