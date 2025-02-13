@@ -1,0 +1,21 @@
+{
+    "documents": [
+        "language-reference-guide",
+        "dotnet-interface",
+        "interface-guide",
+        "object-reference",
+        "programming-reference-guide",
+        "unix-installation-and-configuration-guide",
+        "unix-user-guide",
+        "windows-installation-and-configuration-guide",
+        "windows-ui-guide"
+    ],
+    "settings": {
+        "disable_toc": false,
+        "disable_link_rewriting": false,
+        "disable_syntax_highlighting": false,
+        "disable_section_numbers": false,
+        "screen": false,
+        "html_only": false
+    }
+}
