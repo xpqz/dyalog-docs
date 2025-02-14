@@ -22,6 +22,8 @@ If `Y` contains a branch expression, the branch is effected in the environment f
 
 If specified, `X` must be a namespace reference or a simple character scalar or vector representing the name of a namespace in which the expression is to be executed. If `X` is omitted or is an empty character vector, the expression is executed in the current space.
 
+If the purpose of using execute is simply to get or set the value of a variable whose name is in a character vector, consider using [`⎕VGET`](../system-functions/vget.md) or [`⎕VSET`](../system-functions/vset.md) instead.
+
 <h2 class="example">Examples</h2>
 ```apl
 

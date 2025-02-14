@@ -7,9 +7,10 @@
 
 
 
-If specified, `X` must be an array that identifies one or more namespaces. This means X can be either:
+If specified, `X` must be an array that identifies one or more namespaces. This means `X` can be either:
 
 * a simple character scalar or vector identifying the name of a namespace.
+* a reference to a namespace.
 * a nested vector where each item is one of the above.
 
 `Y` is either a character array which represents a list of names of objects to be copied into the namespace, or a ref to a namespace, or  an array produced by the `⎕OR` of a namespace.
@@ -18,7 +19,7 @@ The result `R` is shy when the system function is invoked dyadically.
 
 ## Nested `X`
 When `X` is nested, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. If `X` is empty, the result `R` is `X`.
-Otherwise, the system function is equivalent to `X ⎕NS¨⊂Y`.
+Otherwise, the system function is equivalent to `R←X ⎕NS¨⊂Y`.
 
 The rest of this document describes `⎕NS` as if the left argument is not specified, or it is not nested.
 
@@ -155,10 +156,10 @@ The default is `0`.
       newValues←(Y: 1 ⋄ Z: 2)
 
       ⍝ ⎕NS without running triggers
-      # ⎕NS newValues
-      # ⎕NS⍠'Trigger' 0⊢newValues
+      ⎕THIS ⎕NS newValues
+      ⎕THIS ⎕NS⍠'Trigger' 0⊢newValues
 
       ⍝ ⎕NS running triggers
-      # ⎕NS⍠'Trigger' 1⊢newValues
+      ⎕THIS ⎕NS⍠'Trigger' 1⊢newValues
 Running trigger for: Y
 ```
