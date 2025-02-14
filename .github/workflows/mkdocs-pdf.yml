@@ -122,8 +122,11 @@ jobs:
         
         # Clean up old draft releases
         echo "Cleaning up old draft releases..."
-        # Get list of draft releases, sorted by creation date (oldest first)
-        DRAFTS=$(gh release list --draft | sort -k2 | awk '{print $1}')
+        # Get list of draft releases, using JSON output filtered by jq
+        DRAFTS=$(gh release list --json tagName,isDraft,createdAt \
+          --jq '.[] | select(.isDraft==true) | [.tagName,.createdAt] | @tsv' \
+          | sort -k2 | awk '{print $1}')
+        
         # Count total drafts
         DRAFT_COUNT=$(echo "$DRAFTS" | grep -c "^" || true)
         
@@ -146,9 +149,9 @@ jobs:
         
         echo "Creating new draft release: $RELEASE_TAG"
         
-        # Create a draft release
+        # Create a draft release with current syntax
         gh release create "$RELEASE_TAG" \
+          pdf/output/*.pdf \
           --draft \
           --title "$RELEASE_NAME" \
-          --notes "Documentation PDFs generated from ${{ steps.git-info.outputs.GIT_INFO }}" \
-          pdf/output/*.pdf
+          --notes "Documentation PDFs generated from ${{ steps.git-info.outputs.GIT_INFO }}"

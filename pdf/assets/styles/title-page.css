@@ -138,11 +138,14 @@
 
 /* Bottom content container */
 .title-page .bottom-content {
-    position: fixed;
-    right: 0mm;
+    position: absolute;
+    /* Back to absolute to keep it on title page only */
+    right: 5mm;
     bottom: 15mm;
     z-index: 1;
     text-align: center;
+    page: title;
+    /* Explicitly bind to title page */
 }
 
 /* Bottom DocDyalog image */
