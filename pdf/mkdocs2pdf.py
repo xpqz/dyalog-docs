@@ -48,6 +48,94 @@ NavItem = Union[str, List['NavItem']]
 NavDict = Dict[str, NavItem]
 NavType = Union[List[NavDict], NavDict]
 
+# def create_title_page(soup, title, subtitle=None, version_majmin=''):
+#     """Create a title page with the specified metadata."""
+#     title_page = soup.new_tag('div', **{'class': 'title-page'})
+    
+#     # Create header container
+#     header_div = soup.new_tag('div', **{'class': 'header-group'})
+    
+#     # Add main title
+#     h1 = soup.new_tag('h1')
+#     h1.string = title
+#     header_div.append(h1)
+    
+#     # Add subtitle if provided
+#     if subtitle:
+#         h2 = soup.new_tag('h2')
+#         h2.string = subtitle
+#         header_div.append(h2)
+    
+#     title_page.append(header_div)
+    
+#     version_div = soup.new_tag('div', **{'class': 'version'})        
+#     version_span = soup.new_tag('span', **{'class': 'version-number'})
+#     version_span.string = str(version_majmin or "")
+    
+#     # Add "Version " text node followed by the span with the number
+#     version_div.append("Dyalog version ")
+#     version_div.append(version_span)
+    
+#     title_page.append(version_div)
+    
+#     return title_page
+
+def create_title_page(soup, title, subtitle=None, version_majmin=''):
+    """Create a title page with the specified metadata."""
+    title_page = soup.new_tag('div', **{'class': 'title-page'})
+    
+    # Create header container
+    header_div = soup.new_tag('div', **{'class': 'header-group'})
+    
+    # Add main title
+    h1 = soup.new_tag('h1')
+    h1.string = title
+    header_div.append(h1)
+    
+    # Add subtitle if provided
+    if subtitle:
+        h2 = soup.new_tag('h2')
+        h2.string = subtitle
+        header_div.append(h2)
+    
+    title_page.append(header_div)
+    
+    # Add background image and stripes
+    bg_image = soup.new_tag('div', **{'class': 'title-background'})
+    top_stripe = soup.new_tag('div', **{'class': 'title-stripe-top'})
+    bottom_stripe = soup.new_tag('div', **{'class': 'title-stripe-bottom'})
+    
+    title_page.append(bg_image)
+    title_page.append(top_stripe)
+    title_page.append(bottom_stripe)
+    
+    # Add version info
+    version_div = soup.new_tag('div', **{'class': 'version'})        
+    version_span = soup.new_tag('span', **{'class': 'version-number'})
+    version_span.string = str(version_majmin or "")
+    
+    # Add "Version " text node followed by the span with the number
+    version_div.append("Dyalog version ")
+    version_div.append(version_span)
+    
+    title_page.append(version_div)
+    
+    # Create container for bottom image and tagline
+    bottom_container = soup.new_tag('div', **{'class': 'bottom-content'})
+    
+    # Add bottom DocDyalog image
+    doc_image = soup.new_tag('img', src="../assets/img/DocDyalog.png", **{'class': 'doc-dyalog'})
+    bottom_container.append(doc_image)
+    
+    # Add tagline
+    tagline = soup.new_tag('div', **{'class': 'tagline'})
+    tagline.string = "The tool of thought for software solutions"
+    bottom_container.append(tagline)
+    
+    title_page.append(bottom_container)
+    
+    return title_page
+
 def get_git_info(repo_path=None):
     """Get git info from environment variable or git commands."""
     # First try environment variable
@@ -703,10 +791,20 @@ def process_document(document_path):
     if document_path.endswith('/'):
         document_path = document_path[:-1]
 
+    # Get document metadata if using config file
+    doc_metadata = None
+    if args.config:
+        with open(args.config, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+            if isinstance(config.get('documents'), dict):
+                doc_metadata = config['documents'].get(document_path)
+
     # If there is a print-specific yml file, use that. Otherwise, use the normal mkdocs.yml file.
-    doc_mkdocs_file = str(os.path.join(os.path.abspath(os.path.dirname(args.mkdocs_yml)), document_path, 'print_mkdocs.yml'))
+    doc_mkdocs_file = str(os.path.join(os.path.abspath(os.path.dirname(args.mkdocs_yml)), 
+                                      document_path, 'print_mkdocs.yml'))
     if not os.path.isfile(doc_mkdocs_file):
-        doc_mkdocs_file = str(os.path.join(os.path.abspath(os.path.dirname(args.mkdocs_yml)), document_path, 'mkdocs.yml'))
+        doc_mkdocs_file = str(os.path.join(os.path.abspath(os.path.dirname(args.mkdocs_yml)), 
+                                          document_path, 'mkdocs.yml'))
         if not os.path.isfile(doc_mkdocs_file):
             sys.exit(f'--> document mkdocs.yml file "{doc_mkdocs_file}" not found.')
 
@@ -740,9 +838,28 @@ def process_document(document_path):
     # Global transforms on the unified HTML-file.
     soup = BeautifulSoup(html_content, 'html.parser')
 
+    # Add the title page if metadata is available
+    if doc_metadata:
+        version_majmin = top_mkdocs_data["extra"].get("version_majmin", "")
+        title_page = create_title_page(
+            soup,
+            doc_metadata.get('title'),
+            doc_metadata.get('subtitle'),
+            version_majmin
+        )
+        # print("Generated title page HTML:")
+        # print(title_page.prettify()) 
+
+        # Insert title page at the start of the body
+        soup.body.insert(0, title_page)
+
     table_refs = caption_tables(soup)
     normalise_links(soup, documents, table_refs, section_map, rewrite_links=args.link_rewrite)
     toc_friendly_headings(soup)
+
+    # Insert link to title page CSS
+    css_link = soup.new_tag('link', rel='stylesheet', href='assets/styles/title-page.css')
+    soup.head.append(css_link)
 
     html_content = str(soup)
 
@@ -750,10 +867,11 @@ def process_document(document_path):
         f.write(html_content)
 
     if not args.html_only:
-        # Run weasyprint
-        output = Popen(['weasyprint', f'{document_path}.htm', f'{document_path}.pdf'], cwd=args.project_dir)
+        # Run weasyprint with the configured filename or fallback to the default
+        output_filename = doc_metadata.get('filename', f'{document_path}.pdf') if doc_metadata else f'{document_path}.pdf'
+        output = Popen(['weasyprint', f'{document_path}.htm', output_filename], 
+                      cwd=args.project_dir)
         output.wait()
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate PDF-files from mkdocs sites')
@@ -808,9 +926,12 @@ if __name__ == "__main__":
         # Override CLI arguments with config settings if present
         if 'settings' in config:
             args.toc = not config['settings'].get('disable_toc', not args.toc)
-            args.link_rewrite = not config['settings'].get('disable_link_rewriting', not args.link_rewrite)
-            args.syntax_hilite = not config['settings'].get('disable_syntax_highlighting', not args.syntax_hilite)
-            args.enumerate_sections = not config['settings'].get('disable_section_numbers', not args.enumerate_sections)
+            args.link_rewrite = not config['settings'].get('disable_link_rewriting', 
+                                                         not args.link_rewrite)
+            args.syntax_hilite = not config['settings'].get('disable_syntax_highlighting', 
+                                                          not args.syntax_hilite)
+            args.enumerate_sections = not config['settings'].get('disable_section_numbers', 
+                                                               not args.enumerate_sections)
             args.screen = config['settings'].get('screen', args.screen)
             args.html_only = config['settings'].get('html_only', args.html_only)
 
@@ -837,8 +958,8 @@ if __name__ == "__main__":
 
     # Process documents
     if args.config:
-        if 'documents' not in config:
-            sys.exit('--> config file must contain a "documents" list')
+        if not isinstance(config.get('documents'), dict):
+            sys.exit('--> config file must contain a "documents" dictionary')
         for doc in config['documents']:
             print(f'=== building: {doc} ===')
             process_document(doc)
