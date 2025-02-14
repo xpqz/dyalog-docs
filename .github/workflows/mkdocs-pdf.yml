@@ -23,7 +23,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
     - name: Install system dependencies
       run: |
@@ -96,10 +96,13 @@ jobs:
         echo "VERSION=v${VERSION_XY}.${COMMIT_COUNT}" >> $GITHUB_OUTPUT
         echo "Constructed version: v${VERSION_XY}.${COMMIT_COUNT}"
 
-    - name: Create Draft Release
+    - name: Manage Draft Releases
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
+        # Configuration
+        MAX_DRAFTS=5  # Keep this many most recent drafts
+        
         # Function to get next available tag
         get_available_tag() {
           local base_tag=$1
@@ -117,12 +120,31 @@ jobs:
           echo "$tag"
         }
         
+        # Clean up old draft releases
+        echo "Cleaning up old draft releases..."
+        # Get list of draft releases, sorted by creation date (oldest first)
+        DRAFTS=$(gh release list --draft | sort -k2 | awk '{print $1}')
+        # Count total drafts
+        DRAFT_COUNT=$(echo "$DRAFTS" | grep -c "^" || true)
+        
+        if [ $DRAFT_COUNT -gt $MAX_DRAFTS ]; then
+          # Calculate how many to delete
+          TO_DELETE=$((DRAFT_COUNT - MAX_DRAFTS + 1))  # +1 because we're about to create a new one
+          echo "Found $DRAFT_COUNT drafts, deleting $TO_DELETE oldest..."
+          
+          # Delete oldest drafts
+          echo "$DRAFTS" | head -n $TO_DELETE | while read -r tag; do
+            echo "Deleting draft release $tag..."
+            gh release delete "$tag" --yes
+          done
+        fi
+        
         # Create release using version
         BASE_TAG="${{ steps.version.outputs.VERSION }}"
         RELEASE_TAG=$(get_available_tag "$BASE_TAG")
         RELEASE_NAME="Documentation PDFs $RELEASE_TAG"
         
-        echo "Using release tag: $RELEASE_TAG"
+        echo "Creating new draft release: $RELEASE_TAG"
         
         # Create a draft release
         gh release create "$RELEASE_TAG" \
