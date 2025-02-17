@@ -9,7 +9,7 @@ The system function is cross-platform, but the command specification is inherent
 
 ### Using the System's Shell
 When `Y` is a character vector, the contents are executed using the system's shell.
-The shell being used can be changed using the [`Shell`](#Shell) variant. The defaults are:
+The shell being used can be changed using the [`Shell`](#shell) variant. The defaults are:
 
 - Microsoft Windows: `PowerShell`
 - Linux, macOS, AIX: `/bin/sh`
