@@ -48,38 +48,6 @@ NavItem = Union[str, List['NavItem']]
 NavDict = Dict[str, NavItem]
 NavType = Union[List[NavDict], NavDict]
 
-# def create_title_page(soup, title, subtitle=None, version_majmin=''):
-#     """Create a title page with the specified metadata."""
-#     title_page = soup.new_tag('div', **{'class': 'title-page'})
-    
-#     # Create header container
-#     header_div = soup.new_tag('div', **{'class': 'header-group'})
-    
-#     # Add main title
-#     h1 = soup.new_tag('h1')
-#     h1.string = title
-#     header_div.append(h1)
-    
-#     # Add subtitle if provided
-#     if subtitle:
-#         h2 = soup.new_tag('h2')
-#         h2.string = subtitle
-#         header_div.append(h2)
-    
-#     title_page.append(header_div)
-    
-#     version_div = soup.new_tag('div', **{'class': 'version'})        
-#     version_span = soup.new_tag('span', **{'class': 'version-number'})
-#     version_span.string = str(version_majmin or "")
-    
-#     # Add "Version " text node followed by the span with the number
-#     version_div.append("Dyalog version ")
-#     version_div.append(version_span)
-    
-#     title_page.append(version_div)
-    
-#     return title_page
-
 def create_title_page(soup, title, subtitle=None, version_majmin=''):
     """Create a title page with the specified metadata."""
     title_page = soup.new_tag('div', **{'class': 'title-page'})
@@ -135,6 +103,30 @@ def create_title_page(soup, title, subtitle=None, version_majmin=''):
     title_page.append(bottom_container)
     
     return title_page
+
+def format_copyright(name, version, revision):
+    # Get the current directory of the script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    template_path = os.path.join(current_dir, 'assets', 'templates', 'copyright.md')
+    
+    # Read the template file
+    try:
+        with open(template_path, 'r', encoding='utf-8') as file:
+            template = file.read()
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Copyright template not found at {template_path}")
+    
+    # Replace the placeholders
+    content = template.replace('{NAME}', str(name))
+    content = content.replace('{VERSION}', str(version))
+    content = content.replace('{REVISION}', str(revision))
+    
+    # Convert markdown to HTML
+    # Use extra=True to enable line breaks with <br>
+    # Use extensions=['extra'] to enable additional markdown features
+    html = markdown.markdown(content, extensions=['extra'])
+    
+    return html
 
 def get_git_info(repo_path=None):
     """Get git info from environment variable or git commands."""
@@ -664,8 +656,15 @@ def normalise_links(soup: BeautifulSoup, documents: Dict[str, str], table_refs: 
         return text.replace('-', ' ').title()
 
     # Find all articles and their ids
+    # articles = soup.find_all('article')
+    # article_ids = {article['id'] for article in articles}
+
+    # Find all articles and their ids, excluding the copyright page
     articles = soup.find_all('article')
-    article_ids = {article['id'] for article in articles}
+    article_ids = {
+        article['id'] for article in articles 
+        if not article.get('class') or 'copyright-page' not in article.get('class')
+    }
 
     # Process all <a> tags
     for a_tag in soup.find_all('a', href=True):
@@ -847,11 +846,22 @@ def process_document(document_path):
             doc_metadata.get('subtitle'),
             version_majmin
         )
-        # print("Generated title page HTML:")
-        # print(title_page.prettify()) 
 
         # Insert title page at the start of the body
         soup.body.insert(0, title_page)
+
+        # Add copyright page
+        copyright_html = format_copyright(f"{doc_metadata.get('title')} {doc_metadata.get('subtitle', '')}", top_mkdocs_data["extra"].get("version_majmin", ""), f"{build_date} {git_info}")
+        copyright_soup = BeautifulSoup(copyright_html, 'html.parser')
+
+        # Create a section for the copyright page
+        copyright_section = soup.new_tag('section', **{'class': 'copyright-section'})
+        copyright_article = soup.new_tag('article', **{'class': 'copyright-page'})
+        copyright_article.append(copyright_soup)
+        copyright_section.append(copyright_article)
+
+        # Insert copyright section after the title page
+        title_page.insert_after(copyright_section)
 
     table_refs = caption_tables(soup)
     normalise_links(soup, documents, table_refs, section_map, rewrite_links=args.link_rewrite)

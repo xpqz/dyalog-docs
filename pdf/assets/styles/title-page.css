@@ -165,3 +165,69 @@
     margin: 0;
     padding: 0;
 }
+
+/* Copyright page styling */
+@page copyright {
+    size: 192mm 252mm;
+    margin: 25mm;
+
+    @top-left {
+        content: none;
+    }
+
+    @top-center {
+        content: none;
+    }
+
+    @top-right {
+        content: none;
+    }
+
+    @bottom-left {
+        content: none;
+    }
+
+    @bottom-center {
+        content: none;
+    }
+
+    @bottom-right {
+        content: none;
+    }
+
+    /* Override running headers/footers explicitly */
+    @bottom-right {
+        content: '' !important;
+    }
+
+    /* Override page numbers */
+    @bottom-left {
+        content: '' !important;
+    }
+
+    /* Override build info */
+    @top-right {
+        content: '' !important;
+    }
+
+    /* Override running title */
+}
+
+.copyright-section {
+    page: copyright;
+    width: 100%;
+    page-break-after: avoid;
+    /* Override the default section break behavior */
+}
+
+.copyright-page {
+    font-size: 11pt;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.copyright-page p {
+    width: 100%;
+    margin: 1em 0;
+    white-space: normal;
+}
