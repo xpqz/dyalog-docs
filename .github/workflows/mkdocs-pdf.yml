@@ -2,6 +2,15 @@ name: Convert MkDocs to PDF and CHM
 
 on:
   workflow_dispatch:
+    inputs:
+      generate_pdf:
+        description: 'Generate PDF documentation'
+        type: boolean
+        default: true
+      generate_chm:
+        description: 'Generate CHM help file'
+        type: boolean
+        default: true
 
 jobs:
   convert-docs:
@@ -68,6 +77,7 @@ jobs:
         ls -la chm/
 
     - name: Convert MkDocs to PDF
+      if: ${{ inputs.generate_pdf }}
       env:
         GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
         BUILD_DATE: ${{ steps.git-info.outputs.DATE }}
@@ -88,6 +98,7 @@ jobs:
           --assets-dir pdf/assets
 
     - name: Convert MkDocs to CHM
+      if: ${{ inputs.generate_chm }}
       working-directory: ${{ github.workspace }}
       run: |
         # Verify required files and directories exist
@@ -169,14 +180,27 @@ jobs:
         # Create release using version
         BASE_TAG="${{ steps.version.outputs.VERSION }}"
         RELEASE_TAG=$(get_available_tag "$BASE_TAG")
-        RELEASE_NAME="Documentation PDFs and CHM $RELEASE_TAG"
+        
+        # Set release name and assets based on what was generated
+        if ${{ inputs.generate_pdf && inputs.generate_chm }}; then
+          RELEASE_NAME="Documentation PDFs and CHM $RELEASE_TAG"
+          ASSETS="pdf/output/*.pdf chm/output/*.chm"
+          NOTES="Documentation PDFs and CHM help file generated from ${{ steps.git-info.outputs.GIT_INFO }}"
+        elif ${{ inputs.generate_pdf }}; then
+          RELEASE_NAME="Documentation PDFs $RELEASE_TAG"
+          ASSETS="pdf/output/*.pdf"
+          NOTES="Documentation PDFs generated from ${{ steps.git-info.outputs.GIT_INFO }}"
+        else
+          RELEASE_NAME="Documentation CHM $RELEASE_TAG"
+          ASSETS="chm/output/*.chm"
+          NOTES="Documentation CHM help file generated from ${{ steps.git-info.outputs.GIT_INFO }}"
+        fi
         
         echo "Creating new draft release: $RELEASE_TAG"
         
         # Create a draft release with current syntax
         gh release create "$RELEASE_TAG" \
-          pdf/output/*.pdf \
-          chm/output/*.chm \
+          $ASSETS \
           --draft \
           --title "$RELEASE_NAME" \
-          --notes "Documentation PDFs and CHM help file generated from ${{ steps.git-info.outputs.GIT_INFO }}"
+          --notes "$NOTES"
