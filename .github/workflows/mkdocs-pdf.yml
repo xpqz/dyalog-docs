@@ -92,6 +92,7 @@ jobs:
       run: |
         # Verify required files and directories exist
         [ -f "chm/mkdocs2chm.py" ] || { echo "chm/mkdocs2chm.py not found"; exit 1; }
+        [ -f "chm/config.json" ] || { echo "chm/config,json not found"; exit 1; }
         [ -f "mkdocs.yml" ] || { echo "mkdocs.yml not found in repository root"; exit 1; }
         [ -d "chm/assets" ] || { echo "chm/assets directory not found"; exit 1; }
         chmod +x chm/mkdocs2chm.py
@@ -101,7 +102,7 @@ jobs:
           --mkdocs-yml mkdocs.yml \
           --project-dir chm/output \  
           --assets-dir chm/assets \
-          --exclude "UNIX Installation,UNIX User Guide"
+          --config chm/config.json
 
     - name: Install yq
       run: |
