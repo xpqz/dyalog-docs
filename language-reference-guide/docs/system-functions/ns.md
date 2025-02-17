@@ -11,7 +11,7 @@ If specified, `X` must be an array that identifies one or more namespaces. This 
 
 * a simple character scalar or vector identifying the name of a namespace.
 * a reference to a namespace.
-* a nested vector where each item is one of the above.
+* an array where each item is one of the above.
 
 `Y` is either a character array which represents a list of names of objects to be copied into the namespace, or a ref to a namespace, or  an array produced by the `⎕OR` of a namespace.
 
