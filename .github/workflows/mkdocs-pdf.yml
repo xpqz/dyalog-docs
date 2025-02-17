@@ -92,7 +92,7 @@ jobs:
       run: |
         # Verify required files and directories exist
         [ -f "chm/mkdocs2chm.py" ] || { echo "chm/mkdocs2chm.py not found"; exit 1; }
-        [ -f "chm/config.json" ] || { echo "chm/config,json not found"; exit 1; }
+        [ -f "chm/config.json" ] || { echo "chm/config.json not found"; exit 1; }
         [ -f "mkdocs.yml" ] || { echo "mkdocs.yml not found in repository root"; exit 1; }
         [ -d "chm/assets" ] || { echo "chm/assets directory not found"; exit 1; }
         chmod +x chm/mkdocs2chm.py
@@ -100,7 +100,7 @@ jobs:
         # Run the conversion script
         python chm/mkdocs2chm.py \
           --mkdocs-yml mkdocs.yml \
-          --project-dir chm/output \  
+          --project-dir chm/output \
           --assets-dir chm/assets \
           --config chm/config.json
 
