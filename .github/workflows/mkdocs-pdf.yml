@@ -101,7 +101,7 @@ jobs:
           --mkdocs-yml mkdocs.yml \
           --project-dir chm/output \  
           --assets-dir chm/assets \
-          --exclude "UNIX Installation" "UNIX User Guide"
+          --exclude "UNIX Installation,UNIX User Guide"
 
     - name: Install yq
       run: |

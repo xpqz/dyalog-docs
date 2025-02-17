@@ -601,7 +601,7 @@ if __name__ == "__main__":
     parser.add_argument('--mkdocs-yml', type=str, required=True, help='Path to the mkdocs.yml file')
     parser.add_argument('--project-dir', type=str, required=True, help='Name of output directory')
     parser.add_argument('--assets-dir', type=str, default='assets', help='Name of assets directory')
-    parser.add_argument('--exclude', nargs='+', help='Names of documents to exclude')
+    parser.add_argument('--exclude', type=str, help='Comma-separated list of documents to exclude')
 
     args = parser.parse_args()
 
@@ -618,9 +618,10 @@ if __name__ == "__main__":
 
     # Parse the nav section. If this is a monorepo (in 99% of the cases it will be),
     # macro-expand any !include directives
-    yml_data = parse_mkdocs_yml(args.mkdocs_yml, remove=args.exclude)
-    includes = find_toplevel_dirs(args.mkdocs_yml, remove=args.exclude)
-
+    excludes = [x.strip() for x in args.exclude.split(',')] if args.exclude else []
+    yml_data = parse_mkdocs_yml(args.mkdocs_yml, remove=excludes)
+    includes = find_toplevel_dirs(args.mkdocs_yml, remove=excludes)
+    
     version = yml_data["extra"].get("version_majmin")
     if not version:
         sys.exit(f'--> source mkdocs.yml has no Dyalog version set')
