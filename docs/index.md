@@ -50,6 +50,24 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
     
     [UNIX User Guide](./unix-user-guide/overview/)
 
+    [Raspberry Pi User Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Raspberry%20Pi%20User%20Guide.pdf)
+
+
+</div>
+
+<div class="grid cards" markdown>
+
+- ![Other Documentation](img/icon-orange_reference-guide.svg){ .lg .middle } __Other Core Documentation__
+
+    ---
+    
+    [Comparison of .NET/.NET Framework Interfaces](https://docs.dyalog.com/latest/dotNET%20Differences.pdf)
+
+    [Compiler User Guide](https://docs.dyalog.com/latest/Compiler%20User%20Guide.pdf)
+
+    [Parallel Language Features](https://docs.dyalog.com/latest/Parallel%20Language%20Features.pdf)
+
+    [Shared Code Files User Guide](https://docs.dyalog.com/latest/Shared%20Code%20Files%20User%20Guide.pdf)
 
 </div>
 
@@ -98,20 +116,20 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 
     Summaries of some of the terminology, syntax and conventions used in Dyalog.
 
-    [Nomenclature: Functions and Operators](https://docs.dyalog.com/latest/CheatSheet%20-%20Nomenclature%20-%20Functions%20and%20Operators.pdf)
+    [Nomenclature](https://docs.dyalog.com/latest/CheatSheet%20-%20Nomenclature%20-%20Functions%20and%20Operators.pdf): code points and names of primitive glyphs.
 
-    [Component Files](https://docs.dyalog.com/latest/CheatSheet%20-%20Component%20Files.pdf)
+    [Component Files](https://docs.dyalog.com/latest/CheatSheet%20-%20Component%20Files.pdf): system function syntaxes with summaries, including access control and file properties.
 
-    [Native Files](https://docs.dyalog.com/latest/CheatSheet%20-%20Native%20Files.pdf)
+    [Native Files](https://docs.dyalog.com/latest/CheatSheet%20-%20Native%20Files.pdf): system function syntaxes with summaries, access and conversion codes, and more.
 
-    [Idioms](https://docs.dyalog.com/latest/CheatSheet%20-%20Idioms.pdf)
+    [Idioms](https://docs.dyalog.com/latest/CheatSheet%20-%20Idioms.pdf): list of optimised phrases ([online version](https://help.dyalog.com/19.0/#Language/Introduction/Idiom%20Recognition/Idiom%20List.htm))
 
-    [I-Beams](https://docs.dyalog.com/latest/CheatSheet%20-%20I-Beams.pdf)
+    [I-Beams](https://docs.dyalog.com/latest/CheatSheet%20-%20I-Beams.pdf): list of experimental system services ([online version](https://help.dyalog.com/19.0/#Language/Primitive%20Operators/I%20Beam.htm))
 
-    [Nameclasses and Subclasses (⎕NC)](https://docs.dyalog.com/latest/CheatSheet%20-%20Nameclasses%20and%20Subclasses.pdf)
+    [Nameclasses](https://docs.dyalog.com/latest/CheatSheet%20-%20Nameclasses%20and%20Subclasses.pdf): list of codes used by `⎕NC`, `⎕NL`, `⎕ATX`, `⎕VGET`, `]Names` and more
 
-    [Binding Strengths](https://docs.dyalog.com/latest/CheatSheet%20-%20Binding%20Strengths.pdf)
+    [Binding Strengths](https://docs.dyalog.com/latest/CheatSheet%20-%20Binding%20Strengths.pdf): a table to aid in parsing.
 
-    [SALT Functions: Syntax](https://docs.dyalog.com/latest/CheatSheet%20-%20SALT%20Functions%20-%20Syntax.pdf)
+    [SALT Functions: Syntax](https://docs.dyalog.com/latest/CheatSheet%20-%20SALT%20Functions%20-%20Syntax.pdf): SALT API function syntaxes.
 
 </div>
