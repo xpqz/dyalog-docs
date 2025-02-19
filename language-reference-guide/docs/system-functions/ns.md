@@ -7,7 +7,7 @@
 
 
 
-If specified, `X` must be an array that identifies one or more namespaces. This means `X` can be either:
+If specified, `X` must be an array that identifies one or more namespaces. This means `X` must be one of:
 
 * a simple character scalar or vector identifying the name of a namespace.
 * a reference to a namespace.
@@ -17,11 +17,11 @@ If specified, `X` must be an array that identifies one or more namespaces. This 
 
 The result `R` is shy when the system function is invoked dyadically.
 
-## Nested `X`
-When `X` is nested, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. If `X` is empty, the result `R` is `X`.
+## Multiple namespace `X`
+When `X` refers to multiple namespaces, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. If `X` is empty, the result `R` is `X`.
 Otherwise, the system function is equivalent to `R←X ⎕NS¨⊂Y`.
 
-The rest of this document describes `⎕NS` as if the left argument is not specified, or it is not nested.
+The rest of this document describes `⎕NS` as if the left argument is not specified, or contains a single namespace name or reference.
 
 ## Case 1
 
@@ -91,7 +91,7 @@ Otherwise, the result of the operation depends upon the existence of `X`.
 - If `X` does not currently exist (name class is 0), `X` is created as a complete copy (clone) of the original namespace represented by `Y`. If `Y` is a ref to or the `⎕OR` of a GUI object or of a namespace containing GUI objects, the corresponding GUI components of `Y` will be instantiated in `X`.
 - If `X` is the name of an existing namespace (name class 9), the contents of `Y`, including any GUI components, are merged into `X`. Any items in `X` with corresponding names in `Y` (names with the same path in both `Y` and `X`) will be replaced by the names in `Y`, unless they have a conflicting name class in which case the existing items in `X` will remain unchanged. However, all GUI spaces in `X` will be stripped of their GUI components prior to the merge operation.
 
-`Y` can also be a vector of namespaces, in which case each item of `Y` is processed as explained above, in ravel order. The effect is that all the namespaces are merged into the target namespace.
+`Y` can also be a vector of namespaces, in which case each item of `Y` is processed as explained above, in ravel order. The effect is that the contents of all the namespaces are merged into the target namespace.
 
 <h3 class="example">Examples</h3>
 ```apl

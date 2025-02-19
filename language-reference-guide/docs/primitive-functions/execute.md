@@ -5,7 +5,10 @@
 
 <h1 class="heading"><span class="name">Execute</span> <span class="command">R←{X}⍎Y</span></h1>
 
-
+!!! Warning
+	If there is any way the user input can make its way into execute's argument, then the code might put data and systems at risk.
+	If the purpose of using execute is simply to get or set the value of a variable whose name is in a character vector, consider using [`⎕VGET`](../system-functions/vget.md) or [`⎕VSET`](../system-functions/vset.md) instead.
+	If the purpose of using execute is making numbers in text form into actual numbers, consider using [`⎕VFI`](../system-functions/vfi.md), [`⎕JSON`](../system-functions/json.md), or [`⎕CSV`](../system-functions/csv.md).
 
 `Y` must be a simple character scalar or vector containing an APL expression to be executed. The expression may contain one or more sub-expressions separated by `⋄` (Diamond) characters.
 
@@ -22,7 +25,6 @@ If `Y` contains a branch expression, the branch is effected in the environment f
 
 If specified, `X` must be a namespace reference or a simple character scalar or vector representing the name of a namespace in which the expression is to be executed. If `X` is omitted or is an empty character vector, the expression is executed in the current space.
 
-If the purpose of using execute is simply to get or set the value of a variable whose name is in a character vector, consider using [`⎕VGET`](../system-functions/vget.md) or [`⎕VSET`](../system-functions/vset.md) instead.
 
 <h2 class="example">Examples</h2>
 ```apl

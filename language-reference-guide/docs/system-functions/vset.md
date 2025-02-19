@@ -1,11 +1,11 @@
 <h1 class="heading"><span class="name">Value Set</span> <span class="command">{R}←{X}⎕VSET Y</span></h1>
 
-`⎕VSET` is a system function that allows setting the values of variables in a target namespace or target namespaces.
+`⎕VSET` is a system function that allows setting the values of names in a target namespace or target namespaces.
 
-`Y` is a specification of the variable names, and their values. Several formats are allowed. In all cases, the names are character arrays, and the values are arrays or references to namespaces. The possible formats for `Y` are listed below.
+`Y` is a specification of the names, and their values, and must be either:
 
-* A nested vector or scalar, where each element is a name-value pair. The name must be a simple character scalar or vector.
-* A two-element nested array, where the first element is a matrix of names, and the second element is a vector or scalar of value(s). If multiple names are specified, and the value is a scalar, the same value is used for all names.
+* a nested vector or scalar, where each element is a name-value pair. The name must be a simple character scalar or vector.
+* a two-element nested array, where the first element is a matrix of names, and the second element is a vector or scalar of value(s). If multiple names are specified, and the value is a scalar, the same value is used for all names.
 
 All names must have nameclass 0, 2, 8 or 9 in the target namespace(s).
 
@@ -26,8 +26,8 @@ Name value pairs:
       name2
 1 2  hello
 
-      (ns1 ns2 ns3)←⎕NS¨⍬⍬⍬
-      ns1 'ns2' ns3⎕VSET ('X' 'X value') ('Y' 'Y value')
+      (ns1 ns2 ns3)←()()()
+      ns1 'ns2' ns3 ⎕VSET ('X' 'X value') ('Y' 'Y value')
       (ns1 ns2 ns3).(X Y)
   X value  Y value    X value  Y value    X value  Y value
 ```

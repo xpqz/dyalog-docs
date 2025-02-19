@@ -1,8 +1,8 @@
 <h1 class="heading"><span class="name">Value Get</span> <span class="command">R←{X}⎕VGET Y</span></h1>
 
-`⎕VGET` is a system function that allows reading the values of variables in a source namespace or source namespaces, optionally with a fallback value for the cases where the variable requested is undefined.
+`⎕VGET` is a system function that allows reading the values of names in a source namespace or source namespaces, optionally with a fallback value for the cases where the name requested is undefined.
 
-`Y` is either a specification of variable names, variable names with fallback values, or nameclasses. Each of those three cases are described in the sections below. In all cases, the values requested must have nameclass 0, 1, 2, 8 or 9 in the source namespace.
+`Y` is either a specification of names in a name matrix, a vector of names, or nameclasses. In the first two cases, `Y` can contain fallback values as well, which is used when the name has nameclass 0, instead of producing a `VALUE ERROR`. Each of the three cases are described in the sections below. In all cases, the values requested must have nameclass 0, 1, 2, 8 or 9 in the source namespace.
 
 If `X` is specified, it must be an array that references one or more source namespaces. The possible values are the same as those allowed for [`⎕NS`](ns.md). The namespace(s) referenced must already exist, or a `VALUE ERROR` is produced. If `X` is not specified, the source namespace is the current namespace.
 
@@ -10,56 +10,29 @@ The result `R` depends on the format of `Y`.
 
 See also [`⎕VSET`](vset.md).
 
-## Nested `X`
+## Multiple namespace `X`
 
-When `X` is nested, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. That means that when `X` is nested, the system function is equivalent to `R←X ⎕VGET¨⊂Y`.
+When `X` refers to multiple namespaces, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. In this case, the system function is equivalent to `R←X ⎕VGET¨⊂Y`.
 
-The rest of this document describes `⎕VGET` using a single source namespace, as if the left argument is not specified, or it is not nested.
+The rest of this document describes `⎕VGET` using a single source namespace, as if the left argument is not specified, or contains a single namespace name or reference.
 
-## Case 1: Values without Fallback
+## Case 1: Name matrix
 
 In the first case, `Y` must be either:
 
-* a simple character vector or scalar, representing a single variable name. `R` is the value of the variable with that name.
-* a nested vector or scalar, where each item is one of the above. `R` is a nested array with the same shape as `Y`, where each item is the value of the variable with the corresponding name.
-* a character matrix, where each row represents a variable name. `R` is a vector of the values of the variables with the corresponding names from the matrix, one item for each row of the name matrix.
+* a character matrix, where each row is a name.
+* a two element vector, where the first item is a character matrix of names, and the second item is a specification of fallback values.
+
+The fallback values must either be a vector with as many elements as there are names in the matrix, or it must be a scalar value which is used as the fallback value for all names.
+
+The result `R` is a vector of the values from the corresponding names or fallback values.
 
 <h3 class="example">Examples</h3>
-Single name:
+
+Names without fallback:
 
 ```apl
-      (ns1 ns2)←⎕NS¨⍬⍬
-      (ns1 ns2).name1←'ABC' 'DEF'
-
-      ns1 ⎕VGET 'name1'
-ABC
-      ns1 'ns2' ⎕VGET 'name1'
- ABC  DEF
-```
-
-Single name enclosed:
-
-```apl
-      name1←'APL'
-      ⎕VGET ⊂'name1'
- APL
-      ≢⍴⎕VGET ⊂'name1'
-0
-```
-
-Multiple names as a vector:
-
-```apl
-      (name1 name2 name3)←(1 2 3) (⎕NS⍬) 'APL'
-
-      ⎕VGET 'name1' 'name2' 'name3'
- 1 2 3  #.[Namespace]  APL
-```
-
-Multiple names as a matrix:
-
-```apl
-      (name1 name2 name3 longer_name)←(1 2 3) (⎕NS⍬) 'APL' 42
+      (name1 name2 name3 longer_name)←(1 2 3) () 'APL' 42
       names←↑'name1' 'name2' 'name3' 'longer_name'
       names
 name1
@@ -70,42 +43,10 @@ longer_name
  1 2 3  #.[Namespace]  APL  42
 ```
 
-## Case 2: Values with Fallback
+Names with different fallback for each name:
 
-In the second case, `Y` must be either:
-
-* a vector or scalar of name-value pairs. The values are the default values for the corresponding names.
-* a vector of a combination of names and name-value pairs. Only the names with a corresponding value will have a default value associated with them.
-* a two element vector, where the first item is a character matrix of names, and the second item is either a vector or scalar of default value(s). In the scalar case, all names have the same default value, and otherwise each item of the vector is a default value for the name in the matrix where the row is equal to the vector index.
-
-The name lookup and result `R` structure is the same as in [case 1](#case-1-values-without-fallback), but when a name refers to a variable with nameclass 0, the default value is used instead of producing a `VALUE ERROR`.
-
-<h3 class="example">Examples</h3>
-
-Single name with fallback:
-```apl
-      ns←⎕NS⍬
-      ns ⎕VGET ⊂'name1' 'default'
-default
-```
-
-Multiple names with fallback for some:
-
-```apl
-      (name1 name2)←'APL' 123
-      ⎕vget ('name1' 1) 'name2' ('name3' 3)
- APL  123 3
-      ⎕EX'name1'
-      ⎕vget ('name1' 1) 'name2' ('name3' 3)
-1 123 3
-```
-
-Multiple names with different fallback for each of them:
 ```apl
       name2←100
-      ⎕VGET ('name1' 1) ('name2' 2) ('name3' 3)
-1 100 3
-
       names←↑'name1' 'name2' 'name3'
       names
 name1
@@ -116,7 +57,7 @@ name3
 1 100 3
 ```
 
-Multiple names with the same fallback for all of them:
+Names with the same fallback for all of them:
 
 ```apl
       persons←(
@@ -140,17 +81,80 @@ phone
  <no data>  <no data>  susan@example.com   12345678
 ```
 
-## Case 3: Names with Values
+## Case 2: Vector of names
+
+In the second case, names are specified as character vectors or scalars. `Y` must be either:
+
+* a single name. In this case, the result `R` is the value of that name in the source namespace.
+* a single enclosed name. In this case, the result `R` is also the value of the name, but enclosed.
+* a single enclosed name-value pair, which is a two-element vector consisting of a name an a fallback value for that name. In this case, the result `R` is the value of the name, or the fallback value in case the name has nameclass 0.
+* a nested vector where each item is either a name, or a name value pair. In this case, the result `R` is a vector with the same length as `Y`, with the values from the corresponding names, or fallback values.
+
+<h3 class="example">Examples</h3>
+
+Single name:
+```apl
+      (ns1 ns2)←()()
+      (ns1 ns2).name1←'ABC' 'DEF'
+
+      ns1 ⎕VGET 'name1'
+ABC
+      ns1 'ns2' ⎕VGET 'name1'
+ ABC  DEF
+```
+
+Single name enclosed:
+```apl
+      name1←'APL'
+      ⎕VGET ⊂'name1'
+ APL
+      ≢⍴⎕VGET ⊂'name1'
+0
+```
+
+Multiple names without fallback:
+```apl
+      (name1 name2 name3)←(1 2 3) () 'APL'
+
+      ⎕VGET 'name1' 'name2' 'name3'
+ 1 2 3  #.[Namespace]  APL
+```
+
+Single name with fallback:
+```apl
+      ns←()
+      ns ⎕VGET ⊂'name1' 'default'
+default
+```
+
+Multiple names with fallback for some:
+```apl
+      (name1 name2)←'APL' 123
+      ⎕vget ('name1' 1) 'name2' ('name3' 3)
+ APL  123 3
+      ⎕EX'name1'
+      ⎕vget ('name1' 1) 'name2' ('name3' 3)
+1 123 3
+```
+
+Multiple names with different fallback for each of them:
+```apl
+      name2←100
+      ⎕VGET ('name1' 1) ('name2' 2) ('name3' 3)
+1 100 3
+```
+
+## Case 3: Nameclasses
 
 In the third case, `Y` must be a numeric scalar or vector, where each item is a nameclass (see [Name Classification](nc.md)).
 
-If any of the numbers in `Y` are negative, the result `R` is a vector of name-value pairs, one per existing name in the source namespace with a nameclass from `Y`. Otherwise, the result is a two-element nested vector, where the first element is a character matrix of names, and the second element is a vector of values.
+If any of the numbers in `Y` are negative, the result `R` is a vector of name-value pairs, one per existing name in the source namespace with a nameclass from `Y`. Otherwise, the result is a two-element nested vector, where the first element is a character matrix of names, and the second element is a vector of values. Both of the result formats are suitable as arguments for [`⎕VGET`](vget.md) and [`⎕VSET`](vset.md).
 
 <h3 class="example">Examples</h3>
 Name value pairs:
 
 ```apl
-      ns←⎕NS⍬
+      ns←()
       ns.ns1←⎕SE
       ns.ns2←#
       ns.a1←1 2 3
