@@ -1,73 +1,66 @@
-# Dyalog APL v{{ version_majmin }} Documentation
+# Dyalog APL v{{ version_majmin }}
 
-Welcome! This is the official documentation for Dyalog APL version {{ version_majmin }}.
+Welcome! This is the official documentation for Dyalog APL version {{ version_majmin }}. See the     [v20.0 Release Notes](./release-notes/introduction/key-features/) (previous versions: [19.0](https://help.dyalog.com/19.0/#RelNotes19.0/Key%20Features.htm), [18.2](https://help.dyalog.com/18.2/#RelNotes18.2/Key%20Features.htm), [18.0](https://help.dyalog.com/18.0/#RelNotes18.0/Key%20Features.htm)).
 
 
 <div class="grid cards" markdown>
+- ![Core Guides](img/icon-orange_reference-guide.svg){ .lg .middle }  __Core Guides__
 
-- ![Release Notes](img/icon-orange_release-notes.svg){ .lg .middle } __Release Notes v{{ version_majmin }}__
+    ---
+    Core language:
+
+    [Getting started](https://www.dyalog.com/getting-started.htm)
+
+    [Programming](./programming-reference-guide/introduction/workspaces/)
+    
+    [Reference](./language-reference-guide/symbols/language-elements/)
+
+
+    ---
+    Built-in objects, incl. Microsoft Windows GUI:
+
+    [Programming](./interface-guide/introduction/overview/)
+    
+    [Reference](./object-reference/gui-overview/guioverview/)
+    
+- ![Other Guides](img/icon-orange_reference-guide.svg){ .lg .middle } __Other Guides__
 
     ---
 
-    New and improved since the last release
+    [.NET Framework Interface](./net-framework-interface-guide/overview/introduction/)
+    
+    [.NET/.NET Framework Comparison](https://docs.dyalog.com/latest/dotNET%20Differences.pdf)
 
-    [Release Notes](./release-notes-v19-0/introduction/key-features/)
+    [Compiler](https://docs.dyalog.com/latest/Compiler%20User%20Guide.pdf)
+
+    [Parallel Language Features](https://docs.dyalog.com/latest/Parallel%20Language%20Features.pdf)
+
+    [Shared Code Files](https://docs.dyalog.com/latest/Shared%20Code%20Files%20User%20Guide.pdf)
+
+- ![UI Guides](img/icon-orange_UI-guides.svg){ .lg .middle } __Development Environments__
+
+    ---
+
+    [Microsoft Windows](./windows-ui-guide/introduction/)
+    
+    [Linux, AIX](./unix-user-guide/overview/)
+
+    [Raspberry Pi](https://docs.dyalog.com/latest/Dyalog%20for%20Raspberry%20Pi%20User%20Guide.pdf)
+
+    [macOS](https://docs.dyalog.com/latest/Dyalog%20for%20macOS%20UI%20Guide.pdf)
 
 - ![Installation and Configuration](img/icon-orange_installation-configuration.svg){ .lg .middle } __Installation and Configuration__
 
     ---
 
-    How to install and configure Dyalog APL
+    [Microsoft Windows](./windows-installation-and-configuration-guide/documentation/)
 
-    [Windows Installation and Configuration Guide](./windows-installation-and-configuration-guide/documentation/)
+    [Linux, AIX, Raspberry Pi](./unix-installation-and-configuration-guide/introduction/)
 
-    [UNIX Installation and Configuration Guide](./unix-installation-and-configuration-guide/introduction/)
-
-- ![Reference Guides](img/icon-orange_reference-guide.svg){ .lg .middle }  __Reference Guides__
-
-    ---
-
-    Reference guides for Dyalog APL and system interfaces
-    
-    [Programming Reference Guide](./programming-reference-guide/introduction/workspaces/)
-    
-    [Dyalog APL Language Reference Guide](./language-reference-guide/symbols/language-elements/)
-    
-    [Object Reference Guide](./object-reference/gui-overview/guioverview/)
-    
-    [Microsoft Windows: Interface Guide](./interface-guide/introduction/overview/)
-    
-    [Microsoft Windows: .NET Framework Interface Guide](./net-framework-interface-guide/overview/introduction/)
-    
-
-- ![UI Guides](img/icon-orange_UI-guides.svg){ .lg .middle } __UI Guides__
-
-    ---
-
-    The Dyalog APL Development Environment 
-
-    [Microsoft Windows UI Guide](./windows-ui-guide/introduction/)
-    
-    [UNIX User Guide](./unix-user-guide/overview/)
-
-    [Raspberry Pi User Guide](https://docs.dyalog.com/latest/Dyalog%20for%20Raspberry%20Pi%20User%20Guide.pdf)
+    [macOS](https://docs.dyalog.com/latest/Dyalog%20for%20macOS%20Installation%20and%20Configuration%20Guide.pdf)
 
 
-</div>
 
-<div class="grid cards" markdown>
-
-- ![Other Documentation](img/icon-orange_reference-guide.svg){ .lg .middle } __Other Core Documentation__
-
-    ---
-    
-    [Comparison of .NET/.NET Framework Interfaces](https://docs.dyalog.com/latest/dotNET%20Differences.pdf)
-
-    [Compiler User Guide](https://docs.dyalog.com/latest/Compiler%20User%20Guide.pdf)
-
-    [Parallel Language Features](https://docs.dyalog.com/latest/Parallel%20Language%20Features.pdf)
-
-    [Shared Code Files User Guide](https://docs.dyalog.com/latest/Shared%20Code%20Files%20User%20Guide.pdf)
 
 </div>
 
