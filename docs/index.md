@@ -17,7 +17,7 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 
 
     ---
-    Built-in objects, incl. Microsoft Windows GUI:
+    Built-in objects, incl. GUI:
 
     [Programming](./interface-guide/introduction/overview/)
     
@@ -106,8 +106,6 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 - ![Cheat Sheets](img/icon-orange_reference-guide.svg){ .lg .middle } __Cheat Sheets__
 
     ---
-
-    Summaries of some of the terminology, syntax and conventions used in Dyalog.
 
     [Nomenclature](https://docs.dyalog.com/latest/CheatSheet%20-%20Nomenclature%20-%20Functions%20and%20Operators.pdf): code points and names of primitive glyphs.
 
