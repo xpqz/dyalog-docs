@@ -66,7 +66,7 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 
 <div class="grid cards" markdown>
 
-- ![Tools Documentation](img/icon-orange_reference-guide.svg){ .lg .middle } __Tools Documentation__
+- ![Tools Documentation](img/gfx_icon_tools_02.svg){ .lg .middle } __Tools Documentation__
 
     ---
         
@@ -103,7 +103,7 @@ Welcome! This is the official documentation for Dyalog APL version {{ version_ma
 
 <div class="grid cards" markdown>
 
-- ![Cheat Sheets](img/icon-orange_reference-guide.svg){ .lg .middle } __Cheat Sheets__
+- ![Cheat Sheets](img/gfx_icon_cheat-sheet_02.svg){ .lg .middle } __Cheat Sheets__
 
     ---
 
