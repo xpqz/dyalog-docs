@@ -4,7 +4,7 @@
 
 `Y` is a specification of the names, and their values, and must be either:
 
-* a nested vector or scalar, where each element is a name-value pair. The name must be a simple character scalar or vector.
+* a nested vector or scalar, where each element is a name-value pair. The name must be a simple character vector.
 * a two-element nested array, where the first element is a matrix of names, and the second element is a vector or scalar of value(s). If multiple names are specified, and the value is a scalar, the same value is used for all names.
 
 All names must have nameclass 0, 2, 8 or 9 in the target namespace(s).
@@ -27,8 +27,8 @@ Name value pairs:
 1 2  hello
 
       (ns1 ns2 ns3)←()()()
-      ns1 'ns2' ns3 ⎕VSET ('X' 'X value') ('Y' 'Y value')
-      (ns1 ns2 ns3).(X Y)
+      ns1 'ns2' ns3 ⎕VSET ('X1' 'X value') ('Y1' 'Y value')
+      (ns1 ns2 ns3).(X1 Y1)
   X value  Y value    X value  Y value    X value  Y value
 ```
 
@@ -79,21 +79,21 @@ For a description of the Trigger variant option, see [`⎕NS`](ns.md#trigger).
 ```apl
       ⎕VR 'trigger'
      ∇trigger arg
-[1]   :Implements Trigger X,Y
+[1]   :Implements Trigger name1,name3
 [2]   ⎕←'Running trigger for: ',arg.Name
      ∇
 
-      ⍝ X has a trigger, Z does not
-      X←1
-Running trigger for: X
-      Z←2
+      ⍝ name1 has a trigger, name2 does not
+      name1←1
+Running trigger for: name1
+      name2←2
 
       ⍝ Without the trigger option, triggers are not run by ⎕VSET
-      ⎕VSET ('X' 1) ('Z' 2) ('Y' 3)
-      ⎕VSET⍠'Trigger' 0⊢('X' 1) ('Z' 2) ('Y' 3)
+      ⎕VSET ('name1' 1) ('name2' 2) ('name3' 3)
+      ⎕VSET⍠'Trigger' 0⊢('name1' 1) ('name2' 2) ('name3' 3)
 
       ⍝ With the trigger option enabled, triggers are run
-      ⎕VSET⍠'Trigger' 1⊢('X' 1) ('Z' 2) ('Y' 3)
-Running trigger for: X
-Running trigger for: Y
+      ⎕VSET⍠'Trigger' 0⊢('name1' 1) ('name2' 2) ('name3' 3)
+Running trigger for: name1
+Running trigger for: name3
 ```
