@@ -5,28 +5,27 @@ Convert a mkdocs site to a PDF file.
 
 By Stefan Kruger <stefan@dyalog.com>
 
-python mkdocs2pdf.py                         \
-    --mkdocs-yml ../documentation/mkdocs.yml \
-    --project-dir project                    \
-    --assets-dir assets                      \
-    --document language-reference-guide
+python mkdocs2pdf.py           \
+    --mkdocs-yml ../mkdocs.yml \
+    --project-dir project      \
+    --assets-dir assets        \
+    --config config.json                
 
 Optional switches:
 
-    --exclude list-of-files.json     Exclude files present in source mkdocs.yml
-    --disable-toc                    Disable print-style table of contents listing
-    --disable-link-rewriting         Disable print-style section numbering of links
-    --disable-syntax-highlighting    Disable syntax highlighting
-    --disable-section-numbers        Disable print-style section numbers
-    --screen                         Make screen-oriented PDF (no ToC, no section numbers)
-    --html-only                      Generate unified HTML-file, but not PDF-conversion
+    --document language-reference-guide  Use instead of --config for single doc
+    --exclude list-of-files.json         Exclude files present in source mkdocs.yml
+    --disable-toc                        Disable print-style table of contents listing
+    --disable-link-rewriting             Disable print-style section numbering of links
+    --disable-syntax-highlighting        Disable syntax highlighting
+    --disable-section-numbers            Disable print-style section numbers
+    --screen                             Make screen-oriented PDF (no ToC, no section numbers)
+    --html-only                          Generate unified HTML-file, but not PDF-conversion
+    --verbose                            Show verbose Weasyprint output 
 
 The results will end up as
 
     <project-dir>/<document>.[htm|pdf]
-
-
-
 """
 
 import argparse
@@ -92,13 +91,16 @@ def create_title_page(soup, title, subtitle=None, version_majmin=''):
     bottom_container = soup.new_tag('div', **{'class': 'bottom-content'})
     
     # Add bottom DocDyalog image
-    doc_image = soup.new_tag('img', src="../assets/img/DocDyalog.png", **{'class': 'doc-dyalog'})
+    # doc_image = soup.new_tag('img', src="../assets/img/DocDyalog.png", **{'class': 'doc-dyalog'})
+    # bottom_container.append(doc_image)
+
+    doc_image = soup.new_tag('img', src="../assets/img/dyalog-logo-2025_orange.svg", **{'class': 'doc-dyalog'})
     bottom_container.append(doc_image)
     
     # Add tagline
-    tagline = soup.new_tag('div', **{'class': 'tagline'})
-    tagline.string = "The tool of thought for software solutions"
-    bottom_container.append(tagline)
+    # tagline = soup.new_tag('div', **{'class': 'tagline'})
+    # tagline.string = "The tool of thought for software solutions"
+    # bottom_container.append(tagline)
     
     title_page.append(bottom_container)
     
@@ -543,7 +545,7 @@ def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: d
 </head>
 <body>
     <div id="title">{title}</div>
-    <div style="string-set: build-info 'Built {build_date} ({git_info})'"></div>
+    <div style="string-set: build-info '{build_date} ({git_info})'"></div>
     {'<section>' + toc + '</section>' if create_toc else ''}
     {articles}
 </body>
@@ -877,10 +879,14 @@ def process_document(document_path):
         f.write(html_content)
 
     if not args.html_only:
-        # Run weasyprint with the configured filename or fallback to the default
-        output_filename = doc_metadata.get('filename', f'{document_path}.pdf') if doc_metadata else f'{document_path}.pdf'
-        output = Popen(['weasyprint', f'{document_path}.htm', output_filename], 
-                      cwd=args.project_dir)
+        output_filename = (doc_metadata.get('filename', f'{document_path}.pdf')
+                        if doc_metadata else f'{document_path}.pdf')
+        
+        cmd = ['weasyprint', f'{document_path}.htm', output_filename]
+        if not args.verbose:
+            cmd.append('--quiet')
+        
+        output = Popen(cmd, cwd=args.project_dir)
         output.wait()
 
 if __name__ == "__main__":
@@ -890,6 +896,7 @@ if __name__ == "__main__":
     parser.add_argument('--config', type=str, help='JSON config file specifying documents and settings')
     parser.add_argument('--project-dir', type=str, default='/app/mkdocs2pdf/project', help='Name of output directory')
     parser.add_argument('--assets-dir', type=str, default='/app/mkdocs2pdf/assets', help='Name of assets directory')
+    parser.add_argument("--verbose", action="store_true", help="Enable verbose output")
     parser.add_argument('--exclude', type=str, help='Name of json file with ToC exclusions')
     parser.add_argument('--disable-toc', action='store_false', dest='toc', help='Disable print-style table of contents listing')
     parser.add_argument('--disable-link-rewriting', action='store_false', dest='link_rewrite', help='Disable print-style section numbering of links')
