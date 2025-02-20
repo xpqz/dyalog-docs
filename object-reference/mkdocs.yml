@@ -95,6 +95,7 @@ nav:
       - Metafile Object: objects/metafile.md
       - MsgBox Object: objects/msgbox.md
       - NetClient Object: objects/netclient.md
+      - NetControl Object: objects/netcontrol.md
       - NetType Object: objects/nettype.md
       - OCXClass Object: objects/ocxclass.md
       - OLEClient Object: objects/oleclient.md
@@ -1395,3 +1396,45 @@ nav:
       - XRange Property: properties/xrange.md
       - Yield Property: properties/yield.md
       - YRange Property: properties/yrange.md
+  - Examples:
+      - examples/calendar-example-1.md
+      - examples/calendar-example-2.md
+      - examples/calendar-example-3.md
+      - examples/coolbar-example-1.md
+      - examples/coolbar-example-2.md
+      - examples/splitter-example-1.md
+      - examples/splitter-example-2.md
+      - examples/splitter-example-3.md
+      - examples/splitter-example-4.md
+      - examples/splitter-example-5.md
+      - examples/tabcontrol-example-1.md
+      - examples/tabcontrol-example-2.md
+      - examples/tabcontrol-example-3.md
+      - examples/tabcontrol-example-3a.md
+      - examples/tabcontrol-example-4.md
+      - examples/tabcontrol-example-5.md
+      - examples/tabcontrol-example-6.md
+      - examples/tabcontrol-example-7.md
+      - examples/tabcontrol-example-8.md
+      - examples/tabcontrol-example-9.md
+      - examples/tabcontrol-example-10.md
+      - examples/tabcontrol-example-11.md
+      - examples/tabcontrol-example-12.md
+      - examples/tabcontrol-example-13.md
+      - examples/toolbutton-example-1.md
+      - examples/toolcontrol-example-1.md
+      - examples/toolcontrol-example-2.md
+      - examples/toolcontrol-example-3.md
+      - examples/toolcontrol-example-4.md
+  - Miscellaneous:
+      - Class Identifier: miscellaneous/class-identifier-clsid.md
+      - COM Data Types: miscellaneous/com-data-types.md
+      - DISPID: miscellaneous/dispid.md
+      - GUID: miscellaneous/globally-unique-identifier-guid.md
+      - International Day Number: miscellaneous/international-day-number.md
+      - Native Look and Feel: miscellaneous/windows-xp-look-and-feel.md
+      - Port Number: miscellaneous/port-number.md
+      - Stream Sockets: miscellaneous/stream-sockets.md
+      - Twips: miscellaneous/twips.md
+      - UDP: miscellaneous/user-datagram-protocol-udp.md
+  
