@@ -5,9 +5,7 @@ Returns a monadic operator, with functionality determined by the value of `Y`.
 `Y` is a scalar integer. Possible values for `Y` are shown in the table below. If an undefined value is specified, a `DOMAIN ERROR` is generated.
 
 `R` is a monadic operator with functionality determined by the value of `Y`.
-
-!!! Tip "Hints and Recommendations"
-	As `R`is a monadic operator, Dyalog Ltd recommends that the evaluation of this I-Beam is either parenthesised or named.
+As `R`is a monadic operator, Dyalog Ltd recommends that the evaluation of this I-Beam is either parenthesised or named.
 
 | `Y` | Returned Operator | Notes |
 |---|---                |---|
@@ -15,7 +13,7 @@ Returns a monadic operator, with functionality determined by the value of `Y`.
 
 
 !!! warning
-	The set of supported values for `Y` might change, with existing values being withdrawn as well as new ones being added. This means that saving the resulting operator in a workspace and attempting to run it in a later release might result in a `DOMAIN ERROR` if support has been withdrawn. However, Dyalog Ltd will not repurpose documented `Y` values for other operators once they have been withdrawn.
+	The set of supported values for `Y` might change, with existing values being withdrawn as well as new ones being added. This means that saving the resulting operator in a workspace and attempting to run it in a later release might result in a `DOMAIN ERROR` if support has been withdrawn.
 
 
 ### 632 - Generics Operator
