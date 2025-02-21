@@ -64,22 +64,22 @@ HEADER = """
 <meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
 </head><body>
 <object type="text/site properties">
+    <param name="SiteType" value="toc">
+    <param name="Window Styles" value="0x800401">
+    <param name="ExWindow Styles" value="0x200">
 </object>
 """
 
 DIR_ENTRY = """<li><object type="text/sitemap">
         <param name="Name" value="{name}">
-        <param name="ImageNumber" value="0">
     </object>
 """
 
 FILE_ENTRY = """<li><object type="text/sitemap">
         <param name="Name" value="{name}">
         <param name="Local" value="{file}">
-        <param name="ImageNumber" value="0">
     </object>
 """
-
 
 @dataclass
 class Node:
@@ -128,16 +128,14 @@ def _process_nav_item(item: dict | str, parent: Node, project='project') -> None
 def _traverse(node: Node, toc: IO[str]) -> None:
     title = node.name.replace('`', '').replace('"', '')
     toc.write(DIR_ENTRY.format(name=title))
-    toc.write("<ul>\n")
-
-    for child in node.children:
-        if child.isdir():
-            _traverse(child, toc)
-        else:
-            toc.write(FILE_ENTRY.format(name=child.name.replace('`', '').replace('"', ''), file=child.html_name))
-
-    toc.write("</ul>\n")
-
+    if node.children:  # Only write <ul> if there are children
+        toc.write("<ul>\n")
+        for child in node.children:
+            if child.isdir():
+                _traverse(child, toc)
+            else:
+                toc.write(FILE_ENTRY.format(name=child.name.replace('`', '').replace('"', ''), file=child.html_name))
+        toc.write("</ul>\n")
 
 def modify_paths(navdata, base_path: str):
     """
@@ -189,13 +187,13 @@ def parse_mkdocs_yml(yml_file: str, remove: List[str]) -> dict:
     base_path = os.path.dirname(yml_file)
     return resolve_includes(data, base_path)
 
-
 def generate_toc(yml_data: dict, project='project'):
     """
     Given the parsed and expanded mkdocs.yml -- specifically its "nav"
-    section -- write out the corresponding CHM TOC XML.
+    section -- write out the corresponding CHM TOC XML with top-level items
+    directly under the root <ul>.
     """
-    root = Node()
+    root = Node()  # Still used to build the hierarchy
     nav = yml_data.get('nav', [])
     for item in nav:
         _process_nav_item(item, root, project)
@@ -203,11 +201,17 @@ def generate_toc(yml_data: dict, project='project'):
     toc = open(os.path.join(project, '_table_of_contents.hhc'), "w", encoding="utf-8")
     toc.write(HEADER)
     toc.write("<ul>\n")
-    _traverse(root, toc)
+    
+    # Write top-level children directly, skipping the empty root
+    for child in root.children:
+        if child.isdir():
+            _traverse(child, toc)
+        else:
+            toc.write(FILE_ENTRY.format(name=child.name.replace('`', '').replace('"', ''), file=child.html_name))
+    
     toc.write("</ul>\n")
     toc.write("</body></html>\n")
     toc.close()
-
 
 def find_source_files(topdir: str, subdirs: List[str]) -> Tuple[List[str], List[str]]:
     """
@@ -492,7 +496,7 @@ def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str]
     cfg.appendChild(settings)
 
     searchable = doc.createElement("MakeSearchable")
-    searchable.setAttribute("Value", "False")
+    searchable.setAttribute("Value", "True")
     settings.appendChild(searchable)
 
     if start_page is None:
