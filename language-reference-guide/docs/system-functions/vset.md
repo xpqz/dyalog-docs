@@ -1,15 +1,23 @@
 <h1 class="heading"><span class="name">Value Set</span> <span class="command">{R}←{X}⎕VSET Y</span></h1>
 
-`⎕VSET` is a system function that allows setting the values of names in a target namespace or target namespaces.
+`⎕VSET` enables values to be set for names in a target namespace or target namespaces.
 
-`Y` is a specification of the names, and their values, and must be either:
+`Y` specifies the names and the values to set for them. It must be one of the following:
 
 * a nested vector or scalar, where each element is a name-value pair. The name must be a simple character vector.
-* a two-element nested array, where the first element is a matrix of names, and the second element is a vector or scalar of value(s). If multiple names are specified, and the value is a scalar, the same value is used for all names.
+* a two-element nested array, where the first element is a matrix of names and the second element is a vector or scalar of value(s). If multiple names are specified and the value is a scalar, the same value is used for all names.
 
-All names must have nameclass 0, 2, 8 or 9 in the target namespace(s).
+All names must have nameclass 0, 2, 8 or 9 in the target namespace(s). For more information on nameclasses, see [`⎕NC`](nc.md).
 
-If `X` is specified, it must be an array that references one or more target namespaces. The possible values are the same as those allowed for [`⎕NS`](ns.md). The namespace(s) referenced must already exist, or a `VALUE ERROR` is produced. If `X` is not specified, the target namespace is the current namespace.
+If specified, `X` must be an array that references one or more namespaces. This means that `X` must be one of:
+
+* a simple character scalar or vector identifying the name of a namespace.
+* a reference to a namespace.
+* an array in which each item is one of the above. If `X` refers to multiple namespaces, then `⎕VSET` processes each item of `X` in ravel order, using the entire right argument `Y`; this is equivalent to `X ⎕VSET¨⊂Y`.
+
+The namespace(s) referenced must already exist, or a `VALUE ERROR` is generated.
+
+If `X` is not specified, the target namespace is the current namespace.
 
 The result `R` is a shy reference to the target namespace(s).
 
@@ -67,13 +75,10 @@ Multiple names, with a single value:
       name1 name2 name3
  APL  APL  APL
 ```
-## Variant Options
+## Variant Option: Trigger
 
-`⎕VSET` supports a single variant option `'Trigger'`.
-
-### Trigger
-
-For a description of the Trigger variant option, see [`⎕NS`](ns.md#trigger).
+The `Trigger` variant option specifies whether any [triggers](../../programming-reference-guide/triggers/triggers) should be run for the modified variables in the target namespace that have triggers attached.
+The value must be a Boolean scalar. The default is 0, meaning that triggers are not run.
 
 <h4 class="example">Example</h4>
 ```apl

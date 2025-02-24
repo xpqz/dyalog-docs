@@ -5,26 +5,23 @@
 
 <h1 class="heading"><span class="name">Namespace</span> <span class="command">{R}←{X}⎕NS Y</span></h1>
 
+The `⎕NS` system function makes it possible to create namespaces, copy elements from one namespace to another, and clone namespaces.
 
+`Y` is one of the following:
+
+* a character array that represents a list of names of objects to be copied into a namespace.
+* a ref to a namespace.
+* an array produced by the [`⎕OR`](or.md) of a namespace.
 
 If specified, `X` must be an array that identifies one or more namespaces. This means `X` must be one of:
 
 * a simple character scalar or vector identifying the name of a namespace.
 * a reference to a namespace.
-* an array where each item is one of the above.
+* an array where each item is one of the above. If `X` refers to multiple namespaces, then `⎕NS` processes each item of `X` in ravel order, using the entire argument `Y`; this is equivalent to `X ⎕NS¨⊂Y`. If `X` is empty, no action is taken.
 
-`Y` is either a character array which represents a list of names of objects to be copied into the namespace, or a ref to a namespace, or  an array produced by the `⎕OR` of a namespace.
-
-The result `R` is shy when the system function is invoked dyadically.
-
-## Multiple namespace `X`
-When `X` refers to multiple namespaces, the system function processes each item of `X` in ravel order, using the entire right argument `Y`. If `X` is empty, the result `R` is `X`.
-Otherwise, the system function is equivalent to `R←X ⎕NS¨⊂Y`.
-
-The rest of this document describes `⎕NS` as if the left argument is not specified, or contains a single namespace name or reference.
+The result `R` is shy when the system function is invoked dyadically, otherwise its contents are determined by the value of `Y`.
 
 ## Case 1
-
 
 In the first case, `Y` must be a simple character scalar, vector, matrix or a nested vector of character vectors identifying zero or more workspace objects to be copied into the namespace `X`.  The identifiers in `X` and `Y` may be simple names or compound names separated by `'.'` and including the names of the special namespaces `'#'`, `'##'` and `'⎕SE'`.
 
@@ -133,16 +130,10 @@ Otherwise, the result of the operation depends upon the existence of `X`.
 }
 
 ```
-## Variant Options
+## Variant Option: Trigger
 
-`⎕NS` supports a single variant option `'Trigger'`.
-
-### Trigger
-
-The trigger variant option specifies whether any [triggers](../../programming-reference-guide/triggers/triggers) should be run for the modified variables in the target namespace which have triggers attached.
-The value must be a Boolean scalar.
-
-The default is `0`.
+The `Trigger` variant option specifies whether any [triggers](../../programming-reference-guide/triggers/triggers) should be run for the modified variables in the target namespace that have triggers attached.
+The value must be a Boolean scalar. The default is 0, meaning that triggers are not run.
 
 <h4 class="example">Example</h4>
 

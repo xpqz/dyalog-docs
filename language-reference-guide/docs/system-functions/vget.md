@@ -1,31 +1,42 @@
 <h1 class="heading"><span class="name">Value Get</span> <span class="command">R←{X}⎕VGET Y</span></h1>
 
-`⎕VGET` is a system function that allows reading the values of names in a source namespace or source namespaces, optionally with a fallback value for the cases where the name requested is undefined.
+`⎕VGET` enables values to be read for names in a source namespace or source namespaces. Optionally, a fallback value can be used if the name requested is undefined.
 
-`Y` is either a specification of names in a name matrix, a vector of names, or nameclasses. In the first two cases, `Y` can contain fallback values as well, which is used when the name has nameclass 0, instead of producing a `VALUE ERROR`. Each of the three cases are described in the sections below. In all cases, the values requested must have nameclass 0, 1, 2, 8 or 9 in the source namespace.
+`Y` specifies the names. It must be one of the following:
 
-If `X` is specified, it must be an array that references one or more source namespaces. The possible values are the same as those allowed for [`⎕NS`](ns.md). The namespace(s) referenced must already exist, or a `VALUE ERROR` is produced. If `X` is not specified, the source namespace is the current namespace.
+* a matrix – see [Case 1: Name Matrix](#case-1-name-matrix).
+* a vector of names – see [Case 2: Vector of Names](#case-2-vector-of-names).
+* a vector of nameclasses – see [Case 3: Nameclasses](#case-3-nameclasses).
+
+All specified names must have a nameclass of 0, 2, 8, or 9 in the source namespace(s). For more information on nameclasses, see [`⎕NC`](nc.md). If `Y` specifies a matrix or a vector of names, fallback values to use in cases where a name has a nameclass of 0 can also be specified to prevent a `VALUE ERROR` from being generated.
+
+If specified, `X` must be an array that identifies one or more source namespaces. This means that `X` must be one of:
+
+* a simple character scalar or vector identifying the name of a namespace.
+* a reference to a namespace.
+* an array in which each item is one of the above. If `X` refers to multiple namespaces, then `⎕VGET` processes each item of `X` in ravel order, using the entire right argument `Y`; this is equivalent to  `X ⎕VGET¨⊂Y`.
+
+The namespace(s) referenced must already exist, or a `VALUE ERROR` is generated.  
+
+If `X` is not specified, the source namespace is the current namespace.
 
 The result `R` depends on the format of `Y`.
 
 See also [`⎕VSET`](vset.md).
 
-## Multiple namespace `X`
-
-When `X` refers to multiple namespaces, the system function processes each item of `X` in ravel order, using the entire right argument `Y`.
-Except when `X` is empty, this is equivalent to `R←X ⎕VGET¨⊂Y`.
-
-The rest of this document describes `⎕VGET` using a single source namespace, as if the left argument is not specified, or contains a single namespace name or reference.
-
-## Case 1: Name matrix
+## Case 1: Name Matrix
 
 Names are specified as rows in a character matrix.
 `Y` must be either:
 
 * a character matrix, where each row is a name.
-* a two element vector, where the first item is a character matrix of names, and the second item is a specification of fallback values.
+* a two element vector, where the first item is a character matrix of names and the second item is a specification of fallback values.
 
-The fallback values must either be a vector with as many elements as there are names in the matrix, or it must be a scalar value which is used as the fallback value for all names.
+The fallback values must one of the following:
+
+* a vector with as many elements as there are names in the matrix.
+* a scalar value that is the fallback value for all names.
+
 
 The result `R` is a vector of the values from the corresponding names or fallback values.
 
@@ -83,14 +94,14 @@ phone
  <no data>  <no data>  susan@example.com   12345678
 ```
 
-## Case 2: Vector of names
+## Case 2: Vector of Names
 
-Names are specified as character vectors or scalars. `Y` must be either:
+Names are specified as character vectors or scalars. `Y` must be one of the following:
 
-* a single name. In this case, the result `R` is the value of that name in the source namespace.
-* a single enclosed name. In this case, the result `R` is also the value of the name, but enclosed.
-* a single enclosed name-value pair, which is a two-element vector consisting of a character vector name and a fallback value for that name. In this case, the result `R` is the value of the name, or the fallback value in case the name has nameclass 0.
-* a nested vector where each item is either a name, or a name value pair. In this case, the result `R` is a vector with the same length as `Y`, with the values from the corresponding names, or fallback values.
+* a single name: `R` is the value of that name in the source namespace.
+* a single enclosed name: `R` is also the value of the name, but enclosed.
+* a single enclosed name-value pair, which is a two-element vector consisting of a character vector name and a fallback value for that name: `R` is the value of the name, or the fallback value in case the name has nameclass 0.
+* a nested vector where each item is either a name, or a name value pair: `R` is a vector with the same length as `Y`, with the values from the corresponding names, or fallback values.
 
 <h3 class="example">Examples</h3>
 
@@ -150,7 +161,7 @@ Multiple names with different fallback for each of them:
 
 `Y` must be a numeric scalar or vector, where each item is a nameclass (see [Name Classification](nc.md)).
 
-If any of the numbers in `Y` are negative, the result `R` is a vector of name-value pairs, one per existing name in the source namespace with a nameclass from `Y`. Otherwise, the result is a two-element nested vector, where the first element is a character matrix of names, and the second element is a vector of values. Both of the result formats are suitable as arguments for [`⎕VGET`](vget.md) and [`⎕VSET`](vset.md).
+If any of the numbers in `Y` are negative, the result `R` is a vector of name-value pairs, one for each existing name in the source namespace with a nameclass from `Y`. Otherwise, `R` is a 2-element nested vector, where the first element is a character matrix of names and the second element is a vector of values. In both cases, `R` is suitable as an argument for [`⎕VGET`](vget.md) and [`⎕VSET`](vset.md).
 
 <h3 class="example">Examples</h3>
 Name value pairs:
