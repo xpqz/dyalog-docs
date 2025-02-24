@@ -117,6 +117,7 @@ jobs:
           --project-dir chm/output \
           --assets-dir chm/assets \
           --config chm/config.json \
+          --welcome chm/welcome.md \
           --git-info "$GIT_INFO" \
           --build-date "$BUILD_DATE"
 
