@@ -117,6 +117,10 @@ def _process_nav_item(item: dict | str, parent: Node, project='project') -> None
             if h1 := extract_h1(data):
                 key = h1
 
+            # Special case for welcome.md - override the H1 title
+            if item == 'welcome.md':
+                key = 'Welcome'
+
     node = Node(key, value, parent.depth + 1, parent)
     parent.children.append(node)
 
@@ -270,8 +274,14 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 """
     for file in filenames:
-        path, oldname = file.split('/docs/', maxsplit=1)
-        newname = str(os.path.join(os.path.basename(path), oldname.replace('.md', '.htm')))
+        # Handle both root-level files and files in docs subdirectories
+        if '/docs/' in file:
+            path, oldname = file.split('/docs/', maxsplit=1)
+            newname = str(os.path.join(os.path.basename(path), oldname.replace('.md', '.htm')))
+        else:
+            # For root-level files, just use the basename
+            newname = os.path.basename(file).replace('.md', '.htm')
+            
         realpath_newname = str(os.path.join(project, newname))
         os.makedirs(os.path.dirname(realpath_newname), exist_ok=True)
 
@@ -405,8 +415,13 @@ def generate_index_data(files: List[str]) -> List[Tuple[str, str]]:
     entries = []
     for filename in files:
         headings = extract_headers(filename)
-        a, b = filename.split('/docs/', maxsplit=1)
-        newname = f"{os.path.basename(a)}/{b.replace('.md', '.htm')}"
+        if '/docs/' in filename:
+            a, b = filename.split('/docs/', maxsplit=1)
+            newname = f"{os.path.basename(a)}/{b.replace('.md', '.htm')}"
+        else:
+            # For root-level files, just use the basename
+            newname = os.path.basename(filename).replace('.md', '.htm')
+            
         for heading in headings:
             entries.append((heading, newname))
 
@@ -615,7 +630,10 @@ if __name__ == "__main__":
     parser.add_argument('--mkdocs-yml', type=str, required=True, help='Path to the mkdocs.yml file')
     parser.add_argument('--project-dir', type=str, required=True, help='Name of output directory')
     parser.add_argument('--assets-dir', type=str, default='assets', help='Name of assets directory')
+    parser.add_argument('--welcome', type=str, default='welcome.md', help='Path to welcome.md file')
     parser.add_argument('--config', type=str, help='JSON config file for additional options')
+    parser.add_argument('--git-info', type=str, help='Git branch and commit info')
+    parser.add_argument('--build-date', type=str, help='Build date')
 
     args = parser.parse_args()
 
@@ -625,10 +643,10 @@ if __name__ == "__main__":
     if not os.path.isfile(args.mkdocs_yml):
         sys.exit(f'--> file {args.mkdocs_yml} not found.')
 
-    # if os.path.exists(args.project_dir):
-    #     sys.exit(f'--> project directory "{args.project_dir}" exists. Will not overwrite!')
+    if not os.path.isfile(args.welcome):
+        sys.exit(f'--> welcome file {args.welcome} not found.')
 
-    # os.makedirs(args.project_dir)
+    os.makedirs(args.project_dir, exist_ok=True)
 
     # Parse the nav section. If this is a monorepo (in 99% of the cases it will be),
     # macro-expand any !include directives
@@ -652,15 +670,28 @@ if __name__ == "__main__":
     # Find all source Markdown files and images
     md_files, image_files = find_source_files(os.path.dirname(args.mkdocs_yml), includes)
 
+    # Add welcome.md to the start of the files list
+    md_files.insert(0, os.path.abspath(args.welcome))
+    
+    # Modify nav to include welcome page at the start
+    yml_data['nav'].insert(0, 'welcome.md')
+
     # Copy images and other static assets into the project
     copied_images = copy_images(image_files, project=args.project_dir)
     assets, css = static_assets(args.assets_dir, args.project_dir)
+
+    # Add git info and build date to macros
+    macros = yml_data.get('extra', {})
+    if args.git_info:
+        macros['git_info'] = args.git_info
+    if args.build_date:
+        macros['build_date'] = args.build_date
 
     # Convert to HTML
     html_files = convert_to_html(
         md_files,
         css,
-        macros=yml_data.get('extra', {}),
+        macros=macros,
         transforms=[
             table_captions
         ],
