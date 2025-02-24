@@ -41,7 +41,11 @@ import argparse
 from dataclasses import dataclass, field
 import itertools
 import json
+import logging
 import os
+from csscompressor import compress as css_compress
+import cssutils
+from htmlmin import minify as html_minify
 import re
 import shutil
 from subprocess import Popen
@@ -56,6 +60,9 @@ import markdown
 from ruamel.yaml import YAML
 
 warnings.filterwarnings('ignore', category=MarkupResemblesLocatorWarning)
+
+cssutils.log.setLevel(logging.CRITICAL)
+
 
 HEADER = """
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
@@ -257,12 +264,120 @@ def expand_macros(data: str, macros: dict) -> str:
     return re.sub(r'\{\{\s*(.*?)\s*}}', replace, data)
 
 
+def purge_css(css: str, html_content: str) -> str:
+    """
+    Simple CSS purger that removes unused selectors.
+    Uses cssutils for parsing CSS and BeautifulSoup for HTML.
+    Preserves selectors for important HTML structure elements.
+    """
+    # Parse the HTML to find all class names and IDs
+    soup = BeautifulSoup(html_content, 'html.parser')
+    
+    # Find all class names in use
+    classes_in_use = set()
+    for tag in soup.find_all(class_=True):
+        classes_in_use.update(tag.get('class'))
+    
+    # Find all IDs in use
+    ids_in_use = {tag.get('id') for tag in soup.find_all(id=True)}
+    
+    # Find all tag names in use
+    tags_in_use = {tag.name for tag in soup.find_all()}
+    
+    # Add essential HTML structure elements that might not appear in the parsed HTML
+    # but are still needed for proper styling
+    essential_tags = {'html', 'head', 'body', 'main', 'article', 'section', 'header', 'footer'}
+    tags_in_use.update(essential_tags)
+    
+    # Parse the CSS
+    stylesheet = cssutils.parseString(css)
+    
+    # Track which rules to keep
+    rules_to_keep = []
+    
+    # Process each rule
+    for rule in stylesheet:
+        if rule.type == rule.STYLE_RULE:
+            selectors = rule.selectorText.split(',')
+            matched_selectors = []
+            
+            for selector in selectors:
+                selector = selector.strip()
+                should_keep = False
+                
+                # Always keep essential structure selectors and their variants
+                for tag in essential_tags:
+                    if re.search(r'\b' + re.escape(tag) + r'\b', selector):
+                        should_keep = True
+                        break
+                
+                if not should_keep:
+                    # Simple tag selectors like "div" or "p"
+                    if selector in tags_in_use:
+                        should_keep = True
+                    # Class selectors like ".my-class"
+                    elif selector.startswith('.') and selector[1:] in classes_in_use:
+                        should_keep = True
+                    # ID selectors like "#my-id"
+                    elif selector.startswith('#') and selector[1:] in ids_in_use:
+                        should_keep = True
+                    # Universal selector
+                    elif selector == '*':
+                        should_keep = True
+                    # Complex selectors - more conservative, keep these to avoid breaking things
+                    elif any(c in selector for c in (':', '>', '+', '~', '[', ']')):
+                        should_keep = True
+                    # Selectors with tags, classes, or IDs that might be used
+                    else:
+                        # Check for tag names
+                        for tag in tags_in_use:
+                            if re.search(r'\b' + re.escape(tag) + r'\b', selector):
+                                should_keep = True
+                                break
+                        
+                        # Check for class names
+                        if not should_keep:
+                            for cls in classes_in_use:
+                                if re.search(r'\.' + re.escape(cls) + r'\b', selector):
+                                    should_keep = True
+                                    break
+                        
+                        # Check for IDs
+                        if not should_keep:
+                            for id_val in ids_in_use:
+                                if re.search(r'#' + re.escape(id_val) + r'\b', selector):
+                                    should_keep = True
+                                    break
+                
+                if should_keep:
+                    matched_selectors.append(selector)
+            
+            # If any selectors matched, keep this rule with only the matched selectors
+            if matched_selectors:
+                rule.selectorText = ', '.join(matched_selectors)
+                rules_to_keep.append(rule)
+        
+        # Keep other types of rules (like @media, @keyframes, etc.)
+        elif rule.type != rule.COMMENT:
+            rules_to_keep.append(rule)
+    
+    # Create a new stylesheet with only the retained rules
+    new_stylesheet = cssutils.css.CSSStyleSheet()
+    for rule in rules_to_keep:
+        new_stylesheet.add(rule)
+    
+    # Serialise the new stylesheet    
+    return new_stylesheet.cssText.decode('utf-8')
+
 def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: List[Callable[[str], str]], project) -> List[str]:
     """
     Convert each Markdown file and convert to HTML, using the same rendering library as
     mkdocs, with the same set of extensions. We expand the mkdocs-macro {{ templates }}
-    and optionally provide means for applying a set of transformations. Currently, add
-    all the CSS in the header - not ideal, but convenient.
+    and optionally provide means for applying a set of transformations. Currently, we add
+    all the CSS in the header - this is required as the HTML engine in the Windows CHM
+    viewer does not understand <link ...>.
+
+    As a mitigation, take steps to only add the actually used CSS bits.
     """
     converted: List[str] = []
 
@@ -273,6 +388,9 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 """
+    
+    converted: List[str] = []    
+
     for file in filenames:
         # Handle both root-level files and files in docs subdirectories
         if '/docs/' in file:
@@ -314,11 +432,28 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
 
         body = fix_links_html(body)
 
+        # Optimise CSS specifically for this page: only use selectors referring to 
+        # ids, classes and tags on the actual page.
+        optimised_css = purge_css(css, body)
+        
+        # Minimise the CSS
+        optimised_css = css_compress(optimised_css)
+
+        # Construct and minimise the HTML
+        final_html = f"{head}<style>{optimised_css}</style></head><body>{body}</body></html>"
+        final_html = html_minify(
+            final_html, 
+            remove_comments=True,
+            remove_empty_space=True, 
+            remove_all_empty_space=False,
+            reduce_boolean_attributes=True
+        )
+
         with open(realpath_newname, "w", encoding="utf-8") as f:
-            f.write(f"{head}<style>\n{css}\n</style></head><body>\n{body}\n</body></html>")
+            f.write(final_html)
+            
         converted.append(str(newname))
     return converted
-
 
 def copy_images(filenames: List[str], project='project') -> List[str]:
     copied: List[str] = []
@@ -334,10 +469,10 @@ def copy_images(filenames: List[str], project='project') -> List[str]:
 
 def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str]:
     """
-    Copy the items in the assets dir. There seem to be no way to
+    Copy the items in the assets dir. There is no supported way to
     bundle css via a <link> tag in a CHM file, so we concatenate
     the css files we can find and return this as a string for
-    injection into each page. Ugly, but effective.
+    injection into each page.
     """
     assets = []
     css = ''
@@ -624,6 +759,66 @@ def fix_links_html(html: str) -> str:
     # Return the modified HTML as a string
     return str(soup)
 
+def find_image_references_in_markdown(md_files: List[str]) -> set:
+    """
+    Find all image references in Markdown files.
+    Returns set of image filenames.
+    """
+    image_refs = set()
+    
+    # Regular expression for Markdown image syntax: ![alt](path/image.png)
+    md_img_pattern = r'!\[.*?\]\((.*?)\)'
+    
+    # Regular expression for HTML image tags in Markdown: <img src="path/image.png">
+    html_img_pattern = r'<img[^>]*src=[\'"]([^\'"]+)[\'"][^>]*>'
+    
+    for file in md_files:
+        try:
+            with open(file, 'r', encoding='utf-8') as f:
+                content = f.read()
+                
+                # Find Markdown-style image references
+                for match in re.findall(md_img_pattern, content):
+                    if not match.startswith(('http:', 'https:', 'data:')):
+                        image_refs.add(os.path.basename(match))
+                
+                # Find HTML-style image references
+                for match in re.findall(html_img_pattern, content):
+                    if not match.startswith(('http:', 'https:', 'data:')):
+                        image_refs.add(os.path.basename(match))
+        except Exception as e:
+            print(f"Warning: Could not check images in {file}: {e}")
+    
+    return image_refs
+
+def filter_unused_images(md_files: List[str], image_files: List[str]) -> List[str]:
+    """
+    Filter out images that are not referenced in any Markdown files.
+    Returns filtered list of image files to include.
+    """
+    # Find all image references
+    referenced_images = find_image_references_in_markdown(md_files)
+    
+    # Filter image_files to only include referenced images
+    used_images = []
+    unused_images = []
+    
+    for img in image_files:
+        if os.path.basename(img) in referenced_images:
+            used_images.append(img)
+        else:
+            unused_images.append(img)
+    
+    # Report findings
+    if unused_images:
+        print("\nExcluding unused images:")
+        for img in sorted(unused_images):
+            print(f"  {os.path.basename(img)}")
+        print(f"\nTotal: {len(unused_images)} unused images removed, keeping {len(used_images)} used images")
+    else:
+        print("\nAll images are referenced in the documentation.")
+    
+    return used_images
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate a CHM bundle from a mkdocs site')
@@ -675,6 +870,9 @@ if __name__ == "__main__":
     
     # Modify nav to include welcome page at the start
     yml_data['nav'].insert(0, 'welcome.md')
+
+    # Filter out unused images
+    image_files = filter_unused_images(md_files, image_files)
 
     # Copy images and other static assets into the project
     copied_images = copy_images(image_files, project=args.project_dir)

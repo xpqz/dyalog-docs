@@ -60,7 +60,10 @@ jobs:
           pygments \
           pymdown-extensions \
           markdown-tables-extended \
-          git+https://github.com/flywire/caption
+          git+https://github.com/flywire/caption \
+          htmlmin \
+          csscompressor \
+          cssutils
 
     - name: Prepare directories
       run: |
