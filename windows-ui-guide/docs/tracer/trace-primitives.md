@@ -69,8 +69,8 @@ When tracing primitives, there are several more aspects of an expression that ca
 The relationship between these panes can be illustrated as
 
 ```other
-Left Argument  ┐     ┌─  Axis Specification
-               │ ┌─┐ │  ┌──────┬─  Right Argument / Previous Result
+     Left Arg  ┐     ┌─  Axis Specification
+               │ ┌─┐ │  ┌──────┬─  Right Arg / Prev Result
                a │B│[1] c D[2] e
                  └┬┘    │ │ │  └  Previous Right
 Current Function  ┘     │ │ └  Previous Axis
