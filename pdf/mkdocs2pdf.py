@@ -401,10 +401,64 @@ def update_seq_stack(seq_stack, s):
 def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: dict,
     transforms: List[Callable[[str], str]], create_toc: bool = True, enumerate_sections: bool = True, syntax_hilite: bool = True, git_info = '', build_date = '') -> Tuple[Dict[str, str], str]:
     """
-    Markdown to HTML, using the same markdown extensions as our mkdocs site. Conctatenate all converted files
+    Markdown to HTML, using the same markdown extensions as our mkdocs site. Concatenate all converted files
     into a single HTML file, wrapping into <section>s of <article>s.
-    """
 
+    We need to cope with two "chapter" cases when generating the table of contents:
+
+    nav:
+      - Case 1: 
+        - Introduction: directory/chapter1.md
+      - Case 2: chapter2.md
+
+    """
+    
+    def process_markdown(file_path, remove_first_heading=False):
+        """
+        Convert Markdown to HTML, using the same extensions as used by our mkdocs setup.
+        """
+
+        extensions = [
+            'admonition',                # https://python-markdown.github.io/extensions/admonition/
+            'attr_list',                 # https://python-markdown.github.io/extensions/attr_list/
+            'footnotes',                 # https://python-markdown.github.io/extensions/footnotes/
+            'md_in_html',                # https://python-markdown.github.io/extensions/md_in_html/
+            'markdown_tables_extended',  # https://github.com/fumbles/tables_extended
+            'pymdownx.details',          # https://facelessuser.github.io/pymdown-extensions/extensions/details/
+            'toc',                       # https://python-markdown.github.io/extensions/toc/
+        ]
+        if syntax_hilite:
+            extensions.append('pymdownx.superfences')
+        else:
+            extensions.append('fenced_code')
+        
+        extension_configs = {'toc': {'slugify': markdown.extensions.toc.slugify_unicode}}
+
+        with open(file_path, "r", encoding="utf-8") as f:
+            md = f.read()
+        
+        # Apply macros and any pre-html transforms
+        md = expand_macros(md, macros)
+        for fun in transforms:
+            md = fun(md)
+        
+        # Convert to HTML
+        body = markdown.markdown(md, extensions=extensions, extension_configs=extension_configs)
+        soup = BeautifulSoup(body, 'html.parser')
+        
+        # Optionally remove the first h1 heading
+        if remove_first_heading:
+            if h1 := soup.find('h1'):
+                h1.decompose()
+        
+        # Apply standard processing
+        print_footnotes(soup)
+        clean_img_src(soup)
+        convert_examples(soup)
+        
+        return str(soup).replace('``', '')
+    
+    # Initialise TOC and articles content
     toc = """
 <article id="contents">
     <h2 class="contents">Contents</h2>
@@ -414,28 +468,29 @@ def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: d
     section_stack = []
     chapter_number = 0
     front_matter = ' class="front-matter"'
-
     section_map = {}
-
     seq_stack = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
+    
+    # Process all files
     for keypath, file in filenames:
+        # Close any sections that need to be closed
         while section_stack and len(section_stack[-1]) >= len(keypath):
             section_stack.pop()
-
             toc += "</ul></li>\n"
             articles += "</section>\n"
 
-        if file == '':  # New Section
+        # Case 1: Directory/Section entry
+        if file == '':
             section_stack.append(keypath)
             heading_level = len(section_stack)
             heading_text = keypath[-1]
             section_id = '-'.join(slug(part) for part in keypath)
 
+            # Update section numbering
             update_seq_stack(seq_stack, len(section_stack) - 1)
-
             section_map[section_id] = '.'.join(str(c) for c in seq_stack if c > 0)
 
+            # Top-level section = chapter
             if heading_level == 1:
                 chapter_number += 1
                 front_matter = ''
@@ -446,90 +501,79 @@ def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: d
                 toc += f'<li{front_matter}><a href="#{section_id}-header" class="toc"></a><ul>\n'
             continue
 
-        if front_matter == '':
+        # Case 2: Top-level file (treat as chapter)
+        is_top_level = len(keypath) == 1 and not section_stack
+        
+        if is_top_level:
+            chapter_number += 1
+            front_matter = ''
+            heading_text = keypath[0]
+            
+            # Create section for this chapter
+            section_id = slug(heading_text)
+            heading_id = f"{section_id}-header"
+            articles += f'<section id="{section_id}" data-chapter-seq="{chapter_number}">\n'
+            articles += f'<h1 id="{heading_id}" class="chapter">{heading_text}</h1>\n'
+            
+            # Add to TOC
+            toc += f'<li class="toc-chapter"><a href="#{heading_id}" class="toc"></a><ul class="first-level">\n'
+            
+            # Update section stack and numbering
+            section_stack.append(keypath)
+            update_seq_stack(seq_stack, 0)
+            section_map[section_id] = str(chapter_number)
+        elif front_matter == '':
             update_seq_stack(seq_stack, len(section_stack))
 
-        # This represents the start of a new article. Note: some sections include
-        # files already included elsewhere (sadly). We need to ensure that our article ids
-        # are unique.
+        # Create article
         article_id = file.replace('/', '-').replace('.md', '')
         tie_breaker = 0
         test_id = article_id
         while test_id in section_map:
-            tie_breaker += 1;
+            tie_breaker += 1
             test_id = article_id + f'-{tie_breaker}'
         article_id = test_id
+        
+        # Update section map
         section_map[article_id] = '.'.join(str(c) for c in seq_stack if c > 0)
-
-        toc += f'<li{front_matter}><a href="#{article_id}-header" class="toc"></a></li>\n'
+        
+        # Add to TOC (except for top-level file articles since they're already in TOC)
+        if not is_top_level:
+            toc += f'<li{front_matter}><a href="#{article_id}-header" class="toc"></a></li>\n'
+        
+        # Process and add article content
         articles += f'<article id="{article_id}">\n'
-
-        with open(os.path.join(prefix, file), "r", encoding="utf-8") as f:
-            md = f.read()
-
-        # Macros are defined in the "extra:" section in the mkdocs.yml file. In the Markdown
-        # source, they are templates of the type
-        #
-        #    {{ macro-name }}
-        md = expand_macros(md, macros)
-
-        # Hook point for transforms we may want to apply to the source Markdown before it's
-        # converted to HTML.
-        for fun in transforms:
-            md = fun(md)
-
-        # Convert Markdown to HTML, using the same extensions as used by our mkdocs setup.
-        extensions = [
-            'admonition',  # https://python-markdown.github.io/extensions/admonition/
-            'attr_list',  # https://python-markdown.github.io/extensions/attr_list/
-            'footnotes',  # https://python-markdown.github.io/extensions/footnotes/
-            'md_in_html',  # https://python-markdown.github.io/extensions/md_in_html/
-            'markdown_tables_extended',  # https://github.com/fumbles/tables_extended
-            'pymdownx.details',  # https://facelessuser.github.io/pymdown-extensions/extensions/details/
-            'toc',  # https://python-markdown.github.io/extensions/toc/
-        ]
-
-        if syntax_hilite:  # For proper syntax highlighting, we need superfences
-            # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
-            extensions.append('pymdownx.superfences')
-        else:
-            # Otherwise, just enable plain fences.
-            extensions.append('fenced_code')
-
-        # Configure extension settings
-        extension_configs = {
-            'toc': {
-                'slugify': markdown.extensions.toc.slugify_unicode
-            }
-        }
-
-        body = markdown.markdown(md, extensions=extensions, extension_configs=extension_configs)
-
-        soup = BeautifulSoup(body, 'html.parser')
-
-        shift_headings(soup, len(section_stack), article_id)
-        print_footnotes(soup)
-        clean_img_src(soup)  # We're a single file. Make images refer to the img dir in the project
-        convert_examples(soup)
-
-        body = str(soup)
-
-        articles += body.replace('``', '')  # Empty code blocks aren't rendered correctly
+        html_content = process_markdown(
+            os.path.join(prefix, file), 
+            remove_first_heading=is_top_level
+        )
+        
+        # For non-top-level files, handle headings
+        if not is_top_level:
+            soup = BeautifulSoup(html_content, 'html.parser')
+            shift_headings(soup, len(section_stack), article_id)
+            html_content = str(soup)
+        
+        articles += html_content
         articles += "\n</article>\n"
+        
+        # For top-level files, we're done with this file
+        if is_top_level:
+            continue
 
+    # Close any remaining open sections
     while section_stack:
         section_stack.pop()
-        if seq_stack:
-            seq_stack.pop()
-
         toc += "</ul></li>\n"
         articles += "</section>\n"
 
+    # Finish TOC
     toc += """
     </ul>
 </article>
 """
 
+    # Assemble final HTML
     result = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -552,7 +596,6 @@ def convert_to_html(filenames: Iterator[str], prefix: str, title: str, macros: d
 </html>
 """
     return section_map, result
-
 
 def copy_directory(src, dst):
     """
@@ -630,7 +673,8 @@ def fix_links(b: str) -> str:
         # Something else; leave alone
         return f'[{link_text}]({link_target})'
 
-    return re.sub(r'\[([^]]*)]\(([^)]+)\)', link_transform, b)
+    # Exclude markdown images (which start with !)
+    return re.sub(r'(?<!!)\[([^]]*)]\(([^)]+)\)', link_transform, b)
 
 def normalise_links(soup: BeautifulSoup, documents: Dict[str, str], table_refs: Dict[str, int], section_map: Dict[str, str], rewrite_links: bool = True) -> None:
     """
