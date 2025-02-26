@@ -48,11 +48,26 @@ jobs:
           mkdocs-site-urls \
           mkdocs-caption \
           markdown-tables-extended
-    
+
+    - name: Get Git Info
+      id: git-info
+      run: |
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        HASH=$(git rev-parse --short HEAD)
+        echo "GIT_INFO=${BRANCH}:${HASH}" >> $GITHUB_OUTPUT
+        echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Substitute env variables in mkdocs.yml
+      env:
+        GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
+        BUILD_DATE: ${{ steps.git-info.outputs.DATE }}
+      run: |
+        envsubst '$BUILD_DATE $GIT_INFO' < mkdocs.yml > mkdocs.subst.yml
+
     - name: Deploy documentation
       run: |
         if [ "${{ inputs.update_latest }}" = "true" ]; then
-          mike deploy --push ${{ inputs.version }} latest
+          mike deploy -f mkdocs.subst.yml --push ${{ inputs.version }} latest
         else
-          mike deploy --push ${{ inputs.version }}
+          mike deploy -f mkdocs.subst.yml --push ${{ inputs.version }}
         fi
