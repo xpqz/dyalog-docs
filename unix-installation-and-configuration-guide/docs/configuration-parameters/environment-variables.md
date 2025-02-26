@@ -19,7 +19,7 @@ The environment variables are broken down into several tables:
 - [](#E4): Miscellaneous Variables used by non-GUI Dyalog APL
 - [](#E5): Editor-related environment variables
 - [](#E6): Tracer-related environment variables
-- [](#E7): RIDE-related environment variables
+- [](#E7): Ride-related environment variables
 - [](#E8): SALT and User Command-related environment variables
 
 Table: Commonly used Variables {: #E1 }
