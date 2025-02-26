@@ -48,7 +48,28 @@ jobs:
           mkdocs-site-urls \
           mkdocs-caption \
           markdown-tables-extended
-    
+
+    - name: Get Git Info
+      id: git-info
+      run: |
+        BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        HASH=$(git rev-parse --short HEAD)
+        echo "GIT_INFO=${BRANCH}:${HASH}" >> $GITHUB_OUTPUT
+        echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+    - name: Substitute env variables in mkdocs.yml
+      env:
+        GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
+        BUILD_DATE: ${{ steps.git-info.outputs.DATE }}
+      run: |
+        # Create backup
+        cp mkdocs.yml mkdocs.yml.bak
+        # Substitute variables
+        envsubst '$BUILD_DATE $GIT_INFO' < mkdocs.yml.bak > mkdocs.yml
+        # Display substituted content for debugging
+        echo "--- Checking substituted content ---"
+        cat mkdocs.yml | grep -A5 copyright
+
     - name: Deploy documentation
       run: |
         if [ "${{ inputs.update_latest }}" = "true" ]; then
