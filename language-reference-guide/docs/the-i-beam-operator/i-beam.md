@@ -3,7 +3,7 @@
 I-Beam is a monadic operator that provides a range of system related services.
 
 !!! warning 
-    Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [RIDE and Experimental Features-related I-Beams](./supplementary-i-beam-functions.md).
+    Although documentation is provided for I-Beam functions, any service provided using I-Beam should be considered as "experimental" and subject to change – without notice - from one release to the next. Any use of I-Beams in applications should therefore be carefully isolated in cover-functions that can be adjusted if necessary. See also: [Ride and Experimental Features-related I-Beams](./supplementary-i-beam-functions.md).
 
 `A` is an integer that specifies the type of operation to be performed  as shown in the table below. `Y` is an array that supplies further information about what is to be done.
 
@@ -76,9 +76,9 @@ The column labelled *O/S* indicates if a function applies only on Windows (W), o
 |`2704` |[Continue Autosave](./continue-autosave.md)                                           |&nbsp;|
 |`3002` |[Disable Component Checksum Validation](./disable-component-checksum-validation.md)   |&nbsp;|
 |`3012` |[Enable Compression of Large Components](./enable-compression-of-large-components.md) |&nbsp;|
-|`3500` |[Send Text to RIDE-embedded Browser](./send-text-to-ride-embedded-browser.md)         |&nbsp;|
-|`3501` |[Connected to the RIDE](./connected-to-the-ride.md)                                   |&nbsp;|
-|`3502` |[Manage RIDE Connections](./manage-ride-connections.md)                               |&nbsp;|
+|`3500` |[Send Text to Ride-embedded Browser](./send-text-to-ride-embedded-browser.md)         |&nbsp;|
+|`3501` |[Connected to Ride](./connected-to-the-ride.md)                                       |&nbsp;|
+|`3502` |[Manage Ride Connections](./manage-ride-connections.md)                               |&nbsp;|
 |`4000` |[Fork New Task](./fork-new-task.md)                                                   |AIX   |
 |`4001` |[Change User](./change-user.md)                                                       |X     |
 |`4002` |[Reap Forked Tasks](./reap-forked-tasks.md)                                           |AIX   |
