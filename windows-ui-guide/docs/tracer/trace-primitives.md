@@ -21,7 +21,7 @@ The Tracer opens with primitive tracing activated.
 <h2 class="example">Example</h2>
 In a Session, enter the expression `(+/÷≢)⍳10` and start tracing primitives.
 
-![](../../img/tp-start.png)
+![](../img/tp-start.png)
 
 The red outline around the `⍳ `in the Tracer shows the next primitive to be executed. Enter **&lt;TP&gt;** or click the **Next Primitive** icon in the Tracer toolbar to see how the execution progresses through the expression.
 The **Next Primitive** icon is always present in the Tracer. The **&lt;TP&gt;** command lets you open a Tracer on an expression that has been typed directly in the Session.
@@ -106,7 +106,7 @@ When a docked aspect pane is the focus, the Session's **Options** menu enables c
 
 The following screenshot illustrates the effect of choosing **Show functions as trees** on the **Current Function** pane:
 
-![](../../img/tbt-current-fn-options-menu.png)
+![](../img/tbt-current-fn-options-menu.png)
 
 ## Tracing Diamond-Separated Expressions
 
@@ -120,13 +120,13 @@ a ← 3 3⍴⍳9 ⋄ b ← ⍉a ⋄ a + b
 
 Enter the expressions in the Session, and start primitive tracing. You should see:
 
-![](../../img/tbt-diamond1.png)
+![](../img/tbt-diamond1.png)
 
 with the first expression highlighted (red outline). Enter **&lt;ER&gt;** (<kbd>enter</kbd>) to execute the single expression before the first diamond separator:
 
-![](../../img/tbt-diamond2.png)
+![](../img/tbt-diamond2.png)
 
 The second expression is now highlighted. Enter **&lt;ER&gt;** (<kbd>enter</kbd>) again to execute the second expression, then enter **&lt;TP&gt;** (<kbd>alt</kbd>+<kbd>shift</kbd>+<kbd>enter</kbd>) to start tracing the primitives in the third expression:
 
-![](../../img/tbt-diamond3.png)
+![](../img/tbt-diamond3.png)
 
