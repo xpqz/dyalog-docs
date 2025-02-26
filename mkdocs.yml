@@ -1,5 +1,6 @@
 site_name: Documentation
 repo_url: https://github.com/dyalog/documentation
+copyright: Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"><strong>Material for MkDocs</strong></a><br/>Copyright &copy; 2015-2024 <strong><a href="https://dyalog.com" target="_blank" rel="noopener">Dyalog, LTD</a></strong> ($BUILD_DATE $GIT_INFO)
 
 theme:
   favicon: 'img/favicon-32.png'
@@ -40,6 +41,7 @@ extra:
   version_majmin: 20.0
   version:
     provider: mike
+  generator: false
 
 markdown_extensions:
   - admonition
