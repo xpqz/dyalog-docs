@@ -467,7 +467,7 @@ def copy_images(filenames: List[str], project='project') -> List[str]:
     return copied
 
 
-def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str]:
+def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str, List[str]]:
     """
     Copy the items in the assets dir. There is no supported way to
     bundle css via a <link> tag in a CHM file, so we concatenate
@@ -475,10 +475,11 @@ def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str]:
     injection into each page.
     """
     assets = []
+    css_files = []  # Keep track of CSS files
     css = ''
     
     if not os.path.exists(src_dir):
-        return assets, css
+        return assets, css, css_files
         
     os.makedirs(os.path.join(project, 'assets'), exist_ok=True)
     
@@ -495,11 +496,12 @@ def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str]:
                 with open(src_path, 'r', encoding='utf-8') as f:
                     data = f.read()
                 css = css + data
+                css_files.append(src_path)  # Add to list of CSS files
             else:
                 shutil.copy(src_path, dst_path)
                 assets.append(os.path.join('assets', rel_path))
                 
-    return assets, css
+    return assets, css, css_files
 
 
 def extract_h1(data: str) -> str:
@@ -791,13 +793,41 @@ def find_image_references_in_markdown(md_files: List[str]) -> set:
     
     return image_refs
 
-def filter_unused_images(md_files: List[str], image_files: List[str]) -> List[str]:
+def find_image_references_in_css(css_files: List[str]) -> set:
     """
-    Filter out images that are not referenced in any Markdown files.
+    Find all image references in CSS files.
+    Returns set of image filenames.
+    """
+    image_refs = set()
+    
+    # Regular expression for CSS url() syntax: url('/path/image.png')
+    css_img_pattern = r'url\([\'"]?([^\'"()]+)[\'"]?\)'
+    
+    for file in css_files:
+        try:
+            with open(file, 'r', encoding='utf-8') as f:
+                content = f.read()
+                
+                # Find CSS url() references
+                for match in re.findall(css_img_pattern, content):
+                    if not match.startswith(('http:', 'https:', 'data:')):
+                        # Extract just the filename from the path
+                        image_refs.add(os.path.basename(match))
+        except Exception as e:
+            print(f"Warning: Could not check images in CSS file {file}: {e}")
+    
+    return image_refs
+
+def filter_unused_images(md_files: List[str], css_files: List[str], image_files: List[str]) -> List[str]:
+    """
+    Filter out images that are not referenced in any Markdown or CSS files.
     Returns filtered list of image files to include.
     """
-    # Find all image references
-    referenced_images = find_image_references_in_markdown(md_files)
+    # Find all image references from Markdown and CSS
+    md_referenced_images = find_image_references_in_markdown(md_files)
+    css_referenced_images = find_image_references_in_css(css_files)
+    
+    referenced_images = md_referenced_images.union(css_referenced_images)
     
     # Filter image_files to only include referenced images
     used_images = []
@@ -816,7 +846,12 @@ def filter_unused_images(md_files: List[str], image_files: List[str]) -> List[st
             print(f"  {os.path.basename(img)}")
         print(f"\nTotal: {len(unused_images)} unused images removed, keeping {len(used_images)} used images")
     else:
-        print("\nAll images are referenced in the documentation.")
+        print("\nAll images are referenced in the documentation or CSS.")
+    
+    if css_referenced_images:
+        print("\nImages referenced in CSS:")
+        for img in sorted(css_referenced_images):
+            print(f"  {img}")
     
     return used_images
 
@@ -871,13 +906,13 @@ if __name__ == "__main__":
     # Modify nav to include welcome page at the start
     yml_data['nav'].insert(0, 'welcome.md')
 
-    # Filter out unused images
-    image_files = filter_unused_images(md_files, image_files)
-
     # Copy images and other static assets into the project
+    assets, css, css_files = static_assets(args.assets_dir, args.project_dir)
+    
+    # Filter out unused images, considering both MD and CSS references
+    image_files = filter_unused_images(md_files, css_files, image_files)
     copied_images = copy_images(image_files, project=args.project_dir)
-    assets, css = static_assets(args.assets_dir, args.project_dir)
-
+    
     # Add git info and build date to macros
     macros = yml_data.get('extra', {})
     if args.git_info:

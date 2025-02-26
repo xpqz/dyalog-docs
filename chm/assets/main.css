@@ -1,3 +1,12 @@
+.toolbar-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url('../img/trace-theme-sprite-16.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
 /* Define the APL class to use the installed 'APL385 Unicode' font */
 .language-APL {
     font-family: 'APL385 Unicode' !important;
