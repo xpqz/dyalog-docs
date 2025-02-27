@@ -56,16 +56,18 @@ jobs:
         HASH=$(git rev-parse --short HEAD)
         echo "GIT_INFO=${BRANCH}:${HASH}" >> $GITHUB_OUTPUT
         echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        echo "CURRENT_YEAR=$(date +'%Y')" >> $GITHUB_OUTPUT
 
     - name: Substitute env variables in mkdocs.yml
       env:
         GIT_INFO: ${{ steps.git-info.outputs.GIT_INFO }}
         BUILD_DATE: ${{ steps.git-info.outputs.DATE }}
+        CURRENT_YEAR: ${{ steps.git-info.outputs.CURRENT_YEAR }}
       run: |
         # Create backup
         cp mkdocs.yml mkdocs.yml.bak
         # Substitute variables
-        envsubst '$BUILD_DATE $GIT_INFO' < mkdocs.yml.bak > mkdocs.yml
+        envsubst '$BUILD_DATE $GIT_INFO $CURRENT_YEAR' < mkdocs.yml.bak > mkdocs.yml
         # Display substituted content for debugging
         echo "--- Checking substituted content ---"
         cat mkdocs.yml | grep -A5 copyright
