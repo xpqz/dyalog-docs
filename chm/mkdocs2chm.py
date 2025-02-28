@@ -369,7 +369,7 @@ def purge_css(css: str, html_content: str) -> str:
     # Serialise the new stylesheet    
     return new_stylesheet.cssText.decode('utf-8')
 
-def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: List[Callable[[str], str]], project) -> List[str]:
+def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: List[Callable[[str], str]], project: str, top_level_files: List[str]) -> List[str]:
     """
     Convert each Markdown file and convert to HTML, using the same rendering library as
     mkdocs, with the same set of extensions. We expand the mkdocs-macro {{ templates }}
@@ -392,14 +392,18 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
     converted: List[str] = []    
 
     for file in filenames:
-        # Handle both root-level files and files in docs subdirectories
-        if '/docs/' in file:
-            path, oldname = file.split('/docs/', maxsplit=1)
-            newname = str(os.path.join(os.path.basename(path), oldname.replace('.md', '.htm')))
-        else:
-            # For root-level files, just use the basename
+        if file in top_level_files:
+            # Top-level files go directly in project/
             newname = os.path.basename(file).replace('.md', '.htm')
-            
+        elif '/docs/' in file:
+            # Sub-site files go in project/sub-site/
+            path, oldname = file.split('/docs/', maxsplit=1)
+            sub_site = os.path.basename(path)
+            newname = os.path.join(sub_site, oldname.replace('.md', '.htm'))
+        else:
+            # Fallback for files without /docs/
+            newname = os.path.basename(file).replace('.md', '.htm')
+
         realpath_newname = str(os.path.join(project, newname))
         os.makedirs(os.path.dirname(realpath_newname), exist_ok=True)
 
@@ -581,22 +585,31 @@ def write_index_data(entries: List[Tuple[str, str]], filename: str) -> None:
         idxfh.write("</body></html>\n")
 
 
-def find_toplevel_dirs(filename: str, remove: List[str]) -> List[str]:
+def find_nav_files_and_dirs(filename: str, remove: List[str]) -> Tuple[List[str], List[str]]:
     """
-    Find the toplevel document dirs -- these are the ones that are
-    pulled into the main mkdocs.yml file via !include
+    Extract both top-level directories (from !include directives) and standalone Markdown files
+    directly listed in the nav section of the mkdocs.yml file.
+    
+    Returns:
+        Tuple[List[str], List[str]]: (included_dirs, standalone_files)
     """
     yaml = YAML()
-    with (open(filename, 'r', encoding='utf-8')) as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         data = yaml.load(f)
-    tlds = []
+    
+    included_dirs = []
+    standalone_files = []
+    
     for d in data['nav']:
         key, value = next(iter(d.items()))
         if key not in remove:
-            if m := re.match(r'!include\s+([^"]+)', value):
-                tlds.append(m.group(1))
-
-    return tlds
+            if isinstance(value, str):
+                if m := re.match(r'!include\s+([^"]+)', value):
+                    included_dirs.append(m.group(1))  # Path from !include
+                elif value.endswith('.md'):
+                    standalone_files.append(os.path.join('docs', value))  # Direct .md file reference
+    
+    return included_dirs, standalone_files
 
 
 def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str], assets: List[str], title: str) -> None:
@@ -878,9 +891,7 @@ if __name__ == "__main__":
 
     os.makedirs(args.project_dir, exist_ok=True)
 
-    # Parse the nav section. If this is a monorepo (in 99% of the cases it will be),
-    # macro-expand any !include directives
-
+    # Parse config for excludes
     excludes = []
     if args.config:
         try:
@@ -890,15 +901,22 @@ if __name__ == "__main__":
         except (json.JSONDecodeError, FileNotFoundError) as e:
             sys.exit(f'--> Error reading config file: {e}')
 
+    # Parse mkdocs.yml
     yml_data = parse_mkdocs_yml(args.mkdocs_yml, remove=excludes)
-    includes = find_toplevel_dirs(args.mkdocs_yml, remove=excludes)
+
+    # Find top-level dirs and standalone files from nav
+    included_dirs, standalone_files = find_nav_files_and_dirs(args.mkdocs_yml, remove=excludes)
 
     version = yml_data["extra"].get("version_majmin")
     if not version:
         sys.exit(f'--> source mkdocs.yml has no Dyalog version set')
 
-    # Find all source Markdown files and images
-    md_files, image_files = find_source_files(os.path.dirname(args.mkdocs_yml), includes)
+    # Find all source Markdown files from included directories
+    md_files_from_dirs, image_files = find_source_files(os.path.dirname(args.mkdocs_yml), included_dirs)
+
+    # Add standalone Markdown files from nav, with absolute paths
+    standalone_files_abs = [os.path.abspath(os.path.join(os.path.dirname(args.mkdocs_yml), f)) for f in standalone_files]
+    md_files = md_files_from_dirs + standalone_files_abs
 
     # Add welcome.md to the start of the files list
     md_files.insert(0, os.path.abspath(args.welcome))
@@ -928,7 +946,8 @@ if __name__ == "__main__":
         transforms=[
             table_captions
         ],
-        project=args.project_dir
+        project=args.project_dir,
+        top_level_files=standalone_files_abs
     )
 
     # Generate the CHM ToC
@@ -942,7 +961,6 @@ if __name__ == "__main__":
 
     # Generate the CHM project config file
     chm_name = "dyalog.chm"
-
     generate_hfp(args.project_dir, chm_name, html_files, copied_images, assets, title=f'Dyalog version {version}')
 
     # Run the compiler
