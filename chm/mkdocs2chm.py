@@ -381,12 +381,14 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
     """
     converted: List[str] = []
 
-    head = """
+    head_template = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
 """
     
     converted: List[str] = []    
@@ -435,6 +437,22 @@ def convert_to_html(filenames: List[str], css: str, macros: dict, transforms: Li
         body = body.replace('``', '')  # Empty code blocks aren't rendered correctly
 
         body = fix_links_html(body)
+
+        # Extract the H1 content for use in the title tag, setting for_title=True
+        # to only extract the name part (excluding command span)
+        title = extract_h1(body, for_title=True)
+        
+        # Use a default title if no H1 is found
+        if not title:
+            # Use the filename without extension as a fallback title
+            title = os.path.splitext(os.path.basename(file))[0].replace('_', ' ').title()
+            
+            # For special files like welcome.md, use a more appropriate title
+            if file.endswith('welcome.md'):
+                title = "Welcome to Dyalog APL"
+
+        # Format the head with the title
+        head = head_template.format(title=title)
 
         # Optimise CSS specifically for this page: only use selectors referring to 
         # ids, classes and tags on the actual page.
@@ -508,21 +526,25 @@ def static_assets(src_dir='assets', project='project') -> Tuple[List[str], str, 
     return assets, css, css_files
 
 
-def extract_h1(data: str) -> str:
+def extract_h1(data: str, for_title: bool = False) -> str:
     """
-    Some files will have a raw HTML <h1> for styling reasons.
+    Extract text from the first h1 tag, handling special styling with spans.
     """
     soup = BeautifulSoup(data, 'html.parser')
     if h1 := soup.find('h1'):
         if name_span := h1.find('span', class_='name'):
+            # If for_title is True, return only the name
+            if for_title:
+                return name_span.get_text().strip().replace('"', '').replace('`', '')
+            
+            # Otherwise, return name + command if command exists
             command_span = h1.find('span', class_='command')
-            name = name_span.get_text() if name_span else None
-            command = command_span.get_text() if command_span else None
-            if name and command:
-                return f"{name} {command}".strip()
-            elif name:
-                return name.strip().replace('"', '').replace('`', '')
+            if command_span:
+                return f"{name_span.get_text()} {command_span.get_text()}".strip()
+            else:
+                return name_span.get_text().strip().replace('"', '').replace('`', '')
         else:
+            # No special spans, just return the full h1 text
             return h1.get_text().strip().replace('"', '').replace('`', '')
     return ''
 
@@ -612,7 +634,7 @@ def find_nav_files_and_dirs(filename: str, remove: List[str]) -> Tuple[List[str]
     return included_dirs, standalone_files
 
 
-def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str], assets: List[str], title: str) -> None:
+def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str], assets: List[str], title: str, codepage: int = 65001) -> None:
     """
     Generates a project .hfp file for the chmcmd chm compiler, listing all .htm-files
     in the directory tree, plus the _index.hhk and _table_of_contents.hhc files.
@@ -634,7 +656,7 @@ def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str]
     cfg.appendChild(filegroup)
 
     count = doc.createElement("Count")
-    count.setAttribute("Value", str(len(files) + len(images)))
+    count.setAttribute("Value", str(len(files) + len(images) + len(assets)))
     filegroup.appendChild(count)
 
     fcount = 0
@@ -665,7 +687,7 @@ def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str]
     settings.appendChild(searchable)
 
     if start_page is None:
-        start_page = 'index.htm'
+        start_page = 'welcome.htm'
     dflt = doc.createElement("DefaultPage")
     dflt.setAttribute("Value", start_page)
     settings.appendChild(dflt)
@@ -681,6 +703,25 @@ def generate_hfp(project: str, chmfile: str, files: List[str], images: List[str]
     fnt = doc.createElement("DefaultFont")
     fnt.setAttribute("Value", "")
     settings.appendChild(fnt)
+    
+    # Add CodePage setting
+    cp = doc.createElement("CodePage")
+    cp.setAttribute("Value", str(codepage))
+    settings.appendChild(cp)
+    
+    # Hard-coded Language ID for UK English (0x0809)
+    lang = doc.createElement("Language")
+    lang.setAttribute("Value", "0x0809")
+    settings.appendChild(lang)
+    
+    # Add additional CHM-specific settings that might help with search
+    binary_index = doc.createElement("BinaryIndex")
+    binary_index.setAttribute("Value", "True")
+    settings.appendChild(binary_index)
+    
+    full_text_search = doc.createElement("FullTextSearch")
+    full_text_search.setAttribute("Value", "True")
+    settings.appendChild(full_text_search)
 
     with open(outfile, 'w', encoding="utf-8") as f:
         f.write(doc.toprettyxml(indent="  "))
@@ -877,6 +918,8 @@ if __name__ == "__main__":
     parser.add_argument('--config', type=str, help='JSON config file for additional options')
     parser.add_argument('--git-info', type=str, help='Git branch and commit info')
     parser.add_argument('--build-date', type=str, help='Build date')
+    parser.add_argument('--codepage', type=int, default=65001, help='CodePage to use (default: 65001 for UTF-8)')
+
 
     args = parser.parse_args()
 
@@ -961,7 +1004,7 @@ if __name__ == "__main__":
 
     # Generate the CHM project config file
     chm_name = "dyalog.chm"
-    generate_hfp(args.project_dir, chm_name, html_files, copied_images, assets, title=f'Dyalog version {version}')
+    generate_hfp(args.project_dir, chm_name, html_files, copied_images, assets, title=f'Dyalog version {version}', codepage=args.codepage)
 
     # Run the compiler
     output = Popen(['chmcmd', 'dyalog.hfp'], cwd=args.project_dir)
