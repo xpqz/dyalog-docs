@@ -11,7 +11,7 @@
 |[`⎕DT`](dt.md)   |Datetime                                                |
 |[`⎕FMT`](format-monadic.md)  |Resolve display                                         |
 |[`⎕FMT`](format-dyadic.md)  |Format array                                            |
-|[`⎕JSON`](json.md) |JSON Convert                                            |
+|[`⎕JSON`](../json/introduction) |JSON Convert                                            |
 |[`⎕MAP`](map.md)  |Map a file                                              |
 |[`⎕NA`](na.md)   |Declare a DLL function                                  |
 |[`⎕R`](r.md)    |Replace                                                 |

@@ -16,7 +16,7 @@
 |[`⎕CLASS`](class.md) |[`⎕DT`](dt.md)       |[`⎕FLIB`](flib.md)   |[`⎕FX`](fx.md)       |[`⎕NCREATE`](ncreate.md)|[`⎕NRENAME`](nrename.md) |[`⎕PW`](pw.md)     |[`⎕SRC`](src.md)   |[`⎕TNUMS`](tnums.md) |[`⎕WSID`](wsid.md) |
 |[`⎕CLEAR`](clear.md) |[`⎕ED`](ed.md)       |[`⎕FMT`](fmt.md)    |[`⎕INSTANCES`](instances.md)|[`⎕NDELETE`](ndelete.md)|[`⎕NREPLACE`](nreplace.md)|[`⎕R`](r.md)      |[`⎕STACK`](stack.md) |[`⎕TPOOL`](tpool.md) |[`⎕WX`](wx.md)   |
 |[`⎕CMD`](cmd.md)   |[`⎕EM`](em.md)       |[`⎕FNAMES`](fnames.md) |[`⎕IO`](io.md)       |[`⎕NERASE`](nerase.md) |[`⎕NRESIZE`](nresize.md) |[`⎕REFS`](refs.md)   |[`⎕STATE`](state.md) |[`⎕TPUT`](tput.md)  |[`⎕XML`](xml.md)  |
-|[`⎕CR`](cr.md)    |[`⎕EN`](en.md)       |[`⎕FNUMS`](fnums.md)  |[`⎕JSON`](json.md)     |[`⎕NEW`](new.md)    |[`⎕NS`](ns.md)      |[`⎕RL`](rl.md)     |[`⎕STOP`](stop.md)  |[`⎕TRACE`](trace.md) |[`⎕XSI`](xsi.md)  |
+|[`⎕CR`](cr.md)    |[`⎕EN`](en.md)       |[`⎕FNUMS`](fnums.md)  |[`⎕JSON`](../json/introduction)     |[`⎕NEW`](new.md)    |[`⎕NS`](ns.md)      |[`⎕RL`](rl.md)     |[`⎕STOP`](stop.md)  |[`⎕TRACE`](trace.md) |[`⎕XSI`](xsi.md)  |
 |[`⎕CS`](cs.md)    |[`⎕EX`](ex.md)       |[`⎕FPROPS`](fprops.md) |[`⎕KL`](kl.md)       |[`⎕NEXISTS`](nexists.md)|[`⎕NSI`](nsi.md)     |[`⎕RSI`](rsi.md)    |[`⎕SVC`](svc.md)   |[`⎕TRAP`](trap.md)  |[`⎕XT`](xt.md)   |
 |[`⎕CSV`](csv.md)   |[`⎕EXCEPTION`](exception.md)|[`⎕FR`](fr.md)     |[`⎕LC`](lc.md)       |[`⎕NGET`](nget.md)   |[`⎕NSIZE`](nsize.md)   |[`⎕RTL`](rtl.md)    |[`⎕SVO`](svo.md)   |[`⎕TREQ`](treq.md)  |[`⎕Ⓐ`](underscored-alphabetic-characters.md)    |
 
