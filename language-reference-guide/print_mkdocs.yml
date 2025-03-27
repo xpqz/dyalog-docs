@@ -347,8 +347,10 @@ nav:
           - Instances: system-functions/instances.md
           - Index Origin: system-functions/io.md
           - JSON Convert:
-              - Introduction: system-functions/json.md
-              - JSON Name Mangling: system-functions/json-name-manglling.md
+              - Introduction: system-functions/json/introduction.md
+              - JSON Import: system-functions/json/import.md
+              - JSON Export: system-functions/json/export.md
+              - JSON Name Mangling: system-functions/json/name-mangling.md
           - Key Label: system-functions/kl.md
           - Line Count: system-functions/lc.md
           - Load Workspace: system-functions/load.md

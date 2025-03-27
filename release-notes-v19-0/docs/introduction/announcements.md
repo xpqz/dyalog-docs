@@ -12,7 +12,7 @@ Dyalog v19.0 is natively available for both Intel and ARM-based Macs. Dyalog v19
 
 We have identified a namespace performance issue which is especially noticeable with JSON Import. We have a fix planned for the next release of Dyalog. In the meantime, there is an easy workaround.
 
-For further information, see [Performance Warning](../../../language-reference-guide/system-functions/json)
+For further information, see [Performance Warning](../../../language-reference-guide/system-functions/json/introduction)
 
 ## Hash and Lookup Tables
 

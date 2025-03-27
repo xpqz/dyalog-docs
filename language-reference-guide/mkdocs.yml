@@ -420,7 +420,7 @@ nav:
                   - Data Representation Dyadic: system-functions/data-representation-dyadic.md
                   - Format Monadic: system-functions/format-monadic.md
                   - Format Dyadic: system-functions/format-dyadic.md
-                  - JSON Convert: system-functions/json.md
+                  - JSON Convert: system-functions/json/introduction.md
                   - Map File: system-functions/map.md
                   - Name Association: system-functions/na.md
                   - Replace: system-functions/r.md
@@ -675,8 +675,10 @@ nav:
           - Instances: system-functions/instances.md
           - Index Origin: system-functions/io.md
           - JSON Convert:
-              - Introduction: system-functions/json.md
-              - JSON Name Mangling: system-functions/json-name-manglling.md
+              - Introduction: system-functions/json/introduction.md
+              - JSON Import: system-functions/json/import.md
+              - JSON Export: system-functions/json/export.md
+              - JSON Name Mangling: system-functions/json/name-mangling.md
           - Key Label: system-functions/kl.md
           - Line Count: system-functions/lc.md
           - Load Workspace: system-functions/load.md
