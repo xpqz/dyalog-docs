@@ -33,7 +33,6 @@ If `f` is one of the functions listed in [](#IdentityElements) then `R` is `S⍴
 
 Otherwise, if `f` is Catenate, `R` is `S⍴⊂0/⊃Y`. If `f` is Catenate First, `R` is `S⍴⊂0⌿⊃Y`. If `f` is Catenate along the J<sup>th</sup> axis, `R` is `S⍴⊂0/[J]⊃Y`. See [Catenate/Laminate](../../primitive-functions/catenate-laminate.md).
 
-
 Otherwise, `DOMAIN ERROR` is reported.
 
 Table: Identity Elements {: #IdentityElements }
@@ -99,5 +98,29 @@ Table: Identity Elements {: #IdentityElements }
       (⊂0 3 4⍴0)≡⍪/0⍴⊂2 3 4⍴0
 1
 ```
+
+## Evaluation Order
+
+In its initial implementation, Dyalog evaluated `+/` and `×/` in left-to-right (non-ISO standard) order because `+` and `×` are commutative and left-to-right evaluation was faster. 
+ 
+The imprecise way in which large and non-integral values can be stored means that there are some cases in which evaluation order affects the result. For example:
+```apl 
+      +/ 1E100 ¯1E100 1
+1
+      +/ 1 1E100 ¯1E100
+0
+``` 
+For backwards compatibility reasons, `+/` and `×/` of simple vectors are still evaluated in left-to-right order and that will not change. Any deviation from this, such as arguments that are not simple vectors (for example, higher-rank arrays or nested arguments) or additional qualifications of the derived function (for example, with bracket axes or application of the rank operator) can change the evaluation order. This means that some sums and products can give different results to those that might be expected. For example:
+```apl 
+      +/ 1E100 ¯1E100 1
+1
+      +/ [1E100 ¯1E100 1 ⋄ 1E100 ¯1E100 1]
+0 0
+      +/ (1E100 ¯1E100) (¯1E100 1E100) 1
+0 0 
+      +∘⊢/ 1E100 ¯1E100 1
+0
+```
+This also applies to `+⌿` and `×⌿`.
 
 [^1]: `M` represents the largest representable value: typically this is 1.7E308, unless `⎕FR` is 1287, when the value is 1E6145.
