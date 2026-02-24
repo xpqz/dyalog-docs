@@ -99,7 +99,7 @@ Table: Identity Elements {: #IdentityElements }
 1
 ```
 
-##Evaluation Order
+## Evaluation Order
 
 In its initial implementation, Dyalog evaluated `+/` and `×/` in left-to-right (non-ISO standard) order because `+` and `×` are commutative and left-to-right evaluation was faster. 
  
