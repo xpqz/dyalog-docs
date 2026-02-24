@@ -73,4 +73,24 @@ ONE BOOK
  
 ```
 
+##Evaluation Order
 
+In its initial implementation, Dyalog evaluated `+\` and `×\` in left-to-right (non-ISO standard) order because `+` and `×` are commutative and left-to-right evaluation was faster. 
+ 
+The imprecise way in which large and non-integral values can be stored means that there are some cases in which evaluation order affects the result. For example:
+```apl 
+      +\ 1E100 ¯1E100 1
+1E100 0 1
+      +/ 1 1E100 ¯1E100
+0
+``` 
+For backwards compatibility reasons, `+/` and `×/` of simple vectors are still evaluated in left-to-right order and that will not change. Any deviation from this, such as arguments that are not simple vectors (for example, higher-rank arrays or nested arguments) or additional qualifications of the derived function (for example, with bracket axes or application of the rank operator) can change the evaluation order. This can mean that there are some situations in which `+/` and `×/` give different results to those that might be expected. For example:
+```apl 
+      +\ 1E100 ¯1E100 1
+1E100 0 1
+      {⍺+⍵}\1E100 ¯1E100 1
+1E100 0 0
+      +∘⊢\ 1E100 ¯1E100 1
+1E100 0 0
+```
+This also applies to `+⍀` and `×⍀`.
