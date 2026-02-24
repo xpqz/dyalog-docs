@@ -77,7 +77,7 @@ ONE BOOK
 
 In its initial implementation, Dyalog evaluated `+\` and `×\` in left-to-right (non-ISO standard) order because `+` and `×` are commutative and left-to-right evaluation was faster. 
  
-The imprecise way in which large and non-integral values can be stored means that there are some cases in which evaluation order affects the result. For example:
+The imprecise way in which large and non-integral values can be stored means that there are some cases in which evaluation order affects the result. For example (note the rightmost element of the result):
 ```apl 
       +\ 1E100 ¯1E100 1
 1E100 0 1
