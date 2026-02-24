@@ -75,7 +75,7 @@ ONE BOOK
 
 ## Evaluation Order
 
-In its initial implementation, Dyalog evaluated `+\` and `×\` as a single left-to-right pass (non-ISO standard) order because `+` and `×` are commutative and left-to-right evaluation was faster. 
+In its initial implementation, Dyalog evaluated `+\` and `×\` as a single left-to-right pass (non-ISO standard) because `+` and `×` are commutative and left-to-right evaluation was faster. 
  
 The imprecise way in which large and non-integral values can be stored means that there are some cases in which evaluation order affects the result. For example (note the rightmost element of the result):
 ```apl 
