@@ -6,7 +6,6 @@ The Status window is also used to display supplementary information about errors
 
 <h2 class="example">Example</h2>
 ```apl
-
       ⎕USING←'System'
       bd←⎕NEW DateTime(2015 4) ⍝ Typo (2015 4 30) 
 DOMAIN ERROR
