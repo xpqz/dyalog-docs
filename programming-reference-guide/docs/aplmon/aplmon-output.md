@@ -67,8 +67,6 @@ The each will not appear in the log, but only the primitives called by `foo`, me
       +.×/(N⍴1
 ```
 
-The `/` will not be measured, but `+.×` will appeared as called `(N-1)` times.
-
-This ensures that time measurements do not overlap, and can therefore be compared.
+The `/` will not be measured, but `+.×` will appeared as called `(N-1)` times. This ensures that time measurements do not overlap, and can therefore be compared.
 
 However, some non-atomic expressions are logged, and the non-primitive parts are logged as non primitive.
